@@ -1,0 +1,2433 @@
+{
+  "8900": {
+    "name": "Ancient Spellbook: Cyclone",
+    "description": "Ancient Spellbook needed to learn Cyclone. Can be used by a Storm Screamer.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8901": {
+    "name": "Ancient Spellbook: Raging Waves",
+    "description": "Ancient Spellbook needed to learn Raging Waves. Used by Mystic Muses.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8902": {
+    "name": "Ancient Spellbook: Day of Doom",
+    "description": "Ancient Spellbook needed to learn Day of Doom. Can be used by a Soultaker.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8903": {
+    "name": "Ancient Spellbook: Gehenna",
+    "description": "Ancient Spellbook needed to learn Gehenna. Can be used by a Soultaker.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8904": {
+    "name": "Ancient Spellbook: Anti-Summoning Field",
+    "description": "Ancient Spellbook needed to learn Anti-Summoning Field. Can be used by an Arcana Lord, Elemental Master, and Spectral Master.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8905": {
+    "name": "Ancient Spellbook: Purification Field",
+    "description": "Ancient Spellbook needed to learn Purification Field. Used by a Cardinal.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8906": {
+    "name": "Ancient Spellbook: Miracle",
+    "description": "Ancient Spellbook needed to learn Miracle. Used by a Cardinal.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8907": {
+    "name": "Ancient Spellbook: Flames of Invincibility",
+    "description": "Ancient Spellbook needed to learn Flames of Invincibility. Used by a Dominator.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8908": {
+    "name": "Ancient Spellbook: Mass Recharge",
+    "description": "Ancient Spellbook needed to learn Mass Recharge. Can be used by an Eva's Saint and Shillien Saint.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "8909": {
+    "name": "Blueprint: Summon Swoop Cannon",
+    "description": "Blueprint needed to learn the Summon Swoop Cannon technique. Can be used by a Warsmith. Required level: 68",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 9600,
+    "weight": 120,
+    "icon": "icon.etc_plan_i00",
+    "stackable": true
+  },
+  "8910": {
+    "name": "Black Feather Mask",
+    "description": "Hair accessory containing a dark feather. It uses 2 hair accessory slots. This is an event item which cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessary_black_feather_mask_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8911": {
+    "name": "Black Half Mask (Event)",
+    "description": "A black-colored half mask. Event Item.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.Accessary_black_half_mask_i00"
+  },
+  "8912": {
+    "name": "Single Stem Flower",
+    "description": "Hair pin made in the shape of a flower.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Steel",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_hairpin_i00"
+  },
+  "8913": {
+    "name": "Butterfly Hairpin",
+    "description": "Hairpin in the shape of a butterfly. This is a female-only hair accessory.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Steel",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_butterfly_hearpin_i00"
+  },
+  "8914": {
+    "name": "Luxurious Gold Circlet",
+    "description": "Luxurious Gold Circlet. It uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_gold_circlet_i00"
+  },
+  "8915": {
+    "name": "Luxurious Silver Circlet",
+    "description": "Luxurious Silver Circlet. It uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_gold_circlet_i01"
+  },
+  "8916": {
+    "name": "Eye Patch",
+    "description": "One eye patch accessory.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Steel",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_one_eye_i00"
+  },
+  "8917": {
+    "name": "Goddess Circlet",
+    "description": "The goddess' circlet. This is a female-use hair accessory. It uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_goddess_circlet_i00"
+  },
+  "8918": {
+    "name": "Leather Cap",
+    "description": "A medieval-era hat made of leather. It uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.Accessary_middle_ages_i00"
+  },
+  "8919": {
+    "name": "First Mate's Hat",
+    "description": "A hat befitting a favored member of Zaken's crew. Uses 2 hair accessory slots. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.Accessary_middle_ages_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8920": {
+    "name": "Angel Halo",
+    "description": "Hair accessory imbued with Holy energy. It uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_angel_circlet_i00"
+  },
+  "8921": {
+    "name": "Demon Circlet",
+    "description": "Hair accessory possessed of dark energy. It uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_demon_circlet_i00"
+  },
+  "8922": {
+    "name": "Pirate Hat",
+    "description": "Hat worn by pirates. It uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.Accessary_sea_robber_i00"
+  },
+  "8923": {
+    "name": "Scar",
+    "description": "A scar. This is a male-only accessory.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Steel",
+    "conditions": {
+      "player": {
+        "gender": "Male"
+      }
+    },
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.Accessary_scar_i00"
+  },
+  "8924": {
+    "name": "Boat Ticket: Primeval Isle to Rune.",
+    "description": "Boat Ticket from Primeval Isle to Rune.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 25000,
+    "weight": 20,
+    "icon": "icon.etc_ticket_red_i00",
+    "stackable": true
+  },
+  "8925": {
+    "name": "Boat Ticket: Rune to Primeval Isle.",
+    "description": "Boat Ticket from Rune to Primeval Isle.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 25000,
+    "weight": 20,
+    "icon": "icon.etc_ticket_blue_i00",
+    "stackable": true
+  },
+  "8926": {
+    "name": "Shadow Item: Sword of Delusion",
+    "description": "This Shadow Item contains the mirrored power of a Sword of Delusion. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 470,
+    "icon": "icon.time_weapon_sword_of_delusion_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8927": {
+    "name": "Shadow Item: Poleaxe",
+    "description": "This Shadow Item contains the mirrored power of a Poleaxe. It cannot be traded, dropped or given other functions. Polearm Multi-attack",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 670,
+    "icon": "icon.time_weapon_poleaxe_i00",
+    "mana": 120,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8928": {
+    "name": "Shadow Item: Stick of Eternity",
+    "description": "This Shadow Item contains the mirrored power of a Stick of Eternity. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 380,
+    "icon": "icon.time_weapon_stick_of_eternity_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8929": {
+    "name": "Shadow Item: Inferno Staff",
+    "description": "This Shadow Item contains the mirrored power of an Inferno Staff. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 340,
+    "icon": "icon.time_weapon_inferno_staff_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8930": {
+    "name": "Shadow Item: Pa'agrian Hammer",
+    "description": "This Shadow Item contains the mirrored power of a Pa'agrian Hammer. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 340,
+    "icon": "icon.time_weapon_paagrio_hammer_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8931": {
+    "name": "Shadow Item: Dark Screamer",
+    "description": "This Shadow Item contains the mirrored power of a Dark Screamer. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 340,
+    "icon": "icon.time_weapon_dark_screamer_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8932": {
+    "name": "Shadow Item: Akat Long Bow",
+    "description": "This Shadow Item contains the mirrored power of an Akat Long Bow. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 9,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "Horn",
+    "stats": {
+      "PAtk": {
+        "set": 316
+      },
+      "MAtk": {
+        "set": 84
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 580,
+    "icon": "icon.time_weapon_akat_long_bow_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8933": {
+    "name": "Shadow Item: Pa'agrian Sword",
+    "description": "This Shadow Item contains the mirrored power of a Pa'agrian Sword. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 660,
+    "icon": "icon.time_weapon_sword_of_paagrio_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8934": {
+    "name": "Shadow Item: Fisted Blade",
+    "description": "This Shadow Item contains the mirrored power of a Fisted Blade. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 90
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 500,
+    "icon": "icon.time_weapon_fist_blade_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8935": {
+    "name": "Test Rapier",
+    "description": "Test",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1380,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true
+  },
+  "8936": {
+    "name": "Santa's Antlers",
+    "description": "Santa's Horn Hat, which is made to celebrate the holy day.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_santas_antler_i00",
+    "dropable": false
+  },
+  "8937": {
+    "name": "Shadow Item: Stormbringer",
+    "description": "This Shadow Item contains the mirrored power of a Stormbringer. It cannot be traded, dropped or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 780,
+    "icon": "icon.time_weapon_dual_sword_i00",
+    "mana": 120,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8938": {
+    "name": "Damascus * Tallum Blade",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of a one-handed or fist weapon. When enchanted to 4 or more, Atk. Spd. will increase by 8%. Inflicts additional damage to target during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 17
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1890,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "8939": {
+    "name": "Dominic's Mark",
+    "description": "Dominic's Mark. Used in carrying out a secret mission.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_leash_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8940": {
+    "name": "Mark of the Future: Human",
+    "description": "Mark of the Future. Received from Grand Master Klaus Blackbird of Oren Castle Town.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_green_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8941": {
+    "name": "Mark of the Future: Dwarf",
+    "description": "Mark of the Future. Received from Warehouse Chief Alder of Schuttgart Castle Town.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8942": {
+    "name": "Mark of the Future: Elf",
+    "description": "Mark of the Future. Received from Magister Juris of Town of Giran.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8943": {
+    "name": "Mark of the Future: Dark Elf",
+    "description": "Mark of the Future. Received from Grand Master Oltran of Town of Aden.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8944": {
+    "name": "Mark of the Future: Orc",
+    "description": "Mark of the Future. Received from High Prefect Aklan of Goddard Castle Town.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8945": {
+    "name": "Spellbook: Celestial Shield",
+    "description": "Spellbook needed to learn Celestial Shield. Used by Bishops. Required level: 64",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 8100,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "8946": {
+    "name": "Spellbook: Invocation",
+    "description": "Spellbook need to learn Invocation. Used by Bishops, Elders, and Shillien Elders. Required level: 56",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 6250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "8947": {
+    "name": "L2day - Rabbit Ears",
+    "description": "Hair accessory in the shape of Rabbit Ears.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_rabbit_ear_i00"
+  },
+  "8948": {
+    "name": "L2day - Little Angel Wings",
+    "description": "A wing-shaped hair accessory.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_hair_ring_i00"
+  },
+  "8949": {
+    "name": "L2day - Fairy Antennae",
+    "description": "Cute antennae hair accessory with stars.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_hair_feeler_i00"
+  },
+  "8950": {
+    "name": "L2day - Feathered Hat",
+    "description": "A fancy hat containing a feather. Uses 2 accessory slot spaces.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_archer_hat_i00"
+  },
+  "8951": {
+    "name": "L2day - Artisan's Goggles",
+    "description": "Big, round goggles to protect your eyes. Uses 2 accessory slot spaces.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_dwarf_goggle_i00"
+  },
+  "8952": {
+    "name": "Greater Herb of Life",
+    "description": "Herb of Life",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2278,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "pet_useable": true
+  },
+  "8953": {
+    "name": "Greater Herb of Mana",
+    "description": "Herb of Mana",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2279,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "pet_useable": true
+  },
+  "8954": {
+    "name": "Blue Primeval Crystal",
+    "description": "Increases SP by 50000 when used. Can only be used by characters level 76 or higher. Blue Primeval Crystal",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "price": 50000,
+    "weight": 10,
+    "icon": "icon.etc_sp_crystal_i00",
+    "item_skills": [
+      {
+        "id": 2306,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8955": {
+    "name": "Green Primeval Crystal",
+    "description": "Increases SP by 100000 when used. Can only be used by characters level 76 or higher. Blue Primeval Crystal",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "price": 100000,
+    "weight": 10,
+    "icon": "icon.etc_sp_crystal_i02",
+    "item_skills": [
+      {
+        "id": 2306,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8956": {
+    "name": "Red Primeval Crystal",
+    "description": "Increases SP by 200000 when used. Can only be used by characters level 76 or higher. Blue Primeval Crystal",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "price": 200000,
+    "weight": 10,
+    "icon": "icon.etc_sp_crystal_i01",
+    "item_skills": [
+      {
+        "id": 2306,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8957": {
+    "name": "Attack Orders",
+    "description": "Fantastic Scroll of Escape event item. A Warehouse Keeper can exchange these for Shadow Items appropriate to your level.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8958": {
+    "name": "Defence Orders",
+    "description": "Fantastic Scroll of Escape event item. A Warehouse Keeper can exchange these for Shadow Item appropriate to your level.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8959": {
+    "name": "Supply Orders",
+    "description": "Fantastic Scroll of Escape event item. A Warehouse Keeper can exchange these for consumables appropriate to your level.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8960": {
+    "name": "No Grade Shadow Armor Set Box",
+    "description": "One can receive a no-grade Shadow Armor set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 20 empty inventory slots.) Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8961": {
+    "name": "D-Grade Shadow Armor Set Box",
+    "description": "One can receive a D-grade Shadow Armor set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 20 empty inventory slots.) Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8962": {
+    "name": "C-Grade Shadow Armor Set Box",
+    "description": "One can receive a C-grade Shadow Armor set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 20 empty inventory slots.) Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8963": {
+    "name": "B-Grade Shadow Armor Set Box",
+    "description": "One can receive a B-grade Shadow Armor set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 20 empty inventory slots.) Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8964": {
+    "name": "A-Grade Shadow Armor Set Box",
+    "description": "One can receive an A-grade Shadow Armor set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 20 empty inventory slots.) Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8965": {
+    "name": "S-Grade Shadow Armor Set Box",
+    "description": "One can receive an S-grade Shadow Armor set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 20 empty inventory slots.) Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8966": {
+    "name": "No Grade Item Set Box (Warrior Use)",
+    "description": "One can receive no-grade Supplies for Warriors by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8967": {
+    "name": "D-Grade Item Set Box (Warrior Use)",
+    "description": "One can receive D-grade Supplies for Warriors by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8968": {
+    "name": "C-Grade Item Set Box (Warrior Use)",
+    "description": "One can receive C-grade Supplies for Warriors by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8969": {
+    "name": "B-Grade Item Set Box (Warrior Use)",
+    "description": "One can receive B-grade Supplies for Warriors by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8970": {
+    "name": "A-Grade Item Set Box (Warrior Use)",
+    "description": "One can receive A-grade Supplies for Warriors by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8971": {
+    "name": "A-/ S- Grade Item Set Box (Warrior Use)",
+    "description": "One can receive A- and S-grade Supplies for Warriors by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8972": {
+    "name": "Shadow Item: Great Spear",
+    "description": "This Shadow Item contains the mirrored power of a Great Spear. It cannot be traded, dropped, crystallized, or given other functions. Polearm Multi-attack",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 707,
+    "icon": "icon.weapon_long_spear_i00",
+    "mana": 600,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8973": {
+    "name": "Shadow Item: Falchion",
+    "description": "This Shadow Item contains the mirrored power of a Falchion. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 510,
+    "icon": "icon.weapon_falchion_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8974": {
+    "name": "Shadow Item: Iron Hammer",
+    "description": "This Shadow Item contains the mirrored power of an Iron Hammer. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 617,
+    "icon": "icon.weapon_iron_hammer_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8975": {
+    "name": "Shadow Item: Voodoo Doll",
+    "description": "This Shadow Item contains the mirrored power of a Voodoo Doll. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 25
+      },
+      "MAtk": {
+        "set": 28
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 210,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8976": {
+    "name": "Shadow Item: Flanged Mace",
+    "description": "This Shadow Item contains the mirrored power of a Flanged Mace. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 600,
+    "icon": "icon.weapon_buzdygan_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8977": {
+    "name": "Shadow Item: Mage Staff",
+    "description": "This Shadow Item contains the mirrored power of a Mage Staff. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 30
+      },
+      "MAtk": {
+        "set": 31
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 350,
+    "icon": "icon.weapon_apprentices_staff_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8978": {
+    "name": "Shadow Item: Sword Breaker",
+    "description": "This Shadow Item contains the mirrored power of a Sword Breaker. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 27
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 370,
+    "icon": "icon.weapon_sword_breaker_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8979": {
+    "name": "Shadow Item: Viper Fang",
+    "description": "This Shadow Item contains the mirrored power of a Viper Fang. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 38
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 520,
+    "icon": "icon.weapon_vipers_canine_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8980": {
+    "name": "Shadow Item: Composite Bow",
+    "description": "This Shadow Item contains the mirrored power of a Composite Bow. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 7,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 1,
+        "reuse_delay": 1500
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 627,
+    "icon": "icon.weapon_composition_bow_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8981": {
+    "name": "Shadow Item: Crucifix of Blessing",
+    "description": "This Shadow Item contains the mirrored power of a Crucifix of Blessing. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 25
+      },
+      "MAtk": {
+        "set": 28
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 207,
+    "icon": "icon.weapon_crucifix_of_blessing_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8982": {
+    "name": "Shadow Item: Two Handed Sword",
+    "description": "This Shadow Item contains the mirrored power of a Two Handed Sword. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 78
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 730,
+    "icon": "icon.weapon_two_handed_sword_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8983": {
+    "name": "Shadow Item: Crimson Sword",
+    "description": "This Shadow Item contains the mirrored power of a Crimson Sword. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 500,
+    "icon": "icon.weapon_crimson_sword_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8984": {
+    "name": "Shadow Item: Spiked Club",
+    "description": "This Shadow Item contains the mirrored power of a Spiked Club. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 590,
+    "icon": "icon.weapon_spike_club_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8985": {
+    "name": "Shadow Item: Staff of Magic",
+    "description": "This Shadow Item contains the mirrored power of a Staff of Magic. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 62
+      },
+      "MAtk": {
+        "set": 57
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 340,
+    "icon": "icon.weapon_staff_of_magicpower_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8986": {
+    "name": "Shadow Item: Kukuri",
+    "description": "This Shadow Item contains the mirrored power of a Kukuri. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 56
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 360,
+    "icon": "icon.weapon_kukuri_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8987": {
+    "name": "Shadow Item: Dagger of Mana",
+    "description": "This Shadow Item contains the mirrored power of a Dagger of Mana. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 45
+      },
+      "MAtk": {
+        "set": 52
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 250,
+    "icon": "icon.weapon_dagger_of_mana_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8988": {
+    "name": "Shadow Item: Triple-Edged Jamadhr",
+    "description": "This Shadow Item contains the mirrored power of a Triple-Edged Jamadhr. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 78
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 520,
+    "icon": "icon.weapon_triple-edged_jamadhr_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8989": {
+    "name": "Shadow Item: Gastraphetes",
+    "description": "This Shadow Item contains the mirrored power of a Gastraphetes. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 2,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 132
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 620,
+    "icon": "icon.weapon_gastraphetes_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8990": {
+    "name": "Shadow Item: War Hammer",
+    "description": "This Shadow Item contains the mirrored power of a War Hammer. It cannot be traded, dropped, crystallized, or given other functions. Polearm Multi-attack",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 700,
+    "icon": "icon.weapon_war_hammer_i00",
+    "mana": 600,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8991": {
+    "name": "Shadow Item: Sword of Delusion",
+    "description": "This Shadow Item contains the mirrored power of a Sword of Delusion. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 470,
+    "icon": "icon.weapon_sword_of_delusion_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8992": {
+    "name": "Shadow Item: Poleaxe",
+    "description": "This Shadow Item contains the mirrored power of a Poleaxe. It cannot be traded, dropped, crystallized, or given other functions. Polearm Multi-attack",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 670,
+    "icon": "icon.weapon_poleaxe_i00",
+    "mana": 600,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8993": {
+    "name": "Shadow Item: Stick of Eternity",
+    "description": "This Shadow Item contains the mirrored power of a Stick of Eternity. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 380,
+    "icon": "icon.weapon_stick_of_eternity_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8994": {
+    "name": "Shadow Item: Inferno Staff",
+    "description": "This Shadow Item contains the mirrored power of an Inferno Staff. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 340,
+    "icon": "icon.weapon_inferno_staff_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8995": {
+    "name": "Shadow Item: Pa'agrian Hammer",
+    "description": "This Shadow Item contains the mirrored power of a Pa'agrian Hammer. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 340,
+    "icon": "icon.weapon_paagrio_hammer_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8996": {
+    "name": "Shadow Item: Dark Screamer",
+    "description": "This Shadow Item contains the mirrored power of a Dark Screamer. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 340,
+    "icon": "icon.weapon_dark_screamer_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8997": {
+    "name": "Shadow Item: Akat Long Bow",
+    "description": "This Shadow Item contains the mirrored power of an Akat Long Bow. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 9,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "Horn",
+    "stats": {
+      "PAtk": {
+        "set": 316
+      },
+      "MAtk": {
+        "set": 84
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 580,
+    "icon": "icon.weapon_akat_long_bow_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8998": {
+    "name": "Shadow Item: Pa'agrian Sword",
+    "description": "This Shadow Item contains the mirrored power of a Pa'agrian Sword. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 660,
+    "icon": "icon.weapon_sword_of_paagrio_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8999": {
+    "name": "Shadow Item: Fisted Blade",
+    "description": "This Shadow Item contains the mirrored power of a Fisted Blade. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 90
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 500,
+    "icon": "icon.weapon_fist_blade_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

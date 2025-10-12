@@ -1,0 +1,13 @@
+<html>
+
+<body>&$556;<br><br>
+    {% for destination in destinations %}
+    <a action="bypass -h npc_{{ object_id }}_tp {{ destination.id }}" msg="{{ destination.dest.name }}">{{
+        destination.dest.name }}{% if destination.dest.price > 0 %} - {{ destination.dest.price }} {{
+        destination.item_name }}
+        {% endif %}</a>
+    <br1>
+        {% endfor %}
+</body>
+
+</html>

@@ -1,0 +1,2346 @@
+{
+  "6300": {
+    "name": "Nephilim Shaman Posting Ticket",
+    "description": "Giran/Wizard/Mobile. Can only be used to place a mercenary when the seal of strife is possessed by the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 5000000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "6301": {
+    "name": "Nephilim Warrior Posting Ticket",
+    "description": "Oren/Sword/Mobile. Can only be used to place a mercenary when the seal of strife is possessed by the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 2500000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "6302": {
+    "name": "Nephilim Shaman Posting Ticket",
+    "description": "Oren/Wizard/Mobile. Can only be used to place a mercenary when the seal of strife is possessed by the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 5000000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "6303": {
+    "name": "Nephilim Warrior Posting Ticket",
+    "description": "Aden/Sword/Mobile. Can only be used to place a mercenary when the seal of strife is possessed by the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 2500000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "6304": {
+    "name": "Nephilim Shaman Posting Ticket",
+    "description": "Aden/Wizard/Mobile. Can only be used to place a mercenary when the seal of strife is possessed by the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 5000000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "6305": {
+    "name": "Nephilim Warrior Posting Ticket",
+    "description": "Innadril/Sword/Mobile. Can only be used to place a mercenary when the seal of strife is possessed by the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 2500000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "6306": {
+    "name": "Nephilim Shaman Posting Ticket",
+    "description": "Innadril/Wizard/Mobile. Can only be used to place a mercenary when the seal of strife is possessed by the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 5000000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "6307": {
+    "name": "Sword of Limit - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy to 5. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9281
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_sword_of_limit_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3007,
+        "level": 3
+      }
+    ]
+  },
+  "6308": {
+    "name": "Sword of Limit - Critical Drain",
+    "description": "<Soul Crystal Enhancement>. Absorbs 9 HP from target on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9282
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_sword_of_limit_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "6309": {
+    "name": "Sword of Limit - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9283
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_sword_of_limit_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "6310": {
+    "name": "Sword of Whispering Death - Empower",
+    "description": "<Soul Crystal Enhancement>. Increases M. Atk. by 24. Special Ability: Empower",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 920,
+    "icon": "icon.weapon_deathbreath_sword_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3076,
+        "level": 3
+      }
+    ]
+  },
+  "6311": {
+    "name": "Sword of Whispering Death - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. Increases MP consumption by 15% and increases M. Atk. by 99 during magic use. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 920,
+    "icon": "icon.weapon_deathbreath_sword_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3077,
+        "level": 3
+      }
+    ]
+  },
+  "6312": {
+    "name": "Sword of Whispering Death - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3078,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 920,
+    "icon": "icon.weapon_deathbreath_sword_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "6313": {
+    "name": "Homunkulus's Sword - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 950,
+    "icon": "icon.weapon_homunkuluss_sword_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "6314": {
+    "name": "Homunkulus's Sword - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 950,
+    "icon": "icon.weapon_homunkuluss_sword_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 1
+      }
+    ]
+  },
+  "6315": {
+    "name": "Homunkulus's Sword - Magic Paralyze",
+    "description": "<Soul Crystal Enhancement>. Has a 5% chance of casting Paralysis when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3079,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 5
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 950,
+    "icon": "icon.weapon_homunkuluss_sword_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "6316": {
+    "name": "Food for Wyvern",
+    "description": "When the hunger gauge of a wyvern drops to 55% or below, its food will be consumed automatically. Feed: Castle Strider",
+    "kind": {
+      "Pet": "Consumable"
+    },
+    "material": "Liquid",
+    "price": 300,
+    "weight": 10,
+    "icon": "icon.etc_pouch_yellow_i00",
+    "item_skills": [
+      {
+        "id": 2180,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "6317": {
+    "name": "Mixing Manual",
+    "description": "A manual received from Magic Trader Wesley, with instructions for using the material mixing urn located in the basement of the Ivory Tower.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 1,
+    "weight": 20,
+    "icon": "icon.etc_spellbook_red_i00",
+    "dropable": false
+  },
+  "6318": {
+    "name": "Blood Fire",
+    "description": "Dark flames from Purgatory. The only way to melt true gold.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Liquid",
+    "price": 500,
+    "weight": 50,
+    "icon": "icon.etc_potion_red_i00",
+    "stackable": true
+  },
+  "6319": {
+    "name": "Mimir's Elixir",
+    "description": "A legendary elixir said to bestow ultimate wisdom. Take it to Magister Ladd.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_lesser_potion_yellow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "6320": {
+    "name": "Pure Silver",
+    "description": "An essential ingredient of Mimir's Elixir. Take it to Magister Ladd.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Liquid",
+    "price": 500,
+    "icon": "icon.etc_broken_crystal_silver_i00",
+    "stackable": true
+  },
+  "6321": {
+    "name": "True Gold",
+    "description": "An essential ingredient of Mimir's Elixir. Take it to Magister Ladd.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_broken_crystal_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "6322": {
+    "name": "Sage's Stone",
+    "description": "An essential ingredient of Mimir's Elixir. Take it to Magister Joan.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "6323": {
+    "name": "Sealed Phoenix Necklace",
+    "description": "The blacksmith in a village can release the seal on this item. Effects upon seal release are M. Def. +4 and MP+26.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 76
+      }
+    },
+    "price": 1340000,
+    "weight": 150,
+    "icon": "icon.accessary_phoenixs_necklace_i02",
+    "crystal_count": 107,
+    "enchantable": true
+  },
+  "6324": {
+    "name": "Sealed Phoenix Earring",
+    "description": "The blacksmith in a village can release the seal on this item. Effects upon seal release are M. Def. +3 and MP+20.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 57
+      }
+    },
+    "price": 1005000,
+    "weight": 150,
+    "icon": "icon.accessary_phoenixs_earing_i02",
+    "crystal_count": 80,
+    "enchantable": true
+  },
+  "6325": {
+    "name": "Sealed Phoenix Ring",
+    "description": "The blacksmith in a village can release the seal on this item. Effects upon seal release are M. Def. +2 and MP+13.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "A",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 38
+      }
+    },
+    "price": 670000,
+    "weight": 150,
+    "icon": "icon.accessary_phoenixs_ring_i02",
+    "crystal_count": 54,
+    "enchantable": true
+  },
+  "6326": {
+    "name": "Sealed Majestic Necklace",
+    "description": "The blacksmith in a village can release the seal on this item. Effects upon seal release are M. Def. +5 and MP+33.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 80
+      }
+    },
+    "price": 1998000,
+    "weight": 150,
+    "icon": "icon.accessary_inferno_necklace_i02",
+    "crystal_count": 160,
+    "enchantable": true
+  },
+  "6327": {
+    "name": "Sealed Majestic Earring",
+    "description": "The blacksmith in a village can release the seal on this item. Effects upon seal release are M. Def. +3 and MP+25.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 60
+      }
+    },
+    "price": 1498000,
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i02",
+    "crystal_count": 120,
+    "enchantable": true
+  },
+  "6328": {
+    "name": "Sealed Majestic Ring",
+    "description": "The blacksmith in a village can release the seal on this item. Effects upon seal release are M. Def. +2 and MP+17.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 40
+      }
+    },
+    "price": 999000,
+    "weight": 150,
+    "icon": "icon.accessary_inferno_ring_i02",
+    "crystal_count": 80,
+    "enchantable": true
+  },
+  "6329": {
+    "name": "Recipe: Sealed Phoenix Necklace(70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Phoenix Necklace. Requires Create Item - Skill Level 7. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 617,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 34800,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6330": {
+    "name": "Recipe: Sealed Phoenix Necklace(100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Phoenix Necklace. Requires Create Item - Skill Level 7. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 618,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 34800,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6331": {
+    "name": "Recipe: Sealed Phoenix Earring(70%)",
+    "description": "For Dwarves only. The recipe for the sealed Phoenix Earrings. Requires Create Item - Skill Level 7. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 613,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 26200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6332": {
+    "name": "Recipe: Sealed Phoenix Earring(100%)",
+    "description": "For Dwarves only. The recipe for the sealed Phoenix Earrings. Requires Create Item - Skill Level 7. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 614,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 26200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6333": {
+    "name": "Recipe: Sealed Phoenix Ring(70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Phoenix Ring. Requires Create Item - Skill Level 7. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 621,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 17420,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6334": {
+    "name": "Recipe: Sealed Phoenix Ring(100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Phoenix Ring. Requires Create Item - Skill Level 7. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 622,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 17420,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6335": {
+    "name": "Recipe: Sealed Majestic Necklace(70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Majestic Necklace. Requires Create Item - Skill Level 8. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 619,
+          "level": 8
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 52000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6336": {
+    "name": "Recipe: Sealed Majestic Necklace(100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Majestic Necklace. Requires Create Item - Skill Level 8. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 620,
+          "level": 8
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 52000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6337": {
+    "name": "Recipe: Sealed Majestic Earring(70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Majestic Earrings. Requires Create Item - Skill Level 8. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 615,
+          "level": 8
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 39000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6338": {
+    "name": "Recipe: Sealed Majestic Earring(100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Majestic Earrings. Requires Create Item - Skill Level 8. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 616,
+          "level": 8
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 39000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6339": {
+    "name": "Recipe: Sealed Majestic Ring(70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Majestic Ring. Requires Create Item - Skill Level 8. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 623,
+          "level": 8
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 26000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6340": {
+    "name": "Recipe: Sealed Majestic Ring(100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Majestic Ring. Requires Create Item - Skill Level 8. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 624,
+          "level": 8
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 26000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  },
+  "6341": {
+    "name": "Sealed Phoenix Earring Gemstone",
+    "description": "An essential ingredient needed by a Dwarf to make a Sealed Phoenix Earring. It can be sold at any store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 7231,
+    "weight": 60,
+    "icon": "icon.etc_gem_blue_i00",
+    "stackable": true
+  },
+  "6342": {
+    "name": "Sealed Majestic Earring Gemstone",
+    "description": "An essential ingredient needed by a Dwarf to make a Sealed Majestic Earring. It can be sold at any store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 8829,
+    "weight": 60,
+    "icon": "icon.etc_gem_blue_i00",
+    "stackable": true
+  },
+  "6343": {
+    "name": "Sealed Phoenix Necklace Beads",
+    "description": "An essential ingredient needed by a Dwarf to make a Sealed Phoenix Necklace. It can be sold at any store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 9354,
+    "weight": 60,
+    "icon": "BranchSys2.icon.etc_sealed_phoenixbeads_i00",
+    "stackable": true
+  },
+  "6344": {
+    "name": "Sealed Majestic Necklace Beads",
+    "description": "An essential ingredient needed by a Dwarf to make a Sealed Majestic Necklace. It can be sold at any store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 13643,
+    "weight": 60,
+    "icon": "BranchSys2.icon.etc_sealed_majesticbeads_i00",
+    "stackable": true
+  },
+  "6345": {
+    "name": "Sealed Phoenix Ring Gemstone",
+    "description": "An essential ingredient needed by a Dwarf to make a Sealed Phoenix Ring. It can be sold at any store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 5228,
+    "weight": 60,
+    "icon": "icon.etc_gem_blue_i00",
+    "stackable": true
+  },
+  "6346": {
+    "name": "Sealed Majestic Ring Gemstone",
+    "description": "An essential ingredient needed by a Dwarf to make a Sealed Majestic Ring. It can be sold at any store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 6143,
+    "weight": 60,
+    "icon": "icon.etc_gem_blue_i00",
+    "stackable": true
+  },
+  "6347": {
+    "name": "Berserker Blade - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 73. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9297
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_berserker_blade_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 4
+      }
+    ]
+  },
+  "6348": {
+    "name": "Berserker Blade - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 270 on a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9298
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_berserker_blade_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3542,
+        "level": 4
+      }
+    ]
+  },
+  "6349": {
+    "name": "Berserker Blade - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9299
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_berserker_blade_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3037,
+        "level": 4
+      }
+    ]
+  },
+  "6350": {
+    "name": "Amulet: Pa'agrio's Honor",
+    "description": "Amulet required for the Pa'agrio's Honor spell. Used by Overlords. Required level: 66",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 8700,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "6351": {
+    "name": "Amulet: Ritual of Life",
+    "description": "Amulet required for the Ritual of Life spell. Used by Overlords. Required level: 64",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 8200,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "6352": {
+    "name": "Spellbook: Prayer",
+    "description": "Spellbook needed to learn Prayer. Used by Bishops. Required level: 66",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 8700,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_white_i00",
+    "stackable": true
+  },
+  "6353": {
+    "name": "Blue Gemstone",
+    "description": "A gemstone obtained from gremlins. Take it to a newbie helper.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_crystal_blue_i00",
+    "stackable": true
+  },
+  "6354": {
+    "name": "Falchion - for Beginners",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1530,
+    "icon": "icon.weapon_falchion_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "6355": {
+    "name": "Mage Staff - for Beginners",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 30
+      },
+      "MAtk": {
+        "set": 31
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1050,
+    "icon": "icon.weapon_apprentices_staff_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "6356": {
+    "name": "Dark Elven Dagger - Rsk. Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 13% when HP drops to 60% or lower. Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 94
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 1762900,
+    "weight": 1050,
+    "icon": "icon.weapon_darkelven_dagger_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3033,
+        "level": 1
+      }
+    ]
+  },
+  "6357": {
+    "name": "Stiletto - Rsk. Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 12% when HP drops to 60% or lower. Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 2209700,
+    "weight": 1030,
+    "icon": "icon.weapon_stiletto_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3033,
+        "level": 2
+      }
+    ]
+  },
+  "6358": {
+    "name": "Crystal Dagger - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. to 140 on a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 4713500,
+    "weight": 1000,
+    "icon": "icon.weapon_crystal_dagger_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3043,
+        "level": 4
+      }
+    ]
+  },
+  "6359": {
+    "name": "Demon's Dagger - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. to 160 on a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 10091400,
+    "weight": 970,
+    "icon": "icon.weapon_demons_sword_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3043,
+        "level": 6
+      }
+    ]
+  },
+  "6360": {
+    "name": "Blue Seal Stone",
+    "description": "A fragment of an ancient seal. Collect them all. Valued at 3 Ancient Adena.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "price": 3,
+    "icon": "icon.etc_water_rune_i00",
+    "stackable": true
+  },
+  "6361": {
+    "name": "Green Seal Stone",
+    "description": "A fragment of an ancient seal. Collect them all to break the seal. Valued at 5 Ancient Adena.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "price": 5,
+    "icon": "icon.etc_wind_rune_i00",
+    "stackable": true
+  },
+  "6362": {
+    "name": "Red Seal Stone",
+    "description": "A fragment of an ancient seal. Collect them all to break the seal. Valued at 10 Ancient Adena.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "price": 10,
+    "icon": "icon.etc_fire_rune_i00",
+    "stackable": true
+  },
+  "6363": {
+    "name": "Stolen Infernium Ore",
+    "description": "Infernium ore once owned by the Iron Gate Guild. Take it to Warehouse Keeper Romp of Town of Aden to play bingo.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "price": 200,
+    "icon": "icon.etc_inf_ore_high_i00",
+    "stackable": true
+  },
+  "6364": {
+    "name": "Forgotten Blade",
+    "description": "Bestows one of the following functions: Haste, Health or Focus.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9364
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_forgotten_blade_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6365": {
+    "name": "Basalt Battlehammer",
+    "description": "Bestows one of the following functions: HP Drain, Health, or HP Regeneration.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1570,
+    "icon": "icon.weapon_basalt_battlehammer_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6366": {
+    "name": "Imperial Staff",
+    "description": "Bestows one of the following functions: Empower, MP Regeneration, or Magic Hold.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 274
+      },
+      "MAtk": {
+        "set": 193
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 910,
+    "icon": "icon.weapon_imperial_staff_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6367": {
+    "name": "Angel Slayer",
+    "description": "Bestows one of the following functions: Critical Damage, HP Drain or Haste.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 246
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 42759400,
+    "weight": 950,
+    "icon": "icon.weapon_angel_slayer_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6368": {
+    "name": "Shining Bow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 48800000,
+    "weight": 1650,
+    "icon": "icon.weapon_shining_bow_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6369": {
+    "name": "Dragon Hunter Axe",
+    "description": "Bestows one of the following functions: HP Regeneration, Health, or HP Drain.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1820,
+    "icon": "icon.weapon_dragon_hunter_axe_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6370": {
+    "name": "Saint Spear",
+    "description": "Bestows one of the following functions: Health, Guidance or Haste. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_saint_spear_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "6371": {
+    "name": "Demon Splinter",
+    "description": "Bestows one of the following functions: Focus, Health or Critical Stun.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6372": {
+    "name": "Heaven's Divider",
+    "description": "Bestows one of the following functions: Haste, Health or Focus.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9368
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1380,
+    "icon": "icon.weapon_heavens_divider_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6373": {
+    "name": "Imperial Crusader Breastplate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 205
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 12781000,
+    "weight": 7620,
+    "icon": "icon.armor_t88_u_i00",
+    "crystal_count": 613,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6374": {
+    "name": "Imperial Crusader Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 128
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 7988000,
+    "weight": 3260,
+    "icon": "icon.armor_t88_l_i00",
+    "crystal_count": 383,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6375": {
+    "name": "Imperial Crusader Gauntlets",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 540,
+    "icon": "icon.armor_t88_g_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6376": {
+    "name": "Imperial Crusader Boots",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 1110,
+    "icon": "icon.armor_t88_b_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6377": {
+    "name": "Imperial Crusader Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 290
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3355000,
+    "weight": 1170,
+    "icon": "icon.shield_imperial_crusader_shield_i00",
+    "crystal_count": 161,
+    "enchantable": true
+  },
+  "6378": {
+    "name": "Imperial Crusader Helmet",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 4793000,
+    "weight": 550,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 230,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6379": {
+    "name": "Draconic Leather Armor",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 249
+      }
+    },
+    "price": 15577000,
+    "weight": 4950,
+    "icon": "icon.armor_t89_ul_i00",
+    "crystal_count": 748,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6380": {
+    "name": "Draconic Leather Gloves",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "price": 3195000,
+    "weight": 540,
+    "icon": "icon.armor_t89_g_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6381": {
+    "name": "Draconic Leather Boots",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "price": 3195000,
+    "weight": 1110,
+    "icon": "icon.armor_t89_b_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6382": {
+    "name": "Draconic Leather Helmet",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "price": 4793000,
+    "weight": 550,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 230,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6383": {
+    "name": "Major Arcana Robe",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 166
+      },
+      "MaxMp": {
+        "add": 866
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 15577000,
+    "weight": 2300,
+    "icon": "icon.armor_t90_ul_i00",
+    "crystal_count": 748,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6384": {
+    "name": "Major Arcana Gloves",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 540,
+    "icon": "icon.armor_t90_g_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6385": {
+    "name": "Major Arcana Boots",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 1110,
+    "icon": "icon.armor_t90_b_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6386": {
+    "name": "Major Arcana Circlet",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 4793000,
+    "weight": 550,
+    "icon": "icon.armor_circlet_i00",
+    "crystal_count": 230,
+    "enchantable": true,
+    "elementable": true
+  },
+  "6387": {
+    "name": "Blessed Scroll of Resurrection for Pets",
+    "description": "A magic scroll that resurrects a dead pet and restores its Exp. completely. Blessed Scroll of Resurrection: Pet",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 5000,
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_resurrection_pet_i01",
+    "item_skills": [
+      {
+        "id": 2179,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6388": {
+    "name": "Lord of the Manor's Certificate of Approval",
+    "description": "This certificate allows the bearer to join the Lords of Dawn without belonging to a castle-owning clan.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_permit_card_i00",
+    "stackable": true
+  },
+  "6389": {
+    "name": "Squash Seed",
+    "description": "Squish Your Squash Event - Double-click it and a young squash will appear. Squash Seed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_gourd_i00",
+    "item_skills": [
+      {
+        "id": 2003,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6390": {
+    "name": "Large Squash Seed",
+    "description": "Squish Your Squash Event - Double-click it and a large young squash will appear. Large Squash Seed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_gourd_i01",
+    "item_skills": [
+      {
+        "id": 2004,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6391": {
+    "name": "Nectar",
+    "description": "L2 Gourd & Watermelon Event - Used to exchange with Puss the Cat for gourd seeds and watermelon seeds or for growing gourds and watermelons. Nectar",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_nectar_i00",
+    "item_skills": [
+      {
+        "id": 2005,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6392": {
+    "name": "Event - Medal",
+    "description": "L2 Medal Collection Event - If you take it to an Event Manager, he will trade it for a prize item of your choice.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_event_medal_i00",
+    "stackable": true
+  },
+  "6393": {
+    "name": "Event - Glittering Medal",
+    "description": "L2 Medal Collection Event - It is used to raise the grade of a collector during the event.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_event_glitter_medal_i00",
+    "stackable": true
+  },
+  "6394": {
+    "name": "Red Party Mask",
+    "description": "A fashion accessory item that allows you to show a unique appearance.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.etc_party_mask_i01"
+  },
+  "6395": {
+    "name": "Amulet: Chant of Predator",
+    "description": "Amulet required for the Chant of Predator spell. Used by Warcryers. Required level: 48",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 4600,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "6396": {
+    "name": "Amulet: Chant of Eagle",
+    "description": "Amulet needed to learn the Chant of Eagle incantation. Used by Warcryers. Required level: 48",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 4600,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "6397": {
+    "name": "Amulet: Chant of Vampire",
+    "description": "Amulet required for the Chant of Vampire spell. Used by Warcryers. Required level: 44",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 3850,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "6398": {
+    "name": "Spellbook: Body of Avatar",
+    "description": "Spellbook needed to learn Body of Avatar. Used by Bishops. Required level: 48",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 4600,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_white_i00",
+    "stackable": true
+  },
+  "6399": {
+    "name": "Badge of Rabbit",
+    "description": "The badge that indicates that its bearer's event collector grade is \"rabbit.\" Without this badge, one cannot prove one'S-Grade.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_paper_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  }
+}

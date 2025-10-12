@@ -1,0 +1,2474 @@
+{
+  "9400": {
+    "name": "Weapon Master Circlet",
+    "description": "A circlet that can be worn by the Weapon Master class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_weapon_master_circlet_i00"
+  },
+  "9401": {
+    "name": "Dagger Master Circlet",
+    "description": "A circlet that can be worn by the Dagger Master class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_dagger_master_circlet_i00"
+  },
+  "9402": {
+    "name": "Bow Master Circlet",
+    "description": "A circlet that can be worn by the Bow Master class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_bow_master_circlet_i00"
+  },
+  "9403": {
+    "name": "Wizard Circlet",
+    "description": "A circlet that can be worn by the Wizard class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_wizard_circlet_i00"
+  },
+  "9404": {
+    "name": "Summoner Circlet",
+    "description": "A circlet that can be worn by the Summoner class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_summoner_circlet_i00"
+  },
+  "9405": {
+    "name": "Healer Circlet",
+    "description": "A circlet that can be worn by the Healer class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_healer_circlet_i00"
+  },
+  "9406": {
+    "name": "Enchanter Circlet",
+    "description": "A circlet that can be worn by the Enchanter class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_enchanter_circlet_i00"
+  },
+  "9407": {
+    "name": "Weapon Master Circlet (Kamael only)",
+    "description": "A circlet that can be worn by the Kamael Race only, exclusively for the Weapon Master class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_weapon_master_circlet_i00"
+  },
+  "9408": {
+    "name": "Bow Master Circlet (Kamael only)",
+    "description": "A circlet that can be worn by the Kamael Race only, exclusively for the Bow Master class after completion of 2nd or 3rd class transfer. Cannot be worn in a sub job condition. Uses 2 circlet slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_bow_master_circlet_i00"
+  },
+  "9409": {
+    "name": "Black Phantom Mask (Event)",
+    "description": "A Phantom Mask hair accessory accented with black and gold metals. Uses 2 hair accessory slots. This item is designed for use in events only and cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_high_phantom_mask_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9410": {
+    "name": "Human Veteran's Circlet",
+    "description": "A Veteran's Circlet that can be worn by the Human Race only. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "races": [
+          "Human"
+        ]
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessary_human_high_circlet_i00"
+  },
+  "9411": {
+    "name": "Elven Veteran's Circlet",
+    "description": "A Veteran's Circlet that can be worn by Elf Race only. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "races": [
+          "Elf"
+        ]
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessary_elf_high_circlet_i00"
+  },
+  "9412": {
+    "name": "Dark Elven Veteran's Circlet",
+    "description": "A Veteran's Circlet that can be worn by the Dark Elf Race only. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "races": [
+          "DarkElf"
+        ]
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessary_darkelf_high_circlet_i00"
+  },
+  "9413": {
+    "name": "Orcish Veteran's Circlet",
+    "description": "A Veteran's Circlet that can be worn by the Orc Race only. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "races": [
+          "Orc"
+        ]
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessary_orc_high_circlet_i00"
+  },
+  "9414": {
+    "name": "Dwarf Veteran's Circlet",
+    "description": "A Veteran's Circlet that can be worn by the Dwarf Race only. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "races": [
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessary_dwarf_high_circlet_i00"
+  },
+  "9415": {
+    "name": "Kamaelic Veteran's Circlet",
+    "description": "A Veteran's Circlet that can be worn by the Kamael Race only. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessary_kamael_high_circlet_i00"
+  },
+  "9416": {
+    "name": "Dynasty Breast Plate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_u_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9417": {
+    "name": "Dynasty Breast Plate - Shield Master",
+    "description": "Can only be worn by Phoenix Knights, Hell Knights, Eva's Templars and Shillien Templars.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uk_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9418": {
+    "name": "Dynasty Breast Plate - Weapon Master",
+    "description": "Can only be worn by Dreadnoughts, Titans, Fortune Seekers, and Maestros.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uw_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9419": {
+    "name": "Dynasty Breast Plate - Force Master",
+    "description": "Can only be worn by Duelists and Grand Khavataris.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uf_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9420": {
+    "name": "Dynasty Breast Plate - Bard",
+    "description": "Can only be worn by Sword Muses and Spectral Dancers.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uke_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9421": {
+    "name": "Dynasty Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 141
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 15248000,
+    "weight": 3210,
+    "icon": "icon.armor_t91_l_i00",
+    "crystal_count": 731,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9422": {
+    "name": "Dynasty Helmet",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 92
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 9149000,
+    "weight": 530,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 439,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9423": {
+    "name": "Dynasty Gauntlet - Heavy Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6099000,
+    "weight": 520,
+    "icon": "icon.armor_t91_g_i00",
+    "crystal_count": 293,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9424": {
+    "name": "Dynasty Boots - Heavy Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6099000,
+    "weight": 1090,
+    "icon": "icon.armor_t91_b_i00",
+    "crystal_count": 293,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9425": {
+    "name": "Dynasty Leather Armor",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9426": {
+    "name": "Dynasty Leather Armor - Dagger Master",
+    "description": "Can be equipped by Adventurers, Wind Riders, Ghost Hunters, and Fortune Seekers.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ud_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9427": {
+    "name": "Dynasty Leather Armor - Bow Master",
+    "description": "Can only be worn by Sagittarius', Moonlight Sentinels, Ghost Sentinels, and Tricksters.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ub_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9428": {
+    "name": "Dynasty Leather Leggings",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 106
+      }
+    },
+    "price": 11436000,
+    "weight": 1370,
+    "icon": "icon.armor_t92_l_i00",
+    "crystal_count": 549,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9429": {
+    "name": "Dynasty Leather Helmet",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 92
+      }
+    },
+    "price": 9149000,
+    "weight": 530,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 439,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9430": {
+    "name": "Dynasty Leather Gloves - Light Armor",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "price": 6099000,
+    "weight": 520,
+    "icon": "icon.armor_t92_g_i00",
+    "crystal_count": 293,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9431": {
+    "name": "Dynasty Leather Boots - Light Armor",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "price": 6099000,
+    "weight": 1090,
+    "icon": "icon.armor_t92_b_i00",
+    "crystal_count": 293,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9432": {
+    "name": "Dynasty Tunic",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_u_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9433": {
+    "name": "Dynasty Tunic - Healer",
+    "description": "Can only be worn by Cardinals, Eva's Saints, and Shillien Saints.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uh_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9434": {
+    "name": "Dynasty Tunic - Enchanter",
+    "description": "Can only be worn by Hierophants, Dominators and Doom Cryers.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_ue_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9435": {
+    "name": "Dynasty Tunic - Summoner",
+    "description": "Can only be worn by Arcana Lords, Elemental Masters and Spectral Masters.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_us_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9436": {
+    "name": "Dynasty Tunic - Wizard",
+    "description": "Can only be worn by Archmages, Mystic Muses, Storm Screamers and Soul Takers.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uw_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9437": {
+    "name": "Dynasty Stockings",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 71
+      },
+      "MaxMp": {
+        "add": 370
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 11436000,
+    "weight": 860,
+    "icon": "icon.armor_t93_l_i00",
+    "crystal_count": 549,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9438": {
+    "name": "Dynasty Circlet",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 92
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 9149000,
+    "weight": 530,
+    "icon": "icon.armor_circlet_i00",
+    "crystal_count": 439,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9439": {
+    "name": "Dynasty Gloves - Robe",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6099000,
+    "weight": 520,
+    "icon": "icon.armor_t93_g_i00",
+    "crystal_count": 293,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9440": {
+    "name": "Dynasty Shoes - Robe",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6099000,
+    "weight": 1090,
+    "icon": "icon.armor_t93_b_i00",
+    "crystal_count": 293,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9441": {
+    "name": "Dynasty Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 321
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6404000,
+    "weight": 1150,
+    "icon": "icon.shield_dynasty_shield_i00",
+    "crystal_count": 307,
+    "enchantable": true
+  },
+  "9442": {
+    "name": "Dynasty Sword",
+    "description": "Bestows one of the following functions: Focus, Health, or Light.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9376
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_blade_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9443": {
+    "name": "Dynasty Blade",
+    "description": "Bestows one of the following functions: Focus, Health, or Light.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9380
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_twohand_sword_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9444": {
+    "name": "Dynasty Phantom",
+    "description": "Bestows one of the following functions: Acumen, Mana Up, or Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_magic_sword_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9445": {
+    "name": "Dynasty Bow",
+    "description": "Bestows one of the following functions: Cheap Shot, Guidance, or Focus.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 9384,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 654
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_bow_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9446": {
+    "name": "Dynasty Knife",
+    "description": "Bestows one of the following functions: Focus, Evasion, or Critical Damage.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 291
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_dagger_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9447": {
+    "name": "Dynasty Halberd",
+    "description": "Bestows one of the following functions: Anger, Critical Stun, or Light. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 2010,
+    "icon": "icon.weapon_dynasty_spear_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "9448": {
+    "name": "Dynasty Cudgel",
+    "description": "Bestows one of the following functions: Anger, Health, or Rsk. Focus.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_hammer_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9449": {
+    "name": "Dynasty Mace",
+    "description": "Bestows one of the following functions: Mana Up, Conversion, or Acumen.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_staff_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9450": {
+    "name": "Dynasty Bagh-Nakh",
+    "description": "Bestows one of the following functions: Rsk. Evasion, Focus, or Haste.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1550,
+    "icon": "icon.weapon_dynasty_jamadhr_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "9451": {
+    "name": "Dynastic Essence",
+    "description": "Can modify Dynasty garments. When Dynasty garments are modified, you will have more powerful options.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "weight": 60,
+    "icon": "icon.etc_armor_soul_i00",
+    "stackable": true
+  },
+  "9452": {
+    "name": "Sealed Dynasty Earring",
+    "description": "Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is released, M. Def. +15 and MP +50.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 71
+      }
+    },
+    "price": 4032000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i01",
+    "crystal_count": 194,
+    "enchantable": true
+  },
+  "9453": {
+    "name": "Sealed Dynasty Necklace",
+    "description": "Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is released, M. Def. +11 and MP +46.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 95
+      }
+    },
+    "price": 5376000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i01",
+    "crystal_count": 258,
+    "enchantable": true
+  },
+  "9454": {
+    "name": "Sealed Dynasty Ring",
+    "description": "Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma. When the seal is released, M. Def. +7 and MP +23.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 53
+      }
+    },
+    "price": 2688000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i01",
+    "crystal_count": 129,
+    "enchantable": true
+  },
+  "9455": {
+    "name": "Dynasty Earrings",
+    "description": "Produces the effect of MP +35.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 79
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true
+  },
+  "9456": {
+    "name": "Dynasty Necklace",
+    "description": "Produces the effect of MP +46.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 106
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true
+  },
+  "9457": {
+    "name": "Dynasty Ring",
+    "description": "Produces the effect of MP +23.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 60
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true
+  },
+  "9458": {
+    "name": "Dynasty Earrings - Stun Resistance",
+    "description": "Produces the effect of MP +35, Resistance to Stun +12. Dynasty Resistance Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3367,
+        "level": 1
+      }
+    ]
+  },
+  "9459": {
+    "name": "Dynasty Necklace - Stun Resistance",
+    "description": "Produces the effect of MP +46, Resistance to Stun +18. Dynasty Resistance Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3365,
+        "level": 1
+      }
+    ]
+  },
+  "9460": {
+    "name": "Dynasty Ring - Stun Resistance",
+    "description": "Produces the effect of MP +23, Resistance to Stun +8. Dynasty Resistance Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3366,
+        "level": 1
+      }
+    ]
+  },
+  "9461": {
+    "name": "Dynasty Earrings - Poison Resistance",
+    "description": "Produces the effect of MP +35, Resistance to Poison +11. Dynasty Resistance Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3379,
+        "level": 1
+      }
+    ]
+  },
+  "9462": {
+    "name": "Dynasty Necklace - Poison Resistance",
+    "description": "Produces the effect of MP +46, Resistance to Poison +16. Dynasty Resistance Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3377,
+        "level": 1
+      }
+    ]
+  },
+  "9463": {
+    "name": "Dynasty Ring - Poison Resistance",
+    "description": "Produces the effect of MP +23, Resistance to Poison +7. Dynasty Resistance Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3378,
+        "level": 1
+      }
+    ]
+  },
+  "9464": {
+    "name": "Dynasty Earrings - Bleed Resistance",
+    "description": "Produces the effect of MP +35, Bleed Resistance +8. Dynasty Resistance Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3373,
+        "level": 1
+      }
+    ]
+  },
+  "9465": {
+    "name": "Dynasty Necklace - Bleed Resistance",
+    "description": "Produces the effect of MP +46, Bleed Resistance +11. Dynasty Resistance Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3371,
+        "level": 1
+      }
+    ]
+  },
+  "9466": {
+    "name": "Dynasty Ring - Bleed Resistance",
+    "description": "Produces the effect of MP +23, Bleed Resistance +5. Dynasty Resistance Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3372,
+        "level": 1
+      }
+    ]
+  },
+  "9467": {
+    "name": "Dynasty Earrings - Sleep Resistance",
+    "description": "Produces the effect of MP +35, Resistance to Sleep +12. Dynasty Resistance Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3397,
+        "level": 1
+      }
+    ]
+  },
+  "9468": {
+    "name": "Dynasty Necklace - Sleep Resistance",
+    "description": "Produces the effect of MP +46, Resistance to Sleep +18. Dynasty Resistance Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3395,
+        "level": 1
+      }
+    ]
+  },
+  "9469": {
+    "name": "Dynasty Ring - Sleep Resistance",
+    "description": "Produces the effect of MP +23, Resistance to Sleep +8. Dynasty Resistance Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3396,
+        "level": 1
+      }
+    ]
+  },
+  "9470": {
+    "name": "Dynasty Earrings - Paralysis Resistance",
+    "description": "Produces the effect of MP +35, Resistance to Paralysis +6. Dynasty Resistance Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3385,
+        "level": 1
+      }
+    ]
+  },
+  "9471": {
+    "name": "Dynasty Necklace - Paralysis Resistance",
+    "description": "Produces the effect of MP +46, Resistance to Paralysis +9. Dynasty Resistance Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3383,
+        "level": 1
+      }
+    ]
+  },
+  "9472": {
+    "name": "Dynasty Ring - Paralysis Resistance",
+    "description": "Produces the effect of MP +23, Resistance to Paralysis +4. Dynasty Resistance Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3384,
+        "level": 1
+      }
+    ]
+  },
+  "9473": {
+    "name": "Dynasty Earrings - Hold Resistance",
+    "description": "Produces the effect of MP +35, Resistance to Hold +12. Dynasty Resistance Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3391,
+        "level": 1
+      }
+    ]
+  },
+  "9474": {
+    "name": "Dynasty Necklace - Hold Resistance",
+    "description": "Produces the effect of MP +46, Resistance to Hold +18. Dynasty Resistance Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3389,
+        "level": 1
+      }
+    ]
+  },
+  "9475": {
+    "name": "Dynasty Ring - Hold Resistance",
+    "description": "Produces the effect of MP +23, Resistance to Hold +8. Dynasty Resistance Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3390,
+        "level": 1
+      }
+    ]
+  },
+  "9476": {
+    "name": "Dynasty Earrings - Fear Resistance",
+    "description": "Produces the effect of MP +35, Resistance to Fear +6. Dynasty Resistance Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3403,
+        "level": 1
+      }
+    ]
+  },
+  "9477": {
+    "name": "Dynasty Necklace - Fear Resistance",
+    "description": "Produces the effect of MP +46, Resistance to Fear +9. Dynasty Resistance Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3401,
+        "level": 1
+      }
+    ]
+  },
+  "9478": {
+    "name": "Dynasty Ring - Fear Resistance",
+    "description": "Produces the effect of MP +23, Resistance to Fear +4. Dynasty Resistance Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3402,
+        "level": 1
+      }
+    ]
+  },
+  "9479": {
+    "name": "Dynasty Earrings (Not In Use) - Resistance to Dark",
+    "description": "Produces the effect of MP +35, Dark Attack Resistance +6.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 27
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "price": 5956000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "crystal_count": 285,
+    "enchantable": true
+  },
+  "9480": {
+    "name": "Dynasty Necklace (Not In Use) - Resistance to Dark",
+    "description": "Produces the effect of MP +46, Dark Attack Resistance +7.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "price": 7942000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "crystal_count": 381,
+    "enchantable": true
+  },
+  "9481": {
+    "name": "Dynasty Ring (Not In Use) - Resistance to Dark",
+    "description": "Produces the effect of MP +23, Dark Attack Resistance +5.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 18
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "price": 3971000,
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "crystal_count": 190,
+    "enchantable": true
+  },
+  "9482": {
+    "name": "Recipe: Sealed Dynasty Breast Plate (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Breast Plate. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 881,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 488000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9483": {
+    "name": "Recipe: Sealed Dynasty Gaiters (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Gaiter. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 882,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 305000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9484": {
+    "name": "Recipe: Sealed Dynasty Helmet (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Helmet. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 883,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 183000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9485": {
+    "name": "Recipe: Sealed Dynasty Gauntlet (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Gauntlet. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 884,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 122000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9486": {
+    "name": "Recipe: Sealed Dynasty Boots (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Boots. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 885,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 122000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9487": {
+    "name": "Recipe: Sealed Dynasty Leather Armor (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Leather Armor. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 886,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 366000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9488": {
+    "name": "Recipe: Sealed Dynasty Leather Leggings (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Leather Leggings. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 887,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 228700,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9489": {
+    "name": "Recipe: Sealed Dynasty Leather Helmet (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Leather Helmet. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 888,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 183000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9490": {
+    "name": "Recipe: Sealed Dynasty Leather Gloves (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Leather Gloves. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 889,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 122000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9491": {
+    "name": "Recipe: Sealed Dynasty Leather Boots (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Leather Boots. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 890,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 122000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9492": {
+    "name": "Recipe: Sealed Dynasty Tunic (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Tunic. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 891,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 366000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9493": {
+    "name": "Recipe: Sealed Dynasty Stockings (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Stockings. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 892,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 228700,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9494": {
+    "name": "Recipe: Sealed Dynasty Circlet (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Circlet. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 893,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 183000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9495": {
+    "name": "Recipe: Sealed Dynasty Gloves (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Gloves. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 894,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 122000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9496": {
+    "name": "Recipe: Sealed Dynasty Shoes (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Shoes. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 895,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 122000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9497": {
+    "name": "Recipe: Sealed Dynasty Shield (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Shield. Requires Create Item - Level 9. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 896,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 128100,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9498": {
+    "name": "Recipe: Sealed Dynasty Breast Plate (100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Breast Plate. Requires Create Item - Level 9. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 2,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 998000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9499": {
+    "name": "Recipe: Sealed Dynasty Gaiters (100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Gaiter. Requires Create Item - Level 9. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 2,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 624000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  }
+}

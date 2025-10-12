@@ -1,0 +1,9 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+I am Jaedin, the Priest of Shilen who will guide you to the Seed of Infinity under the protection of Great Ekimus.<br>
+Ah, I see you are suspicious of my intentions, You need not be, my friend -- I treat all equally. Why, Because as soon as you enter the Seed of Infinity, all roads lead to the same destination: death.<br>
+Do you still wish to proceed?<br>
+<a action="bypass -h npc_{{ object_id }}_tp 14000">Say yes.</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{% endblock body %}

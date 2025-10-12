@@ -1,0 +1,7 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+We are gatekeepers of space and time, capable of teleporting people to destinations in the mere blink of an eye. Where do you want to go?<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

@@ -1,0 +1,225 @@
+[
+  {
+    "name": "no_boormark_20_26_basetower_inner_01",
+    "kind": "Condition",
+    "min_height": -10736,
+    "max_height": -5736,
+    "points": [
+      {
+        "x": 12080,
+        "y": 274633
+      },
+      {
+        "x": 20523,
+        "y": 274633
+      },
+      {
+        "x": 20553,
+        "y": 284567
+      },
+      {
+        "x": 11947,
+        "y": 284600
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_20_26_basetower_inner_restart_01",
+    "kind": "Condition",
+    "min_height": -10736,
+    "max_height": -5736,
+    "points": [
+      {
+        "x": 12080,
+        "y": 274633
+      },
+      {
+        "x": 20523,
+        "y": 274633
+      },
+      {
+        "x": 20553,
+        "y": 284567
+      },
+      {
+        "x": 11947,
+        "y": 284600
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_20_26",
+    "kind": "Condition",
+    "min_height": -10582,
+    "max_height": -5582,
+    "points": [
+      {
+        "x": 12011,
+        "y": 274571
+      },
+      {
+        "x": 20513,
+        "y": 274738
+      },
+      {
+        "x": 20752,
+        "y": 284698
+      },
+      {
+        "x": 11772,
+        "y": 284821
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_2025",
+    "kind": "Condition",
+    "min_height": -3986,
+    "max_height": 14014,
+    "points": [
+      {
+        "x": 57,
+        "y": 262166
+      },
+      {
+        "x": 32706,
+        "y": 262123
+      },
+      {
+        "x": 32680,
+        "y": 229658
+      },
+      {
+        "x": 91,
+        "y": 229635
+      }
+    ]
+  },
+  {
+    "name": "20_26_basetower_inner_restart_01",
+    "kind": "NoRestart",
+    "min_height": -10736,
+    "max_height": -5736,
+    "points": [
+      {
+        "x": 12080,
+        "y": 274633
+      },
+      {
+        "x": 20523,
+        "y": 274633
+      },
+      {
+        "x": 20553,
+        "y": 284567
+      },
+      {
+        "x": 11947,
+        "y": 284600
+      }
+    ]
+  },
+  {
+    "name": "20_26_basetower_inner_01",
+    "kind": "NoSummonFriend",
+    "min_height": -10736,
+    "max_height": -5736,
+    "points": [
+      {
+        "x": 12080,
+        "y": 274633
+      },
+      {
+        "x": 20523,
+        "y": 274633
+      },
+      {
+        "x": 20553,
+        "y": 284567
+      },
+      {
+        "x": 11947,
+        "y": 284600
+      }
+    ]
+  },
+  {
+    "name": "ironcastle_inner_oasis_20_26",
+    "kind": {
+      "Respawn": {
+        "target_zone_name": ""
+      }
+    },
+    "min_height": -10736,
+    "max_height": -5736,
+    "points": [
+      {
+        "x": 12080,
+        "y": 274633
+      },
+      {
+        "x": 20523,
+        "y": 274633
+      },
+      {
+        "x": 20553,
+        "y": 284567
+      },
+      {
+        "x": 11947,
+        "y": 284600
+      }
+    ]
+  },
+  {
+    "name": "19_25_water1",
+    "kind": "Water",
+    "min_height": -4779,
+    "max_height": -3779,
+    "points": [
+      {
+        "x": -32767,
+        "y": 229376
+      },
+      {
+        "x": 0,
+        "y": 262144
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "20_25_water3",
+    "kind": "Water",
+    "min_height": -4779,
+    "max_height": -3779,
+    "points": [
+      {
+        "x": 0,
+        "y": 254464
+      },
+      {
+        "x": 25600,
+        "y": 262144
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "20_26_water1",
+    "kind": "Water",
+    "min_height": -4780,
+    "max_height": -3780,
+    "points": [
+      {
+        "x": 0,
+        "y": 262144
+      },
+      {
+        "x": 32768,
+        "y": 294912
+      }
+    ],
+    "shape": "Cuboid"
+  }
+]

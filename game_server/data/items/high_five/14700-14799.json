@@ -1,0 +1,2112 @@
+{
+  "14700": {
+    "name": "Greater Healing Potion",
+    "description": "A magical, liquid medicine that greatly restores HP for 15 seconds. Highest Power Healing Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_reagent_white_i00",
+    "item_skills": [
+      {
+        "id": 2863,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "14701": {
+    "name": "Greater Quick Healing Potion",
+    "description": "A magical potion that quickly restores a greater amount HP. Highest Power Quick Healing Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 180,
+    "icon": "icon.etc_potion_gold_i00",
+    "item_skills": [
+      {
+        "id": 2864,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "14702": {
+    "name": "Agathion Auxiliary Stone: Enchant Weapon (D-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a D-Grade weapon by 20%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. Lucky Clover - D-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_wp_stone_i00",
+    "item_skills": [
+      {
+        "id": 2515,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14703": {
+    "name": "Agathion Auxiliary Stone: Enchant Weapon (C-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a C-Grade weapon by 18%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. Lucky Clover - C-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_wp_stone_i01",
+    "item_skills": [
+      {
+        "id": 2516,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14704": {
+    "name": "Agathion Auxiliary Stone: Enchant Weapon (B-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a B-Grade weapon by 15%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. Lucky Clover - B-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_wp_stone_i02",
+    "item_skills": [
+      {
+        "id": 2517,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14705": {
+    "name": "Agathion Auxiliary Stone: Enchant Weapon (A-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a A-Grade weapon by 12%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. Lucky Clover - A-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_wp_stone_i03",
+    "item_skills": [
+      {
+        "id": 2518,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14706": {
+    "name": "Agathion Auxiliary Stone: Enchant Weapon (S-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a S-Grade weapon by 10%. This can only be used on weapons that have been enchanted more than 3 times, but less than 9 times. Lucky Clover - S-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_wp_stone_i04",
+    "item_skills": [
+      {
+        "id": 2519,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14707": {
+    "name": "Agathion Auxiliary Stone: Enchant Armor (D-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a D-Grade armor by 35%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. Lucky Clover - D-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "grade": "D",
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_am_stone_i00",
+    "item_skills": [
+      {
+        "id": 2520,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14708": {
+    "name": "Agathion Auxiliary Stone: Enchant Armor (C-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a C-Grade armor by 27%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. Lucky Clover - C-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "grade": "C",
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_am_stone_i01",
+    "item_skills": [
+      {
+        "id": 2521,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14709": {
+    "name": "Agathion Auxiliary Stone: Enchant Armor (B-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a B-Grade armor by 23%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. Lucky Clover - B-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "grade": "B",
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_am_stone_i02",
+    "item_skills": [
+      {
+        "id": 2522,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14710": {
+    "name": "Agathion Auxiliary Stone: Enchant Armor (A-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a A-Grade armor by 18%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. Lucky Clover - A-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "grade": "A",
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_am_stone_i03",
+    "item_skills": [
+      {
+        "id": 2523,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14711": {
+    "name": "Agathion Auxiliary Stone: Enchant Armor (S-Grade)",
+    "description": "The Agathion Auxiliary Stone raises the ability to enchant a S-Grade armor by 15%. This can only be used on armor that have been enchanted more than 3 times but less than 9 times. For one-piece armor this item can only be used on armor that has been enchanted more than 4 times but less than 9 times. Lucky Clover - S-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "grade": "S",
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.ench_am_stone_i04",
+    "item_skills": [
+      {
+        "id": 2524,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14712": {
+    "name": "Cow Hair Accessory",
+    "description": "Hair accessory in the shape of a cow head.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.Accessory2_cow_of_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14713": {
+    "name": "Greater Elixir Gift Box (No-Grade)",
+    "description": "A wrapped gift containing an assortment of Greater Elixirs (No-Grade). Double-click this item in order to receive Greater Elixirs.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14682,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14688,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14694,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14714": {
+    "name": "Greater Elixir Gift Box (D-Grade)",
+    "description": "A wrapped gift containing an assortment of Greater Elixirs (D-Grade). Double-click this item in order to receive Greater Elixirs.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14683,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14689,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14695,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i08",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14715": {
+    "name": "Greater Elixir Gift Box (C-Grade)",
+    "description": "A wrapped gift containing an assortment of Greater Elixirs (C-Grade). Double-click this item in order to receive Greater Elixirs.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14684,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14690,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14696,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14716": {
+    "name": "Greater Elixir Gift Box (B-Grade)",
+    "description": "A wrapped gift containing an assortment of Greater Elixirs (B-Grade). Double-click this item in order to receive Greater Elixirs.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14685,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14691,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14697,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14717": {
+    "name": "Greater Elixir Gift Box (A-Grade)",
+    "description": "A wrapped gift containing an assortment of Greater Elixirs (A-Grade). Double-click this item in order to receive Greater Elixirs.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14686,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14692,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14698,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14718": {
+    "name": "Greater Elixir Gift Box (S-Grade)",
+    "description": "A wrapped gift containing an assortment of Greater Elixirs (S-Grade). Double-click this item in order to receive Greater Elixirs.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14687,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14693,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14699,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14719": {
+    "name": "Full Vitality Event Pack",
+    "description": "A wrapped package that contains 1 Agathion Seal Bracelet - Neolithica. Cannot be exchanged or dropped. Can use a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14675,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "14720": {
+    "name": "Event - Apiga",
+    "description": "A common form of currency accepted at the Magic Research Institute. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pig_adena_i01",
+    "dropable": false,
+    "stackable": true
+  },
+  "14721": {
+    "name": "Event - Golden Apiga",
+    "description": "A rare form of currency accepted at the Magic Research Institute. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pig_adena_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14722": {
+    "name": "Event - Cupid's Fatigue Recovery Potion",
+    "description": "Decreases fatigue when used on a cow. Cupid's Cure",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_faitgue_relief_of_cupid_i00",
+    "item_skills": [
+      {
+        "id": 2867,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "14723": {
+    "name": "Event - Cupid's Powerful Fatigue Recovery Potion",
+    "description": "Decreases fatigue when used on a cow. It has a better effect than Cupid's Fatigue Recovery Potion. Cupid's Enhanced Cure",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_nutrients_of_cupid_i00",
+    "item_skills": [
+      {
+        "id": 2868,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "14724": {
+    "name": "Event - Milk Cow Summon Scroll",
+    "description": "Scroll that summons a Milk Cow. If you relieve the Milk Cow's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - Milk Cow Summon Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_milkcattle_i00",
+    "item_skills": [
+      {
+        "id": 2869,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "14725": {
+    "name": "Event - Head Milk Cow Summon Scroll",
+    "description": "Scroll that summons a Head Milk Cow. If you relieve the Head Milk Cow's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - Head Milk Cow Summon Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_milkcattle_b_i00",
+    "item_skills": [
+      {
+        "id": 2870,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "14726": {
+    "name": "Event - Gloomy Milk Cow Summon Scroll",
+    "description": "Scroll that summons a Gloomy Milk Cow. Can sometimes transform into a Bull while trying to recover the Milk Cow. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - Gloomy Milk Cow Summon Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_milkcattle_i00",
+    "item_skills": [
+      {
+        "id": 2880,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "14727": {
+    "name": "Event - Gloomy Head Milk Cow Summon Scroll",
+    "description": "Scroll that summons a Gloomy Head Milk Cow. Can sometimes transform into a Head Bull while trying to recover the Milk Cow. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - Gloomy Head Milk Cow Summon Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_milkcattle_b_i00",
+    "item_skills": [
+      {
+        "id": 2881,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "14728": {
+    "name": "Event - Orr Cube - 30-day limited period",
+    "description": "The Orb Cube can be used once a day for 30 days. Upon double-clicking this item you will receive a Cubic Piece that can be used while speaking with a Warehouse Keeper. No exchange/drop/server removal available. Wondrous Cubic",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Fish",
+    "icon": "icon.etc_ore_cube_event_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 2510,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14729": {
+    "name": "Event - Crystal Cube",
+    "description": "Cube that can be used 1 time. You can obtain a Crystal Cube fragment by double clicking. No drop available. Crystal Cube",
+    "kind": {
+      "Package": []
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "icon.etc_crystal_cube_event_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14730": {
+    "name": "Event - Gold Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_golden_ore_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14731": {
+    "name": "Event - Silver Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_silver_ore_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14732": {
+    "name": "Event - Bronze Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_cupreous_ore_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14733": {
+    "name": "Event - Black Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_earthen_ore_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14734": {
+    "name": "Event - Clear Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_clear_crystal_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14735": {
+    "name": "Event - Purple Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_violet_crystal_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14736": {
+    "name": "Event - Pink Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_pink_crystal_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14737": {
+    "name": "Event - Dark Brown Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_dkbrown_crystal_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14738": {
+    "name": "Event - Black Crystal Cube Fragment",
+    "description": "You can confirm the use of this item by talking to the warehouse keeper. No drop available.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_black_crystal_cube_pc_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14739": {
+    "name": "Event - Fresh Milk",
+    "description": "Freshly collected milk. When used, you can feel the effects of Might, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Shield, Focus, Death Whisper, Guidance, Clarity, Wild Magic, and Concentration for 1 hour. Might",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_fresh_milk_i00",
+    "item_skills": [
+      {
+        "id": 2873,
+        "level": 1
+      },
+      {
+        "id": 2874,
+        "level": 1
+      },
+      {
+        "id": 2875,
+        "level": 1
+      },
+      {
+        "id": 2876,
+        "level": 1
+      },
+      {
+        "id": 2877,
+        "level": 1
+      },
+      {
+        "id": 2878,
+        "level": 1
+      },
+      {
+        "id": 2879,
+        "level": 1
+      },
+      {
+        "id": 2885,
+        "level": 1
+      },
+      {
+        "id": 2886,
+        "level": 1
+      },
+      {
+        "id": 2887,
+        "level": 1
+      },
+      {
+        "id": 2888,
+        "level": 1
+      },
+      {
+        "id": 2889,
+        "level": 1
+      },
+      {
+        "id": 2890,
+        "level": 1
+      },
+      {
+        "id": 2891,
+        "level": 6
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "14740": {
+    "name": "Event - Save the Cow Event Pack",
+    "description": "An even pack that can be obtained once every 12 hours per account. In order to use this item, double click it and you will obtain the Milk Cow Summon Scroll and 'Cupid's Fatigue Recovery Potion' that are needed for the event. No exchange available.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14722,
+          "min": 60,
+          "max": 60,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14723,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14724,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14725,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_jewel_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14741": {
+    "name": "Event - Vitality Replenishing Herb Tea 5 minutes",
+    "description": "When you drink it, you can temporarily feel the energy recovery herb's effect. Can be exchanged.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_hot_spring_sulfur_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14742": {
+    "name": "Event - Vitality Replenishing Herb Tea 10 minutes",
+    "description": "When used, you can feel the energy recovery herb's effect for 10 minutes. But there is no effect when the \"Birthday Gift\" buff is applied. No drop available. Vitality Replenishing Herb Tea",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_hot_spring_nectar_i00",
+    "item_skills": [
+      {
+        "id": 2883,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "stackable": true
+  },
+  "14743": {
+    "name": "Event - Vitality Replenishing Herb Tea 20 minutes",
+    "description": "When used, you can feel the energy recovery herb's effect for 20 minutes. But there is no effect when the \"Birthday Gift\" buff is applied. No drop available. Vitality Replenishing Herb Tea",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_hot_spring_mineral_i00",
+    "item_skills": [
+      {
+        "id": 2884,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "stackable": true
+  },
+  "14744": {
+    "name": "Event - Vitality Replenishing Herb Tea 30 minutes",
+    "description": "When you drink it, you can temporarily feel the energy recovery herb's effect. Cannot be exchanged, dropped, or destroyed. Vitality Replenishing Herb Tea",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_hot_spring_sulfur_i00",
+    "item_skills": [
+      {
+        "id": 9166,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14745": {
+    "name": "Event - Vitality Replenishing Herb Tea 60 minutes",
+    "description": "When you drink it, you can temporarily feel the energy recovery herb's effect. Can be exchanged.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_hot_spring_sulfur_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "14746": {
+    "name": "For Events - Refined Chick Hat",
+    "description": "Refined chick shaped hat. Uses 2 hair accessory slots. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chicken_cap2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14747": {
+    "name": "For Events - Refined Black Feather Mask",
+    "description": "Refined Black Feather Mask. Uses 2 hair accessory slots. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_black_feather_mask2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14748": {
+    "name": "For Events - Refined Carnival Circlet",
+    "description": "Refined Carnival Circlet. Uses 2 hair accessory slots. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_carnival_circlet2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14749": {
+    "name": "Afro Perm Wig",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_pig_cap_i00"
+  },
+  "14750": {
+    "name": "Bamboo Hat",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_pig_cap_i00"
+  },
+  "14751": {
+    "name": "Smart Glasses",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_pig_cap_i00"
+  },
+  "14752": {
+    "name": "For Events - Refined Medieval Style Party Mask",
+    "description": "Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_middle_age_party_mask2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14753": {
+    "name": "Shadow Item - Refined Chick Hat - Blessed Escape",
+    "description": "Refined chick shaped hat. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chicken_cap2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14754": {
+    "name": "Shadow Item - Refined Chick Hat - Big Head",
+    "description": "Refined chick shaped hat. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chicken_cap2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14755": {
+    "name": "Shadow Item - Refined Chick Hat - Firework",
+    "description": "Refined chick shaped hat. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chicken_cap2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14756": {
+    "name": "Shadow Item - Refined Black Feather Mask - Blessed Escape",
+    "description": "Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_black_feather_mask2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14757": {
+    "name": "Shadow Item - Refined Black Feather Mask - Big Head",
+    "description": "Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_black_feather_mask2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14758": {
+    "name": "Shadow Item - Refined Black Feather Mask - Firework",
+    "description": "Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_black_feather_mask2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14759": {
+    "name": "Shadow Item - Refined Carnival Circlet - Blessed Escape",
+    "description": "Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_carnival_circlet2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14760": {
+    "name": "Shadow Item - Refined Carnival Circlet - Big Head",
+    "description": "Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_carnival_circlet2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14761": {
+    "name": "Shadow Item - Refined Carnival Circlet - Firework",
+    "description": "Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_carnival_circlet2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14762": {
+    "name": "Shadow Item - Refined Medieval Style Party Mask - Blessed Escape",
+    "description": "Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Can use the skill Blessed Return after equipping. Cannot be exchanged or dropped. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_middle_age_party_mask2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14763": {
+    "name": "Shadow Item - Refined Medieval Style Party Mask - Big Head",
+    "description": "Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. Cannot be exchanged or dropped. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_middle_age_party_mask2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14764": {
+    "name": "Shadow Item - Refined Medieval Style Party Mask - Firework",
+    "description": "Refined Medieval Style Party Mask. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. Cannot be exchanged or dropped. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_middle_age_party_mask2_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14765": {
+    "name": "For Events - Extra Entrance Pass - Rim Kamaloka",
+    "description": "Entrance pass that lets you enter Near Kamaloka for a second time. Can cancel the limit on entrance if used while a limit on entrance to Rim Kamaloka exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Cannot be exchanged, dropped, or destroyed. Event - Extra Entrance Pass - Rim Kamaloka",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.ticket_i00",
+    "time": 1440,
+    "item_skills": [
+      {
+        "id": 2892,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14766": {
+    "name": "Special White Day Candy Basket",
+    "description": "Candy basket for showing your heart on White Day. Contains 5 White Day candies. Can receive a bonus limited item (coronet, suit, Agathion - Juju) occasionally. Cannot be dropped or destroyed. Cannot be registered at a private shop. Special White Day Candy Basket",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "icon": "icon.etc_candy_basket_i01",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "14767": {
+    "name": "White Day Candy Basket",
+    "description": "Candy basket for showing your heart on White Day. Contains 1 White Day candies. Can receive a bonus limited item (Kat the Cat Hat, Agathion Seal Bracelet - Love) occasionally. Cannot be dropped or destroyed. Cannot be registered at a private shop. White Day Candy Basket",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "icon": "icon.etc_candy_basket_i00",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "14768": {
+    "name": "White Day Solo Package",
+    "description": "White Day gift box for solo players. Contains 1 solo escape petition. Can receive a bonus limited item (wild rose pig candy) occasionally. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14770,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14774,
+          "min": 1,
+          "max": 1,
+          "chance": 80.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_treasure_box_i08",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "14769": {
+    "name": "White Day Candy",
+    "description": "White Day candy filled with a loving heart. Energy is fully replenished upon use. Duration for reuse: 60 minutes. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop. White Day Candy",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_whiteday_candy_i00",
+    "item_skills": [
+      {
+        "id": 2894,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "14770": {
+    "name": "Solo Escape Petition",
+    "description": "Fragrant grass that wishes for a solo player's escape. Energy is maintained for 10 minutes upon use. Re-use time is 30 minutes. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop. Solo Escape Petition",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_candle_yellow_i00",
+    "item_skills": [
+      {
+        "id": 2893,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "14771": {
+    "name": "Kat the Cat Hat - 14-day limited period",
+    "description": "Hat that looks like Kat the Cat. Uses 2 hair accessory slots. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "icon": "icon.accessory_cat_the_cat_cap_i00",
+    "time": 20160,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14772": {
+    "name": "Coronet",
+    "description": "Formal bridal hair accessory. Exclusive female hair accessory that cannot be equipped by males. Uses 2 hair accessory slots. No restore after deletion available for this item.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_flower_cap_i00",
+    "depositable": false
+  },
+  "14773": {
+    "name": "Suit - 14-day limited period",
+    "description": "Tuxedo for males and wedding gown for females. When equipped, armor is cancelled and cannot be used. However, hair accessories, weapons, and magic armor are not cancelled. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "MaxMp": {
+        "add": 15
+      }
+    },
+    "icon": "icon.armor_t2000_ul_i00",
+    "time": 20160,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14774": {
+    "name": "Wild Rose Pig Candy - 14-day limited period",
+    "description": "Even if I'm lonely or sad, I won't cry~ Let's laugh and run through the lush field~. When equipped, can find oneself laughing and running. Can use the head enlarging skill after equipped, and Speed increases by 20. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. Wild Rose Pig Candy",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.etc_pig_candy_i00",
+    "time": 20160,
+    "item_skills": [
+      {
+        "id": 8325,
+        "level": 1
+      },
+      {
+        "id": 8326,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "14775": {
+    "name": "Agathion Seal Bracelet - Love - 14-day limited period",
+    "description": "Can summon an Agathion of Love when equipped. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. Wink",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 20160,
+    "item_skills": [
+      {
+        "id": 5763,
+        "level": 1
+      },
+      {
+        "id": 8245,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14776": {
+    "name": "Agathion Seal Bracelet - Juju - 14-day limited period",
+    "description": "Can summon a Juju Agathion when equipped. Can be used for 14 days. Cannot be exchanged or dropped. No restore after deletion available for this item. Agathion Cute Trick - Juju",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "icon": "icon.high_agathion_bracelet_i01",
+    "time": 20160,
+    "item_skills": [
+      {
+        "id": 6136,
+        "level": 1
+      },
+      {
+        "id": 8327,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 6137,
+        "level": 1
+      },
+      {
+        "id": 6138,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14777": {
+    "name": "Baguette's Herb",
+    "description": "For 10 minutes, increases Max HP and increases some HP Regeneration. Cannot be exchanged or dropped. Baguette's Herb",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2897,
+        "level": 1
+      }
+    ],
+    "depositable": false
+  },
+  "14778": {
+    "name": "Fresh Cream Herb",
+    "description": "For 10 minutes, increases Max MP and HP. Increases P. Def., M. Def., Resistance to debuff., Atk. Spd., Casting Spd., and Speed. Cannot be exchanged or dropped. Fresh Cream Herb",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2898,
+        "level": 1
+      }
+    ],
+    "depositable": false
+  },
+  "14779": {
+    "name": "Cheesecake Herb",
+    "description": "For 10 minutes, increases Max MP and increases some MP Regeneration. Cannot be exchanged or dropped. Cheesecake Herb",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2899,
+        "level": 1
+      }
+    ],
+    "depositable": false
+  },
+  "14780": {
+    "name": "Baguette's Bread Sword",
+    "description": "Sword made of bread. Contains Baguette's joy. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "material": "Damascus",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_samurai_longsword_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14781": {
+    "name": "Baguette's Dagger",
+    "description": "Dagger made of bread. Contains Baguette's tears. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "range": 1,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      }
+    },
+    "weight": 1130,
+    "icon": "icon.weapon_dagger_i00",
+    "depositable": false
+  },
+  "14782": {
+    "name": "Baguette's Two-handed Sword",
+    "description": "Two-handed sword made of bread. Contains Baguette's passion. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "range": 2,
+        "soulshots": 2,
+        "spiritshots": 2
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      }
+    },
+    "weight": 2250,
+    "icon": "icon.weapon_two_handed_sword_i00",
+    "depositable": false
+  },
+  "14783": {
+    "name": "Baguette's Mace",
+    "description": "Mace made of bread. Contains Baguette's pain. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "range": 3,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_iron_hammer_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14784": {
+    "name": "Baguette's Two-handed Hammer",
+    "description": "Hammer made of bread. Can feel Baguette's melancholy. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "range": 4,
+        "soulshots": 2,
+        "spiritshots": 2
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      }
+    },
+    "weight": 2080,
+    "icon": "icon.weapon_barakiel_axe_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14785": {
+    "name": "Baguette's Spear",
+    "description": "Spear made of bread. Can feel Baguette's loneliness. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "range": 5,
+        "soulshots": 2,
+        "spiritshots": 2
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      }
+    },
+    "weight": 2120,
+    "icon": "icon.weapon_short_spear_i00",
+    "depositable": false
+  },
+  "14786": {
+    "name": "Baguette's Bow",
+    "description": "Bow made of bread. Can feel Baguette's vigorous energy. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "range": 6,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "mp_consume": 2
+      }
+    },
+    "material": "Crystal",
+    "stats": {
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      }
+    },
+    "weight": 1790,
+    "icon": "icon.weapon_short_bow_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14787": {
+    "name": "Baguette's Fist",
+    "description": "Hand-to-hand combat weapon made of bread. Can feel Baguette's persevering disposition. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "range": 7,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_foxs_nail_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14788": {
+    "name": "Baguette's Magic Sword",
+    "description": "Magic sword made of bread. Contains Baguette's madness. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "range": 8,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "magical": true
+      }
+    },
+    "material": "Mithril",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      }
+    },
+    "weight": 830,
+    "icon": "icon.weapon_samurai_longsword_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14789": {
+    "name": "Baguette's Staff",
+    "description": "Staff made of bread. Contains Baguette's wisdom. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "range": 9,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      }
+    },
+    "weight": 990,
+    "icon": "icon.weapon_apprentices_wand_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14790": {
+    "name": "Baguette's Two-handed Staff",
+    "description": "Two-handed staff made of bread. Contains Baguette's tears. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "range": 10,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      }
+    },
+    "weight": 340,
+    "icon": "icon.weapon_willow_staff_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14791": {
+    "name": "Baguette's Shield",
+    "description": "Shield made of bread. Can feel Baguette's sorrow. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Bone",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 90
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 460,
+    "icon": "icon.shield_leather_shield_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "14792": {
+    "name": "Baguette's Rapier",
+    "description": "Rapier made of bread. Contains Baguette's sigh. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "range": 12,
+        "soulshots": 2,
+        "spiritshots": 2
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_rapier_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14793": {
+    "name": "Baguette's Ancient Sword",
+    "description": "Ancient Sword made of bread. Can feel Baguette's regret. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "range": 13,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_tulwar_i00",
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "14794": {
+    "name": "Baguette's Crossbow",
+    "description": "Crossbow made of bread. Contains Baguette's anger. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "range": 14,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1580,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "14795": {
+    "name": "Baguette's Dualsword",
+    "description": "Two-handed sword made of bread. Two-handed sword containing Baguett's great power. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "range": 15,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "14796": {
+    "name": "Baguette's Sigil",
+    "description": "Sigil made of bread. Can feel Baguette's ease. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": "Sigil"
+    },
+    "material": "Steel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 930,
+    "icon": "icon.dynasty_sigil_i00",
+    "enchantable": true,
+    "depositable": false
+  },
+  "14797": {
+    "name": "Baguette's Two-handed Dagger",
+    "description": "Two-handed dagger made of bread. Can feel Baguette's sharpness. No exchange, drop, or sale available. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "range": 17,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      }
+    },
+    "weight": 2150,
+    "icon": "icon.dual_dagger_i00",
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "14798": {
+    "name": "Afro Perm Wig - Black",
+    "description": "Lush Afro perm hair. Cannot undo equip",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Paper",
+    "icon": "icon.accessory_captain_cap_i00",
+    "depositable": false,
+    "pet_useable": true
+  },
+  "14799": {
+    "name": "Afro Perm Wig - Gold",
+    "description": "Lush Afro perm hair. Cannot undo equip",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Paper",
+    "icon": "icon.accessory_captain_cap_i00",
+    "depositable": false,
+    "pet_useable": true
+  }
+}

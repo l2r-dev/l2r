@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+Hello! I am Valentina the gatekeeper, dispatched from the Ivory Tower! Some think the Ivory Tower is plotting to
+dominate the world, while others think it is just a den of crazy old men! Haha!<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

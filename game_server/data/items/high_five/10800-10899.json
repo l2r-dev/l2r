@@ -1,0 +1,3115 @@
+{
+  "10800": {
+    "name": "Draconic Leather Armor {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 249
+      }
+    },
+    "price": 15577000,
+    "weight": 4950,
+    "icon": "icon.armor_t89_ul_i00",
+    "crystal_count": 748,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10801": {
+    "name": "Major Arcana Robe {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 166
+      },
+      "MaxMp": {
+        "add": 866
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 15577000,
+    "weight": 2300,
+    "icon": "icon.armor_t90_ul_i00",
+    "crystal_count": 748,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10802": {
+    "name": "Dynasty Breastplate {PvP}",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_u_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10803": {
+    "name": "Dynasty Breastplate {PvP} - Shield Master",
+    "description": "Phoenix Knight, Hell Knight, Eva's Templar and Shillien Templar can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uk_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10804": {
+    "name": "Dynasty Breastplate {PvP} - Weapon Master",
+    "description": "Dreadnought, Titan, Fortune Seeker and Maestro can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uw_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10805": {
+    "name": "Dynasty Breastplate {PvP} - Force Master",
+    "description": "Duelist and Grand Khavatari can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uf_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10806": {
+    "name": "Dynasty Breastplate {PvP} - Bard",
+    "description": "Sword Muse and Spectral Dancer can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 24398000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uke_i00",
+    "crystal_count": 1171,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10807": {
+    "name": "Dynasty Leather Armor {PvP}",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10808": {
+    "name": "Dynasty Leather Armor {PvP} - Dagger Master",
+    "description": "Can be equipped by Adventurers, Wind Riders, Ghost Hunters, and Fortune Seekers.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ud_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10809": {
+    "name": "Dynasty Leather Armor {PvP} - Bow Master",
+    "description": "Sagittarius, Moonlight Sentinel, Ghost Sentinel and Trickster can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ub_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10810": {
+    "name": "Dynasty Tunic {PvP}",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_u_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10811": {
+    "name": "Dynasty Tunic {PvP} - Healer",
+    "description": "Cardinals, Eva's Saints and Shillien Saints can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uh_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10812": {
+    "name": "Dynasty Tunic {PvP} - Enchanter",
+    "description": "Hierophants, Dominators and Doom Cryers can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_ue_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10813": {
+    "name": "Dynasty Tunic {PvP} - Summoner",
+    "description": "Arcana Lord, Elemental Master and Spectral Master can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_us_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10814": {
+    "name": "Dynasty Tunic {PvP} - Wizard",
+    "description": "Archmage, Mystic Muse, Storm Screamer and Soul Taker can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uw_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10815": {
+    "name": "Dynasty Leather Armor {PvP} - Force Master",
+    "description": "Duelist and Grand Khavatari can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ud_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10816": {
+    "name": "Dynasty Leather Armor {PvP} - Weapon Master",
+    "description": "Dreadnought, Titan, Fortune Seeker, Maestro, Doombringer and Soul Hound can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ub_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10817": {
+    "name": "Dynasty Leather Armor {PvP} - Enchanter",
+    "description": "Hierophant, Dominator, Doom Cryer and Judicator can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ud_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10818": {
+    "name": "Dynasty Leather Armor {PvP} - Summoner",
+    "description": "Arcana Lord, Elemental Master and Spectral Master can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10819": {
+    "name": "Dynasty Platinum Breastplate {PvP}",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_u_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10820": {
+    "name": "Dynasty Platinum Breastplate {PvP} - Shield Master",
+    "description": "Phoenix Knight, Hell Knight, Eva's Templar and Shillien Templar can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uk_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10821": {
+    "name": "Dynasty Platinum Breastplate {PvP} - Weapon Master",
+    "description": "Dreadnought, Titan, Fortune Seeker and Maestro can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uw_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10822": {
+    "name": "Dynasty Platinum Breastplate {PvP} - Force Master",
+    "description": "Duelist and Grand Khavatari can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uf_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10823": {
+    "name": "Dynasty Platinum Breastplate {PvP} - Bard",
+    "description": "Sword Muse and Spectral Dancer can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uke_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10824": {
+    "name": "Dynasty Jewel Leather Armor {PvP}",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10825": {
+    "name": "Dynasty Jewel Leather Armor {PvP} - Dagger Master",
+    "description": "Can be equipped by Adventurers, Wind Riders, Ghost Hunters, and Fortune Seekers.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ud_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10826": {
+    "name": "Dynasty Jewel Leather Armor {PvP} - Bow Master",
+    "description": "Sagittarius, Moonlight Sentinel, Ghost Sentinel and Trickster can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ub_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10827": {
+    "name": "Dynasty Silver Satin Tunic {PvP}",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10828": {
+    "name": "Dynasty Silver Satin Tunic {PvP} - Healer",
+    "description": "Cardinals, Eva's Saints and Shillien Saints can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uh_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10829": {
+    "name": "Dynasty Silver Satin Tunic {PvP} - Enchanter",
+    "description": "Hierophants, Dominators and Doom Cryers can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_ue_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10830": {
+    "name": "Dynasty Silver Satin Tunic {PvP} - Summoner",
+    "description": "Arcana Lord, Elemental Master and Spectral Master can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_us_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10831": {
+    "name": "Dynasty Silver Satin Tunic {PvP} - Wizard",
+    "description": "Archmage, Mystic Muse, Storm Screamer and Soul Taker can wear it.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uw_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10832": {
+    "name": "Dynasty Jewel Leather Armor {PvP} - Force Master",
+    "description": "Duelist and Grand Khavatari can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10833": {
+    "name": "Dynasty Jewel Leather Armor {PvP} - Weapon Master",
+    "description": "Dreadnought, Titan, Fortune Seeker, Maestro, Doombringer and Soul Hound can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10834": {
+    "name": "Dynasty Jewel Leather Armor {PvP} - Enchanter",
+    "description": "Hierophant, Dominator, Doom Cryer and Judicator can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10835": {
+    "name": "Dynasty Jewel Leather Armor {PvP} - Summoner",
+    "description": "Arcana Lord, Elemental Master and Spectral Master can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10836": {
+    "name": "Pathfinder Supplies (Level 2)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10837": {
+    "name": "Pathfinder Supplies (Level 4)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10838": {
+    "name": "Pathfinder Supplies (Level 5)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10839": {
+    "name": "Pathfinder Supplies (Level 6)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10840": {
+    "name": "Pathfinder Supplies (Level 7)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10841": {
+    "name": "Pathfinder Supplies (Level 8)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10842": {
+    "name": "Pathfinder Supplies (Level 11)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10843": {
+    "name": "Pathfinder Supplies (Level 12)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10844": {
+    "name": "Pathfinder Supplies (Level 13)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10845": {
+    "name": "Pathfinder Supplies (Level 14)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10846": {
+    "name": "Pathfinder Supplies (Level 15)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10847": {
+    "name": "Pathfinder Supplies (Level 18)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10848": {
+    "name": "Pathfinder Supplies (Level 19)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10849": {
+    "name": "Pathfinder Supplies (Level 20)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10850": {
+    "name": "Pathfinder Supplies (Level 21)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10851": {
+    "name": "Pathfinder Supplies (Level 22)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10852": {
+    "name": "Pathfinder Supplies (Level 25)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10853": {
+    "name": "Pathfinder Supplies (Level 26)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10854": {
+    "name": "Pathfinder Supplies (Level 27)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10855": {
+    "name": "Pathfinder Supplies (Level 28)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10856": {
+    "name": "Pathfinder Supplies (Level 29)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10857": {
+    "name": "Pathfinder Supplies (Level 32)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10858": {
+    "name": "Pathfinder Supplies (Level 33)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10859": {
+    "name": "Pathfinder Supplies (Level 34)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10860": {
+    "name": "Pathfinder Supplies (Level 35)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10861": {
+    "name": "Pathfinder Supplies (Level 36)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10862": {
+    "name": "Pathfinder Supplies (Level 38)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10863": {
+    "name": "Pathfinder Supplies (Level 39)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10864": {
+    "name": "Pathfinder Supplies (Level 40)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10865": {
+    "name": "Pathfinder Supplies (Level 41)",
+    "description": "Faded Supply Box. Double-click for a chance to receive an item. Cannot be exchanged or dropped. Pathfinder Supplies",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10866": {
+    "name": "Energy Ore",
+    "description": "An energy ore that is found in the eastern region's mining area. It is used as an experimental ingredient in Inventor Maru's energy conversion device.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_crystal_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10867": {
+    "name": "Bloody Cloth Fragment",
+    "description": "A piece of cloth soaked with Mark's blood. It is needed to determine the type of poison.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_piece_of_cloth_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10868": {
+    "name": "Helvetia's Antidote",
+    "description": "Antidote purchased from Helvetia. Give it to Mark.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_potion_yellow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10869": {
+    "name": "Contaminated Kasha Spider Venom",
+    "description": "Kasha Spider venom that has been contaminated by Kasha, the evil spirit of decay and death. Collect them and bring them to Trader Kunai.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_potion_yellow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10870": {
+    "name": "Great Sword - Lightning",
+    "description": "Masterwork Item that increases Critical Rate. Bestows one of the following functions: Health, Critical Damage, or Focus. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10882
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_great_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 1
+      }
+    ]
+  },
+  "10871": {
+    "name": "Great Sword - Lightning - Health",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Max HP by 25%. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10883
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_great_sword_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "10872": {
+    "name": "Great Sword - Lightning - Critical Damage",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases P. Atk. by 247 on a critical attack. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10884
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_great_sword_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 1
+      },
+      {
+        "id": 3023,
+        "level": 5
+      }
+    ]
+  },
+  "10873": {
+    "name": "Great Sword - Lightning - Focus",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Critical by 68. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10885
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_great_sword_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 1
+      },
+      {
+        "id": 3010,
+        "level": 5
+      }
+    ]
+  },
+  "10874": {
+    "name": "Great Axe - Thunder",
+    "description": "Masterwork Item that increases Critical Damage. Bestows one of the following functions: Anger, Critical Stun, or Light. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "10875": {
+    "name": "Great Axe - Thunder - Anger",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Decreases Max HP by 15%, and increases P. Atk. by 28. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 1
+      },
+      {
+        "id": 3600,
+        "level": 5
+      }
+    ]
+  },
+  "10876": {
+    "name": "Great Axe - Thunder - Critical Stun",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Has a 27% chance of casting Stun on a critical attack. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "10877": {
+    "name": "Great Axe - Thunder - Light",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Polearm Multi-attack",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3873,
+        "level": 1
+      }
+    ]
+  },
+  "10878": {
+    "name": "Sword of Limit*Sword of Limit - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Attack by 127. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2140,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10879": {
+    "name": "Sword of Limit*Sword of Delusion - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Max HP by 25%. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2140,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10880": {
+    "name": "Sword of Limit*Sword of Nightmare - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Attack by 54. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2130,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10881": {
+    "name": "Sword of Limit*Tsurugi - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Atk. Spd. by 5%. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2120,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10882": {
+    "name": "Innominate Victory - Lightning",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword. Bestows one of the following functions: Health, Crit. Damage or Focus. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10870
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_nameless_victory_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 1
+      }
+    ]
+  },
+  "10883": {
+    "name": "Innominate Victory - Lightning - Health",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10871
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_nameless_victory_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "10884": {
+    "name": "Innominate Victory - Lightning - Critical Damage",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword Conversion. <Soul Crystal Enhancement>. Increases P. Atk. by 247 on a critical attack. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10872
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_nameless_victory_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 1
+      },
+      {
+        "id": 3023,
+        "level": 5
+      }
+    ]
+  },
+  "10885": {
+    "name": "Innominate Victory - Lightning - Focus",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Great Sword Conversion. <Soul Crystal Enhancement>. Increases Critical by 68. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10873
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 6680500,
+    "weight": 1930,
+    "icon": "icon.weapon_nameless_victory_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 1
+      },
+      {
+        "id": 3010,
+        "level": 5
+      }
+    ]
+  },
+  "10886": {
+    "name": "Dark Elven Long Bow - Concentration",
+    "description": "Masterwork Item that increases Accuracy. Bestows one of the following functions: Evasion, Crt.Bleed, Miser. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10934,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 6680500,
+    "weight": 1720,
+    "icon": "icon.weapon_dark_elven_long_bow_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 1
+      }
+    ]
+  },
+  "10887": {
+    "name": "Dark Elven Long Bow - Concentration - Evasion",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Evasion by 2. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10935,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 6680500,
+    "weight": 1720,
+    "icon": "icon.weapon_dark_elven_long_bow_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 1
+      },
+      {
+        "id": 3009,
+        "level": 5
+      }
+    ]
+  },
+  "10888": {
+    "name": "Dark Elven Long Bow - Concentration - Critical Bleed",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Inflicts Bleed on the target with a 41% rate of chance during a general critical attack. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10936,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 6680500,
+    "weight": 1720,
+    "icon": "icon.weapon_dark_elven_long_bow_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 1
+      }
+    ]
+  },
+  "10889": {
+    "name": "Dark Elven Long Bow - Concentration - Miser",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Has a 19% chance of reducing the number of soulshots consumed to 2. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10937,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 6680500,
+    "weight": 1720,
+    "icon": "icon.weapon_dark_elven_long_bow_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 1
+      }
+    ]
+  },
+  "10890": {
+    "name": "Sword of Delusion*Sword of Delusion - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Accuracy by 4. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2150,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10891": {
+    "name": "Sword of Delusion*Sword of Nightmare - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Attack by 127. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2130,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10892": {
+    "name": "Sword of Delusion*Tsurugi - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Max HP by 25%. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2140,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10893": {
+    "name": "Sword of Valhalla - Nature",
+    "description": "Masterwork Item that increases Max MP. Bestows one of the following functions: Acumen, Magic Weakness, or Magic Regeneration. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 1
+      }
+    ]
+  },
+  "10894": {
+    "name": "Sword of Valhalla - Nature - Acumen",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "10895": {
+    "name": "Sword of Valhalla - Nature - Magic Weakness",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Has a 7% chance of casting Curse Weakness when using a magic skill on the target. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 11
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 1
+      }
+    ]
+  },
+  "10896": {
+    "name": "Sword of Valhalla - Nature - Magic Regeneration",
+    "description": "Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Has a 30% chance of casting Regeneration when using a magic skill on the target. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1044,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 1
+      }
+    ]
+  },
+  "10897": {
+    "name": "Stormbringer*Samurai Long Sword - Destruction",
+    "description": "Masterwork Item that increases P. Atk. . When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Accuracy by 4. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2150,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 1
+      }
+    ]
+  },
+  "10898": {
+    "name": "Spell Breaker - Hail",
+    "description": "Masterwork Item that increases M. Atk. Bestows one of the following functions: Acumen, Mental Shield, or Magic Hold. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 1620,
+    "icon": "icon.weapon_spell_breaker_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 1
+      }
+    ]
+  },
+  "10899": {
+    "name": "Spell Breaker - Hail - Acumen",
+    "description": "Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 1620,
+    "icon": "icon.weapon_spell_breaker_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  }
+}

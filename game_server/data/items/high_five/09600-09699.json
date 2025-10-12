@@ -1,0 +1,1962 @@
+{
+  "9600": {
+    "name": "Hidden First Page",
+    "description": "The first hidden page of the Devil's Old Book.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_hidden_1st_page_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9601": {
+    "name": "Hidden Second Page",
+    "description": "The second hidden page of the Devil's Old Book.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_hidden_2nd_page_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9602": {
+    "name": "Demon Contract Fragment",
+    "description": "The devil's contract hidden within the Devil's Old Book.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_old_evil_book_piece_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9603": {
+    "name": "Hellbound Item 5",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_talisman_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9604": {
+    "name": "Hellbound Item 6",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_talisman_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9605": {
+    "name": "Agathion Seal Bracelet - Rainbow Clan Hall",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns the Rainbow Clan Hall. This item cannot be exchanged or dropped. Performing Agathion - Rainbow Clan Hall",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "price": 7000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5414,
+        "level": 1
+      },
+      {
+        "id": 3269,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9606": {
+    "name": "Agathion Seal Bracelet - Wild Beast Reserve",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns the Wild Beast Reserve. This item cannot be exchanged or dropped. Performing Agathion - Beast Farm",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "price": 7000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5413,
+        "level": 1
+      },
+      {
+        "id": 3270,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9607": {
+    "name": "Agathion Seal Bracelet - Gludio",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Gludio Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Gludio"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9608": {
+    "name": "Agathion Seal Bracelet - Dion",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Dion Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Dion"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9609": {
+    "name": "Agathion Seal Bracelet - Giran",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Giran Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Giran"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9610": {
+    "name": "Agathion Seal Bracelet - Oren",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Oren Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Oren"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9611": {
+    "name": "Agathion Seal Bracelet - Aden",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Aden Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Aden"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9612": {
+    "name": "Agathion Seal Bracelet - Innadril",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Innadril Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Innadril"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9613": {
+    "name": "Agathion Seal Bracelet - Goddard",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Goddard Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Goddard"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9614": {
+    "name": "Agathion Seal Bracelet - Rune",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Rune Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Rune"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9615": {
+    "name": "Agathion Seal Bracelet - Schuttgart",
+    "description": "A bracelet that can summon Agathion. Wearable only by members of a clan that owns Schuttgart Castle. This item cannot be exchanged or dropped. Performing Agathion - Castle",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "conditions": {
+      "player": {
+        "castle": "Schuttgart"
+      }
+    },
+    "price": 30000000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 5415,
+        "level": 1
+      },
+      {
+        "id": 3268,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9616": {
+    "name": "Dynasty Sword Piece",
+    "description": "A key material that Dwarves use to make Dynasty Sword. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 239800,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "9617": {
+    "name": "Dynasty Blade Piece",
+    "description": "A key material that Dwarves use to make Dynasty Blade. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 239800,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "9618": {
+    "name": "Dynasty Phantom Piece",
+    "description": "A key material that Dwarves use to make Dynasty Phantom. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 239800,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "9619": {
+    "name": "Dynasty Bow Piece",
+    "description": "A key material that Dwarves use to make Dynasty Bow. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 238200,
+    "weight": 60,
+    "icon": "icon.etc_branch_gold_i00",
+    "stackable": true
+  },
+  "9620": {
+    "name": "Dynasty Knife Piece",
+    "description": "A key material that Dwarves use to make Dynasty Knife. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 240000,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "9621": {
+    "name": "Dynasty Halberd Piece",
+    "description": "A key material that Dwarves use to make Dynasty Halberd. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 238700,
+    "weight": 60,
+    "icon": "icon.etc_squares_silver_i00",
+    "stackable": true
+  },
+  "9622": {
+    "name": "Dynasty Cudgel Piece",
+    "description": "A key material that Dwarves use to make Dynasty Cudgel. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 247700,
+    "weight": 60,
+    "icon": "icon.etc_squares_silver_i00",
+    "stackable": true
+  },
+  "9623": {
+    "name": "Dynasty Mace Piece",
+    "description": "A key material that Dwarves use to make Dynasty Mace. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 247700,
+    "weight": 60,
+    "icon": "icon.etc_squares_silver_i00",
+    "stackable": true
+  },
+  "9624": {
+    "name": "Dynasty Bagh-Nakh Piece",
+    "description": "A key material that Dwarves use to make Dynasty Bagh-Nakh. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 247700,
+    "weight": 60,
+    "icon": "icon.etc_squares_silver_i00",
+    "stackable": true
+  },
+  "9625": {
+    "name": "Giant's Codex - Oblivion",
+    "description": "An item required to restore a previous enchantment.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_codex_of_giant_i01",
+    "stackable": true
+  },
+  "9626": {
+    "name": "Giant's Codex - Discipline",
+    "description": "An item required to change an enchantment path.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_codex_of_giant_i02",
+    "stackable": true
+  },
+  "9627": {
+    "name": "Giant's Codex - Mastery",
+    "description": "An item required for blessed skill enchanting.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_codex_of_giant_i03",
+    "stackable": true
+  },
+  "9628": {
+    "name": "Leonard",
+    "description": "Material used to build Dwarven items. Can be sold at an ordinary store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 25500,
+    "weight": 2,
+    "icon": "icon.etc_high_gem_black_i00",
+    "stackable": true
+  },
+  "9629": {
+    "name": "Adamantine",
+    "description": "Material used to build Dwarven items. Can be sold at an ordinary store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 46000,
+    "weight": 2,
+    "icon": "icon.etc_adamantium_i00",
+    "stackable": true
+  },
+  "9630": {
+    "name": "Orichalcum",
+    "description": "Material used to build Dwarven items. Can be sold at an ordinary store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 38000,
+    "weight": 2,
+    "icon": "icon.etc_oricalcum_i00",
+    "stackable": true
+  },
+  "9631": {
+    "name": "Tough Leather",
+    "description": "Material used to build Dwarven items. Can be sold at an ordinary store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 90000,
+    "weight": 2,
+    "icon": "icon.etc_hightes_leather_i00",
+    "stackable": true
+  },
+  "9632": {
+    "name": "Wooden Bolt",
+    "description": "Can be used as a bolt for a no-grade crossbow.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Bolt"
+      }
+    },
+    "material": "Wood",
+    "price": 2,
+    "weight": 6,
+    "icon": "icon.etc_wooden_bolt_i00",
+    "stackable": true
+  },
+  "9633": {
+    "name": "Bone Bolt",
+    "description": "Can be used as a bolt for a D-grade crossbow. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Bolt"
+      }
+    },
+    "grade": "D",
+    "material": "Bone",
+    "price": 3,
+    "weight": 5,
+    "icon": "icon.etc_bone_bolt_i00",
+    "stackable": true
+  },
+  "9634": {
+    "name": "Steel Bolt",
+    "description": "Can be used as a bolt for a C-grade crossbow. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Bolt"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "price": 5,
+    "weight": 4,
+    "icon": "icon.etc_fine_steel_bolt_i00",
+    "stackable": true
+  },
+  "9635": {
+    "name": "Silver Bolt",
+    "description": "This silver-plated steel bolt can be used with a B-grade crossbow. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Bolt"
+      }
+    },
+    "grade": "B",
+    "material": "Silver",
+    "price": 7,
+    "weight": 4,
+    "icon": "icon.etc_silver_bolt_i00",
+    "stackable": true
+  },
+  "9636": {
+    "name": "Mithril Bolt",
+    "description": "This mithril-plated steel bolt can be used with a A-grade crossbow. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Bolt"
+      }
+    },
+    "grade": "A",
+    "material": "Mithril",
+    "price": 8,
+    "weight": 3,
+    "icon": "icon.etc_mithril_bolt_i00",
+    "stackable": true
+  },
+  "9637": {
+    "name": "Shining Bolt",
+    "description": "This bolt, made of unknown material, can be used with a S-grade cross bow. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Bolt"
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "price": 10,
+    "weight": 3,
+    "icon": "icon.etc_shining_bolt_i00",
+    "stackable": true
+  },
+  "9638": {
+    "name": "Tears r1",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9639": {
+    "name": "Tears r2",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9640": {
+    "name": "Tears r3",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9641": {
+    "name": "Tears l1",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9642": {
+    "name": "Tears l2",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9643": {
+    "name": "Tears l3",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9644": {
+    "name": "For NPC (Crossbow)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1530,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "9645": {
+    "name": "For NPC (Sword)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1530,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "9646": {
+    "name": "For NPC (Rapier)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1530,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "9647": {
+    "name": "Scroll of Escape: Kamael Village",
+    "description": "A magical scroll that relocates you to the Kamael Village. Cannot be sold in shops. Escape - Talking Island Village",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 35000,
+    "weight": 30,
+    "icon": "icon.etc_scroll_of_return_i00",
+    "item_skills": [
+      {
+        "id": 2213,
+        "level": 22
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "9648": {
+    "name": "Transformation Sealbook: Onyx Beast",
+    "description": "This book contains a spell to magically transform yourself into an Onyx Beast.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 21600,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9649": {
+    "name": "Transformation Sealbook: Death Blader",
+    "description": "This book contains a spell to magically transform yourself into a Death Blader.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9650": {
+    "name": "Transformation Sealbook: Grail Apostle",
+    "description": "This book contains a spell to magically transform a hidden race ability into a form that can be used.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 21600,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9651": {
+    "name": "Transformation Sealbook: Unicorn",
+    "description": "This book contains a spell to magically transform a hidden race ability into a form that can be used.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 21600,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9652": {
+    "name": "Transformation Sealbook: Lilim Knight",
+    "description": "This book contains a spell to magically transform a hidden race ability into a form that can be used.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 21600,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9653": {
+    "name": "Transformation Sealbook: Golem Guardian",
+    "description": "This book contains a spell to magically transform a hidden race ability into a form that can be used.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 21600,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9654": {
+    "name": "Transformation Sealbook: Inferno Drake",
+    "description": "This book contains a spell to magically transform a hidden race ability into a form that can be used.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 21600,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9655": {
+    "name": "Transformation Sealbook: Dragon Bomber",
+    "description": "This book contains a spell to magically transform a hidden race ability into a form that can be used.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 21600,
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "9656": {
+    "name": "Enchanted Wolf Fang",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 233
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 1838000,
+    "weight": 100,
+    "icon": "icon.etc_wolf_r_d_01",
+    "pet_useable": true
+  },
+  "9657": {
+    "name": "Enchanted Coyote Fang",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 289
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 3404500,
+    "weight": 100,
+    "icon": "icon.etc_wolf_r_d_01",
+    "pet_useable": true
+  },
+  "9658": {
+    "name": "Enchanted Saltydog Fang",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 350
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 6379000,
+    "weight": 100,
+    "icon": "icon.etc_wolf_r_d_01",
+    "pet_useable": true
+  },
+  "9659": {
+    "name": "Enchanted Cerberus Fang",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 413
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 10579500,
+    "weight": 100,
+    "icon": "icon.etc_wolf_r_d_01",
+    "pet_useable": true
+  },
+  "9660": {
+    "name": "Orichalcum Fang",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 477
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 18876000,
+    "weight": 100,
+    "icon": "icon.etc_wolf_r_d_01",
+    "pet_useable": true
+  },
+  "9661": {
+    "name": "Enchanted Fenrir Fang",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 537
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 34319000,
+    "weight": 100,
+    "icon": "icon.etc_wolf_r_d_01",
+    "pet_useable": true
+  },
+  "9662": {
+    "name": "Great Wolf Scale Armor",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 112
+      }
+    },
+    "price": 938500,
+    "weight": 160,
+    "icon": "icon.etc_wolf_r_a_01",
+    "pet_useable": true
+  },
+  "9663": {
+    "name": "Great Wolf Bronze Armor",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 124
+      }
+    },
+    "price": 1810000,
+    "weight": 160,
+    "icon": "icon.etc_wolf_r_a_01",
+    "pet_useable": true
+  },
+  "9664": {
+    "name": "Great Wolf Plate Armor",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 136
+      }
+    },
+    "price": 3563000,
+    "weight": 160,
+    "icon": "icon.etc_wolf_r_a_01",
+    "pet_useable": true
+  },
+  "9665": {
+    "name": "Great Wolf Mithril Armor",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 148
+      }
+    },
+    "price": 6281500,
+    "weight": 160,
+    "icon": "icon.etc_wolf_r_a_01",
+    "pet_useable": true
+  },
+  "9666": {
+    "name": "Great Wolf Oriharukon Armor",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 160
+      }
+    },
+    "price": 12118000,
+    "weight": 160,
+    "icon": "icon.etc_wolf_r_a_01",
+    "pet_useable": true
+  },
+  "9667": {
+    "name": "Great Wolf Orichalcum Armor",
+    "description": "Double-click to wear. Only for great wolves and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 171
+      }
+    },
+    "price": 24439500,
+    "weight": 160,
+    "icon": "icon.etc_wolf_r_a_01",
+    "pet_useable": true
+  },
+  "9668": {
+    "name": "Great Wolf Food",
+    "description": "Automatically ingested when a Great Wolf's hunger gauge drops below 55%. H5 Price Evolving Wolf's Food",
+    "kind": {
+      "Pet": "Consumable"
+    },
+    "material": "Liquid",
+    "price": 1000,
+    "weight": 10,
+    "icon": "icon.etc_pouch_yellow_i00",
+    "item_skills": [
+      {
+        "id": 2361,
+        "level": 1
+      }
+    ],
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9669": {
+    "name": "Native Helmet",
+    "description": "When you use this with Native Tunic and Pants, you can transform into a Native. Transformation will be cancelled if unequipped. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 33
+      }
+    },
+    "weight": 70,
+    "icon": "icon.armor_leather_helmet_i00",
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9670": {
+    "name": "Native Tunic",
+    "description": "When you use this with Native Helmet and Pants, you can transform into a Native. Transformation will be cancelled if unequipped.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 53
+      }
+    },
+    "weight": 4720,
+    "icon": "icon.armor_t34_u_i00",
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9671": {
+    "name": "Native Pants",
+    "description": "When you use this with Native Helmet and Tunic, you can transform into a Native. Transformation will be cancelled if unequipped.",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 29
+      }
+    },
+    "weight": 1700,
+    "icon": "icon.armor_t34_l_i00",
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9672": {
+    "name": "Magic Bottle",
+    "description": "Bottle that can hold the Chimera's M. Atk. Magic Bottle",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_magical_bottle_i00",
+    "item_skills": [
+      {
+        "id": 2359,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9673": {
+    "name": "Holy Water",
+    "description": "Allows you to lay to rest ghosts in a temple. Holy Water",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_holy_water_i00",
+    "item_skills": [
+      {
+        "id": 2358,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9674": {
+    "name": "Darion's Badge",
+    "description": "The spiritual force of Beleth's followers that is carried as a token. Whoever possesses this permit can travel freely throughout Hellbound whether he is a follower of Beleth, a native, or anyone else.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_hs_agit_war_joining_certificate_i00",
+    "stackable": true
+  },
+  "9675": {
+    "name": "Prayer Fragment",
+    "description": "This fragment of an ancient prayer might be valuable to someone.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 1500,
+    "weight": 20,
+    "icon": "icon.etc_piece_of_paper_white_i00",
+    "stackable": true
+  },
+  "9676": {
+    "name": "Mark of Betrayal",
+    "description": "A token that says you killed betrayers of Caravans.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 3000,
+    "weight": 20,
+    "icon": "icon.etc_ketra_friendship_2_i00",
+    "stackable": true
+  },
+  "9677": {
+    "name": "Ring of Wind Mastery",
+    "description": "This ring permits you to withstand strong gusts of wind. Divine Protection of Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "B",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 36
+      }
+    },
+    "price": 616000,
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_mana_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3319,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9678": {
+    "name": "Magic Gem",
+    "description": "This is a key to open other dimensions.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 50000,
+    "weight": 10,
+    "icon": "icon.etc_magical_stone_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9679": {
+    "name": "Steel Citadel Blueprints",
+    "description": "These blueprints are extremely difficult to obtain.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_plan_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9680": {
+    "name": "Dim Life Force",
+    "description": "Life Force absorbed from the Chimera.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_magic_energy_i00",
+    "stackable": true
+  },
+  "9681": {
+    "name": "Life Force",
+    "description": "Life Force absorbed from the Chimera.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_magic_energy_i01",
+    "stackable": true
+  },
+  "9682": {
+    "name": "Contained Life Force",
+    "description": "Life Force absorbed from the Chimera Celtus.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_magic_energy_i02",
+    "stackable": true
+  },
+  "9683": {
+    "name": "Sand Worm Tooth",
+    "description": "This is an excellent item to use when bartering with caravans.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_claw_i00",
+    "stackable": true
+  },
+  "9684": {
+    "name": "Native Treasure",
+    "description": "This can be found in a secret underground room in the town.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 20000,
+    "weight": 20,
+    "icon": "icon.etc_jewel_box_i00",
+    "stackable": true
+  },
+  "9685": {
+    "name": "Gate Key: Darkness",
+    "description": "This key contains a Symbol of Darkness. Gate Key of Darkness",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "icon.etc_old_key_i03",
+    "item_skills": [
+      {
+        "id": 2354,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "9686": {
+    "name": "Gate Key: Destruction",
+    "description": "This key can open the Destruction Gate. Gate Key of Destruction",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "icon.etc_old_key_i03",
+    "item_skills": [
+      {
+        "id": 2355,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "9687": {
+    "name": "Gate Key: Blood",
+    "description": "This key bleeds continually. Gate Key of Blood",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "icon.etc_old_key_i03",
+    "item_skills": [
+      {
+        "id": 2356,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "9688": {
+    "name": "Ballista Bomb",
+    "description": "You can use this to destroy Ballista and gain reputation. Ballista Bomb",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_dynamite_i00",
+    "item_skills": [
+      {
+        "id": 2342,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "9689": {
+    "name": "Spirit of the Lake",
+    "description": "A spirit that is used to recover HP of Fafurion Families. Spirit of the Lake",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_talisman_i01",
+    "item_skills": [
+      {
+        "id": 2368,
+        "level": 1
+      }
+    ],
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9690": {
+    "name": "Contaminated Crystal",
+    "description": "A black and murky crystal. Needed in order to enter Crystal Caverns",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_crystal_cave_crystal_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "9691": {
+    "name": "Water Dragon Scale",
+    "description": "Scales of Fafurion Families, which can harm certain targets. Has no effect when used on the wrong targets. Water Dragon Scale",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_water_dragon_scale_i00",
+    "item_skills": [
+      {
+        "id": 2369,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9692": {
+    "name": "Red Coral",
+    "description": "A Red Coral Fragment which extends time. Used at Crystal Caverns Steam Corridor.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_red_coral_i00",
+    "stackable": true
+  },
+  "9693": {
+    "name": "Crystal Fragment",
+    "description": "A Crystalline Golem Shard. Can be used in Crystal Caverns Coral Garden.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_crystal_piece_i00",
+    "stackable": true
+  },
+  "9694": {
+    "name": "Secret Key",
+    "description": "A key used to open a Secret Gate. Box Key",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "icon.etc_old_key_i03",
+    "item_skills": [
+      {
+        "id": 2065,
+        "level": 8
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9695": {
+    "name": "Blue Crystal",
+    "description": "A Crystal attained by killing Darnel. It may be used to save Parme.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_crystal_cave_crystal_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9696": {
+    "name": "Red Crystal",
+    "description": "A Crystal attained by killing Kechi. It may be used to save Parme.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_crystal_cave_crystal_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9697": {
+    "name": "Clear Crystal",
+    "description": "A Crystal attained by killing Tears. It may be used to save Parme.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_crystal_cave_crystal_i0",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9698": {
+    "name": "Blue Coral Key",
+    "description": "A key to open the Sapphire Gate. Blue Coral Key",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "icon.etc_crystal_cave_key_i01",
+    "item_skills": [
+      {
+        "id": 2366,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9699": {
+    "name": "Red Coral Key",
+    "description": "A key used to open the Gate that leads to the Steam Corridor. Red Coral Key",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "icon.etc_crystal_cave_key_i02",
+    "item_skills": [
+      {
+        "id": 2367,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  }
+}

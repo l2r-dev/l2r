@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+This village has been a strategic point for politics, the economy, and the military all over the northern parts of this greate continent.<br>
+What brings you to the Town of Rune?<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

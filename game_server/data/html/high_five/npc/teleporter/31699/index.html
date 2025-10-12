@@ -1,0 +1,9 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+Since the Rune Township is so big, Alicia and I were picked to help in a crisis.<br>
+I have to stay inside, but she is out in the weather in front of the temple! I see I'm boring you. Shall I guide you to
+the temple?<br>
+<a action="bypass -h npc_{{ object_id }}_chat tp">Teleport</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{% endblock body %}

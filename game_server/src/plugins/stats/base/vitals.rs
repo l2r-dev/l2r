@@ -1,0 +1,244 @@
+use bevy::{log, platform::collections::HashMap, prelude::*};
+use config::Config;
+use game_core::{
+    action::wait_kind::WaitKind,
+    attack::{AttackingList, Dead, DeadTimer},
+    character::Character,
+    encounters::EnteredWorld,
+    network::{
+        broadcast::ServerPacketBroadcast,
+        packets::server::{GameServerPacket, Revive, UserInfoUpdated},
+    },
+    object_id::ObjectId,
+    stats::*,
+};
+use l2r_core::chronicles::CHRONICLE;
+use state::StatKindSystems;
+use std::path::PathBuf;
+use strum::IntoEnumIterator;
+
+pub struct VitalsStatsPlugin;
+impl Plugin for VitalsStatsPlugin {
+    fn build(&self, app: &mut App) {
+        app.add_plugins(VitalsStatsComponentsPlugin);
+
+        app.add_systems(Startup, load_assets)
+            .add_systems(Update, update_stats_table);
+
+        app.add_observer(resurrect_handle)
+            .add_observer(full_restore_trigger_handle);
+
+        app.add_systems(
+            Update,
+            on_required_components_changed
+                .in_set(StatKindSystems::Vitals)
+                .before(stats_changed),
+        )
+        .add_systems(Update, stats_changed.in_set(StatKindSystems::Vitals))
+        .add_systems(
+            Update,
+            full_restore_event_handle
+                .in_set(StatKindSystems::Vitals)
+                .after(stats_changed),
+        )
+        .add_systems(
+            Update,
+            vitals_regeneration
+                .in_set(StatKindSystems::Vitals)
+                .after(full_restore_event_handle),
+        );
+    }
+}
+
+const VITALS_REGEN_PERIOD: f32 = 3.0;
+
+fn vitals_regeneration(
+    mut vitals_stats: Query<(Mut<VitalsStats>, Ref<WaitKind>, Ref<Movable>), Without<Dead>>,
+    time: Res<Time>,
+    config: Res<Config>,
+    mut last_time: Local<f32>,
+) {
+    let time_spent = time.elapsed_secs() - *last_time;
+    if time_spent >= VITALS_REGEN_PERIOD {
+        *last_time = time.elapsed_secs();
+
+        vitals_stats
+            .par_iter_mut()
+            .for_each(|(mut stats, wait_kind, movable)| {
+                let vitals_multiplier = if *wait_kind == WaitKind::Sit {
+                    1.5
+                } else if movable.is_running() && movable.is_moving() {
+                    0.7
+                } else if !movable.is_moving() {
+                    1.1
+                } else {
+                    1.0
+                };
+
+                let vitals_multiplier = vitals_multiplier * config.gameplay().regen_rate;
+
+                let hp_regen = stats.get(&VitalsStat::HpRegen) * vitals_multiplier;
+                let mp_regen = stats.get(&VitalsStat::MpRegen) * vitals_multiplier;
+                let cp_regen = stats.get(&VitalsStat::CpRegen) * vitals_multiplier;
+
+                let current_hp = stats.get(&VitalsStat::Hp);
+                let current_mp = stats.get(&VitalsStat::Mp);
+                let current_cp = stats.get(&VitalsStat::Cp);
+
+                let max_hp = stats.get(&VitalsStat::MaxHp);
+                let max_mp = stats.get(&VitalsStat::MaxMp);
+                let max_cp = stats.get(&VitalsStat::MaxCp);
+
+                if current_hp < max_hp {
+                    let new_hp = (current_hp + hp_regen).min(max_hp);
+                    stats.insert(VitalsStat::Hp, new_hp);
+                }
+
+                if current_mp < max_mp {
+                    let new_mp = (current_mp + mp_regen).min(max_mp);
+                    stats.insert(VitalsStat::Mp, new_mp);
+                }
+
+                if current_cp < max_cp {
+                    let new_cp = (current_cp + cp_regen).min(max_cp);
+                    stats.insert(VitalsStat::Cp, new_cp);
+                }
+            });
+    }
+}
+
+fn stats_changed(
+    mut commands: Commands,
+    mut query: Query<
+        (
+            Entity,
+            Ref<ObjectId>,
+            Mut<VitalsStats>,
+            Has<Character>,
+            Has<EnteredWorld>,
+        ),
+        Changed<VitalsStats>,
+    >,
+    attackers_lists: Query<Ref<AttackingList>>,
+) {
+    for (entity, object_id, mut vitals_stats, character, entered_world) in query.iter_mut() {
+        if character && !entered_world {
+            continue;
+        }
+        for variant in vitals_stats.changed_stats() {
+            if *variant == VitalsStat::Hp && vitals_stats.dead() {
+                let killer_entity = match attackers_lists.get(entity) {
+                    Ok(list) => list.last_attacker().unwrap_or(entity),
+                    Err(_) => entity, // No attackers list means self-damage or environmental damage
+                };
+                commands.trigger_targets(Dead::new(killer_entity), entity);
+            }
+        }
+
+        let status_update = vitals_stats.diff_status_update(*object_id);
+        if let Some(status_update) = status_update {
+            commands.trigger_targets(
+                ServerPacketBroadcast::new(GameServerPacket::from(status_update)),
+                entity,
+            );
+        }
+    }
+}
+
+fn on_required_components_changed(mut args: StatsCalcParams<VitalsStats>) -> Result<()> {
+    for entity in args.calc_components_changed.iter() {
+        if let Ok((stats_query, mut self_stats, in_world)) = args.query.get_mut(entity) {
+            if stats_query.character && in_world.is_none() {
+                continue;
+            }
+            let base_stats = if !stats_query.character {
+                let npc_model = args.npc_info.get(entity)?;
+                Some(&npc_model.stats.vitals)
+            } else {
+                let Some(sub_class) = stats_query.sub_class.as_deref() else {
+                    continue;
+                };
+                args.stats_table
+                    .vitals_stats(sub_class.class_id(), stats_query.progress_level.level())
+            };
+            let params = StatsCalculateParams::from_query(&stats_query, &args.formula_registry);
+            let changed = self_stats.calculate(params, base_stats.map(|stats| stats.current()));
+            if changed.is_some() && stats_query.character {
+                args.user_info_updated.write(UserInfoUpdated(entity));
+            }
+        }
+    }
+    Ok(())
+}
+
+fn load_assets(asset_server: Res<AssetServer>, mut stats_table: ResMut<StatsTable>) {
+    let mut vitals_table = VitalsStatsHandlers::from(HashMap::new());
+
+    for class_id in ClassId::iter() {
+        let mut path = PathBuf::from("vitals_stats");
+        path.push(CHRONICLE);
+        path.push(format!("{class_id}"));
+        path.set_extension("json");
+        let handle: Handle<LeveledVitalsStats> = asset_server.load(path.clone());
+        vitals_table.insert(class_id, handle);
+    }
+    stats_table.vitals_stats = vitals_table;
+}
+
+fn update_stats_table(
+    mut stats_table: ResMut<StatsTable>,
+    mut events: EventReader<AssetEvent<LeveledVitalsStats>>,
+) {
+    for event in events.read() {
+        match event {
+            AssetEvent::Modified { id } => {
+                for (class_id, handler) in stats_table.vitals_stats.iter() {
+                    if handler.id() == *id {
+                        log::debug!("Vitals stats updated for {}", class_id);
+                    }
+                }
+            }
+            AssetEvent::LoadedWithDependencies { id: _ } => {
+                stats_table.init_vitals_stats();
+            }
+            _ => {}
+        }
+    }
+}
+
+fn full_restore_trigger_handle(
+    full_restore: Trigger<FullVitalsRestore>,
+    mut full_restorers: Query<Mut<VitalsStats>>,
+) -> Result<()> {
+    let entity = full_restore.target();
+    full_restorers.get_mut(entity)?.fill_current_from_max();
+    Ok(())
+}
+
+fn full_restore_event_handle(
+    mut full_restore: EventReader<FullVitalsRestore>,
+    mut full_restorers: Query<Mut<VitalsStats>>,
+) -> Result<()> {
+    for event in full_restore.read() {
+        bevy::log::debug!("Entity {:?} triggered full restore", event.entity());
+        let entity = event.entity();
+        full_restorers.get_mut(entity)?.fill_current_from_max();
+    }
+    Ok(())
+}
+
+fn resurrect_handle(
+    ressurect: Trigger<Resurrect>,
+    mut ressurectors: Query<Ref<ObjectId>>,
+    mut commands: Commands,
+) -> Result<()> {
+    let entity = ressurect.target();
+    let object_id = ressurectors.get_mut(entity)?;
+    commands.trigger_targets(FullVitalsRestore::from(entity), entity);
+    commands.entity(entity).remove::<(Dead, DeadTimer)>();
+    commands.trigger_targets(
+        ServerPacketBroadcast::new(Revive::new(*object_id).into()),
+        entity,
+    );
+    Ok(())
+}

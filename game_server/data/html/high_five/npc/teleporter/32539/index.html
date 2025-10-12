@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+You sense an icy cold gaze fixed on you from a gigantic structure that seems somehow not quite alive nor dead.<br>
+The only way to enter the <font color="LEVEL">heart of the Seed of Infinity</font> is to pass this Judgment of Silence, which can freeze even the bravest soul. If you are weak and avoid the gaze, you will be <font color="LEVEL">expelled from the Seed of Infinity.</font><br>
+<a action="bypass -h npc_{{ object_id }}_chat 1">Withstand the gaze.</a><br>
+<a action="bypass -h npc_{{ object_id }}_tp 14001">Avoid the gaze.</a>
+{% endblock body %}

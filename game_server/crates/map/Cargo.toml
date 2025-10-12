@@ -1,0 +1,25 @@
+[package]
+name = "map"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { workspace = true }
+bevy_common_assets = { workspace = true }
+avian3d = { workspace = true }
+
+l2r_core = { path = "../../../core" }
+
+spatial = { path = "../spatial" }
+
+rand = { workspace = true }
+serde = { workspace = true }
+strum = { workspace = true }
+derive_more = { workspace = true }
+bevy_enum_tag = { workspace = true }
+
+
+[features]
+default = ["high_five"]
+interlude = ["l2r_core/interlude"]
+high_five = ["l2r_core/high_five"]

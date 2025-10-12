@@ -1,0 +1,3330 @@
+{
+  "11400": {
+    "name": "Blue Wolf Gloves - Light Armor Use",
+    "description": "Masterwork Item that increases P. Def. Blue Wolf Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 590,
+    "icon": "icon.armor_t69_g_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3717,
+        "level": 1
+      }
+    ]
+  },
+  "11401": {
+    "name": "Blue Wolf Gloves - Robe",
+    "description": "Masterwork Item that increases Max MP and MP Recovery Rate. Blue Wolf Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 590,
+    "icon": "icon.armor_t70_g_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3720,
+        "level": 1
+      }
+    ]
+  },
+  "11402": {
+    "name": "Blue Wolf Tunic",
+    "description": "Masterwork Item that increases Max MP and MP Recovery Rate. Blue Wolf Tunic",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 83
+      },
+      "MaxMp": {
+        "add": 377
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1857000,
+    "weight": 1920,
+    "icon": "icon.armor_t70_u_i00",
+    "crystal_count": 248,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3721,
+        "level": 1
+      }
+    ]
+  },
+  "11403": {
+    "name": "Blue Wolf Helmet - Heavy Armor",
+    "description": "Masterwork Item that increases Speed and MP Recovery Rate. Blue Wolf Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 66
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 928300,
+    "weight": 580,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 124,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3714,
+        "level": 1
+      }
+    ]
+  },
+  "11404": {
+    "name": "Blue Wolf Stockings",
+    "description": "Masterwork Item that increases Max MP and MP Recovery Rate. Blue Wolf Stockings",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 52
+      },
+      "MaxMp": {
+        "add": 236
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1160300,
+    "weight": 920,
+    "icon": "icon.armor_t70_l_i00",
+    "crystal_count": 155,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3722,
+        "level": 1
+      }
+    ]
+  },
+  "11405": {
+    "name": "Blue Wolf Breastplate",
+    "description": "Masterwork Item that increases Speed and MP Recovery Rate. Blue Wolf Breastplate",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PDef": {
+        "add": 166
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2475000,
+    "weight": 7820,
+    "icon": "icon.armor_t68_u_i00",
+    "crystal_count": 330,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3710,
+        "level": 1
+      }
+    ]
+  },
+  "11406": {
+    "name": "Stockings of Doom",
+    "description": "Masterwork Item that increases Speed, Breath Gauge and MP Recovery Rate. Stockings of Doom",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 52
+      },
+      "MaxMp": {
+        "add": 236
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1160300,
+    "weight": 910,
+    "icon": "icon.armor_t73_l_i00",
+    "crystal_count": 155,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3708,
+        "level": 1
+      }
+    ]
+  },
+  "11407": {
+    "name": "Dark Crystal Gaiters",
+    "description": "Masterwork Item that increases heal power and paralysis resistance. Dark Crystal Gaiters",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 107
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2226000,
+    "weight": 3320,
+    "icon": "icon.armor_t74_l_i00",
+    "crystal_count": 178,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3726,
+        "level": 1
+      }
+    ]
+  },
+  "11408": {
+    "name": "Dark Crystal Gloves - Heavy Armor",
+    "description": "Masterwork Item that increases heal power and paralysis resistance. Dark Crystal Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t74_g_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3727,
+        "level": 1
+      }
+    ]
+  },
+  "11409": {
+    "name": "Dark Crystal Gloves - Light Armor Use",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. Dark Crystal Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t75_g_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3731,
+        "level": 1
+      }
+    ]
+  },
+  "11410": {
+    "name": "Dark Crystal Gloves - Robe",
+    "description": "Masterwork Item that increases P. Def. and Speed and decreases Magic Cancel Rate and Resistance to Paralysis Dark Crystal Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t76_g_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3735,
+        "level": 1
+      }
+    ]
+  },
+  "11411": {
+    "name": "Dark Crystal Leather Armor",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. Dark Crystal Leather Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 128
+      }
+    },
+    "price": 2671000,
+    "weight": 4300,
+    "icon": "icon.armor_t75_u_i00",
+    "crystal_count": 214,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3730,
+        "level": 1
+      }
+    ]
+  },
+  "11412": {
+    "name": "Dark Crystal Robe",
+    "description": "Masterwork Item that increases P. Def., Casting Spd. and Speed, and decreases casting interrupt and paralysis resistance. Dark Crystal Robe",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 139
+      },
+      "MaxMp": {
+        "add": 665
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 4341000,
+    "weight": 2450,
+    "icon": "icon.armor_t76_ul_i00",
+    "crystal_count": 347,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3736,
+        "level": 1
+      }
+    ]
+  },
+  "11413": {
+    "name": "Dark Crystal Boots - Heavy Armor",
+    "description": "Masterwork Item that increases heal power and paralysis resistance. Dark Crystal Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 1110,
+    "icon": "icon.armor_t74_b_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3728,
+        "level": 1
+      }
+    ]
+  },
+  "11414": {
+    "name": "Dark Crystal Boots - Light Armor Use",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. Dark Crystal Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 1110,
+    "icon": "icon.armor_t75_b_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3732,
+        "level": 1
+      }
+    ]
+  },
+  "11415": {
+    "name": "Dark Crystal Boots - Robe",
+    "description": "Masterwork Item that increases P. Def. and Speed and decreases Magic Cancel Rate and Resistance to Paralysis Dark Crystal Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 1110,
+    "icon": "icon.armor_t76_b_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3737,
+        "level": 1
+      }
+    ]
+  },
+  "11416": {
+    "name": "Dark Crystal Shield",
+    "description": "Masterwork Item that increases M. Def. Dark Crystal Shield",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 243
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 935000,
+    "weight": 1190,
+    "icon": "icon.shield_dark_crystal_shield_i00",
+    "crystal_count": 75,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3729,
+        "level": 1
+      }
+    ]
+  },
+  "11417": {
+    "name": "Dark Crystal Helmet - Heavy Armor",
+    "description": "Masterwork Item that increases heal power and paralysis resistance. Dark Crystal Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1336000,
+    "weight": 570,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 107,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3724,
+        "level": 1
+      }
+    ]
+  },
+  "11418": {
+    "name": "Dark Crystal Breastplate",
+    "description": "Masterwork Item that increases heal power and paralysis resistance. Dark Crystal Breastplate",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 171
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3562000,
+    "weight": 7700,
+    "icon": "icon.armor_t74_u_i00",
+    "crystal_count": 285,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3725,
+        "level": 1
+      }
+    ]
+  },
+  "11419": {
+    "name": "Dark Crystal Leggings",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd. and paralysis resistance. Dark Crystal Leggings",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 80
+      }
+    },
+    "price": 1670000,
+    "weight": 1480,
+    "icon": "icon.armor_t75_l_i00",
+    "crystal_count": 134,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3734,
+        "level": 1
+      }
+    ]
+  },
+  "11420": {
+    "name": "Sealed Dark Crystal Gaiters",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 107
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2226000,
+    "weight": 3320,
+    "icon": "icon.armor_t74_l_i02",
+    "crystal_count": 178,
+    "enchantable": true
+  },
+  "11421": {
+    "name": "Sealed Dark Crystal Gloves",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t74_g_i02",
+    "crystal_count": 71,
+    "enchantable": true
+  },
+  "11422": {
+    "name": "Sealed Dark Crystal Leather Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 128
+      }
+    },
+    "price": 2671000,
+    "weight": 4300,
+    "icon": "icon.armor_t75_u_i02",
+    "crystal_count": 214,
+    "enchantable": true
+  },
+  "11423": {
+    "name": "Sealed Dark Crystal Robe",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 139
+      },
+      "MaxMp": {
+        "add": 665
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 4341000,
+    "weight": 2450,
+    "icon": "icon.armor_t76_ul_i02",
+    "crystal_count": 347,
+    "enchantable": true
+  },
+  "11424": {
+    "name": "Sealed Dark Crystal Boots",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 1110,
+    "icon": "icon.armor_t74_b_i02",
+    "crystal_count": 71,
+    "enchantable": true
+  },
+  "11425": {
+    "name": "Sealed Dark Crystal Shield",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 243
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 935000,
+    "weight": 1190,
+    "icon": "icon.shield_dark_crystal_shield_i02",
+    "crystal_count": 75,
+    "enchantable": true
+  },
+  "11426": {
+    "name": "Sealed Dark Crystal Helmet - Heavy Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1336000,
+    "weight": 570,
+    "icon": "icon.armor_helmet_i02",
+    "crystal_count": 107,
+    "enchantable": true
+  },
+  "11427": {
+    "name": "Sealed Dark Crystal breastplate",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 171
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3562000,
+    "weight": 7700,
+    "icon": "icon.armor_t74_u_i02",
+    "crystal_count": 285,
+    "enchantable": true
+  },
+  "11428": {
+    "name": "Sealed Dark Crystal Leggings",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 80
+      }
+    },
+    "price": 1670000,
+    "weight": 1480,
+    "icon": "icon.armor_t75_l_i02",
+    "crystal_count": 134,
+    "enchantable": true
+  },
+  "11429": {
+    "name": "Sealed Tallum Gloves",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t77_g_i02",
+    "crystal_count": 71,
+    "enchantable": true
+  },
+  "11430": {
+    "name": "Sealed Tallum Leather Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 209
+      }
+    },
+    "price": 4341000,
+    "weight": 5400,
+    "icon": "icon.armor_t78_ul_i02",
+    "crystal_count": 347,
+    "enchantable": true
+  },
+  "11431": {
+    "name": "Sealed Tallum Boots",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t77_b_i02",
+    "crystal_count": 71,
+    "enchantable": true
+  },
+  "11432": {
+    "name": "Sealed Tallum Tunic",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 86
+      },
+      "MaxMp": {
+        "add": 409
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2671000,
+    "weight": 1860,
+    "icon": "icon.armor_t79_u_i02",
+    "crystal_count": 214,
+    "enchantable": true
+  },
+  "11433": {
+    "name": "Sealed Tallum Plate Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 278
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 5788000,
+    "weight": 9780,
+    "icon": "icon.armor_t77_ul_i02",
+    "crystal_count": 463,
+    "enchantable": true
+  },
+  "11434": {
+    "name": "Sealed Tallum Helmet - Heavy Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1336000,
+    "weight": 570,
+    "icon": "icon.armor_helmet_i02",
+    "crystal_count": 107,
+    "enchantable": true
+  },
+  "11435": {
+    "name": "Sealed Tallum Stockings",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 53
+      },
+      "MaxMp": {
+        "add": 256
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1670000,
+    "weight": 920,
+    "icon": "icon.armor_t79_l_i02",
+    "crystal_count": 134,
+    "enchantable": true
+  },
+  "11436": {
+    "name": "(Not In Use) Holy Spirit's Cloak",
+    "description": "Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "A",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 18
+      }
+    },
+    "price": 1160000,
+    "weight": 220,
+    "icon": "icon.armor_back09",
+    "crystal_count": 92,
+    "enchantable": true
+  },
+  "11437": {
+    "name": "Tallum Gloves - Heavy Armor",
+    "description": "Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed Tallum Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t77_g_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3739,
+        "level": 1
+      }
+    ]
+  },
+  "11438": {
+    "name": "Tallum Gloves - Light Armor Use",
+    "description": "Masterwork Item that increases MP Recovery Rate, Max MP, and Resistance to Poison and Bleed Tallum Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t78_g_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3744,
+        "level": 1
+      }
+    ]
+  },
+  "11439": {
+    "name": "Tallum Gloves - Robe",
+    "description": "Masterwork Item that increases M. Def. and Resistance to poison/bleed Tallum Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t79_g_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3747,
+        "level": 1
+      }
+    ]
+  },
+  "11440": {
+    "name": "Tallum Leather Armor",
+    "description": "Masterwork Item that increases MP Recovery Rate, Max MP, and Resistance to Poison and Bleed Tallum Leather Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 209
+      }
+    },
+    "price": 4341000,
+    "weight": 5400,
+    "icon": "icon.armor_t78_ul_i00",
+    "crystal_count": 347,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3743,
+        "level": 1
+      }
+    ]
+  },
+  "11441": {
+    "name": "Tallum Boots - Heavy Armor",
+    "description": "Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed Tallum Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t77_b_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3740,
+        "level": 1
+      }
+    ]
+  },
+  "11442": {
+    "name": "Tallum Boots - Light Armor Use",
+    "description": "Masterwork Item that increases MP Recovery Rate, Max MP, and Resistance to Poison and Bleed Tallum Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t78_b_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3745,
+        "level": 1
+      }
+    ]
+  },
+  "11443": {
+    "name": "Tallum Boots - Robe",
+    "description": "Masterwork Item that increases M. Def. and Resistance to poison/bleed Tallum Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t79_b_i00",
+    "crystal_count": 71,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3748,
+        "level": 1
+      }
+    ]
+  },
+  "11444": {
+    "name": "Tallum Tunic",
+    "description": "Masterwork Item that increases Casting Spd. Tallum Tunic",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 86
+      },
+      "MaxMp": {
+        "add": 409
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2671000,
+    "weight": 1860,
+    "icon": "icon.armor_t79_u_i00",
+    "crystal_count": 214,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3749,
+        "level": 1
+      }
+    ]
+  },
+  "11445": {
+    "name": "Tallum Plate Armor",
+    "description": "Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed Tallum Plate Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 278
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 5788000,
+    "weight": 9780,
+    "icon": "icon.armor_t77_ul_i00",
+    "crystal_count": 463,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3741,
+        "level": 1
+      }
+    ]
+  },
+  "11446": {
+    "name": "Tallum Helmet - Heavy Armor",
+    "description": "Masterwork Item that increases Atk. Spd., Weight Limit, and Resistance to Poison and Bleed Tallum Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1336000,
+    "weight": 570,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 107,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3742,
+        "level": 1
+      }
+    ]
+  },
+  "11447": {
+    "name": "Tallum Stockings",
+    "description": "Masterwork Item that increases M. Def. and Resistance to poison/bleed Tallum Stockings",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 53
+      },
+      "MaxMp": {
+        "add": 256
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1670000,
+    "weight": 920,
+    "icon": "icon.armor_t79_l_i00",
+    "crystal_count": 134,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3750,
+        "level": 1
+      }
+    ]
+  },
+  "11448": {
+    "name": "Majestic Gauntlet - Heavy Armor",
+    "description": "Masterwork Item that increases P. Atk., Accuracy and Resistance to Shock Majestic Gauntlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 540,
+    "icon": "icon.armor_t83_g_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3752,
+        "level": 1
+      }
+    ]
+  },
+  "11449": {
+    "name": "Majestic Gauntlet - Light Armor Use",
+    "description": "Masterwork Item that increases Bow/Crossbow P. Atk. and Max MP, and decreases Weight Limit and Resistance to Shock Majestic Gauntlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 540,
+    "icon": "icon.armor_t84_g_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3756,
+        "level": 1
+      }
+    ]
+  },
+  "11450": {
+    "name": "Majestic Gauntlet - Robe",
+    "description": "Masterwork Item that increases Max MP, MP Recovery Rate, and Resistance to Shock. Majestic Gauntlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 540,
+    "icon": "icon.armor_t85_g_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3760,
+        "level": 1
+      }
+    ]
+  },
+  "11451": {
+    "name": "Majestic Leather Armor",
+    "description": "Masterwork Item that increases Bow/Crossbow P. Ak. and Max MP, and decreases Weight Limit and Resistance to Shock Majestic Leather Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 220
+      }
+    },
+    "price": 6603000,
+    "weight": 5350,
+    "icon": "icon.armor_t84_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3757,
+        "level": 1
+      }
+    ]
+  },
+  "11452": {
+    "name": "Majestic Robe",
+    "description": "Masterwork Item that increases Max MP, Casting Spd., MP Recovery Rate and Resistance to Shock Majestic Robe",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 147
+      },
+      "MaxMp": {
+        "add": 718
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6603000,
+    "weight": 2330,
+    "icon": "icon.armor_t85_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3761,
+        "level": 1
+      }
+    ]
+  },
+  "11453": {
+    "name": "Majestic Boots - Heavy Armor",
+    "description": "Masterwork Item that increases P. Atk., Accuracy and Resistance to Shock Majestic Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t83_b_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3755,
+        "level": 1
+      }
+    ]
+  },
+  "11454": {
+    "name": "Majestic Boots - Light Armor Use",
+    "description": "Masterwork Item that increases Bow/Crossbow P. Ak. and Max MP, and decreases Weight Limit and Resistance to Shock Majestic Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t84_b_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3758,
+        "level": 1
+      }
+    ]
+  },
+  "11455": {
+    "name": "Majestic Boots - Robe",
+    "description": "Masterwork Item that increases Max MP, MP Recovery Rate, and Resistance to Shock. Majestic Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t85_b_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3762,
+        "level": 1
+      }
+    ]
+  },
+  "11456": {
+    "name": "Majestic Circlet - Heavy Armor",
+    "description": "Masterwork Item with Resistance to Shock attacks. P. Atk. and Accuracy are increased. Majestic Circlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2032000,
+    "weight": 550,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 163,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3753,
+        "level": 1
+      }
+    ]
+  },
+  "11457": {
+    "name": "Majestic Plate Armor",
+    "description": "Masterwork Item that increases P. Atk., Accuracy and Resistance to Shock Majestic Plate Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8804000,
+    "weight": 9200,
+    "icon": "icon.armor_t83_ul_i00",
+    "crystal_count": 704,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3754,
+        "level": 1
+      }
+    ]
+  },
+  "11458": {
+    "name": "Sealed Majestic Gauntlet",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 540,
+    "icon": "icon.armor_t83_g_i02",
+    "crystal_count": 108,
+    "enchantable": true
+  },
+  "11459": {
+    "name": "Sealed Majestic Leather Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 220
+      }
+    },
+    "price": 6603000,
+    "weight": 5350,
+    "icon": "icon.armor_t84_ul_i02",
+    "crystal_count": 528,
+    "enchantable": true
+  },
+  "11460": {
+    "name": "Sealed Majestic Robe",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 147
+      },
+      "MaxMp": {
+        "add": 718
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6603000,
+    "weight": 2330,
+    "icon": "icon.armor_t85_ul_i02",
+    "crystal_count": 528,
+    "enchantable": true
+  },
+  "11461": {
+    "name": "Sealed Majestic Boots",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t83_b_i02",
+    "crystal_count": 108,
+    "enchantable": true
+  },
+  "11462": {
+    "name": "Sealed Majestic Circlet - Heavy Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2032000,
+    "weight": 550,
+    "icon": "icon.armor_leather_helmet_i02",
+    "crystal_count": 163,
+    "enchantable": true
+  },
+  "11463": {
+    "name": "Sealed Majestic Plate Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8804000,
+    "weight": 9200,
+    "icon": "icon.armor_t83_ul_i02",
+    "crystal_count": 704,
+    "enchantable": true
+  },
+  "11464": {
+    "name": "Sealed Armor of Nightmare",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8804000,
+    "weight": 9580,
+    "icon": "icon.armor_t80_ul_i02",
+    "crystal_count": 704,
+    "enchantable": true
+  },
+  "11465": {
+    "name": "Sealed Gauntlet of Nightmare",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 550,
+    "icon": "icon.armor_t80_g_i02",
+    "crystal_count": 108,
+    "enchantable": true
+  },
+  "11466": {
+    "name": "Sealed Leather Armor of Nightmare",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 220
+      }
+    },
+    "price": 6603000,
+    "weight": 5300,
+    "icon": "icon.armor_t81_ul_i02",
+    "crystal_count": 528,
+    "enchantable": true
+  },
+  "11467": {
+    "name": "Sealed Robe of Nightmare",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 147
+      },
+      "MaxMp": {
+        "add": 718
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6603000,
+    "weight": 2300,
+    "icon": "icon.armor_t82_ul_i02",
+    "crystal_count": 528,
+    "enchantable": true
+  },
+  "11468": {
+    "name": "Sealed Boots of Nightmare",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t80_b_i02",
+    "crystal_count": 108,
+    "enchantable": true
+  },
+  "11469": {
+    "name": "Sealed Shield of Nightmare",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 256
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1422000,
+    "weight": 1180,
+    "icon": "icon.shield_shield_of_nightmare_i02",
+    "crystal_count": 114,
+    "enchantable": true
+  },
+  "11470": {
+    "name": "Sealed Helm of Nightmare - Heavy Armor",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2032000,
+    "weight": 560,
+    "icon": "icon.armor_leather_helmet_i02",
+    "crystal_count": 163,
+    "enchantable": true
+  },
+  "11471": {
+    "name": "Armor of Nightmare",
+    "description": "Masterwork Item that increases P. Atk., and Resistance to Sleep/Hold. Armor of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8804000,
+    "weight": 9580,
+    "icon": "icon.armor_t80_ul_i00",
+    "crystal_count": 704,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3764,
+        "level": 1
+      }
+    ]
+  },
+  "11472": {
+    "name": "Gauntlet of Nightmare - Heavy Armor",
+    "description": "Masterwork Item that increases P. Atk., and Resistance to Sleep/Hold. Gauntlet of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 550,
+    "icon": "icon.armor_t80_g_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3765,
+        "level": 1
+      }
+    ]
+  },
+  "11473": {
+    "name": "Gauntlet of Nightmare - Light Armor Use",
+    "description": "Masterwork Item that increases M. Def. and Resistance to Sleep/Hold. Gauntlet of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 550,
+    "icon": "icon.armor_t81_g_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3769,
+        "level": 1
+      }
+    ]
+  },
+  "11474": {
+    "name": "Gauntlet of Nightmare - Robe",
+    "description": "Masterwork Item that increases MP Recovery Rate, M. Atk., and Resistance to Sleep/Hold. Gauntlet of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 550,
+    "icon": "icon.armor_t82_g_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3771,
+        "level": 1
+      }
+    ]
+  },
+  "11475": {
+    "name": "Leather Armor of Nightmare",
+    "description": "Masterwork Item with Resistance to Sleep/Hold and M. Def. are increased. A portion of the damage inflicted on the enemy is used to recover one's own HP. Excludes damage caused by skills and long-range attack. Leather Armor of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 220
+      }
+    },
+    "price": 6603000,
+    "weight": 5300,
+    "icon": "icon.armor_t81_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3768,
+        "level": 1
+      }
+    ]
+  },
+  "11476": {
+    "name": "Robe of Nightmare",
+    "description": "Masterwork Item that increases MP Recovery Rate, M. Atk., and Resistance to Sleep/Hold. Robe of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 147
+      },
+      "MaxMp": {
+        "add": 718
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6603000,
+    "weight": 2300,
+    "icon": "icon.armor_t82_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3772,
+        "level": 1
+      }
+    ]
+  },
+  "11477": {
+    "name": "Boots of Nightmare - Heavy Armor",
+    "description": "Masterwork Item that increases P. Atk., and Resistance to Sleep/Hold. Boots of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t80_b_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3766,
+        "level": 1
+      }
+    ]
+  },
+  "11478": {
+    "name": "Boots of Nightmare - Light Armor Use",
+    "description": "Masterwork Item with Resistance to Sleep/Hold and M. Def. are increased. Boots of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t81_b_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3770,
+        "level": 1
+      }
+    ]
+  },
+  "11479": {
+    "name": "Boots of Nightmare - Robe",
+    "description": "Masterwork Item that increases MP Recovery Rate, M. Atk., and Resistance to Sleep/Hold. Boots of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1355000,
+    "weight": 1110,
+    "icon": "icon.armor_t82_b_i00",
+    "crystal_count": 108,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3773,
+        "level": 1
+      }
+    ]
+  },
+  "11480": {
+    "name": "Shield of Nightmare",
+    "description": "Masterwork Item that increases M. Def. Shield of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 256
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1422000,
+    "weight": 1180,
+    "icon": "icon.shield_shield_of_nightmare_i00",
+    "crystal_count": 114,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3774,
+        "level": 1
+      }
+    ]
+  },
+  "11481": {
+    "name": "Helm of Nightmare - Heavy Armor",
+    "description": "Masterwork Item with Resistance to Sleep/Hold and P. Atk. are increased. Helm of Nightmare",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2032000,
+    "weight": 560,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 163,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3767,
+        "level": 1
+      }
+    ]
+  },
+  "11482": {
+    "name": "Great Wolf Oriharukon Armor",
+    "description": "H5 Price",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 160
+      }
+    },
+    "price": 24236000,
+    "weight": 160,
+    "icon": "icon.etc_wolf_r_a_01"
+  },
+  "11483": {
+    "name": "Draconic Leather Gloves",
+    "description": "Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. Draconic Leather Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "price": 3195000,
+    "weight": 540,
+    "icon": "icon.armor_t89_g_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3775,
+        "level": 1
+      }
+    ]
+  },
+  "11484": {
+    "name": "Draconic Leather Boots",
+    "description": "Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. Draconic Leather Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "price": 3195000,
+    "weight": 1110,
+    "icon": "icon.armor_t89_b_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3776,
+        "level": 1
+      }
+    ]
+  },
+  "11485": {
+    "name": "Draconic Leather Armor",
+    "description": "Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. Draconic Leather Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 249
+      }
+    },
+    "price": 15577000,
+    "weight": 4950,
+    "icon": "icon.armor_t89_ul_i00",
+    "crystal_count": 748,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3777,
+        "level": 1
+      }
+    ]
+  },
+  "11486": {
+    "name": "Draconic Leather Helmet",
+    "description": "Masterwork Item that increases Atk. Spd., P. Atk. and Max MP, and decreases Weight Limit. Draconic Leather Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "price": 4793000,
+    "weight": 550,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 230,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3778,
+        "level": 1
+      }
+    ]
+  },
+  "11487": {
+    "name": "Major Arcana Gloves",
+    "description": "Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. Major Arcana Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 540,
+    "icon": "icon.armor_t90_g_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3779,
+        "level": 1
+      }
+    ]
+  },
+  "11488": {
+    "name": "Major Arcana Robe",
+    "description": "Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. Major Arcana Robe",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 166
+      },
+      "MaxMp": {
+        "add": 866
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 15577000,
+    "weight": 2300,
+    "icon": "icon.armor_t90_ul_i00",
+    "crystal_count": 748,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3780,
+        "level": 1
+      }
+    ]
+  },
+  "11489": {
+    "name": "Major Arcana Boots",
+    "description": "Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. Major Arcana Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 1110,
+    "icon": "icon.armor_t90_b_i00",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3781,
+        "level": 1
+      }
+    ]
+  },
+  "11490": {
+    "name": "Major Arcana Circlet",
+    "description": "Masterwork Item that increases M. Atk. and Speed, and decreases casting interrupt, Resistance to Stun and Weight Limit. Major Arcana Circlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 4793000,
+    "weight": 550,
+    "icon": "icon.armor_circlet_i00",
+    "crystal_count": 230,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3782,
+        "level": 1
+      }
+    ]
+  },
+  "11491": {
+    "name": "Sealed Draconic Leather Gloves",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "price": 3195000,
+    "weight": 540,
+    "icon": "icon.armor_t89_g_i02",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11492": {
+    "name": "Sealed Draconic Leather Boots",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "price": 3195000,
+    "weight": 1110,
+    "icon": "icon.armor_t89_b_i02",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11493": {
+    "name": "Sealed Draconic Leather Armor",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 236
+      }
+    },
+    "price": 15577000,
+    "weight": 4950,
+    "icon": "icon.armor_t89_ul_i02",
+    "crystal_count": 748,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11494": {
+    "name": "Sealed Draconic Leather Helmet",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "price": 4793000,
+    "weight": 550,
+    "icon": "icon.armor_leather_helmet_i02",
+    "crystal_count": 230,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11495": {
+    "name": "Sealed Major Arcana Gloves",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 540,
+    "icon": "icon.armor_t90_g_i02",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11496": {
+    "name": "Sealed Major Arcana Robe",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 157
+      },
+      "MaxMp": {
+        "add": 866
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 15577000,
+    "weight": 2300,
+    "icon": "icon.armor_t90_ul_i02",
+    "crystal_count": 748,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11497": {
+    "name": "Sealed Major Arcana Boots",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3195000,
+    "weight": 1110,
+    "icon": "icon.armor_t90_b_i02",
+    "crystal_count": 153,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11498": {
+    "name": "Sealed Major Arcana Circlet",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 4793000,
+    "weight": 550,
+    "icon": "icon.armor_circlet_i02",
+    "crystal_count": 230,
+    "enchantable": true,
+    "elementable": true
+  },
+  "11499": {
+    "name": "Sealed Imperial Crusader Gaiters",
+    "description": "Sealed Masterwork Item",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 121
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 7988000,
+    "weight": 3260,
+    "icon": "icon.armor_t88_l_i02",
+    "crystal_count": 383,
+    "enchantable": true,
+    "elementable": true
+  }
+}

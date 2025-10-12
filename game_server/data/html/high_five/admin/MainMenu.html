@@ -1,0 +1,43 @@
+{% extends "_common/base.html" %}
+
+{% import "_common/macros.html" as macros %}
+
+{% block content %}
+    {% include "_common/navigation.html" %}
+    <br>
+    <table width=270>
+        <tr>
+            <td><font color="LEVEL">Action:</font></td>
+            <td><edit var="qAct" width=120 height=15></td>
+            <td>{{ macros::button(label="Help", action="admin_main") }}</td>
+        </tr>
+    </table>
+    <br>
+    <table width=270>
+        <tr>
+            <td>{{ macros::button(label="Item", action="admin_spawn_item $qAct") }}</td>
+            <td>{{ macros::button(label="Teleport", action="admin_tp_list $qAct") }}</td>
+            <td>{{ macros::button(label="Spawn", action="admin_spawn_npc $qAct") }}</td>
+            <td>{{ macros::button(label="Skill", action="admin_add_skill $qAct") }}</td>
+        </tr>
+        <tr>
+            <td>{{ macros::button(label="Items", action="admin_multi_sell_list $qAct") }}</td>
+            <td>{{ macros::button(label="Set Level", action="admin_set_level $qAct") }}</td>
+            <td>{{ macros::button(label="_", action="admin_main") }}</td>
+            <td>{{ macros::button(label="_", action="admin_main") }}</td>
+        </tr>
+        <tr>
+            <td>{{ macros::button(label="_", action="admin_main $qAct") }}</td>
+            <td>{{ macros::button(label="_", action="admin_main") }}</td>
+            <td>{{ macros::button(label="_", action="admin_main") }}</td>
+            <td>{{ macros::button(label="_", action="admin_main") }}</td>
+        </tr>
+        <tr>
+            <td>{{ macros::button(label="_", action="admin_main $qAct") }}</td>
+            <td>{{ macros::button(label="Pause", action="admin_pause") }}</td>
+        </tr>
+    </table>
+    <br>
+    Target Actions:<br1>
+    {% include "_common/target_actions.html" %}
+{% endblock content %}

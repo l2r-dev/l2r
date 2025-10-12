@@ -1,0 +1,46 @@
+[package]
+name = "game_core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+l2r_core = { path = "../../../core", features = ["high_five"] }
+
+state = { path = "../state" }
+scripting = { path = "../scripting" }
+spatial = { path = "../spatial" }
+map = { path = "../map" }
+system_messages = { path = "../system_messages" }
+
+bevy = { workspace = true }
+bevy_asset = { workspace = true }
+bevy_defer = { workspace = true }
+bevy_enum_tag = { workspace = true }
+bevy_ecs = { workspace = true }
+bevy_slinet = { workspace = true }
+bevy_common_assets = { workspace = true }
+indexmap = "2"
+
+avian3d = { workspace = true }
+smallvec = { workspace = true }
+bitflags = { workspace = true }
+num_enum = { workspace = true }
+num-traits = { workspace = true }
+sea-orm = { workspace = true }
+strum = { workspace = true }
+rand = { workspace = true }
+chrono = { workspace = true }
+derive_more = { workspace = true }
+tera = { workspace = true }
+const-primes = { workspace = true }
+bit-set = { workspace = true }
+redis = { workspace = true }
+thiserror = { workspace = true }
+
+serde = { workspace = true  }
+serde_json = { workspace = true }
+
+[features]
+default = ["high_five"]
+high_five = []
+interlude = []

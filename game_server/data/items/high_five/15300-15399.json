@@ -1,0 +1,2581 @@
+{
+  "15300": {
+    "name": "Transparent Dual (for NPC)",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2080,
+    "icon": "icon.weapon_dual_sword_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15301": {
+    "name": "Transparent Pole (for NPC)",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1950,
+    "icon": "icon.weapon_long_spear_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15302": {
+    "name": "Transparent Bow (for NPC)",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 6,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 2,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 114
+      },
+      "MAtk": {
+        "set": 35
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 1830,
+    "icon": "icon.weapon_long_bow_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15303": {
+    "name": "Transparent Claw (for NPC)",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 376
+      },
+      "MAtk": {
+        "set": 119
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1013,
+    "icon": "icon.weapon_foxs_nail_i00",
+    "enchantable": true,
+    "elementable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15304": {
+    "name": "Transparent Bowgun (for NPC)",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1850,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15305": {
+    "name": "Transparent Rapier (for NPC)",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 36
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_rapier_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15306": {
+    "name": "Transparent Dual Dagger (for NPC)",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 157
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 2150,
+    "icon": "icon.dual_dagger_i00",
+    "enchantable": true,
+    "elementable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15307": {
+    "name": "Holy Pomander - Cardinal",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_saint_pomander_bishop_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15308": {
+    "name": "Holy Pomander - Eva's Saint",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_saint_pomander_elder_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15309": {
+    "name": "Holy Pomander - Shillien Saint",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_saint_pomander_silienelder_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15310": {
+    "name": "Sacred Sword of Einhasad",
+    "description": "Einhasad's Sacred Sword given by the Emperor of Elmoreden Schneiman. Einhasad's Strike",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 7
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 150,
+    "icon": "icon.weapon_the_sword_of_hero_i00",
+    "enchantable": true,
+    "elementable": true,
+    "time": 7200,
+    "item_skills": [
+      {
+        "id": 8357,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15311": {
+    "name": "Delusion Chamber Invitation",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_magic_coin_gold_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15312": {
+    "name": "Dawn's Bracelet",
+    "description": "Dawn's bracelet given from the Priest Franz. Precious looking bracelet. Increases Weight Limit of 5000. Cannot be exchanged, dropped, or destroyed. Weight Up",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "grade": "S",
+    "material": "Silver",
+    "weight": 15,
+    "icon": "icon.accessory_lbracelet_of_dawn",
+    "item_skills": [
+      {
+        "id": 8337,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15313": {
+    "name": "Player Commendation - Forgotten Blade - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Forgotten Blade Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 84 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_forgotten_blade_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15314": {
+    "name": "Player Commendation - Basalt Battlehammer - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Basalt Battlehammer Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Max HP by 25% additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_basalt_battlehammer_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15315": {
+    "name": "Player Commendation - Imperial Staff - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Imperial Staff Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases MP Recovery Rate additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: MP Regeneration",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 274
+      },
+      "MAtk": {
+        "set": 193
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 910,
+    "icon": "icon.weapon_imperial_staff_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3576,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15316": {
+    "name": "Player Commendation - Angel Slayer - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Angel Slayer Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Upon additional Critical, P. Atk. increases by 265, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Crtical Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 246
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 950,
+    "icon": "icon.weapon_angel_slayer_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3572,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15317": {
+    "name": "Player Commendation - Dragon Hunter Axe - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Dragon Hunter Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases HP recovery power additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: HP Regeneration",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_dragon_hunter_axe_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3569,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15318": {
+    "name": "Player Commendation - Saint Spear - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Saint Spear Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Max HP by 25% additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_saint_spear_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15319": {
+    "name": "Player Commendation - Demon Splinter - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Demon Splinter Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 80 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3565,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15320": {
+    "name": "Player Commendation - Heaven's Divider - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Heaven's Divider Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 84 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1380,
+    "icon": "icon.weapon_heavens_divider_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15321": {
+    "name": "Player Commendation - Arcana Macw - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Arcana Mace Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Casting Spd. by 61 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 225
+      },
+      "MAtk": {
+        "set": 175
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_arcana_mace_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15322": {
+    "name": "Player Commendation - Draconic Bow - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Draconic Bow Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 88 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1650,
+    "icon": "icon.weapon_draconic_bow_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3567,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15323": {
+    "name": "Player Commendation - Laevateinn - Player Recommendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Laevateinn. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Atk. Spd. by about 7% and damage inflicted during PvP. When enchanted to 4 or more, during a critical attack, party members including yourself will receive at a fixed rate increased attack power, magic power, and healing capacity, as well as decreased MP consumption per skill. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 255
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_leavatein_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3564,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15324": {
+    "name": "Player Commendation - Gram - Player Recommendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Gram. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Critical by 84 and damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15325": {
+    "name": "Player Commendation - Sarunga - Player Recommendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Sarunga. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Critical by 88 and damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 356
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1600,
+    "icon": "icon.weapon_sarnga_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3567,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15326": {
+    "name": "Player Commendation - Tallum Blade *Dark Legion's Edge - Player Recommendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Tallum Blade*Dark Legion's Edge. Available to enchant by the enchanted scroll of PC Cafe exclusive weapons. Upon enchanted over 4, Max HP and Max CP increase by 15% and 30% respectively, and the damage during the PvP increases. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3570,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2080,
+    "icon": "icon.weapon_dual_sword_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15327": {
+    "name": "Seed: Sea Coba",
+    "description": "Plant this seed onto a monster in the Innadril area and it will bear the fruit of the Sea Coba. For best results, a level 74-84 character must plant it on a level 74-84 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 900,
+    "weight": 1,
+    "icon": "icon.etc_sea_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15328": {
+    "name": "Seed: Sea Coba",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Sea Coba. For best results, a level 74-84 character must plant it on a level 74-84 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 900,
+    "weight": 1,
+    "icon": "icon.etc_sea_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15329": {
+    "name": "Seed: Twin Coba",
+    "description": "Plant this seed onto a monster in the Aden area and it will bear the fruit of the Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15330": {
+    "name": "Seed: Twin Coba",
+    "description": "Plant this seed onto a monster in the Aden area and it will bear the fruit of the Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15331": {
+    "name": "Seed: Twin Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15332": {
+    "name": "Seed: Twin Coba",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15333": {
+    "name": "Seed: King Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the King Coba. For best results, a level 80+ character must plant the seed on a level 80-90 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 1200,
+    "weight": 1,
+    "icon": "icon.etc_great_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15334": {
+    "name": "Seed: Alternative Sea Coba",
+    "description": "Plant this seed onto a monster in the Innadril area and it will bear the fruit of the Alternative Sea Coba. For best results, a level 74-84 character must plant it on a level 74-84 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 900,
+    "weight": 1,
+    "icon": "icon.etc_sea_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15335": {
+    "name": "Seed: Alternative Sea Coba",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Sea Coba. For best results, a level 74-84 character must plant it on a level 74-84 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 900,
+    "weight": 1,
+    "icon": "icon.etc_sea_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15336": {
+    "name": "Seed: Alternative Twin Coba",
+    "description": "Plant this seed onto a monster in the Aden area and it will bear the fruit of the Alternative Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15337": {
+    "name": "Seed: Alternative Twin Coba",
+    "description": "Plant this seed onto a monster in the Innadril area and it will bear the fruit of the Alternative Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15338": {
+    "name": "Seed: Alternative Twin Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15339": {
+    "name": "Seed: Alternative Twin Coba",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Twin Coba. For best results, a level 77-87 character must plant it on a level 77-87 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15340": {
+    "name": "Seed: Alternative Great Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative King Coba. For best results, a level 80-90 character must plant it on a level 80-90 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 1200,
+    "weight": 1,
+    "icon": "icon.etc_great_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "15341": {
+    "name": "Guiding Tea Leaves",
+    "description": "Tea leaves collected from guiding souls.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_leaf_green_i00",
+    "stackable": true
+  },
+  "15342": {
+    "name": "Aqua Elf Transforming Harp - 60-day limited period",
+    "description": "Dimensional item. Transformation stick that turns you into a Aqua Elf Can be used for 60 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Disguised Half - Aqua Elf",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.harp_of_transform_i00",
+    "time": 86400,
+    "item_skills": [
+      {
+        "id": 2994,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "15343": {
+    "name": "Aqua Elf Transforming Harp 60-day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing Aqua Elf Transformation Stick (60 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15342,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15344": {
+    "name": "Aqua Elf Transforming Harp (Event) - 60-day limited period",
+    "description": "Dimensional item. Transformation stick that turns you into a Aqua Elf Can be used for 60 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Disguised Half - Aqua Elf",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.harp_of_transform_i00",
+    "time": 86400,
+    "item_skills": [
+      {
+        "id": 2994,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "15345": {
+    "name": "Aqua Elf Transforming Harp 60-day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing Aqua Elf Transformation Stick (60 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15344,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15346": {
+    "name": "Scroll: Enchant Weapon (Grade S) - Exclusive to PC weapons",
+    "description": "Scroll to enchant only the S-grade weapons For PC Cafe. Impossible to use for other weapons. Cannot be exchanged or dropped. PC room private weapon strengthening order sheet - S grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_weapon_i05",
+    "item_skills": [
+      {
+        "id": 2999,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15347": {
+    "name": "Scroll: Enchant Weapon (Grade A) - Exclusive to PC weapons",
+    "description": "Scroll to enchant the A-grade weapons For PC Cafe. Impossible to use for other weapons. Cannot be exchanged or dropped. PC room private weapon strengthening order sheet - A grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_weapon_i04",
+    "item_skills": [
+      {
+        "id": 2998,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15348": {
+    "name": "Scroll: Enchant Weapon (Grade B) - Exclusive to PC weapons",
+    "description": "Scroll to enchant the B-grade weapons For PC Cafe. Impossible to use for other weapons. Cannot be exchanged or dropped. PC room private weapon strengthening order sheet - B grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_weapon_i03",
+    "item_skills": [
+      {
+        "id": 2997,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15349": {
+    "name": "Scroll: Enchant Weapon (Grade C) - Exclusive to PC weapons",
+    "description": "Scroll to enchant the C-grade weapons For PC Cafe. Impossible to use for other weapons. Cannot be exchanged or dropped. PC room private weapon strengthening order sheet - C grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_weapon_i02",
+    "item_skills": [
+      {
+        "id": 2996,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15350": {
+    "name": "Scroll: Enchant Weapon (Grade D) - Exclusive to PC weapons",
+    "description": "Scroll to enchant the D-grade weapons For PC Cafe. Impossible to use for other weapons. Cannot be exchanged or dropped. PC room private weapon strengthening order sheet - D grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_weapon_i01",
+    "item_skills": [
+      {
+        "id": 2995,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15351": {
+    "name": "Seal Removal Bracelet_Towbat",
+    "description": "A bracelet to summon Towbat Release Seal on Agathion - Towbat",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 5,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 8358,
+        "level": 1
+      },
+      {
+        "id": 8359,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15352": {
+    "name": "Proof of Time and Space",
+    "description": "Proof of Time and Space to prove one's identity?",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 5,
+    "icon": "icon.etc_sign_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15353": {
+    "name": "Proof of Resurrection",
+    "description": "Numerous clauses for satisfying the requirements for resurrection.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.etc_scroll_chalik_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15354": {
+    "name": "Scroll of Resurrection",
+    "description": "Ancient book with marks of Resurrection in it",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.etc_ancient_tablet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15355": {
+    "name": "Stone of Resurrection",
+    "description": "Ancient stone that makes Resurrection possible",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 5,
+    "icon": "icon.etc_life_stone_of_begining_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15356": {
+    "name": "Improved Sweet Fruit Cocktail",
+    "description": "Concentrated cocktail drink that's flavored with many rare types of fruit. It has a better effect than the Sweet Fruit Cocktail. When consumed, one can feel Might, Shield, Wind Walk, Focus, Death Whisper, Guidance, Bless Shield, Blessed Body, Haste, Vampiric Rage, and Berserker Spirit effects for a certain amount of time. Might",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_fruit_cocktail_i00",
+    "item_skills": [
+      {
+        "id": 9011,
+        "level": 1
+      },
+      {
+        "id": 9012,
+        "level": 1
+      },
+      {
+        "id": 9013,
+        "level": 1
+      },
+      {
+        "id": 9014,
+        "level": 1
+      },
+      {
+        "id": 9015,
+        "level": 1
+      },
+      {
+        "id": 9016,
+        "level": 1
+      },
+      {
+        "id": 9017,
+        "level": 1
+      },
+      {
+        "id": 9018,
+        "level": 1
+      },
+      {
+        "id": 9019,
+        "level": 1
+      },
+      {
+        "id": 9020,
+        "level": 1
+      },
+      {
+        "id": 9021,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "15357": {
+    "name": "Improved Fresh Fruit Cocktail",
+    "description": "Concentrated cocktail drink that's flavored with many rare types of fruit. It has a better effect than the Fresh Fruit Cocktail. When consumed, one can feel Berserker Spirit, Blessed Body, Magic Barrier, Shield, Wind Walk, Blessed Soul, Empower, Acumen, and Clarity effects for a certain amount of time. Berserker Spirit",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_fruit_cocktail_i01",
+    "item_skills": [
+      {
+        "id": 9021,
+        "level": 1
+      },
+      {
+        "id": 9022,
+        "level": 1
+      },
+      {
+        "id": 9023,
+        "level": 1
+      },
+      {
+        "id": 9024,
+        "level": 1
+      },
+      {
+        "id": 9025,
+        "level": 1
+      },
+      {
+        "id": 9026,
+        "level": 1
+      },
+      {
+        "id": 9013,
+        "level": 1
+      },
+      {
+        "id": 9018,
+        "level": 1
+      },
+      {
+        "id": 9012,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "15358": {
+    "name": "Player Commendation Instant Lottery Ticket - 30-day limited period",
+    "description": "Instant lottery with luck worth maximum of 100,000 PC Cafe points Disappears when not using it within 30 days from the day endowed Cannot be exchanged or dropped. PC cafe personal instant lottery",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 2,
+    "icon": "icon.etc_exchange_ticket_i04",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15359": {
+    "name": "Winning instant lottery ticket - 100,000 PC Points - 30-day limited period",
+    "description": "When you bring it an adventurers' guild member in the town, you will receive 100,000 PC Cafe points. Disappears when winning points are not given within 30 days. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "icon.etc_exchange_ticket_i04",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15360": {
+    "name": "Winning instant lottery ticket - 10,000 PC Points - 30-day limited period",
+    "description": "When you bring it an adventurers' guild member in the town, you will receive 10,000 PC Cafe points. Disappears when winning points are not given within 30 days. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "icon.etc_exchange_ticket_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15361": {
+    "name": "Winning instant lottery ticket - 2,000 PC Points - 30-day limited period",
+    "description": "When you bring it an adventurers' guild member in the town, you will receive 2000 PC Cafe points. Disappears when winning points are not given within 30 days. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "icon.etc_exchange_ticket_i01",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15362": {
+    "name": "Winning instant lottery ticket - 1,000 PC Points - 30-day limited period",
+    "description": "When you bring it an adventurers' guild member in the town, you will receive 1000 PC Cafe points. Disappears when winning points are not given within 30 days. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "icon.etc_exchange_ticket_i02",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15363": {
+    "name": "Winning instant lottery ticket - 100 PC Points - 30-day limited period",
+    "description": "When you bring it an adventurers' guild member in the town, you will receive 100 PC Cafe points. Disappears when winning points are not given within 30 days. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "icon.etc_exchange_ticket_i03",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15364": {
+    "name": "Cool Pack",
+    "description": "Event Item Shoot Cool Packs to cool down the heat of the sultry weather Able to exchange/drop this item. Cool air cannon",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_int_symbol_i00",
+    "item_skills": [
+      {
+        "id": 9010,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "15365": {
+    "name": "Lucky Cool Pack",
+    "description": "Event item. Fires a cool air cannon to lower the blistering temperature. Looks much luckier than an ordinary cool air cannon. Can be exchanged or dropped. Cool air cannon of fortune",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_int_symbol_i01",
+    "item_skills": [
+      {
+        "id": 9028,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "15366": {
+    "name": "Watermelon seed",
+    "description": "L2 Big Watermelon Event - Double click to make a young watermelon appear. Watermelon Seed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.event_honey_watermelon_seed_i00",
+    "item_skills": [
+      {
+        "id": 9029,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15367": {
+    "name": "Honey Watermelon Seed",
+    "description": "L2 Big Watermelon Event - Double click to make a young honey watermelon appear. Honey Watermelon Seed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.event_watermelon_seed_i00",
+    "item_skills": [
+      {
+        "id": 9030,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15368": {
+    "name": "Copied Watermelon Seed",
+    "description": "L2 Big Watermelon Event - Double click to make a young watermelon appear. Cannot be exchanged or dropped. Copied Watermelon Seed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.event_honey_watermelon_seed_i00",
+    "item_skills": [
+      {
+        "id": 9031,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15369": {
+    "name": "Copied Honey Watermelon Seed",
+    "description": "L2 Big Watermelon Event - Double click to make a young honey watermelon appear. Cannot be exchanged or dropped. Copied Honey Watermelon Seed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.event_watermelon_seed_i00",
+    "item_skills": [
+      {
+        "id": 9032,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15370": {
+    "name": "Special July 7th Package",
+    "description": "Special July 7th package. Contains a Special July 7th parcel. Cannot be dropped, sold, or mailed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15372,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15371": {
+    "name": "July 7th Package",
+    "description": "July 7th package. Contains a July 7th parcel. Cannot be dropped or mailed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15373,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15372": {
+    "name": "Special July 7th Parcel",
+    "description": "Special July 7th parcel. Contains 5 steamed rice cakes. Improves the chance to receive a bonus limited time item (weaver's multi-colored clothes). Can be exchanged. Cannot be dropped or destroyed. Cannot be registered at a private shop. Special July 7th Parcel",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.event_big_july_seven_park_i00",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15373": {
+    "name": "July 7th Parcel",
+    "description": "July 7th parcel. Contains 1 steamed rice cake. Cannot be dropped or destroyed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15379,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_july_seven_park_i00",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15374": {
+    "name": "Special July 7th Package (Event)",
+    "description": "Special July 7th package. Contains a Special July 7th parcel. Cannot be dropped, sold, or mailed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15376,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15375": {
+    "name": "July 7th Package (Event)",
+    "description": "July 7th package. Contains a July 7th parcel. Cannot be dropped or mailed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15377,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15376": {
+    "name": "Special July 7th Parcel (Event)",
+    "description": "Special July 7th parcel. Contains 5 steamed rice cakes. Improves the chance to receive a bonus limited time item (weaver's multi-colored clothes). Can be exchanged. Cannot be dropped or destroyed. Cannot be registered at a private shop. Special July 7th Parcel (Event)",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.event_big_july_seven_park_i00",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15377": {
+    "name": "July 7th Parcel (Event)",
+    "description": "July 7th parcel. Contains 1 steamed rice cake. Cannot be dropped or destroyed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15380,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_july_seven_park_i00",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15378": {
+    "name": "July 7th Gift Box",
+    "description": "July 7th gift box. Contains a Weaver's Multi-colored Clothes 7-day limited period item. Cannot be dropped, sold, or mailed. Cannot be registered at a private shop.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15383,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15379": {
+    "name": "Steamed Rice Cake",
+    "description": "Delicious steamed rice cake. Energy is fully replenished upon use. Re-use time is 60 minutes. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop. Steamed Rice Cake",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.event_steamed_rice_cake_i00",
+    "item_skills": [
+      {
+        "id": 9038,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "15380": {
+    "name": "Steamed Rice Cake (Event)",
+    "description": "Delicious steamed rice cake. Energy is fully replenished upon use. Re-use time is 60 minutes. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop. Steamed Rice Cake",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.event_steamed_rice_cake_i00",
+    "item_skills": [
+      {
+        "id": 9039,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "15381": {
+    "name": "Event - Herdsman's Love Scroll - Event",
+    "description": "July 7th event. Enchant scroll exclusively for the Weaver's Multi-colored Clothes. Increases the P. Def. and Magic M. Def. of the Weaver's Multi-colored Clothes. Can be safely enchanted to +3, and the item disappears when the enchant fails. When the Weaver's Multi-colored Clothes is enchanted above +4, attributes, STR, CON, INT, and MEN also increase according to the enhancement value. Can only be used during the July 7th event period, and it is deleted in bulk once the event ends. Herdsman's Love Scroll",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "icon": "icon.event_altair_enchant_scroll_i00",
+    "item_skills": [
+      {
+        "id": 9033,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15382": {
+    "name": "Event - Vitality Belt Enchant Scroll - Event",
+    "description": "Enchant scroll exclusively for the Vitality Belt. Increases the Vitality Belt's P. Def. and Magic M. Def. Vitality maintenance effect. Vitality maintenance re-use time reduced. Can be safely enchanted to +3, and the item disappears when the enchant fails. When the Vitality Belt is enchanted above +4, vitality maintenance duration increases, and the decreases vitality maintenance re-use time. Can only be used during the Vitality Belt event period, and it s deleted in bulk once the event ends. Vitality Belt Enchant Scroll",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "icon": "icon.event_energy_enchant_scroll_i00",
+    "item_skills": [
+      {
+        "id": 9034,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15383": {
+    "name": "Weaver's Multi-colored Clothes - 7-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15384": {
+    "name": "Weaver's Multi-colored Clothes - 30-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15385": {
+    "name": "Weaver's Multi-colored Clothes - 60-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 86400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15386": {
+    "name": "Weaver's Multi-colored Clothes - 90-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15387": {
+    "name": "Weaver's Multi-colored Clothes - Permanent Use",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15388": {
+    "name": "Weaver's Multi-colored Clothes (Event) - 7-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15389": {
+    "name": "Weaver's Multi-colored Clothes (Event) - 30-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15390": {
+    "name": "Weaver's Multi-colored Clothes (Event) - 60-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 86400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15391": {
+    "name": "Weaver's Multi-colored Clothes (Event) - 90-day limited period",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Trade Drop. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15392": {
+    "name": "Weaver's Multi-colored Clothes (Event) - Permanent Use",
+    "description": "Weaver's Multi-colored Clothes. Can be enchanted using the Herdsman's Love Scroll. Cannot be exchanged, dropped, or destroyed. Cannot be registered at a private shop.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_vega_rainbow_shirt_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15393": {
+    "name": "Vitality Belt - 7-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15394": {
+    "name": "Vitality Belt - 30-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15395": {
+    "name": "Vitality Belt - 60-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 86400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15396": {
+    "name": "Vitality Belt - 90-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15397": {
+    "name": "Vitality Belt - Permanent Use",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15398": {
+    "name": "Vitality Belt (Event) - 7-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15399": {
+    "name": "Vitality Belt (Event) - 30-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  }
+}

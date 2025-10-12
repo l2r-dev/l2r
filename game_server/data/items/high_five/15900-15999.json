@@ -1,0 +1,5544 @@
+{
+  "15900": {
+    "name": "Archangel Sword - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 350
+      },
+      "MAtk": {
+        "set": 256
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_archangel_sword_i001",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 3
+      }
+    ]
+  },
+  "15901": {
+    "name": "Recurve Thorne Bow - Critical Slow",
+    "description": "<Soul Crystal Enhancement>. Slow effect with 44% chance during a critical attack. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 15910,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 794
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_recurvethorne_bow_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "15902": {
+    "name": "Recurve Thorne Bow - Cheap Shot",
+    "description": "<Soul Crystal Enhancement> . Launching a general attack, there is a 8% chance that MP consumption will be decreased to 1. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 15911,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 794
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_recurvethorne_bow_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 8312,
+        "level": 2
+      }
+    ]
+  },
+  "15903": {
+    "name": "Recurve Thorne Bow - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 139. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 15912,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 794
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_recurvethorne_bow_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3567,
+        "level": 5
+      }
+    ]
+  },
+  "15904": {
+    "name": "Heavenstare Rapier - Focus",
+    "description": "Kamael exclusive weapon Incessantcore Sword Conversion. <Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP. When enchanted over 4, party members including yourself can increase attack power, magic power, and healing capacity at a fixed rate and decrease MP consumption per skill during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15871,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1280,
+    "icon": "icon.weapon_heavenstair_rapier_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8289,
+        "level": 3
+      }
+    ]
+  },
+  "15905": {
+    "name": "Heavenstare Rapier - Haste",
+    "description": "Kamael exclusive weapon Incessantcore Sword Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. When enchanted over 4, party members including yourself can increase attack power, magic power, and healing capacity at a fixed rate and decrease MP consumption per skill during a critical attack. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15872,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1280,
+    "icon": "icon.weapon_heavenstair_rapier_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ]
+  },
+  "15906": {
+    "name": "Heavenstare Rapier - Health",
+    "description": "Kamael exclusive weapon Incessantcore Sword Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. When enchanted over 4, party members including yourself can increase attack power, magic power, and healing capacity at a fixed rate and decrease MP consumption per skill during a critical attack. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15873,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1280,
+    "icon": "icon.weapon_heavenstair_rapier_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "15907": {
+    "name": "Pyseal Blade - Focus",
+    "description": "Kamael exclusive weapon Lavamond Saw Conversion. <Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15883
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 473
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1800,
+    "icon": "icon.weapon_pyseal_blade_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 5
+      }
+    ]
+  },
+  "15908": {
+    "name": "Pyseal Blade - Haste",
+    "description": "Kamael exclusive weapon Lavamond Saw Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15884
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 473
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1800,
+    "icon": "icon.weapon_pyseal_blade_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ]
+  },
+  "15909": {
+    "name": "Pyseal Blade - Health",
+    "description": "Kamael exclusive weapon Lavamond Saw Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15885
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 473
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1800,
+    "icon": "icon.weapon_pyseal_blade_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "15910": {
+    "name": "Thorne Crossbow - Critical Slow",
+    "description": "Kamael exclusive weapon Recurvethorne Bow Conversion. <Soul Crystal Enhancement>. Inflicts Slow at a 24% rate during a critical attack. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15901,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 487
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1580,
+    "icon": "icon.weapon_thorne_crossbow_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "15911": {
+    "name": "Thorne Crossbow - Cheap Shot",
+    "description": "Kamael exclusive weapon Recurvethorne Bow Conversion. <Soul Crystal Enhancement>. MP consumption decreases to 1 with a 12% chance during a regular attack. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15902,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 487
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1580,
+    "icon": "icon.weapon_thorne_crossbow_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ]
+  },
+  "15912": {
+    "name": "Thorne Crossbow - Focus",
+    "description": "Kamael exclusive weapon Recurvethorne Bow Conversion. <Soul Crystal Enhancement>. Increases Critical by 139. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 15903,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 487
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1580,
+    "icon": "icon.weapon_thorne_crossbow_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8289,
+        "level": 3
+      }
+    ]
+  },
+  "15913": {
+    "name": "Eternal Core Sword {PvP}",
+    "description": "It can bestow one of the following functions: Health, Focus, or Haste. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_incessantcore_sword_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15914": {
+    "name": "Mamba Edge {PvP}",
+    "description": "It can bestow one of the following functions: HP Drain, Haste, or Critical Damage. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 382
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_mambaedge_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15915": {
+    "name": "Eversor Mace {PvP}",
+    "description": "It can bestow one of the following functions: Health, HP Regeneration, or HP Drain. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_expowder_mace_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15916": {
+    "name": "Contristo Hammer {PvP}",
+    "description": "It can bestow one of the following functions: Health, HP Drain, or HP Regeneration. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_retributer_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15917": {
+    "name": "Lava Saw {PvP}",
+    "description": "It can bestow one of the following functions: Health, Focus, or Haste. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_lavamond_saw_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15918": {
+    "name": "Jade Claw {PvP}",
+    "description": "It can bestow one of the following functions: Health, Critical Stun, or Focus. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1550,
+    "icon": "icon.weapon_jademice_claw_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 4
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15919": {
+    "name": "Demitelum {PvP}",
+    "description": "It can bestow one of the following functions: Guidance, Haste, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 2010,
+    "icon": "icon.weapon_ghostcleaner_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15920": {
+    "name": "Sacredium {PvP}",
+    "description": "It can bestow one of the following functions: MP Regeneration, Mana Up, or Acumen. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 350
+      },
+      "MAtk": {
+        "set": 256
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1080,
+    "icon": "icon.weapon_vesper_caster_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15921": {
+    "name": "Cyclic Cane {PvP}",
+    "description": "It can bestow one of the following functions: MP Regeneration, Magic Hold, or Empower. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 426
+      },
+      "MAtk": {
+        "set": 281
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1080,
+    "icon": "icon.weapon_psyskilt_cane_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15922": {
+    "name": "Archangel Sword {PvP}",
+    "description": "It can bestow one of the following functions: Acumen, Magic Hold, or Mana Up. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 350
+      },
+      "MAtk": {
+        "set": 256
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_archangel_sword_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15923": {
+    "name": "Recurve Thorne Bow {PvP}",
+    "description": "It can bestow one of the following functions: Focus, Critical Slow, or Cheap Shot. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 794
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_recurvethorne_bow_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3657,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15924": {
+    "name": "Heavenstare Rapier {PvP}",
+    "description": "Kamael Exclusive Weapon: Eternal Core Sword Conversion. It can bestow one of the following functions: Health, Focus, or Haste. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1280,
+    "icon": "icon.weapon_heavenstair_rapier_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15925": {
+    "name": "Pyseal Blade {PvP}",
+    "description": "Kamael Exclusive Weapon: Lava Saw Conversion. It can bestow one of the following functions: Health, Focus, or Haste. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 473
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1800,
+    "icon": "icon.weapon_pyseal_blade_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15926": {
+    "name": "Thorne Crossbow {PvP}",
+    "description": "Kamael Exclusive Weapon: Recurvethorne Bow Conversion. It can bestow one of the following functions: Focus, Critical Slow, or Cheap Shot. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 487
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 205668000,
+    "weight": 1580,
+    "icon": "icon.weapon_thorne_crossbow_i00",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15927": {
+    "name": "Periel Sword {PvP}",
+    "description": "It can bestow one of the following functions: Focus, Haste, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_periwing_sword_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15928": {
+    "name": "Skull Edge {PvP}",
+    "description": "It can bestow one of the following functions: Haste, Critical Damage, or HP Drain. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skulledge_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15929": {
+    "name": "Vigwik Axe {PvP}",
+    "description": "It can bestow one of the following functions: HP Regeneration, HP Drain, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_vigwik_axe_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15930": {
+    "name": "Devilish Maul {PvP}",
+    "description": "It can bestow one of the following functions: HP Drain, HP Regeneration, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_evildeity_maul_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15931": {
+    "name": "Feather Eye Blade {PvP}",
+    "description": "It can bestow one of the following functions: Focus, Haste, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_feathereye_blade_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15932": {
+    "name": "Octo Claw {PvP}",
+    "description": "It can bestow one of the following functions: Critical Stun, Focus, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1550,
+    "icon": "icon.weapon_octoclaw_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 4
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15933": {
+    "name": "Doubletop Spear {PvP}",
+    "description": "It can bestow one of the following functions: Haste, Health, or Guidance. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 2010,
+    "icon": "icon.weapon_doubletopa_spear_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15934": {
+    "name": "Rising Star {PvP}",
+    "description": "It can bestow one of the following functions: Mana Up, Acumen, or MP Regeneration. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_cuticle_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15935": {
+    "name": "Black Visage {PvP}",
+    "description": "It can bestow one of the following functions: Magic Hold, Empower, or MP Regeneration. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 404
+      },
+      "MAtk": {
+        "set": 268
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_blackvisage_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15936": {
+    "name": "Veniplant Sword {PvP}",
+    "description": "It can bestow one of the following functions: Magic Hold, Mana Up, or Acumen. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_veniplant_sword_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15937": {
+    "name": "Skull Carnium Bow {PvP}",
+    "description": "It can bestow one of the following functions: Critical Slow, Cheap Shot, or Focus. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 768
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skullgrove_bow_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3657,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15938": {
+    "name": "Gemtail Rapier {PvP}",
+    "description": "Kamael Exclusive Weapon: Periel Sword Conversion. It can bestow one of the following functions: Focus, Haste, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 376
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1280,
+    "icon": "icon.weapon_gemtail_rapier_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15939": {
+    "name": "Finale Blade {PvP}",
+    "description": "Kamael Exclusive Weapon: Feather Eye Blade Conversion. It can bestow one of the following functions: Focus, Haste, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 449
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1800,
+    "icon": "icon.weapon_findragon blade_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15940": {
+    "name": "Dominion Crossbow {PvP}",
+    "description": "Kamael Exclusive Weapon: Skull Carnium Bow Conversion. It can bestow one of the following functions: Critical Slow, Cheap Shot, or Focus. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 471
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1580,
+    "icon": "icon.weapon_rudecutter_crossbow_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15941": {
+    "name": "Periel Sword {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_periwing_sword_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15942": {
+    "name": "Periel Sword {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_periwing_sword_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15943": {
+    "name": "Periel Sword {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_periwing_sword_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15944": {
+    "name": "Skull Edge {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skulledge_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15945": {
+    "name": "Skull Edge {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or decreases a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skulledge_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15946": {
+    "name": "Skull Edge {PvP} - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 1000 during a critical attack. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skulledge_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3572,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15947": {
+    "name": "Vigwik Axe {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_vigwik_axe_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15948": {
+    "name": "Vigwik Axe {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_vigwik_axe_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15949": {
+    "name": "Vigwik Axe {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_vigwik_axe_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15950": {
+    "name": "Devilish Maul {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_evildeity_maul_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15951": {
+    "name": "Devilish Maul {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_evildeity_maul_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15952": {
+    "name": "Devilish Maul {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_evildeity_maul_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15953": {
+    "name": "Feather Eye Blade {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_feathereye_blade_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15954": {
+    "name": "Feather Eye Blade {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_feathereye_blade_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15955": {
+    "name": "Feather Eye Blade {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. There is a chance to inflict additional damage when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1740,
+    "icon": "icon.weapon_feathereye_blade_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15956": {
+    "name": "Octo Claw {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Has a chance of cancelling a target's enhanced status by more than 1 or decreasing Shield Def. during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1550,
+    "icon": "icon.weapon_octoclaw_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15957": {
+    "name": "Octo Claw {PvP} - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 43% chance of inflicting Stun during a critical attack. Increases damage inflicted during PvP. Has a chance of cancelling a target's enhanced status by more than 1 or decreasing Shield Def. during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1550,
+    "icon": "icon.weapon_octoclaw_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15958": {
+    "name": "Octo Claw {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 129. Increases damage inflicted during PvP. Has a chance of cancelling a target's enhanced status by more than 1 or decreasing Shield Def. during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 505
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1550,
+    "icon": "icon.weapon_octoclaw_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15959": {
+    "name": "Doubletop Spear {PvP} - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 8. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 2010,
+    "icon": "icon.weapon_doubletopa_spear_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3602,
+        "level": 10
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15960": {
+    "name": "Doubletop Spear {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP.There is a chance to inflict additional damage when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 2010,
+    "icon": "icon.weapon_doubletopa_spear_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3601,
+        "level": 10
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15961": {
+    "name": "Doubletop Spear {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 415
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 2010,
+    "icon": "icon.weapon_doubletopa_spear_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15962": {
+    "name": "Rising Star {PvP} - MP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases MP Recovery Rate. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_cuticle_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3576,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15963": {
+    "name": "Rising Star {PvP} - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_cuticle_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15964": {
+    "name": "Rising Star {PvP} - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_cuticle_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15965": {
+    "name": "Black Visage {PvP} - MP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases MP Recovery Rate. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 404
+      },
+      "MAtk": {
+        "set": 268
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_blackvisage_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3576,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15966": {
+    "name": "Black Visage {PvP} - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Inflicts Dryad Root with a 20% chance when using a magic skill on the target. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3577,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 404
+      },
+      "MAtk": {
+        "set": 268
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_blackvisage_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15967": {
+    "name": "Black Visage {PvP} - Empower",
+    "description": "<Soul Crystal Enhancement>. Increases M. Atk. by 167. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 404
+      },
+      "MAtk": {
+        "set": 268
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 171530000,
+    "weight": 1080,
+    "icon": "icon.weapon_blackvisage_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3575,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15968": {
+    "name": "Veniplant Sword {PvP} - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_veniplant_sword_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15969": {
+    "name": "Veniplant Sword {PvP} - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Inflicts Dryad Root with a 20% chance when using a magic skill on the target. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3577,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_veniplant_sword_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15970": {
+    "name": "Veniplant Sword {PvP} - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 244
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_veniplant_sword_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15971": {
+    "name": "Skull Carnium Bow {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 139. Increases damage inflicted during PvP. Chance to increase bow/crossbow attack speed during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 768
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skullgrove_bow_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15972": {
+    "name": "Skull Carnium Bow {PvP} - Critical Slow",
+    "description": "<Soul Crystal Enhancement>. Inflicts Slow with a 33% chance during a critical attack. Increases damage inflicted during PvP. Chance to increase bow/crossbow attack speed during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 768
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skullgrove_bow_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15973": {
+    "name": "Skull Carnium Bow {PvP} - Cheap Shot",
+    "description": "<Soul Crystal Enhancement>. Decreases MP consumption to 1 with a 8% chance during a general attack. Increases damage inflicted during PvP. Chance to increase bow/crossbow attack speed during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 768
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 171530000,
+    "weight": 1520,
+    "icon": "icon.weapon_skullgrove_bow_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 8312,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15974": {
+    "name": "Gemtail Rapier {PvP} - Health",
+    "description": "Kamael exclusive weapon Peri El Sword Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. When enchanted to 4 or more, party members including yourself will get increased P. Atk., magic power, and healing capacity by a fixed rate, and MP consumption during skill use is decreased. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 376
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1280,
+    "icon": "icon.weapon_gemtail_rapier_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15975": {
+    "name": "Gemtail Rapier {PvP} - Focus",
+    "description": "Kamael exclusive weapon Peri El Sword Conversion. <Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. When enchanted to 4 or more, party members including yourself will get increased P. Atk., magic power, and healing capacity by a fixed rate, and MP consumption during skill use is decreased. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 376
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1280,
+    "icon": "icon.weapon_gemtail_rapier_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 8289,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15976": {
+    "name": "Gemtail Rapier {PvP} - Haste",
+    "description": "Kamael exclusive weapon Peri El Sword Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. When enchanted to 4 or more, party members including yourself will get increased P. Atk., magic power, and healing capacity by a fixed rate, and MP consumption during skill use is decreased. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 376
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1280,
+    "icon": "icon.weapon_gemtail_rapier_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15977": {
+    "name": "Finale Blade {PvP} - Health",
+    "description": "Kamael exclusive weapon Feather Eye Blade Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Inflicts additional damage with a fixed rate when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 449
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1800,
+    "icon": "icon.weapon_findragon blade_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15978": {
+    "name": "Finale Blade {PvP} - Focus",
+    "description": "Kamael exclusive weapon Feather Eye Blade Conversion. <Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP. Inflicts additional damage with a fixed rate when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 449
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1800,
+    "icon": "icon.weapon_findragon blade_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15979": {
+    "name": "Finale Blade {PvP} - Haste",
+    "description": "Kamael exclusive weapon Feather Eye Blade Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Inflicts additional damage with a fixed rate when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 449
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1800,
+    "icon": "icon.weapon_findragon blade_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15980": {
+    "name": "Dominion Crossbow {PvP} - Focus",
+    "description": "Kamael exclusive weapon Skull Carnium Bow Conversion. <Soul Crystal Enhancement>. Increases Critical by 139. Increases damage inflicted during PvP. Increases bow/crossbow attack speed with a fixed rate when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 471
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1580,
+    "icon": "icon.weapon_rudecutter_crossbow_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 8289,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15981": {
+    "name": "Dominion Crossbow {PvP} - Critical Slow",
+    "description": "Kamael exclusive weapon Skull Carnium Bow Conversion. <Soul Crystal Enhancement>. Inflicts Slow at a 24% rate during a critical attack. Increases damage inflicted during PvP. Increases bow/crossbow attack speed with a fixed rate when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 471
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1580,
+    "icon": "icon.weapon_rudecutter_crossbow_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15982": {
+    "name": "Dominion Crossbow {PvP} - Cheap Shot",
+    "description": "Kamael exclusive weapon Skull Carnium Bow Conversion. <Soul Crystal Enhancement>. During a general attack, decreases MP consumption to 1 at a 12% rate. Increases damage inflicted during PvP. Increases bow/crossbow attack speed with a fixed rate when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 471
+      },
+      "MAtk": {
+        "set": 183
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 171530000,
+    "weight": 1580,
+    "icon": "icon.weapon_rudecutter_crossbow_i01",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15983": {
+    "name": "Eternal Core Sword {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_incessantcore_sword_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15984": {
+    "name": "Eternal Core Sword {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_incessantcore_sword_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15985": {
+    "name": "Eternal Core Sword {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_incessantcore_sword_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15986": {
+    "name": "Mamba Edge {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Has a chance of canceling one or more enhanced stats of a target, or decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 382
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_mambaedge_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15987": {
+    "name": "Mamba Edge {PvP} - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 1060 during a critical attack. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 382
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_mambaedge_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3572,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15988": {
+    "name": "Mamba Edge {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 382
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 205668000,
+    "weight": 1520,
+    "icon": "icon.weapon_mambaedge_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15989": {
+    "name": "Eversor Mace {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_expowder_mace_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15990": {
+    "name": "Eversor Mace {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_expowder_mace_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15991": {
+    "name": "Eversor Mace {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 437
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_expowder_mace_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15992": {
+    "name": "Contristo Hammer {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_pereztear_hammer_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15993": {
+    "name": "Contristo Hammer {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_pereztear_hammer_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15994": {
+    "name": "Contristo Hammer {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_pereztear_hammer_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15995": {
+    "name": "Lava Saw {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 134. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_lavamond_saw_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15996": {
+    "name": "Lava Saw {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. There is a chance to inflict additional damage when attacking. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_lavamond_saw_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15997": {
+    "name": "Lava Saw {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1740,
+    "icon": "icon.weapon_lavamond_saw_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15998": {
+    "name": "Jade Claw {PvP} - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. There is a 43% chance to inflict Stun during a critical attack. Increases damage inflicted during PvP. Chance to cancel a target's enhanced status by more than 1 or decreases shield P. Def during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1550,
+    "icon": "icon.weapon_jademice_claw_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "15999": {
+    "name": "Jade Claw {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 129. Increases damage inflicted during PvP. Chance to cancel a target's enhanced status by more than 1 or decreases shield P. Def during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 532
+      },
+      "MAtk": {
+        "set": 192
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 205668000,
+    "weight": 1550,
+    "icon": "icon.weapon_jademice_claw_i01",
+    "crystal_count": 9872,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

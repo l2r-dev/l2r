@@ -1,0 +1,8 @@
+[build]
+incremental = true
+
+# for Windows
+[target.x86_64-pc-windows-msvc]
+linker = "rust-lld.exe"
+# -Z self-profile
+rustflags = [ "-Zshare-generics=y" ]

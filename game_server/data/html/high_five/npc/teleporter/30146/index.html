@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+The Elves once thought that this forest was the entire world, but it is actually just a small part of a vast continent.
+If you want to go to the bigger world, we, the gatekeepers will gladly send you.<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=False, fantasy_isle=False) }}
+{% endblock body %}

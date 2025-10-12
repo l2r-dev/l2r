@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "L2R PostgreSQL",
+      "Group": "Servers",
+      "Host": "postgresql",
+      "Port": 5432,
+      "MaintenanceDB": "l2r",
+      "Username": "l2r",
+      "PassFile": "/pgpass",
+      "SSLMode": "prefer"
+    }
+  }
+}

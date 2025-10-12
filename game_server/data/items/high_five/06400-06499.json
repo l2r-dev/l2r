@@ -1,0 +1,1320 @@
+{
+  "6400": {
+    "name": "Badge of Hyena",
+    "description": "The badge that indicates that its bearer's event collector grade is \"hyena.\" Without this badge, one cannot prove one'S-Grade.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_paper_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "6401": {
+    "name": "Badge of Fox",
+    "description": "The badge that indicates that its bearer's event collector grade is \"fox.\" Without this badge, one cannot prove one'S-Grade.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_paper_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "6402": {
+    "name": "Badge of Wolf",
+    "description": "The badge that indicates that its bearer's event collector grade is \"wolf.\" Without this badge, one cannot prove one'S-Grade.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_paper_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "6403": {
+    "name": "Star Shard",
+    "description": "Starlight Festival Event A gift from the sky. When it is thrown, it creates a small explosion. Can be used as an ingredient to make other types of fireworks. Star Shard",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_fairy_fire_i00",
+    "item_skills": [
+      {
+        "id": 2023,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6404": {
+    "name": "Gunpowder",
+    "description": "Starlight Festival Event - Black powder. An ingredient used to make larger fireworks.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_powder_black_i00",
+    "stackable": true
+  },
+  "6405": {
+    "name": "Magnesium",
+    "description": "Starlight Festival Event - A chemical compound that generates a powerful flash when ignited. It is needed to make large fireworks.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_broken_crystal_silver_i00",
+    "stackable": true
+  },
+  "6406": {
+    "name": "Firework",
+    "description": "An explosive device that brilliantly lights up the sky. Firework",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_small_ultra_bomb_i00",
+    "item_skills": [
+      {
+        "id": 2024,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "6407": {
+    "name": "Large Firework",
+    "description": "A large explosive device that ignites to light up the sky. Large Firework",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_ultra_bomb_i00",
+    "item_skills": [
+      {
+        "id": 2025,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "6408": {
+    "name": "Formal Wear",
+    "description": "Formal wear appears as a wedding dress for female characters and as a tuxedo for male characters.",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "material": "Cloth",
+    "price": 5000000,
+    "weight": 1000,
+    "icon": "icon.armor_t2000_ul_i00"
+  },
+  "6409": {
+    "name": "2006 Battle Tournament - CP Potion",
+    "description": "Restores CP by 200. CP Gauge Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 500,
+    "icon": "icon.etc_cp_potion_i01",
+    "item_skills": [
+      {
+        "id": 2166,
+        "level": 2
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6410": {
+    "name": "2006 Battle Tournament - Quick Healing Potion",
+    "description": "A magical potion that quickly restores HP. However, its effects do not last. Quick Healing Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 180,
+    "icon": "icon.etc_potion_gold_i00",
+    "item_skills": [
+      {
+        "id": 2038,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "6411": {
+    "name": "Small Nimble Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 138,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6412": {
+    "name": "Small Ugly Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 141,
+    "weight": 100,
+    "icon": "icon.etc_angler_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6413": {
+    "name": "Small Pudgy Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 153,
+    "weight": 100,
+    "icon": "icon.etc_bream_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6414": {
+    "name": "Nimble Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 167,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6415": {
+    "name": "Ugly Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 187,
+    "weight": 100,
+    "icon": "icon.etc_angler_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6416": {
+    "name": "Pudgy Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 208,
+    "weight": 100,
+    "icon": "icon.etc_bream_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6417": {
+    "name": "Large Nimble Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 225,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6418": {
+    "name": "Large Ugly Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 248,
+    "weight": 100,
+    "icon": "icon.etc_angler_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6419": {
+    "name": "Large Pudgy Green Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 265,
+    "weight": 100,
+    "icon": "icon.etc_bream_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6420": {
+    "name": "Small Jade Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 285,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6421": {
+    "name": "Small Jade Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 295,
+    "weight": 100,
+    "icon": "icon.etc_angler_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6422": {
+    "name": "Small Jade Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 310,
+    "weight": 100,
+    "icon": "icon.etc_bream_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6423": {
+    "name": "Jade Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 325,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6424": {
+    "name": "Jade Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 340,
+    "weight": 100,
+    "icon": "icon.etc_angler_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6425": {
+    "name": "Jade Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 355,
+    "weight": 100,
+    "icon": "icon.etc_bream_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6426": {
+    "name": "Big Jade Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 365,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6427": {
+    "name": "Big Jade Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 375,
+    "weight": 100,
+    "icon": "icon.etc_angler_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6428": {
+    "name": "Big Jade Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 385,
+    "weight": 100,
+    "icon": "icon.etc_bream_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6429": {
+    "name": "Small Blue Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 395,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6430": {
+    "name": "Small Blue Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 400,
+    "weight": 100,
+    "icon": "icon.etc_angler_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6431": {
+    "name": "Small Blue Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 410,
+    "weight": 100,
+    "icon": "icon.etc_bream_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6432": {
+    "name": "Blue Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 415,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6433": {
+    "name": "Blue Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 418,
+    "weight": 100,
+    "icon": "icon.etc_angler_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6434": {
+    "name": "Blue Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 420,
+    "weight": 100,
+    "icon": "icon.etc_bream_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6435": {
+    "name": "Big Blue Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 425,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6436": {
+    "name": "Big Blue Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 431,
+    "weight": 100,
+    "icon": "icon.etc_angler_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6437": {
+    "name": "Big Blue Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 435,
+    "weight": 100,
+    "icon": "icon.etc_bream_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6438": {
+    "name": "Small Yellow Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 442,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6439": {
+    "name": "Small Yellow Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 447,
+    "weight": 100,
+    "icon": "icon.etc_angler_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6440": {
+    "name": "Small Yellow Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 452,
+    "weight": 100,
+    "icon": "icon.etc_bream_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6441": {
+    "name": "Yellow Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 540,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6442": {
+    "name": "Yellow Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 553,
+    "weight": 100,
+    "icon": "icon.etc_angler_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6443": {
+    "name": "Yellow Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 568,
+    "weight": 100,
+    "icon": "icon.etc_bream_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6444": {
+    "name": "Big Yellow Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 580,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6445": {
+    "name": "Big Yellow Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 594,
+    "weight": 100,
+    "icon": "icon.etc_angler_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6446": {
+    "name": "Big Yellow Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 608,
+    "weight": 100,
+    "icon": "icon.etc_bream_i02",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6447": {
+    "name": "Small Orange Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 622,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6448": {
+    "name": "Small Orange Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 635,
+    "weight": 100,
+    "icon": "icon.etc_angler_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6449": {
+    "name": "Small Orange Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 649,
+    "weight": 100,
+    "icon": "icon.etc_bream_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6450": {
+    "name": "Orange Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 663,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6451": {
+    "name": "Orange Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 776,
+    "weight": 100,
+    "icon": "icon.etc_angler_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6452": {
+    "name": "Orange Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 792,
+    "weight": 100,
+    "icon": "icon.etc_bream_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6453": {
+    "name": "Big Orange Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 816,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6454": {
+    "name": "Big Orange Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 840,
+    "weight": 100,
+    "icon": "icon.etc_angler_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6455": {
+    "name": "Big Orange Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 858,
+    "weight": 100,
+    "icon": "icon.etc_bream_i08",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6456": {
+    "name": "Small Purple Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 875,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6457": {
+    "name": "Small Purple Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 893,
+    "weight": 100,
+    "icon": "icon.etc_angler_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6458": {
+    "name": "Small Purple Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 910,
+    "weight": 100,
+    "icon": "icon.etc_bream_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6459": {
+    "name": "Purple Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 930,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6460": {
+    "name": "Purple Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 948,
+    "weight": 100,
+    "icon": "icon.etc_angler_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6461": {
+    "name": "Purple Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1090,
+    "weight": 100,
+    "icon": "icon.etc_bream_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6462": {
+    "name": "Big Purple Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1111,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6463": {
+    "name": "Big Purple Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1133,
+    "weight": 100,
+    "icon": "icon.etc_angler_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6464": {
+    "name": "Big Purple Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1157,
+    "weight": 100,
+    "icon": "icon.etc_bream_i04",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6465": {
+    "name": "Small Red Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1277,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6466": {
+    "name": "Small Red Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1301,
+    "weight": 100,
+    "icon": "icon.etc_angler_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6467": {
+    "name": "Small Red Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1326,
+    "weight": 100,
+    "icon": "icon.etc_bream_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6468": {
+    "name": "Red Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1351,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6469": {
+    "name": "Red Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1376,
+    "weight": 100,
+    "icon": "icon.etc_angler_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6470": {
+    "name": "Red Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1402,
+    "weight": 100,
+    "icon": "icon.etc_bream_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6471": {
+    "name": "Big Red Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1577,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6472": {
+    "name": "Big Red Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1608,
+    "weight": 100,
+    "icon": "icon.etc_angler_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6473": {
+    "name": "Big Red Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1715,
+    "weight": 100,
+    "icon": "icon.etc_bream_i03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6474": {
+    "name": "Small White Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1747,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6475": {
+    "name": "Small White Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1781,
+    "weight": 100,
+    "icon": "icon.etc_angler_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6476": {
+    "name": "Small White Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1814,
+    "weight": 100,
+    "icon": "icon.etc_bream_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6477": {
+    "name": "White Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1849,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6478": {
+    "name": "White Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1887,
+    "weight": 100,
+    "icon": "icon.etc_angler_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6479": {
+    "name": "White Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1923,
+    "weight": 100,
+    "icon": "icon.etc_bream_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6480": {
+    "name": "Big White Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1961,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6481": {
+    "name": "Big White Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2000,
+    "weight": 100,
+    "icon": "icon.etc_angler_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6482": {
+    "name": "Big White Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2039,
+    "weight": 100,
+    "icon": "icon.etc_bream_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6483": {
+    "name": "Small Black Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2081,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6484": {
+    "name": "Small Black Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2123,
+    "weight": 100,
+    "icon": "icon.etc_angler_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6485": {
+    "name": "Small Black Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2166,
+    "weight": 100,
+    "icon": "icon.etc_bream_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6486": {
+    "name": "Black Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2309,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6487": {
+    "name": "Black Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2357,
+    "weight": 100,
+    "icon": "icon.etc_angler_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6488": {
+    "name": "Black Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2403,
+    "weight": 100,
+    "icon": "icon.etc_bream_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6489": {
+    "name": "Big Black Nimble Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2452,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6490": {
+    "name": "Big Black Ugly Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2502,
+    "weight": 100,
+    "icon": "icon.etc_angler_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6491": {
+    "name": "Big Black Fat Fish",
+    "description": "Double-click to randomly change into another item. The changed item can be used as an ingredient for general manufacture. Item - Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 2552,
+    "weight": 100,
+    "icon": "icon.etc_bream_i05",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6492": {
+    "name": "Small Green Treasure Chest",
+    "description": "Double-click to see the change. Item - Green Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 153,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6493": {
+    "name": "Green Treasure Chest",
+    "description": "Double-click to see the change. Item - Green Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 208,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6494": {
+    "name": "Big Green Treasure Chest",
+    "description": "Double-click to see the change. Item - Green Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 265,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6495": {
+    "name": "Small Jade Treasure Chest",
+    "description": "Double-click to see the change. Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 285,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6496": {
+    "name": "Jade Treasure Chest",
+    "description": "Double-click to see the change. Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 315,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6497": {
+    "name": "Big Jade Treasure Chest",
+    "description": "Double-click to see the change. Item - Jade Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 345,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6498": {
+    "name": "Small Blue Treasure Chest",
+    "description": "Double-click to see the change. Item - Blue Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 395,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "6499": {
+    "name": "Blue Treasure Chest",
+    "description": "Double-click to see the change. Item - Blue Treasure Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 419,
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i01",
+    "olympiad_restricted": true,
+    "stackable": true
+  }
+}

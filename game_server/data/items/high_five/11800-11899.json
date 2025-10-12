@@ -1,0 +1,4094 @@
+{
+  "11800": {
+    "name": "Common Item - Grace Dagger",
+    "description": "Grace Dagger with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 182200,
+    "weight": 340,
+    "icon": "icon.weapon_grace_dagger_i00",
+    "crystal_count": 73
+  },
+  "11801": {
+    "name": "Common Item - Sword of Limit",
+    "description": "Sword of Limit with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11812
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_sword_of_limit_i00",
+    "crystal_count": 73
+  },
+  "11802": {
+    "name": "Common Item - Nirvana Axe",
+    "description": "Nirvana Axe with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 383,
+    "icon": "icon.weapon_nirvana_axe_i00",
+    "crystal_count": 73
+  },
+  "11803": {
+    "name": "Common Item - Dark Screamer",
+    "description": "Dark Screamer with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 182200,
+    "weight": 337,
+    "icon": "icon.weapon_dark_screamer_i00",
+    "crystal_count": 73
+  },
+  "11804": {
+    "name": "Common Item - Club of Nature",
+    "description": "Club of Nature with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 367,
+    "icon": "icon.weapon_club_of_nature_i00",
+    "crystal_count": 73
+  },
+  "11805": {
+    "name": "Common Item - Sword of Whispering Death",
+    "description": "Sword of Whispering Death with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 307,
+    "icon": "icon.weapon_deathbreath_sword_i00",
+    "crystal_count": 73
+  },
+  "11806": {
+    "name": "Common Item - Mace of Underworld",
+    "description": "Mace of Underworld with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 363,
+    "icon": "icon.weapon_mace_of_underworld_i00",
+    "crystal_count": 73
+  },
+  "11807": {
+    "name": "Common Item - Sword of Delusion",
+    "description": "Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11809
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_sword_of_delusion_i00",
+    "crystal_count": 73
+  },
+  "11808": {
+    "name": "Common Item - Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Caliburs conversion. Blinzlasher with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11821,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 73
+  },
+  "11809": {
+    "name": "Common Item - Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Sword of Delusion conversion. Blinzlasher with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11807,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 73
+  },
+  "11810": {
+    "name": "Common Item - Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Tsurugi conversion. Blinzlasher with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11820,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 73
+  },
+  "11811": {
+    "name": "Common Item - Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Sword of Nightmare conversion. Blinzlasher with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11815,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 73
+  },
+  "11812": {
+    "name": "Common Item - Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Sword of Limit conversion. Blinzlasher with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11801,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 73
+  },
+  "11813": {
+    "name": "Common Item - Pa'agrian Sword",
+    "description": "Pa'agrian Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11818
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 660,
+    "icon": "icon.weapon_sword_of_paagrio_i00",
+    "crystal_count": 73
+  },
+  "11814": {
+    "name": "Common Item - Akat Long Bow",
+    "description": "Akat Long Bow with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 9,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 11823,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "Horn",
+    "stats": {
+      "PAtk": {
+        "set": 316
+      },
+      "MAtk": {
+        "set": 84
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 182200,
+    "weight": 580,
+    "icon": "icon.weapon_akat_long_bow_i00",
+    "crystal_count": 73
+  },
+  "11815": {
+    "name": "Common Item - Sword of Nightmare",
+    "description": "Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11811
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_sword_of_nightmare_i00",
+    "crystal_count": 73
+  },
+  "11816": {
+    "name": "Common Item - War Axe",
+    "description": "War Axe with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 553,
+    "icon": "icon.weapon_war_axe_i00",
+    "crystal_count": 73
+  },
+  "11817": {
+    "name": "Common Item - Heathen's Book",
+    "description": "Heathen's Book with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 187,
+    "icon": "icon.weapon_heathens_book_i00",
+    "crystal_count": 73
+  },
+  "11818": {
+    "name": "Common Item - Immortal Edge",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Sword of Pa'agrio conversion. Immortal Edge with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11813
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 151
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 182200,
+    "weight": 660,
+    "icon": "icon.weapon_invincible_blade_i00",
+    "crystal_count": 73
+  },
+  "11819": {
+    "name": "Common Item - Inferno Staff",
+    "description": "Inferno Staff with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 333,
+    "icon": "icon.weapon_inferno_staff_i00",
+    "crystal_count": 73
+  },
+  "11820": {
+    "name": "Common Item - Tsurugi",
+    "description": "Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11810
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_tsurugi_i00",
+    "crystal_count": 73
+  },
+  "11821": {
+    "name": "Common Item - Caliburs",
+    "description": "Caliburs with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11808
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 467,
+    "icon": "icon.weapon_caliburs_i00",
+    "crystal_count": 73
+  },
+  "11822": {
+    "name": "Common Item - Karik Horn",
+    "description": "Karik Horn with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 673,
+    "icon": "icon.weapon_horn_of_karik_i00",
+    "crystal_count": 73
+  },
+  "11823": {
+    "name": "Common Item - Tathlum",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Akat Long Bow conversion. Tathlum with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11814,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 182200,
+    "weight": 587,
+    "icon": "icon.weapon_taslam_i00",
+    "crystal_count": 73
+  },
+  "11824": {
+    "name": "Common Item - Pa'agrian Hammer",
+    "description": "Pa'agrian Hammer with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 337,
+    "icon": "icon.weapon_paagrio_hammer_i00",
+    "crystal_count": 73
+  },
+  "11825": {
+    "name": "Common Item - Paradia Staff",
+    "description": "Paradia Staff with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 337,
+    "icon": "icon.weapon_paradia_staff_i00",
+    "crystal_count": 73
+  },
+  "11826": {
+    "name": "Common Item - Poleaxe",
+    "description": "Poleaxe with limited enhancement options. Enchantment, soul storing and augmenting are impossible. Polearm Multi-attack",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 670,
+    "icon": "icon.weapon_poleaxe_i00",
+    "crystal_count": 73,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11827": {
+    "name": "Common Item - Fisted Blade",
+    "description": "Fisted Blade with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 90
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 493,
+    "icon": "icon.weapon_fist_blade_i00",
+    "crystal_count": 73
+  },
+  "11828": {
+    "name": "Common Item - Sage's Staff",
+    "description": "Sage's Staff with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 182200,
+    "weight": 333,
+    "icon": "icon.weapon_sages_staff_i00",
+    "crystal_count": 73
+  },
+  "11829": {
+    "name": "Common Item - Homunkulus's Sword",
+    "description": "Homunkulus's Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 182200,
+    "weight": 317,
+    "icon": "icon.weapon_homunkuluss_sword_i00",
+    "crystal_count": 73
+  },
+  "11830": {
+    "name": "Common Item - Scorpion",
+    "description": "Scorpion with limited enhancement options. Enchantment, soul storing and augmenting are impossible. Polearm Multi-attack",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 194400,
+    "weight": 663,
+    "icon": "icon.weapon_scorpion_i00",
+    "crystal_count": 78,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11831": {
+    "name": "Common Item - Stormbringer*Stormbringer",
+    "description": "Stormbringer*Stormbringer with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 6
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 194400,
+    "weight": 777,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 78
+  },
+  "11832": {
+    "name": "Common Item - Widow Maker",
+    "description": "Widow Maker with limited enhancement options. Enchantment, soul storing and augmenting are impossible. Polearm Multi-attack",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 194400,
+    "weight": 660,
+    "icon": "icon.weapon_widow_maker_i00",
+    "crystal_count": 78,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11833": {
+    "name": "Common Item - Pa'agrian Axe",
+    "description": "Pa'agrian Axe with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 194400,
+    "weight": 330,
+    "icon": "icon.weapon_paagrio_axe_i00",
+    "crystal_count": 78
+  },
+  "11834": {
+    "name": "Common Item - Stormbringer*Raid Sword",
+    "description": "Stormbringer*Raid Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 7
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 207000,
+    "weight": 780,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 83
+  },
+  "11835": {
+    "name": "Common Item - Stormbringer*Shamshir",
+    "description": "Stormbringer*Shamshir with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 7
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 207000,
+    "weight": 767,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 83
+  },
+  "11836": {
+    "name": "Common Item - Stormbringer*Spirit Sword",
+    "description": "Stormbringer*Spirit Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 7
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 207000,
+    "weight": 770,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 83
+  },
+  "11837": {
+    "name": "Common Item - Stormbringer*Katana",
+    "description": "Stormbringer*Katana with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 207000,
+    "weight": 773,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 83
+  },
+  "11838": {
+    "name": "Common Item - Ghoul's Staff",
+    "description": "Ghoul's Staff with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 333,
+    "icon": "icon.weapon_ghouls_staff_i00",
+    "crystal_count": 112
+  },
+  "11839": {
+    "name": "Common Item - Great Pata",
+    "description": "Great Pata with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 90
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 487,
+    "icon": "icon.weapon_great_pata_i00",
+    "crystal_count": 112
+  },
+  "11840": {
+    "name": "Common Item - Dwarven Hammer",
+    "description": "Dwarven Hammer with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 670,
+    "icon": "icon.weapon_dwarven_hammer_i00",
+    "crystal_count": 112
+  },
+  "11841": {
+    "name": "Common Item - Raid Sword*Raid Sword",
+    "description": "Raid Sword*Raid Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 750,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11842": {
+    "name": "Common Item - Deadman's Staff",
+    "description": "Deadman's Staff with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 337,
+    "icon": "icon.weapon_deadmans_staff_i00",
+    "crystal_count": 112
+  },
+  "11843": {
+    "name": "Common Item - Berserker Blade",
+    "description": "Berserker Blade with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11849
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 460,
+    "icon": "icon.weapon_berserker_blade_i00",
+    "crystal_count": 112
+  },
+  "11844": {
+    "name": "Common Item - Sharpshooter",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Eminence Bow of Nobility conversion. Sharpshooter with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 6,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11857,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 198
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 279400,
+    "weight": 580,
+    "icon": "icon.weapon_taslam_i00",
+    "crystal_count": 112
+  },
+  "11845": {
+    "name": "Common Item - Shamshir*Raid Sword",
+    "description": "Shamshir*Raid Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 760,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11846": {
+    "name": "Common Item - Shamshir*Shamshir",
+    "description": "Shamshir*Shamshir with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 777,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11847": {
+    "name": "Common Item - Shamshir*Spirit Sword",
+    "description": "Shamshir*Spirit Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 760,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11848": {
+    "name": "Common Item - Shamshir*Katana",
+    "description": "Shamshir*Katana with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 770,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11849": {
+    "name": "Common Item - Saber Tooth",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Berserker Blade conversion. Saber Tooth with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11843
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 279400,
+    "weight": 650,
+    "icon": "icon.weapon_invincible_blade_i00",
+    "crystal_count": 112
+  },
+  "11850": {
+    "name": "Common Item - Ecliptic Sword",
+    "description": "Ecliptic Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 279400,
+    "weight": 460,
+    "icon": "icon.weapon_sword_of_eclipse_i00",
+    "crystal_count": 112
+  },
+  "11851": {
+    "name": "Common Item - Spirit Sword*Raid Sword",
+    "description": "Spirit Sword*Raid Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 753,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11852": {
+    "name": "Common Item - Spirit Sword*Spirit Sword",
+    "description": "Spirit Sword*Spirit Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 747,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11853": {
+    "name": "Common Item - Samurai Long Sword",
+    "description": "Samurai Long Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11854
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 279400,
+    "weight": 460,
+    "icon": "icon.weapon_samurai_longsword_i00",
+    "crystal_count": 112
+  },
+  "11854": {
+    "name": "Common Item - Admiral's Estoc",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Samurai Longsword conversion. Admiral's Estoc with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 11853,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 279400,
+    "weight": 460,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 112
+  },
+  "11855": {
+    "name": "Common Item - Demon's Staff",
+    "description": "Demon's Staff with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 330,
+    "icon": "icon.weapon_demons_staff_i00",
+    "crystal_count": 112
+  },
+  "11856": {
+    "name": "Common Item - Yaksa Mace",
+    "description": "Yaksa Mace with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 279400,
+    "weight": 547,
+    "icon": "icon.weapon_yaksa_mace_i00",
+    "crystal_count": 112
+  },
+  "11857": {
+    "name": "Common Item - Eminence Bow",
+    "description": "Eminence Bow with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 11844,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 323
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 279400,
+    "weight": 573,
+    "icon": "icon.weapon_eminence_bow_i00",
+    "crystal_count": 112
+  },
+  "11858": {
+    "name": "Common Item - Orcish Poleaxe",
+    "description": "Orcish Poleaxe with limited enhancement options. Enchantment, soul storing and augmenting are impossible. Polearm Multi-attack",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 650,
+    "icon": "icon.weapon_orcish_poleaxe_i00",
+    "crystal_count": 112,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11859": {
+    "name": "Common Item - Ecliptic Axe",
+    "description": "Ecliptic Axe with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 279400,
+    "weight": 547,
+    "icon": "icon.weapon_eclipse_axe_i00",
+    "crystal_count": 112
+  },
+  "11860": {
+    "name": "Common Item - Katana*Raid Sword",
+    "description": "Katana*Raid Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 757,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11861": {
+    "name": "Common Item - Katana*Spirit Sword",
+    "description": "Katana*Spirit Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 750,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11862": {
+    "name": "Common Item - Katana*Katana",
+    "description": "Katana*Katana with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 279400,
+    "weight": 757,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 112
+  },
+  "11863": {
+    "name": "Common Item - Crystal Dagger",
+    "description": "Crystal Dagger with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 279400,
+    "weight": 333,
+    "icon": "icon.weapon_crystal_dagger_i00",
+    "crystal_count": 112
+  },
+  "11864": {
+    "name": "Common Item - Stormbringer*Sword of Limit",
+    "description": "Stormbringer*Sword of Limit with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 308500,
+    "weight": 747,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 41
+  },
+  "11865": {
+    "name": "Common Item - Stormbringer*Sword of Delusion",
+    "description": "Stormbringer*Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 308500,
+    "weight": 743,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 41
+  },
+  "11866": {
+    "name": "Common Item - Stormbringer*Sword of Nightmare",
+    "description": "Stormbringer*Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 308500,
+    "weight": 750,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 41
+  },
+  "11867": {
+    "name": "Common Item - Stormbringer*Tsurugi",
+    "description": "Stormbringer*Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 308500,
+    "weight": 740,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 41
+  },
+  "11868": {
+    "name": "Common Item - Stormbringer*Caliburs",
+    "description": "Stormbringer*Caliburs with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 308500,
+    "weight": 753,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 41
+  },
+  "11869": {
+    "name": "Common Item - Raid Sword*Sword of Limit",
+    "description": "Raid Sword*Sword of Limit with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 723,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11870": {
+    "name": "Common Item - Raid Sword*Sword of Delusion",
+    "description": "Raid Sword*Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 727,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11871": {
+    "name": "Common Item - Raid Sword*Sword of Nightmare",
+    "description": "Raid Sword*Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 723,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11872": {
+    "name": "Common Item - Raid Sword*Tsurugi",
+    "description": "Raid Sword*Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 723,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11873": {
+    "name": "Common Item - Raid Sword*Caliburs",
+    "description": "Raid Sword*Caliburs with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 730,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11874": {
+    "name": "Common Item - Shamshir*Sword of Limit",
+    "description": "Shamshir*Sword of Limit with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 747,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11875": {
+    "name": "Common Item - Shamshir*Sword of Delusion",
+    "description": "Shamshir*Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 733,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11876": {
+    "name": "Common Item - Shamshir*Sword of Nightmare",
+    "description": "Shamshir*Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 737,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11877": {
+    "name": "Common Item - Shamshir*Tsurugi",
+    "description": "Shamshir*Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 740,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11878": {
+    "name": "Common Item - Shamshir*Caliburs",
+    "description": "Shamshir*Caliburs with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 743,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11879": {
+    "name": "Common Item - Spirit Sword*Sword of Limit",
+    "description": "Spirit Sword*Sword of Limit with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 747,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11880": {
+    "name": "Common Item - Spirit Sword*Sword of Delusion",
+    "description": "Spirit Sword*Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 750,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11881": {
+    "name": "Common Item - Spirit Sword*Sword of Nightmare",
+    "description": "Spirit Sword*Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 750,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11882": {
+    "name": "Common Item - Spirit Sword*Tsurugi",
+    "description": "Spirit Sword*Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 740,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11883": {
+    "name": "Common Item - Spirit Sword*Caliburs",
+    "description": "Spirit Sword*Caliburs with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 747,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11884": {
+    "name": "Common Item - Katana*Sword of Limit",
+    "description": "Katana*Sword of Limit with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 727,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11885": {
+    "name": "Common Item - Katana*Sword of Delusion",
+    "description": "Katana*Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 730,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11886": {
+    "name": "Common Item - Katana*Sword of Nightmare",
+    "description": "Katana*Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 723,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11887": {
+    "name": "Common Item - Katana*Tsurugi",
+    "description": "Katana*Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 737,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11888": {
+    "name": "Common Item - Katana*Caliburs",
+    "description": "Katana*Caliburs with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 329600,
+    "weight": 740,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 44
+  },
+  "11889": {
+    "name": "Common Item - Great Sword",
+    "description": "Great Sword with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11895
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 643,
+    "icon": "icon.weapon_great_sword_i00",
+    "crystal_count": 47
+  },
+  "11890": {
+    "name": "Common Item - Great Axe",
+    "description": "Great Axe with limited enhancement options. Enchantment, soul storing and augmenting are impossible. Polearm Multi-attack",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 647,
+    "icon": "icon.weapon_great_axe_i00",
+    "crystal_count": 47,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11891": {
+    "name": "Common Item - Sword of Limit*Sword of Limit",
+    "description": "Sword of Limit*Sword of Limit with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 713,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 47
+  },
+  "11892": {
+    "name": "Common Item - Sword of Limit*Sword of Delusion",
+    "description": "Sword of Limit*Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 713,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 47
+  },
+  "11893": {
+    "name": "Common Item - Sword of Limit*Sword of Nightmare",
+    "description": "Sword of Limit*Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 710,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 47
+  },
+  "11894": {
+    "name": "Common Item - Sword of Limit*Tsurugi",
+    "description": "Sword of Limit*Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 707,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 47
+  },
+  "11895": {
+    "name": "Common Item - Innominate Victory",
+    "description": "Kamael Exclusive Weapon: Shadow weapon - Great Sword conversion. Innominate Victory with limited ability enhancement. Enchantment, special abilities and augmentation are not possible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11889
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 349500,
+    "weight": 643,
+    "icon": "icon.weapon_nameless_victory_i00",
+    "crystal_count": 47
+  },
+  "11896": {
+    "name": "Common Item - Dark Elven Long Bow",
+    "description": "Dark Elven Long Bow with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11917,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 349500,
+    "weight": 573,
+    "icon": "icon.weapon_dark_elven_long_bow_i00",
+    "crystal_count": 47
+  },
+  "11897": {
+    "name": "Common Item - Sword of Delusion*Sword of Delusion",
+    "description": "Sword of Delusion*Sword of Delusion with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 717,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 47
+  },
+  "11898": {
+    "name": "Common Item - Sword of Delusion*Sword of Nightmare",
+    "description": "Sword of Delusion*Sword of Nightmare with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 710,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 47
+  },
+  "11899": {
+    "name": "Common Item - Sword of Delusion*Tsurugi",
+    "description": "Sword of Delusion*Tsurugi with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 349500,
+    "weight": 713,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 47
+  }
+}

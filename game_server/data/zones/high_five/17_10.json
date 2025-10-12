@@ -1,0 +1,77 @@
+[
+  {
+    "name": "no_bookmark_olympiad_no_restart1",
+    "kind": "Condition",
+    "min_height": -6440,
+    "max_height": 3560,
+    "points": [
+      {
+        "x": -98038,
+        "y": -261656
+      },
+      {
+        "x": -66164,
+        "y": -261694
+      },
+      {
+        "x": -66141,
+        "y": -230048
+      },
+      {
+        "x": -97916,
+        "y": -229940
+      }
+    ]
+  },
+  {
+    "name": "no_boormark_olympiad_stadiums",
+    "kind": "Condition",
+    "min_height": -8485,
+    "max_height": 1149,
+    "points": [
+      {
+        "x": -98296,
+        "y": -262136
+      },
+      {
+        "x": -65544,
+        "y": -229384
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "olympiad_stadiums",
+    "kind": "NoLanding",
+    "min_height": -8485,
+    "max_height": 1149,
+    "points": [
+      {
+        "x": -98296,
+        "y": -262136
+      },
+      {
+        "x": -65544,
+        "y": -229384
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "olympiad_no_restart",
+    "kind": "NoRestart",
+    "min_height": -8485,
+    "max_height": 1149,
+    "points": [
+      {
+        "x": -98296,
+        "y": -262136
+      },
+      {
+        "x": -65544,
+        "y": -229384
+      }
+    ],
+    "shape": "Cuboid"
+  }
+]

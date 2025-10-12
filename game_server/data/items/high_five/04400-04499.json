@@ -1,0 +1,1278 @@
+{
+  "4400": {
+    "name": "White Fabric",
+    "description": "A large piece of white cloth given by Magister Hanellin. Hanellin will tell you its purpose.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Cloth",
+    "icon": "icon.etc_piece_of_cloth_white_i00",
+    "dropable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "4401": {
+    "name": "Green Dimensional Stone",
+    "description": "Activates a Dimensional Vortex. Allows you to move to the 1st to 3rd floor of the Tower of Insolence. H5 Price",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 10000,
+    "weight": 10,
+    "icon": "icon.etc_gem_green_i00",
+    "stackable": true
+  },
+  "4402": {
+    "name": "Blue Dimensional Stone",
+    "description": "Activates a Dimensional Vortex. Allows you to move to the 4th to 6th floor of the Tower of Insolence. H5 Price",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 10000,
+    "weight": 10,
+    "icon": "icon.etc_gem_blue_i00",
+    "stackable": true
+  },
+  "4403": {
+    "name": "Red Dimensional Stone",
+    "description": "Activates a Dimensional Vortex. Allows you to move to the 7th to 10th floor of the Tower of Insolence. H5 Price",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 10000,
+    "weight": 10,
+    "icon": "icon.etc_gem_red_i00",
+    "stackable": true
+  },
+  "4404": {
+    "name": "Green Dimensional Stone - Shard",
+    "description": "A broken shard of the green Dimensional Stone. Collect these and take them to Researcher Kaplan.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 10,
+    "weight": 10,
+    "icon": "icon.etc_broken_crystal_green_i00",
+    "stackable": true
+  },
+  "4405": {
+    "name": "Blue Dimensional Stone - Shard",
+    "description": "A broken shard of the blue Dimensional Stone. Collect these and take them to Researcher Euclie.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 10,
+    "weight": 10,
+    "icon": "icon.etc_broken_crystal_blue_i00",
+    "stackable": true
+  },
+  "4406": {
+    "name": "Red Dimensional Stone - Shard",
+    "description": "A broken shard of the red Dimensional Stone. Collect these and take them to Researcher Pitagon.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 10,
+    "weight": 10,
+    "icon": "icon.etc_broken_crystal_red_i00",
+    "stackable": true
+  },
+  "4407": {
+    "name": "Bill of Iason Heine",
+    "description": "Its value is 1000 adena, redeemable by Roman of the Blacksmith Guild in Innadril. You can use it to buy various ingredients.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 10,
+    "icon": "icon.etc_paper_black_i00",
+    "stackable": true
+  },
+  "4408": {
+    "name": "Musical Score - Theme of Love",
+    "description": "Posthumously released musical score of Gillian. If you take it to Maestro Melody, you can have an echo crystal made.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_musical_note_i01",
+    "stackable": true
+  },
+  "4409": {
+    "name": "Musical Score - Theme of Battle",
+    "description": "The musical score for the Battle March of Flames. If you take it to Maestro Melody, you can have an echo crystal made.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_musical_note_i01",
+    "stackable": true
+  },
+  "4410": {
+    "name": "Musical Score - Theme of Journey",
+    "description": "A musical score composed by Troubadour Swan. If you take it to Maestro Melody, you can have an echo crystal made.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_musical_note_i01",
+    "stackable": true
+  },
+  "4411": {
+    "name": "Echo Crystal - Theme of Journey",
+    "description": "An echo crystal that plays the theme music of a journey. May only be used once. Item - Race Sound Crystal",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i00",
+    "item_skills": [
+      {
+        "id": 2069,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "4412": {
+    "name": "Echo Crystal - Theme of Battle",
+    "description": "An echo crystal that plays the theme music of a battle. Item - Race Sound Crystal",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i01",
+    "item_skills": [
+      {
+        "id": 2068,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "4413": {
+    "name": "Echo Crystal - Theme of Love",
+    "description": "An echo crystal that plays the theme music of love. May only be used once. Item - Race Sound Crystal",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i02",
+    "item_skills": [
+      {
+        "id": 2070,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "4414": {
+    "name": "Echo Crystal - Theme of Solitude",
+    "description": "An echo crystal that plays the theme music of solitude. May only be used once. Item - Race Sound Crystal",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i03",
+    "item_skills": [
+      {
+        "id": 2072,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "4415": {
+    "name": "Echo Crystal - Theme of the Feast",
+    "description": "An echo crystal that plays the theme music of a feast. May only be used once. Item - Race Sound Crystal",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i04",
+    "item_skills": [
+      {
+        "id": 2071,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "4416": {
+    "name": "Echo Crystal - Theme of Celebration",
+    "description": "An echo crystal that plays the theme music of a celebration. May only be used once. Item - Theme Sound Crystal",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i00",
+    "item_skills": [
+      {
+        "id": 2073,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "4417": {
+    "name": "Echo Crystal - Theme of Comedy",
+    "description": "An echo crystal that plays the theme music of a comedy. May only be used once. Item - Theme Sound Crystal",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i01",
+    "item_skills": [
+      {
+        "id": 2067,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "4418": {
+    "name": "Musical Score - Theme of Celebration",
+    "description": "A musical score containing the theme music of a celebration. If you take it to Maestro Melody, you can have an echo crystal made.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_musical_note_i01",
+    "stackable": true
+  },
+  "4419": {
+    "name": "Musical Score - Theme of Comedy",
+    "description": "A musical score containing the theme music of a comedy. If you take it to Maestro Melody, you can have an echo crystal made.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_musical_note_i01",
+    "stackable": true
+  },
+  "4420": {
+    "name": "Musical Score - Theme of Solitude",
+    "description": "A musical score composed by Musician Nanarin. If you take it to Maestro Melody, you can have an echo crystal made.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_musical_note_i01",
+    "stackable": true
+  },
+  "4421": {
+    "name": "Musical Score - Theme of the Feast",
+    "description": "A musical score composed by Musician Barbado. If you take it to Maestro Melody, you can have an echo crystal made.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 20,
+    "icon": "icon.etc_musical_note_i02",
+    "stackable": true
+  },
+  "4422": {
+    "name": "Dragon Bugle of Wind",
+    "description": "A bugle used to summon a Wind Strider. This pet uses some of the experience points earned by its master. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Steel",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_bugle_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "4423": {
+    "name": "Dragon Bugle of Star",
+    "description": "A bugle used to summon a Star Strider. This pet uses some of the experience points earned by its master. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Steel",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_bugle_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "4424": {
+    "name": "Dragon Bugle of Twilight",
+    "description": "A bugle used to summon a Twilight Strider. This pet uses some of the experience points earned by its master. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Steel",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_bugle_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "4425": {
+    "name": "Penitent's Manacles",
+    "description": "The heavy manacles used to summon a Sin Eater. Summoning the Sin Eater consumes all the summoner's Exp. The Sin Eater must be fed Food for Wolves. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Steel",
+    "weight": 800,
+    "icon": "icon.etc_leash_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "4426": {
+    "name": "Manacles of Penitent",
+    "description": "Having consumed your sins, the Sin Eater has disappeared, leaving you with this ordinary pair of manacles. To repeat this quest, take them back to the Black Judge.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "price": 22000,
+    "weight": 50,
+    "icon": "icon.etc_leash_i00",
+    "dropable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "4427": {
+    "name": "Alligator Leather Belt",
+    "description": "An Alligator Leather Belt designed and created by Verche, a master leather craftsman.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "price": 100,
+    "weight": 20,
+    "icon": "icon.etc_prefect_belt_i00"
+  },
+  "4428": {
+    "name": "Blue Alligator Leather Belt",
+    "description": "An Alligator Leather Belt designed and created by Verche, a master leather craftsman. It is made from a rare blue type of Leather.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_prefect_belt_i00"
+  },
+  "4429": {
+    "name": "Bejeweled Leather Belt",
+    "description": "An Alligator Leather Belt designed and created by Verche, a master leather craftsman. It is made from a Leather that is studded with rare jewels.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "price": 10000,
+    "weight": 20,
+    "icon": "icon.etc_prefect_belt_i00"
+  },
+  "4430": {
+    "name": "Alligator Leather Purse",
+    "description": "An Alligator Leather Purse designed and created by Verche, a master leather craftsman.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "price": 200,
+    "weight": 20,
+    "icon": "icon.etc_handbag_i00"
+  },
+  "4431": {
+    "name": "Blue Alligator Leather Purse",
+    "description": "An Alligator Leather Purse designed and created by Verche, a master leather craftsman. It is made from a rare blue type of Leather.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "price": 4000,
+    "weight": 20,
+    "icon": "icon.etc_handbag_i00"
+  },
+  "4432": {
+    "name": "Bejeweled Purse",
+    "description": "An Alligator Leather Purse designed and created by Verche, a master leather craftsman. It is made of Leather studded with rare jewels.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "price": 20000,
+    "weight": 20,
+    "icon": "icon.etc_handbag_i00"
+  },
+  "4433": {
+    "name": "Elemental Stone Powder",
+    "description": "Elemental stone powder obtained from a stone statue in the Forgotten Temple. Can be sold at any store or taken to Magister Nell.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 50,
+    "weight": 10,
+    "icon": "icon.etc_powder_white_i00",
+    "stackable": true
+  },
+  "4434": {
+    "name": "Elemental Stone Shards",
+    "description": "The shards of elemental stones obtained from stone statues in the Forgotten Temple. Can be sold at any store or taken to Magister Nell.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 500,
+    "weight": 100,
+    "icon": "icon.etc_broken_crystal_green_i00",
+    "stackable": true
+  },
+  "4435": {
+    "name": "Elemental Stone Lump",
+    "description": "The lumps of elemental stone obtained from stone statues in the Forgotten Temple. Can be sold at any store or taken to Magister Nell.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 5000,
+    "weight": 1000,
+    "icon": "icon.etc_crystal_green_i00",
+    "stackable": true
+  },
+  "4436": {
+    "name": "Bentley's Request",
+    "description": "A request to find and bring back jade crystals from creatures such as Fline, Liele, Satyr etc. that inhabit the Enchanted Valley.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_piece_of_paper_gray_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "4437": {
+    "name": "Carson's Request",
+    "description": "A request to recover the works of the ancient sculptor Berona from Hatar Ratmen and Vanor Silenos in the area near the Cemetery.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_piece_of_paper_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "4438": {
+    "name": "Knuckle Duster Edge",
+    "description": "An essential ingredient needed by a Dwarf to make a Knuckle Duster. It can be bought from a regular store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 28044,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "4439": {
+    "name": "Avadon Shield Fragment",
+    "description": "An essential ingredient needed by a Dwarf to make an Avadon Shield. It can be bought from a regular store.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 2900,
+    "weight": 60,
+    "icon": "icon.etc_plate_silver_i00",
+    "stackable": true
+  },
+  "4440": {
+    "name": "Recipe: Knuckle Duster",
+    "description": "For Dwarves only. The recipe for a Knuckle Duster. Requires Create Item - Skill Level 5. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 495,
+          "level": 5
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 57400,
+    "weight": 30,
+    "icon": "icon.etc_recipe_yellow_i00",
+    "stackable": true
+  },
+  "4441": {
+    "name": "Recipe: Avadon Shield",
+    "description": "For Dwarves only. The recipe for an Avadon Shield. Requires Create Item - Skill Level 6. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 479,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10900,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4442": {
+    "name": "Lottery Ticket",
+    "description": "A lottery ticket from Aden, redeemable at any lottery sales location. Winning numbers are posted every Saturday at 7 p.m. You can't win if you don't play! Good luck!",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 2,
+    "weight": 20,
+    "icon": "icon.etc_lottery_card_i00"
+  },
+  "4443": {
+    "name": "Monster Race Ticket - Single",
+    "description": "A winning ticket from the monster race. Redeemable at the cashier of the race.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 10,
+    "weight": 20,
+    "icon": "icon.etc_ticket_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "4444": {
+    "name": "Monster Race Ticket - Double",
+    "description": "A winning daily double ticket from the monster race. Redeemable at the cashier of the race.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 10,
+    "weight": 20,
+    "icon": "icon.etc_ticket_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "4445": {
+    "name": "Dye of STR (Str+1 Con-3)",
+    "description": "Dye of STR <Str+1 Con-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i00",
+    "stackable": true
+  },
+  "4446": {
+    "name": "Dye of STR (Str+1 Dex-3)",
+    "description": "Dye of STR <Str+1 Dex-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i00",
+    "stackable": true
+  },
+  "4447": {
+    "name": "Dye of CON (Con+1 Str-3)",
+    "description": "Dye of CON <Con+1 Str-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i00",
+    "stackable": true
+  },
+  "4448": {
+    "name": "Dye of CON (Con+1 Dex-3)",
+    "description": "Dye of CON <Con+1 Dex-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i00",
+    "stackable": true
+  },
+  "4449": {
+    "name": "Dye of DEX (Dex+1 Str-3)",
+    "description": "Dye of DEX <Dex+1 Str-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i00",
+    "stackable": true
+  },
+  "4450": {
+    "name": "Dye of DEX (Dex+1 Con-3)",
+    "description": "Dye of DEX <Dex+1 Con-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i00",
+    "stackable": true
+  },
+  "4451": {
+    "name": "Dye of INT (Int+1 Men-3)",
+    "description": "Dye of INT <Int+1 Men-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i00",
+    "stackable": true
+  },
+  "4452": {
+    "name": "Dye of INT (Int+1 Wit-3)",
+    "description": "Dye of INT <Int+1 Wit-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by the Fighter and Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i00",
+    "stackable": true
+  },
+  "4453": {
+    "name": "Dye of MEN (Men+1 Int-3)",
+    "description": "Dye of MEN <Men+1 Int-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i00",
+    "stackable": true
+  },
+  "4454": {
+    "name": "Dye of MEN (Men+1 Wit-3)",
+    "description": "Dye of MEN <Men+1 Wit-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i00",
+    "stackable": true
+  },
+  "4455": {
+    "name": "Dye of WIT (Wit+1 Int-3)",
+    "description": "Dye of WIT <Wit+1 Int-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by the Fighter and Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i00",
+    "stackable": true
+  },
+  "4456": {
+    "name": "Dye of WIT (Wit+1 Men-3)",
+    "description": "Dye of WIT <Wit+1 Men-3> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 5100,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i00",
+    "stackable": true
+  },
+  "4457": {
+    "name": "Dye of STR (Str+1 Con-2)",
+    "description": "Dye of STR <Str+1 Con-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i00",
+    "stackable": true
+  },
+  "4458": {
+    "name": "Dye of STR (Str+1 Dex-2)",
+    "description": "Dye of STR <Str+1 Dex-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i00",
+    "stackable": true
+  },
+  "4459": {
+    "name": "Dye of CON (Con+1 Str-2)",
+    "description": "Dye of CON <Con+1 Str-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i00",
+    "stackable": true
+  },
+  "4460": {
+    "name": "Dye of CON (Con+1 Dex-2)",
+    "description": "Dye of CON <Con+1 Dex-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i00",
+    "stackable": true
+  },
+  "4461": {
+    "name": "Dye of DEX (Dex+1 Str-2)",
+    "description": "Dye of DEX <Dex+1 Str-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i00",
+    "stackable": true
+  },
+  "4462": {
+    "name": "Dye of DEX (Dex+1 Con-2)",
+    "description": "Dye of DEX <Dex+1 Con-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i00",
+    "stackable": true
+  },
+  "4463": {
+    "name": "Dye of INT (Int+1 Men-2)",
+    "description": "Dye of INT <Int+1 Men-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i00",
+    "stackable": true
+  },
+  "4464": {
+    "name": "Dye of INT (Int+1 Wit-2)",
+    "description": "Dye of INT <Int+1 Wit-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by the Fighter and Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i00",
+    "stackable": true
+  },
+  "4465": {
+    "name": "Dye of MEN (Men+1 Int-2)",
+    "description": "Dye of MEN <Men+1 Int-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i00",
+    "stackable": true
+  },
+  "4466": {
+    "name": "Dye of MEN (Men+1 Wit-2)",
+    "description": "Dye of MEN <Men+1 Wit-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i00",
+    "stackable": true
+  },
+  "4467": {
+    "name": "Dye of WIT (Wit+1 Int-2)",
+    "description": "Dye of WIT <Wit+1 Int-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by the Fighter and Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i00",
+    "stackable": true
+  },
+  "4468": {
+    "name": "Dye of WIT (Wit+1 Men-2)",
+    "description": "Dye of WIT <Wit+1 Men-2> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i00",
+    "stackable": true
+  },
+  "4469": {
+    "name": "Dye of STR (Str+1 Con-1)",
+    "description": "Dye of STR <Str+1 Con-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i00",
+    "stackable": true
+  },
+  "4470": {
+    "name": "Dye of STR (Str+1 Dex-1)",
+    "description": "Dye of STR <Str+1 Dex-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i00",
+    "stackable": true
+  },
+  "4471": {
+    "name": "Dye of CON (Con+1 Str-1)",
+    "description": "Dye of CON <Con+1 Str-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i00",
+    "stackable": true
+  },
+  "4472": {
+    "name": "Dye of CON (Con+1 Dex-1)",
+    "description": "Dye of CON <Con+1 Dex-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i00",
+    "stackable": true
+  },
+  "4473": {
+    "name": "Dye of DEX (Dex+1 Str-1)",
+    "description": "Dye of DEX <Dex+1 Str-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i00",
+    "stackable": true
+  },
+  "4474": {
+    "name": "Dye of DEX (Dex+1 Con-1)",
+    "description": "Dye of DEX <Dex+1 Con-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i00",
+    "stackable": true
+  },
+  "4475": {
+    "name": "Dye of INT (Int+1 Men-1)",
+    "description": "Dye of INT <Int+1 Men-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i00",
+    "stackable": true
+  },
+  "4476": {
+    "name": "Dye of INT (Int+1 Wit-1)",
+    "description": "Dye of INT <Int+1 Wit-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by the Fighter and Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i00",
+    "stackable": true
+  },
+  "4477": {
+    "name": "Dye of MEN (Men+1 Int-1)",
+    "description": "Dye of MEN <Men+1 Int-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i00",
+    "stackable": true
+  },
+  "4478": {
+    "name": "Dye of MEN (Men+1 Wit-1)",
+    "description": "Dye of MEN <Men+1 Wit-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i00",
+    "stackable": true
+  },
+  "4479": {
+    "name": "Dye of WIT (Wit+1 Int-1)",
+    "description": "Dye of WIT <Wit+1 Int-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by the Fighter and Non-Healer Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i00",
+    "stackable": true
+  },
+  "4480": {
+    "name": "Dye of WIT (Wit+1 Men-1)",
+    "description": "Dye of WIT <Wit+1 Men-1> - Collect and take 10 units of this magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities. Can be used after completion of first class transfer and prior to completion of second class transfer by all Mystic classes.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 35000,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i00",
+    "stackable": true
+  },
+  "4481": {
+    "name": "Greater Dye of STR (Str+1 Con-3)",
+    "description": "Greater Dye of STR <Str+1 Con-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i01",
+    "stackable": true
+  },
+  "4482": {
+    "name": "Greater Dye of STR (Str+1 Dex-3)",
+    "description": "Greater Dye of STR <Str+1 Dex-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i01",
+    "stackable": true
+  },
+  "4483": {
+    "name": "Greater Dye of CON(Con+1 Str-3)",
+    "description": "Greater Dye of CON<Con+1 Str-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i01",
+    "stackable": true
+  },
+  "4484": {
+    "name": "Greater Dye of CON(Con+1 Dex-3)",
+    "description": "Greater Dye of CON<Con+1 Str-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i01",
+    "stackable": true
+  },
+  "4485": {
+    "name": "Greater Dye of DEX (Dex+1 Str-3)",
+    "description": "Greater Dye of DEX <Dex+1 Str-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i01",
+    "stackable": true
+  },
+  "4486": {
+    "name": "Greater Dye of DEX (Dex+1 Con-3)",
+    "description": "Greater Dye of DEX <Dex+1 Con-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i01",
+    "stackable": true
+  },
+  "4487": {
+    "name": "Greater Dye of INT (Int+1 Men-3)",
+    "description": "Greater Dye of INT <Int+1 Men-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by the Wizard class after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i01",
+    "stackable": true
+  },
+  "4488": {
+    "name": "Greater Dye of INT (Int+1 Wit-3)",
+    "description": "Greater Dye of INT <Int+1 Wit-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by the Wizard class and the Warrior class after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i01",
+    "stackable": true
+  },
+  "4489": {
+    "name": "Greater Dye of MEN (Men+1 Int-3)",
+    "description": "Greater Dye of MEN <Men+1 Int-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by the Wizard class after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i01",
+    "stackable": true
+  },
+  "4490": {
+    "name": "Greater Dye of MEN (Men+1 Wit-3)",
+    "description": "Greater Dye of MEN <Men+1 Wit-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by the Wizard class and the Healer class after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_men_hena_i01",
+    "stackable": true
+  },
+  "4491": {
+    "name": "Greater Dye of WIT (Wit+1 Int-3)",
+    "description": "Greater Dye of WIT <Wit+1 Int-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by the Warrior class and the Wizard class after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i01",
+    "stackable": true
+  },
+  "4492": {
+    "name": "Greater Dye of WIT (Wit+1 Men-3)",
+    "description": "Greater Dye of WIT <Wit+1 Men-3>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by the wizard class and healer class after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 12000,
+    "weight": 150,
+    "icon": "icon.etc_wit_hena_i01",
+    "stackable": true
+  },
+  "4493": {
+    "name": "Greater Dye of STR (Str+1 Con-2)",
+    "description": "Greater Dye of STR <Str+1 Con-2>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 21000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i01",
+    "stackable": true
+  },
+  "4494": {
+    "name": "Greater Dye of STR (Str+1 Dex-2)",
+    "description": "Greater Dye of STR <Str+1 Dex-2>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 21000,
+    "weight": 150,
+    "icon": "icon.etc_str_hena_i01",
+    "stackable": true
+  },
+  "4495": {
+    "name": "Greater Dye of CON (Con+1 Str-2)",
+    "description": "Greater Dye of CON <Con+1 Str-2>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 21000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i01",
+    "stackable": true
+  },
+  "4496": {
+    "name": "Greater Dye of CON (Con+1 Dex-2)",
+    "description": "Greater Dye of CON <Con+1 Dex-2>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 21000,
+    "weight": 150,
+    "icon": "icon.etc_con_hena_i01",
+    "stackable": true
+  },
+  "4497": {
+    "name": "Greater Dye of DEX (Dex+1 Str-2)",
+    "description": "Greater Dye of DEX <Dex+1 Str-2>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 21000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i01",
+    "stackable": true
+  },
+  "4498": {
+    "name": "Greater Dye of DEX (Dex+1 Con-2)",
+    "description": "Greater Dye of DEX <Dex+1 Con-2>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by all classes after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 21000,
+    "weight": 150,
+    "icon": "icon.etc_dex_hena_i01",
+    "stackable": true
+  },
+  "4499": {
+    "name": "Greater Dye of INT (Int+1 Men-2)",
+    "description": "Greater Dye of INT <Int+1 Men-2>. Collect and take 10 units of this type of magical dye to the symbol maker in town and you will receive a symbol that boosts your abilities tattooed onto your body. Can be used by the Wizard class after completion of their second class transfer, and can be kept and used after the completion of the third class transfer as well.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Liquid",
+    "price": 21000,
+    "weight": 150,
+    "icon": "icon.etc_int_hena_i01",
+    "stackable": true
+  }
+}

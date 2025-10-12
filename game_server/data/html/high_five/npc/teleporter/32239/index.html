@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+Hello, and welcome to my garden.<br>
+How may I help you?<br>
+<a action="bypass -h npc_{{ object_id }}_tp 12058" msg="811;Soul Harbor">"I wish to return."</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest.</a>
+{% endblock body %}

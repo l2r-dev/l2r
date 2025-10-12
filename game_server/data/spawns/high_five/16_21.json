@@ -1,0 +1,118 @@
+[
+  {
+    "name": "turek_orc_zone_01",
+    "zone": {
+      "min_height": -3692,
+      "max_height": -2992,
+      "points": [
+        {
+          "x": -99708,
+          "y": 100418
+        },
+        {
+          "x": -98553,
+          "y": 100158
+        },
+        {
+          "x": -98637,
+          "y": 104050
+        },
+        {
+          "x": -101237,
+          "y": 103989
+        }
+      ],
+      "kind": {
+        "Spawn": {}
+      }
+    },
+    "npcs": [
+      {
+        "id": 20498,
+        "count": 2,
+        "timer": {
+          "delay": 60,
+          "random": 20
+        }
+      },
+      {
+        "id": 20497,
+        "count": 2,
+        "timer": {
+          "delay": 60,
+          "random": 20
+        }
+      },
+      {
+        "id": 20501,
+        "count": 1,
+        "timer": {
+          "delay": 60,
+          "random": 20
+        }
+      },
+      {
+        "id": 20495,
+        "count": 1,
+        "timer": {
+          "delay": 60,
+          "random": 20
+        }
+      }
+    ]
+  },
+  {
+    "name": "turek_orc_zone_02",
+    "zone": {
+      "min_height": -3715,
+      "max_height": -3015,
+      "points": [
+        {
+          "x": -100403,
+          "y": 104743
+        },
+        {
+          "x": -98598,
+          "y": 104208
+        },
+        {
+          "x": -98544,
+          "y": 109423
+        },
+        {
+          "x": -100571,
+          "y": 106885
+        }
+      ],
+      "kind": {
+        "Spawn": {}
+      }
+    },
+    "npcs": [
+      {
+        "id": 20498,
+        "count": 2,
+        "timer": {
+          "delay": 60,
+          "random": 20
+        }
+      },
+      {
+        "id": 20497,
+        "count": 2,
+        "timer": {
+          "delay": 60,
+          "random": 20
+        }
+      },
+      {
+        "id": 20501,
+        "count": 2,
+        "timer": {
+          "delay": 60,
+          "random": 20
+        }
+      }
+    ]
+  }
+]

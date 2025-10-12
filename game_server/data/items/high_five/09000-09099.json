@@ -1,0 +1,3222 @@
+{
+  "9000": {
+    "name": "Shadow Item: Stormbringer*Stormbringer",
+    "description": "This Shadow Item contains the mirrored power of a Stormbringer*Stormbringer. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 780,
+    "icon": "icon.time_weapon_dual_sword_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9001": {
+    "name": "Shadow Item: Great Sword",
+    "description": "This Shadow Item contains the mirrored power of a Great Sword. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 650,
+    "icon": "icon.weapon_great_sword_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9002": {
+    "name": "Shadow Item: Heavy War Axe",
+    "description": "This Shadow Item contains the mirrored power of a Heavy War Axe. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 540,
+    "icon": "icon.weapon_heavy_war_axe_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9003": {
+    "name": "Shadow Item: Sprite's Staff",
+    "description": "This Shadow Item contains the mirrored power of a Sprite's Staff. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 134
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 320,
+    "icon": "icon.weapon_sprites_staff_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9004": {
+    "name": "Shadow Item: Keshanberk",
+    "description": "This Shadow Item contains the mirrored power of a Keshanberk. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 460,
+    "icon": "icon.weapon_kshanberk_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9005": {
+    "name": "Shadow Item: Sword of Valhalla",
+    "description": "This Shadow Item contains the mirrored power of a Sword of Valhalla. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_sword_of_valhalla_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9006": {
+    "name": "Shadow Item: Kris",
+    "description": "This Shadow Item contains the mirrored power of a Kris. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 153
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 330,
+    "icon": "icon.weapon_kris_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9007": {
+    "name": "Shadow Item: Arthro Nail",
+    "description": "This Shadow Item contains the mirrored power of an Arthro Nail. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 90
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 480,
+    "icon": "icon.weapon_arthro_nail_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9008": {
+    "name": "Shadow Item: Dark Elven Long Bow",
+    "description": "This Shadow Item contains the mirrored power of a Dark Elven Long Bow. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 580,
+    "icon": "icon.weapon_dark_elven_long_bow_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9009": {
+    "name": "Shadow Item: Sword of Delusion*Sword of Delusion",
+    "description": "This Shadow Item contains the mirrored power of a Sword of Delusion*Sword of Delusion. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 720,
+    "icon": "icon.time_weapon_dual_sword_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9010": {
+    "name": "Shadow Item: Great Axe",
+    "description": "This Shadow Item contains the mirrored power of a Great Axe. It cannot be traded, dropped, crystallized, or given other functions. Polearm Multi-attack",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 650,
+    "icon": "icon.weapon_great_axe_i00",
+    "mana": 600,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9011": {
+    "name": "Shadow Item: Tallum Blade",
+    "description": "This Shadow Item contains the mirrored power of a Tallum Blade. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 450,
+    "icon": "icon.weapon_tallum_blade_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9012": {
+    "name": "Shadow Item: Halberd",
+    "description": "This Shadow Item contains the mirrored power of a Halberd. It cannot be traded, dropped, crystallized, or given other functions. Polearm Multi-attack",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 640,
+    "icon": "icon.weapon_halbard_i00",
+    "mana": 600,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9013": {
+    "name": "Shadow Item: Dasparion's Staff",
+    "description": "This Shadow Item contains the mirrored power of a Dasparion's Staff. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 207
+      },
+      "MAtk": {
+        "set": 157
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 310,
+    "icon": "icon.weapon_dasparions_staff_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9014": {
+    "name": "Shadow Item: Bloody Orchid",
+    "description": "This Shadow Item contains the mirrored power of a Bloody Orchid. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 320,
+    "icon": "icon.weapon_bloody_orchid_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9015": {
+    "name": "Shadow Item: Blood Tornado",
+    "description": "This Shadow Item contains the mirrored power of a Blood Tornado. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 460,
+    "icon": "icon.weapon_blood_tornado_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9016": {
+    "name": "Shadow Item: Carnage Bow",
+    "description": "This Shadow Item contains the mirrored power of a Carnage Bow. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "A",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 440
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 560,
+    "icon": "icon.weapon_carnium_bow_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9017": {
+    "name": "Shadow Item: Keshanberk*Keshanberk",
+    "description": "This Shadow Item contains the mirrored power of a Keshanberk*Keshanberk. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 700,
+    "icon": "icon.time_weapon_dual_sword_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9018": {
+    "name": "Shadow Item: Meteor Shower",
+    "description": "This Shadow Item contains the mirrored power of a Meteor Shower. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 540,
+    "icon": "icon.weapon_meteor_shower_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9019": {
+    "name": "Shadow Item: Inferno Master",
+    "description": "This Shadow Item contains the mirrored power of an Inferno Master. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 640,
+    "icon": "icon.weapon_inferno_master_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9020": {
+    "name": "Shadow Item: Keshanberk*Damascus",
+    "description": "This Shadow Item contains the mirrored power of a Keshanberk*Damascus. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 275
+      },
+      "MAtk": {
+        "set": 112
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 693,
+    "icon": "icon.weapon_dual_sword_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9021": {
+    "name": "Shadow Item: Dragon Slayer",
+    "description": "This Shadow Item contains the mirrored power of a Dragon Slayer. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 613,
+    "icon": "icon.weapon_dragon_slayer_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9022": {
+    "name": "Shadow Item: Sword of Miracles",
+    "description": "This Shadow Item contains the mirrored power of a Sword of Miracles. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 280,
+    "icon": "icon.weapon_sword_of_miracle_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9023": {
+    "name": "Shadow Item: Elysian",
+    "description": "This Shadow Item contains the mirrored power of an Elysian. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 527,
+    "icon": "icon.weapon_elysian_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9024": {
+    "name": "Shadow Item: Branch of the Mother Tree",
+    "description": "This Shadow Item contains the mirrored power of a Branch of the Mother Tree. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 226
+      },
+      "MAtk": {
+        "set": 167
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_worldtrees_branch_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9025": {
+    "name": "Shadow Item: Soul Separator",
+    "description": "This Shadow Item contains the mirrored power of a Soul Separator. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 203
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 317,
+    "icon": "icon.weapon_soul_separator_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9026": {
+    "name": "Shadow Item: Dragon Grinder",
+    "description": "This Shadow Item contains the mirrored power of a Dragon Grinder. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 450,
+    "icon": "icon.weapon_dragon_grinder_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9027": {
+    "name": "Shadow Item: Soul Bow",
+    "description": "This Shadow Item contains the mirrored power of a Soul Bow. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 528
+      },
+      "MAtk": {
+        "set": 125
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 553,
+    "icon": "icon.weapon_soul_bow_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9028": {
+    "name": "Shadow Item: Tallum Glaive",
+    "description": "This Shadow Item contains the mirrored power of a Tallum Glaive. It cannot be traded, dropped, crystallized, or given other functions. Polearm Multi-attack",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 613,
+    "icon": "icon.weapon_tallum_glaive_i00",
+    "mana": 600,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9029": {
+    "name": "Shadow Item: Dark Legion's Edge",
+    "description": "This Shadow Item contains the mirrored power of a Dark Legion's Edge. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 440,
+    "icon": "icon.weapon_dark_legions_edge_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9030": {
+    "name": "Shadow Item: Bronze Breastplate",
+    "description": "This Shadow Item contains the mirrored power of a Bronze Breastplate. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2973,
+    "icon": "icon.armor_t34_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9031": {
+    "name": "Shadow Item: Bronze Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Bronze Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 43
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1320,
+    "icon": "icon.armor_t34_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9032": {
+    "name": "Shadow Item: Hard Leather Shirt",
+    "description": "This Shadow Item contains the mirrored power of a Hard Leather Shirt. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 53
+      }
+    },
+    "weight": 1573,
+    "icon": "icon.armor_t30_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9033": {
+    "name": "Shadow Item: Hard Leather Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Hard Leather Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 33
+      }
+    },
+    "weight": 537,
+    "icon": "icon.armor_t30_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9034": {
+    "name": "Shadow Item: Tunic of Magic",
+    "description": "This Shadow Item contains the mirrored power of a Tunic of Magic. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 34
+      },
+      "MaxMp": {
+        "add": 86
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 693,
+    "icon": "icon.armor_t58_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9035": {
+    "name": "Shadow Item: Stockings of Magic",
+    "description": "This Shadow Item contains the mirrored power of Stockings of Magic. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 21
+      },
+      "MaxMp": {
+        "add": 54
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 343,
+    "icon": "icon.armor_t58_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9036": {
+    "name": "Shadow Item: Bone Shield",
+    "description": "This Shadow Item contains the mirrored power of a Bone Shield. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Bone",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 90
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 460,
+    "icon": "icon.shield_bone_shield_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9037": {
+    "name": "Shadow Item: Hard Leather Helmet",
+    "description": "This Shadow Item contains the mirrored power of a Hard Leather Helmet. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 26
+      }
+    },
+    "weight": 213,
+    "icon": "icon.armor_leather_helmet_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9038": {
+    "name": "Shadow Item: Boots",
+    "description": "This Shadow Item contains the mirrored power of Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 17
+      }
+    },
+    "weight": 437,
+    "icon": "icon.armor_t30_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9039": {
+    "name": "Shadow Item: Bracer",
+    "description": "This Shadow Item contains the mirrored power of a Bracer. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 17
+      }
+    },
+    "weight": 217,
+    "icon": "icon.armor_t30_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9040": {
+    "name": "Shadow Item: Mithril Breastplate",
+    "description": "This Shadow Item contains the mirrored power of a Mithril Breastplate. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 95
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2890,
+    "icon": "icon.armor_t19_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9041": {
+    "name": "Shadow Item: Mithril Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Mithril Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1277,
+    "icon": "icon.armor_t19_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9042": {
+    "name": "Shadow Item: Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "weight": 213,
+    "icon": "icon.armor_t10_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9043": {
+    "name": "Shadow Item: Iron Boots",
+    "description": "This Shadow Item contains the mirrored power of Iron Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "weight": 427,
+    "icon": "icon.armor_t10_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9044": {
+    "name": "Shadow Item: Hoplon",
+    "description": "This Shadow Item contains the mirrored power of a Hoplon. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 128
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 447,
+    "icon": "icon.shield_hoplon_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9045": {
+    "name": "Shadow Item: Reinforced Leather Shirt",
+    "description": "This Shadow Item contains the mirrored power of a Reinforced Leather Shirt. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "weight": 1523,
+    "icon": "icon.armor_t13_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9046": {
+    "name": "Shadow Item: Reinforced Leather Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Reinforced Leather Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "weight": 523,
+    "icon": "icon.armor_t13_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9047": {
+    "name": "Shadow Item: Reinforced Leather Gloves",
+    "description": "This Shadow Item contains the mirrored power of Reinforced Leather Gloves. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "weight": 213,
+    "icon": "icon.armor_t13_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9048": {
+    "name": "Shadow Item: Reinforced Leather Boots",
+    "description": "This Shadow Item contains the mirrored power of Reinforced Leather Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "weight": 427,
+    "icon": "icon.armor_t13_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9049": {
+    "name": "Shadow Item: Tunic of Knowledge",
+    "description": "This Shadow Item contains the mirrored power of a Tunic of Knowledge. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 49
+      },
+      "MaxMp": {
+        "add": 147
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 673,
+    "icon": "icon.armor_t41_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9050": {
+    "name": "Shadow Item: Stockings of Knowledge",
+    "description": "This Shadow Item contains the mirrored power of Stockings of Knowledge. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 30
+      },
+      "MaxMp": {
+        "add": 92
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 333,
+    "icon": "icon.armor_t41_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9051": {
+    "name": "Shadow Item: Gloves of Knowledge",
+    "description": "This Shadow Item contains the mirrored power of Gloves of Knowledge. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "weight": 213,
+    "icon": "icon.armor_t41_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9052": {
+    "name": "Shadow Item: Boots of Knowledge",
+    "description": "This Shadow Item contains the mirrored power of Boots of Knowledge. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "weight": 423,
+    "icon": "icon.armor_t41_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9053": {
+    "name": "Shadow Item: Helmet",
+    "description": "This Shadow Item contains the mirrored power of a Helmet. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 37
+      }
+    },
+    "weight": 213,
+    "icon": "icon.armor_helmet_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9054": {
+    "name": "Shadow Item: Composite Armor",
+    "description": "This Shadow Item contains the mirrored power of Composite Armor. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 224
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 3660,
+    "icon": "icon.armor_t61_ul_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9055": {
+    "name": "Shadow Item: Composite Boots",
+    "description": "This Shadow Item contains the mirrored power of Composite Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "weight": 407,
+    "icon": "icon.armor_t61_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9056": {
+    "name": "Shadow Item: Composite Shield",
+    "description": "This Shadow Item contains the mirrored power of a Composite Shield. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 190
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 410,
+    "icon": "icon.shield_composite_shield_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9057": {
+    "name": "Shadow Item: Composite Helmet",
+    "description": "This Shadow Item contains the mirrored power of a Composite Helmet. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 54
+      }
+    },
+    "weight": 203,
+    "icon": "icon.armor_leather_helmet_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9058": {
+    "name": "Shadow Item: Theca Leather Armor",
+    "description": "This Shadow Item contains the mirrored power of Theca Leather Armor. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 106
+      }
+    },
+    "weight": 1457,
+    "icon": "icon.armor_t63_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9059": {
+    "name": "Shadow Item: Theca Leather Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Theca Leather Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 66
+      }
+    },
+    "weight": 510,
+    "icon": "icon.armor_t63_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9060": {
+    "name": "Shadow Item: Theca Leather Boots",
+    "description": "This Shadow Item contains the mirrored power of Theca Leather Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 37
+      }
+    },
+    "weight": 403,
+    "icon": "icon.armor_t63_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9061": {
+    "name": "Shadow Item: Theca Leather Gloves",
+    "description": "This Shadow Item contains the mirrored power of Theca Leather Gloves. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 37
+      }
+    },
+    "weight": 200,
+    "icon": "icon.armor_t63_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9062": {
+    "name": "Shadow Item: Demon's Tunic",
+    "description": "This Shadow Item contains the mirrored power of a Demon's Tunic. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 69
+      },
+      "MaxMp": {
+        "add": 284
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 663,
+    "icon": "icon.armor_t54_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9063": {
+    "name": "Shadow Item: Demon's Stockings",
+    "description": "This Shadow Item contains the mirrored power of Demon's Stockings. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 43
+      },
+      "MaxMp": {
+        "add": 177
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 327,
+    "icon": "icon.armor_t54_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9064": {
+    "name": "Shadow Item: Demon's Boots",
+    "description": "This Shadow Item contains the mirrored power of Demon's Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "weight": 407,
+    "icon": "icon.armor_t54_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9065": {
+    "name": "Shadow Item: Demon's Gloves",
+    "description": "This Shadow Item contains the mirrored power of Demon's Gloves. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "weight": 203,
+    "icon": "icon.armor_t54_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9066": {
+    "name": "Shadow Item: Shining Circlet",
+    "description": "This Shadow Item contains the mirrored power of a Shining Circlet. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PDef": {
+        "add": 54
+      }
+    },
+    "weight": 200,
+    "icon": "icon.armor_circlet_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9067": {
+    "name": "Shadow Item: Zubei's Breastplate",
+    "description": "This Shadow Item contains the mirrored power of a Zubei's Breastplate. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 157
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2657,
+    "icon": "icon.armor_t64_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9068": {
+    "name": "Shadow Item: Zubei's Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 98
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1190,
+    "icon": "icon.armor_t64_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9069": {
+    "name": "Shadow Item: Zubei's Helmet",
+    "description": "This Shadow Item contains the mirrored power of a Zubei's Helmet. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 62
+      }
+    },
+    "weight": 197,
+    "icon": "icon.armor_helmet_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9070": {
+    "name": "Shadow Item: Zubei's Shield",
+    "description": "This Shadow Item contains the mirrored power of a Zubei's Shield. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 403,
+    "icon": "icon.shield_shrnoens_shield_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9071": {
+    "name": "Shadow Item: Zubei's Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 197,
+    "icon": "icon.armor_t64_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9072": {
+    "name": "Shadow Item: Zubei's Boots",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 393,
+    "icon": "icon.armor_t64_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9073": {
+    "name": "Shadow Item: Zubei's Leather Shirt",
+    "description": "This Shadow Item contains the mirrored power of a Zubei's Leather Shirt. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 117
+      }
+    },
+    "weight": 1443,
+    "icon": "icon.armor_t65_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9074": {
+    "name": "Shadow Item: Zubei's Leather Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Leather Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "weight": 493,
+    "icon": "icon.armor_t65_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9075": {
+    "name": "Shadow Item: Zubei's Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "weight": 197,
+    "icon": "icon.armor_t65_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9076": {
+    "name": "Shadow Item: Zubei's Boots",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "weight": 393,
+    "icon": "icon.armor_t65_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9077": {
+    "name": "Shadow Item: Tunic of Zubei",
+    "description": "This Shadow Item contains the mirrored power of a Tunic of Zubei. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 78
+      },
+      "MaxMp": {
+        "add": 345
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 653,
+    "icon": "icon.armor_t56_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9078": {
+    "name": "Shadow Item: Stockings of Zubei",
+    "description": "This Shadow Item contains the mirrored power of Stockings of Zubei. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      },
+      "MaxMp": {
+        "add": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 313,
+    "icon": "icon.armor_t56_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9079": {
+    "name": "Shadow Item: Zubei's Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 197,
+    "icon": "icon.armor_t56_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9080": {
+    "name": "Shadow Item: Zubei's Boots",
+    "description": "This Shadow Item contains the mirrored power of Zubei's Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 393,
+    "icon": "icon.armor_t56_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9081": {
+    "name": "Shadow Item: Dark Crystal Breastplate",
+    "description": "This Shadow Item contains the mirrored power of a Dark Crystal Breastplate. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 171
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2567,
+    "icon": "icon.armor_t74_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9082": {
+    "name": "Shadow Item: Dark Crystal Gaiters",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Gaiters. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 107
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1107,
+    "icon": "icon.armor_t74_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9083": {
+    "name": "Shadow Item: Dark Crystal Helmet",
+    "description": "This Shadow Item contains the mirrored power of a Dark Crystal Helmet. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "weight": 190,
+    "icon": "icon.armor_helmet_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9084": {
+    "name": "Shadow Item: Dark Crystal Shield",
+    "description": "This Shadow Item contains the mirrored power of a Dark Crystal Shield. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 243
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 397,
+    "icon": "icon.shield_dark_crystal_shield_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9085": {
+    "name": "Shadow Item: Dark Crystal Gloves",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Gloves. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 193,
+    "icon": "icon.armor_t74_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9086": {
+    "name": "Shadow Item: Dark Crystal Boots",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 370,
+    "icon": "icon.armor_t74_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9087": {
+    "name": "Shadow Item: Dark Crystal Leather Armor",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Leather Armor. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 128
+      }
+    },
+    "weight": 1433,
+    "icon": "icon.armor_t75_u_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9088": {
+    "name": "Shadow Item: Dark Crystal Leggings",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Leggings. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 80
+      }
+    },
+    "weight": 493,
+    "icon": "icon.armor_t75_l_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9089": {
+    "name": "Shadow Item: Dark Crystal Gloves",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Gloves. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "weight": 193,
+    "icon": "icon.armor_t75_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9090": {
+    "name": "Shadow Item: Dark Crystal Boots",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "weight": 370,
+    "icon": "icon.armor_t75_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9091": {
+    "name": "Shadow Item: Dark Crystal Robe",
+    "description": "This Shadow Item contains the mirrored power of a Dark Crystal Robe. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 139
+      },
+      "MaxMp": {
+        "add": 665
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 817,
+    "icon": "icon.armor_t76_ul_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9092": {
+    "name": "Shadow Item: Dark Crystal Gloves",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Gloves. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 193,
+    "icon": "icon.armor_t76_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9093": {
+    "name": "Shadow Item: Dark Crystal Boots",
+    "description": "This Shadow Item contains the mirrored power of Dark Crystal Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 370,
+    "icon": "icon.armor_t76_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9094": {
+    "name": "Shadow Item: Majestic Plate Armor",
+    "description": "This Shadow Item contains the mirrored power of Majestic Plate Armor. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 3067,
+    "icon": "icon.armor_t83_ul_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9095": {
+    "name": "Shadow Item: Majestic Circlet",
+    "description": "This Shadow Item contains the mirrored power of a Majestic Circlet. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "weight": 183,
+    "icon": "icon.armor_leather_helmet_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9096": {
+    "name": "Shadow Item: Majestic Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Majestic Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 180,
+    "icon": "icon.armor_t83_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9097": {
+    "name": "Shadow Item: Majestic Boots",
+    "description": "This Shadow Item contains the mirrored power of Majestic Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 370,
+    "icon": "icon.armor_t83_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9098": {
+    "name": "Shadow Item: Majestic Leather Armor",
+    "description": "This Shadow Item contains the mirrored power of Majestic Leather Armor. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 220
+      }
+    },
+    "weight": 1783,
+    "icon": "icon.armor_t84_ul_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9099": {
+    "name": "Shadow Item: Majestic Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Majestic Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "weight": 180,
+    "icon": "icon.armor_t84_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

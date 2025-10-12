@@ -1,0 +1,8 @@
+commands:
+  game: |
+    RUST_BACKTRACE=1
+    RUST_LOG="bevy_slinet=debug,l2r_gameserver=debug,l2r_core=debug,game_core=debug,scripting=debug,bevy_asset=debug,wgpu_core=off,sqlx=off,bevy_mod_scripting=debug,sea_orm_migration=debug"
+    cargo run --bin=l2r_gameserver --features=gui
+  login: |
+    RUST_BACKTRACE=1 RUST_LOG="l2r_loginserver=debug,l2r_core=debug,sqlx=off,sea_orm_migration=debug"
+    cargo run --bin=l2r_loginserver

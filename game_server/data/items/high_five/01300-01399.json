@@ -1,0 +1,1867 @@
+{
+  "1300": {
+    "name": "Apprentice's Rod",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 22
+      },
+      "MAtk": {
+        "set": 6
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 66600,
+    "weight": 80,
+    "icon": "icon.weapon_apprentices_rod_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1301": {
+    "name": "Big Hammer",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 22
+      },
+      "MAtk": {
+        "set": 6
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 66600,
+    "weight": 300,
+    "icon": "icon.weapon_big_hammer_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1302": {
+    "name": "Bec de Corbin",
+    "description": "A temporary item for Kamex Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 150
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 22
+      },
+      "MAtk": {
+        "set": 6
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 66600,
+    "weight": 750,
+    "icon": "icon.weapon_bech_de_corbin_i00",
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false
+  },
+  "1303": {
+    "name": "Lance",
+    "description": "A temporary item for Kamex Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 150
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 30000
+      },
+      "MAtk": {
+        "set": 6
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 66600,
+    "weight": 750,
+    "icon": "icon.weapon_lancia_i00",
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false
+  },
+  "1304": {
+    "name": "Conjuror's Staff",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 15
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 66600,
+    "weight": 150,
+    "icon": "icon.weapon_apprentices_staff_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1305": {
+    "name": "Knife",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 30000
+      },
+      "MAtk": {
+        "set": 6
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 66600,
+    "weight": 120,
+    "icon": "icon.weapon_knife_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1306": {
+    "name": "Crafted Dagger",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 22
+      },
+      "MAtk": {
+        "set": 6
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 66600,
+    "weight": 100,
+    "icon": "icon.weapon_knife_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1307": {
+    "name": "Bow",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 5000,
+        "soulshots": 9,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 3,
+        "reuse_delay": 10
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 120
+      },
+      "MAtk": {
+        "set": 6
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 3340000,
+    "weight": 150,
+    "icon": "icon.weapon_bow_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1308": {
+    "name": "Compound Scale Mail",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 51
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 190200,
+    "weight": 1400,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1309": {
+    "name": "Mithril Breastplate",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 51
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 190200,
+    "weight": 1000,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1310": {
+    "name": "Tunic of Magic",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 51
+      },
+      "MaxMp": {
+        "add": 96
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37300,
+    "weight": 150,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1311": {
+    "name": "Puma Skin Shirt",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 51
+      }
+    },
+    "price": 76900,
+    "weight": 300,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1312": {
+    "name": "White Tunic",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 51
+      },
+      "MaxMp": {
+        "add": 142
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 106000,
+    "weight": 150,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1313": {
+    "name": "Compound Scale Gaiters",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 130800,
+    "weight": 1000,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1314": {
+    "name": "Mithril Gaiters",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 130800,
+    "weight": 600,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1315": {
+    "name": "Stockings of Magic",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 32
+      },
+      "MaxMp": {
+        "add": 60
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 23300,
+    "weight": 150,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1316": {
+    "name": "Puma Skin Gaiters",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "price": 43000,
+    "weight": 400,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1317": {
+    "name": "Dark Stockings",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 32
+      },
+      "MaxMp": {
+        "add": 79
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 48000,
+    "weight": 150,
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1318": {
+    "name": "Gloves",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 2520,
+    "weight": 80,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1319": {
+    "name": "Leather Gloves",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 6100,
+    "weight": 100,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1320": {
+    "name": "Crafted Leather Gloves",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 22900,
+    "weight": 100,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1321": {
+    "name": "Rip Gauntlets",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 75200,
+    "weight": 150,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1322": {
+    "name": "Bracer",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 12400,
+    "weight": 80,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1323": {
+    "name": "Leather Shoes",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 2520,
+    "weight": 120,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1324": {
+    "name": "Low Boots",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 6100,
+    "weight": 150,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1325": {
+    "name": "Leather Boots",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 22900,
+    "weight": 250,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1326": {
+    "name": "Iron Boots",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 57400,
+    "weight": 300,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1327": {
+    "name": "Boots",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 12400,
+    "weight": 200,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1328": {
+    "name": "Shield of Grace",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Mithril",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 71
+      }
+    },
+    "price": 838000,
+    "weight": 300,
+    "icon": "icon.shield_leather_shield_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1329": {
+    "name": "Shield of Victory",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Adamantaite",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 71
+      }
+    },
+    "price": 1096000,
+    "weight": 350,
+    "icon": "icon.shield_small_shield_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1330": {
+    "name": "Zubei's Shield",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Mithril",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 71
+      }
+    },
+    "price": 1422000,
+    "weight": 500,
+    "icon": "icon.shield_buckler_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1331": {
+    "name": "Otherworldly Shield",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Adamantaite",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 71
+      }
+    },
+    "price": 1096000,
+    "weight": 350,
+    "icon": "icon.shield_round_shield_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1332": {
+    "name": "Knight's Shield",
+    "description": "A temporary item for Kamex",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 71
+      }
+    },
+    "price": 246900,
+    "weight": 500,
+    "icon": "icon.shield_tower_shield_i00",
+    "tradable": false,
+    "sellable": false
+  },
+  "1333": {
+    "name": "Brandish",
+    "description": "A two-handed sword for beginners.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 21
+      },
+      "MAtk": {
+        "set": 12
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 41600,
+    "weight": 2250,
+    "icon": "icon.weapon_brandish_i00"
+  },
+  "1334": {
+    "name": "Predator's Fang",
+    "description": "Collect 100 predator's fangs and take them to Pixy Murika.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_claw_i00",
+    "dropable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1335": {
+    "name": "Goblin Club",
+    "description": "A sturdy club made from thick tree branches and carried by goblins. Take this to Treant Bremac.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_club_i00",
+    "dropable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1336": {
+    "name": "Glass Shard",
+    "description": "A broken glass piece. Can be sold in any shop for a low price.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 200,
+    "weight": 80,
+    "icon": "icon.etc_crystal_ball_blue_i00",
+    "stackable": true
+  },
+  "1337": {
+    "name": "Emerald",
+    "description": "Can be sold in any shop for a high price.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 10000,
+    "weight": 80,
+    "icon": "icon.etc_jewel_green_i00",
+    "stackable": true
+  },
+  "1338": {
+    "name": "Blue Onyx",
+    "description": "A blue jewel. Can be sold in any shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 1000,
+    "weight": 80,
+    "icon": "icon.etc_jewel_blue_i00",
+    "stackable": true
+  },
+  "1339": {
+    "name": "Onyx",
+    "description": "A black jewel. Can be sold in any shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 600,
+    "weight": 80,
+    "icon": "icon.etc_bead_red_i00",
+    "stackable": true
+  },
+  "1340": {
+    "name": "Silvery Leaf",
+    "description": "The leaf of a silvery mistletoe. Can be sold in any shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 20,
+    "weight": 3,
+    "icon": "icon.etc_feather_white_i00",
+    "stackable": true
+  },
+  "1341": {
+    "name": "Bone Arrow",
+    "description": "An arrow made from a piece of sharpened bone. It is used as an arrow for a D-Grade bow. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Arrow"
+      }
+    },
+    "grade": "D",
+    "material": "Bone",
+    "price": 3,
+    "weight": 5,
+    "icon": "icon.etc_bone_quiver_i00",
+    "stackable": true
+  },
+  "1342": {
+    "name": "Steel Arrow",
+    "description": "A powerful arrow made of steel. It is used as an arrow for a C-Grade bow. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Arrow"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "price": 5,
+    "weight": 4,
+    "icon": "icon.etc_fine_steel_quiver_i00",
+    "stackable": true
+  },
+  "1343": {
+    "name": "Silver Arrow",
+    "description": "A steel arrow plated with silver. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Arrow"
+      }
+    },
+    "grade": "B",
+    "material": "Silver",
+    "price": 7,
+    "weight": 4,
+    "icon": "icon.etc_silver_quiver_i00",
+    "stackable": true
+  },
+  "1344": {
+    "name": "Mithril Arrow",
+    "description": "A steel arrow plated with Mithril. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Arrow"
+      }
+    },
+    "grade": "A",
+    "material": "Mithril",
+    "price": 8,
+    "weight": 3,
+    "icon": "icon.etc_mithril_quiver_i00",
+    "stackable": true
+  },
+  "1345": {
+    "name": "Shining Arrow",
+    "description": "The most powerful arrow. Unknown material. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo.",
+    "kind": {
+      "Consumable": {
+        "Ammo": "Arrow"
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "price": 10,
+    "weight": 3,
+    "icon": "icon.etc_shining_quiver_i00",
+    "stackable": true
+  },
+  "1346": {
+    "name": "Golem's Stoneheart",
+    "description": "A stone found within the remains of a destroyed golem. Take this to Trader Rorento.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_squares_gray_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1347": {
+    "name": "Monster Eye Meat",
+    "description": "The carcass of monster eye. Take this to Trader Sarien.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_bark_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1348": {
+    "name": "Basilisk's Gizzard",
+    "description": "The digestive organ of a basilisk. Take this to Trader Sarien.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pouch_yellow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1349": {
+    "name": "Anatomy Diagram",
+    "description": "A diagram designed by Avella physicians for human anatomy. Use this to perform Samed's request.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_spell_books_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1350": {
+    "name": "Zombie Head",
+    "description": "A head of zombie from ruins. Take this to Samed of the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_skull_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1351": {
+    "name": "Zombie Heart",
+    "description": "A heart of zombie from ruins. Take this to Samed in the Town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_bodypart_heart_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1352": {
+    "name": "Zombie Liver",
+    "description": "A liver of zombie from ruins. Take this to Samed in the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1353": {
+    "name": "Skull",
+    "description": "A skull of skeleton from ruins. Take this to Samed in the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_skull_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1354": {
+    "name": "Rib Bone",
+    "description": "A rib of skeleton from ruins. Take this to Samed in the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_rib_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1355": {
+    "name": "Spine",
+    "description": "A spine of skeleton from ruins. Take this to Samed in the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_bone_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1356": {
+    "name": "Arm Bone",
+    "description": "An arm bone of skeleton from ruins. Take this to Samed in the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_bone_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1357": {
+    "name": "Thigh Bone",
+    "description": "A thigh bone of skeleton from ruins. Take this to Samed in the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_bone_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1358": {
+    "name": "Complete Skeleton",
+    "description": "A complete skeleton put together with bone pieces by undertaker Varsak. Take this to Samed in the town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_ashes_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1359": {
+    "name": "Red Cross Badge",
+    "description": "A soldier badge of foreign troops. Take this to Leopold in Gludin.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1360": {
+    "name": "Blue Cross Badge",
+    "description": "A badge of high ranking of Gracian foreign troops. Take this to Leopold in Gludin.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1361": {
+    "name": "Black Cross Badge",
+    "description": "A badge of captain ranking of Gracian foreign troops. Take this to Leopold in Gludin.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1362": {
+    "name": "Spider's Carapace",
+    "description": "The hard carapace of a spider. Often used to coat a shield or a helmet. Take this to Trader Arodin.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal72",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1363": {
+    "name": "Spider Silk",
+    "description": "Tough, stretchy spider web. Used to make bowstrings. Take this to Trader Arodin.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal168",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1364": {
+    "name": "Spider's Poison Sac",
+    "description": "A sac with a spider's deadly poison in it. Can be sold to Trader Cullinas in Gludin.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_canuse28",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1365": {
+    "name": "Broken Stoneheart",
+    "description": "A small pieces of stone found within the remains of a destroyed golem. Take this to Trader Rorento.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_plate_glay_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1366": {
+    "name": "Monster Eye's Lens",
+    "description": "The transparent part of monster eye. Take this to Trader Sarien.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_crystal_ball_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1367": {
+    "name": "Wolf Claw",
+    "description": "Collect 50 wolf claws and take them to Trader Payne of the weapons and armor shop.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_claw_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1368": {
+    "name": "Imp Shackles",
+    "description": "The metal shackles attached around the neck of the imp race. Take this to Sentry Kristin.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.accessary_cerberuss_earing_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1369": {
+    "name": "Black Lion Mark",
+    "description": "The mark that indicates one is a member of the Black Lion troop.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_badge_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "1370": {
+    "name": "Spellbook: Aqua Swirl",
+    "description": "Spellbook needed to learn Aqua Swirl. Used by Elven Wizards. Required level: 20",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "1371": {
+    "name": "Spellbook: Twister",
+    "description": "Spellbook needed to learn Twister. Used by Dark Wizards. Required level: 20",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "1372": {
+    "name": "Spellbook: Blaze",
+    "description": "Spellbook needed to learn Blaze. Used by Human Wizards. Required level: 20",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "1373": {
+    "name": "Magic Gem",
+    "description": "An ingredient needed for certain magic.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 600,
+    "weight": 80,
+    "icon": "icon.etc_crystal_ball_white_i00",
+    "stackable": true
+  },
+  "1374": {
+    "name": "Greater Haste Potion",
+    "description": "A magical potion that increases movement speed dramatically Greater Haste Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 3000,
+    "weight": 20,
+    "icon": "icon.etc_lesser_potion_green_i00",
+    "item_skills": [
+      {
+        "id": 2034,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "1375": {
+    "name": "Greater Swift Attack Potion",
+    "description": "A magical potion that increases Atk. Spd. dramatically Greater Swift Attack Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 6000,
+    "weight": 20,
+    "icon": "icon.etc_lesser_potion_purple_i00",
+    "item_skills": [
+      {
+        "id": 2035,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "1376": {
+    "name": "Guard Spear",
+    "description": "A spear that guards use. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 50
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 409000,
+    "weight": 300,
+    "icon": "icon.weapon_guard_spear_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "1377": {
+    "name": "Spellbook: Poison Recovery",
+    "description": "Spellbook needed to learn Poison Recovery. Used by Elven Knights and Elven Scouts. Required level: Elven Knight - 20, Elven Scout - 24",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_efighter_i00",
+    "stackable": true
+  },
+  "1378": {
+    "name": "Spellbook: Divine Heal",
+    "description": "Spellbook needed to learn Divine Heal. Used by Human Knights. Required level: 28",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1550,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_hfighter_i00",
+    "stackable": true
+  },
+  "1379": {
+    "name": "Spellbook: Cure Bleeding",
+    "description": "Spellbook needed to learn Cure Bleeding. Used by Elven Knights and Elven Scouts. Required level: 24",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1150,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_efighter_i00",
+    "stackable": true
+  },
+  "1380": {
+    "name": "Spellbook: Entangle",
+    "description": "Spellbook needed to learn Entangle. Used by Elven Knights and Elven Scouts. Required level: 36",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2600,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_efighter_i00",
+    "stackable": true
+  },
+  "1381": {
+    "name": "Spellbook: Freezing Strike",
+    "description": "Spellbook needed to learn Freezing Strike. Used by Palus Knights and Assassins. Required level: 36",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2600,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_defighter_i00",
+    "stackable": true
+  },
+  "1382": {
+    "name": "Spellbook: Power Break",
+    "description": "Spellbook needed to learn Power Break. Used by Palus Knights and Assassins. Required level: 32",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2600,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_defighter_i00",
+    "stackable": true
+  },
+  "1383": {
+    "name": "Spellbook: Poison",
+    "description": "Spellbook needed to learn Poison. Used by Palus Knights and Assassins. Required level: 20",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_defighter_i00",
+    "stackable": true
+  },
+  "1384": {
+    "name": "Spellbook: Sprint",
+    "description": "Spellbook needed to learn Sprint. Used by Elven Knights and Elven Scouts. Required level: 32",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2600,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_efighter_i00",
+    "stackable": true
+  },
+  "1385": {
+    "name": "Spellbook: Recharge",
+    "description": "Spellbook needed to learn Recharge. Used by Elven Oracles and Shillien Oracles. Required level: 30",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_white_i00",
+    "stackable": true
+  },
+  "1386": {
+    "name": "Spellbook: Disrupt Undead",
+    "description": "Spellbook needed to learn Disrupt Undead. Used by Clerics, Elven Oracles and Shillien Oracles. Required level: 20",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_white_i00",
+    "stackable": true
+  },
+  "1387": {
+    "name": "Spellbook: Resist Poison",
+    "description": "Spellbook needed to learn Resist Poison. Used by Oracles and Prophets. Required level: Oracle - 35, Prophet - 60",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2450,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1388": {
+    "name": "Spellbook: Mental Shield",
+    "description": "Spellbook needed to learn Mental Shield. Used by Clerics, Elven Oracles and Shillien Oracles. Required level: 25",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1389": {
+    "name": "Spellbook: Holy Weapon",
+    "description": "Spellbook needed to learn Holy Weapon. Used by Clerics and Elven Oracles. Required level: 25",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_white_i00",
+    "stackable": true
+  },
+  "1390": {
+    "name": "Spellbook: Regeneration",
+    "description": "Spellbook needed to learn Regeneration. Used by Clerics and Elven Oracles. Required level: 35",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2450,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1391": {
+    "name": "Spellbook: Empower",
+    "description": "Spellbook needed to learn Empower. Used by Shillien Oracles. Required level: 25",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1392": {
+    "name": "Spellbook: Berserker Spirit",
+    "description": "Spellbook needed to learn Berserker Spirit. Used by Clerics. Required level: 35",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2450,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1393": {
+    "name": "Spellbook: Quickness",
+    "description": "Spellbook needed to learn Quickness.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_blue_i00",
+    "stackable": true
+  },
+  "1394": {
+    "name": "Spellbook: Sleep",
+    "description": "Spellbook needed to learn Sleep. Used by Human Wizards, Clerics, Elven Wizards, Elven Oracles, Dark Wizards, and Shillien Oracles. Required level: 25",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1395": {
+    "name": "Spellbook: Surrender to Water",
+    "description": "Spellbook needed to learn Surrender to Water.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_blue_i00",
+    "stackable": true
+  },
+  "1396": {
+    "name": "Spellbook: Surrender to Wind",
+    "description": "Spellbook needed to learn Surrender to Water",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_blue_i00",
+    "stackable": true
+  },
+  "1397": {
+    "name": "Spellbook: Peace",
+    "description": "Spellbook needed to learn Peace. Used by Clerics. Required level: 35",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2450,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1398": {
+    "name": "Spellbook: Focus",
+    "description": "Spellbook needed to learn Focus. Used by Clerics and Shillien Oracles. Required level: 25",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "1399": {
+    "name": "Spellbook: Concentration",
+    "description": "Spellbook needed to learn Concentration. Used by Human Wizards, Clerics, Elven Wizards, Elven Oracles, Dark Wizards, and Shillien Oracles. Required level: 20",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  }
+}

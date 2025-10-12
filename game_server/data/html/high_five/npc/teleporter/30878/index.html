@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+This is Giran port! Everything shipped in, or being shipped out of Giran comes through here. It is impossible to move large amounts of freight at once using our gatekeepers' magic. If that were become possible, then... No, No. That cannot happen....<br>
+Now, where should I send you? You're not going to ask me to send you to Island of Beleth acress the ocean... are you? Hehe.<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=False, fantasy_isle=False) }}
+{% endblock body %}

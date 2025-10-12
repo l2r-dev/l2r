@@ -1,0 +1,4303 @@
+{
+  "11300": {
+    "name": "Icarus Dual Sword - Destruction",
+    "description": "Masterwork Item that increases P. Atk. When enchanted, P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon will increase more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Attack by 109 and Max HP increases by 10%. Increases damage inflicted during PvP. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11301": {
+    "name": "Icarus Disperser - Confusion",
+    "description": "Masterwork Item that increases Evasion. Bestows one of the following functions: Focus, Evasion, or Critical Damage. Dagger of Avoid",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3858,
+        "level": 3
+      }
+    ]
+  },
+  "11302": {
+    "name": "Icarus Disperser - Confusion - Focus",
+    "description": "Masterwork Item that increases Evasion. <Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Dagger of Avoid",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ]
+  },
+  "11303": {
+    "name": "Icarus Disperser - Confusion - Evasion",
+    "description": "Masterwork Item that increases Evasion. <Soul Crystal Enhancement>. Increases Evasion by 5. Increases damage inflicted during PvP. Special Ability: Evasion",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 8
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3858,
+        "level": 3
+      }
+    ]
+  },
+  "11304": {
+    "name": "Icarus Disperser - Confusion - Critical Damage",
+    "description": "Masterwork Item that increases Evasion. <Soul Crystal Enhancement>. Increases Evasion by 5. Increases damage inflicted during PvP. Dagger of Avoid",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 3066,
+        "level": 4
+      }
+    ]
+  },
+  "11305": {
+    "name": "Icarus Sawsword - Destruction",
+    "description": "Masterwork Item that increases P. Atk. Bestows one of the following functions: Focus, Health, or Light. Sword of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11313
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3825,
+        "level": 3
+      }
+    ]
+  },
+  "11306": {
+    "name": "Icarus Sawsword - Destruction - Focus",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Sword of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11314
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3825,
+        "level": 3
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "11307": {
+    "name": "Icarus Sawsword - Destruction - Health",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Sword of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11315
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3825,
+        "level": 3
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11308": {
+    "name": "Icarus Sawsword - Destruction - Light",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11316
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3825,
+        "level": 3
+      }
+    ]
+  },
+  "11309": {
+    "name": "Icarus Shooter - Concentration",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. Bestows one of the following functions: Cheap Shot, Guidance, or Focus. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11321,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      }
+    ]
+  },
+  "11310": {
+    "name": "Icarus Shooter - Concentration - Cheap Shot",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement> . Decreases MP consumption by 12% when using skills. Increases damage inflicted during PvP. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11322,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      },
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ]
+  },
+  "11311": {
+    "name": "Icarus Shooter - Concentration - Guidance",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Increases Accuracy by 5.32. Increases damage inflicted during PvP. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11323,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      },
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ]
+  },
+  "11312": {
+    "name": "Icarus Shooter - Concentration - Focus",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11324,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ]
+  },
+  "11313": {
+    "name": "Icarus Stinger - Destruction",
+    "description": "Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. Focus, Health, or Light can be bestowed. When When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Rapier of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11305,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3830,
+        "level": 3
+      }
+    ]
+  },
+  "11314": {
+    "name": "Icarus Stinger - Destruction - Focus",
+    "description": "Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Rapier of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11306,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3830,
+        "level": 3
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "11315": {
+    "name": "Icarus Stinger - Destruction - Health",
+    "description": "Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Rapier of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11307,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3830,
+        "level": 3
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11316": {
+    "name": "Icarus Stinger - Destruction - Light",
+    "description": "Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Enchanted to . 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11308,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3830,
+        "level": 3
+      }
+    ]
+  },
+  "11317": {
+    "name": "Icarus Spirit - Nature",
+    "description": "Masterwork Item that increases Max MP. Bestows one of the following functions: Acumen, Mana Up, or Conversion. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      }
+    ]
+  },
+  "11318": {
+    "name": "Icarus Spirit - Nature - Acumen",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "11319": {
+    "name": "Icarus Spirit - Nature - Mana Up",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ]
+  },
+  "11320": {
+    "name": "Icarus Spirit - Nature - Conversion",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ]
+  },
+  "11321": {
+    "name": "Icarus Spitter - Concentration",
+    "description": "Masterwork Item that increases Accuracy. . Bestows one of the following functions: Cheap Shot, Guidance, or Focus. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11309,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      }
+    ]
+  },
+  "11322": {
+    "name": "Icarus Spitter - Concentration - Cheap Shot",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Decreases MP Consumption 4% during a skill attack. Increases damage inflicted during PvP. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11310,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 8312,
+        "level": 1
+      }
+    ]
+  },
+  "11323": {
+    "name": "Icarus Spitter - Concentration - Guidance",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Accuracy by 5.32 on a critical attack. Increases damage inflicted during PvP. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11311,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      },
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ]
+  },
+  "11324": {
+    "name": "Icarus Spitter - Concentration - Focus",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Critical by 116 on a critical attack. Increases damage inflicted during PvP. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11312,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ]
+  },
+  "11325": {
+    "name": "Icarus Wingblade - Lightning",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. Bestows one of the following functions: Focus, Health, or Light. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11341
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 2
+      }
+    ]
+  },
+  "11326": {
+    "name": "Icarus Wingblade - Lightning - Focus",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11342
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 2
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "11327": {
+    "name": "Icarus Wingblade - Lightning - Health",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11343
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 2
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11328": {
+    "name": "Icarus Wingblade - Lightning - Light",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11344
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3851,
+        "level": 2
+      }
+    ]
+  },
+  "11329": {
+    "name": "Icarus Trident - Thunder",
+    "description": "Masterwork Item that increases Critical Damage. Bestows one of the following functions: Anger, Critical Stun, or Light. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 2
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11330": {
+    "name": "Icarus Trident - Thunder - Anger",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. One's own HP decreases by 15% and P. Atk. +78. Increases damage inflicted during PvP. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 2
+      },
+      {
+        "id": 3600,
+        "level": 10
+      }
+    ]
+  },
+  "11331": {
+    "name": "Icarus Trident - Thunder - Critical Stun",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Has a 48% chance of stunning a target during a critical attack. Increases damage inflicted during PvP. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ]
+  },
+  "11332": {
+    "name": "Icarus Trident - Thunder - Light",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 2
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3873,
+        "level": 2
+      }
+    ]
+  },
+  "11333": {
+    "name": "Icarus Hammer - Earth",
+    "description": "Masterwork Item that increases Max HP. . Bestows one of the following functions: Anger, Health, or Rsk. Focus. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      }
+    ]
+  },
+  "11334": {
+    "name": "Icarus Hammer - Earth - Anger",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Your own HP decreases by 15% and P. Atk. +78 during a critical attack. Increases damage inflicted during PvP. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      },
+      {
+        "id": 3057,
+        "level": 4
+      }
+    ]
+  },
+  "11335": {
+    "name": "Icarus Hammer - Earth - Health",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11336": {
+    "name": "Icarus Hammer - Earth - Rsk. Focus",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Critical by 164 when HP is 60% or below. Increases damage inflicted during PvP. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      },
+      {
+        "id": 3027,
+        "level": 7
+      }
+    ]
+  },
+  "11337": {
+    "name": "Icarus Hand - Destruction",
+    "description": "Masterwork Item that increases P. Atk. Bestows one of the following functions: Rsk. Evasion, Focus, or Haste. Fist Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3879,
+        "level": 3
+      }
+    ]
+  },
+  "11338": {
+    "name": "Icarus Hand - Destruction - Rsk. Evasion",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Evasion by 6.8 when HP is 60% or below. Increases damage inflicted during PvP. Special Ability: Rsk. Evasion",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3069,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3879,
+        "level": 3
+      }
+    ]
+  },
+  "11339": {
+    "name": "Icarus Hand - Destruction - Focus",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Critical by 106. Increases damage inflicted during PvP. Fist Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3879,
+        "level": 3
+      },
+      {
+        "id": 3565,
+        "level": 2
+      }
+    ]
+  },
+  "11340": {
+    "name": "Icarus Hand - Destruction - Haste",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Atk. Spd. increases by about 10%. Increases damage inflicted during PvP. Fist Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3879,
+        "level": 3
+      },
+      {
+        "id": 3564,
+        "level": 2
+      }
+    ]
+  },
+  "11341": {
+    "name": "Icarus Heavy Arms - Lightning",
+    "description": "Masterwork Item that increases Critical Rate. Bestows one of the following functions: Focus, Health, or Light. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11325
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 2
+      }
+    ]
+  },
+  "11342": {
+    "name": "Icarus Heavy Arms - Lightning - Focus",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11326
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 2
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "11343": {
+    "name": "Icarus Heavy Arms - Lightning - Health",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11327
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 2
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11344": {
+    "name": "Icarus Heavy Arms - Lightning - Light",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11328
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3845,
+        "level": 2
+      }
+    ]
+  },
+  "11345": {
+    "name": "Icarus Hall - Hail",
+    "description": "Masterwork Item that increases M. Atk. Bestows one of the following functions: Mana Up, Conversion, or Acumen. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      }
+    ]
+  },
+  "11346": {
+    "name": "Icarus Hall - Hail - Mana Up",
+    "description": "Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ]
+  },
+  "11347": {
+    "name": "Icarus Hall - Hail - Conversion",
+    "description": "Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ]
+  },
+  "11348": {
+    "name": "Icarus Hall - Hail - Acumen",
+    "description": "Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "11349": {
+    "name": "Sealed Zubei's Gauntlet",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t64_g_i02",
+    "crystal_count": 53,
+    "enchantable": true
+  },
+  "11350": {
+    "name": "Sealed Zubei's Boots",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 1180,
+    "icon": "icon.armor_t64_b_i02",
+    "crystal_count": 53,
+    "enchantable": true
+  },
+  "11351": {
+    "name": "Sealed Avadon Gloves",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t66_g_i02",
+    "crystal_count": 53,
+    "enchantable": true
+  },
+  "11352": {
+    "name": "Sealed Avadon Boots",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 1170,
+    "icon": "icon.armor_t66_b_i02",
+    "crystal_count": 53,
+    "enchantable": true
+  },
+  "11353": {
+    "name": "Zubei's Leather Gaiters",
+    "description": "Masterwork Item that increases Evasion. Zubei's Leather Gaiters",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "price": 748300,
+    "weight": 1480,
+    "icon": "icon.armor_t65_l_i00",
+    "crystal_count": 100,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3668,
+        "level": 1
+      }
+    ]
+  },
+  "11354": {
+    "name": "Zubei's Leather Shirt",
+    "description": "Masterwork Item that increases Evasion. Zubei's Leather Shirt",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 117
+      }
+    },
+    "price": 1197000,
+    "weight": 4330,
+    "icon": "icon.armor_t65_u_i00",
+    "crystal_count": 160,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3669,
+        "level": 1
+      }
+    ]
+  },
+  "11355": {
+    "name": "Zubei's Gaiters",
+    "description": "Masterwork Item that increases P. Def. and HP Zubei's Gaiters",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 98
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 997700,
+    "weight": 3570,
+    "icon": "icon.armor_t64_l_i00",
+    "crystal_count": 133,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3672,
+        "level": 1
+      }
+    ]
+  },
+  "11356": {
+    "name": "Zubei's Gauntlet - Heavy Armor",
+    "description": "Masterwork Item that increases P. Def. and Max HP. Zubei's Gauntlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t64_g_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3673,
+        "level": 1
+      }
+    ]
+  },
+  "11357": {
+    "name": "Zubei's Gauntlet - Light Armor Use",
+    "description": "Masterwork Item that increases Evasion. Zubei's Gauntlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t65_g_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3670,
+        "level": 1
+      }
+    ]
+  },
+  "11358": {
+    "name": "Zubei's Gauntlet - Robe",
+    "description": "Masterwork Item that increases M. Atk. Zubei's Gauntlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t56_g_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3679,
+        "level": 1
+      }
+    ]
+  },
+  "11359": {
+    "name": "Zubei's Boots - Heavy Armor",
+    "description": "Masterwork Item that increases P. Def. and Max HP. Zubei's Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 1180,
+    "icon": "icon.armor_t64_b_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3674,
+        "level": 1
+      }
+    ]
+  },
+  "11360": {
+    "name": "Zubei's Boots - Light Armor Use",
+    "description": "Masterwork Item that increases Evasion. Zubei's Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 1180,
+    "icon": "icon.armor_t65_b_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3671,
+        "level": 1
+      }
+    ]
+  },
+  "11361": {
+    "name": "Zubei's Boots - Robe",
+    "description": "Masterwork Item that increases M. Def. Zubei's Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 1180,
+    "icon": "icon.armor_t56_b_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3680,
+        "level": 1
+      }
+    ]
+  },
+  "11362": {
+    "name": "Zubei's Shield",
+    "description": "Increases M. Def. Zubei's Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 419000,
+    "weight": 1210,
+    "icon": "icon.shield_shrnoens_shield_i00",
+    "crystal_count": 56,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3681,
+        "level": 1
+      }
+    ]
+  },
+  "11363": {
+    "name": "Zubei's Helmet - Heavy Armor",
+    "description": "Masterwork Item that increases P. Def. and Max HP. Zubei's Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 62
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 598600,
+    "weight": 590,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 80,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3675,
+        "level": 1
+      }
+    ]
+  },
+  "11364": {
+    "name": "Zubei's Breastplate",
+    "description": "Masterwork Item that increases P. Def. and Max HP. Zubei's Breastplate",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 157
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1596000,
+    "weight": 7970,
+    "icon": "icon.armor_t64_u_i00",
+    "crystal_count": 213,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3676,
+        "level": 1
+      }
+    ]
+  },
+  "11365": {
+    "name": "Avadon Gloves - Heavy Armor",
+    "description": "Masterwork Item that increases Max HP. Avadon Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t66_g_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3682,
+        "level": 1
+      }
+    ]
+  },
+  "11366": {
+    "name": "Avadon Gloves - Light Armor Use",
+    "description": "Masterwork Item that increases M. Def. and decreases Weight Limit. Avadon Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t67_g_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3689,
+        "level": 1
+      }
+    ]
+  },
+  "11367": {
+    "name": "Avadon Gloves - Robe",
+    "description": "Masterwork Item that increases P. Def. Avadon Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 590,
+    "icon": "icon.armor_t59_g_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3693,
+        "level": 1
+      }
+    ]
+  },
+  "11368": {
+    "name": "Avadon Leather Armor",
+    "description": "Masterwork Item that increases M. Def. and decreases Weight Limit. Avadon Leather Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 191
+      }
+    },
+    "price": 1946000,
+    "weight": 5600,
+    "icon": "icon.armor_t67_ul_i00",
+    "crystal_count": 259,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3690,
+        "level": 1
+      }
+    ]
+  },
+  "11369": {
+    "name": "Avadon Robe",
+    "description": "Masterwork Item that increases P. Def. and Casting Spd. Avadon Robe",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 127
+      },
+      "MaxMp": {
+        "add": 561
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1946000,
+    "weight": 2540,
+    "icon": "icon.armor_t59_ul_i00",
+    "crystal_count": 259,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3694,
+        "level": 1
+      }
+    ]
+  },
+  "11370": {
+    "name": "Avadon Boots - Heavy Armor",
+    "description": "Masterwork Item that increases Max HP. Avadon Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 1180,
+    "icon": "icon.armor_t66_b_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3683,
+        "level": 1
+      }
+    ]
+  },
+  "11371": {
+    "name": "Avadon Boots - Light Armor Use",
+    "description": "Masterwork Item that increases M. Def. and decreases Weight Limit. Avadon Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 399100,
+    "weight": 1180,
+    "icon": "icon.armor_t67_b_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3691,
+        "level": 1
+      }
+    ]
+  },
+  "11372": {
+    "name": "Avadon Boots - Robe",
+    "description": "Masterwork Item that increases P. Def. Avadon Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 399100,
+    "weight": 1180,
+    "icon": "icon.armor_t59_b_i00",
+    "crystal_count": 53,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3695,
+        "level": 1
+      }
+    ]
+  },
+  "11373": {
+    "name": "Avadon Circlet - Heavy Armor",
+    "description": "Masterwork Item that increases Max HP. Avadon Circlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 62
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 598600,
+    "weight": 590,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 80,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3684,
+        "level": 1
+      }
+    ]
+  },
+  "11374": {
+    "name": "Avadon Shield",
+    "description": "Masterwork Item that Increases M. Def. Avadon Shield",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 419000,
+    "weight": 1210,
+    "icon": "icon.shield_avadon_shield_i00",
+    "crystal_count": 56,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3687,
+        "level": 1
+      }
+    ]
+  },
+  "11375": {
+    "name": "Avadon Gaiters",
+    "description": "Masterwork Item that increases Max HP. Avadon Gaiters",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 98
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 997700,
+    "weight": 3520,
+    "icon": "icon.armor_t66_l_i00",
+    "crystal_count": 133,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3685,
+        "level": 1
+      }
+    ]
+  },
+  "11376": {
+    "name": "Avadon Breastplate",
+    "description": "Masterwork Item that increases Max HP. Avadon Breastplate",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 157
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1596000,
+    "weight": 7920,
+    "icon": "icon.armor_t66_u_i00",
+    "crystal_count": 213,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3686,
+        "level": 1
+      }
+    ]
+  },
+  "11377": {
+    "name": "Tunic of Zubei",
+    "description": "Masterwork Item that increases M. Atk. Tunic of Zubei",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 78
+      },
+      "MaxMp": {
+        "add": 345
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1197000,
+    "weight": 1960,
+    "icon": "icon.armor_t56_u_i00",
+    "crystal_count": 160,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3677,
+        "level": 1
+      }
+    ]
+  },
+  "11378": {
+    "name": "Stockings of Zubei",
+    "description": "Masterwork Item that increases M. Atk. Stockings of Zubei",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      },
+      "MaxMp": {
+        "add": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 748300,
+    "weight": 940,
+    "icon": "icon.armor_t56_l_i00",
+    "crystal_count": 100,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3678,
+        "level": 1
+      }
+    ]
+  },
+  "11379": {
+    "name": "Doom Gloves - Heavy Armor",
+    "description": "Masterwork Item that increases Max HP and Breath Gauge Doom Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 580,
+    "icon": "icon.armor_t71_g_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3696,
+        "level": 1
+      }
+    ]
+  },
+  "11380": {
+    "name": "Doom Gloves - Light Armor Use",
+    "description": "Masterwork Item that increases P. Atk., MP Recovery Rate, Resistance to Poison, and Breath Gauge Doom Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 580,
+    "icon": "icon.armor_t72_g_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3702,
+        "level": 1
+      }
+    ]
+  },
+  "11381": {
+    "name": "Doom Gloves - Robe",
+    "description": "Masterwork Item that increases Speed, Breath Gauge and MP Recovery Rate. Doom Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 580,
+    "icon": "icon.armor_t73_g_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3705,
+        "level": 1
+      }
+    ]
+  },
+  "11382": {
+    "name": "Doom Boots - Heavy Armor",
+    "description": "Masterwork Item that increases Max HP and Breath Gauge Doom Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t71_b_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3697,
+        "level": 1
+      }
+    ]
+  },
+  "11383": {
+    "name": "Doom Boots - Light Armor Use",
+    "description": "Masterwork Item that increases P. Atk., MP Recovery Rate, Resistance to Poison, and Breath Gauge Doom Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t72_b_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3703,
+        "level": 1
+      }
+    ]
+  },
+  "11384": {
+    "name": "Doom Boots - Robe",
+    "description": "Masterwork Item that increases Speed, Breath Gauge and MP Recovery Rate. Doom Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t73_b_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3706,
+        "level": 1
+      }
+    ]
+  },
+  "11385": {
+    "name": "Doom Shield",
+    "description": "Masterwork Item that increases M. Def. Doom Shield",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 649800,
+    "weight": 1200,
+    "icon": "icon.shield_doom_shield_i00",
+    "crystal_count": 87,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3700,
+        "level": 1
+      }
+    ]
+  },
+  "11386": {
+    "name": "Doom Plate Armor",
+    "description": "Masterwork Item that increases Max HP and Breath Gauge Doom Plate Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 270
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 4022000,
+    "weight": 9980,
+    "icon": "icon.armor_t71_ul_i00",
+    "crystal_count": 536,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3698,
+        "level": 1
+      }
+    ]
+  },
+  "11387": {
+    "name": "Doom Helmet - Heavy Armor",
+    "description": "Masterwork Item that increases Max HP and Breath Gauge Doom Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 66
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 928300,
+    "weight": 580,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 124,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3699,
+        "level": 1
+      }
+    ]
+  },
+  "11388": {
+    "name": "Leather Armor of Doom",
+    "description": "Masterwork Item that increases P. Atk., MP Recovery Rate, Resistance to Poison, and Breath Gauge Leather Armor of Doom",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 202
+      }
+    },
+    "price": 3017000,
+    "weight": 5500,
+    "icon": "icon.armor_t72_ul_i00",
+    "crystal_count": 402,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3701,
+        "level": 1
+      }
+    ]
+  },
+  "11389": {
+    "name": "Sealed Doom Gloves",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 580,
+    "icon": "icon.armor_t71_g_i02",
+    "crystal_count": 83,
+    "enchantable": true
+  },
+  "11390": {
+    "name": "Sealed Doom Boots",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t71_b_i02",
+    "crystal_count": 83,
+    "enchantable": true
+  },
+  "11391": {
+    "name": "Sealed Blue Wolf Boots",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t68_b_i02",
+    "crystal_count": 83,
+    "enchantable": true
+  },
+  "11392": {
+    "name": "Sealed Blue Wolf Gloves",
+    "description": "Sealed Masterwork Item. The blacksmith in a village can release the seal on this item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 590,
+    "icon": "icon.armor_t68_g_i02",
+    "crystal_count": 83,
+    "enchantable": true
+  },
+  "11393": {
+    "name": "Tunic of Doom",
+    "description": "Masterwork Item that increases Speed, Breath Gauge and MP Recovery Rate. Tunic of Doom",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 83
+      },
+      "MaxMp": {
+        "add": 377
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1857000,
+    "weight": 1900,
+    "icon": "icon.armor_t73_u_i00",
+    "crystal_count": 248,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3707,
+        "level": 1
+      }
+    ]
+  },
+  "11394": {
+    "name": "Blue Wolf Gaiters",
+    "description": "Masterwork Item that increases Speed and MP Recovery Rate. Blue Wolf Gaiters",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 104
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1547100,
+    "weight": 3370,
+    "icon": "icon.armor_t68_l_i00",
+    "crystal_count": 206,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3711,
+        "level": 1
+      }
+    ]
+  },
+  "11395": {
+    "name": "Blue Wolf Leather Armor",
+    "description": "Masterwork Item that increases P. Def. and Casting Spd. Blue Wolf Leather Armor",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 202
+      }
+    },
+    "price": 3017000,
+    "weight": 5500,
+    "icon": "icon.armor_t69_ul_i00",
+    "crystal_count": 402,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3715,
+        "level": 1
+      }
+    ]
+  },
+  "11396": {
+    "name": "Blue Wolf Boots - Heavy Armor",
+    "description": "Masterwork Item that increases Speed and MP Recovery Rate. Blue Wolf Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t68_b_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3712,
+        "level": 1
+      }
+    ]
+  },
+  "11397": {
+    "name": "Blue Wolf Boots - Light Armor Use",
+    "description": "Masterwork Item that increases P. Def. Blue Wolf Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t69_b_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3716,
+        "level": 1
+      }
+    ]
+  },
+  "11398": {
+    "name": "Blue Wolf Boots - Robe",
+    "description": "Masterwork Item that increases Max MP and MP Recovery Rate. Blue Wolf Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 1130,
+    "icon": "icon.armor_t70_b_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3719,
+        "level": 1
+      }
+    ]
+  },
+  "11399": {
+    "name": "Blue Wolf Gloves - Heavy Armor",
+    "description": "Masterwork Item that increases Speed and MP Recovery Rate. Blue Wolf Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 618800,
+    "weight": 590,
+    "icon": "icon.armor_t68_g_i00",
+    "crystal_count": 83,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3713,
+        "level": 1
+      }
+    ]
+  }
+}

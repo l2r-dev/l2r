@@ -1,0 +1,5588 @@
+{
+  "10700": {
+    "name": "Éclair Bijou {PvP} - Haste",
+    "description": "Kamael Exclusive Weapon: Sirra's Blade Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10701": {
+    "name": "Éclair Bijou {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Sirra's Blade Conversion . <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10702": {
+    "name": "Éclair Bijou {PvP} - Critical Poison",
+    "description": "Kamael Exclusive Weapon: Sirra's Blade Conversion. <Soul Crystal Enhancement>. Has a 15% chance of poisoning a target during a critical attack. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10703": {
+    "name": "Durendal {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Sword of Ipos Conversion. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10704": {
+    "name": "Durendal {PvP} - Haste",
+    "description": "Kamael Exclusive Weapon: Sword of Ipos Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10705": {
+    "name": "Durendal {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Sword of Ipos Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10706": {
+    "name": "Screaming Vengeance {PvP} - Cheap Shot",
+    "description": "Kamael Exclusive Weapon: Shyeed's Bow Conversion. <Soul Crystal Enhancement>. When using skills MP consumption is decreased by 12%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3360,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10707": {
+    "name": "Screaming Vengeance {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Shyeed's Bow Conversion. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10708": {
+    "name": "Screaming Vengeance {PvP} - Quick Recovery",
+    "description": "Kamael Exclusive Weapon: Shyeed's Bow conversion. <Soul Crystal Enhancement>. Decreases re-use delay by 17%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 332
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10709": {
+    "name": "Tallum Blade*Damascus {PvP}",
+    "description": "When enchanted with a two-handed sword, a two-handed blunt weapon or a fighting weapon, its P. Atk. increases more than that of a regular one-handed sword. When enchanted to 4 or more, Atk. Spd. increases by 8%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Decrease Range",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 17
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1890,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10710": {
+    "name": "Forgotten Blade {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Atk. Spd. increases by about 7%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_forgotten_blade_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10711": {
+    "name": "Forgotten Blade {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_forgotten_blade_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10712": {
+    "name": "Forgotten Blade {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 84. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_forgotten_blade_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10713": {
+    "name": "Heavens Divider {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Atk. Spd. increases by about 7%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1380,
+    "icon": "icon.weapon_heavens_divider_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10714": {
+    "name": "Heavens Divider {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1380,
+    "icon": "icon.weapon_heavens_divider_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10715": {
+    "name": "Heavens Divider {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 84. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1380,
+    "icon": "icon.weapon_heavens_divider_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10716": {
+    "name": "Basalt Battlehammer {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 3% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1570,
+    "icon": "icon.weapon_basalt_battlehammer_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10717": {
+    "name": "Basalt Battlehammer {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1570,
+    "icon": "icon.weapon_basalt_battlehammer_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10718": {
+    "name": "Basalt Battlehammer {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1570,
+    "icon": "icon.weapon_basalt_battlehammer_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10719": {
+    "name": "Dragon Hunter Axe {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1820,
+    "icon": "icon.weapon_dragon_hunter_axe_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10720": {
+    "name": "Dragon Hunter Axe {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1820,
+    "icon": "icon.weapon_dragon_hunter_axe_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10721": {
+    "name": "Dragon Hunter Axe {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 3% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1820,
+    "icon": "icon.weapon_dragon_hunter_axe_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10722": {
+    "name": "Angel Slayer {PvP} - Critical Damage",
+    "description": "<Soul Crystal Enhancement> . Critical Damage increased by 265. Increases damage in PvP. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 246
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 42759400,
+    "weight": 950,
+    "icon": "icon.weapon_angel_slayer_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3572,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10723": {
+    "name": "Angel Slayer {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Recovers as HP 3% of the damage inflicted upon the enemy with a close range general attack. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 246
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 42759400,
+    "weight": 950,
+    "icon": "icon.weapon_angel_slayer_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10724": {
+    "name": "Angel Slayer {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Atk. Spd. increases by about 7%. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 246
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 42759400,
+    "weight": 950,
+    "icon": "icon.weapon_angel_slayer_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10725": {
+    "name": "Saint Spear {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_saint_spear_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10726": {
+    "name": "Saint Spear {PvP} - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 5. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_saint_spear_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3602,
+        "level": 9
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10727": {
+    "name": "Saint Spear {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Atk. Spd. increases by about 7%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_saint_spear_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3601,
+        "level": 9
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10728": {
+    "name": "Demon Splinter {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 80. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10729": {
+    "name": "Demon Splinter {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10730": {
+    "name": "Demon Splinter {PvP} - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Stun effect at a chance of 27% during a critical attack. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10731": {
+    "name": "Arcana Mace {PvP} - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP, and increases Casting Spd. occasionally when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 225
+      },
+      "MAtk": {
+        "set": 175
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_arcana_mace_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10732": {
+    "name": "Arcana Mace {PvP} - MP Regeneration",
+    "description": "<Soul Crystal Enhancement>. MP Recovery Rate increases. Increases damage inflicted during PvP, and increases Casting Spd. occasionally when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 225
+      },
+      "MAtk": {
+        "set": 175
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_arcana_mace_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3576,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10733": {
+    "name": "Arcana Mace {PvP} - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Max MP increases by 30%. Increases damage inflicted during PvP, and increases Casting Spd. occasionally when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 225
+      },
+      "MAtk": {
+        "set": 175
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_arcana_mace_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10734": {
+    "name": "Imperial Staff {PvP} - Empower",
+    "description": "<Soul Crystal Enhancement>. Increases M. Atk. by 60. Increases damage inflicted during PvP, and increases Casting Spd. occasionally when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 274
+      },
+      "MAtk": {
+        "set": 193
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 910,
+    "icon": "icon.weapon_imperial_staff_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3575,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10735": {
+    "name": "Imperial Staff {PvP} - MP Regeneration",
+    "description": "<Soul Crystal Enhancement>. MP Recovery Rate increases. Increases damage inflicted during PvP, and increases Casting Spd. occasionally when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 274
+      },
+      "MAtk": {
+        "set": 193
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 910,
+    "icon": "icon.weapon_imperial_staff_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3576,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10736": {
+    "name": "Imperial Staff {PvP} - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Dryad Root is given a 20% chance when using a magic skill on the target. Increases damage inflicted during PvP, and increases Casting Spd. occasionally when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3577,
+            "level": 1
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 274
+      },
+      "MAtk": {
+        "set": 193
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 910,
+    "icon": "icon.weapon_imperial_staff_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10737": {
+    "name": "Draconic Bow {PvP} - Cheap Shot",
+    "description": "<Soul Crystal Enhancement>. During a general attack, there is a 26% chance that MP consumption will be decreased to 1. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 42759400,
+    "weight": 1650,
+    "icon": "icon.weapon_draconic_bow_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10738": {
+    "name": "Draconic Bow {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 88. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 42759400,
+    "weight": 1650,
+    "icon": "icon.weapon_draconic_bow_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10739": {
+    "name": "Draconic Bow {PvP} - Critical Slow",
+    "description": "<Soul Crystal Enhancement>. Slow effect at a certain rate during a critical attack. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 42759400,
+    "weight": 1650,
+    "icon": "icon.weapon_draconic_bow_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10740": {
+    "name": "Laevateinn {PvP} - Haste",
+    "description": "Kamael Exclusive Weapon: Forgotten Blade Conversion . <Soul Crystal Enhancement>. Atk. Spd. increases by about 7%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 255
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_leavatein_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10741": {
+    "name": "Laevateinn {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Forgotten Blade Conversion . <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 255
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_leavatein_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10742": {
+    "name": "Laevateinn {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Forgotten Blade Conversion . <Soul Crystal Enhancement>. Increases Critical by 84. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 255
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1300,
+    "icon": "icon.weapon_leavatein_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10743": {
+    "name": "Gram {PvP} - Haste",
+    "description": "Kamael Exclusive Weapon: Heaven's Divider Conversion. <Soul Crystal Enhancement>. Atk. Spd. increases by about 7%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10744": {
+    "name": "Gram {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Heaven's Divider Conversion. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10745": {
+    "name": "Gram {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Heaven's Divider Conversion. <Soul Crystal Enhancement>. Increases Critical by 84. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10746": {
+    "name": "Sarunga {PvP} - Cheap Shot",
+    "description": "Kamael Exclusive Weapon: Draconic Bow Conversion. <Soul Crystal Enhancement>when using the . skill MP consumption decreases by 12%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 356
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1600,
+    "icon": "icon.weapon_sarnga_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3360,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10747": {
+    "name": "Sarunga {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Draconic Bow Conversion. <Soul Crystal Enhancement>. Increases Critical by 88. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 356
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1600,
+    "icon": "icon.weapon_sarnga_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10748": {
+    "name": "Sarunga {PvP} - Critical Slow",
+    "description": "Kamael Exclusive Weapon: Draconic Bow Conversion. <Soul Crystal Enhancement>. Slow effect at a certain rate during a critical attack Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 356
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1600,
+    "icon": "icon.weapon_sarnga_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10749": {
+    "name": "Tallum Blade*Dark Legion's Edge {PvP}",
+    "description": "When enchanted with a two-handed sword, a two-handed blunt weapon or a fighting weapon, its P. Atk. increases more than that of a regular one-handed sword. When enchanted to 4 or more, Max HP increases by 15% and Max MP increases by 20% and Max CP increases by 30%. Increases damage inflicted during PvP, and decreases the range of bows/crossbows occasionally during an attack. PvP Weapon - Decrease Range",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3570,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 2080,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10750": {
+    "name": "Dynasty Sword {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_blade_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10751": {
+    "name": "Dynasty Sword {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_blade_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10752": {
+    "name": "Dynasty Sword {PvP} - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_blade_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10753": {
+    "name": "Dynasty Blade {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_twohand_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10754": {
+    "name": "Dynasty Blade {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_twohand_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10755": {
+    "name": "Dynasty Blade {PvP} - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_twohand_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10756": {
+    "name": "Dynasty Cudgel {PvP} - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases HP by 15% while increasing P. Atk. by 78 during a critical attack. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_hammer_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3057,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10757": {
+    "name": "Dynasty Cudgel {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_hammer_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10758": {
+    "name": "Dynasty Cudgel {PvP} - Rsk. Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 164 when HP drops to 60% or lower. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_hammer_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3027,
+        "level": 7
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10759": {
+    "name": "Dynasty Crusher {PvP} - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases HP by 15% while increasing P. Atk. by 78 during a critical attack. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_crusher_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3057,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10760": {
+    "name": "Dynasty Crusher {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_crusher_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10761": {
+    "name": "Dynasty Crusher {PvP} - Rsk. Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 164 when HP drops to 60% or lower. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_crusher_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3027,
+        "level": 7
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10762": {
+    "name": "Dynasty Knife {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 291
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_dagger_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10763": {
+    "name": "Dynasty Knife {PvP} - Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 5. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 291
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_dagger_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 8
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10764": {
+    "name": "Dynasty Knife {PvP} - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 559 during a critical attack. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 291
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_dagger_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3066,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10765": {
+    "name": "Dynasty Halberd {PvP} - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases your own HP by 15% and increases P. Atk. by 78. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 2010,
+    "icon": "icon.weapon_dynasty_spear_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3600,
+        "level": 10
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10766": {
+    "name": "Dynasty Halberd {PvP} - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. During a Critical attack, bestows the ability to inflict the stun effect with a 48% chance. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 2010,
+    "icon": "icon.weapon_dynasty_spear_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10767": {
+    "name": "Dynasty Halberd {PvP} - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 2010,
+    "icon": "icon.weapon_dynasty_spear_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 4
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10768": {
+    "name": "Dynasty Bagh-Nakh {PvP} - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 6.8 when HP drops to 60% or lower. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1550,
+    "icon": "icon.weapon_dynasty_jamadhr_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3069,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10769": {
+    "name": "Dynasty Bagh-Nakh {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 106. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1550,
+    "icon": "icon.weapon_dynasty_jamadhr_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10770": {
+    "name": "Dynasty Bagh-Nakh {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 10%. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1550,
+    "icon": "icon.weapon_dynasty_jamadhr_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10771": {
+    "name": "Dynasty Phantom {PvP} - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_magic_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10772": {
+    "name": "Dynasty Phantom {PvP} - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_magic_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10773": {
+    "name": "Dynasty Phantom {PvP} - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_magic_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10774": {
+    "name": "Dynasty Mace {PvP} - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_staff_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10775": {
+    "name": "Dynasty Mace {PvP} - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_staff_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10776": {
+    "name": "Dynasty Mace {PvP} - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_staff_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10777": {
+    "name": "Dynasty Staff {PvP} - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 325
+      },
+      "MAtk": {
+        "set": 222
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_twohand_staff_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10778": {
+    "name": "Dynasty Staff {PvP} - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 325
+      },
+      "MAtk": {
+        "set": 222
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_twohand_staff_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10779": {
+    "name": "Dynasty Staff {PvP} - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. PvP Weapon - Casting",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 325
+      },
+      "MAtk": {
+        "set": 222
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_twohand_staff_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10780": {
+    "name": "Dynasty Bow {PvP} - Cheap Shot",
+    "description": "<Soul Crystal Enhancement>. Decreases MP Consumption 4% during a skill attack. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 654
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_bow_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 8312,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10781": {
+    "name": "Dynasty Bow {PvP} - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increaes Accuracy by 5.32. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 654
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_bow_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10782": {
+    "name": "Dynasty Bow {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 654
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_bow_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10783": {
+    "name": "Dynasty Rapier {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Dynasty Sword Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 302
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1280,
+    "icon": "icon.weapon_dynasty_rapier_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10784": {
+    "name": "Dynasty Rapier {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Dynasty Sword Conversion. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 302
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1280,
+    "icon": "icon.weapon_dynasty_rapier_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10785": {
+    "name": "Dynasty Rapier {PvP} - Light",
+    "description": "Kamael Exclusive Weapon: Dynasty Sword Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. PvP Weapon - CP Drain",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 302
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1280,
+    "icon": "icon.weapon_dynasty_rapier_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10786": {
+    "name": "Dynasty Ancient Sword {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Dynasty Blade Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 361
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1800,
+    "icon": "icon.weapon_dynasty_ancient_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10787": {
+    "name": "Dynasty Ancient Sword {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Dynasty Blade Conversion. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 361
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1800,
+    "icon": "icon.weapon_dynasty_ancient_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10788": {
+    "name": "Dynasty Ancient Sword {PvP} - Light",
+    "description": "Kamael Exclusive Weapon: Dynasty Blade Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 361
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1800,
+    "icon": "icon.weapon_dynasty_ancient_sword_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10789": {
+    "name": "Dynasty Crossbow {PvP} - Cheap Shot",
+    "description": "Kamael Exclusive Weapon: Dynasty Bow Conversion. <Soul Crystal Enhancement>. When using skills MP consumption is decreased by 12%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 401
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1580,
+    "icon": "icon.weapon_dynasty_crossbow_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3360,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10790": {
+    "name": "Dynasty Crossbow {PvP} - Guidance",
+    "description": "Kamael Exclusive Weapon: Dynasty Bow Conversion. <Soul Crystal Enhancement>. Increaes Accuracy by 5.32. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 401
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1580,
+    "icon": "icon.weapon_dynasty_crossbow_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10791": {
+    "name": "Dynasty Crossbow {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Dynasty Bow Conversion. <Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Rapid Fire",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 401
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 74946000,
+    "weight": 1580,
+    "icon": "icon.weapon_dynasty_crossbow_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10792": {
+    "name": "Dynasty Dual Sword {PvP}",
+    "description": "PvP Weapon - Decrease Range",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10793": {
+    "name": "Armor of Nightmare {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8804000,
+    "weight": 9580,
+    "icon": "icon.armor_t80_ul_i00",
+    "crystal_count": 704,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10794": {
+    "name": "Majestic Plate Armor {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8804000,
+    "weight": 9200,
+    "icon": "icon.armor_t83_ul_i00",
+    "crystal_count": 704,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10795": {
+    "name": "Leather Armor of Nightmare {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 220
+      }
+    },
+    "price": 6603000,
+    "weight": 5300,
+    "icon": "icon.armor_t81_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10796": {
+    "name": "Majestic Leather Armor {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 220
+      }
+    },
+    "price": 6603000,
+    "weight": 5350,
+    "icon": "icon.armor_t84_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10797": {
+    "name": "Robe of Nightmare {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 147
+      },
+      "MaxMp": {
+        "add": 718
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6603000,
+    "weight": 2300,
+    "icon": "icon.armor_t82_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10798": {
+    "name": "Majestic Robe {PvP}",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 147
+      },
+      "MaxMp": {
+        "add": 718
+      }
+    },
+    "price": 6603000,
+    "weight": 2330,
+    "icon": "icon.armor_t85_ul_i00",
+    "crystal_count": 528,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10799": {
+    "name": "Imperial Crusader Breastplate {PvP}",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 205
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 12781000,
+    "weight": 7620,
+    "icon": "icon.armor_t88_u_i00",
+    "crystal_count": 613,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

@@ -1,0 +1,67 @@
+{%- macro button(label, action) -%}
+<button 
+    value="{{ label }}" 
+    action="bypass -h {{ action }}" 
+    width=65
+    height=21 
+    back="L2UI_CT1.Button_DF_Down"
+    fore="L2UI_CT1.Button_DF">
+{%- endmacro -%}
+
+{%- macro pagination(current_page, total_pages, has_prev, prev_page, has_next, next_page, action_prefix, show_jump_to) -%}
+<!-- Pagination Controls -->
+<center>
+    <table width="300">
+        <tr>
+            {% if has_prev %}
+                <td width="60">
+                    <button value="Prev" action="bypass -h {{ action_prefix }} {{ prev_page }}" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+                </td>
+            {% else %}
+                <td width="60">
+                    <button value="Prev" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF_Grayed">
+                </td>
+            {% endif %}
+            
+            <td width="100" align="center">
+                <font color="LEVEL">Page {{ current_page }} / {{ total_pages }}</font>
+            </td>
+            
+            {% if has_next %}
+                <td width="60">
+                    <button value="Next" action="bypass -h {{ action_prefix }} {{ next_page }}" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+                </td>
+            {% else %}
+                <td width="60">
+                    <button value="Next" width=60 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF_Grayed">
+                </td>
+            {% endif %}
+        </tr>
+    </table>
+    
+    {% if show_jump_to %}
+    <!-- Jump to Page -->
+    <br>
+    <table width="200">
+        <tr>
+            <td width="80">
+                <font color="LEVEL">Go to page:</font>
+            </td>
+            <td width="60">
+                <edit var="page_num" width=40 height=15 value="1">
+            </td>
+            <td width="60">
+                <button value="Go" action="bypass -h {{ action_prefix }} $page_num" width=40 height=21 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+            </td>
+        </tr>
+    </table>
+    {% endif %}
+</center>
+{%- endmacro -%}
+
+{%- macro pagination_info(current_page, total_pages, item_count, item_name="items") -%}
+<!-- Pagination Info -->
+<center>
+    Page {{ current_page }} of {{ total_pages }} ({{ item_count }} {{ item_name }})
+</center>
+{%- endmacro -%}

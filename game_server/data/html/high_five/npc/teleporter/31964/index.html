@@ -1,0 +1,9 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+Hello? I am Bilia, Gatekeeper in the Town of Schuttgart. If you want to use the gate, you need to first open the portal. I'll do my best to help you arrive at your destination safely and quickly.<br>
+If you've decided on your destination, I'll teleport you.<br>
+
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

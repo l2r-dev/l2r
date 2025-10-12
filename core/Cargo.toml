@@ -1,0 +1,43 @@
+[package]
+name = "l2r_core"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+bevy = { workspace = true }
+bevy_mod_scripting ={ workspace = true }
+bevy_ecs = { workspace = true }
+bevy_slinet = { workspace = true }
+bevy_webgate = { workspace = true }
+bevy_defer = { workspace = true }
+bevy_asset = { workspace = true }
+
+axum = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+strum = { workspace = true }
+rsa = { workspace = true }
+num-traits = { workspace = true }
+rand = { workspace = true }
+redis = { workspace = true }
+redis-macros = { workspace = true }
+prometheus = { workspace = true }
+memory-stats = { workspace = true }
+num_enum = { workspace = true }
+log = { workspace = true }
+sea-orm = { workspace = true }
+derive_more = { workspace = true }
+thiserror = { workspace = true }
+smallvec = { workspace = true }
+cached = { workspace = true }
+tera = { workspace = true }
+
+[features]
+default = []
+interlude = []
+high_five = []
+dynamic = ["bevy/dynamic_linking"]
+
+[package.metadata.cargo-machete]
+ignored = ["serde_json"]

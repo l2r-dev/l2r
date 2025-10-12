@@ -1,0 +1,4447 @@
+{
+  "4800": {
+    "name": "Knuckle Duster - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 148
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 1490,
+    "icon": "icon.weapon_knuckle_dust_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3037,
+        "level": 2
+      }
+    ]
+  },
+  "4801": {
+    "name": "Arthro Nail - Critical Poison",
+    "description": "<Soul Crystal Enhancement>. Poisons the target with a 14% chance during a general critical attack.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 90
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1420,
+    "icon": "icon.weapon_arthro_nail_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "4802": {
+    "name": "Arthro Nail - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 6 when HP drops to 60% or lower. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 90
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1420,
+    "icon": "icon.weapon_arthro_nail_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3030,
+        "level": 5
+      }
+    ]
+  },
+  "4803": {
+    "name": "Arthro Nail - Rsk. Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 10% when HP drops to 60% or lower. Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 90
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1420,
+    "icon": "icon.weapon_arthro_nail_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3034,
+        "level": 5
+      }
+    ]
+  },
+  "4804": {
+    "name": "Bellion Cestus - Critical Drain",
+    "description": "<Soul Crystal Enhancement>. Absorbs 14 HP from target during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1390,
+    "icon": "icon.weapon_bellion_cestus_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "4805": {
+    "name": "Bellion Cestus - Critical Poison",
+    "description": "<Soul Crystal Enhancement>. Poisons the target with a 12% chance during a general critical attack.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1390,
+    "icon": "icon.weapon_bellion_cestus_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "4806": {
+    "name": "Bellion Cestus - Rsk. Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 9% when HP drops to 60% or lower. Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1390,
+    "icon": "icon.weapon_bellion_cestus_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3034,
+        "level": 6
+      }
+    ]
+  },
+  "4807": {
+    "name": "Blood Tornado - Critical Drain",
+    "description": "<Soul Crystal Enhancement>. Absorbs a target's HP on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 1370,
+    "icon": "icon.weapon_blood_tornado_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4808": {
+    "name": "Blood Tornado - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion when HP drops to 60% or lower.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 1370,
+    "icon": "icon.weapon_blood_tornado_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4809": {
+    "name": "Blood Tornado - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 1370,
+    "icon": "icon.weapon_blood_tornado_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4810": {
+    "name": "Crystallized Ice Bow - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 5. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9237,
+        "mp_consume": 2,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 1762900,
+    "weight": 1790,
+    "icon": "icon.weapon_crystallized_ice_bow_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 1
+      }
+    ]
+  },
+  "4811": {
+    "name": "Crystallized Ice Bow - Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 2. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9238,
+        "mp_consume": 2,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 1762900,
+    "weight": 1790,
+    "icon": "icon.weapon_crystallized_ice_bow_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 1
+      }
+    ]
+  },
+  "4812": {
+    "name": "Crystallized Ice Bow - Quick Recovery",
+    "description": "<Soul Crystal Enhancement>. Decreases re-use delay by about 17%.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9239,
+        "mp_consume": 2,
+        "reuse_delay": 1248
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 1762900,
+    "weight": 1790,
+    "icon": "icon.weapon_crystallized_ice_bow_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4813": {
+    "name": "Elemental Bow - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 5. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9257,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 277
+      },
+      "MAtk": {
+        "set": 75
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_elemental_bow_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 2
+      }
+    ]
+  },
+  "4814": {
+    "name": "Elemental Bow - Miser",
+    "description": "<Soul Crystal Enhancement>. Has a 30% chance of reducing the number of soulshots consumed to 7.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9258,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 277
+      },
+      "MAtk": {
+        "set": 75
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_elemental_bow_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "4815": {
+    "name": "Elemental Bow - Quick Recovery",
+    "description": "<Soul Crystal Enhancement>. Decreases re-use delay by about 20%.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9259,
+        "mp_consume": 3,
+        "reuse_delay": 639
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 277
+      },
+      "MAtk": {
+        "set": 75
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_elemental_bow_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "4816": {
+    "name": "Noble Elven Bow - Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 2. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9261,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 252
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 2209700,
+    "weight": 1760,
+    "icon": "icon.weapon_noble_elven_bow_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 2
+      }
+    ]
+  },
+  "4817": {
+    "name": "Noble Elven Bow - Miser",
+    "description": "<Soul Crystal Enhancement>. Has a 30% chance of reducing the number of soulshots consumed to 7.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9262,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 252
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 2209700,
+    "weight": 1760,
+    "icon": "icon.weapon_noble_elven_bow_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "4818": {
+    "name": "Noble Elven Bow - Cheap Shot",
+    "description": "<Soul Crystal Enhancement>. Has a 46% chance of decreasing MP Consumptionoto 2 when launching a general attack.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 8,
+        "spiritshots": 2,
+        "width": 0,
+        "change_weapon_id": 9263,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 252
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 2209700,
+    "weight": 1760,
+    "icon": "icon.weapon_noble_elven_bow_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "4819": {
+    "name": "Akat Long Bow - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 4. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 9,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 9289,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "Horn",
+    "stats": {
+      "PAtk": {
+        "set": 316
+      },
+      "MAtk": {
+        "set": 84
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 3304300,
+    "weight": 1740,
+    "icon": "icon.weapon_akat_long_bow_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 3
+      }
+    ]
+  },
+  "4820": {
+    "name": "Akat Long Bow - Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 2. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 9,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 9290,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "Horn",
+    "stats": {
+      "PAtk": {
+        "set": 316
+      },
+      "MAtk": {
+        "set": 84
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 3304300,
+    "weight": 1740,
+    "icon": "icon.weapon_akat_long_bow_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 3
+      }
+    ]
+  },
+  "4821": {
+    "name": "Akat Long Bow - Miser",
+    "description": "<Soul Crystal Enhancement>. Has a 30% chance of reducing the number of soulshots consumed to 8.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 9,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 9291,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "C",
+    "material": "Horn",
+    "stats": {
+      "PAtk": {
+        "set": 316
+      },
+      "MAtk": {
+        "set": 84
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 3304300,
+    "weight": 1740,
+    "icon": "icon.weapon_akat_long_bow_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4822": {
+    "name": "Eminence Bow - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 4. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 9301,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 323
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 4713500,
+    "weight": 1720,
+    "icon": "icon.weapon_eminence_bow_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 4
+      }
+    ]
+  },
+  "4823": {
+    "name": "Eminence Bow - Miser",
+    "description": "<Soul Crystal Enhancement>. Has a 30% chance of reducing the number of soulshots consumed to 9.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 9302,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 323
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 4713500,
+    "weight": 1720,
+    "icon": "icon.weapon_eminence_bow_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4824": {
+    "name": "Eminence Bow - Cheap Shot",
+    "description": "<Soul Crystal Enhancement>. Has a 34% chance of decreasing MP Consumption to 1 when launching a general attack.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "change_weapon_id": 9303,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 323
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 4713500,
+    "weight": 1720,
+    "icon": "icon.weapon_eminence_bow_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4825": {
+    "name": "Dark Elven Long Bow - Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 2. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 9313,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 6680500,
+    "weight": 1720,
+    "icon": "icon.weapon_dark_elven_long_bow_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 5
+      }
+    ]
+  },
+  "4826": {
+    "name": "Dark Elven Long Bow - Critical Bleed",
+    "description": "<Soul Crystal Enhancement>. Inflicts Bleed on the target with a 41% chance during a general critical attack.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 9314,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 6680500,
+    "weight": 1720,
+    "icon": "icon.weapon_dark_elven_long_bow_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "4827": {
+    "name": "Dark Elven Long Bow - Miser",
+    "description": "<Soul Crystal Enhancement>. Has a 19% chance of reducing the number of soulshots consumed to 2.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 9315,
+        "mp_consume": 3,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 397
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 6680500,
+    "weight": 1720,
+    "icon": "icon.weapon_dark_elven_long_bow_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "4828": {
+    "name": "Bow of Peril - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 3. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 9325,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 400
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 10091400,
+    "weight": 1700,
+    "icon": "icon.weapon_hazard_bow_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 6
+      }
+    ]
+  },
+  "4829": {
+    "name": "Bow of Peril - Quick Recovery",
+    "description": "<Soul Crystal Enhancement>. Decreases re-use delay by about 13%.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 9326,
+        "mp_consume": 4,
+        "reuse_delay": 1310
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 400
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 10091400,
+    "weight": 1700,
+    "icon": "icon.weapon_hazard_bow_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "4830": {
+    "name": "Bow of Peril - Cheap Shot",
+    "description": "<Soul Crystal Enhancement>. When launching a general attack, there is a 42% chance that MP consumption will be decreased to 1.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 9327,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 400
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 10091400,
+    "weight": 1700,
+    "icon": "icon.weapon_hazard_bow_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "4831": {
+    "name": "Carnage Bow - Critical Bleed",
+    "description": "<Soul Crystal Enhancement>. Inflicts Bleed on the target with a 30% chance during a general critical attack.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "A",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 440
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 18300000,
+    "weight": 1670,
+    "icon": "icon.weapon_carnium_bow_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4832": {
+    "name": "Carnage Bow - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "A",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 440
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 18300000,
+    "weight": 1670,
+    "icon": "icon.weapon_carnium_bow_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4833": {
+    "name": "Carnage Bow - Quick Recovery",
+    "description": "<Soul Crystal Enhancement>. Decreases re-use delay by about 10%.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "A",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 440
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 18300000,
+    "weight": 1670,
+    "icon": "icon.weapon_carnium_bow_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4834": {
+    "name": "Scythe - Anger",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 20 while reducing Max HP by 15%. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2040,
+    "icon": "icon.weapon_scythe_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3600,
+        "level": 1
+      }
+    ]
+  },
+  "4835": {
+    "name": "Scythe - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has an 18% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2040,
+    "icon": "icon.weapon_scythe_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4836": {
+    "name": "Scythe - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2040,
+    "icon": "icon.weapon_scythe_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "4837": {
+    "name": "Orcish Glaive - Anger",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 20 while reducing Max HP by 15%. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2030,
+    "icon": "icon.weapon_orcish_glaive_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3600,
+        "level": 1
+      }
+    ]
+  },
+  "4838": {
+    "name": "Orcish Glaive - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has an 18% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2030,
+    "icon": "icon.weapon_orcish_glaive_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4839": {
+    "name": "Orcish Glaive - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 1762900,
+    "weight": 2030,
+    "icon": "icon.weapon_orcish_glaive_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4840": {
+    "name": "Body Slasher - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has an 18% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2030,
+    "icon": "icon.weapon_body_slasher_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4841": {
+    "name": "Body Slasher - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 1762900,
+    "weight": 2030,
+    "icon": "icon.weapon_body_slasher_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4842": {
+    "name": "Body Slasher - Wide Blow",
+    "description": "<Soul Crystal Enhancement>. Broadens angle of attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 180
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2030,
+    "icon": "icon.weapon_body_slasher_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4843": {
+    "name": "Bec de Corbin - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 17% chance of stun effect on a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 2020,
+    "icon": "icon.weapon_bech_de_corbin_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4844": {
+    "name": "Bec de Corbin - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 2209700,
+    "weight": 2020,
+    "icon": "icon.weapon_bech_de_corbin_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4845": {
+    "name": "Bec de Corbin - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 2020,
+    "icon": "icon.weapon_bech_de_corbin_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "4846": {
+    "name": "Scorpion - Anger",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 24 while reducing Max HP by 15%. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 1990,
+    "icon": "icon.weapon_scorpion_i01",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3600,
+        "level": 3
+      }
+    ]
+  },
+  "4847": {
+    "name": "Scorpion - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 16% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 1990,
+    "icon": "icon.weapon_scorpion_i01",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4848": {
+    "name": "Scorpion - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 3677700,
+    "weight": 1990,
+    "icon": "icon.weapon_scorpion_i01",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4849": {
+    "name": "Widow Maker - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 16% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 1980,
+    "icon": "icon.weapon_widow_maker_i01",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4850": {
+    "name": "Widow Maker - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 3677700,
+    "weight": 1980,
+    "icon": "icon.weapon_widow_maker_i01",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4851": {
+    "name": "Widow Maker - Wide Blow",
+    "description": "<Soul Crystal Enhancement>. Broadens angle of attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 180
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 1980,
+    "icon": "icon.weapon_widow_maker_i01",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4852": {
+    "name": "Orcish Poleaxe - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 15% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1950,
+    "icon": "icon.weapon_orcish_poleaxe_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4853": {
+    "name": "Orcish Poleaxe - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 4713500,
+    "weight": 1950,
+    "icon": "icon.weapon_orcish_poleaxe_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4854": {
+    "name": "Orcish Poleaxe - Wide Blow",
+    "description": "<Soul Crystal Enhancement>. Broadens angle of attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 180
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1950,
+    "icon": "icon.weapon_orcish_poleaxe_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4855": {
+    "name": "Great Axe - Anger",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 28 while reducing Max HP by 15%. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3600,
+        "level": 5
+      }
+    ]
+  },
+  "4856": {
+    "name": "Great Axe - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 14% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4857": {
+    "name": "Great Axe - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "4858": {
+    "name": "Lance - Anger",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 30 while reducing Max HP by 15%. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1920,
+    "icon": "icon.weapon_lancia_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3600,
+        "level": 6
+      }
+    ]
+  },
+  "4859": {
+    "name": "Lance - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 13% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1920,
+    "icon": "icon.weapon_lancia_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4860": {
+    "name": "Lance - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 10091400,
+    "weight": 1920,
+    "icon": "icon.weapon_lancia_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4861": {
+    "name": "Halberd - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. Has a 15% chance of stun effect during a critical attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 1900,
+    "icon": "icon.weapon_halbard_i01",
+    "crystal_count": 1464,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4862": {
+    "name": "Halberd - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 18300000,
+    "weight": 1900,
+    "icon": "icon.weapon_halbard_i01",
+    "crystal_count": 1464,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4863": {
+    "name": "Halberd - Wide Blow",
+    "description": "<Soul Crystal Enhancement>. Broadens angle of attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 180
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 1900,
+    "icon": "icon.weapon_halbard_i01",
+    "crystal_count": 1464,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "4864": {
+    "name": "Heavy Doom Hammer - Magic Regeneration",
+    "description": "<Soul Crystal Enhancement>. Casts Regeneration on a target with a 30% chance when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1044,
+            "level": 1
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_heavy_doom_hammer_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4865": {
+    "name": "Heavy Doom Hammer - Mental Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_heavy_doom_hammer_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4866": {
+    "name": "Heavy Doom Hammer - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 16
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_heavy_doom_hammer_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4867": {
+    "name": "Crystal Staff - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 7 when HP drops to 60% or lower. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_crystal_staff_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3031,
+        "level": 1
+      }
+    ]
+  },
+  "4868": {
+    "name": "Crystal Staff - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases base MP by 30%. This bonus does not apply to MP gained through passive skills. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_crystal_staff_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ]
+  },
+  "4869": {
+    "name": "Crystal Staff - Blessed Body",
+    "description": "<Soul Crystal Enhancement>. Has a 20% chance of casting Blessed Body when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1045,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_crystal_staff_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4870": {
+    "name": "Heavy Doom Axe - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 8% chance of casting Curse: Poison when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 8
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1010,
+    "icon": "icon.weapon_heavy_doom_axe_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4871": {
+    "name": "Heavy Doom Axe - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 8% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 7
+          }
+        ],
+        "onmagic_chance": 8
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1010,
+    "icon": "icon.weapon_heavy_doom_axe_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4872": {
+    "name": "Heavy Doom Axe - Magic Chaos",
+    "description": "<Soul Crystal Enhancement>. Has a 8% chance of casting Curse Chaos when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1222,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 8
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1010,
+    "icon": "icon.weapon_heavy_doom_axe_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "4873": {
+    "name": "Cursed Staff - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 18
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 119
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 1000,
+    "icon": "icon.weapon_cursed_staff_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "4874": {
+    "name": "Cursed Staff - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 8% chance of casting Curse: Poison when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 8
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 119
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 1000,
+    "icon": "icon.weapon_cursed_staff_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "4875": {
+    "name": "Cursed Staff - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 8% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 8
+          }
+        ],
+        "onmagic_chance": 8
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 119
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 1000,
+    "icon": "icon.weapon_cursed_staff_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "4876": {
+    "name": "Paradia Staff - Magic Regeneration",
+    "description": "<Soul Crystal Enhancement>. Casts Regeneration on a target with a 30% chance when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1044,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paradia_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4877": {
+    "name": "Paradia Staff - Mental Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paradia_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4878": {
+    "name": "Paradia Staff - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 21
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paradia_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4879": {
+    "name": "Pa'agrian Hammer - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 6 when HP drops to 60% or lower. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paagrio_hammer_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3031,
+        "level": 3
+      }
+    ]
+  },
+  "4880": {
+    "name": "Pa'agrian Hammer - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Poison when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paagrio_hammer_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4881": {
+    "name": "Pa'agrian Hammer - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 9
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paagrio_hammer_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4882": {
+    "name": "Sage's Staff - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 21
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1000,
+    "icon": "icon.weapon_sages_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4883": {
+    "name": "Sage's Staff - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Poison when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1000,
+    "icon": "icon.weapon_sages_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4884": {
+    "name": "Sage's Staff - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 9
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1000,
+    "icon": "icon.weapon_sages_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "4885": {
+    "name": "Pa'agrian Axe - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 990,
+    "icon": "icon.weapon_paagrio_axe_i01",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ]
+  },
+  "4886": {
+    "name": "Pa'agrian Axe - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 9
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 990,
+    "icon": "icon.weapon_paagrio_axe_i01",
+    "crystal_count": 1471,
+    "enchantable": true
+  },
+  "4887": {
+    "name": "Pa'agrian Axe - Magic Chaos",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse Chaos when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1222,
+            "level": 5
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 990,
+    "icon": "icon.weapon_paagrio_axe_i01",
+    "crystal_count": 1471,
+    "enchantable": true
+  },
+  "4888": {
+    "name": "Deadman's Staff - Magic Regeneration",
+    "description": "<Soul Crystal Enhancement>. Casts Regeneration on a target with a 30% chance when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1044,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1010,
+    "icon": "icon.weapon_deadmans_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4889": {
+    "name": "Deadman's Staff - Mental Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1010,
+    "icon": "icon.weapon_deadmans_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4890": {
+    "name": "Deadman's Staff - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 23
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1010,
+    "icon": "icon.weapon_deadmans_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4891": {
+    "name": "Ghoul's Staff - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 6 when HP drops to 60% or lower. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1000,
+    "icon": "icon.weapon_ghouls_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3031,
+        "level": 4
+      }
+    ]
+  },
+  "4892": {
+    "name": "Ghoul's Staff - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1000,
+    "icon": "icon.weapon_ghouls_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ]
+  },
+  "4893": {
+    "name": "Ghoul's Staff - Blessed Body",
+    "description": "<Soul Crystal Enhancement>. Has a 20% chance of casting Blessed Body when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1045,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "C",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 1000,
+    "icon": "icon.weapon_ghouls_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4894": {
+    "name": "Demon's Staff - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Poison when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 990,
+    "icon": "icon.weapon_demons_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4895": {
+    "name": "Demon's Staff - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 10
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 990,
+    "icon": "icon.weapon_demons_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4896": {
+    "name": "Demon's Staff - Magic Chaos",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse Chaos when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1222,
+            "level": 5
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 990,
+    "icon": "icon.weapon_demons_staff_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "4897": {
+    "name": "Sprite's Staff - Magic Regeneration",
+    "description": "<Soul Crystal Enhancement>. Casts Regeneration on a target with a 30% chance when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1044,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 134
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 960,
+    "icon": "icon.weapon_sprites_staff_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "4898": {
+    "name": "Sprite's Staff - Mental Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 134
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 960,
+    "icon": "icon.weapon_sprites_staff_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "4899": {
+    "name": "Sprite's Staff - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 25
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 134
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 960,
+    "icon": "icon.weapon_sprites_staff_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  }
+}

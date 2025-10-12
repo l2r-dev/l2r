@@ -1,0 +1,2221 @@
+{
+  "15400": {
+    "name": "Vitality Belt (Event) - 60-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 86400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15401": {
+    "name": "Vitality Belt (Event) - 90-day limited period",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15402": {
+    "name": "Vitality Belt (Event) - Permanent Use",
+    "description": "Vitality Belt. Can be enchanted using the Vitality Belt Enchant Scroll. When enchanted, increases vitality maintenance effect, and decreases vitality maintenance re-use time.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15403": {
+    "name": "Player Commendation - Berserker Blade - Player Commendation Weapon",
+    "description": "PC cafe exclusive item that contains the strength of the Berserker Blade. Can be enchanted using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Critical by 73. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1380,
+    "icon": "icon.weapon_berserker_blade_i01",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15404": {
+    "name": "6th Anniversary Party Gift Box (2003) - Event",
+    "description": "Contains the 6th Anniversary Party Cube, a 30-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15418,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15405": {
+    "name": "6th Anniversary Party Gift Box (2004) - Event",
+    "description": "Contains the 6th Anniversary Party Cube, a 25-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15419,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15406": {
+    "name": "6th Anniversary Party Gift Box (2005) - Event",
+    "description": "Contains the 6th Anniversary Party Cube, a 20-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15420,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15407": {
+    "name": "6th Anniversary Party Gift Box (2006) - Event",
+    "description": "Contains the 6th Anniversary Party Cube, a 15-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15421,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15408": {
+    "name": "6th Anniversary Party Gift Box (2007) - Event",
+    "description": "Contains the 6th Anniversary Party Cube, a 10-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15422,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15409": {
+    "name": "6th Anniversary Party Gift Box (2008) - Event",
+    "description": "Contains the 6th Anniversary Party Cube, a 5-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15423,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15410": {
+    "name": "6th Anniversary Party Gift Box (2009) - Event",
+    "description": "Contains the 6th Anniversary Party Cube, a 3-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15424,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15411": {
+    "name": "6th Anniversary Party Gift Set (2003) - Event",
+    "description": "A hero's treasure box. Contains the 6th Anniversary Party Cube, a 30-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15418,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15412": {
+    "name": "6th Anniversary Party Gift Set (2004) - Event",
+    "description": "A hero's treasure box. Contains the 6th Anniversary Party Cube, a 25-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15419,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15413": {
+    "name": "6th Anniversary Party Gift Set (2005) - Event",
+    "description": "A hero's treasure box. Contains the 6th Anniversary Party Cube, a 20-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15420,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15414": {
+    "name": "6th Anniversary Party Gift Set (2006) - Event",
+    "description": "A hero's treasure box. Contains the 6th Anniversary Party Cube, a 15-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15421,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15415": {
+    "name": "6th Anniversary Party Gift Set (2007) - Event",
+    "description": "A hero's treasure box. Contains the 6th Anniversary Party Cube, a 10-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15422,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15416": {
+    "name": "6th Anniversary Party Gift Set (2008) - Event",
+    "description": "A hero's treasure box. Contains the 6th Anniversary Party Cube, a 5-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15423,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15417": {
+    "name": "6th Anniversary Party Gift Set (2009) - Event",
+    "description": "A hero's treasure box. Contains the 6th Anniversary Party Cube, a 3-day limited time item. It automatically disappears at the end of the 6th anniversary cube event. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15424,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.event_six_party_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "15418": {
+    "name": "6th Anniversary Party Cube Manage (Event) - 30-day limited period",
+    "description": "When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. 6th Anniversary Cube",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_six_party_cube_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 9042,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15419": {
+    "name": "6th Anniversary Party Cube Manage (Event) - 25-day limited period",
+    "description": "When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. 6th Anniversary Cube",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_six_party_cube_i00",
+    "time": 36000,
+    "item_skills": [
+      {
+        "id": 9043,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15420": {
+    "name": "6th Anniversary Party Cube Manage (Event) - 20-day limited period",
+    "description": "When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. 6th Anniversary Cube",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_six_party_cube_i00",
+    "time": 28800,
+    "item_skills": [
+      {
+        "id": 9044,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15421": {
+    "name": "6th Anniversary Party Cube Manage (Event) - 15-day limited period",
+    "description": "When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. 6th Anniversary Cube",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_six_party_cube_i00",
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 9045,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15422": {
+    "name": "6th Anniversary Party Cube Manage (Event) - 10-day limited period",
+    "description": "When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. 6th Anniversary Cube",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_six_party_cube_i00",
+    "time": 14400,
+    "item_skills": [
+      {
+        "id": 9046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15423": {
+    "name": "6th Anniversary Party Cube Manage (Event) - 5-day limited period",
+    "description": "When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. 6th Anniversary Cube",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_six_party_cube_i00",
+    "time": 7200,
+    "item_skills": [
+      {
+        "id": 9047,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15424": {
+    "name": "6th Anniversary Party Cube Manage (Event) - 3-day limited period",
+    "description": "When you double-click, the reward is created. What reward will you receive? That depends on how lucky you are. One use per day. Reuse Delay 23 hour. Cannot be exchanged, dropped, or destroyed. 6th Anniversary Cube",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_six_party_cube_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 9048,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15425": {
+    "name": "Hero's Treasure Box - Event",
+    "description": "Contains an armor set 30-Day Pack, a Hunting Helper Exchange Coupon, and a hero's summon point item. Cannot be exchanged, dropped, or destroyed.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15211,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13273,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15426,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.event_hero_treasure_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15426": {
+    "name": "Hero's Summon Point - Event",
+    "description": "When double clicked, 10000 PC Cafe Points can be acquired. Reuse Delay 7 days. Cannot be exchanged, dropped, or destroyed. PC Cafe Points",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pccafe_point_i00",
+    "item_skills": [
+      {
+        "id": 9040,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "15427": {
+    "name": "6th Anniversary Party Cake - Event",
+    "description": "Energy is recovered for 1 hour when acquiring Exp. Reuse Delay is 12 hours. Cannot be exchanged, dropped, or destroyed. Sixth Anniversary Cake",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.event_six_party_cake_i00",
+    "item_skills": [
+      {
+        "id": 9041,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "15428": {
+    "name": "6th Anniversary Party Earring (Event) - 30-day limited period",
+    "description": "30-day limited-time Item. Increases MP +31 and Resistance to Shock/mind attacks by 20%. Increases Shock/Mental attack rate by 20%. Has the vampiric rage effect. Only one effect is applied even when the two identical earrings are worn. Cannot be exchanged, dropped, or destroyed. Sixth Anniversary Party Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 31
+      }
+    },
+    "weight": 150,
+    "icon": "icon.event_six_party_earing_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8361,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15429": {
+    "name": "6th Anniversary Party Belt (Event) - 7-day limited period",
+    "description": "7-day limited-time Item. Energy is maintained for 30 minutes. Reuse Delay is 23 hours. Cannot be exchanged, dropped, or destroyed. Vitality Maintenance Effect",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_energy_belt_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8360,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15430": {
+    "name": "Event - Halloween Candy - Event",
+    "description": "Sweet Halloween candy. You can give it to Skooldie to exchange for the Halloween Toy Box.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.ev_hallowinday_candy_i00",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15431": {
+    "name": "Event - Uldie Summon Scroll",
+    "description": "When used, summons the oldest girl Uldie among the Three Siblings, and can play Jack's game. You cannot summon Uldie if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! Uldie Summon Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.ev_scroll_of_wooldie_i00",
+    "item_skills": [
+      {
+        "id": 9061,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15432": {
+    "name": "Event - Belldandy Summon Scroll",
+    "description": "When used, summons the middle child Belldandy among the Three Siblings, and can play Jack's game. You cannot summon Belldandy if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! Belldandy Summon Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.ev_scroll_of_berdandi_i00",
+    "item_skills": [
+      {
+        "id": 9062,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15433": {
+    "name": "Event - Skooldie Summon Scroll",
+    "description": "When used, summons the youngest child Skooldie among the Three Siblings, and can play Jack's game. You cannot summon Skooldie if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! Trade Cannot be dropped or destroyed. Skooldie Summon Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.ev_scroll_of_scooldie_i00",
+    "item_skills": [
+      {
+        "id": 9063,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15434": {
+    "name": "Halloween Toy Chest",
+    "description": "Gives a chance to acquire one of Halloween masks. Cannot be exchange, dropped, or destroyed. Halloween Toy Chest",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15435": {
+    "name": "Shiny Halloween Toy Chest",
+    "description": "Gives a chance to acquire one of Shiny Halloween masks. Cannot be exchanged, dropped, or destroyed. Shiny Halloween Toy Chest",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15436": {
+    "name": "Halloween Transformation Stick - 7-day limited period",
+    "description": "You can transform to Halloween Pumpkin. 7-day limited period accessory. Cannot be exchanged, dropped, or destroyed. Transform Pumpkin Ghost",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 10,
+    "icon": "icon.weapon_pumpkin_stick_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8246,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "15437": {
+    "name": "Transformation Scroll Box",
+    "description": "Gives a chance to acquire one of the following transformation scrolls: Omen Beast, Death Blader, and Grail Apostle. Cannot be exchanged, dropped, or destroyed. Scroll of Transformation Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "15438": {
+    "name": "Vitality Maintaining Potion (10 minutes)",
+    "description": "Energy is maintained for 10 minutes. Reuse time is 30 minutes. Cannot be exchanged, dropped, or destroyed. Vitality Maintaining Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_lesser_potion_blue_i00",
+    "item_skills": [
+      {
+        "id": 9067,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "15439": {
+    "name": "10,000 SP scroll",
+    "description": "Scroll that replenishes 10,000 SP. 10,000 SP scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 30,
+    "icon": "icon.etc_sp_scroll3_i00",
+    "item_skills": [
+      {
+        "id": 9069,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15440": {
+    "name": "Vitality Maintaining Potion (30 Minutes)",
+    "description": "Your Vitality will remain at the same level for 30 minutes. Re-use time is 60 minutes. Cannot be exchanged, dropped or destroyed. Vitality Maintaining Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_lesser_potion_scarlet_i00",
+    "item_skills": [
+      {
+        "id": 9068,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "15441": {
+    "name": "Red Flare Valakas Hair Accessory",
+    "description": "Burning red Valakas Helm. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_valakas_the_flame_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15442": {
+    "name": "Jack O'Lantern Mask",
+    "description": "You can use the card skill necessary for playing Jack's game when equipped. Cannot be exchanged, dropped, or destroyed. Halloween Pumpkin Card",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_jack0_mask_i00",
+    "item_skills": [
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15443": {
+    "name": "Super Strong Giant's Mask",
+    "description": "Super Strong Giant's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Super Strong Giant's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.br_frankenstein_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8372,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15444": {
+    "name": "Silent Scream's Mask",
+    "description": "Silent Scream's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Silent Scream's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_scream_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8373,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15445": {
+    "name": "Wrathful Spirit's Mask",
+    "description": "Wrathful Spirit's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Wrathful Spirit's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_doccabi_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8374,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15446": {
+    "name": "Unrotten Corpse's Mask",
+    "description": "Unrotten Corpse's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Unrotten Corpse's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_mummy_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8375,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15447": {
+    "name": "Planet X235 Alien's Mask",
+    "description": "Planet X235 Alien's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Planet X235 Alien Mask's Effect",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_alien_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8376,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15448": {
+    "name": "Golden Jack O'Lantern Mask - Permanent Use",
+    "description": "Jack O'Lantern Mask made of gold. Shines brightly. Cannot be exchanged, dropped, or destroyed.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_golden_jack0_mask_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15449": {
+    "name": "Shiny Planet X235 Alien's Mask",
+    "description": "Gloriously Shiny Planet X235 Alien's Mask You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Planet X235 Alien Mask's Effect",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_shiny_alien_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8376,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15450": {
+    "name": "Shiny Super Strong Giant's Mask",
+    "description": "Gloriously Shiny Super Strong Giant's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Super Strong Giant's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_shiny_frankenstein_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8372,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15451": {
+    "name": "Shiny Silent Scream's Mask",
+    "description": "Gloriously Shiny Silent Scream's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Silent Scream's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_shiny_scream_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8373,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15452": {
+    "name": "Shiny Wrathful Spirit's Mask",
+    "description": "Gloriously Shiny Wrathful Spirit's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Wrathful Spirit's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_shiny_doccabi_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8374,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15453": {
+    "name": "Shiny Unrotten Corpse's Mask",
+    "description": "Gloriously Shiny Unrotten Corpse's Mask. You can use the card skill necessary for playing Jack's game when equipped. 4-hour limited-time Item. Reuse Delay 1 hour. Cannot be exchanged, dropped, or destroyed. Unrotten Corpse's Mask",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.ev_shiny_mummy_mask_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 8375,
+        "level": 1
+      },
+      {
+        "id": 8369,
+        "level": 1
+      },
+      {
+        "id": 8370,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15454": {
+    "name": "Shiny Planet X235 Alien's Mask Pack - Event",
+    "description": "Contains a Shiny Planet X235 Alien's Mask. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15449,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15455": {
+    "name": "Shiny Super Strong Giant's Mask Pack - Event",
+    "description": "Contains a Shiny Super Strong Giant's Mask. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15450,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15456": {
+    "name": "Shiny Silent Scream's Mask Pack - Event",
+    "description": "Contains a Shiny Silent Scream's Mask. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15451,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15457": {
+    "name": "Shiny Wrathful Spirit's Mask Pack - Event",
+    "description": "Contains a Shiny Wrathful Spirit's Mask. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15452,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15458": {
+    "name": "Shiny Unrotten Corpse's Mask Pack - Event",
+    "description": "Contains a Shiny Unrotten Corpse's Mask. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15453,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15459": {
+    "name": "Halloween Nectar Pumpkin Pack - Event",
+    "description": "Halloween Nectar Pumpkin Pack. Contains 1 Halloween nectar pumpkin. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15461,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15460": {
+    "name": "Halloween King Pumpkin Pack - Event",
+    "description": "Halloween King Pumpkin Pack. Contains 1 Halloween king pumpkin. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15462,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15461": {
+    "name": "Halloween Nectar Pumpkin - Event",
+    "description": "Halloween Nectar Pumpkin. With a certain chance, can obtain an energy replenishing drink or a feather of blessing and 1 small Halloween pumpkin. Can be exchanged. Cannot be dropped, put in private store, or destroyed. Halloween Pumpkin",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_halloween_pumpkin_i00",
+    "item_skills": [
+      {
+        "id": 9070,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15462": {
+    "name": "Halloween King Pumpkin - Event",
+    "description": "Halloween King Pumpkin. Contains 6 Halloween nectar pumpkins and a Golden Jack O'Lantern Mask (7 day limited). Can be exchanged. Cannot be dropped, put in private store, or destroyed.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15461,
+          "min": 6,
+          "max": 6,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15464,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.event_halloween_king_pumpkin_i00",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15463": {
+    "name": "Small Halloween Pumpkin - Event",
+    "description": "Small Halloween Pumpkin. Double click and you can obtain 1 bonus item with a certain rate of chance. Cannot be exchanged, dropped, put in private store, or destroyed. Small Halloween Pumpkin",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_halloween_pumpkin_i00",
+    "item_skills": [
+      {
+        "id": 9072,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15464": {
+    "name": "Golden Jack O'Lantern Mask - 7-day limited period",
+    "description": "Golden Jack O'Lantern Mask. Shines brightly. Reuse Delay 23 hour. Cannot be exchanged, dropped, or put in private store. Can be destroyed. Golden Jack O'Lantern Mask's Effect",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Crystal",
+    "icon": "icon.ev_golden_jack0_mask_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8377,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15465": {
+    "name": "Halloween Nectar Pumpkin Pack (Event) - Event",
+    "description": "Halloween Nectar Pumpkin Pack. Contains 1 Halloween nectar pumpkin. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15461,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15466": {
+    "name": "Halloween King Pumpkin Pack (Event) - Event",
+    "description": "Halloween King Pumpkin Pack. Contains 1 Halloween king pumpkin. Cannot be exchanged, dropped, or stored in a private store.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15462,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "15467": {
+    "name": "Halloween Nectar Pumpkin (Event) - Event",
+    "description": "Halloween Nectar Pumpkin. With a certain chance, can obtain an energy replenishing drink or a feather of blessing and 1 small Halloween pumpkin. Can be exchanged. Cannot be dropped, put in private store, or destroyed. Halloween Pumpkin - event",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Fish",
+    "icon": "icon.event_halloween_pumpkin_i00",
+    "item_skills": [
+      {
+        "id": 9071,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15468": {
+    "name": "Halloween King Pumpkin (Event) - Event",
+    "description": "Halloween King Pumpkin. Contains 6 Halloween nectar pumpkins and a Golden Jack O'Lantern Mask (7 day limited). Can be exchanged. Cannot be dropped, put in private store, or destroyed.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15461,
+          "min": 6,
+          "max": 6,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15464,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.event_halloween_king_pumpkin_i00",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15469": {
+    "name": "Frozen Core",
+    "description": "Magic stone that temporarily neutralizes Freya's powerful magic Freezing Core",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_freezing_core_i00",
+    "item_skills": [
+      {
+        "id": 9057,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15470": {
+    "name": "Black Frozen Core",
+    "description": "Magic stone that temporarily neutralizes Freya's powerful magic Black Freezing Core",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_black_freezing_core_i00",
+    "item_skills": [
+      {
+        "id": 9058,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15471": {
+    "name": "Invisible Weapon for Freya",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_halloween_king_pumpkin_i03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15472": {
+    "name": "Sealed Mystery Sword",
+    "description": "Sacred sword that can neutralize Freya's power. Cannot use it directly due to some unknown M. Atk.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_sealed_mystery_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15473": {
+    "name": "Beast Handler's Whip",
+    "description": "Obtained from Tunatun on the Beast Farm, this whip will enable the bearer to control tamed pets. Must be equipped to use. Beast Training - Accompany",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_training_whip_i00",
+    "item_skills": [
+      {
+        "id": 8363,
+        "level": 1
+      },
+      {
+        "id": 8364,
+        "level": 1
+      },
+      {
+        "id": 8362,
+        "level": 1
+      },
+      {
+        "id": 8378,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "15474": {
+    "name": "Golden Spice",
+    "description": "Feed used to tame baby animals on the Beast Farm. Using this feed will allow the monster to drop adena and/or items, but will give less experience. Golden Spice",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 200,
+    "weight": 3,
+    "icon": "icon.etc_golden_spice_new_i00",
+    "item_skills": [
+      {
+        "id": 9049,
+        "level": 1
+      }
+    ],
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15475": {
+    "name": "Crystal Spice",
+    "description": "Feed used to tame baby animals on the Beast Farm. This feed will cause the monster to give more experience, but no adena or items. Crystal Spice",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 200,
+    "weight": 3,
+    "icon": "icon.etc_crystal_spice_new_i00",
+    "item_skills": [
+      {
+        "id": 9050,
+        "level": 1
+      }
+    ],
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15476": {
+    "name": "Blessed Golden Spice",
+    "description": "A better quality feed that has a chance to tame animals on the Beast Farm with just one application. Blessed Golden Spice",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 200,
+    "weight": 3,
+    "icon": "icon.etc_golden_spice_blessed_i00",
+    "item_skills": [
+      {
+        "id": 9051,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15477": {
+    "name": "Blessed Crystal Spice",
+    "description": "A better quality feed that has a chance to tame animals on the Beast Farm with just one application. Blessed Crystal Spice",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 200,
+    "weight": 3,
+    "icon": "icon.etc_crystal_spice_blessed_i00",
+    "item_skills": [
+      {
+        "id": 9052,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15478": {
+    "name": "Golden Spice (S-Grade)",
+    "description": "A better quality feed that has a chance to turn Beast Farm babies into fully grown pets with just one application. Using this feed will allow the monster to drop adena and/or items, but will give less experience. S Grade Golden Spice",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 200,
+    "weight": 3,
+    "icon": "icon.etc_golden_spice_s_i00",
+    "item_skills": [
+      {
+        "id": 9053,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15479": {
+    "name": "Crystal Spice (S-Grade)",
+    "description": "A better quality feed that has a chance to turn Beast Farm babies into fully grown pets with just one application. This feed causes the monster to give more experience, but no adena or items. S Grade Crystal Spice",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 200,
+    "weight": 3,
+    "icon": "icon.etc_crystal_spice_s_i00",
+    "item_skills": [
+      {
+        "id": 9054,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15480": {
+    "name": "Old Golden Spice",
+    "description": "Old and unusable Beast Farm Feed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_halloween_king_pumpkin_i12",
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15481": {
+    "name": "Old Crystal Spice",
+    "description": "Old and unusable Beast Farm Feed",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.event_halloween_king_pumpkin_i13",
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15482": {
+    "name": "Golden Spice Crate",
+    "description": "This box hold up to 50 Golden Spices. When converted, there is also a chance that Special Feed will be received. Golden Spice Capsule",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 9500,
+    "weight": 30,
+    "icon": "icon.etc_golden_spice_comp_i00",
+    "item_skills": [
+      {
+        "id": 9055,
+        "level": 1
+      }
+    ],
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15483": {
+    "name": "Crystal Spice Compressed Pack",
+    "description": "Small pack with a compressed Crystal Spice. When you use it, it changes into 50 Crystal Spices. Special Feed may also come out. Crystal Spice Capsule",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "price": 9500,
+    "weight": 30,
+    "icon": "icon.etc_crystal_spice_comp_i00",
+    "item_skills": [
+      {
+        "id": 9056,
+        "level": 1
+      }
+    ],
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15484": {
+    "name": "High-level Angel Circlet",
+    "description": "High-level Angel Circlet. Uses 2 hair accessory slots. Blessed Escape skill can be used. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_highangel_circlet_i00",
+    "item_skills": [
+      {
+        "id": 8509,
+        "level": 1
+      }
+    ]
+  },
+  "15485": {
+    "name": "Torch",
+    "description": "Can be used to light a fire. Cannot be exchanged, dropped, or put in private store. Torch Light",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_torchlight_i00",
+    "time": 4,
+    "item_skills": [
+      {
+        "id": 9059,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15486": {
+    "name": "Spirit Stone Fragment",
+    "description": "Energy from the Seed of Annihilation resides within these Spirit Stone Fragments. Can be used at Special Product Broker Kirklan.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_a_broken_piece_of_soul_stone_i00",
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15487": {
+    "name": "Maguen Plasma Collector",
+    "description": "This device is used to collect plasma from the Wild Maguen that inhabit the Seed of Annihilation. Under the right circumstances, plasma collection allows you to obtain a pet Maguen. Maguen Machine",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_machine_for_marguene_i00",
+    "item_skills": [
+      {
+        "id": 9060,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15488": {
+    "name": "Maguen Pet Collar",
+    "description": "Necklace that summons a Maguen. The summoned Maguen can eat wolf-type feed, and it takes away some of the experience points the Pet Master earns. No exchange, drop, sale, or mail available. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_marguene_pet_collar_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15489": {
+    "name": "Elite Maguen Pet Collar",
+    "description": "Necklace that summons an Elite Maguen. The summoned Maguen can eat wolf-type feed, and it takes away some of the experience points the Pet Master earns. No exchange, drop, sale, or mail available. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_elite_marguene_pet_collar_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "15490": {
+    "name": "Maguen Collection Box",
+    "description": "Its contents are a mystery. The only way to find out what is inside is to open it.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_marguene_collection_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15491": {
+    "name": "Elite Maguen Collection Box",
+    "description": "Its contents are a mystery. The only way to find out what is inside is to open it.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_elite_marguene_collection_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15492": {
+    "name": "Sel Mahum Salmon Porridge",
+    "description": "Sel Mahum salmon porridge. Smells better than expected but not by much. Salmon Soup",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 1,
+    "weight": 5,
+    "icon": "icon.etc_salmon_soup_i00",
+    "item_skills": [
+      {
+        "id": 9074,
+        "level": 1
+      }
+    ],
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "15493": {
+    "name": "Fantasy Mushroom Pouch",
+    "description": "Pouch containing the spores of Fantasy Mushrooms, which grow in the Plains of the Lizardmen. Detailed information can be obtained from Investigator Sally on the Plains of the Lizardmen.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_pouch_yellow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15494": {
+    "name": "Sticky Mushroom Pouch",
+    "description": "Pouch containing the spores of Sticky Mushrooms, which grow in the Plains of the Lizardmen. Detailed information can be obtained from Investigator Sally on the Plains of the Lizardmen.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_pouch_gray_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15495": {
+    "name": "Vitality Plant Leaf",
+    "description": "Leaf of the Energy Plant, which grows in the Plains of the Lizardmen. Detailed information can be obtained from Investigator Sally on the Plains of the Lizardmen.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_leaf_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15496": {
+    "name": "Seer Ugoros Pass",
+    "description": "Document from Investigator Johnny in the Plains of the Lizardmen that verifies you possess the required skills. It indicates that you have the right to go and see Tanta Lizardman Seer Ugoros. Show it to Gatekeeper Batracos near the Plains of the Lizardmen.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_paper_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15497": {
+    "name": "High-Grade Lizard Scale",
+    "description": "The highest-quality Lizardman Scale without any blemishes obtained after defeating Tanta Lizardmen Seer Ugoros. Take it to Researcher Ankumi on the Plains of the Lizardmen.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_godad_fish_scale_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15498": {
+    "name": "Middle-Grade Lizard Scale",
+    "description": "The medium-quality Lizardman Scale obtained after defeating Tanta Lizardmen Seer Ugoros. Take it to Researcher Ankumi on the Plains of the Lizardmen.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_innadrile_fish_scale_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "15499": {
+    "name": "Vial of Tanta Blood",
+    "description": "Vial containing the blood of Tanta Lizardmen. Take it to Investigator Laki on the Plains of the Lizardmen.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_dragons_blood_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  }
+}

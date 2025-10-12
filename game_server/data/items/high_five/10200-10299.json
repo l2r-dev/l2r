@@ -1,0 +1,2155 @@
+{
+  "10200": {
+    "name": "Seed: Alternative Blue Coda",
+    "description": "Plant this seed onto a monster in the Aden area and it will bear the fruit of the Alternative Blue Coda. For best results, a level 14-24 character must plant it on a level 14-24 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 10,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "10201": {
+    "name": "Seed: Alternative Golden Coda",
+    "description": "Plant this seed onto a monster in the Aden area and it will bear the fruit of the Alternative Golden Coda. For best results, a level 17-27 character must plant it on a level 17-27 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "10202": {
+    "name": "Seed: Golden Coda",
+    "description": "Plant this seed onto a monster in the Aden area and it will bear the fruit of the Golden Coda. For best results, a level 17-27 character must plant it on a level 17-27 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "10203": {
+    "name": "Spellbook - Empowering Echo",
+    "description": "Spellbook needed to learn Empower of Echo. Used by Storm Screamers.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "10204": {
+    "name": "Battle Manual - Soul Gathering",
+    "description": "Battle Manual needed to learn Soul Gathering. Used by Berserkers, Arbalesters, Soul Breakers, and Inspectors. Required level: 46",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 4250,
+    "weight": 120,
+    "icon": "icon.etc_kamael_skill_book_i00",
+    "stackable": true
+  },
+  "10205": {
+    "name": "White Seed of Evil Lump",
+    "description": "Double-click to obtain white seed of evil. White Seed of Evil Lump",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 30000,
+    "weight": 100,
+    "icon": "icon.etc_poison_pouch_i00",
+    "stackable": true
+  },
+  "10206": {
+    "name": "Black Seed of Evil Lump",
+    "description": "Double-click to obtain black seed of evil. Black Seed of Evil Lump",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 21000,
+    "weight": 100,
+    "icon": "icon.etc_poison_pouch_i00",
+    "stackable": true
+  },
+  "10207": {
+    "name": "Enhanced Striped Scale Shirt",
+    "description": "Max MP increases by 35, M. Def. increases.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 26
+      },
+      "MagicSuccessResistance": {
+        "mul": 1.15
+      }
+    },
+    "price": 880000,
+    "weight": 130,
+    "icon": "icon.etc_stripe_shirts_a_i04",
+    "crystal_count": 59,
+    "enchantable": true
+  },
+  "10208": {
+    "name": "Enhanced Striped Mithril Shirt",
+    "description": "Max MP increases by 70, M. Def. increases by 50. Magic Immunity",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 30
+      },
+      "MaxMp": {
+        "add": 70
+      },
+      "MagicSuccessResistance": {
+        "mul": 1.5
+      }
+    },
+    "price": 2540000,
+    "weight": 130,
+    "icon": "icon.etc_stripe_shirts_s_i05",
+    "crystal_count": 122,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3419,
+        "level": 1
+      }
+    ]
+  },
+  "10209": {
+    "name": "Enhanced Steel Bracelet",
+    "description": "Activates 3 talisman slots when equipped. Increase Max MP by 60. Steel Bracelet",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Right"
+      }
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MaxMp": {
+        "add": 60
+      }
+    },
+    "price": 1144000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_a_i02",
+    "crystal_count": 76,
+    "item_skills": [
+      {
+        "id": 3324,
+        "level": 1
+      }
+    ]
+  },
+  "10210": {
+    "name": "Enhanced Mithril Bracelet",
+    "description": "Activates 4 talisman slots when equipped. Increase Max MP by 120. Mithril Bracelet",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Right"
+      }
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MaxMp": {
+        "add": 120
+      }
+    },
+    "price": 3556000,
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_s_i03",
+    "crystal_count": 170,
+    "item_skills": [
+      {
+        "id": 3325,
+        "level": 1
+      }
+    ]
+  },
+  "10211": {
+    "name": "Blessed Ring of Resurrection",
+    "description": "Makes a blessed resurrection available for up to 180 minutes. Only one effect is applied, even if you wear two identical rings. Blessed Ring of Resurrection",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 24
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_mana_i00",
+    "mana": 180,
+    "item_skills": [
+      {
+        "id": 3409,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10212": {
+    "name": "For NPC (Bow)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1530,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "10213": {
+    "name": "Inventory",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10214": {
+    "name": "Dynasty Leather Armor - Summoner",
+    "description": "Can only be worn by Arcana Lords, Elemental Masters and Spectral Masters.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 18298000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 878,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10215": {
+    "name": "Icarus Sawsword",
+    "description": "Bestows one of the following functions: Focus, Health or Light.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10224
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10216": {
+    "name": "Icarus Disperser",
+    "description": "Bestows one of the following functions: Focus, Evasion or Crit. Damage.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10217": {
+    "name": "Icarus Spirit",
+    "description": "Bestows one of the following functions: Acumen, Mana Up or Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10218": {
+    "name": "Icarus Heavy Arms",
+    "description": "Bestows one of the following functions: Focus, Health or Light.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10225
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10219": {
+    "name": "Icarus Trident",
+    "description": "Bestows one of the following functions: Anger, Critical Stun or Light. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "10220": {
+    "name": "Icarus Hammer",
+    "description": "Bestows one of the following functions: Anger, Health or Rsk. Focus.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10221": {
+    "name": "Icarus Hand",
+    "description": "Bestows one of the following functions: Rsk. Evasion, Focus, or Haste.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10222": {
+    "name": "Icarus Hall",
+    "description": "It can bestow one of the follow three functions, Mana Up, Conversion or Acumen.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10223": {
+    "name": "Icarus Spitter",
+    "description": "Bestows one of the following functions: Cheap Shot, Guidance or Focus.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10226,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10224": {
+    "name": "Icarus Stinger",
+    "description": "Kamael Exclusive Weapon: Icarus Sawsword Conversion. Bestows one of the following functions: Focus, Health or Light. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10215,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10225": {
+    "name": "Icarus Wingblade",
+    "description": "Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. Bestows one of the following functions: Focus, Health or Light.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10218
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10226": {
+    "name": "Icarus Shooter",
+    "description": "Kamael Exclusive Weapon: Icarus Spitter Conversion. Bestows one of the following functions: Cheap Shot, Guidance or Focus.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10223,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10227": {
+    "name": "Dynasty Platinum Plate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_u_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10228": {
+    "name": "Dynasty Platinum Plate - Shield Master",
+    "description": "Can only be worn by Phoenix Knights, Hell Knights, Eva's Templars and Shillien Templars.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uk_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10229": {
+    "name": "Dynasty Platinum Plate - Weapon Master",
+    "description": "Can only be worn by Dreadnoughts, Titans, Fortune Seekers and Maestros can wear it.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uw_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10230": {
+    "name": "Dynasty Platinum Plate - Force Master",
+    "description": "Can only be worn by Duelists and Grand Khavataris.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uf_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10231": {
+    "name": "Dynasty Platinum Plate - Bard",
+    "description": "Can only be worn by Sword Muses and Spectral Dancers.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 33673000,
+    "weight": 7570,
+    "icon": "icon.armor_t91_uke_i00",
+    "crystal_count": 1616,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10232": {
+    "name": "Dynasty Jewel Leather Armor",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10233": {
+    "name": "Dynasty Jewel Leather Armor - Dagger Master",
+    "description": "Can be equipped by Adventurers, Wind Riders, Ghost Hunters, and Fortune Seekers.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ud_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10234": {
+    "name": "Dynasty Jewel Leather Armor - Bow Master",
+    "description": "Can only be worn by Sagittarius', Moonlight Sentinels, Ghost Sentinels and Tricksters.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_ub_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10235": {
+    "name": "Dynasty Silver Satin Tunic",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10236": {
+    "name": "Dynasty Silver Satin Tunic - Healer",
+    "description": "Can only be worn by Cardinals, Eva's Saints and Shillien Saints.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uh_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10237": {
+    "name": "Dynasty Silver Satin Tunic - Enchanter",
+    "description": "Can only be worn by Hierophants, Dominators and Doom Cryers",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_ue_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10238": {
+    "name": "Dynasty Silver Satin Tunic - Summoner",
+    "description": "Can only be worn by Arcana Lords, Elemental Masters and Spectral Masters.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_us_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10239": {
+    "name": "Dynasty Silver Satin Tunic - Wizard",
+    "description": "Can only be worn by Archmages, Mystic Muses, Storm Screamers and Soultakers.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 25255000,
+    "weight": 1780,
+    "icon": "icon.armor_t93_uw_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10240": {
+    "name": "Bird Nest",
+    "description": "Hair accessory that looks like a bird nest. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_nest_hat_i00"
+  },
+  "10241": {
+    "name": "Purple Viking Circlet",
+    "description": "Purple Viking Circlet. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_viking_circlet_violet_i00"
+  },
+  "10242": {
+    "name": "Golden Viking Circlet",
+    "description": "Golden Viking Circlet. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_viking_circlet_gold_i00"
+  },
+  "10243": {
+    "name": "Panda Hat",
+    "description": "Interesting hair accessory that looks like a panda. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_panda_cap_i00"
+  },
+  "10244": {
+    "name": "White Sheep Hat",
+    "description": "Funny hair accessory that looks like a white sheep. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_sheep_cap_white_i00"
+  },
+  "10245": {
+    "name": "Black Sheep Hat",
+    "description": "Funny hair accessory that looks like a black sheep. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_sheep_cap_black_i00"
+  },
+  "10246": {
+    "name": "Frog Hat",
+    "description": "Interesting hair accessory that looks like a frog. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_frog_cap_i00"
+  },
+  "10247": {
+    "name": "Fish Hat",
+    "description": "Interesting hair accessory that looks like a fish. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_fish_cap_i00"
+  },
+  "10248": {
+    "name": "Straw Hat",
+    "description": "Straw Hat. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_straw_hat_i00"
+  },
+  "10249": {
+    "name": "Chicken Hat",
+    "description": "Interesting hair accessory that looks like a chicken. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_chicken_cap_i00"
+  },
+  "10250": {
+    "name": "Adventurer Hat (Event)",
+    "description": "1st creation day commemorative adventurer hat. Uses 2 hair accessory slots. No exchange, drop, sale available",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_explorer_hat_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10251": {
+    "name": "Medieval Party Mask",
+    "description": "Medieval-style party mask. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_middle_age_party_mask_i00"
+  },
+  "10252": {
+    "name": "Dynasty Staff",
+    "description": "Bestows one of the following functions: Acumen, Mana Up or Conversion.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 325
+      },
+      "MAtk": {
+        "set": 222
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1080,
+    "icon": "icon.weapon_dynasty_twohand_staff_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10253": {
+    "name": "Dynasty Crusher",
+    "description": "Bestows one of the following functions: Anger, Health or Rsk. Focus.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_crusher_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10254": {
+    "name": "1st Place Treasure Sack - Event",
+    "description": "When double-clicked, a random 1st Place prize is granted. 1st Place Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.etc_treasure_sack_1_i00",
+    "stackable": true
+  },
+  "10255": {
+    "name": "2nd Place Treasure Sack - Event",
+    "description": "When double-clicked, a random 2nd Place prize is granted. 2nd Place Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.etc_treasure_sack_2_i00",
+    "stackable": true
+  },
+  "10256": {
+    "name": "3rd Place Treasure Sack - Event",
+    "description": "When double-clicked, a random 3rd Place prize is granted. 3rd Place Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.etc_treasure_sack_3_i00",
+    "stackable": true
+  },
+  "10257": {
+    "name": "4th Place Treasure Sack - Event",
+    "description": "When double-clicked, a random 4th Place prize is granted. 4th Place Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.etc_treasure_sack_4_i00",
+    "stackable": true
+  },
+  "10258": {
+    "name": "5th Place Treasure Sack - Event",
+    "description": "When double-clicked, a random 5th Place prize is granted. 5th Place Treasure sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.etc_treasure_sack_5_i00",
+    "stackable": true
+  },
+  "10259": {
+    "name": "6th Place Treasure Sack - Event",
+    "description": "When double-clicked, a random 6th Place prize is granted. 6th Place Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "icon": "icon.etc_treasure_sack_6_i00",
+    "stackable": true
+  },
+  "10260": {
+    "name": "Alacrity Juice",
+    "description": "Delicious beverage made with rare fruits. Atk. Spd. increases by 33% when used. Haste Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i00",
+    "item_skills": [
+      {
+        "id": 2429,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10261": {
+    "name": "Accuracy Juice",
+    "description": "Delicious beverage made with rare fruits. Increases Accuracy by 4 when used. Accuracy Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i01",
+    "item_skills": [
+      {
+        "id": 2430,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10262": {
+    "name": "Critical Hit Juice",
+    "description": "Delicious beverage made with rare fruits. Critical Damage increases by 35% when used. Critical Damage Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i02",
+    "item_skills": [
+      {
+        "id": 2431,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10263": {
+    "name": "Critical Rate Juice",
+    "description": "Delicious beverage made with rare fruits. Critical Rate increases by 30% when used. Critical Attack Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i03",
+    "item_skills": [
+      {
+        "id": 2432,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10264": {
+    "name": "Casting Spd. Juice",
+    "description": "Delicious beverage made with rare fruits. Casting Spd. increases by 30% when used. Casting Speed Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i04",
+    "item_skills": [
+      {
+        "id": 2433,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10265": {
+    "name": "Evasion Juice",
+    "description": "Delicious beverage made with rare fruits. Increases Evasion by 4 when used. Evasion Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i05",
+    "item_skills": [
+      {
+        "id": 2434,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10266": {
+    "name": "M. Atk. Juice",
+    "description": "Delicious beverage made with rare fruits. Increases M. Atk. by 75% when used. Magic Power Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i06",
+    "item_skills": [
+      {
+        "id": 2435,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10267": {
+    "name": "Power Juice",
+    "description": "Delicious beverage made with rare fruits. Increases P. Atk. by 15% when used. Power Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i07",
+    "item_skills": [
+      {
+        "id": 2436,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10268": {
+    "name": "Speed Juice",
+    "description": "Delicious beverage made with rare fruits. Speed increases by 33 when used. Speed Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i08",
+    "item_skills": [
+      {
+        "id": 2437,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10269": {
+    "name": "Defence Juice",
+    "description": "Delicious beverage made with rare fruits. P. Def. increases by 15% when used. Defence Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i09",
+    "item_skills": [
+      {
+        "id": 2438,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10270": {
+    "name": "MP Consumption Juice",
+    "description": "Delicious beverage made with rare fruits. Decreases physical skill MP consumption by 10%, magic skill MP consumption by 4%, and song/dance skill MP consumption by 10%. MP Consumption Juice",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i10",
+    "item_skills": [
+      {
+        "id": 2439,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10271": {
+    "name": "Marvelous Fruit Juice #12",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_fruit_juice_glass_bottle_i11",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "10272": {
+    "name": "Treasure Sack Piece",
+    "description": "You can exchange 50 Treasure Sack Pieces for a Treasure Sack if you bring them to Snow.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_treasure_sack_fragment_i00",
+    "stackable": true
+  },
+  "10273": {
+    "name": "Wolf Summoning Bracelet",
+    "description": "Bracelet that summons a wolf that the character can ride. Can be used for 200 minutes once equipped and cannot be exchanged or dropped. Wolf Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "mana": 200,
+    "item_skills": [
+      {
+        "id": 3421,
+        "level": 1
+      },
+      {
+        "id": 3422,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3422,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10274": {
+    "name": "Transformation Scroll: Rabbit",
+    "description": "A scroll that transforms you into a rabbit for 10 minutes. Locates treasure when used on Fantasy Isle. It will have no effect if used while a pet or servitor is summoned or while in a transformed state. Scroll of Transformation - Rabbit",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_trans_4f_s_b_01",
+    "item_skills": [
+      {
+        "id": 2428,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10275": {
+    "name": "Battle Manual - Warp",
+    "description": "Battle Manual needed to learn Warp. Used by Warders. Required level: 32",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2050,
+    "weight": 120,
+    "icon": "icon.etc_kamael_skill_book_i01",
+    "stackable": true
+  },
+  "10276": {
+    "name": "Battle Manual - Soul Shock",
+    "description": "Battle Manual needed to learn Soul Shock. Used by Warders. Required level: 36",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 2600,
+    "weight": 120,
+    "icon": "icon.etc_kamael_skill_book_i01",
+    "stackable": true
+  },
+  "10277": {
+    "name": "Monster Only (Behamah Pole)",
+    "description": "Polearm Multi-attack",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2140,
+    "icon": "icon.weapon_short_spear_i00",
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "pet_useable": true
+  },
+  "10278": {
+    "name": "Monster Only (Behamah Dual)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 73
+      },
+      "MAtk": {
+        "set": 37
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2530,
+    "icon": "icon.weapon_dual_sword_i00",
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "10279": {
+    "name": "Transformation Scroll: Onyx Beast",
+    "description": "Documents the method for transforming into Onyx Beast.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_trans_4f_s_b_01",
+    "stackable": true
+  },
+  "10280": {
+    "name": "Certificate - Emergent Ability",
+    "description": "Certificate needed to learn an Emergent Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_all_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10281": {
+    "name": "Certificate - Warrior Ability",
+    "description": "Certificate needed to learn a Warrior Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_warrior_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10282": {
+    "name": "Certificate - Knight Ability",
+    "description": "Certificate needed to learn a Knight Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_knight_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10283": {
+    "name": "Certificate - Rogue Ability",
+    "description": "Certificate needed to learn a Rogue Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_archer_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10284": {
+    "name": "Certificate - Wizard Ability",
+    "description": "Certificate needed to learn a Wizard Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_wizard_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10285": {
+    "name": "Certificate - Healer Ability",
+    "description": "Certificate needed to learn a Healer Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_healer_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10286": {
+    "name": "Certificate - Summoner Ability",
+    "description": "Certificate needed to learn a Summoner Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_summon_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10287": {
+    "name": "Certificate - Enchanter Ability",
+    "description": "Certificate needed to learn an Enchanter Ability. Only main classes can learn this skill. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_enchanter_subjob_skillbook_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10288": {
+    "name": "Transformation Sealbook: Divine Knight",
+    "description": "Allows for transformation into a highly specialized form, by transferring the powerful energy of the subclass to the main class. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10289": {
+    "name": "Transformation Sealbook: Divine Warrior",
+    "description": "Allows for transformation into a highly specialized form, by transferring the powerful energy of the subclass to the main class. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10290": {
+    "name": "Transformation Sealbook: Divine Rogue",
+    "description": "Allows for transformation into a highly specialized form, by transferring the powerful energy of the subclass to the main class. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10291": {
+    "name": "Transformation Sealbook: Divine Healer",
+    "description": "Allows for transformation into a highly specialized form, by transferring the powerful energy of the subclass to the main class. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10292": {
+    "name": "Transformation Sealbook: Divine Wizard",
+    "description": "Allows for transformation into a highly specialized form, by transferring the powerful energy of the subclass to the main class. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10293": {
+    "name": "Transformation Sealbook: Divine Enchanter",
+    "description": "Allows for transformation into a highly specialized form, by transferring the powerful energy of the subclass to the main class. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10294": {
+    "name": "Transformation Sealbook: Divine Summoner",
+    "description": "Allows for transformation into a highly specialized form, by transferring the powerful energy of the subclass to the main class. This item cannot be exchanged, dropped, destroyed, or stored in a warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10295": {
+    "name": "Transformation Sealbook: Zaken",
+    "description": "Documents the method for transforming into Zaken.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "10296": {
+    "name": "Transformation Sealbook: Anakim",
+    "description": "Documents the method for transforming into Anakim.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "10297": {
+    "name": "Transformation Sealbook: Venom",
+    "description": "Documents the method for transforming into Venom.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "10298": {
+    "name": "Transformation Sealbook: Gordon",
+    "description": "Documents the method for transforming into Gordon.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  },
+  "10299": {
+    "name": "Transformation Sealbook: Ranku",
+    "description": "Documents the method for transforming into Ranku.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_sb_transform_i00",
+    "stackable": true
+  }
+}

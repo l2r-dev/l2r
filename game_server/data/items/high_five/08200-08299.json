@@ -1,0 +1,1727 @@
+{
+  "8200": {
+    "name": "Fisherman's Potion - White",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a white fish (level 22~24 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_white_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 8
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8201": {
+    "name": "Fisherman's Potion - Black",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a green fish (level 25~27 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_black_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8202": {
+    "name": "Fisherman's Potion",
+    "description": "Restores a player's fishing mastery level, which was lowered by the Fisherman's Potion, back to the previous level. Fisherman's Recovery Potion",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_black_i00",
+    "item_skills": [
+      {
+        "id": 2275,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8203": {
+    "name": "Monster Only (Venom Sword)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8204": {
+    "name": "Monster Only (Follower of Frintezza Calibur)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8205": {
+    "name": "Monster Only (Heretic Priest Sigil)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "BloodSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1920,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8206": {
+    "name": "Monster Only (Heretic Priest Sword)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2080,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8207": {
+    "name": "Monster Only (Heretic Private Axe)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8208": {
+    "name": "Monster Only (Heretic Private Staff)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8209": {
+    "name": "Monster Only (Lidia Von Helmann Sword)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8210": {
+    "name": "Monster Only (Monk Warrior Shield)",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Damascus",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "weight": 4800,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8211": {
+    "name": "Monster Only (Monk Warrior Sword)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8212": {
+    "name": "Monster Only (Solina Brother Mace)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Chrysolite",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8213": {
+    "name": "Monster Only (Solina Father Mace)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Chrysolite",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8214": {
+    "name": "Monster Only (Solina Priest Pole)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "BloodSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1920,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8215": {
+    "name": "Monster Only (Zombie Enlisted Man Sword)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2090,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8216": {
+    "name": "Monster Only (Zombie Enlisted Man Claw)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Adamantaite",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8217": {
+    "name": "Monster Only (Zombie Gateguard Spear)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8218": {
+    "name": "Monster Only (Zombie Laborer Axe)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Chrysolite",
+    "stats": {
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8219": {
+    "name": "Monster Only (Zombie Laborer Sword)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8220": {
+    "name": "Monster Only (Grail Apostle Bow)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Wood",
+    "stats": {
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1950,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8221": {
+    "name": "Monster Only (Grail Apostle Spear)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "BloodSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1920,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8222": {
+    "name": "Monster Only (Follower of Frintezza Tran Calibur)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "8223": {
+    "name": "Seed: Twin Codran",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Twin Codran. For best results, a level 53-63 character must plant it on a level 53-63 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8224": {
+    "name": "Seed: Great Codran",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Great Codran. For best results, a level 56-66 character must plant it on a level 56-66 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 75,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8225": {
+    "name": "Seed: Desert Codran",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Desert Codran. For best results, a level 59-69 character must plant it on a level 59-69 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 100,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8226": {
+    "name": "Seed: Blue Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Blue Coba. For best results, a level 62-72 character must plant it on a level 62-72 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 400,
+    "weight": 1,
+    "icon": "icon.etc_blue_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8227": {
+    "name": "Seed: Red Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Red Coba. For best results, a level 65-75 character must plant it on a level 65-75 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_red_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8228": {
+    "name": "Seed: Golden Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Golden Coba. For best results, a level 68-78 character must plant it on a level 68-78 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 650,
+    "weight": 1,
+    "icon": "icon.etc_golden_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8229": {
+    "name": "Seed: Desert Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Desert Coba. For best results, a level 71-81 character must plant it on a level 71-81 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 750,
+    "weight": 1,
+    "icon": "icon.etc_desert_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8230": {
+    "name": "Seed: Alternative Twin Codran",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Twin Codran. For best results, a level 53-63 character must plant it on a level 53-63 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8231": {
+    "name": "Seed: Alternative Great Codran",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Great Codran. For best results, a level 56-66 character must plant it on a level 56-66 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 75,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8232": {
+    "name": "Seed: Alternative Desert Codran",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Desert Codran. For best results, a level 59-69 character must plant it on a level 59-69 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 100,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8233": {
+    "name": "Seed: Alternative Blue Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Blue Coba. For best results, a level 62-72 character must plant it on a level 62-72 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 400,
+    "weight": 1,
+    "icon": "icon.etc_blue_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8234": {
+    "name": "Seed: Alternative Red Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Red Coba. For best results, a level 65-75 character must plant it on a level 65-75 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_red_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8235": {
+    "name": "Seed: Alternative Golden Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Golden Coba. For best results, a level 68-78 character must plant it on a level 68-78 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 650,
+    "weight": 1,
+    "icon": "icon.etc_golden_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8236": {
+    "name": "Seed: Alternative Desert Coba",
+    "description": "Plant this seed onto a monster in the Rune area and it will bear the fruit of the Alternative Desert Coba. For best results, a level 71-81 character must plant it on a level 71-81 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 750,
+    "weight": 1,
+    "icon": "icon.etc_desert_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8237": {
+    "name": "Seed: Dark Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Dark Coda. For the best chance of success, it should be planted by a character whose level is between 5-15 onto a monster whose level is between 5-15. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 5,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8238": {
+    "name": "Seed: Red Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Red Coda. For the best chance of success, it should be planted by a character whose level is between 8-18 onto a monster whose level is between 8-18. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 5,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8239": {
+    "name": "Seed: Chilly Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Chilly Coda. For best results, a level 11-21 character must plant it on a level 11-21 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 5,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8240": {
+    "name": "Seed: Blue Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Blue Coda. For the best chance of success, it should be planted by a character whose level is between 14-24 onto a monster whose level is between 14-24. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 10,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8241": {
+    "name": "Seed: Golden Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Golden Coda. For the best chance of success, it should be planted by a character whose level is between 17-27 onto a monster whose level is between 17-27. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8242": {
+    "name": "Seed: Lute Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Lute Coda. For the best chance of success, it should be planted by a character whose level is between 20-30 onto a monster whose level is between 20-30. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 30,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8243": {
+    "name": "Seed: Desert Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Desert Coda. For the best chance of success, it should be planted by a character whose level is between 23-33 onto a monster whose level is between 23-33. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8244": {
+    "name": "Seed: Red Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Red Cobol. For best results, a level 26-36 character must plant it on a level 26-36 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8245": {
+    "name": "Seed: Chilly Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Chilly Cobol. For best results, a level 29-39 character must plant it on a level 29-39 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 25,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8246": {
+    "name": "Seed: Blue Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Blue Cobol. For best results, a level 32-42 character must plant it on a level 32-42 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8247": {
+    "name": "Seed: Thorn Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Thorn Cobol. For best results, a level 35-45 character must plant it on a level 35-45 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8248": {
+    "name": "Seed: Golden Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Golden Cobol. For best results, a level 38-48 character must plant it on a level 38-48 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8249": {
+    "name": "Seed: Great Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Great Cobol. For best results, a level 41-51 character must plant it on a level 41-51 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8250": {
+    "name": "Seed: Red Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Red Codran. For best results, a level 44-54 character must plant it on a level 44-54 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 40,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8251": {
+    "name": "Seed: Sea Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Sea Codran. For best results, a level 45-55 character must plant it on a level 45-55 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8252": {
+    "name": "Seed: Chilly Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Chilly Codran. For best results, a level 47-57 character must plant it on a level 47-57 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 40,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8253": {
+    "name": "Seed: Blue Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Blue Codran. For best results, a level 50-60 character must plant it on a level 50-60 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8254": {
+    "name": "Seed: Twin Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Twin Codran. For best results, a level 53-63 character must plant it on a level 53-63 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8255": {
+    "name": "Seed: Alternative Dark Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Dark Coda. For best results, a level 5-15 character must plant it on a level 5-15 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 5,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8256": {
+    "name": "Seed: Alternative Red Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Red Coda. For best results, a level 8-18 character must plant it on a level 8-18 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 5,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8257": {
+    "name": "Seed: Alternative Chilly Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Chilly Coda. For best results, a level 11-21 character must plant it on a level 11-21 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 5,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8258": {
+    "name": "Seed: Alternative Blue Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Blue Coda. For best results, a level 14-24 character must plant it on a level 14-24 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 10,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8259": {
+    "name": "Seed: Alternative Golden Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Golden Coda. For best results, a level 17-27 character must plant it on a level 17-27 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8260": {
+    "name": "Seed: Alternative Lute Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Lute Coda. For best results, a level 20-30 character must plant it on a level 20-30 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 30,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8261": {
+    "name": "Seed: Alternative Desert Coda",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Desert Coda. For best results, a level 23-33 character must plant it on a level 23-33 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_coda_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8262": {
+    "name": "Seed: Alternative Red Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Red Cobol. For best results, a level 26-36 character must plant it on a level 26-36 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 20,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8263": {
+    "name": "Seed: Alternative Chilly Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Chilly Cobol. For best results, a level 29-39 character must plant it on a level 29-39 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 25,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8264": {
+    "name": "Seed: Alternative Blue Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Blue Cobol. For best results, a level 32-42 character must plant it on a level 32-42 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8265": {
+    "name": "Seed: Alternative Thorn Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Thorn Cobol. For best results, a level 35-45 character must plant it on a level 35-45 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8266": {
+    "name": "Seed: Alternative Golden Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Golden Cobol. For best results, a level 38-48 character must plant it on a level 38-48 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8267": {
+    "name": "Seed: Alternative Great Cobol",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Great Cobol. For best results, a level 41-51 character must plant it on a level 41-51 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_cobol_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 2
+      }
+    ],
+    "stackable": true
+  },
+  "8268": {
+    "name": "Seed: Alternative Red Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Red Codran. For best results, a level 44-54 character must plant it on a level 44-54 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 40,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8269": {
+    "name": "Seed: Alternative Sea Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Sea Codran. For best results, a level 45-55 character must plant it on a level 45-55 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8270": {
+    "name": "Seed: Alternative Chilly Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Chilly Codran. For best results, a level 47-57 character must plant it on a level 47-57 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 40,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8271": {
+    "name": "Seed: Alternative Blue Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Blue Codran. For best results, a level 50-60 character must plant it on a level 50-60 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8272": {
+    "name": "Seed: Alternative Twin Codran",
+    "description": "Plant this seed onto a monster in the Schuttgart area and it will bear the fruit of the Alternative Twin Codran. For best results, a level 53-63 character must plant it on a level 53-63 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_codran_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "stackable": true
+  },
+  "8273": {
+    "name": "Anteroom Key",
+    "description": "Opens the door to one of the Anterooms within the Pagan Temple. Anteroom Door Key",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_old_key_i03",
+    "item_skills": [
+      {
+        "id": 2235,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8274": {
+    "name": "Chapel Key",
+    "description": "Opens the door to the chapel in the Pagan Temple. Chapel Door Key",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_old_key_i01",
+    "item_skills": [
+      {
+        "id": 2236,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8275": {
+    "name": "Key of Darkness",
+    "description": "The key that opens the Door of Darkness located at the altar within the Pagan Temple. Key of Darkness",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_old_key_i02",
+    "item_skills": [
+      {
+        "id": 2237,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "8276": {
+    "name": "Sekina's Scale",
+    "description": "The scale obtained by defeating Sekina, Malruk's Witch.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scale_of_medusa_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8277": {
+    "name": "Themis' Scale",
+    "description": "Obtain this scale by defeating Palibati Queen Themis.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scale_of_medusa_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8278": {
+    "name": "Vermilion Shard",
+    "description": "Debris obtained by defeating Vermilion, the Blood Tree.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bark_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8279": {
+    "name": "Nucleus of Hekaton Prime",
+    "description": "Nucleus obtained by defeating Hekaton Prime",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bead_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8280": {
+    "name": "Tiphon Shard",
+    "description": "Debris obtained by defeating Tiphon, Gargoyle Lord.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_gargoyle_claw_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8281": {
+    "name": "Glaki's Necleus",
+    "description": "Nucleus obtained by defeating Glaki, the last lesser Giant.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bead_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8282": {
+    "name": "Rahha's Fang",
+    "description": "Fangs obtained by defeating Rahha.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_fang_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8283": {
+    "name": "Giant Poison Bee's Sting",
+    "description": "Evidence that a monster has been destroyed for the safety of the Strip Mine. Take it to Warehouse Keeper Norman in Gludin Village.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_sting_a_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8284": {
+    "name": "Cloudy Gem",
+    "description": "Evidence that a monster has been destroyed for the safety of the Strip Mine. Take it to Warehouse Keeper Norman in Gludin Village.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_oriharukon_ore_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8285": {
+    "name": "Talon of Young Araneid",
+    "description": "Evidence that a monster has been destroyed for the safety of the Strip Mine. Take it to Warehouse Keeper Norman in Gludin Village.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_claw_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8286": {
+    "name": "Fairy Breath",
+    "description": "The last breath of the crazy Wind Fairy. Take it to Galatea, Gludin Village's Summoner, for the study of balancing spirit power.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_dragons_blood_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8287": {
+    "name": "Starstone",
+    "description": "The Starstone that slipped out of the box.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_crystal_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8288": {
+    "name": "Yumi's Letter",
+    "description": "The letter from Yumi to Newyear, the Head Blacksmith.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8289": {
+    "name": "Starstone",
+    "description": "The Starstone that Yumi asked you to find and bring back.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_crystal_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8290": {
+    "name": "Flower of Pavel",
+    "description": "The strange flower from Atlanta.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_flower_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8291": {
+    "name": "Heart of Atlanta",
+    "description": "The stone found where Atlanta was last seen. It should be given to Wendy.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_inf_ore_medium_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8292": {
+    "name": "Wendy's Necklace",
+    "description": "The necklace that became Wendy's last gift. It's not powerful, but it has great historical significance.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.accessary_necklace_of_devotion_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8293": {
+    "name": "Trainer License",
+    "description": "Mark needed to participate in a Clan Hall War.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_paper_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8294": {
+    "name": "Recipe: Steel Sword (100%)",
+    "description": "This formula for manufacturing a Steel Sword can only be used by Dwarves and Requires Create Item - Skill Level 2. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 783,
+          "level": 2
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 8180,
+    "weight": 30,
+    "icon": "icon.etc_recipe_blue_i00",
+    "stackable": true
+  },
+  "8295": {
+    "name": "Recipe: Titan Sword (100%)",
+    "description": "This formula for manufacturing a Titan's Sword can only be used by Dwarves and Requires Create Item - Skill Level 3. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 785,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 28000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_blue_i00",
+    "stackable": true
+  },
+  "8296": {
+    "name": "Recipe: Pa'agrian Sword (100%)",
+    "description": "This formula for manufacturing a Titan's Sword can only be used by Dwarves and Requires Create Item - Skill Level 5. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 789,
+          "level": 5
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 86000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_yellow_i00",
+    "stackable": true
+  },
+  "8297": {
+    "name": "Recipe: Guardian's Sword (100%)",
+    "description": "This formula for manufacturing a Guardian Sword can only be used by Dwarves and Requires Create Item - Skill Level 7. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 811,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 262000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "8298": {
+    "name": "Recipe: Guardian's Sword (60%)",
+    "description": "For Dwarves only. The recipe for Guardian's Sword. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 810,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 262000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "8299": {
+    "name": "Recipe: Infernal Master (100%)",
+    "description": "This formula for manufacturing an Infernal Master can only be used by Dwarves and Requires Create Item - Skill Level 7. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 815,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 366000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_violet_i00",
+    "stackable": true
+  }
+}

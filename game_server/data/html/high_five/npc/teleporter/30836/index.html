@@ -1,0 +1,9 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+Hardin's Academy is not the kind of place people visit for curiosities sake, stranger. Do you know what kind of people Necromancers are? For them, human blood, flesh, bones, even skin... they're just ingredients for magic. They face death with more apathy than the cruellest of Dark Elves... People inside this place are like Necromancers.<br>
+Are you scared? If you want to leave here now, I will open the door of space and time. No matter how far it may be, you will appear there in the blink of an eye.<br>
+
+{{ macros::gatekeeper(object_id=object_id, monster_track=False, fantasy_isle=False) }}
+{% endblock body %}

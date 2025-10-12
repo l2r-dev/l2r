@@ -1,0 +1,2449 @@
+{
+  "20900": {
+    "name": "Santa Hat - 14-day limited period",
+    "description": "The Santa Hat made for celebrating Christmas. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_xmas_gawibawibo_cap_i00",
+    "time": 20160,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20901": {
+    "name": "Santa Hat Set",
+    "description": "The Santa Hat and Rudolph's Nose are packaged together. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20900,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14611,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20902": {
+    "name": "Ring of Queen Ant 7-Day Pack",
+    "description": "Wrapped pack containing the Ring of Queen Ant (7 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20205,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20903": {
+    "name": "Rose Petal",
+    "description": "Increases HP/MP Regeneration by 20% through rose aroma for 5 minutes. Red Rose Herb",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys.icon.br_herb_of_baguette_i00",
+    "item_skills": [
+      {
+        "id": 22158,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20904": {
+    "name": "Rose Essense",
+    "description": "Rose energy extract is necessary to use the Rose Spirit's special skill.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "weight": 2,
+    "icon": "BranchSys2.br_essence_rose_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20905": {
+    "name": "One Red Rose Bud",
+    "description": "One fragrant red rose bud.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "BranchSys2.icon.br_rosalia_rose_red_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20906": {
+    "name": "One Blue Rose Bud",
+    "description": "One fragrant blue rose bud.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "BranchSys2.icon.br_rosalia_rose_blue_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20907": {
+    "name": "One White Rose Bud",
+    "description": "One fragrant white rose bud.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "BranchSys2.icon.br_rosalia_rose_white_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20908": {
+    "name": "Deseloph Rose Necklace (Event) - Summon duration - 3 hours",
+    "description": "Summons the Rose Spirit Deseloph. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_event",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20909": {
+    "name": "Hyum Rose Necklace (Event) - Summon duration - 3 hours",
+    "description": "Summons the Rose Spirit Hyum. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_event",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20910": {
+    "name": "Rekang Rose Necklace (Event) - Summon duration - 3 hours",
+    "description": "Summons the Rose Spirit Rekang. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_event",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20911": {
+    "name": "Lilias Rose Necklace (Event) - Summon duration - 3 hours",
+    "description": "Summons the Rose Spirit Lilias. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_event",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20912": {
+    "name": "Lapham Rose Necklace (Event) - Summon duration - 3 hours",
+    "description": "Summons the Rose Spirit Lapham. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_event",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20913": {
+    "name": "Mafum Rose Necklace (Event) - Summon duration - 3 hours",
+    "description": "Summons the Rose Spirit Mafum. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_event",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20914": {
+    "name": "Improved Rose Spirit Exchange Ticket - 5 hours",
+    "description": "Coupon that can be exchanged for a necklace (5 hour) that summons an Improved Rose Spirit. Can be exchanged through the Dimensional Merchant. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20915": {
+    "name": "Improved Deseloph Rose Necklace (Event) - Summon duration - 5 hours",
+    "description": "Summons the Improved Rose Spirit Deseloph. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20916": {
+    "name": "Improved Hyum Rose Necklace (Event) - Summon duration - 5 hours",
+    "description": "Summons the Improved Rose Spirit Hyum. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20917": {
+    "name": "Improved Rekang Rose Necklace (Event) - Summon duration - 5 hours",
+    "description": "Summons the Improved Rose Spirit Rekang. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20918": {
+    "name": "Improved Lilias Rose Necklace (Event) - Summon duration - 5 hours",
+    "description": "Summons the Improved Rose Spirit Lilias. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20919": {
+    "name": "Improved Lapham Rose Necklace (Event) - Summon duration - 5 hours",
+    "description": "Summons the Improved Rose Spirit Lapham. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20920": {
+    "name": "Improved Mafum Rose Necklace (Event) - Summon duration - 5 hours",
+    "description": "Summons the Improved Rose Spirit Mafum. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_necklace_of_rose_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20921": {
+    "name": "Rose Spirit Test Report - 24-hour limited period",
+    "description": "Report in which you can record your findings while testing the Rose Spirit. You can only return it 24 hours after receiving it. It cannot be destroyed.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_royal_membership_i00",
+    "time": 1440,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20922": {
+    "name": "Adventurer Hat",
+    "description": "Adventurer Hat. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_explorer_hat_i00",
+    "sellable": false,
+    "depositable": false
+  },
+  "20923": {
+    "name": "Vesper Slasher",
+    "description": "2010 April Fools' Day Vesper Super Power Herb Vesper's Mighty Power",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.icon.br_royal_crown_of_vesper_i00",
+    "item_skills": [
+      {
+        "id": 22159,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20924": {
+    "name": "Vesper Caster",
+    "description": "2010 April Fools' Day Vesper Critical Power Herb Vesper's Critical Attack Power",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.icon.br_royal_circlet_of_vesper_i00",
+    "item_skills": [
+      {
+        "id": 22160,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20925": {
+    "name": "Vesper Dual Sword",
+    "description": "2010 April Fools' Day Invincible Vesper Herb Invincible Vesper",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.icon.br_noblesse_oblige_of_vesper_i00",
+    "item_skills": [
+      {
+        "id": 22161,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20926": {
+    "name": "Mt. Fuji Herb",
+    "description": "Mt. Fuji Herb Herb of Mt. Fuji",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.icon.br_fuji_herb_i00",
+    "item_skills": [
+      {
+        "id": 22162,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20927": {
+    "name": "Hawk Herb",
+    "description": "Hawk Herb Hawk Herb",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.icon.br_hawk_herb_i00",
+    "item_skills": [
+      {
+        "id": 22163,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20928": {
+    "name": "Eggplant Herb",
+    "description": "Eggplant Herb Eggplant Herb",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.icon.br_eggplant_herb_i00",
+    "item_skills": [
+      {
+        "id": 22164,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20929": {
+    "name": "Royal Crown of Vesper",
+    "description": "Crown with Versper's grace. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_royal_crown_of_vesper_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20930": {
+    "name": "Royal Circlet of Vesper",
+    "description": "Circlet with Versper's grace. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_royal_circlet_of_vesper_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20931": {
+    "name": "Noblesse Oblige",
+    "description": "Unique hair accessory with Noble Vesper's grace. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_noblesse_oblige_of_vesper_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20932": {
+    "name": "Royal Crown of Vesper - 30-day limited period",
+    "description": "Crown with Versper's grace. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_royal_crown_of_vesper_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20933": {
+    "name": "Royal Circlet of Vesper - 30-day limited period",
+    "description": "Circlet with Versper's grace. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_royal_circlet_of_vesper_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20934": {
+    "name": "Noblesse Oblige - 30-day limited period",
+    "description": "Unique hair accessory with Noble Vesper's grace. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_noblesse_oblige_of_vesper_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20935": {
+    "name": "Royal Crown of Vesper",
+    "description": "Crown with Versper's grace. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_royal_crown_of_vesper_i00",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20936": {
+    "name": "Royal Circlet of Vesper",
+    "description": "Circlet with Versper's grace. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_royal_circlet_of_vesper_i00",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20937": {
+    "name": "Noblesse Oblige",
+    "description": "Unique hair accessory with Noble Vesper's grace. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_noblesse_oblige_of_vesper_i00",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20938": {
+    "name": "Jet Bike Mount Bracelet - 7-day limited period",
+    "description": "This item allows you to ride Jet Bike which is the core of Dwarven technology Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Jet Bike Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "BranchSys2.icon.br_z_bike_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21171,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20939": {
+    "name": "Jet Bike Mount Bracelet - 30-day limited period",
+    "description": "This item allows you to ride Jet Bike which is the core of Dwarven technology Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Jet Bike Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "BranchSys2.icon.br_z_bike_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 21171,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20940": {
+    "name": "Phoenix Agthion Seal Bracelet - Nirvana Rebirth - 7-day limited period",
+    "description": "Bracelet that summons Phoenix Agathion. When Nirvana Rebirth is used, all HP, MP, CP are recovered, and becomes invincible for 5 seconds with the power of Phoenix. Possible to use under HP 30% only. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 12 hours. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_china_phoenix_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21191,
+        "level": 1
+      },
+      {
+        "id": 23171,
+        "level": 1
+      },
+      {
+        "id": 23172,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20941": {
+    "name": "Phoenix Agthion Seal Bracelet - Oriental Phoenix - 7-day limited period",
+    "description": "Bracelet that summons Phoenix Agathion. When Oriental Phoenix is used, all Debuff is canceled with the power of Phoenix. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 4 hours. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_china_phoenix_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21191,
+        "level": 1
+      },
+      {
+        "id": 23171,
+        "level": 1
+      },
+      {
+        "id": 23173,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20942": {
+    "name": "Fox Mask",
+    "description": "Fox Mask This mask automatically covers your face during battle. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_fox_japan_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20943": {
+    "name": "Fox Mask - Silent Move - 7-day limited period",
+    "description": "Fox Mask This mask automatically covers your face during battle. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 4 hours. Silent Move",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_fox_japan_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21192,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20944": {
+    "name": "Paiwan Hat",
+    "description": "Traditional Paiwan Hat. Cannot be exchanged, dropped, or sold. Uses 2 hair accessory slots. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_paiwan_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20945": {
+    "name": "Paiwan Hat - Power of Guardian Deity - 7-day limited period",
+    "description": "Traditional Paiwan Hat. When the Power of Guardian Deity, Critical attack power is increased by 35% for 10 minutes. Cannot be exchanged, dropped, or sold. Uses 2 hair accessory slots. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Guardian Deity's Strength",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_paiwan_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21193,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20946": {
+    "name": "Jet Bike 7-Day Pack",
+    "description": "A Pack that has Jet Bike (7 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20938,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20947": {
+    "name": "Jet Bike 30-Day Pack",
+    "description": "A Pack that has Jet Bike (30 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20939,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20948": {
+    "name": "Phoenix Agathion 7-Day Pack - Nirvana Rebirth",
+    "description": "A Pack that has Phoenix Agathion (7 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20940,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20949": {
+    "name": "Phoenix Agathion 7-Day Pack - Oriental Phoenix",
+    "description": "A Pack that has Phoenix Agathion (7 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20941,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20950": {
+    "name": "Fox Mask Pack",
+    "description": "A Pack that has Fox Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20942,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20951": {
+    "name": "Fox Mask 7-Day Pack - Silent Move",
+    "description": "A Pack that has Fox Mask (30 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20943,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20952": {
+    "name": "Paiwan Hat Pack",
+    "description": "A Pack that has Paiwan Hat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20944,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20953": {
+    "name": "Paiwan Hat 7-Day Pack - Power of Guardian Deity",
+    "description": "A Pack that has Paiwan Hat (7 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20945,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20954": {
+    "name": "Small Placid",
+    "description": "When used, 5000 Soul Avatar Energy is recovered. Can be replenished only when Soul Avatar is on and when the consumed energy is 5000 or more. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Energy Replenishing",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "icon": "BranchSys.icon.br_shield_bread_i00",
+    "item_skills": [
+      {
+        "id": 22165,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20955": {
+    "name": "Medium Placid",
+    "description": "When used, 10000 Soul Avatar Energy is recovered. Can be replenished only when Soul Avatar is on and the consumed energy is 10000 or more. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Energy Replenishing",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "icon": "BranchSys.icon.br_shield_bread_i01",
+    "item_skills": [
+      {
+        "id": 22166,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20956": {
+    "name": "Agathion Seal Bracelet - Frozen Corpse - Soul Stealth - 7-day limited period",
+    "description": "Bracelet that summons Zombie Agathion. Invisible effect for 5 seconds after resurrection, and will not receive preemptive attack from the monsters for 2 minutes. Moving speed is decreased by 50% while the skill effect is operative. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 12 hours. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_gangsi_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21133,
+        "level": 1
+      },
+      {
+        "id": 23117,
+        "level": 1
+      },
+      {
+        "id": 23175,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20957": {
+    "name": "Zombie Agathion 7-Day Pack - Soul Stealth",
+    "description": "A Pack that has Zombie Agathion (7 days). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20956,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20958": {
+    "name": "April Fools' Day Special Gift - For Event",
+    "description": "The luckiest person will be given a special fortune box on April Fool's Day. What will be inside? April Fool's Day Vesper Weapon Gift",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.lucky_bag_box_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20959": {
+    "name": "Royal Crown of Vesper Pack",
+    "description": "Wrapped pack containing a Royal Crown of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20929,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20960": {
+    "name": "Royal Circlet of Vesper Pack",
+    "description": "Wrapped pack containing a Royal Circlet of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20930,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20961": {
+    "name": "Noblesse Oblige Pack",
+    "description": "Wrapped pack containing a Noblesse Oblige. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20931,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20962": {
+    "name": "Royal Crown of Vesper 30-Day Pack",
+    "description": "Wrapped pack containing a Royal Crown of Vesper (30 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20932,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20963": {
+    "name": "Royal Circlet of Vesper 30-Day Pack",
+    "description": "Wrapped pack containing a Royal Circlet of Vesper (30 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20933,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20964": {
+    "name": "Noblesse Oblige 30-Day Pack",
+    "description": "Wrapped pack containing a Noblesse Oblige (30 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20934,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20965": {
+    "name": "Royal Crown of Vesper Pack",
+    "description": "Wrapped pack containing a Royal Crown of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20935,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20966": {
+    "name": "Royal Circlet of Vesper Pack",
+    "description": "Wrapped pack containing a Royal Circlet of Vesper. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20936,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20967": {
+    "name": "Noblesse Oblige Pack",
+    "description": "Wrapped pack containing a Noblesse Oblige. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20937,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20968": {
+    "name": "Agathion Seal Bracelet - Guangong",
+    "description": "Bracelet that summons the Guangong Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_warriorgod_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21142,
+        "level": 1
+      },
+      {
+        "id": 23123,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20969": {
+    "name": "Guangong Agathion Pack",
+    "description": "Wrapped pack containing a Guangong Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20968,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20970": {
+    "name": "Agathion Seal Bracelet - Three-headed Dragon - Wind Walk",
+    "description": "Bracelet that summons a cute three-headed dragon. Cannot be exchanged, dropped, or sold. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_threehead_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21194,
+        "level": 1
+      },
+      {
+        "id": 23181,
+        "level": 1
+      },
+      {
+        "id": 23182,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20971": {
+    "name": "Trejuo Transformation Stick - Blessed Child Transformation",
+    "description": "Stick that transforms you into the Blessed Child Trejuo. The transformation ends when you de-equip the item. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 4 hour. Blessed Child Transformation Skill - Trejuo",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "BranchSys2.icon.br_blessed_taiboy_i00",
+    "item_skills": [
+      {
+        "id": 21195,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20972": {
+    "name": "Sujin Transformation Stick - Blessed Child Transformation",
+    "description": "Stick that transforms you into the Blessed Child Sujin. The transformation ends when you de-equip the item. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 4 hour. Blessed Child Transformation Skill - Sujin",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "BranchSys2.icon.br_blessed_taigirl_i00",
+    "item_skills": [
+      {
+        "id": 21196,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20973": {
+    "name": "Opera Mask - Liu Bei - Buff of Virtue, Age of the Three Kingdoms",
+    "description": "Mask worn by the actor playing the Liu Bei role in the opera. Can use the Buff of Virtue and the Age of the Three Kingdoms. Cannot be exchanged, dropped, or sold. Uses 2 hair accessory slots. Can be stored in a private warehouse. Induk's Buff",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_pekingopera_mask_a_i00",
+    "item_skills": [
+      {
+        "id": 21197,
+        "level": 1
+      },
+      {
+        "id": 21200,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20974": {
+    "name": "Opera Mask - Guan Yu - Silence of Fidelity, Age of the Three Kingdoms",
+    "description": "Mask worn by the actor playing the Guan Yu role in the opera. Can use the Silence of Fidelity and the Age of the Three Kingdoms. Cannot be exchanged, dropped, or sold. Uses 2 hair accessory slots. Can be stored in a private warehouse. Silence of Loyalty",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_pekingopera_mask_b_i00",
+    "item_skills": [
+      {
+        "id": 21198,
+        "level": 1
+      },
+      {
+        "id": 21200,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20975": {
+    "name": "Opera Mask - Zhang Fei - Vitality of Courage, Age of the Three Kingdoms",
+    "description": "Mask worn by the actor playing the Zhang Fei role in the opera. Can use the Vitality of Courage and the Age of the Three Kingdoms. Cannot be exchanged, dropped, or sold. Uses 2 hair accessory slots. Can be stored in a private warehouse. Vitality of Excellence",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_pekingopera_mask_c_i00",
+    "item_skills": [
+      {
+        "id": 21199,
+        "level": 1
+      },
+      {
+        "id": 21200,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20976": {
+    "name": "Proof of a Warrior - 30-day limited period",
+    "description": "Noble proof representing bravery. Needed to use the Buff of Virtue, Silence of Fidelity, and Vitality of Courage with the opera mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "icon": "BranchSys2.icon.br_pekingopera_symbol_a_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20977": {
+    "name": "Proof of Friendship",
+    "description": "Noble proof representing friendship. Needed to use the Age of the Three Kingdoms with the opera mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "icon": "BranchSys2.icon.br_pekingopera_symbol_b_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20978": {
+    "name": "Zhongzi (B-Grade)",
+    "description": "Taiwanese specialty food. Item that raises a B-Grade weapon's enchant rate by 15%. Can only be used on items with 3~9 enchants. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Lucky Clover - B-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.br_taiwan_riceball_a_i00",
+    "item_skills": [
+      {
+        "id": 2517,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20979": {
+    "name": "Zhongzi (A-Grade)",
+    "description": "Taiwanese specialty food. Item that raises an A-Grade weapon's enchant rate by 12%. Can only be used on items with 3~9 enchants. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Lucky Clover - A-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.br_taiwan_riceball_b_i00",
+    "item_skills": [
+      {
+        "id": 2518,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20980": {
+    "name": "Zhongzi (S-Grade)",
+    "description": "Taiwanese specialty food. Item that raises a S-Grade weapon's enchant rate by 10%. Can only be used on items with 3~9 enchants. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Lucky Clover - S-Grade",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.br_taiwan_riceball_c_i00",
+    "item_skills": [
+      {
+        "id": 2519,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20981": {
+    "name": "Dragon Boat",
+    "description": "Hat shaped like a dragon boat. Cannot be exchanged, dropped, or sold. Uses 2 hair accessory slots. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_dragonboat_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20982": {
+    "name": "Dragon Boat - Haste - 7-day limited period",
+    "description": "Hat shaped like a dragon boat. Cannot be exchanged, dropped, or sold. Uses 2 hair accessory slots. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Haste",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_dragonboat_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21201,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20983": {
+    "name": "Agathion Seal Bracelet - Ball Trapping Gnosian - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons a ball-trapping Gnosian. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_ball_male_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21202,
+        "level": 1
+      },
+      {
+        "id": 23201,
+        "level": 1
+      },
+      {
+        "id": 23183,
+        "level": 1
+      },
+      {
+        "id": 23184,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20984": {
+    "name": "Agathion Seal Bracelet - Ball Trapping Orodriel - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons a ball-trapping Orodriel. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_ball_female_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21203,
+        "level": 1
+      },
+      {
+        "id": 23202,
+        "level": 1
+      },
+      {
+        "id": 23185,
+        "level": 1
+      },
+      {
+        "id": 23186,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20985": {
+    "name": "Agathion Seal Bracelet - Penalty Kick - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons Gnosian and Orodriel who are practicing penalty kicks. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_ball_kick_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21204,
+        "level": 1
+      },
+      {
+        "id": 23203,
+        "level": 1
+      },
+      {
+        "id": 23187,
+        "level": 1
+      },
+      {
+        "id": 23188,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20986": {
+    "name": "Agathion Seal Bracelet - Ball Trapping Gnosian - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons a ball-trapping Gnosian. Wearing a blue uniform. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_jball_male_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21205,
+        "level": 1
+      },
+      {
+        "id": 23204,
+        "level": 1
+      },
+      {
+        "id": 23189,
+        "level": 1
+      },
+      {
+        "id": 23190,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20987": {
+    "name": "Agathion Seal Bracelet - Ball Trapping Orodriel - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons a ball-trapping Orodriel. Wearing a blue uniform. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_jball_female_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21206,
+        "level": 1
+      },
+      {
+        "id": 23205,
+        "level": 1
+      },
+      {
+        "id": 23191,
+        "level": 1
+      },
+      {
+        "id": 23192,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20988": {
+    "name": "Agathion Seal Bracelet - Penalty Kick - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons Gnosian and Orodriel who are practicing penalty kicks. All are wearing blue uniforms. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_jball_kick_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21207,
+        "level": 1
+      },
+      {
+        "id": 23206,
+        "level": 1
+      },
+      {
+        "id": 23193,
+        "level": 1
+      },
+      {
+        "id": 23194,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20989": {
+    "name": "Agathion Seal Bracelet - Ball Trapping Gnosian - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons a ball-trapping Gnosian. Wearing a red uniform. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_kball_male_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21208,
+        "level": 1
+      },
+      {
+        "id": 23207,
+        "level": 1
+      },
+      {
+        "id": 23195,
+        "level": 1
+      },
+      {
+        "id": 23196,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20990": {
+    "name": "Agathion Seal Bracelet - Ball Trapping Orodriel - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons a ball-trapping Orodriel. Wearing a red uniform. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_kball_female_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21209,
+        "level": 1
+      },
+      {
+        "id": 23208,
+        "level": 1
+      },
+      {
+        "id": 23197,
+        "level": 1
+      },
+      {
+        "id": 23198,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20991": {
+    "name": "Agathion Seal Bracelet - Penalty Kick - Soccer Ball of Cheers, Buff of Cheers",
+    "description": "Bracelet that summons Gnosian and Orodriel who are practicing penalty kicks. All are wearing red uniforms. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Special skill reuse delay is 1 hour. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.br_aga_kball_kick_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21210,
+        "level": 1
+      },
+      {
+        "id": 23209,
+        "level": 1
+      },
+      {
+        "id": 23199,
+        "level": 1
+      },
+      {
+        "id": 23200,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20992": {
+    "name": "Thirst of Victory Quenching Drink",
+    "description": "Refreshing sports drink that immediately quenches thirst. Restores 1000 energy when used while a Ball Trapping Agathion or Penalty Kick Agathion are equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Thirst for Victory Quenching Drink",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "icon": "BranchSys2.icon.br_victory_potion_i00",
+    "item_skills": [
+      {
+        "id": 22168,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20993": {
+    "name": "Soccer Ball of Cheers",
+    "description": "Soccer ball given as a gift for cheering. When the soccer ball is used, you may obtain a Blessed Weapon Scroll of Enchantment (D~S Grades) with a fixed rate of chance. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Soccer Ball of Cheering Release",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "BranchSys2.icon.br_soccer_ball_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20994": {
+    "name": "Three-headed Dragon Agathion Pack - Wind Walk",
+    "description": "Wrapped pack containing a Three-headed Dragon Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20970,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20995": {
+    "name": "Liu Bei Opera Mask Pack - Buff of Virtue, Age of the Three Kingdoms",
+    "description": "Wrapped pack containing a Liu Bei Opera Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20973,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20996": {
+    "name": "Guan Yu Opera Mask Pack - Silence of Fidelity, Age of the Three Kingdoms",
+    "description": "Wrapped pack containing a Guan Yu Opera Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20974,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20997": {
+    "name": "Zhang Fei Opera Mask Pack - Vitality of Courage, Age of the Three Kingdoms",
+    "description": "Wrapped pack containing a Zhang Fei Opera Mask. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20975,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20998": {
+    "name": "Dragon Boat Pack",
+    "description": "Wrapped pack containing a Dragon Boat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20981,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20999": {
+    "name": "Dragon Boat 7-Day Pack - Haste",
+    "description": "Wrapped pack containing a Dragon Boat (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20982,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  }
+}

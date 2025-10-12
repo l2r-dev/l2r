@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+Nice to meet you. I am Tatiana, Gatekeeper of the Town of Goddard. The Gate, wich is the door of space and time, enables you to traverse long distances in a flash. But in order to learn how to use it, you must train for a long time in the Ivory Tower, just like I did.<br>
+Now! Have you decided where to travel?<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

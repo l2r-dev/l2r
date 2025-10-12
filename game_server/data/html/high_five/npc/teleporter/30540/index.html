@@ -1,0 +1,9 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+I was brought here using only a small portion of the Instant Moving Device. Now I can send you wherever you want to go using that same small portion.<br>
+Do you want to experience the unlimited power of early science?<br>
+
+{{ macros::gatekeeper(object_id=object_id, monster_track=False, fantasy_isle=False) }}
+{% endblock body %}

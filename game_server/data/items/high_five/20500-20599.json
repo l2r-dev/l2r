@@ -1,0 +1,2336 @@
+{
+  "20500": {
+    "name": "Feline King Hat",
+    "description": "Hat that looks like the Feline King. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_king_of_cat_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20501": {
+    "name": "Kai the Cat Hat",
+    "description": "Hat that looks like Kai the Cat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chi_the_cat_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20502": {
+    "name": "Gold Maned Lion Mount Bracelet",
+    "description": "Can ride a gold maned lion when equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Golden Maned Lion Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 8262,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20503": {
+    "name": "Gold Maned Lion Mount Bracelet - 30-day limited period",
+    "description": "Can ride a gold maned lion when equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Golden Maned Lion Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8262,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20504": {
+    "name": "Steam Beatle Mount Bracelet - 30-day limited period",
+    "description": "Can mount a steam beatle when equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Steam Beetle Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8261,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20505": {
+    "name": "Pomona Agathion Pack",
+    "description": "Wrapped pack containing a Pomona Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20495,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20506": {
+    "name": "Pomona Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Pomona Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20496,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20507": {
+    "name": "Mother's Wreath 24-Hour Pack (Event)",
+    "description": "Wrapped pack for events containing a Mother's Wreath (24 hours). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20497,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20508": {
+    "name": "Mother's Wreath 3-Day Pack",
+    "description": "Wrapped pack containing a Mother's Wreath (3 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20498,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20509": {
+    "name": "Feline Queen Hat Pack",
+    "description": "Wrapped pack containing a Feline Queen Hat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20499,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20510": {
+    "name": "Feline King Hat Pack",
+    "description": "Wrapped pack containing a Feline King Hat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20500,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20511": {
+    "name": "Kai the Cat Hat Pack",
+    "description": "Wrapped pack containing a Kai the Cat Hat. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20501,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20512": {
+    "name": "Gold Maned Lion Mount Bracelet Pack",
+    "description": "Wrapped pack containing a Gold Maned Lion Mount Bracelet. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20502,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20513": {
+    "name": "Gold Maned Lion Mount Bracelet 30-Day Pack - 30-day limited period",
+    "description": "Wrapped pack containing a Gold Maned Lion Mount Bracelet (30 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20503,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20514": {
+    "name": "Steam Beatle Mount Bracelet 30-Day Pack - 30-day limited period",
+    "description": "Wrapped pack containing a Steam Beatle Mount Bracelet (30 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20504,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20515": {
+    "name": "Huge Fortuna Box",
+    "description": "A Divine Weapon Enchant Crystal and a high grade Ancient Weapon Enchant Crystal can be acquired at a constant rate. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Huge Fortuna Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_fortuna_box_s_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20516": {
+    "name": "Huge Fortuna Cube",
+    "description": "A Divine Armor Enchant Crystal and a high grade Ancient Armor Enchant Crystal can be acquired at a constant rate. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Huge Fortuna Cube",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_fortuna_cube_s_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20517": {
+    "name": "Scroll: Enchant Weapon (S-Grade)",
+    "description": "10% increase in enchant success rate. . Attack power for S-grade sword, one-handed blunt, one-handed dagger, spear, and other weapons increases by 5 when enchanted. Attack power for sword, two-handed blunt, two-handed dualsword, and combat and dual-handed weapons increases by 6. Attack power for bow weapons increases by 10. Magic power for all weapons increases by 4. Attack and magic power increase two times after +4. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Weapon Enchant Scroll - S Grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Common"
+        }
+      }
+    },
+    "grade": "S",
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_scrl_of_ench_wp_s_i00",
+    "item_skills": [
+      {
+        "id": 22073,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20518": {
+    "name": "Scroll: Enchant Armor (S-Grade)",
+    "description": "10% increase in enchant success rate. . Defence power for Grade S armor or accessory by 1 and by 3 starting from +4. It can be safely enchanted up to +3. For one-piece armor, it can be safely enchanted up to +4. Also increases HP according to level when armor is enchanted above +4. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Armor Enchant Scroll - S Grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Common"
+        }
+      }
+    },
+    "grade": "S",
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_scrl_of_ench_am_s_i00",
+    "item_skills": [
+      {
+        "id": 22074,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20519": {
+    "name": "Ancient Weapon Enchant Crystal (S-Grade)",
+    "description": "10% increase in enchant success rate. . When enchant fails, the existing enchant value is retained. . Attack power for S-grade sword, one-handed blunt, one-handed dagger, spear, and other weapons increases by 5 when enchanted. Attack power for sword, two-handed blunt, two-handed dualsword, and combat and dual-handed weapons increases by 6. Attack power for bow weapons increases by 10. Magic power for all weapons increases by 4. Attack and magic power increase two times after +4. Cannot use weapons enchanted by above 16. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Ancient Weapon Enchant Crystal - S grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Crystal"
+        }
+      }
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "icon": "BranchSys.icon.br_ancient_cry_of_ench_wp_s_i00",
+    "item_skills": [
+      {
+        "id": 22075,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20520": {
+    "name": "Ancient Armor Enchant Crystal (S-Grade)",
+    "description": "10% increase in enchant success rate. . When enchant fails, the existing enchant value is retained. . Defence power for Grade S armor or accessory by 1 and by 3 starting from +4. It can be safely enchanted up to +3. For one-piece armor, it can be safely enchanted up to +4. Also increases HP according to level when armor is enchanted above +4. Cannot use armors enchanted by above 16. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Ancient Armor Enchant Crystal - S grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Crystal"
+        }
+      }
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "icon": "BranchSys.icon.br_ancient_cry_of_ench_am_s_i00",
+    "item_skills": [
+      {
+        "id": 22076,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20521": {
+    "name": "Divine Weapon Enchant Crystal (S-Grade)",
+    "description": "Enchant success rate is 100%. . Attack power for S-grade sword, one-handed blunt, one-handed dagger, spear, and other weapons increases by 5 when enchanted. Attack power for sword, two-handed blunt, two-handed dualsword, and combat and dual-handed weapons increases by 6. Attack power for bow weapons increases by 10. Magic power for all weapons increases by 4. Attack and magic power increase two times after +4. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Holy Weapon Enchant Crystal - S grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Crystal"
+        }
+      }
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "icon": "BranchSys.icon.br_holy_cry_of_ench_wp_s_i00",
+    "item_skills": [
+      {
+        "id": 22077,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20522": {
+    "name": "Divine Armor Enchant Crystal (S-Grade)",
+    "description": "Enchant success rate is 100%. . Defence power for Grade S armor or accessory by 1 and by 3 starting from +4. It can be safely enchanted up to +3. For one-piece armor, it can be safely enchanted up to +4. Also increases HP according to level when armor is enchanted above +4. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Divine Armor Enchant Crystal - S grade",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Crystal"
+        }
+      }
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "icon": "BranchSys.icon.br_holy_cry_of_ench_am_s_i00",
+    "item_skills": [
+      {
+        "id": 22078,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20523": {
+    "name": "Resist Aqua Scroll",
+    "description": "Increases Resistance to water type attacks by 20%. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Resist Aqua",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22079,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20524": {
+    "name": "Resist Wind Scroll",
+    "description": "Increases Resistance to wind type attacks by 20%. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Resist Wind",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22080,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20525": {
+    "name": "Resist Fire Scroll",
+    "description": "Increases Resistance to fire type attacks by 20%. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Resist Fire",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22081,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20526": {
+    "name": "Resist Holy Scroll",
+    "description": "Increases Resistance to Holy by 23%. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Resist Holy",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22082,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20527": {
+    "name": "Resist Unholy Scroll",
+    "description": "Increases Resistance to Dark by 23%. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Resist Dark",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22083,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20528": {
+    "name": "Mental Shield Scroll",
+    "description": "Increases Resistance to hold/sleep/abnormal mind attacks by 40. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Mental Shield",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22084,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20529": {
+    "name": "Focus Scroll",
+    "description": "Increases the power of critical attacks by 30. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Focus",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22085,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20530": {
+    "name": "Concentration Scroll",
+    "description": "Decreases damage that is cancelled by magic by 36. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Concentration",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22086,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20531": {
+    "name": "Bless Shield Scroll",
+    "description": "Increases shield Defence rate by 15. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Bless Shield",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22087,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20532": {
+    "name": "Agility Scroll",
+    "description": "Increases evasion rate by 4. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Agility",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22088,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20533": {
+    "name": "Regeneration Scroll",
+    "description": "Increases HP regeneration by 20%. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Regeneration",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22089,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20534": {
+    "name": "Advanced Block Scroll",
+    "description": "Increases Shield P. Def. by 40%. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Advanced Block",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_scroll_of_wind_walk_i00",
+    "item_skills": [
+      {
+        "id": 22090,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20535": {
+    "name": "Steam Beatle Mount Bracelet - 30-day limited period",
+    "description": "Can mount a steam beatle when equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Steam Beetle Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Right"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.pi_high_agathion_bracelet_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8261,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20536": {
+    "name": "Gold-Maned Lion Mount Bracelet - 30-day limited period",
+    "description": "Can mount a gold maned lion when equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Golden Maned Lion Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Right"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.pi_high_agathion_bracelet_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8262,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20537": {
+    "name": "Afro Hair - Energy - 7-Day Limited Period",
+    "description": "Afro style hair. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Energy Reuse Delay 12 hour. Can be stored in a private warehouse. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21011,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20538": {
+    "name": "Horn Rimmed Glasses - Energy - 7-Day Limited Period",
+    "description": "Magic horn-rimmed glasses with mysterious power. Cannot be exchanged, dropped, or sold. Energy Reuse Delay 12 hour. Can be stored in a private warehouse. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Glasses_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21012,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20539": {
+    "name": "Assassin's Bamboo Hat - Energy - 7-Day Limited Period",
+    "description": "Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Energy Reuse Delay 12 hour. Can be stored in a private warehouse. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Bamboo_Hat_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20540": {
+    "name": "Steam Beatle Mount Bracelet 30-Day Pack",
+    "description": "Wrapped pack containing a Steam Beatle Mount Bracelet (30 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20535,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20541": {
+    "name": "Tawny Maned Lion Mount Bracelet 30-Day Pack",
+    "description": "Wrapped pack containing a Gold Maned Lion Mount Bracelet (30 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20536,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20542": {
+    "name": "Afro Hair 7-Day Pack",
+    "description": "Wrapped pack containing Afro Hair (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20537,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20543": {
+    "name": "Horn Rimmed Glasses 7-Day Pack",
+    "description": "Wrapped pack containing Horn Rimmed Glasses (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20538,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20544": {
+    "name": "Assassin's Bamboo Hat 7-Day Pack",
+    "description": "Wrapped pack containing an Assassin's Bamboo Hat (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20539,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20545": {
+    "name": "Haste Juice",
+    "description": "Delicious beverage made with rare fruits. Atk. Spd. increases by 33% when used. Cannot be exchanged, dropped, or sold. Haste Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i00",
+    "item_skills": [
+      {
+        "id": 2429,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20546": {
+    "name": "Critical Attack Juice",
+    "description": "Delicious beverage made with rare fruits. Critical rate increases by 30% when used. Cannot be exchanged, dropped, or sold. Critical Attack Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i03",
+    "item_skills": [
+      {
+        "id": 2432,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20547": {
+    "name": "Moving Speed Increasing Beverage",
+    "description": "Delicious beverage made with rare fruits. It is very light. Moving speed increases by 33 when used. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Speed Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i08",
+    "item_skills": [
+      {
+        "id": 2437,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20548": {
+    "name": "Rune of Experience Points 30%- 5-Hour Pack (Event)",
+    "description": "Dimensional Item. Wrapped pack containing a Rune of Experience Points 30% (5-hour limited period). Timer starts once package is opened. Cannot be exchanged, dropped, or sold. Can be shared between characters on the same account through the Dimensional Merchant.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20335,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20549": {
+    "name": "Rune of Experience Points 50% 5 hours pack",
+    "description": "Wrapped pack containing a Rune of Experience Points 50% (5 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20336,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20550": {
+    "name": "Rune of Experience Points 30% 10 hours pack",
+    "description": "Wrapped pack containing a Rune of Experience Points 30% (10 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20337,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20551": {
+    "name": "Rune of Experience Points 50% 10 hours pack",
+    "description": "Wrapped pack containing a Rune of Experience Points 50% (10 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20338,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20552": {
+    "name": "Rune of Experience Points 30% 7-Day Pack",
+    "description": "Wrapped pack containing a Rune of Experience Points 30% (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20339,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20553": {
+    "name": "Rune of Experience Points 50% 7-Day Pack",
+    "description": "Wrapped pack containing a Rune of Experience Points 50% (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20340,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20554": {
+    "name": "Rune of SP 30% 5-Hour Pack",
+    "description": "Dimensional Item. Wrapped pack containing a Rune of SP 30% (5 hour). Cannot be exchanged, dropped, or sold. Can be shared between characters on the same account through the Dimensional Merchant.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20341,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20555": {
+    "name": "Rune of SP 50% 5-Hour Pack",
+    "description": "Wrapped pack containing a Rune of SP 50% (5 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20342,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20556": {
+    "name": "Rune of SP 30% 10-Hour Pack",
+    "description": "Wrapped pack containing a Rune of SP 30% (10 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20343,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20557": {
+    "name": "Rune of SP 50% 10-Hour Pack",
+    "description": "Wrapped pack containing a Rune of SP 50% (10 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20344,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20558": {
+    "name": "Rune of SP 30% 7-Day Pack",
+    "description": "Wrapped pack containing a Rune of SP 30% (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20345,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20559": {
+    "name": "Rune of SP 50% 7-Day Pack",
+    "description": "Wrapped pack containing a Rune of SP 50% (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20346,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20560": {
+    "name": "Rune of Crystal Level 3 5-Hour Pack",
+    "description": "Wrapped pack containing a Rune of Crystal Level 3 (5 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20347,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20561": {
+    "name": "Rune of Crystal Level 5 5-Hour Pack",
+    "description": "Wrapped pack containing a Rune of Crystal Level 5 (5 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20348,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20562": {
+    "name": "Rune of Crystal Level 3 10-Hour Pack",
+    "description": "Wrapped pack containing a Rune of Crystal Level 3 (10 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20349,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20563": {
+    "name": "Rune of Crystal Level 5 5-Hour Pack",
+    "description": "Wrapped pack containing a Rune of Crystal Level 5 (5 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20350,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20564": {
+    "name": "Rune of Crystal Level 3 7-Day Pack",
+    "description": "Wrapped pack containing a Rune of Crystal Level 3 (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20351,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20565": {
+    "name": "Rune of Crystal Level 5 7-Day Pack",
+    "description": "Wrapped pack containing a Rune of Crystal Level 5 (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20352,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20566": {
+    "name": "Rune of Feather 24-Hour Pack",
+    "description": "Wrapped pack containing a Rune of Feather (24 hour). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 22066,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20567": {
+    "name": "Eva's Circlet (event) - 3-day limited period",
+    "description": "Circlet containing the mysterious power of Eva. Uses 2 accessory slots. Cannot be exchanged, dropped, or sold. Berserker Spirit",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_circlet_of_eva_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 21087,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20568": {
+    "name": "Eva's Circlet - 7-day limited period",
+    "description": "Circlet containing the mysterious power of Eva. Uses 2 accessory slots. Cannot be exchanged, dropped, or sold. Berserker Spirit",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_circlet_of_eva_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21087,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20569": {
+    "name": "Eva's Circlet",
+    "description": "Circlet containing the mysterious power of Eva. Uses 2 accessory slots. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_circlet_of_eva_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20570": {
+    "name": "Eva's Rune (event) - 5-hour limited period",
+    "description": "An ancient charm endowed with mysterious symbols. When held in your inventory, grants the user Eva's Rune passive skill. The remaining period decreases even during log-off state. Cannot be exchanged, dropped, or sold. Eva's Rune",
+    "kind": {
+      "Etc": "Rune"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_rune_of_eva_i00",
+    "time": 300,
+    "item_skills": [
+      {
+        "id": 22091,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20571": {
+    "name": "Eva's Rune (event) - 3-day limited period",
+    "description": "An ancient charm endowed with mysterious symbols. When held in your inventory, grants the user Eva's Rune passive skill. The remaining period decreases even during log-off state. Cannot be exchanged, dropped, or sold. Eva's Rune",
+    "kind": {
+      "Etc": "Rune"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_rune_of_eva_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 22091,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20572": {
+    "name": "Rune of Experience Points 30% - 3-hour limited period",
+    "description": "An ancient charm endowed with mysterious symbols. When held in your inventory, increases acquired Experience Points by 30%. The timer decreases even during log-off state. Only one XP Rune can be applied at any given time regardless of additional XP Runes in ones inventory. Cannot be exchanged, dropped, or sold. Rune of Exp. 30%",
+    "kind": {
+      "Etc": "Rune"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "br_cashtex.item.br_cash_rune_of_exp_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 22039,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20573": {
+    "name": "Small Scroll Chest (Event)",
+    "description": "Mysterious box containing the blessings of Eva. Cannot be exchanged, dropped, or sold. Scroll Master 1",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20574": {
+    "name": "Large Scroll Chest (Event)",
+    "description": "Mysterious box containing the blessings of Eva. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20341,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20392,
+          "min": 4,
+          "max": 4,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20575": {
+    "name": "Chest of Experience (Event)",
+    "description": "Mysterious box containing the blessings of Eva. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20342,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20336,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20576": {
+    "name": "Eva's Circlet 3-Day Pack (Event)",
+    "description": "Dimensional Item. A wrapped package containing an Eva's Rune (3-day limited period). The timer start once the box is opened. Can be shared between characters on the same account through the Dimensional Merchant.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20567,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20577": {
+    "name": "Eva's Circlet 7-Day Pack",
+    "description": "Wrapped pack containing an Eva's Circlet (7 day). Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20568,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20578": {
+    "name": "Eva's Circlet Pack",
+    "description": "Wrapped pack containing an Eva's Circlet. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20569,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20579": {
+    "name": "Eva's Rune 5-Hour Pack (Event)",
+    "description": "Dimensional Item. A wrapped package containing an Eva's Rune (5-hour limited period). The timer start once the box is opened. Can be shared between characters on the same account through the Dimensional Merchant.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20570,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20580": {
+    "name": "Eva's Rune 3-Day Pack (Event)",
+    "description": "Dimensional Item. A wrapped package containing an Eva's Rune (3-day limited period). The timer start once the box is opened. Can be shared between characters on the same account through the Dimensional Merchant.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20571,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20581": {
+    "name": "Rune of Experience Points 30% - 3-Hour Pack (Event)",
+    "description": "Wrapped package containing a Rune of Experience Points 30% (3-hour limited period). The timer start once the box is opened. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20572,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20582": {
+    "name": "Power Juice",
+    "description": "Delicious beverage made with rare fruits. Increases P. Atk. by 15% for 60 minutes when used. Cannot be exchanged, dropped, or sold. Power Juice",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i07",
+    "item_skills": [
+      {
+        "id": 2436,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "20583": {
+    "name": "Blessed Scroll of Escape (event)",
+    "description": "A magical scroll that relocates you to the nearest village. Blessed Scroll of Escape (Event)",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_return_i01",
+    "item_skills": [
+      {
+        "id": 22103,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20584": {
+    "name": "Blessed Scroll of Resurrection (event)",
+    "description": "A magical scroll that resurrects a dead character and restores his or her Exp. completely. Blessed Scroll of Resurrection (Event)",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_resurrection_i01",
+    "item_skills": [
+      {
+        "id": 22104,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20585": {
+    "name": "Seed of Fire (event)",
+    "description": "Double click to summon a Spirit of Fire. Summon Spirit of Fire",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_seed_of_fire_i00",
+    "item_skills": [
+      {
+        "id": 22095,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20586": {
+    "name": "Explosive Seed of Fire (Event)",
+    "description": "Double click to summon an Explosive Spirit of Fire. Summon Reckless Spirit of Fire",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_seed_of_explosive_fire_i00",
+    "item_skills": [
+      {
+        "id": 22096,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20587": {
+    "name": "Weaver Agathion Pack",
+    "description": "Wrapped pack containing a Weaver Agathion. No sale available. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20591,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20588": {
+    "name": "Weaver Agathion 24-Hour Pack - Power of the Golden Calf",
+    "description": "Wrapped pack containing a Weaver Agathion (24 hour). No sale available. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20592,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20589": {
+    "name": "Weaver Agathion 3-Day Pack - Power of the Golden Calf",
+    "description": "Wrapped pack containing a Weaver Agathion (3 day). No sale available. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20593,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20590": {
+    "name": "Summon of Love Bracelet 24-Hour Pack (Event)",
+    "description": "Wrapped pack containing a Summon of Love Bracelet (24 hours). Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20594,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20591": {
+    "name": "Agathion Seal Bracelet - Weaver",
+    "description": "Bracelet that summons the Weaver Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_womanweaver_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21091,
+        "level": 1
+      },
+      {
+        "id": 23076,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20592": {
+    "name": "Agathion Seal Bracelet - Weaver - Power of the Golden Calf - 24-hour limited period",
+    "description": "Bracelet that summons the Weaver Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_womanweaver_i00",
+    "time": 1440,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21091,
+        "level": 1
+      },
+      {
+        "id": 23077,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20593": {
+    "name": "Agathion Seal Bracelet - Weaver - Power of the Golden Calf - 3-day limited period",
+    "description": "Bracelet that summons the Weaver Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_womanweaver_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21091,
+        "level": 1
+      },
+      {
+        "id": 23077,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20594": {
+    "name": "Summon of Love Bracelet (event) - 24-hour limited period",
+    "description": "Bracelet that can summon a lover. The summon is possible when the summoner and the one being summoned are all party members who are equipped with the Summon of Love Bracelet. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Summon Friend",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "icon": "BranchSys.icon.br_ring_of_friendship_i00",
+    "time": 1440,
+    "item_skills": [
+      {
+        "id": 21088,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20595": {
+    "name": "Girl's Gift of Gratitude",
+    "description": "Thank you gift that helps the warrior occupation series. Girl's Gift of Gratitude",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 22097,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20596": {
+    "name": "Boy's Gift of Gratitude",
+    "description": "Thank you gift that helps the wizard occupation series. Boy's Gift of Gratitude",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 22098,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "20597": {
+    "name": "Girl's Soul Ore",
+    "description": "Soul Ore that is consumed for the Weaver Agathion's special skill. Item to be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_sevenlove_stone_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20598": {
+    "name": "Twilight Staff 7-Day Pack - Dance of Shadow",
+    "description": "Wrapped pack containing a Twilight Staff (7 day). Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20600,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20599": {
+    "name": "Anniversary Hat 7-Day Pack - Soul of Phoenix",
+    "description": "Wrapped pack containing an Anniversary Hat (7 day). Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20601,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  }
+}

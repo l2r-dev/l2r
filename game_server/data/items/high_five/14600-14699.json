@@ -1,0 +1,3032 @@
+{
+  "14600": {
+    "name": "Schuttgart Dark Resistance Ring",
+    "description": "Ring given to the guardian of Schuttgart territory. Resistance to Dark +12. Cannot be exchanged or dropped. Only one effect is applied even when wearing two earrings with the same effect. Royal Guard Ring - Schuttgart",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "A",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 42
+      },
+      "MaxMp": {
+        "add": 17
+      },
+      "DarkResistance": {
+        "add": 12
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_ring_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8387,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14601": {
+    "name": "Ancient Cloak: Kamael exclusive - Kamael Use",
+    "description": "Cloak covered with the ancient energy. When the entire set of Vesper Noble is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. Kamael exclusive cloak. Enchantment, special abilities and augmentation are not possible. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14602": {
+    "name": "Ancient Cloak",
+    "description": "Cloak covered with energy of the Holy Spirit. Armor sets that unlocks the cloak slot allow this to be worn. Kamael exclusive cloak. Enchantment, attribute and augmenting are impossible. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14603": {
+    "name": "Sealed Ancient Cloak",
+    "description": "Sealed Ancient Cloak. The seal can be removed through the weavers Olf Kanore and Olf Adams. It cannot be worn before the seal is removed. Enchantment, attribute and augmenting are impossible. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      }
+    },
+    "weight": 220,
+    "icon": "icon.sealed_vesper_cloack_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14604": {
+    "name": "Red Talisman - Territory Guardian",
+    "description": "When used, Max CP is greatly increased and a certain amount of CP is greatly recovered. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available Red Talisman of Territory Guardian",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i00",
+    "mana": 66,
+    "item_skills": [
+      {
+        "id": 8308,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14605": {
+    "name": "Red Talisman - Territory Guard",
+    "description": "When used, Max CP is increased and a certain amount of CP is recovered. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available Red Talisman of Territory Convoy",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i00",
+    "mana": 66,
+    "item_skills": [
+      {
+        "id": 8309,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14606": {
+    "name": "Gracian Soldier Two-Handed Sword",
+    "description": "Uses Gracian Soldier's one-handed sword and 2 hair accessory slots.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 78
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2180,
+    "icon": "icon.weapon_mon_gracia_soldier_sword_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "14607": {
+    "name": "Mark of Gracia",
+    "description": "Token given to new, human PC in Gracia server. It can be exchanged to an item through Token Exchanger.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Cloth",
+    "icon": "icon.etc_coins_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14608": {
+    "name": "Ancient Cloak: Light Armor exclusive",
+    "description": "Ancient Power Sealed Cloak. When the entire set of Vesper Noble is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Dagger Master and Bow Master excluding Kamaels. Enchantment, special abilities and augmentation are not possible. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14609": {
+    "name": "Ancient Cloak",
+    "description": "A sealed cloak containing ancient power. When an armor set above the Dynasty level is worn, the Sealed Cloak Slot will be open so that the cloak can be equipped. Enchantment, attribute, and smelting are impossible. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      }
+    },
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14610": {
+    "name": "Ancient Cloak: Robe exclusive",
+    "description": "Ancient Power Sealed Cloak. When the entire set of Vesper Noble is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Healer, Enchanter, Summoner and Wizard excluding Kamaels. Enchantment, special abilities and augmentation are not possible. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14611": {
+    "name": "Rudolph's Nose",
+    "description": "Rudolph's Nose. 14-day-limited-time Item. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.Accessory_nose_of_rudolph_mask_i00",
+    "time": 20160,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14612": {
+    "name": "Christmas Red Sock",
+    "description": "Item needed to receive a gift from Santa Claus who goes around each territory. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.xmas_present_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14613": {
+    "name": "Rock-Paper-Scissors Santa Hat",
+    "description": "When used, one can play rock-paper-scissors with Thomas D. Turkey in each territory. Cannot be exchanged or dropped. Scissors",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_santas_cap_i00",
+    "item_skills": [
+      {
+        "id": 6097,
+        "level": 1
+      },
+      {
+        "id": 6098,
+        "level": 1
+      },
+      {
+        "id": 6099,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14614": {
+    "name": "Lineage II Devotee Scroll",
+    "description": "Santa's buff gift set. When used, can feel yourself becoming stronger by Santa's blessing for 1 hour. Santa's Buff Gift Set",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_level_bustup_ticket_i01",
+    "item_skills": [
+      {
+        "id": 2856,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "14615": {
+    "name": "Scroll of Christmas Festival - Mage Type",
+    "description": "Scroll of Christmas Festival. When you drink it, you can feel the effect temporarily. Christmas Event - Magic Use Enhancement Scroll",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_level_bustup_ticket_i02",
+    "item_skills": [
+      {
+        "id": 2857,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "14616": {
+    "name": "Gift from Santa Claus",
+    "description": "A gift from Santa Claus. Double-click this item to open it up and find out what is inside. Christmas Red Sock",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.lucky_bag_box_i00",
+    "stackable": true
+  },
+  "14617": {
+    "name": "Agathion Seal Bracelet - Rudolph",
+    "description": "The bracelet which can summon cute Rudolph Agathion. 14-day-limited-time Item. Cannot be exchanged or dropped. Rudolph Cuteness Trick",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 20160,
+    "item_skills": [
+      {
+        "id": 5537,
+        "level": 1
+      },
+      {
+        "id": 3425,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14618": {
+    "name": "Agathion Seal Bracelet - Rudolph",
+    "description": "The bracelet which can summon cute Rudolph Agathion. You can wear it only during the Christmas season. No exchange/drop available",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14619": {
+    "name": "Santa Claus' Weapon Exchange Ticket",
+    "description": "Gift from Santa Claus. It can be exchanged with a weapon through Cat of Christmas. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_level_bustup_ticket_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14620": {
+    "name": "Santa Claus' Weapon Exchange Ticket",
+    "description": "Gift from Santa Claus. It can be exchanged with a weapon through Cat of Christmas. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 20,
+    "icon": "icon.etc_level_bustup_ticket_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14621": {
+    "name": "Santa Claus' Sirra Blade",
+    "description": "Santa Claus' Sirra Blade. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_sirr_blade_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14622": {
+    "name": "Santa Claus' Sword of Ipos",
+    "description": "Santa Claus' Sword of Ipos. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 62
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_sword_of_ipos_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14623": {
+    "name": "Santa Claus' Barakiel Axe",
+    "description": "Santa Claus' Barakiel Axe. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1550,
+    "icon": "icon.weapon_barakiel_axe_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14624": {
+    "name": "Santa Claus' Behemoth Tuning Fork",
+    "description": "Santa Claus' Behemoth Tuning Fork. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 62
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1890,
+    "icon": "icon.weapon_tuning_fork_of_behemoth_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14625": {
+    "name": "Santa Claus' Naga Storm",
+    "description": "Santa Claus' Naga Storm. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 45
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 930,
+    "icon": "icon.weapon_naga_storm_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14626": {
+    "name": "Santa Claus' Tiphon Spear",
+    "description": "Santa Claus' Tiphon Spear. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "width": 120
+      }
+    },
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_tiphon_spear_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14627": {
+    "name": "Santa Claus' Shyeed Bow",
+    "description": "Santa Claus' Shyeed Bow. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "width": 0,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 116
+      },
+      "MAtk": {
+        "set": 42
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_shyid_bow_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14628": {
+    "name": "Santa Claus' Sobekk Hurricane",
+    "description": "Santa Claus' Sobekk Hurricane. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1330,
+    "icon": "icon.weapon_sobekk_hurricane_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14629": {
+    "name": "Santa Claus' Themis Tongue",
+    "description": "Santa Claus' Themis Tongue. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 820,
+    "icon": "icon.weapon_tongue_of_themis_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14630": {
+    "name": "Santa Claus' Hand of Cabrio",
+    "description": "Santa Claus' Hand of Cabrio. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 50
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1510,
+    "icon": "icon.weapon_hand_of_cabrio_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14631": {
+    "name": "Santa Claus' Daimon Crystal",
+    "description": "Santa Claus' Daimon Crystal. Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 62
+      },
+      "MAtk": {
+        "set": 56
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 880,
+    "icon": "icon.weapon_crystal_of_deamon_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14632": {
+    "name": "Santa Claus' Éclair Bijou",
+    "description": "Kamael Exclusive Weapon: Santa Claus' Sirra Blade Conversion Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 46
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14633": {
+    "name": "Santa Claus' Screaming Vengeance",
+    "description": "Kamael Exclusive Weapon: Santa Claus' Shyeed Bow Conversion Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 56
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14634": {
+    "name": "Santa Claus' Durendal",
+    "description": "Kamael Exclusive Weapon: Santa Claus' Sword of Ipos Conversion Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 65
+      },
+      "MAtk": {
+        "set": 38
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14635": {
+    "name": "Low Quality Battle Reward Chest",
+    "description": "Something might happen when double clicked. Duel Reward Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14636": {
+    "name": "Middle Quality Battle Reward Chest",
+    "description": "Something might happen when double clicked. Duel Reward Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14637": {
+    "name": "High-Grade Battle Reward Chest",
+    "description": "Something might happen when double clicked. Duel Reward Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14638": {
+    "name": "Best Quality Battle Reward Chest",
+    "description": "Something might happen when double clicked. Duel Reward Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_treasure_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14639": {
+    "name": "Event - Claymore",
+    "description": "When double clicked, Claymore and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 70,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_claymore_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14640": {
+    "name": "Event - Bonebreaker",
+    "description": "When double clicked, Bonebreaker and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 159,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_bonebreaker_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14641": {
+    "name": "Event - Atuba Hammer",
+    "description": "When double clicked, Atuba Hammer and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 187,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_atuba_hammer_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14642": {
+    "name": "Event - Ghost Staff",
+    "description": "When double clicked, Ghost Staff and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 188,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_ghost_staff_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14643": {
+    "name": "Event - Staff of Life",
+    "description": "When double clicked, Staff of Life and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 189,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_life_stick_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14644": {
+    "name": "Event - Atuba Mace",
+    "description": "When double clicked, Atuba Mace and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 190,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_atuba_mace_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14645": {
+    "name": "Event - Mithril Dagger",
+    "description": "When double clicked, Mithril Dagger and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 225,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_mithril_dagger_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14646": {
+    "name": "Event - Scallop Jamadhr",
+    "description": "When double clicked, Scallop Jamadhr and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 262,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_scallop_jamadhr_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14647": {
+    "name": "Event - Light Crossbow",
+    "description": "When double clicked, Light Crossbow and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 280,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_cyclone_bow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14648": {
+    "name": "Event - Glaive",
+    "description": "When double clicked, Glaive and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 297,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_glaive_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14649": {
+    "name": "Event - Elven Long Sword",
+    "description": "When double clicked, Elven Long Sword and 5 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 2499,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_elven_long_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14650": {
+    "name": "Event - Samurai Longsword",
+    "description": "When double clicked, Samurai Longsword and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 135,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_samurai_longsword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14651": {
+    "name": "Event - Deadman's Staff",
+    "description": "When double clicked, Deadman's Staff and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 204,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_deadmans_staff_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14652": {
+    "name": "Event - Ghoul's Staff",
+    "description": "When double clicked, Ghoul's Staff and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 205,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_ghouls_staff_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14653": {
+    "name": "Event - Demon's Staff",
+    "description": "When double clicked, Demon's Staff and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 206,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_demons_staff_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14654": {
+    "name": "Event - Crystal Dagger",
+    "description": "When double clicked, Crystal Dagger and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 228,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Crystal",
+    "weight": 100,
+    "icon": "icon.weapon_crystal_dagger_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14655": {
+    "name": "Event - Great Pata",
+    "description": "When double clicked, Great Pata and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 266,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_great_pata_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14656": {
+    "name": "Event - Eminence Bow",
+    "description": "When double clicked, Eminence Bow and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 286,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_eminence_bow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14657": {
+    "name": "Event - Orcish Poleaxe",
+    "description": "When double clicked, Orcish Poleaxe and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 299,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_orcish_poleaxe_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14658": {
+    "name": "Event - Yaksa Mace",
+    "description": "When double clicked, Yaksa Mace and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 2503,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_yaksa_mace_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14659": {
+    "name": "Event - Berserker Blade",
+    "description": "When double clicked, Berserker Blade and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 5286,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_berserker_blade_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14660": {
+    "name": "Event - Ecliptic Sword",
+    "description": "When double clicked, Ecliptic Sword and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 7888,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_sword_of_eclipse_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14661": {
+    "name": "Event - Ecliptic Axe",
+    "description": "When double clicked, Ecliptic Axe and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 7891,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_eclipse_axe_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14662": {
+    "name": "Event - Dwarven Hammer",
+    "description": "When double clicked, Dwarven Hammer and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 7897,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_dwarven_hammer_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14663": {
+    "name": "Event - Katana*Katana",
+    "description": "When double clicked, Katana*Katana and 3 honey wheat cake can be acquired.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 2582,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13421,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.weapon_dual_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "14664": {
+    "name": "Gludio Protection Earring",
+    "description": "Earring given to the guardian of Gludio territory. Stun Attack +15%, Bleed Defence +15%, Water Power Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Gludio",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "WaterResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8348,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14665": {
+    "name": "Dion Protection Earring",
+    "description": "Earring given to the guardian of Dion territory. Hold Attack +15%, Resistance to Poison +15%, Resistance to Holy +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Dion",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "HolyResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8349,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14666": {
+    "name": "Giran Protection Earring",
+    "description": "Earring given to the guardian of Giran territory. Bleed Attack +15%, Paralysis Defence +15%, Wind Power Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Giran",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "WindResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8350,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14667": {
+    "name": "Oren Protection Earring",
+    "description": "Earring given to the guardian of Oren territory. Paralysis attack +15%, hold Defence +15%, darkness Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Oren",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "DarkResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8351,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14668": {
+    "name": "Aden Protection Earring",
+    "description": "Earring given to the guardian of Aden territory. Mind Attack +15%, Stun Defence +15%, Earth Power Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing two earrings with the same effect. Royal Guard Earring - Aden",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "EarthResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8352,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14669": {
+    "name": "Innadril Protection Earring",
+    "description": "Earring given to the guardian of Innadril territory. Sleep Attack +15%, Stun Defence +15%, Water Power Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Innadril",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "WaterResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8353,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14670": {
+    "name": "Goddard Protection Earring",
+    "description": "Earring given to the guardian of Goddard territory. Stun Attack +15%, Sleep Defence +15%, Fire Power Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Goddard",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "FireResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8354,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14671": {
+    "name": "Rune Protection Earring",
+    "description": "Earring given to the guardian of Rune territory. Poison Attack +15%, Hold Defence +15%, Fire Power Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Rune",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "FireResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8355,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14672": {
+    "name": "Schuttgart Protection Earring",
+    "description": "Earring given to the guardian of Schuttgart territory. Hold Attack +15%, Fear Defence +15%, Wind Power Defence +8. Cannot be exchanged or dropped. Only one effect is applied when wearing the same two earrings. Royal Guard Earring - Schuttgart",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      },
+      "WindResistance": {
+        "add": 8
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8356,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14673": {
+    "name": "Rudolph's Nose",
+    "description": "Rudolph's Nose. Can be used only during the Christmas season.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.Accessory_nose_of_rudolph_mask_i00",
+    "dropable": false
+  },
+  "14674": {
+    "name": "Santa Claus' Tallum Blade*Damascus",
+    "description": "Santa Claus' Tallum Blade*Damascus Santa Claus' Blessed Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 17
+          }
+        ]
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 61
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1890,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 8315,
+        "level": 1
+      },
+      {
+        "id": 8316,
+        "level": 1
+      },
+      {
+        "id": 8317,
+        "level": 1
+      },
+      {
+        "id": 8318,
+        "level": 1
+      },
+      {
+        "id": 8319,
+        "level": 1
+      },
+      {
+        "id": 8320,
+        "level": 1
+      },
+      {
+        "id": 8321,
+        "level": 1
+      },
+      {
+        "id": 8322,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14675": {
+    "name": "Agathion Seal Bracelet - Neolithica",
+    "description": "Bracelet that can summon an Agathion. Cannot be exchanged or dropped. Cannot receive the gift if the inventory and weight are full. Release Seal on Agathion - Neolithica",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.pi_high_agathion_bracelet_i00",
+    "time": 47520,
+    "item_skills": [
+      {
+        "id": 8314,
+        "level": 1
+      },
+      {
+        "id": 6124,
+        "level": 1
+      },
+      {
+        "id": 8323,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14676": {
+    "name": "Agathion's New Year's Gift",
+    "description": "Agathion's New Year's gift. You can receive Agathion's gift by double clicking. Agathion's New Year's Gift 1",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i03",
+    "stackable": true
+  },
+  "14677": {
+    "name": "Agathion's New Year's Gift",
+    "description": "Agathion's New Year's gift. You can receive Agathion's gift by double clicking. Agathion's New Year's Gift 2",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i03",
+    "stackable": true
+  },
+  "14678": {
+    "name": "Neolithic Crystal - B",
+    "description": "If you bring it to the Dimensional Merchant, you can exchange a B-Grade ordinary item for a Masterwork Item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_warding_orb_blue_i00",
+    "stackable": true
+  },
+  "14679": {
+    "name": "Neolithic Crystal - A",
+    "description": "If you bring it to the Dimensional Merchant, you can exchange an A-Grade ordinary item for a Masterwork Item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_warding_orb_green_i00",
+    "stackable": true
+  },
+  "14680": {
+    "name": "Neolithic Crystal - S",
+    "description": "If you bring it to the Dimensional Merchant, you can exchange a S-Grade ordinary item for a Masterwork Item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_warding_orb_red_i00",
+    "stackable": true
+  },
+  "14681": {
+    "name": "Neolithic Crystal - S80",
+    "description": "If you bring it to the Dimensional Merchant, you can exchange a S80-Grade ordinary item for a Masterwork Item.",
+    "quality": "Masterwork",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_warding_orb_black_i00",
+    "stackable": true
+  },
+  "14682": {
+    "name": "Greater Elixir of Life (No-Grade)",
+    "description": "Regenerates HP. Can only be used by characters below level 19 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Life",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_hp_potion_i00",
+    "item_skills": [
+      {
+        "id": 2860,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14683": {
+    "name": "Greater Elixir of Life (D-Grade)",
+    "description": "Regenerates HP. Can only be used by characters above level 20 and below level 39 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Life",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "D",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_hp_potion_i01",
+    "item_skills": [
+      {
+        "id": 2860,
+        "level": 2
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14684": {
+    "name": "Greater Elixir of Life (C-Grade)",
+    "description": "Regenerates HP. Can only be used by characters above level 40 and below level 51 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Life",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "C",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_hp_potion_i02",
+    "item_skills": [
+      {
+        "id": 2860,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14685": {
+    "name": "Greater Elixir of Life (B-Grade)",
+    "description": "Regenerates HP. Can only be used by characters above level 52 and below level 60 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Life",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "B",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_hp_potion_i03",
+    "item_skills": [
+      {
+        "id": 2860,
+        "level": 4
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14686": {
+    "name": "Greater Elixir of Life (A-Grade)",
+    "description": "Regenerates HP. Can only be used by characters above level 61 and below level 75 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Life",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "A",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_hp_potion_i04",
+    "item_skills": [
+      {
+        "id": 2860,
+        "level": 5
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14687": {
+    "name": "Greater Elixir of Life (S-Grade)",
+    "description": "Regenerates HP. Can only be used by characters above level 76 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Life",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "S",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_hp_potion_i05",
+    "item_skills": [
+      {
+        "id": 2860,
+        "level": 6
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14688": {
+    "name": "Greater Elixir of Mental Strength (No-Grade)",
+    "description": "Regenerates MP. Can only be used by characters below level 19 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Mind",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_mp_potion_i00",
+    "item_skills": [
+      {
+        "id": 2861,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14689": {
+    "name": "Greater Elixir of Mental Strength (D-Grade)",
+    "description": "Regenerates MP. Can only be used by characters above level 20 and below level 39 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Mind",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "D",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_mp_potion_i01",
+    "item_skills": [
+      {
+        "id": 2861,
+        "level": 2
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14690": {
+    "name": "Greater Elixir of Mental Strength (C-Grade)",
+    "description": "Regenerates MP. Can only be used by characters above level40 and below level 51 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Mind",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "C",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_mp_potion_i02",
+    "item_skills": [
+      {
+        "id": 2861,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14691": {
+    "name": "Greater Elixir of Mental Strength (B-Grade)",
+    "description": "Regenerates MP. Can only be used by characters above level 52 and below level 60 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Mind",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "B",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_mp_potion_i03",
+    "item_skills": [
+      {
+        "id": 2861,
+        "level": 4
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14692": {
+    "name": "Greater Elixir of Mental Strength (A-Grade)",
+    "description": "Regenerates MP. Can only be used by characters above level 61 and below level 75 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Mind",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "A",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_mp_potion_i04",
+    "item_skills": [
+      {
+        "id": 2861,
+        "level": 5
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14693": {
+    "name": "Greater Elixir of Mental Strength (S-Grade)",
+    "description": "Regenerates MP. Can only be used by characters above level 76 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Mind",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "S",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_mp_potion_i05",
+    "item_skills": [
+      {
+        "id": 2861,
+        "level": 6
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14694": {
+    "name": "Greater Elixir of CP (No Grade)",
+    "description": "Regenerates CP. Can only be used by characters below level 19 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Will",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_cp_potion_i00",
+    "item_skills": [
+      {
+        "id": 2862,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14695": {
+    "name": "Greater Elixir of CP (D-Grade)",
+    "description": "Regenerates CP. Can only be used by characters above level 20 and below level 39 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Will",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "D",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_cp_potion_i01",
+    "item_skills": [
+      {
+        "id": 2862,
+        "level": 2
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14696": {
+    "name": "Greater Elixir of CP (C-Grade)",
+    "description": "Regenerates CP. Can only be used by characters above level 40 and below level 51 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Will",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "C",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_cp_potion_i02",
+    "item_skills": [
+      {
+        "id": 2862,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14697": {
+    "name": "Greater Elixir of CP (B-Grade)",
+    "description": "Regenerates CP. Can only be used by characters above level 52 and below level 60 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Will",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "B",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_cp_potion_i03",
+    "item_skills": [
+      {
+        "id": 2862,
+        "level": 4
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14698": {
+    "name": "Greater Elixir of CP (A-Grade)",
+    "description": "Regenerates CP. Can only be used by characters above level 61 and below level 75 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Will",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "A",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_cp_potion_i04",
+    "item_skills": [
+      {
+        "id": 2862,
+        "level": 5
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "14699": {
+    "name": "Greater Elixir of CP (S-Grade)",
+    "description": "Regenerates CP. Can only be used by characters above level 76 upon themselves. Re-use delay is 5 minutes. Highest Power No-grade Secret Medicine of Will",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "grade": "S",
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_super_cp_potion_i05",
+    "item_skills": [
+      {
+        "id": 2862,
+        "level": 6
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  }
+}

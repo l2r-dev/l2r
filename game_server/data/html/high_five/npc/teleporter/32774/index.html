@@ -1,0 +1,7 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+You want to get out of here? Must be nice... You can exit by throwing a <font color="LEVEL">Shot of Life</font>. Of course, I'm stationed here while people come and go. So what will it be?<br>
+<a action="bypass -h npc_{{ object_id }}_tp 15005">Say you will exit</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{% endblock body %}

@@ -1,0 +1,5070 @@
+{
+  "11100": {
+    "name": "Flaming Dragon Skull - Wisdom",
+    "description": "Masterwork Item that decreases MP consumption when using the skill. Bestows one of the following functions: Acumen, M. Atk., or Magic Silence. Blunt Weapon of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3892,
+        "level": 1
+      }
+    ]
+  },
+  "11101": {
+    "name": "Flaming Dragon Skull - Wisdom - Acumen",
+    "description": "Masterwork Item that decreases MP consumption when using the skill. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Blunt Weapon of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3892,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "11102": {
+    "name": "Flaming Dragon Skull - Wisdom - M. Atk.",
+    "description": "Masterwork Item that decreases MP consumption when using the skill. <Soul Crystal Enhancement>. Increases MP consumption by 15% and increases M. Atk. by 167 when using magic. Increases damage inflicted during PvP. Blunt Weapon of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3892,
+        "level": 1
+      },
+      {
+        "id": 3073,
+        "level": 2
+      }
+    ]
+  },
+  "11103": {
+    "name": "Flaming Dragon Skull - Wisdom - Magic Silence",
+    "description": "Masterwork Item that decreases MP consumption upon skill use. <Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target. Increases damage inflicted during PvP. Blunt Weapon of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3074,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3892,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11104": {
+    "name": "Branch of the Mother Tree - Nature",
+    "description": "Masterwork Item that increases Max MP. Bestows one of the following functions: Conversion, Magic Damage, or Acumen. Staff of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 226
+      },
+      "MAtk": {
+        "set": 167
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 900,
+    "icon": "icon.weapon_worldtrees_branch_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3901,
+        "level": 1
+      }
+    ]
+  },
+  "11105": {
+    "name": "Branch of the Mother Tree - Nature - Conversion",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Staff of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 226
+      },
+      "MAtk": {
+        "set": 167
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 900,
+    "icon": "icon.weapon_worldtrees_branch_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3901,
+        "level": 1
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ]
+  },
+  "11106": {
+    "name": "Branch of the Mother Tree - Nature - Magic Damage",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Has a 30% chance of inflicting an additional power 8 magic damage when using a magic skill on the target. Increases damage inflicted during PvP. Staff of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3049,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "A",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 226
+      },
+      "MAtk": {
+        "set": 167
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 900,
+    "icon": "icon.weapon_worldtrees_branch_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3901,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11107": {
+    "name": "Branch of the Mother Tree - Nature - Acumen",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Staff of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 226
+      },
+      "MAtk": {
+        "set": 167
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 900,
+    "icon": "icon.weapon_worldtrees_branch_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3901,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "11108": {
+    "name": "Sword of Miracles - Holy Spirit",
+    "description": "Masterwork Item that increases heal amount. Bestows one of the following functions: M. Atk., Magic Silence, or Acumen. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "icon.weapon_sword_of_miracle_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      }
+    ]
+  },
+  "11109": {
+    "name": "Sword of Miracles - Holy Spirit - M. Atk.",
+    "description": "Masterwork Item that increases heal amount. <Soul Crystal Enhancement>. Increases MP consumption by 15% and increases M. Atk. by 167 when using magic. Increases damage inflicted during PvP. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "icon.weapon_sword_of_miracle_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      },
+      {
+        "id": 3073,
+        "level": 2
+      }
+    ]
+  },
+  "11110": {
+    "name": "Sword of Miracles - Holy Spirit - Magic Silence",
+    "description": "Masterwork Item that increases heal amount. <Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target. Increases damage inflicted during PvP. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3074,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "icon.weapon_sword_of_miracle_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11111": {
+    "name": "Sword of Miracles - Holy Spirit - Acumen",
+    "description": "Masterwork Item that increases heal amount. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "icon.weapon_sword_of_miracle_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "11112": {
+    "name": "Reaper - Clairvoyance",
+    "description": "Masterwork Item that increases attack range. Kamael Exclusive Weapon: Soul Bow Conversion. Bestows one of the following functions: Cheap Shot, Quick Recovery, or Crt. poison. Crossbow of Long Shot",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11124,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 294
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_shooter_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3870,
+        "level": 1
+      }
+    ]
+  },
+  "11113": {
+    "name": "Reaper - Clairvoyance - Cheap Shot",
+    "description": "Masterwork Item that increases attack range. Kamael Exclusive Weapon: Soul Bow Conversion. <Soul Crystal Enhancement> . Decreases MP consumption by 12% when using skills. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11125,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 294
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3360,
+        "level": 1
+      },
+      {
+        "id": 3870,
+        "level": 1
+      }
+    ]
+  },
+  "11114": {
+    "name": "Reaper - Clairvoyance - Quick Recovery",
+    "description": "Masterwork Item that increases attack range. Kamael Exclusive Weapon: Soul Bow Conversion. . <Soul Crystal Enhancement> . Decreases re-use delay by 15%. Increases damage inflicted during PvP. Crossbow of Long Shot",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11126,
+        "reuse_delay": 332
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 294
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3870,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11115": {
+    "name": "Reaper - Clairvoyance - Critical Poison",
+    "description": "Masterwork Item that increases the range. Kamael Exclusive Weapon: Soul Bow Conversion. <Soul Crystal Enhancement>. Poisons the target with a 18% chance during a general critical attack. Increases damage inflicted during PvP. Crossbow of Long Shot",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11127,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 294
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3870,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11116": {
+    "name": "Soul Separator - On Fire",
+    "description": "Masterwork Item that increases HP regeneration. Bestows one of the following functions: Guidance, Critical Damage, or Rsk. Haste. Dagger of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 203
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 20741000,
+    "weight": 950,
+    "icon": "icon.weapon_soul_separator_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3860,
+        "level": 1
+      }
+    ]
+  },
+  "11117": {
+    "name": "Soul Separator - On Fire - Guidance",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases Accuracy by 4. Increases damage inflicted during PvP. Dagger of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 203
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 20741000,
+    "weight": 950,
+    "icon": "icon.weapon_soul_separator_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3860,
+        "level": 1
+      },
+      {
+        "id": 3064,
+        "level": 1
+      }
+    ]
+  },
+  "11118": {
+    "name": "Soul Separator - On Fire - Critical Damage",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases P. Atk. by 200 on a critical attack. Increases damage inflicted during PvP. Dagger of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 203
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 20741000,
+    "weight": 950,
+    "icon": "icon.weapon_soul_separator_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3860,
+        "level": 1
+      },
+      {
+        "id": 3066,
+        "level": 2
+      }
+    ]
+  },
+  "11119": {
+    "name": "Soul Separator - On Fire - Rsk. Haste",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases Atk. Spd. by 11% when HP drops to 60% or lower. Increases damage inflicted during PvP. Dagger of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 203
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 20741000,
+    "weight": 950,
+    "icon": "icon.weapon_soul_separator_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3860,
+        "level": 1
+      },
+      {
+        "id": 3056,
+        "level": 2
+      }
+    ]
+  },
+  "11120": {
+    "name": "Elysian - Great Gale",
+    "description": "Masterwork Item that increases Atk. Spd. Bestows one of the following functions: Health, Anger, or Critical Drain. Blunt Weapon of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1580,
+    "icon": "icon.weapon_elysian_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3886,
+        "level": 1
+      }
+    ]
+  },
+  "11121": {
+    "name": "Elysian - Great Gale - Health",
+    "description": "Masterwork Item that increases Atk. Spd. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Blunt Weapon of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1580,
+    "icon": "icon.weapon_elysian_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3886,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11122": {
+    "name": "Elysian - Great Gale - Anger",
+    "description": "Masterwork Item that increases Atk. Spd. <Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 32. Increases damage inflicted during PvP. Blunt Weapon of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1580,
+    "icon": "icon.weapon_elysian_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3886,
+        "level": 1
+      },
+      {
+        "id": 3057,
+        "level": 2
+      }
+    ]
+  },
+  "11123": {
+    "name": "Elysian - Great Gale - Critical Drain",
+    "description": "Masterwork Item that increases Atk. Spd. <Soul Crystal Enhancement>. Absorbs 19 HP from a target on a critical attack. Increases damage inflicted during PvP. Blunt Weapon of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1580,
+    "icon": "icon.weapon_elysian_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3886,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11124": {
+    "name": "Soul Bow - Clairvoyance",
+    "description": "Masterwork Item that increases attack range. Bestows one of the following functions: Cheap Shot, Quick Recovery, or Crt. Poison. Bow of Long Shot",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11112,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 528
+      },
+      "MAtk": {
+        "set": 125
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_bow_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3865,
+        "level": 1
+      }
+    ]
+  },
+  "11125": {
+    "name": "Soul Bow - Clairvoyance - Cheap Shot",
+    "description": "Masterwork Item that increases attack range. <Soul Crystal Enhancement>. Has a 38% chance of decreasing MP consumption to 1 on a general attack. Increases damage inflicted during PvP. Bow of Long Shot",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11113,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 528
+      },
+      "MAtk": {
+        "set": 125
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_bow_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3865,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11126": {
+    "name": "Soul Bow - Clairvoyance - Quick Recovery",
+    "description": "Masterwork Item that increases attack range. <Soul Crystal Enhancement>. Decreases re-use delay by 15%. Increases damage inflicted during PvP. Bow of Long Shot",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11114,
+        "mp_consume": 5,
+        "reuse_delay": 697
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 528
+      },
+      "MAtk": {
+        "set": 125
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_bow_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3865,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11127": {
+    "name": "Soul Bow - Clairvoyance - Critical Poison",
+    "description": "Masterwork Item that increases attack range. <Soul Crystal Enhancement>. Poisons the target at the chance of 18% during the general attack critical. Increases damage inflicted during PvP. Bow of Long Shot",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11115,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 528
+      },
+      "MAtk": {
+        "set": 125
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 20741000,
+    "weight": 1660,
+    "icon": "icon.weapon_soul_bow_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3865,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11128": {
+    "name": "Tallum Glaive - On Fire",
+    "description": "Masterwork Item that increases HP regeneration. Bestows one of the following functions: Guidance, Health, or Wide Blow. Polearm of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1840,
+    "icon": "icon.weapon_tallum_glaive_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3875,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11129": {
+    "name": "Tallum Glaive - On Fire - Guidance",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases Accuracy by 4. Increases damage inflicted during PvP. Polearm of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1840,
+    "icon": "icon.weapon_tallum_glaive_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3875,
+        "level": 1
+      },
+      {
+        "id": 3602,
+        "level": 8
+      }
+    ]
+  },
+  "11130": {
+    "name": "Tallum Glaive - On Fire - Health",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Polearm of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1840,
+    "icon": "icon.weapon_tallum_glaive_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3875,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 4
+      }
+    ]
+  },
+  "11131": {
+    "name": "Tallum Glaive - On Fire - Wide Blow",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Attack angle widens. Increases damage inflicted during PvP. Polearm of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 180
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1840,
+    "icon": "icon.weapon_tallum_glaive_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3875,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ]
+  },
+  "11132": {
+    "name": "Enchanted Cerberus Fang",
+    "description": "Double-click to wear. Exclusive to Maned Wolves H5 Price",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 413
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 21159000,
+    "weight": 100,
+    "icon": "icon.etc_wolf_r_d_01"
+  },
+  "11133": {
+    "name": "Naga Storm - Molar",
+    "description": "Masterwork Item that has a chance to poison when attacking. It can bestow one from the followings: Focus, Critical Damage, or Back Blow. Dagger of Poison",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 26968400,
+    "weight": 930,
+    "icon": "icon.weapon_naga_storm_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3861,
+        "level": 1
+      }
+    ]
+  },
+  "11134": {
+    "name": "Naga Storm - Molar - Focus",
+    "description": "Masterwork Item that has a chance to poison when attacking. <Soul Crystal Enhancement>. Increases Critical by 67. Increases damage inflicted during PvP. Dagger of Poison",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 26968400,
+    "weight": 930,
+    "icon": "icon.weapon_naga_storm_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3861,
+        "level": 1
+      },
+      {
+        "id": 3051,
+        "level": 2
+      }
+    ]
+  },
+  "11135": {
+    "name": "Naga Storm - Molar - Critical Damage",
+    "description": "Masterwork Item that has a chance to poison when attacking. <Soul Crystal Enhancement>. Increases P. Atk. by 200 on a critical attack. Increases damage inflicted during PvP. Dagger of Poison",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 26968400,
+    "weight": 930,
+    "icon": "icon.weapon_naga_storm_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3861,
+        "level": 1
+      },
+      {
+        "id": 3066,
+        "level": 2
+      }
+    ]
+  },
+  "11136": {
+    "name": "Naga Storm - Molar - Back Blow",
+    "description": "Masterwork Item that has a chance to poison when attacking. <Soul Crystal Enhancement>. Increases Critical Rate by 37 when attacking a target from behind. Increases damage inflicted during PvP. Dagger of Poison",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 26968400,
+    "weight": 930,
+    "icon": "icon.weapon_naga_storm_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3861,
+        "level": 1
+      },
+      {
+        "id": 3063,
+        "level": 1
+      }
+    ]
+  },
+  "11137": {
+    "name": "Daimon Crystal - Wisdom",
+    "description": "Masterwork Item that decreases MP consumption when using the skill. Bestows one of the following functions: Mana Up, Acumen, or Mental Shield. Staff of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 177
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 880,
+    "icon": "icon.weapon_crystal_of_deamon_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3902,
+        "level": 1
+      }
+    ]
+  },
+  "11138": {
+    "name": "Daimon Crystal - Wisdom - Mana Up",
+    "description": "Masterwork Item that decreases MP consumption when using the skill. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Staff of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 177
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 880,
+    "icon": "icon.weapon_crystal_of_deamon_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3902,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 3
+      }
+    ]
+  },
+  "11139": {
+    "name": "Daimon Crystal - Wisdom - Acumen",
+    "description": "Masterwork Item that decreases MP consumption when using the skill. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Staff of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 177
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 880,
+    "icon": "icon.weapon_crystal_of_deamon_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3902,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 3
+      }
+    ]
+  },
+  "11140": {
+    "name": "Daimon Crystal - Wisdom - Mental Shield",
+    "description": "Masterwork Item that decreases MP consumption for skill use. <Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target. Increases damage inflicted during PvP. Staff of Clarity",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 177
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 880,
+    "icon": "icon.weapon_crystal_of_deamon_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3902,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11141": {
+    "name": "Barakiel's Axe - On Fire",
+    "description": "Masterwork Item that increases HP regeneration. Bestows one of the following functions: Health, Haste, or Focus. Blunt Weapon of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1550,
+    "icon": "icon.weapon_barakiel_axe_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3887,
+        "level": 1
+      }
+    ]
+  },
+  "11142": {
+    "name": "Barakiel's Axe - On Fire - Health",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Blunt Weapon of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1550,
+    "icon": "icon.weapon_barakiel_axe_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3887,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ]
+  },
+  "11143": {
+    "name": "Barakiel's Axe - On Fire - Haste",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Blunt Weapon of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1550,
+    "icon": "icon.weapon_barakiel_axe_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3887,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ]
+  },
+  "11144": {
+    "name": "Barakiel's Axe - On Fire - Focus",
+    "description": "Masterwork Item that increases HP regeneration. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Blunt Weapon of Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1550,
+    "icon": "icon.weapon_barakiel_axe_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3887,
+        "level": 1
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ]
+  },
+  "11145": {
+    "name": "Screaming Vengeance - Concentration",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Shyeed's Bow Conversion. Bestows one of the following functions: Cheap Shot, Focus, or Quick Recovery. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11157,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 4
+      }
+    ]
+  },
+  "11146": {
+    "name": "Screaming Vengeance - Concentration - Cheap Shot",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Shyeed's Bow Conversion. <Soul Crystal Enhancement>. Decreases MP consumption by 12% when using skills. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11158,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3360,
+        "level": 1
+      },
+      {
+        "id": 3868,
+        "level": 4
+      }
+    ]
+  },
+  "11147": {
+    "name": "Screaming Vengeance - Concentration - Focus",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Shyeed's Bow Conversion. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11159,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 4
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ]
+  },
+  "11148": {
+    "name": "Screaming Vengeance - Concentration - Quick Recovery",
+    "description": "Masterwork Item that increases Accuracy. Kamael Exclusive Weapon: Shyeed's Bow Conversion. <Soul Crystal Enhancement>. Decreases re-use delay by 17%. Increases damage inflicted during PvP. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11160,
+        "reuse_delay": 332
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 4
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11149": {
+    "name": "Behemoth's Tuning Fork - Destruction",
+    "description": "Masterwork Item that increases P. Atk. Bestows one of the following functions: Focus, Health, or Anger. Two-handed Blunt Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1890,
+    "icon": "icon.weapon_tuning_fork_of_behemoth_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3897,
+        "level": 1
+      }
+    ]
+  },
+  "11150": {
+    "name": "Behemoth's Tuning Fork - Destruction - Focus",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Two-handed Blunt Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1890,
+    "icon": "icon.weapon_tuning_fork_of_behemoth_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3897,
+        "level": 1
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ]
+  },
+  "11151": {
+    "name": "Behemoth's Tuning Fork - Destruction - Health",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Two-handed Blunt Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1890,
+    "icon": "icon.weapon_tuning_fork_of_behemoth_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3897,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ]
+  },
+  "11152": {
+    "name": "Behemoth's Tuning Fork - Destruction - Anger",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 32. Increases damage inflicted during PvP. Two-handed Blunt Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1890,
+    "icon": "icon.weapon_tuning_fork_of_behemoth_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3897,
+        "level": 1
+      },
+      {
+        "id": 3057,
+        "level": 3
+      }
+    ]
+  },
+  "11153": {
+    "name": "Bultgang - Earth",
+    "description": "Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Sword of Ipos Conversion. Bestows one of the following functions: Focus, Haste, or Health. Ancient Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11161
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3849,
+        "level": 1
+      }
+    ]
+  },
+  "11154": {
+    "name": "Bultgang - Earth - Focus",
+    "description": "Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Sword of Ipos Conversion. . <Soul Crystal Enhancement> . Increases Critical Attack by 61. Increases damage inflicted during PvP. Ancient Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11162
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3849,
+        "level": 1
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ]
+  },
+  "11155": {
+    "name": "Bultgang - Earth - Haste",
+    "description": "Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Sword of Ipos Conversion. . <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Ancient Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11163
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3849,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ]
+  },
+  "11156": {
+    "name": "Bultgang - Earth - Health",
+    "description": "Masterwork Item that increases Max HP. Kamael Exclusive Weapon: Sword of Ipos Conversion. . <Soul Crystal Enhancement> . Increases Max HP by 25%. Increases damage inflicted during PvP. Ancient Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11164
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3849,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ]
+  },
+  "11157": {
+    "name": "Shyeed's Bow - Concentration",
+    "description": "Masterwork Item that increases Accuracy. Bestows one of the following functions: Cheap Shot, Focus, or Quick Recovery. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11145,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 570
+      },
+      "MAtk": {
+        "set": 133
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_shyid_bow_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 4
+      }
+    ]
+  },
+  "11158": {
+    "name": "Shyeed's Bow - Concentration - Cheap Shot",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Has a 30% chance of decreasing MP consumption to 1 on a general attack. Increases damage inflicted during PvP. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11146,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 570
+      },
+      "MAtk": {
+        "set": 133
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_shyid_bow_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 4
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11159": {
+    "name": "Shyeed's Bow - Concentration - Focus",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11147,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 570
+      },
+      "MAtk": {
+        "set": 133
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_shyid_bow_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 4
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ]
+  },
+  "11160": {
+    "name": "Shyeed's Bow - Concentration - Quick Recovery",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Decreases re-use delay by 17%. Increases damage inflicted during PvP. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11148,
+        "mp_consume": 5,
+        "reuse_delay": 639
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 570
+      },
+      "MAtk": {
+        "set": 133
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "price": 26968400,
+    "weight": 1640,
+    "icon": "icon.weapon_shyid_bow_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 4
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11161": {
+    "name": "Sword of Ipos - Earth",
+    "description": "Masterwork Item that increases Max HP. Bestows one of the following functions: Focus, Haste, or Health. Two-handed Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11153
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_sword_of_ipos_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3843,
+        "level": 1
+      }
+    ]
+  },
+  "11162": {
+    "name": "Sword of Ipos - Earth - Focus",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Critical by 61. Increases damage inflicted during PvP. Two-handed Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11154
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_sword_of_ipos_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3843,
+        "level": 1
+      },
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ]
+  },
+  "11163": {
+    "name": "Sword of Ipos - Earth - Haste",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Two-handed Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11155
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_sword_of_ipos_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3843,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ]
+  },
+  "11164": {
+    "name": "Sword of Ipos - Earth - Health",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Two-handed Sword of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11156
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_sword_of_ipos_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3843,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ]
+  },
+  "11165": {
+    "name": "Sobekk's Hurricane - Landslide",
+    "description": "Masterwork Item that has a chance to stun when attacking. It can bestow one of the following functions: Rsk. Haste, Health, or Critical Drain. Fist Weapon of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1330,
+    "icon": "icon.weapon_sobekk_hurricane_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3882,
+        "level": 1
+      }
+    ]
+  },
+  "11166": {
+    "name": "Sobekk's Hurricane - Landslide - Rsk. Haste",
+    "description": "Masterwork Item that has a chance to stun when attacking. <Soul Crystal Enhancement>. Increases Atk. Spd. by 11% when HP drops to 60% or lower. Increases damage inflicted during PvP. Fist Weapon of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1330,
+    "icon": "icon.weapon_sobekk_hurricane_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3882,
+        "level": 1
+      },
+      {
+        "id": 3056,
+        "level": 3
+      }
+    ]
+  },
+  "11167": {
+    "name": "Sobekk's Hurricane - Landslide - Haste",
+    "description": "Masterwork Item that has a chance to stun. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Fist Weapon of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1330,
+    "icon": "icon.weapon_sobekk_hurricane_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3882,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ]
+  },
+  "11168": {
+    "name": "Sobekk's Hurricane - Landslide - Critical Drain",
+    "description": "Masterwork Item that has a chance to stun when attacking. <Soul Crystal Enhancement>. Has a chance to absorb 14 HP from a target on a critical attack. Increases damage inflicted during PvP. Fist Weapon of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1330,
+    "icon": "icon.weapon_sobekk_hurricane_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3882,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11169": {
+    "name": "Sirra's Blade - Landslide",
+    "description": "Masterwork Item that has a chance to stun. Bestows one of the following functions: Haste, Health, or Crt. Poison. Sword of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11173
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_sirr_blade_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3829,
+        "level": 1
+      }
+    ]
+  },
+  "11170": {
+    "name": "Sirra's Blade - Landslide - Haste",
+    "description": "Masterwork Item that has a chance to stun. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. Sword of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11174
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_sirr_blade_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3829,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ]
+  },
+  "11171": {
+    "name": "Sirra's Blade - Landslide - Health",
+    "description": "Masterwork Item that has a chance to stun when attacking. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Sword of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11175
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_sirr_blade_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3829,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ]
+  },
+  "11172": {
+    "name": "Sirra's Blade - Landslide - Critical Poison",
+    "description": "Masterwork Item that has a chance to stun when attacking. <Soul Crystal Enhancement>. Has a 6% chance to poison a target on a critical attack. Increases damage inflicted during PvP. Sword of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11176
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_sirr_blade_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3829,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11173": {
+    "name": "Éclair Bijou - Landslide",
+    "description": "Masterwork Item that has a chance to stun when attacking. Kamael Exclusive Weapon: Sirra's Blade Conversion. Bestows one of the following functions: Haste, Health, or Crt. Poison. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Rapier of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11169,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3834,
+        "level": 1
+      }
+    ]
+  },
+  "11174": {
+    "name": "Éclair Bijou - Landslide - Haste",
+    "description": "Masterwork Item that has a chance to stun when attacking. Kamael Exclusive Weapon: Sirra's Blade Conversion . <Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Rapier of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11170,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3834,
+        "level": 1
+      },
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ]
+  },
+  "11175": {
+    "name": "Éclair Bijou - Landslide - Health",
+    "description": "Masterwork Item that has a chance to stun when attacking. Kamael Exclusive Weapon: Sirra's Blade Conversion . <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Rapier of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11171,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3834,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ]
+  },
+  "11176": {
+    "name": "Éclair Bijou - Landslide - Critical Poison",
+    "description": "Masterwork Item that has a chance to stun when attacking. Kamael Exclusive Weapon: Sirra's Blade Conversion. . <Soul Crystal Enhancement>. Has a 6% chance to poison a target on a critical attack. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Rapier of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11172,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 26968400,
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3834,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11177": {
+    "name": "Tiphon's Spear - Landslide",
+    "description": "Masterwork Item that has a chance to stun when attacking. Crt. Bestows one of the following functions: Stun, Towering Blow or Wide Blow. Polearm of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_tiphon_spear_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3876,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "11178": {
+    "name": "Tiphon's Spear - Landslide - Critical Stun",
+    "description": "Masterwork Item that has a chance to stun when attacking. <Soul Crystal Enhancement>. Has a 25% chance of stunning a target during a critical attack. Increases damage inflicted during PvP. Polearm of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_tiphon_spear_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3876,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ]
+  },
+  "11179": {
+    "name": "Tiphon's Spear - Landslide - Towering Blow",
+    "description": "Masterwork Item that has a chance to stun. <Soul Crystal Enhancement>. Increases the attack range. Increases damage inflicted during PvP. Polearm of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_tiphon_spear_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3876,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ]
+  },
+  "11180": {
+    "name": "Tiphon's Spear - Landslide - Wild Blow",
+    "description": "Masterwork Item that has a chance to stun. <Soul Crystal Enhancement>. the attack angle widens. Increases damage inflicted during PvP. Polearm of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 180
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1820,
+    "icon": "icon.weapon_tiphon_spear_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3876,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ]
+  },
+  "11181": {
+    "name": "Tallum Blade*Damascus - Landslide",
+    "description": "Masterwork Item that has a chance to stun. . When enchanted, P. Atk. of a dualsword will increase more significantly than that of a one-handed or fist weapon. When enchanted to 4 or more, Atk. Spd. will increase by 8%. Increases damage inflicted during PvP. Dual-Blade Weapon of Stun",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 17
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 26968400,
+    "weight": 1890,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3839,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11182": {
+    "name": "Themis' Tongue - Cleverness",
+    "description": "Masterwork Item that increases MP regeneration. Bestows one of the following functions: Mana Up, Mental Shield, or Magic Focus. Sword of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 820,
+    "icon": "icon.weapon_tongue_of_themis_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3853,
+        "level": 2
+      }
+    ]
+  },
+  "11183": {
+    "name": "Themis' Tongue - Cleverness - Mana Up",
+    "description": "Masterwork Item that increases MP regeneration. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Sword of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 820,
+    "icon": "icon.weapon_tongue_of_themis_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3853,
+        "level": 2
+      },
+      {
+        "id": 3014,
+        "level": 3
+      }
+    ]
+  },
+  "11184": {
+    "name": "Themis' Tongue - Cleverness - Mental Shield",
+    "description": "Masterwork Item that increases MP Regeneration. <Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target. Increases damage inflicted during PvP. Sword of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 820,
+    "icon": "icon.weapon_tongue_of_themis_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3853,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11185": {
+    "name": "Themis' Tongue - Cleverness - Magic Focus",
+    "description": "Masterwork Item that increases MP Regeneration. <Soul Crystal Enhancement>. Has a 20% chance of casting Focus when using a magic skill on the target. Increases damage inflicted during PvP. Sword of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1077,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 820,
+    "icon": "icon.weapon_tongue_of_themis_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3853,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11186": {
+    "name": "Cabrio's Hand - Cleverness",
+    "description": "Masterwork Item that increases MP regeneration. Bestows one of the following functions: Conversion, Mana Up, or Magic Silence. Blunt Weapon of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1510,
+    "icon": "icon.weapon_hand_of_cabrio_i00",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3893,
+        "level": 1
+      }
+    ]
+  },
+  "11187": {
+    "name": "Cabrio's Hand - Cleverness - Conversion",
+    "description": "Masterwork Item that increases MP regeneration. <Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Blunt Weapon of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1510,
+    "icon": "icon.weapon_hand_of_cabrio_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3893,
+        "level": 1
+      },
+      {
+        "id": 3048,
+        "level": 3
+      }
+    ]
+  },
+  "11188": {
+    "name": "Cabrio's Hand - Cleverness - Mana Up",
+    "description": "Masterwork Item that increases MP regeneration. <Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Blunt Weapon of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1510,
+    "icon": "icon.weapon_hand_of_cabrio_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3893,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 3
+      }
+    ]
+  },
+  "11189": {
+    "name": "Cabrio's Hand - Cleverness - Magic Silence",
+    "description": "Masterwork Item that increases MP Regeneration. <Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target. Increases damage inflicted during PvP. Blunt Weapon of Mana Regeneration",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3074,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 26968400,
+    "weight": 1510,
+    "icon": "icon.weapon_hand_of_cabrio_i01",
+    "crystal_count": 2157,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3893,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11190": {
+    "name": "Gram - Thunder",
+    "description": "Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Heaven's Divider Conversion. Bestows one of the following functions: Haste, Health, or Focus. Ancient Sword of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11239
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3850,
+        "level": 1
+      }
+    ]
+  },
+  "11191": {
+    "name": "Gram - Thunder - Haste",
+    "description": "Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Heaven's Divider Conversion. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%.Increases damage inflicted during PvP. Ancient Sword of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11240
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3850,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 1
+      }
+    ]
+  },
+  "11192": {
+    "name": "Gram - Thunder - Health",
+    "description": "Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Heaven's Divider Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Ancient Sword of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11241
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3850,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11193": {
+    "name": "Gram - Thunder - Focus",
+    "description": "Masterwork Item that increases Critical Damage. Kamael Exclusive Weapon: Heaven's Divider Conversion. <Soul Crystal Enhancement>. Increases Critical by 84. Increases damage inflicted during PvP. Ancient Sword of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 11242
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 42759400,
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3850,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 1
+      }
+    ]
+  },
+  "11194": {
+    "name": "Demon Splinter - Thunder",
+    "description": "Masterwork Item that increases Critical Damage. Bestows one of the following functions: Focus, Health, or Critical Stun. Fist Weapon of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3883,
+        "level": 1
+      }
+    ]
+  },
+  "11195": {
+    "name": "Demon Splinter - Thunder - Focus",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases Critical by 80. Increases damage inflicted during PvP. Fist Weapon of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3883,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 1
+      }
+    ]
+  },
+  "11196": {
+    "name": "Demon Splinter - Thunder - Health",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Fist Weapon of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3883,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "11197": {
+    "name": "Demon Splinter - Thunder - Critical Stun",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Has a 27% chance of casting Stun on a critical attack. Increases damage inflicted during PvP. Fist Weapon of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 42759400,
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3883,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "11198": {
+    "name": "Draconic Bow - Earth",
+    "description": "Masterwork Item that increases Max HP. Bestows one of the following functions: Cheap Shot, Focus, or Critical Slow. Bow of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11214,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 42759400,
+    "weight": 1650,
+    "icon": "icon.weapon_draconic_bow_i00",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3867,
+        "level": 1
+      }
+    ]
+  },
+  "11199": {
+    "name": "Draconic Bow - Earth - Cheap Shot",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Has a 26% chance of decreasing MP consumption to 1 on a general attack. Increases damage inflicted during PvP. Bow of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 11215,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 42759400,
+    "weight": 1650,
+    "icon": "icon.weapon_draconic_bow_i01",
+    "crystal_count": 2052,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3867,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,1040 @@
+{
+  "12774": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Young Squash",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 3,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Light Armor Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4441,
+        "level": 5,
+        "description": "Others"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 10
+      }
+    }
+  },
+  "12775": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "High Quality Squash",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 3,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Light Armor Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4441,
+        "level": 5,
+        "description": "Others"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 23,
+        "height": 25
+      }
+    }
+  },
+  "12776": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Low Quality Squash",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 3,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Light Armor Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4441,
+        "level": 5,
+        "description": "Others"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 15,
+        "height": 16
+      }
+    }
+  },
+  "12777": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Large Young Squash",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 3,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Light Armor Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4441,
+        "level": 5,
+        "description": "Others"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 23,
+        "height": 25
+      }
+    }
+  },
+  "12778": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "High Quality Large Squash",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 3,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Light Armor Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4441,
+        "level": 5,
+        "description": "Others"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 34,
+        "height": 40
+      }
+    }
+  },
+  "12779": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Low Quality Large Squash",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 3,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Light Armor Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4441,
+        "level": 5,
+        "description": "Others"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 28,
+        "height": 31
+      }
+    }
+  },
+  "12780": {
+    "level": 25,
+    "kind": "BabyPet",
+    "name": "Baby Buffalo",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 460.96247,
+        "MaxMp": 259.2,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 64.83203,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 44.27187,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 101.83533,
+        "MDef": 74.51868
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 15
+      }
+    }
+  },
+  "12781": {
+    "level": 25,
+    "kind": "BabyPet",
+    "name": "Baby Kookaburra",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 460.96247,
+        "MaxMp": 259.2,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 64.83203,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 44.27187,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 101.83533,
+        "MDef": 74.51868
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 13,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 7,
+        "height": 15
+      }
+    }
+  },
+  "12782": {
+    "level": 25,
+    "kind": "BabyPet",
+    "name": "Baby Cougar",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 460.96247,
+        "MaxMp": 259.2,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 64.83203,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 44.27187,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 101.83533,
+        "MDef": 74.51868
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 28,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 11,
+        "height": 15
+      }
+    }
+  }
+}

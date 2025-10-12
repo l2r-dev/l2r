@@ -1,0 +1,9 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+This is the pier for Gludio Airships. Airships headed for the continent of Gracia also arrive and depart from here.<br>
+We tap into a strong aura of power and depend on favorable winds to allow the Airships to travel such a far distance.<br>
+If you're not ready to leave for Gracia yet, you'd best go back.<br>
+<a action="bypass -h npc_{{ object_id }}_tp 12119">Move to Talking Island.</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{% endblock body %}

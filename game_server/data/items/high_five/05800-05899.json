@@ -1,0 +1,1363 @@
+{
+  "5800": {
+    "name": "Nephilim Lord",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1380,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "5801": {
+    "name": "For NPC (Dusk)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1380,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "5802": {
+    "name": "For NPC (Dawn)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1380,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "5803": {
+    "name": "Lucky Charm (D-Grade)",
+    "description": "Bestows blessing on its owner such that when the owner dies during a boss/raid war, his/her abilities will not be diminished. This item can only be used on self, by a character whose level is between 20 and 39. Raid Blessing",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 330,
+    "weight": 10,
+    "icon": "icon.etc_charm_of_luck_i00",
+    "item_skills": [
+      {
+        "id": 2168,
+        "level": 2
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "5804": {
+    "name": "Lucky Charm (C-Grade)",
+    "description": "Bestows blessing on its owner such that when the owner dies during a boss/raid war, his/her abilities will not be diminished. This item can only be used on self by a character whose level is between 40 and 51. Raid Blessing",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 660,
+    "weight": 10,
+    "icon": "icon.etc_charm_of_luck_i00",
+    "item_skills": [
+      {
+        "id": 2168,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "5805": {
+    "name": "Lucky Charm (B-Grade)",
+    "description": "Bestows blessing on its owner such that when the owner dies during a boss/raid war, his/her abilities will not be diminished. This item can only be used on self by a character whose level is between 52 and 60. Raid Blessing",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 1300,
+    "weight": 10,
+    "icon": "icon.etc_charm_of_luck_i00",
+    "item_skills": [
+      {
+        "id": 2168,
+        "level": 4
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "5806": {
+    "name": "Lucky Charm (A-Grade)",
+    "description": "Bestows blessing on its owner such that when the owner dies during a boss/raid war, his/her abilities will not be diminished. This item can only be used on self by a character whose level is between 61 and 75. Raid Blessing",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 2700,
+    "weight": 10,
+    "icon": "icon.etc_charm_of_luck_i00",
+    "item_skills": [
+      {
+        "id": 2168,
+        "level": 5
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "5807": {
+    "name": "Lucky Charm (S-Grade)",
+    "description": "Bestows blessing on its owner such that when the owner dies during a boss/raid war, his/her abilities will not be diminished. This item can only be used on self by a character whose level is 76 or higher. Raid Blessing",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 5000,
+    "weight": 10,
+    "icon": "icon.etc_charm_of_luck_i00",
+    "item_skills": [
+      {
+        "id": 2168,
+        "level": 6
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "5808": {
+    "name": "Party Mask",
+    "description": "Fashion item used to display a unique appearance.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.etc_party_mask_i00"
+  },
+  "5809": {
+    "name": "Spellbook: Aqua Splash",
+    "description": "Spellbook needed to learn Aqua Splash. Used by Spellsingers. Required level: 58",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 6750,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "5810": {
+    "name": "Spellbook: Rain of Fire",
+    "description": "Spellbook needed to learn Rain of Fire. Used by Sorcerers and Spellsingers. Required level: 58",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 6750,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "5811": {
+    "name": "Spellbook: Mass Slow",
+    "description": "Spellbook needed to learn Mass Slow. Used by Necromancers. Required level: 62",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7700,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_black_i00",
+    "stackable": true
+  },
+  "5812": {
+    "name": "Spellbook: Servitor Empowerment",
+    "description": "Spellbook needed to learn Servitor Empowerment. Used by Warlocks, Elemental Summoners and Phantom Summoners. Required level: 52",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 5400,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "5813": {
+    "name": "Spellbook: Servitor Cure",
+    "description": "Spellbook needed to learn Servitor Cure. Used by Warlocks, Elemental Summoners and Phantom Summoners. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "5814": {
+    "name": "Spellbook: Servitor Blessing",
+    "description": "Spellbook needed to learn Servitor Blessing. Used by Warlocks, Elemental Summoners and Phantom Summoners. Required level: 62",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7700,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "5815": {
+    "name": "Spellbook: Wild Magic",
+    "description": "Spellbook needed to learn Wild. Used by Elven Elders and Shillien Elders. Required level: 62",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7700,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "5816": {
+    "name": "Spellbook: Advanced Block",
+    "description": "Spellbook needed to learn Advanced Block. Used by Elven Elders. Required level: 58",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 6750,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "5817": {
+    "name": "Chrono Campana",
+    "description": "Chronicle III Souvenir!!! Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "icon": "icon.weapon_chrono_campana_i00",
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "dropable": false
+  },
+  "5818": {
+    "name": "Alternative Dark Coda",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 2,
+    "icon": "icon.etc_coda_i08",
+    "stackable": true
+  },
+  "5819": {
+    "name": "Alternative Red Coda",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 2,
+    "icon": "icon.etc_coda_i03",
+    "stackable": true
+  },
+  "5820": {
+    "name": "Alternative Chilly Coda",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 2,
+    "icon": "icon.etc_coda_i00",
+    "stackable": true
+  },
+  "5821": {
+    "name": "Alternative Blue Coda",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 100,
+    "weight": 2,
+    "icon": "icon.etc_coda_i02",
+    "stackable": true
+  },
+  "5822": {
+    "name": "Alternative Golden Coda",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 200,
+    "weight": 2,
+    "icon": "icon.etc_coda_i04",
+    "stackable": true
+  },
+  "5823": {
+    "name": "Alternative Lute Coda",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 300,
+    "weight": 2,
+    "icon": "icon.etc_coda_i06",
+    "stackable": true
+  },
+  "5824": {
+    "name": "Alternative Desert Coda",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 200,
+    "weight": 2,
+    "icon": "icon.etc_coda_i05",
+    "stackable": true
+  },
+  "5825": {
+    "name": "Alternative Red Cobol",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 200,
+    "weight": 2,
+    "icon": "icon.etc_cobol_i03",
+    "stackable": true
+  },
+  "5826": {
+    "name": "Alternative Chilly Cobol",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 250,
+    "weight": 2,
+    "icon": "icon.etc_cobol_i00",
+    "stackable": true
+  },
+  "5827": {
+    "name": "Alternative Blue Cobol",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.etc_cobol_i02",
+    "stackable": true
+  },
+  "5828": {
+    "name": "Alternative Thorn Cobol",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.etc_cobol_i07",
+    "stackable": true
+  },
+  "5829": {
+    "name": "Alternative Golden Cobol",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.etc_cobol_i04",
+    "stackable": true
+  },
+  "5830": {
+    "name": "Alternative Great Cobol",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.etc_cobol_i09",
+    "stackable": true
+  },
+  "5831": {
+    "name": "Alternative Red Codran",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 400,
+    "weight": 2,
+    "icon": "icon.etc_codran_i03",
+    "stackable": true
+  },
+  "5832": {
+    "name": "Alternative Sea Codran",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.etc_codran_i06",
+    "stackable": true
+  },
+  "5833": {
+    "name": "Alternative Chilly Codran",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 400,
+    "weight": 2,
+    "icon": "icon.etc_codran_i00",
+    "stackable": true
+  },
+  "5834": {
+    "name": "Alternative Blue Codran",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.etc_codran_i02",
+    "stackable": true
+  },
+  "5835": {
+    "name": "Alternative Twin Codran",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.etc_codran_i07",
+    "stackable": true
+  },
+  "5836": {
+    "name": "Alternative Great Codran",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 750,
+    "weight": 2,
+    "icon": "icon.etc_codran_i09",
+    "stackable": true
+  },
+  "5837": {
+    "name": "Alternative Desert Codran",
+    "kind": {
+      "Manor": "Crop"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 2,
+    "icon": "icon.etc_codran_i05",
+    "stackable": true
+  },
+  "5838": {
+    "name": "Mature Alternative Dark Coda",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_coda_i08",
+    "stackable": true
+  },
+  "5839": {
+    "name": "Mature Alternative Red Coda",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_coda_i03",
+    "stackable": true
+  },
+  "5840": {
+    "name": "Mature Alternative Chilly Coda",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 1,
+    "icon": "icon.etc_coda_i00",
+    "stackable": true
+  },
+  "5841": {
+    "name": "Mature Alternative Blue Coda",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 100,
+    "weight": 1,
+    "icon": "icon.etc_coda_i02",
+    "stackable": true
+  },
+  "5842": {
+    "name": "Mature Alternative Golden Coda",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 200,
+    "weight": 1,
+    "icon": "icon.etc_coda_i04",
+    "stackable": true
+  },
+  "5843": {
+    "name": "Mature Alternative Lute Coda",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 300,
+    "weight": 1,
+    "icon": "icon.etc_coda_i06",
+    "stackable": true
+  },
+  "5844": {
+    "name": "Mature Alternative Desert Coda",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 200,
+    "weight": 1,
+    "icon": "icon.etc_coda_i05",
+    "stackable": true
+  },
+  "5845": {
+    "name": "Mature Alternative Red Cobol",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 200,
+    "weight": 1,
+    "icon": "icon.etc_cobol_i03",
+    "stackable": true
+  },
+  "5846": {
+    "name": "Mature Alternative Chilly Cobol",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 250,
+    "weight": 1,
+    "icon": "icon.etc_cobol_i00",
+    "stackable": true
+  },
+  "5847": {
+    "name": "Mature Alternative Blue Cobol",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_cobol_i02",
+    "stackable": true
+  },
+  "5848": {
+    "name": "Mature Alternative Thorn Cobol",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_cobol_i07",
+    "stackable": true
+  },
+  "5849": {
+    "name": "Mature Alternative Golden Cobol",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_cobol_i04",
+    "stackable": true
+  },
+  "5850": {
+    "name": "Mature Alternative Great Cobol",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_cobol_i09",
+    "stackable": true
+  },
+  "5851": {
+    "name": "Mature Alternative Red Codran",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 400,
+    "weight": 1,
+    "icon": "icon.etc_codran_i03",
+    "stackable": true
+  },
+  "5852": {
+    "name": "Mature Alternative Sea Codran",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_codran_i06",
+    "stackable": true
+  },
+  "5853": {
+    "name": "Mature Alternative Chilly Codran",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 400,
+    "weight": 1,
+    "icon": "icon.etc_codran_i00",
+    "stackable": true
+  },
+  "5854": {
+    "name": "Mature Alternative Blue Codran",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_codran_i02",
+    "stackable": true
+  },
+  "5855": {
+    "name": "Mature Alternative Twin Codran",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_codran_i07",
+    "stackable": true
+  },
+  "5856": {
+    "name": "Mature Alternative Great Codran",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 750,
+    "weight": 1,
+    "icon": "icon.etc_codran_i09",
+    "stackable": true
+  },
+  "5857": {
+    "name": "Mature Alternative Desert Codran",
+    "kind": {
+      "Manor": "MatureCrop"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_codran_i05",
+    "stackable": true
+  },
+  "5858": {
+    "name": "Blessed Scroll of Escape: Clan Hall",
+    "description": "A magical scroll that transports you to your clan hall. If you don't belong to a clan that possesses a clan hall, this scroll will have no effect. Blessed Scroll of Escape: Clan Hall",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_return_agit_i01",
+    "item_skills": [
+      {
+        "id": 2177,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "5859": {
+    "name": "Blessed Scroll of Escape: Castle",
+    "description": "A magical scroll that transports you to your castle. If you don't belong to a clan that controls a castle, this scroll will have no effect. Blessed Scroll of Escape: Castle",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 80000,
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_return_castle_i01",
+    "item_skills": [
+      {
+        "id": 2178,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "5860": {
+    "name": "Lienrik Egg",
+    "description": "Lienrik's egg. It's the item that Pet Manager Rood of Heine asked you to find for him.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_dragon_egg_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5861": {
+    "name": "Lienrik Egg",
+    "description": "Lienrik's shiny red egg. Pet Manager Rood of Heine asked you to find it for him, but...?",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_dragon_egg_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5862": {
+    "name": "Stone of Contract",
+    "description": "In order to obtain the power of darkness, you will first need to secure this item. Take it to Trader Galman in Dragon Valley.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5863": {
+    "name": "Alligator Tooth",
+    "description": "Sharp canine tooth of the Alligator. Bring this to the warehouse keeper of Heine.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_fang_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5864": {
+    "name": "Mysterious Map Piece",
+    "description": "A faded piece of paper. Possibly part of a map.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_map_piece_ivory_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5865": {
+    "name": "Carnivore Spore",
+    "description": "A tissue sample collected from a spore zombie from the Sea of Spores. It is used as research material by Magister Gauen of the Ivory Tower.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_pouch_gray_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5866": {
+    "name": "Herbivorous Spore",
+    "description": "A spore sample collected from a rotting tree from the Sea of Spores. It is used as research material by Magister Gauen of the Ivory Tower.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_pouch_yellow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5867": {
+    "name": "Jade Crystal",
+    "description": "A jade crystal collected from the Enchanted Valley. Take it to Warehouse Freightman Silva of Hunters Village.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_gem_green_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5868": {
+    "name": "Snake Scale",
+    "description": "A snake scale from the bodies of Falibati and Trives. Take it to Grand Master Oltran of Town of Aden.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_scale_of_medusa_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5869": {
+    "name": "Remains of Aden Residents",
+    "description": "Remains of residents of Aden Castle who were killed during the Aden-Elmore war. Collect 60 of them and take them to High Priest Orven.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_ashes_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5870": {
+    "name": "Receipt of Supply",
+    "description": "A document made from collected mysterious document pieces. Take it to Guard Coleman.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_piece_of_paper_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5871": {
+    "name": "Suspicious Document Piece",
+    "description": "A piece of document that seems to contain some suspicious contents. If you collect 5 of them, you may be able to decipher the information the document conveys.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_piece_of_report_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5872": {
+    "name": "Supply Items",
+    "description": "Supply items for Taik Orcs. Take it to Guard Coleman and he will give you a reward.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_squares_wood_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5873": {
+    "name": "Pirate's Treasure Chest",
+    "description": "A treasure chest that was obtained by slaying Zaken's followers. Take it to Warehouse Keeper Randolf of Town of Giran.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_jewel_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5874": {
+    "name": "Sairon's Silver Hair",
+    "description": "Sairon's hair. Take it to Magister Dieter of Town of Giran.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_pouch_gray_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5875": {
+    "name": "Titan Lamp",
+    "description": "It is called a Titan lamp. It is not lit.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5876": {
+    "name": "Titan Lamp",
+    "description": "It is called a Titan lamp. It is burning dimly.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5877": {
+    "name": "Titan Lamp",
+    "description": "It is called a Titan lamp. It is lit.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5878": {
+    "name": "Titan Lamp",
+    "description": "It is called a Titan lamp. It is lit.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5879": {
+    "name": "Titan Lamp",
+    "description": "It is called a Titan lamp. It is shining brightly.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5880": {
+    "name": "Broken Titan Lamp",
+    "description": "A broken Titan lamp. Take it to Lorain.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_broken_crystal_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5881": {
+    "name": "Blade Stakato Fang",
+    "description": "A fang that was obtained from killing a blade stakato. Take it to Eva's Priestess Restina in Heine.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_claw_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5882": {
+    "name": "Flare Shard",
+    "description": "A flare shard obtained from the Forgotten Temple. Take it to Magister Nell of Gludin Village.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_echo_crystal_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5883": {
+    "name": "Freezing Shard",
+    "description": "A water shard obtained from the Forgotten Temple. Take it to Magister Nell of Gludin Village.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_echo_crystal_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5884": {
+    "name": "Cave Beast Tooth",
+    "description": "An ingredient used by Orc Shamans during a ritual. Take it to Seer Manakia.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_fang_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5885": {
+    "name": "Death Wave Light",
+    "description": "An ingredient used by Orc Shamans during their ritual. Take it to Seer Manakia.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_crystal_ball_green_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5886": {
+    "name": "Sealed Mysterious Stone",
+    "description": "A pebble that radiates a strange aura. It sends out a dim light.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_dragon_egg_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5887": {
+    "name": "Mysterious Stone",
+    "description": "A pebble that radiates a strange aura. It is shining brightly.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_dragon_egg_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5888": {
+    "name": "Karik Horn",
+    "description": "An ingredient used by Orc Shamans during a ritual. Take it to Seer Manakia.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_horn_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5889": {
+    "name": "Cave Howler Skull",
+    "description": "An ingredient used by Orc Shamans during a ritual. Take it to Seer Manakia.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_skull_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5890": {
+    "name": "Mysterious Book",
+    "description": "A book obtained from The Giant's Cave. Written in an ancient language, its contents cannot be deciphered.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_spellbook_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5891": {
+    "name": "Ancient Language Dictionary: Basic Level",
+    "description": "A simple dictionary published by scholars of ancient times. By using this, you can interpret some of the texts of the Titans.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_spellbook_gray_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5892": {
+    "name": "Ancient Language Dictionary: Intermediate Level",
+    "description": "A dictionary published by scholars of ancient times. By using this, you can interpret the entire texts of the Titans.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_spellbook_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5893": {
+    "name": "Leaf of Eucalyptus",
+    "description": "One of the ingredients used to make wine. Collect 80 of them and take them to Guard Harlan located in the Town of Dion.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_herb_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5894": {
+    "name": "Stone of Chill",
+    "description": "A magical stone used by Enku Orc Shamans when they cast ice magic. Collect 100 of these and take them to Guard Harlan located in the Town of Dion.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_crystal_ball_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5895": {
+    "name": "Ritron's Fruit",
+    "description": "A fruit with a tough, hard outer skin and a fragrant smell. Collect 4 of these and take them to Magister Rollant in the Town of Dion.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_cobol_i05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5896": {
+    "name": "Moon Face Flower",
+    "description": "A flower that is said to bloom only under moonlight. Collect 20 of these and take them to Magister Rollant in the Town of Dion.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_flower_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5897": {
+    "name": "Leech Fluids",
+    "description": "The bodily fluids of a Leech that can be obtained from the Cruma Marshlands. Collect 10 of these and take them to Magister Rollant in the Town of Dion.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_reagent_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5898": {
+    "name": "Royal Membership",
+    "description": "It's a coin collectors' dream! Take it to Head Blacksmith Vergara.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_royal_membership_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "5899": {
+    "name": "Kail's Coin",
+    "description": "A coin owned by Sorcerer Kail who used to be an aid of Beleth. Take it to Warehouse Keeper Sorint.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_magic_coin_blood_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  }
+}

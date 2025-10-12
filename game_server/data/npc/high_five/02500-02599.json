@@ -1,0 +1,169 @@
+{
+  "2501": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Lucky Pig",
+    "title": "The Spirit of Fortune",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 3
+      },
+      {
+        "id": 23325,
+        "level": 1,
+        "description": "Beasts"
+      },
+      {
+        "id": 23326,
+        "level": 1,
+        "description": "Enlarge - Luckpy"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 18
+      }
+    }
+  },
+  "2502": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Wingless Lucky Pig",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 18
+      }
+    }
+  },
+  "2503": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Wingless Lucky Pig",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 18
+      }
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "25800": {
+    "level": 25,
+    "kind": "RaidBoss",
+    "name": "Mammon Collector Talos",
+    "title": "Lord of Destruction",
+    "race": "Demonic",
+    "gender": "Male",
+    "reward": {
+      "exp": 625,
+      "sp": 79280
+    },
+    "stats": {
+      "primal": {
+        "str": 60,
+        "int": 76,
+        "dex": 73,
+        "wit": 70,
+        "con": 57,
+        "men": 80
+      },
+      "vitals": {
+        "MaxHp": 43316.308536,
+        "MaxMp": 259.2,
+        "HpRegen": 18.438531,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 74.22232,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 4.67967
+      },
+      "defence": {
+        "PDef": 305.50599,
+        "MDef": 149.04
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -13,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 41,
+        "Run": 190
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4197,
+        "level": 2,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4273,
+        "level": 3,
+        "description": "Hold"
+      },
+      {
+        "id": 4274,
+        "level": 1,
+        "description": "Resist Daggers/Rapier Weapon"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Blunt Weapon Weak Point"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 9,
+        "description": "Bare Hands"
+      },
+      {
+        "id": 4444,
+        "level": 2,
+        "description": "Demons"
+      },
+      {
+        "id": 4494,
+        "level": 1,
+        "description": "Higher Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4983,
+        "level": 1,
+        "description": "Raid Boss"
+      }
+    ],
+    "ai": {
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 37
+      }
+    }
+  },
+  "25801": {
+    "level": 22,
+    "kind": "Monster",
+    "name": "Talos' Cohort",
+    "title": "Follower of Destruction",
+    "race": "Demonic",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 6247.184788,
+        "MaxMp": 218.52,
+        "HpRegen": 17.157688,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 231.18622,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 58.17787
+      },
+      "defence": {
+        "PDef": 138.98541,
+        "MDef": 135.6
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -13,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 190
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4273,
+        "level": 3,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4274,
+        "level": 1,
+        "description": "Resist Daggers/Rapier Weapon"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Blunt Weapon Weak Point"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 3,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Light Armor Type"
+      },
+      {
+        "id": 4416,
+        "level": 9,
+        "description": "Bare Hands"
+      },
+      {
+        "id": 4444,
+        "level": 2,
+        "description": "Demons"
+      },
+      {
+        "id": 4743,
+        "level": 2,
+        "description": "Higher Resist Bow/Crossbow Weapons"
+      }
+    ],
+    "ai": {
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 36
+      }
+    }
+  }
+}

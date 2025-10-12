@@ -1,0 +1,93 @@
+[package]
+name = "l2r_gameserver"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+l2r_core = { path = "../core" }
+game_core = { path = "crates/game_core" }
+
+state = { path = "crates/state"}
+config = { path = "crates/config" }
+system_messages = { path = "crates/system_messages" }
+spatial = { path = "crates/spatial" }
+map = { path = "crates/map" }
+scripting = { path = "crates/scripting" }
+
+
+bevy = { workspace = true }
+bevy_ecs = { workspace = true }
+bevy_reflect = { workspace = true }
+bevy_asset = { workspace = true }
+bevy_common_assets = { workspace = true }
+bevy_slinet = { workspace = true }
+bevy_webgate = { workspace = true }
+bevy_defer = { workspace = true }
+bevy_enum_tag = { workspace = true }
+avian3d = { workspace = true }
+
+
+pathfinding = "4"
+chrono = { workspace = true }
+redis = { workspace = true }
+num-traits = { workspace = true }
+serde_json = { workspace = true }
+num_enum = { workspace = true }
+strum = { workspace = true }
+rand = { workspace = true }
+smallvec = { workspace = true }
+sea-orm = { workspace = true }
+sea-orm-migration = { workspace = true }
+tera = { workspace = true }
+uuid = { workspace = true }
+bit-set = { workspace = true }
+tokio = { workspace = true }
+ctrlc = { workspace = true }
+
+# gui-related dependencies
+egui = { version = "0.32", default-features = false, optional = true }
+egui_dock = { version = "0.17", optional = true }
+bevy_egui = { version = "0.36", optional = true }
+# bevy-inspector-egui = { version = "0.33", optional = true }
+bevy-inspector-egui = { git = "https://github.com/aggyomfg/bevy-inspector-egui.git", rev = "9ddfe3c", optional = true }
+# bevy_mod_picking = { version = "0.20.1", features = ["backend_egui"], optional = true }
+# bevy_transform_gizmo = { version = "0.12", optional = true }
+bevy_rich_text3d = { version = "0.4.2", features = ["3d"], optional = true }
+
+[features]
+default = ["high_five"]
+interlude = ["l2r_core/interlude", "game_core/interlude"]
+high_five = ["l2r_core/high_five", "game_core/high_five"]
+gui = [
+  "egui",
+  "egui_dock",
+  "bevy_egui",
+  "bevy/bevy_log",
+  "bevy/bevy_image",
+  "bevy/bevy_render",
+  "bevy/bevy_pbr",
+  "bevy/tonemapping_luts",
+  "bevy/bevy_asset",
+  "bevy/bevy_window",
+  "bevy/bevy_winit",
+  "bevy-inspector-egui",
+  "bevy_rich_text3d",
+  # "bevy_mod_picking",
+  # "bevy_transform_gizmo",
+]
+reload = ["l2r_core/dynamic"]
+
+[dev-dependencies]
+libtest-mimic = "0.8"
+mlua = { version = "0.10", features = ["lua54"] }
+regex = "1.0"
+walkdir = { workspace = true }
+serial_test = "3.2"
+
+[[bin]]
+name = "game_migrations"
+path = "src/bin/migrations.rs"
+
+[[test]]
+name = "lua_tests"
+harness = false

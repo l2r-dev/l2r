@@ -1,0 +1,2286 @@
+{
+  "20000": {
+    "name": "Spicy Kimchee",
+    "description": "Event Item. Temporarily increases regeneration. Effect 1. Spicy Kimchee",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys.icon.etc_kimchi_power_i00",
+    "item_skills": [
+      {
+        "id": 22000,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "20001": {
+    "name": "Spicy Kimchee",
+    "description": "Event Item. Temporarily increases regeneration and power. Effect 2. Spicy Kimchee",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys.icon.etc_kimchi_power_i00",
+    "item_skills": [
+      {
+        "id": 22001,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "20002": {
+    "name": "Spicy Kimchee",
+    "description": "Event Item. Temporarily increases regeneration, power and power speed. Effect 3. Spicy Kimchee",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys.icon.etc_kimchi_power_i00",
+    "item_skills": [
+      {
+        "id": 22002,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "20003": {
+    "name": "Sweet-and-Sour White Kimchee",
+    "description": "Event Item. Magically multiplies the effect of Spicy Kimchee by 5. Sour Sweet White Kimchee",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys.icon.etc_kimchi_time_i00",
+    "item_skills": [
+      {
+        "id": 22003,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "20004": {
+    "name": "Vitality Ginseng",
+    "description": "Event Item. Restores vitality upon acquiring Exp. points. Vitality Ginseng",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys.icon.etc_ginseng_recovery_i00",
+    "item_skills": [
+      {
+        "id": 22004,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "20005": {
+    "name": "Vitality Red Ginseng",
+    "description": "Event Item. Restores a certain amount of vitality. Vitality Red Ginseng",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 22005,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "20006": {
+    "name": "Agathion Seal Bracelet - Majo",
+    "description": "Summons the Majo Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21000,
+        "level": 1
+      },
+      {
+        "id": 23000,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20007": {
+    "name": "Agathion Seal Bracelet - Gold Majo",
+    "description": "Summons the Gold Majo Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21001,
+        "level": 1
+      },
+      {
+        "id": 23001,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20008": {
+    "name": "Agathion Seal Bracelet - Black Majo",
+    "description": "Summons the Black Majo Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21002,
+        "level": 1
+      },
+      {
+        "id": 23002,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20009": {
+    "name": "Agathion Seal Bracelet - Majo - Big Head 30-Day Limited Period",
+    "description": "Summons the Majo Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21000,
+        "level": 1
+      },
+      {
+        "id": 23000,
+        "level": 1
+      },
+      {
+        "id": 23000,
+        "level": 1
+      },
+      {
+        "id": 23004,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20010": {
+    "name": "Agathion Seal Bracelet - Gold Majo - Resurrection 30-Day Limited Period",
+    "description": "Summons the Gold Majo Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21001,
+        "level": 1
+      },
+      {
+        "id": 23001,
+        "level": 1
+      },
+      {
+        "id": 23001,
+        "level": 1
+      },
+      {
+        "id": 23005,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20011": {
+    "name": "Agathion Seal Bracelet - Black Majo - Escape 30-Day Limited Period",
+    "description": "Summons the Black Majo Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21002,
+        "level": 1
+      },
+      {
+        "id": 23002,
+        "level": 1
+      },
+      {
+        "id": 23002,
+        "level": 1
+      },
+      {
+        "id": 23006,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20012": {
+    "name": "Agathion Seal Bracelet - Plaipitak",
+    "description": "Summons the Plaipitak Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_pitak_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21003,
+        "level": 1
+      },
+      {
+        "id": 23003,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20013": {
+    "name": "Agathion Seal Bracelet - Plaipitak - Big Head 30-Day Limited Period",
+    "description": "Summons the Plaipitak Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_pitak_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21003,
+        "level": 1
+      },
+      {
+        "id": 23003,
+        "level": 1
+      },
+      {
+        "id": 23007,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20014": {
+    "name": "Agathion Seal Bracelet - Plaipitak - Resurrection 30-Day Limited Period",
+    "description": "Summons the Plaipitak Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_pitak_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21003,
+        "level": 1
+      },
+      {
+        "id": 23003,
+        "level": 1
+      },
+      {
+        "id": 23009,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20015": {
+    "name": "Agathion Seal Bracelet - Plaipitak - Escape 30-Day Limited Period",
+    "description": "Summons the Plaipitak Agathion. This item cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_pitak_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21003,
+        "level": 1
+      },
+      {
+        "id": 23003,
+        "level": 1
+      },
+      {
+        "id": 23008,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20016": {
+    "name": "Horn-Rimmed Glasses - Agility",
+    "description": "Magic lenses possess mysterious power. This item cannot be exchanged or dropped. Agility",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Glasses_i00",
+    "item_skills": [
+      {
+        "id": 21005,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20017": {
+    "name": "Afro Hair",
+    "description": "Afro style hair. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20018": {
+    "name": "Afro Hair - Big Head, Firework",
+    "description": "Afro style hair. Uses 2 hair accessory slots. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "item_skills": [
+      {
+        "id": 21006,
+        "level": 1
+      },
+      {
+        "id": 21007,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20019": {
+    "name": "Afro Hair - Wind Walk",
+    "description": "Afro style hair. Uses 2 hair accessory slots. Wind Walk",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "item_skills": [
+      {
+        "id": 21004,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20020": {
+    "name": "Uniform Hat",
+    "description": "Stylish uniform hat. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Uniform_Hat_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20021": {
+    "name": "Assassin's Bamboo Hat",
+    "description": "Wide-brimmed hat fashioned out of bamboo. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Bamboo_Hat_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20022": {
+    "name": "Ruthless Tribe Mask",
+    "description": "Mask worn by a savage tribe.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_mask_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20023": {
+    "name": "Ribbon Hairband",
+    "description": "A large ribbon hair accessory. Exclusive for female characters.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Ribbon_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20024": {
+    "name": "Visor",
+    "description": "Shades your eyes in style. Exclusive for male characters.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Male"
+      }
+    },
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Visor_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20025": {
+    "name": "My Teleport Spellbook",
+    "description": "This consumable item allows you to magically transport yourself to a specific location.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.bookmark_scroll_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20026": {
+    "name": "Extra Entrance Pass - Kamaloka (Hall of the Abyss)",
+    "description": "Extra entrance pass that lets you enter Kamaloka (Hall of the Abyss). Can cancel the limit on entrance if used while a limit on entrance to the Hall of the Abyss exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Extra Entrance Pass - Kamaloka (Hall of the Abyss)",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.ticket_i00",
+    "item_skills": [
+      {
+        "id": 22019,
+        "level": 1
+      }
+    ],
+    "stackable": true,
+    "premium": true
+  },
+  "20027": {
+    "name": "Extra Entrance Pass - Near Kamaloka",
+    "description": "Extra entrance pass that lets you enter Near Kamaloka. Can cancel the limit on entrance if used while a limit on entrance to Near Kamaloka exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Extra Entrance Pass - Near Kamaloka",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.ticket_i00",
+    "item_skills": [
+      {
+        "id": 22020,
+        "level": 1
+      }
+    ],
+    "stackable": true,
+    "premium": true
+  },
+  "20028": {
+    "name": "Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss)",
+    "description": "Extra entrance pass that lets you enter Kamaloka (Labyrinth of the Abyss). Can cancel the limit on entrance if used while a limit on entrance to the Labyrinth of the Abyss exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss)",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.ticket_i00",
+    "item_skills": [
+      {
+        "id": 22021,
+        "level": 1
+      }
+    ],
+    "stackable": true,
+    "premium": true
+  },
+  "20029": {
+    "name": "Light Purple-Maned Horse Mount Bracelet",
+    "description": "Can ride a purple maned horse when equipped. Cannot be exchanged or dropped. Can be stored in a private warehouse. Mount Darkmane Pacer",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 8247,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20030": {
+    "name": "Light Purple-Maned Horse Mount Bracelet - 30-day limited period",
+    "description": "Can ride a purple maned horse when equipped. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Mount Darkmane Pacer",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8247,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20031": {
+    "name": "Kat the Cat Hat",
+    "description": "Hat that looks like Kat the Cat. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_cat_the_cat_cap_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20032": {
+    "name": "Skull Hat",
+    "description": "Hat that looks like a skull. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_skeleton_cap_i00",
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20033": {
+    "name": "My Teleport Flag",
+    "description": "Item consumed when setting the current location as free teleport coordinates.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "BranchSys.icon.br_flag_of_bookmark_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20034": {
+    "name": "Revita-Pop",
+    "description": "Tasty candy that fully replenishes your Vitality. Re-use time is 60 minutes. Cannot be exchanged or dropped. Halloween Candy",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "BranchSys.br_hallowinday_candy_i00",
+    "item_skills": [
+      {
+        "id": 22006,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "20035": {
+    "name": "Majo Agathion Pack",
+    "description": "Wrapped pack containing a Majo Agathion. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20006,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20036": {
+    "name": "Gold Crown Majo Agathion Pack",
+    "description": "Wrapped pack containing a Gold Crown Majo Agathion. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20007,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20037": {
+    "name": "Black Crown Majo Agathion Pack",
+    "description": "Wrapped pack containing a Black Crown Majo Agathion. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20008,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20038": {
+    "name": "Majo Agathion 30-Day Pack - Big Head",
+    "description": "Contains a Majo Agathion usable for up to 30 days. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20009,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20039": {
+    "name": "Gold Crown Majo Agathion 30-Day Pack - Resurrection",
+    "description": "Contains a Gold Crown Majo Agathion usable for up to 30 days. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20010,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20040": {
+    "name": "Black Crown Majo Agathion 30-Day Pack - Leave",
+    "description": "Contains a Black Crown Majo Agathion usable for up to 30 days. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20011,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20041": {
+    "name": "Plaipitak Agathion Pack",
+    "description": "Contains a Plaipitak Agathion. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20012,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20042": {
+    "name": "Plaipitak Agathion 30-Day Pack - Big Head",
+    "description": "Contains a Plaipitak Agathion usable for up to 30 days. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20013,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20043": {
+    "name": "Plaipitak Agathion 30-Day Pack - Resurrection",
+    "description": "Contains a Plaipitak Agathion usable for up to 30 days. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20014,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20044": {
+    "name": "Plaipitak Agathion 30-Day Pack - Leave",
+    "description": "Contains a Plaipitak Agathion usable for up to 30 days. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20015,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20045": {
+    "name": "Horn-Rimmed Glasses Pack - Agility",
+    "description": "Contains a pair of Horn-Rimmed Glasses. This item cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20016,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20046": {
+    "name": "Afro Hair Pack",
+    "description": "Contains an Afro Hair wig.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20017,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20047": {
+    "name": "Afro Hair Pack - Big Head, Firework",
+    "description": "Contains an Afro Hair wig.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20018,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20048": {
+    "name": "Afro Hair Pack - Wind Walk",
+    "description": "Contains an Afro Hair wig.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20019,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20049": {
+    "name": "Uniform Hat Pack",
+    "description": "Contains a fancy Uniform Hat.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20020,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20050": {
+    "name": "Assassin's Bamboo Hat Pack",
+    "description": "Contains an Assassin's Bamboo Hat.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20021,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20051": {
+    "name": "Ruthless Tribe Mask Pack",
+    "description": "Contains a Ruthless Tribe Mask.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20022,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20052": {
+    "name": "Ribbon Hairband Pack",
+    "description": "Contains an elegant Ribbon Hairband. Exclusive for female characters.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20023,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20053": {
+    "name": "Visor Pack",
+    "description": "Contains a rakish Visor. Exclusive for male characters.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20024,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20054": {
+    "name": "My Teleport Spellbook 1-Sheet Pack",
+    "description": "Contains a My Teleport Spellbook.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20025,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20055": {
+    "name": "Extra Entrance Pass - Kamaloka (Hall of the Abyss) 1-Sheet Pack",
+    "description": "Contains an extra entrance pass that allows you to enter Kamaloka (Hall of the Abyss).",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20026,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20056": {
+    "name": "Extra Entrance Pass - Near Kamaloka 1-Sheet Pack",
+    "description": "Contains an extra entrance pass that allows you to enter Near Kamaloka.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20027,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20057": {
+    "name": "Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) 1-Sheet Pack",
+    "description": "Contains an extra entrance pass that allows you to enter Kamaloka (Labyrinth of the Abyss).",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20028,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20058": {
+    "name": "Light Purple-Maned Horse Bracelet Pack",
+    "description": "Wrapped pack containing a Darkmane Pacer Mount Bracelet. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20029,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20059": {
+    "name": "Darkmane Pacer Bracelet 30-Day Pack",
+    "description": "Wrapped pack containing a Darkmane Pacer Mount Bracelet (30 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20030,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20060": {
+    "name": "Kat the Cat Hat Pack",
+    "description": "Contains a Kat the Cat Hat.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20031,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20061": {
+    "name": "Skull Hat Pack",
+    "description": "Contains a Skull Hat.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20032,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20062": {
+    "name": "My Teleport Flag Pack",
+    "description": "Contains a My Teleport Flag.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20033,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20063": {
+    "name": "Agathion Seal Bracelet - Baby Panda",
+    "description": "Dimensional Item. Bracelet that summons the Baby Panda. Cannot be exchanged, dropped or sold. Can be shared between characters on the same account through the Dimensional Merchant. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_baby_panda_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21008,
+        "level": 1
+      },
+      {
+        "id": 23010,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20064": {
+    "name": "Agathion Seal Bracelet - Bamboo Panda",
+    "description": "Bracelet that summons a Bamboo Panda. Cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_kunfu_panda_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21009,
+        "level": 1
+      },
+      {
+        "id": 23011,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20065": {
+    "name": "Agathion Seal Bracelet - Sexy Panda",
+    "description": "Bracelet that summons the Sexy Panda. No exchange/drop available Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_sexy_panda_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21010,
+        "level": 1
+      },
+      {
+        "id": 23012,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20066": {
+    "name": "Agathion Seal Bracelet - Baby Panda - Big Head-15-Day Limited Period",
+    "description": "Bracelet that summons the Baby Panda. No exchange/drop available Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_baby_panda_i00",
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21008,
+        "level": 1
+      },
+      {
+        "id": 23013,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20067": {
+    "name": "Agathion Seal Bracelet - Bamboo Panda - Resurrection-15-Day Limited Period",
+    "description": "Bracelet that summons a Bamboo Panda. Cannot be exchanged or dropped. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_kunfu_panda_i00",
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21009,
+        "level": 1
+      },
+      {
+        "id": 23014,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20068": {
+    "name": "Agathion Seal Bracelet - Sexy Panda - Escape-15-Day Limited Period",
+    "description": "Bracelet that summons the Sexy Panda. No exchange/drop available Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_sexy_panda_i00",
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21010,
+        "level": 1
+      },
+      {
+        "id": 23015,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20069": {
+    "name": "Baby Panda Agathion Pack",
+    "description": "Wrapped pack containing a Baby Panda. No exchange/drop available",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20063,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20070": {
+    "name": "Bamboo Panda Agathion Pack",
+    "description": "Wrapped pack containing a Bamboo Agathion. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20064,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20071": {
+    "name": "Sexy Panda Agathion Pack",
+    "description": "Wrapped pack containing a Sexy Panda. No exchange/drop available",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20065,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20072": {
+    "name": "Agathion of Baby Panda 15-Day Pack - Big Head",
+    "description": "Wrapped pack containing a Baby Panda Agathion (15 day). No exchange/drop available",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20066,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20073": {
+    "name": "Bamboo Panda Agathion 15-Day Pack - Resurrection",
+    "description": "Wrapped pack containing a Bamboo Panda Agathion (15 day). Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20067,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20074": {
+    "name": "Agathion of Sexy Panda 15-Day Pack - Blessed Escape",
+    "description": "Wrapped pack containing a Sexy Panda Agathion (15 day). No exchange/drop available",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20068,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20075": {
+    "name": "Santa Claus' Gift - Joy - 4-hour limited period",
+    "description": "Gift of joy. No exchange/drop/sale/warehouse available. Santa Claus' Gift - Joy",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_xmas_present_joy_i00",
+    "time": 240,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20076": {
+    "name": "Santa Claus' Gift - Enjoyment - 4-hour limited period",
+    "description": "Gift of enjoyment. No exchange/drop/sale/warehouse available. Santa Claus' Gift - Enjoyment",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_xmas_present_fun_i00",
+    "time": 240,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20077": {
+    "name": "Santa Claus' Gift - Luck - 4-hour limited period",
+    "description": "Gift of luck. No exchange/drop/sale/warehouse available. Santa Claus' Gift - Luck",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_xmas_present_luck_i00",
+    "time": 240,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20078": {
+    "name": "Santa Claus' Gift - Luck - 4-hour limited period",
+    "description": "Gift of luck. No exchange/drop/sale/warehouse available. Santa Claus' Gift - Luck",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_xmas_present_luck_i00",
+    "time": 240,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20079": {
+    "name": "Good Luck Lucky Bag Pack",
+    "description": "Wrapped pack containing a Good Luck Lucky Bag. Cannot be exchanged, dropped, or sold. Can be shared between characters within an account through the Dimensional Merchant.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20081,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20080": {
+    "name": "Lucky Four-leaf Clover Pack",
+    "description": "Wrapped pack containing a Lucky Four-leaf Pack. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20082,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20081": {
+    "name": "Good Luck Lucky Bag",
+    "description": "Lucky Bag filled with good luck. If you use it, you can acquire a hair accessory that has the energy recovery capability. Cannot be exchanged, dropped, or sold. Can be shared between characters within an account through the Dimensional Merchant. Good Luck Lucky Bag",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_lucky_bag_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20082": {
+    "name": "Lucky Four-leaf Clover",
+    "description": "A Lucky Four-leaf Clover. Gives a random Vitality-imbued hair accessory. Cannot be exchanged, dropped, or sold. Lucky Four-leaf Clover",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_four_leaf_clover_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true,
+    "pet_useable": true
+  },
+  "20083": {
+    "name": "Afro Hair - Vitality - 3-Hour Limited Period",
+    "description": "Afro style hair. Vitality skill re-use delay is 12 hours. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 21011,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20084": {
+    "name": "Afro Hair - Vitality - 3-Day Limited Period",
+    "description": "Afro style hair. Vitality skill re-use delay is 12 hours. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 21011,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20085": {
+    "name": "Afro Hair - Vitality - 30-Day Limited Period",
+    "description": "Afro style hair. Vitality skill re-use delay is 12 hours. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 21011,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20086": {
+    "name": "Horn Rimmed Glasses - Vitality - 3-Hour Limited Period",
+    "description": "Magic Horn-Rimmed Glasses. Vitality skill re-use delay is 12 hours. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Glasses_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 21012,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20087": {
+    "name": "Horn Rimmed Glasses - Vitality - 3-Day Limited Period",
+    "description": "Magic Horn-Rimmed Glasses. Vitality skill re-use delay is 12 hours. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Glasses_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 21012,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20088": {
+    "name": "Horn Rimmed Glasses - Vitality - 30-Day Limited Period",
+    "description": "Magic Horn-Rimmed Glasses. Vitality skill re-use delay is 12 hours. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Glasses_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 21012,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20089": {
+    "name": "Assassin's Bamboo Hat - Vitality - 3-Hour Limited Period",
+    "description": "Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Vitality skill re-use delay is 12 hours. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Bamboo_Hat_i00",
+    "time": 180,
+    "item_skills": [
+      {
+        "id": 21013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20090": {
+    "name": "Assassin's Bamboo Hat - Vitality - 3-Day Limited Period",
+    "description": "Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Vitality skill re-use delay is 12 hours. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Bamboo_Hat_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 21013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20091": {
+    "name": "Assassin's Bamboo Hat - Vitality - 30-Day Limited Period",
+    "description": "Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Vitality skill re-use delay is 12 hours. Cannot be exchanged, dropped, or sold. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Bamboo_Hat_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 21013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20092": {
+    "name": "Holiday Spirit Pack",
+    "description": "This gift-wrapped pack contains the true spirit of the holiday season. It cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20093,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20093": {
+    "name": "Spirit of the Holiday",
+    "description": "This provides you with a chance to acquire an Agathion Seal Bracelet: Rudolph, which has Power Recovery Capability. It cannot be exchanged, dropped or sold. Miracle of Christmas",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_xmas_miracle_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "20094": {
+    "name": "Agathion Seal Bracelet: Rudolph - Energy - 30-Day Limited Period",
+    "description": "Allows you to summon a cute Rudolph Agathion. It cannot be exchanged, dropped or sold. Can only be used once every 12 hours. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 3425,
+        "level": 1
+      },
+      {
+        "id": 5537,
+        "level": 1
+      },
+      {
+        "id": 23016,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20095": {
+    "name": "Santa Horn Hat",
+    "description": "This festive hat can put anyone into the holiday spirit. It cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_santas_antler_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20096": {
+    "name": "Mysterious Formal Dress (Event) Pack",
+    "description": "This gift-wrapped pack contains a Mysterious Formal Dress. It cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20097,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_lucky_bag_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "20097": {
+    "name": "Mysterious Formal Dress (Event) Pack",
+    "description": "Use this to acquire the Formal Dress. It cannot be exchanged, dropped or sold. Mysterious Formal Dress",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_mysterious_wedding_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "20098": {
+    "name": "Formal Dress (Event) - 1 hour Shadow time",
+    "description": "When donned, this magical garment transforms into a dashing tuxedo for men or a lovely wedding dress for ladies. It cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "material": "Cloth",
+    "weight": 1000,
+    "icon": "icon.armor_t2000_ul_i00",
+    "mana": 60,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "20099": {
+    "name": "Formal Dress (Event) - 7-day limited period",
+    "description": "When donned, this magical garment transforms into a dashing tuxedo for men or a lovely wedding dress for ladies. It cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "material": "Cloth",
+    "weight": 1000,
+    "icon": "icon.armor_t2000_ul_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

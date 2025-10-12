@@ -1,0 +1,2618 @@
+{
+  "20400": {
+    "name": "Laborer Hat - Blessed Soul - 7-day limited period",
+    "description": "Hat that was worn by Reipung. Cannot be exchanged or dropped. Blessed Soul",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_people_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21053,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20401": {
+    "name": "Laborer Hat",
+    "description": "Hat that was worn by Reipung. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_people_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20402": {
+    "name": "Laborer Hat 7-Day Pack - Bless the Body",
+    "description": "Wrapped pack containing a Laborer Hat (7 day). Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20399,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20403": {
+    "name": "Laborer Hat 7-Day Pack - Bless the Soul",
+    "description": "Wrapped pack containing a Laborer Hat (7 day). Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20400,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20404": {
+    "name": "Laborer Hat Pack",
+    "description": "Wrapped pack containing a Laborer Hat. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20401,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20405": {
+    "name": "Agathion Seal Bracelet - Majo - Big Head - 7-day limited period",
+    "description": "Bracelet that summons the Majo Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21000,
+        "level": 1
+      },
+      {
+        "id": 23000,
+        "level": 1
+      },
+      {
+        "id": 23000,
+        "level": 1
+      },
+      {
+        "id": 23004,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20406": {
+    "name": "Agathion Seal Bracelet - Gold Crown Majo - Resurrection - 7-Day Limited Period",
+    "description": "Bracelet that summons the Gold Crown Majo Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21001,
+        "level": 1
+      },
+      {
+        "id": 23001,
+        "level": 1
+      },
+      {
+        "id": 23001,
+        "level": 1
+      },
+      {
+        "id": 23005,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20407": {
+    "name": "Agathion Seal Bracelet - Black Crown Majo - Escape - 7-Day Limited Period",
+    "description": "Bracelet that summons the Black Crown Majo Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_mazu_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21002,
+        "level": 1
+      },
+      {
+        "id": 23002,
+        "level": 1
+      },
+      {
+        "id": 23002,
+        "level": 1
+      },
+      {
+        "id": 23006,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20408": {
+    "name": "Agathion Seal Bracelet - Plaipitak - Big Head - 7-day limited period",
+    "description": "Bracelet that summons the Plaipitak Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_pitak_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21003,
+        "level": 1
+      },
+      {
+        "id": 23003,
+        "level": 1
+      },
+      {
+        "id": 23007,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20409": {
+    "name": "Agathion Seal Bracelet - Plaipitak - Resurrection - 7-Day Limited Period",
+    "description": "Bracelet that summons the Plaipitak Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_pitak_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21003,
+        "level": 1
+      },
+      {
+        "id": 23003,
+        "level": 1
+      },
+      {
+        "id": 23009,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20410": {
+    "name": "Agathion Seal Bracelet - Plaipitak - Escape - 7-Day Limited Period",
+    "description": "Bracelet that summons the Plaipitak Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_bracelet_aga_pitak_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21003,
+        "level": 1
+      },
+      {
+        "id": 23003,
+        "level": 1
+      },
+      {
+        "id": 23008,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20411": {
+    "name": "Agathion Seal Bracelet - Baby Panda - Big Head - 7-day limited period",
+    "description": "Bracelet that summons the Baby Panda. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_baby_panda_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21008,
+        "level": 1
+      },
+      {
+        "id": 23013,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20412": {
+    "name": "Agathion Seal Bracelet - Bamboo Panda - Resurrection - 7-Day Limited Period",
+    "description": "Bracelet that summons a Bamboo Panda. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_kunfu_panda_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21009,
+        "level": 1
+      },
+      {
+        "id": 23014,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20413": {
+    "name": "Agathion Seal Bracelet - Sexy Panda - Escape - 7-Day Limited Period",
+    "description": "Bracelet that summons the Sexy Panda. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_sexy_panda_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21010,
+        "level": 1
+      },
+      {
+        "id": 23015,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20414": {
+    "name": "Horn Rimmed Glasses - Agility - 7-day limited period",
+    "description": "Magic horn-rimmed glasses with mysterious power. Cannot be exchanged, dropped, or sold. Agility",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Glasses_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21005,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20415": {
+    "name": "Afro Hair - Big Head, Firework - 7-day limited period",
+    "description": "Afro style hair. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21006,
+        "level": 1
+      },
+      {
+        "id": 21007,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20416": {
+    "name": "Afro Hair - Wind Walk - 7-Day Limited Period",
+    "description": "Afro style hair. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wind Walk",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21004,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20417": {
+    "name": "Uniform Hat - Blessed Resurrection - 7-day limited period",
+    "description": "A cool uniform hat. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Uniform_Hat_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21054,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20418": {
+    "name": "Assassin's Bamboo Hat - Wind Walk - 7-Day Limited Period",
+    "description": "Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wind Walk",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Bamboo_Hat_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21055,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20419": {
+    "name": "Ruthless Tribe Mask - Agility - 7-day limited period",
+    "description": "Mask worn by the reckless tribe. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Agility",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_mask_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21056,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20420": {
+    "name": "Ribbon Hairband - Reflect Damage - 7-Day Limited Period",
+    "description": "A large ribbon hair accessory. Exclusive to females. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Reflect",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Ribbon_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21057,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20421": {
+    "name": "Visor - Mana Regeneration - 7-Day Limited Period",
+    "description": "Accessory that stylishly covers the eye area. Exclusive to males. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Mana Regeneration",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Male"
+      }
+    },
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Visor_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21058,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20422": {
+    "name": "Kat the Cat Hat - Greater Heal - 7-Day Limited Period",
+    "description": "Hat that looks like Kat the Cat. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Greater Heal",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_cat_the_cat_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21059,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20423": {
+    "name": "Skull Hat - Death Whisper - 7-Day Limited Period",
+    "description": "Hat that looks like a skull. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Death Whisper",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_skeleton_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21060,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20424": {
+    "name": "Afro Hair - Gold - Agility - 7-day limited period",
+    "description": "Afro style hair in gold. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Agility",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21061,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20425": {
+    "name": "Afro Hair - Pink - Wild Magic - 7-Day Limited Period",
+    "description": "Afro style hair in pink. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wild Magic",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Afro_hair_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21062,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20426": {
+    "name": "Goggles - Wind Walk - 7-Day Limited Period",
+    "description": "A stylish goggle accessory with a fine silver decoration. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wind Walk",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_goggles_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21063,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20427": {
+    "name": "Napoleon Hat - Mana Regeneration - 7-Day Limited Period",
+    "description": "A Napoleon Hat accessory that has world conquering energy. Cannot be exchanged, dropped, or sold. Mana Regeneration",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_napoleonic_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21064,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20428": {
+    "name": "Horn Hairband - Reflect Damage - 7-Day Limited Period",
+    "description": "A pink hairband accessory with a cute horn dangling. Exclusive to females. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Reflect",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "BranchSys.icon.br_horn_hairband_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21065,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20429": {
+    "name": "Black Gem Mask - Vitality - 7-Day Limited Period",
+    "description": "A black gem mask accessory made of luxurious metal material. When equipped, grants a Vitality Maintaining skill that can be used every hour. Can be used for 7 days. Cannot be exchanged or dropped. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_black_gem_mask_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21066,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20430": {
+    "name": "Plastic Hair - Blessed Escape - 7-day limited period",
+    "description": "Plastic Hair. It changes to an attractive pink wig for female/blue wig for male. Uses 2 accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_plastic_hair_f_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21067,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20431": {
+    "name": "Daisy Hairpin - Resist Unholy - 7-Day Limited Period",
+    "description": "Daisy shaped hairpin Hair accessory exclusive to female. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. UnResistance to Holy",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_daisy_hairpin_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21068,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20432": {
+    "name": "Forget-me-not Hairpin - Wind Walk - 7-Day Limited Period",
+    "description": "Forget-me-not shaped hairpin Hair accessory exclusive to female. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wind Walk",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_forget_me_not_hairpin_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21069,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20433": {
+    "name": "Outlaw's Eyepatch - Death Whisper - 7-Day Limited Period",
+    "description": "Purple eyepatch accessory Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Death Whisper",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_outlaw_eyepatch_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21070,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20434": {
+    "name": "Pirate's Eyepatch - Agility - 7-day limited period",
+    "description": "Eyepatch accessory. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Agility",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_eye_bandage_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21071,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20435": {
+    "name": "Monocle - Wild Magic - 7-Day Limited Period",
+    "description": "Monocle accessory Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wild Magic",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_glasses_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21072,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20436": {
+    "name": "Red Mask of Victory - Mana Regeneration - 7-Day Limited Period",
+    "description": "Hair accessory for World Cup Events Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Mana Regeneration",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.accessory_worldcup_mask_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21073,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20437": {
+    "name": "Red Horn of Victory - Reflect Damage - 7-Day Limited Period",
+    "description": "Hair accessory for World Cup Events Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Reflect",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_hair_cornu_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21074,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20438": {
+    "name": "Party Mask - Greater Heal - 7-Day Limited Period",
+    "description": "Fashion item which creates an unique taste. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Greater Heal",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.etc_party_mask_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21075,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20439": {
+    "name": "Red Party Mask - Resist Unholy - 7-Day Limited Period",
+    "description": "Fashion item which creates an unique taste. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. UnResistance to Holy",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.etc_party_mask_i01",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21076,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20440": {
+    "name": "Cat Ears - Wind Walk - 7-Day Limited Period",
+    "description": "Cat ear shaped hair accessory. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wind Walk",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_cat_ear_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21077,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20441": {
+    "name": "Lady's Hair Pin - Death Whisper - 7-Day Limited Period",
+    "description": "Hair accessory exclusive to female. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Death Whisper",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_hairpin_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21078,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20442": {
+    "name": "Raccoon Ears - Agility - 7-day limited period",
+    "description": "Raccoon ear shaped hair accessory. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Agility",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_racoon_ear_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21079,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20443": {
+    "name": "Rabbit Ear - Wild Magic - 7-Day Limited Period",
+    "description": "Bonny Girls Rabbit Ear shaped hair accessory. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Wild Magic",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_rabbit_ear_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21080,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20444": {
+    "name": "Little Angel Wings - Mana Regeneration - 7-Day Limited Period",
+    "description": "Wings shaped hair accessory. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Mana Regeneration",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_hair_ring_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21081,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20445": {
+    "name": "Fairy's Tentacle - Reflect Damage - 7-Day Limited Period",
+    "description": "Stars attached cute tentacle hair accessory. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Reflect",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_hair_feeler_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21082,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20446": {
+    "name": "Dandy's Chapeau - Greater Heal - 7-Day Limited Period",
+    "description": "Feather attached nice poke bonnet. Uses 2 accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Greater Heal",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_archer_hat_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21083,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20447": {
+    "name": "Artisan's Goggles - Energy - 7-Day Limited Period",
+    "description": "Large goggles which protect eyes. Uses 2 accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Vitality Replenishing",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_dwarf_goggle_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21084,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20448": {
+    "name": "Darkmane Pacer Mount Bracelet - 7-day limited period",
+    "description": "Can ride a purple maned horse when equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Mount Darkmane Pacer",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8247,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20449": {
+    "name": "Steam Beatle Mount Bracelet - 7-day limited period",
+    "description": "Can mount a steam beatle when equipped. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Steam Beetle Mount",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21051,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20450": {
+    "name": "Majo Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Majo Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20405,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20451": {
+    "name": "Gold Crown Majo Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Gold Crown Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20406,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20452": {
+    "name": "Black Crown Majo Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Black Crown Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20407,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20453": {
+    "name": "Plaipitak Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Plaipitak Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20408,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20454": {
+    "name": "Plaipitak Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Plaipitak Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20409,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20455": {
+    "name": "Plaipitak Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Plaipitak Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20410,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20456": {
+    "name": "Agathion of Baby Panda 7-Day Pack",
+    "description": "Wrapped pack containing a Baby Panda Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20411,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20457": {
+    "name": "Bamboo Panda Agathion 7-Day Pack",
+    "description": "Wrapped pack containing a Bamboo Panda Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20412,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20458": {
+    "name": "Agathion of Sexy Panda 7-Day Pack",
+    "description": "Wrapped pack containing a Sexy Panda Agathion (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20413,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20459": {
+    "name": "Horn Rimmed Glasses 7-Day Pack",
+    "description": "Wrapped pack containing Horn Rimmed Glasses (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20414,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20460": {
+    "name": "Afro Hair 7-Day Pack",
+    "description": "Wrapped pack containing Afro Hair (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20415,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20461": {
+    "name": "Afro Hair 7-Day Pack",
+    "description": "Wrapped pack containing Afro Hair (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20416,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20462": {
+    "name": "Uniform Hat 7-Day Pack",
+    "description": "Wrapped pack containing a Uniform Hat (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20417,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20463": {
+    "name": "Assassin's Bamboo Hat 7-Day Pack",
+    "description": "Wrapped pack containing an Assassin's Bamboo Hat (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20418,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20464": {
+    "name": "Ruthless Tribe Mask 7-Day Pack",
+    "description": "Wrapped pack containing a Ruthless Tribe Mask (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20419,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20465": {
+    "name": "Ribbon Hairband 7-Day Pack",
+    "description": "Wrapped pack containing a Ribbon Hairband (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20420,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20466": {
+    "name": "Visor 7-Day Pack",
+    "description": "Wrapped pack containing a Visor (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20421,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20467": {
+    "name": "Kat the Cat Hat 7-Day Pack",
+    "description": "Wrapped pack containing a Kat the Cat Hat (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20422,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20468": {
+    "name": "Skull Hat 7-Day Pack",
+    "description": "Wrapped pack containing a Skull Hat (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20423,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20469": {
+    "name": "Gold Afro Hair 7-Day Pack",
+    "description": "Wrapped pack containing Gold Afro Hair (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20424,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20470": {
+    "name": "Pink Afro Hair 7-Day Pack",
+    "description": "Wrapped pack containing Pink Afro Hair (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20425,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20471": {
+    "name": "Goggle 7-Day Pack",
+    "description": "Wrapped pack containing Goggles (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20426,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20472": {
+    "name": "Napoleon Hat 7-Day Pack",
+    "description": "Wrapped pack containing a Napoleon Hat (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20427,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20473": {
+    "name": "Horn Hairband 7-Day Pack",
+    "description": "Wrapped pack containing a Horn Hairband (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20428,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20474": {
+    "name": "Black Gem Mask 7-Day Pack",
+    "description": "Wrapped pack containing a Black Gem Mask (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20429,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20475": {
+    "name": "Plastic Hair 7-Day Pack",
+    "description": "Wrapped pack containing Plastic Hair (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20430,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20476": {
+    "name": "Daisy Hairpin 7-Day Pack",
+    "description": "Wrapped pack containing a Daisy Hairpin (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20431,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20477": {
+    "name": "Forget-me-not Hairpin 7-Day Pack",
+    "description": "Wrapped pack containing a Forget-me-not Hairpin (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20432,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20478": {
+    "name": "Outlaw's Eyepatch 7-Day Pack",
+    "description": "Wrapped pack containing an Outlaw's Eyepatch (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20433,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20479": {
+    "name": "Pirate's Eyepatch 7-Day Pack",
+    "description": "Wrapped pack containing a Pirate's Eyepatch (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20434,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20480": {
+    "name": "Monocle 7-Day Pack",
+    "description": "Wrapped pack containing a Monocle (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20435,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20481": {
+    "name": "Red Mask of Victory 7-Day Pack",
+    "description": "Wrapped pack containing a Red Mask of Victory (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20436,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20482": {
+    "name": "Red Horn of Victory 7-Day Pack",
+    "description": "Wrapped pack containing a Red Horn of Victory (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20437,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20483": {
+    "name": "Party Mask 7-Day Pack",
+    "description": "Wrapped pack containing a Party Mask (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20438,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20484": {
+    "name": "Red Party Mask 7-Day Pack",
+    "description": "Wrapped pack containing a Red Party Mask (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20439,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20485": {
+    "name": "Cat Ears 7-Day Pack",
+    "description": "Wrapped pack containing Cat Ears (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20440,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20486": {
+    "name": "Lady's Hair Pin 7-Day Pack",
+    "description": "Wrapped pack containing a Lady's Hair Pin (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20441,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20487": {
+    "name": "Raccoon Ears 7-Day Pack",
+    "description": "Wrapped pack containing Raccoon Ears (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20442,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20488": {
+    "name": "Rabbit Ears 7-Day Pack",
+    "description": "Wrapped pack containing Rabbit Ears (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20443,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20489": {
+    "name": "Little Angel's Wings 7-Day Pack",
+    "description": "Wrapped pack containing a Little Angel's Wings (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20444,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20490": {
+    "name": "Fairy's Tentacle 7-Day Pack",
+    "description": "Wrapped pack containing a Fairy's Tentacle (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20445,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20491": {
+    "name": "Dandy's Chapeau 7-Day Pack",
+    "description": "Wrapped pack containing a Dandy's Chapeau (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20446,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20492": {
+    "name": "Artisan's Goggles 7-Day Pack",
+    "description": "Wrapped pack containing an Artisan's Goggles (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20447,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20493": {
+    "name": "Darkmane Pacer Mount Bracelet 7-Day Pack",
+    "description": "Wrapped pack containing a Darkmane Pacer Mount Bracelet (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20448,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20494": {
+    "name": "Steam Beatle Mount Bracelet 7-Day Pack",
+    "description": "Wrapped pack containing a Steam Beatle Mount Bracelet (7 day). Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20449,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20495": {
+    "name": "Agathion Seal Bracelet - Live Event Souvenir",
+    "description": "Dimensional Item. A special thanks for having attended a live Lineage II fan event. Summons the Live Event Souvenir agathion, which contains a surprise inside. Cannot be exchanged, dropped, or sold. Can be shared between characters on the same account through the Dimensional Merchant. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_pomona_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21085,
+        "level": 1
+      },
+      {
+        "id": 23067,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20496": {
+    "name": "Agathion Seal Bracelet - Pomona - Mental Shield - 7-day limited period",
+    "description": "Bracelet that summons the Pomona Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_pomona_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21085,
+        "level": 1
+      },
+      {
+        "id": 23068,
+        "level": 4
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20497": {
+    "name": "Mother's Wreath (Event) - Blessing of Love - 24-hour limited period",
+    "description": "For events. Wreath containing a mother's love. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Blessing of Love",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_garland_i00",
+    "time": 1440,
+    "item_skills": [
+      {
+        "id": 21086,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20498": {
+    "name": "Mother's Wreath - Blessing of Love - 3-day limited period",
+    "description": "Wreath containing a mother's love. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Blessing of Love",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_garland_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 21086,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20499": {
+    "name": "Feline Queen Hat",
+    "description": "Hat that looks like the Feline Queen. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_queen_of_cat_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "18300": {
+    "level": 33,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "noble": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    "name": "Offering of the Branded, Evoked Spirit",
+    "race": "Humanoid",
+    "gender": "Male",
+    "reward": {
+      "exp": 1751,
+      "sp": 100
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 702.20463,
+        "MaxMp": 372.96,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 113.49065,
+        "PAtkSpd": 253,
+        "MAtk": 77.49941,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 129.23095,
+        "MDef": 78.2854098527333
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 155
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 15,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4438,
+        "level": 2,
+        "description": "Humanoids"
+      },
+      {
+        "id": 4439,
+        "level": 2,
+        "description": "Greater Resist Sleep"
+      },
+      {
+        "id": 4572,
+        "level": 3,
+        "description": "Greater Resist Hold"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 21
+      }
+    }
+  }
+}

@@ -1,0 +1,5912 @@
+{
+  "14400": {
+    "name": "Icarus Hand {PvP} - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 6.8 when HP drops to 60% or lower. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3069,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14401": {
+    "name": "Icarus Hand {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 106. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14402": {
+    "name": "Icarus Hand {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 10%. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14403": {
+    "name": "Icarus Stinger {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14404": {
+    "name": "Icarus Stinger {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14405": {
+    "name": "Icarus Stinger {PvP} - Light",
+    "description": "Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption during skill use. Increases damage inflicted during PvP. Special Ability: Light",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14406": {
+    "name": "Icarus Wingblade {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14407": {
+    "name": "Icarus Wingblade {PvP} - Health",
+    "description": "Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14408": {
+    "name": "Icarus Wingblade {PvP} - Light",
+    "description": "Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14409": {
+    "name": "Icarus Shooter {PvP} - Cheap Shot",
+    "description": "Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>when using the . skill MP consumption decreases by 12%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3360,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14410": {
+    "name": "Icarus Shooter {PvP} - Guidance",
+    "description": "Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Increases Accuracy by 5.32. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14411": {
+    "name": "Icarus Shooter {PvP} - Focus",
+    "description": "Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14412": {
+    "name": "Icarus Dual Sword - Destruction {PvP}",
+    "description": "Masterwork Item that increases P. Atk. P. Atk. of dual bladed weapons, two-handed swords, two-handed blunt weapons and fighting weapons increases more than the regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical Attack by 109 and Max HP by 10%. Increases damage inflicted during PvP, and decreases the range of bows/crossbows occasionally during an attack. Dual-Blade Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3835,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3656,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14413": {
+    "name": "Icarus Disperser - Confusion {PvP}",
+    "description": "Masterwork Item that increases evasion. It can bestow one of the following three functions, Focus, Evasion, or Critical Damage. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Dagger of Avoid",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14414": {
+    "name": "Icarus Disperser - Confusion {PvP} - Focus",
+    "description": "Masterwork Item that increases evasion. <Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Dagger of Avoid",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14415": {
+    "name": "Icarus Disperser - Confusion {PvP} - Evasion",
+    "description": "Masterwork Item that increases evasion. <Soul Crystal Enhancement>. Increases Evasion by 5. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: Evasion",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 8
+      },
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14416": {
+    "name": "Icarus Disperser - Confusion {PvP} - Critical Damage",
+    "description": "Masterwork Item that increases evasion. <Soul Crystal Enhancement>. Increases P. Atk. by 559 during a critical attack. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Dagger of Avoid",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3066,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14417": {
+    "name": "Icarus Sawsword - Destruction {PvP}",
+    "description": "Masterwork Item that increases P. Atk. It can bestow one of the following three functions, Focus, Health, or Light. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Sword of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3825,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14418": {
+    "name": "Icarus Sawsword - Destruction {PvP} - Focus",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Sword of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3825,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14419": {
+    "name": "Icarus Sawsword - Destruction {PvP} - Health",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Sword of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3825,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14420": {
+    "name": "Icarus Sawsword - Destruction {PvP} - Light",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: Light",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3825,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14421": {
+    "name": "Icarus Shooter - Concentration {PvP}",
+    "description": "Masterwork Item that increases the Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. It can bestow one of the following functions, Cheap Shot, Guidance, or Focus. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14422": {
+    "name": "Icarus Shooter - Concentration {PvP} - Cheap Shot",
+    "description": "Masterwork Item that increases the Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>when using the . skill MP consumption decreases by 12%. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3360,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14423": {
+    "name": "Icarus Shooter - Concentration {PvP} - Guidance",
+    "description": "Masterwork Item that increases the Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Increases Accuracy by 5.32. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14424": {
+    "name": "Icarus Shooter - Concentration {PvP} - Focus",
+    "description": "Masterwork Item that increases the Accuracy. Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Crossbow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3868,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14425": {
+    "name": "Icarus Stinger - Destruction {PvP}",
+    "description": "Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. Focus, Health, or Light can be bestowed. When enchanted to 4 or more, there's a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of received heal. Rapier of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3830,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14426": {
+    "name": "Icarus Stinger - Destruction {PvP} - Focus",
+    "description": "Masterwork Item than increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. When enchanted to 4 or more, party members including you Rapier of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3830,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14427": {
+    "name": "Icarus Stinger - Destruction {PvP} - Health",
+    "description": "Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. Recovers CP occasionally during an attack. Rapier of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3830,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14428": {
+    "name": "Icarus Stinger - Destruction {PvP} - Light",
+    "description": "Masterwork Item that increases P. Atk. Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. weight gauge by 20%. Increases damage inflicted during PvP. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. Improves the chance of CP recovery during an attack. Special Ability: Light",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3830,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14429": {
+    "name": "Icarus Spirit - Nature {PvP}",
+    "description": "Masterwork Item that increases Max MP. It can bestow one of the following three functions, Acumen, Mana Up, or Conversion. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14430": {
+    "name": "Icarus Spirit - Nature {PvP} - Acumen",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14431": {
+    "name": "Icarus Spirit - Nature {PvP} - Mana Up",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Max MP increases by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14432": {
+    "name": "Icarus Spirit - Nature {PvP} - Conversion",
+    "description": "Masterwork Item that increases Max MP. <Soul Crystal Enhancement>. Max MP increases by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Sword of Mana Boost",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3852,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14433": {
+    "name": "Icarus Spitter - Concentration {PvP}",
+    "description": "Masterwork Item that increases Accuracy. It can bestow one of the following functions, Cheap Shot, Guidance, or Focus. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14434": {
+    "name": "Icarus Spitter - Concentration {PvP} - Cheap Shot",
+    "description": "Masterwork Item that increases Accuracy. <Soul Crystal Enhancement>. Decreases MP Consumption 4% during a skill attack. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 8312,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14435": {
+    "name": "Icarus Spitter - Concentration {PvP} - Guidance",
+    "description": "Masterwork Item that increases the Accuracy. <Soul Crystal Enhancement>. Increases Accuracy by 5.32 during a critical attack. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14436": {
+    "name": "Icarus Spitter - Concentration {PvP} - Focus",
+    "description": "Masterwork Item that increases the Accuracy. <Soul Crystal Enhancement>. Increases Critical by 116 during a critical attack. Increases damage inflicted during PvP. Has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Bow of Guidance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3863,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3655,
+        "level": 1
+      },
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14437": {
+    "name": "Icarus Wingblade - Lightning {PvP}",
+    "description": "Masterwork Item than increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms conversion. It can bestow one of the following three functions, Focus, Health, or Light. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14438": {
+    "name": "Icarus Wingblade - Lightning {PvP} - Focus",
+    "description": "Masterwork Item than increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14439": {
+    "name": "Icarus Wingblade - Lightning {PvP} - Health",
+    "description": "Masterwork Item than increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Ancient Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3851,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14440": {
+    "name": "Icarus Wingblade - Lightning {PvP} - Light",
+    "description": "Masterwork Item that increases Critical Rate. Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: Light",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3851,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14441": {
+    "name": "Icarus Trident - Thunder {PvP}",
+    "description": "Masterwork Item that increases Critical Damage. Can endow one of the three: Anger, Critical Stun, or Light. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 4
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14442": {
+    "name": "Icarus Trident - Thunder {PvP} - Anger",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. One's own HP decreases by 15% and P. Atk. increases by 78. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3600,
+        "level": 10
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14443": {
+    "name": "Icarus Trident - Thunder {PvP} - Critical Stun",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Has a 48% chance of stunning the target during a critical attack. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Polearm of Critical Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3873,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 4
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14444": {
+    "name": "Icarus Trident - Thunder {PvP} - Light",
+    "description": "Masterwork Item that increases Critical Damage. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: Light",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3873,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 4
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14445": {
+    "name": "Icarus Hammer - Earth {PvP}",
+    "description": "Masterwork Item that increases Max HP. It can bestow one of the following functions: Anger, Health, or Rsk. Focus. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14446": {
+    "name": "Icarus Hammer - Earth {PvP} - Anger",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Your own HP decreases by 15% and P. Atk. increases by 78 during a critical attack. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3057,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14447": {
+    "name": "Icarus Hammer - Earth {PvP} - Health",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14448": {
+    "name": "Icarus Hammer - Earth {PvP} - Rsk. Focus",
+    "description": "Masterwork Item that increases Max HP. <Soul Crystal Enhancement>. Increases Critical by 164 when HP is 60% or below. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Blunt Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3884,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3027,
+        "level": 7
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14449": {
+    "name": "Icarus Hand - Destruction {PvP}",
+    "description": "Masterwork Item that increases P. Atk. Bestows Rsk. Evasion, Focus, or Haste. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Fist Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3879,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14450": {
+    "name": "Icarus Hand - Destruction {PvP} - Rsk. Evasion",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Evasion by 6.8 when HP is 60% or below. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: Rsk. Evasion",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3069,
+        "level": 1
+      },
+      {
+        "id": 3879,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14451": {
+    "name": "Icarus Hand - Destruction {PvP} - Focus",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Increases Critical by 106. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Fist Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3879,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14452": {
+    "name": "Icarus Hand - Destruction {PvP} - Haste",
+    "description": "Masterwork Item that increases P. Atk. <Soul Crystal Enhancement>. Atk. Spd. increases by about 10%. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Fist Weapon of Might",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3879,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14453": {
+    "name": "Icarus Heavy Arms - Lightning {PvP}",
+    "description": "Masterwork Item that increases Critical Rate. Can endow one of the three: Focus, Health, or Light. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14454": {
+    "name": "Icarus Heavy Arms - Lightning {PvP} - Focus",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14455": {
+    "name": "Icarus Heavy Arms - Lightning {PvP} - Health",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Two-handed Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3845,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14456": {
+    "name": "Icarus Heavy Arms - Lightning {PvP} - Light",
+    "description": "Masterwork Item that increases Critical Rate. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: Light",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3845,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14457": {
+    "name": "Icarus Hall - Hail {PvP}",
+    "description": "Masterwork Item that increases M. Atk. It can bestow one of the following three functions, Mana Up, Conversion, or Acumen. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14458": {
+    "name": "Icarus Hall - Hail {PvP} - Mana Up",
+    "description": "Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Max MP increases by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14459": {
+    "name": "Icarus Hall - Hail {PvP} - Conversion",
+    "description": "Masterwork Item that increases M. Atk. <Soul Crystal Enhancement>. Max MP increases by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14460": {
+    "name": "Icarus Hall - Hail {PvP} - Acumen",
+    "description": "Masterwork Item that increases the power of magic. <Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Blunt Weapon of Empower",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3889,
+        "level": 3
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14461": {
+    "name": "Icarus Dual Daggers {PvP}",
+    "description": "Dual daggers. Has higher P. Atk. than regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Can be equipped by Dagger masters above level 81. Increases damage inflicted during PvP. PvP Weapon - Cancel",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8296,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 169
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 121780000,
+    "weight": 2100,
+    "icon": "icon.dual_dagger_i00",
+    "crystal_count": 5845,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14462": {
+    "name": "Vesper Dual Sword {PvP}",
+    "description": "P. Atk. of dual bladed weapons, two-handed swords, two-handed blunt weapons and fighting weapons increases more than the regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical Attack by 109 and Max HP by 10%. Increases damage inflicted during PvP, and has a chance to decrease the range of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3656,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14463": {
+    "name": "Vesper Cutter {PvP}",
+    "description": "It can bestow one of the following functions: Haste, Focus, or Health. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_cutter_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14464": {
+    "name": "Vesper Slasher {PvP}",
+    "description": "It can bestow one of the following three functions: Haste, Focus, or Health. Increases damage inflicted during PvP, and Casting Spd. increases at a fixed rate when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_slasher_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14465": {
+    "name": "Vesper Buster {PvP}",
+    "description": "It can bestow one of the following functions: Acumen, Mana Up, or Magic Hold. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 317
+      },
+      "MAtk": {
+        "set": 234
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_burster_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14466": {
+    "name": "Vesper Shaper {PvP}",
+    "description": "It can bestow one of the following functions: Critical Damage, HP Drain, or Haste. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 346
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_shaper_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14467": {
+    "name": "Vesper Fighter {PvP}",
+    "description": "It can bestow one of the following functions: Focus, Health, or Critical Stun. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1550,
+    "icon": "icon.weapon_vesper_fighter_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 4
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14468": {
+    "name": "Vesper Stormer {PvP}",
+    "description": "It can bestow one of the following functions: Health, Guidance, or Haste. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 2010,
+    "icon": "icon.weapon_vesper_stormer_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14469": {
+    "name": "Vesper Avenger {PvP}",
+    "description": "It can bestow one of the following functions: HP Regeneration, HP Drain, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_avenger_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3650,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14470": {
+    "name": "Vesper Retributer {PvP}",
+    "description": "It can bestow one of the following functions: HP Regeneration, HP Drain, or Health. Increases damage inflicted during PvP, and the chance to increase Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_retributer_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14471": {
+    "name": "Vesper Caster {PvP}",
+    "description": "It can bestow one of the following functions: Acumen, MP Regeneration, or Mana Up. Increases damage inflicted during PvP, and the chance to increase Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 317
+      },
+      "MAtk": {
+        "set": 234
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1080,
+    "icon": "icon.weapon_vesper_caster_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14472": {
+    "name": "Vesper Singer {PvP}",
+    "description": "It can bestow one of the following functions: Empower, MP Regeneration, or Magic Hold. Increases damage inflicted during PvP, and the chance to increase Atk. Spd. of bows/crossbows during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 386
+      },
+      "MAtk": {
+        "set": 257
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1080,
+    "icon": "icon.weapon_vesper_singer_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14473": {
+    "name": "Vesper Thrower {PvP}",
+    "description": "It can bestow one of the following functions: Cheap Shot, Critical Slow, or Focus. Increases damage inflicted during PvP, and decreases the range of bows/crossbows occasionally during an attack or decreases Resistance to attributes. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 724
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_thrower_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3657,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14474": {
+    "name": "Vesper Pincer {PvP}",
+    "description": "Kamael Exclusive Weapon: Vesper Cutter Conversion. Haste, Focus, or Health can be bestowed. When enchanted to 4 or more, there's a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of received heal and decreased MP consumption per skill during a critical attack. Increases damage inflicted during PvP, and decreases the range of bows/crossbows occasionally during an attack or decreases Resistance to attributes. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 359
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 143356000,
+    "weight": 1280,
+    "icon": "icon.weapon_vesper_pincer_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3655,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14475": {
+    "name": "Vesper Shooter {PvP}",
+    "description": "Kamael Exclusive Weapon: Vesper Thrower Conversion. Cheap Shot, Critical Slow, or Focus can be bestowed. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 444
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 143356000,
+    "weight": 1580,
+    "icon": "icon.weapon_vesper_schutze_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14476": {
+    "name": "Vesper Nagan {PvP}",
+    "description": "Kamael Exclusive Weapon: Vesper Slasher Conversion. Haste, Focus, or Health can be bestowed. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 429
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 143356000,
+    "weight": 1800,
+    "icon": "icon.weapon_vesper_nagen_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14477": {
+    "name": "Vesper Dual Daggers {PvP}",
+    "description": "Dual daggers, P. Atk. increases by more than regular one-handed swords when enchanted. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Can be equipped by Dagger Masters above level 81. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8298,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 360
+      },
+      "MAtk": {
+        "set": 181
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 171530000,
+    "weight": 2050,
+    "icon": "icon.dual_dagger_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14478": {
+    "name": "Vesper Cutter {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_cutter_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14479": {
+    "name": "Vesper Cutter {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_cutter_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14480": {
+    "name": "Vesper Cutter {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 131. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_cutter_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14481": {
+    "name": "Vesper Slasher {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_slasher_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14482": {
+    "name": "Vesper Slasher {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_slasher_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14483": {
+    "name": "Vesper Slasher {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 131. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_slasher_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14484": {
+    "name": "Vesper Buster {PvP} - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Max MP by 30%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 317
+      },
+      "MAtk": {
+        "set": 234
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_burster_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14485": {
+    "name": "Vesper Buster {PvP} - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 317
+      },
+      "MAtk": {
+        "set": 234
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_burster_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3654,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14486": {
+    "name": "Vesper Buster {PvP} - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 20% chance of casting Dryad Root when using a magic skill on the target. Increases damage inflicted during PvP. Has a chance of increasing Casting Spd. when being attacked. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3577,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 317
+      },
+      "MAtk": {
+        "set": 234
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_burster_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3654,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14487": {
+    "name": "Vesper Shaper {PvP} - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 906 during a critical attack. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 346
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_shaper_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3572,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14488": {
+    "name": "Vesper Shaper {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 346
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_shaper_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14489": {
+    "name": "Vesper Shaper {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 346
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "icon.weapon_vesper_shaper_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14490": {
+    "name": "Vesper Fighter {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 123. Increases damage inflicted during PvP. During an attack, it has a chance of canceling a target's enhanced status by more than 1, or to decrease a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1550,
+    "icon": "icon.weapon_vesper_fighter_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3565,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14491": {
+    "name": "Vesper Fighter {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Has a chance of canceling more than 1 of a target's enhanced status, or of decreasing a target's Shield Defence during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1550,
+    "icon": "icon.weapon_vesper_fighter_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14492": {
+    "name": "Vesper Fighter {PvP} - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. There is about 43% chance of afflicting Stun during a critical attack. Increases damage inflicted during PvP, during an attack, cancels a target's enhanced status by more than 1 occasionally, or decreases a target's Shield Defence. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1550,
+    "icon": "icon.weapon_vesper_fighter_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14493": {
+    "name": "Vesper Stormer {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 2010,
+    "icon": "icon.weapon_vesper_stormer_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14494": {
+    "name": "Vesper Stormer {PvP} - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 75 during a critical attack. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 2010,
+    "icon": "icon.weapon_vesper_stormer_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3602,
+        "level": 10
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14495": {
+    "name": "Vesper Stormer {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 2010,
+    "icon": "icon.weapon_vesper_stormer_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3601,
+        "level": 10
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14496": {
+    "name": "Vesper Avenger {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Restores 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_avenger_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14497": {
+    "name": "Vesper Avenger {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Max HP increases by 25%. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_avenger_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14498": {
+    "name": "Vesper Avenger {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_avenger_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "14499": {
+    "name": "Vesper Retributer {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Increases HP Recovery Rate. Increases damage inflicted during PvP. Improves the chance of additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 482
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "icon.weapon_vesper_retributer_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

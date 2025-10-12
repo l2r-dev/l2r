@@ -1,0 +1,1408 @@
+{
+  "6900": {
+    "name": "Recipe: Arcana Mace (100%)",
+    "description": "For Dwarves only. The recipe for an Arcana Mace. Requires Create Item - Skill Level 9. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 645,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 976000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "6901": {
+    "name": "Recipe: Shining Arrow (100%)",
+    "description": "For Dwarves only. The recipe for a Shining Arrow. Requires Create Item - Skill Level 5. The success rate is 100%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 625,
+          "level": 5
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 200000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "6902": {
+    "name": "Pledge Shield",
+    "description": "A shield that can only be used by the members of a clan that owns a clan hall.",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Bone",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 90
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 9900,
+    "weight": 1380,
+    "icon": "icon.shield_pledge_shield_i00"
+  },
+  "6903": {
+    "name": "Music Box M",
+    "description": "Music Box playing Minu's music. Disappear after the one-time use. Item - Special Sound Crystal",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_m_i00",
+    "item_skills": [
+      {
+        "id": 2187,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "6904": {
+    "name": "Party Mask Fabric",
+    "description": "Main ingredient essentially required to make a Party Mask. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 60,
+    "icon": "icon.etc_piece_of_cloth_blue_i00",
+    "stackable": true
+  },
+  "6905": {
+    "name": "Hair Pin Piece",
+    "description": "Main ingredient essentially required to make a Lady's Hair Pin. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 60,
+    "icon": "icon.etc_broken_crystal_green_i00",
+    "stackable": true
+  },
+  "6906": {
+    "name": "Pirate's Eye Patch Material",
+    "description": "Main component necessary to make a Pirate's Eye Patch. May also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 60,
+    "icon": "icon.etc_braided_hemp_i00",
+    "stackable": true
+  },
+  "6907": {
+    "name": "Monocle Piece",
+    "description": "Main ingredient essentially required to make a Monocle. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 60,
+    "icon": "icon.etc_bark_blue_i00",
+    "stackable": true
+  },
+  "6908": {
+    "name": "Fish Oil",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 50,
+    "weight": 30,
+    "icon": "icon.etc_fish_oil_i00",
+    "stackable": true
+  },
+  "6909": {
+    "name": "Greater Fish Oil",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 250,
+    "weight": 30,
+    "icon": "icon.etc_fish_oil_i01",
+    "stackable": true
+  },
+  "6910": {
+    "name": "Premium Fish Oil",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 1250,
+    "weight": 30,
+    "icon": "icon.etc_fish_oil_i02",
+    "stackable": true
+  },
+  "6911": {
+    "name": "Fish Scale",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 200,
+    "weight": 30,
+    "icon": "icon.etc_fish_scale_i00",
+    "stackable": true
+  },
+  "6912": {
+    "name": "Shiny Fish Scale",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 300,
+    "weight": 30,
+    "icon": "icon.etc_fish_scale_i01",
+    "stackable": true
+  },
+  "6913": {
+    "name": "Fish Gem",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 500,
+    "weight": 30,
+    "icon": "icon.etc_fish_gem_i00",
+    "stackable": true
+  },
+  "6914": {
+    "name": "Shiny Fish Gem",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 1000,
+    "weight": 30,
+    "icon": "icon.etc_fish_gem_i01",
+    "stackable": true
+  },
+  "6915": {
+    "name": "Thin Fish Bone",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 300,
+    "weight": 30,
+    "icon": "icon.etc_fang_gray_i00",
+    "stackable": true
+  },
+  "6916": {
+    "name": "Thick Fish Bone",
+    "description": "Used as an ingredient for general manufacture or can be exchanged for a Proof of Catching a Fish by a Fishing Guild Member. Can also be sold at ordinary shops.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 450,
+    "weight": 30,
+    "icon": "icon.etc_fang_ivory_i00",
+    "stackable": true
+  },
+  "6917": {
+    "name": "Monster Only (Poison Sting)",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Wood",
+    "price": 2,
+    "weight": 6,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "6918": {
+    "name": "Monster Only (Shield of Silenos)",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Bone",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 90
+      }
+    },
+    "price": 12900,
+    "weight": 1380,
+    "icon": "icon.weapon_monster_i00",
+    "pet_useable": true
+  },
+  "6919": {
+    "name": "Monster Only (Shield of Ketra Orc)",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 142
+      }
+    },
+    "price": 78400,
+    "weight": 1320,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 142,
+    "pet_useable": true
+  },
+  "6920": {
+    "name": "Recipe: Greater Fish Oil (100%)",
+    "description": "This recipe for mid-grade Fish Oil can be used by all races. Requires Create Common Item Skill Level 2.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 680,
+          "level": 2
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 50,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6921": {
+    "name": "Recipe: Premium Fish Oil(100%)",
+    "description": "This recipe for high-grade Fish Oil can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 681,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 250,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6922": {
+    "name": "Recipe: Party Mask (100%)",
+    "description": "This recipe for a Party Mask can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 682,
+          "level": 4
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 100000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6923": {
+    "name": "Recipe: Lady's Hair Pin (100%)",
+    "description": "This recipe for a Lady's Hair Pin can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 683,
+          "level": 4
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 100000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6924": {
+    "name": "Recipe: Pirate's Eye Patch (100%)",
+    "description": "This recipe for a Pirate's Eye Patch may be used by all races. Requires Create Common Item - Skill Level 4.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 684,
+          "level": 4
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 100000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6925": {
+    "name": "Recipe: Monocle (100%)",
+    "description": "This recipe for a Monocle can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 685,
+          "level": 4
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 100000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6926": {
+    "name": "Recipe: Lesser Healing Potion (100%)",
+    "description": "This recipe for a Lesser Healing Potion can be used by all races. Requires Create Common Item Skill Level 1.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 686,
+          "level": 1
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 18,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6927": {
+    "name": "Recipe: Healing Potion (100%)",
+    "description": "This recipe for a Healing Potion can be used by all races. Requires Create Common Item Skill Level 2.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 687,
+          "level": 2
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 66,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6928": {
+    "name": "Recipe: Greater Healing Potion (100%)",
+    "description": "This recipe for a Greater Healing Potion can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 688,
+          "level": 5
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 180,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6929": {
+    "name": "Recipe: Antidote (100%)",
+    "description": "This recipe for a standard Antidote can be used by all races. Requires Create Common Item Skill Level 1.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 689,
+          "level": 1
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 15,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6930": {
+    "name": "Recipe: Greater Antidote (100%)",
+    "description": "This recipe for a powerful Antidote can be used by all races. Requires Create Common Item Skill Level 2.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 690,
+          "level": 2
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 36,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6931": {
+    "name": "Recipe: Bandage (100%)",
+    "description": "This recipe for a Bandage can be used by all races. Requires Create Common Item Skill Level 1.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 691,
+          "level": 1
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 15,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6932": {
+    "name": "Recipe: Emergency Dressing (100%)",
+    "description": "This recipe for an Emergency Dressing can be used by all races. Requires Create Common Item Skill Level 2.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 692,
+          "level": 2
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 36,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6933": {
+    "name": "Recipe: Haste Potion (100%)",
+    "description": "This recipe for a Haste Potion can be used by all races. Requires Create Common Item Skill Level 1.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 693,
+          "level": 1
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 240,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6934": {
+    "name": "Recipe: Alacrity Potion (100%)",
+    "description": "This recipe for a potion allowing swifter attacks can be used by all races. Requires Create Common Item Skill Level 1.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 694,
+          "level": 1
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 480,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6935": {
+    "name": "Recipe: Greater Haste Potion (100%)",
+    "description": "This recipe for a powerful Haste Potion can be used by all races Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 695,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6936": {
+    "name": "Recipe: Greater Swift Attack Potion (100%)",
+    "description": "This recipe for a potion allowing for greater swift attacks can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 696,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6937": {
+    "name": "Recipe: Magic Haste Potion (100%)",
+    "description": "This recipe for a Magic Haste Potion can be used by all races. Requires Create Common Item Skill Level 1.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 697,
+          "level": 1
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 480,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6938": {
+    "name": "Recipe: Greater Magic Haste Potion (100%)",
+    "description": "This recipe for a Greater Magic Haste Potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 698,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6939": {
+    "name": "Recipe: Mystery Potion (100%)",
+    "description": "This recipe for a mysterious potion can be used by all races. Requires Create Common Item Skill Level 2.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 699,
+          "level": 2
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 2000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6940": {
+    "name": "Recipe: Facelifting Potion - A (100%)",
+    "description": "This recipe for a facelifting potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 700,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6941": {
+    "name": "Recipe: Facelifting Potion - B (100%)",
+    "description": "This recipe for a facelifting potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 701,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6942": {
+    "name": "Recipe: Facelifting Potion - C (100%)",
+    "description": "This recipe for a facelifting potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 702,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6943": {
+    "name": "Recipe: Dye Potion - A (100%)",
+    "description": "This recipe for a dye potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6944": {
+    "name": "Recipe: Dye Potion - B (100%)",
+    "description": "This recipe for a dye potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6945": {
+    "name": "Recipe: Dye Potion - C (100%)",
+    "description": "This recipe for a dye potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6946": {
+    "name": "Recipe: Dye Potion - D (100%)",
+    "description": "This recipe for a dye potion can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6947": {
+    "name": "Recipe: Hair Style Change Potion - A (100%)",
+    "description": "This recipe for a potion that changes a character's hair style can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 707,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6948": {
+    "name": "Recipe: Hair Style Change Potion - B (100%)",
+    "description": "This recipe for a potion that changes a character's hair style can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 708,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6949": {
+    "name": "Recipe: Hair Style Change Potion - C (100%)",
+    "description": "This recipe for a potion that changes a character's hair style can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 709,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6950": {
+    "name": "Recipe: Hair Style Change Potion - D (100%)",
+    "description": "This recipe for a potion that changes a character's hair style can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 710,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6951": {
+    "name": "Recipe: Hair Style Change Potion - E (100%)",
+    "description": "This recipe for a potion that changes a character's hair style can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 711,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6952": {
+    "name": "Recipe: Hair Style Change Potion - F (100%)",
+    "description": "This recipe for a potion that changes a character's hair style can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 712,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6953": {
+    "name": "Recipe: Hair Style Change Potion - G (100%)",
+    "description": "This recipe for a potion that changes a character's hair style can be used by all races. Requires Create Common Item Skill Level 3.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 713,
+          "level": 3
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 4000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6954": {
+    "name": "Recipe: Dye of STR (Str+1 Con-1) (100%)",
+    "description": "This recipe for Dye of STR <Str+1 Con-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6955": {
+    "name": "Recipe: Dye of STR (Str+1 Dex-1) (100%)",
+    "description": "This recipe for Dye of STR <Str+1 Dex-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6956": {
+    "name": "Recipe: Dye of CON (Con+1 Str-1) (100%)",
+    "description": "This recipe for Dye of CON <Con+1 Str-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6957": {
+    "name": "Recipe: Dye of CON (Con+1 Dex-1) (100%)",
+    "description": "This recipe for Dye of CON <Con+1 Dex-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6958": {
+    "name": "Recipe: Dye of DEX (Dex+1 Str-1) (100%)",
+    "description": "This recipe for Dye of DEX <Dex+1 Str-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6959": {
+    "name": "Recipe: Dye of DEX (Dex+1 Con-1) (100%)",
+    "description": "This recipe for Dye of DEX <Dex+1 Con-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6960": {
+    "name": "Recipe: Dye of INT (Int+1 Men-1) (100%)",
+    "description": "This recipe for Dye of INT <Int+1 Men-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6961": {
+    "name": "Recipe: Dye of INT (Int+1 Wit-1) (100%)",
+    "description": "This recipe for Dye of INT <Int+1 Wit-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6962": {
+    "name": "Recipe: Dye of MEN (Men+1 Int-1) (100%)",
+    "description": "This recipe for Dye of MEN <Men+1 Int-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6963": {
+    "name": "Recipe: Dye of MEN (Men+1 Wit-1) (100%)",
+    "description": "This recipe for Dye of MEN <Men+1 Wit-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6964": {
+    "name": "Recipe: Dye of WIT(Wit+1 Int-1) (100%)",
+    "description": "This recipe for Dye of WIT <Wit+1 Int-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6965": {
+    "name": "Recipe: Dye of WIT(Wit+1 Men-1) (100%)",
+    "description": "This recipe for Dye of WIT <Wit+1 Men-1>. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 7000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6966": {
+    "name": "Recipe: Greater Dye of STR (Str+1 Con-1) (100%)",
+    "description": "This recipe for Greater Dye of STR <Str+1 Con-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6967": {
+    "name": "Recipe: Greater Dye of STR (Str+1 Dex-1) (100%)",
+    "description": "This recipe for Greater Dye of STR <Str+1 Dex-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6968": {
+    "name": "Recipe: Greater Dye of CON (Con+1 Str-1) (100%)",
+    "description": "This recipe for Greater Dye of CON <Con+1 Str-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6969": {
+    "name": "Recipe: Greater Dye of CON (Con+1 Dex-1) (100%)",
+    "description": "This recipe for Greater Dye of CON <Con+1 Dex-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6970": {
+    "name": "Recipe: Greater Dye of DEX (Dex+1 Str-1) (100%)",
+    "description": "This recipe for Greater Dye of DEX <Dex+1 Str-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6971": {
+    "name": "Recipe: Greater Dye of DEX (Dex+1 Con-1) (100%)",
+    "description": "This recipe for Greater Dye of DEX <Dex+1 Con-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6972": {
+    "name": "Recipe: Greater Dye of INT (Int+1 Men-1) (100%)",
+    "description": "This recipe for Greater Dye of INT <Int+1 Men-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6973": {
+    "name": "Recipe: Greater Dye of INT (Int+1 Wit-1) (100%)",
+    "description": "This recipe for Greater Dye of INT <Int+1 Wit-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6974": {
+    "name": "Recipe: Greater Dye of MEN (Men+1 Int-1) (100%)",
+    "description": "This recipe for Greater Dye of MEN <Men+1 Int-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6975": {
+    "name": "Recipe: Greater Dye of MEN (Men+1 Wit-1) (100%)",
+    "description": "This recipe for Greater Dye of MEN <Men+1 Wit-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6976": {
+    "name": "Recipe: Greater Dye of WIT(Wit+1 Int-1) (100%)",
+    "description": "This recipe for Greater Dye of WIT <Wit+1 Int-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6977": {
+    "name": "Recipe: Greater Dye of WIT(Wit+1 Men-1) (100%)",
+    "description": "This recipe for Greater Dye of WIT <Wit+1 Men-1> can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6978": {
+    "name": "Recipe: Greater Dye of STR (Str+2 Con-2) (100%)",
+    "description": "This recipe for Greater Dye of STR <Str+2 Con-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6979": {
+    "name": "Recipe: Greater Dye of STR (Str+2 Dex-2) (100%)",
+    "description": "This recipe for Greater Dye of STR <Str+2 Dex-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6980": {
+    "name": "Recipe: Greater Dye of CON (Con+2 Str-2) (100%)",
+    "description": "This recipe for Greater Dye of CON <Con+2 Str-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6981": {
+    "name": "Recipe: Greater Dye of CON (Con+2 Dex-2) (100%)",
+    "description": "This recipe for Greater Dye of CON <Con+2 Dex-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6982": {
+    "name": "Recipe: Greater Dye of DEX (Dex+2 Str-2) (100%)",
+    "description": "This recipe for Greater Dye of DEX <Dex+2 Str-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6983": {
+    "name": "Recipe: Greater Dye of DEX (Dex+2 Con-2) (100%)",
+    "description": "This recipe for Greater Dye of DEX <Dex+2 Con-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6984": {
+    "name": "Recipe: Greater Dye of INT (Int+2 Men-2) (100%)",
+    "description": "This recipe for Greater Dye of INT <Int+2 Men-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6985": {
+    "name": "Recipe: Greater Dye of INT (Int+2 Wit-2) (100%)",
+    "description": "This recipe for Greater Dye of INT <Int+2 Wit-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6986": {
+    "name": "Recipe: Greater Dye of MEN (Men+2 Int-2) (100%)",
+    "description": "This recipe for Greater Dye of MEN <Men+2 Int-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6987": {
+    "name": "Recipe: Greater Dye of MEN (Men+2 Wit-2) (100%)",
+    "description": "This recipe for Greater Dye of MEN <Men+2 Wit-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6988": {
+    "name": "Recipe: Greater Dye of WIT(Wit+2 Int-2) (100%)",
+    "description": "This recipe for Greater Dye of WIT <Wit+2 Int-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6989": {
+    "name": "Recipe: Greater Dye of WIT(Wit+2 Men-2) (100%)",
+    "description": "This recipe for Greater Dye of WIT <Wit+2 Men-2> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 12000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6990": {
+    "name": "Recipe: Greater Dye of STR (Str+3 Con-3) (100%)",
+    "description": "This recipe for Greater Dye of STR <Str+3 Con-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6991": {
+    "name": "Recipe: Greater Dye of STR (Str+3 Dex-3) (100%)",
+    "description": "This recipe for Greater Dye of STR <Str+3 Dex-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6992": {
+    "name": "Recipe: Greater Dye of CON (Con+3 Str-3) (100%)",
+    "description": "This recipe for Greater Dye of CON <Con+3 Str-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6993": {
+    "name": "Recipe: Greater Dye of CON (Con+3 Dex-3) (100%)",
+    "description": "This recipe for Greater Dye of CON <Con+3 Dex-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6994": {
+    "name": "Recipe: Greater Dye of DEX (Dex+3 Str-3) (100%)",
+    "description": "This recipe for Greater Dye of DEX <Dex+3 Str-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6995": {
+    "name": "Recipe: Greater Dye of DEX (Dex+3 Con-3) (100%)",
+    "description": "This recipe for Greater Dye of DEX <Dex+3 Con-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6996": {
+    "name": "Recipe: Greater Dye of INT (Int+3 Men-3) (100%)",
+    "description": "This recipe for Greater Dye of INT <Int+3 Men-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6997": {
+    "name": "Recipe: Greater Dye of INT (Int+3 Wit-3) (100%)",
+    "description": "This recipe for Greater Dye of INT <Int+3 Wit-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6998": {
+    "name": "Recipe: Greater Dye of MEN (Men+3 Int-3) (100%)",
+    "description": "This recipe for Greater Dye of MEN <Men+3 Int-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "6999": {
+    "name": "Recipe: Greater Dye of MEN (Men+3 Wit-3) (100%)",
+    "description": "This recipe for Greater Dye of MEN <Men+3 Wit-3> can be used by all races. Requires Create Common Item Skill Level 5.",
+    "kind": {
+      "Etc": "Dye"
+    },
+    "material": "Paper",
+    "price": 18000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  }
+}

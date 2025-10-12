@@ -1,0 +1,1811 @@
+{
+  "16837": {
+    "name": "Vesper Noble Helmet",
+    "description": "Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. Vesper Noble Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S84",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 101
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 17500000,
+    "weight": 530,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 840,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8481,
+        "level": 1
+      }
+    ]
+  },
+  "16838": {
+    "name": "Vesper Noble Leather Helmet",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. Vesper Noble Leather Helmet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S84",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 101
+      }
+    },
+    "price": 17500000,
+    "weight": 530,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 840,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8485,
+        "level": 1
+      }
+    ]
+  },
+  "16839": {
+    "name": "Vesper Noble Circlet",
+    "description": "Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Shock, and decreases Magic Cancel Rate. Vesper Noble Circlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S84",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 101
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 17500000,
+    "weight": 530,
+    "icon": "icon.armor_circlet_i00",
+    "crystal_count": 840,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8489,
+        "level": 1
+      }
+    ]
+  },
+  "16840": {
+    "name": "Vesper Noble Breastplate",
+    "description": "Masterwork Item that increases P. Atk., P. Def., Max HP, and Resistance to Hold. Vesper Cuirass",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 250
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 55840000,
+    "weight": 7520,
+    "icon": "icon.armor_t94_u_i01",
+    "crystal_count": 2680,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8436,
+        "level": 1
+      }
+    ]
+  },
+  "16841": {
+    "name": "Vesper Noble Houberk",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. Vesper Leather Hauberk",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 187
+      }
+    },
+    "price": 41880000,
+    "weight": 4140,
+    "icon": "icon.armor_t95_u_i01",
+    "crystal_count": 2010,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8442,
+        "level": 1
+      }
+    ]
+  },
+  "16842": {
+    "name": "Vesper Noble Tunic",
+    "description": "Masterwork Item that increases M. Atk., Casting Spd., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. Vesper Jacket",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 125
+      },
+      "MaxMp": {
+        "add": 637
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 41880000,
+    "weight": 1750,
+    "icon": "icon.armor_t96_u_i01",
+    "crystal_count": 2010,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8447,
+        "level": 1
+      }
+    ]
+  },
+  "16843": {
+    "name": "Vesper Noble Gaiter",
+    "description": "Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. Vesper Noble Gaiter",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "S84",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 156
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 34900000,
+    "weight": 3170,
+    "icon": "icon.armor_t94_l_i01",
+    "crystal_count": 1675,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8482,
+        "level": 1
+      }
+    ]
+  },
+  "16844": {
+    "name": "Vesper Noble Leather Legging",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. Vesper Noble Leather Legging",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "S84",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 117
+      }
+    },
+    "price": 26175000,
+    "weight": 1320,
+    "icon": "icon.armor_t95_l_i01",
+    "crystal_count": 1256,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8486,
+        "level": 1
+      }
+    ]
+  },
+  "16845": {
+    "name": "Vesper Noble Stockings",
+    "description": "Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. Vesper Noble Hose",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "S84",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 78
+      },
+      "MaxMp": {
+        "add": 415
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 26175000,
+    "weight": 850,
+    "icon": "icon.armor_t96_l_i01",
+    "crystal_count": 1256,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8490,
+        "level": 1
+      }
+    ]
+  },
+  "16846": {
+    "name": "Vesper Noble Gauntlet",
+    "description": "Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. Vesper Noble Gauntlet",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 13960000,
+    "weight": 510,
+    "icon": "icon.armor_t94_g_i01",
+    "crystal_count": 670,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8483,
+        "level": 1
+      }
+    ]
+  },
+  "16847": {
+    "name": "Vesper Noble Leather Gloves",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. Vesper Noble Leather Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "price": 13960000,
+    "weight": 510,
+    "icon": "icon.armor_t95_g_i01",
+    "crystal_count": 670,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8487,
+        "level": 1
+      }
+    ]
+  },
+  "16848": {
+    "name": "Vesper Noble Gloves",
+    "description": "Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. Vesper Noble Gloves",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 13960000,
+    "weight": 510,
+    "icon": "icon.armor_t96_g_i01",
+    "crystal_count": 670,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8491,
+        "level": 1
+      }
+    ]
+  },
+  "16849": {
+    "name": "Vesper Noble Boots",
+    "description": "Masterwork Item that increases P. Atk., P. Def., Max HP, Resistance to sleep, and Resistance to Hold. Vesper Noble Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 13960000,
+    "weight": 1070,
+    "icon": "icon.armor_t94_b_i01",
+    "crystal_count": 670,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8484,
+        "level": 1
+      }
+    ]
+  },
+  "16850": {
+    "name": "Vesper Noble Leather Boots",
+    "description": "Masterwork Item that increases P. Atk., Atk. Spd., MP Regeneration, and Max MP. Vesper Noble Leather Boots",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "price": 13960000,
+    "weight": 1070,
+    "icon": "icon.armor_t95_b_i01",
+    "crystal_count": 670,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8488,
+        "level": 1
+      }
+    ]
+  },
+  "16851": {
+    "name": "Vesper Noble Shoes",
+    "description": "Masterwork Item that increases M. Atk., MP Regeneration, and Resistance to Stun, and decreases Magic Cancel Rate. Vesper Noble Shoes",
+    "quality": "Masterwork",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 13960000,
+    "weight": 1070,
+    "icon": "icon.armor_t96_b_i01",
+    "crystal_count": 670,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 8492,
+        "level": 1
+      }
+    ]
+  },
+  "16852": {
+    "name": "Hero's Treasure Chest - 90-day limited period",
+    "description": "Chest containing an equipment set pack which can be used for 90 days. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 16853,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13273,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 15426,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.event_hero_treasure_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "16853": {
+    "name": "Equipment Set Pack - 90-day limited period",
+    "description": "When used, you can obtain a 90-day limited period equipment set for your class. Can be used after the 1st class change. Expires after 90 days if not used. Cannot be exchanged or dropped. Equipment Set 10 Day Pack",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_equip_item_box_i01",
+    "time": 129600,
+    "item_skills": [
+      {
+        "id": 2914,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "16854": {
+    "name": "Majestic Earring of Fortune - 90-day limited period",
+    "description": "MP +25. No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16855": {
+    "name": "Majestic Necklace of Fortune - 90-day limited period",
+    "description": "MP +33. No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 85
+      },
+      "MaxMp": {
+        "add": 33
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_necklace_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16856": {
+    "name": "Majestic Ring of Fortune - 90-day limited period",
+    "description": "MP +17. No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "A",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 42
+      },
+      "MaxMp": {
+        "add": 17
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_ring_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16857": {
+    "name": "Fortune Earring of Black Ore - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "B",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 54
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_earing_of_black_ore_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16858": {
+    "name": "Fortune Necklace of Black Ore - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "B",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 72
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_necklace_of_black_ore_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16859": {
+    "name": "Fortune Ring of Black Ore - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "B",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 36
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_black_ore_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16860": {
+    "name": "Fortune Earring of Seal - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "C",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 45
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_earing_of_binding_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16861": {
+    "name": "Fortune Necklace of Seal - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "C",
+    "material": "Adamantaite",
+    "stats": {
+      "MDef": {
+        "add": 64
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_necklace_of_binding_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16862": {
+    "name": "Fortune Ring of Seal - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "C",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 32
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_binding_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16863": {
+    "name": "Elven Earring of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "D",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 34
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_elven_earing_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16864": {
+    "name": "Elven Earring of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "D",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 45
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_elven_necklace_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16865": {
+    "name": "Elven Ring of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "D",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 22
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_elven_ring_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16866": {
+    "name": "Dark Crystal Robe of Fortune - 90-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 139
+      },
+      "MaxMp": {
+        "add": 665
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2450,
+    "icon": "icon.armor_t76_ul_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16867": {
+    "name": "Dark Crystal Helmet of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "weight": 570,
+    "icon": "icon.armor_helmet_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16868": {
+    "name": "Dark Crystal Gloves of Fortune - Robe - 90-day limited period",
+    "description": "Gloves that make a set with the Dark Crystal Robe of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_t76_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16869": {
+    "name": "Dark Crystal Boots of Fortune - Robe - 90-day limited period",
+    "description": "Boots that make a set with the Dark Crystal Robe of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.armor_t76_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16870": {
+    "name": "Dark Crystal Shield of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 243
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1190,
+    "icon": "icon.shield_dark_crystal_shield_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "16871": {
+    "name": "Avadon Robe of Fortune - 90-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 127
+      },
+      "MaxMp": {
+        "add": 561
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2540,
+    "icon": "icon.armor_t59_ul_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16872": {
+    "name": "Avadon Circlet of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 62
+      }
+    },
+    "weight": 590,
+    "icon": "icon.armor_leather_helmet_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16873": {
+    "name": "Avadon Gloves of Fortune - Robe - 90-day limited period",
+    "description": "Gloves that make a set with the Avadon Robe of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 590,
+    "icon": "icon.armor_t59_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16874": {
+    "name": "Avadon Boots of Fortune - Robe - 90-day limited period",
+    "description": "Boots that make a set with the Avadon Robe of Fortune. No exchange or drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1180,
+    "icon": "icon.armor_t59_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16875": {
+    "name": "Avadon Shield of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1210,
+    "icon": "icon.shield_avadon_shield_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "16876": {
+    "name": "Karmian Tunic of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 60
+      },
+      "MaxMp": {
+        "add": 225
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1980,
+    "icon": "icon.armor_t53_u_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16877": {
+    "name": "Karmian Stockings of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 37
+      },
+      "MaxMp": {
+        "add": 141
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 970,
+    "icon": "icon.armor_t53_l_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16878": {
+    "name": "Karmian Gloves of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "weight": 620,
+    "icon": "icon.armor_t53_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16879": {
+    "name": "Karmian Boots of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "weight": 1230,
+    "icon": "icon.armor_t53_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16880": {
+    "name": "Mithril Tunic of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 52
+      },
+      "MaxMp": {
+        "add": 169
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2010,
+    "icon": "icon.armor_t51_u_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16881": {
+    "name": "Mithril Stockings of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 32
+      },
+      "MaxMp": {
+        "add": 105
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 980,
+    "icon": "icon.armor_t51_l_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16882": {
+    "name": "Elven Mithril Gloves of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 27
+      }
+    },
+    "weight": 640,
+    "icon": "icon.armor_t51_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16883": {
+    "name": "Elven Mithril Boots of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 27
+      }
+    },
+    "weight": 1250,
+    "icon": "icon.armor_t51_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16884": {
+    "name": "Dark Crystal Leather Armor of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 128
+      }
+    },
+    "weight": 4300,
+    "icon": "icon.armor_t75_u_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16885": {
+    "name": "Dark Crystal Leggings of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 80
+      }
+    },
+    "weight": 1480,
+    "icon": "icon.armor_t75_l_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16886": {
+    "name": "Dark Crystal Gloves of Fortune - Light Armor - 90-day limited period",
+    "description": "Gloves that make a set with the Dark Crystal Leather Mail of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_t75_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16887": {
+    "name": "Dark Crystal Boots of Fortune - Light Armor - 90-day limited period",
+    "description": "Boots that make a set with the Dark Crystal Leather Mail of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.armor_t75_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16888": {
+    "name": "Leather Armor of Doom of Fortune - 90-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 202
+      }
+    },
+    "weight": 5500,
+    "icon": "icon.armor_t72_ul_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16889": {
+    "name": "Doom Helmet of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 66
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_leather_helmet_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16890": {
+    "name": "Doom Gloves of Fortune - Heavy Armor - 90-day limited period",
+    "description": "Gloves that make a set with the Doom Plate Armor of Fortune. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_t71_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16891": {
+    "name": "Doom Gloves of Fortune - Light Armor - 90-day limited period",
+    "description": "Gloves that make a set with the Doom Leather Mail of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_t72_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16892": {
+    "name": "Doom Boots of Fortune - Heavy Armor - 90-day limited period",
+    "description": "Boots that make a set with the Doom Plate Armor of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1130,
+    "icon": "icon.armor_t71_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16893": {
+    "name": "Doom Boots of Fortune - Light Armor - 90-day limited period",
+    "description": "Boots that make a set with the Doom Leather Mail of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "weight": 1130,
+    "icon": "icon.armor_t72_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16894": {
+    "name": "Doom Plate Armor of Fortune - 90-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 270
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 9980,
+    "icon": "icon.armor_t71_ul_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16895": {
+    "name": "Doom Shield of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1200,
+    "icon": "icon.shield_doom_shield_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "16896": {
+    "name": "Plate Leather Armor of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 94
+      }
+    },
+    "weight": 4450,
+    "icon": "icon.armor_t47_u_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16897": {
+    "name": "Plate Leather Gaiters of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 59
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.armor_t47_l_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16898": {
+    "name": "Plate Leather Boots of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "weight": 1220,
+    "icon": "icon.armor_t47_b_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "16899": {
+    "name": "Plate Leather Gloves of Fortune - 90-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 33
+      }
+    },
+    "weight": 610,
+    "icon": "icon.armor_t47_g_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

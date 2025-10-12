@@ -1,0 +1,26 @@
+{% extends "_common/base.html" %}
+
+{% import "_common/macros.html" as macros %}
+
+{% block content %}
+    {% include "_common/navigation.html" %}
+    <br>
+    {{ macros::pagination(current_page=current_page, total_pages=total_pages, has_prev=has_prev,
+        prev_page=prev_page, has_next=has_next, next_page=next_page, action_prefix="admin_multi_sell_list", show_jump_to=True) }}
+    <br>
+
+    <!-- Items Categories List -->
+    {% for category in item_categories %}
+        <center>
+            <font color="LEVEL">{{ category.name }}</font>
+        </center>
+        <br>
+        
+        {% for subcategory in category.subcategories %}
+            <a action="bypass -h admin_multi_sell {{ subcategory.id }}">{{ subcategory.name }}</a>
+            <br1>
+        {% endfor %}
+        
+        <br>
+    {% endfor %}
+{% endblock content %}

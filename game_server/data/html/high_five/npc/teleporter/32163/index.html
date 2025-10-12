@@ -1,0 +1,12 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+Teleportation magic was not permitted in Kamael lands from the very beginning of the world. Now though... things have
+changed!<br>
+<a action="bypass -h npc_{{ object_id }}_chat tp">Teleport</a><br>
+<a action="bypass -h npc_{{ object_id }}_chat tp_floor">Move to Stronghold (Free).</a><br>
+<a action="bypass -h npc_{{ object_id }}_multisell 002">Exchange Dimension Diamonds.</a><br>
+<a action="bypass -h npc_{{ object_id }}_chat tp_noble">[Noblesse Exclusive] Teleport</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest CharacterBirthday">Call Alegria</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{% endblock body %}

@@ -1,0 +1,3352 @@
+{
+  "100": {
+    "name": "Voodoo Doll",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 25
+      },
+      "MAtk": {
+        "set": 28
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 188000,
+    "weight": 630,
+    "icon": "icon.weapon_voodoo_doll_i00"
+  },
+  "101": {
+    "name": "Scroll of Wisdom",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Paper",
+    "stats": {
+      "PAtk": {
+        "set": 32
+      },
+      "MAtk": {
+        "set": 35
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 610,
+    "icon": "icon.weapon_scroll_of_wisdom_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "102": {
+    "name": "Round Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "material": "Steel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 79
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 5470,
+    "weight": 1390,
+    "icon": "icon.shield_round_shield_i00"
+  },
+  "103": {
+    "name": "Tower Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 190
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 198300,
+    "weight": 1240,
+    "icon": "icon.shield_tower_shield_i00",
+    "crystal_count": 79,
+    "enchantable": true
+  },
+  "104": {
+    "name": "Shield of Victory",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 419000,
+    "weight": 6400,
+    "icon": "icon.shield_small_shield_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "105": {
+    "name": "Implosion Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 419000,
+    "weight": 4800,
+    "icon": "icon.shield_doom_shield_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "106": {
+    "name": "Dark Dragon Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 649800,
+    "weight": 4800,
+    "icon": "icon.shield_dark_dragon_shield_i00",
+    "crystal_count": 112,
+    "enchantable": true
+  },
+  "107": {
+    "name": "Composite Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 190
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 198300,
+    "weight": 1230,
+    "icon": "icon.shield_composite_shield_i00",
+    "crystal_count": 79,
+    "enchantable": true
+  },
+  "108": {
+    "name": "Masterpiece Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 649800,
+    "weight": 5600,
+    "icon": "icon.shield_masterpiece_shield_i00",
+    "crystal_count": 112,
+    "enchantable": true
+  },
+  "109": {
+    "name": "Shield of Solar Eclipse",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 419000,
+    "weight": 4800,
+    "icon": "icon.shield_shield_of_sola_eclipse_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "110": {
+    "name": "Doom Shield",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 649800,
+    "weight": 1200,
+    "icon": "icon.shield_doom_shield_i00",
+    "crystal_count": 87,
+    "enchantable": true
+  },
+  "111": {
+    "name": "Shield of Pledge",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 419000,
+    "weight": 4800,
+    "icon": "icon.shield_shield_of_pledge_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "112": {
+    "name": "Apprentice's Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 11
+      }
+    },
+    "price": 38,
+    "weight": 150,
+    "icon": "icon.accessary_apprentices_earing_i00"
+  },
+  "113": {
+    "name": "Mystic's Earring",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 13
+      }
+    },
+    "price": 620,
+    "weight": 150,
+    "icon": "icon.accessary_mage_earing_i00"
+  },
+  "114": {
+    "name": "Earring of Strength",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 16
+      }
+    },
+    "price": 2700,
+    "weight": 150,
+    "icon": "icon.accessary_earing_of_strength_i00"
+  },
+  "115": {
+    "name": "Earring of Wisdom",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 16
+      }
+    },
+    "price": 2700,
+    "weight": 150,
+    "icon": "icon.accessary_earing_of_wisdom_i00"
+  },
+  "116": {
+    "name": "Magic Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 7
+      }
+    },
+    "price": 25,
+    "weight": 150,
+    "icon": "icon.accessary_magic_ring_i00"
+  },
+  "117": {
+    "name": "Ring of Mana",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "B",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 34
+      }
+    },
+    "price": 310600,
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_mana_i00",
+    "crystal_count": 53,
+    "enchantable": true
+  },
+  "118": {
+    "name": "Necklace of Magic",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 15
+      }
+    },
+    "price": 51,
+    "weight": 150,
+    "icon": "icon.accessary_necklace_of_magic_i00"
+  },
+  "119": {
+    "name": "Necklace of Seal",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "C",
+    "material": "Adamantaite",
+    "stats": {
+      "MDef": {
+        "add": 64
+      }
+    },
+    "price": 434400,
+    "weight": 150,
+    "icon": "icon.accessary_necklace_of_binding_i00",
+    "crystal_count": 174,
+    "enchantable": true
+  },
+  "120": {
+    "name": "Sword of Reflection",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 105000,
+    "weight": 1550,
+    "icon": "icon.weapon_sword_of_watershadow_i00"
+  },
+  "121": {
+    "name": "Sword of Watershadow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 105000,
+    "weight": 1540,
+    "icon": "icon.weapon_sword_of_watershadow_i00"
+  },
+  "122": {
+    "name": "Handmade Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 17
+      },
+      "MAtk": {
+        "set": 12
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 41600,
+    "weight": 1570,
+    "icon": "icon.weapon_handmade_sword_i00"
+  },
+  "123": {
+    "name": "Saber",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9209
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 40
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 1520,
+    "icon": "icon.weapon_saber_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "124": {
+    "name": "Two-Handed Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9220
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 78
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 743500,
+    "weight": 2180,
+    "icon": "icon.weapon_two_handed_sword_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "125": {
+    "name": "Spinebone Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9214
+      }
+    },
+    "grade": "D",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 1510,
+    "icon": "icon.weapon_spinebone_sword_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "126": {
+    "name": "Artisan's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9215
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 1500,
+    "icon": "icon.weapon_artisans_sword_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "127": {
+    "name": "Crimson Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9218
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 743500,
+    "weight": 1490,
+    "icon": "icon.weapon_crimson_sword_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "128": {
+    "name": "Knight's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 10003
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 1500,
+    "icon": "icon.weapon_knights_sword_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "129": {
+    "name": "Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9222
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1074000,
+    "weight": 1450,
+    "icon": "icon.weapon_sword_of_revolution_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "130": {
+    "name": "Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9219
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 743500,
+    "weight": 1470,
+    "icon": "icon.weapon_elven_sword_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "131": {
+    "name": "Spirit Sword",
+    "description": "Bestows one of the following functions: Critical Damage, Critical Poison or Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9248
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_spirits_sword_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "132": {
+    "name": "Sword of Limit",
+    "description": "Bestows one of the following functions: Guidance, Critical Drain, or Health.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9280
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_sword_of_limit_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "133": {
+    "name": "Raid Sword",
+    "description": "Bestows one of the following functions: Focus, Critical Drain or Critical Poison",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9252
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_raid_sword_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "134": {
+    "name": "Sword of Nightmare",
+    "description": "Bestows one of the following functions: Health, Focus, or Light.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9276
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_sword_of_nightmare_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "135": {
+    "name": "Samurai Longsword",
+    "description": "Bestows one of the following functions: Focus, Critical Damage or Haste.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9292
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_samurai_longsword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "136": {
+    "name": "(Not In Use)",
+    "description": "Dimensional item pack. A wrapped pack containing a Sudden Agathion Bracelet (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14075,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "137": {
+    "name": "(Not In Use)",
+    "description": "Dimensional item pack. A wrapped pack containing a Shiny Agathion Bracelet (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14076,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "138": {
+    "name": "(Not In Use)",
+    "description": "Dimensional item pack. A wrapped pack containing a Sobbing Agathion Bracelet (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14077,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "139": {
+    "name": "Sudden Agathion 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Sudden Agathion Bracelet (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14093,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "140": {
+    "name": "Shiny Agathion 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Shiny Agathion Bracelet (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14094,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "141": {
+    "name": "Sobbing Agathion 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Sobbing Agathion Bracelet (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14095,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "142": {
+    "name": "Keshanberk",
+    "description": "Bestows one of the following functions: Guidance, Focus or Back Blow",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9304
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 1370,
+    "icon": "icon.weapon_kshanberk_i00",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "143": {
+    "name": "Sword of Mystic",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 43
+      },
+      "MAtk": {
+        "set": 45
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 550800,
+    "weight": 980,
+    "icon": "icon.weapon_sword_of_mystic_i00",
+    "crystal_count": 1017,
+    "enchantable": true
+  },
+  "144": {
+    "name": "Sword of Occult",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 43
+      },
+      "MAtk": {
+        "set": 45
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 550800,
+    "weight": 970,
+    "icon": "icon.weapon_sword_of_occult_i00",
+    "crystal_count": 1017,
+    "enchantable": true
+  },
+  "145": {
+    "name": "Sword of Whispering Death",
+    "description": "Bestows one of the following functions: Empower, M. Atk. or Magic Silence.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 920,
+    "icon": "icon.weapon_deathbreath_sword_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "146": {
+    "name": "Ghoulbane",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 8680000,
+    "weight": 910,
+    "icon": "icon.weapon_falchion_i00",
+    "crystal_count": 1157,
+    "enchantable": true
+  },
+  "147": {
+    "name": "Tear of Darkness",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 18300000,
+    "weight": 830,
+    "icon": "icon.weapon_shamshir_i00",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "148": {
+    "name": "Sword of Valhalla",
+    "description": "Bestows one of the following functions: Acumen, Magic Weakness or Magic Regeneration.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i00",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "149": {
+    "name": "Sword of Life",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 18300000,
+    "weight": 840,
+    "icon": "icon.weapon_needle_wolverine_i00",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "150": {
+    "name": "Elemental Sword",
+    "description": "Bestows one of the following functions: M. Atk., Magic Paralyze or Empower.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14098000,
+    "weight": 830,
+    "icon": "icon.weapon_elemental_sword_i00",
+    "crystal_count": 1128,
+    "enchantable": true
+  },
+  "151": {
+    "name": "Sword of Miracles",
+    "description": "Bestows one of the following functions: M. Atk., Magic Silence or Acumen.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "icon.weapon_sword_of_miracle_i00",
+    "crystal_count": 1659,
+    "enchantable": true
+  },
+  "152": {
+    "name": "Heavy Chisel",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 10
+      },
+      "MAtk": {
+        "set": 8
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6200,
+    "weight": 1890,
+    "icon": "icon.weapon_heavy_chisel_i00"
+  },
+  "153": {
+    "name": "Sigil",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 12
+      },
+      "MAtk": {
+        "set": 9
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14200,
+    "weight": 1850,
+    "icon": "icon.weapon_sickle_i00"
+  },
+  "154": {
+    "name": "Dwarven Mace",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 17
+      },
+      "MAtk": {
+        "set": 12
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 41600,
+    "weight": 1860,
+    "icon": "icon.weapon_dwarven_mace_i00"
+  },
+  "155": {
+    "name": "Flanged Mace",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 188000,
+    "weight": 1800,
+    "icon": "icon.weapon_buzdygan_i00"
+  },
+  "156": {
+    "name": "Hand Axe",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 40
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 1820,
+    "icon": "icon.weapon_hand_axe_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "157": {
+    "name": "Spiked Club",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 743500,
+    "weight": 1750,
+    "icon": "icon.weapon_spike_club_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "158": {
+    "name": "Tarbar",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1074000,
+    "weight": 1730,
+    "icon": "icon.weapon_tarbar_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "159": {
+    "name": "Bonebreaker",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 92
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1387000,
+    "weight": 1720,
+    "icon": "icon.weapon_bonebreaker_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "160": {
+    "name": "Battle Axe",
+    "description": "Bestows one of the following functions: Anger, Rsk. Focus or Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1720,
+    "icon": "icon.weapon_battle_axe_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "161": {
+    "name": "Silver Axe",
+    "description": "Bestows one of the following functions: Anger, Rsk. Focus or Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1690,
+    "icon": "icon.weapon_war_pick_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "162": {
+    "name": "War Axe",
+    "description": "Bestows one of the following functions: Anger, Health or Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1660,
+    "icon": "icon.weapon_war_axe_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "163": {
+    "name": "(Not In Use)",
+    "description": "Dimensional item pack. A wrapped pack containing a Sobbing Agathion Bracelet (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13026,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "164": {
+    "name": "Elysian",
+    "description": "Bestows one of the following functions: Health, Anger, or a Critical Drain.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1580,
+    "icon": "icon.weapon_elysian_i00",
+    "crystal_count": 1659,
+    "enchantable": true
+  },
+  "165": {
+    "name": "Yablonski's Hammer",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 35300000,
+    "weight": 1570,
+    "icon": "icon.weapon_basalt_battlehammer_i00",
+    "crystal_count": 1765,
+    "enchantable": true
+  },
+  "166": {
+    "name": "Heavy Mace",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 40
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 1800,
+    "icon": "icon.weapon_heavy_mace_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "167": {
+    "name": "Scalpel",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 40
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 1810,
+    "icon": "icon.weapon_scalpel_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "168": {
+    "name": "Work Hammer",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 40
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 1790,
+    "icon": "icon.weapon_work_hammer_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "169": {
+    "name": "Skull Breaker",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1074000,
+    "weight": 1740,
+    "icon": "icon.weapon_skull_breaker_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "170": {
+    "name": "Sudden Agathion 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Sudden Agathion Bracelet (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14101,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "171": {
+    "name": "Deadman's Glory",
+    "description": "Bestows one of the following functions: Anger, Health or Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1600,
+    "icon": "icon.weapon_deadmans_glory_i00",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "172": {
+    "name": "Heavy Bone Club",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1074000,
+    "weight": 1730,
+    "icon": "icon.weapon_heavy_bone_club_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "173": {
+    "name": "Skull Graver",
+    "description": "Bestows one of the following functions: Anger, Health, or Rsk. Focus.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1640,
+    "icon": "icon.weapon_skull_graver_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "174": {
+    "name": "Nirvana Axe",
+    "description": "Bestows one of the following functions: Magic Poison, M. Atk. or Magic Weakness.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1150,
+    "icon": "icon.weapon_nirvana_axe_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "175": {
+    "name": "Art of Battle Axe",
+    "description": "Bestows one of the following functions: Health, Rsk. Focus or Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1570,
+    "icon": "icon.weapon_art_of_battle_axe_i00",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "176": {
+    "name": "Apprentice's Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 23
+      },
+      "MAtk": {
+        "set": 24
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 105000,
+    "weight": 1070,
+    "icon": "icon.weapon_apprentices_staff_i00"
+  },
+  "177": {
+    "name": "Mage Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 30
+      },
+      "MAtk": {
+        "set": 31
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 188000,
+    "weight": 1050,
+    "icon": "icon.weapon_apprentices_staff_i00"
+  },
+  "178": {
+    "name": "Bone Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 39
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 315000,
+    "weight": 1060,
+    "icon": "icon.weapon_apprentices_staff_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "179": {
+    "name": "Mace of Prayer",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 43
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 1300,
+    "icon": "icon.weapon_mace_of_prayer_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "180": {
+    "name": "Mace of Judgment",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 43
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 1280,
+    "icon": "icon.weapon_mace_of_judgment_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "181": {
+    "name": "Mace of Miracle",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 43
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 1250,
+    "icon": "icon.weapon_mace_of_miracle_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "182": {
+    "name": "Doom Hammer",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 43
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 1200,
+    "icon": "icon.weapon_doom_hammer_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "183": {
+    "name": "Mystic Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 50
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 495500,
+    "weight": 1040,
+    "icon": "icon.weapon_mystic_staff_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "184": {
+    "name": "Conjuror's Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 50
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 495500,
+    "weight": 1030,
+    "icon": "icon.weapon_conjure_staff_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "185": {
+    "name": "Staff of Mana",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 50
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 495500,
+    "weight": 1040,
+    "icon": "icon.weapon_staff_of_mana_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "186": {
+    "name": "Staff of Magic",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 62
+      },
+      "MAtk": {
+        "set": 57
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 743500,
+    "weight": 1020,
+    "icon": "icon.weapon_staff_of_magicpower_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "187": {
+    "name": "Atuba Hammer",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 90
+      },
+      "MAtk": {
+        "set": 79
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1387000,
+    "weight": 1010,
+    "icon": "icon.weapon_atuba_hammer_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "188": {
+    "name": "Ghost Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 90
+      },
+      "MAtk": {
+        "set": 79
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1387000,
+    "weight": 1000,
+    "icon": "icon.weapon_ghost_staff_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "189": {
+    "name": "Staff of Life",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 74
+      },
+      "MAtk": {
+        "set": 72
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1387000,
+    "weight": 1180,
+    "icon": "icon.weapon_life_stick_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "190": {
+    "name": "Atuba Mace",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 90
+      },
+      "MAtk": {
+        "set": 79
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1387000,
+    "weight": 1010,
+    "icon": "icon.weapon_atuba_mace_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "191": {
+    "name": "Heavy Doom Hammer",
+    "description": "Bestows one of the following functions: Regeneration, Mental Shield or Hold.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_heavy_doom_hammer_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "192": {
+    "name": "Crystal Staff",
+    "description": "Bestows one of the following functions: Rsk. Evasion, Mana Up, or Blessed Body.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1020,
+    "icon": "icon.weapon_crystal_staff_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "193": {
+    "name": "Stick of Faith",
+    "description": "Bestows one of the following functions: Mana Up, Magic Hold or Mental Shield.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1160,
+    "icon": "icon.weapon_stick_of_faith_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "194": {
+    "name": "Heavy Doom Axe",
+    "description": "Bestows one of the following functions: Magic Poison, Magic Weakness, or Magic Chaos.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 103
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 1010,
+    "icon": "icon.weapon_heavy_doom_axe_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "195": {
+    "name": "Cursed Staff",
+    "description": "Bestows one of the following functions: Magic Hold, Magic Poison, or Magic Weakness.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 119
+      },
+      "MAtk": {
+        "set": 100
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 1000,
+    "icon": "icon.weapon_cursed_staff_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "196": {
+    "name": "Stick of Eternity",
+    "description": "Bestows one of the following functions: Empower, Rsk. Evasion, or Blessed Body.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1130,
+    "icon": "icon.weapon_stick_of_eternity_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "197": {
+    "name": "Paradia Staff",
+    "description": "Bestows one of the following functions: Regeneration, Mental Shield or Hold.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paradia_staff_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "198": {
+    "name": "Inferno Staff",
+    "description": "Bestows one of the following functions: Magic Silence, Acumen or Magic Paralyze.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1000,
+    "icon": "icon.weapon_inferno_staff_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "199": {
+    "name": "Pa'agrian Hammer",
+    "description": "Bestows one of the following functions: Rsk. Evasion, Magic Poison, or Magic Weakness.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1010,
+    "icon": "icon.weapon_paagrio_hammer_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  }
+}

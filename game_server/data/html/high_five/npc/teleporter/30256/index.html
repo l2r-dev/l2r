@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+Welcome! Isn't the weather beautiful today? You should take a trip using portal.<br>
+<a action="bypass -h npc_{{ object_id }}_chat 1">Ask about Flying Boat</a><br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

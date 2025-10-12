@@ -1,0 +1,1772 @@
+{
+  "9100": {
+    "name": "Shadow Item: Majestic Boots",
+    "description": "This Shadow Item contains the mirrored power of Majestic Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "weight": 370,
+    "icon": "icon.armor_t84_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9101": {
+    "name": "Shadow Item: Majestic Robe",
+    "description": "This Shadow Item contains the mirrored power of a Majestic Robe. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 147
+      },
+      "MaxMp": {
+        "add": 718
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 777,
+    "icon": "icon.armor_t85_ul_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9102": {
+    "name": "Shadow Item: Majestic Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Majestic Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 180,
+    "icon": "icon.armor_t85_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9103": {
+    "name": "Shadow Item: Majestic Boots",
+    "description": "This Shadow Item contains the mirrored power of Majestic Boots. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 370,
+    "icon": "icon.armor_t85_b_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9104": {
+    "name": "Composite Bow and Wooden Arrow",
+    "description": "One can receive a Composite Bow and wooden arrows by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9105": {
+    "name": "Gastraphetes and Bone Arrow",
+    "description": "One can receive a Gastraphetes and bone arrows by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9106": {
+    "name": "Akat Long Bow and Steel Arrow",
+    "description": "One can receive an Akat Long Bow and iron arrows by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9107": {
+    "name": "Dark Elven Long Bow and Silver Arrow",
+    "description": "One can receive a Dark Elven Long Bow and silver arrows by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9108": {
+    "name": "Carnage Bow and Mithril Arrow",
+    "description": "One can receive a Carnage Bow and mithril arrows by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9109": {
+    "name": "Soul Bow and Mithril Arrow",
+    "description": "One can receive a Soul Bow and mithril arrows by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9110": {
+    "name": "No Grade Shadow Armor Set Box (Heavy Armor)",
+    "description": "One can receive a no-grade Shadow \"Heavy Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9111": {
+    "name": "D-Grade Shadow Armor Set Box (Heavy Armor)",
+    "description": "One can receive a D-grade Shadow \"Heavy Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9112": {
+    "name": "C-Grade Shadow Armor Set Box (Heavy Armor)",
+    "description": "One can receive a C-grade Shadow \"Heavy Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9113": {
+    "name": "B-Grade Shadow Armor Set Box (Heavy Armor)",
+    "description": "One can receive a B-grade Shadow \"Heavy Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9114": {
+    "name": "Low A-Grade Shadow Armor Set Box (Heavy Armor)",
+    "description": "One can receive an A-grade Low Grade Shadow \"Heavy Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9115": {
+    "name": "High A-Grade Shadow Armor Set Box (Heavy Armor)",
+    "description": "One can receive an A-grade High Grade Shadow \"Heavy Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9116": {
+    "name": "No Grade Shadow Armor Set Box (Light Armor Use)",
+    "description": "One can receive a no-grade Shadow \"Light Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9117": {
+    "name": "D-Grade Shadow Armor Set Box (Light Armor Use)",
+    "description": "One can receive a D-grade Shadow \"Light Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9118": {
+    "name": "C-Grade Shadow Armor Set Box (Light Armor Use)",
+    "description": "One can receive a C-grade Shadow \"Light Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9119": {
+    "name": "B-Grade Shadow Armor Set Box (Light Armor Use)",
+    "description": "One can receive a B-grade Shadow \"Light Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9120": {
+    "name": "Low A-Grade Shadow Armor Set Box (Light Armor Use)",
+    "description": "One can receive an A-grade Low Grade Shadow \"Light Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9121": {
+    "name": "High A-Grade Shadow Armor Set Box (Light Armor Use)",
+    "description": "One can receive an A-grade High Grade Shadow \"Light Armor\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9122": {
+    "name": "No Grade Shadow Armor Set Box (Robe)",
+    "description": "One can receive a no-grade Shadow \"Robe\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9123": {
+    "name": "D-Grade Shadow Armor Set Box (Robe)",
+    "description": "One can receive a D-grade Shadow \"Robe\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9124": {
+    "name": "C-Grade Shadow Armor Set Box (Robe)",
+    "description": "One can receive a C-grade Shadow \"Robe\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9125": {
+    "name": "B-Grade Shadow Armor Set Box (Robe)",
+    "description": "One can receive a B-grade Shadow \"Robe\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9126": {
+    "name": "Low A-Grade Shadow Armor Set Box (Robe)",
+    "description": "One can receive an A-grade Low Grade Shadow \"Robe\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9127": {
+    "name": "High A-Grade Shadow Armor Set Box (Robe)",
+    "description": "One can receive an A-grade High Grade Shadow \"Robe\" set by double clicking. (Can be used when the weight gauge is below 60% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9128": {
+    "name": "Shadow Item: Mithril Gauntlet",
+    "description": "This Shadow Item contains the mirrored power of Mithril Gauntlets. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "weight": 200,
+    "icon": "icon.armor_t61_g_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9129": {
+    "name": "Shadow Item: Shield of Nightmare",
+    "description": "This Shadow Item contains the mirrored power of a Shield of Nightmare. It cannot be traded, dropped, crystallized, or given other functions.",
+    "quality": "Shadow",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 256
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 400,
+    "icon": "icon.shield_shield_of_nightmare_i00",
+    "mana": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9130": {
+    "name": "No Grade Item Set Box (Magic Use)",
+    "description": "One can receive no-grade Supplies for Wizards by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9131": {
+    "name": "D-Grade Item Set Box (Magic Use)",
+    "description": "One can receive D-grade Supplies for Wizards by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9132": {
+    "name": "C-Grade Item Set Box (Magic Use)",
+    "description": "One can receive C-grade Supplies for Wizards by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9133": {
+    "name": "B-Grade Item Set Box (Magic Use)",
+    "description": "One can receive B-grade Supplies for Wizards by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9134": {
+    "name": "A-Grade Item Set Box (Magic Use)",
+    "description": "One can receive A-grade Supplies for Wizards by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9135": {
+    "name": "A-/ S- Grade Item Set Box (Magic Use)",
+    "description": "One can receive A- and S-grade Supplies for wizards by double clicking. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Event Item",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_box_of_adventure_1_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9136": {
+    "name": "Sword of Valakas (1-Handed)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1380,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9137": {
+    "name": "Sword of Valakas (2-Handed)",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 78
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2180,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true,
+    "pet_useable": true
+  },
+  "9138": {
+    "name": "Santa's Hat",
+    "description": "Santa's Hat, which is made to celebrate the holy day. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_santas_cap_i00",
+    "dropable": false
+  },
+  "9139": {
+    "name": "Santa's Hat",
+    "description": "Santa's Hat, which is made to celebrate the holy day.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.accessory_santas_cap_i00",
+    "dropable": false
+  },
+  "9140": {
+    "name": "Salvation Bow",
+    "description": "Shoots a harmless heart-tipped arrow and allows use of the Forgiveness active skill. (Warning: If you use this skill against a monster, you will be flagged for PvP.) Forgiveness",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 1,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 1,
+        "reuse_delay": 1500
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 900,
+    "icon": "icon.weapon_krono_bow_i00",
+    "item_skills": [
+      {
+        "id": 3261,
+        "level": 1
+      }
+    ]
+  },
+  "9141": {
+    "name": "Redemption Bow",
+    "description": "Event item. Send a heart with love to select mutated creatures. The active skills \"Heart Shot\" and \"Double Heart Shot\" can be used. Forgiveness",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 1,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 1,
+        "reuse_delay": 1500
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_krono_bow_i00",
+    "mana": 230,
+    "item_skills": [
+      {
+        "id": 3260,
+        "level": 1
+      },
+      {
+        "id": 3262,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9142": {
+    "name": "Apiga",
+    "description": "Money used by cursed creatures. Take it to a magic lab for a reward.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pig_adena_i01",
+    "stackable": true
+  },
+  "9143": {
+    "name": "Golden Apiga",
+    "description": "Rare money used by cursed creatures. Depending on the amount, you may use these to earn a reward in a lottery. Cannot be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pig_adena_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9144": {
+    "name": "Pirate's Booty",
+    "description": "One can receive Golden Apigas with a certain rate of chance by double clicking. If you are unlucky, you won't receive anything. (Can be used when the weight gauge is below 80% and there are more than 10 empty inventory slots.) Pig Chest",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_jewel_box_i00",
+    "stackable": true
+  },
+  "9145": {
+    "name": "Little Angel Wings (Event)",
+    "description": "A wing-shaped hair accessory. This item is designed for use in events and cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_hair_ring_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9146": {
+    "name": "Scroll of Guidance (Event)",
+    "description": "Accuracy increases. Event reward item. Guidance Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2310,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9147": {
+    "name": "Scroll of Death Whisper (Event)",
+    "description": "Critical Damage increases. Event reward item. Death Whisper Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2311,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9148": {
+    "name": "Scroll of Focus (Event)",
+    "description": "Critical Rate increases. Event reward item. Focus Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2312,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9149": {
+    "name": "Scroll of Acumen (Event)",
+    "description": "Spell Casting Spd. increases. Event reward item. Scroll of Acumen - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2313,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9150": {
+    "name": "Scroll of Haste (Event)",
+    "description": "Atk. Spd. increases. Event reward item. Haste Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2314,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9151": {
+    "name": "Scroll of Agility (Event)",
+    "description": "Increases Evasion. Event reward item. Agility Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2315,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9152": {
+    "name": "Scroll of Empower (Event)",
+    "description": "M. Atk. increases. Event reward item. Scroll of Empower - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2316,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9153": {
+    "name": "Scroll of Might (Event)",
+    "description": "P. Atk. increases. Event reward item. Might Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2317,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9154": {
+    "name": "Scroll of Wind Walk (Event)",
+    "description": "Speed increases. Event reward item. Wind Walk Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2318,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9155": {
+    "name": "Scroll of Shield (Event)",
+    "description": "P. Def. increases. Event reward item. Shield Scroll - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_white_i00",
+    "item_skills": [
+      {
+        "id": 2319,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9156": {
+    "name": "Blessed Scroll of Escape - Event",
+    "description": "A magical scroll that relocates user to the nearest village. An event reward. Blessed Scroll of Escape - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_return_i01",
+    "item_skills": [
+      {
+        "id": 2320,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "9157": {
+    "name": "Blessed Scroll of Resurrection - Event",
+    "description": "A magic scroll that resurrects a dead character and restores his or her Exp. completely. An event reward. Blessed Scroll of Resurrection - Event Use",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_resurrection_i01",
+    "item_skills": [
+      {
+        "id": 2321,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "9158": {
+    "name": "Gold Circlet of Redemption",
+    "description": "Golden Circlet. Uses 2 hair accessory slots. Event item.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.Accessary_gold_circlet_i00"
+  },
+  "9159": {
+    "name": "Silver Circlet of Salvation",
+    "description": "Silver Circlet. Uses 2 hair accessory slots. Event item.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.Accessary_gold_circlet_i01"
+  },
+  "9160": {
+    "name": "Pig Wrangler's Cap",
+    "description": "Top hat made of leather. Uses 2 hair accessory slots. Event item.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.Accessary_middle_ages_i00"
+  },
+  "9161": {
+    "name": "Santa's Antlers",
+    "description": "Festive Santa hat with antlers. Ideal for celebrating the holidays. This item can only be equipped during the year end.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.accessory_santas_antler_i00",
+    "dropable": false
+  },
+  "9162": {
+    "name": "Red Philosopher's Stone Transmutation Circle",
+    "description": "Usable by all races. Double-click to add the Red Philosopher's Stone Transmutation Circle to your Recipe Book. Requires Create Item - Level 1. The success rate is 100%.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_sign_i00",
+    "stackable": true
+  },
+  "9163": {
+    "name": "Blue Philosopher's Stone Transmutation Circle",
+    "description": "Usable by all races. Double-click to add the Blue Philosopher's Stone Transmutation Circle to your Recipe Book. Requires Create Item - Level 1. The success rate is 100%.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_sign_i00",
+    "stackable": true
+  },
+  "9164": {
+    "name": "Orange Philosopher's Stone Transmutation Circle",
+    "description": "Usable by all races. Double-click to add the Orange Philosopher's Stone Transmutation Circle to your Recipe Book. Requires Create Item - Level 1. The success rate is 100%.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_sign_i00",
+    "stackable": true
+  },
+  "9165": {
+    "name": "Black Philosopher's Stone Transmutation Circle",
+    "description": "Usable by all races. Double-click to add the Black Philosopher's Stone Transmutation Circle to your Recipe Book. Requires Create Item - Level 1. The success rate is 100%.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_sign_i00",
+    "stackable": true
+  },
+  "9166": {
+    "name": "White Philosopher's Stone Transmutation Circle",
+    "description": "Usable by all races. Double-click to add the White Philosopher's Stone Transmutation Circle to your Recipe Book. Requires Create Item - Level 1. The success rate is 100%.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_sign_i00",
+    "stackable": true
+  },
+  "9167": {
+    "name": "Green Philosopher's Stone Transmutation Circle",
+    "description": "Usable by all races. Double-click to add the Green Philosopher's Stone Transmutation Circle to your Recipe Book. Requires Create Item - Level 1. The success rate is 100%.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.etc_sign_i00",
+    "stackable": true
+  },
+  "9168": {
+    "name": "Philosopher's Stone Ore",
+    "description": "A material used to create a colored Philosopher's Stone.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "weight": 2,
+    "icon": "icon.etc_stone_piece_i00",
+    "stackable": true
+  },
+  "9169": {
+    "name": "Philosopher's Stone Conversion Formula",
+    "description": "A material used to create a colored Philosopher's Stone.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "weight": 2,
+    "icon": "icon.etc_trans_form_i00",
+    "stackable": true
+  },
+  "9170": {
+    "name": "Magic Reagents",
+    "description": "A material used to create a colored Sage's Stone.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "weight": 2,
+    "icon": "icon.etc_madicine_bottle_i00",
+    "stackable": true
+  },
+  "9171": {
+    "name": "Red Philosopher's Stone",
+    "description": "Double-click to get a random item. Red Sage's Stone",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 20,
+    "icon": "icon.etc_wise_man_stone_i00",
+    "stackable": true
+  },
+  "9172": {
+    "name": "Blue Philosopher's Stone",
+    "description": "Double-click to get a random item. Blue Sage's Stone",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 20,
+    "icon": "icon.etc_wise_man_stone_i01",
+    "stackable": true
+  },
+  "9173": {
+    "name": "Orange Philosopher's Stone",
+    "description": "Double-click to get a random item. Orange Sage's Stone",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 20,
+    "icon": "icon.etc_wise_man_stone_i03",
+    "stackable": true
+  },
+  "9174": {
+    "name": "Black Philosopher's Stone",
+    "description": "Double-click to get a random item. Black Sage's Stone",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 20,
+    "icon": "icon.etc_wise_man_stone_i04",
+    "stackable": true
+  },
+  "9175": {
+    "name": "White Philosopher's Stone",
+    "description": "Double-click to get a random item. White Sage's Stone",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 20,
+    "icon": "icon.etc_wise_man_stone_i05",
+    "stackable": true
+  },
+  "9176": {
+    "name": "Green Philosopher's Stone",
+    "description": "Double-click to get a random item. Green Sage's Stone",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 20,
+    "icon": "icon.etc_wise_man_stone_i02",
+    "stackable": true
+  },
+  "9177": {
+    "name": "Shadow Item - Teddy Bear Hat - Resurrection",
+    "description": "A fun, bear-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_bear_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3263,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9178": {
+    "name": "Shadow Item - Piggy Hat - Resurrection",
+    "description": "A fun, piggy-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_pig_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3263,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9179": {
+    "name": "Shadow Item - Jester Hat - Resurrection",
+    "description": "A festive, shadow-type jester hat with 2 points. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3263,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9180": {
+    "name": "Shadow Item - Wizard Hat - Resurrection",
+    "description": "A shadow-type wizard hat with a wide brim and bent tip. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_magic_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3263,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9181": {
+    "name": "Shadow Item - Dapper Cap - Resurrection",
+    "description": "A shadow-type hair accessory with a visor. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_dandy_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3263,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9182": {
+    "name": "Shadow Item - Romantic Chapeau - Resurrection",
+    "description": "A shadow-type hair accessory adorned with feathers. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_romantic_chaperon_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3263,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9183": {
+    "name": "Shadow Item - Iron Circlet - Resurrection",
+    "description": "A shadow-type hair accessory made of iron. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_iron_circlet_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3263,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9184": {
+    "name": "Shadow Item - Teddy Bear Hat - Blessed Escape",
+    "description": "A fun, bear-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_bear_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9185": {
+    "name": "Shadow Item - Piggy Hat - Blessed Escape",
+    "description": "A fun, piggy-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_pig_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9186": {
+    "name": "Shadow Item - Jester Hat - Blessed Escape",
+    "description": "A festive, shadow-type jester hat with 2 points. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9187": {
+    "name": "Shadow Item - Wizard Hat - Blessed Escape",
+    "description": "A shadow-type wizard hat with a wide brim and bent tip. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_magic_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9188": {
+    "name": "Shadow Item - Dapper Cap - Blessed Escape",
+    "description": "A shadow-type hair accessory with a visor. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_dandy_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9189": {
+    "name": "Shadow Item - Romantic Chapeau - Blessed Escape",
+    "description": "A shadow-type hair accessory adorned with feathers. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_romantic_chaperon_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9190": {
+    "name": "Shadow Item - Iron Circlet - Blessed Escape",
+    "description": "A shadow-type hair accessory made of iron. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Blessed Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_iron_circlet_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3264,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9191": {
+    "name": "Shadow Item - Teddy Bear Hat - Big Head",
+    "description": "A fun, bear-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_bear_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9192": {
+    "name": "Shadow Item - Piggy Hat - Big Head",
+    "description": "A fun, piggy-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_pig_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9193": {
+    "name": "Shadow Item - Jester Hat - Big Head",
+    "description": "A festive, shadow-type jester hat with 2 points. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9194": {
+    "name": "Shadow Item - Wizard Hat - Big Head",
+    "description": "A shadow-type wizard hat with a wide brim and bent tip. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_magic_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9195": {
+    "name": "Shadow Item - Dapper Cap - Big Head",
+    "description": "A shadow-type hair accessory with a visor. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_dandy_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9196": {
+    "name": "Shadow Item - Romantic Chapeau - Big Head",
+    "description": "A shadow-type hair accessory adorned with feathers. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_romantic_chaperon_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9197": {
+    "name": "Shadow Item - Iron Circlet - Big Head",
+    "description": "A shadow-type hair accessory made of iron. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Mysterious Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_iron_circlet_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3265,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9198": {
+    "name": "Shadow Item - Teddy Bear Hat - Firework",
+    "description": "A fun, bear-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_bear_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9199": {
+    "name": "Shadow Item - Piggy Hat - Firework",
+    "description": "A fun, piggy-shaped shadow-type hair accessory. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_pig_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

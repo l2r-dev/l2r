@@ -1,0 +1,202 @@
+{% extends "_common/base.html" %}
+
+{% block title %}
+{% if npc_title %} {{ npc_title }}{% endif %} {{ name }}
+{% endblock title %}
+
+{% block body %}
+<center>
+<table width="300">
+    <tr>
+        <td colspan="2" align="center">
+            <font color="LEVEL">NPC Information</font>
+        </td>
+    </tr>
+</table>
+</center>
+<br>
+
+<table width="300">
+    <tr>
+        <td><font color="LEVEL">Name:</font></td>
+        <td>{% if npc_title %} {{ npc_title }}{% endif %} {{ name }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">ID:</font></td>
+        <td>{{ npc_id }}</td>
+    </tr>
+    {% if display_id %}
+    <tr>
+        <td><font color="LEVEL">Display ID:</font></td>
+        <td>{{ display_id }}</td>
+    </tr>
+    {% endif %}
+    <tr>
+        <td><font color="LEVEL">Type:</font></td>
+        <td>{{ kind }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Level:</font></td>
+        <td>{{ level }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Race:</font></td>
+        <td>{{ race }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Gender:</font></td>
+        <td>{{ gender }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Position:</font></td>
+        <td>{{ position }}</td>
+    </tr>
+</table>
+
+<br>
+<center><font color="LEVEL">Combat Status</font></center>
+<table width="300">
+    <tr>
+        <td><font color="LEVEL">Attackable:</font></td>
+        <td>{% if is_attackable %}Yes{% else %}No{% endif %}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">In Combat:</font></td>
+        <td>{% if is_in_combat %}Yes{% else %}No{% endif %}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Dead:</font></td>
+        <td>{% if is_dead %}Yes{% else %}No{% endif %}</td>
+    </tr>
+</table>
+
+<br>
+<center><font color="LEVEL">Vitals</font></center>
+<table width="300">
+    <tr>
+        <td><font color="LEVEL">HP:</font></td>
+        <td>{{ hp | round }} / {{ max_hp | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">MP:</font></td>
+        <td>{{ mp | round }} / {{ max_mp | round }}</td>
+    </tr>
+    {% if cp > 0 or max_cp > 0 %}
+    <tr>
+        <td><font color="LEVEL">CP:</font></td>
+        <td>{{ cp | round }} / {{ max_cp | round }}</td>
+    </tr>
+    {% endif %}
+</table>
+
+<br>
+<center><font color="LEVEL">Combat Stats</font></center>
+<table width="300">
+    <tr>
+        <td><font color="LEVEL">P.Atk:</font></td>
+        <td>{{ p_atk | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">M.Atk:</font></td>
+        <td>{{ m_atk | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">P.Def:</font></td>
+        <td>{{ p_def | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">M.Def:</font></td>
+        <td>{{ m_def | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Atk.Spd:</font></td>
+        <td>{{ atk_spd | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Cast.Spd:</font></td>
+        <td>{{ cast_spd | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Crit.Rate:</font></td>
+        <td>{{ crit_rate | round }}</td>
+    </tr>
+    <tr>
+        <td><font color="LEVEL">Crit.Dmg:</font></td>
+        <td>{{ crit_damage | round }}</td>
+    </tr>
+</table>
+
+{% if exp_reward > 0 or sp_reward > 0 %}
+<br>
+<center><font color="LEVEL">Rewards</font></center>
+<table width="300">
+    {% if exp_reward > 0 %}
+    <tr>
+        <td><font color="LEVEL">EXP:</font></td>
+        <td>{{ exp_reward }}</td>
+    </tr>
+    {% endif %}
+    {% if sp_reward > 0 %}
+    <tr>
+        <td><font color="LEVEL">SP:</font></td>
+        <td>{{ sp_reward }}</td>
+    </tr>
+    {% endif %}
+</table>
+{% endif %}
+
+
+{% if drop_items and drop_items | length > 0 %}
+<br>
+<center><font color="LEVEL">Drop Table</font></center>
+<table width="300">
+    {% for item in drop_items %}
+    <tr>
+        <td width="100"><font color="LEVEL">{{ item.id }}:</font></td>
+        <td width="150">{{ item.description }}</td>
+        <td width="100">{{ item.chance | round(precision=3) }}% ({{ item.min }}-{{ item.max }})</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+{% if spoil_items and spoil_items | length > 0 %}
+<br>
+<center><font color="LEVEL">Spoil Table</font></center>
+<table width="300">
+    {% for item in spoil_items %}
+    <tr>
+        <td width="100"><font color="LEVEL">{{ item.id }}:</font></td>
+        <td width="150">{{ item.description }}</td>
+        <td width="100">{{ item.chance | round(precision=3) }}% ({{ item.min }}-{{ item.max }})</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+{% if calculated_drops and calculated_drops | length > 0 %}
+<br>
+<center><font color="LEVEL">Calculated Drops</font></center>
+<table width="300">
+    {% for drop in calculated_drops %}
+    <tr>
+        <td><font color="LEVEL">Item {{ drop[0] }}:</font></td>
+        <td>{{ drop[1] }} pieces</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+{% if calculated_spoils and calculated_spoils | length > 0 %}
+<br>
+<center><font color="LEVEL">Calculated Spoils</font></center>
+<table width="300">
+    {% for spoil in calculated_spoils %}
+    <tr>
+        <td><font color="LEVEL">Item {{ spoil[0] }}:</font></td>
+        <td>{{ spoil[1] }} pieces</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endif %}
+{% endblock body %}

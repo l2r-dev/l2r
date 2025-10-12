@@ -1,0 +1,7 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+It might be a better idea to walk slowly taking a rest sometimes to go to other villages. But if you don't have time for that, we can open the door of time and space for you. Where do you want to go?<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

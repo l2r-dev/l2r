@@ -1,0 +1,131 @@
+[workspace]
+resolver = "2"
+members = ["core", "login_server", "game_server", "game_server/crates/*"]
+
+default-members = [
+  "core",
+  "login_server",
+  "game_server",
+  "game_server/crates/*",
+]
+
+[workspace.metadata.bevy_lint]
+pedantic = "warn"
+# restriction = "warn"
+# nursery = "warn"
+
+[workspace.dependencies]
+# Bevy ecosystem
+bevy = { version = "0.16.0", default-features = false, features = [
+  "multi_threaded",
+  "serialize",
+  "file_watcher",
+  "track_location",
+  "bevy_state",
+  "sysinfo_plugin",
+  "configurable_error_handler",
+  # "dynamic_linking",
+] }
+
+# bevy_mod_scripting = { version = "0.16.0", default-features = false, features = [
+#   "lua54",
+#   "core_functions",
+#   "bevy_ecs_bindings",
+#   "bevy_input_bindings",
+#   "bevy_math_bindings",
+#   "bevy_reflect_bindings",
+#   "bevy_time_bindings",
+#   "bevy_transform_bindings",
+# ] }
+
+bevy_mod_scripting = { git = "https://github.com/aggyomfg/bevy_mod_scripting.git", rev = "999b1e3", default-features = false, features = [
+  "lua54",
+  "core_functions",
+  "bevy_ecs_bindings",
+  "bevy_input_bindings",
+  "bevy_math_bindings",
+  "bevy_reflect_bindings",
+  "bevy_time_bindings",
+  "bevy_transform_bindings",
+] }
+
+
+bevy_ecs = "0.16.0"
+bevy_reflect = "0.16.0"
+bevy_asset = "0.16.0"
+bevy_common_assets = { version = "0.13", features = ["json", "ron", "toml"] }
+bevy_slinet = { version = "0.14.0", features = [
+  "server",
+  "serializer_bincode",
+  "protocol_tcp",
+] }
+bevy_webgate = "0.1"
+bevy_defer = "0.14"
+
+bevy_enum_tag = { git = "https://github.com/aggyomfg/bevy_enum_tag.git", rev = "156b44a" }
+uuid = { version = "1", features = ["v7"] }
+cached = "0.55"
+
+# Core dependencies
+async-task = "4.7"
+axum = "0.8.1"
+avian3d = { version = "0.3.1", default-features = false, features = [
+  "3d",
+  "f32",
+  "parry-f32",
+  "debug-plugin",
+  "parallel",
+  "bevy_diagnostic",
+] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+strum = { version = "0.26.3", features = ["derive"] }
+strum_macros = "0.26.4"
+rsa = { version = "0.9", features = ["hazmat"] }
+num-traits = "0.2"
+blowfish = "0.9.1"
+hex = "0.4.3"
+generic-array = "0.14.7"
+chrono = "0.4"
+rand = "0.8"
+redis = { version = "0.27.5", features = ["json"] }
+redis-macros = "0.4"
+prometheus = "0.13.3"
+memory-stats = "1.0.0"
+tokio = { version = "1.0" }
+num_enum = "0.7.2"
+log = "0.4"
+lazy_static = "1.4"
+const-primes = "0.10"
+bitflags = "2.5"
+bit-set = "0.8.0"
+async-std = { version = "1", features = ["attributes", "tokio1"] }
+sea-orm = { version = "1", features = [
+  "sqlx-postgres",
+  "mock",
+  "runtime-async-std-rustls",
+  "macros",
+] }
+sea-orm-migration = { version = "1.1.7", features = [
+  "runtime-async-std-rustls",
+  "sqlx-postgres",
+] }
+ctrlc = "3.5"
+tera = { version = "1", default-features = false }
+derive_more = { version = "2", features = ["from", "into"] }
+smallvec = "1.15"
+thiserror = "2"
+toml = "0.9"
+walkdir = "2.5"
+
+[profile.dev]
+# Enable some optimization for dependencies while keeping dev fast
+codegen-units = 512
+opt-level = 0
+debug = true
+incremental = true
+
+# Optimize dependencies even in dev mode
+[profile.dev.package."*"]
+opt-level = 3
+debug = false

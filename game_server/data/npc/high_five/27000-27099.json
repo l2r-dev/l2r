@@ -1,0 +1,8282 @@
+{
+  "27001": {
+    "level": 10,
+    "kind": "Monster",
+    "name": "Orc Sniper",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 163.28607,
+        "MaxMp": 108.4,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 19.33758,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 13.20506,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 61.82527,
+        "MDef": 45.24105
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27002": {
+    "level": 12,
+    "kind": "Monster",
+    "name": "Orc Fighter",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 199.62322,
+        "MaxMp": 124.48,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 22.99606,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 15.70333,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 66.32989,
+        "MDef": 48.53733
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27003": {
+    "level": 9,
+    "kind": "Monster",
+    "name": "Spirit Of Mirrors",
+    "title": "Quest Monster",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 143.17564,
+        "MaxMp": 100.48,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 17.70841,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 12.09255,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 59.66387,
+        "MDef": 43.65943
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 20,
+        "height": 10
+      }
+    }
+  },
+  "27004": {
+    "level": 10,
+    "kind": "Monster",
+    "name": "Spirit Of Mirrors",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 163.28607,
+        "MaxMp": 108.4,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 19.33758,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 13.20506,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 61.82527,
+        "MDef": 45.24105
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27005": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Spirit Of Mirrors",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 26
+      }
+    }
+  },
+  "27006": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Bhato Bloodspear",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27007": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Tanuki Skullcrusher",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27008": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Kraacul Blackskull",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27009": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Taarq Blackskull",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27016": {
+    "level": 22,
+    "kind": "Monster",
+    "name": "Nerkas",
+    "title": "Quest Monster",
+    "race": "Demonic",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 387.02878,
+        "MaxMp": 218.52,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 51.75278,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 35.34044,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 92.65694,
+        "MDef": 67.80232
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -5,
+          "Dark": 184
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 80
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 9,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 36
+      }
+    }
+  },
+  "27017": {
+    "level": 14,
+    "kind": "Monster",
+    "name": "Plague Zombie",
+    "title": "Quest Monster",
+    "race": "Undead",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 230.38548,
+        "MaxMp": 140.88,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 27.24646,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 18.6058,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 71.08179,
+        "MDef": 52.01457
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 15,
+        "Run": 15
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4071,
+        "level": 5
+      },
+      {
+        "id": 4248,
+        "level": 1,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4284,
+        "level": 5,
+        "description": "NPC HP Drain - Slow"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Bleed Attacks"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 18,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Extremely Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 21
+      }
+    }
+  },
+  "27018": {
+    "level": 10,
+    "kind": "Monster",
+    "name": "Orc Warrior",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 163.28607,
+        "MaxMp": 108.4,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 19.33758,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 13.20506,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 61.82527,
+        "MDef": 45.24105
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27019": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Orc Warrior Leader",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27020": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Varool Foulclaw",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27021": {
+    "level": 22,
+    "kind": "Monster",
+    "name": "Kirunak",
+    "title": "Quest Monster",
+    "race": "Demonic",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 387.02878,
+        "MaxMp": 218.52,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 51.75278,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 35.34044,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 92.65694,
+        "MDef": 67.80232
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -5,
+          "Dark": 184
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 80
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 9,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 36
+      }
+    }
+  },
+  "27022": {
+    "level": 22,
+    "kind": "Monster",
+    "name": "Merkenis",
+    "title": "Quest Monster",
+    "race": "Demonic",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 387.02878,
+        "MaxMp": 218.52,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 51.75278,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 35.34044,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 92.65694,
+        "MDef": 67.80232
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -5,
+          "Dark": 184
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 9,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 36
+      }
+    }
+  },
+  "27024": {
+    "level": 17,
+    "kind": "Monster",
+    "name": "Undead Priest",
+    "title": "Quest Monster",
+    "race": "Undead",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 282.57403,
+        "MaxMp": 166.08,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 34.8979,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 23.83074,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 78.68469,
+        "MDef": 57.57804
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 15,
+        "Run": 15
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4071,
+        "level": 5
+      },
+      {
+        "id": 4248,
+        "level": 1,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4284,
+        "level": 5,
+        "description": "NPC HP Drain - Slow"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Bleed Attacks"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 18,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Extremely Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 21
+      }
+    }
+  },
+  "27029": {
+    "level": 17,
+    "kind": "Monster",
+    "name": "Phantom Salamander",
+    "title": "Quest Monster",
+    "race": "Elemental",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 282.57403,
+        "MaxMp": 166.08,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 34.8979,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 23.83074,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 78.68469,
+        "MDef": 57.57804
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 64,
+        "Run": 96
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 16,
+        "height": 6
+      }
+    }
+  },
+  "27030": {
+    "level": 17,
+    "kind": "Monster",
+    "name": "Water Seer",
+    "title": "Quest Monster",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 282.57403,
+        "MaxMp": 166.08,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 34.8979,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 23.83074,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 78.68469,
+        "MDef": 57.57804
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 90,
+        "Run": 90
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 21,
+        "height": 43
+      }
+    }
+  },
+  "27031": {
+    "level": 17,
+    "kind": "Monster",
+    "name": "Ol Mahum Sentry",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 282.57403,
+        "MaxMp": 166.08,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 34.8979,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 23.83074,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 78.68469,
+        "MDef": 57.57804
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 25
+      }
+    }
+  },
+  "27032": {
+    "level": 13,
+    "kind": "Monster",
+    "name": "Lizardman Warrior",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 214.61578,
+        "MaxMp": 132.64,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 25.04271,
+        "PAtkSpd": 253,
+        "PAtkRange": 80,
+        "PAtkRandom": 30,
+        "MAtk": 17.10092,
+        "EffectKind": "Pole"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 68.67458,
+        "MDef": 50.25308
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 52,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 11,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Spears"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 30
+      }
+    }
+  },
+  "27033": {
+    "level": 12,
+    "kind": "Monster",
+    "name": "Lizardman Scout",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 199.62322,
+        "MaxMp": 124.48,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 22.99606,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 15.70333,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 66.32989,
+        "MDef": 48.53733
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 43,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 23
+      }
+    }
+  },
+  "27034": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Lizardman Soldier",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 80,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "EffectKind": "Pole"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 43,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 11,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Spears"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 23
+      }
+    }
+  },
+  "27035": {
+    "level": 19,
+    "kind": "Monster",
+    "name": "Tamil",
+    "title": "Quest Monster",
+    "race": "Giant",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 321.63954,
+        "MaxMp": 183.28,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 40.96915,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 27.97662,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 84.07638,
+        "MDef": 61.52345
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 55,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 11,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 17,
+        "height": 35
+      }
+    }
+  },
+  "27036": {
+    "level": 13,
+    "kind": "Monster",
+    "name": "Calpico",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 214.61578,
+        "MaxMp": 132.64,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 25.04271,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 17.10092,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 68.67458,
+        "MDef": 50.25308
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27037": {
+    "level": 10,
+    "kind": "Monster",
+    "name": "Calpico's Goons",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 163.28607,
+        "MaxMp": 108.4,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 19.33758,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 13.20506,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 61.82527,
+        "MDef": 45.24105
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 21
+      }
+    }
+  },
+  "27038": {
+    "level": 15,
+    "kind": "Monster",
+    "name": "Cat's Eye Bandit",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 246.95422,
+        "MaxMp": 149.2,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 29.61691,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 20.22451,
+        "EffectKind": "Dagger"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 73.55216,
+        "MDef": 53.82228
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 7,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Daggers"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 25
+      }
+    }
+  },
+  "27041": {
+    "level": 12,
+    "kind": "Monster",
+    "name": "Varangka's Messenger",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 199.62322,
+        "MaxMp": 124.48,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 22.99606,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 15.70333,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 66.32989,
+        "MDef": 48.53733
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27042": {
+    "level": 12,
+    "kind": "Monster",
+    "name": "Orc Escort",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 199.62322,
+        "MaxMp": 124.48,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 22.99606,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 15.70333,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 66.32989,
+        "MDef": 48.53733
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27043": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Varangka's Tracker",
+    "title": "Quest Monster",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 80
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 33
+      }
+    }
+  },
+  "27044": {
+    "level": 17,
+    "kind": "Monster",
+    "name": "Kasha Bear Totem Spirit",
+    "title": "Quest Monster",
+    "race": "Elemental",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 282.57403,
+        "MaxMp": 166.08,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 34.8979,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 23.83074,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 78.68469,
+        "MDef": 57.57804
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 110
+        }
+      },
+      "speed": {
+        "Walk": 40,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 21,
+        "height": 40
+      }
+    }
+  },
+  "27045": {
+    "level": 18,
+    "kind": "Monster",
+    "name": "Kuruka Ratman Leader",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 301.66622,
+        "MaxMp": 174.64,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 37.82932,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 25.83252,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 81.34791,
+        "MDef": 59.52687
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27046": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Sumi",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27047": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Wanuk",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27048": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Chewba",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27049": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Heitafu",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27050": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Picubo",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27051": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Bumbum",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27052": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Minsku",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27053": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Chuchu",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27054": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Umbar Orc",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27055": {
+    "level": 20,
+    "kind": "Monster",
+    "name": "Zakan",
+    "title": "Orc Betrayer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 342.5127,
+        "MaxMp": 192.0,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 44.32863,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 30.2707,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 86.87049,
+        "MDef": 63.56806
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 21
+      }
+    }
+  },
+  "27056": {
+    "level": 18,
+    "kind": "Monster",
+    "name": "Durka Spirit",
+    "title": "Quest Monster",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 301.66622,
+        "MaxMp": 174.64,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 37.82932,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 25.83252,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 81.34791,
+        "MDef": 59.52687
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 110
+        }
+      },
+      "speed": {
+        "Walk": 90,
+        "Run": 90
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 11,
+        "height": 20
+      }
+    }
+  },
+  "27058": {
+    "level": 17,
+    "kind": "Monster",
+    "name": "Honey Bear",
+    "title": "Quest Monster",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 282.57403,
+        "MaxMp": 166.08,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 34.8979,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 23.83074,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 78.68469,
+        "MDef": 57.57804
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 40,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 21,
+        "height": 40
+      }
+    }
+  },
+  "27059": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Uoph",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27060": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Kracha",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 14.40672,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27061": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Batoh",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 14.40672,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27062": {
+    "level": 8,
+    "kind": "Monster",
+    "name": "Tanukia",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 124.92828,
+        "MaxMp": 92.64,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 16.20165,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 11.06363,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 57.56203,
+        "MDef": 42.1214
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27063": {
+    "level": 4,
+    "kind": "Monster",
+    "name": "Tanukia's Warhound",
+    "title": "Quest Monster",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 68.20985,
+        "MaxMp": 62.08,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 11.24892,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 7.68155,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 49.73343,
+        "MDef": 36.39277
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 24,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 9
+      }
+    }
+  },
+  "27064": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Turel",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27065": {
+    "level": 8,
+    "kind": "Monster",
+    "name": "Roko",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 124.92828,
+        "MaxMp": 92.64,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 16.20165,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 11.06363,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 57.56203,
+        "MDef": 42.1214
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27066": {
+    "level": 4,
+    "kind": "Monster",
+    "name": "Roko's Warhound",
+    "title": "Quest Monster",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 68.20985,
+        "MaxMp": 62.08,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 11.24892,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 7.68155,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 49.73343,
+        "MDef": 36.39277
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 24,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 9
+      }
+    }
+  },
+  "27067": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Kamut",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 14.40672,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27068": {
+    "level": 8,
+    "kind": "Monster",
+    "name": "Murtika",
+    "title": "Kaboo Chief",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 124.92828,
+        "MaxMp": 92.64,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 16.20165,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 11.06363,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 57.56203,
+        "MDef": 42.1214
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27069": {
+    "level": 4,
+    "kind": "Monster",
+    "name": "Murtika's Warhound",
+    "title": "Quest Monster",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 68.20985,
+        "MaxMp": 62.08,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 11.24892,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 7.68155,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 49.73343,
+        "MDef": 36.39277
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 24,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 9
+      }
+    }
+  },
+  "27070": {
+    "level": 11,
+    "kind": "Monster",
+    "name": "Tumran Orc Brigand",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 185.38552,
+        "MaxMp": 116.4,
+        "HpRegen": 2.5,
+        "MpRegen": 1.2
+      },
+      "attack": {
+        "PAtk": 21.0973,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 14.40672,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 64.04702,
+        "MDef": 46.86683
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "27077": {
+    "level": 30,
+    "kind": "Monster",
+    "name": "Unicorn Of Eva",
+    "title": "Quest Monster",
+    "race": "Elemental",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 604.08419,
+        "MaxMp": 329.4,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 92.64226,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 63.26266,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 118.46427,
+        "MDef": 86.68702
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 46,
+        "Run": 150
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 30
+      }
+    }
+  },
+  "27078": {
+    "level": 39,
+    "kind": "Monster",
+    "name": "Trimden Lord",
+    "title": "Quest Monster",
+    "race": "Bug",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 925.85879,
+        "MaxMp": 463.32,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 166.06476,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 113.4007,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 152.46752,
+        "MDef": 111.56912
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 140
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 12,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 27,
+        "height": 25
+      }
+    }
+  },
+  "27079": {
+    "level": 39,
+    "kind": "Monster",
+    "name": "Black Willow Lurker",
+    "title": "Quest Monster",
+    "race": "Plant",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 925.85879,
+        "MaxMp": 463.32,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 166.06476,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 113.4007,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 152.46752,
+        "MDef": 111.56912
+      },
+      "attribute": {
+        "defence": {
+          "Fire": -13,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 55,
+        "Run": 55
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 5,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 35,
+        "height": 80
+      }
+    }
+  },
+  "27080": {
+    "level": 37,
+    "kind": "Monster",
+    "name": "Pashika Son Of Voltar",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 847.31754,
+        "MaxMp": 432.72,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 146.82587,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 100.26304,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 144.47758,
+        "MDef": 105.72243
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 20
+      }
+    }
+  },
+  "27081": {
+    "level": 37,
+    "kind": "Monster",
+    "name": "Vultus Son Of Voltar",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 847.31754,
+        "MaxMp": 432.72,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 146.82587,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 100.26304,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 144.47758,
+        "MDef": 105.72243
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 20
+      }
+    }
+  },
+  "27082": {
+    "level": 33,
+    "kind": "Monster",
+    "name": "Enku Orc Overlord",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 702.20463,
+        "MaxMp": 372.96,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 113.49065,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 77.49941,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 129.23095,
+        "MDef": 94.5656
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 20
+      }
+    }
+  },
+  "27083": {
+    "level": 37,
+    "kind": "Monster",
+    "name": "Makum Bugbear Thug",
+    "title": "Quest Monster",
+    "race": "Giant",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 847.31754,
+        "MaxMp": 432.72,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 146.82587,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 100.26304,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 144.47758,
+        "MDef": 105.72243
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 55,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 11,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 17,
+        "height": 35
+      }
+    }
+  },
+  "27086": {
+    "level": 39,
+    "kind": "Monster",
+    "name": "Revenant of Tantos Chief",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 925.85879,
+        "MaxMp": 463.32,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 166.06476,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 113.4007,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 152.46752,
+        "MDef": 111.56912
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 140
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 24
+      }
+    }
+  },
+  "27088": {
+    "level": 34,
+    "kind": "Monster",
+    "name": "Harpy Matriarch",
+    "title": "Quest Monster",
+    "race": "Beast",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 736.96177,
+        "MaxMp": 387.72,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 121.20802,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 82.76936,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 132.9486,
+        "MDef": 97.28601
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 42
+      }
+    }
+  },
+  "27089": {
+    "level": 36,
+    "kind": "Monster",
+    "name": "Road Collector",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 809.52639,
+        "MaxMp": 417.6,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 137.86467,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 94.1437,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 140.57278,
+        "MDef": 102.86506
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "27090": {
+    "level": 41,
+    "kind": "Monster",
+    "name": "Serpent Demon Kadesh",
+    "title": "Quest Monster",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1008.23781,
+        "MaxMp": 504.8,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 187.11878,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 127.77787,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 160.69002,
+        "MDef": 117.58598
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 70,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 17,
+        "height": 46
+      }
+    }
+  },
+  "27092": {
+    "level": 33,
+    "kind": "Monster",
+    "name": "Neer Bodyguard",
+    "title": "Quest Monster",
+    "race": "Undead",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 702.20463,
+        "MaxMp": 372.96,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 113.49065,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 77.49941,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 129.23095,
+        "MDef": 94.5656
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 90
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 22
+      }
+    }
+  },
+  "27093": {
+    "level": 37,
+    "kind": "Monster",
+    "name": "Delu Chief Kalkis",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 847.31754,
+        "MaxMp": 432.72,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 146.82587,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 100.26304,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 144.47758,
+        "MDef": 105.72243
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 56,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 37
+      }
+    }
+  },
+  "27094": {
+    "level": 36,
+    "kind": "Monster",
+    "name": "Delu Lizardman Assassin",
+    "title": "Quest Monster",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 809.52639,
+        "MaxMp": 417.6,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 137.86467,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 94.1437,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 140.57278,
+        "MDef": 102.86506
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 43,
+        "Run": 130
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 23
+      }
+    }
+  },
+  "27095": {
+    "level": 44,
+    "kind": "Monster",
+    "name": "Singing Flower of Phantasm",
+    "title": "Quest Monster",
+    "race": "Plant",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1138.62924,
+        "MaxMp": 584.0,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 222.23112,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 151.75505,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 173.43552,
+        "MDef": 126.91259
+      },
+      "attribute": {
+        "defence": {
+          "Fire": -13,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 5,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 25
+      }
+    }
+  },
+  "27096": {
+    "level": 44,
+    "kind": "Monster",
+    "name": "Singing Flower of Nightmare",
+    "title": "Quest Monster",
+    "race": "Plant",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1138.62924,
+        "MaxMp": 584.0,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 222.23112,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 151.75505,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 173.43552,
+        "MDef": 126.91259
+      },
+      "attribute": {
+        "defence": {
+          "Fire": -13,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 5,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 25
+      }
+    }
+  },
+  "27097": {
+    "level": 44,
+    "kind": "Monster",
+    "name": "Singing Flower of Darkness",
+    "title": "Quest Monster",
+    "race": "Plant",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1138.62924,
+        "MaxMp": 584.0,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 222.23112,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 151.75505,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 173.43552,
+        "MDef": 126.91259
+      },
+      "attribute": {
+        "defence": {
+          "Fire": -13,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 5,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 25
+      }
+    }
+  },
+  "27098": {
+    "level": 42,
+    "kind": "Monster",
+    "name": "Ghost Fire",
+    "title": "Quest Monster",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1050.81652,
+        "MaxMp": 531.0,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 198.34591,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 135.44454,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 164.88513,
+        "MDef": 120.65578
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 140
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 22
+      }
+    }
+  },
+  "27099": {
+    "level": 38,
+    "kind": "Monster",
+    "name": "Nameless Revenant",
+    "title": "Quest Monster",
+    "race": "Undead",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 886.09975,
+        "MaxMp": 447.96,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 156.22273,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 106.67987,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 148.44287,
+        "MDef": 108.62405
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 15,
+        "Run": 15
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4071,
+        "level": 5
+      },
+      {
+        "id": 4248,
+        "level": 3,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4284,
+        "level": 5,
+        "description": "NPC HP Drain - Slow"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Bleed Attacks"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 18,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Extremely Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 21
+      }
+    }
+  }
+}

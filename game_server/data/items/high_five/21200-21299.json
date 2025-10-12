@@ -1,0 +1,1907 @@
+{
+  "21200": {
+    "name": "Mysterious Scroll - Prophecy of Wind",
+    "description": "Dimensional item. For 60 minutes, receives help from a great spirit to increase Max HP by 20%, rate of critical attack by 20%, power of Prominent Damage through magic damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Resistance to de-buff by 10%. Decreases moving speed by 20%. Bestows the ability to recover as HP 5% of the standard short-range physical damage inflicted on the enemy. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Mysterious Scroll - Prophecy of Wind",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_xmas_scroll_i00",
+    "item_skills": [
+      {
+        "id": 22213,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21201": {
+    "name": "Magic Glasses 30-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 magic glasses (30 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21202,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21202": {
+    "name": "Magic Glasses - 30-day limited period",
+    "description": "Dimensional item. Magic glasses that has MP +10 and M. Def. +70 effect. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Magic Glasses",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "MaxMp": {
+        "add": 10
+      }
+    },
+    "weight": 10,
+    "icon": "BranchSys.icon.br_Eye_Glasses_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 21241,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "olympiad_restricted": true
+  },
+  "21203": {
+    "name": "Queen Ant's Ring 30-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 queen ant's ring (30 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21206,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21204": {
+    "name": "Baium's Ring 30-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Baium's ring (30 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21207,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21205": {
+    "name": "Earring of Zaken 30-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Earring of Zaken (30 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21208,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21206": {
+    "name": "Queen Ant's Ring - 30-day limited period",
+    "description": "Dimensional item. MP +21, Resistance to Poison +30%, poison attack rate +30%, accuracy increase, critical damage increase, hold tolerance 20% increase, and hold attack rate 20% increase. Only one effect is applied even when two identical rings are worn. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Ring of Ant Queen",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "B",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 48
+      },
+      "MaxMp": {
+        "add": 21
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_ring_of_queen_ant_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3562,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21207": {
+    "name": "Baium's Ring - 30-day limited period",
+    "description": "Dimensional item. MP +21, Resistance to Poison +40%, poison attack rate +40%, accuracy increase, critical damage increase, hold tolerance +30%, hold attack rate +30%, attack increase, and Casting Spd. increase. Only one effect is applied even when two identical rings are worn. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Ring of Baium",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 48
+      },
+      "MaxMp": {
+        "add": 21
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_ring_of_baium_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3561,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21208": {
+    "name": "Earring of Zaken - 30-day limited period",
+    "description": "Dimensional item. MP +31, Resistance to Bleed +30%, Bleed attack rate +30%, heal amount increase, vampiric rage effect, Resistance to Shock/Mental attacks 20% increase, and Shock/Mental attack rate 20% increase. When equipped with two identical earrings, the effect of only one earring will be applied. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Earring of Zaken",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 71
+      },
+      "MaxMp": {
+        "add": 31
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_earring_of_zaken_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3559,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21209": {
+    "name": "MP Recovery Potion Pack",
+    "description": "Dimensional item pack. Gift box containing 3 MP recovery (+50%) potions. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21210,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21210": {
+    "name": "MP Recovery Potion",
+    "description": "Dimensional item. Magic potion that quickly recovers MP by 50% when used. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. MP Recovery Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "BranchSys.icon.br_vitality_potion_i00",
+    "item_skills": [
+      {
+        "id": 22214,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21211": {
+    "name": "Vitality Replenishing Herb Tea Pack",
+    "description": "Dimensional item pack. Gift box containing 10 Vitality Replenishing Herb Teas. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21212,
+          "min": 10,
+          "max": 10,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21212": {
+    "name": "Vitality Replenishing Herb Tea",
+    "description": "Dimensional item. For 30 minutes, energy is replenished when Exp. is acquired through hunting. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Vitality Replenishing Herb Tea",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 80,
+    "icon": "icon.etc_hot_spring_mineral_i00",
+    "item_skills": [
+      {
+        "id": 22215,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21213": {
+    "name": "Queen Ant's Ring 180-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 queen ant's ring (180 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21218,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21214": {
+    "name": "Baium's Ring 180-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Baium's ring (180 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21219,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21215": {
+    "name": "Earring of Zaken 180-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Earring of Zaken (180 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21220,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21216": {
+    "name": "Valakas's Necklace 180-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Valakas's necklace (180 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21221,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21217": {
+    "name": "Antharas's Earring 180-Day Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Antharas's earring (180 day). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21222,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21218": {
+    "name": "Queen Ant's Ring - 180-day limited period",
+    "description": "Dimensional item. MP +21, Resistance to Poison +30%, poison attack rate +30%, accuracy increase, critical damage increase, hold tolerance 20% increase, and hold attack rate 20% increase. Only one effect is applied even when two identical rings are worn. Can be used for 180 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Ring of Ant Queen",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "B",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 48
+      },
+      "MaxMp": {
+        "add": 21
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_ring_of_queen_ant_i00",
+    "time": 259200,
+    "item_skills": [
+      {
+        "id": 3562,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21219": {
+    "name": "Baium's Ring - 180-day limited period",
+    "description": "Dimensional item. MP +21, Resistance to Poison +40%, poison attack rate +40%, accuracy increase, critical damage increase, hold tolerance +30%, hold attack rate +30%, attack increase, and Casting Spd. increase. Only one effect is applied even when two identical rings are worn. Can be used for 180 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Ring of Baium",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 48
+      },
+      "MaxMp": {
+        "add": 21
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_ring_of_baium_i00",
+    "time": 259200,
+    "item_skills": [
+      {
+        "id": 3561,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21220": {
+    "name": "Earring of Zaken - 180-day limited period",
+    "description": "Dimensional item. MP +31, Resistance to Bleed +30%, Bleed attack rate +30%, heal amount increase, vampiric rage effect, Resistance to Shock/Mental attacks 20% increase, and Shock/Mental attack rate 20% increase. When equipped with two identical earrings, the effect of only one earring will be applied. Can be used for 180 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Earring of Zaken",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 71
+      },
+      "MaxMp": {
+        "add": 31
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_earring_of_zaken_i00",
+    "time": 259200,
+    "item_skills": [
+      {
+        "id": 3559,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21221": {
+    "name": "Valakas's Necklace - 180-day limited period",
+    "description": "Dimensional item. MP +50, Resistance to Sleep +40%, sleep attack rate +40%, HP +445, reuse delay decrease, P. Atk. and M. Atk. increase, wild magic effect, damage shield effect, and Resistance to Fire increase. Only one effect is applied even when the two identical necklaces are worn. Can be used for 180 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Necklace of Valakas",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 125
+      },
+      "MaxMp": {
+        "add": 50
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_necklace_of_valakas_i00",
+    "time": 259200,
+    "item_skills": [
+      {
+        "id": 3557,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21222": {
+    "name": "Antharas's Earring - 180-day limited period",
+    "description": "Dimensional item. MP +37, Resistance to Bleed +40%, Bleed attack rate +40%, heal amount increase, vampiric rage effect, Resistance to Stun/Mental attacks 30%, Stun/Mental attack rate +30%, MP consumption decrease, and Resistance to Earth increase. Only one effect is applied even when the two identical earrings are worn. Can be used for 180 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Earring of Antharas",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 94
+      },
+      "MaxMp": {
+        "add": 37
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_earring_of_antaras_i00",
+    "time": 259200,
+    "item_skills": [
+      {
+        "id": 3558,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21223": {
+    "name": "Transformation Scroll: Anakim Pack",
+    "description": "Dimensional item pack. Gift box containing 5 Anakim Transformation Scrolls. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21224,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21224": {
+    "name": "Transformation Scroll: Anakim",
+    "description": "Dimensional item. Transformation scroll that transforms you into Anakim for 30 minute(s). No effect if used while transformed. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Transformation Scroll - Anakim",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_trans_4f_s_b_01",
+    "item_skills": [
+      {
+        "id": 22216,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21225": {
+    "name": "Sweet Fruit Cocktail Pack",
+    "description": "Dimensional item pack. Gift box containing 3 sweet fruit cocktails. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21227,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21226": {
+    "name": "Sweet Fruit Cocktail Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 sweet fruit cocktails. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21228,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21227": {
+    "name": "Sweet Fruit Cocktail",
+    "description": "Dimensional item. Cocktail drink that's flavored with many rare types of fruit. When consumed, one can feel Might, Shield, Wind Walk, Focus, Death Whisper, Guidance, Bless Shield, Blessed Body, Haste, Vampiric Rage, and Berserker Spirit effects for 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Might",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_fruit_cocktail_i00",
+    "item_skills": [
+      {
+        "id": 9011,
+        "level": 1
+      },
+      {
+        "id": 9012,
+        "level": 1
+      },
+      {
+        "id": 9013,
+        "level": 1
+      },
+      {
+        "id": 9014,
+        "level": 1
+      },
+      {
+        "id": 9015,
+        "level": 1
+      },
+      {
+        "id": 9016,
+        "level": 1
+      },
+      {
+        "id": 9017,
+        "level": 1
+      },
+      {
+        "id": 9018,
+        "level": 1
+      },
+      {
+        "id": 9019,
+        "level": 1
+      },
+      {
+        "id": 9020,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21228": {
+    "name": "Sweet Fruit Cocktail - Event",
+    "description": "Dimensional item. Cocktail drink that's flavored with many rare types of fruit. When consumed, one can feel Might, Shield, Wind Walk, Focus, Death Whisper, Guidance, Bless Shield, Blessed Body, Haste, Vampiric Rage, and Berserker Spirit effects for 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Might",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_fruit_cocktail_i00",
+    "item_skills": [
+      {
+        "id": 9011,
+        "level": 1
+      },
+      {
+        "id": 9012,
+        "level": 1
+      },
+      {
+        "id": 9013,
+        "level": 1
+      },
+      {
+        "id": 9014,
+        "level": 1
+      },
+      {
+        "id": 9015,
+        "level": 1
+      },
+      {
+        "id": 9016,
+        "level": 1
+      },
+      {
+        "id": 9017,
+        "level": 1
+      },
+      {
+        "id": 9018,
+        "level": 1
+      },
+      {
+        "id": 9019,
+        "level": 1
+      },
+      {
+        "id": 9020,
+        "level": 1
+      },
+      {
+        "id": 9021,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21229": {
+    "name": "Fresh Fruit Cocktail Pack",
+    "description": "Dimensional item pack. Gift box containing 3 fresh fruit cocktails. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21231,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21230": {
+    "name": "Fresh Fruit Cocktail Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 fresh fruit cocktails. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21232,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21231": {
+    "name": "Fresh Fruit Cocktail",
+    "description": "Dimensional item. Cocktail drink that's flavored with many rare types of fruit. When consumed, one can feel Berserker Spirit, Blessed Body, Magic Barrier, Shield, Wind Walk, Blessed Soul, Empower, Acumen, and Clarity effects for 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Berserker Spirit",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_fruit_cocktail_i01",
+    "item_skills": [
+      {
+        "id": 9021,
+        "level": 1
+      },
+      {
+        "id": 9018,
+        "level": 1
+      },
+      {
+        "id": 9022,
+        "level": 1
+      },
+      {
+        "id": 9012,
+        "level": 1
+      },
+      {
+        "id": 9013,
+        "level": 1
+      },
+      {
+        "id": 9023,
+        "level": 1
+      },
+      {
+        "id": 9024,
+        "level": 1
+      },
+      {
+        "id": 9025,
+        "level": 1
+      },
+      {
+        "id": 9026,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21232": {
+    "name": "Fresh Fruit Cocktail - Event",
+    "description": "Dimensional item. Cocktail drink that's flavored with many rare types of fruit. When consumed, one can feel Berserker Spirit, Blessed Body, Magic Barrier, Shield, Wind Walk, Blessed Soul, Empower, Acumen, and Clarity effects for 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Berserker Spirit",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_fruit_cocktail_i01",
+    "item_skills": [
+      {
+        "id": 9021,
+        "level": 1
+      },
+      {
+        "id": 9018,
+        "level": 1
+      },
+      {
+        "id": 9022,
+        "level": 1
+      },
+      {
+        "id": 9012,
+        "level": 1
+      },
+      {
+        "id": 9013,
+        "level": 1
+      },
+      {
+        "id": 9023,
+        "level": 1
+      },
+      {
+        "id": 9024,
+        "level": 1
+      },
+      {
+        "id": 9025,
+        "level": 1
+      },
+      {
+        "id": 9026,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21233": {
+    "name": "Fresh Milk Pack",
+    "description": "Dimensional item pack. Gift box containing 3 fresh milks. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21235,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21234": {
+    "name": "Fresh Milk Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 fresh milks. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21236,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21235": {
+    "name": "Fresh Milk",
+    "description": "Dimensional Item. Freshly collected milk. When used, you can feel the effects of Might, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Shield, Focus, Death Whisper, Guidance, Clarity, Wild Magic and Concentration for 1 hour. Cannot be exchanged, dropped or destroyed. Can be shared between characters on the same account through the Dimensional Merchant. Might",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_fresh_milk_i00",
+    "item_skills": [
+      {
+        "id": 2873,
+        "level": 1
+      },
+      {
+        "id": 2875,
+        "level": 1
+      },
+      {
+        "id": 2879,
+        "level": 1
+      },
+      {
+        "id": 2878,
+        "level": 1
+      },
+      {
+        "id": 2874,
+        "level": 1
+      },
+      {
+        "id": 2876,
+        "level": 1
+      },
+      {
+        "id": 2877,
+        "level": 1
+      },
+      {
+        "id": 2885,
+        "level": 1
+      },
+      {
+        "id": 2886,
+        "level": 1
+      },
+      {
+        "id": 2887,
+        "level": 1
+      },
+      {
+        "id": 2888,
+        "level": 1
+      },
+      {
+        "id": 2889,
+        "level": 1
+      },
+      {
+        "id": 2890,
+        "level": 1
+      },
+      {
+        "id": 2891,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21236": {
+    "name": "Fresh Milk - Event",
+    "description": "Dimensional item. Freshly drawn milk. When used, you can feel the effects of Might, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Shield, Focus, Death Whisper, Guidance, Clarity, Wild Magic and Concentration for 1 hour. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Might",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "icon.etc_fresh_milk_i00",
+    "item_skills": [
+      {
+        "id": 2873,
+        "level": 1
+      },
+      {
+        "id": 2875,
+        "level": 1
+      },
+      {
+        "id": 2879,
+        "level": 1
+      },
+      {
+        "id": 2878,
+        "level": 1
+      },
+      {
+        "id": 2874,
+        "level": 1
+      },
+      {
+        "id": 2876,
+        "level": 1
+      },
+      {
+        "id": 2877,
+        "level": 1
+      },
+      {
+        "id": 2885,
+        "level": 1
+      },
+      {
+        "id": 2886,
+        "level": 1
+      },
+      {
+        "id": 2887,
+        "level": 1
+      },
+      {
+        "id": 2888,
+        "level": 1
+      },
+      {
+        "id": 2889,
+        "level": 1
+      },
+      {
+        "id": 2890,
+        "level": 1
+      },
+      {
+        "id": 2891,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21237": {
+    "name": "Super Healthy Juice (HP) Pack",
+    "description": "Dimensional item pack. Gift box containing 3 super healthy juices (HP). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21239,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21238": {
+    "name": "Super Healthy Juice (HP) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 super healthy juices (HP). Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21240,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21239": {
+    "name": "Super Healthy Juice (HP)",
+    "description": "Dimensional Item. Magic juice that instantly fully recovers HP. Cannot be exchanged, dropped or destroyed. Can be shared between characters on the same account through the Dimensional Merchant. Super Healthy Juice (HP)",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 180,
+    "icon": "BranchSys2.icon.etc_health_juice_i00",
+    "item_skills": [
+      {
+        "id": 22217,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21240": {
+    "name": "Super Healthy Juice (HP) - Event",
+    "description": "Dimensional item. Magic juice that temporarily recovers stamina in full. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Super Healthy Juice (HP)",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 180,
+    "icon": "BranchSys2.icon.etc_health_juice_i00",
+    "item_skills": [
+      {
+        "id": 22218,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21241": {
+    "name": "Super Healthy Juice (CP) Pack",
+    "description": "Dimensional item pack. Gift box containing 5 super healthy juices (CP). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21243,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21242": {
+    "name": "Super Healthy Juice (CP) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 5 super healthy juices (CP). Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21244,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21243": {
+    "name": "Super Healthy Juice (CP)",
+    "description": "Dimensional item. Magic juice that temporarily recovers CP in full. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Super Healthy Juice (CP)",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 180,
+    "icon": "BranchSys2.icon.etc_health_juice_i01",
+    "item_skills": [
+      {
+        "id": 22219,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21244": {
+    "name": "Super Healthy Juice (CP) - Event",
+    "description": "Dimensional item. Magic juice that temporarily recovers CP in full. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Super Healthy Juice (CP)",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 180,
+    "icon": "BranchSys2.icon.etc_health_juice_i01",
+    "item_skills": [
+      {
+        "id": 22220,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21245": {
+    "name": "Vitality Replenishing Beverage Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Vitality Replenishing Beverage. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21247,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21246": {
+    "name": "Vitality Replenishing Beverage Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 1 Vitality Replenishing Beverage. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21248,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21247": {
+    "name": "Vitality Replenishing Beverage",
+    "description": "Dimensional item. Vitality is replenished to 100% upon use. Re-use time is 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Vitality Replenishing Beverage",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_potion_of_energy_i00",
+    "item_skills": [
+      {
+        "id": 22221,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21248": {
+    "name": "Vitality Replenishing Beverage - Event",
+    "description": "Dimensional item. Vitality is replenished to 100% upon use. Re-use time is 60 minutes. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Vitality Replenishing Beverage",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_potion_of_energy_i00",
+    "item_skills": [
+      {
+        "id": 22222,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21249": {
+    "name": "Vitality Maintainig Potion (30 Minutes) Pack",
+    "description": "Dimensional item pack. Gift box containing 1 Vitality Maintainig Potion. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21251,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21250": {
+    "name": "Vitality Maintainig Potion (30 Minutes) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 1 Vitality Maintainig Potion. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21252,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21251": {
+    "name": "Vitality Maintainig Potion (30 Minutes)",
+    "description": "Dimensional item. Maintains energy for 30 minutes when used. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Vitality Maintaining Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.br_essence_rose_i00",
+    "item_skills": [
+      {
+        "id": 22223,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21252": {
+    "name": "Vitality Maintainig Potion (30 Minutes) - Event",
+    "description": "Dimensional item. Maintains energy for 30 minutes when used. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse. Vitality Maintaining Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys2.br_essence_rose_i00",
+    "item_skills": [
+      {
+        "id": 22224,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21253": {
+    "name": "Gludio Homemade Cookie Pack",
+    "description": "Dimensional item pack. Gift box containing 5 Gludio Homemade Cookies. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21254": {
+    "name": "Gludio Homemade Cookie Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 5 Gludio Homemade Cookies. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21255": {
+    "name": "Gludio Homemade Cookie",
+    "description": "Dimensional item. Increases P. Atk. by 10% for 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21256": {
+    "name": "Gludio Homemade Cookie - Event",
+    "description": "Dimensional item. Increases P. Atk. by 10% for 60 minutes. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21257": {
+    "name": "Dion Homemade Cookie Pack",
+    "description": "Dimensional item pack. Gift box containing 5 Dion Homemade Cookies. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21258": {
+    "name": "Dion Homemade Cookie Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 5 Dion Homemade Cookies. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21259": {
+    "name": "Dion Homemade Cookie",
+    "description": "Dimensional item. Increases P. Def. by 15% for 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21260": {
+    "name": "Dion Homemade Cookie - Event",
+    "description": "Dimensional item. Increases P. Def. by 15% for 60 minutes. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21261": {
+    "name": "Aden Designer Cookie Pack",
+    "description": "Dimensional item pack. Gift box containing 3 Aden Designer Cookies. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21262": {
+    "name": "Aden Designer Cookie Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 Aden Designer Cookies. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21263": {
+    "name": "Aden Designer Cookie",
+    "description": "Dimensional item. For 60 minutes, receives help from a great spirit to recover HP by 20%, increases Max HP by 20%, the rate of Prominent Damage occurring through magic damage by 2, the rate of critical attack by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Resistance to de-buffs by 10%, and accuracy by 4. Decreases moving speed by 20%. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21264": {
+    "name": "Aden Designer Cookie - Event",
+    "description": "Dimensional item. For 60 minutes, receives help from a great spirit to recover HP by 20%, increases Max HP by 20%, the rate of Prominent Damage occurring through magic damage by 2, the rate of critical attack by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Resistance to de-buffs by 10%, and accuracy by 4. Decreases moving speed by 20%. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21265": {
+    "name": "Giran Designer Cookie Pack",
+    "description": "Dimensional item pack. Gift box containing 3 Giran Designer Cookies. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21266": {
+    "name": "Giran Designer Cookie Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 Giran Designer Cookies. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21267": {
+    "name": "Giran Designer Cookie",
+    "description": "Dimensional item. For 60 minutes, increases P. Def. against Critical by 30%. When the target receives an attack above a certain amount of damage, the critical damage for general short-range physical attack is increased for 8 seconds. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21268": {
+    "name": "Giran Designer Cookie - Event",
+    "description": "Dimensional item. For 60 minutes, increases P. Def. against Critical by 30%. When the target receives an attack above a certain amount of damage, the critical damage for general short-range physical attack is increased for 8 seconds. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21269": {
+    "name": "Rune Designer Cookie Pack",
+    "description": "Dimensional item pack. Gift box containing 3 Rune Designer Cookies. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21270": {
+    "name": "Rune Designer Cookie Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 Rune Designer Cookies. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21271": {
+    "name": "Rune Designer Cookie",
+    "description": "Dimensional Item. Greatly increases received recharge power for 60 minutes. The amount of recovered MP may vary according to the level. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21272": {
+    "name": "Rune Designer Cookie - Event",
+    "description": "Dimensional Item. Greatly increases received recharge power for 60 minutes. The amount of recovered MP may vary according to the level. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_valentine_cookie_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21273": {
+    "name": "Hunting Helper Exchange Coupon Pack",
+    "description": "Dimensional item pack. Gift box containing 3 hunting helper exchange coupons. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21274": {
+    "name": "Hunting Helper Exchange Coupon Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 3 hunting helper exchange coupons. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21275": {
+    "name": "Hunting Helper Exchange Coupon",
+    "description": "Dimensional item. An exchange coupon that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Can be exchanged through the Dimensional Merchant. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21276": {
+    "name": "Hunting Helper Exchange Coupon - Event",
+    "description": "Dimensional item. An exchange coupon that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Can be exchanged through the Dimensional Merchant. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21277": {
+    "name": "High-Grade Hunting Helper Exchange Coupon Pack",
+    "description": "Dimensional item pack. Gift box containing 2 high quality hunting helper exchange coupons. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21278": {
+    "name": "High-Grade Hunting Helper Exchange Coupon Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 2 high quality hunting helper exchange coupons. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21279": {
+    "name": "High-Grade Hunting Helper Exchange Coupon",
+    "description": "Dimensional item. An exchange coupon that can be exchanged for a necklace that allows you to summon a High Quality Hunting Helper (5 hours). Can be exchanged through the Dimensional Merchant. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21280": {
+    "name": "High-Grade Hunting Helper Exchange Coupon - Event",
+    "description": "Dimensional item. An exchange coupon that can be exchanged for a necklace that allows you to summon a High Quality Hunting Helper (5 hours). Can be exchanged through the Dimensional Merchant. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21281": {
+    "name": "Feather of Blessing Pack",
+    "description": "Dimensional item pack. Gift box containing 1 feather of blessing. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21282": {
+    "name": "Feather of Blessing Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 1 feather of blessing. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21283": {
+    "name": "Free Teleport Scroll Pack",
+    "description": "Dimensional item pack. Gift box containing 1 sheet of the Free Teleport Scroll. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21284": {
+    "name": "Free Teleport Scroll Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 1 sheet of the Free Teleport Scroll. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21285": {
+    "name": "Free Teleport Scroll Pack",
+    "description": "Dimensional item pack. Gift box containing 30 sheets of the Free Teleport Scroll. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21286": {
+    "name": "Free Teleport Scroll Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 30 sheets of the Free Teleport Scroll. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21287": {
+    "name": "Extra Entrance Pass - Near Kamaloka Pack",
+    "description": "Dimensional item pack. Gift box containing 15 Near Kamaloka entrance passes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21288": {
+    "name": "Extra Entrance Pass - Near Kamaloka Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 15 Near Kamaloka entrance passes. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21289": {
+    "name": "Extra Entrance Pass - Kamaloka (Hall of the Abyss) Pack",
+    "description": "Dimensional item pack. Gift box containing 15 Kamaloka (Hall of the Abyss) entrance passes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21290": {
+    "name": "Extra Entrance Pass - Kamaloka (Hall of the Abyss) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 15 Kamaloka (Hall of the Abyss) entrance passes. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21291": {
+    "name": "Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) Pack",
+    "description": "Dimensional item pack. Gift box containing 15 Kamaloka (Labyrinth of the Abyss) entrance passes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21292": {
+    "name": "Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 15 Kamaloka (Labyrinth of the Abyss) entrance passes. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21293": {
+    "name": "Weapon-type Enhance Backup Stone (A-Grade) Pack",
+    "description": "Dimensional item pack. Gift box containing 1 weapon-type enhance backup stone (A-Grade). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21294": {
+    "name": "Weapon-type Enhance Backup Stone (A-Grade) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 1 weapon-type enhance backup stone (A-Grade). Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21295": {
+    "name": "Weapon-type Enhance Backup Stone (S-Grade) Pack",
+    "description": "Dimensional item pack. Gift box containing 1 weapon-type enhance backup stone (S-Grade). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21296": {
+    "name": "Weapon-type Enhance Backup Stone (S-Grade) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 1 weapon-type enhance backup stone (S-Grade). Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21297": {
+    "name": "Armor-type Enhance Backup Stone (A-Grade) Pack",
+    "description": "Dimensional item pack. Gift box containing 1 armor-type enhance backup stone (A-Grade). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21298": {
+    "name": "Armor-type Enhance Backup Stone (A-Grade) Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 1 armor-type enhance backup stone (A-Grade). Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21299": {
+    "name": "Armor-type Enhance Backup Stone (S-Grade) Pack",
+    "description": "Dimensional item pack. Gift box containing 1 armor-type enhance backup stone (S-Grade). Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  }
+}

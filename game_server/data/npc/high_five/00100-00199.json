@@ -1,0 +1,5245 @@
+{
+  "100": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Thomas D. Turkey",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 680.0,
+        "MaxMp": 2000.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 60000.0,
+        "MDef": 200000.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 19,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "101": {
+    "level": 80,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ]
+  },
+  "102": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Santa Trainee",
+    "race": "Dwarf",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 16
+      }
+    }
+  },
+  "103": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Christmas Santa",
+    "title": "Merry Christmas!",
+    "race": "Dwarf",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "104": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Christmas Santa",
+    "title": "Merry Christmas!",
+    "race": "Dwarf",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "105": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Christmas Sled",
+    "title": "Merry Christmas!",
+    "race": "Etc",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "height": 50
+      }
+    }
+  },
+  "106": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Birthday Cake",
+    "race": "Etc",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    }
+  },
+  "107": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Spirit of Fire",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 20000000.0,
+        "MaxMp": 40.0,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 18.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 40.0,
+        "MDef": 30.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 25,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 16,
+        "height": 22
+      }
+    }
+  },
+  "108": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Reckless Spirit of Fire",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 20000000.0,
+        "MaxMp": 40.0,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 18.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 40.0,
+        "MDef": 30.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 26,
+        "height": 35
+      }
+    }
+  },
+  "109": {
+    "level": 85,
+    "kind": "Friendly",
+    "name": "Steve Shyagel",
+    "title": "Eva's High Priest",
+    "race": "Dwarf",
+    "gender": "Male",
+    "reward": {
+      "exp": 722,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 26
+      }
+    }
+  },
+  "110": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Eva's Obelisk",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 40,
+        "height": 120
+      }
+    }
+  },
+  "111": {
+    "level": 80,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ]
+  },
+  "112": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Friendly Sno",
+    "title": "Beginner Supporter",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ]
+  },
+  "113": {
+    "level": 55,
+    "kind": "Friendly",
+    "name": "Friendly Sno",
+    "title": "Beginner Supporter",
+    "race": "Elemental",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 265.02979,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "114": {
+    "level": 55,
+    "kind": "Friendly",
+    "name": "Friendly Sno",
+    "title": "Beginner Supporter",
+    "race": "Elemental",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 265.02979,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "115": {
+    "level": 55,
+    "kind": "Friendly",
+    "name": "Friendly Sno",
+    "title": "Beginner Supporter",
+    "race": "Elemental",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 265.02979,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "116": {
+    "level": 55,
+    "kind": "Friendly",
+    "name": "Friendly Sno",
+    "title": "Beginner Supporter",
+    "race": "Elemental",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 265.02979,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "117": {
+    "level": 55,
+    "kind": "Friendly",
+    "name": "Friendly Sno",
+    "title": "Beginner Supporter",
+    "race": "Elemental",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 265.02979,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "118": {
+    "level": 55,
+    "kind": "Friendly",
+    "name": "Uldie",
+    "title": "Halloween's Three Siblings",
+    "race": "Elemental",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 265.02979,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "119": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Belldandy",
+    "title": "Halloween's Three Siblings",
+    "race": "Elemental",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 20000000.0,
+        "MaxMp": 40.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 18.0,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 40.0,
+        "MDef": 30.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 25,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 16
+      }
+    }
+  },
+  "120": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Skooldie",
+    "title": "Jack Game Trainer",
+    "race": "Elemental",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 20000000.0,
+        "MaxMp": 40.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 18.0,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 40.0,
+        "MDef": 30.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 14
+      }
+    }
+  },
+  "121": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Lucky Lamp",
+    "race": "Elemental",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 20000000.0,
+        "MaxMp": 40.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 5.78704,
+        "Accuracy": 18.0,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 40.0,
+        "MDef": 30.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 45,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 16
+      }
+    }
+  },
+  "122": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Environment Lamp",
+    "race": "Etc",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 4,
+        "height": 5
+      }
+    }
+  },
+  "123": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Rolling Lamp",
+    "race": "Etc",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 4,
+        "height": 5
+      }
+    }
+  },
+  "124": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Peace Lamp",
+    "race": "Etc",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 4,
+        "height": 5
+      }
+    }
+  },
+  "125": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Halloween Event Manager",
+    "race": "Etc",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 4,
+        "height": 5
+      }
+    }
+  },
+  "126": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Kadomas",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ]
+  },
+  "127": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Kotatz",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 5.78704,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 60000.0,
+        "MDef": 200000.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 24,
+        "height": 14
+      }
+    }
+  },
+  "128": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Flame Box",
+    "title": "Flame Box",
+    "race": "Etc",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    }
+  },
+  "129": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "White-Bearded Santa",
+    "title": "Merry Christmas!",
+    "race": "Etc",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 11,
+        "height": 12
+      }
+    }
+  },
+  "130": {
+    "level": 70,
+    "kind": "Friendly",
+    "race": "Dwarf",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "131": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Jetbike",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ]
+  },
+  "132": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Trejuo",
+    "title": "Blessed Child",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 30,
+        "height": 29
+      }
+    }
+  },
+  "133": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Sujin",
+    "title": "Blessed Child",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 13
+      }
+    }
+  },
+  "134": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Dragon Master Lee",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2880.37628,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 894.75854,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 611.00409,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 13
+      }
+    }
+  },
+  "135": {
+    "level": 55,
+    "kind": "Friendly",
+    "name": "Dragon Master Karin",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 42,
+        "Run": 180
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 18
+      }
+    }
+  },
+  "136": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Shiny Platform",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 21,
+        "height": 12
+      }
+    }
+  },
+  "137": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Big Wedding Cake",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 27
+      }
+    }
+  },
+  "138": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Jetbike",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 21,
+        "height": 24
+      }
+    }
+  },
+  "139": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Birthday Cake",
+    "gender": "Male",
+    "reward": {
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 470.40463
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 120
+      }
+    }
+  },
+  "140": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Block Checker Blue",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 21
+      }
+    }
+  },
+  "141": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Dimensional Door",
+    "title": "Customer Joining",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 18
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 24,
+        "height": 35
+      }
+    }
+  },
+  "142": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Dimensional Door",
+    "title": "Customer Joining",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 18
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 24,
+        "height": 35
+      }
+    }
+  },
+  "143": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Totem of Body",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 20
+      }
+    }
+  },
+  "144": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Totem of Spirit",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 20
+      }
+    }
+  },
+  "145": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Totem of Bravery",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 20
+      }
+    }
+  },
+  "146": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Totem of Fortitude",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 20
+      }
+    }
+  },
+  "147": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Party Cake",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "height": 5
+      }
+    }
+  },
+  "148": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Campfire",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 29,
+        "height": 31
+      }
+    }
+  },
+  "149": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Angry Bunny",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      },
+      {
+        "id": 6133,
+        "level": 1,
+        "description": "Animals"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 5
+      }
+    }
+  },
+  "150": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Large Angry Bunny",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      },
+      {
+        "id": 6135,
+        "level": 1,
+        "description": "Animals"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 16,
+        "height": 8
+      }
+    }
+  },
+  "151": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Fearless Angry Bunny",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      },
+      {
+        "id": 6133,
+        "level": 1,
+        "description": "Animals"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 5
+      }
+    }
+  },
+  "152": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Large Fearless Angry Bunny",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      },
+      {
+        "id": 6135,
+        "level": 1,
+        "description": "Animals"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 16,
+        "height": 8
+      }
+    }
+  },
+  "153": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Magic Research Institute Employee",
+    "title": "Event Manager",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 17
+      }
+    }
+  },
+  "154": {
+    "level": 80,
+    "kind": "Friendly",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "155": {
+    "level": 80,
+    "kind": "Friendly",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "156": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Raging Bunny",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      },
+      {
+        "id": 6133,
+        "level": 1,
+        "description": "Animals"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 16,
+        "height": 8
+      }
+    }
+  },
+  "157": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Large Raging Bunny",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 4
+      },
+      {
+        "id": 6135,
+        "level": 1,
+        "description": "Animals"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 23,
+        "height": 15
+      }
+    }
+  },
+  "158": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Wood Horse",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 32,
+        "height": 31
+      }
+    }
+  }
+}

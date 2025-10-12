@@ -1,0 +1,2933 @@
+{
+  "8100": {
+    "name": "Destroyed Golem Shards",
+    "description": "Shards obtained from hunting the Golem.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_debris_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "8101": {
+    "name": "Dwarf's Favor",
+    "description": "Letter of introduction to Yumita, written by Head Blacksmith Newyear of Schuttgart Village.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "8102": {
+    "name": "Pa'agrian Sword - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical Rate by 77. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9285
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_sword_of_paagrio_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 3
+      }
+    ]
+  },
+  "8103": {
+    "name": "Pa'agrian Sword - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9286
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_sword_of_paagrio_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "8104": {
+    "name": "Pa'agrian Sword - Critical Drain",
+    "description": "<Soul Crystal Enhancement>. Absorbs 9 HP from a target when one makes a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9287
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_sword_of_paagrio_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "8105": {
+    "name": "Guardian Sword - Critical Drain",
+    "description": "<Soul Crystal Enhancement>. Absorbs 8 HP from a target on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9321
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_guardians_sword_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "8106": {
+    "name": "Guardian Sword - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9322
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_guardians_sword_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "8107": {
+    "name": "Guardian Sword - Critical Bleed",
+    "description": "<Soul Crystal Enhancement>. Inflicts Bleed on the target with a 24% chance during a general critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9323
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_guardians_sword_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "8108": {
+    "name": "Infernal Master - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Increases damage inflicted on one's opponent during PvP. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9333
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1900,
+    "icon": "icon.weapon_inferno_master_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3068,
+        "level": 2
+      }
+    ]
+  },
+  "8109": {
+    "name": "Infernal Master - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Inflicts additional damage on a critical attack by 297. Increases damage inflicted on one's opponent during PvP. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9334
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1900,
+    "icon": "icon.weapon_inferno_master_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3067,
+        "level": 1
+      }
+    ]
+  },
+  "8110": {
+    "name": "Infernal Master - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical Rate by 61. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9335
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1900,
+    "icon": "icon.weapon_inferno_master_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 1
+      }
+    ]
+  },
+  "8111": {
+    "name": "Mysterious Sword - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_mystery_sword_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "8112": {
+    "name": "Mysterious Sword - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. When using magic, increases MP Consumption by 15% and M. Atk. by 75. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_mystery_sword_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3077,
+        "level": 1
+      }
+    ]
+  },
+  "8113": {
+    "name": "Mysterious Sword - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 8% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 7
+          }
+        ],
+        "onmagic_chance": 8
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_mystery_sword_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "8114": {
+    "name": "Ecliptic Sword - Empower",
+    "description": "<Soul Crystal Enhancement>. Increases M. Atk. by 26. Special Ability: Empower",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_sword_of_eclipse_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3076,
+        "level": 4
+      }
+    ]
+  },
+  "8115": {
+    "name": "Ecliptic Sword - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. When using magic, increases MP Consumption by 15% and M. Atk. by 112. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_sword_of_eclipse_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3077,
+        "level": 4
+      }
+    ]
+  },
+  "8116": {
+    "name": "Ecliptic Sword - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3078,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_sword_of_eclipse_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "8117": {
+    "name": "Wizard's Tear - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1350,
+    "icon": "icon.weapon_tears_of_wizard_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "8118": {
+    "name": "Wizard's Tear - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. When using magic, increases MP Consumption by 15% and M. Atk. by 139. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1350,
+    "icon": "icon.weapon_tears_of_wizard_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3077,
+        "level": 6
+      }
+    ]
+  },
+  "8119": {
+    "name": "Wizard's Tear - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1350,
+    "icon": "icon.weapon_tears_of_wizard_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 1
+      }
+    ]
+  },
+  "8120": {
+    "name": "Dwarven Hammer - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2010,
+    "icon": "icon.weapon_dwarven_hammer_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "8121": {
+    "name": "Dwarven Hammer - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 26. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2010,
+    "icon": "icon.weapon_dwarven_hammer_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3012,
+        "level": 4
+      }
+    ]
+  },
+  "8122": {
+    "name": "Dwarven Hammer - Critical Bleed",
+    "description": "<Soul Crystal Enhancement>. Inflicts Bleed on the target with a 42% chance during a general critical attack.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2010,
+    "icon": "icon.weapon_dwarven_hammer_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "8123": {
+    "name": "Karik Horn - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical Rate by 77. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 2020,
+    "icon": "icon.weapon_horn_of_karik_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 3
+      }
+    ]
+  },
+  "8124": {
+    "name": "Karik Horn - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 2020,
+    "icon": "icon.weapon_horn_of_karik_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 3
+      }
+    ]
+  },
+  "8125": {
+    "name": "Karik Horn - Critical Drain",
+    "description": "<Soul Crystal Enhancement>. Absorbs 9 HP from a target when one makes a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 2020,
+    "icon": "icon.weapon_horn_of_karik_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "8126": {
+    "name": "Destroyer Hammer - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted on one's opponent during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1910,
+    "icon": "icon.weapon_hammer_of_destroyer_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "8127": {
+    "name": "Destroyer Hammer - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Sp.d by 6%. Increases damage inflicted during PvP. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1910,
+    "icon": "icon.weapon_hammer_of_destroyer_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3068,
+        "level": 2
+      }
+    ]
+  },
+  "8128": {
+    "name": "Destroyer Hammer - Critical Drain",
+    "description": "<Soul Crystal Enhancement>. Absorbs 18 HP from a target on a critical attack. Increases the amount of damage one inflicts during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1910,
+    "icon": "icon.weapon_hammer_of_destroyer_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "8129": {
+    "name": "Ice Storm Hammer - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical Rate by 68. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1950,
+    "icon": "icon.weapon_ice_storm_hammer_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 5
+      }
+    ]
+  },
+  "8130": {
+    "name": "Ice Storm Hammer - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases Max HP 15% and increases P. Atk. by 28. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1950,
+    "icon": "icon.weapon_ice_storm_hammer_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3012,
+        "level": 5
+      }
+    ]
+  },
+  "8131": {
+    "name": "Ice Storm Hammer - Critical Bleed",
+    "description": "<Soul Crystal Enhancement>. Inflicts Bleed on the target with a 41% chance during a general critical attack.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1950,
+    "icon": "icon.weapon_ice_storm_hammer_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "8132": {
+    "name": "Star Buster - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_star_buster_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "8133": {
+    "name": "Star Buster - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by about 6%. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_star_buster_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 6
+      }
+    ]
+  },
+  "8134": {
+    "name": "Star Buster - Rsk. Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical Rate by 99 when the character's HP falls to 60% or below. Special Ability: Rsk. Focus",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_star_buster_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3027,
+        "level": 6
+      }
+    ]
+  },
+  "8135": {
+    "name": "Doom Crusher - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted on one's opponent during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1900,
+    "icon": "icon.weapon_doom_crusher_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "8136": {
+    "name": "Doom Crusher - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases Max HP by 15% and increases P. Atk. by 11% and damage inflicted during PvP. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1900,
+    "icon": "icon.weapon_doom_crusher_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3057,
+        "level": 2
+      }
+    ]
+  },
+  "8137": {
+    "name": "Doom Crusher - Rsk. Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 11% when HP drops to 60% or lower. Increases damage inflicted on one's opponent during PvP. Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1900,
+    "icon": "icon.weapon_doom_crusher_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3056,
+        "level": 2
+      }
+    ]
+  },
+  "8138": {
+    "name": "Ecliptic Axe - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1640,
+    "icon": "icon.weapon_eclipse_axe_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 1
+      }
+    ]
+  },
+  "8139": {
+    "name": "Ecliptic Axe - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. When using magic, increases MP Consumption by 15%, and M. Atk. by 112. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1640,
+    "icon": "icon.weapon_eclipse_axe_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3077,
+        "level": 4
+      }
+    ]
+  },
+  "8140": {
+    "name": "Ecliptic Axe - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 23
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1640,
+    "icon": "icon.weapon_eclipse_axe_i01",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "8141": {
+    "name": "Spell Breaker - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 1620,
+    "icon": "icon.weapon_spell_breaker_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "8142": {
+    "name": "Spell Breaker - Mental Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 1620,
+    "icon": "icon.weapon_spell_breaker_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "8143": {
+    "name": "Spell Breaker - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 25
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 1620,
+    "icon": "icon.weapon_spell_breaker_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "8144": {
+    "name": "Kaim Vanul's Bones - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1570,
+    "icon": "icon.weapon_bone_of_kaim_vanul_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ]
+  },
+  "8145": {
+    "name": "Kaim Vanul's Bones - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3078,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "B",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1570,
+    "icon": "icon.weapon_bone_of_kaim_vanul_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "8146": {
+    "name": "Kaim Vanul's Bones - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1570,
+    "icon": "icon.weapon_bone_of_kaim_vanul_i01",
+    "crystal_count": 1346,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 1
+      }
+    ]
+  },
+  "8147": {
+    "name": "Spiritual Eye - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted on one's opponent during PvP. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14098000,
+    "weight": 1550,
+    "icon": "icon.weapon_eye_of_soul_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ]
+  },
+  "8148": {
+    "name": "Spiritual Eye - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 8% chance of casting Curse: Poison when using a magic skill on the target. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 8
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14098000,
+    "weight": 1550,
+    "icon": "icon.weapon_eye_of_soul_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "8149": {
+    "name": "Spiritual Eye - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted on one's opponent during PvP. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14098000,
+    "weight": 1550,
+    "icon": "icon.weapon_eye_of_soul_i01",
+    "crystal_count": 1128,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "8150": {
+    "name": "Flaming Dragon Skull - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted on one's opponent during PvP. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "8151": {
+    "name": "Flaming Dragon Skull - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. Increases MP Consumption by 15%, M. Atk. by 167 and damage inflicted during PvP. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3073,
+        "level": 2
+      }
+    ]
+  },
+  "8152": {
+    "name": "Flaming Dragon Skull - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3074,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "8153": {
+    "name": "Adventurer's Guide Book",
+    "description": "An essential read for adventurers.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 2000,
+    "icon": "icon.etc_spell_books_blue_i00"
+  },
+  "8154": {
+    "name": "Herb of Life",
+    "description": "Recovers a certain amount of HP immediately. Herb of Life",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2244,
+        "level": 1
+      }
+    ],
+    "pet_useable": true
+  },
+  "8155": {
+    "name": "Herb of Mana",
+    "description": "Recovers a certain amount of MP immediately. Herb of Mana",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2245,
+        "level": 1
+      }
+    ],
+    "pet_useable": true
+  },
+  "8156": {
+    "name": "Herb of Power",
+    "description": "Increases P. Atk. for a certain period of time. Herb of Power",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2246,
+        "level": 1
+      }
+    ],
+    "pet_useable": true
+  },
+  "8157": {
+    "name": "Herb of Magic",
+    "description": "Instantly increases M. Atk. for a certain period of time. Herb of Magic",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2247,
+        "level": 1
+      }
+    ],
+    "pet_useable": true
+  },
+  "8158": {
+    "name": "Memento Mori (C-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "icon": "icon.etc_raid_a_i02",
+    "stackable": true
+  },
+  "8159": {
+    "name": "Memento Mori (B-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 20000,
+    "icon": "icon.etc_raid_a_i01",
+    "stackable": true
+  },
+  "8160": {
+    "name": "Memento Mori (A-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.etc_raid_a_i00",
+    "stackable": true
+  },
+  "8161": {
+    "name": "Dragon Heart (C-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "icon": "icon.etc_raid_b_i02",
+    "stackable": true
+  },
+  "8162": {
+    "name": "Dragon Heart (B-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 20000,
+    "icon": "icon.etc_raid_b_i01",
+    "stackable": true
+  },
+  "8163": {
+    "name": "Dragon Heart (A-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.etc_raid_b_i00",
+    "stackable": true
+  },
+  "8164": {
+    "name": "Earth Egg (C-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "icon": "icon.etc_raid_c_i02",
+    "stackable": true
+  },
+  "8165": {
+    "name": "Earth Egg (B-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 20000,
+    "icon": "icon.etc_raid_c_i01",
+    "stackable": true
+  },
+  "8166": {
+    "name": "Earth Egg (A-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.etc_raid_c_i00",
+    "stackable": true
+  },
+  "8167": {
+    "name": "Nonliving Nucleus (C-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "icon": "icon.etc_raid_d_i02",
+    "stackable": true
+  },
+  "8168": {
+    "name": "Nonliving Nucleus (B-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 20000,
+    "icon": "icon.etc_raid_d_i01",
+    "stackable": true
+  },
+  "8169": {
+    "name": "Nonliving Nucleus (A-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.etc_raid_d_i00",
+    "stackable": true
+  },
+  "8170": {
+    "name": "Angelic Essence (C-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "icon": "icon.etc_raid_e_i02",
+    "stackable": true
+  },
+  "8171": {
+    "name": "Angelic Essence (B-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 20000,
+    "icon": "icon.etc_raid_e_i01",
+    "stackable": true
+  },
+  "8172": {
+    "name": "Angelic Essence (A-Grade)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.etc_raid_e_i00",
+    "stackable": true
+  },
+  "8173": {
+    "name": "Cradle of Creation (C-Grade) (Not In Use)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 5000,
+    "stackable": true
+  },
+  "8174": {
+    "name": "Cradle of Creation (B-Grade) (Not In Use)",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 20000,
+    "stackable": true
+  },
+  "8175": {
+    "name": "Cradle of Creation",
+    "description": "Win this item by gambling and exchange it for an A-Grade item.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.etc_raid_g_i00",
+    "stackable": true
+  },
+  "8176": {
+    "name": "Destruction Tombstone",
+    "description": "Obtained by attacking a Raid Boss. You can assemble this Life Crystal and trade it for something useful.",
+    "kind": {
+      "Etc": "LifeCrystal"
+    },
+    "material": "Paper",
+    "price": 10000,
+    "icon": "icon.etc_raid_f_i00",
+    "stackable": true
+  },
+  "8177": {
+    "name": "Raid Challenger's Circlet",
+    "description": "Beginner's Raid Challenger Circlet.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_raid_challenger_i00"
+  },
+  "8178": {
+    "name": "Raid Adventurer's Circlet",
+    "description": "Intermediate Raid Adventurer Circlet",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_raid_explorer_i00"
+  },
+  "8179": {
+    "name": "Raid Master's Circlet",
+    "description": "Advanced Raid Master Circlet.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_raid_master_i00"
+  },
+  "8180": {
+    "name": "Circlet of Ice Fairy Sirra",
+    "description": "Circlet obtained by attacking the Ice Fairy Sirra.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_ice_queen_i00"
+  },
+  "8181": {
+    "name": "Academy Circlet",
+    "description": "Circlet awarded to graduates of the Academy. When equipped by a level 40~75 character, upon death, the Exp. penalty decreases by 50%. Can be repurchased through Blacksmith Pinter of Gludio.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_academy_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8182": {
+    "name": "Circlet of Rune",
+    "description": "Rose Circlet. Can be worn by the lord of Rune Castle and clan members but not by allies. Allows use of Residential Skills when equipped. Cannot be exchanged or dropped. Residential Shock Immunity",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "castle": "Rune",
+        "clan_rank": "Heir"
+      }
+    },
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_pledge_cap1_i01",
+    "item_skills": [
+      {
+        "id": 3633,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8183": {
+    "name": "Circlet of Schuttgart",
+    "description": "Hammer and Torch Circlet. Can be worn by the lord of Schuttgart Castle and clan members but not by allies. Allows use of Residential Skills when equipped. Cannot be exchanged or dropped. Residential Shock Immunity",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "castle": "Schuttgart",
+        "clan_rank": "Heir"
+      }
+    },
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_pledge_cap1_i07",
+    "item_skills": [
+      {
+        "id": 3633,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "8184": {
+    "name": "Party Hat",
+    "description": "A funky hair accessory which uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_party_hat_i00"
+  },
+  "8185": {
+    "name": "Feathered Hat",
+    "description": "A wide-brimmed hat with a feather. Uses 2 accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_archer_hat_i00"
+  },
+  "8186": {
+    "name": "Artisan's Goggles",
+    "description": "Eye protection that uses 2 accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 2000000,
+    "weight": 10,
+    "icon": "icon.accessory_dwarf_goggle_i00"
+  },
+  "8187": {
+    "name": "Demon Horns",
+    "description": "A hair accessory for the 2006 Halloween Event.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_hair_cornu_i00"
+  },
+  "8188": {
+    "name": "Little Angel Wings",
+    "description": "A wing-shaped hair accessory.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_hair_ring_i00"
+  },
+  "8189": {
+    "name": "Fairy Antennae",
+    "description": "Cute antennae hair accessory with stars.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "price": 500000,
+    "weight": 10,
+    "icon": "icon.accessory_hair_feeler_i00"
+  },
+  "8190": {
+    "name": "Demonic Sword Zariche",
+    "description": "A deadly and powerful magical sword that was once wielded by the devil Bremnon himself. It is always thirsty for blood. Demon Sword Zariche",
+    "kind": {
+      "Weapon": {
+        "Fist": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 361
+      },
+      "MAtk": {
+        "set": 137
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1840,
+    "icon": "icon.weapon_unique_zariche_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3603,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "8191": {
+    "name": "Necklace of Frintezza",
+    "description": "MP +42, increase Resistance to sleep/paralysis/stun by 15%, increase sleep/paralysis/stun attack chance by 15%, increase Resistance to poison/bleed by 25%, increase poison/bleed attack chance by 25%, decrease in skill re-use delay, increase Damage Shield effect, and increase Resistance to Dark attacks. Frintezza's Necklace",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "A",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 95
+      },
+      "MaxMp": {
+        "add": 42
+      }
+    },
+    "price": 3450000,
+    "weight": 150,
+    "icon": "icon.accessory_necklace_of_frintessa_i00",
+    "crystal_count": 230,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3604,
+        "level": 1
+      }
+    ]
+  },
+  "8192": {
+    "name": "Soul Breaking Arrow",
+    "description": "Double-clicking the arrow temporarily pauses Frintezza's musical performance. It cannot be dropped and is deleted upon entering the Last Imperial Tomb. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo. Soul Breaking Arrow",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Gold",
+    "weight": 3,
+    "icon": "icon.etc_destory_soul_arrow_i00",
+    "item_skills": [
+      {
+        "id": 2234,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "stackable": true
+  },
+  "8193": {
+    "name": "Fisherman's Potion - Green",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a green fish (level 1~3 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_green_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8194": {
+    "name": "Fisherman's Potion - Jade",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a jade fish (level 4~6 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_jade_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 2
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8195": {
+    "name": "Fisherman's Potion - Blue",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a blue fish (level 7~9 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_blue_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8196": {
+    "name": "Fisherman's Potion - Yellow",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a yellow fish (level 10~12 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_yellow_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 4
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8197": {
+    "name": "Fisherman's Potion - Orange",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch an orange fish (level 13~15 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_orange_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 5
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8198": {
+    "name": "Fisherman's Potion - Purple",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a purple fish (level 16~18 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_violet_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 6
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "8199": {
+    "name": "Fisherman's Potion - Red",
+    "description": "By lowering one's fishing skill level, this potion allows one to catch a red fish (level 19~21 fish). If one uses a potion that is designed for a higher fishing skill level than one's own, the potion will have no effect. Fisherman's Potion Green",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 100,
+    "icon": "icon.etc_oblivion_red_i00",
+    "item_skills": [
+      {
+        "id": 2274,
+        "level": 7
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  }
+}

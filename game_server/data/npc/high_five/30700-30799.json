@@ -1,0 +1,8546 @@
+{
+  "30700": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Prestan",
+    "title": "Master",
+    "race": "DarkElf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 16,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30701": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Errickin",
+    "title": "Magister",
+    "race": "DarkElf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 16,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 22
+      }
+    }
+  },
+  "30702": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Bernard",
+    "title": "Guild President",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30703": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Colin",
+    "title": "Guild President",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30704": {
+    "level": 70,
+    "kind": "VillageMasterOrc",
+    "name": "Garvarentz",
+    "title": "High Prefect",
+    "race": "Orc",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 17,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 26
+      }
+    }
+  },
+  "30705": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Chakiris",
+    "title": "Prefect",
+    "race": "Orc",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 17,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 28
+      }
+    }
+  },
+  "30706": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Lazenby",
+    "title": "Seer",
+    "race": "Orc",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 17,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 29
+      }
+    }
+  },
+  "30707": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Raigen",
+    "title": "Captain",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30708": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Nasign",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30709": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Norton",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 662.751329129412,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30710": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Weston",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30711": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Byron",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30712": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Makhis",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30713": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Gardner",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 662.751329129412,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30714": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Paros",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30715": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Marina",
+    "title": "Magister",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30716": {
+    "level": 70,
+    "kind": {
+      "Teleporter": {
+        "floor": [
+          31,
+          32,
+          34,
+          35
+        ]
+      }
+    },
+    "name": "Cecile",
+    "title": "Gatekeeper",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 25
+      }
+    }
+  },
+  "30717": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Gauen",
+    "title": "Magister",
+    "race": "Elf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 15,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 7,
+        "height": 22
+      }
+    }
+  },
+  "30718": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Joan",
+    "title": "Magister",
+    "race": "Elf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 15,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 7,
+        "height": 21
+      }
+    }
+  },
+  "30719": {
+    "level": 70,
+    "kind": {
+      "Teleporter": {
+        "floor": [
+          31,
+          32,
+          33,
+          35
+        ]
+      }
+    },
+    "name": "Mariell",
+    "title": "Gatekeeper",
+    "race": "Elf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 15,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30720": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Kaiena",
+    "title": "Magister",
+    "race": "DarkElf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 16,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30721": {
+    "level": 70,
+    "kind": "Trainer",
+    "name": "Ladd",
+    "title": "Magister",
+    "race": "DarkElf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 16,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 22
+      }
+    }
+  },
+  "30722": {
+    "level": 70,
+    "kind": {
+      "Teleporter": {
+        "floor": [
+          31,
+          32,
+          33,
+          34
+        ]
+      }
+    },
+    "name": "Merian",
+    "title": "Gatekeeper",
+    "race": "DarkElf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 16,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 25
+      }
+    }
+  },
+  "30723": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Roy",
+    "title": "Captain",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30724": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Tavillian",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30725": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Yening",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30726": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Tebose",
+    "title": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 662.751329129412,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30727": {
+    "level": 70,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          36,
+          37,
+          38
+        ],
+        "floor": [
+          31,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    "name": "Verona",
+    "title": "Gatekeeper",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 25
+      }
+    }
+  },
+  "30728": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Leirynn",
+    "title": "Militiaman",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 22
+      }
+    }
+  },
+  "30729": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Borys",
+    "title": "Drunkard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30730": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Jax",
+    "title": "Bodyguard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30731": {
+    "level": 70,
+    "kind": "PetManager",
+    "name": "Martin",
+    "title": "Pet Manager",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 25
+      }
+    }
+  },
+  "30732": {
+    "level": 36,
+    "kind": "Friendly",
+    "name": "Ol Mahum Pilgrim",
+    "race": "Humanoid",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 809.52639,
+        "MaxMp": 417.6,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 137.86467,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 94.1437,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 140.57278,
+        "MDef": 102.86506
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 25
+      }
+    }
+  },
+  "30733": {
+    "level": 80,
+    "kind": "Guard",
+    "name": "Guard",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3290.11306877694,
+        "MaxMp": 1674.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 970.537548504614,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 662.751329129412,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 341.375,
+        "MDef": 249.80341
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 16,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Very Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 16,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Very Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30734": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Supply Box On Wharf",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 18,
+        "height": 14
+      }
+    }
+  },
+  "30735": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Sophya",
+    "title": "Mercenary Captain",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 21
+      }
+    }
+  },
+  "30736": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Redfoot",
+    "title": "Mercenary",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 21
+      }
+    }
+  },
+  "30737": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Morgan",
+    "title": "Guildsman",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 24
+      }
+    }
+  },
+  "30738": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Matild",
+    "title": "Alchemist",
+    "race": "Dwarf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 7,
+        "height": 18
+      }
+    }
+  },
+  "30739": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Keltir",
+    "title": "Royal Servant",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 23,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 10
+      }
+    }
+  },
+  "30740": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Toad",
+    "title": "Royal Servant",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 100
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 20,
+        "height": 10
+      }
+    }
+  },
+  "30741": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Rabbit",
+    "title": "Royal Servant",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 80
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 5,
+        "height": 4
+      }
+    }
+  },
+  "30742": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Rupina",
+    "title": "Fairy of Love",
+    "race": "Fairy",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 13,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 5,
+        "height": 25
+      }
+    }
+  },
+  "30743": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Wisdom Chest",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 9
+      }
+    }
+  },
+  "30744": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Grey",
+    "title": "Guild Member",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 24
+      }
+    }
+  },
+  "30745": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Tor",
+    "title": "Guild Member",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 21
+      }
+    }
+  },
+  "30746": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Cybellin",
+    "race": "DarkElf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 16,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 25
+      }
+    }
+  },
+  "30747": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Mimyu",
+    "title": "Fairy",
+    "race": "Fairy",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 13,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 5,
+        "height": 25
+      }
+    }
+  },
+  "30748": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Exarion",
+    "title": "Drake",
+    "race": "Dragon",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 70,
+        "Run": 70
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 10,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 30,
+        "height": 100
+      }
+    }
+  },
+  "30749": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Zwov",
+    "title": "Drake",
+    "race": "Dragon",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 70,
+        "Run": 70
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 10,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 30,
+        "height": 100
+      }
+    }
+  },
+  "30750": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Kalibran",
+    "title": "Drake",
+    "race": "Dragon",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 70,
+        "Run": 70
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 10,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 30,
+        "height": 100
+      }
+    }
+  },
+  "30751": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Suzet",
+    "title": "Wyrm",
+    "race": "Dragon",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 70,
+        "Run": 70
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 10,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 29,
+        "height": 72
+      }
+    }
+  },
+  "30752": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Shamhai",
+    "title": "Wyrm",
+    "race": "Dragon",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 70,
+        "Run": 70
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 10,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 29,
+        "height": 72
+      }
+    }
+  },
+  "30753": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Gabrielle",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 22
+      }
+    }
+  },
+  "30754": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Gilmore",
+    "title": "Antharas Watchman",
+    "race": "Undead",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 40,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 25
+      }
+    }
+  },
+  "30755": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Theodric",
+    "title": "Antharas Watchman",
+    "race": "Undead",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 40,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 25
+      }
+    }
+  },
+  "30756": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Sir Kristof Rodemai",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 7,
+        "height": 24
+      }
+    }
+  },
+  "30757": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Statue Of Offering",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 98
+      }
+    }
+  },
+  "30758": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Athrea",
+    "title": "Witch",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30759": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Kalis",
+    "title": "Witch",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30760": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Sir Gustav Athebaldt",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 25
+      }
+    }
+  },
+  "30761": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Corpse Of Fritz",
+    "race": "Dwarf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 19
+      }
+    }
+  },
+  "30762": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Corpse Of Lutz",
+    "race": "Dwarf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 19
+      }
+    }
+  },
+  "30763": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Corpse Of Kurtz",
+    "race": "Dwarf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 19
+      }
+    }
+  },
+  "30764": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Balthazar",
+    "race": "Dwarf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 17
+      }
+    }
+  },
+  "30765": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Imperial Coffer",
+    "race": "Etc",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4390,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 19,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 9
+      }
+    }
+  },
+  "30766": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Cleo",
+    "title": "Witch",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30767": {
+    "level": 70,
+    "kind": "Auctioneer",
+    "name": "Auctioneer",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 22
+      }
+    }
+  },
+  "30768": {
+    "level": 70,
+    "kind": "Auctioneer",
+    "name": "Auctioneer",
+    "race": "Elf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 15,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30769": {
+    "level": 70,
+    "kind": "Auctioneer",
+    "name": "Auctioneer",
+    "race": "DarkElf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 16,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 21
+      }
+    }
+  },
+  "30770": {
+    "level": 70,
+    "kind": "Auctioneer",
+    "name": "Auctioneer",
+    "race": "Dwarf",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 7,
+        "height": 18
+      }
+    }
+  },
+  "30771": {
+    "level": 70,
+    "kind": "Auctioneer",
+    "name": "Auctioneer",
+    "race": "Orc",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 17,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "30772": {
+    "level": 70,
+    "kind": "ClanHallDoorman",
+    "name": "Wilson",
+    "title": "Clan Hall Gatekeeper",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  },
+  "30773": {
+    "level": 70,
+    "kind": "ClanHallDoorman",
+    "name": "Todd",
+    "title": "Clan Hall Gatekeeper",
+    "race": "Human",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 23
+      }
+    }
+  }
+}

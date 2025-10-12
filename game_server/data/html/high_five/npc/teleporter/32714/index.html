@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+Primeval Isle was sealed for a long time with a powerful forcefield, meaning gates couldn't be opened here. But its seal has been weakening ever since it was discovered by the adventurers, to now, when it is finally possible to travel here from the Town of Rune! Would you like to teleport to Rune now?<br>
+<a action="bypass -h npc_{{ object_id }}_tp 200916">"Yes, I would"</a><br>
+<a action="bypass -h npc_{{ object_id }}_chat 1">"Tell me more about this field."</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest.</a>
+{% endblock body %}

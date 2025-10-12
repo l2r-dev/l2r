@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+Are you leaving? May the blessing of shining stars stay on your travel...<br>
+I am not sure if you have enjoyed your stay in Heine. Here Innadril is the most beautiful city in Aden. If you haven't seen the great ships cruising against the water current or heard the song of the reeds dancing in the wind, I would ask you to delay your departure.<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

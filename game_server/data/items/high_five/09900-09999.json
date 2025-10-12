@@ -1,0 +1,2058 @@
+{
+  "9900": {
+    "name": "Quiet Footsteps Ring",
+    "description": "You can avoid the first attack by monsters when equipped. Lasts for 400 minutes. A Shadow Item which cannot be exchanged or dropped. Effect does not stack with additional rings. Stealth Ring",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "material": "Gold",
+    "price": 25,
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_mana_i00",
+    "mana": 400,
+    "item_skills": [
+      {
+        "id": 3407,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9901": {
+    "name": "Improved Falchion",
+    "description": "A transformed Falchion which is stronger and brighter.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1530,
+    "icon": "icon.weapon_falchion_i00"
+  },
+  "9902": {
+    "name": "Improved Great Spear",
+    "description": "A transformed Great Spear which is stronger and brighter. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2120,
+    "icon": "icon.weapon_long_spear_i00",
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "9903": {
+    "name": "Improved Iron Hammer",
+    "description": "A transformed Iron Hammer which is stronger and brighter.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1850,
+    "icon": "icon.weapon_iron_hammer_i00"
+  },
+  "9904": {
+    "name": "Improved Sword Breaker",
+    "description": "A transformed Sword Breaker which is stronger and brighter.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 27
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.weapon_sword_breaker_i00"
+  },
+  "9905": {
+    "name": "Improved Viper Fang",
+    "description": "A transformed Viper Fang which is stronger and brighter.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 38
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_vipers_canine_i00"
+  },
+  "9906": {
+    "name": "Improved Composite Bow",
+    "description": "A transformed Composite Bow which is stronger and brighter.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 7,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 1,
+        "reuse_delay": 1500
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1880,
+    "icon": "icon.weapon_composition_bow_i00"
+  },
+  "9907": {
+    "name": "Improved Flanged Mace",
+    "description": "A transformed Flanged Mace which is stronger and brighter.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 31
+      },
+      "MAtk": {
+        "set": 21
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_buzdygan_i00"
+  },
+  "9908": {
+    "name": "Improved Mage Staff",
+    "description": "A transformed Mage Staff which is stronger and brighter.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 30
+      },
+      "MAtk": {
+        "set": 31
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1050,
+    "icon": "icon.weapon_apprentices_staff_i00"
+  },
+  "9909": {
+    "name": "Agathion Seal Bracelet",
+    "description": "A bracelet that summons a cute Fortress Agathion. Shadow Item that cannot be exchanged or dropped. It lasts for 700 minutes. Performing Agathion - Fortress",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "mana": 700,
+    "item_skills": [
+      {
+        "id": 5458,
+        "level": 1
+      },
+      {
+        "id": 3361,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9910": {
+    "name": "Blood Oath",
+    "description": "An item needed for a clan leader to raise the clan up to level 9. It can also be used to strengthen subordinate forces. Cannot be traded, dropped or sold.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_broken_crystal_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "9911": {
+    "name": "Blood Alliance",
+    "description": "An item needed for a clan leader to raise the clan up to level 10. It can also be used to strengthen subordinate forces. Cannot be traded, dropped or sold.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_broken_crystal_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "9912": {
+    "name": "Knight's Epaulette",
+    "description": "A mark obtained after defeating enemies. It can be used to purchase special items after Fortress battles.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "icon": "icon.etc_shoulder_strap_of_knight_i00",
+    "stackable": true
+  },
+  "9913": {
+    "name": "Talisman_Test",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_crystal_ball_silver_i00",
+    "mana": 60,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9914": {
+    "name": "Blue Talisman of Power",
+    "description": "Increases P. Atk. when in use. Effect does not stack with additional Talismans of the same type. Shadow Item that cannot be traded or dropped. Blue Talisman of Power",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3271,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9915": {
+    "name": "Blue Talisman of Wild Magic",
+    "description": "Increases Critical Rate of magic attacks temporarily. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Wild Magic",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 75,
+    "item_skills": [
+      {
+        "id": 3277,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9916": {
+    "name": "Blue Talisman of Defence",
+    "description": "Temporarily decreases P. Def./M. Def./Evasion and increases P. Atk./M. Atk./Atk. Spd./Casting Spd./speed. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Defence",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3285,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9917": {
+    "name": "Red Talisman of Minimum Clarity",
+    "description": "Decreases skill MP consumption when used. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Red Talisman of Minimum Clarity",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i00",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3281,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9918": {
+    "name": "Red Talisman of Maximum Clarity",
+    "description": "Temporarily greatly decreases skill MP consumption when used. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Red Talisman of Maximum Clarity",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i00",
+    "mana": 74,
+    "item_skills": [
+      {
+        "id": 3282,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9919": {
+    "name": "Blue Talisman of Reflection",
+    "description": "When used, grants a skill whereby any physical melee damage received will be reflected back onto your attacker. Effect does not stack with additional talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Reflection",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3410,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9920": {
+    "name": "Blue Talisman of Invisibility",
+    "description": "Makes you invisible for a while, so you cannot be attacked by enemies. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Invisibility",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 64,
+    "item_skills": [
+      {
+        "id": 3280,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9921": {
+    "name": "Blue Talisman - Shield Protection",
+    "description": "When used, increases the protection power of a shield. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Protection",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3274,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9922": {
+    "name": "Black Talisman - Mending",
+    "description": "When used, it cures bleeding. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Black Talisman of Mending",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i05",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3286,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9923": {
+    "name": "Black Talisman - Escape",
+    "description": "When used, it cancels all Movement Inability States. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Black Talisman of Escape",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i05",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3289,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9924": {
+    "name": "Blue Talisman of Healing",
+    "description": "It increases HP Recovery Magic temporarily. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Healing",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 64,
+    "item_skills": [
+      {
+        "id": 3283,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9925": {
+    "name": "Red Talisman of Recovery",
+    "description": "It recovers HP/CP. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Red Talisman of Recovery",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i00",
+    "mana": 64,
+    "item_skills": [
+      {
+        "id": 3273,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9926": {
+    "name": "Blue Talisman of Defence",
+    "description": "When used, increases P. Def. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Defence",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3272,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9927": {
+    "name": "Blue Talisman of Magic Defence",
+    "description": "When used, increases magic P. Def. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of M. Def.",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3276,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9928": {
+    "name": "Red Talisman of Mental Regeneration",
+    "description": "When used, it speeds up MP recovery. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Red Talisman of Mental Regeneration",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i00",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3278,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9929": {
+    "name": "Blue Talisman of Protection",
+    "description": "When used, increases the protection power of a shield. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Protection",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3275,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9930": {
+    "name": "Blue Talisman of Evasion",
+    "description": "When used, increases evasion and reduces Critical Damage possibilities. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Blue Talisman of Evasion",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3321,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9931": {
+    "name": "Red Talisman of Meditation",
+    "description": "When used, it greatly increases MP Recovery Rate. You cannot move during recovery. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Red Talisman of Meditation",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i00",
+    "mana": 74,
+    "item_skills": [
+      {
+        "id": 3279,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9932": {
+    "name": "Blue Talisman - Divine Protection",
+    "description": "When used, P. Def. and M. Def. greatly increase momentarily. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available Blue Talisman of Divine Protection",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 74,
+    "item_skills": [
+      {
+        "id": 3284,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9933": {
+    "name": "Yellow Talisman of Power",
+    "description": "Increases P. Atk. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Power",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3293,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9934": {
+    "name": "Yellow Talisman of Violent Haste",
+    "description": "Increases Atk. Spd. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Violent Haste",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3301,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9935": {
+    "name": "Yellow Talisman of Arcane Defence",
+    "description": "Increases Magic Defence. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of M. Def.",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3296,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9936": {
+    "name": "Yellow Talisman of Arcane Power",
+    "description": "Increases M. Atk. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Arcane Power",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3294,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9937": {
+    "name": "Yellow Talisman of Arcane Haste",
+    "description": "Increases Casting Spd. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Arcane Haste",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3302,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9938": {
+    "name": "Yellow Talisman of Accuracy",
+    "description": "Increases Accuracy. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Accuracy",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3297,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9939": {
+    "name": "Yellow Talisman of Defence",
+    "description": "Increases Defence. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Defence",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3295,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9940": {
+    "name": "Yellow Talisman of Alacrity",
+    "description": "Increases P. Atk., M. Atk., and Speed. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Alacrity",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3313,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9941": {
+    "name": "Yellow Talisman of Speed",
+    "description": "Increases Speed. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Speed",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3300,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9942": {
+    "name": "Yellow Talisman of Critical Reduction",
+    "description": "When used, it decreases damages from physical critical attacks. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Critical Reduction",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3317,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9943": {
+    "name": "Yellow Talisman of Critical Damage",
+    "description": "Increases Critical P. Atk. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Critical Damage",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3299,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9944": {
+    "name": "Yellow Talisman of Critical Dodging",
+    "description": "When used, it decreases physical Critical Damage possibility. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Critical Dodging",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3316,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9945": {
+    "name": "Yellow Talisman of Evasion",
+    "description": "Increases Evasion. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Evasion",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3298,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9946": {
+    "name": "Yellow Talisman of Healing",
+    "description": "Increases HP Recovery Magic temporarily. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Healing",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3312,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9947": {
+    "name": "Yellow Talisman of CP Regeneration",
+    "description": "Increases CP recovery. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of CP Regeneration",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3311,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9948": {
+    "name": "Yellow Talisman of Physical Regeneration",
+    "description": "Increases HP recovery. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Physical Regeneration",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3310,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9949": {
+    "name": "Yellow Talisman of Mental Regeneration",
+    "description": "Increases MP recovery. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Yellow Talisman of Mental Regeneration",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i02",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3320,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9950": {
+    "name": "Grey Talisman of Weight Training",
+    "description": "Increases weapon Weight Limit. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Grey Talisman of Weight Training",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i07",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3314,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9951": {
+    "name": "Grey Talisman of Mid-Grade Fishing",
+    "description": "Obtains Mid-Grade Fishing Mastery Level (Lv 18). Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Grey Talisman of Fishing",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i07",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3315,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9952": {
+    "name": "Orange Talisman - Hot Springs CP Potion",
+    "description": "Create 1 Hot Springs CP Potion following the consumption of 16 Soul Ore. Effect does not stack with additional Talismans of the same type. Shadow Item that cannot be traded or dropped. Orange Talisman of Hot Springs Recovery",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "price": 15000,
+    "weight": 150,
+    "icon": "icon.etc_talisman_i04",
+    "mana": 64,
+    "item_skills": [
+      {
+        "id": 3332,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9953": {
+    "name": "Orange Talisman - Elixir of Life",
+    "description": "Consumes 50 Soul Ore to create an A-Grade Elixir of Life. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Orange Talisman of A Grade Elixir of Life",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i04",
+    "mana": 64,
+    "item_skills": [
+      {
+        "id": 3333,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9954": {
+    "name": "Orange Talisman - Elixir of Mental Strength",
+    "description": "Consumes 57 Soul Ore to create an A-Grade Elixir of Mental Strength. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Orange Talisman of A Grade Elixir of Mental Strength",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i04",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3334,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9955": {
+    "name": "Black Talisman - Vocalization",
+    "description": "Breaks magic silence. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Black Talisman of Vocalization",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i05",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3291,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9956": {
+    "name": "Black Talisman - Arcane Freedom",
+    "description": "When used, it cancels Magical Movement Inability States. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Black Talisman of Arcane Freedom",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i05",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3288,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9957": {
+    "name": "Black Talisman - Physical Freedom",
+    "description": "When used, it cancels Physical Movement Inability States. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Black Talisman of Physical Freedom",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i05",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3287,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9958": {
+    "name": "Black Talisman - Rescue",
+    "description": "When used, it cancels Physical Skill Inability States. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Black Talisman of Rescue",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i05",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3290,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9959": {
+    "name": "Black Talisman - Free Speech",
+    "description": "Breaks silence. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. Black Talisman of Free Speech",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i05",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3292,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9960": {
+    "name": "White Talisman of Bravery",
+    "description": "Increases Resistance to mental attacks. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. White Talisman of Bravery",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3306,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9961": {
+    "name": "White Talisman of Motion",
+    "description": "When equipped, Resistance to Paralysis increases. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available White Talisman of Motion",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3307,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9962": {
+    "name": "White Talisman of Grounding",
+    "description": "When equipped, Resistance to Shock attacks increases. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available White Talisman of Grounding",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3305,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9963": {
+    "name": "White Talisman of Attention",
+    "description": "When equipped, Resistance to sleep attacks increases. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available White Talisman of Attention",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3304,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9964": {
+    "name": "White Talisman of Bandages",
+    "description": "When equipped, Resistance to bleed attacks increases. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available White Talisman of Bandages",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3303,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9965": {
+    "name": "White Talisman of Protection",
+    "description": "Increases Resistance to buff disarming magic. Effect does not stack with additional Talismans of the same type. This item cannot be traded or dropped. White Talisman of Protection",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3309,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9966": {
+    "name": "White Talisman of Freedom",
+    "description": "When equipped, Resistance to Hold increases. Only one effect is applied when you wear the same two talismans. Shadow Item with no exchange/drop available White Talisman of Freedom",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3308,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9967": {
+    "name": "Recipe - Dynasty Sword (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Sword. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 872,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9968": {
+    "name": "Recipe - Dynasty Blade (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Blade. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 873,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9969": {
+    "name": "Recipe - Dynasty Phantom (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Phantom. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 874,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9970": {
+    "name": "Recipe - Dynasty Bow (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Bow. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 875,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9971": {
+    "name": "Recipe - Dynasty Knife (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Knife. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 876,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9972": {
+    "name": "Recipe - Dynasty Halberd (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Halberd. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 877,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9973": {
+    "name": "Recipe - Dynasty Cudgel (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Cudgel. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 878,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9974": {
+    "name": "Recipe - Dynasty Mace (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Mace. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 879,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9975": {
+    "name": "Recipe - Dynasty Bagh-Nakh (60%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Bagh-Nakh. Requires Create Item Skill - Level 9. 60% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 880,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9976": {
+    "name": "Recipe - Dynasty Sword (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Sword. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9977": {
+    "name": "Recipe - Dynasty Blade (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Blade. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9978": {
+    "name": "Recipe - Dynasty Phantom (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Phantom. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9979": {
+    "name": "Recipe - Dynasty Bow (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Bow. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9980": {
+    "name": "Recipe - Dynasty Knife (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Knife. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9981": {
+    "name": "Recipe - Dynasty Halberd (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Halberd. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9982": {
+    "name": "Recipe - Dynasty Cudgel (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Cudgel. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9983": {
+    "name": "Recipe - Dynasty Mace (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Mace. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9984": {
+    "name": "Recipe - Dynasty Bagh-Nakh (100%)",
+    "description": "For Dwarves only. The recipe for the Dynasty Bagh-Nakh. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 1493000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9985": {
+    "name": "Recipe - Sealed Dynasty Earrings (70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Earring. Requires Create Item Skill - Level 9. 70% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 897,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 243700,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9986": {
+    "name": "Recipe - Sealed Dynasty Necklace (70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Necklace. Requires Create Item Skill - Level 9. 70% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 898,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 324920,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9987": {
+    "name": "Recipe - Sealed Dynasty Ring (70%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Ring. Requires Create Item Skill - Level 9. 70% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 899,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 162460,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9988": {
+    "name": "Recipe - Sealed Dynasty Earrings (100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Earring. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 243700,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9989": {
+    "name": "Recipe - Sealed Dynasty Necklace (100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Necklace. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 324920,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9990": {
+    "name": "Recipe - Sealed Dynasty Ring (100%)",
+    "description": "For Dwarves only. The recipe for the Sealed Dynasty Ring. Requires Create Item Skill - Level 9. 100% success rate.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 1,
+          "level": 9
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 162460,
+    "weight": 30,
+    "icon": "icon.etc_recipe_black_i00",
+    "stackable": true
+  },
+  "9991": {
+    "name": "Sealed Dynasty Earring Gemstone",
+    "description": "A key material that Dwarves use to make Sealed Dynasty Earring. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 56866,
+    "weight": 60,
+    "icon": "icon.etc_crystal_ball_gold_i00",
+    "stackable": true
+  },
+  "9992": {
+    "name": "Sealed Dynasty Necklace Gemstone",
+    "description": "A key material that Dwarves use to make Sealed Dynasty Necklace. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 74095,
+    "weight": 60,
+    "icon": "icon.etc_jewel_box_i00",
+    "stackable": true
+  },
+  "9993": {
+    "name": "Sealed Dynasty Ring Gemstone",
+    "description": "A key material that Dwarves use to make Sealed Dynasty Ring. Can be sold in any shop.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 40464,
+    "weight": 60,
+    "icon": "icon.etc_jewel_box_i00",
+    "stackable": true
+  },
+  "9994": {
+    "name": "Map of Hellbound",
+    "description": "This torn map of an island is covered with black stains.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_letter_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "9995": {
+    "name": "Hand Crossbow",
+    "description": "Kamael Exclusive Weapon: Elven Bow Conversion.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 276,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 1850,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "9996": {
+    "name": "Hand Crossbow",
+    "description": "Kamael Exclusive Weapon: Dark Elven Bow Conversion.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 277,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 1850,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "9997": {
+    "name": "Fire Potion",
+    "description": "Increases Resistance to fire attacks by 30 for 10 minutes. Fire Resist Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 10000,
+    "weight": 10,
+    "icon": "icon.etc_fire_potion_i00",
+    "item_skills": [
+      {
+        "id": 2335,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "9998": {
+    "name": "Water Potion",
+    "description": "Increases Resistance to water attacks by 30 for 10 minutes. Water Resist Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 10000,
+    "weight": 10,
+    "icon": "icon.etc_water_potion_i00",
+    "item_skills": [
+      {
+        "id": 2336,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "9999": {
+    "name": "Earth Potion",
+    "description": "Increases Resistance to earth attacks by 30 for 10 minutes. Earth Resist Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 10000,
+    "weight": 10,
+    "icon": "icon.etc_earth_potion_i00",
+    "item_skills": [
+      {
+        "id": 2338,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  }
+}

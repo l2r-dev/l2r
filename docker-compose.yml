@@ -1,0 +1,36 @@
+services:
+  valkey:
+    restart: always
+    image: valkey/valkey:latest
+    volumes:
+      - ./docker/data/valkey:/data
+    ports:
+      - 6379:6379
+  postgresql:
+    restart: always
+    image: postgres:17.6
+    environment:
+      POSTGRES_USER: l2r
+      POSTGRES_PASSWORD: l2r
+      POSTGRES_DB: l2r
+    volumes:
+      - ./docker/data/postgresql:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+  pgadmin:
+    image: elestio/pgadmin:REL-9_8
+    container_name: pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: l2r@l2r.com
+      PGADMIN_DEFAULT_PASSWORD: l2r
+    ports:
+      - "8082:80"
+    depends_on:
+      - postgresql
+    entrypoint: /bin/sh -c "chmod 0600 /pgpass; /entrypoint.sh;"
+    user: root
+    volumes:
+      - ./docker/servers.json:/pgadmin4/servers.json
+      - ./docker/pgpass:/var/lib/pgadmin/storage/l2r_l2r.com/pgpass
+      - ./docker/data/pgadmin:/var/lib/pgadmin

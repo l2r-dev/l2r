@@ -1,0 +1,4964 @@
+{
+  "9200": {
+    "name": "Shadow Item - Jester Hat - Firework",
+    "description": "A festive, shadow-type jester hat with 2 points. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9201": {
+    "name": "Shadow Item - Wizard Hat - Firework",
+    "description": "A shadow-type wizard hat with a wide brim and bent tip. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_magic_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9202": {
+    "name": "Shadow Item - Dapper Cap - Firework",
+    "description": "A shadow-type hair accessory with a visor. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_dandy_cap_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9203": {
+    "name": "Shadow Item - Romantic Chapeau - Firework",
+    "description": "A shadow-type hair accessory adorned with feathers. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_romantic_chaperon_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9204": {
+    "name": "Shadow Item - Iron Circlet - Firework",
+    "description": "A shadow-type hair accessory made of iron. Uses 2 hair accessory slots. An event hair accessory that grants a magical effect. This item cannot be exchanged, dropped or sold. Large Fireworks Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_iron_circlet_i00",
+    "mana": 360,
+    "item_skills": [
+      {
+        "id": 3266,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9205": {
+    "name": "Alchemist's Chest Key",
+    "description": "A key to open an Alchemist's Chest. For event use only. Chest Key - For Events Only",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "icon.etc_old_key_i02",
+    "item_skills": [
+      {
+        "id": 2322,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "9206": {
+    "name": "Greater Healing Potion (Event)",
+    "description": "A magical potion that quickly restores HP. Its effect lasts for 15 seconds. Designed for use in events only. Greater Healing Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_reagent_white_i00",
+    "item_skills": [
+      {
+        "id": 2037,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9207": {
+    "name": "Quick Healing Potion (Event)",
+    "description": "A magical potion that quickly restores HP. Its effect is temporary. Designed for use in events only. Quick Healing Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_potion_gold_i00",
+    "item_skills": [
+      {
+        "id": 2038,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "9208": {
+    "name": "Phantom Mask (Event)",
+    "description": "A scary hair accessory. Uses 2 hair accessory slots. This item is designed for use in events only and cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessary_mask_of_chaotic_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "9209": {
+    "name": "Rapier",
+    "description": "Kamael Exclusive Weapon: Saber Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 123,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 36
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 315000,
+    "weight": 1520,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "9210": {
+    "name": "Talwar",
+    "description": "Kamael Exclusive Weapon: Heavy Sword Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 5285
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 43
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 315000,
+    "weight": 2100,
+    "icon": "icon.weapon_tulwar_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "9211": {
+    "name": "Talwar",
+    "description": "Kamael Exclusive Weapon: Steel Sword Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 7880
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 43
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 315000,
+    "weight": 2100,
+    "icon": "icon.weapon_tulwar_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "9212": {
+    "name": "Field Gun",
+    "description": "Kamael Exclusive Weapon: Reinforced Bow Conversion.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 3,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 274,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 315000,
+    "weight": 1870,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "9213": {
+    "name": "Fleuret",
+    "description": "Kamael Exclusive Weapon: Bastard Sword Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 69,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 46
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 1500,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "9214": {
+    "name": "Fleuret",
+    "description": "Kamael Exclusive Weapon: Spinebone Sword Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 125,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 46
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 1500,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "9215": {
+    "name": "Fleuret",
+    "description": "Kamael Exclusive Weapon: Artisan's Sword Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 126,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 46
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 1500,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "9216": {
+    "name": "Military Talwar",
+    "description": "Kamael Exclusive Weapon: Saber Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 55
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 2080,
+    "icon": "icon.weapon_tulwar_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "9217": {
+    "name": "Hand Crossbow",
+    "description": "Kamael Exclusive Weapon: Long Bow Conversion.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 275,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 64
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 1850,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "9218": {
+    "name": "Estoc",
+    "description": "Kamael Exclusive Weapon: Scream Sword Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 127,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 58
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 743500,
+    "weight": 1470,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "9219": {
+    "name": "Estoc",
+    "description": "Kamael Exclusive Weapon: Elven Sword Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 130,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 58
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 743500,
+    "weight": 1470,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "9220": {
+    "name": "Field Sword",
+    "description": "Kamael Exclusive Weapon: Two-Handed Sword Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 124
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 69
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 743500,
+    "weight": 2060,
+    "icon": "icon.weapon_tulwar_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "9221": {
+    "name": "Crossbow",
+    "description": "Kamael Exclusive Weapon: Gastraphetes Conversion.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 278,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 81
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 743500,
+    "weight": 1840,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "9222": {
+    "name": "Epee",
+    "description": "Kamael Exclusive Weapon: Sword of Revolution Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 129,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 72
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1074000,
+    "weight": 1450,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "9223": {
+    "name": "Katzbalger",
+    "description": "Kamael Exclusive Weapon: Titan Sword Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 7881
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 86
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1074000,
+    "weight": 2020,
+    "icon": "icon.weapon_tulwar_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "9224": {
+    "name": "Arm Breaker",
+    "description": "Kamael Exclusive Weapon: Reinforced Long Bow Conversion.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 6,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 279,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 100
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1074000,
+    "weight": 1820,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "9225": {
+    "name": "Grand Epee",
+    "description": "Kamael Exclusive Weapon: Elven Long Sword Conversion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 2499,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 83
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1387000,
+    "weight": 1440,
+    "icon": "icon.weapon_rapier_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "9226": {
+    "name": "General's Katzbalger",
+    "description": "Kamael Exclusive Weapon: Claymore Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 70
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 100
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1387000,
+    "weight": 2010,
+    "icon": "icon.weapon_tulwar_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "9227": {
+    "name": "Cranequin",
+    "description": "Kamael Exclusive Weapon: Light Crossbow Conversion.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 6,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 280,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 117
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1387000,
+    "weight": 1810,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "crystal_count": 2561,
+    "enchantable": true
+  },
+  "9228": {
+    "name": "Soldat Estoc",
+    "description": "Kamael Exclusive Weapon: Stormbringer Conversion. Bestows one of the following functions. Crt. Anger, Focus, or Light. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 72,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 97
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_soldat_estoc_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "9229": {
+    "name": "Soldat Estoc - Critical Anger",
+    "description": "Kamael Exclusive Weapon: Stormbringer Conversion<Soul Crystal Enhancement>. Decreases HP by 12 and increases P. Atk. by 248 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Critical Anger",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4681,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 97
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3026,
+        "level": 1
+      }
+    ]
+  },
+  "9230": {
+    "name": "Soldat Estoc - Focus",
+    "description": "Kamael Exclusive Weapon: Stormbringer Conversion<Soul Crystal Enhancement>. Increases Critical by 86. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4682,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 97
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 1
+      }
+    ]
+  },
+  "9231": {
+    "name": "Soldat Estoc - Light",
+    "description": "Kamael Exclusive Weapon: Stormbringer Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. Special Ability: Light",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4683,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 97
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "9232": {
+    "name": "Schlager",
+    "description": "Kamael Exclusive Weapon: Flamberge Conversion. Bestows one of the following functions: Critical Damage, Focus, or Light.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 71
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 116
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1980,
+    "icon": "icon.weapon_schlaeger_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "9233": {
+    "name": "Schlager - Critical Damage",
+    "description": "Kamael Exclusive Weapon: Flamberge Conversion. <Soul Crystal Enhancement>. Increases P. Atk. by 174 on a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4711
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 116
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1980,
+    "icon": "icon.weapon_schlaeger_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3023,
+        "level": 1
+      }
+    ]
+  },
+  "9234": {
+    "name": "Schlager - Focus",
+    "description": "Kamael Exclusive Weapon: Flamberge Conversion. <Soul Crystal Enhancement>. Increases Critical by 86. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4712
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 116
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1980,
+    "icon": "icon.weapon_schlaeger_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 1
+      }
+    ]
+  },
+  "9235": {
+    "name": "Schlager - Light",
+    "description": "Kamael Exclusive Weapon: Flamberge Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Special Ability: Light",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4713
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 116
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1980,
+    "icon": "icon.weapon_schlaeger_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "9236": {
+    "name": "Arbalest",
+    "description": "Kamael Exclusive Weapon: Crystallized Ice Bow\\\\Bestows one of the following functions: Guidance, Evasion, or Quick Recovery.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 281,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1790,
+    "icon": "icon.weapon_arbalest_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "9237": {
+    "name": "Arbalest - Guidance",
+    "description": "Kamael Exclusive Weapon: Crystallized Ice Bow Conversion. <Soul Crystal Enhancement>. Increases Accuracy by 5. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4810,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1790,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 1
+      }
+    ]
+  },
+  "9238": {
+    "name": "Arbalest - Evasion",
+    "description": "Kamael Exclusive Weapon: Crystallized Ice Bow Conversion. <Soul Crystal Enhancement>. Increases Evasion by 2. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4811,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1790,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 1
+      }
+    ]
+  },
+  "9239": {
+    "name": "Arbalest - Quick Recovery",
+    "description": "Kamael Exclusive Weapon: Crystallized Iced Bow. <Soul Crystal Enhancement>. Decreases re-use delay by about 17%.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 4,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4812,
+        "reuse_delay": 332
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 1762900,
+    "weight": 1790,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "9240": {
+    "name": "Chevalier Rapier",
+    "description": "Kamael Exclusive Weapon: Shamshir. Bestows one of the following functions: Guidance, Back Blow, or Rsk. Evasion. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 73,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9241": {
+    "name": "Chevalier Rapier - Guidance",
+    "description": "Kamael Exclusive Weapon: Shamshir. <Soul Crystal Enhancement>. Increases Accuracy by 6. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4684,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3007,
+        "level": 2
+      }
+    ]
+  },
+  "9242": {
+    "name": "Chevalier Rapier - Back Blow",
+    "description": "Kamael Exclusive Weapon: Shamshir. <Soul Crystal Enhancement>. Increases Critical Rate by 56 when attacking a target from behind. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Back Blow",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4685,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3018,
+        "level": 2
+      }
+    ]
+  },
+  "9243": {
+    "name": "Chevalier Rapier - Rsk. Evasion",
+    "description": "Kamael Exclusive Weapon: Shamshir. <Soul Crystal Enhancement>. Increases Evasion by 7 when HP falls to 60% or lower. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4686,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3028,
+        "level": 2
+      }
+    ]
+  },
+  "9244": {
+    "name": "Chevalier Rapier",
+    "description": "Kamael Exclusive Weapon: Katana. Bestows one of the following functions. Focus, Critical Damage, or Haste. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 74,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9245": {
+    "name": "Chevalier Rapier - Focus",
+    "description": "Kamael Exclusive Weapon: Katana. <Soul Crystal Enhancement>. Increases Critical by 82. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4687,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 2
+      }
+    ]
+  },
+  "9246": {
+    "name": "Chevalier Rapier - Critical Damage",
+    "description": "Kamael Exclusive Weapon: Katana. <Soul Crystal Enhancement>. Increases P. Atk. by 194 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4688,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3023,
+        "level": 2
+      }
+    ]
+  },
+  "9247": {
+    "name": "Chevalier Rapier - Haste",
+    "description": "Kamael Exclusive Weapon: Katana. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4689,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 2
+      }
+    ]
+  },
+  "9248": {
+    "name": "Chevalier Rapier",
+    "description": "Kamael Exclusive Weapon: Spirit Sword. Bestows one of the following functions. Critical Damage, Crt. Poison, or Haste. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 131,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9249": {
+    "name": "Chevalier Rapier - Critical Damage",
+    "description": "Kamael Exclusive Weapon: Spirit Sword. <Soul Crystal Enhancement>. Increases P. Atk. by 194 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4690,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3023,
+        "level": 2
+      }
+    ]
+  },
+  "9250": {
+    "name": "Chevalier Rapier - Critical Poison",
+    "description": "Kamael Exclusive Weapon: Spirit Sword. <Soul Crystal Enhancement>. Inflicts Poison on the target with a 15% chance during an ordinary critical attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4691,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9251": {
+    "name": "Chevalier Rapier - Haste",
+    "description": "Kamael Exclusive Weapon: Spirit Sword. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4692,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 2
+      }
+    ]
+  },
+  "9252": {
+    "name": "Chevalier Rapier",
+    "description": "Kamael Exclusive Weapon: Raid Sword. Bestows one of the following functions. Focus, Critical Drain, or Crt. Poison. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 133,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9253": {
+    "name": "Chevalier Rapier - Focus",
+    "description": "Kamael Exclusive Weapon: Raid Sword. <Soul Crystal Enhancement>. Increases Critical by 82. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4693,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 2
+      }
+    ]
+  },
+  "9254": {
+    "name": "Chevalier Rapier - Critical Drain",
+    "description": "Kamael Exclusive Weapon: Raid Sword. <Soul Crystal Enhancement>. Absorbs the target's HP by 9 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4694,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9255": {
+    "name": "Chevalier Rapier - Critical Poison",
+    "description": "Kamael Exclusive Weapon: Raid Sword. <Soul Crystal Enhancement>. Inflicts Poison on the target with a 15% chance during an ordinary critical attack. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4695,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1420,
+    "icon": "icon.weapon_soldat_estoc_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9256": {
+    "name": "Ballista",
+    "description": "Kamael Exclusive Weapon: Elemental Bow. Bestows one of the following functions: Guidance, Miser, or Quick Recovery.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 282,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9257": {
+    "name": "Ballista - Guidance",
+    "description": "Kamael Exclusive Weapon: Elemental Bow. <Soul Crystal Enhancement>. Increases Accuracy by 5. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4813,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 2
+      }
+    ]
+  },
+  "9258": {
+    "name": "Ballista - Miser",
+    "description": "Kamael Exclusive Weapon: Elemental Bow. <Soul Crystal Enhancement>. There is a 40% rate of chance that the number of soulshots consumed is reduced to 4.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4814,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9259": {
+    "name": "Ballista - Quick Recovery",
+    "description": "Kamael Exclusive Weapon: Elemental Bow. <Soul Crystal Enhancement>. Decreases re-use delay by about 20%.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4815,
+        "reuse_delay": 320
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9260": {
+    "name": "Ballista",
+    "description": "Kamael Exclusive Weapon: High Level Elven Bow. Bestows one of the following functions: Evasion, Miser, or Cheap Shot.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 285,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9261": {
+    "name": "Ballista - Evasion",
+    "description": "Kamael Exclusive Weapon: High Level Elven Bow. <Soul Crystal Enhancement>. Increases Evasion by 2. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4816,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 2
+      }
+    ]
+  },
+  "9262": {
+    "name": "Ballista - Miser",
+    "description": "Kamael Exclusive Weapon: High Level Elven Bow. <Soul Crystal Enhancement>. There is a 40% rate of chance that the number of soulshots consumed is reduced to 4.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4817,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "9263": {
+    "name": "Ballista - Cheap Shot",
+    "description": "Kamael Exclusive Weapon: High Level Elven Bow. <Soul Crystal Enhancement>. Decreased MP consumption by 12% during use of skill. Special Ability: Cheap Shot",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 4818,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 2209700,
+    "weight": 1770,
+    "icon": "icon.weapon_arbalest_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ]
+  },
+  "9264": {
+    "name": "Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Caliburs. Bestows one of the following functions. Guidance, Focus, or Critical Damage. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 75,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9265": {
+    "name": "Blinzlasher - Guidance",
+    "description": "Kamael Exclusive Weapon: Caliburs. <Soul Crystal Enhancement>. Increases Accuracy by 5. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4696,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3007,
+        "level": 3
+      }
+    ]
+  },
+  "9266": {
+    "name": "Blinzlasher - Focus",
+    "description": "Kamael Exclusive Weapon: Caliburs. <Soul Crystal Enhancement>. Increases Critical by 77. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4697,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 3
+      }
+    ]
+  },
+  "9267": {
+    "name": "Blinzlasher - Critical Damage",
+    "description": "Kamael Exclusive Weapon: Caliburs. <Soul Crystal Enhancement>. Increases P. Atk. by 213 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4698,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3023,
+        "level": 3
+      }
+    ]
+  },
+  "9268": {
+    "name": "Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Sword of Delusion. Bestows one of the following functions. Focus, Health, or Rsk. Haste. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 76,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9269": {
+    "name": "Blinzlasher - Focus",
+    "description": "Kamael Exclusive Weapon: Sword of Delusion. <Soul Crystal Enhancement>. Increases Critical by 77. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4699,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 3
+      }
+    ]
+  },
+  "9270": {
+    "name": "Blinzlasher - Health",
+    "description": "Kamael Exclusive Weapon: Sword of Delusion. <Soul Crystal Enhancement>. Increases Max HP by 25%. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4700,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "9271": {
+    "name": "Blinzlasher - Rsk. Haste",
+    "description": "Kamael Exclusive Weapon: Sword of Delusion. <Soul Crystal Enhancement>. Increases Atk. Spd. by 12% when HP falls to 60% or lower. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4701,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3032,
+        "level": 3
+      }
+    ]
+  },
+  "9272": {
+    "name": "Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Tsurugi. Bestows one of the following functions. Focus, Critical Damage, or Haste. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 77,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9273": {
+    "name": "Blinzlasher - Focus",
+    "description": "Kamael Exclusive Weapon: Tsurugi. <Soul Crystal Enhancement>. Increases Critical by 77. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4702,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 3
+      }
+    ]
+  },
+  "9274": {
+    "name": "Blinzlasher - Critical Damage",
+    "description": "Kamael Exclusive Weapon: Tsurugi. <Soul Crystal Enhancement>. Increases P. Atk. by 213 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4703,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3023,
+        "level": 3
+      }
+    ]
+  },
+  "9275": {
+    "name": "Blinzlasher - Haste",
+    "description": "Kamael Exclusive Weapon: Tsurugi. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4704,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 3
+      }
+    ]
+  },
+  "9276": {
+    "name": "Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Sword of Nightmare. Bestows one of the following functions. Health, Focus, or Light. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 134,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9277": {
+    "name": "Blinzlasher - Health",
+    "description": "Kamael Exclusive Weapon: Sword of Nightmare. <Soul Crystal Enhancement>. Increases Max HP by 25%. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4705,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "9278": {
+    "name": "Blinzlasher - Focus",
+    "description": "Kamael Exclusive Weapon: Sword of Nightmare. <Soul Crystal Enhancement>. Increases Critical by 77. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4706,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 3
+      }
+    ]
+  },
+  "9279": {
+    "name": "Blinzlasher - Light",
+    "description": "Kamael Exclusive Weapon: Sword of Nightmare. <Soul Crystal Enhancement>. Increases weight gauge by 20%. When enchanted to 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. Special Ability: Light",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4707,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "9280": {
+    "name": "Blinzlasher",
+    "description": "Kamael Exclusive Weapon: Sword of Limit. Bestows one of the following functions. Guidance, Critical Drain, or Health. When enchanted to 4 or more, it has a chance of increase P. Atk., M. Atk., and the amount of received heal, and of decreasing MP consumption for skill use for you and your party members during a critical attack",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 132,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9281": {
+    "name": "Blinzlasher - Guidance",
+    "description": "Kamael Exclusive Weapon: Sword of Limit. <Soul Crystal Enhancement>. Increases Accuracy by 5. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 6307,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3007,
+        "level": 3
+      }
+    ]
+  },
+  "9282": {
+    "name": "Blinzlasher - Critical Drain",
+    "description": "Kamael Exclusive Weapon: Sword of Limit. <Soul Crystal Enhancement>. Absorbs the target's HP by 9 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 6308,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9283": {
+    "name": "Blinzlasher - Health",
+    "description": "Kamael Exclusive Weapon: Sword of Limit. <Soul Crystal Enhancement>. Increases Max HP by 25%. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 6309,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 126
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1400,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "9284": {
+    "name": "Immortal Edge",
+    "description": "Kamael Exclusive Weapon: Pa'agrian Sword. Bestows one of the following functions: Focus, Health, or Critical Drain.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 7882
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 151
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_invincible_blade_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9285": {
+    "name": "Immortal Edge - Focus",
+    "description": "Kamael Exclusive Weapon: Pa'agrian Sword. <Soul Crystal Enhancement>. Increases Critical by 77. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 8102
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 151
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_invincible_blade_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 3
+      }
+    ]
+  },
+  "9286": {
+    "name": "Immortal Edge - Health",
+    "description": "Kamael Exclusive Weapon: Pa'agrian Sword. <Soul Crystal Enhancement>. Increases Max HP by 25%. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 8103
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 151
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_invincible_blade_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ]
+  },
+  "9287": {
+    "name": "Immortal Edge - Critical Drain",
+    "description": "Kamael Exclusive Weapon: Pa'agrian Sword. <Soul Crystal Enhancement>. User absorbs 9 HP from target during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 8104
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 151
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_invincible_blade_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9288": {
+    "name": "Tathlum",
+    "description": "Kamael Exclusive Weapon: Akat Long Bow. Bestows one of the following functions: Guidance, Evasion, or Miser.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 283,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1760,
+    "icon": "icon.weapon_taslam_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9289": {
+    "name": "Tathlum - Guidance",
+    "description": "Kamael Exclusive Weapon: Akat Long Bow. <Soul Crystal Enhancement>. Increases Accuracy by 4. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4819,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1760,
+    "icon": "icon.weapon_taslam_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3008,
+        "level": 3
+      }
+    ]
+  },
+  "9290": {
+    "name": "Tathlum - Evasion",
+    "description": "Kamael Exclusive Weapon: Akat Long Bow. <Soul Crystal Enhancement>. Increases Evasion by 2. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4820,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1760,
+    "icon": "icon.weapon_taslam_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 3
+      }
+    ]
+  },
+  "9291": {
+    "name": "Tathlum - Miser",
+    "description": "Kamael Exclusive Weapon: Akat Long Bow. <Soul Crystal Enhancement>. There is a 32% rate of chance that the number of soulshots consumed is reduced to 4.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 5,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4821,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 3304300,
+    "weight": 1760,
+    "icon": "icon.weapon_taslam_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "9292": {
+    "name": "Admiral's Estoc",
+    "description": "Kamael Exclusive Weapon: Samurai Long Sword. Bestows one of the following functions. Focus, Critical Damage, or Haste. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 135,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "9293": {
+    "name": "Admiral's Estoc - Focus",
+    "description": "Kamael Exclusive Weapon: Samurai Long Sword. <Soul Crystal Enhancement>. Increases Critical by 73. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4708,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 4
+      }
+    ]
+  },
+  "9294": {
+    "name": "Admiral's Estoc - Critical Damage",
+    "description": "Kamael Exclusive Weapon: Samurai Long Sword. <Soul Crystal Enhancement>. Increases P. Atk. by 231 on a critical attack. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4709,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3023,
+        "level": 4
+      }
+    ]
+  },
+  "9295": {
+    "name": "Admiral's Estoc - Haste",
+    "description": "Kamael Exclusive Weapon: Samurai Long Sword. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 4710,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 4
+      }
+    ]
+  },
+  "9296": {
+    "name": "Saber Tooth",
+    "description": "Kamael Exclusive Weapon: Berserker Blade. Bestows one of the following functions: Focus, Critical Damage, or Haste.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 5286
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1950,
+    "icon": "icon.weapon_invincible_blade_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "9297": {
+    "name": "Saber Tooth - Focus",
+    "description": "Kamael Exclusive Weapon: Berserker Blade. <Soul Crystal Enhancement>. Increases Critical by 73. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 6347
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1950,
+    "icon": "icon.weapon_invincible_blade_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 4
+      }
+    ]
+  },
+  "9298": {
+    "name": "Saber Tooth - Critical Damage",
+    "description": "Kamael Exclusive Weapon: Berserker Blade. <Soul Crystal Enhancement>. Increases P. Atk. by 270 on a critical attack. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 6348
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1950,
+    "icon": "icon.weapon_invincible_blade_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3542,
+        "level": 4
+      }
+    ]
+  },
+  "9299": {
+    "name": "Saber Tooth - Haste",
+    "description": "Kamael Exclusive Weapon: Berserker Blade. <Soul Crystal Enhancement>. Increases Atk. Spd. by about 7%. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 6349
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 4713500,
+    "weight": 1950,
+    "icon": "icon.weapon_invincible_blade_i01",
+    "crystal_count": 1885,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3037,
+        "level": 4
+      }
+    ]
+  }
+}

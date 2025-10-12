@@ -1,0 +1,533 @@
+[
+  {
+    "name": "Fantasy Isle Magic Zone",
+    "kind": "Effect",
+    "min_height": -4324,
+    "max_height": 3097,
+    "points": [
+      {
+        "x": -88871,
+        "y": -77664
+      },
+      {
+        "x": -43060,
+        "y": -43491
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "no_bookmark_themepark_peace1",
+    "kind": "Condition",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -76662,
+        "y": -77593
+      },
+      {
+        "x": -65536,
+        "y": -77344
+      },
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -81410,
+        "y": -65536
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_themepark_peace2",
+    "kind": "Condition",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -51267,
+        "y": -78666
+      },
+      {
+        "x": -44978,
+        "y": -75445
+      },
+      {
+        "x": -44281,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -72713
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_themepark_peace3",
+    "kind": "Condition",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -83544,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -41699
+      },
+      {
+        "x": -80543,
+        "y": -39424
+      },
+      {
+        "x": -91856,
+        "y": -41776
+      },
+      {
+        "x": -92099,
+        "y": -53834
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_themepark_peace4",
+    "kind": "Condition",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -43060,
+        "y": -65536
+      },
+      {
+        "x": -44899,
+        "y": -44178
+      },
+      {
+        "x": -65536,
+        "y": -43068
+      }
+    ]
+  },
+  {
+    "name": "18_16_etc08_nodrop",
+    "kind": "Condition",
+    "min_height": -2425,
+    "max_height": -2225,
+    "points": [
+      {
+        "x": -58571,
+        "y": -64074
+      },
+      {
+        "x": -56368,
+        "y": -64071
+      },
+      {
+        "x": -56370,
+        "y": -61896
+      },
+      {
+        "x": -58565,
+        "y": -61904
+      }
+    ]
+  },
+  {
+    "name": "18_16_etc08_norestart1",
+    "kind": "NoRestart",
+    "min_height": -2425,
+    "max_height": -2225,
+    "points": [
+      {
+        "x": -58571,
+        "y": -64074
+      },
+      {
+        "x": -56368,
+        "y": -64071
+      },
+      {
+        "x": -56370,
+        "y": -61896
+      },
+      {
+        "x": -58565,
+        "y": -61904
+      }
+    ]
+  },
+  {
+    "name": "themepark_peace1",
+    "kind": "Peace",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -76662,
+        "y": -77593
+      },
+      {
+        "x": -65536,
+        "y": -77344
+      },
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -81410,
+        "y": -65536
+      }
+    ]
+  },
+  {
+    "name": "themepark_peace2",
+    "kind": "Peace",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -51267,
+        "y": -78666
+      },
+      {
+        "x": -44978,
+        "y": -75445
+      },
+      {
+        "x": -44281,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -72713
+      }
+    ]
+  },
+  {
+    "name": "themepark_peace3",
+    "kind": "Peace",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -83544,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -65536,
+        "y": -41699
+      },
+      {
+        "x": -80543,
+        "y": -39424
+      },
+      {
+        "x": -91856,
+        "y": -41776
+      },
+      {
+        "x": -92099,
+        "y": -53834
+      }
+    ]
+  },
+  {
+    "name": "themepark_peace4",
+    "kind": "Peace",
+    "min_height": -4696,
+    "max_height": 3304,
+    "points": [
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -43060,
+        "y": -65536
+      },
+      {
+        "x": -44899,
+        "y": -44178
+      },
+      {
+        "x": -65536,
+        "y": -43068
+      }
+    ]
+  },
+  {
+    "name": "rune_1916_001",
+    "min_height": -14360,
+    "max_height": -7360,
+    "points": [
+      {
+        "x": -33117,
+        "y": -65301
+      },
+      {
+        "x": 238,
+        "y": -65577
+      },
+      {
+        "x": 123,
+        "y": -32757
+      },
+      {
+        "x": -33117,
+        "y": -32724
+      }
+    ]
+  },
+  {
+    "name": "schuttgart_1915_001",
+    "min_height": -5464,
+    "max_height": 2536,
+    "points": [
+      {
+        "x": -32987,
+        "y": -98820
+      },
+      {
+        "x": 730,
+        "y": -99021
+      },
+      {
+        "x": 525,
+        "y": -65412
+      },
+      {
+        "x": -33196,
+        "y": -65308
+      }
+    ]
+  },
+  {
+    "name": "17_15_water1",
+    "kind": "Water",
+    "min_height": -4756,
+    "max_height": -3756,
+    "points": [
+      {
+        "x": -98304,
+        "y": -98304
+      },
+      {
+        "x": -65536,
+        "y": -65536
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water1",
+    "kind": "Water",
+    "min_height": -4780,
+    "max_height": -3780,
+    "points": [
+      {
+        "x": -65536,
+        "y": -65536
+      },
+      {
+        "x": -32768,
+        "y": -32768
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water2",
+    "kind": "Water",
+    "min_height": -2069,
+    "max_height": -2066,
+    "points": [
+      {
+        "x": -61172,
+        "y": -58276
+      },
+      {
+        "x": -58317,
+        "y": -55532
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water3",
+    "kind": "Water",
+    "min_height": -2086,
+    "max_height": -2062,
+    "points": [
+      {
+        "x": -61684,
+        "y": -59972
+      },
+      {
+        "x": -60556,
+        "y": -59196
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water4",
+    "kind": "Water",
+    "min_height": -2301,
+    "max_height": -2151,
+    "points": [
+      {
+        "x": -60960,
+        "y": -54879
+      },
+      {
+        "x": -58432,
+        "y": -53379
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water5",
+    "kind": "Water",
+    "min_height": -2893,
+    "max_height": -2843,
+    "points": [
+      {
+        "x": -50599,
+        "y": -54912
+      },
+      {
+        "x": -50143,
+        "y": -53444
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water6",
+    "kind": "Water",
+    "min_height": -2893,
+    "max_height": -2843,
+    "points": [
+      {
+        "x": -50143,
+        "y": -55029
+      },
+      {
+        "x": -49277,
+        "y": -53305
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water7",
+    "kind": "Water",
+    "min_height": -2894,
+    "max_height": -2844,
+    "points": [
+      {
+        "x": -49277,
+        "y": -54781
+      },
+      {
+        "x": -49019,
+        "y": -53569
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water8",
+    "kind": "Water",
+    "min_height": -2893,
+    "max_height": -2843,
+    "points": [
+      {
+        "x": -51168,
+        "y": -55433
+      },
+      {
+        "x": -50910,
+        "y": -55117
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water9",
+    "kind": "Water",
+    "min_height": -2893,
+    "max_height": -2843,
+    "points": [
+      {
+        "x": -50186,
+        "y": -56004
+      },
+      {
+        "x": -49832,
+        "y": -55784
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water10",
+    "kind": "Water",
+    "min_height": -2893,
+    "max_height": -2843,
+    "points": [
+      {
+        "x": -51206,
+        "y": -53249
+      },
+      {
+        "x": -50916,
+        "y": -52869
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "18_16_water11",
+    "kind": "Water",
+    "min_height": -2893,
+    "max_height": -2843,
+    "points": [
+      {
+        "x": -50199,
+        "y": -52553
+      },
+      {
+        "x": -49797,
+        "y": -52333
+      }
+    ],
+    "shape": "Cuboid"
+  }
+]

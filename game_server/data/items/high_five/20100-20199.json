@@ -1,0 +1,4016 @@
+{
+  "20100": {
+    "name": "Saving Santa Hat - 24-hour limited period",
+    "description": "This festive holiday hat allows you to participate in a \"Rock-Paper-Scissors\" contest with Thomas D. Turkey. Requires 2 hair accessory slots. It cannot be exchanged, dropped or sold. Scissors",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_xmas_gawibawibo_cap_i00",
+    "time": 1440,
+    "item_skills": [
+      {
+        "id": 21014,
+        "level": 1
+      },
+      {
+        "id": 21015,
+        "level": 1
+      },
+      {
+        "id": 21016,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "20101": {
+    "name": "Santa Claus' Gift Set",
+    "description": "A gift set given by Santa Claus to show his appreciation.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20075,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20076,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20077,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_xmas_present_i00"
+  },
+  "20102": {
+    "name": "Santa Claus' Gift Set",
+    "description": "A gift set given by Santa Claus to show his appreciation.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20075,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20076,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20078,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_xmas_present_i00"
+  },
+  "20103": {
+    "name": "Holiday Scroll: Heavy Armor Fighter - 8-hour limited period",
+    "description": "This magical scroll contains buffs for Fighters wearing heavy armor. It can be used once every hour. It cannot be exchanged, dropped or sold. Christmas Festival",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_xmas_scroll_i00",
+    "time": 480,
+    "item_skills": [
+      {
+        "id": 22013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "pet_useable": true
+  },
+  "20104": {
+    "name": "Holiday Scroll: Light Armor Fighter - 8-hour limited period",
+    "description": "This magical scroll contains buffs for Fighters wearing light armor. It can be used once every hour. It cannot be exchanged, dropped or sold. Christmas Festival",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_xmas_scroll_i00",
+    "time": 480,
+    "item_skills": [
+      {
+        "id": 22014,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "pet_useable": true
+  },
+  "20105": {
+    "name": "Holiday Scroll: Healer - 8-hour limited period",
+    "description": "This magical scroll contains buffs for Healers. It can be used once every hour. It cannot be exchanged, dropped or sold. Christmas Festival",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_xmas_scroll_i00",
+    "time": 480,
+    "item_skills": [
+      {
+        "id": 22015,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "pet_useable": true
+  },
+  "20106": {
+    "name": "Holiday Scroll: Mage - 8-hour limited period",
+    "description": "This magical scroll contains buffs for Mages. It can be used once every hour. It cannot be exchanged, dropped or sold. Christmas Festival",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys.icon.br_xmas_scroll_i00",
+    "time": 480,
+    "item_skills": [
+      {
+        "id": 22016,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "pet_useable": true
+  },
+  "20107": {
+    "name": "Santa Claus' Weapon Exchange Ticket - 12-hour limited period",
+    "description": "Allows you to potentially receive a powerful item from one of Santa's Helpers in the village. It cannot be exchanged, dropped or stored in a warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "time": 720,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "20108": {
+    "name": "Santa Claus' Weapon Exchange Ticket - 12-hour limited period",
+    "description": "Allows you to potentially receive a powerful item from one of Santa's Helpers in the village. It cannot be exchanged, dropped or stored in a warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "time": 720,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "20109": {
+    "name": "Sword of Revolution (Event) - 4-hour limited period",
+    "description": "Sword of Revolution for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 483,
+    "icon": "icon.weapon_sword_of_revolution_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21017,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20110": {
+    "name": "Titan Sword (Event) - 4-hour limited period",
+    "description": "Titan Sword for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 673,
+    "icon": "icon.weapon_giants_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21018,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20111": {
+    "name": "Maingauche (Event) - 4-hour limited period",
+    "description": "Maingauche for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 69
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 357,
+    "icon": "icon.weapon_maingauche_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21019,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20112": {
+    "name": "Tarbar (Event) - 4-hour limited period",
+    "description": "Tarbar for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 577,
+    "icon": "icon.weapon_tarbar_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21020,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20113": {
+    "name": "Titan Hammer (Event) - 4-hour limited period",
+    "description": "Titan Hammer for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 700,
+    "icon": "icon.weapon_giants_hammer_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21021,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20114": {
+    "name": "Priest Mace (Event) - 4-hour limited period",
+    "description": "Priest Mace for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 63
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 573,
+    "icon": "icon.weapon_mace_of_priest_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21022,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20115": {
+    "name": "Goat Head Staff (Event) - 4-hour limited period",
+    "description": "Goat Head Staff for events. No exchange/drop/sale/warehouse available. No enchantment/storing souls/smelting possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 77
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 333,
+    "icon": "icon.weapon_goathead_staff_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21023,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20116": {
+    "name": "Bich'Hwa (Event) - 4-hour limited period",
+    "description": "Bich'Hwa for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 503,
+    "icon": "icon.weapon_bichhwa_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21024,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20117": {
+    "name": "Strengthened Long Bow (Event) - 4-hour limited period",
+    "description": "Strengthened Long Bow for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 2,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 179
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 607,
+    "icon": "icon.weapon_strengthening_long_bow_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21025,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20118": {
+    "name": "Winged Spear (Event) - 4-hour limited period",
+    "description": "Winged Spear for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 687,
+    "icon": "icon.weapon_winged_spear_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21026,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20119": {
+    "name": "Artisan's Sword*Artisan's Sword (Event) - 4-hour limited period",
+    "description": "Artisan's Sword*Artisan's Sword for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 827,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21027,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20120": {
+    "name": "Epee (Event) - 4-hour limited period",
+    "description": "Epee for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 72
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 483,
+    "icon": "icon.weapon_rapier_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21028,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20121": {
+    "name": "Katzbalger (Event) - 4-hour limited period",
+    "description": "Katzbalger for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 86
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 673,
+    "icon": "icon.weapon_tulwar_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21029,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20122": {
+    "name": "Arm Breaker (Event) - 4-hour limited period",
+    "description": "Arm Breaker for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 6,
+        "spiritshots": 3,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 100
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 607,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21030,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20123": {
+    "name": "Samurai Longsword (Event) - 4-hour limited period",
+    "description": "Samurai Longsword for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 460,
+    "icon": "icon.weapon_samurai_longsword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21017,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20124": {
+    "name": "Berserker Blade (Event) - 4-hour limited period",
+    "description": "Berserker Blade for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 460,
+    "icon": "icon.weapon_berserker_blade_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21018,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20125": {
+    "name": "Crystal Dagger (Event) - 4-hour limited period",
+    "description": "Crystal Dagger for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 333,
+    "icon": "icon.weapon_crystal_dagger_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21019,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20126": {
+    "name": "Yaksa Mace (Event) - 4-hour limited period",
+    "description": "Yaksa Mace for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 547,
+    "icon": "icon.weapon_yaksa_mace_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21020,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20127": {
+    "name": "Dwarven Hammer (Event) - 4-hour limited period",
+    "description": "Dwarven Hammer for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 670,
+    "icon": "icon.weapon_dwarven_hammer_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21021,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20128": {
+    "name": "Ecliptic Axe (Event) - 4-hour limited period",
+    "description": "Ecliptic Axe for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 547,
+    "icon": "icon.weapon_eclipse_axe_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21022,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20129": {
+    "name": "Demon's Staff (Event) - 4-hour limited period",
+    "description": "Demon's Staff for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 152
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 330,
+    "icon": "icon.weapon_demons_staff_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21023,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20130": {
+    "name": "Great Pata (Event) - 4-hour limited period",
+    "description": "Great Pata for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 90
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 487,
+    "icon": "icon.weapon_great_pata_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21024,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20131": {
+    "name": "Eminence Bow (Event) - 4-hour limited period",
+    "description": "Eminence Bow for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 323
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 573,
+    "icon": "icon.weapon_eminence_bow_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21025,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20132": {
+    "name": "Orcish Poleaxe (Event) - 4-hour limited period",
+    "description": "Orcish Poleaxe for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 650,
+    "icon": "icon.weapon_orcish_poleaxe_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21026,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20133": {
+    "name": "Katana*Katana (Event) - 4-hour limited period",
+    "description": "Katana*Katana for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 757,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21027,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20134": {
+    "name": "Admiral's Estoc (Event) - 4-hour limited period",
+    "description": "Admiral's Estoc for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 460,
+    "icon": "icon.weapon_blink_slasher_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21028,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20135": {
+    "name": "Saber Tooth (Event) - 4-hour limited period",
+    "description": "Saber Tooth for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 650,
+    "icon": "icon.weapon_invincible_blade_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21029,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20136": {
+    "name": "Sharpshooter (Event) - 4-hour limited period",
+    "description": "Sharpshooter for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 6,
+        "spiritshots": 3,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 198
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 580,
+    "icon": "icon.weapon_taslam_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21030,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20137": {
+    "name": "Sword of Damascus (Event) - 4-hour limited period",
+    "description": "Sword of Damascus for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 450,
+    "icon": "icon.weapon_sword_of_damascus_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21017,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20138": {
+    "name": "Guardian Sword (Event) - 4-hour limited period",
+    "description": "Guardian Sword for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 643,
+    "icon": "icon.weapon_guardians_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21018,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20139": {
+    "name": "Demon's Dagger (Event) - 4-hour limited period",
+    "description": "Demon's Dagger for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 323,
+    "icon": "icon.weapon_demons_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21019,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20140": {
+    "name": "Art of Battle Axe (Event) - 4-hour limited period",
+    "description": "Art of Battle Axe for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 523,
+    "icon": "icon.weapon_art_of_battle_axe_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21020,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20141": {
+    "name": "Star Buster (Event) - 4-hour limited period",
+    "description": "Star Buster for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 643,
+    "icon": "icon.weapon_star_buster_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21021,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20142": {
+    "name": "Kaim Vanul's Bones (Event) - 4-hour limited period",
+    "description": "Kaim Vanul's Bones for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 523,
+    "icon": "icon.weapon_bone_of_kaim_vanul_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21022,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20143": {
+    "name": "Staff of Evil Spirits (Event) - 4-hour limited period",
+    "description": "Staff of Evil Spirits for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 189
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 310,
+    "icon": "icon.weapon_staff_of_evil_sprit_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21023,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20144": {
+    "name": "Bellion Cestus (Event) - 4-hour limited period",
+    "description": "Bellion Cestus for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 463,
+    "icon": "icon.weapon_bellion_cestus_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21024,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20145": {
+    "name": "Bow of Peril (Event) - 4-hour limited period",
+    "description": "Bow of Peril for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 400
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 567,
+    "icon": "icon.weapon_hazard_bow_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21025,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20146": {
+    "name": "Lance (Event) - 4-hour limited period",
+    "description": "Lance for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 640,
+    "icon": "icon.weapon_lancia_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21026,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20147": {
+    "name": "Samurai Long Sword*Samurai Long Sword (Event) - 4-hour limited period",
+    "description": "Samurai Longsword*Samurai Long Sword for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 14
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 693,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21027,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20148": {
+    "name": "Colichemarde (Event) - 4-hour limited period",
+    "description": "Colichemarde for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 450,
+    "icon": "icon.weapon_colichemarde_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21028,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20149": {
+    "name": "Dismantler (Event) - 4-hour limited period",
+    "description": "Dismantler for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 210
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 643,
+    "icon": "icon.weapon_dismantler_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21029,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20150": {
+    "name": "Hell Hound (Event) - 4-hour limited period",
+    "description": "Hell Hound for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 567,
+    "icon": "icon.weapon_hell_hound_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21030,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20151": {
+    "name": "Dark Legion's Edge (Event) - 4-hour limited period",
+    "description": "Dark Legion's Edge for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 440,
+    "icon": "icon.weapon_dark_legions_edge_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21017,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20152": {
+    "name": "Dragon Slayer (Event) - 4-hour limited period",
+    "description": "Dragon Slayer for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 613,
+    "icon": "icon.weapon_dragon_slayer_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21018,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20153": {
+    "name": "Soul Separator (Event) - 4-hour limited period",
+    "description": "Soul Separator for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 203
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 317,
+    "icon": "icon.weapon_soul_separator_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21019,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20154": {
+    "name": "Elysian (Event) - 4-hour limited period",
+    "description": "Elysian for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 527,
+    "icon": "icon.weapon_elysian_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21020,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20155": {
+    "name": "Doom Crusher (Event) - 4-hour limited period",
+    "description": "Doom Crusher for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 633,
+    "icon": "icon.weapon_doom_crusher_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21021,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20156": {
+    "name": "Flaming Dragon Skull (Event) - 4-hour limited period",
+    "description": "Flaming Dragon Skull for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 510,
+    "icon": "icon.weapon_dragon_flame_head_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21022,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20157": {
+    "name": "Branch of the Mother Tree (Event) - 4-hour limited period",
+    "description": "Branch of the Mother Tree for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 226
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_worldtrees_branch_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21023,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20158": {
+    "name": "Dragon Grinder (Event) - 4-hour limited period",
+    "description": "Dragon Grinder for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 450,
+    "icon": "icon.weapon_dragon_grinder_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21024,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20159": {
+    "name": "Soul Bow (Event) - 4-hour limited period",
+    "description": "Soul Bow for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 528
+      },
+      "MAtk": {
+        "set": 125
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 553,
+    "icon": "icon.weapon_soul_bow_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21025,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20160": {
+    "name": "Tallum Glaive (Event) - 4-hour limited period",
+    "description": "Tallum Glaive for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 613,
+    "icon": "icon.weapon_tallum_glaive_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21026,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20161": {
+    "name": "Damascus*Damascus (Event) - 4-hour limited period",
+    "description": "Damascus*Damascus for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 20
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 693,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21027,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20162": {
+    "name": "Lacerator (Event) - 4-hour limited period",
+    "description": "Lacerator for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 210
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 440,
+    "icon": "icon.weapon_greed_stinger_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21028,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20163": {
+    "name": "Undertaker (Event) - 4-hour limited period",
+    "description": "Undertaker for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 613,
+    "icon": "icon.weapon_death_bringer_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21029,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20164": {
+    "name": "Reaper (Event) - 4-hour limited period",
+    "description": "Reaper for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 294
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 553,
+    "icon": "icon.weapon_soul_shooter_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21030,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20165": {
+    "name": "Forgotten Blade (Event) - 4-hour limited period",
+    "description": "Forgotten Blade for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 433,
+    "icon": "icon.weapon_forgotten_blade_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21017,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20166": {
+    "name": "Heaven's Divider (Event) - 4-hour limited period",
+    "description": "Heaven's Divider for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 460,
+    "icon": "icon.weapon_heavens_divider_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21018,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20167": {
+    "name": "Angel Slayer (Event) - 4-hour limited period",
+    "description": "Angel Slayer for events No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 246
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 317,
+    "icon": "icon.weapon_angel_slayer_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21019,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20168": {
+    "name": "Basalt Battlehammer (Event) - 4-hour limited period",
+    "description": "Basalt Battlehammer for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 523,
+    "icon": "icon.weapon_basalt_battlehammer_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21020,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20169": {
+    "name": "Dragon Hunter Axe (Event) - 4-hour limited period",
+    "description": "Dragon Hunter Axe for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 607,
+    "icon": "icon.weapon_dragon_hunter_axe_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21021,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20170": {
+    "name": "Arcana Mace (Event) - 4-hour limited period",
+    "description": "Arcana Mace for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 225
+      },
+      "MAtk": {
+        "set": 175
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 433,
+    "icon": "icon.weapon_arcana_mace_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21022,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20171": {
+    "name": "Imperial Staff (Event) - 4-hour limited period",
+    "description": "Imperial Staff for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 274
+      },
+      "MAtk": {
+        "set": 175
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 303,
+    "icon": "icon.weapon_imperial_staff_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21023,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20172": {
+    "name": "Demon Splinter (Event) - 4-hour limited period",
+    "description": "Demon Splinter for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 450,
+    "icon": "icon.weapon_demon_splinter_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21024,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20173": {
+    "name": "Draconic Bow (Event) - 4-hour limited period",
+    "description": "Draconic Bow for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 550,
+    "icon": "icon.weapon_draconic_bow_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21025,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20174": {
+    "name": "Saint Spear (Event) - 4-hour limited period",
+    "description": "Saint Spear for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 600,
+    "icon": "icon.weapon_saint_spear_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21026,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20175": {
+    "name": "Tallum Blade*Dark Legion's Edge (Event) - 4-hour limited period",
+    "description": "Tallum Blade*Dark Legion's Edge for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3570,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 693,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21027,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20176": {
+    "name": "Laevateinn (Event) - 4-hour limited period",
+    "description": "Laevateinn for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 255
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 433,
+    "icon": "icon.weapon_leavatein_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21028,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20177": {
+    "name": "Gram (Event) - 4-hour limited period",
+    "description": "Gram for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 600,
+    "icon": "icon.weapon_gram_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21029,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20178": {
+    "name": "Sarunga (Event) - 4-hour limited period",
+    "description": "Sarunga for events. No exchange/drop/sale/storage available. No enchantment/SA/augmentation possible. Christmas Dream Weapon",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 356
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 533,
+    "icon": "icon.weapon_sarnga_i00",
+    "time": 240,
+    "item_skills": [
+      {
+        "id": 21030,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "20179": {
+    "name": "Extra Entrance Pass - Near Kamaloka 5 Sheet Pack",
+    "description": "Wrapped pack containing an extra entrance pass that lets you enter Near Kamaloka.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20027,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20180": {
+    "name": "Extra Entrance Pass - Near Kamaloka 10 Sheet Pack",
+    "description": "Wrapped pack containing an extra entrance pass that lets you enter Near Kamaloka.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20027,
+          "min": 10,
+          "max": 10,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20181": {
+    "name": "My Teleport Spellbook 5 Sheet Pack",
+    "description": "Wrapped pack containing a My Teleport Spellbook.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20025,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20182": {
+    "name": "My Teleport Spellbook 10 Sheet Pack",
+    "description": "Wrapped pack containing a My Teleport Spellbook.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20025,
+          "min": 10,
+          "max": 10,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20183": {
+    "name": "My Teleport Flag 5 Sheet Pack",
+    "description": "Wrapped pack containing a My Teleport Flag.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20033,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20184": {
+    "name": "My Teleport Flag 10 Sheet Pack",
+    "description": "Wrapped pack containing a My Teleport Flag.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20033,
+          "min": 10,
+          "max": 10,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20185": {
+    "name": "Extra Entrance Pass - Kamaloka (Hall of the Abyss) 5 Sheet Pack",
+    "description": "Wrapped pack containing an extra entrance pass that lets you enter Kamaloka (Hall of the Abyss).",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20026,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20186": {
+    "name": "Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) 5 Sheet Pack",
+    "description": "Wrapped pack containing an extra entrance pass that lets you enter Kamaloka (Labyrinth of the Abyss).",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20028,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20187": {
+    "name": "Extra Entrance Pass - Kamaloka (Hall of the Abyss) 10 Sheet Pack",
+    "description": "Wrapped pack containing an extra entrance pass that lets you enter Kamaloka (Hall of the Abyss).",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20026,
+          "min": 10,
+          "max": 10,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20188": {
+    "name": "Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) 10 Sheet Pack",
+    "description": "Wrapped pack containing an extra entrance pass that lets you enter Kamaloka (Labyrinth of the Abyss).",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20028,
+          "min": 10,
+          "max": 10,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "stackable": true,
+    "premium": true
+  },
+  "20189": {
+    "name": "Premium Valentine Decoration Pack",
+    "description": "Wrapped pack contains a Premium Valentine Decoration. Cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20190,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20190": {
+    "name": "Premium Valentine Decoration - 15-day limited period",
+    "description": "Take this along with a Decadent Valentine Cake to Valentine Messenger Queen of Hearts, and she will create a Heavenly Valentine Cake just for you. Cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_valentine_deco_i00",
+    "time": 21600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "20191": {
+    "name": "Valentine Cake Recipe",
+    "description": "Recipe for making a Simple Valentine Cake. Cannot be exchanged, dropped or sold.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_valentine_recipe_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "20192": {
+    "name": "Valentine Dark Chocolate",
+    "description": "Ingredient for making a Valentine Cake.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_valentine_darkchoco_i00",
+    "stackable": true
+  },
+  "20193": {
+    "name": "Valentine White Chocolate",
+    "description": "Ingredient for making a Valentine Cake.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_valentine_whitechoco_i00",
+    "stackable": true
+  },
+  "20194": {
+    "name": "Valentine Fresh Cream",
+    "description": "Ingredient for making a Valentine Cake.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_valentine_cream_i00",
+    "stackable": true
+  },
+  "20195": {
+    "name": "Simple Valentine Cake",
+    "description": "A basic Valentine Cake. With a little more care, you might be able to make a Velvety Valentine Cake. Double-click to see what happens. Shabby Valentine Cake",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_valentine_cake_1_i00",
+    "stackable": true
+  },
+  "20196": {
+    "name": "Velvety Valentine Cake",
+    "description": "A creamy Valentine Cake. With a little more care, you may be able to make a Velvety Valentine Cake. Double-click to see what happens. Ordinary Valentine Cake",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_valentine_cake_2_i00",
+    "stackable": true
+  },
+  "20197": {
+    "name": "Delectable Valentine Cake",
+    "description": "A yummy and inviting Valentine Cake. With a little more care, you might be able to make a Decadent Valentine Cake. Double-click to see what happens. Delicious Valentine Cake",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_valentine_cake_3_i00",
+    "stackable": true
+  },
+  "20198": {
+    "name": "Decadent Valentine Cake",
+    "description": "This is a perfect Valentine delicacy. Double-clicking this item will yield a special Valentine treat. Perfect Valentine Cake",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_valentine_cake_4_i00",
+    "stackable": true
+  },
+  "20199": {
+    "name": "Heavenly Valentine Cake - 30-day limited period",
+    "description": "A divine confection made with love and care. Double-click to transform into a fabulous reward. Cannot be exchanged, dropped or sold. Fantasy Valentine Cake",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_valentine_cake_5_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  }
+}

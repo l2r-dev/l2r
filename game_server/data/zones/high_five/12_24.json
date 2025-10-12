@@ -1,0 +1,153 @@
+[
+  {
+    "name": "Seed of Destruction",
+    "kind": "Script",
+    "min_height": -14065,
+    "max_height": -6500,
+    "points": [
+      {
+        "x": -237600,
+        "y": 221168
+      },
+      {
+        "x": -253900,
+        "y": 204849
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "12_24_destruction_norestart1",
+    "kind": "NoRestart",
+    "min_height": -13736,
+    "max_height": -5736,
+    "points": [
+      {
+        "x": -253773,
+        "y": 204988
+      },
+      {
+        "x": -237670,
+        "y": 204949
+      },
+      {
+        "x": -237640,
+        "y": 221171
+      },
+      {
+        "x": -253907,
+        "y": 221193
+      }
+    ]
+  },
+  {
+    "name": "12_24_destruction01",
+    "kind": "NoSummonFriend",
+    "min_height": -13600,
+    "max_height": -5600,
+    "points": [
+      {
+        "x": -253983,
+        "y": 204764
+      },
+      {
+        "x": -237481,
+        "y": 204721
+      },
+      {
+        "x": -237521,
+        "y": 221261
+      },
+      {
+        "x": -253986,
+        "y": 221221
+      }
+    ]
+  },
+  {
+    "name": "inner_destruction01",
+    "kind": {
+      "Respawn": {
+        "target_zone_name": ""
+      }
+    },
+    "min_height": -13600,
+    "max_height": -5600,
+    "points": [
+      {
+        "x": -253983,
+        "y": 204764
+      },
+      {
+        "x": -237481,
+        "y": 204721
+      },
+      {
+        "x": -237521,
+        "y": 221261
+      },
+      {
+        "x": -253986,
+        "y": 221221
+      }
+    ]
+  },
+  {
+    "name": "11_24_water1",
+    "kind": "Water",
+    "min_height": -4779,
+    "max_height": -3779,
+    "points": [
+      {
+        "x": -294912,
+        "y": 196607
+      },
+      {
+        "x": -262144,
+        "y": 229375
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "12_25_water1",
+    "kind": "Water",
+    "min_height": -4779,
+    "max_height": -3779,
+    "points": [
+      {
+        "x": -262144,
+        "y": 229375
+      },
+      {
+        "x": -229376,
+        "y": 262143
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "Tiat Movie Broadcast",
+    "kind": "Script",
+    "min_height": -12000,
+    "max_height": -11000,
+    "points": [
+      {
+        "x": -251280,
+        "y": 211765
+      },
+      {
+        "x": -250599,
+        "y": 211765
+      },
+      {
+        "x": -250599,
+        "y": 211571
+      },
+      {
+        "x": -251280,
+        "y": 211571
+      }
+    ]
+  }
+]

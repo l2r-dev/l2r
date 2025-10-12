@@ -1,0 +1,1716 @@
+{
+  "4900": {
+    "name": "Staff of Evil Spirits - Magic Focus",
+    "description": "<Soul Crystal Enhancement>. Has a 20% chance of casting Focus when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1077,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 189
+      },
+      "MAtk": {
+        "set": 145
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 930,
+    "icon": "icon.weapon_staff_of_evil_sprit_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "4901": {
+    "name": "Staff of Evil Spirits - Blessed Body",
+    "description": "<Soul Crystal Enhancement>. Has a 20% chance of casting Blessed Body when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1045,
+            "level": 5
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 189
+      },
+      "MAtk": {
+        "set": 145
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 930,
+    "icon": "icon.weapon_staff_of_evil_sprit_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "4902": {
+    "name": "Staff of Evil Spirits - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 6% chance of casting Curse: Poison when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 6
+      }
+    },
+    "grade": "B",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 189
+      },
+      "MAtk": {
+        "set": 145
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 930,
+    "icon": "icon.weapon_staff_of_evil_sprit_i01",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "4903": {
+    "name": "Dasparion's Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 207
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 920,
+    "icon": "icon.weapon_dasparions_staff_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4904": {
+    "name": "Dasparion's Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 14
+          }
+        ],
+        "onmagic_chance": 4
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 207
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 920,
+    "icon": "icon.weapon_dasparions_staff_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4905": {
+    "name": "Dasparion's Staff",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1222,
+            "level": 10
+          }
+        ],
+        "onmagic_chance": 4
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 207
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 18300000,
+    "weight": 920,
+    "icon": "icon.weapon_dasparions_staff_i01",
+    "crystal_count": 1464,
+    "enchantable": true
+  },
+  "4906": {
+    "name": "Spellbook: Solar Spark",
+    "description": "Spellbook needed to learn Solar Spark. Used by Elven Wizards. Required level: 25",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4907": {
+    "name": "Spellbook: Solar Flare",
+    "description": "Spellbook needed to learn Solar Flare. Used by Spellsingers. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4908": {
+    "name": "Spellbook: Shadow Spark",
+    "description": "Spellbook needed to learn Shadow Spark. Used by Dark Wizards. Required level: 25",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1250,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4909": {
+    "name": "Spellbook: Shadow Flare",
+    "description": "Spellbook needed to learn Shadow Flare. Used by Spellhowlers. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4910": {
+    "name": "Spellbook: Vampiric Rage",
+    "description": "Spellbook needed to learn Vampiric Rage. Used by Shillien Oracles. Required level: 30",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 1800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "4911": {
+    "name": "Spellbook: Curse Disease",
+    "description": "Spellbook needed to learn Curse Disease. Used by Necromancers. Required level: 58",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 6750,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_black_i00",
+    "stackable": true
+  },
+  "4912": {
+    "name": "Spellbook: Benediction",
+    "description": "Spellbook needed to learn Benediction. Used by Bishops. Required level: 66",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 8700,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_white_i00",
+    "stackable": true
+  },
+  "4913": {
+    "name": "Spellbook: Word of Fear",
+    "description": "Spellbook needed to learn Word of Fear. Used by Prophets. Required level: 44",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3850,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "4914": {
+    "name": "Spellbook: Serenade of Eva",
+    "description": "Spellbook needed to learn Serenade of Eva. Used by Elven Elders. Required level: 44",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3850,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "4915": {
+    "name": "Blueprint: Summon Wild Hog Cannon",
+    "description": "Blueprint needed to learn the Summon Wild Hog Cannon technique. Used by Warsmiths. Required level: 58",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 6750,
+    "weight": 120,
+    "icon": "icon.etc_plan_i00",
+    "stackable": true
+  },
+  "4916": {
+    "name": "Spellbook: Energy Bolt",
+    "description": "Spellbook needed to learn Energy Bolt. Used by Human Wizards and Elven Wizards. Required level: 20",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 800,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4917": {
+    "name": "Spellbook: Aura Bolt",
+    "description": "Spellbook needed to learn Aura Bolt. Used by Spellsingers and Sorcerers. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4918": {
+    "name": "Spellbook: Summon Kai the Cat",
+    "description": "Spellbook needed to learn Summon Kai the Cat. Used by Warlocks. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "4919": {
+    "name": "Spellbook: Summon Merrow the Unicorn",
+    "description": "Spellbook needed to learn Summon Merrow the Unicorn. Used by Elemental Summoners. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "4920": {
+    "name": "Spellbook: Summon Soulless",
+    "description": "Spellbook needed to learn Summon Soulless. Used by Phantom Summoners. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "4921": {
+    "name": "Blueprint: Summon Big Boom",
+    "description": "Blueprint for learning the Summon Big Boom technique. Used by Warsmiths. Required level: 58",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 6750,
+    "weight": 120,
+    "icon": "icon.etc_plan_i00",
+    "stackable": true
+  },
+  "4922": {
+    "name": "Spellbook: Summon Binding Cubic",
+    "description": "Spellbook needed to learn Summon Binding Cubic. Used by Warlocks. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "4923": {
+    "name": "Spellbook: Summon Aqua Cubic",
+    "description": "Spellbook needed to learn Summon Aqua Cubic. Used by Elemental Summoners. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "4924": {
+    "name": "Spellbook: Summon Spark Cubic",
+    "description": "Spellbook needed to learn Summon Spark Cubic. Used by Phantom Summoners. Required level: 40",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 3200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_summon_i00",
+    "stackable": true
+  },
+  "4925": {
+    "name": "Amulet: Pa'agrio's Haste",
+    "description": "Amulet required for the Pa'agrio's Haste spell. Used by Overlords. Required level: 58",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 6750,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "4926": {
+    "name": "Amulet: Soul Guard",
+    "description": "Amulet required for the Soul Guard spell. Used by Overlords. Required level: 44",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 3850,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "4927": {
+    "name": "Amulet: Chant of Revenge",
+    "description": "Amulet required for the Chant of Revenge spell. Used by Warcryers. Required level: 62",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 7700,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "4928": {
+    "name": "Spellbook: Seed of Fire",
+    "description": "Spellbook needed to learn Seed of Fire. Used by Sorcerers and Spellsingers. Required level: 66",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "4929": {
+    "name": "Spellbook: Seed of Water",
+    "description": "Spellbook needed to learn Seed of Water. Used by Spellsingers. Required level: 66",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "4930": {
+    "name": "Spellbook: Seed of Wind",
+    "description": "Spellbook needed to learn Seed of Wind. Used by Spellhowler. Required level: 66",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_assistance_i00",
+    "stackable": true
+  },
+  "4931": {
+    "name": "Spellbook: Aura Symphony",
+    "description": "Spellbook needed to learn Aura Symphony. Used by Sorcerers and Spellsingers. Required level: 68",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4932": {
+    "name": "Spellbook: Inferno",
+    "description": "Spellbook needed to learn Inferno. Used by Sorcerers and Spellsingers. Required level: 70",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4933": {
+    "name": "Spellbook: Blizzard",
+    "description": "Spellbook needed to learn Blizzard. Used by Spellsingers. Required level: 70",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4934": {
+    "name": "Spellbook: Demon Wind",
+    "description": "Spellbook needed to learn Demon Wind. Used by Spellhowlers. Required level: 70",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4935": {
+    "name": "Spellbook: Elemental Symphony",
+    "description": "Spellbook needed to learn Elemental Symphony. Used by Spellsingers.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 7200,
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "stackable": true
+  },
+  "4936": {
+    "name": "Recipe: Avadon Shield (60%)",
+    "description": "For Dwarves only. The recipe for an Avadon Shield. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 478,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10900,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4937": {
+    "name": "Recipe: Adamantite Earrings (70%)",
+    "description": "For Dwarves only. The recipe for adamantite earrings. Requires Create Item - Skill Level 6. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 328,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 12120,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4938": {
+    "name": "Recipe: Adamantite Ring (70%)",
+    "description": "This formula for manufacturing an Adamantite Ring can only be used by Dwarves and Requires Create Item - Skill Level 6. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 330,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 8080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4939": {
+    "name": "Recipe: Adamantite Necklace (70%)",
+    "description": "For Dwarves only. The recipe for an Adamantite Necklace. Requires Create Item - Skill Level 6. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 332,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16160,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4940": {
+    "name": "Recipe: Zubei's Breastplate (60%)",
+    "description": "For Dwarves only. The recipe for a Zubei's Breastplate. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 341,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 41600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4941": {
+    "name": "Recipe: Zubei's Gaiters (60%)",
+    "description": "For Dwarves only. The recipe for Zubei's Gaiters. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 343,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 26000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4942": {
+    "name": "Recipe: Boots of Silence (60%)",
+    "description": "For Dwarves only. The recipe for Boots of Silence. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 347,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4943": {
+    "name": "Recipe: Guardian's Boots (60%)",
+    "description": "For Dwarves only. The recipe for the Guardian's Boots. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 349,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4944": {
+    "name": "Recipe: Avadon Breastplate (60%)",
+    "description": "For Dwarves only. The recipe for an Avadon Breastplate. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 357,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 41600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4945": {
+    "name": "Recipe: Avadon Gaiters (60%)",
+    "description": "For Dwarves only. The recipe for Avadon Gaiters. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 359,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 26000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4946": {
+    "name": "Recipe: Zubei's Leather Shirt (60%)",
+    "description": "For Dwarves only. The recipe for a Zubei's Leather Shirt. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 361,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 31200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4947": {
+    "name": "Recipe: Zubei's Leather Gaiters (60%)",
+    "description": "For Dwarves only. The recipe for Zubei's Leather Gaiters. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 363,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 19460,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4948": {
+    "name": "Recipe: Avadon Leather Armor (60%)",
+    "description": "For Dwarves only. The recipe for an Avadon Leather Armor. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 365,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 45600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4949": {
+    "name": "Recipe: Tunic of Zubei (60%)",
+    "description": "For Dwarves only. The recipe for a Tunic of Zubei. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 367,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 31200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4950": {
+    "name": "Recipe: Stockings of Zubei (60%)",
+    "description": "For Dwarves only. The recipe for Stockings of Zubei. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 369,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 19460,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4951": {
+    "name": "Recipe: Avadon Robe (60%)",
+    "description": "For Dwarves only. The recipe for an Avadon Robe. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 371,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 45600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4952": {
+    "name": "Recipe: Avadon Circlet (60%)",
+    "description": "For Dwarves only. The recipe for an Avadon Circlet. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 373,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 15560,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4953": {
+    "name": "Recipe: Sealed Avadon Gloves (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Avadon Gloves. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 375,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4954": {
+    "name": "Recipe: Chain Gloves of Silence (60%)",
+    "description": "For Dwarves only. The recipe for Chain Gloves of Silence. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 377,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4955": {
+    "name": "Recipe: Guardian's Gloves (60%)",
+    "description": "For Dwarves only. The recipe for the Guardian's Gloves. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 379,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4956": {
+    "name": "Recipe: Gloves of Blessing (60%)",
+    "description": "For Dwarves only. The recipe for Gloves of Blessing. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 381,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4957": {
+    "name": "Recipe: Boots of Blessing (60%)",
+    "description": "For Dwarves only. The recipe for Boots of Blessing. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 387,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4958": {
+    "name": "Recipe: Sealed Zubei's Boots (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Zubei's Boots. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 423,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4959": {
+    "name": "Recipe: Sealed Avadon Boots (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Avadon Boots. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 425,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4960": {
+    "name": "Recipe: Sealed Zubei's Gauntlets (60%)",
+    "description": "For Dwarves only. The recipe for the sealed Zubei's Gauntlets. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 429,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10380,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4961": {
+    "name": "Recipe: Zubei's Shield (60%)",
+    "description": "For Dwarves only. The recipe for a Zubei's Shield. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 431,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 10900,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4962": {
+    "name": "Recipe: Zubei's Helmet (60%)",
+    "description": "For Dwarves only. The recipe for a Zubei's Helmet. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 433,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 15560,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4963": {
+    "name": "Recipe: Great Sword (60%)",
+    "description": "For Dwarves only. The recipe for a Great Sword. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 438,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4964": {
+    "name": "Recipe: Heavy War Axe (60%)",
+    "description": "For Dwarves only. The recipe for a Heavy War Axe. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 440,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4965": {
+    "name": "Recipe: Sprite's Staff (60%)",
+    "description": "For Dwarves only. The recipe for a Sprite's Staff. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 442,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4966": {
+    "name": "Recipe: Keshanberk (60%)",
+    "description": "For Dwarves only. The recipe for Keshanberk. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 444,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4967": {
+    "name": "Recipe: Sword of Valhalla (60%)",
+    "description": "For Dwarves only. The recipe for the Sword of Valhalla. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 446,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4968": {
+    "name": "Recipe: Kris (60%)",
+    "description": "For Dwarves only. The recipe for the Kris. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 448,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4969": {
+    "name": "Recipe: Hell Knife (60%)",
+    "description": "For Dwarves only. The recipe for a Hell Knife. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 450,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4970": {
+    "name": "Recipe: Arthro Nail (60%)",
+    "description": "For Dwarves only. The recipe for the Arthro Nail. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 452,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4971": {
+    "name": "Recipe: Dark Elven Long Bow (60%)",
+    "description": "For Dwarves only. The recipe for a Dark Elven Long Bow. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 454,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4972": {
+    "name": "Recipe: Great Axe (60%)",
+    "description": "For Dwarves only. The recipe for a Great Axe. Requires Create Item - Skill Level 6. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 456,
+          "level": 6
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 173600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4973": {
+    "name": "Recipe: Earring of Black Ore (70%)",
+    "description": "For Dwarves only. The recipe for Earrings of Black Ore. Requires Create Item - Skill Level 7. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 334,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 18480,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4974": {
+    "name": "Recipe: Ring of Black Ore (70%)",
+    "description": "For Dwarves only. The recipe for a Ring of Black Ore. Requires Create Item - Skill Level 7. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 336,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 12320,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4975": {
+    "name": "Recipe: Necklace of Black Ore (70%)",
+    "description": "For Dwarves only. The recipe for a Necklace of Black Ore. Requires Create Item - Skill Level 7. The success rate is 70%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 338,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 24600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4976": {
+    "name": "Recipe: Implosion Boots (60%)",
+    "description": "For Dwarves only. The recipe for Boots of implosion. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 345,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4977": {
+    "name": "Recipe: Paradia Boots (60%)",
+    "description": "For Dwarves only. The recipe for Paradia Boots. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 351,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4978": {
+    "name": "Recipe: Elemental Boots (60%)",
+    "description": "For Dwarves only. The recipe for Elemental Boots. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 353,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4979": {
+    "name": "Recipe: Boots of Grace (60%)",
+    "description": "For Dwarves only. The recipe for Boots of Grace. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 355,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4980": {
+    "name": "Recipe: Doom Shield (60%)",
+    "description": "For Dwarves only. The recipe for a Doom Shield. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 383,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16900,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4981": {
+    "name": "Recipe: Blue Wolf Breastplate (60%)",
+    "description": "For Dwarves only. The recipe for a Blue Wolf Breastplate. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 385,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 64400,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4982": {
+    "name": "Recipe: Blue Wolf Gaiters (60%)",
+    "description": "For Dwarves only. The recipe for the Blue Wolf Gaiters. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 389,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 40200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4983": {
+    "name": "Recipe: Doom Plate Armor (60%)",
+    "description": "For Dwarves only. The recipe for a Doom Plate Armor. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 391,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 94200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4984": {
+    "name": "Recipe: Blue Wolf Leather Armor (60%)",
+    "description": "For Dwarves only. The recipe for a Blue Wolf Leather Armor. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 393,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 70600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4985": {
+    "name": "Recipe: Leather Armor of Doom (60%)",
+    "description": "For Dwarves only. The recipe for a Leather Armor of Doom. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 395,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 70600,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4986": {
+    "name": "Recipe: Blue Wolf Tunic (60%)",
+    "description": "For Dwarves only. The recipe for a Blue Wolf Tunic. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 397,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 48200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4987": {
+    "name": "Recipe: Tunic of Doom (60%)",
+    "description": "For Dwarves only. The recipe for a Tunic of Doom. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 399,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 48200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4988": {
+    "name": "Recipe: Blue Wolf Stockings (60%)",
+    "description": "For Dwarves only. The recipe for the Blue Wolf stockings. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 401,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 30200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4989": {
+    "name": "Recipe: Stockings of Doom (60%)",
+    "description": "For Dwarves only. The recipe for Stockings of Doom. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 403,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 30200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4990": {
+    "name": "Recipe: Blue Wolf Helmet (60%)",
+    "description": "For Dwarves only. The recipe for a Blue Wolf Helmet. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 405,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 24200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4991": {
+    "name": "Recipe: Doom Helmet (60%)",
+    "description": "For Dwarves only. The recipe for a Doom Helmet. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 407,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 24200,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4992": {
+    "name": "Recipe: Sealed Blue Wolf Boots (60%)",
+    "description": "For Dwarves only. The recipe for the sealed Blue Wolf Boots. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 409,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4993": {
+    "name": "Recipe: Sealed Doom Gloves (60%)",
+    "description": "For Dwarves only. The recipe for the Sealed Doom Gloves. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 411,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4994": {
+    "name": "Recipe: Elemental Gloves (60%)",
+    "description": "For Dwarves only. The recipe for Elemental Gloves. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 413,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4995": {
+    "name": "Recipe: Gloves of Grace (60%)",
+    "description": "For Dwarves only. The recipe for Gloves of Grace. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 415,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4996": {
+    "name": "Recipe: Implosion Gauntlets (60%)",
+    "description": "For Dwarves only. The recipe for Implosion Gauntlets. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 417,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4997": {
+    "name": "Recipe: Paradia Gloves (60%)",
+    "description": "For Dwarves only. The recipe for Paradia Gloves. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 419,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4998": {
+    "name": "Recipe: Sealed Blue Wolf Gloves (60%)",
+    "description": "For Dwarves only. The recipe for the sealed Blue Wolf Gloves. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 421,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  },
+  "4999": {
+    "name": "Recipe: Sealed Doom Boots (60%)",
+    "description": "For Dwarves only. The recipe for the sealed Doom Boots. Requires Create Item - Skill Level 7. The success rate is 60%.",
+    "kind": {
+      "Recipe": {
+        "Dwarf": {
+          "id": 427,
+          "level": 7
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 16080,
+    "weight": 30,
+    "icon": "icon.etc_recipe_red_i00",
+    "stackable": true
+  }
+}

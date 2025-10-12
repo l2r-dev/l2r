@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cargo",
+            "label": "cargo-build-gameserver",
+            "command": "build",
+            "args": [
+                "--features=gui",
+                "--bin",
+                "l2r_gameserver"
+            ],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cargo",
+            "label": "cargo-build-loginserver",
+            "command": "build",
+            "args": [
+                "--features=gui",
+                "--bin",
+                "l2r_loginserver"
+            ],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "Sort Rust Code",
+            "type": "shell",
+            "command": "codesort --around ${lineNumber} ${file}",
+            "problemMatcher": [],
+            "group": {
+              "kind": "none",
+              "isDefault": true
+            }
+          }
+        ,
+        {
+            "type": "cargo",
+            "label": "cargo-build-all",
+            "command": "build",
+            "args": [
+                "--features=gui,scripting"
+            ],
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "build"
+        }
+    ]
+}

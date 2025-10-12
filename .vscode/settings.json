@@ -1,0 +1,63 @@
+{
+    "rust-analyzer.showUnlinkedFileNotification": false,
+    "rust-analyzer.cargo.extraEnv": {
+        "RUSTFLAGS": "-Clinker=rust-lld.exe"
+    },
+    "rust-analyzer.cargo.features": [
+        "gui",
+    ],
+    "rust-analyzer.runnables.extraEnv": {
+        "RUST_LOG": "l2r_gameserver=debug,l2r_core=debug,bevy_asset=debug,wgpu_core=off,sqlx=off,bevy_mod_scripting=debug",
+        "BEVY_ASSET_ROOT": "${workspaceFolder}/game_server",
+        "LUA_PATH": "${workspaceFolder}/game_server/?.lua;"
+    },
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.command": "check",
+    // "rust-analyzer.check.overrideCommand": [
+    //     "bevy_lint",
+    //     "--workspace",
+    //     "--all-targets",
+    //     "--message-format=json-diagnostic-rendered-ansi",
+    // ],
+    // Lua Language Server Configuration
+    "Lua.diagnostics.globals": [
+        "world",
+        "on_script_loaded",
+        "build_skill",
+        "Skill",
+        "SkillInfo",
+        "build_skill_info",
+        "use_skill",
+        "construct",
+        "use_pended_skill",
+        "Duration",
+        "Timer",
+        "on_fixed_update",
+        "GameServerPacket",
+        "launch_skill",
+        "system_builder",
+        "script_id",
+        "types",
+        "on_packet_received",
+        "ShieldResult",
+        "apply_passive",
+        "send_event",
+        "apply_abnormal",
+        "on_script_reloaded",
+        "AbnormalEffect",
+        "on_pending_skill",
+        "on_script_unloaded",
+        "on_runtime_init",
+        "rand",
+        "runtime_script_loaded",
+        "script_asset",
+        "ScriptAttachment",
+        "DatabaseOps",
+        "bevy_log",
+        "RegionGeoData"
+    ],
+    "Lua.runtime.special": {
+        "req": "require",
+        "reload_require": "require"
+    },
+}

@@ -1,0 +1,2998 @@
+{
+  "10400": {
+    "name": "Icarus Heavy Arms Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Heavy Arms. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "10401": {
+    "name": "Icarus Trident Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Trident. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "10402": {
+    "name": "Icarus Hammer Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Hammer. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_squares_gray_i00",
+    "stackable": true
+  },
+  "10403": {
+    "name": "Icarus Hand Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Hand. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_squares_gray_i00",
+    "stackable": true
+  },
+  "10404": {
+    "name": "Icarus Hall Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Hall. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_squares_gray_i00",
+    "stackable": true
+  },
+  "10405": {
+    "name": "Icarus Spitter Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Spitter. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_squares_gray_i00",
+    "stackable": true
+  },
+  "10406": {
+    "name": "Icarus Stinger Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Stinger. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "10407": {
+    "name": "Icarus Wingblade Piece",
+    "description": "An essential ingredient that a Dwarf needs to make Icarus Wingblade. It can be sold to public stores.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 312000,
+    "weight": 60,
+    "icon": "icon.etc_sword_body_i00",
+    "stackable": true
+  },
+  "10408": {
+    "name": "Old Agathion",
+    "description": "Old Agathion with the spirit's seal unbound. Double-click to unlock items. Old Agathion",
+    "kind": {
+      "Package": []
+    },
+    "material": "Liquid",
+    "weight": 60,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "stackable": true
+  },
+  "10409": {
+    "name": "A Bottle of Souls",
+    "description": "A bottle that holds 5 Souls. Double-click to fill the bottle. For Kamael use only. Cannot be exchanged or dropped. Bottle of Empty Soul",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 500,
+    "weight": 2,
+    "icon": "icon.blank_glass_bottle_i00",
+    "item_skills": [
+      {
+        "id": 2498,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10410": {
+    "name": "Full Bottle of Souls - 5 Souls",
+    "description": "A bottle containing 5 Souls. Cannot be exchanged or dropped. Kamael Exclusive Weapon. Disappears without effect if used by other races. Bottle of Full Soul",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 2,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i11",
+    "item_skills": [
+      {
+        "id": 2499,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10411": {
+    "name": "Full Bottle of Souls - 5 Souls (For Combat)",
+    "description": "A bottle containing 5 Souls. Usable only in combat. Cannot be exchanged or dropped. Kamael Exclusive Weapon. Disappears without effect if used by other races. Bottle of Full Soul",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 2,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i11",
+    "item_skills": [
+      {
+        "id": 2499,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "10412": {
+    "name": "Full Bottle of Souls - 10 Souls",
+    "description": "A bottle containing 10 Souls. Cannot be exchanged or dropped. Kamael exclusive item. Disappears without effect if used by other races.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 2,
+    "icon": "icon.etc_fruit_juice_glass_bottle_i11",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10413": {
+    "name": "Dynastic Essence II",
+    "description": "An item that can modify Dynasty Tunic. Powerful options are available for a modified Dynasty Tunic. Grants more powerful options than Dynastic Essence.",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "weight": 60,
+    "icon": "icon.etc_armor_soul_i00",
+    "stackable": true
+  },
+  "10414": {
+    "name": "Agathion Exchange Coupon",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10415": {
+    "name": "Icarus Dual Sword",
+    "description": "When enchanted, P. Atk. of dual-swords, two-handed swords, two-handed blunt weapons and fist weapons will increase more than that of one-handed swords. When enchanted to 4 or more, increases Critical Attack by 109, and Max HP increases by 10%. Increases the damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "10416": {
+    "name": "Blue Talisman - Explosion",
+    "description": "Increases P. Atk./Atk. Spd. Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. Blue Talisman of Explosion",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3428,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10417": {
+    "name": "Blue Talisman - Magic Explosion",
+    "description": "Increases M. Atk. and M. Critical Rate . Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. Blue Talisman of Magic Explosive Power",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3437,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10418": {
+    "name": "White Talisman - Storm",
+    "description": "Increases Wind attribute. Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. White Talisman of Storm",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3431,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10419": {
+    "name": "White Talisman - Darkness",
+    "description": "Increases Dark attribute. Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. White Talisman of Darkness",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3430,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10420": {
+    "name": "White Talisman - Water",
+    "description": "Increases Water attribute. Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. White Talisman of Water",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3432,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10421": {
+    "name": "White Talisman - Fire",
+    "description": "Instantly increases fire elemental. Only one effect is applied when you wear the same two talismans. Projection Weapons with no exchange/drop available White Talisman of Fire",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3433,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10422": {
+    "name": "White Talisman - Light",
+    "description": "Increases holy attribute. Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. White Talisman of Light",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i06",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3435,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10423": {
+    "name": "Blue Talisman - Self-Destruction",
+    "description": "Damages a nearby enemy with a powerful explosion. Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. Blue Talisman of Self destruction",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 60,
+    "item_skills": [
+      {
+        "id": 3436,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10424": {
+    "name": "Blue Talisman - Greater Healing",
+    "description": "Increases heal power. Effect does not stack with additional Talismans of the same type. This item cannot be exchanged or dropped. Blue Talisman of Great Healing",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "weight": 150,
+    "icon": "icon.etc_talisman_i01",
+    "mana": 65,
+    "item_skills": [
+      {
+        "id": 3438,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10425": {
+    "name": "Improved Baby Pet Food",
+    "description": "Automatically consumed when an improved baby pet's hunger gauge drops below 55%. H5 Price Evolving Wolf's Food",
+    "kind": {
+      "Pet": "Consumable"
+    },
+    "material": "Liquid",
+    "price": 1000,
+    "weight": 10,
+    "icon": "icon.etc_pouch_yellow_i00",
+    "item_skills": [
+      {
+        "id": 2361,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "10426": {
+    "name": "Fenrir Necklace",
+    "description": "A necklace that can summon a Fenrir. It takes away some of the experience points the Pet Master earns. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 20,
+    "icon": "icon.etc_summon_wolf_r_01",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "10427": {
+    "name": "Tully's Platinum Medal",
+    "description": "Small, shiny platinum medal. It reads, 'Permission No.1 for Group Admission to Special Workshop'.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 2,
+    "icon": "icon.etc_jewel_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10428": {
+    "name": "Tully's Tin Medal",
+    "description": "Small, shiny tin medal. It reads, 'Permission No.2 for Group Admission to Special Workshop'.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 2,
+    "icon": "icon.etc_jewel_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10429": {
+    "name": "Tully's Lead Medal",
+    "description": "Small, shiny lead medal. It reads, 'Permission No.3 for Group Admission to Special Workshop'.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 2,
+    "icon": "icon.etc_jewel_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10430": {
+    "name": "Tully's Zinc Medal",
+    "description": "Small, shiny zinc medal. It reads, 'Permission No.4 for Group Admission to Special Workshop'.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 2,
+    "icon": "icon.etc_jewel_green_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10431": {
+    "name": "Tully's Copper Medal",
+    "description": "Small, shiny copper medal. It reads, 'Permission No.5 for Group Admission to Special Workshop'.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 2,
+    "icon": "icon.etc_jewel_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "10432": {
+    "name": "Kertin's Herb of Life",
+    "description": "Herb of Life",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2485,
+        "level": 1
+      }
+    ],
+    "pet_useable": true
+  },
+  "10433": {
+    "name": "Kertin's Herb of Mana",
+    "description": "Herb of Mana",
+    "kind": {
+      "Consumable": "Herb"
+    },
+    "material": "Liquid",
+    "item_skills": [
+      {
+        "id": 2486,
+        "level": 1
+      }
+    ],
+    "pet_useable": true
+  },
+  "10434": {
+    "name": "Icarus Sawsword - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10461
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "10435": {
+    "name": "Icarus Sawsword - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10462
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "10436": {
+    "name": "Icarus Sawsword - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10463
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_sowsword_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "10437": {
+    "name": "Icarus Heavy Arms - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 111. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10464
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "10438": {
+    "name": "Icarus Heavy Arms - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10465
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "10439": {
+    "name": "Icarus Heavy Arms - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10466
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_heavy_arms_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "10440": {
+    "name": "Icarus Spirit - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "10441": {
+    "name": "Icarus Spirit - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ]
+  },
+  "10442": {
+    "name": "Icarus Spirit - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spirits_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ]
+  },
+  "10443": {
+    "name": "Icarus Spitter - Cheap Shot",
+    "description": "<Soul Crystal Enhancement>. Decreases MP Consumption 4% during a skill attack. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10467,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 8312,
+        "level": 1
+      }
+    ]
+  },
+  "10444": {
+    "name": "Icarus Spitter - Guidance",
+    "description": "<Soul Crystal Enhancement>. Increases Accuracy by 5.32. Increases damage inflicted during PvP. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10468,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ]
+  },
+  "10445": {
+    "name": "Icarus Spitter - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 0,
+        "change_weapon_id": 10469,
+        "mp_consume": 6,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 689
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_spiter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ]
+  },
+  "10446": {
+    "name": "Icarus Disperser - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 116. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ]
+  },
+  "10447": {
+    "name": "Icarus Disperser - Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 5. Increases damage inflicted during PvP. Special Ability: Evasion",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3009,
+        "level": 8
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "10448": {
+    "name": "Icarus Disperser - Critical Damage",
+    "description": "<Soul Crystal Enhancement>. Increases P. Atk. by 559 on a critical attack. Increases damage inflicted during PvP. Special Ability: Critical Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 103439000,
+    "weight": 1520,
+    "icon": "icon.weapon_icarus_disperser_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3066,
+        "level": 4
+      }
+    ]
+  },
+  "10449": {
+    "name": "Icarus Trident - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases HP by 15% while increasing P. Atk. by 78 during a critical attack. Increases damage inflicted during PvP. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3600,
+        "level": 10
+      }
+    ]
+  },
+  "10450": {
+    "name": "Icarus Trident - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. There is a 48% chance that Stun effect is applied on a critical attack. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ]
+  },
+  "10451": {
+    "name": "Icarus Trident - Light",
+    "description": "<Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 2010,
+    "icon": "icon.weapon_icarus_trident_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 2
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "10452": {
+    "name": "Icarus Hammer - Anger",
+    "description": "<Soul Crystal Enhancement>. Decreases HP by 15% while increasing P. Atk. by 78 during a critical attack. Increases damage inflicted during PvP. Special Ability: Anger",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3057,
+        "level": 4
+      }
+    ]
+  },
+  "10453": {
+    "name": "Icarus Hammer - Health",
+    "description": "<Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "10454": {
+    "name": "Icarus Hammer - Rsk. Focus",
+    "description": "<Soul Crystal Enhancement>. Increases Critical by 164 when HP drops to 60% or lower. Increases damage inflicted during PvP. Special Ability: Rsk. Focus",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 363
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1740,
+    "icon": "icon.weapon_icarus_hammer_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3027,
+        "level": 7
+      }
+    ]
+  },
+  "10455": {
+    "name": "Icarus Hall - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Increases damage inflicted during PvP. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 2
+      }
+    ]
+  },
+  "10456": {
+    "name": "Icarus Hall - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Increases damage inflicted during PvP. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 2
+      }
+    ]
+  },
+  "10457": {
+    "name": "Icarus Hall - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S80",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 290
+      },
+      "MAtk": {
+        "set": 217
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 103439000,
+    "weight": 1080,
+    "icon": "icon.weapon_icarus_stick_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ]
+  },
+  "10458": {
+    "name": "Icarus Hand - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 6.8 when HP drops to 60% or lower. Increases damage inflicted during PvP. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3069,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "10459": {
+    "name": "Icarus Hand - Focus",
+    "description": "<Soul Crystal Enhancement>. Increases critical attack by 106. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3565,
+        "level": 2
+      }
+    ]
+  },
+  "10460": {
+    "name": "Icarus Hand - Haste",
+    "description": "<Soul Crystal Enhancement>. Increases Atk. Spd. by 10%. Increases damage inflicted during PvP. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 442
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 103439000,
+    "weight": 1550,
+    "icon": "icon.weapon_icarus_knuckle_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3564,
+        "level": 2
+      }
+    ]
+  },
+  "10461": {
+    "name": "Icarus Stinger - Focus",
+    "description": "Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Critical Attack is increased by 111. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10434,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "10462": {
+    "name": "Icarus Stinger - Health",
+    "description": "Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. When enchanted to 4 or more, it has a chance of increasing P. Atk., M. Atk., and healing power, and of decreaseing MP consumption for skill use for you and your party members during a critical attack. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10435,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "10463": {
+    "name": "Icarus Stinger - Light",
+    "description": "Kamael Exclusive Weapon: Icarus Sawsword Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP.enchanted to . 4 or more, there is a chance that party members including yourself will get increased P. Atk., M. Atk., and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10436,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 329
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1280,
+    "icon": "icon.weapon_icarus_stinger_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "10464": {
+    "name": "Icarus Wingblade - Focus",
+    "description": "Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Critical Attack is increased by 111. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10437
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 2
+      }
+    ]
+  },
+  "10465": {
+    "name": "Icarus Wingblade - Health",
+    "description": "Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10438
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      }
+    ]
+  },
+  "10466": {
+    "name": "Icarus Wingblade - Light",
+    "description": "Kamael Exclusive Weapon: Icarus Heavy Arms Conversion. <Soul Crystal Enhancement>. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10439
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 393
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1800,
+    "icon": "icon.weapon_icarus_wing_blade_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      }
+    ]
+  },
+  "10467": {
+    "name": "Icarus Shooter - Cheap Shot",
+    "description": "Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Decreased MP consumption by 12% when a skill is used. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10443,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ]
+  },
+  "10468": {
+    "name": "Icarus Shooter - Guidance",
+    "description": "Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. The Accuracy is increased by 5.32. Increases damage inflicted during PvP. Special Ability: Guidance",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10444,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3573,
+        "level": 2
+      }
+    ]
+  },
+  "10469": {
+    "name": "Icarus Shooter - Focus",
+    "description": "Kamael Exclusive Weapon: Icarus Spitter Conversion. <Soul Crystal Enhancement>. Critical Attack is increased by 116. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 10445,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 422
+      },
+      "MAtk": {
+        "set": 163
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 103439000,
+    "weight": 1580,
+    "icon": "icon.weapon_icarus_shooter_i01",
+    "crystal_count": 4965,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3567,
+        "level": 2
+      }
+    ]
+  },
+  "10470": {
+    "name": "Shadow Item - Red Crescent",
+    "description": "This item cannot be exchanged or dropped.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "D",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 24
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_red_cresent_earing_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10471": {
+    "name": "Shadow Item - Ring of Devotion",
+    "description": "This item cannot be exchanged or dropped.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "D",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 16
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_devotion_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10472": {
+    "name": "Shadow Item - Necklace of Devotion",
+    "description": "This item cannot be exchanged or dropped.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "D",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 32
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_necklace_of_devotion_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10473": {
+    "name": "Magic Accessory Set",
+    "description": "Obtain this Shadow Item by double-clicking. It cannot be exchanged or dropped. Magic Defence Toolkit for beginners",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "weight": 20,
+    "icon": "icon.etc_jewel_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "10474": {
+    "name": "Shadow Item - Apprentice's Staff",
+    "description": "Apprentice Adventurer's Staff. A Shadow Item which cannot be exchanged, dropped, crystallized or enchanted. Chaotic characters are not allowed to use it.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 23
+      },
+      "MAtk": {
+        "set": 24
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1070,
+    "icon": "icon.weapon_apprentices_staff_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10475": {
+    "name": "Shadow Item - Bone Club",
+    "description": "Apprentice Adventurer's Bone Club. A Shadow Item which cannot be exchanged, dropped, crystallized or enchanted. Chaotic characters are not allowed to use it.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1850,
+    "icon": "icon.weapon_club_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10476": {
+    "name": "Shadow Item - Shining Knife",
+    "description": "Apprentice Adventurer's Knife. A Shadow Item which cannot be exchanged, dropped, crystallized or enchanted. Chaotic characters are not allowed to use it.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 21
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1120,
+    "icon": "icon.weapon_shining_knife_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10477": {
+    "name": "Shadow Item - Cestus",
+    "description": "Apprentice Adventurer's Cestus. A Shadow Item which cannot be exchanged, dropped, crystallized or enchanted. Chaotic characters are not allowed to use it.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 29
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_vipers_canine_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10478": {
+    "name": "Shadow Item - Forest Bow",
+    "description": "Apprentice Adventurer's Bow. A Shadow Item which cannot be exchanged, dropped, crystallized or enchanted. Chaotic characters are not allowed to use it.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 7,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 1,
+        "reuse_delay": 1500
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 49
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1900,
+    "icon": "icon.weapon_short_bow_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10479": {
+    "name": "Shadow Item - Long Sword",
+    "description": "Apprentice Adventurer's Long Sword. A Shadow Item which cannot be exchanged, dropped, crystallized or enchanted. Chaotic characters are not allowed to use it.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_long_sword_i00",
+    "mana": 180,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "10480": {
+    "name": "Red Soul Crystal - Stage 15",
+    "description": "Red Crystal that absorbs souls, stage 15. Special abilities can be applied to the weapon when absorbing certain amount of souls. Every time it is used, it consumes 26 of MP. However, the Soul Crystal of this stage absorbs souls by itself, so there is no need for using the Soul Crystal to monsters. Soul Crystal",
+    "kind": {
+      "Enchanting": "SoulCrystal"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_soul_stone_i00",
+    "item_skills": [
+      {
+        "id": 2096,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "10481": {
+    "name": "Blue Soul Crystal - Stage 15",
+    "description": "Blue Crystal that absorbs souls, stage 15. Special abilities can be applied to the weapon when absorbing certain amount of souls. Every time it is used, it consumes 26 of MP. However, the Soul Crystal of this stage absorbs souls by itself, so there is no need for using the Soul Crystal to monsters. Soul Crystal",
+    "kind": {
+      "Enchanting": "SoulCrystal"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_soul_stone_i01",
+    "item_skills": [
+      {
+        "id": 2096,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "10482": {
+    "name": "Green Soul Crystal - Stage 15",
+    "description": "Green Crystal that absorbs souls, stage 15. Special abilities can be applied to the weapon when absorbing certain amount of souls. Every time it is used, it consumes 26 of MP. However, the Soul Crystal of this stage absorbs souls by itself, so there is no need for using the Soul Crystal to monsters. Soul Crystal",
+    "kind": {
+      "Enchanting": "SoulCrystal"
+    },
+    "material": "Crystal",
+    "weight": 20,
+    "icon": "icon.etc_soul_stone_i02",
+    "item_skills": [
+      {
+        "id": 2096,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true
+  },
+  "10483": {
+    "name": "Life Stone - Level 82",
+    "description": "General mineral created when a stone in a monster is solidified by a physical or magic hit. Usable by characters level 82 and above when augmenting weapons.",
+    "kind": {
+      "Enchanting": {
+        "LifeStone": {
+          "Weapon": "None"
+        }
+      }
+    },
+    "material": "Stone",
+    "price": 34560,
+    "weight": 2,
+    "icon": "icon.etc_mineral_general_i03",
+    "stackable": true
+  },
+  "10484": {
+    "name": "Mid-Grade Life Stone - Level 82",
+    "description": "Mid-Grade mineral created when a stone in a monster is solidified by a physical or magic hit. Usable by characters level 82 and above when augmenting weapons.",
+    "kind": {
+      "Enchanting": {
+        "LifeStone": {
+          "Weapon": "Mid"
+        }
+      }
+    },
+    "material": "Stone",
+    "price": 138240,
+    "weight": 2,
+    "icon": "icon.etc_mineral_special_i03",
+    "stackable": true
+  },
+  "10485": {
+    "name": "High-Grade Life Stone - Level 82",
+    "description": "High-Grade mineral created when a stone in a monster is solidified by a physical or magic hit. Usable by characters level 82 and above when augmenting weapons.",
+    "kind": {
+      "Enchanting": {
+        "LifeStone": {
+          "Weapon": "High"
+        }
+      }
+    },
+    "material": "Stone",
+    "price": 1382400,
+    "weight": 2,
+    "icon": "icon.etc_mineral_rare_i03",
+    "stackable": true
+  },
+  "10486": {
+    "name": "Top-Grade Life Stone - Level 82",
+    "description": "Top-Grade mineral created when a stone in a monster is solidified by a physical or magic hit. Usable by characters level 82 and above when augmenting weapons.",
+    "kind": {
+      "Enchanting": {
+        "LifeStone": {
+          "Weapon": "Top"
+        }
+      }
+    },
+    "material": "Stone",
+    "price": 6912000,
+    "weight": 2,
+    "icon": "icon.etc_mineral_unique_i03",
+    "stackable": true
+  },
+  "10487": {
+    "name": "Dynasty Jeweled Leather Armor - Force Master",
+    "description": "Duelist and Grand Khavatari can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10488": {
+    "name": "Dynasty Jeweled Leather Armor - Weapon Master",
+    "description": "Dreadnought, Titan, Fortune Seeker, Maestro, Doombringer and Soul Hound can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10489": {
+    "name": "Dynasty Jeweled Leather Armor - Enchanter",
+    "description": "Hierophant, Dominator, Doom Cryer and Judicator can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10490": {
+    "name": "Dynasty Jeweled Leather Armor - Summoner",
+    "description": "Arcana Lord, Elemental Master and Spectral Master can wear it.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "price": 25255000,
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "crystal_count": 1212,
+    "enchantable": true,
+    "elementable": true
+  },
+  "10491": {
+    "name": "Silk Shirt - HP",
+    "description": "Increases Max HP by 118 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 17
+      }
+    },
+    "price": 80000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_c_i02",
+    "crystal_count": 27,
+    "enchantable": true
+  },
+  "10492": {
+    "name": "Silk Shirt - MP",
+    "description": "Increases Max MP by 51 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 17
+      }
+    },
+    "price": 80000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_c_i02",
+    "crystal_count": 27,
+    "enchantable": true
+  },
+  "10493": {
+    "name": "Silk Shirt - CP",
+    "description": "Increases Max CP by 354 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 17
+      }
+    },
+    "price": 80000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_c_i02",
+    "crystal_count": 27,
+    "enchantable": true
+  },
+  "10494": {
+    "name": "Thin Leather Shirt - HP",
+    "description": "Increases Max HP by 147 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 21
+      }
+    },
+    "price": 260000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_b_i03",
+    "crystal_count": 29,
+    "enchantable": true
+  },
+  "10495": {
+    "name": "Thin Leather Shirt - MP",
+    "description": "Increases Max MP by 72 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 21
+      }
+    },
+    "price": 260000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_b_i03",
+    "crystal_count": 29,
+    "enchantable": true
+  },
+  "10496": {
+    "name": "Thin Leather Shirt - CP",
+    "description": "Increases Max CP by 441 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 21
+      }
+    },
+    "price": 260000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_b_i03",
+    "crystal_count": 29,
+    "enchantable": true
+  },
+  "10497": {
+    "name": "Scale Shirt - HP",
+    "description": "Increases Max HP by 172 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 23
+      }
+    },
+    "price": 588000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_a_i04",
+    "crystal_count": 39,
+    "enchantable": true
+  },
+  "10498": {
+    "name": "Scale Shirt - MP",
+    "description": "Increases Max MP by 85 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 23
+      }
+    },
+    "price": 588000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_a_i04",
+    "crystal_count": 39,
+    "enchantable": true
+  },
+  "10499": {
+    "name": "Scale Shirt - CP",
+    "description": "Increases Max CP by 516 when strengthened by 4 or more.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 23
+      }
+    },
+    "price": 588000,
+    "weight": 130,
+    "icon": "icon.etc_shirts_a_i04",
+    "crystal_count": 39,
+    "enchantable": true
+  }
+}

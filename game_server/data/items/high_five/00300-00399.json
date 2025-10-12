@@ -1,0 +1,3027 @@
+{
+  "300": {
+    "name": "Great Axe",
+    "description": "Bestows one of the following functions: Anger, Critical Stun or Light. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1940,
+    "icon": "icon.weapon_great_axe_i00",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "301": {
+    "name": "Scorpion",
+    "description": "Bestows one of the following functions: Anger, Critical Stun or Wide Blow. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 1990,
+    "icon": "icon.weapon_scorpion_i00",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "302": {
+    "name": "Body Slasher",
+    "description": "Bestows one of the following functions: Critical Stun, Towering Blow or Wide Blow. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2030,
+    "icon": "icon.weapon_body_slasher_i00",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "303": {
+    "name": "Widow Maker",
+    "description": "Bestows one of the following functions: Critical Stun, Towering Blow or Wide Blow. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 144
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 1980,
+    "icon": "icon.weapon_widow_maker_i00",
+    "crystal_count": 1471,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "304": {
+    "name": "Orcish Halberd",
+    "description": "Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 219
+      },
+      "MAtk": {
+        "set": 109
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 21300000,
+    "weight": 1880,
+    "icon": "icon.weapon_orcish_halbard_i00",
+    "crystal_count": 1704,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "305": {
+    "name": "Tallum Glaive",
+    "description": "Bestows one of the following functions: Guidance, Health, or Wide Blow. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1840,
+    "icon": "icon.weapon_tallum_glaive_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "306": {
+    "name": "Dragon Claw Axe",
+    "description": "Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 35300000,
+    "weight": 1820,
+    "icon": "icon.weapon_dragon_hunter_axe_i00",
+    "crystal_count": 1765,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "307": {
+    "name": "Aurakyria Lance",
+    "description": "Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 269
+      },
+      "MAtk": {
+        "set": 128
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_saint_spear_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "308": {
+    "name": "Buffalo's Horn",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 6
+      },
+      "MAtk": {
+        "set": 8
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 590,
+    "weight": 660,
+    "icon": "icon.weapon_buffalo_horn_i00"
+  },
+  "309": {
+    "name": "Tears of Eva",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 19
+      },
+      "MAtk": {
+        "set": 22
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 105000,
+    "weight": 630,
+    "icon": "icon.weapon_tears_of_eva_i00"
+  },
+  "310": {
+    "name": "Relic of the Saints",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 19
+      },
+      "MAtk": {
+        "set": 22
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 105000,
+    "weight": 610,
+    "icon": "icon.weapon_apprentices_spellbook_i00"
+  },
+  "311": {
+    "name": "Crucifix of Blessing",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 25
+      },
+      "MAtk": {
+        "set": 28
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 188000,
+    "weight": 620,
+    "icon": "icon.weapon_crucifix_of_blessing_i00"
+  },
+  "312": {
+    "name": "Branch of Life",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 32
+      },
+      "MAtk": {
+        "set": 35
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 620,
+    "icon": "icon.weapon_branch_of_life_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "313": {
+    "name": "Temptation of Abyss",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 32
+      },
+      "MAtk": {
+        "set": 35
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 610,
+    "icon": "icon.weapon_temptation_of_abyss_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "314": {
+    "name": "Proof of Revenge",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 32
+      },
+      "MAtk": {
+        "set": 35
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 600,
+    "icon": "icon.weapon_proof_of_revenge_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "315": {
+    "name": "Divine Tome",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 43
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 495500,
+    "weight": 570,
+    "icon": "icon.weapon_divine_tome_i00",
+    "crystal_count": 915,
+    "enchantable": true
+  },
+  "316": {
+    "name": "Sage's Blood",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 52
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 743500,
+    "weight": 580,
+    "icon": "icon.weapon_blood_of_saints_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "317": {
+    "name": "Tome of Blood",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 52
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 743500,
+    "weight": 570,
+    "icon": "icon.weapon_tome_of_blood_i00",
+    "crystal_count": 1373,
+    "enchantable": true
+  },
+  "318": {
+    "name": "Crucifix of Blood",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 63
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1074000,
+    "weight": 540,
+    "icon": "icon.weapon_crucifix_of_blood_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "319": {
+    "name": "Eye of Infinity",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 63
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1400000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2545,
+    "enchantable": true
+  },
+  "320": {
+    "name": "Blue Crystal Skull",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 67
+      },
+      "MAtk": {
+        "set": 66
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1520000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2763,
+    "enchantable": true
+  },
+  "321": {
+    "name": "Demon Fangs",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 67
+      },
+      "MAtk": {
+        "set": 66
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1171900,
+    "weight": 1600,
+    "icon": "icon.weapon_demon_fangs_i00",
+    "crystal_count": 2164,
+    "enchantable": true
+  },
+  "322": {
+    "name": "Vajra Wands",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 74
+      },
+      "MAtk": {
+        "set": 72
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1800000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 3272,
+    "enchantable": true
+  },
+  "323": {
+    "name": "Ancient Reagent",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 74
+      },
+      "MAtk": {
+        "set": 72
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1800000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 3272,
+    "enchantable": true
+  },
+  "324": {
+    "name": "Tears of Fairy",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 98
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 2870000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 1148,
+    "enchantable": true
+  },
+  "325": {
+    "name": "Horn of Glory",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 98
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 2209700,
+    "weight": 540,
+    "icon": "icon.weapon_horn_of_glory_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "326": {
+    "name": "Heathen's Book",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 560,
+    "icon": "icon.weapon_heathens_book_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "327": {
+    "name": "Hex Doll",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4300000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 1720,
+    "enchantable": true
+  },
+  "328": {
+    "name": "Candle of Wisdom",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2452,
+    "enchantable": true
+  },
+  "329": {
+    "name": "Blessed Branch",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 800,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2452,
+    "enchantable": true
+  },
+  "330": {
+    "name": "Phoenix Feather",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 800,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2452,
+    "enchantable": true
+  },
+  "331": {
+    "name": "Cerberus Eye",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2452,
+    "enchantable": true
+  },
+  "332": {
+    "name": "Scroll of Destruction",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2452,
+    "enchantable": true
+  },
+  "333": {
+    "name": "Claws of Black Dragon",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2452,
+    "enchantable": true
+  },
+  "334": {
+    "name": "Three Eyed Crow's Feather",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6130000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2452,
+    "enchantable": true
+  },
+  "335": {
+    "name": "Soul Crystal",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 13100000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 1746,
+    "enchantable": true
+  },
+  "336": {
+    "name": "Scroll of Mana",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 18300000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2440,
+    "enchantable": true
+  },
+  "337": {
+    "name": "Scroll of Massacre",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 18300000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2440,
+    "enchantable": true
+  },
+  "338": {
+    "name": "Wyvern's Skull",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 18300000,
+    "weight": 4800,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2440,
+    "enchantable": true
+  },
+  "339": {
+    "name": "Blood Crystal",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 18300000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2440,
+    "enchantable": true
+  },
+  "340": {
+    "name": "Unicorn's Horn",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 18300000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2440,
+    "enchantable": true
+  },
+  "341": {
+    "name": "Forgotten Tome",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 27000000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2160,
+    "enchantable": true
+  },
+  "342": {
+    "name": "Enchanted Flute",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 27000000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2160,
+    "enchantable": true
+  },
+  "343": {
+    "name": "Headless Arrow",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 27000000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2160,
+    "enchantable": true
+  },
+  "344": {
+    "name": "Proof of Overlord",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 27000000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2160,
+    "enchantable": true
+  },
+  "345": {
+    "name": "Deathbringer Sword",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 27000000,
+    "weight": 4800,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 2160,
+    "enchantable": true
+  },
+  "346": {
+    "name": "Tears of Fallen Angel",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 201
+      },
+      "MAtk": {
+        "set": 162
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 35300000,
+    "weight": 1600,
+    "icon": "icon.weapon_apprentices_spellbook_i00",
+    "crystal_count": 1765,
+    "enchantable": true
+  },
+  "347": {
+    "name": "Ring Mail Breastplate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PDef": {
+        "add": 77
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 64210,
+    "weight": 8820,
+    "icon": "icon.armor_t12_u_i00",
+    "crystal_count": 119,
+    "enchantable": true
+  },
+  "348": {
+    "name": "Scale Mail",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PDef": {
+        "add": 87
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 102500,
+    "weight": 8720,
+    "icon": "icon.armor_t08_u_i00",
+    "crystal_count": 189,
+    "enchantable": true
+  },
+  "349": {
+    "name": "Compound Scale Mail",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 95
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 141100,
+    "weight": 8620,
+    "icon": "icon.armor_t20_u_i00",
+    "crystal_count": 260,
+    "enchantable": true
+  },
+  "350": {
+    "name": "Dwarven Scale Mail",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 95
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 141100,
+    "weight": 8540,
+    "icon": "icon.armor_t15_u_i00",
+    "crystal_count": 260,
+    "enchantable": true
+  },
+  "351": {
+    "name": "Blast Plate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 97
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 156200,
+    "weight": 8420,
+    "icon": "icon.armor_t40_u_i00",
+    "crystal_count": 288,
+    "enchantable": true
+  },
+  "352": {
+    "name": "Brigandine Tunic",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 103
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 229700,
+    "weight": 8320,
+    "icon": "icon.armor_t43_u_i00",
+    "crystal_count": 424,
+    "enchantable": true
+  },
+  "353": {
+    "name": "Half Plate Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 111
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 300800,
+    "weight": 8220,
+    "icon": "icon.armor_t46_u_i00",
+    "crystal_count": 555,
+    "enchantable": true
+  },
+  "354": {
+    "name": "Chain Mail Shirt",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 120
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 388600,
+    "weight": 8120,
+    "icon": "icon.armor_t48_u_i00",
+    "crystal_count": 155,
+    "enchantable": true
+  },
+  "355": {
+    "name": "Dwarven Chain Mail Shirt",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 129
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 495500,
+    "weight": 8070,
+    "icon": "icon.armor_t60_u_i00",
+    "crystal_count": 198,
+    "enchantable": true
+  },
+  "356": {
+    "name": "Full Plate Armor",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 239
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1788000,
+    "weight": 10480,
+    "icon": "icon.armor_t62_ul_i00",
+    "crystal_count": 715,
+    "enchantable": true
+  },
+  "357": {
+    "name": "Zubei's Breastplate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 157
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 1596000,
+    "weight": 7970,
+    "icon": "icon.armor_t64_u_i00",
+    "crystal_count": 213,
+    "enchantable": true
+  },
+  "358": {
+    "name": "Blue Wolf Breastplate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PDef": {
+        "add": 166
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2475000,
+    "weight": 7820,
+    "icon": "icon.armor_t68_u_i00",
+    "crystal_count": 330,
+    "enchantable": true
+  },
+  "359": {
+    "name": "Shining Dragon Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 301
+      }
+    },
+    "price": 5788000,
+    "weight": 6400,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 902,
+    "enchantable": true
+  },
+  "360": {
+    "name": "Armor of Victory",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PDef": {
+        "add": 175
+      }
+    },
+    "price": 2475000,
+    "weight": 3360,
+    "icon": "icon.armor_dwarven_scale_mail_i00",
+    "crystal_count": 429,
+    "enchantable": true
+  },
+  "361": {
+    "name": "Breastplate of Valor",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 185
+      }
+    },
+    "price": 3562000,
+    "weight": 3360,
+    "icon": "icon.armor_dwarven_scale_mail_i00",
+    "crystal_count": 617,
+    "enchantable": true
+  },
+  "362": {
+    "name": "Glorious Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 284
+      }
+    },
+    "price": 4022000,
+    "weight": 6720,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 628,
+    "enchantable": true
+  },
+  "363": {
+    "name": "Red Flame Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 301
+      }
+    },
+    "price": 5788000,
+    "weight": 6400,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 902,
+    "enchantable": true
+  },
+  "364": {
+    "name": "Elven Crystal Breastplate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 175
+      }
+    },
+    "price": 2475000,
+    "weight": 2400,
+    "icon": "icon.armor_dwarven_scale_mail_i00",
+    "crystal_count": 429,
+    "enchantable": true
+  },
+  "365": {
+    "name": "Dark Crystal Breastplate",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 171
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3562000,
+    "weight": 7700,
+    "icon": "icon.armor_t74_u_i00",
+    "crystal_count": 285,
+    "enchantable": true
+  },
+  "366": {
+    "name": "Implosion Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PDef": {
+        "add": 284
+      }
+    },
+    "price": 4022000,
+    "weight": 6080,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 628,
+    "enchantable": true
+  },
+  "367": {
+    "name": "Dark Dragon Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PDef": {
+        "add": 301
+      }
+    },
+    "price": 5788000,
+    "weight": 5760,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 902,
+    "enchantable": true
+  },
+  "368": {
+    "name": "Elven Vagian Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 284
+      }
+    },
+    "price": 4022000,
+    "weight": 2400,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 628,
+    "enchantable": true
+  },
+  "369": {
+    "name": "Dark Vagian Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 301
+      }
+    },
+    "price": 5788000,
+    "weight": 2400,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 902,
+    "enchantable": true
+  },
+  "370": {
+    "name": "Complete Set of Plate Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 284
+      }
+    },
+    "price": 4022000,
+    "weight": 6400,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 628,
+    "enchantable": true
+  },
+  "371": {
+    "name": "Hell Plate",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 301
+      }
+    },
+    "price": 5788000,
+    "weight": 6400,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 902,
+    "enchantable": true
+  },
+  "372": {
+    "name": "Art of Plate",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Chrysolite",
+    "stats": {
+      "PDef": {
+        "add": 284
+      }
+    },
+    "price": 4022000,
+    "weight": 6720,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 628,
+    "enchantable": true
+  },
+  "373": {
+    "name": "Masterpiece Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PDef": {
+        "add": 301
+      }
+    },
+    "price": 5788000,
+    "weight": 5600,
+    "icon": "icon.armor_composite_armor_i02",
+    "crystal_count": 902,
+    "enchantable": true
+  },
+  "374": {
+    "name": "Armor of Nightmare",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8804000,
+    "weight": 9580,
+    "icon": "icon.armor_t80_ul_i00",
+    "crystal_count": 704,
+    "enchantable": true
+  },
+  "375": {
+    "name": "Dragon Scale Mail",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 198
+      }
+    },
+    "price": 8291000,
+    "weight": 7620,
+    "icon": "icon.armor_t15_u_i00",
+    "crystal_count": 525,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "376": {
+    "name": "Iron Plate Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PDef": {
+        "add": 48
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 40100,
+    "weight": 3820,
+    "icon": "icon.armor_t12_l_i00",
+    "crystal_count": 74,
+    "enchantable": true
+  },
+  "377": {
+    "name": "Scale Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 54
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 64100,
+    "weight": 3860,
+    "icon": "icon.armor_t08_l_i00",
+    "crystal_count": 118,
+    "enchantable": true
+  },
+  "378": {
+    "name": "Compound Scale Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 97600,
+    "weight": 3770,
+    "icon": "icon.armor_t20_l_i00",
+    "crystal_count": 180,
+    "enchantable": true
+  },
+  "379": {
+    "name": "Dwarven Scale Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 97600,
+    "weight": 3840,
+    "icon": "icon.armor_t15_l_i00",
+    "crystal_count": 180,
+    "enchantable": true
+  },
+  "380": {
+    "name": "Plate Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 70
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 188000,
+    "weight": 3770,
+    "icon": "icon.armor_t46_l_i00",
+    "crystal_count": 347,
+    "enchantable": true
+  },
+  "381": {
+    "name": "Chain Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 75
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 242900,
+    "weight": 3680,
+    "icon": "icon.armor_t48_l_i00",
+    "crystal_count": 97,
+    "enchantable": true
+  },
+  "382": {
+    "name": "Dwarven Chain Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 80
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 309700,
+    "weight": 3620,
+    "icon": "icon.armor_t60_l_i00",
+    "crystal_count": 124,
+    "enchantable": true
+  },
+  "383": {
+    "name": "Zubei's Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 98
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 997700,
+    "weight": 3570,
+    "icon": "icon.armor_t64_l_i00",
+    "crystal_count": 133,
+    "enchantable": true
+  },
+  "384": {
+    "name": "Wolf Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PDef": {
+        "add": 109
+      }
+    },
+    "price": 1547100,
+    "weight": 2560,
+    "icon": "icon.armor_plate_gaiters_i00",
+    "crystal_count": 268,
+    "enchantable": true
+  },
+  "385": {
+    "name": "Gaiters of Victory",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PDef": {
+        "add": 109
+      }
+    },
+    "price": 1547100,
+    "weight": 2240,
+    "icon": "icon.armor_plate_gaiters_i00",
+    "crystal_count": 268,
+    "enchantable": true
+  },
+  "386": {
+    "name": "Gaiters of Valor",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 116
+      }
+    },
+    "price": 2226000,
+    "weight": 2240,
+    "icon": "icon.armor_plate_gaiters_i00",
+    "crystal_count": 385,
+    "enchantable": true
+  },
+  "387": {
+    "name": "Elven Crystal Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 109
+      }
+    },
+    "price": 1547100,
+    "weight": 2240,
+    "icon": "icon.armor_plate_gaiters_i00",
+    "crystal_count": 268,
+    "enchantable": true
+  },
+  "388": {
+    "name": "Dark Crystal Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 107
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 2226000,
+    "weight": 3320,
+    "icon": "icon.armor_t74_l_i00",
+    "crystal_count": 178,
+    "enchantable": true
+  },
+  "389": {
+    "name": "Dragon Scale Gaiters",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 122
+      }
+    },
+    "price": 4640000,
+    "weight": 3260,
+    "icon": "icon.armor_t15_l_i00",
+    "crystal_count": 299,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "390": {
+    "name": "Cotton Shirt",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 50
+      }
+    },
+    "price": 15600,
+    "weight": 4770,
+    "icon": "icon.armor_t07_u_i00"
+  },
+  "391": {
+    "name": "Puma Skin Shirt",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 58
+      }
+    },
+    "price": 48200,
+    "weight": 4700,
+    "icon": "icon.armor_t09_u_i00",
+    "crystal_count": 89,
+    "enchantable": true
+  },
+  "392": {
+    "name": "Lion Skin Shirt",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 65
+      }
+    },
+    "price": 76900,
+    "weight": 4580,
+    "icon": "icon.armor_t18_u_i00",
+    "crystal_count": 142,
+    "enchantable": true
+  },
+  "393": {
+    "name": "Mithril Banded Mail",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "price": 117000,
+    "weight": 4570,
+    "icon": "icon.armor_t10_u_i00",
+    "crystal_count": 216,
+    "enchantable": true
+  },
+  "394": {
+    "name": "Reinforced Leather Shirt",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "price": 117000,
+    "weight": 4570,
+    "icon": "icon.armor_t13_u_i00",
+    "crystal_count": 216,
+    "enchantable": true
+  },
+  "395": {
+    "name": "Manticore Skin Shirt",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 77
+      }
+    },
+    "price": 172000,
+    "weight": 4520,
+    "icon": "icon.armor_t42_u_i00",
+    "crystal_count": 318,
+    "enchantable": true
+  },
+  "396": {
+    "name": "Salamander Skin Mail",
+    "description": "One-piece upper and lower body armor. Additional lower body armor cannot be worn while wearing this.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 136
+      }
+    },
+    "price": 366600,
+    "weight": 6100,
+    "icon": "icon.armor_t45_ul_i00",
+    "crystal_count": 677,
+    "enchantable": true
+  },
+  "397": {
+    "name": "Mithril Shirt",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 90
+      }
+    },
+    "price": 291000,
+    "weight": 4470,
+    "icon": "icon.armor_t47_u_i00",
+    "crystal_count": 116,
+    "enchantable": true
+  },
+  "398": {
+    "name": "Plated Leather",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 94
+      }
+    },
+    "price": 343000,
+    "weight": 4450,
+    "icon": "icon.armor_t47_u_i00",
+    "crystal_count": 137,
+    "enchantable": true
+  },
+  "399": {
+    "name": "Rind Leather Armor",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 97
+      }
+    },
+    "price": 372000,
+    "weight": 4420,
+    "icon": "icon.armor_t49_u_i00",
+    "crystal_count": 149,
+    "enchantable": true
+  }
+}

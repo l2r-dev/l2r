@@ -1,0 +1,3589 @@
+{
+  "2500": {
+    "name": "Dark Legion's Edge",
+    "description": "Bestows one of the following functions: Critical Damage, Health, or Rsk. Focus.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9340
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 232
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1320,
+    "icon": "icon.weapon_dark_legions_edge_i00",
+    "crystal_count": 1659,
+    "enchantable": true
+  },
+  "2501": {
+    "name": "Bone Club",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 105000,
+    "weight": 1850,
+    "icon": "icon.weapon_club_i00"
+  },
+  "2502": {
+    "name": "Dwarven War Hammer",
+    "description": "Bestows one of the following functions: Anger, Health or Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 2209700,
+    "weight": 1670,
+    "icon": "icon.weapon_dwarven_warhammer_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "2503": {
+    "name": "Yaksa Mace",
+    "description": "Bestows one of the following functions: Anger, Health, or Rsk. Focus.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1640,
+    "icon": "icon.weapon_yaksa_mace_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2504": {
+    "name": "Meteor Shower",
+    "description": "Bestows one of the following functions: Focus, Critical Bleed, or Rsk. Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14098000,
+    "weight": 1600,
+    "icon": "icon.weapon_meteor_shower_i00",
+    "crystal_count": 1128,
+    "enchantable": true
+  },
+  "2505": {
+    "name": "Iron Canine",
+    "description": "Double-click to wear. Only for wolves, great wolves, and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "add": 4
+      },
+      "MAtk": {
+        "add": 5
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 277
+      }
+    },
+    "price": 7000,
+    "weight": 100,
+    "icon": "icon.etc_pet_arms_i00",
+    "pet_useable": true
+  },
+  "2506": {
+    "name": "Wolf's Leather Armor",
+    "description": "Double-click to wear. Only for wolves, great wolves, and fenrir. H5 Price",
+    "kind": {
+      "Pet": "Armor"
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 14
+      },
+      "PDef": {
+        "add": 9
+      }
+    },
+    "price": 3060,
+    "weight": 160,
+    "icon": "icon.etc_pet_armor_i00",
+    "pet_useable": true
+  },
+  "2507": {
+    "name": "Lizardspear",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 409000,
+    "weight": 300,
+    "icon": "icon.weapon_doomed_dagger_i00",
+    "crystal_count": 743,
+    "enchantable": true
+  },
+  "2508": {
+    "name": "Cursed Bone",
+    "kind": {
+      "Material": "Common"
+    },
+    "material": "Liquid",
+    "price": 240,
+    "weight": 3,
+    "icon": "icon.etc_piece_bone_red_i00",
+    "stackable": true
+  },
+  "2509": {
+    "name": "Spiritshot: No Grade",
+    "description": "The power of a higher-level spirit is bestowed upon a weapon causing its M. Atk. to momentarily increase. Used with a no grade weapon. Spiritshot: No Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Spiritshot"
+      }
+    },
+    "material": "Crystal",
+    "price": 15,
+    "weight": 5,
+    "icon": "icon.etc_spell_shot_white_i00",
+    "item_skills": [
+      {
+        "id": 2047,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "2510": {
+    "name": "Spiritshot (D-Grade)",
+    "description": "The power of a higher-level spirit is bestowed upon a weapon causing its M. Atk. to momentarily increase. Used with a D-grade weapon. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo. Spiritshot: D-Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Spiritshot"
+      }
+    },
+    "grade": "D",
+    "material": "Crystal",
+    "price": 18,
+    "weight": 5,
+    "icon": "icon.etc_spell_shot_blue_i00",
+    "item_skills": [
+      {
+        "id": 2155,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "2511": {
+    "name": "Spiritshot (C-Grade)",
+    "description": "The power of a higher-level spirit is bestowed upon a weapon causing its M. Atk. to momentarily increase. Used with a C-grade weapon. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo. Spiritshot: C-Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Spiritshot"
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "price": 35,
+    "weight": 3,
+    "icon": "icon.etc_spell_shot_green_i00",
+    "item_skills": [
+      {
+        "id": 2156,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "2512": {
+    "name": "Spiritshot (B-Grade)",
+    "description": "The power of a higher-level spirit is bestowed upon a weapon causing its M. Atk. to momentarily increase. Used with a B-grade weapon. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo. Spiritshot: B-Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Spiritshot"
+      }
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "price": 100,
+    "weight": 3,
+    "icon": "icon.etc_spell_shot_red_i00",
+    "item_skills": [
+      {
+        "id": 2157,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "2513": {
+    "name": "Spiritshot (A-Grade)",
+    "description": "The power of a higher-level spirit is bestowed upon a weapon causing its M. Atk. to momentarily increase. Used with an A-grade weapon. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo. Spiritshot: A-Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Spiritshot"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "price": 120,
+    "weight": 2,
+    "icon": "icon.etc_spell_shot_silver_i00",
+    "item_skills": [
+      {
+        "id": 2158,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "2514": {
+    "name": "Spiritshot (S-Grade)",
+    "description": "The power of a higher-level spirit is bestowed upon a weapon causing its M. Atk. to momentarily increase. Used with an S-grade weapon. <set name=\"enchant_enabled\" val=\"true\" />NOTE: Retail typo. Spiritshot: S-Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Spiritshot"
+      }
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "price": 150,
+    "weight": 2,
+    "icon": "icon.etc_spell_shot_gold_i00",
+    "item_skills": [
+      {
+        "id": 2159,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "2515": {
+    "name": "Food For Wolves",
+    "description": "When the hunger gauge of a wolf reaches 55% or below, its food will be consumed automatically. H5 Price Wolves' Food",
+    "kind": {
+      "Pet": "Consumable"
+    },
+    "material": "Liquid",
+    "price": 100,
+    "weight": 10,
+    "icon": "icon.etc_pouch_yellow_i00",
+    "item_skills": [
+      {
+        "id": 2048,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "2516": {
+    "name": "Saber*Saber",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 73
+      },
+      "MAtk": {
+        "set": 37
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 674400,
+    "weight": 2530,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1245,
+    "enchantable": true
+  },
+  "2517": {
+    "name": "Saber*Bastard Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 83
+      },
+      "MAtk": {
+        "set": 41
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 817800,
+    "weight": 2520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1510,
+    "enchantable": true
+  },
+  "2518": {
+    "name": "Saber*Spinebone Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 83
+      },
+      "MAtk": {
+        "set": 41
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 817800,
+    "weight": 2530,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1510,
+    "enchantable": true
+  },
+  "2519": {
+    "name": "Saber*Artisan's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 83
+      },
+      "MAtk": {
+        "set": 41
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 817800,
+    "weight": 2520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1510,
+    "enchantable": true
+  },
+  "2520": {
+    "name": "Saber*Knight's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 83
+      },
+      "MAtk": {
+        "set": 41
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 817800,
+    "weight": 2510,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1510,
+    "enchantable": true
+  },
+  "2521": {
+    "name": "Saber*Crimson Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2530,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2522": {
+    "name": "Saber*Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2510,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2523": {
+    "name": "Saber*Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 118
+      },
+      "MAtk": {
+        "set": 56
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1504400,
+    "weight": 2420,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 602,
+    "enchantable": true
+  },
+  "2524": {
+    "name": "Saber*Elven Long Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 130
+      },
+      "MAtk": {
+        "set": 61
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1762900,
+    "weight": 2420,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "2525": {
+    "name": "Bastard Sword*Bastard Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2470,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2526": {
+    "name": "Bastard Sword*Spinebone Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2470,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2527": {
+    "name": "Bastard Sword*Artisan's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2480,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2528": {
+    "name": "Bastard Sword*Knight's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2500,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2529": {
+    "name": "Bastard Sword*Crimson Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2470,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2530": {
+    "name": "Bastard Sword*Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2460,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2531": {
+    "name": "Bastard Sword*Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 124
+      },
+      "MAtk": {
+        "set": 58
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1630000,
+    "weight": 2450,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 652,
+    "enchantable": true
+  },
+  "2532": {
+    "name": "Bastard Sword*Elven Long Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1903500,
+    "weight": 2430,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 761,
+    "enchantable": true
+  },
+  "2533": {
+    "name": "Spinebone Sword*Spinebone Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2534": {
+    "name": "Spinebone Sword*Artisan's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2460,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2535": {
+    "name": "Spinebone Sword*Knight's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2470,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2536": {
+    "name": "Spinebone Sword*Crimson Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2537": {
+    "name": "Spinebone Sword*Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2460,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2538": {
+    "name": "Spinebone Sword*Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 124
+      },
+      "MAtk": {
+        "set": 58
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1630000,
+    "weight": 2460,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 652,
+    "enchantable": true
+  },
+  "2539": {
+    "name": "Spinebone Sword*Elven Long Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1903500,
+    "weight": 2390,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 761,
+    "enchantable": true
+  },
+  "2540": {
+    "name": "Artisan's Sword*Artisan's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2480,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2541": {
+    "name": "Artisan's Sword*Knight's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2470,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2542": {
+    "name": "Artisan's Sword*Crimson Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2450,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2543": {
+    "name": "Artisan's Sword*Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2470,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2544": {
+    "name": "Artisan's Sword*Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 124
+      },
+      "MAtk": {
+        "set": 58
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1630000,
+    "weight": 2420,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 652,
+    "enchantable": true
+  },
+  "2545": {
+    "name": "Artisan's Sword*Elven Long Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1903500,
+    "weight": 2410,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 761,
+    "enchantable": true
+  },
+  "2546": {
+    "name": "Knight's Sword*Knight's Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2460,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "2547": {
+    "name": "Knight's Sword*Crimson Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2460,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2548": {
+    "name": "Knight's Sword*Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1275700,
+    "weight": 2450,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 2355,
+    "enchantable": true
+  },
+  "2549": {
+    "name": "Knight's Sword*Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 124
+      },
+      "MAtk": {
+        "set": 58
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1630000,
+    "weight": 2430,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 652,
+    "enchantable": true
+  },
+  "2550": {
+    "name": "Knight's Sword*Elven Long Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1903500,
+    "weight": 2370,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 761,
+    "enchantable": true
+  },
+  "2551": {
+    "name": "Crimson Sword*Crimson Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 118
+      },
+      "MAtk": {
+        "set": 56
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1504400,
+    "weight": 2440,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 602,
+    "enchantable": true
+  },
+  "2552": {
+    "name": "Crimson Sword*Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 118
+      },
+      "MAtk": {
+        "set": 56
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1504400,
+    "weight": 2450,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 602,
+    "enchantable": true
+  },
+  "2553": {
+    "name": "Crimson Sword*Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1903500,
+    "weight": 2390,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 761,
+    "enchantable": true
+  },
+  "2554": {
+    "name": "Crimson Sword*Elven Long Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 2.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 2
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 148
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 2360,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "2555": {
+    "name": "Elven Sword*Elven Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 118
+      },
+      "MAtk": {
+        "set": 56
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1504400,
+    "weight": 2440,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 602,
+    "enchantable": true
+  },
+  "2556": {
+    "name": "Elven Sword*Sword of Revolution",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 136
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1903500,
+    "weight": 2410,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 761,
+    "enchantable": true
+  },
+  "2557": {
+    "name": "Elven Sword*Elven Long Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its P. Atk. will increase by 61 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 2
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 148
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 2410,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "2558": {
+    "name": "Sword of Revolution*Sword of Revolution",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 148
+      },
+      "MAtk": {
+        "set": 68
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2209700,
+    "weight": 2360,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "2559": {
+    "name": "Sword of Revolution*Elven Long Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Critical Attack will increase by 50.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 3
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 70
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2571900,
+    "weight": 2340,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1029,
+    "enchantable": true
+  },
+  "2560": {
+    "name": "Elven Long Sword*Elven Long Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Atk. Spd. will increase by 4%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 4
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 162
+      },
+      "MAtk": {
+        "set": 73
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 2936500,
+    "weight": 2340,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1175,
+    "enchantable": true
+  },
+  "2561": {
+    "name": "Stormbringer*Stormbringer",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 2.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 6
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 175
+      },
+      "MAtk": {
+        "set": 78
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3677700,
+    "weight": 2330,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1471,
+    "enchantable": true
+  },
+  "2562": {
+    "name": "Stormbringer*Shamshir",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its P. Atk. will increase by 49 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 7
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4058000,
+    "weight": 2300,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1623,
+    "enchantable": true
+  },
+  "2563": {
+    "name": "Stormbringer*Katana",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4058000,
+    "weight": 2320,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1623,
+    "enchantable": true
+  },
+  "2564": {
+    "name": "Stormbringer*Spirit Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its critical attack will increase by 24.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 7
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4058000,
+    "weight": 2310,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1623,
+    "enchantable": true
+  },
+  "2565": {
+    "name": "Stormbringer*Raid Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Atk. Spd. will increase by 2%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 7
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 183
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4058000,
+    "weight": 2340,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1623,
+    "enchantable": true
+  },
+  "2566": {
+    "name": "Stormbringer*Caliburs",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 5.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 5367500,
+    "weight": 2260,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 716,
+    "enchantable": true
+  },
+  "2567": {
+    "name": "Stormbringer*Sword of Limit",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its P. Atk. will increase by 166 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 5367500,
+    "weight": 2240,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 716,
+    "enchantable": true
+  },
+  "2568": {
+    "name": "Stormbringer*Sword of Delusion",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 5367500,
+    "weight": 2230,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 716,
+    "enchantable": true
+  },
+  "2569": {
+    "name": "Stormbringer*Sword of Nightmare",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its critical will increase by 76.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 5367500,
+    "weight": 2250,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 716,
+    "enchantable": true
+  },
+  "2570": {
+    "name": "Stormbringer*Tsurugi",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Atk. Spd. will increase by 7%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 9
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 197
+      },
+      "MAtk": {
+        "set": 86
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 5367500,
+    "weight": 2220,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 716,
+    "enchantable": true
+  },
+  "2571": {
+    "name": "Stormbringer*Samurai Long sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 4.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 11
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 2150,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "2572": {
+    "name": "Shamshir*Shamshir",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 2.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2330,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2573": {
+    "name": "Shamshir*Katana",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its P. Atk. will increase by 84 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2310,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2574": {
+    "name": "Shamshir*Spirit Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2280,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2575": {
+    "name": "Shamshir*Raid Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its critical will increase by 40.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2280,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2576": {
+    "name": "Shamshir*Caliburs",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 4.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2230,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2577": {
+    "name": "Shamshir*Sword of Limit",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, P. Atk. will increase by 146 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2240,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2578": {
+    "name": "Shamshir*Sword of Delusion",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2200,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2579": {
+    "name": "Shamshir*Sword of Nightmare",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its critical will increase by 65.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2210,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2580": {
+    "name": "Shamshir*Tsurugi",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Atk. Spd. will increase by 6%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2220,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2581": {
+    "name": "Shamshir*Samurai Long Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 3.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 12
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 94
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 7344400,
+    "weight": 2110,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 979,
+    "enchantable": true
+  },
+  "2582": {
+    "name": "Katana*Katana",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Atk. Spd. will increase by 4%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2270,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2583": {
+    "name": "Katana*Spirit Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, its Accuracy will increase by 2.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2250,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2584": {
+    "name": "Katana*Raid Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, P. Atk. will increase by 84 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2270,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2585": {
+    "name": "Katana*Caliburs",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Accuracy will increase by 4.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2220,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2586": {
+    "name": "Katana*Sword of Limit",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, P. Atk. will increase by 146 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2180,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2587": {
+    "name": "Katana*Sword of Delusion",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2190,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2588": {
+    "name": "Katana*Sword of Nightmare",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, critical will increase by 65.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2170,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2589": {
+    "name": "Katana*Tsurugi",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Atk. Spd. will increase by 6%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2210,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2590": {
+    "name": "Katana*Samurai Long Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, P. Atk. will increase by 106 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 12
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 94
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 7344400,
+    "weight": 2130,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 979,
+    "enchantable": true
+  },
+  "2591": {
+    "name": "Spirit Sword*Spirit Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2240,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2592": {
+    "name": "Spirit Sword*Raid Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, critical will increase by 40.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2260,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "2593": {
+    "name": "Spirit Sword*Caliburs",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Accuracy will increase by 4.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3046,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2240,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2594": {
+    "name": "Spirit Sword*Sword of Limit",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, P. Atk. will increase by 146 on a critical attack.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3042,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2240,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2595": {
+    "name": "Spirit Sword*Sword of Delusion",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2250,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2596": {
+    "name": "Spirit Sword*Sword of Nightmare",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, critical will increase by 65.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2250,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2597": {
+    "name": "Spirit Sword*Tsurugi",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Atk. Spd. will increase by 6%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 10
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 204
+      },
+      "MAtk": {
+        "set": 89
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6022600,
+    "weight": 2220,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 803,
+    "enchantable": true
+  },
+  "2598": {
+    "name": "Spirit Sword*Samurai Long Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Max HP will increase by 25%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3013,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 94
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 7344400,
+    "weight": 2110,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 979,
+    "enchantable": true
+  },
+  "2599": {
+    "name": "Raid Sword*Raid Sword",
+    "description": "When enchanted, P. Atk. of a dualsword will increase more significantly than that of one-handed or fist weapon. When enchanted to 4 or more, Atk. Spd. will increase by 4%.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2250,
+    "icon": "icon.weapon_dual_sword_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  }
+}

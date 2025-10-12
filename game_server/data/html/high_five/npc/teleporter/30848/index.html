@@ -1,0 +1,7 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+I am Gatekeeper Elisa, one of the stewards of the door of space and time dispatched here from the Ivory Tower. Aden Castle is renowned as a center of politics, culture and religion, but I have been far too busy to sightsee for myself. Ironic, since I regularly send others to destinations far and wide... Silly, isn't it?<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

@@ -1,0 +1,2001 @@
+{
+  "7700": {
+    "name": "Recipe: Daisy Hairpin (100%)",
+    "description": "This technique for creating a Daisy Hairpin can be used by all races. Requires Create Common Item Skill Level 4.",
+    "kind": {
+      "Recipe": {
+        "Common": {
+          "id": 782,
+          "level": 4
+        }
+      }
+    },
+    "material": "Paper",
+    "price": 100000,
+    "weight": 30,
+    "icon": "icon.etc_recipe_green_i00",
+    "stackable": true
+  },
+  "7701": {
+    "name": "Stick of Faith - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1160,
+    "icon": "icon.weapon_stick_of_faith_i01",
+    "crystal_count": 705,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ]
+  },
+  "7702": {
+    "name": "Stick of Faith - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 16
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1160,
+    "icon": "icon.weapon_stick_of_faith_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "7703": {
+    "name": "Stick of Faith - Magic Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1160,
+    "icon": "icon.weapon_stick_of_faith_i01",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "7704": {
+    "name": "Stick of Eternity - Empower",
+    "description": "<Soul Crystal Enhancement>. Increases M. Atk. by 24. Special Ability: Empower",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1130,
+    "icon": "icon.weapon_stick_of_eternity_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3076,
+        "level": 3
+      }
+    ]
+  },
+  "7705": {
+    "name": "Stick of Eternity - Rsk. Evasion",
+    "description": "<Soul Crystal Enhancement>. Increases Evasion by 7 when HP drops to 60% or lower. Special Ability: Rsk. Evasion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1130,
+    "icon": "icon.weapon_stick_of_eternity_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3030,
+        "level": 3
+      }
+    ]
+  },
+  "7706": {
+    "name": "Stick of Eternity - Blessed Body",
+    "description": "<Soul Crystal Enhancement>. Has a 20% chance of casting Blessed Body when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1045,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 20
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1130,
+    "icon": "icon.weapon_stick_of_eternity_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7707": {
+    "name": "Nirvana Axe - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. When using magic, increases MP consumption by 15% and M. Atk. also increases by 99. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1150,
+    "icon": "icon.weapon_nirvana_axe_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3077,
+        "level": 3
+      }
+    ]
+  },
+  "7708": {
+    "name": "Nirvana Axe - Magic Poison",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Poison when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1168,
+            "level": 6
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1150,
+    "icon": "icon.weapon_nirvana_axe_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7709": {
+    "name": "Nirvana Axe - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 9
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1150,
+    "icon": "icon.weapon_nirvana_axe_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7710": {
+    "name": "Club of Nature - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1100,
+    "icon": "icon.weapon_club_of_nature_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "7711": {
+    "name": "Club of Nature - Mental Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1100,
+    "icon": "icon.weapon_club_of_nature_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7712": {
+    "name": "Club of Nature - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 21
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1100,
+    "icon": "icon.weapon_club_of_nature_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7713": {
+    "name": "Mace of Underworld - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30% Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1090,
+    "icon": "icon.weapon_mace_of_underworld_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ]
+  },
+  "7714": {
+    "name": "Mace of Underworld - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3078,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1090,
+    "icon": "icon.weapon_mace_of_underworld_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7715": {
+    "name": "Mace of Underworld - Conversion",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 60% and decreases Max HP by 40%. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 3304300,
+    "weight": 1090,
+    "icon": "icon.weapon_mace_of_underworld_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 1
+      }
+    ]
+  },
+  "7716": {
+    "name": "Inferno Staff - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1000,
+    "icon": "icon.weapon_inferno_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "7717": {
+    "name": "Inferno Staff - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3078,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1000,
+    "icon": "icon.weapon_inferno_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7718": {
+    "name": "Inferno Staff - Magic Paralyze",
+    "description": "<Soul Crystal Enhancement>. Has a 5% chance of casting Paralysis when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3079,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 5
+      }
+    },
+    "grade": "C",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 135
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1000,
+    "icon": "icon.weapon_inferno_staff_i01",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7719": {
+    "name": "Poleaxe - Critical Stun",
+    "description": "<Soul Crystal Enhancement>. During a critical attack, produces a stun effect at the rate of about 25%. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 2010,
+    "icon": "icon.weapon_poleaxe_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "7720": {
+    "name": "Poleaxe - Towering Blow",
+    "description": "<Soul Crystal Enhancement>. Increases the attack range. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      },
+      "PAtkRange": {
+        "set": 80
+      }
+    },
+    "price": 3304300,
+    "weight": 2010,
+    "icon": "icon.weapon_poleaxe_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "7721": {
+    "name": "Poleaxe - Wide Blow",
+    "description": "<Soul Crystal Enhancement>. Broadens angle of attack. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 180
+      }
+    },
+    "grade": "C",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 139
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 2010,
+    "icon": "icon.weapon_poleaxe_i01",
+    "crystal_count": 1322,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ]
+  },
+  "7722": {
+    "name": "Sword of Valhalla - Acumen",
+    "description": "<Soul Crystal Enhancement>. Increases Casting Spd. by 15%. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i01",
+    "crystal_count": 891,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ]
+  },
+  "7723": {
+    "name": "Sword of Valhalla - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 11
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "7724": {
+    "name": "Sword of Valhalla - Magic Regeneration",
+    "description": "<Soul Crystal Enhancement>. Casts Regeneration on a target with a 30% chance when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1044,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 900,
+    "icon": "icon.weapon_sword_of_valhalla_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "7725": {
+    "name": "Booty - Gray Pouch",
+    "description": "An item recovered from the swampland. It is a dirty and worn out gray pouch that is ripped here and there. It seems to contain an object that looks like a water bottle. If you double-click it, you can view what it contains. Item - Quest Sac",
+    "kind": {
+      "Package": []
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_pouch_gray_i00",
+    "stackable": true
+  },
+  "7726": {
+    "name": "Small Nimble Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 69,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i07",
+    "stackable": true
+  },
+  "7727": {
+    "name": "Small Ugly Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 71,
+    "weight": 100,
+    "icon": "icon.etc_angler_i07",
+    "stackable": true
+  },
+  "7728": {
+    "name": "Small Pudgy Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 77,
+    "weight": 100,
+    "icon": "icon.etc_bream_i07",
+    "stackable": true
+  },
+  "7729": {
+    "name": "Nimble Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 84,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i07",
+    "stackable": true
+  },
+  "7730": {
+    "name": "Ugly Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 94,
+    "weight": 100,
+    "icon": "icon.etc_angler_i07",
+    "stackable": true
+  },
+  "7731": {
+    "name": "Pudgy Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 104,
+    "weight": 100,
+    "icon": "icon.etc_bream_i07",
+    "stackable": true
+  },
+  "7732": {
+    "name": "Large Nimble Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 113,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i07",
+    "stackable": true
+  },
+  "7733": {
+    "name": "Large Ugly Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 124,
+    "weight": 100,
+    "icon": "icon.etc_angler_i07",
+    "stackable": true
+  },
+  "7734": {
+    "name": "Large Pudgy Green Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Green Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 133,
+    "weight": 100,
+    "icon": "icon.etc_bream_i07",
+    "stackable": true
+  },
+  "7735": {
+    "name": "Small Jade Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 143,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i06",
+    "stackable": true
+  },
+  "7736": {
+    "name": "Small Jade Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 167,
+    "weight": 100,
+    "icon": "icon.etc_angler_i06",
+    "stackable": true
+  },
+  "7737": {
+    "name": "Small Jade Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 167,
+    "weight": 100,
+    "icon": "icon.etc_bream_i06",
+    "stackable": true
+  },
+  "7738": {
+    "name": "Jade Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 166,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i06",
+    "stackable": true
+  },
+  "7739": {
+    "name": "Jade Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 165,
+    "weight": 100,
+    "icon": "icon.etc_angler_i06",
+    "stackable": true
+  },
+  "7740": {
+    "name": "Jade Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 165,
+    "weight": 100,
+    "icon": "icon.etc_bream_i06",
+    "stackable": true
+  },
+  "7741": {
+    "name": "Large Jade Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 164,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i06",
+    "stackable": true
+  },
+  "7742": {
+    "name": "Large Jade Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 164,
+    "weight": 100,
+    "icon": "icon.etc_angler_i06",
+    "stackable": true
+  },
+  "7743": {
+    "name": "Large Jade Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Jade Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 163,
+    "weight": 100,
+    "icon": "icon.etc_bream_i06",
+    "stackable": true
+  },
+  "7744": {
+    "name": "Small Blue Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 163,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i01",
+    "stackable": true
+  },
+  "7745": {
+    "name": "Small Blue Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 163,
+    "weight": 100,
+    "icon": "icon.etc_angler_i01",
+    "stackable": true
+  },
+  "7746": {
+    "name": "Small Blue Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 198,
+    "weight": 100,
+    "icon": "icon.etc_bream_i01",
+    "stackable": true
+  },
+  "7747": {
+    "name": "Blue Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 202,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i01",
+    "stackable": true
+  },
+  "7748": {
+    "name": "Blue Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 197,
+    "weight": 100,
+    "icon": "icon.etc_angler_i01",
+    "stackable": true
+  },
+  "7749": {
+    "name": "Blue Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 210,
+    "weight": 100,
+    "icon": "icon.etc_bream_i01",
+    "stackable": true
+  },
+  "7750": {
+    "name": "Large Blue Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 213,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i01",
+    "stackable": true
+  },
+  "7751": {
+    "name": "Large Blue Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 216,
+    "weight": 100,
+    "icon": "icon.etc_angler_i01",
+    "stackable": true
+  },
+  "7752": {
+    "name": "Large Blue Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Blue Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 218,
+    "weight": 100,
+    "icon": "icon.etc_bream_i01",
+    "stackable": true
+  },
+  "7753": {
+    "name": "Small Yellow Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 221,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i02",
+    "stackable": true
+  },
+  "7754": {
+    "name": "Small Yellow Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 224,
+    "weight": 100,
+    "icon": "icon.etc_angler_i02",
+    "stackable": true
+  },
+  "7755": {
+    "name": "Small Yellow Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 226,
+    "weight": 100,
+    "icon": "icon.etc_bream_i02",
+    "stackable": true
+  },
+  "7756": {
+    "name": "Yellow Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 270,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i02",
+    "stackable": true
+  },
+  "7757": {
+    "name": "Yellow Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 277,
+    "weight": 100,
+    "icon": "icon.etc_angler_i02",
+    "stackable": true
+  },
+  "7758": {
+    "name": "Yellow Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 284,
+    "weight": 100,
+    "icon": "icon.etc_bream_i02",
+    "stackable": true
+  },
+  "7759": {
+    "name": "Large Yellow Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 290,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i02",
+    "stackable": true
+  },
+  "7760": {
+    "name": "Large Yellow Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 297,
+    "weight": 100,
+    "icon": "icon.etc_angler_i02",
+    "stackable": true
+  },
+  "7761": {
+    "name": "Large Yellow Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Yellow Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 304,
+    "weight": 100,
+    "icon": "icon.etc_bream_i02",
+    "stackable": true
+  },
+  "7762": {
+    "name": "Small Orange Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 311,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i08",
+    "stackable": true
+  },
+  "7763": {
+    "name": "Small Orange Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 318,
+    "weight": 100,
+    "icon": "icon.etc_angler_i08",
+    "stackable": true
+  },
+  "7764": {
+    "name": "Small Orange Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 325,
+    "weight": 100,
+    "icon": "icon.etc_bream_i08",
+    "stackable": true
+  },
+  "7765": {
+    "name": "Orange Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 332,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i08",
+    "stackable": true
+  },
+  "7766": {
+    "name": "Orange Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 388,
+    "weight": 100,
+    "icon": "icon.etc_angler_i08",
+    "stackable": true
+  },
+  "7767": {
+    "name": "Orange Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 396,
+    "weight": 100,
+    "icon": "icon.etc_bream_i08",
+    "stackable": true
+  },
+  "7768": {
+    "name": "Large Orange Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 408,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i08",
+    "stackable": true
+  },
+  "7769": {
+    "name": "Large Orange Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 420,
+    "weight": 100,
+    "icon": "icon.etc_angler_i08",
+    "stackable": true
+  },
+  "7770": {
+    "name": "Large Orange Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Orange Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 429,
+    "weight": 100,
+    "icon": "icon.etc_bream_i08",
+    "stackable": true
+  },
+  "7771": {
+    "name": "Small Purple Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 438,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i04",
+    "stackable": true
+  },
+  "7772": {
+    "name": "Small Purple Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 447,
+    "weight": 100,
+    "icon": "icon.etc_angler_i04",
+    "stackable": true
+  },
+  "7773": {
+    "name": "Small Purple Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 455,
+    "weight": 100,
+    "icon": "icon.etc_bream_i04",
+    "stackable": true
+  },
+  "7774": {
+    "name": "Purple Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 465,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i04",
+    "stackable": true
+  },
+  "7775": {
+    "name": "Purple Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 474,
+    "weight": 100,
+    "icon": "icon.etc_angler_i04",
+    "stackable": true
+  },
+  "7776": {
+    "name": "Purple Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 545,
+    "weight": 100,
+    "icon": "icon.etc_bream_i04",
+    "stackable": true
+  },
+  "7777": {
+    "name": "Large Purple Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 556,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i04",
+    "stackable": true
+  },
+  "7778": {
+    "name": "Large Purple Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 567,
+    "weight": 100,
+    "icon": "icon.etc_angler_i04",
+    "stackable": true
+  },
+  "7779": {
+    "name": "Large Purple Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Violet Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 579,
+    "weight": 100,
+    "icon": "icon.etc_bream_i04",
+    "stackable": true
+  },
+  "7780": {
+    "name": "Small Red Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 639,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i03",
+    "stackable": true
+  },
+  "7781": {
+    "name": "Small Red Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 651,
+    "weight": 100,
+    "icon": "icon.etc_angler_i03",
+    "stackable": true
+  },
+  "7782": {
+    "name": "Small Red Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 663,
+    "weight": 100,
+    "icon": "icon.etc_bream_i03",
+    "stackable": true
+  },
+  "7783": {
+    "name": "Red Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 676,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i03",
+    "stackable": true
+  },
+  "7784": {
+    "name": "Red Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 688,
+    "weight": 100,
+    "icon": "icon.etc_angler_i03",
+    "stackable": true
+  },
+  "7785": {
+    "name": "Red Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 701,
+    "weight": 100,
+    "icon": "icon.etc_bream_i03",
+    "stackable": true
+  },
+  "7786": {
+    "name": "Large Red Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 789,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i03",
+    "stackable": true
+  },
+  "7787": {
+    "name": "Large Red Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 804,
+    "weight": 100,
+    "icon": "icon.etc_angler_i03",
+    "stackable": true
+  },
+  "7788": {
+    "name": "Large Red Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Red Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 858,
+    "weight": 100,
+    "icon": "icon.etc_bream_i03",
+    "stackable": true
+  },
+  "7789": {
+    "name": "Small White Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 874,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i00",
+    "stackable": true
+  },
+  "7790": {
+    "name": "Small White Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 891,
+    "weight": 100,
+    "icon": "icon.etc_angler_i00",
+    "stackable": true
+  },
+  "7791": {
+    "name": "Small White Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 907,
+    "weight": 100,
+    "icon": "icon.etc_bream_i00",
+    "stackable": true
+  },
+  "7792": {
+    "name": "White Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 925,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i00",
+    "stackable": true
+  },
+  "7793": {
+    "name": "White Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 944,
+    "weight": 100,
+    "icon": "icon.etc_angler_i00",
+    "stackable": true
+  },
+  "7794": {
+    "name": "White Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 962,
+    "weight": 100,
+    "icon": "icon.etc_bream_i00",
+    "stackable": true
+  },
+  "7795": {
+    "name": "Large White Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 981,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i00",
+    "stackable": true
+  },
+  "7796": {
+    "name": "Large White Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1000,
+    "weight": 100,
+    "icon": "icon.etc_angler_i00",
+    "stackable": true
+  },
+  "7797": {
+    "name": "Large White Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy White Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1020,
+    "weight": 100,
+    "icon": "icon.etc_bream_i00",
+    "stackable": true
+  },
+  "7798": {
+    "name": "Small Black Nimble Fish: For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1041,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i05",
+    "stackable": true
+  },
+  "7799": {
+    "name": "Small Black Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1062,
+    "weight": 100,
+    "icon": "icon.etc_angler_i05",
+    "stackable": true
+  }
+}

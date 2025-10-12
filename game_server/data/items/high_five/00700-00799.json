@@ -1,0 +1,1686 @@
+{
+  "700": {
+    "name": "_",
+    "description": "Description of the hobgoblin amulet",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "701": {
+    "name": "Fungus Juice",
+    "description": "The juice of a fungus.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_canuse28",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "702": {
+    "name": "Wolf Pelt",
+    "description": "Gather forty wolf pelts and take them to Trader Lector of the weapons and armor shop.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_leather_brown_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "703": {
+    "name": "Giant Spider's Poison Sac",
+    "description": "Giant Spider's Poison Sacs obtained from the dead giant spider. Take this to Priest Yohanes.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pouch_gray_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "704": {
+    "name": "Fever Medicine",
+    "description": "A medicine concocted by Priest Yohanes for the students who are ill with fever. Take this to Elias.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_lesser_potion_purple_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "705": {
+    "name": "_",
+    "description": "Description of an Orc feather amulet.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal48",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "706": {
+    "name": "Basilisk's Claw",
+    "description": "A basilisk's claw.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal141",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "707": {
+    "name": "Spore Sac",
+    "description": "A sac obtained from the spore fungus. Gather 10 of these and take them to Trader Vollodos.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pouch_yellow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "708": {
+    "name": "Sylph Headband",
+    "description": "A Sylph Headband",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_system03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "709": {
+    "name": "Leather Shirt",
+    "kind": {
+      "Armor": {
+        "Common": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 50
+      },
+      "PDef": {
+        "add": 75
+      }
+    },
+    "weight": 400,
+    "icon": "icon.armor_leather_shirt_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "710": {
+    "name": "Hard Leather Shirt",
+    "kind": {
+      "Armor": {
+        "Common": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 52
+      },
+      "PDef": {
+        "add": 77
+      }
+    },
+    "weight": 400,
+    "icon": "icon.armor_leather_shirt_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "711": {
+    "name": "Piece Bone Breastplate",
+    "kind": {
+      "Armor": {
+        "Common": "Chest"
+      }
+    },
+    "material": "Bone",
+    "stats": {
+      "MDef": {
+        "add": 54
+      },
+      "PDef": {
+        "add": 79
+      }
+    },
+    "weight": 800,
+    "icon": "icon.armor_mithril_banded_mail_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "712": {
+    "name": "Half Plate Armor",
+    "kind": {
+      "Armor": {
+        "Common": "Chest"
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "MDef": {
+        "add": 56
+      },
+      "PDef": {
+        "add": 81
+      }
+    },
+    "weight": 1200,
+    "icon": "icon.armor_dwarven_scale_mail_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "713": {
+    "name": "Leather Pants",
+    "kind": {
+      "Armor": {
+        "Common": "Legs"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 30
+      },
+      "PDef": {
+        "add": 45
+      }
+    },
+    "weight": 250,
+    "icon": "icon.armor_squires_pants_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "714": {
+    "name": "Hard Leather Pants",
+    "kind": {
+      "Armor": {
+        "Common": "Legs"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 32
+      },
+      "PDef": {
+        "add": 47
+      }
+    },
+    "weight": 300,
+    "icon": "icon.armor_leather_pants_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "715": {
+    "name": "Piece Bone Gaiters",
+    "kind": {
+      "Armor": {
+        "Common": "Legs"
+      }
+    },
+    "material": "Bone",
+    "stats": {
+      "MDef": {
+        "add": 34
+      },
+      "PDef": {
+        "add": 49
+      }
+    },
+    "weight": 500,
+    "icon": "icon.armor_mithril_banded_gaiters_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "716": {
+    "name": "Plate Gaiters",
+    "kind": {
+      "Armor": {
+        "Common": "Legs"
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "MDef": {
+        "add": 36
+      },
+      "PDef": {
+        "add": 51
+      }
+    },
+    "weight": 800,
+    "icon": "icon.armor_dwarven_scale_mail_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "717": {
+    "name": "Leather Gloves",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 20
+      },
+      "PDef": {
+        "add": 30
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "718": {
+    "name": "Hard Leather Gloves",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 22
+      },
+      "PDef": {
+        "add": 32
+      }
+    },
+    "weight": 150,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "719": {
+    "name": "Crafted Leather Gloves",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 24
+      },
+      "PDef": {
+        "add": 34
+      }
+    },
+    "weight": 150,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "720": {
+    "name": "Reinforced Gloves",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "MDef": {
+        "add": 26
+      },
+      "PDef": {
+        "add": 36
+      }
+    },
+    "weight": 200,
+    "icon": "icon.armor_gauntlet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "721": {
+    "name": "Leather Boots",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 20
+      },
+      "PDef": {
+        "add": 30
+      }
+    },
+    "weight": 150,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "722": {
+    "name": "Hard Leather Boots",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 22
+      },
+      "PDef": {
+        "add": 32
+      }
+    },
+    "weight": 150,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "723": {
+    "name": "Crafted Leather Boots",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "MDef": {
+        "add": 24
+      },
+      "PDef": {
+        "add": 34
+      }
+    },
+    "weight": 200,
+    "icon": "icon.armor_feet99",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "724": {
+    "name": "Reinforced Boots",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "MDef": {
+        "add": 26
+      },
+      "PDef": {
+        "add": 36
+      }
+    },
+    "weight": 250,
+    "icon": "icon.armor_iron_boots_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "725": {
+    "name": "Healing Drug",
+    "description": "A magical, liquid medicine that restores HP for a certain amount of time.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 50,
+    "weight": 180,
+    "icon": "icon.etc_potion_red_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "726": {
+    "name": "Mana Drug",
+    "description": "A magical, liquid medicine that restores MP for a certain amount of time.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 80,
+    "weight": 180,
+    "icon": "icon.etc_potion_blue_i00",
+    "item_skills": [
+      {
+        "id": 10000,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "727": {
+    "name": "Healing Potion",
+    "description": "A magical, liquid medicine that restores HP for a certain amount of time.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 1000,
+    "weight": 180,
+    "icon": "icon.item_system03",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "728": {
+    "name": "Mana Potion",
+    "description": "A magical, liquid medicine that restores MP for a certain amount of time.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 180,
+    "icon": "icon.etc_reagent_blue_i00",
+    "item_skills": [
+      {
+        "id": 10001,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "729": {
+    "name": "Scroll: Enchant Weapon (A-Grade)",
+    "description": "When enchanted, P. Atk. increases by 4 for A-grade one-handed swords, one-handed blunts, daggers, spears, and other weapons. P. Atk. increases by 5 for two-handed swords, two-handed blunts, dualswords, and two-handed combat weapons. P. Atk. increases by 8 for bows. M. Atk. increases by 3 for all weapons. Starting at +4, P. Atk. / M. Atk. bonus double. Enchanting is safe up to +3. Scroll: Enchant Weapon (Grade A)",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Common"
+        }
+      }
+    },
+    "grade": "A",
+    "material": "Paper",
+    "price": 1800000,
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_weapon_i04",
+    "item_skills": [
+      {
+        "id": 2006,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "730": {
+    "name": "Scroll: Enchant Armor (A-Grade)",
+    "description": "When enchanted, P. Def. increases by 1 for A-grade armor and accessories. Starting at +4, P. Def. increases by 3 and a HP bonus is granted. Enchanting is safe up to +3, but one-piece body armor can be safely enchanted up to +4. Scroll: Enchant Armor (Grade A)",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Common"
+        }
+      }
+    },
+    "grade": "A",
+    "material": "Paper",
+    "price": 240000,
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_armor_i04",
+    "item_skills": [
+      {
+        "id": 2007,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "731": {
+    "name": "Crystal Scroll: Enchant Weapon (A-Grade)",
+    "description": "A scroll of enchantment that empowers an A-Grade weapon.",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Weapon": "Crystal"
+        }
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_weapon_i01",
+    "olympiad_restricted": true
+  },
+  "732": {
+    "name": "Crystal Scroll: Enchant Armor (A-Grade)",
+    "description": "A scroll of enchantment that empowers an A-Grade armor.",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Crystal"
+        }
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_enchant_armor_i01",
+    "olympiad_restricted": true
+  },
+  "733": {
+    "name": "Endeavor Potion",
+    "description": "A magical, liquid medicine that increases willpower.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 500,
+    "weight": 180,
+    "icon": "icon.etc_lesser_potion_yellow_i00",
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "734": {
+    "name": "Haste Potion",
+    "description": "A magical potion that increases movement speed Haste Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 1200,
+    "weight": 20,
+    "icon": "icon.etc_potion_green_i00",
+    "item_skills": [
+      {
+        "id": 2011,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "735": {
+    "name": "Alacrity Potion",
+    "description": "A magical potion that increases Atk. Spd. Potion of Alacrity",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 2400,
+    "weight": 20,
+    "icon": "icon.etc_reagent_green_i00",
+    "item_skills": [
+      {
+        "id": 2012,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "736": {
+    "name": "Scroll of Escape",
+    "description": "A scroll of enchantment that relocates you to the nearest village. Scroll of Escape",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 400,
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_return_i00",
+    "item_skills": [
+      {
+        "id": 2013,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "737": {
+    "name": "Scroll of Resurrection",
+    "description": "A scroll of enchantment that resuscitates a dead person. Scroll of Resurrection",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "price": 2000,
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_resurrection_i00",
+    "item_skills": [
+      {
+        "id": 2014,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "738": {
+    "name": "Sword of Solidarity",
+    "description": "A bronze sword crafted long ago in memory of the union between the Humans and the Elves.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 12
+      },
+      "MAtk": {
+        "set": 9
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14200,
+    "weight": 1300,
+    "icon": "icon.weapon_long_sword_i00"
+  },
+  "739": {
+    "name": "Broken Sword Handle",
+    "description": "The handle portion of the sword of solidarity. Take this to Blacksmith Altran.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_small_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "740": {
+    "name": "Broken Blade Bottom",
+    "description": "Take this, and the upper portion of the blade to Blacksmith Altran.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_great_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "741": {
+    "name": "Broken Blade Top",
+    "description": "Take this, and the lower portion of the blade to Blacksmith Altran.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_sword_body_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "742": {
+    "name": "Altran's Note",
+    "description": "A letter requesting the handle of the sword from Roien. Take this to Grand Master Roien of Cedric's Training Hall.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_of_paper_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "743": {
+    "name": "Sword of Sentinel",
+    "description": "A steel blade issued to those fighters that have been acknowledged as protectors of the woods.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 14
+      },
+      "MAtk": {
+        "set": 11
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 25800,
+    "weight": 1300,
+    "icon": "icon.weapon_broad_sword_i00"
+  },
+  "744": {
+    "name": "Staff of Sentinel",
+    "description": "A staff issued to those magicians that have been acknowledged as protectors of the woods.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 13
+      },
+      "MAtk": {
+        "set": 15
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 25800,
+    "weight": 1800,
+    "icon": "icon.weapon_cedar_staff_i00"
+  },
+  "745": {
+    "name": "Cobendell Medicine",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal40",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "746": {
+    "name": "Alberius's List",
+    "description": "Deliver the medicine to Sentinel Berros, Sentinel Veltress, Sentinel Rayen, and Sentinel Gartrandell.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_of_paper_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "747": {
+    "name": "Wand of Adept",
+    "description": "The wand presented to those who have finished their studies at the school of magic.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 11
+      },
+      "MAtk": {
+        "set": 13
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 19500,
+    "weight": 1300,
+    "icon": "icon.weapon_apprentices_wand_i00"
+  },
+  "748": {
+    "name": "Gallint's Oak Wand",
+    "description": "An oak wand enchanted by Gallint's spell. This will capture and seal the spirit of mirrors.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 10
+      },
+      "MAtk": {
+        "set": 11
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3800,
+    "weight": 1350,
+    "icon": "icon.weapon_club_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "749": {
+    "name": "0",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 21
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 35800,
+    "weight": 100,
+    "icon": "icon.weapon_apprentices_staff_i00",
+    "crystal_count": 5,
+    "enchantable": true,
+    "dropable": false
+  },
+  "750": {
+    "name": "Kinship Crystal",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.item_normal45",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "751": {
+    "name": "Cracked Kinship Crystal",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.item_canuse07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "752": {
+    "name": "Orc Amulet",
+    "description": "An amulet that the Orcs carry for magical purposes. Take this to Captain Gilbert.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_feather_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "753": {
+    "name": "Silverleaf Brooch",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal12",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "754": {
+    "name": "Red Sunset Staff",
+    "description": "A staff used by warriors belonging to the Red Sunset clan.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 13
+      },
+      "MAtk": {
+        "set": 14
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 19500,
+    "weight": 1700,
+    "icon": "icon.weapon_cedar_staff_i00"
+  },
+  "755": {
+    "name": "Colleen's Letter",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "756": {
+    "name": "Mandragora Root",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal17",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "757": {
+    "name": "Mandragora Essence",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_canuse28",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "758": {
+    "name": "Colleen's Receipt",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal50",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "759": {
+    "name": "Etched Rune Sword",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_1hs21",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "760": {
+    "name": "Macabre Sword",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_1hs20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "761": {
+    "name": "Thanatos Sword",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_2hs02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "762": {
+    "name": "Gray Bone Chip",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "763": {
+    "name": "Esther's Letter",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "764": {
+    "name": "_",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "765": {
+    "name": "Conspirator List",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_canuse15",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "766": {
+    "name": "Sabrin's Signet",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.armor_finger02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "767": {
+    "name": "Sealed Scroll",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_canuse15",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "768": {
+    "name": "Oyen's Key",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal26",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "769": {
+    "name": "Ricardo's Skull",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.armor_head15",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "770": {
+    "name": "_",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_voodoo_doll_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "771": {
+    "name": "Saythus's Skull",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "772": {
+    "name": "Trayer's Skull",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "773": {
+    "name": "Falimar's Skull",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "774": {
+    "name": "Fallen Sword of Honor",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_1hs04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "775": {
+    "name": "Sword of Honor",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_1hs05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "776": {
+    "name": "Nameless Sword",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_1hs23",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "777": {
+    "name": "Sword of Black Ice",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_1hs11",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "778": {
+    "name": "Arodin's Letter",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "779": {
+    "name": "Sabrin's Ring",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.armor_finger01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "780": {
+    "name": "_",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "781": {
+    "name": "Madclaw's Necklace",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.armor_neck02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "782": {
+    "name": "Alex's Letter",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "783": {
+    "name": "Alex's Receipt",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal50",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "784": {
+    "name": "Glass Dagger",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_ss02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "785": {
+    "name": "Broken Glass Dagger",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_ss03",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "786": {
+    "name": "Shadowguard Dagger",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_ss04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "787": {
+    "name": "Coroli's Key",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal26",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "788": {
+    "name": "Midnight Onyx Necklace",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.armor_neck01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "789": {
+    "name": "Song: Moonlight Whisper",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_canuse34",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "790": {
+    "name": "Bloodsteel Kris",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_ss09",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "791": {
+    "name": "Karlun's Skull",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.armor_head15",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "792": {
+    "name": "Karlun's Rib Bone",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "793": {
+    "name": "Karlun's Thigh Bone",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal05",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "794": {
+    "name": "Saint's Ash Urn",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal40",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "795": {
+    "name": "Mace of Athebaldt",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.weapon_mace13",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "796": {
+    "name": "Roien's Letter",
+    "description": "A letter on which Roien summarized the historical information related to the sword of solidarity. Take this to Blacksmith Altran.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_scroll_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "797": {
+    "name": "Manuel's Letter",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "798": {
+    "name": "Varan's Letter",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "799": {
+    "name": "Groot's Letter",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.item_normal20",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  }
+}

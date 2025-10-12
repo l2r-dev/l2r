@@ -1,0 +1,2762 @@
+{
+  "20600": {
+    "name": "Twilight Staff - Dance of Shadow - 7-day limited period",
+    "description": "Staff that calls souls. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Special skill reuse delay is 1 hours. Dance of Shadows",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "BranchSys.icon.br_invokespirit_stick_a_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21089,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20601": {
+    "name": "Anniversary Hat - Soul of Phoenix - 7-day limited period",
+    "description": "Hat that comforts souls. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Special skill reuse delay is 24 hours. Soul of the Phoenix",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_comfortspirit_hat_a_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21090,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20602": {
+    "name": "Soul Silver Foil (Event)",
+    "description": "Silver Foil to comfort a spirit of monster. When used on a corpse of monster, increases max HP by 60%, max MP by 60%, max CP by 60%, P. Def. by 30%, Magic Def. by 30%, Speed by 30, P. Atk. by 20%, and decreases skill MP consumption by 10% for 2 minutes. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Soul Silver Foil",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_ghost_silverpaper_i00",
+    "item_skills": [
+      {
+        "id": 22099,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20603": {
+    "name": "Soul Scent (Event)",
+    "description": "Scent to comfort a spirit of monster. When used on a corpse of monster, increases max HP by 40%, max CP by 40%, P. Def. by 30%, Magic Def. by 30%, Speed by 20, P. Atk. by 45%, and decreases skill MP consumption by 10% for 2 minutes. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Soul Scent",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_ghost_incense_i00",
+    "item_skills": [
+      {
+        "id": 22100,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "20604": {
+    "name": "Low-Class Certificate (Event)",
+    "description": "A Certificate that shows you received the Event Small Scroll Chest.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_royal_membership_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20605": {
+    "name": "Mid-Class Certificate (Event)",
+    "description": "A Certificate that shows you received the Event Large Scroll Chest.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_royal_membership_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20606": {
+    "name": "High-Class Certificate (Event) - 8-hour limited period",
+    "description": "A Certificate that shows you received the Event Chest of Experience.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_royal_membership_i00",
+    "time": 480,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20607": {
+    "name": "Headphone Pack - Town Theme",
+    "description": "Wrapped pack containing a Headphone. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20613,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20608": {
+    "name": "Headphone Pack - Hero Theme",
+    "description": "Wrapped pack containing a Headphone. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20614,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20609": {
+    "name": "Headphone Pack - Theme Park",
+    "description": "Wrapped pack containing a Headphone. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20615,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20610": {
+    "name": "Headphone 7-Day Pack - Town Theme : Great Adventurer's Soul Power",
+    "description": "Wrapped pack containing a Headphone (7 days). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20616,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20611": {
+    "name": "Headphone 7-Day Pack - Hero Theme : Great Warrior's Soul Power",
+    "description": "Wrapped pack containing a Headphone (7 days). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20617,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20612": {
+    "name": "Headphone 7-Day Pack - Park theme : Great Wizard's Soul Power",
+    "description": "Wrapped pack containing a Headphone (7 days). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20618,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20613": {
+    "name": "Headphone - Town Theme",
+    "description": "Magic headphones that play town theme music. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Theme - Town",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_headphone_i00",
+    "item_skills": [
+      {
+        "id": 21092,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20614": {
+    "name": "Headphone - Hero Theme",
+    "description": "Magic headphones that play hero theme music. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Theme - Hero",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_headphone_i00",
+    "item_skills": [
+      {
+        "id": 21093,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20615": {
+    "name": "Headphone - Park Theme",
+    "description": "Wrapped pack containing a Headphone, playing a magical Park theme. Cannot be exchanged, dropped, or sold. Theme - Theme Park",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_headphone_i00",
+    "item_skills": [
+      {
+        "id": 21094,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20616": {
+    "name": "Headphone - Town Theme - 7-day limited period",
+    "description": "Magic headphones that play town theme music. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Theme - Town",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_headphone_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21092,
+        "level": 1
+      },
+      {
+        "id": 21111,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20617": {
+    "name": "Headphone - Hero Theme - 7-day limited period",
+    "description": "Magic headphones that play hero theme music. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Theme - Hero",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_headphone_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21093,
+        "level": 1
+      },
+      {
+        "id": 21112,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20618": {
+    "name": "Headphone - Park Theme - 7-day limited period",
+    "description": "Wrapped pack containing a Headphone (7 days) playing a magical Park theme. Cannot be exchanged, dropped, or sold. Theme - Theme Park",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_headphone_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21094,
+        "level": 1
+      },
+      {
+        "id": 21113,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "premium": true
+  },
+  "20619": {
+    "name": "Female Weaver Agathion 24-Hour Pack - Flute Sound",
+    "description": "Wrapped pack containing a Female Weaver Agathion (24 hour). No sale available. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20621,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20620": {
+    "name": "Female Weaver Agathion 3-Day Pack - Flute Sound",
+    "description": "Wrapped pack containing a Female Weaver Agathion (3 day). No sale available. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20622,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20621": {
+    "name": "Agathion Seal Bracelet - Female Weaver - Flute Sound - 24-hour limited period",
+    "description": "Bracelet that summons the Female Weaver Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_womanweaver_i00",
+    "time": 1440,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21091,
+        "level": 1
+      },
+      {
+        "id": 23078,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20622": {
+    "name": "Agathion Seal Bracelet - Female Weaver - Flute Sound - 3-day limited period",
+    "description": "Bracelet that summons the Female Weaver Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_womanweaver_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21091,
+        "level": 1
+      },
+      {
+        "id": 23078,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20623": {
+    "name": "Soul Silver Foil - Scent Pack",
+    "description": "Wrapped containing silver foil and scent that comfort the souls of monsters. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20602,
+          "min": 100,
+          "max": 100,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20603,
+          "min": 100,
+          "max": 100,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20624": {
+    "name": "Soul Scent 100 Sheet Pack",
+    "description": "Wrapped containing scent that comfort the souls of monsters. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20603,
+          "min": 100,
+          "max": 100,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20625": {
+    "name": "Anniversary Hat 7-Day Pack - Resurrection",
+    "description": "Wrapped pack containing an Anniversary Hat (7 day). Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20626,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20626": {
+    "name": "Anniversary Hat - Resurrection - 7-Day Limited Period",
+    "description": "Hat that comforts souls. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Special skill reuse delay is 12 hours. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_comfortspirit_hat_a_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21095,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20627": {
+    "name": "Summon of Love Bracelet 7-Day Pack",
+    "description": "Wrapped pack containing a Summon of Love Bracelet (7 day). Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20628,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20628": {
+    "name": "Summon of Love Bracelet - 7-day limited period",
+    "description": "Bracelet that can summon a friend. The summon is possible when the summoner and the one being summoned are all party members who are equipped with the Summon of Love Bracelet. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Summon Friend",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_ring_of_friendship_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21097,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20629": {
+    "name": "Fortune of Love Box (event)",
+    "description": "Can receive a Love Summon bracelet with a certain chance. Item to be stored in a private warehouse. Fortune of Love Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_box_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "20630": {
+    "name": "Soul Magic Box",
+    "description": "If you double click, Soul Silver Foil and Soul Scent items are created. No exchange/drop/sale/destroy available. (You can only use on every 24 hours.) Soul Magic Box",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Fish",
+    "icon": "BranchSys.icon.br_ghost_magicalbox_i00",
+    "item_skills": [
+      {
+        "id": 22102,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20631": {
+    "name": "Laborer Hat 7-Day Pack",
+    "description": "Wrapped pack containing a Laborer Hat (7 day). Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20633,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20632": {
+    "name": "Watermelon Hat Pack",
+    "description": "Wrapped pack containing a Watermelon Hat. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20634,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20633": {
+    "name": "Watermelon Hat - Ability of a Cool Watermelon - 7-day limited period",
+    "description": "Hat that looks like a watermelon. It feels cool just by looking at it. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Refreshing Watermelon's Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_watermelon_cap_a_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21096,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20634": {
+    "name": "Watermelon Hat",
+    "description": "Hat that looks like a watermelon. It feels cool just by looking at it. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_watermelon_cap_a_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20635": {
+    "name": "No Grade Beginner's Adventurer Support Pack",
+    "description": "Pack provided for new adventurers in Aden World. Contains no grade items and cocktail drinks. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 8973,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 8977,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9030,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9031,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9032,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9033,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9034,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9035,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 21093,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        },
+        {
+          "item_id": 21094,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20636": {
+    "name": "D-Grade Fighter Support Pack",
+    "description": "Pack provided for new adventurers in Aden World. Contains a D grade Fighter item. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20639,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20640,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20641,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20642,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20643,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20644,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20645,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20646,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20647,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20648,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20637": {
+    "name": "D-Grade Mage Support Pack",
+    "description": "Pack provided for new adventurers in Aden World. Contains a D grade Mage item. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20649,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20650,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20651,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20652,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20653,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 20645,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "20638": {
+    "name": "Beginner's Adventurer Reinforcement Pack",
+    "description": "Pack provided for new adventurers in Aden World. Contains useful items. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20415,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 21091,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 21092,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20639": {
+    "name": "Common Item - Elven Long Sword",
+    "description": "Elven Long Sword with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 92
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 100,
+    "icon": "icon.weapon_elven_long_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20640": {
+    "name": "Common Item - Light Crossbow",
+    "description": "Light Crossbow with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 2,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 191
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 100,
+    "icon": "icon.weapon_cyclone_bow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20641": {
+    "name": "Common Item - Knight's Sword*Elven Sword",
+    "description": "Knight's Sword*Elven Sword with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 100,
+    "icon": "icon.weapon_dual_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20642": {
+    "name": "Common Item - Mithril Gloves",
+    "description": "Mithril Gloves with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 29
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t46_g_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20643": {
+    "name": "Common Item - Plate Boots",
+    "description": "Plate Boots with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 29
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t46_b_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20644": {
+    "name": "Common Item - Plate Shield",
+    "description": "Plate Shield with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 154
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 100,
+    "icon": "icon.shield_plate_shield_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20645": {
+    "name": "Common Item - Plate Helmet",
+    "description": "Plate Helmet with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_leather_helmet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20646": {
+    "name": "Common Item - Plate Gaiters",
+    "description": "Plate Gaiters with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 70
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t46_l_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20647": {
+    "name": "Common Item - Half Plate Armor",
+    "description": "Half Plate Armor with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 111
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t46_u_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20648": {
+    "name": "Common Item - Salamander Skin Mail",
+    "description": "Salamander Skin Mail with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 136
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t45_ul_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20649": {
+    "name": "Common Item - Ghost Staff",
+    "description": "Ghost Staff of Mana with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 90
+      },
+      "MAtk": {
+        "set": 79
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 100,
+    "icon": "icon.weapon_ghost_staff_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20650": {
+    "name": "Common Item - Mithril Tunic",
+    "description": "Mithril Tunic with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 52
+      },
+      "MaxMp": {
+        "add": 169
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t51_u_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20651": {
+    "name": "Common Item - Mithril Stockings",
+    "description": "Mithril Stockings with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 32
+      },
+      "MaxMp": {
+        "add": 105
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t51_l_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20652": {
+    "name": "Common Item - Salamander Skin Boots",
+    "description": "Salamander Skin Boots with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 29
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t45_b_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20653": {
+    "name": "Common Item - Ogre Power Gauntlet",
+    "description": "Ogre Power Gauntlet with limited power enhancement. Enchantment, storing souls, and smelting are impossible. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 29
+      }
+    },
+    "weight": 100,
+    "icon": "icon.armor_t45_g_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "20654": {
+    "name": "Agathion Seal Bracelet - Chon-chon",
+    "description": "Bracelet that summons the Chon-chon Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_luckygirl_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21105,
+        "level": 1
+      },
+      {
+        "id": 23079,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20655": {
+    "name": "Agathion Seal Bracelet - Chon-chon - Great Warrior's Soul Power - 7-day limited period",
+    "description": "Bracelet that summons the Chon-chon Agathion. Cannot be exchanged, dropped, or sold. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_luckygirl_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21105,
+        "level": 1
+      },
+      {
+        "id": 23080,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20656": {
+    "name": "Agathion Seal Bracelet - Tang-tang",
+    "description": "Bracelet that summons the Tang-tang Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_luckyboy_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21106,
+        "level": 1
+      },
+      {
+        "id": 23081,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20657": {
+    "name": "Agathion Seal Bracelet - Tang-tang - Great Wizard's Soul Power - 7-day limited period",
+    "description": "Bracelet that summons the Tang-tang Agathion. Cannot be exchanged, dropped, or sold. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_luckyboy_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21106,
+        "level": 1
+      },
+      {
+        "id": 23082,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20658": {
+    "name": "Agthion Seal Bracelet - Dancing Lucky Kid",
+    "description": "The bracelet to summong the Dancing Lucky Kid Agathion Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_dancingchild_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21107,
+        "level": 1
+      },
+      {
+        "id": 23083,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20659": {
+    "name": "Agthion Seal Bracelet - Dancing Lucky Kid - Great Adventurer's Soul Power - 7-day limited period",
+    "description": "The bracelet to summong the Dancing Lucky Kid Agathion Cannot be exchanged, dropped, or sold. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_dancingchild_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21107,
+        "level": 1
+      },
+      {
+        "id": 23084,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20660": {
+    "name": "Agathion Seal Bracelet - Monkey King",
+    "description": "Bracelet that summons Monkey King Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_sunwukong_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21108,
+        "level": 1
+      },
+      {
+        "id": 23085,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20661": {
+    "name": "Agathion Seal Bracelet - Monkey King - Great Wizard's Soul Power - 7-day limited period",
+    "description": "Bracelet that summons Monkey King Agathion. Cannot be exchanged, dropped, or sold. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_sunwukong_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21108,
+        "level": 1
+      },
+      {
+        "id": 23086,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20662": {
+    "name": "Agathion Seal Bracelet - Utanka Agathion",
+    "description": "Bracelet that summons the Utanka Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_uthanka_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21109,
+        "level": 1
+      },
+      {
+        "id": 23087,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20663": {
+    "name": "Agathion Seal Bracelet - Utanka Agathion - Great Warrior's Soul Power - 7-day limited period",
+    "description": "Bracelet that summons the Utanka Agathion. Cannot be exchanged, dropped, or sold. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_uthanka_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21109,
+        "level": 1
+      },
+      {
+        "id": 23088,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20664": {
+    "name": "Agathion Seal Bracelet - Bonus B Agathion",
+    "description": "Bracelet that summons Bonus B Agathion. Cannot be exchanged, dropped, or sold. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_bonus_i00",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21110,
+        "level": 1
+      },
+      {
+        "id": 23089,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20665": {
+    "name": "Agathion Seal Bracelet - Bonus B Agathion - Great Adventurer's Soul Power - 7-day limited period",
+    "description": "Bracelet that summons Bonus B Agathion. Cannot be exchanged, dropped, or sold. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys.icon.br_aga_bonus_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21110,
+        "level": 1
+      },
+      {
+        "id": 23090,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20666": {
+    "name": "Valkyrie Hat",
+    "description": "The hat with Valkyrie's power in it. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_valkyrie_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20667": {
+    "name": "Valkyrie Hat - Great Adventurer's Soul Power - 7-day limited period",
+    "description": "The hat with Valkyrie's power in it. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Soul of an Adventurer of Immortality's Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_valkyrie_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21098,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20668": {
+    "name": "Tiger Hat",
+    "description": "Tiger-shaped hat Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_tiger_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20669": {
+    "name": "Tiger Hat - Great Warrior's Soul Power - 7-day limited period",
+    "description": "Tiger-shaped hat Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Soul of a Strong Warrior's Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_tiger_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21099,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20670": {
+    "name": "Maid's Hairband",
+    "description": "Cute Maid's Hairband Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_maid_hairband_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20671": {
+    "name": "Maid Hairband - Great Wizard's Soul Power - 7-day limited period",
+    "description": "Cute Maid Hairband Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Soul of a Wise Magician's Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_maid_hairband_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21100,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20672": {
+    "name": "Baby Panda Hat",
+    "description": "Baby-panda sahped hat Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_babypanda_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20673": {
+    "name": "Baby Panda Hat - Blessed Escape - 7-day limited period",
+    "description": "Baby-panda sahped hat Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Blessed Scroll of Escape",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_babypanda_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21101,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20674": {
+    "name": "Bamboo Panda Hat",
+    "description": "Bamboo-panda shaped hat Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_kungfupanda_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20675": {
+    "name": "Bamboo Panda Hat - Great Adventurer's Soul Power - 7-day limited period",
+    "description": "Bamboo-panda shaped hat Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Soul of an Adventurer of Immortality's Ability",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_kungfupanda_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21103,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20676": {
+    "name": "Sexy Panda Hat",
+    "description": "Sexy-panda shaped hat. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_sexypanda_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20677": {
+    "name": "Sexy Panda Hat - Blessed Resurrection - 7-day limited period",
+    "description": "Sexy-panda shaped hat. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Blessed Resurrection",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_sexypanda_cap_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21102,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20678": {
+    "name": "Gatekeeper Hat",
+    "description": "A hat that Gatekeeper wears Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_gatekeeper_of_hat_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20679": {
+    "name": "Gatekeeper Hat - Destroy Instinct - 7-day limited period",
+    "description": "A hat that Gatekeeper wears Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse. Appetite for Destruction",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_gatekeeper_of_hat_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21104,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "20680": {
+    "name": "Chon-chon Agathion Pack",
+    "description": "Wrapped pack containing a Chon-chon Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20654,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20681": {
+    "name": "Chon-chon Agathion 7-Day Pack - Great Warrior's Soul Power",
+    "description": "Wrapped pack containing a Chon-chon Agathion (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20655,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20682": {
+    "name": "Tang-tang Agathion Pack",
+    "description": "Wrapped pack containing a Tang-tang Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20656,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20683": {
+    "name": "Tang-tang Agathion 7-Day Pack - Great Wizard's Soul Power",
+    "description": "Wrapped pack containing a Tang-tang Agathion (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20657,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20684": {
+    "name": "Dancing Lucky Kid Agathion Pack",
+    "description": "Wrapped pack containing a Dancing Lucky Kid Agathion Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20658,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20685": {
+    "name": "Dancing Lucky Kid Agathion Pack (7 day) - Great Adventurer's Soul Power",
+    "description": "Wrapped pack containing a Dancing Lucky Kid Agathion (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20659,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20686": {
+    "name": "Monkey King Agathion Pack",
+    "description": "Wrapped pack containing a Monkey King Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20660,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20687": {
+    "name": "Monkey King Agathion 7-Day Pack - Great Wizard's Soul Power",
+    "description": "Wrapped pack containing a Monkey King Agathion (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20661,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20688": {
+    "name": "Utanka Agathion Pack",
+    "description": "Wrapped pack containing a Utanka Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20662,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20689": {
+    "name": "Utanka Agathion 7-Day Pack - Great Warrior's Soul Power",
+    "description": "Wrapped pack containing a Utanka Agathion (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20663,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20690": {
+    "name": "Bonus B Agathion Pack",
+    "description": "Wrapped pack containing a Bonus B Agathion. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20664,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20691": {
+    "name": "Bonus B Agathion 7-day Pack - Great Adventurer's Soul Power",
+    "description": "Wrapped pack containing a Bonus B Agathion (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20665,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20692": {
+    "name": "Valkyrie Hat Pack",
+    "description": "Wrapped pack containing a Valkyrie Hat. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20666,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20693": {
+    "name": "Valkyrie Hat 7-Day Pack - Great Adventurer's Soul Power",
+    "description": "Wrapped pack containing a Valkyrie Hat (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20667,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20694": {
+    "name": "Tiger Hat Pack",
+    "description": "Wrapped pack containing a Tiger Hat. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20668,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20695": {
+    "name": "Tiger Hat 7-Day Pack - Great Warrior's Soul Power",
+    "description": "Wrapped pack containing a Tiger Hat (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20669,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20696": {
+    "name": "Maid Hairband Pack",
+    "description": "Wrapped pack containing a Maid Hairband. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20670,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20697": {
+    "name": "Maid Hairband 7-Day Pack - Great Wizard's Soul Power",
+    "description": "Wrapped pack containing a Maid Hairband (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20671,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20698": {
+    "name": "Baby Panda Hat Pack",
+    "description": "Wrapped pack containing a Baby Panda Hat. Cannot be exchanged, dropped, or sold. Item to be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20672,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "20699": {
+    "name": "Agathion of Baby Panda 7-Day Pack - Blessing of Escape",
+    "description": "Wrapped pack containing a Baby Panda Hat (7 day). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 20673,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Paper",
+    "weight": 100,
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true,
+    "premium": true
+  }
+}

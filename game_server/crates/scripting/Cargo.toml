@@ -1,0 +1,21 @@
+[package]
+name = "scripting"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+l2r_core = { path = "../../../core" }
+
+state ={ path = "../state" }
+
+bevy = { workspace = true }
+bevy_asset = { workspace = true }
+bevy_defer = { workspace = true }
+bevy_mod_scripting = { workspace = true }
+
+rand = { workspace = true }
+uuid = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+strum = { workspace = true }
+sea-orm = { workspace = true }

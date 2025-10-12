@@ -1,0 +1,23 @@
+{%- macro gatekeeper(object_id, monster_track, fantasy_isle) -%}
+<a action="bypass -h npc_{{ object_id }}_chat tp">Teleport</a><br>
+<a action="bypass -h npc_{{ object_id }}_multisell 002">Exchange Dimension Diamonds.</a><br>
+<a action="bypass -h npc_{{ object_id }}_chat tp_noble">[Noblesse Exclusive] Teleport</a><br>
+{% if monster_track %}{% include "teleporter/_common/monster_track.html" %}{% endif %}
+{% if fantasy_isle %}{% include "teleporter/_common/fantasy_isle.html" %}{% endif %}
+<a action="bypass -h npc_{{ object_id }}_quest CharacterBirthday">Call Alegria</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{%- endmacro -%}
+
+{%- macro ziggurat(object_id, type, exit, id) -%}
+A human voice seems to emanate from a shining, blue globe:<br>
+Behold the gateway to the Forbidden Sacred Area! My job is to guard it, and you cannot pass without my permission.<br>
+
+{% if exit %}
+<a action="bypass -h npc_{{ object_id }}_tp {{ id }}">Teleport</a><br>
+{% else %}
+<a action="bypass -h npc_{{ object_id }}_{{ type }} {{ id }}">Teleport</a><br>
+{% endif %}
+
+<a action="bypass -h npc_{{ object_id }}_tp rift">Enter the Dimensional Rift</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{%- endmacro -%}

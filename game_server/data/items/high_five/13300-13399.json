@@ -1,0 +1,2271 @@
+{
+  "13300": {
+    "name": "Feather of Blessing (Event)",
+    "description": "Dimensional item. You can resurrect right away at the spot where you get killed if you have the Feather of Blessing. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.blessed_feather_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13301": {
+    "name": "My Teleport Spellbook (Event)",
+    "description": "Dimensional item. Increases by 3 slots the free teleport list, which can remember designated locations. Can expand up to 9 slots. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within an account through the Dimensional Merchant. Register Bookmark (Event)",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.bookmark_book_i00",
+    "item_skills": [
+      {
+        "id": 2610,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13302": {
+    "name": "My Teleport Scroll (Event)",
+    "description": "Dimensional item. Item that is consumed when moving to the remembered location. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.bookmark_scroll_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13303": {
+    "name": "White Weasel Hunting Helper Necklace (Event)",
+    "description": "Dimensional item. Item that allows you to summon a hunting helper who temporarily casts warrior-type battle support magic. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "icon.pet_controler_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13304": {
+    "name": "Fairy Princess Hunting Helper Necklace (Event)",
+    "description": "Dimensional item. Item that allows you to summon a hunting helper who temporarily casts magician-type battle support magic. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "icon.pet_controler_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13305": {
+    "name": "Wild Beast Fighter Hunting Helper Necklace (Event)",
+    "description": "Dimensional item. Item that allows you to summon a warrior-type battle hunting helper. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "icon.pet_controler_i01",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13306": {
+    "name": "Fox Shaman Hunting Helper Necklace (Event)",
+    "description": "Dimensional item. Item that allows you to summon a magician-type battle hunting helper. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "icon.pet_controler_i01",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13307": {
+    "name": "Color Name (Event)",
+    "description": "Dimensional item. Item that allows you to change a character's name color. You can change back to the original name color by using the \"/resetname\" command after changing the name color. If there is no original name, the name will disappear. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.color_name_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13308": {
+    "name": "Light Purple-Maned Horse Mount Bracelet (Event) - 7-day limited period",
+    "description": "Dimensional item. Can ride a purple maned horse when equipped. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Mount Darkmane Pacer",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8247,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13309": {
+    "name": "Agathion of Love (Event) - 30-day limited period",
+    "description": "Dimensional item. Can summon an Agathion of Love when equipped. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Wink",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 5763,
+        "level": 1
+      },
+      {
+        "id": 8245,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13310": {
+    "name": "Kat the Cat Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like Kat the Cat. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_cat_the_cat_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13311": {
+    "name": "Feline Queen Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like Feline Queen. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_queen_of_cat_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13312": {
+    "name": "Monster Eye Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like a Monster Eye. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_monstereye_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13313": {
+    "name": "Brown Bear Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like Brown Bear. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_brown_bear_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13314": {
+    "name": "Fungus Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like Fungus. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_fungus_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13315": {
+    "name": "Skull Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like a Skull. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_skeleton_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13316": {
+    "name": "Ornithomimus Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like a Ornithomimus. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_ornithomimus_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13317": {
+    "name": "Feline King Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like Feline King. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_king_of_cat_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13318": {
+    "name": "Kai the Cat Hat (Event) - 30-day limited period",
+    "description": "Dimensional item. Hat that looks like Kai the Cat. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chi_the_cat_cap_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13319": {
+    "name": "O Stick (Event) - 30-day limited period",
+    "description": "Dimensional item. O-type stick. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_o_stick_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13320": {
+    "name": "X Stick (Event) - 30-day limited period",
+    "description": "Dimensional item. X Stick. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_x_stick_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13321": {
+    "name": "Scissors Stick (Event) - 30-day limited period",
+    "description": "Dimensional item. Scissor stick. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_scissors_stick_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13322": {
+    "name": "Rock-type Stick (Event) - 30-day limited period",
+    "description": "Dimensional item. Rock stick. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_rock_stick_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13323": {
+    "name": "Paper-type Stick (Event) - 30-day limited period",
+    "description": "Dimensional item. Paper stick. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_diver_stick_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13324": {
+    "name": "Pumpkin Transformation Stick (Event) - 30-day limited period",
+    "description": "Dimensional item. Transformation stick that turns you into a pumpkin. Can be used for 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Transform Pumpkin Ghost",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_pumpkin_stick_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8246,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13325": {
+    "name": "Kat the Cat Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Kat the Cat. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_cat_the_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13326": {
+    "name": "Feline Queen Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Feline Queen. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_queen_of_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13327": {
+    "name": "Monster Eye Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like a Monster Eye. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_monstereye_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13328": {
+    "name": "Brown Bear Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Brown Bear. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_brown_bear_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13329": {
+    "name": "Fungus Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Fungus. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_fungus_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13330": {
+    "name": "Skull Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like a Skull. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_skeleton_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13331": {
+    "name": "Ornithomimus Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like a Ornithomimus. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_ornithomimus_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13332": {
+    "name": "Feline King Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Feline King. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_king_of_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13333": {
+    "name": "Kai the Cat Hat (Event) - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Kai the Cat. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chi_the_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13334": {
+    "name": "O Stick (Event) - 7-day limited period",
+    "description": "Dimensional item. O-type stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_o_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13335": {
+    "name": "X Stick (Event) - 7-day limited period",
+    "description": "Dimensional item. X Stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_x_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13336": {
+    "name": "Scissors Stick (Event) - 7-day limited period",
+    "description": "Dimensional item. Scissor stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_scissors_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13337": {
+    "name": "Rock-type Stick (Event) - 7-day limited period",
+    "description": "Dimensional item. Rock stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_rock_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13338": {
+    "name": "Paper-type Stick (Event) - 7-day limited period",
+    "description": "Dimensional item. Paper stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_diver_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13339": {
+    "name": "Pumpkin Transformation Stick (Event) - 7-day limited period",
+    "description": "Dimensional item. Pumpkin transformation stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Transform Pumpkin Ghost",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_pumpkin_stick_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8246,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13340": {
+    "name": "Agathion of Love (Event) - 7-day limited period",
+    "description": "Dimensional item. Seal bracelet that can summon an Agathion of Love. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Wink",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 5763,
+        "level": 1
+      },
+      {
+        "id": 8245,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13341": {
+    "name": "My Teleport Spellbook 1-Book Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 1 sheet of the Free Teleporter's Scroll. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13301,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13342": {
+    "name": "My Teleport Scroll 30-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 30 sheets of Free Teleporter's Spellbooks. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13302,
+          "min": 30,
+          "max": 30,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13343": {
+    "name": "Feather of Blessing 3-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 3 sheets of the Feather of Blessing. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13300,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13344": {
+    "name": "Agathion of Love 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing an Agathion of Love Seal Bracelet (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13309,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13345": {
+    "name": "Halloween Gift Box",
+    "description": "Dimensional item pack. A wrapped pack containing Pumpkin Transformation Stick (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13324,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13346": {
+    "name": "Kamaloka Entrance Pass 3-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 5 Sheets of Extra Entrances Passes each to Kamaloka (Hall of the Abyss), Near Kamaloka, and Kamaloka (Labyrinth of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13297,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13298,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13299,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13347": {
+    "name": "Kat the Cat Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Kat the Cat Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13310,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13348": {
+    "name": "Feline Queen Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Feline Queen Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13311,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13349": {
+    "name": "Monster Eye Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Monster Eye Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13312,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13350": {
+    "name": "Brown Bear Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Brown Bear Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13313,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13351": {
+    "name": "Fungus Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Fungus Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13314,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13352": {
+    "name": "Skull Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Skull Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13315,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13353": {
+    "name": "Ornithomimus Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Ornithomimus Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13316,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13354": {
+    "name": "Feline King Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Feline King Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13317,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13355": {
+    "name": "Kai the Cat Hat 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Kai the Cat Hat (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13318,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13356": {
+    "name": "OX Stick 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing an OX Stick (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13319,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13320,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13357": {
+    "name": "Rock-Paper-Scissors Stick 30-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Rock-Paper-Scissors Stick (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13321,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13322,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13323,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13358": {
+    "name": "Purple Maned Horse 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a bracelet that summons a Purple Maned Horse (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13308,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13359": {
+    "name": "Color Name 3-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 3 sheets of Color Names. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13307,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13360": {
+    "name": "Color Name 1-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 1 sheets of Color Names. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13307,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13361": {
+    "name": "My Teleport Scroll 10-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 10 sheets of Free Teleporter's Spellbooks. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13016,
+          "min": 10,
+          "max": 10,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13362": {
+    "name": "Kamaloka (Hall of the Abyss) 15-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 15 Sheets of Extra Entrance Passes to Kamaloka (Hall of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13297,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13363": {
+    "name": "Near Kamaloka 15-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 15 Sheets of Extra Entrance Passes to Near Kamaloka. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13298,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13364": {
+    "name": "Kamaloka (Labyrinth of the Abyss) 15-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 15 Sheets of Extra Entrance Passes to Kamaloka (Labyrinth of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13299,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13365": {
+    "name": "Kamaloka (Hall of the Abyss) 5-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 5 Sheets of Extra Entrance Passes to Kamaloka (Hall of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13297,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13366": {
+    "name": "Near Kamaloka 5-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 5 Sheets of Extra Entrance Passes to Near Kamaloka. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13298,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13367": {
+    "name": "Kamaloka (Labyrinth of the Abyss) 5-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 5 Sheets of Extra Entrance Passes to Kamaloka (Labyrinth of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13299,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13368": {
+    "name": "Feather of Blessing 1-Sheet Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing 1 sheets of the Feather of Blessing. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13300,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13369": {
+    "name": "Agathion of Love 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing an Agathion of Love Seal Bracelet (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13340,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13370": {
+    "name": "Pumpkin Transformation Stick 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing Pumpkin Transformation Stick (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13339,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13371": {
+    "name": "Kat the Cat Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Kat the Cat Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13325,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13372": {
+    "name": "Feline Queen Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Feline Queen Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13326,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13373": {
+    "name": "Monster Eye Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Monster Eye Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13327,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13374": {
+    "name": "Brown Bear Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Brown Bear Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13328,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13375": {
+    "name": "Fungus Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Fungus Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13329,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13376": {
+    "name": "Skull Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Skull Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13330,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13377": {
+    "name": "Ornithomimus Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Ornithomimus Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13331,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13378": {
+    "name": "Feline King Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Feline King Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13332,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13379": {
+    "name": "Kai the Cat Hat 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Kai the Cat Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13333,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13380": {
+    "name": "OX Stick 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing an OX Stick (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13334,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13335,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13381": {
+    "name": "Rock-Paper-Scissors Stick 7-Day Pack (Event)",
+    "description": "Dimensional item pack. A wrapped pack containing a Rock-Paper-Scissors Stick (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13336,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13337,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13338,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13382": {
+    "name": "Gran Kain's Gift Box (Event) - 30-day limited period",
+    "description": "Gift Box provides you with a free item once a day. Can be used for up to 30 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Gift Box",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Fish",
+    "icon": "icon.special_cube_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 2606,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13383": {
+    "name": "Hunting Helper Exchange Coupon - 5 hours (Event)",
+    "description": "Dimensional item. An exchange coupon that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Can be exchanged through the Dimensional Merchant. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13384": {
+    "name": "Hunting Helper Exchange Coupon 3-Sheet Pack (Event)",
+    "description": "Dimensional item box. A wrapped box containing a ticket that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13383,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13385": {
+    "name": "Hunting Helper Exchange Coupon 1-Sheet Pack (Event)",
+    "description": "Dimensional item box. A wrapped box containing 1 ticket sheet that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13383,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13386": {
+    "name": "Blue Crystal of Fantasy",
+    "description": "Increases SP by 50000 when used. Can be used above level 76. Cannot be exchanged or dropped. Blue Crystal of Fantasy",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_sp_crystal_i00",
+    "item_skills": [
+      {
+        "id": 2608,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13387": {
+    "name": "Green Crystal of Fantasy",
+    "description": "Increases SP by 100000 when used. Can be used above level 76. Cannot be exchanged or dropped. Blue Crystal of Fantasy",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_sp_crystal_i02",
+    "item_skills": [
+      {
+        "id": 2608,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13388": {
+    "name": "Red Crystal of Fantasy",
+    "description": "Increases SP by 200000 when used. Can be used above level 76. Cannot be exchanged or dropped. Blue Crystal of Fantasy",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_sp_crystal_i01",
+    "item_skills": [
+      {
+        "id": 2608,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13389": {
+    "name": "Kratei Barbed Shirt - CP",
+    "description": "Increases Max CP by 516 when over-enchanted to 4 or more. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 23
+      }
+    },
+    "weight": 130,
+    "icon": "icon.etc_shirts_a_i04",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13390": {
+    "name": "Kratei Mithril Shirt - CP",
+    "description": "Increases Max CP by 672 when over-enchanted to 4 or more. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 28
+      }
+    },
+    "weight": 130,
+    "icon": "icon.etc_shirts_s_i05",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13391": {
+    "name": "Kratei Striped Barbed Shirt - CP",
+    "description": "Increases Max CP by 564 when over-enchanted to 4 or more. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 26
+      }
+    },
+    "weight": 130,
+    "icon": "icon.etc_stripe_shirts_a_i04",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13392": {
+    "name": "Kratei Striped Mithril Shirt - CP",
+    "description": "Increases Max CP by 744 when over-enchanted to 4 or more. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 30
+      }
+    },
+    "weight": 130,
+    "icon": "icon.etc_stripe_shirts_s_i05",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13393": {
+    "name": "Shadow Item - Monkey Hat",
+    "description": "A cute Monkey Hat. Uses 2 hair accessory slots. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.monkey_cap_i00",
+    "mana": 100,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13394": {
+    "name": "Shadow Item - Pig Hat",
+    "description": "A cute Pig Hat. Uses 2 hair accessory slots. Cannot be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.event_pig_cap_i00",
+    "mana": 100,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13395": {
+    "name": "Scroll of Escape: Talking Island Village",
+    "description": "Teleports you to Talking Island Village. Cannot be sold, exchanged or dropped. Escape - Talking Island Village",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 30,
+    "icon": "icon.etc_scroll_of_return_i00",
+    "item_skills": [
+      {
+        "id": 2609,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13396": {
+    "name": "Scroll of Escape: Elven Village",
+    "description": "Teleports you to the Elven Village. Cannot be sold, exchanged or dropped. Escape - Talking Island Village",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 30,
+    "icon": "icon.etc_scroll_of_return_i00",
+    "item_skills": [
+      {
+        "id": 2609,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13397": {
+    "name": "Scroll of Escape: Dark Elven Village",
+    "description": "Teleports you to the Dark Elven Village. Cannot be sold, exchanged or dropped. Escape - Talking Island Village",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 30,
+    "icon": "icon.etc_scroll_of_return_i00",
+    "item_skills": [
+      {
+        "id": 2609,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13398": {
+    "name": "Scroll of Escape: Orc Village",
+    "description": "Teleports you to the Orc Village. Cannot be sold, exchanged or dropped. Escape - Talking Island Village",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 30,
+    "icon": "icon.etc_scroll_of_return_i00",
+    "item_skills": [
+      {
+        "id": 2609,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13399": {
+    "name": "Scroll of Escape: Dwarven Village",
+    "description": "Magic scroll that moves you to Dwarven Village. No selling to stores, exchange, or drop available for this item. Escape - Talking Island Village",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 30,
+    "icon": "icon.etc_scroll_of_return_i00",
+    "item_skills": [
+      {
+        "id": 2609,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  }
+}

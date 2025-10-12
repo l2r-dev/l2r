@@ -1,0 +1,2417 @@
+{
+  "4301": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Miss Queen",
+    "title": "Valentine Messenger",
+    "race": "Elemental",
+    "gender": "Female",
+    "reward": {
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 26,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 15
+      }
+    }
+  },
+  "4302": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Master Dugi",
+    "title": "Soul Healer",
+    "race": "Humanoid",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 5.78704,
+        "Accuracy": 4.75,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4303": {
+    "level": 85,
+    "kind": "Friendly",
+    "name": "Skooldie",
+    "title": "Halloween's Three Siblings",
+    "race": "Animal",
+    "gender": "Male",
+    "reward": {
+      "exp": 722,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4390,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Abnormal Immunity"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 16
+      }
+    }
+  },
+  "4304": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "White-Bearded Santa",
+    "title": "Merry Christmas!",
+    "race": "Dwarf",
+    "gender": "Male",
+    "reward": {
+      "exp": 490,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 24
+      }
+    }
+  },
+  "4305": {
+    "level": 70,
+    "kind": "Friendly",
+    "name": "Rosalia",
+    "title": "Helpless Romantic",
+    "race": "Human",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 470.40463,
+        "Accuracy": 5.0,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 20
+      }
+    }
+  },
+  "4306": {
+    "level": 85,
+    "kind": "Friendly",
+    "name": "Steve Shyagel",
+    "title": "Eva's High Priest",
+    "race": "Human",
+    "gender": "Male",
+    "reward": {
+      "exp": 722,
+      "sp": 10
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 470.40463,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 14,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 1000,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 26
+      }
+    }
+  },
+  "4307": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Santa Claus",
+    "title": "Event Manager",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "4308": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Angel Cat",
+    "title": "Heavenly Envoy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "4309": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Prophet",
+    "title": "Sinister",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 22
+      }
+    }
+  },
+  "4310": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Prophet",
+    "title": "Sinister",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 22
+      }
+    }
+  },
+  "4311": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Prophet",
+    "title": "Sinister",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 22
+      }
+    }
+  },
+  "4312": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Prophet",
+    "title": "Sinister",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 22
+      }
+    }
+  },
+  "4313": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Angel Cat",
+    "title": "Character Collector",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "4314": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Teleport Device",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 2
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "4315": {
+    "level": 70,
+    "kind": "Warehouse",
+    "name": "Warehouse Keeper",
+    "title": "Fantasy Isle Warehouse Keeper",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2444.46819,
+        "MaxMp": 1345.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 688.86373,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 470.40463
+      },
+      "defence": {
+        "PDef": 295.91597,
+        "MDef": 216.53847
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 150,
+          "Water": 150,
+          "Wind": 150,
+          "Earth": 150,
+          "Holy": 150,
+          "Dark": 150
+        }
+      },
+      "speed": {
+        "Walk": 50,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 18,
+        "description": "One-handed Sword"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 21
+      }
+    }
+  },
+  "4316": {
+    "level": 55,
+    "kind": "Teleporter",
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4317": {
+    "level": 55,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          16011
+        ]
+      }
+    },
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4318": {
+    "level": 55,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          16016
+        ]
+      }
+    },
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4319": {
+    "level": 55,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          16015,
+          16014,
+          16013,
+          16012
+        ]
+      }
+    },
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4320": {
+    "level": 55,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          16017
+        ]
+      }
+    },
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4321": {
+    "level": 55,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          16018
+        ]
+      }
+    },
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4322": {
+    "level": 55,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          16009
+        ]
+      }
+    },
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4323": {
+    "level": 55,
+    "kind": {
+      "Teleporter": {
+        "common": [
+          16010
+        ]
+      }
+    },
+    "name": "Photo Snow",
+    "title": "Photographer",
+    "gender": "Female",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 25
+      },
+      "vitals": {
+        "MaxHp": 1673.05473,
+        "MaxMp": 889.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 388.11142,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "MAtk": 265.02979
+      },
+      "defence": {
+        "PDef": 223.6362,
+        "MDef": 163.64727
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 4,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 7,
+        "description": "Bare Hands"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 9,
+        "height": 16
+      }
+    }
+  },
+  "4324": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Worshipper",
+    "title": "Sinister",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 25
+      }
+    }
+  },
+  "4325": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Altar Guard",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 24
+      }
+    }
+  },
+  "4326": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Nevit's Herald",
+    "title": "Invoker",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 22
+      }
+    }
+  },
+  "4327": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Worshipper",
+    "title": "Sinister",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 24
+      }
+    }
+  },
+  "4328": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Altar Guard",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 14
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 23
+      }
+    }
+  },
+  "4329": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Miss Queen",
+    "title": "Happy Messenger",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4416,
+        "level": 7
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  }
+}

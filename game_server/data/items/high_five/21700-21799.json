@@ -1,0 +1,2176 @@
+{
+  "21700": {
+    "name": "Olf's T-shirt Pack",
+    "description": "Dimensional item. Gift box containing 1 Olf's T-shirt. Can be exchanged while in a pack. Cannot be dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21580,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "21701": {
+    "name": "Olf's T-shirt Pack - Event",
+    "description": "Gift box containing 1 Olf's T-shirt. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21706,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "21702": {
+    "name": "Olf's Thanksgiving Pack",
+    "description": "Dimensional item. Blessed Olf's T-shirt Enchant Scroll. Gift box containig 1 each of the Large Firework and Honey Rice Cakes. Can be exchanged while in a pack. Cannot be dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21707,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "21703": {
+    "name": "Olf's Thanksgiving XL Pack",
+    "description": "Dimensional item. Blessed Olf's T-shirt Enchant Scroll. Gift box containig 6 each of the Large Firework and Honey Rice Cakes. Can be exchanged while in a pack. Cannot be dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21707,
+          "min": 6,
+          "max": 6,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "21704": {
+    "name": "Honey Rice Cakes",
+    "description": "Delicious honey rice cakes. When used, instantly recovers Max MP by 50%. Reuse time is 5 minutes. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "BranchSys.icon.br_taiwan_newyear_food_c_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21705": {
+    "name": "Honey Rice Cakes Pack",
+    "description": "Gift box containing 3 delicious honey rice cakes. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21706": {
+    "name": "Olf's T-shirt - Event",
+    "description": "Dimensional item. Olf's T-shirt Enchant Scroll. Can enhance up to +10 using a Blessed Olf's T-shirt Enchant Scroll. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 28
+      }
+    },
+    "weight": 130,
+    "icon": "BranchSys2.icon.7anni_shirt_i00",
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false
+  },
+  "21707": {
+    "name": "Blessed Olf's T-shirt Enchant Scroll - Event",
+    "description": "Dimensional item. Enchant scroll exclusive to Olf's T-shirt. Increases the T-shirt's P. Def. and M. Def. by 1. Starting from +4, increases P. Def. by 3. Can safely enchant to +3 and up to a max +10. From +4, \"basic abilities (CON, MEN, STR, INT, DEX, WIT)\" are raised in stages. Special skills are added at +5, +7, +8 and +9. If the enchant fails, the existing enchant value becomes 0. Cannot be dropped. Can be stored in a private warehouse. Blessed Olf's T-shirt Enchant Scroll",
+    "kind": {
+      "Enchanting": {
+        "Scroll": {
+          "Armor": "Common"
+        }
+      }
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.icon.etc_scroll_of_enchant_shirt_i00",
+    "item_skills": [
+      {
+        "id": 22248,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "stackable": true
+  },
+  "21708": {
+    "name": "Honey Rice Cakes - Event",
+    "description": "Delicious honey rice cakes. When used, instantly recovers Max MP by 50%. Reuse time is 5 minutes. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "BranchSys.icon.br_taiwan_newyear_food_c_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21709": {
+    "name": "Agathion Seal Bracelet - Rudolph - Event",
+    "description": "Bracelet that can summon a cute Rudolph Agathion. Cannot be exchanged or dropped. Can be stored in a private warehouse. Dismiss Agathion",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "BranchSys2.icon.event_lbracelet_rudolph",
+    "item_skills": [
+      {
+        "id": 3267,
+        "level": 1
+      },
+      {
+        "id": 21245,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21710": {
+    "name": "Vitality Replenishing Beverage - Event",
+    "description": "When used, replenishes energy to 100%. Reuse time is 60 minutes. Cannot be destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "icon.etc_hot_spring_mineral_i00",
+    "stackable": true
+  },
+  "21711": {
+    "name": "Santa Claus's Blessing - Event",
+    "description": "When used, HP Recovery Bonus, Max MP, and Critical Atk. Rate +20%, and you can feel the effects of Prophecy of Water, Might, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Shield, Focus, Death Whisper, Guidance, Clarity, Wild Magic, and Concentration for 1 hour. Cannot be destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "BranchSys.icon.br_xmas_miracle_i00",
+    "stackable": true
+  },
+  "21712": {
+    "name": "Blessed Earring of Zaken",
+    "description": "MP+37, Resistance to Bleed +30%, Bleed attack rate +30%, heal amount +15%, vampiric rage effect, Resistance to Shock/Mental attacks +30%, Shock/Mental attack rate +30%, and Resistance to Dark +15. Only one effect is applied even when the same two earrings are worn. If it is equipped together with a standard Earring of Zaken, only the effect of Blessed Earring of Zaken will be applied. Earring of Zaken",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S84",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 94
+      },
+      "MaxMp": {
+        "add": 37
+      }
+    },
+    "price": 11394000,
+    "weight": 150,
+    "icon": "icon.accessory_earring_of_zaken_i00",
+    "crystal_count": 547,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3559,
+        "level": 2
+      }
+    ]
+  },
+  "21713": {
+    "name": "Sealed Cloak of Zaken",
+    "description": "When the seal is released, P. Def. and attribute resistance increase, and special skills can be used. It can be equipped only after releasing the seal through the weavers Olf Kanore in Aden or Olf Adams in Rune. Enchantment, attribute, and refining are impossible. Can be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Cloth",
+    "price": 29674485,
+    "weight": 220,
+    "icon": "icon.sealed_vesper_cloack_i01"
+  },
+  "21714": {
+    "name": "Sealed Cloak of Freya",
+    "description": "When the seal is released, P. Def. and attribute resistance increase, and special skills can be used. It can be equipped only after releasing the seal through the weavers Olf Kanore in Aden or Olf Adams in Rune. Enchantment, attribute, and refining are impossible. Can be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Cloth",
+    "price": 32971650,
+    "weight": 220,
+    "icon": "icon.sealed_vesper_cloack_i01"
+  },
+  "21715": {
+    "name": "Sealed Cloak of Frintezza",
+    "description": "When the seal is released, P. Def. and attribute resistance increase, and special skills can be used. It can be equipped only after releasing the seal through the weavers Olf Kanore in Aden or Olf Adams in Rune. Enchantment, attribute, and refining are impossible. Can be exchanged or dropped.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Cloth",
+    "price": 29674485,
+    "weight": 220,
+    "icon": "icon.sealed_vesper_cloack_i01"
+  },
+  "21716": {
+    "name": "Cloak of Zaken",
+    "description": "Cloak that makes you feel Zaken's sorrow. Increases P. Def. and attribute resistance. Unlocks a skill to move to the boss area. Can only be equipped when the cloak slot is open. Enchantment, attribute, and refining are impossible. Can be exchanged or dropped. Zaken's Call",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "DarkResistance": {
+        "add": 15
+      },
+      "EarthResistance": {
+        "add": 5
+      },
+      "FireResistance": {
+        "add": 5
+      },
+      "HolyResistance": {
+        "add": 5
+      },
+      "WaterResistance": {
+        "add": 15
+      },
+      "WindResistance": {
+        "add": 15
+      },
+      "PDef": {
+        "add": 20
+      }
+    },
+    "price": 29674485,
+    "weight": 220,
+    "icon": "BranchSys2.Icon.br_zaken_cloak_i00",
+    "item_skills": [
+      {
+        "id": 21242,
+        "level": 1
+      }
+    ]
+  },
+  "21717": {
+    "name": "Cloak of Freya",
+    "description": "Cloak that makes you feel Freya's chill. Increases P. Def. and attribute resistance. Unlocks a skill to move to the boss area. Can only be equipped when the cloak slot is open. Enchantment, attribute, and refining are impossible. Can be exchanged or dropped. Freya's Call",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "DarkResistance": {
+        "add": 10
+      },
+      "EarthResistance": {
+        "add": 10
+      },
+      "FireResistance": {
+        "add": 10
+      },
+      "HolyResistance": {
+        "add": 20
+      },
+      "WaterResistance": {
+        "add": 20
+      },
+      "WindResistance": {
+        "add": 20
+      },
+      "PDef": {
+        "add": 30
+      }
+    },
+    "price": 32971650,
+    "weight": 220,
+    "icon": "BranchSys2.Icon.br_freya_cloak_i00",
+    "item_skills": [
+      {
+        "id": 21243,
+        "level": 1
+      }
+    ]
+  },
+  "21718": {
+    "name": "Cloak of Frintezza",
+    "description": "Cloak that plays Frintezza's melody over and over in your head. Increases P. Def. and attribute resistance. Unlocks a skill to move to the boss area. Can only be equipped when the cloak slot is open. Enchantment, attribute, and refining are impossible. Can be exchanged or dropped. Frintezza's Call",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "DarkResistance": {
+        "add": 15
+      },
+      "EarthResistance": {
+        "add": 15
+      },
+      "FireResistance": {
+        "add": 15
+      },
+      "HolyResistance": {
+        "add": 5
+      },
+      "WaterResistance": {
+        "add": 5
+      },
+      "WindResistance": {
+        "add": 5
+      },
+      "PDef": {
+        "add": 20
+      }
+    },
+    "price": 29674485,
+    "weight": 220,
+    "icon": "BranchSys2.Icon.br_frintessa_cloak_i00",
+    "item_skills": [
+      {
+        "id": 21244,
+        "level": 1
+      }
+    ]
+  },
+  "21719": {
+    "name": "Soul Cloak of Zaken",
+    "description": "Cloak embroidered with Zaken's soul. Increases P. Def. and attribute resistance. Unlocks a skill to move to the boss area. Can only be equipped when the cloak slot is open. Enchantment, attribute, refining, exchange, and drop are impossible. Zaken's Call",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "DarkResistance": {
+        "add": 10
+      },
+      "EarthResistance": {
+        "add": 5
+      },
+      "FireResistance": {
+        "add": 5
+      },
+      "HolyResistance": {
+        "add": 5
+      },
+      "WaterResistance": {
+        "add": 10
+      },
+      "WindResistance": {
+        "add": 10
+      },
+      "PDef": {
+        "add": 40
+      }
+    },
+    "weight": 110,
+    "icon": "BranchSys2.Icon.br_zaken_cloak_i00",
+    "item_skills": [
+      {
+        "id": 21242,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21720": {
+    "name": "Soul Cloak of Freya",
+    "description": "Cloak embroidered with Freya's soul. Increases P. Def. and attribute resistance. Unlocks a skill to move to the boss area. Can only be equipped when the cloak slot is open. Enchantment, attribute, refining, exchange, and drop are impossible. Freya's Call",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "DarkResistance": {
+        "add": 5
+      },
+      "EarthResistance": {
+        "add": 5
+      },
+      "FireResistance": {
+        "add": 5
+      },
+      "HolyResistance": {
+        "add": 15
+      },
+      "WaterResistance": {
+        "add": 15
+      },
+      "WindResistance": {
+        "add": 15
+      },
+      "PDef": {
+        "add": 60
+      }
+    },
+    "weight": 110,
+    "icon": "BranchSys2.Icon.br_freya_cloak_i00",
+    "item_skills": [
+      {
+        "id": 21243,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21721": {
+    "name": "Soul Cloak of Frintezza",
+    "description": "Cloak embroidered with Frintezza's soul. Increases P. Def. and attribute resistance. Unlocks a skill to move to the boss area. Can only be equipped when the cloak slot is open. Enchantment, attribute, refining, exchange, and drop are impossible. Frintezza's Call",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S80",
+    "material": "Cloth",
+    "stats": {
+      "DarkResistance": {
+        "add": 10
+      },
+      "EarthResistance": {
+        "add": 10
+      },
+      "FireResistance": {
+        "add": 10
+      },
+      "HolyResistance": {
+        "add": 5
+      },
+      "WaterResistance": {
+        "add": 5
+      },
+      "WindResistance": {
+        "add": 5
+      },
+      "PDef": {
+        "add": 40
+      }
+    },
+    "weight": 110,
+    "icon": "BranchSys2.Icon.br_frintessa_cloak_i00",
+    "item_skills": [
+      {
+        "id": 21244,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21722": {
+    "name": "Zaken's Soul Fragment",
+    "description": "Small fragment that contains a part of Zaken's soul. See weaver Olf Adams to find out what use it has.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21723": {
+    "name": "Freya's Soul Fragment",
+    "description": "Small fragment that contains a part of Freya's soul. See weaver Olf Adams to find out what use it has.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21724": {
+    "name": "Frintezza's Soul Fragment",
+    "description": "Small fragment that contains a part of Frintezza's soul. See weaver Olf Adams to find out what use it has.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21725": {
+    "name": "Staff of Goddess: Rain Song Fragment",
+    "description": "A severaly damaged staff piece. A mysterious light shines faintly.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Wood",
+    "icon": "icon.etc_i.etc_vesper_caster_piece_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21726": {
+    "name": "Angel Cat's Blessing - Event",
+    "description": "When used, HP Recovery Bonus, Max MP, and Critical Atk. Rate +20%, and you can feel the effects of Prophecy of Water, Might, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Shield, Focus, Death Whisper, Guidance, Clarity, Wild Magic, and Concentration for 1 hour. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "BranchSys.icon.br_xmas_miracle_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21727": {
+    "name": "Zinenze Agathion Bracelet (3 day) - 3-day limited period",
+    "description": "Bracelet skill that let's you summon Zinenze for 3 days. Upon using the skill name, instantly recovers Exp, HP, MP, and CP, and makes you invincible for 5 seconds. (But can only be used when HP is below 30%.). Cool time is 12 hour(s). Can be stored in a private warehouse. But cannot be exchange, dropped, or sold in shops. Release Seal on Agathion - Zinenze",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 120,
+    "icon": "BranchSys2.Icon.br_aga_jinjiayan_i00",
+    "time": 4320,
+    "item_skills": [
+      {
+        "id": 21248,
+        "level": 1
+      },
+      {
+        "id": 23305,
+        "level": 1
+      },
+      {
+        "id": 23306,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21728": {
+    "name": "Zinenze Agathion Bracelet (7 day) - 7-day limited period",
+    "description": "Bracelet skill that let's you summon Zinenze for 3 days. Upon using the skill name, instantly recovers Exp, HP, MP, and CP, and makes you invincible for 5 seconds. (But can only be used when HP is below 31%.). Cool time is 12 hour(s). Can be stored in a private warehouse. But cannot be exchange, dropped, or sold in shops. Release Seal on Agathion - Zinenze",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 120,
+    "icon": "BranchSys2.Icon.br_aga_jinjiayan_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 21248,
+        "level": 1
+      },
+      {
+        "id": 23305,
+        "level": 1
+      },
+      {
+        "id": 23306,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21729": {
+    "name": "Enze Agathion Bracelet - Permanent",
+    "description": "Enze Agathion. Upon skill use, transforms into an Enze fairy. Can stay as an Enze fairy for 10 minutes. Cool time is 5 hours. Can be traded, sold at a private store, and stored in a private warehouse. But cannot be dropped or sold at a shop. Release Seal on Agathion - Enze",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 120,
+    "icon": "BranchSys2.Icon.br_aga_jiayan_i00",
+    "item_skills": [
+      {
+        "id": 21249,
+        "level": 1
+      },
+      {
+        "id": 23307,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "dropable": false,
+    "sellable": false
+  },
+  "21730": {
+    "name": "Letter Collector's Gift - Event",
+    "description": "7th Anniversary. Letter Collector's Gift. Upon use, for 2 hours, increases Atk. Spd. +15%, Casting Spd. +15%, Speed +20, and changes the appearance of the equipped weapon and armor to look like items from the past. Reuse time is 60 minutes.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 5,
+    "icon": "BranchSys.icon.br_shield_bread_i01",
+    "stackable": true
+  },
+  "21731": {
+    "name": "Maingauche - Event",
+    "description": "Letter Collector's Maingauche of Memory",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 69
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1070,
+    "icon": "icon.weapon_maingauche_i00",
+    "enchantable": true
+  },
+  "21732": {
+    "name": "Sword of Revolution - Event",
+    "description": "Letter Collector's Sword of Revolution of Memory",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1450,
+    "icon": "icon.weapon_sword_of_revolution_i00",
+    "enchantable": true
+  },
+  "21733": {
+    "name": "Titan Sword - Event",
+    "description": "Letter Collector's Titan Sword of Memory",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2020,
+    "icon": "icon.weapon_giants_sword_i00",
+    "enchantable": true
+  },
+  "21734": {
+    "name": "Priest Mace - Event",
+    "description": "Letter Collector's Priest Mace of Memory",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 63
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1720,
+    "icon": "icon.weapon_mace_of_priest_i00",
+    "enchantable": true
+  },
+  "21735": {
+    "name": "Tarbar - Event",
+    "description": "Letter Collector's Tarbar of Memory",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1730,
+    "icon": "icon.weapon_tarbar_i00",
+    "enchantable": true
+  },
+  "21736": {
+    "name": "Goat Head Staff - Event",
+    "description": "Letter Collector's Goat Head Staff of Memory",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 77
+      },
+      "MAtk": {
+        "set": 69
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1000,
+    "icon": "icon.weapon_goathead_staff_i00",
+    "enchantable": true
+  },
+  "21737": {
+    "name": "Titan Hammer - Event",
+    "description": "Letter Collector's Titan Hammer of Memory",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2100,
+    "icon": "icon.weapon_giants_hammer_i00",
+    "enchantable": true
+  },
+  "21738": {
+    "name": "Winged Spear - Event",
+    "description": "Letter Collector's Winged Spear of Memory",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 79
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2060,
+    "icon": "icon.weapon_winged_spear_i00",
+    "enchantable": true
+  },
+  "21739": {
+    "name": "Reinforced Long Bow - Event",
+    "description": "Letter Collector's Strengthened Low Bow of Memory",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "soulshots": 10,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 179
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_strengthening_long_bow_i00",
+    "enchantable": true
+  },
+  "21740": {
+    "name": "Epee - Event",
+    "description": "Letter Collector's Epee of Memory",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 72
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "weight": 1450,
+    "icon": "icon.weapon_rapier_i00",
+    "enchantable": true
+  },
+  "21741": {
+    "name": "Sword of Magic Fog - Event",
+    "description": "Letter Collector's Sword of Magic Fog of Memory",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 63
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1450,
+    "icon": "icon.weapon_sword_of_magic_fog_i00",
+    "enchantable": true
+  },
+  "21742": {
+    "name": "Bastard Sword*Bastard Sword - Event",
+    "description": "Letter Collector's Bastars*Bastard of Memory",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2470,
+    "icon": "icon.weapon_dual_sword_i00",
+    "enchantable": true
+  },
+  "21743": {
+    "name": "Bich'Hwa - Event",
+    "description": "Letter Collector's Bich'Hwa of Memory",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1510,
+    "icon": "icon.weapon_bichhwa_i00",
+    "enchantable": true
+  },
+  "21744": {
+    "name": "Katzbalger - Event",
+    "description": "Letter Collector's Katzbalger of Memory",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "soulshots": 3,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 86
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 2020,
+    "icon": "icon.weapon_tulwar_i00",
+    "enchantable": true
+  },
+  "21745": {
+    "name": "Arm Breaker - Event",
+    "description": "Letter Collector's Arm Breaker of Memory",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "soulshots": 6,
+        "spiritshots": 3
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 100
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "enchantable": true
+  },
+  "21746": {
+    "name": "Maestro's Key",
+    "description": "Can open Treasure Chests between level 21-85 with 100% chance. When a character below level 77 uses it on a treasure chest that is more than 6 levels above, or when a character above level 78 uses it on a treasure chest that is more than 5 levels above, the key disappears but the reward cannot be obtained. Maestro's Key",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "price": 1800,
+    "weight": 10,
+    "icon": "icon.etc_old_key_i00",
+    "item_skills": [
+      {
+        "id": 22271,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "21747": {
+    "name": "Beginner Adventurer's Treasure Sack",
+    "description": "Treasure sack containing the treasure of beginner adventurers. Open it to obtain one random C or D-Grade Weapon. Beginner Adventurer's Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Cotton",
+    "icon": "BranchSys2.icon.etc_ancient_treasure_sack_i00",
+    "stackable": true
+  },
+  "21748": {
+    "name": "Experienced Adventurer's Treasure Sack",
+    "description": "Treasure sack containing the treasure of experienced adventurers. Open it to obtain one random B, A or S-Grade Weapon (Dynasty excluded). Experienced Adventurer's Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Cotton",
+    "icon": "BranchSys2.icon.etc_ancient_treasure_sack_i00",
+    "stackable": true
+  },
+  "21749": {
+    "name": "Great Adventurer's Treasure Sack",
+    "description": "Treasure sack containing the treasure of great adventurers. Open it to obtain one random Dynasty, Icarus or Vesper Weapon. Great Adventurer's Treasure Sack",
+    "kind": {
+      "Package": []
+    },
+    "material": "Cotton",
+    "icon": "BranchSys2.icon.etc_ancient_treasure_sack_i00",
+    "stackable": true
+  },
+  "21750": {
+    "name": "Blue Elmore Coin",
+    "description": "Token received by adventurers for their service to the Elmore king. If you bring it to Captain Mathias in Rune, you will receive a reward. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_coins_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21751": {
+    "name": "Rune Jewelry Box - Crystal",
+    "description": "Jewelry box containing the precious treasure of Rune. When used, you can obtain 15 Crystals of Life with a certain rate of chance.",
+    "kind": {
+      "Package": []
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_treasure_box_i07",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "21752": {
+    "name": "Rune Jewelry Box - Talisman",
+    "description": "Jewelry box containing the precious treasure of Rune. When used, you can obtain a Talisman with a certain rate of chance.",
+    "kind": {
+      "Package": []
+    },
+    "material": "Cotton",
+    "icon": "icon.etc_treasure_box_i06",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "21753": {
+    "name": "Pablo's Box",
+    "description": "Box containing the precious treasure of Elmore's renowned scholar Pablo. When used, you can obtain a hat with a certain rate of chance.",
+    "kind": {
+      "Package": []
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_treasure_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21754": {
+    "name": "Server Ziggi's Magic Pencil",
+    "description": "Magic pencil with a sharp tip. Item that can be used only on the server Ziggi. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 1,
+        "soulshots": 2,
+        "spiritshots": 2
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 100,
+    "icon": "BranchSys2.icon.g_pencil_of_servermaster",
+    "tradable": false,
+    "dropable": false
+  },
+  "21755": {
+    "name": "Manor Scholar's Hat",
+    "description": "Scholar's hat showing knowledge. A gold tassle is attached. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.g_graduation_cap_gold",
+    "tradable": false,
+    "dropable": false
+  },
+  "21756": {
+    "name": "Rank 1 Scholar's Hat",
+    "description": "Scholar's hat showing knowledge. A silver tassle is attached. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.g_graduation_cap_white",
+    "tradable": false,
+    "dropable": false
+  },
+  "21757": {
+    "name": "Rank 2 Scholar's Hat",
+    "description": "Scholar's hat showing knowledge. A red tassle is attached. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.g_graduation_cap_red",
+    "tradable": false,
+    "dropable": false
+  },
+  "21758": {
+    "name": "Rank 3 Scholar's Hat",
+    "description": "Scholar's hat showing knowledge. A blue tassle is attached. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.g_graduation_cap_blue",
+    "tradable": false,
+    "dropable": false
+  },
+  "21759": {
+    "name": "Illumination - Red",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_red",
+    "stackable": true
+  },
+  "21760": {
+    "name": "Illumination - Pink",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_pink",
+    "stackable": true
+  },
+  "21761": {
+    "name": "Illumination - Rose Pink",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_rosepink",
+    "stackable": true
+  },
+  "21762": {
+    "name": "Illumination - Orange",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_orange",
+    "stackable": true
+  },
+  "21763": {
+    "name": "Illumination - Mint Green",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_mintgreen",
+    "stackable": true
+  },
+  "21764": {
+    "name": "Illumination - Green",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_green",
+    "stackable": true
+  },
+  "21765": {
+    "name": "Illumination - Sky Blue",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_skyblue",
+    "stackable": true
+  },
+  "21766": {
+    "name": "Illumination - Blue",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_blue",
+    "stackable": true
+  },
+  "21767": {
+    "name": "Illumination - Purple",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_purple",
+    "stackable": true
+  },
+  "21768": {
+    "name": "Illumination - White",
+    "description": "Brightly burning illumination.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 2,
+    "icon": "BranchSys2.icon.g_illumination_white",
+    "stackable": true
+  },
+  "21769": {
+    "name": "Unrefined Ore",
+    "description": "Ore before refining. Absolutely necessary for the craftsman to make a jewel. It should still fetch a certain price at the shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_stone_piece_i00",
+    "stackable": true
+  },
+  "21770": {
+    "name": "Unrefined Jewel",
+    "description": "Jewel before refining. Absolutely necessary for the craftsman to make a jewel. It should still fetch a certain price at the shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_vacualite_noglow_blue_i00",
+    "stackable": true
+  },
+  "21771": {
+    "name": "Jewel of Dusk",
+    "description": "Jewel carged with ancient skills. It shines brightly. It should still fetch a certain price at the shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "BranchSys2.icon.g_twilight_gem",
+    "stackable": true
+  },
+  "21772": {
+    "name": "Jewel of Dawn",
+    "description": "The jewel of dawn that was created by the craftsman using ancient skills. It shines brightly. It should still fetch a considerable price at the shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "BranchSys2.icon.g_dawn_gem",
+    "stackable": true
+  },
+  "21773": {
+    "name": "Jewel of Splendor",
+    "description": "The jewel of dawn that was created by the craftsman using ancient skills. It shines brightly. It should still fetch a considerable price at the shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "BranchSys2.icon.g_brilliance_gem",
+    "stackable": true
+  },
+  "21774": {
+    "name": "Giant's Jewel",
+    "description": "The giant's jewel that was created by the craftsman using ancient skills. It shines brightly. It should still fetch a considerable price at the shop.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Crystal",
+    "icon": "BranchSys2.icon.g_giant_gem",
+    "stackable": true
+  },
+  "21775": {
+    "name": "Imperial Crusader Breastplate of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 205
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 7620,
+    "icon": "icon.armor_t88_u_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21776": {
+    "name": "Imperial Crusader Gaiters of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 128
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 3260,
+    "icon": "icon.armor_t88_l_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21777": {
+    "name": "Imperial Crusader Gauntlet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "weight": 540,
+    "icon": "icon.armor_t88_g_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21778": {
+    "name": "Imperial Crusader Boots of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.armor_t88_b_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21779": {
+    "name": "Imperial Crusader Helmet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "weight": 550,
+    "icon": "icon.armor_helmet_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21780": {
+    "name": "Imperial Crusader Shield of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 290
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1170,
+    "icon": "icon.shield_imperial_crusader_shield_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21781": {
+    "name": "Imperial Crusader of Fortune Set Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire an Imperial Crusader of Fortune armor set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_equip_item_box_i02",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21782": {
+    "name": "Draconic Leather Armor of Fortune - 90-day limited period",
+    "description": "One-piece Body Armor. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 249
+      }
+    },
+    "weight": 4950,
+    "icon": "icon.armor_t89_ul_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21783": {
+    "name": "Draconic Leather Gloves of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "weight": 540,
+    "icon": "icon.armor_t89_g_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21784": {
+    "name": "Draconic Leather Boots of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.armor_t89_b_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21785": {
+    "name": "Draconic Leather Helmet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "weight": 550,
+    "icon": "icon.armor_leather_helmet_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21786": {
+    "name": "Draconic Leather of Fortune Set Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire a Draconic Leather of Fortune Armor Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_equip_item_box_i02",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21787": {
+    "name": "Major Arcana Robe of Fortune - 90-day limited period",
+    "description": "One-piece Body Armor. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "S",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 166
+      },
+      "MaxMp": {
+        "add": 866
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2300,
+    "icon": "icon.armor_t90_ul_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21788": {
+    "name": "Major Arcana Gloves of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "weight": 540,
+    "icon": "icon.armor_t90_g_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21789": {
+    "name": "Major Arcana Boots of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 55
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.armor_t90_b_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21790": {
+    "name": "Major Arcana Circlet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 83
+      }
+    },
+    "weight": 550,
+    "icon": "icon.armor_circlet_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21791": {
+    "name": "Arcana Sickle of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PDef": {
+        "add": 13
+      }
+    },
+    "weight": 940,
+    "icon": "icon.arcana_sigil_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21792": {
+    "name": "Major Arcana Robe of Fortune Set Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire an Arcana Robe of Fortune Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_equip_item_box_i02",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21793": {
+    "name": "Dynasty Breastplate of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 226
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 7570,
+    "icon": "icon.armor_t91_u_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21794": {
+    "name": "Dynasty Gaiters of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 141
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 3210,
+    "icon": "icon.armor_t91_l_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21795": {
+    "name": "Dynasty Gauntlet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "weight": 520,
+    "icon": "icon.armor_t91_g_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21796": {
+    "name": "Dynasty Boots of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "weight": 1090,
+    "icon": "icon.armor_t91_b_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21797": {
+    "name": "Dynasty Helmet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 92
+      }
+    },
+    "weight": 530,
+    "icon": "icon.armor_helmet_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21798": {
+    "name": "Dynasty Shield of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 321
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1150,
+    "icon": "icon.shield_dynasty_shield_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21799": {
+    "name": "Dynasty Breastplate of Fortune Set Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire a Dynasty Breastplate Armor of Fortune Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_equip_item_box_i02",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  }
+}

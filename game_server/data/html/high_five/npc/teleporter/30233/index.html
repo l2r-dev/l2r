@@ -1,0 +1,7 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+
+{% block body %}
+I heard that there are many monsters wandering around the hunter's village. For those travelers who are tired and short of time, using the door of space and time that we gatekeepers open can be one of the best options<br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=True, fantasy_isle=True) }}
+{% endblock body %}

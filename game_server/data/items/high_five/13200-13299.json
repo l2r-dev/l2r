@@ -1,0 +1,2824 @@
+{
+  "13200": {
+    "name": "Player Commendation - Bellion Cestus - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Bellion Cestus Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Additional Atk. Spd. increases by 9% when HP is below 60%. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1390,
+    "icon": "icon.weapon_bellion_cestus_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3034,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13201": {
+    "name": "Player Commendation - Bow of Peril - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Hazard Bow Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Additionally, Re-use Delay decreases by about 13%. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 4,
+        "reuse_delay": 1310
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 400
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1700,
+    "icon": "icon.weapon_hazard_bow_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13202": {
+    "name": "Player Commendation - Samurai*Samurai - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Samurai*Samurai Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Upon enchanted over 4, the function to increase attack speed by 4% is given. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 14
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2080,
+    "icon": "icon.weapon_dual_sword_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13203": {
+    "name": "Player Commendation - Guardian's Sword - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Guardian's Sword Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Max HP increases by 25% additionally. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1930,
+    "icon": "icon.weapon_guardians_sword_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13204": {
+    "name": "Player Commendation - Wizard's Tear - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Wizard's Tear Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Casting Spd. increases by15% additionally. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_tears_of_wizard_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13205": {
+    "name": "Player Commendation - Kaim Vanul's Bones - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Kaim Vanul's Bones Available to enchant by the enchanted scroll of PC Cafe exclusive weapons (Additional Max MP increases by 30%.) Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_bone_of_kaim_vanul_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13206": {
+    "name": "Player Commendation - Star Buster - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Star Buster Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Additionally, attack speed increases by about 6% Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1930,
+    "icon": "icon.weapon_star_buster_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13207": {
+    "name": "Player Commendation - Colichemarde - Player Commendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Colichemarde. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Critical by 64. When enchanted to 4 or more, during a critical attack, party members including yourself will receive at a fixed rate increased attack power, magic power, and healing capacity, as well as decreased MP consumption per skill. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_colichemarde_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13208": {
+    "name": "Player Commendation - Dismantler - Player Commendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Dismantler. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also absorbs some of the inflicted damage during a critical attack as HP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 210
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1930,
+    "icon": "icon.weapon_dismantler_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13209": {
+    "name": "Player Commendation - Hell Hound - Player Commendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Hell Hound. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also decreases MP consumption during skill use by about 12%. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Cheap Shot",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1700,
+    "icon": "icon.weapon_hell_hound_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13210": {
+    "name": "Player Commendation - Sirra's Blade - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Sirra's Blade Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Max HP by 25% additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_sirr_blade_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13211": {
+    "name": "Player Commendation - Sword of Ipos - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Sword of Ipos Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 61 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_sword_of_ipos_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13212": {
+    "name": "Player Commendation - Barakiel's Axe - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Barakiel's Axe Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 61 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1550,
+    "icon": "icon.weapon_barakiel_axe_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13213": {
+    "name": "Player Commendation - Behemoth Tuning Fork - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Behemoth Tuning Fork Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 61 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1890,
+    "icon": "icon.weapon_tuning_fork_of_behemoth_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13214": {
+    "name": "Player Commendation - Naga Storm - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Naga Storm Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 67 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 930,
+    "icon": "icon.weapon_naga_storm_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3051,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13215": {
+    "name": "Player Commendation - Tiphon's Spear - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Tiphon's Spear Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Additional attack angle widens, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 180
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_tiphon_spear_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13216": {
+    "name": "Player Commendation - Shyeed's Bow - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Shyeed's Bow Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Critical by 61 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 570
+      },
+      "MAtk": {
+        "set": 133
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_shyid_bow_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13217": {
+    "name": "Player Commendation - Sobekk's Hurricane - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a Sobekk's Hurricane Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Additional Atk. Spd. increases by about 6%, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1330,
+    "icon": "icon.weapon_sobekk_hurricane_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13218": {
+    "name": "Player Commendation - Themis' Tongue - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Themis' Tongue Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Max MP by 30% additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 820,
+    "icon": "icon.weapon_tongue_of_themis_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13219": {
+    "name": "Player Commendation - Cabrio's Hand - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Cabrio's Hand Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Max MP by 60% additionally, decreases Max HP by 40% and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Conversion",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 202
+      },
+      "MAtk": {
+        "set": 161
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1510,
+    "icon": "icon.weapon_hand_of_cabrio_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3048,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13220": {
+    "name": "Player Commendation - Daimon Crystal - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Daimon Crystal Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Increases Casting Spd. by 61 additionally, and increases damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 177
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 880,
+    "icon": "icon.weapon_crystal_of_deamon_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13221": {
+    "name": "Player Commendation - Tallum Blade*Damascus - Player Commendation Weapon",
+    "description": "PC Cafe exclusive item with a power of Tallum Blade*Damascus Available to enchant by the enchanted scroll of PC Cafe exclusive weapons Upon enchanted over 4, the function to increase Atk. Spd. by 8% is given, and the damage on PvP increases. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 17
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1890,
+    "icon": "icon.weapon_dual_sword_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13222": {
+    "name": "Player Commendation - Éclair Bijou - Player Commendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of an Éclair Bijou. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Atk. Spd. by about 6% and damage inflicted during PvP. When enchanted to 4 or more, during a critical attack, party members including yourself will receive at a fixed rate increased attack power, magic power, and healing capacity, as well as decreased MP consumption per skill. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13223": {
+    "name": "Player Commendation - Durendal - Player Commendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Durendal. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Critical by 61 and damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13224": {
+    "name": "Player Commendation - Screaming Vengeance - Player Commendation Weapon",
+    "description": "Kamael exclusive weapon. PC Cafe exclusive item containing the power of a Screaming Vengeance. Can be enchanted by using the PC Cafe Exclusive Weapon Enhance Scroll. Also increases Critical by 61 and damage inflicted during PvP. Cannot be exchanged, dropped, or crystallized. Cannot be granted additional functions. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i00",
+    "enchantable": true,
+    "mana": 180,
+    "time": 21600,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13225": {
+    "name": "Kamaloka (Hall of the Abyss) 15-Sheet Box",
+    "description": "Dimensional item box. A wrapped box containing 15 Sheets of Extra Entrance Passes to Kamaloka (Hall of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13010,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13226": {
+    "name": "Near Kamaloka 15-Sheet Box",
+    "description": "Dimensional item box. A wrapped box containing 15 Sheets of Extra Entrance Passes to Near Kamaloka. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13011,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13227": {
+    "name": "Kamaloka (Labyrinth of the Abyss) 15-Sheet Box",
+    "description": "Dimensional item box. A wrapped box containing 15 Sheets of Extra Entrance Passes to Kamaloka (Labyrinth of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13012,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13228": {
+    "name": "Kamaloka (Hall of the Abyss) 15-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 15 Sheets of Extra Entrance Passes to Kamaloka (Hall of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13010,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13229": {
+    "name": "Near Kamaloka 15-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 15 Sheets of Extra Entrance Passes to Near Kamaloka. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13011,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13230": {
+    "name": "Kamaloka (Labyrinth of the Abyss) 15-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 15 Sheets of Extra Entrance Passes to Kamaloka (Labyrinth of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13012,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13231": {
+    "name": "Kamaloka (Hall of the Abyss) 5-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 5 Sheets of Extra Entrance Passes to Kamaloka (Hall of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13010,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13232": {
+    "name": "Near Kamaloka 5-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 5 Sheets of Extra Entrance Passes to Near Kamaloka. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13011,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13233": {
+    "name": "Kamaloka (Labyrinth of the Abyss) 5-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 5 Sheets of Extra Entrance Passes to Kamaloka (Labyrinth of the Abyss). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13012,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13234": {
+    "name": "Varka Karm (used by Varka Silenos)",
+    "description": "Karm that represents the Varka race. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessory_barka_karm_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13235": {
+    "name": "Ketra Karm (used by Ketra Orcs)",
+    "description": "Karm that represents the Ketra race. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessory_ketra_karm_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13236": {
+    "name": "Bronze Kamaloka Circlet",
+    "description": "This brass-hued luxury hair accessory requires 2 hair accessory slots. May not be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessory_au_karm_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13237": {
+    "name": "Silver Kamaloka Circlet",
+    "description": "This silver-hued luxury hair accessory requires 2 hair accessory slots. May not be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessory_ar_karm_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13238": {
+    "name": "Gold Kamaloka Circlet",
+    "description": "This gold-hued luxury hair accessory requires 2 hair accessory slots. May not be exchanged or dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessory_ae_karm_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13239": {
+    "name": "Kat the Cat Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Kat the Cat. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_cat_the_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13240": {
+    "name": "Feline Queen Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Feline Queen. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_queen_of_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13241": {
+    "name": "Monster Eye Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like a Monster Eye. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_monstereye_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13242": {
+    "name": "Brown Bear Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Brown Bear. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_brown_bear_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13243": {
+    "name": "Fungus Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Fungus. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_fungus_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13244": {
+    "name": "Skull Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like a Skull. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_skeleton_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13245": {
+    "name": "Ornithomimus Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like a Ornithomimus. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_ornithomimus_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13246": {
+    "name": "Feline King Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Feline King. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_king_of_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13247": {
+    "name": "Kai the Cat Hat - 7-day limited period",
+    "description": "Dimensional item. Hat that looks like Kai the Cat. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_chi_the_cat_cap_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13248": {
+    "name": "O Stick - 7-day limited period",
+    "description": "Dimensional item. O-type stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_o_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13249": {
+    "name": "X Stick - 7-day limited period",
+    "description": "Dimensional item. X Stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_x_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13250": {
+    "name": "Scissors Stick - 7-day limited period",
+    "description": "Dimensional item. Scissor stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_scissors_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13251": {
+    "name": "Rock-type Stick - 7-day limited period",
+    "description": "Dimensional item. Rock stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_rock_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13252": {
+    "name": "Paper-type Stick - 7-day limited period",
+    "description": "Dimensional item. Paper stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_diver_stick_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13253": {
+    "name": "Pumpkin Transformation Stick - 7-day limited period",
+    "description": "Dimensional item. Pumpkin transformation stick. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Transform Pumpkin Ghost",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 1
+      },
+      "MAtk": {
+        "set": 1
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "icon": "icon.weapon_pumpkin_stick_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8246,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13254": {
+    "name": "Agathion of Love - 7-day limited period",
+    "description": "Dimensional item. Seal bracelet that can summon an Agathion of Love. Can be used for 7 days. Cannot be exchanged or dropped. Can be stored in a private warehouse. Wink",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 5763,
+        "level": 1
+      },
+      {
+        "id": 8245,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13255": {
+    "name": "Gran Kain's Gift Box - 7 Day",
+    "description": "Gift Box that gives you an item once a day. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant.",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 10,
+    "icon": "icon.special_cube_i00",
+    "time": 10080,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "premium": true
+  },
+  "13256": {
+    "name": "Gran Kain's Gift Box Pack",
+    "description": "Dimensional item pack. A wrapped pack containing Gran Kain's Gift Box (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13027,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 10,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13257": {
+    "name": "Gran Kain's Gift Box Pack (Event)",
+    "description": "A wrapped pack containing Gran Kain's Gift Box (30 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13382,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 10,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13258": {
+    "name": "Gran Kain's Blessed Scroll of Escape",
+    "description": "Teleports you to the nearest village. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Blessed Scroll of Escape",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_return_i01",
+    "item_skills": [
+      {
+        "id": 2595,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13259": {
+    "name": "Gran Kain's Blessed Scroll of Resurrection",
+    "description": "Resurrects a dead person, completely restoring Exp. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Blessed Scroll of Resurrection",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_scroll_of_resurrection_i01",
+    "item_skills": [
+      {
+        "id": 2596,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13260": {
+    "name": "Gran Kain's Squeaking Shoes - 10-hour limited period",
+    "description": "A gift from Gran Kain, it emits a unique sound each time a report is called in. May be used for up to 10 hours. Cannot be exchanged or dropped. May be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "material": "Cloth",
+    "weight": 50,
+    "icon": "icon.armor_t02_b_i00",
+    "time": 600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13261": {
+    "name": "Gran Kain's Echo Crystal - Theme of Journey",
+    "description": "Plays the Theme of Journey music. Disappears after being used once. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Echo Crystal - Theme of Journey",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i00",
+    "item_skills": [
+      {
+        "id": 2597,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13262": {
+    "name": "Gran Kain's Echo Crystal - Theme of Battle",
+    "description": "Plays the Theme of Battle music. Disappears after being used once. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Echo Crystal - Theme of Battle",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i01",
+    "item_skills": [
+      {
+        "id": 2598,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13263": {
+    "name": "Gran Kain's Echo Crystal - Theme of Love",
+    "description": "Plays the Theme of Love music. Disappears after being used once. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Echo Crystal - Theme of Love",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i02",
+    "item_skills": [
+      {
+        "id": 2599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13264": {
+    "name": "Gran Kain's Echo Crystal - Theme of Solitude",
+    "description": "Plays the Theme of Solitude music. Disappears after being used once. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Echo Crystal - Theme of Solitude",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i03",
+    "item_skills": [
+      {
+        "id": 2600,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13265": {
+    "name": "Gran Kain's Echo Crystal - Theme of the Feast",
+    "description": "Plays the Theme of the Feast music. Disappears after being used once. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Echo Crystal - Theme of the Feast",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i04",
+    "item_skills": [
+      {
+        "id": 2601,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13266": {
+    "name": "Gran Kain's Echo Crystal - Theme of Celebration",
+    "description": "Plays the Theme of Celebration music. Disappears after being used once. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Echo Crystal - Theme of Celebration",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i00",
+    "item_skills": [
+      {
+        "id": 2602,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13267": {
+    "name": "Gran Kain's Echo Crystal - Theme of Comedy",
+    "description": "Plays the Theme of Comedy music. Disappears after being used once. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Echo Crystal - Theme of Comedy",
+    "kind": {
+      "Etc": "Usable"
+    },
+    "material": "Crystal",
+    "weight": 10,
+    "icon": "icon.etc_echo_crystal_i01",
+    "item_skills": [
+      {
+        "id": 2603,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13268": {
+    "name": "Gran Kain's Firework",
+    "description": "Large firework that fills the sky. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Firework",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_small_ultra_bomb_i00",
+    "item_skills": [
+      {
+        "id": 2604,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13269": {
+    "name": "Gran Kain's Large Firework",
+    "description": "Large firework that explodes in colorful light and fills the sky. Cannot be exchanged or dropped. Can be stored in a private warehouse. Gran Kain's Large Firework",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_ultra_bomb_i00",
+    "item_skills": [
+      {
+        "id": 2605,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13270": {
+    "name": "Pathfinder's Reward - Bronze Kamaloka Circlet",
+    "description": "A gift for adventurers with an especially high contribution level. Has a chance to create a AU Karm.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13236,
+          "min": 1,
+          "max": 1,
+          "chance": 30.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_bead_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13271": {
+    "name": "Pathfinder's Reward - Silver Kamaloka Circlet",
+    "description": "A gift for adventurers with an especially high contribution level. Has a chance to create a AU Karm.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13237,
+          "min": 1,
+          "max": 1,
+          "chance": 30.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_bead_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13272": {
+    "name": "Pathfinder's Reward - Gold Kamaloka Circlet",
+    "description": "A gift for adventurers with an especially high contribution level. Has a chance to create a AE Karm.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13238,
+          "min": 1,
+          "max": 1,
+          "chance": 30.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_bead_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13273": {
+    "name": "Hunting Helper Exchange Coupon - 5 hours",
+    "description": "Dimensional item. An exchange coupon that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Can be exchanged through the Dimensional Merchant. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13274": {
+    "name": "Hunting Helper Exchange Coupon - 7 days",
+    "description": "Dimensional item box. A wrapped box containing 1 ticket sheet that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_ticket_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13275": {
+    "name": "Hunting Helper Exchange Coupon 3-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a ticket that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13273,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13276": {
+    "name": "Hunting Helper Exchange Coupon 1-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 1 ticket sheet that can be exchanged for a necklace that allows you to summon a Hunting Helper (5 hours). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13273,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13277": {
+    "name": "Energy Star Stone",
+    "description": "When used, fills your airship with a small amount of fuel (EP). Energy Star Stone",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "weight": 100,
+    "icon": "icon.etc_int_symbol_i00",
+    "item_skills": [
+      {
+        "id": 2647,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "13278": {
+    "name": "Greater Quality Energy Star Stone",
+    "description": "When used, fills the airship with a large amount of fuel. High Quality Energy Star Stone",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "weight": 100,
+    "icon": "icon.etc_int_symbol_i01",
+    "item_skills": [
+      {
+        "id": 2648,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "13279": {
+    "name": "Feather of Blessing 1-Sheet Pack",
+    "description": "Dimensional item pack. A wrapped pack containing 1 sheets of the Feather of Blessing. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 10649,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13280": {
+    "name": "Agathion of Love 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing an Agathion of Love Bracelet (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13254,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13281": {
+    "name": "Pumpkin Transformation Stick 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing Pumpkin Transformation Stick (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13253,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13282": {
+    "name": "Kat the Cat Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Kat the Cat Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13239,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13283": {
+    "name": "Feline Queen Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Feline Queen Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13240,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13284": {
+    "name": "Monster Eye Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Monster Eye Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13241,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13285": {
+    "name": "Brown Bear Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Brown Bear Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13242,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13286": {
+    "name": "Fungus Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Fungus Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13243,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13287": {
+    "name": "Skull Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Skull Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13244,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13288": {
+    "name": "Ornithomimus Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Ornithomimus Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13245,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13289": {
+    "name": "Feline King Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Feline King Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13246,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13290": {
+    "name": "Kai the Cat Hat 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Kai the Cat Hat (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13247,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13291": {
+    "name": "OX Stick 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing an OX Stick (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13248,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13249,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13292": {
+    "name": "Rock-Paper-Scissors Stick 7-Day Pack",
+    "description": "Dimensional item pack. A wrapped pack containing a Rock-Paper-Scissors Stick (7 days). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13250,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13251,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13252,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "13293": {
+    "name": "Pailaka Earring",
+    "description": "Pailaka Forgotten Temple reward item. Earring with prominent M. Def. MP +20 effect. Cannot be exchanged, dropped, or enchanted.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "D",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 43
+      },
+      "MaxMp": {
+        "add": 20
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_onyxbeastseye_earing_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13294": {
+    "name": "Pailaka Ring",
+    "description": "Pailaka Forgotten Temple reward item. Ring with prominent M. Def. MP 15 effect. Cannot be exchanged, dropped, or enchanted.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "D",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 29
+      },
+      "MaxMp": {
+        "add": 15
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_mithril_ring_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13295": {
+    "name": "Pailaka Bracelet",
+    "description": "Pailaka Devil's Isle reward item. MP +20. Activates 2 talisman slots when equipped. Cannot be exchanged, dropped, or enchanted. Bronze Bracelet",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Right"
+      }
+    },
+    "grade": "B",
+    "material": "Silver",
+    "stats": {
+      "MaxMp": {
+        "add": 20
+      }
+    },
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_c_i00",
+    "item_skills": [
+      {
+        "id": 3323,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13296": {
+    "name": "Pailaka Shirt",
+    "description": "Pailaka Varka Silenos reward item. Shirt with prominent P. Def. MP 40 effect. Cannot be exchanged, dropped, or enchanted.",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 28
+      },
+      "MaxMp": {
+        "add": 40
+      }
+    },
+    "weight": 130,
+    "icon": "icon.etc_shirts_a_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13297": {
+    "name": "Extra Entrance Pass - Kamaloka (Hall of the Abyss) (Event)",
+    "description": "Dimensional item. Extra entrance pass that lets you enter Kamaloka (Hall of the Abyss). Can cancel the limit on entrance if used while a limit on entrance to the Hall of the Abyss exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant. Extra Entrance Pass - Kamaloka (Hall of the Abyss) (Event)",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.ticket_i00",
+    "item_skills": [
+      {
+        "id": 2619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13298": {
+    "name": "Extra Entrance Pass - Near Kamaloka (Event)",
+    "description": "Dimensional item. Extra entrance pass that lets you enter Near Kamaloka. Can cancel the limit on entrance if used while a limit on entrance to Near Kamaloka exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant. Extra Entrance Pass - Near Kamaloka (Event)",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.ticket_i00",
+    "item_skills": [
+      {
+        "id": 2620,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13299": {
+    "name": "Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) (Event)",
+    "description": "Dimensional item. Extra entrance pass that lets you enter Kamaloka (Labyrinth of the Abyss). Can cancel the limit on entrance if used while a limit on entrance to the Labyrinth of the Abyss exists. Can only be used once a day outside the instant zone. After use, the effect disappears at the corresponding instant dungeon's reset time. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Can be shared between characters within the account through Dimensional Merchant. Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) (Event)",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "weight": 5,
+    "icon": "icon.ticket_i00",
+    "item_skills": [
+      {
+        "id": 2621,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  }
+}

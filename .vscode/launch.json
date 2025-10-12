@@ -1,0 +1,63 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "cppvsdbg",
+        "request": "launch",
+        "name": "LoginServer",
+        "preLaunchTask": "cargo-build-loginserver",
+        "program": "${workspaceFolder}/target/debug/l2r_loginserver",
+        "environment": [
+          {
+            "name": "RUST_BACKTRACE",
+            "value": "1"
+          },
+          {
+            "name": "RUST_LOG",
+            "value": "l2r_loginserver=debug,l2r_core=debug,sqlx=off"
+          },
+          {
+            "name": "BEVY_ASSET_ROOT",
+            "value": "${workspaceFolder}/login_server"
+          }
+        ],
+        "args": [],
+        "cwd": "${workspaceFolder}",
+      },
+      {
+        "type": "cppvsdbg",
+        "request": "launch",
+        "name": "GameServer",
+        "preLaunchTask": "cargo-build-gameserver",
+        "program": "${workspaceFolder}/target/debug/l2r_gameserver",
+        "environment": [
+          {
+            "name": "RUST_BACKTRACE",
+            "value": "1"
+          },
+          {
+            "name": "RUST_LOG",
+            "value": "l2r_gameserver=debug,game_core=debug,l2r_core=debug,bevy_asset=debug,wgpu_core=off,sqlx=off,bevy_mod_scripting=debug"
+          },
+          {
+            "name": "BEVY_ASSET_ROOT",
+            "value": "${workspaceFolder}/game_server"
+          },
+          {
+            "name": "LUA_PATH",
+            "value": "${workspaceFolder}/game_server/?.lua;"
+          }
+        ],
+        "args": [],
+        "cwd": "${workspaceFolder}/game_server",
+      }
+    ],
+    "compounds": [
+      {
+        "name": "Run Both Servers",
+        "configurations": ["LoginServer", "GameServer"],
+        "preLaunchTask": "cargo-build-all",
+        "stopAll": true
+      }
+    ]
+  }

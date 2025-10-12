@@ -1,0 +1,2629 @@
+{
+  "12100": {
+    "name": "Common Item - Karmian Stockings",
+    "description": "Karmian Stockings with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 37
+      },
+      "MaxMp": {
+        "add": 141
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 8430,
+    "weight": 323,
+    "icon": "icon.armor_t53_l_i00",
+    "crystal_count": 3
+  },
+  "12101": {
+    "name": "Common Item - Plate Leather Boots",
+    "description": "Plate Leather Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "price": 4500,
+    "weight": 407,
+    "icon": "icon.armor_t47_b_i00",
+    "crystal_count": 2
+  },
+  "12102": {
+    "name": "Common Item - Dwarven Chain Shield",
+    "description": "Dwarven Chain Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 174
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 5480,
+    "weight": 427,
+    "icon": "icon.shield_dwarven_chain_shield_i00",
+    "crystal_count": 2
+  },
+  "12103": {
+    "name": "Common Item - Plate Leather Gaiters",
+    "description": "Plate Leather Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 59
+      }
+    },
+    "price": 9780,
+    "weight": 520,
+    "icon": "icon.armor_t47_l_i00",
+    "crystal_count": 4
+  },
+  "12104": {
+    "name": "Common Item - Plate Leather Gloves",
+    "description": "Plate Leather Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 33
+      }
+    },
+    "price": 5220,
+    "weight": 203,
+    "icon": "icon.armor_t47_g_i00",
+    "crystal_count": 2
+  },
+  "12105": {
+    "name": "Common Item - Plate Leather Armor",
+    "description": "Plate Leather Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 94
+      }
+    },
+    "price": 15700,
+    "weight": 1483,
+    "icon": "icon.armor_t47_u_i00",
+    "crystal_count": 6
+  },
+  "12106": {
+    "name": "Common Item - Great Helmet",
+    "description": "Great Helmet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 51
+      }
+    },
+    "price": 8420,
+    "weight": 203,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 3
+  },
+  "12107": {
+    "name": "Common Item - Knight's Shield",
+    "description": "Knight's Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 178
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 5900,
+    "weight": 420,
+    "icon": "icon.shield_knight_shield_i00",
+    "crystal_count": 2
+  },
+  "12108": {
+    "name": "Common Item - Dwarven Chain Gloves",
+    "description": "Dwarven Chain Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 34
+      }
+    },
+    "price": 5620,
+    "weight": 200,
+    "icon": "icon.armor_t60_g_i00",
+    "crystal_count": 2
+  },
+  "12109": {
+    "name": "Common Item - Dwarven Chain Gaiters",
+    "description": "Dwarven Chain Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 80
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 14000,
+    "weight": 1207,
+    "icon": "icon.armor_t60_l_i00",
+    "crystal_count": 6
+  },
+  "12110": {
+    "name": "Common Item - Dwarven Chain Mail Shirt",
+    "description": "Dwarven Chain Mail Shirt with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 129
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 22500,
+    "weight": 2690,
+    "icon": "icon.armor_t60_u_i00",
+    "crystal_count": 9
+  },
+  "12111": {
+    "name": "Common Item - Rind Leather Gaiters",
+    "description": "Rind Leather Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 60
+      }
+    },
+    "price": 10500,
+    "weight": 517,
+    "icon": "icon.armor_t49_l_i00",
+    "crystal_count": 4
+  },
+  "12112": {
+    "name": "Common Item - Rind Leather Gloves",
+    "description": "Rind Leather Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 34
+      }
+    },
+    "price": 5620,
+    "weight": 200,
+    "icon": "icon.armor_t49_g_i00",
+    "crystal_count": 2
+  },
+  "12113": {
+    "name": "Common Item - Rind Leather Armor",
+    "description": "Rind Leather Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 97
+      }
+    },
+    "price": 16800,
+    "weight": 1473,
+    "icon": "icon.armor_t49_u_i00",
+    "crystal_count": 7
+  },
+  "12114": {
+    "name": "Common Item - Rind Leather Boots",
+    "description": "Rind Leather Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 34
+      }
+    },
+    "price": 5620,
+    "weight": 407,
+    "icon": "icon.armor_t49_b_i00",
+    "crystal_count": 2
+  },
+  "12115": {
+    "name": "Common Item - Robe of Seal",
+    "description": "Robe of Seal with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 105
+      },
+      "MaxMp": {
+        "add": 413
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 27400,
+    "weight": 833,
+    "icon": "icon.armor_t44_ul_i00",
+    "crystal_count": 11
+  },
+  "12116": {
+    "name": "Common Item - Gloves of Seal",
+    "description": "Gloves of Seal with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 34
+      }
+    },
+    "price": 5620,
+    "weight": 207,
+    "icon": "icon.armor_t44_g_i00",
+    "crystal_count": 2
+  },
+  "12117": {
+    "name": "Common Item - Silk Shirt",
+    "description": "Silk Shirt with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 17
+      }
+    },
+    "price": 14000,
+    "weight": 43,
+    "icon": "icon.etc_shirts_c_i02",
+    "crystal_count": 27
+  },
+  "12118": {
+    "name": "Common Item - Crimson Boots",
+    "description": "Crimson Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 34
+      }
+    },
+    "price": 5620,
+    "weight": 403,
+    "icon": "icon.armor_t57_b_i00",
+    "crystal_count": 2
+  },
+  "12119": {
+    "name": "Common Item - Mithril Gauntlet",
+    "description": "Mithril Gauntlet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "price": 10400,
+    "weight": 200,
+    "icon": "icon.armor_t61_g_i00",
+    "crystal_count": 4
+  },
+  "12120": {
+    "name": "Common Item - Shining Circlet",
+    "description": "Shining Circlet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PDef": {
+        "add": 54
+      }
+    },
+    "price": 15600,
+    "weight": 200,
+    "icon": "icon.armor_circlet_i00",
+    "crystal_count": 6
+  },
+  "12121": {
+    "name": "Common Item - Demon's Boots",
+    "description": "Demon's Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "price": 10400,
+    "weight": 407,
+    "icon": "icon.armor_t54_b_i00",
+    "crystal_count": 4
+  },
+  "12122": {
+    "name": "Common Item - Demon's Gloves",
+    "description": "Demon's Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "price": 10400,
+    "weight": 203,
+    "icon": "icon.armor_t54_g_i00",
+    "crystal_count": 4
+  },
+  "12123": {
+    "name": "Common Item - Demon's Tunic",
+    "description": "Demon's Tunic with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 69
+      },
+      "MaxMp": {
+        "add": 284
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 31200,
+    "weight": 663,
+    "icon": "icon.armor_t54_u_i00",
+    "crystal_count": 12
+  },
+  "12124": {
+    "name": "Common Item - Demon's Stockings",
+    "description": "Demon's Stockings with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 43
+      },
+      "MaxMp": {
+        "add": 177
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 19500,
+    "weight": 327,
+    "icon": "icon.armor_t54_l_i00",
+    "crystal_count": 8
+  },
+  "12125": {
+    "name": "Common Item - Composite Boots",
+    "description": "Composite Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 36
+      }
+    },
+    "price": 10400,
+    "weight": 407,
+    "icon": "icon.armor_t61_b_i00",
+    "crystal_count": 4
+  },
+  "12126": {
+    "name": "Common Item - Composite Shield",
+    "description": "Composite Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 190
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 10900,
+    "weight": 410,
+    "icon": "icon.shield_composite_shield_i00",
+    "crystal_count": 4
+  },
+  "12127": {
+    "name": "Common Item - Composite Helmet",
+    "description": "Composite Helmet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 54
+      }
+    },
+    "price": 15600,
+    "weight": 203,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 6
+  },
+  "12128": {
+    "name": "Common Item - Composite Armor",
+    "description": "Composite Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 224
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 67700,
+    "weight": 3660,
+    "icon": "icon.armor_t61_ul_i00",
+    "crystal_count": 27
+  },
+  "12129": {
+    "name": "Common Item - Tower Shield",
+    "description": "Tower Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 190
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 10900,
+    "weight": 413,
+    "icon": "icon.shield_tower_shield_i00",
+    "crystal_count": 4
+  },
+  "12130": {
+    "name": "Common Item - Theca Leather Gaiters",
+    "description": "Theca Leather Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 66
+      }
+    },
+    "price": 21000,
+    "weight": 510,
+    "icon": "icon.armor_t63_l_i00",
+    "crystal_count": 8
+  },
+  "12131": {
+    "name": "Common Item - Theca Leather Gloves",
+    "description": "Theca Leather Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 37
+      }
+    },
+    "price": 11200,
+    "weight": 200,
+    "icon": "icon.armor_t63_g_i00",
+    "crystal_count": 4
+  },
+  "12132": {
+    "name": "Common Item - Theca Leather Boots",
+    "description": "Theca Leather Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 37
+      }
+    },
+    "price": 11200,
+    "weight": 403,
+    "icon": "icon.armor_t63_b_i00",
+    "crystal_count": 4
+  },
+  "12133": {
+    "name": "Common Item - Theca Leather Armor",
+    "description": "Theca Leather Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 106
+      }
+    },
+    "price": 33600,
+    "weight": 1457,
+    "icon": "icon.armor_t63_u_i00",
+    "crystal_count": 13
+  },
+  "12134": {
+    "name": "Common Item - Drake Leather Gloves",
+    "description": "Drake Leather Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 39
+      }
+    },
+    "price": 16300,
+    "weight": 200,
+    "icon": "icon.armor_t21_g_i00",
+    "crystal_count": 7
+  },
+  "12135": {
+    "name": "Common Item - Drake Leather Armor",
+    "description": "Drake Leather Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 179
+      }
+    },
+    "price": 79500,
+    "weight": 1933,
+    "icon": "icon.armor_t21_ul_i00",
+    "crystal_count": 32
+  },
+  "12136": {
+    "name": "Common Item - Drake Leather Boots",
+    "description": "Drake Leather Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 39
+      }
+    },
+    "price": 16300,
+    "weight": 403,
+    "icon": "icon.armor_t21_b_i00",
+    "crystal_count": 7
+  },
+  "12137": {
+    "name": "Common Item - Divine Gloves",
+    "description": "Divine Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 39
+      }
+    },
+    "price": 16300,
+    "weight": 203,
+    "icon": "icon.armor_t57_g_i00",
+    "crystal_count": 7
+  },
+  "12138": {
+    "name": "Common Item - Divine Tunic",
+    "description": "Divine Tunic with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 74
+      },
+      "MaxMp": {
+        "add": 314
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 48900,
+    "weight": 660,
+    "icon": "icon.armor_t57_u_i00",
+    "crystal_count": 20
+  },
+  "12139": {
+    "name": "Common Item - Divine Stockings",
+    "description": "Divine Stockings with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 46
+      },
+      "MaxMp": {
+        "add": 196
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 30600,
+    "weight": 320,
+    "icon": "icon.armor_t57_l_i00",
+    "crystal_count": 12
+  },
+  "12140": {
+    "name": "Common Item - Stripe Silk Shirt",
+    "description": "Stripe Silk Shirt with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 19
+      }
+    },
+    "price": 40800,
+    "weight": 43,
+    "icon": "icon.etc_stripe_shirts_c_i02",
+    "crystal_count": 60
+  },
+  "12141": {
+    "name": "Common Item - Full Plate Gauntlet",
+    "description": "Full Plate Gauntlet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 39
+      }
+    },
+    "price": 16300,
+    "weight": 200,
+    "icon": "icon.armor_t62_g_i00",
+    "crystal_count": 7
+  },
+  "12142": {
+    "name": "Common Item - Full Plate Boots",
+    "description": "Full Plate Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 39
+      }
+    },
+    "price": 16300,
+    "weight": 400,
+    "icon": "icon.armor_t62_b_i00",
+    "crystal_count": 7
+  },
+  "12143": {
+    "name": "Common Item - Full Plate Shield",
+    "description": "Full Plate Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 203
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 17100,
+    "weight": 407,
+    "icon": "icon.shield_full_plate_shield_i00",
+    "crystal_count": 7
+  },
+  "12144": {
+    "name": "Common Item - Full Plate Armor",
+    "description": "Full Plate Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 239
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 106000,
+    "weight": 3493,
+    "icon": "icon.armor_t62_ul_i00",
+    "crystal_count": 42
+  },
+  "12145": {
+    "name": "Common Item - Full Plate Helmet",
+    "description": "Full Plate Helmet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 58
+      }
+    },
+    "price": 24500,
+    "weight": 200,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 10
+  },
+  "12146": {
+    "name": "Common Item - Sealed Zubei's Gauntlet",
+    "description": "Sealed Zubei's Gauntlet with limited power enhancement. Enchantment, storing souls, and smelting are impossible. The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t64_g_i02",
+    "crystal_count": 3
+  },
+  "12147": {
+    "name": "Common Item - Sealed Zubei's Boots",
+    "description": "Sealed Zubei's Boots with limited power enhancement. Enchantment, storing souls, and smelting are impossible. The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 393,
+    "icon": "icon.armor_t64_b_i02",
+    "crystal_count": 3
+  },
+  "12148": {
+    "name": "Common Item - Sealed Avadon Gloves",
+    "description": "Sealed Avadon Gloves with limited power enhancement. Enchantment, storing souls, and augmenting are impossible.The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t66_g_i02",
+    "crystal_count": 3
+  },
+  "12149": {
+    "name": "Common Item - Sealed Avadon Boots",
+    "description": "Sealed Avadon Boots with limited power enhancement. Enchantment, storing souls, and augmenting are impossible.The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 390,
+    "icon": "icon.armor_t66_b_i02",
+    "crystal_count": 3
+  },
+  "12150": {
+    "name": "Common Item - Zubei's Leather Gaiters",
+    "description": "Zubei's Leather Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "price": 39100,
+    "weight": 493,
+    "icon": "icon.armor_t65_l_i00",
+    "crystal_count": 5
+  },
+  "12151": {
+    "name": "Common Item - Zubei's Leather Shirt",
+    "description": "Zubei's Leather Shirt with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 117
+      }
+    },
+    "price": 62600,
+    "weight": 1443,
+    "icon": "icon.armor_t65_u_i00",
+    "crystal_count": 8
+  },
+  "12152": {
+    "name": "Common Item - Zubei's Gaiters",
+    "description": "Zubei's Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 98
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 52200,
+    "weight": 1190,
+    "icon": "icon.armor_t64_l_i00",
+    "crystal_count": 7
+  },
+  "12153": {
+    "name": "Common Item - Zubei's Gauntlet - Heavy Armor",
+    "description": "Zubei's Gauntlet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t64_g_i00",
+    "crystal_count": 3
+  },
+  "12154": {
+    "name": "Common Item - Zubei's Gauntlet - Tans Armor Use",
+    "description": "Zubei's Gauntlet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t65_g_i00",
+    "crystal_count": 3
+  },
+  "12155": {
+    "name": "Common Item - Zubei's Gauntlet - Robe",
+    "description": "Zubei's Gauntlet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t56_g_i00",
+    "crystal_count": 3
+  },
+  "12156": {
+    "name": "Common Item - Zubei's Boots - Heavy Armor",
+    "description": "Zubei's Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 393,
+    "icon": "icon.armor_t64_b_i00",
+    "crystal_count": 3
+  },
+  "12157": {
+    "name": "Common Item - Zubei's Boots - Tans Armor Use",
+    "description": "Zubei's Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 393,
+    "icon": "icon.armor_t65_b_i00",
+    "crystal_count": 3
+  },
+  "12158": {
+    "name": "Common Item - Zubei's Boots - Robe",
+    "description": "Zubei's Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 393,
+    "icon": "icon.armor_t56_b_i00",
+    "crystal_count": 3
+  },
+  "12159": {
+    "name": "Common Item - Zubei's Shield",
+    "description": "Zubei's Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 21900,
+    "weight": 403,
+    "icon": "icon.shield_shrnoens_shield_i00",
+    "crystal_count": 3
+  },
+  "12160": {
+    "name": "Common Item - Zubei's Helmet",
+    "description": "Zubei's Helmet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 62
+      }
+    },
+    "price": 31300,
+    "weight": 197,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 4
+  },
+  "12161": {
+    "name": "Common Item - Zubei's Breastplate",
+    "description": "Zubei's Breastplate with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 157
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 83500,
+    "weight": 2657,
+    "icon": "icon.armor_t64_u_i00",
+    "crystal_count": 11
+  },
+  "12162": {
+    "name": "Common Item - Avadon Gloves - Heavy Armor",
+    "description": "Avadon Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t66_g_i00",
+    "crystal_count": 3
+  },
+  "12163": {
+    "name": "Common Item - Avadon Gloves - Tans Armor Use",
+    "description": "Avadon Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t67_g_i00",
+    "crystal_count": 3
+  },
+  "12164": {
+    "name": "Common Item - Avadon Gloves - Robe",
+    "description": "Avadon Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 197,
+    "icon": "icon.armor_t59_g_i00",
+    "crystal_count": 3
+  },
+  "12165": {
+    "name": "Common Item - Avadon Leather Armor",
+    "description": "Avadon Leather Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 191
+      }
+    },
+    "price": 102000,
+    "weight": 1867,
+    "icon": "icon.armor_t67_ul_i00",
+    "crystal_count": 14
+  },
+  "12166": {
+    "name": "Common Item - Avadon Robe",
+    "description": "Avadon Robe with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 127
+      },
+      "MaxMp": {
+        "add": 561
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 102000,
+    "weight": 847,
+    "icon": "icon.armor_t59_ul_i00",
+    "crystal_count": 14
+  },
+  "12167": {
+    "name": "Common Item - Avadon Boots - Heavy Armor",
+    "description": "Avadon Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 393,
+    "icon": "icon.armor_t66_b_i00",
+    "crystal_count": 3
+  },
+  "12168": {
+    "name": "Common Item - Avadon Boots - Tans Armor Use",
+    "description": "Avadon Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "price": 20900,
+    "weight": 393,
+    "icon": "icon.armor_t67_b_i00",
+    "crystal_count": 3
+  },
+  "12169": {
+    "name": "Common Item - Avadon Boots - Robe",
+    "description": "Avadon Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 20900,
+    "weight": 393,
+    "icon": "icon.armor_t59_b_i00",
+    "crystal_count": 3
+  },
+  "12170": {
+    "name": "Common Item - Avadon Circlet",
+    "description": "Avadon Circlet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 62
+      }
+    },
+    "price": 31300,
+    "weight": 197,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 4
+  },
+  "12171": {
+    "name": "Common Item - Avadon Shield",
+    "description": "Avadon Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 21900,
+    "weight": 403,
+    "icon": "icon.shield_avadon_shield_i00",
+    "crystal_count": 3
+  },
+  "12172": {
+    "name": "Common Item - Avadon Plate Gaiters",
+    "description": "Avadon Plate Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 98
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 52200,
+    "weight": 1173,
+    "icon": "icon.armor_t66_l_i00",
+    "crystal_count": 7
+  },
+  "12173": {
+    "name": "Common Item - Avadon Breastplate",
+    "description": "Avadon Breastplate with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 157
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 83500,
+    "weight": 2640,
+    "icon": "icon.armor_t66_u_i00",
+    "crystal_count": 11
+  },
+  "12174": {
+    "name": "Common Item - Thin Leather Shirt",
+    "description": "Thin Leather Shirt with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 21
+      }
+    },
+    "price": 52200,
+    "weight": 43,
+    "icon": "icon.etc_shirts_b_i03",
+    "crystal_count": 29
+  },
+  "12175": {
+    "name": "Common Item - Tunic of Zubei",
+    "description": "Tunic of Zubei with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 78
+      },
+      "MaxMp": {
+        "add": 345
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 62600,
+    "weight": 653,
+    "icon": "icon.armor_t56_u_i00",
+    "crystal_count": 8
+  },
+  "12176": {
+    "name": "Common Item - Stockings of Zubei",
+    "description": "Stockings of Zubei with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      },
+      "MaxMp": {
+        "add": 216
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 39100,
+    "weight": 313,
+    "icon": "icon.armor_t56_l_i00",
+    "crystal_count": 5
+  },
+  "12177": {
+    "name": "Common Item - Doom Gloves - Heavy Armor",
+    "description": "Doom Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37600,
+    "weight": 193,
+    "icon": "icon.armor_t71_g_i00",
+    "crystal_count": 5
+  },
+  "12178": {
+    "name": "Common Item - Doom Gloves - Tans Armor Use",
+    "description": "Doom Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 193,
+    "icon": "icon.armor_t72_g_i00",
+    "crystal_count": 5
+  },
+  "12179": {
+    "name": "Common Item - Doom Gloves - Robe",
+    "description": "Doom Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37600,
+    "weight": 193,
+    "icon": "icon.armor_t73_g_i00",
+    "crystal_count": 5
+  },
+  "12180": {
+    "name": "Common Item - Doom Boots - Heavy Armor",
+    "description": "Doom Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t71_b_i00",
+    "crystal_count": 5
+  },
+  "12181": {
+    "name": "Common Item - Doom Boots - Tans Armor Use",
+    "description": "Doom Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t72_b_i00",
+    "crystal_count": 5
+  },
+  "12182": {
+    "name": "Common Item - Doom Boots - Robe",
+    "description": "Doom Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t73_b_i00",
+    "crystal_count": 5
+  },
+  "12183": {
+    "name": "Common Item - Doom Shield",
+    "description": "Doom Shield with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 39400,
+    "weight": 400,
+    "icon": "icon.shield_doom_shield_i00",
+    "crystal_count": 5
+  },
+  "12184": {
+    "name": "Common Item - Doom Plate Armor",
+    "description": "Doom Plate Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 270
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 244000,
+    "weight": 3327,
+    "icon": "icon.armor_t71_ul_i00",
+    "crystal_count": 33
+  },
+  "12185": {
+    "name": "Common Item - Doom Helmet",
+    "description": "Doom Helmet with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 66
+      }
+    },
+    "price": 56300,
+    "weight": 193,
+    "icon": "icon.armor_leather_helmet_i00",
+    "crystal_count": 8
+  },
+  "12186": {
+    "name": "Common Item - Leather Armor of Doom",
+    "description": "Leather Armor of Doom with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 202
+      }
+    },
+    "price": 183000,
+    "weight": 1833,
+    "icon": "icon.armor_t72_ul_i00",
+    "crystal_count": 24
+  },
+  "12187": {
+    "name": "Common Item - Sealed Doom Gloves",
+    "description": "Sealed Doom Gloves with limited power enhancement. Enchantment, storing souls, and augmenting are impossible. The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 193,
+    "icon": "icon.armor_t71_g_i02",
+    "crystal_count": 5
+  },
+  "12188": {
+    "name": "Common Item - Sealed Doom Boots",
+    "description": "Sealed Doom Boots with limited power enhancement. Enchantment, storing souls, and augmenting are impossible. The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t71_b_i02",
+    "crystal_count": 5
+  },
+  "12189": {
+    "name": "Common Item - Sealed Blue Wolf Boots",
+    "description": "Sealed Blue Wolf Boots with limited power enhancement. Enchantment, storing souls, and augmenting are impossible. The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t68_b_i02",
+    "crystal_count": 5
+  },
+  "12190": {
+    "name": "Common Item - Sealed Blue Wolf Gloves",
+    "description": "Sealed Blue Wolf Gloves with limited power enhancement. Enchantment, storing souls, and augmenting are impossible. The blacksmith in a village can release the seal on this item.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 197,
+    "icon": "icon.armor_t68_g_i02",
+    "crystal_count": 5
+  },
+  "12191": {
+    "name": "Common Item - Thin Stripe Leather Shirt",
+    "description": "Thin Stripe Leather Shirt with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 22
+      }
+    },
+    "price": 93900,
+    "weight": 43,
+    "icon": "icon.etc_stripe_shirts_b_i03",
+    "crystal_count": 44
+  },
+  "12192": {
+    "name": "Common Item - Tunic of Doom",
+    "description": "Tunic of Doom with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 83
+      },
+      "MaxMp": {
+        "add": 377
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 112700,
+    "weight": 633,
+    "icon": "icon.armor_t73_u_i00",
+    "crystal_count": 15
+  },
+  "12193": {
+    "name": "Common Item - Blue Wolf Gaiters",
+    "description": "Blue Wolf Gaiters with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 104
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 93900,
+    "weight": 1123,
+    "icon": "icon.armor_t68_l_i00",
+    "crystal_count": 13
+  },
+  "12194": {
+    "name": "Common Item - Blue Wolf Leather Armor",
+    "description": "Blue Wolf Leather Armor with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 202
+      }
+    },
+    "price": 183000,
+    "weight": 1833,
+    "icon": "icon.armor_t69_ul_i00",
+    "crystal_count": 24
+  },
+  "12195": {
+    "name": "Common Item - Blue Wolf Boots - Heavy Armor",
+    "description": "Blue Wolf Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t68_b_i00",
+    "crystal_count": 5
+  },
+  "12196": {
+    "name": "Common Item - Blue Wolf Boots - Tans Armor Use",
+    "description": "Blue Wolf Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t69_b_i00",
+    "crystal_count": 5
+  },
+  "12197": {
+    "name": "Common Item - Blue Wolf Boots - Robe",
+    "description": "Blue Wolf Boots with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37600,
+    "weight": 377,
+    "icon": "icon.armor_t70_b_i00",
+    "crystal_count": 5
+  },
+  "12198": {
+    "name": "Common Item - Blue Wolf Gloves - Heavy Armor",
+    "description": "Blue Wolf Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 37600,
+    "weight": 197,
+    "icon": "icon.armor_t68_g_i00",
+    "crystal_count": 5
+  },
+  "12199": {
+    "name": "Common Item - Blue Wolf Gloves - Tans Armor Use",
+    "description": "Blue Wolf Gloves with limited enhancement options. Enchantment, soul storing and augmenting are impossible.",
+    "quality": "Common",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "price": 37600,
+    "weight": 197,
+    "icon": "icon.armor_t69_g_i00",
+    "crystal_count": 5
+  }
+}

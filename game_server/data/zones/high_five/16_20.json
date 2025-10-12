@@ -1,0 +1,383 @@
+[
+  {
+    "name": "Nornil's Garden Warrior's Gate",
+    "kind": "Script",
+    "min_height": -12650,
+    "max_height": -12600,
+    "points": [
+      {
+        "x": -109864,
+        "y": 76184
+      },
+      {
+        "x": -109544,
+        "y": 76392
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "Nornil's Garden Midway Gate",
+    "kind": "Script",
+    "min_height": -12930,
+    "max_height": -12900,
+    "points": [
+      {
+        "x": -107560,
+        "y": 80488
+      },
+      {
+        "x": -107240,
+        "y": 80808
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "Nornil's Garden Gate",
+    "kind": "Script",
+    "min_height": -12990,
+    "max_height": -12960,
+    "points": [
+      {
+        "x": -111016,
+        "y": 83944
+      },
+      {
+        "x": -110696,
+        "y": 84264
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "allow_s_item_detect_hide_door",
+    "kind": "Script",
+    "min_height": -12923,
+    "max_height": -12723,
+    "points": [
+      {
+        "x": -107560,
+        "y": 83571
+      },
+      {
+        "x": -107293,
+        "y": 83571
+      },
+      {
+        "x": -107293,
+        "y": 83823
+      },
+      {
+        "x": -107560,
+        "y": 83823
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_nornildg_nr1",
+    "kind": "Condition",
+    "min_height": -15873,
+    "max_height": -6373,
+    "points": [
+      {
+        "x": -123036,
+        "y": 73533
+      },
+      {
+        "x": -106350,
+        "y": 73532
+      },
+      {
+        "x": -106365,
+        "y": 90290
+      },
+      {
+        "x": -122996,
+        "y": 90292
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_16_20_nornildg_01",
+    "kind": "Condition",
+    "min_height": -13017,
+    "max_height": -12817,
+    "points": [
+      {
+        "x": -110711,
+        "y": 80406
+      },
+      {
+        "x": -110247,
+        "y": 80406
+      },
+      {
+        "x": -110249,
+        "y": 80871
+      },
+      {
+        "x": -110711,
+        "y": 80870
+      }
+    ]
+  },
+  {
+    "name": "no_bookmark_16_20_nornildg_02",
+    "kind": "Condition",
+    "min_height": -13017,
+    "max_height": -12817,
+    "points": [
+      {
+        "x": -110711,
+        "y": 80406
+      },
+      {
+        "x": -110247,
+        "y": 80406
+      },
+      {
+        "x": -110249,
+        "y": 80871
+      },
+      {
+        "x": -110711,
+        "y": 80870
+      }
+    ]
+  },
+  {
+    "name": "nornildg_nr1",
+    "kind": "NoRestart",
+    "min_height": -15873,
+    "max_height": -6373,
+    "points": [
+      {
+        "x": -123036,
+        "y": 73533
+      },
+      {
+        "x": -106350,
+        "y": 73532
+      },
+      {
+        "x": -106365,
+        "y": 90290
+      },
+      {
+        "x": -122996,
+        "y": 90292
+      }
+    ]
+  },
+  {
+    "name": "gludio_1721_001",
+    "min_height": -3808,
+    "max_height": 2192,
+    "points": [
+      {
+        "x": -98388,
+        "y": 98168
+      },
+      {
+        "x": -65688,
+        "y": 98296
+      },
+      {
+        "x": -65600,
+        "y": 131076
+      },
+      {
+        "x": -98300,
+        "y": 131356
+      }
+    ]
+  },
+  {
+    "name": "16_19_water5",
+    "kind": "Water",
+    "min_height": -4779,
+    "max_height": -3779,
+    "points": [
+      {
+        "x": -131072,
+        "y": 32768
+      },
+      {
+        "x": -125120,
+        "y": 65536
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water1",
+    "kind": "Water",
+    "min_height": -4780,
+    "max_height": -3780,
+    "points": [
+      {
+        "x": -131072,
+        "y": 65536
+      },
+      {
+        "x": -98304,
+        "y": 98304
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water2",
+    "kind": "Water",
+    "min_height": -12729,
+    "max_height": -12721,
+    "points": [
+      {
+        "x": -117708,
+        "y": 86820
+      },
+      {
+        "x": -116988,
+        "y": 87540
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water3",
+    "kind": "Water",
+    "min_height": -12822,
+    "max_height": -12814,
+    "points": [
+      {
+        "x": -115811,
+        "y": 86821
+      },
+      {
+        "x": -115091,
+        "y": 87541
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water4",
+    "kind": "Water",
+    "min_height": -12919,
+    "max_height": -12911,
+    "points": [
+      {
+        "x": -113915,
+        "y": 86823
+      },
+      {
+        "x": -113195,
+        "y": 87543
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water5",
+    "kind": "Water",
+    "min_height": -12632,
+    "max_height": -12624,
+    "points": [
+      {
+        "x": -119992,
+        "y": 86728
+      },
+      {
+        "x": -119096,
+        "y": 87624
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water6",
+    "kind": "Water",
+    "min_height": -12632,
+    "max_height": -12624,
+    "points": [
+      {
+        "x": -119096,
+        "y": 86960
+      },
+      {
+        "x": -118880,
+        "y": 87392
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water7",
+    "kind": "Water",
+    "min_height": -12632,
+    "max_height": -12624,
+    "points": [
+      {
+        "x": -120224,
+        "y": 86960
+      },
+      {
+        "x": -119992,
+        "y": 87392
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water8",
+    "kind": "Water",
+    "min_height": -12632,
+    "max_height": -12624,
+    "points": [
+      {
+        "x": -119760,
+        "y": 86520
+      },
+      {
+        "x": -119328,
+        "y": 86728
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_20_water9",
+    "kind": "Water",
+    "min_height": -12632,
+    "max_height": -12624,
+    "points": [
+      {
+        "x": -119760,
+        "y": 87624
+      },
+      {
+        "x": -119328,
+        "y": 87848
+      }
+    ],
+    "shape": "Cuboid"
+  },
+  {
+    "name": "16_21_water1",
+    "kind": "Water",
+    "min_height": -4780,
+    "max_height": -3780,
+    "points": [
+      {
+        "x": -131071,
+        "y": 98303
+      },
+      {
+        "x": -98303,
+        "y": 131071
+      }
+    ],
+    "shape": "Cuboid"
+  }
+]

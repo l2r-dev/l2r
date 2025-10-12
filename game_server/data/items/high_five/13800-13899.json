@@ -1,0 +1,1822 @@
+{
+  "13800": {
+    "name": "Transformation Scroll: Frog",
+    "description": "Frog transformation scroll that was given by Secret Agent Colin. Use the scroll to obtain the bead from the Frog King at Narsell Lake. Scroll of Transformation - Frog",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Fish",
+    "icon": "icon.etc_q_frog_green_i00",
+    "item_skills": [
+      {
+        "id": 2631,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13801": {
+    "name": "Transformation Scroll: Young Child",
+    "description": "Frog transformation scroll that was given by Secret Agent Colin. Use the scroll to obtain candy from Grandma Tess at Narsell Lake. Scroll of Transformation - Young Child",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Fish",
+    "icon": "icon.weapon_apprentices_rod_i00",
+    "item_skills": [
+      {
+        "id": 2632,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13802": {
+    "name": "Native's Hood",
+    "description": "Equip this hood, obtained from Secret Agent Colin, to alter your appearance, speak with Native Kuta at Narsell Lake and obtain the Native's Gloves. Transform Native",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 33
+      }
+    },
+    "weight": 70,
+    "icon": "icon.armor_leather_helmet_i00",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8277,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13803": {
+    "name": "Native's Tunic",
+    "description": "Equip this tunic, obtained from Secret Agent Colin, to alter your appearance, speak with Native Kuta at Narsell Lake and obtain the Native's Gloves. Transform Native",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 53
+      }
+    },
+    "weight": 4720,
+    "icon": "icon.armor_t34_u_i00",
+    "item_skills": [
+      {
+        "id": 8277,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13804": {
+    "name": "Native's Trousers",
+    "description": "Equip these trousers, obtained from Secret Agent Colin, to alter your appearance, speak with Native Kuta at Narsell Lake and obtain the Native's Gloves. Transform Native",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 29
+      }
+    },
+    "weight": 1700,
+    "icon": "icon.armor_t34_l_i00",
+    "item_skills": [
+      {
+        "id": 8277,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13805": {
+    "name": "Guards of the Dawn Helmet",
+    "description": "Obtained from Secret Agent Colin, it allows you use the Guards' Transformation skill when equipped with the Guards of Dawn Tunic and Trousers. Transform Guard of Down",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 33
+      }
+    },
+    "weight": 70,
+    "icon": "icon.armor_leather_helmet_i02",
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 8278,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13806": {
+    "name": "Guards of the Dawn Tunic",
+    "description": "Obtained from Secret Agent Colin, it allows you use the Guards' Transformation skill when equipped with the Guards of Dawn Helmet and Trousers. Transform Guard of Down",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 53
+      }
+    },
+    "weight": 4720,
+    "icon": "icon.armor_t08_u_i00",
+    "item_skills": [
+      {
+        "id": 8278,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13807": {
+    "name": "Guards of the Dawn Trousers",
+    "description": "Obtained from Secret Agent Colin, it allows you use the Guards' Transformation skill when equipped with the Guards of Dawn Tunic and Helmet. Transform Guard of Down",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 29
+      }
+    },
+    "weight": 1700,
+    "icon": "icon.armor_t08_l_i00",
+    "item_skills": [
+      {
+        "id": 8278,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13808": {
+    "name": "Elmoreden Holy Water",
+    "description": "Used by Elmoreden Emperor Shunaiman's guards, it can open the door engulfed in the Flame of Lilim inside the Necropolis. Elmore-Aden's Holy Water",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Fish",
+    "icon": "icon.etc_holy_water_i00",
+    "item_skills": [
+      {
+        "id": 2633,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13809": {
+    "name": "Court Magician's Magic Staff",
+    "description": "This magic staff can open the door to the Disciple's Necropolis using its powerful removal skill. Court Magician's Blessing",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Fish",
+    "icon": "icon.weapon_apprentices_rod_i00",
+    "item_skills": [
+      {
+        "id": 2634,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13810": {
+    "name": "High Priest Orven's Letter",
+    "description": "Letter detailing Gracia's imminent crisis. Deliver it to Commander Keucereus in the Gracia region.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_envelope_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13811": {
+    "name": "Keucereus' Introduction - Seed of Infinity",
+    "description": "Introduction received from Keucereus. If you go northwest from Keucereus Alliance Base, you can reach the Seed of Infinity. Deliver this mark to Officer Tepios there.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13812": {
+    "name": "Keucereus' Introduction - Seed of Destruction",
+    "description": "Introduction received from Keucereus. Deliver it to Sergeant Allenos, located at the Seed of Destruction west of Keucereus Alliance Base.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13813": {
+    "name": "Croop's Introduction",
+    "description": "Introduction received from Croop. Deliver it to Guard Hector at the north entrance to Oren Castle and learn about the whereabouts of Contractor Jacob.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13814": {
+    "name": "Jacob's Necklace",
+    "description": "Necklace discovered at contractor Jacob's body.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.accessary_necklace_of_protection_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13815": {
+    "name": "Croop's Letter Requesting a Memorial Service",
+    "description": "Deliver Croop's letter requesting a memorial service for Contractor Jacob to High Priest Hollint in Einhasad's Temple inside Oren Castle.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13816": {
+    "name": "Deadman's Herb",
+    "description": "Deliver this herb, collected in Enchanted Valley, to Priest Cain near the Town of Oren.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_herb_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13817": {
+    "name": "Priest Cain's Investigation Report",
+    "description": "Deliver Priest Cain's report about the Seven Signs to Sir Gustav Athebaldt in the Town of Oren.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_paper_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13818": {
+    "name": "Athebaldt's Introduction",
+    "description": "Introduction received from Sir Athebaldt. Bring it to Secret Agent Colin in the Southern entrance of the town of Aden.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13819": {
+    "name": "Native's Glove",
+    "description": "A glove received from the Native Kuta. Bring it to the Secret Agent Colin of the town of Aden.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.armor_short_leather_gloves_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13820": {
+    "name": "Frog King's Bead",
+    "description": "Bead obtained from the Frog King. Bring it to the Secret Agent Colin of the town of Aden.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_crystal_ball_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13821": {
+    "name": "Grandma Tess' Candy Pouch",
+    "description": "Candy pouch obtained from Grandma Tess. Bring it to the Secret Agent Colin of the town of Aden.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pouch_brown_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13822": {
+    "name": "Guards of the Dawn Identity Card",
+    "description": "Identity card of the guards of the Dawn that was given by Lady Claudia. The qualification one needs to enter the Dawn Lord's temple.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_royal_membership_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13823": {
+    "name": "Emperor Shunaiman's Contract",
+    "description": "Details a secret contract between Emperor Shunaiman and the Merchant of Mammon regarding the Seven Signs. Deliver it to High Priest Rayment in the Town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_crest_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13824": {
+    "name": "Ancient Seal Stone of Mammon",
+    "description": "This apparently sealed a promise the Merchant of Mammon made to the Elmoreden Emperor Shunaiman. It seems to be hiding a mysterious power.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_water_rune_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13825": {
+    "name": "Grail of Einhasad",
+    "description": "Proof that all Necropolis and Catacombs have been sealed. Deliver it to Emperor Shunaiman (Elmoreden Era).",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_holy_grail_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13826": {
+    "name": "Blood of the Emperor",
+    "description": "A vial of Emperor Shunaiman's blood, which is the key to activate the Necropolis sealing device. Activate the device!",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_lesser_potion_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13827": {
+    "name": "Iason's Introduction",
+    "description": "This allows you meet Franz. Deliver it to High Priest Orven in the Town of Aden.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_letter_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13828": {
+    "name": "Prayer: Emperor's Key",
+    "description": "This prayer has been passed down from one high-ranking Priest of the Dawn to the next, stretching back to the Elmoreden Era.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_spell_books_element_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13829": {
+    "name": "Mysterious Hand-written Text",
+    "description": "This obscure text is hand-written in ancient ciphers.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.weapon_apprentices_spellbook_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13830": {
+    "name": "Tomlan Kamos' Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Rohmer in the Temple of Einhasad in the Town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13831": {
+    "name": "Ol Ariosh's Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Rohmer in the Temple of Einhasad in the Town of Gludio.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13832": {
+    "name": "Crimson Hatu Otis' Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Mirien in the Temple of Einhasad in the Town of Dion.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13833": {
+    "name": "Seer Flouros' Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Mirien in the Temple of Einhasad in the Town of Dion.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13834": {
+    "name": "Blade Otis' Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Minevia in the Temple of Einhasad in the Town of Heine.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13835": {
+    "name": "Weird Bunei's Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Minevia in the Temple of Einhasad in the Town of Heine.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13836": {
+    "name": "Kaim Abigore's Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Rovia in the Temple of Einhasad in the Town of Oren.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13837": {
+    "name": "Knight Montagnar's Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Rovia in the Temple of Einhasad in the Town of Oren.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13838": {
+    "name": "Venomous Storace's Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Atraxia in the Temple of Einhasad in the Town of Schuttgart.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13839": {
+    "name": "Kel Bilette's Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Atraxia in the Temple of Einhasad in the Town of Schuttgart.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13840": {
+    "name": "White Allosce's Cellular Tissue",
+    "description": "Deliver this tissue sample to Magister Kayan in the Temple of Einhasad in the Town of Rune.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_bodypart_liver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13841": {
+    "name": "Dragonkin Charm",
+    "description": "Energy from the Dragonkin that infest the Seed of Destruction. Can be used at Special Product Broker Kirklan.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_feather_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "13842": {
+    "name": "Tiat Two-Handed Weapon",
+    "description": "Tiat's two-handed weapon.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 78
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2180,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true
+  },
+  "13843": {
+    "name": "Draconic Peltast Weapon",
+    "description": "Peltast's weapon.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 300,
+    "icon": "icon.weapon_doomed_dagger_i00",
+    "crystal_count": 743,
+    "enchantable": true,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "13844": {
+    "name": "Star Stone Extraction Scroll",
+    "description": "A supplemental scroll created for adventurers who are inexperienced in collecting Star Stones. Presentation - Collect Items",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.scroll_of_verification_i06",
+    "item_skills": [
+      {
+        "id": 2630,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "pet_useable": true
+  },
+  "13845": {
+    "name": "Attribute Master Yin's Sword",
+    "description": "Weapon provided by Attribute Master Yin for capturing the Reckless Sprites of Water. You can feel the powerful fire energy. The sprite's power contained in this weapon will be useful when capturing the reckless sprite. 10-minute-limited-time Item. Fire power +10. Cannot be exchanged or dropped.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 120
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_long_sword_i00",
+    "mana": 10,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13846": {
+    "name": "Seal of Binding",
+    "description": "Obtained after activating the sealing device, it proves that the sealing device was properly sealed. Deliver it to Emperor Shunaiman.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_royal_seal_of_lord_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13847": {
+    "name": "Piece of Doubt",
+    "description": "This piece of doubt seems to possess a wicked power.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_statue_of_einhasad_bronze_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13848": {
+    "name": "Headless Knight's Armor",
+    "description": "Obtain this ionized set of armor after defeating the Headless Knight who terrorized the natives.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.armor_t62_u_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13849": {
+    "name": "Mandragora Root",
+    "description": "The signature product of the Town of Dion.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_ginseng_red_i00",
+    "dropable": false,
+    "stackable": true
+  },
+  "13850": {
+    "name": "Bloody Axe Black Epaulette",
+    "description": "Epaulette once worn by the Bloody Axe Aide.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_badge_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13851": {
+    "name": "Nebulite Orb",
+    "description": "Nebulite Orb requested by the Ivory Tower.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_crystal_ball_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13852": {
+    "name": "Inspector Medibal's Document",
+    "description": "Contains an account of Inspector Medibal's investigation of the Seed of Destruction. Deliver it to the wounded Guard Ell at Keucereus Alliance Base.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_roll_of_paper_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13853": {
+    "name": "Destroyed Darkness Fragment Powder",
+    "description": "The destroyed darkness fragment powder, which bore out of the lifeforms of evil when they were destroyed. Collect them and take them to War Mage Artius at Keucereus Alliance Base. Destroyed Darkness Fragment Powder",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_powder_black_i00",
+    "item_skills": [
+      {
+        "id": 2615,
+        "level": 1
+      }
+    ],
+    "stackable": true
+  },
+  "13854": {
+    "name": "Destroyed Light Fragment Powder",
+    "description": "Obtained by purging the destroyed Darkness Fragment Powder, deliver it to War Mage Artius.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_powder_white_i00",
+    "stackable": true
+  },
+  "13855": {
+    "name": "Sacred Light Fragment",
+    "description": "Fragment piece that looks like it will break at any moment. A sacred light flows out from it. If you are prepared for it to break, the sacred power of this fragment piece may allow you to inflict damage on Witch Tiat of the Dragon of Darkness. Cannot be exchanged or dropped. Sacred Light Fragment",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_holy_light",
+    "item_skills": [
+      {
+        "id": 2839,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13856": {
+    "name": "Rider's Mark",
+    "description": "Obtained from Vulture Rider's and Elite Rider's. Deliver them to Dwarf Engineer Lekon at Keucereus Alliance Base as proof of your skill in flying.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_evil_necklace_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13857": {
+    "name": "Lekon's Certificate",
+    "description": "Issued by Dwarven Engineer Lekon. This certificate proves you have the ability to fly safely in Gracian airs.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_letter_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "13858": {
+    "name": "Extracted Coarse Red Star Stone",
+    "description": "Coarse, Red Star Stone fragment. Higher quality Red Star Stone fragments can be extracted when you have more practice.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.low_star_stone_piece_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13859": {
+    "name": "Extracted Coarse Blue Star Stone",
+    "description": "Coarse, Blue Star Stone fragment. Higher quality Blue Star Stone fragments can be extracted when you have more practice.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.low_star_stone_piece_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13860": {
+    "name": "Extracted Coarse Green Star Stone",
+    "description": "Coarse, Green Star Stone fragment. Higher quality Green Star Stone fragments can be extracted when you have more practice.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.low_star_stone_piece_i02",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13861": {
+    "name": "Reckless Soul Piece - Water",
+    "description": "Materializes after the reckless Sprite of Water is destroyed. Take it to the Male Attribute Master.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_bead_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13862": {
+    "name": "Reckless Soul Piece - Air",
+    "description": "Materializes after the reckless Sprite of Air is destroyed. Take it to Attribute Master Yang.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_bead_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13863": {
+    "name": "Freed Soul Fragment",
+    "description": "Obtained through hunting in the Seed of Infinity. If you take them to Special Products Broker Kirklan you can exchange 5 of these items for a Freed Soul.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_debris_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "13864": {
+    "name": "Seal of Tiat",
+    "description": "Obtained after defeating Tiat, it represents Tiat's authority and power. Take it to Special Products Broker Kirklan at Keucereus Alliance Base to exchange it for a special item.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.tiat_seal_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13865": {
+    "name": "Dragonkin Charm Fragment",
+    "description": "Obtained through hunting in the Seed of Destruction. If you take them to Special Products Broker Kirklan you can exchange 5 of these items for a Dragonkin Charm.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_totem_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "13866": {
+    "name": "Restless Soul",
+    "description": "Obtained in the Seed of Infinity. Take these Restless Souls to Special Products Broker Kirklan to exchange them for a reward.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.soul_facet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13867": {
+    "name": "Tiat Charm",
+    "description": "Breath of Tiat fragment that can be harvested by collecting in the Seed of Destruction region. If you bring it to the special products broker Kutran at the Kucereus clan outpost, you can exchange it for a useful item.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.tiat_breath_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "13868": {
+    "name": "Yehan Klodekus' Badge",
+    "description": "Badge of Yehan Klodekus, who degenerated into a Death Knight through M. Atk. of the Seed of Infinity.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_badge_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13869": {
+    "name": "Yehan Klanikus' Badge",
+    "description": "Badge of Yehan Klanikus, who degenerated into a Death Knight through M. Atk. of the Seed of Infinity.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_badge_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13870": {
+    "name": "Lich Crystal",
+    "description": "Crystal left behind after the death of Kohemenus, who degenerated into a Lich through M. Atk. of the Seed of Infinity.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_crystal_ball_green_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13871": {
+    "name": "Vulture's Golden Feather",
+    "description": "Take this large golden feather to Dwarven Engineer Lekon at Keucereus Alliance Base and receive a reward.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_feather_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13872": {
+    "name": "Swallowed Skull",
+    "description": "Swallowed by the Rok that roams the Seed of Destruction's dungeon or one of its Variant Falcon or Dra Hawk minions. Collect the remains of those who were sacrificed and take them to Soldier Orbyu at Keucereus Alliance Base.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_skull_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13873": {
+    "name": "Swallowed Sternum",
+    "description": "Swallowed by the Rok that roams the Seed of Destruction's dungeon or one of its Variant Falcon or Dra Hawk minions. Collect the remains of those who were sacrificed and take them to Soldier Orbyu at Keucereus Alliance Base.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_rib_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13874": {
+    "name": "Swallowed Bones",
+    "description": "Swallowed by the Rok that roams the Seed of Destruction's dungeon or one of its Variant Falcon or Dra Hawk minions. Collect the remains of those who were sacrificed and take them to Soldier Orbyu at Keucereus Alliance Base.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_bone_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13875": {
+    "name": "Deadman's Remains",
+    "description": "Obtained by hunting Floating Skulls and Floating Zombies. Take them to War Mage Artius.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_piece_bone_black_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13876": {
+    "name": "Banshee Queen's Eye",
+    "description": "Proof that you have captured the Banshee Queen. Take it to War Mage Artius.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_eyeball_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13877": {
+    "name": "Drake's Flesh",
+    "description": "Obtained by hunting Variant Drake Wing minions. Collect them and take them to injured Soldier Tenius at Keucereus Alliance Base.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_meat_of_monstereye_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13878": {
+    "name": "Rotten Blood",
+    "description": "Obtained from injured Soldier Tenius, this small vial contains spoiled blood that he claims contains the collected anger toward Keucereus. Its true origin is obscure.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_potion_scarlet_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13879": {
+    "name": "Bait for Drakes",
+    "description": "Drake exclusive bait made by combining Drake flesh and a little bit of the rotten blood. If this Drake bait is used when Seed of Destruction is stabilized, one can call the Dead of Destruction, Dius. Drake Bait",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Steel",
+    "icon": "icon.drake_wing_lure_i00",
+    "item_skills": [
+      {
+        "id": 5822,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13880": {
+    "name": "Variant Drake Wing Horns",
+    "description": "Horn that sprouts out from the body of the Variant Drake. If you bring it to the injured soldier Tenis or soldier Plenos at Keucereus Alliance Base, you can receive a reward. Drake Bait",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_horn_i00",
+    "item_skills": [
+      {
+        "id": 5822,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true
+  },
+  "13881": {
+    "name": "Attribute Master Yang's Sword",
+    "description": "Weapon provided by Attribute Master Yang for capturing the Reckless Sprites of Air. You can feel the powerful earth energy. The sprite's power contained in this weapon will be useful when capturing the reckless sprite. 10-minute-limited-time Item. Earth power +10. Cannot be exchanged or dropped.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 120
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_long_sword_i00",
+    "mana": 10,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "13882": {
+    "name": "Dynasty Dual Daggers",
+    "description": "P. Atk. of Dual Daggers increase more than that of regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. Increases the damage inflicted during PvP. Can be equipped by Dagger Masters above level 81. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8295,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 157
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 87901000,
+    "weight": 2150,
+    "icon": "icon.dual_dagger_i00",
+    "crystal_count": 4219,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "13883": {
+    "name": "Icarus Dual Daggers",
+    "description": "P. Atk. of Dual Daggers increase more than that of regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. Increases the damage inflicted during PvP. Can be equipped by Dagger Masters above level 81. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8296,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 169
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 121780000,
+    "weight": 2100,
+    "icon": "icon.dual_dagger_i00",
+    "crystal_count": 5845,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "13884": {
+    "name": "Vesper Dual Daggers",
+    "description": "P. Atk. of Dual Daggers increase more than that of regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. Increases the damage inflicted during PvP. Can be equipped by Dagger Masters above level 81. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8298,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 360
+      },
+      "MAtk": {
+        "set": 181
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 171530000,
+    "weight": 2050,
+    "icon": "icon.dual_dagger_i00",
+    "crystal_count": 8233,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      }
+    ]
+  },
+  "13885": {
+    "name": "Sealed Arcana Sigil",
+    "description": "Sealed Arcana Sigil. Seal can be removed by the blacksmith of Mammon.",
+    "kind": {
+      "Armor": "Sigil"
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "PDef": {
+        "add": 13
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 3355000,
+    "weight": 940,
+    "icon": "icon.arcana_sigil_i01",
+    "crystal_count": 161,
+    "enchantable": true
+  },
+  "13886": {
+    "name": "Sealed Dynasty Sigil",
+    "description": "Sealed Dynasty Sigil. Seal can be removed by the blacksmith of Mammon.",
+    "kind": {
+      "Armor": "Sigil"
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "PDef": {
+        "add": 15
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 6404000,
+    "weight": 930,
+    "icon": "icon.armor_dynasty_sigil_i01",
+    "crystal_count": 307,
+    "enchantable": true
+  },
+  "13887": {
+    "name": "Sealed Vesper Sigil",
+    "description": "Sealed Vesper Sigil. Seal can be removed by the blacksmith of Mammon and Maestro Ishuma.",
+    "kind": {
+      "Armor": "Sigil"
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "PDef": {
+        "add": 17
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 12250000,
+    "weight": 920,
+    "icon": "icon.armor_verper_sigil_i01",
+    "crystal_count": 588,
+    "enchantable": true
+  },
+  "13888": {
+    "name": "Sealed Lord's Cloak",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 2
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 28671000,
+    "weight": 220,
+    "icon": "icon.feud_load_cloak_i01"
+  },
+  "13889": {
+    "name": "Holy Spirit's Cloak - Kamael exclusive",
+    "description": "Cloak covered with energy of the Holy Spirit. Dark Attribute Defence +30. When the entire set of Vesper Noble or Dynasty set is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. Kamael exclusive cloak. Enchantment, attribute and augmenting are impossible.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      },
+      "DarkResistance": {
+        "add": 30
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "price": 28671000,
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00"
+  },
+  "13890": {
+    "name": "Holy Spirit's Cloak",
+    "description": "Cloak covered with energy of the Holy Spirit. Resistance to Dark +30. When an armor set above the Dynasty level is worn, the Sealed Cloak Slot will be open so that the cloak can be equipped. Enchantment, attribute and smelting are impossible.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      },
+      "DarkResistance": {
+        "add": 30
+      }
+    },
+    "price": 28671000,
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00"
+  },
+  "13891": {
+    "name": "Holy Spirit's Cloak - Light Armor exclusive",
+    "description": "Cloak covered with energy of the Holy Spirit. Dark Attribute Defence +30. When the entire set of Vesper Noble or Dynasty set is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Dagger Master and Bow Master excluding Kamaels. Enchantment, attribute and augmenting are impossible.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      },
+      "DarkResistance": {
+        "add": 30
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 28671000,
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00"
+  },
+  "13892": {
+    "name": "Holy Spirit's Cloak - Robe exclusive",
+    "description": "Cloak covered with energy of the Holy Spirit. Dark Attribute Defence +30. When the entire set of Vesper Noble or Dynasty set is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Healer, Enchanter, Summoner and Wizard excluding Kamaels. Enchantment, attribute and augmenting are impossible.",
+    "kind": {
+      "Armor": "Cloak"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      },
+      "DarkResistance": {
+        "add": 30
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 28671000,
+    "weight": 220,
+    "icon": "icon.vesper_cloack_i00"
+  },
+  "13893": {
+    "name": "Sealed Holy Spirit's Cloak",
+    "description": "Sealed Holy Spirit's Cloak. When the seal is cancelled, it'll have Dark Attribute Defence +30 effect. The seal can be cancelled through the weaver Olf Kanore and Olf Adams. It cannot be worn before the seal cancellation. Enchantment, attribute and augmenting are impossible.",
+    "kind": {
+      "Etc": "None"
+    },
+    "grade": "S84",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 20
+      }
+    },
+    "price": 28671000,
+    "weight": 220,
+    "icon": "icon.sealed_vesper_cloack_i01"
+  },
+  "13894": {
+    "name": "Cloth Belt",
+    "description": "Functions can be added by using Grade C Magic Pin or Magic Pouch.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "grade": "C",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 10
+      }
+    },
+    "price": 45100,
+    "weight": 500,
+    "icon": "icon.armor_belt_i00",
+    "crystal_count": 18,
+    "enchantable": true
+  },
+  "13895": {
+    "name": "Leather Belt",
+    "description": "Functions can be added by using Grade B Magic Pin or Magic Pouch.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "grade": "B",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 11
+      }
+    },
+    "price": 165000,
+    "weight": 480,
+    "icon": "icon.armor_belt_i01",
+    "crystal_count": 22,
+    "enchantable": true
+  },
+  "13896": {
+    "name": "Iron Belt",
+    "description": "One can attach a function using A-Grade Magic Pin, Magic Pouch, Rune clip, and Magic ornament.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "grade": "A",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 12
+      }
+    },
+    "price": 371300,
+    "weight": 460,
+    "icon": "icon.armor_belt_i02",
+    "crystal_count": 30,
+    "enchantable": true
+  },
+  "13897": {
+    "name": "Mithril Belt",
+    "description": "One can attach a function using S-Grade Magic Pin, Magic Pouch, Rune clip, and Magic ornament.",
+    "kind": {
+      "Armor": "Belt"
+    },
+    "grade": "S",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 14
+      }
+    },
+    "price": 1917000,
+    "weight": 440,
+    "icon": "icon.armor_belt_i03",
+    "crystal_count": 92,
+    "enchantable": true
+  },
+  "13898": {
+    "name": "Sealed Magic Pin (C-Grade)",
+    "description": "Can be attached to Sealed Magic Pin and Belt. And the seal can be cancelled through the weaver Olf Kanore and Olf Adams.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "weight": 20,
+    "icon": "icon.pin_i00"
+  },
+  "13899": {
+    "name": "Sealed Magic Pin (B-Grade)",
+    "description": "Can be attached to Sealed Magic Pin and Belt. And the seal can be cancelled through the weaver Olf Kanore and Olf Adams.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Leather",
+    "weight": 20,
+    "icon": "icon.pin_i00"
+  }
+}

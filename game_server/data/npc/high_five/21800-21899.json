@@ -1,0 +1,8370 @@
+{
+  "21800": {
+    "level": 77,
+    "kind": "Monster",
+    "name": "Vassal Ghost",
+    "race": "Undead",
+    "gender": "Male",
+    "reward": {
+      "exp": 13233,
+      "sp": 1432
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2762.08447,
+        "MaxMp": 1574.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 835.75573,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 570.71283,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 328.27073,
+        "MDef": 218.566351305224
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 15,
+        "Run": 15
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4274,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 10,
+        "description": "Blunt Weapon Weak Point"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (2x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4567,
+        "level": 8,
+        "description": "Undead"
+      },
+      {
+        "id": 4789,
+        "level": 5,
+        "description": "NPC Eruption - Slow"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 1853,
+              "max": 3785,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.25360000133514404,
+          "items": [
+            {
+              "id": 11946,
+              "min": 1,
+              "max": 1,
+              "chance": 1.8833,
+              "description": "Common Item - Dasparion's Staff"
+            },
+            {
+              "id": 5543,
+              "min": 1,
+              "max": 1,
+              "chance": 23.2872,
+              "description": "Dasparion's Staff Head"
+            },
+            {
+              "id": 11949,
+              "min": 1,
+              "max": 1,
+              "chance": 1.8833,
+              "description": "Common Item - Meteor Shower"
+            },
+            {
+              "id": 5532,
+              "min": 1,
+              "max": 1,
+              "chance": 23.0697,
+              "description": "Meteor Shower Head"
+            },
+            {
+              "id": 11953,
+              "min": 1,
+              "max": 1,
+              "chance": 1.8833,
+              "description": "Common Item - Spiritual Eye"
+            },
+            {
+              "id": 8341,
+              "min": 1,
+              "max": 1,
+              "chance": 23.0402,
+              "description": "Spiritual Eye Piece"
+            },
+            {
+              "id": 11958,
+              "min": 1,
+              "max": 1,
+              "chance": 1.8833,
+              "description": "Common Item - Destroyer Hammer"
+            },
+            {
+              "id": 8346,
+              "min": 1,
+              "max": 1,
+              "chance": 23.0697,
+              "description": "Hammer Piece of Destroyer"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 49.05690002441406,
+          "items": [
+            {
+              "id": 1867,
+              "min": 1,
+              "max": 3,
+              "chance": 18.8588,
+              "description": "Animal Skin"
+            },
+            {
+              "id": 1872,
+              "min": 1,
+              "max": 1,
+              "chance": 37.7176,
+              "description": "Animal Bone"
+            },
+            {
+              "id": 1882,
+              "min": 1,
+              "max": 1,
+              "chance": 6.2863,
+              "description": "Leather"
+            },
+            {
+              "id": 1894,
+              "min": 1,
+              "max": 1,
+              "chance": 0.9926,
+              "description": "Crafted Leather"
+            },
+            {
+              "id": 4042,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4715,
+              "description": "Enria"
+            },
+            {
+              "id": 5272,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0126,
+              "description": "Recipe: Greater Soulshot (S) Compressed Package(100%)"
+            },
+            {
+              "id": 8732,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2357,
+              "description": "Life Stone - Level 76"
+            },
+            {
+              "id": 8742,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0589,
+              "description": "Mid-Grade Life Stone - Level 76"
+            },
+            {
+              "id": 8752,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0059,
+              "description": "High-Grade Life Stone - Level 76"
+            },
+            {
+              "id": 1344,
+              "min": 10,
+              "max": 30,
+              "chance": 35.3601,
+              "description": "Mithril Arrow"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 5167,
+            "min": 1,
+            "max": 1,
+            "chance": 0.167,
+            "description": "Recipe: Blessed Spiritshot (S) Compressed Package (100%)"
+          },
+          {
+            "id": 5529,
+            "min": 1,
+            "max": 1,
+            "chance": 1.0311,
+            "description": "Dragon Slayer Edge"
+          },
+          {
+            "id": 4042,
+            "min": 1,
+            "max": 1,
+            "chance": 6.2641,
+            "description": "Enria"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 21
+      }
+    }
+  },
+  "21801": {
+    "level": 21,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 630,
+      "sp": 29
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 364.30351,
+        "MaxMp": 205.2,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 47.91924,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 32.72263,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 89.73059,
+        "MDef": 59.7436374813816
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 107,
+              "max": 191,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.3811999559402466,
+          "items": [
+            {
+              "id": 39,
+              "min": 1,
+              "max": 1,
+              "chance": 7.0524,
+              "description": "Boots"
+            },
+            {
+              "id": 1930,
+              "min": 1,
+              "max": 1,
+              "chance": 85.8951,
+              "description": "Boot Lining"
+            },
+            {
+              "id": 51,
+              "min": 1,
+              "max": 1,
+              "chance": 7.0525,
+              "description": "Bracer"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 12.76509952545166,
+          "items": [
+            {
+              "id": 1864,
+              "min": 1,
+              "max": 1,
+              "chance": 54.3692,
+              "description": "Stem"
+            },
+            {
+              "id": 1869,
+              "min": 1,
+              "max": 1,
+              "chance": 27.1846,
+              "description": "Iron Ore"
+            },
+            {
+              "id": 1878,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8738,
+              "description": "Braided Hemp"
+            },
+            {
+              "id": 2151,
+              "min": 1,
+              "max": 1,
+              "chance": 7.5724,
+              "description": "Recipe: Necklace of Devotion"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1864,
+            "min": 1,
+            "max": 1,
+            "chance": 46.9914,
+            "description": "Stem"
+          },
+          {
+            "id": 1869,
+            "min": 1,
+            "max": 1,
+            "chance": 23.4957,
+            "description": "Iron Ore"
+          },
+          {
+            "id": 1926,
+            "min": 1,
+            "max": 1,
+            "chance": 2.3733,
+            "description": "Piece Bone Breastplate Fragment"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21802": {
+    "level": 24,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 771,
+      "sp": 38
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 435.34437,
+        "MaxMp": 245.52,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 60.19687,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 41.10666,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 98.70919,
+        "MDef": 65.7216907961494
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 122,
+              "max": 225,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.27810001373291016,
+          "items": [
+            {
+              "id": 625,
+              "min": 1,
+              "max": 1,
+              "chance": 58.9212,
+              "description": "Bone Shield"
+            },
+            {
+              "id": 1148,
+              "min": 1,
+              "max": 1,
+              "chance": 41.0788,
+              "description": "Hard Leather Helmet"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 10.727999687194824,
+          "items": [
+            {
+              "id": 1865,
+              "min": 1,
+              "max": 1,
+              "chance": 37.8052,
+              "description": "Varnish"
+            },
+            {
+              "id": 1870,
+              "min": 1,
+              "max": 1,
+              "chance": 37.8052,
+              "description": "Coal"
+            },
+            {
+              "id": 1879,
+              "min": 1,
+              "max": 1,
+              "chance": 6.3009,
+              "description": "Cokes"
+            },
+            {
+              "id": 2176,
+              "min": 1,
+              "max": 1,
+              "chance": 18.0887,
+              "description": "Recipe: Leather Boots"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 2151,
+            "min": 1,
+            "max": 1,
+            "chance": 7.6492,
+            "description": "Recipe: Necklace of Devotion"
+          },
+          {
+            "id": 1928,
+            "min": 1,
+            "max": 1,
+            "chance": 4.0001,
+            "description": "Piece Bone Gaiters Fragment"
+          },
+          {
+            "id": 2176,
+            "min": 1,
+            "max": 1,
+            "chance": 13.1391,
+            "description": "Recipe: Leather Boots"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21803": {
+    "level": 27,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 918,
+      "sp": 47
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 515.17856,
+        "MaxMp": 286.92,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 74.99121,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 51.20928,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 108.28767,
+        "MDef": 72.0991544841329
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 137,
+              "max": 264,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.2747999429702759,
+          "items": [
+            {
+              "id": 40,
+              "min": 1,
+              "max": 1,
+              "chance": 4.3392,
+              "description": "Leather Boots"
+            },
+            {
+              "id": 1931,
+              "min": 1,
+              "max": 1,
+              "chance": 45.6608,
+              "description": "Leather Boots Lining"
+            },
+            {
+              "id": 604,
+              "min": 1,
+              "max": 1,
+              "chance": 4.3392,
+              "description": "Crafted Leather Gloves"
+            },
+            {
+              "id": 1934,
+              "min": 1,
+              "max": 1,
+              "chance": 45.6608,
+              "description": "Crafted Leather Gloves Lining"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 7.003600120544434,
+          "items": [
+            {
+              "id": 1866,
+              "min": 1,
+              "max": 1,
+              "chance": 33.9088,
+              "description": "Suede"
+            },
+            {
+              "id": 1871,
+              "min": 1,
+              "max": 1,
+              "chance": 50.8632,
+              "description": "Charcoal"
+            },
+            {
+              "id": 5220,
+              "min": 1,
+              "max": 1,
+              "chance": 2.0345,
+              "description": "Metal Hardener"
+            },
+            {
+              "id": 1885,
+              "min": 1,
+              "max": 1,
+              "chance": 4.2386,
+              "description": "High-Grade Suede"
+            },
+            {
+              "id": 2152,
+              "min": 1,
+              "max": 1,
+              "chance": 8.9549,
+              "description": "Recipe: Enchanted Necklace"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1899,
+            "min": 1,
+            "max": 1,
+            "chance": 4.9588,
+            "description": "Necklace of Devotion Chain"
+          },
+          {
+            "id": 1871,
+            "min": 1,
+            "max": 1,
+            "chance": 31.7362,
+            "description": "Charcoal"
+          },
+          {
+            "id": 5220,
+            "min": 1,
+            "max": 1,
+            "chance": 1.2695,
+            "description": "Metal Hardener"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21804": {
+    "level": 30,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 1080,
+      "sp": 59
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 604.08419,
+        "MaxMp": 329.4,
+        "HpRegen": 3.5,
+        "MpRegen": 1.5
+      },
+      "attack": {
+        "PAtk": 92.64226,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 63.26266,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 118.46427,
+        "MDef": 78.8748547991048
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 154,
+              "max": 308,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.12610000371932983,
+          "items": [
+            {
+              "id": 627,
+              "min": 1,
+              "max": 1,
+              "chance": 58.8055,
+              "description": "Aspis"
+            },
+            {
+              "id": 46,
+              "min": 1,
+              "max": 1,
+              "chance": 41.1945,
+              "description": "Bronze Helmet"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 15.655500411987305,
+          "items": [
+            {
+              "id": 1867,
+              "min": 1,
+              "max": 1,
+              "chance": 42.4779,
+              "description": "Animal Skin"
+            },
+            {
+              "id": 1872,
+              "min": 1,
+              "max": 1,
+              "chance": 42.4779,
+              "description": "Animal Bone"
+            },
+            {
+              "id": 1882,
+              "min": 1,
+              "max": 1,
+              "chance": 7.0796,
+              "description": "Leather"
+            },
+            {
+              "id": 2250,
+              "min": 1,
+              "max": 1,
+              "chance": 7.9646,
+              "description": "Recipe: Bone Arrow"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1061,
+            "min": 1,
+            "max": 1,
+            "chance": 22.1263,
+            "description": "Greater Healing Potion"
+          },
+          {
+            "id": 1900,
+            "min": 1,
+            "max": 1,
+            "chance": 3.9943,
+            "description": "Enchanted Necklace Chain"
+          },
+          {
+            "id": 2250,
+            "min": 1,
+            "max": 1,
+            "chance": 9.1271,
+            "description": "Recipe: Bone Arrow"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21805": {
+    "level": 33,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 1306,
+      "sp": 75
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 702.20463,
+        "MaxMp": 372.96,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 113.49065,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 77.49941,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 129.23095,
+        "MDef": 86.043423444366
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 184,
+              "max": 368,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.5952000021934509,
+          "items": [
+            {
+              "id": 553,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8426,
+              "description": "Iron Boots"
+            },
+            {
+              "id": 1940,
+              "min": 1,
+              "max": 1,
+              "chance": 82.9444,
+              "description": "Iron Boots Design"
+            },
+            {
+              "id": 2422,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8426,
+              "description": "Reinforced Leather Boots"
+            },
+            {
+              "id": 2423,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8426,
+              "description": "Boots of Knowledge"
+            },
+            {
+              "id": 63,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8426,
+              "description": "Gauntlets"
+            },
+            {
+              "id": 2446,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8426,
+              "description": "Reinforced Leather Gloves"
+            },
+            {
+              "id": 2447,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8426,
+              "description": "Gloves of Knowledge"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 12.382200241088867,
+          "items": [
+            {
+              "id": 1868,
+              "min": 1,
+              "max": 1,
+              "chance": 74.8018,
+              "description": "Thread"
+            },
+            {
+              "id": 1873,
+              "min": 1,
+              "max": 1,
+              "chance": 14.9604,
+              "description": "Silver Nugget"
+            },
+            {
+              "id": 5549,
+              "min": 1,
+              "max": 1,
+              "chance": 3.7401,
+              "description": "Metallic Thread"
+            },
+            {
+              "id": 1889,
+              "min": 1,
+              "max": 1,
+              "chance": 2.4934,
+              "description": "Compound Braid"
+            },
+            {
+              "id": 2154,
+              "min": 1,
+              "max": 1,
+              "chance": 4.0043,
+              "description": "Recipe: Elven Earring"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1901,
+            "min": 1,
+            "max": 1,
+            "chance": 6.0152,
+            "description": "Tiger's Eye Earring Stone"
+          },
+          {
+            "id": 2154,
+            "min": 1,
+            "max": 1,
+            "chance": 4.6627,
+            "description": "Recipe: Elven Earring"
+          },
+          {
+            "id": 1938,
+            "min": 1,
+            "max": 1,
+            "chance": 2.9277,
+            "description": "Mithril Banded Mail Material"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21806": {
+    "level": 36,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 1555,
+      "sp": 94
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 809.52639,
+        "MaxMp": 417.6,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 137.86467,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 94.1437,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 140.57278,
+        "MDef": 93.5949427192352
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 216,
+              "max": 433,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.11289999634027481,
+          "items": [
+            {
+              "id": 628,
+              "min": 1,
+              "max": 1,
+              "chance": 58.8353,
+              "description": "Hoplon"
+            },
+            {
+              "id": 47,
+              "min": 1,
+              "max": 1,
+              "chance": 41.1647,
+              "description": "Helmet"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 17.839099884033203,
+          "items": [
+            {
+              "id": 1869,
+              "min": 1,
+              "max": 1,
+              "chance": 30.5451,
+              "description": "Iron Ore"
+            },
+            {
+              "id": 1864,
+              "min": 1,
+              "max": 1,
+              "chance": 61.0902,
+              "description": "Stem"
+            },
+            {
+              "id": 1880,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0545,
+              "description": "Steel"
+            },
+            {
+              "id": 5550,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4073,
+              "description": "Durable Metal Plate"
+            },
+            {
+              "id": 2155,
+              "min": 1,
+              "max": 1,
+              "chance": 4.9029,
+              "description": "Recipe: Elven Ring"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1864,
+            "min": 1,
+            "max": 3,
+            "chance": 51.2417,
+            "description": "Stem"
+          },
+          {
+            "id": 1880,
+            "min": 1,
+            "max": 1,
+            "chance": 5.1242,
+            "description": "Steel"
+          },
+          {
+            "id": 1939,
+            "min": 1,
+            "max": 1,
+            "chance": 4.5008,
+            "description": "Mithril Banded Gaiters Material"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21807": {
+    "level": 39,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 1825,
+      "sp": 116
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 925.85879,
+        "MaxMp": 463.32,
+        "HpRegen": 4.5,
+        "MpRegen": 1.8
+      },
+      "attack": {
+        "PAtk": 166.06476,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 113.4007,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 152.46752,
+        "MDef": 101.514599764346
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 253,
+              "max": 504,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 2.1424999237060547,
+          "items": [
+            {
+              "id": 1124,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Boots of Power"
+            },
+            {
+              "id": 1948,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Boots of Power Pattern"
+            },
+            {
+              "id": 2424,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Manticore Skin Boots"
+            },
+            {
+              "id": 2923,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Manticore Skin Boot Lining"
+            },
+            {
+              "id": 2425,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Brigandine Boots"
+            },
+            {
+              "id": 2924,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Brigandine Boots Design"
+            },
+            {
+              "id": 2426,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Elven Mithril Boots"
+            },
+            {
+              "id": 2925,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Elven Mithril Boots Design"
+            },
+            {
+              "id": 606,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Rip Gauntlets"
+            },
+            {
+              "id": 1946,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Rip Gauntlets Pattern"
+            },
+            {
+              "id": 2448,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Manticore Skin Gloves"
+            },
+            {
+              "id": 2926,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Manticore Skin Gloves Lining"
+            },
+            {
+              "id": 2449,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Brigandine Gauntlets"
+            },
+            {
+              "id": 2927,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Brigandine Gauntlets Pattern"
+            },
+            {
+              "id": 2450,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3142,
+              "description": "Mithril Gloves"
+            },
+            {
+              "id": 2928,
+              "min": 1,
+              "max": 1,
+              "chance": 12.1858,
+              "description": "Mithril Gloves Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 16.609899520874023,
+          "items": [
+            {
+              "id": 1870,
+              "min": 1,
+              "max": 1,
+              "chance": 46.5265,
+              "description": "Coal"
+            },
+            {
+              "id": 1865,
+              "min": 1,
+              "max": 1,
+              "chance": 46.5265,
+              "description": "Varnish"
+            },
+            {
+              "id": 1874,
+              "min": 1,
+              "max": 1,
+              "chance": 3.1018,
+              "description": "Oriharukon Ore"
+            },
+            {
+              "id": 2157,
+              "min": 1,
+              "max": 1,
+              "chance": 3.8452,
+              "description": "Recipe: Omen Beast's Eye Earring"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 2157,
+            "min": 1,
+            "max": 1,
+            "chance": 4.9421,
+            "description": "Recipe: Omen Beast's Eye Earring"
+          },
+          {
+            "id": 1902,
+            "min": 1,
+            "max": 1,
+            "chance": 6.0588,
+            "description": "Elven Earring Beads"
+          },
+          {
+            "id": 2158,
+            "min": 1,
+            "max": 1,
+            "chance": 7.401,
+            "description": "Recipe: Mithril Ring"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21808": {
+    "level": 42,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 2116,
+      "sp": 141
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1050.81652,
+        "MaxMp": 531.0,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 198.34591,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 135.44454,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 164.88513,
+        "MDef": 109.782377202178
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 282,
+              "max": 570,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.843000054359436,
+          "items": [
+            {
+              "id": 630,
+              "min": 1,
+              "max": 1,
+              "chance": 0.8051,
+              "description": "Square Shield"
+            },
+            {
+              "id": 1956,
+              "min": 1,
+              "max": 1,
+              "chance": 36.0955,
+              "description": "Square Shield Fragment"
+            },
+            {
+              "id": 2494,
+              "min": 1,
+              "max": 1,
+              "chance": 0.8051,
+              "description": "Plate Shield"
+            },
+            {
+              "id": 2934,
+              "min": 1,
+              "max": 1,
+              "chance": 36.0955,
+              "description": "Plate Shield Fragment"
+            },
+            {
+              "id": 2412,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5638,
+              "description": "Plate Helmet"
+            },
+            {
+              "id": 2930,
+              "min": 1,
+              "max": 1,
+              "chance": 25.635,
+              "description": "Plate Helmet Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 15.571800231933594,
+          "items": [
+            {
+              "id": 1871,
+              "min": 1,
+              "max": 1,
+              "chance": 56.4594,
+              "description": "Charcoal"
+            },
+            {
+              "id": 1866,
+              "min": 1,
+              "max": 1,
+              "chance": 37.6396,
+              "description": "Suede"
+            },
+            {
+              "id": 1877,
+              "min": 1,
+              "max": 1,
+              "chance": 2.2584,
+              "description": "Adamantite Nugget"
+            },
+            {
+              "id": 2160,
+              "min": 1,
+              "max": 1,
+              "chance": 3.6426,
+              "description": "Recipe: Moonstone Earring"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1905,
+            "min": 1,
+            "max": 1,
+            "chance": 6.8125,
+            "description": "Omen Beast's Eye Earring Gemstone"
+          },
+          {
+            "id": 1871,
+            "min": 1,
+            "max": 1,
+            "chance": 70.0321,
+            "description": "Charcoal"
+          },
+          {
+            "id": 1866,
+            "min": 1,
+            "max": 1,
+            "chance": 46.6881,
+            "description": "Suede"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21809": {
+    "level": 45,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 2430,
+      "sp": 169
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1183.80594,
+        "MaxMp": 610.8,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 234.89829,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 160.40508,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 177.78746,
+        "MDef": 118.372898457316
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 320,
+              "max": 650,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.7578999996185303,
+          "items": [
+            {
+              "id": 62,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Reinforced Mithril Boots"
+            },
+            {
+              "id": 1958,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Reinforced Mithril Boots Design"
+            },
+            {
+              "id": 2429,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Chain Boots"
+            },
+            {
+              "id": 2937,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Chain Boots Part"
+            },
+            {
+              "id": 2430,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Karmian Boots"
+            },
+            {
+              "id": 2938,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Karmian Boots Fabric"
+            },
+            {
+              "id": 2431,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Plated Leather Boots"
+            },
+            {
+              "id": 2939,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Plate Leather Boots Lining"
+            },
+            {
+              "id": 2432,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Dwarven Chain Boots"
+            },
+            {
+              "id": 2940,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Dwarven Chain Boots Part"
+            },
+            {
+              "id": 2433,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Boots of Seal"
+            },
+            {
+              "id": 2941,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Boots of Seal Pattern"
+            },
+            {
+              "id": 2452,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Reinforced Mithril Gloves"
+            },
+            {
+              "id": 2942,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Reinforced Mithril Gloves Design"
+            },
+            {
+              "id": 2453,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Chain Gloves"
+            },
+            {
+              "id": 2943,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8622,
+              "description": "Chain Gloves Design"
+            },
+            {
+              "id": 2454,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2489,
+              "description": "Karmian Gloves"
+            },
+            {
+              "id": 2944,
+              "min": 1,
+              "max": 1,
+              "chance": 10.8623,
+              "description": "Karmian Gloves Fabric"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.385499954223633,
+          "items": [
+            {
+              "id": 1872,
+              "min": 1,
+              "max": 1,
+              "chance": 44.7791,
+              "description": "Animal Bone"
+            },
+            {
+              "id": 1867,
+              "min": 1,
+              "max": 1,
+              "chance": 44.7791,
+              "description": "Animal Skin"
+            },
+            {
+              "id": 1881,
+              "min": 1,
+              "max": 1,
+              "chance": 4.4779,
+              "description": "Coarse Bone Powder"
+            },
+            {
+              "id": 1875,
+              "min": 1,
+              "max": 1,
+              "chance": 2.239,
+              "description": "Stone of Purity"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 0.292,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 2163,
+              "min": 1,
+              "max": 1,
+              "chance": 1.7135,
+              "description": "Recipe: Earring of Protection"
+            },
+            {
+              "id": 8723,
+              "min": 1,
+              "max": 1,
+              "chance": 1.3434,
+              "description": "Life Stone - Level 46"
+            },
+            {
+              "id": 8733,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3358,
+              "description": "Mid-Grade Life Stone - Level 46"
+            },
+            {
+              "id": 8743,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0336,
+              "description": "High-Grade Life Stone - Level 46"
+            },
+            {
+              "id": 8753,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0066,
+              "description": "Top-Grade Life Stone - Level 46"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 4553,
+            "min": 1,
+            "max": 1,
+            "chance": 0.3236,
+            "description": "Greater Dye of STR <Str+1 Con-1>"
+          },
+          {
+            "id": 1908,
+            "min": 1,
+            "max": 1,
+            "chance": 7.6616,
+            "description": "Moonstone Earring Wire"
+          },
+          {
+            "id": 2163,
+            "min": 1,
+            "max": 1,
+            "chance": 4.1279,
+            "description": "Recipe: Earring of Protection"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21810": {
+    "level": 48,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 2764,
+      "sp": 202
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1324.01623,
+        "MaxMp": 692.4,
+        "HpRegen": 5.5,
+        "MpRegen": 2.1
+      },
+      "attack": {
+        "PAtk": 275.82705,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 188.35412,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 191.12803,
+        "MDef": 127.255200286259
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 364,
+              "max": 740,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.4746999740600586,
+          "items": [
+            {
+              "id": 2496,
+              "min": 1,
+              "max": 1,
+              "chance": 0.7677,
+              "description": "Dwarven Chain Shield"
+            },
+            {
+              "id": 2947,
+              "min": 1,
+              "max": 1,
+              "chance": 32.9277,
+              "description": "Dwarven Chain Shield Fragment"
+            },
+            {
+              "id": 632,
+              "min": 1,
+              "max": 1,
+              "chance": 0.7087,
+              "description": "Knight's Shield"
+            },
+            {
+              "id": 1972,
+              "min": 1,
+              "max": 1,
+              "chance": 36.879,
+              "description": "Knight's Shield Fragment"
+            },
+            {
+              "id": 500,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4962,
+              "description": "Great Helmet"
+            },
+            {
+              "id": 1971,
+              "min": 1,
+              "max": 1,
+              "chance": 28.2207,
+              "description": "Great Helmet Material"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 12.151200294494629,
+          "items": [
+            {
+              "id": 1873,
+              "min": 1,
+              "max": 1,
+              "chance": 13.4276,
+              "description": "Silver Nugget"
+            },
+            {
+              "id": 1868,
+              "min": 1,
+              "max": 1,
+              "chance": 67.1378,
+              "description": "Thread"
+            },
+            {
+              "id": 1876,
+              "min": 1,
+              "max": 1,
+              "chance": 6.7138,
+              "description": "Mithril Ore"
+            },
+            {
+              "id": 1895,
+              "min": 1,
+              "max": 1,
+              "chance": 9.5911,
+              "description": "Metallic Fiber"
+            },
+            {
+              "id": 4042,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5595,
+              "description": "Enria"
+            },
+            {
+              "id": 2166,
+              "min": 1,
+              "max": 1,
+              "chance": 1.1379,
+              "description": "Recipe: Earrings of Binding (100%)"
+            },
+            {
+              "id": 8724,
+              "min": 1,
+              "max": 1,
+              "chance": 1.119,
+              "description": "Life Stone - Level 49"
+            },
+            {
+              "id": 8734,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2797,
+              "description": "Mid-Grade Life Stone - Level 49"
+            },
+            {
+              "id": 8744,
+              "min": 1,
+              "max": 1,
+              "chance": 0.028,
+              "description": "High-Grade Life Stone - Level 49"
+            },
+            {
+              "id": 8754,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0056,
+              "description": "Top-Grade Life Stone - Level 49"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1966,
+            "min": 1,
+            "max": 1,
+            "chance": 3.3611,
+            "description": "Plated Leather Fragment"
+          },
+          {
+            "id": 2166,
+            "min": 1,
+            "max": 1,
+            "chance": 3.1207,
+            "description": "Recipe: Earrings of Binding (100%)"
+          },
+          {
+            "id": 1967,
+            "min": 1,
+            "max": 1,
+            "chance": 5.0211,
+            "description": "Plated Leather Gaiters Material"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21811": {
+    "level": 51,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 3121,
+      "sp": 238
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1470.41596,
+        "MaxMp": 775.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 321.13207,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 219.29157,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 204.85194,
+        "MDef": 136.392732777413
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 413,
+              "max": 839,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.2913000583648682,
+          "items": [
+            {
+              "id": 64,
+              "min": 1,
+              "max": 1,
+              "chance": 0.8845,
+              "description": "Composite Boots"
+            },
+            {
+              "id": 2956,
+              "min": 1,
+              "max": 1,
+              "chance": 49.1155,
+              "description": "Composite Boots Part"
+            },
+            {
+              "id": 608,
+              "min": 1,
+              "max": 1,
+              "chance": 0.8845,
+              "description": "Mithril Gauntlets"
+            },
+            {
+              "id": 1981,
+              "min": 1,
+              "max": 1,
+              "chance": 49.1155,
+              "description": "Mithril Gauntlets Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 17.690500259399414,
+          "items": [
+            {
+              "id": 1864,
+              "min": 1,
+              "max": 1,
+              "chance": 48.757,
+              "description": "Stem"
+            },
+            {
+              "id": 1869,
+              "min": 1,
+              "max": 1,
+              "chance": 24.3785,
+              "description": "Iron Ore"
+            },
+            {
+              "id": 1878,
+              "min": 1,
+              "max": 1,
+              "chance": 9.7514,
+              "description": "Braided Hemp"
+            },
+            {
+              "id": 1884,
+              "min": 1,
+              "max": 1,
+              "chance": 15.0022,
+              "description": "Cord"
+            },
+            {
+              "id": 4039,
+              "min": 1,
+              "max": 1,
+              "chance": 0.8126,
+              "description": "Mold Glue"
+            },
+            {
+              "id": 2169,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4315,
+              "description": "Recipe: Necklace of Seal"
+            },
+            {
+              "id": 8725,
+              "min": 1,
+              "max": 1,
+              "chance": 0.6772,
+              "description": "Life Stone - Level 52"
+            },
+            {
+              "id": 8735,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1693,
+              "description": "Mid-Grade Life Stone - Level 52"
+            },
+            {
+              "id": 8745,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0169,
+              "description": "High-Grade Life Stone - Level 52"
+            },
+            {
+              "id": 8755,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0034,
+              "description": "Top-Grade Life Stone - Level 52"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1878,
+            "min": 1,
+            "max": 1,
+            "chance": 41.7148,
+            "description": "Braided Hemp"
+          },
+          {
+            "id": 1884,
+            "min": 1,
+            "max": 1,
+            "chance": 64.1767,
+            "description": "Cord"
+          },
+          {
+            "id": 4601,
+            "min": 1,
+            "max": 1,
+            "chance": 0.2317,
+            "description": "Greater Dye of STR <Str+3 Con-3>"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21812": {
+    "level": 54,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 3499,
+      "sp": 279
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1621.75618,
+        "MaxMp": 861.0,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 370.68904,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 253.13256,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 218.89589,
+        "MDef": 145.743350252286
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 464,
+              "max": 945,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.9811999797821045,
+          "items": [
+            {
+              "id": 2497,
+              "min": 1,
+              "max": 1,
+              "chance": 0.7653,
+              "description": "Full Plate Shield"
+            },
+            {
+              "id": 2966,
+              "min": 1,
+              "max": 1,
+              "chance": 60.4723,
+              "description": "Full Plate Shield Fragment"
+            },
+            {
+              "id": 2414,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5357,
+              "description": "Full Plate Helmet"
+            },
+            {
+              "id": 2959,
+              "min": 1,
+              "max": 1,
+              "chance": 38.2267,
+              "description": "Full Plate Helmet Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 9.973799705505371,
+          "items": [
+            {
+              "id": 1865,
+              "min": 1,
+              "max": 1,
+              "chance": 43.4884,
+              "description": "Varnish"
+            },
+            {
+              "id": 1870,
+              "min": 1,
+              "max": 1,
+              "chance": 43.4884,
+              "description": "Coal"
+            },
+            {
+              "id": 1879,
+              "min": 1,
+              "max": 1,
+              "chance": 7.2481,
+              "description": "Cokes"
+            },
+            {
+              "id": 1875,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8992,
+              "description": "Stone of Purity"
+            },
+            {
+              "id": 4040,
+              "min": 1,
+              "max": 1,
+              "chance": 0.8698,
+              "description": "Mold Lubricant"
+            },
+            {
+              "id": 4126,
+              "min": 1,
+              "max": 1,
+              "chance": 0.7176,
+              "description": "Recipe: Adamantite Earrings (100%)"
+            },
+            {
+              "id": 8726,
+              "min": 1,
+              "max": 1,
+              "chance": 1.0067,
+              "description": "Life Stone - Level 55"
+            },
+            {
+              "id": 8736,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2517,
+              "description": "Mid-Grade Life Stone - Level 55"
+            },
+            {
+              "id": 8746,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0252,
+              "description": "High-Grade Life Stone - Level 55"
+            },
+            {
+              "id": 8756,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0049,
+              "description": "Top-Grade Life Stone - Level 55"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1984,
+            "min": 1,
+            "max": 1,
+            "chance": 2.5182,
+            "description": "Theca Leather Armor Pattern"
+          },
+          {
+            "id": 4126,
+            "min": 1,
+            "max": 1,
+            "chance": 1.9385,
+            "description": "Recipe: Adamantite Earrings (100%)"
+          },
+          {
+            "id": 1985,
+            "min": 1,
+            "max": 1,
+            "chance": 4.0508,
+            "description": "Theca Leather Gaiters Pattern"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21813": {
+    "level": 57,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 3898,
+      "sp": 324
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1776.58018,
+        "MaxMp": 948.0,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 424.23295,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 289.69611,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 233.18839,
+        "MDef": 155.259456846417
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 519,
+              "max": 1060,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.1974999904632568,
+          "items": [
+            {
+              "id": 12147,
+              "min": 1,
+              "max": 1,
+              "chance": 3.8829,
+              "description": "Common Item - Sealed Zubei's Boots"
+            },
+            {
+              "id": 4097,
+              "min": 1,
+              "max": 1,
+              "chance": 21.1171,
+              "description": "Sealed Zubei's Boots Design"
+            },
+            {
+              "id": 12149,
+              "min": 1,
+              "max": 1,
+              "chance": 3.8829,
+              "description": "Common Item - Sealed Avadon Boots"
+            },
+            {
+              "id": 4098,
+              "min": 1,
+              "max": 1,
+              "chance": 21.1171,
+              "description": "Sealed Avadon Boots Design"
+            },
+            {
+              "id": 12146,
+              "min": 1,
+              "max": 1,
+              "chance": 3.8829,
+              "description": "Common Item - Sealed Zubei's Gauntlet"
+            },
+            {
+              "id": 4100,
+              "min": 1,
+              "max": 1,
+              "chance": 21.1171,
+              "description": "Sealed Zubei's Gauntlets Part"
+            },
+            {
+              "id": 12148,
+              "min": 1,
+              "max": 1,
+              "chance": 3.8829,
+              "description": "Common Item - Sealed Avadon Gloves"
+            },
+            {
+              "id": 4073,
+              "min": 1,
+              "max": 1,
+              "chance": 21.1171,
+              "description": "Sealed Avadon Gloves Part"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 7.133699893951416,
+          "items": [
+            {
+              "id": 1866,
+              "min": 1,
+              "max": 1,
+              "chance": 36.3283,
+              "description": "Suede"
+            },
+            {
+              "id": 1871,
+              "min": 1,
+              "max": 1,
+              "chance": 54.4924,
+              "description": "Charcoal"
+            },
+            {
+              "id": 5220,
+              "min": 1,
+              "max": 1,
+              "chance": 2.1797,
+              "description": "Metal Hardener"
+            },
+            {
+              "id": 1885,
+              "min": 1,
+              "max": 1,
+              "chance": 4.541,
+              "description": "High-Grade Suede"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4738,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 4129,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5897,
+              "description": "Recipe: Earrings of Black Ore (100%)"
+            },
+            {
+              "id": 8727,
+              "min": 1,
+              "max": 1,
+              "chance": 1.0898,
+              "description": "Life Stone - Level 58"
+            },
+            {
+              "id": 8737,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2725,
+              "description": "Mid-Grade Life Stone - Level 58"
+            },
+            {
+              "id": 8747,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0272,
+              "description": "High-Grade Life Stone - Level 58"
+            },
+            {
+              "id": 8757,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0056,
+              "description": "Top-Grade Life Stone - Level 58"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 4129,
+            "min": 1,
+            "max": 1,
+            "chance": 1.4243,
+            "description": "Recipe: Earrings of Black Ore (100%)"
+          },
+          {
+            "id": 4049,
+            "min": 1,
+            "max": 1,
+            "chance": 6.9028,
+            "description": "Adamantite Earring Gemstone"
+          },
+          {
+            "id": 947,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0526,
+            "description": "Scroll: Enchant Weapon (B-Grade)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21814": {
+    "level": 60,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 4320,
+      "sp": 375
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 1933.24044,
+        "MaxMp": 1036.8,
+        "HpRegen": 6.5,
+        "MpRegen": 2.4
+      },
+      "attack": {
+        "PAtk": 481.34551,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 328.69659,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 247.65008,
+        "MDef": 164.888215781956
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 580,
+              "max": 1179,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.3417999744415283,
+          "items": [
+            {
+              "id": 12159,
+              "min": 1,
+              "max": 1,
+              "chance": 3.6853,
+              "description": "Common Item - Zubei's Shield"
+            },
+            {
+              "id": 4101,
+              "min": 1,
+              "max": 1,
+              "chance": 23.3935,
+              "description": "Zubei's Shield Fragment"
+            },
+            {
+              "id": 12171,
+              "min": 1,
+              "max": 1,
+              "chance": 3.6853,
+              "description": "Common Item - Avadon Shield"
+            },
+            {
+              "id": 4439,
+              "min": 1,
+              "max": 1,
+              "chance": 27.8302,
+              "description": "Avadon Shield Fragment"
+            },
+            {
+              "id": 12160,
+              "min": 1,
+              "max": 1,
+              "chance": 2.5785,
+              "description": "Common Item - Zubei's Helmet"
+            },
+            {
+              "id": 4102,
+              "min": 1,
+              "max": 1,
+              "chance": 18.1243,
+              "description": "Zubei's Helmet Design"
+            },
+            {
+              "id": 12170,
+              "min": 1,
+              "max": 1,
+              "chance": 2.5785,
+              "description": "Common Item - Avadon Circlet"
+            },
+            {
+              "id": 4072,
+              "min": 1,
+              "max": 1,
+              "chance": 18.1244,
+              "description": "Avadon Circlet Pattern"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 12.900500297546387,
+          "items": [
+            {
+              "id": 1867,
+              "min": 1,
+              "max": 1,
+              "chance": 44.7696,
+              "description": "Animal Skin"
+            },
+            {
+              "id": 1872,
+              "min": 1,
+              "max": 1,
+              "chance": 44.7696,
+              "description": "Animal Bone"
+            },
+            {
+              "id": 1882,
+              "min": 1,
+              "max": 1,
+              "chance": 7.4616,
+              "description": "Leather"
+            },
+            {
+              "id": 1894,
+              "min": 1,
+              "max": 1,
+              "chance": 1.1781,
+              "description": "Crafted Leather"
+            },
+            {
+              "id": 4042,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5596,
+              "description": "Enria"
+            },
+            {
+              "id": 4130,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5451,
+              "description": "Recipe: Ring of Black Ore (100%)"
+            },
+            {
+              "id": 8728,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5596,
+              "description": "Life Stone - Level 61"
+            },
+            {
+              "id": 8738,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1399,
+              "description": "Mid-Grade Life Stone - Level 61"
+            },
+            {
+              "id": 8748,
+              "min": 1,
+              "max": 1,
+              "chance": 0.014,
+              "description": "High-Grade Life Stone - Level 61"
+            },
+            {
+              "id": 8758,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0029,
+              "description": "Top-Grade Life Stone - Level 61"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1867,
+            "min": 1,
+            "max": 5,
+            "chance": 65.1751,
+            "description": "Animal Skin"
+          },
+          {
+            "id": 1872,
+            "min": 1,
+            "max": 5,
+            "chance": 65.1751,
+            "description": "Animal Bone"
+          },
+          {
+            "id": 4613,
+            "min": 1,
+            "max": 1,
+            "chance": 0.2023,
+            "description": "Greater Dye of STR <Str+4 Con-4>"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21815": {
+    "level": 63,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 4762,
+      "sp": 430
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2089.92274,
+        "MaxMp": 1127.4,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 541.44774,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 369.73862,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 262.19426,
+        "MDef": 174.571895122369
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 646,
+              "max": 1308,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.207900047302246,
+          "items": [
+            {
+              "id": 12188,
+              "min": 1,
+              "max": 1,
+              "chance": 2.6483,
+              "description": "Common Item - Sealed Doom Boots"
+            },
+            {
+              "id": 4099,
+              "min": 1,
+              "max": 1,
+              "chance": 22.3517,
+              "description": "Sealed Doom Boots Part"
+            },
+            {
+              "id": 12189,
+              "min": 1,
+              "max": 1,
+              "chance": 2.6483,
+              "description": "Common Item - Sealed Blue Wolf Boots"
+            },
+            {
+              "id": 4090,
+              "min": 1,
+              "max": 1,
+              "chance": 22.3517,
+              "description": "Sealed Blue Wolf Boots Design"
+            },
+            {
+              "id": 12187,
+              "min": 1,
+              "max": 1,
+              "chance": 2.6483,
+              "description": "Common Item - Sealed Doom Gloves"
+            },
+            {
+              "id": 4091,
+              "min": 1,
+              "max": 1,
+              "chance": 22.3517,
+              "description": "Sealed Doom Gloves Part"
+            },
+            {
+              "id": 12190,
+              "min": 1,
+              "max": 1,
+              "chance": 2.6483,
+              "description": "Common Item - Sealed Blue Wolf Gloves"
+            },
+            {
+              "id": 4096,
+              "min": 1,
+              "max": 1,
+              "chance": 22.3517,
+              "description": "Sealed Blue Wolf Gloves Fabric"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 12.597900390625,
+          "items": [
+            {
+              "id": 1868,
+              "min": 1,
+              "max": 1,
+              "chance": 76.3825,
+              "description": "Thread"
+            },
+            {
+              "id": 1873,
+              "min": 1,
+              "max": 1,
+              "chance": 15.2765,
+              "description": "Silver Nugget"
+            },
+            {
+              "id": 5549,
+              "min": 1,
+              "max": 1,
+              "chance": 3.8191,
+              "description": "Metallic Thread"
+            },
+            {
+              "id": 1889,
+              "min": 1,
+              "max": 1,
+              "chance": 2.5461,
+              "description": "Compound Braid"
+            },
+            {
+              "id": 4044,
+              "min": 1,
+              "max": 1,
+              "chance": 1.273,
+              "description": "Thons"
+            },
+            {
+              "id": 5230,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0509,
+              "description": "Recipe: Mithril Arrow (100%)"
+            },
+            {
+              "id": 8729,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5092,
+              "description": "Life Stone - Level 64"
+            },
+            {
+              "id": 8739,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1273,
+              "description": "Mid-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8749,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0127,
+              "description": "High-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8759,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0027,
+              "description": "Top-Grade Life Stone - Level 64"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 4052,
+            "min": 1,
+            "max": 1,
+            "chance": 5.7668,
+            "description": "Earring of Black Ore Piece"
+          },
+          {
+            "id": 5230,
+            "min": 1,
+            "max": 1,
+            "chance": 0.2172,
+            "description": "Recipe: Mithril Arrow (100%)"
+          },
+          {
+            "id": 4053,
+            "min": 1,
+            "max": 1,
+            "chance": 6.9816,
+            "description": "Ring of Black Ore Gemstone"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21816": {
+    "level": 66,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 5227,
+      "sp": 492
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2244.67715,
+        "MaxMp": 1219.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 603.79903,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 412.31647,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 276.72752,
+        "MDef": 184.248304515217
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 714,
+              "max": 1448,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.177899956703186,
+          "items": [
+            {
+              "id": 12183,
+              "min": 1,
+              "max": 1,
+              "chance": 3.8238,
+              "description": "Common Item - Doom Shield"
+            },
+            {
+              "id": 4077,
+              "min": 1,
+              "max": 1,
+              "chance": 33.8862,
+              "description": "Doom Shield Fragment"
+            },
+            {
+              "id": 12202,
+              "min": 1,
+              "max": 1,
+              "chance": 2.676,
+              "description": "Common Item - Blue Wolf Helmet"
+            },
+            {
+              "id": 4088,
+              "min": 1,
+              "max": 1,
+              "chance": 28.469,
+              "description": "Blue Wolf Helmet Design"
+            },
+            {
+              "id": 12185,
+              "min": 1,
+              "max": 1,
+              "chance": 2.676,
+              "description": "Common Item - Doom Helmet"
+            },
+            {
+              "id": 4089,
+              "min": 1,
+              "max": 1,
+              "chance": 28.469,
+              "description": "Doom Helmet Pattern"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 16.845399856567383,
+          "items": [
+            {
+              "id": 1869,
+              "min": 1,
+              "max": 1,
+              "chance": 31.6045,
+              "description": "Iron Ore"
+            },
+            {
+              "id": 1864,
+              "min": 1,
+              "max": 1,
+              "chance": 63.2091,
+              "description": "Stem"
+            },
+            {
+              "id": 1880,
+              "min": 1,
+              "max": 1,
+              "chance": 3.1605,
+              "description": "Steel"
+            },
+            {
+              "id": 5550,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4214,
+              "description": "Durable Metal Plate"
+            },
+            {
+              "id": 4043,
+              "min": 1,
+              "max": 1,
+              "chance": 1.0535,
+              "description": "Asofe"
+            },
+            {
+              "id": 5434,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0117,
+              "description": "Recipe: Dragon Slayer(60%)"
+            },
+            {
+              "id": 8729,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4214,
+              "description": "Life Stone - Level 64"
+            },
+            {
+              "id": 8739,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1053,
+              "description": "Mid-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8749,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0105,
+              "description": "High-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8759,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0021,
+              "description": "Top-Grade Life Stone - Level 64"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 5438,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0985,
+            "description": "Recipe: Meteor Shower(60%)"
+          },
+          {
+            "id": 4054,
+            "min": 1,
+            "max": 1,
+            "chance": 3.5501,
+            "description": "Necklace of Black Ore Beads"
+          },
+          {
+            "id": 5550,
+            "min": 1,
+            "max": 1,
+            "chance": 2.4032,
+            "description": "Durable Metal Plate"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21817": {
+    "level": 69,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 5713,
+      "sp": 559
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2395.45533,
+        "MaxMp": 1314.0,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 667.50361,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 455.81844,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 291.15063,
+        "MDef": 193.851368417065
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 786,
+              "max": 1596,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.815500020980835,
+          "items": [
+            {
+              "id": 12224,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Dark Crystal Boots"
+            },
+            {
+              "id": 5496,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Dark Crystal Boots Lining"
+            },
+            {
+              "id": 12231,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Tallum Boots"
+            },
+            {
+              "id": 5497,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Tallum Boots Lining"
+            },
+            {
+              "id": 12221,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Dark Crystal Gloves"
+            },
+            {
+              "id": 5508,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Dark Crystal Gloves Design"
+            },
+            {
+              "id": 12229,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Tallum Gloves"
+            },
+            {
+              "id": 5509,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Tallum Gloves Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 12.59939956665039,
+          "items": [
+            {
+              "id": 1870,
+              "min": 1,
+              "max": 1,
+              "chance": 46.5565,
+              "description": "Coal"
+            },
+            {
+              "id": 1865,
+              "min": 1,
+              "max": 1,
+              "chance": 46.5565,
+              "description": "Varnish"
+            },
+            {
+              "id": 1874,
+              "min": 1,
+              "max": 1,
+              "chance": 3.1038,
+              "description": "Oriharukon Ore"
+            },
+            {
+              "id": 4043,
+              "min": 1,
+              "max": 1,
+              "chance": 1.5519,
+              "description": "Asofe"
+            },
+            {
+              "id": 4039,
+              "min": 1,
+              "max": 1,
+              "chance": 1.5519,
+              "description": "Mold Glue"
+            },
+            {
+              "id": 5440,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0172,
+              "description": "Recipe: Elysian(60%)"
+            },
+            {
+              "id": 8730,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5173,
+              "description": "Life Stone - Level 67"
+            },
+            {
+              "id": 8740,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1293,
+              "description": "Mid-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8750,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0129,
+              "description": "High-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8760,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0027,
+              "description": "Top-Grade Life Stone - Level 67"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1874,
+            "min": 1,
+            "max": 1,
+            "chance": 13.2389,
+            "description": "Oriharukon Ore"
+          },
+          {
+            "id": 5478,
+            "min": 1,
+            "max": 1,
+            "chance": 1.6699,
+            "description": "Sealed Dark Crystal Leather Armor Pattern"
+          },
+          {
+            "id": 5434,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0735,
+            "description": "Recipe: Dragon Slayer(60%)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21818": {
+    "level": 72,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 6220,
+      "sp": 632
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2540.15331,
+        "MaxMp": 1410.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 731.52506,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 499.53679,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 305.35947,
+        "MDef": 203.311781207645
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4789,
+        "level": 2,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 860,
+              "max": 1756,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.6640999913215637,
+          "items": [
+            {
+              "id": 12225,
+              "min": 1,
+              "max": 1,
+              "chance": 6.7053,
+              "description": "Common Item - Sealed Dark Crystal Shield"
+            },
+            {
+              "id": 5494,
+              "min": 1,
+              "max": 1,
+              "chance": 33.9386,
+              "description": "Sealed Dark Crystal Shield Fragment"
+            },
+            {
+              "id": 12226,
+              "min": 1,
+              "max": 1,
+              "chance": 4.6976,
+              "description": "Common Item - Sealed Dark Crystal Helmet"
+            },
+            {
+              "id": 5525,
+              "min": 1,
+              "max": 1,
+              "chance": 24.9804,
+              "description": "Sealed Dark Crystal Helmet Design"
+            },
+            {
+              "id": 12234,
+              "min": 1,
+              "max": 1,
+              "chance": 4.6976,
+              "description": "Common Item - Sealed Tallum Helmet"
+            },
+            {
+              "id": 5526,
+              "min": 1,
+              "max": 1,
+              "chance": 24.9805,
+              "description": "Sealed Tallum Helm Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.272600173950195,
+          "items": [
+            {
+              "id": 1871,
+              "min": 1,
+              "max": 1,
+              "chance": 57.1238,
+              "description": "Charcoal"
+            },
+            {
+              "id": 1866,
+              "min": 1,
+              "max": 1,
+              "chance": 38.0825,
+              "description": "Suede"
+            },
+            {
+              "id": 1877,
+              "min": 1,
+              "max": 1,
+              "chance": 2.285,
+              "description": "Adamantite Nugget"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4967,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 4040,
+              "min": 1,
+              "max": 1,
+              "chance": 1.1425,
+              "description": "Mold Lubricant"
+            },
+            {
+              "id": 6901,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0571,
+              "description": "Recipe: Shining Arrow (100%)"
+            },
+            {
+              "id": 8730,
+              "min": 1,
+              "max": 1,
+              "chance": 0.6347,
+              "description": "Life Stone - Level 67"
+            },
+            {
+              "id": 8740,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1587,
+              "description": "Mid-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8750,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0159,
+              "description": "High-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8760,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0031,
+              "description": "Top-Grade Life Stone - Level 67"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 5479,
+            "min": 1,
+            "max": 1,
+            "chance": 1.0319,
+            "description": "Sealed Tallum Leather Armor Pattern"
+          },
+          {
+            "id": 5440,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0646,
+            "description": "Recipe: Elysian(60%)"
+          },
+          {
+            "id": 5482,
+            "min": 1,
+            "max": 1,
+            "chance": 2.3018,
+            "description": "Sealed Dark Crystal Leggings Design"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21819": {
+    "level": 75,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 6750,
+      "sp": 712
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2676.65854,
+        "MaxMp": 1507.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 794.70901,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 542.68324,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 319.24623,
+        "MDef": 212.557735094503
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4789,
+        "level": 4,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 941,
+              "max": 1920,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.979200005531311,
+          "items": [
+            {
+              "id": 12224,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Dark Crystal Boots"
+            },
+            {
+              "id": 5496,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Dark Crystal Boots Lining"
+            },
+            {
+              "id": 12231,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Tallum Boots"
+            },
+            {
+              "id": 5497,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Tallum Boots Lining"
+            },
+            {
+              "id": 12221,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Dark Crystal Gloves"
+            },
+            {
+              "id": 5508,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Dark Crystal Gloves Design"
+            },
+            {
+              "id": 12229,
+              "min": 1,
+              "max": 1,
+              "chance": 3.9179,
+              "description": "Common Item - Sealed Tallum Gloves"
+            },
+            {
+              "id": 5509,
+              "min": 1,
+              "max": 1,
+              "chance": 21.0821,
+              "description": "Sealed Tallum Gloves Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 20.339399337768555,
+          "items": [
+            {
+              "id": 1872,
+              "min": 1,
+              "max": 1,
+              "chance": 46.1735,
+              "description": "Animal Bone"
+            },
+            {
+              "id": 1867,
+              "min": 1,
+              "max": 1,
+              "chance": 46.1735,
+              "description": "Animal Skin"
+            },
+            {
+              "id": 1881,
+              "min": 1,
+              "max": 1,
+              "chance": 4.6174,
+              "description": "Coarse Bone Powder"
+            },
+            {
+              "id": 1875,
+              "min": 1,
+              "max": 1,
+              "chance": 2.3087,
+              "description": "Stone of Purity"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3011,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 1808,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0154,
+              "description": "Recipe: Soulshot (S-Grade)"
+            },
+            {
+              "id": 8731,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3206,
+              "description": "Life Stone - Level 70"
+            },
+            {
+              "id": 8741,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0802,
+              "description": "Mid-Grade Life Stone - Level 70"
+            },
+            {
+              "id": 8751,
+              "min": 1,
+              "max": 1,
+              "chance": 0.008,
+              "description": "High-Grade Life Stone - Level 70"
+            },
+            {
+              "id": 8761,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0016,
+              "description": "Top-Grade Life Stone - Level 70"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1875,
+            "min": 1,
+            "max": 1,
+            "chance": 12.7175,
+            "description": "Stone of Purity"
+          },
+          {
+            "id": 4041,
+            "min": 1,
+            "max": 1,
+            "chance": 1.6588,
+            "description": "Mold Hardener"
+          },
+          {
+            "id": 5480,
+            "min": 1,
+            "max": 1,
+            "chance": 0.856,
+            "description": "Sealed Leather Armor of Nightmare Fabric"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21820": {
+    "level": 78,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 7300,
+      "sp": 799
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2802.89989,
+        "MaxMp": 1607.4,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 855.81387,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 584.40994,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 332.70061,
+        "MDef": 221.515820894982
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4789,
+        "level": 5,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 1025,
+              "max": 2092,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.7914000153541565,
+          "items": [
+            {
+              "id": 12225,
+              "min": 1,
+              "max": 1,
+              "chance": 6.7053,
+              "description": "Common Item - Sealed Dark Crystal Shield"
+            },
+            {
+              "id": 5494,
+              "min": 1,
+              "max": 1,
+              "chance": 33.9386,
+              "description": "Sealed Dark Crystal Shield Fragment"
+            },
+            {
+              "id": 12226,
+              "min": 1,
+              "max": 1,
+              "chance": 4.6976,
+              "description": "Common Item - Sealed Dark Crystal Helmet"
+            },
+            {
+              "id": 5525,
+              "min": 1,
+              "max": 1,
+              "chance": 24.9804,
+              "description": "Sealed Dark Crystal Helmet Design"
+            },
+            {
+              "id": 12234,
+              "min": 1,
+              "max": 1,
+              "chance": 4.6976,
+              "description": "Common Item - Sealed Tallum Helmet"
+            },
+            {
+              "id": 5526,
+              "min": 1,
+              "max": 1,
+              "chance": 24.9805,
+              "description": "Sealed Tallum Helm Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 31.947500228881836,
+          "items": [
+            {
+              "id": 1873,
+              "min": 1,
+              "max": 1,
+              "chance": 9.6074,
+              "description": "Silver Nugget"
+            },
+            {
+              "id": 1868,
+              "min": 1,
+              "max": 1,
+              "chance": 48.0371,
+              "description": "Thread"
+            },
+            {
+              "id": 1876,
+              "min": 1,
+              "max": 1,
+              "chance": 4.8037,
+              "description": "Mithril Ore"
+            },
+            {
+              "id": 1895,
+              "min": 1,
+              "max": 1,
+              "chance": 6.8624,
+              "description": "Metallic Fiber"
+            },
+            {
+              "id": 4042,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4003,
+              "description": "Enria"
+            },
+            {
+              "id": 3036,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0107,
+              "description": "Recipe: Spiritshot S"
+            },
+            {
+              "id": 8732,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2002,
+              "description": "Life Stone - Level 76"
+            },
+            {
+              "id": 8742,
+              "min": 1,
+              "max": 1,
+              "chance": 0.05,
+              "description": "Mid-Grade Life Stone - Level 76"
+            },
+            {
+              "id": 8752,
+              "min": 1,
+              "max": 1,
+              "chance": 0.005,
+              "description": "High-Grade Life Stone - Level 76"
+            },
+            {
+              "id": 1344,
+              "min": 10,
+              "max": 30,
+              "chance": 30.0232,
+              "description": "Mithril Arrow"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 6901,
+            "min": 1,
+            "max": 1,
+            "chance": 0.2078,
+            "description": "Recipe: Shining Arrow (100%)"
+          },
+          {
+            "id": 5481,
+            "min": 1,
+            "max": 1,
+            "chance": 0.9325,
+            "description": "Sealed Majestic Leather Armor Fabric"
+          },
+          {
+            "id": 1808,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0924,
+            "description": "Recipe: Soulshot (S-Grade)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21821": {
+    "level": 78,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 7873,
+      "sp": 894
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3004.4059082,
+        "MaxMp": 1760.064,
+        "HpRegen": 8.755,
+        "MpRegen": 3.09
+      },
+      "attack": {
+        "PAtk": 940.9565,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 661.831856,
+        "Accuracy": 12.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 355.9783,
+        "MDef": 237.312
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4789,
+        "level": 7,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 1110,
+              "max": 2273,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.8167999982833862,
+          "items": [
+            {
+              "id": 12267,
+              "min": 1,
+              "max": 1,
+              "chance": 3.469,
+              "description": "Common Item - Sealed Boots of Nightmare"
+            },
+            {
+              "id": 5502,
+              "min": 1,
+              "max": 1,
+              "chance": 21.531,
+              "description": "Sealed Boots of Nightmare Lining"
+            },
+            {
+              "id": 12260,
+              "min": 1,
+              "max": 1,
+              "chance": 3.469,
+              "description": "Common Item - Sealed Majestic Boots"
+            },
+            {
+              "id": 5503,
+              "min": 1,
+              "max": 1,
+              "chance": 21.531,
+              "description": "Sealed Majestic Boots Lining"
+            },
+            {
+              "id": 12264,
+              "min": 1,
+              "max": 1,
+              "chance": 3.469,
+              "description": "Common Item - Sealed Gauntlet of Nightmare"
+            },
+            {
+              "id": 5514,
+              "min": 1,
+              "max": 1,
+              "chance": 21.531,
+              "description": "Sealed Gauntlets of Nightmare Design"
+            },
+            {
+              "id": 12257,
+              "min": 1,
+              "max": 1,
+              "chance": 3.469,
+              "description": "Common Item - Sealed Majestic Gauntlet"
+            },
+            {
+              "id": 5515,
+              "min": 1,
+              "max": 1,
+              "chance": 21.531,
+              "description": "Sealed Majestic Gauntlets Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.2611000537872314,
+          "items": [
+            {
+              "id": 1894,
+              "min": 1,
+              "max": 1,
+              "chance": 28.9706,
+              "description": "Crafted Leather"
+            },
+            {
+              "id": 4039,
+              "min": 1,
+              "max": 1,
+              "chance": 27.522,
+              "description": "Mold Glue"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 7.1797,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 4044,
+              "min": 1,
+              "max": 1,
+              "chance": 27.522,
+              "description": "Thons"
+            },
+            {
+              "id": 959,
+              "min": 1,
+              "max": 1,
+              "chance": 0.033,
+              "description": "Scroll: Enchant Weapon (S-Grade)"
+            },
+            {
+              "id": 8732,
+              "min": 1,
+              "max": 1,
+              "chance": 6.8805,
+              "description": "Life Stone - Level 76"
+            },
+            {
+              "id": 8742,
+              "min": 1,
+              "max": 1,
+              "chance": 1.7201,
+              "description": "Mid-Grade Life Stone - Level 76"
+            },
+            {
+              "id": 8752,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1721,
+              "description": "High-Grade Life Stone - Level 76"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 5487,
+            "min": 1,
+            "max": 1,
+            "chance": 1.0159,
+            "description": "Sealed Robe of Nightmare Fabric"
+          },
+          {
+            "id": 4039,
+            "min": 1,
+            "max": 1,
+            "chance": 7.5202,
+            "description": "Mold Glue"
+          },
+          {
+            "id": 4041,
+            "min": 1,
+            "max": 1,
+            "chance": 1.9618,
+            "description": "Mold Hardener"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21822": {
+    "level": 80,
+    "kind": "Chest",
+    "name": "Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "reward": {
+      "exp": 8467,
+      "sp": 996
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3137.4936216,
+        "MaxMp": 1884.48,
+        "HpRegen": 8.84,
+        "MpRegen": 3.12
+      },
+      "attack": {
+        "PAtk": 1005.2800576,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 713.935000064,
+        "Accuracy": 17.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 372.1819192,
+        "MDef": 247.802921663855
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 80,
+        "Run": 165
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4789,
+        "level": 8,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 1200,
+              "max": 2449,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.6787999868392944,
+          "items": [
+            {
+              "id": 12268,
+              "min": 1,
+              "max": 1,
+              "chance": 5.7237,
+              "description": "Common Item - Sealed Shield of Nightmare"
+            },
+            {
+              "id": 5495,
+              "min": 1,
+              "max": 1,
+              "chance": 33.5054,
+              "description": "Sealed Shield of Nightmare Fragment"
+            },
+            {
+              "id": 12269,
+              "min": 1,
+              "max": 1,
+              "chance": 4.0045,
+              "description": "Common Item - Sealed Helm of Nightmare"
+            },
+            {
+              "id": 5527,
+              "min": 1,
+              "max": 1,
+              "chance": 26.3809,
+              "description": "Sealed Helm of Nightmare Design"
+            },
+            {
+              "id": 12261,
+              "min": 1,
+              "max": 1,
+              "chance": 4.0045,
+              "description": "Common Item - Sealed Majestic Circlet"
+            },
+            {
+              "id": 5528,
+              "min": 1,
+              "max": 1,
+              "chance": 26.381,
+              "description": "Sealed Majestic Circlet Design"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 4.119699954986572,
+          "items": [
+            {
+              "id": 1895,
+              "min": 1,
+              "max": 1,
+              "chance": 77.9066,
+              "description": "Metallic Fiber"
+            },
+            {
+              "id": 4040,
+              "min": 1,
+              "max": 1,
+              "chance": 5.4535,
+              "description": "Mold Lubricant"
+            },
+            {
+              "id": 4042,
+              "min": 1,
+              "max": 1,
+              "chance": 4.5446,
+              "description": "Enria"
+            },
+            {
+              "id": 4043,
+              "min": 1,
+              "max": 1,
+              "chance": 9.0891,
+              "description": "Asofe"
+            },
+            {
+              "id": 960,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1091,
+              "description": "Scroll: Enchant Armor (S-Grade)"
+            },
+            {
+              "id": 8732,
+              "min": 1,
+              "max": 1,
+              "chance": 2.2723,
+              "description": "Life Stone - Level 76"
+            },
+            {
+              "id": 8742,
+              "min": 1,
+              "max": 1,
+              "chance": 0.5681,
+              "description": "Mid-Grade Life Stone - Level 76"
+            },
+            {
+              "id": 8752,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0567,
+              "description": "High-Grade Life Stone - Level 76"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 6688,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5261,
+            "description": "Forgotten Blade Edge"
+          },
+          {
+            "id": 6689,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5162,
+            "description": "Basalt Battlehammer Head"
+          },
+          {
+            "id": 6690,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5271,
+            "description": "Imperial Staff Head"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 8
+      }
+    }
+  },
+  "21823": {
+    "level": 78,
+    "kind": "Monster",
+    "name": "Executor of Offerings",
+    "race": "Undead",
+    "gender": "Male",
+    "reward": {
+      "exp": 72252,
+      "sp": 8110
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2937.9838056,
+        "MaxMp": 1708.296,
+        "HpRegen": 8.67,
+        "MpRegen": 3.06
+      },
+      "attack": {
+        "PAtk": 912.6537108,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 635.688655236,
+        "Accuracy": 6.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 348.2025,
+        "MDef": 231.837152158566
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": -32,
+          "Dark": 53
+        }
+      },
+      "speed": {
+        "Walk": 39,
+        "Run": 190
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4077,
+        "level": 9
+      },
+      {
+        "id": 4078,
+        "level": 9,
+        "description": "NPC Aura Burn"
+      },
+      {
+        "id": 4285,
+        "level": 5,
+        "description": "NPC Flamestrike"
+      },
+      {
+        "id": 4287,
+        "level": 5,
+        "description": "Resist Sleep Attacks"
+      },
+      {
+        "id": 4408,
+        "level": 14,
+        "description": "Resist Hold Attacks"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (6x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 1,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4613,
+        "level": 9,
+        "description": "Undead"
+      },
+      {
+        "id": 4789,
+        "level": 6,
+        "description": "NPC Clan Heal"
+      }
+    ],
+    "ai": {
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 10189,
+              "max": 20801,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.115399956703186,
+          "items": [
+            {
+              "id": 11975,
+              "min": 1,
+              "max": 1,
+              "chance": 6.0817,
+              "description": "Common Item - Soul Bow"
+            },
+            {
+              "id": 5534,
+              "min": 1,
+              "max": 1,
+              "chance": 93.9183,
+              "description": "Soul Bow Stave"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.553299903869629,
+          "items": [
+            {
+              "id": 1894,
+              "min": 1,
+              "max": 1,
+              "chance": 28.9706,
+              "description": "Crafted Leather"
+            },
+            {
+              "id": 4039,
+              "min": 1,
+              "max": 1,
+              "chance": 27.522,
+              "description": "Mold Glue"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 7.1797,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 4044,
+              "min": 1,
+              "max": 1,
+              "chance": 27.522,
+              "description": "Thons"
+            },
+            {
+              "id": 959,
+              "min": 1,
+              "max": 1,
+              "chance": 0.033,
+              "description": "Scroll: Enchant Weapon (S-Grade)"
+            },
+            {
+              "id": 8732,
+              "min": 1,
+              "max": 1,
+              "chance": 6.8805,
+              "description": "Life Stone - Level 76"
+            },
+            {
+              "id": 8742,
+              "min": 1,
+              "max": 1,
+              "chance": 1.7201,
+              "description": "Mid-Grade Life Stone - Level 76"
+            },
+            {
+              "id": 8752,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1721,
+              "description": "High-Grade Life Stone - Level 76"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1894,
+            "min": 1,
+            "max": 1,
+            "chance": 72.5194,
+            "description": "Crafted Leather"
+          },
+          {
+            "id": 4039,
+            "min": 1,
+            "max": 1,
+            "chance": 68.8934,
+            "description": "Mold Glue"
+          },
+          {
+            "id": 5480,
+            "min": 1,
+            "max": 1,
+            "chance": 9.2742,
+            "description": "Sealed Leather Armor of Nightmare Fabric"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 7,
+        "height": 30
+      }
+    }
+  },
+  "21824": {
+    "level": 65,
+    "kind": "FeedableBeast",
+    "name": "Alpine Kookaburra",
+    "race": "Beast",
+    "gender": "Male",
+    "reward": {
+      "exp": 30996,
+      "sp": 2880
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2193.43142,
+        "MaxMp": 1188.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 582.81759,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 397.98887,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 271.89033,
+        "MDef": 181.027644954078
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 23,
+        "Run": 210
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4318,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 12,
+        "description": "Ultimate Buff"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (4x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 14,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 8,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 8,
+        "description": "Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Weak M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4438,
+        "level": 2,
+        "description": "Beasts"
+      },
+      {
+        "id": 4589,
+        "level": 6,
+        "description": "Greater Resist Sleep"
+      },
+      {
+        "id": 4600,
+        "level": 6,
+        "description": "Decrease Speed"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 0.6834999918937683,
+          "items": [
+            {
+              "id": 171,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0913,
+              "description": "Deadman's Glory"
+            },
+            {
+              "id": 4116,
+              "min": 1,
+              "max": 1,
+              "chance": 20.127,
+              "description": "Deadman's Glory Stone"
+            },
+            {
+              "id": 175,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0913,
+              "description": "Art of Battle Axe"
+            },
+            {
+              "id": 4117,
+              "min": 1,
+              "max": 1,
+              "chance": 20.127,
+              "description": "Art of Battle Axe Blade"
+            },
+            {
+              "id": 210,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0913,
+              "description": "Staff of Evil Spirits"
+            },
+            {
+              "id": 4118,
+              "min": 1,
+              "max": 1,
+              "chance": 19.0692,
+              "description": "Evil Spirit Head"
+            },
+            {
+              "id": 7893,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0913,
+              "description": "Kaim Vanul's Bones"
+            },
+            {
+              "id": 8340,
+              "min": 1,
+              "max": 1,
+              "chance": 20.127,
+              "description": "Bones Head of Kaim Vanul"
+            },
+            {
+              "id": 7901,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0913,
+              "description": "Star Buster"
+            },
+            {
+              "id": 8348,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0933,
+              "description": "Star Buster Head"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 4.4654998779296875,
+          "items": [
+            {
+              "id": 1894,
+              "min": 1,
+              "max": 1,
+              "chance": 27.4922,
+              "description": "Crafted Leather"
+            },
+            {
+              "id": 4039,
+              "min": 1,
+              "max": 1,
+              "chance": 26.1176,
+              "description": "Mold Glue"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 6.8133,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 4044,
+              "min": 1,
+              "max": 1,
+              "chance": 26.1176,
+              "description": "Thons"
+            },
+            {
+              "id": 729,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0871,
+              "description": "Scroll: Enchant Weapon (A-Grade)"
+            },
+            {
+              "id": 8729,
+              "min": 1,
+              "max": 1,
+              "chance": 10.447,
+              "description": "Life Stone - Level 64"
+            },
+            {
+              "id": 8739,
+              "min": 1,
+              "max": 1,
+              "chance": 2.6118,
+              "description": "Mid-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8749,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2612,
+              "description": "High-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8759,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0522,
+              "description": "Top-Grade Life Stone - Level 64"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1894,
+            "min": 1,
+            "max": 1,
+            "chance": 37.405,
+            "description": "Crafted Leather"
+          },
+          {
+            "id": 4052,
+            "min": 1,
+            "max": 1,
+            "chance": 37.7427,
+            "description": "Earring of Black Ore Piece"
+          },
+          {
+            "id": 1807,
+            "min": 1,
+            "max": 1,
+            "chance": 1.4214,
+            "description": "Recipe: Soulshot (A-Grade)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 33
+      }
+    }
+  },
+  "21825": {
+    "level": 65,
+    "kind": "FeedableBeast",
+    "name": "Alpine Kookaburra",
+    "race": "Beast",
+    "gender": "Male",
+    "reward": {
+      "exp": 29567,
+      "sp": 2747
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2193.43142,
+        "MaxMp": 1188.8,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 582.81759,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 397.98887,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 271.89033,
+        "MDef": 181.027644954078
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 23,
+        "Run": 210
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4160,
+        "level": 6
+      },
+      {
+        "id": 4318,
+        "level": 1,
+        "description": "NPC Aura Burn - Magic"
+      },
+      {
+        "id": 4408,
+        "level": 12,
+        "description": "Ultimate Buff"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (4x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 14,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 8,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 8,
+        "description": "Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Weak M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4438,
+        "level": 2,
+        "description": "Beasts"
+      },
+      {
+        "id": 4566,
+        "level": 6,
+        "description": "Greater Resist Sleep"
+      },
+      {
+        "id": 4571,
+        "level": 6,
+        "description": "NPC Eruption - Magic"
+      },
+      {
+        "id": 4657,
+        "level": 6,
+        "description": "NPC Blazing Circle"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 2.2676000595092773,
+          "items": [
+            {
+              "id": 358,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1784,
+              "description": "Blue Wolf Breastplate"
+            },
+            {
+              "id": 4078,
+              "min": 1,
+              "max": 1,
+              "chance": 32.2503,
+              "description": "Blue Wolf Breastplate Part"
+            },
+            {
+              "id": 2380,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2854,
+              "description": "Blue Wolf Gaiters"
+            },
+            {
+              "id": 4080,
+              "min": 1,
+              "max": 1,
+              "chance": 45.4152,
+              "description": "Blue Wolf Gaiters Material"
+            },
+            {
+              "id": 2381,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1098,
+              "description": "Doom Plate Armor"
+            },
+            {
+              "id": 4081,
+              "min": 1,
+              "max": 1,
+              "chance": 21.7609,
+              "description": "Doom Plate Armor Temper"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 29.78499984741211,
+          "items": [
+            {
+              "id": 1869,
+              "min": 2,
+              "max": 6,
+              "chance": 22.9199,
+              "description": "Iron Ore"
+            },
+            {
+              "id": 1864,
+              "min": 5,
+              "max": 15,
+              "chance": 18.3359,
+              "description": "Stem"
+            },
+            {
+              "id": 1880,
+              "min": 1,
+              "max": 1,
+              "chance": 9.1679,
+              "description": "Steel"
+            },
+            {
+              "id": 5550,
+              "min": 1,
+              "max": 1,
+              "chance": 1.2224,
+              "description": "Durable Metal Plate"
+            },
+            {
+              "id": 4043,
+              "min": 1,
+              "max": 1,
+              "chance": 3.056,
+              "description": "Asofe"
+            },
+            {
+              "id": 730,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0764,
+              "description": "Scroll: Enchant Armor (A-Grade)"
+            },
+            {
+              "id": 8729,
+              "min": 1,
+              "max": 1,
+              "chance": 1.2224,
+              "description": "Life Stone - Level 64"
+            },
+            {
+              "id": 8739,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3056,
+              "description": "Mid-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8749,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0306,
+              "description": "High-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 8759,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0061,
+              "description": "Top-Grade Life Stone - Level 64"
+            },
+            {
+              "id": 1343,
+              "min": 30,
+              "max": 90,
+              "chance": 43.6568,
+              "description": "Silver Arrow"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 4053,
+            "min": 1,
+            "max": 1,
+            "chance": 43.5874,
+            "description": "Ring of Black Ore Gemstone"
+          },
+          {
+            "id": 3035,
+            "min": 1,
+            "max": 1,
+            "chance": 1.3559,
+            "description": "Recipe: Spiritshot A"
+          },
+          {
+            "id": 4054,
+            "min": 1,
+            "max": 1,
+            "chance": 20.0294,
+            "description": "Necklace of Black Ore Beads"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 33
+      }
+    }
+  },
+  "21826": {
+    "level": 67,
+    "kind": "FeedableBeast",
+    "name": "Alpine Buffalo",
+    "race": "Beast",
+    "gender": "Male",
+    "reward": {
+      "exp": 32933,
+      "sp": 3137
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2295.48154,
+        "MaxMp": 1251.0,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 624.93199,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 426.74754,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 281.55251,
+        "MDef": 187.460838840844
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 20,
+        "Run": 170
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4318,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 12,
+        "description": "Ultimate Buff"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (4x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 14,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 8,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 8,
+        "description": "Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Weak M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 6,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4438,
+        "level": 2,
+        "description": "Beasts"
+      },
+      {
+        "id": 4589,
+        "level": 6,
+        "description": "Greater Resist Sleep"
+      },
+      {
+        "id": 4600,
+        "level": 6,
+        "description": "Decrease Speed"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 2.538300037384033,
+          "items": [
+            {
+              "id": 358,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1784,
+              "description": "Blue Wolf Breastplate"
+            },
+            {
+              "id": 4078,
+              "min": 1,
+              "max": 1,
+              "chance": 32.2503,
+              "description": "Blue Wolf Breastplate Part"
+            },
+            {
+              "id": 2380,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2854,
+              "description": "Blue Wolf Gaiters"
+            },
+            {
+              "id": 4080,
+              "min": 1,
+              "max": 1,
+              "chance": 45.4152,
+              "description": "Blue Wolf Gaiters Material"
+            },
+            {
+              "id": 2381,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1098,
+              "description": "Doom Plate Armor"
+            },
+            {
+              "id": 4081,
+              "min": 1,
+              "max": 1,
+              "chance": 21.7609,
+              "description": "Doom Plate Armor Temper"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 33.23929977416992,
+          "items": [
+            {
+              "id": 1870,
+              "min": 1,
+              "max": 3,
+              "chance": 50.5775,
+              "description": "Coal"
+            },
+            {
+              "id": 1865,
+              "min": 1,
+              "max": 3,
+              "chance": 33.7184,
+              "description": "Varnish"
+            },
+            {
+              "id": 1874,
+              "min": 1,
+              "max": 1,
+              "chance": 6.7437,
+              "description": "Oriharukon Ore"
+            },
+            {
+              "id": 4043,
+              "min": 1,
+              "max": 1,
+              "chance": 3.3718,
+              "description": "Asofe"
+            },
+            {
+              "id": 4039,
+              "min": 1,
+              "max": 1,
+              "chance": 3.3718,
+              "description": "Mold Glue"
+            },
+            {
+              "id": 6339,
+              "min": 1,
+              "max": 1,
+              "chance": 0.7781,
+              "description": "Recipe: Sealed Majestic Ring(70%)"
+            },
+            {
+              "id": 8730,
+              "min": 1,
+              "max": 1,
+              "chance": 1.1239,
+              "description": "Life Stone - Level 67"
+            },
+            {
+              "id": 8740,
+              "min": 1,
+              "max": 1,
+              "chance": 0.281,
+              "description": "Mid-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8750,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0281,
+              "description": "High-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8760,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0057,
+              "description": "Top-Grade Life Stone - Level 67"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 1874,
+            "min": 1,
+            "max": 1,
+            "chance": 75.8857,
+            "description": "Oriharukon Ore"
+          },
+          {
+            "id": 4043,
+            "min": 1,
+            "max": 1,
+            "chance": 37.9428,
+            "description": "Asofe"
+          },
+          {
+            "id": 4077,
+            "min": 1,
+            "max": 1,
+            "chance": 51.2049,
+            "description": "Doom Shield Fragment"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 22,
+        "height": 31
+      }
+    }
+  },
+  "21827": {
+    "level": 67,
+    "kind": "FeedableBeast",
+    "name": "Alpine Buffalo",
+    "race": "Beast",
+    "gender": "Male",
+    "reward": {
+      "exp": 31415,
+      "sp": 2992
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2295.48154,
+        "MaxMp": 1251.0,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 624.93199,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 426.74754,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 281.55251,
+        "MDef": 187.460838840844
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 20,
+        "Run": 170
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4160,
+        "level": 6
+      },
+      {
+        "id": 4318,
+        "level": 1,
+        "description": "NPC Aura Burn - Magic"
+      },
+      {
+        "id": 4408,
+        "level": 12,
+        "description": "Ultimate Buff"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (4x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 14,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 8,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 8,
+        "description": "Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Weak M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 6,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 4438,
+        "level": 2,
+        "description": "Beasts"
+      },
+      {
+        "id": 4566,
+        "level": 6,
+        "description": "Greater Resist Sleep"
+      },
+      {
+        "id": 4571,
+        "level": 6,
+        "description": "NPC Eruption - Magic"
+      },
+      {
+        "id": 4657,
+        "level": 6,
+        "description": "NPC Blazing Circle"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 0.7049000263214111,
+          "items": [
+            {
+              "id": 79,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1503,
+              "description": "Sword of Damascus"
+            },
+            {
+              "id": 4114,
+              "min": 1,
+              "max": 1,
+              "chance": 33.2016,
+              "description": "Sword of Damascus Blade"
+            },
+            {
+              "id": 7883,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1503,
+              "description": "Guardian Sword"
+            },
+            {
+              "id": 8330,
+              "min": 1,
+              "max": 1,
+              "chance": 33.1458,
+              "description": "Guardian Sword Blade"
+            },
+            {
+              "id": 7889,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1503,
+              "description": "Wizard's Tear"
+            },
+            {
+              "id": 8336,
+              "min": 1,
+              "max": 1,
+              "chance": 33.2017,
+              "description": "Blade of the Wizard's Tear"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 36.79249954223633,
+          "items": [
+            {
+              "id": 1871,
+              "min": 1,
+              "max": 3,
+              "chance": 26.416,
+              "description": "Charcoal"
+            },
+            {
+              "id": 1866,
+              "min": 1,
+              "max": 1,
+              "chance": 52.8321,
+              "description": "Suede"
+            },
+            {
+              "id": 1877,
+              "min": 1,
+              "max": 1,
+              "chance": 3.1699,
+              "description": "Adamantite Nugget"
+            },
+            {
+              "id": 4041,
+              "min": 1,
+              "max": 1,
+              "chance": 0.6891,
+              "description": "Mold Hardener"
+            },
+            {
+              "id": 4040,
+              "min": 1,
+              "max": 1,
+              "chance": 1.585,
+              "description": "Mold Lubricant"
+            },
+            {
+              "id": 5456,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0294,
+              "description": "Recipe: Tallum Glaive(60%)"
+            },
+            {
+              "id": 8730,
+              "min": 1,
+              "max": 1,
+              "chance": 0.8805,
+              "description": "Life Stone - Level 67"
+            },
+            {
+              "id": 8740,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2201,
+              "description": "Mid-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8750,
+              "min": 1,
+              "max": 1,
+              "chance": 0.022,
+              "description": "High-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8760,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0044,
+              "description": "Top-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 1343,
+              "min": 80,
+              "max": 240,
+              "chance": 14.1515,
+              "description": "Silver Arrow"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 3956,
+            "min": 1,
+            "max": 1,
+            "chance": 1.4477,
+            "description": "Recipe: Blessed Spiritshot A"
+          },
+          {
+            "id": 4078,
+            "min": 1,
+            "max": 1,
+            "chance": 15.8605,
+            "description": "Blue Wolf Breastplate Part"
+          },
+          {
+            "id": 5156,
+            "min": 1,
+            "max": 1,
+            "chance": 1.4477,
+            "description": "Recipe: Soulshot (A) Compressed Package (100%)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 22,
+        "height": 31
+      }
+    }
+  },
+  "21828": {
+    "level": 69,
+    "kind": "FeedableBeast",
+    "name": "Alpine Cougar",
+    "race": "Beast",
+    "gender": "Male",
+    "reward": {
+      "exp": 34929,
+      "sp": 3418
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2395.45533,
+        "MaxMp": 1314.0,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 667.50361,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 455.81844,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 291.15063,
+        "MDef": 193.851368417065
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 200
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4318,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 12,
+        "description": "Ultimate Buff"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (4x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 14,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 8,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 8,
+        "description": "Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Weak M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4438,
+        "level": 2,
+        "description": "Beasts"
+      },
+      {
+        "id": 4589,
+        "level": 6,
+        "description": "Greater Resist Sleep"
+      },
+      {
+        "id": 4600,
+        "level": 6,
+        "description": "Decrease Speed"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 0.6086000204086304,
+          "items": [
+            {
+              "id": 212,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1045,
+              "description": "Dasparion's Staff"
+            },
+            {
+              "id": 5543,
+              "min": 1,
+              "max": 1,
+              "chance": 25.0791,
+              "description": "Dasparion's Staff Head"
+            },
+            {
+              "id": 2504,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1045,
+              "description": "Meteor Shower"
+            },
+            {
+              "id": 5532,
+              "min": 1,
+              "max": 1,
+              "chance": 24.8449,
+              "description": "Meteor Shower Head"
+            },
+            {
+              "id": 7894,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1045,
+              "description": "Spiritual Eye"
+            },
+            {
+              "id": 8341,
+              "min": 1,
+              "max": 1,
+              "chance": 24.8131,
+              "description": "Spiritual Eye Piece"
+            },
+            {
+              "id": 7899,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1045,
+              "description": "Destroyer Hammer"
+            },
+            {
+              "id": 8346,
+              "min": 1,
+              "max": 1,
+              "chance": 24.8449,
+              "description": "Hammer Piece of Destroyer"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 39.49359893798828,
+          "items": [
+            {
+              "id": 1865,
+              "min": 1,
+              "max": 3,
+              "chance": 45.4026,
+              "description": "Varnish"
+            },
+            {
+              "id": 1870,
+              "min": 1,
+              "max": 3,
+              "chance": 30.2684,
+              "description": "Coal"
+            },
+            {
+              "id": 1879,
+              "min": 1,
+              "max": 1,
+              "chance": 15.1342,
+              "description": "Cokes"
+            },
+            {
+              "id": 1875,
+              "min": 1,
+              "max": 1,
+              "chance": 6.0537,
+              "description": "Stone of Purity"
+            },
+            {
+              "id": 4040,
+              "min": 1,
+              "max": 1,
+              "chance": 1.8161,
+              "description": "Mold Lubricant"
+            },
+            {
+              "id": 5450,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0336,
+              "description": "Recipe: Dragon Grinder(60%)"
+            },
+            {
+              "id": 8730,
+              "min": 1,
+              "max": 1,
+              "chance": 1.0089,
+              "description": "Life Stone - Level 67"
+            },
+            {
+              "id": 8740,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2522,
+              "description": "Mid-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8750,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0252,
+              "description": "High-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8760,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0051,
+              "description": "Top-Grade Life Stone - Level 67"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 5478,
+            "min": 1,
+            "max": 1,
+            "chance": 10.2093,
+            "description": "Sealed Dark Crystal Leather Armor Pattern"
+          },
+          {
+            "id": 729,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1349,
+            "description": "Scroll: Enchant Weapon (A-Grade)"
+          },
+          {
+            "id": 1875,
+            "min": 1,
+            "max": 1,
+            "chance": 80.9392,
+            "description": "Stone of Purity"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 34,
+        "height": 28
+      }
+    }
+  },
+  "21829": {
+    "level": 69,
+    "kind": "FeedableBeast",
+    "name": "Alpine Cougar",
+    "race": "Beast",
+    "gender": "Male",
+    "reward": {
+      "exp": 33318,
+      "sp": 3260
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2395.45533,
+        "MaxMp": 1314.0,
+        "HpRegen": 7.5,
+        "MpRegen": 2.7
+      },
+      "attack": {
+        "PAtk": 667.50361,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 455.81844,
+        "Accuracy": 4.75,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 291.15063,
+        "MDef": 193.851368417065
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 200
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4160,
+        "level": 6
+      },
+      {
+        "id": 4318,
+        "level": 1,
+        "description": "NPC Aura Burn - Magic"
+      },
+      {
+        "id": 4408,
+        "level": 12,
+        "description": "Ultimate Buff"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (4x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 14,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 8,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 8,
+        "description": "Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Weak M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4438,
+        "level": 2,
+        "description": "Beasts"
+      },
+      {
+        "id": 4566,
+        "level": 6,
+        "description": "Greater Resist Sleep"
+      },
+      {
+        "id": 4571,
+        "level": 6,
+        "description": "NPC Eruption - Magic"
+      },
+      {
+        "id": 4657,
+        "level": 6,
+        "description": "NPC Blazing Circle"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 1.582900047302246,
+          "items": [
+            {
+              "id": 5304,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2697,
+              "description": "Sealed Tallum Tunic"
+            },
+            {
+              "id": 5485,
+              "min": 1,
+              "max": 1,
+              "chance": 30.2857,
+              "description": "Sealed Tallum Tunic Texture"
+            },
+            {
+              "id": 5305,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4313,
+              "description": "Sealed Tallum Stockings"
+            },
+            {
+              "id": 5489,
+              "min": 1,
+              "max": 1,
+              "chance": 47.5362,
+              "description": "Sealed Tallum Stockings Fabric"
+            },
+            {
+              "id": 5308,
+              "min": 1,
+              "max": 1,
+              "chance": 0.1659,
+              "description": "Sealed Dark Crystal Robe"
+            },
+            {
+              "id": 5486,
+              "min": 1,
+              "max": 1,
+              "chance": 21.3112,
+              "description": "Sealed Dark Crystal Robe Fabric"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 33.818599700927734,
+          "items": [
+            {
+              "id": 1869,
+              "min": 2,
+              "max": 6,
+              "chance": 22.9896,
+              "description": "Iron Ore"
+            },
+            {
+              "id": 1864,
+              "min": 5,
+              "max": 15,
+              "chance": 18.3917,
+              "description": "Stem"
+            },
+            {
+              "id": 1880,
+              "min": 1,
+              "max": 1,
+              "chance": 9.1958,
+              "description": "Steel"
+            },
+            {
+              "id": 5550,
+              "min": 1,
+              "max": 1,
+              "chance": 1.2261,
+              "description": "Durable Metal Plate"
+            },
+            {
+              "id": 4043,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0653,
+              "description": "Asofe"
+            },
+            {
+              "id": 5448,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0341,
+              "description": "Recipe: Soul Separator(60%)"
+            },
+            {
+              "id": 8730,
+              "min": 1,
+              "max": 1,
+              "chance": 1.0218,
+              "description": "Life Stone - Level 67"
+            },
+            {
+              "id": 8740,
+              "min": 1,
+              "max": 1,
+              "chance": 0.2554,
+              "description": "Mid-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8750,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0255,
+              "description": "High-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 8760,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0051,
+              "description": "Top-Grade Life Stone - Level 67"
+            },
+            {
+              "id": 1343,
+              "min": 30,
+              "max": 90,
+              "chance": 43.7896,
+              "description": "Silver Arrow"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 4053,
+            "min": 1,
+            "max": 1,
+            "chance": 49.6406,
+            "description": "Ring of Black Ore Gemstone"
+          },
+          {
+            "id": 3035,
+            "min": 1,
+            "max": 1,
+            "chance": 1.5442,
+            "description": "Recipe: Spiritshot A"
+          },
+          {
+            "id": 4054,
+            "min": 1,
+            "max": 1,
+            "chance": 22.811,
+            "description": "Necklace of Black Ore Beads"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 34,
+        "height": 28
+      }
+    }
+  }
+}

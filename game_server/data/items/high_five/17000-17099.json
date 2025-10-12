@@ -1,0 +1,2336 @@
+{
+  "17000": {
+    "name": "Black Ore Set of Fortune - 90-day limited period",
+    "description": "When used, you acquire a Black Ore Set of Fortune. Expires after 90 days if not used. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 16858,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 16857,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 16859,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_jewel_box_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "17001": {
+    "name": "Sealed Set of Fortune - 90-day limited period",
+    "description": "When used, you acquire a Sealed Set of Fortune. Expires after 90 days if not used. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 16861,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 16860,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 16862,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_jewel_box_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "17002": {
+    "name": "Elven Set of Fortune - 90-day limited period",
+    "description": "When used, you acquire an Elven Set of Fortune. Expires after 90 days if not used. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 16864,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 16863,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        },
+        {
+          "item_id": 16865,
+          "min": 2,
+          "max": 2,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_jewel_box_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "17003": {
+    "name": "Santa Claus's Gift - Event",
+    "description": "Santa Claus's Gift. One can receive the gift when double clicked. Santa Claus's Gift",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.lucky_bag_box_i00",
+    "depositable": false,
+    "stackable": true
+  },
+  "17004": {
+    "name": "Agathion Seal Bracelet - Kid Rudolph - Event",
+    "description": "Bracelet that summons a cute Kid Rudolph Agathion that gives you a Santa Claus's Gift. The Kid Rudolph gives you Santa Claus's gift every 30 minutes after being summoned. No exchange/drop available Release Seal on Agathion - Kid Rudolph",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.etc_rbracelet_aga_agit_i00",
+    "item_skills": [
+      {
+        "id": 8464,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "17005": {
+    "name": "Santa - Potion of Will - Event",
+    "description": "It recovers CP by 300. Santa - Potion of Will",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 20,
+    "icon": "icon.etc_cp_potion_i01",
+    "item_skills": [
+      {
+        "id": 9086,
+        "level": 2
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17006": {
+    "name": "Sealed Vesper Noble Breastplate",
+    "description": "Sealed Vesper Noble Breastplate Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Chest"
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 236
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 46668000,
+    "weight": 7520,
+    "icon": "icon.armor_t94_u_i02",
+    "crystal_count": 2240,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17007": {
+    "name": "Sealed Vesper Noble Leather Breastplate",
+    "description": "Sealed Vesper Noble Leather Breastplate. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Chest"
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 177
+      }
+    },
+    "price": 35000000,
+    "weight": 4140,
+    "icon": "icon.armor_t95_u_i02",
+    "crystal_count": 1680,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17008": {
+    "name": "Sealed Vesper Noble Tunic",
+    "description": "Sealed Vesper Noble Tunic. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Chest"
+      }
+    },
+    "grade": "S84",
+    "material": "Bronze",
+    "stats": {
+      "PDef": {
+        "add": 118
+      },
+      "MaxMp": {
+        "add": 637
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 35000000,
+    "weight": 1750,
+    "icon": "icon.armor_t96_u_i02",
+    "crystal_count": 1680,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17009": {
+    "name": "Sealed Vesper Noble Gaiters",
+    "description": "Sealed Vesper Noble Gaiter. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Legs"
+      }
+    },
+    "grade": "S84",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 148
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 29168000,
+    "weight": 3170,
+    "icon": "icon.armor_t94_l_i02",
+    "crystal_count": 1400,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17010": {
+    "name": "Sealed Vesper Noble Gauntlet",
+    "description": "Sealed Vesper Noble Gauntlet. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 11667000,
+    "weight": 510,
+    "icon": "icon.armor_t94_g_i02",
+    "crystal_count": 560,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17011": {
+    "name": "Sealed Vesper Noble Boots",
+    "description": "Sealed Vesper Noble Boots. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 11667000,
+    "weight": 1070,
+    "icon": "icon.armor_t94_b_i02",
+    "crystal_count": 560,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17012": {
+    "name": "Sealed Vesper Noble Leather Leggings",
+    "description": "Sealed Vesper Noble Leather Legging. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Legs"
+      }
+    },
+    "grade": "S84",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 111
+      }
+    },
+    "price": 21876000,
+    "weight": 1320,
+    "icon": "icon.armor_t95_l_i02",
+    "crystal_count": 1050,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17013": {
+    "name": "Sealed Vesper Noble Leather Gloves",
+    "description": "Sealed Vesper Noble Leather Gloves. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "price": 11667000,
+    "weight": 510,
+    "icon": "icon.armor_t95_g_i02",
+    "crystal_count": 560,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17014": {
+    "name": "Sealed Vesper Noble Leather Boots",
+    "description": "Sealed Vesper Noble Leather Boots. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "price": 11667000,
+    "weight": 1070,
+    "icon": "icon.armor_t95_b_i02",
+    "crystal_count": 560,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17015": {
+    "name": "Sealed Vesper Noble Stockings",
+    "description": "Sealed Vesper Noble Stockings. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Legs"
+      }
+    },
+    "grade": "S84",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 74
+      },
+      "MaxMp": {
+        "add": 415
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 21876000,
+    "weight": 850,
+    "icon": "icon.armor_t96_l_i02",
+    "crystal_count": 1050,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17016": {
+    "name": "Sealed Vesper Noble Gloves",
+    "description": "Sealed Vesper Noble Gloves. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 11667000,
+    "weight": 510,
+    "icon": "icon.armor_t96_g_i02",
+    "crystal_count": 560,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17017": {
+    "name": "Sealed Vesper Noble Shoes",
+    "description": "Sealed Vesper Noble Shoes. Seal can be removed by the Blacksmith of Mammon or Maestro Ishuma.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "S84",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 68
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "price": 11667000,
+    "weight": 1070,
+    "icon": "icon.armor_t96_b_i02",
+    "crystal_count": 560,
+    "enchantable": true,
+    "elementable": true,
+    "depositable": false
+  },
+  "17018": {
+    "name": "Hot Springs Potion",
+    "description": "Bottle containing hot springs water. It might have healing effects against maladies. Rainbow Springs Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "price": 2500,
+    "weight": 20,
+    "icon": "icon.etc_cp_potion_i01",
+    "item_skills": [
+      {
+        "id": 9078,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17019": {
+    "name": "Mounting Item 3 Pack",
+    "description": "Dimensional item pack. Wrapped pack containing a Gold Maned Lion Mount Bracelet (7 day), a Darkmane Pacer Mount Bracelet (7 day), and a Steam Beatle Mount Bracelet (7 day). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13121,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14231,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14232,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17020": {
+    "name": "Fresh Milk Pack - For Events",
+    "description": "Dimensional item pack. Event - Wrapped pack containing fresh milk. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14739,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17021": {
+    "name": "Dimensional Experience Pack 30 - For Events",
+    "description": "Dimensional item pack. Event - Wrapped pack containing a High-Grade Hunting Helper Exchange Coupon 2-Sheet Pack, a Feather of Blessing 3-Sheet Pack, and a Kamaloka Entrance Pass 3-Sheet Pack. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14239,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13082,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 13085,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17022": {
+    "name": "Varka Karm Pack - For Events",
+    "description": "Dimensional item pack. A wrapped pack containing a Varka Karm (used by Varka Silenos). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13234,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17023": {
+    "name": "Ketra Karm Pack - For Events",
+    "description": "Dimensional item pack. A wrapped pack containing a Ketra Karm (used by Ketra Orcs). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 13235,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17024": {
+    "name": "Vitality Maintaining Potion Pack - For Events",
+    "description": "Dimensional item pack. Event - Wrapped pack containing 5 Potions of Energy (30min). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 15440,
+          "min": 5,
+          "max": 5,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17025": {
+    "name": "PC Points (7000 Points) Pack - Event",
+    "description": "Dimensional item pack. Event - Wrapped pack containing 7000 PC cafe points. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 14559,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17026": {
+    "name": "Admiral's Cap Pack - For Events",
+    "description": "Admiral's Cap - Wrapped pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 8919,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17027": {
+    "name": "Straw Hat - For Events",
+    "description": "Straw Hat - Wrapped pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 10616,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17028": {
+    "name": "Phantom Mask Pack - For Events",
+    "description": "Phantom Mask - Wrapped pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 9208,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17029": {
+    "name": "Black Phantom Mask Pack - For Events",
+    "description": "Black Phantom Mask - Wrapped pack for event. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 9409,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17030": {
+    "name": "Forgotten Scroll - Create Item Lv 10",
+    "description": "Forgotten Scroll for learning Create Item Lv 10. Only Maestro can use it. Can be acquired by level 82. Create Item",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "price": 120000,
+    "weight": 120,
+    "icon": "BranchSys2.Icon.br_spell_books_sword_i01",
+    "item_skills": [
+      {
+        "id": 9087,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17031": {
+    "name": "Freya White Pack",
+    "description": "3 Vitality Replenishing Beverages. Fire, Water, Wind, Earth, Holy, and Dark Crystals. Circlet of Freezing - Wrapped pack for event. Cannot be exchanged or dropped. Can be stored in private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17033,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9552,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9553,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9554,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9555,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9556,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 9557,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 14055,
+          "min": 3,
+          "max": 3,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17032": {
+    "name": "Hero's Treasure Pack",
+    "description": "Wrapped pack containing a Hero's Treasure Chest. Cannot be exchanged or dropped.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 16852,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17033": {
+    "name": "Circlet of Freeze - For Events - 30-day limited period",
+    "description": "Circlet that has the power of Freeze. Resistance to Water increases by 30. Uses 2 hair accessory slots. 30-day limited period item. Ice Hair Circlet",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_ice_circlet_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 8497,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "17034": {
+    "name": "Forgotten Scroll - Fighter's Will - For Events",
+    "description": "Forgotten Scroll to learn the Fighter's Will. Fighters use it. Can be acquired at level 81. Cannot be exchanged or dropped. Event item. Fighter's Will",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.Icon.br_spell_books_sword_i00",
+    "item_skills": [
+      {
+        "id": 9090,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17035": {
+    "name": "Forgotten Scroll - Archer's Will - For Events",
+    "description": "Forgotten Scroll to learn the Archer's Will. Fighters use it. Can be acquired at level 81. Cannot be exchanged or dropped. Event item. Archer's Will",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.Icon.br_spell_books_sword_i00",
+    "item_skills": [
+      {
+        "id": 9091,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17036": {
+    "name": "Forgotten Scroll - Magician's Will - For Events",
+    "description": "Forgotten Scroll to learn Magician's Will. Used by the Mage types. Can be acquired at level 81. Cannot be exchanged or dropped. Event item. Magician's Will",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "BranchSys2.Icon.br_spell_books_magic_i00",
+    "item_skills": [
+      {
+        "id": 9092,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17037": {
+    "name": "Forgotten Scroll - Protection of Rune - For Events",
+    "description": "Forgotten Scroll for learning Protection of Rune. Can be acquired at level 82. Cannot be exchanged or dropped. Event item. Protection of Rune",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "item_skills": [
+      {
+        "id": 9093,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17038": {
+    "name": "Forgotten Scroll - Protection of Elemental - For Events",
+    "description": "Forgotten Scroll for learning Protection of Elemental. Can be acquired at level 82. Cannot be exchanged or dropped. Event item. Protection of Elemental",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "item_skills": [
+      {
+        "id": 9094,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17039": {
+    "name": "Forgotten Scroll - Protection of Alignment - For Events",
+    "description": "Forgotten Scroll for learning Protection of Alignment. Can be acquired at level 82. Cannot be exchanged or dropped. Event item. Protection of Alignment",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Paper",
+    "weight": 120,
+    "icon": "icon.etc_spell_books_element_i00",
+    "item_skills": [
+      {
+        "id": 9095,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17040": {
+    "name": "Love Box Pack",
+    "description": "Wrapped pack containing a Love Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. . This item will be deleted in bulk after the regular maintenance time on Jul. 7.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17044,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_love_pack",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17041": {
+    "name": "Sentiment Box Pack",
+    "description": "Wrapped pack containing a Sentiment Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. . This item will be deleted in bulk after the regular maintenance time on Jul. 7.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17045,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_belief_pack",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17042": {
+    "name": "Confession Box Pack",
+    "description": "Wrapped pack containing a Confession Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. . This item will be deleted in bulk after the regular maintenance time on Jul. 7.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17046,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_wish_pack",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17043": {
+    "name": "Joy Box Pack",
+    "description": "Wrapped pack containing a Joy Box. Cannot be exchanged or dropped. Can be stored in a private warehouse. . This item will be deleted in bulk after the regular maintenance time on Jul. 7.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17047,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_joy_pack",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17044": {
+    "name": "Love Box",
+    "description": "Contains a Talisman - STR, DEX, CON. Cannot be dropped or destroyed. Can be stored in a private warehouse. . This item will be deleted after the regular maintenance on July 7th.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17051,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17052,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17053,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_love_pack",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17045": {
+    "name": "Sentiment Box",
+    "description": "Contains a Talisman - WIT, MEN, INT. Cannot be dropped or destroyed. Can be stored in a private warehouse. . This item will be deleted after the regular maintenance on July 7th.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17054,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17055,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17056,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_belief_pack",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17046": {
+    "name": "Confession Box",
+    "description": "Contains a Talisman - Resistance to Stun/Sleep/Hold/Paralysis. Cannot be dropped or destroyed. Can be stored in a private warehouse. . This item will be deleted after the regular maintenance on July 7th.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17057,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17058,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17059,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17060,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_wish_pack",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17047": {
+    "name": "Joy Box",
+    "description": "Contains a Love, Sentiment, and Confession Box. Cannot be dropped or destroyed. Can be stored in a private warehouse. . This item will be deleted after the regular maintenance on July 7th.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17044,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17045,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17046,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17050,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17061,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_box_joy_pack",
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17048": {
+    "name": "Shiny Bracelet Pack",
+    "description": "Wrapped pack containing a Shiny Bracelet. Cannot be traded, dropped, or destroyed. Can be stored in a private warehouse. . This item will be deleted in bulk after the regular maintenance time on Jul. 7.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17049,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17049": {
+    "name": "Shiny Bracelet",
+    "description": "Activates three talisman slots when equipped. Cannot be equipped in the Olympiad Arena. Cannot be exchanged or dropped. Can be stored in a private warehouse. . This item will be deleted after the July 7th maintenance time. Steel Bracelet",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Right"
+      }
+    },
+    "material": "Gold",
+    "icon": "icon.accessory_shiny_bracelet",
+    "item_skills": [
+      {
+        "id": 3324,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17050": {
+    "name": "Shiny Couple Ring",
+    "description": "Summons another player. Both the summoner and the one being summoned must have it equipped. Reuse waiting time is 1 hour. Cannot be traded or dropped. . This item will be deleted after the regular maintenance on July 7th. Summon Friend",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "material": "Gold",
+    "icon": "icon.accessory_shiny_couple_ring",
+    "item_skills": [
+      {
+        "id": 8510,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17051": {
+    "name": "Talisman - STR",
+    "description": "Event item. STR +2 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of STR",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8498,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17052": {
+    "name": "Talisman - DEX",
+    "description": "Event item. DEX +2 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of DEX",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8499,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17053": {
+    "name": "Talisman - CON",
+    "description": "Event item. CON +2 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of CON",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8500,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17054": {
+    "name": "Talisman - WIT",
+    "description": "Event item. WIT +2 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of WIT",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8502,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17055": {
+    "name": "Talisman - INT",
+    "description": "Event item. INT +2 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of INT",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8501,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17056": {
+    "name": "Talisman - MEN",
+    "description": "Event item. MEN +2 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of MEN",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i00",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8503,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17057": {
+    "name": "Talisman - Resistance to Stun",
+    "description": "Event item. Resistance to Stun +15 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of Stun Resistance",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i01",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8504,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17058": {
+    "name": "Talisman - Resistance to Sleep",
+    "description": "Event item. Resistance to Sleep +15 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of Sleep Resistance",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i01",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8505,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17059": {
+    "name": "Talisman - Resistance to Hold",
+    "description": "Event item. Resistance to Hold +15 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of Hold Resistance",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i01",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8506,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17060": {
+    "name": "Talisman - Paralyze Resistance",
+    "description": "Event item. Paralysis resistance +15 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted in bulk after the regular maintenance time on Jul. 7. Pink Talisman of Paralyze Resistance",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i01",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8507,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17061": {
+    "name": "Talisman - ALL STAT",
+    "description": "Event item. All stats increase by 1 when equipped. Cannot be traded, dropped, destroyed, or used in the Olympiad. . This item will be deleted after the regular maintenance on July 7th. Pink Talisman of All STAT",
+    "kind": {
+      "Etc": "Talisman"
+    },
+    "material": "Gold",
+    "icon": "icon.etc_talisman_event_i02",
+    "time": 10080,
+    "item_skills": [
+      {
+        "id": 8508,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true
+  },
+  "17062": {
+    "name": "Event - Scroll of Summon Baby White Tiger",
+    "description": "Scroll that summons a baby White Tiger. If you relieve the Baby White Tiger's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - White Baby Tiger Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_tiger_a",
+    "item_skills": [
+      {
+        "id": 9096,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17063": {
+    "name": "Event - Scroll of Summon Gloomy Baby White Tiger",
+    "description": "Scroll that summons a Gloomy Baby White Tiger. Can sometimes transform into a White Tiger while trying to recover the Baby White Tiger. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - Sad White Baby Tiger Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_tiger_a",
+    "item_skills": [
+      {
+        "id": 9098,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17064": {
+    "name": "Event - Scroll of Summon Baby White Tiger Captain",
+    "description": "Scroll that summons a baby White Tiger Captain. If you relieve the Baby White Tiger Captain's fatigue, you can acquire Apiga. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - White Baby King-Tiger Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_tiger_b",
+    "item_skills": [
+      {
+        "id": 9097,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17065": {
+    "name": "Event - Scroll of Summon Gloomy Baby White Tiger Captain",
+    "description": "Scroll that summons a Gloomy Baby White Tiger Captain. Can sometimes transform into a White Tiger Captain while trying to recover the Baby White Tiger. (Recovery is only possible through Cupid's Fatigue Recovery Potion or Cupid's Powerful Fatigue Recovery Potion.) Exchange possible. Event - Sad White Baby King-Tiger Scroll",
+    "kind": {
+      "Consumable": "Scroll"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_scroll_of_tiger_b",
+    "item_skills": [
+      {
+        "id": 9099,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17066": {
+    "name": "Event - Save the White Tiger Event Pack",
+    "description": "An event pack that can be obtained 1 time per account every 12 hours. By double clicking, you can obtain the Baby White Tiger Summon Scroll and \"Cupid's Fatigue Recovery Potion\" that are needed for the event. No exchange available.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17067,
+          "min": 60,
+          "max": 60,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17068,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17062,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        },
+        {
+          "item_id": 17064,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_jewel_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17067": {
+    "name": "Event - Cupid's Fatigue Relief Potion",
+    "description": "Decreases fatigue when used on a White Tiger. Cupid's Arrow",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_faitgue_relief_of_cupid_i00",
+    "item_skills": [
+      {
+        "id": 9088,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17068": {
+    "name": "Event - Cupid's Powerful Fatigue Relief Potion",
+    "description": "Decreases fatigue when used on a White Tiger. It has a better effect than Cupid's Fatigue Recovery Potion. Cupid's Major Cure",
+    "kind": {
+      "Consumable": "Elixir"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_nutrients_of_cupid_i00",
+    "item_skills": [
+      {
+        "id": 9089,
+        "level": 1
+      }
+    ],
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17069": {
+    "name": "Vesper Weapon Box - Event",
+    "description": "Box containing a Vesper weapon. Which one could it be? Vesper Weapon Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17070": {
+    "name": "Icarus Weapon Box - Event",
+    "description": "Box containing an Icarus weapon. Which one could it be? Icarus Weapon Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17071": {
+    "name": "Dynasty Weapon Box - Event",
+    "description": "Box containing a Dynasty weapon. Which one could it be? Dynasty Weapon Box",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17072": {
+    "name": "Vesper Armor Box - Event",
+    "description": "Box containing a Vesper armor. Which one could it be? Box of Vesper Armor",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17073": {
+    "name": "Moirai Armor Box - Event",
+    "description": "Box containing a Moirai armor. Which one could it be? Box of Moirai Armor",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17074": {
+    "name": "Dynasty Armor Box - Event",
+    "description": "Box containing a Dynasty armor. Which one could it be? Box of Dynasty Armor",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17075": {
+    "name": "Soul Crystal - Stage 14 Box - Event",
+    "description": "Box containing a Soul Crystal - Stage 14. What color could it be? Soul Crystal Box - Level 14",
+    "kind": {
+      "Package": []
+    },
+    "material": "Crystal",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17076": {
+    "name": "Soul Crystal - Stage 15 Box - Event",
+    "description": "Box containing a Soul Crystal -Stage 15. What color could it be? Soul Crystal Box - Level 15",
+    "kind": {
+      "Package": []
+    },
+    "material": "Crystal",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17077": {
+    "name": "Soul Crystal - Stage 16 Box - Event",
+    "description": "Box containing a Soul Crystal - Stage 16. What color could it be? Soul Crystal Box - Level 16",
+    "kind": {
+      "Package": []
+    },
+    "material": "Crystal",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17078": {
+    "name": "Potion Box of Mask Type",
+    "description": "Box containing a Facelifting Potion. Sometimes, Fresh Milk also comes out. Box of Facelift Potions",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17079": {
+    "name": "Potion Box of Hair Color",
+    "description": "Box containing a Dye Potion. Sometimes, Fresh Milk also comes out. Box of Haircolor Change Potions",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17080": {
+    "name": "Potion Box of Hair Style",
+    "description": "Box containing a Hair Style Change Potion. Sometimes, Fresh Milk also comes out. Box of Hairstyle Change Potions",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17081": {
+    "name": "Golden Apigas Box",
+    "description": "Box containing an S-grade Gemstone and an Attribute Ore. Box of Gold Apiga",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "weight": 1,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "17082": {
+    "name": "Transformation Sealbook: Anakim Pack",
+    "description": "Wrapped pack containing a Transformation Sealbook: Anakim. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 10296,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17083": {
+    "name": "Bird Nest - For Events",
+    "description": "Wrapped pack containing a Bird Nest (event). Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 10613,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17084": {
+    "name": "Shadow Item - Magician Cap Pack - Blessed Escape",
+    "description": "Wrapped pack containing a Shadow Item - Magician Cap. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 9187,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17085": {
+    "name": "Shadow Item - Magician Cap Pack - Big Head",
+    "description": "Wrapped pack containing a Shadow Item - Magician Cap. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 9194,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17086": {
+    "name": "Shadow Item - Magician Cap Pack - Firework",
+    "description": "Wrapped pack containing a Shadow Item - Magician Cap. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 9201,
+          "min": 1,
+          "max": 1,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Fish",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "olympiad_restricted": true,
+    "stackable": true,
+    "premium": true
+  },
+  "17087": {
+    "name": "Twin Coba Seed",
+    "description": "If you plant it in a monster in the Oren region, twin Coba will grow. The success rate is high when a level 77~87 character uses it on a level 77~87 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "17088": {
+    "name": "Seed: Alternative Twin Coba",
+    "description": "If you plant it in a monster in the Oren region, Improved Twin Coba will grow. The success rate is high when a level 77~87 character uses it on a level 77~87 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 1000,
+    "weight": 1,
+    "icon": "icon.etc_twin_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "17089": {
+    "name": "Red Coba Seed",
+    "description": "If you plant it in a monster in the Schuttgart region, Red Coba will grow. The success rate is high when a level 65~75 character uses it on a level 65~75 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_red_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "17090": {
+    "name": "Seed: Alternative Red Coba",
+    "description": "If you plant it in a monster in the Schuttgart region, Improved Red Coba will grow. The success rate is high when a level 65~75 character uses it on a level 65~75 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 500,
+    "weight": 1,
+    "icon": "icon.etc_red_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "17091": {
+    "name": "Golden Coba Seed",
+    "description": "If you plant it in a monster in the Schuttgart region, Golden Coba will grow. The success rate is high when a level 68~78 character uses it on a level 68~78 monster. Sowing",
+    "kind": {
+      "Manor": "Seed"
+    },
+    "material": "Paper",
+    "price": 650,
+    "weight": 1,
+    "icon": "icon.etc_golden_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "17092": {
+    "name": "Seed: Alternative Golden Coba",
+    "description": "If you plant it in a monster in the Schuttgart region, Improved Golden Coba will grow. The success rate is high when a level 68~78 character uses it on a level 68~78 monster. Sowing",
+    "kind": {
+      "Manor": "AltSeed"
+    },
+    "material": "Paper",
+    "price": 650,
+    "weight": 1,
+    "icon": "icon.etc_golden_coba_seed_i00",
+    "item_skills": [
+      {
+        "id": 2097,
+        "level": 3
+      }
+    ],
+    "depositable": false,
+    "stackable": true
+  },
+  "17093": {
+    "name": "Vitality Maintaining Potion (10 mintues) (Event)",
+    "description": "Energy is maintained for 10 minutes. Re-use time is 30 minutes. Cannot be exchanged, dropped, or destroyed. Vitality Potion",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_lesser_potion_blue_i00",
+    "item_skills": [
+      {
+        "id": 9113,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "17094": {
+    "name": "Nevit's Voice",
+    "description": "Seashell that contains the Voice of Nevit. Increases the amount of Evaluations you can give out by 10. Cannot be exchanged or dropped. Nevit's Voice",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_fish_scale_i01",
+    "item_skills": [
+      {
+        "id": 9114,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "17095": {
+    "name": "Nevit's Hourglass - 1 hour - 1~19",
+    "description": "Hourglass that increases Nevit's blessing time by 1 hour. Can only be used at levels 1~19. Cannot be exchanged or dropped. Nevit's Hourglass - 1 hour",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_dragons_blood_i03",
+    "item_skills": [
+      {
+        "id": 9115,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "17096": {
+    "name": "Nevit's Hourglass - 1.5 hour - 1~19",
+    "description": "Hourglass that increases Nevit's blessing time by 1.5 hour. Can only be used at levels 1~19. Cannot be exchanged or dropped. Nevit's Hourglass - 1.5 hour",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_dragons_blood_i03",
+    "item_skills": [
+      {
+        "id": 9116,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "17097": {
+    "name": "Nevit's Hourglass - 2 hour - 1~19",
+    "description": "Hourglass that increases Nevit's blessing time by 2 hour. Can only be used at levels 1~19. Cannot be exchanged or dropped. Nevit's Hourglass - 2 hour",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_dragons_blood_i03",
+    "item_skills": [
+      {
+        "id": 9117,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "17098": {
+    "name": "Nevit's Hourglass - 2.5 hour - 1~19",
+    "description": "Hourglass that increases Nevit's blessing time by 2.5 hour. Can only be used at levels 1~19. Cannot be exchanged or dropped. Nevit's Hourglass - 2.5 hour",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_dragons_blood_i03",
+    "item_skills": [
+      {
+        "id": 9118,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "17099": {
+    "name": "Nevit's Hourglass - 3 hour - 1~19",
+    "description": "Hourglass that increases Nevit's blessing time by 3 hour. Can only be used at levels 1~19. Cannot be exchanged or dropped. Nevit's Hourglass - 3 hour",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_dragons_blood_i03",
+    "item_skills": [
+      {
+        "id": 9119,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  }
+}

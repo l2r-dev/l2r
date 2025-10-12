@@ -1,0 +1,1303 @@
+{
+  "7900": {
+    "name": "Ice Storm Hammer",
+    "description": "Bestows one of the following functions: Focus, Anger, or Critical Bleed.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 213
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 6680500,
+    "weight": 1950,
+    "icon": "icon.weapon_ice_storm_hammer_i00",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "7901": {
+    "name": "Star Buster",
+    "description": "Bestows one of the following functions: Health, Haste, or Rsk. Focus.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_star_buster_i00",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "7902": {
+    "name": "Doom Crusher",
+    "description": "Bestows one of the following functions: Health, Anger or Rsk. Haste.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 282
+      },
+      "MAtk": {
+        "set": 114
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 20741000,
+    "weight": 1900,
+    "icon": "icon.weapon_doom_crusher_i00",
+    "crystal_count": 1659,
+    "enchantable": true
+  },
+  "7903": {
+    "name": "Frintezza's Sword",
+    "description": "Frintezza's sword of transformation.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 78
+      },
+      "MAtk": {
+        "set": 39
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 967000,
+    "weight": 2180,
+    "icon": "icon.weapon_monster_i00",
+    "enchantable": true
+  },
+  "7904": {
+    "name": "Boat Ticket: Rune to Gludin",
+    "description": "Boat Ticket: Depart Rune - Arrive Gludin",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 5000,
+    "weight": 20,
+    "icon": "icon.etc_ticket_red_i00",
+    "stackable": true
+  },
+  "7905": {
+    "name": "Boat Ticket: Gludin to Rune",
+    "description": "Boat Ticket: Depart Gludin - Arrive Rune",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 5000,
+    "weight": 20,
+    "icon": "icon.etc_ticket_red_i00",
+    "stackable": true
+  },
+  "7906": {
+    "name": "Fire Blessing",
+    "description": "Bestows fire attack attribute while engaged in a physical attack. Bless of Fire",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_fire_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2248,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7907": {
+    "name": "Water Blessing",
+    "description": "Bestows water attack attribute while engaged in a physical attack. Bless of Water",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_water_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2249,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7908": {
+    "name": "Wind Blessing",
+    "description": "Bestows wind attack attribute while engaged in a physical attack. Bless of Wind",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_wind_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2250,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7909": {
+    "name": "Earth Blessing",
+    "description": "Bestows earth attack attribute while engaged in a physical attack. Bless of Earth",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_earth_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2251,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7910": {
+    "name": "Dark Blessing",
+    "description": "Bestows Dark attack attribute while engaged in a physical attack. Bless of Darkness",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 20,
+    "icon": "icon.etc_unholy_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2252,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7911": {
+    "name": "Holy Blessing",
+    "description": "Bestows Holy attack attribute while engaged in a physical attack. Bless of Sacredness",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 5000,
+    "weight": 20,
+    "icon": "icon.etc_holy_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2253,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7912": {
+    "name": "Fire Shard",
+    "description": "Eliminates vulnerability to fire attacks. Crystal of Fire",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_fire_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2254,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7913": {
+    "name": "Water Shard",
+    "description": "Eliminates vulnerability to water attacks. Crystal of Water",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_water_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2255,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7914": {
+    "name": "Wind Shard",
+    "description": "Eliminates vulnerability to wind attacks. Crystal of Wind",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_wind_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2256,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7915": {
+    "name": "Earth Shard",
+    "description": "Eliminates vulnerability to earth attacks. Crystal of Earth",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 2000,
+    "weight": 20,
+    "icon": "icon.etc_earth_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2257,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7916": {
+    "name": "Dark Shard",
+    "description": "Eliminates vulnerability to Dark attacks. Crystal of Darkness",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 3000,
+    "weight": 20,
+    "icon": "icon.etc_unholy_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2258,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7917": {
+    "name": "Holy Shard",
+    "description": "Eliminates vulnerability to Holy attacks. Crystal of Sacredness",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "price": 3000,
+    "weight": 20,
+    "icon": "icon.etc_holy_crystal_1_i00",
+    "item_skills": [
+      {
+        "id": 2259,
+        "level": 3
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "7918": {
+    "name": "Mercenary Posting Ticket (Sword/Stationary)",
+    "description": "Schuttgart/Sword/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7919": {
+    "name": "Mercenary Posting Ticket (Spear/Stationary)",
+    "description": "Schuttgart/Spear/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 60000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  },
+  "7920": {
+    "name": "Mercenary Posting Ticket (Bow/Stationary)",
+    "description": "Schuttgart/Bow/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 70000,
+    "icon": "icon.mticket_bow_fix_i00",
+    "stackable": true
+  },
+  "7921": {
+    "name": "Mercenary Posting Ticket (Cleric/Stationary)",
+    "description": "Schuttgart/Cleric/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_cleric_fix_i00",
+    "stackable": true
+  },
+  "7922": {
+    "name": "Mercenary Posting Ticket (Wizard/Stationary)",
+    "description": "Schuttgart/Wizard/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_wizard_fix_i00",
+    "stackable": true
+  },
+  "7923": {
+    "name": "Mercenary Posting Ticket (Sword/Mobile)",
+    "description": "Schuttgart/Sword/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7924": {
+    "name": "Mercenary Posting Ticket (Spear/Mobile)",
+    "description": "Schuttgart/Spear/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 60000,
+    "icon": "icon.mticket_pole_move_i00",
+    "stackable": true
+  },
+  "7925": {
+    "name": "Mercenary Posting Ticket (Bow/Mobile)",
+    "description": "Schuttgart/Bow/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 70000,
+    "icon": "icon.mticket_bow_move_i00",
+    "stackable": true
+  },
+  "7926": {
+    "name": "Mercenary Posting Ticket (Cleric/Mobile)",
+    "description": "Schuttgart/Cleric/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_cleric_move_i00",
+    "stackable": true
+  },
+  "7927": {
+    "name": "Mercenary Posting Ticket (Wizard/Mobile)",
+    "description": "Schuttgart/Wizard/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7928": {
+    "name": "Mercenary Posting Ticket (Teleporter1)",
+    "description": "Placed in Schuttgart, at the Teleporter or inside the castle, this ticket allows teleportation to the inner castle or the guardian's location.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7929": {
+    "name": "Mercenary Posting Ticket (Teleporter2)",
+    "description": "Placed in Schuttgart, at the Teleporter or inside the castle, this ticket allows teleportation to the outer castle or the guardian's location.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7930": {
+    "name": "Mercenary Posting Ticket (Teleporter3)",
+    "description": "Placed in Schuttgart, at the Teleporter or inside the castle, this ticket allows teleportation to the inner or outer castle.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7931": {
+    "name": "Greater Mercenary Posting Ticket (Sword/Stationary)",
+    "description": "Schuttgart/Sword/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 80000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7932": {
+    "name": "Greater Mercenary Posting Ticket (Spear/Stationary)",
+    "description": "Schuttgart/Spear/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  },
+  "7933": {
+    "name": "Greater Mercenary Posting Ticket (Bow/Stationary)",
+    "description": "Schuttgart/Bow/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 120000,
+    "icon": "icon.mticket_bow_fix_i00",
+    "stackable": true
+  },
+  "7934": {
+    "name": "Greater Mercenary Posting Ticket (Cleric/Stationary)",
+    "description": "Schuttgart/Cleric/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_cleric_fix_i00",
+    "stackable": true
+  },
+  "7935": {
+    "name": "Greater Mercenary Posting Ticket (Wizard/Stationary)",
+    "description": "Schuttgart/Wizard/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_wizard_fix_i00",
+    "stackable": true
+  },
+  "7936": {
+    "name": "Greater Mercenary Posting Ticket (Sword/Mobile)",
+    "description": "Schuttgart/Sword/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 80000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7937": {
+    "name": "Greater Mercenary Posting Ticket (Spear/Mobile)",
+    "description": "Schuttgart/Spear/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_pole_move_i00",
+    "stackable": true
+  },
+  "7938": {
+    "name": "Greater Mercenary Posting Ticket (Bow/Mobile)",
+    "description": "Schuttgart/Bow/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 120000,
+    "icon": "icon.mticket_bow_move_i00",
+    "stackable": true
+  },
+  "7939": {
+    "name": "Greater Mercenary Posting Ticket (Cleric/Mobile)",
+    "description": "Schuttgart/Cleric/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_cleric_move_i00",
+    "stackable": true
+  },
+  "7940": {
+    "name": "Greater Mercenary Posting Ticket (Wizard/Mobile)",
+    "description": "Schuttgart/Wizard/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7941": {
+    "name": "Dawn Mercenary Posting Ticket (Sword/Stationary)",
+    "description": "Schuttgart/Sword/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 140000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7942": {
+    "name": "Dawn Mercenary Posting Ticket (Spear/Stationary)",
+    "description": "Schuttgart/Spear/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  },
+  "7943": {
+    "name": "Dawn Mercenary Posting Ticket (Bow/Stationary)",
+    "description": "Schuttgart/Bow/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 200000,
+    "icon": "icon.mticket_bow_fix_i00",
+    "stackable": true
+  },
+  "7944": {
+    "name": "Dawn Mercenary Posting Ticket (Cleric/Stationary)",
+    "description": "Schuttgart/Cleric/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 350000,
+    "icon": "icon.mticket_cleric_fix_i00",
+    "stackable": true
+  },
+  "7945": {
+    "name": "Dawn Mercenary Posting Ticket (Wizard/Stationary)",
+    "description": "Schuttgart/Wizard/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 350000,
+    "icon": "icon.mticket_wizard_fix_i00",
+    "stackable": true
+  },
+  "7946": {
+    "name": "Dawn Mercenary Posting Ticket (Sword/Mobile)",
+    "description": "Schuttgart/Sword/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 140000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7947": {
+    "name": "Dawn Mercenary Posting Ticket (Spear/Mobile)",
+    "description": "Schuttgart/Spear/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_pole_move_i00",
+    "stackable": true
+  },
+  "7948": {
+    "name": "Dawn Mercenary Posting Ticket (Bow/Mobile)",
+    "description": "Schuttgart/Bow/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 200000,
+    "icon": "icon.mticket_bow_move_i00",
+    "stackable": true
+  },
+  "7949": {
+    "name": "Dawn Mercenary Posting Ticket (Cleric/Mobile)",
+    "description": "Schuttgart/Cleric/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 350000,
+    "icon": "icon.mticket_cleric_move_i00",
+    "stackable": true
+  },
+  "7950": {
+    "name": "Dawn Mercenary Posting Ticket (Wizard/Mobile)",
+    "description": "Schuttgart/Wizard/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 350000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7951": {
+    "name": "Greater Recruit Posting Ticket (Sword/Stationary)",
+    "description": "Schuttgart/Sword/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 70000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7952": {
+    "name": "Greater Recruit Posting Ticket (Spear/Stationary)",
+    "description": "Schuttgart/Spear/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 90000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  },
+  "7953": {
+    "name": "Greater Recruit Posting Ticket (Bow/Stationary)",
+    "description": "Schuttgart/Bow/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 110000,
+    "icon": "icon.mticket_bow_fix_i00",
+    "stackable": true
+  },
+  "7954": {
+    "name": "Greater Recruit Posting Ticket (Cleric/Stationary)",
+    "description": "Schuttgart/Cleric/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 230000,
+    "icon": "icon.mticket_cleric_fix_i00",
+    "stackable": true
+  },
+  "7955": {
+    "name": "Greater Recruit Posting Ticket (Wizard/Stationary)",
+    "description": "Schuttgart/Wizard/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 230000,
+    "icon": "icon.mticket_wizard_fix_i00",
+    "stackable": true
+  },
+  "7956": {
+    "name": "Greater Recruit Posting Ticket (Sword/Mobile)",
+    "description": "Schuttgart/Sword/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 70000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7957": {
+    "name": "Greater Recruit Posting Ticket (Spear/Mobile)",
+    "description": "Schuttgart/Spear/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 90000,
+    "icon": "icon.mticket_pole_move_i00",
+    "stackable": true
+  },
+  "7958": {
+    "name": "Greater Recruit Posting Ticket (Bow/Mobile)",
+    "description": "Schuttgart/Bow/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 110000,
+    "icon": "icon.mticket_bow_move_i00",
+    "stackable": true
+  },
+  "7959": {
+    "name": "Greater Recruit Posting Ticket (Cleric/Mobile)",
+    "description": "Schuttgart/Cleric/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 230000,
+    "icon": "icon.mticket_cleric_move_i00",
+    "stackable": true
+  },
+  "7960": {
+    "name": "Greater Recruit Posting Ticket (Wizard/Mobile)",
+    "description": "Schuttgart/Wizard/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 230000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7961": {
+    "name": "Recruit Posting Ticket (Sword/Stationary)",
+    "description": "Schuttgart/Sword/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7962": {
+    "name": "Recruit Posting Ticket (Spear/Stationary)",
+    "description": "Schuttgart/Spear/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  },
+  "7963": {
+    "name": "Recruit Posting Ticket (Bow/Stationary)",
+    "description": "Schuttgart/Bow/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 60000,
+    "icon": "icon.mticket_bow_fix_i00",
+    "stackable": true
+  },
+  "7964": {
+    "name": "Recruit Posting Ticket (Cleric/Stationary)",
+    "description": "Schuttgart/Cleric/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 150000,
+    "icon": "icon.mticket_cleric_fix_i00",
+    "stackable": true
+  },
+  "7965": {
+    "name": "Recruit Posting Ticket (Wizard/Stationary)",
+    "description": "Schuttgart/Wizard/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 150000,
+    "icon": "icon.mticket_wizard_fix_i00",
+    "stackable": true
+  },
+  "7966": {
+    "name": "Recruit Posting Ticket (Sword/Mobile)",
+    "description": "Schuttgart/Sword/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 40000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7967": {
+    "name": "Recruit Posting Ticket (Spear/Mobile)",
+    "description": "Schuttgart/Spear/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.mticket_pole_move_i00",
+    "stackable": true
+  },
+  "7968": {
+    "name": "Recruit Posting Ticket (Bow/Mobile)",
+    "description": "Schuttgart/Bow/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 60000,
+    "icon": "icon.mticket_bow_move_i00",
+    "stackable": true
+  },
+  "7969": {
+    "name": "Recruit Posting Ticket (Cleric/Mobile)",
+    "description": "Schuttgart/Cleric/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 150000,
+    "icon": "icon.mticket_cleric_move_i00",
+    "stackable": true
+  },
+  "7970": {
+    "name": "Recruit Posting Ticket (Wizard/Mobile)",
+    "description": "Schuttgart/Wizard/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 150000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7971": {
+    "name": "Nephilim Warrior Posting Ticket",
+    "description": "Schuttgart/Sword/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 2500000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7972": {
+    "name": "Nephilim Shaman Posting Ticket",
+    "description": "Schuttgart/Wizard/Mobile. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 5000000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7973": {
+    "name": "Mercenary Posting Ticket (Sword/Stationary)",
+    "description": "Rune/Sword/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7974": {
+    "name": "Mercenary Posting Ticket (Spear/Stationary)",
+    "description": "Rune/Spear/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 60000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  },
+  "7975": {
+    "name": "Mercenary Posting Ticket (Bow/Stationary)",
+    "description": "Rune/Bow/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 70000,
+    "icon": "icon.mticket_bow_fix_i00",
+    "stackable": true
+  },
+  "7976": {
+    "name": "Mercenary Posting Ticket (Cleric/Stationary)",
+    "description": "Rune/Cleric/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_cleric_fix_i00",
+    "stackable": true
+  },
+  "7977": {
+    "name": "Mercenary Posting Ticket (Wizard/Stationary)",
+    "description": "Rune/Wizard/Stationary",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_wizard_fix_i00",
+    "stackable": true
+  },
+  "7978": {
+    "name": "Mercenary Posting Ticket (Sword/Mobile)",
+    "description": "Rune/Sword/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 50000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7979": {
+    "name": "Mercenary Posting Ticket (Spear/Mobile)",
+    "description": "Rune/Spear/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 60000,
+    "icon": "icon.mticket_pole_move_i00",
+    "stackable": true
+  },
+  "7980": {
+    "name": "Mercenary Posting Ticket (Bow/Mobile)",
+    "description": "Rune/Bow/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 70000,
+    "icon": "icon.mticket_bow_move_i00",
+    "stackable": true
+  },
+  "7981": {
+    "name": "Mercenary Posting Ticket (Cleric/Mobile)",
+    "description": "Rune/Cleric/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_cleric_move_i00",
+    "stackable": true
+  },
+  "7982": {
+    "name": "Mercenary Posting Ticket (Wizard/Mobile)",
+    "description": "Rune/Wizard/Mobile",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7983": {
+    "name": "Mercenary Posting Ticket (Teleporter1)",
+    "description": "Placed in Rune, at the Teleporter or inside the castle, this ticket allows teleportation to the East Gate of the inner castle, the western section of the outer castle, the Plaza or the guardian's location.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7984": {
+    "name": "Mercenary Posting Ticket (Teleporter2)",
+    "description": "Placed in Rune, at the Teleporter or inside the castle, this ticket allows teleportation to the outer castle, the East Gate of the inner castle, the Plaza or the guardian's location.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7985": {
+    "name": "Mercenary Posting Ticket (Teleporter3)",
+    "description": "Placed in Rune, at the Teleporter or inside the castle, this ticket allows teleportation to the outer castle, the West Gate of the outer castle, the Plaza or the guardian's location.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7986": {
+    "name": "Mercenary Posting Ticket (Teleporter4)",
+    "description": "Placed in Rune, at the Teleporter or inside the castle, this ticket allows teleportation to the outer castle, the western section of the outer castle, the East Gate of the outer castle or the guardian's location.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7987": {
+    "name": "Mercenary Posting Ticket (Teleporter5)",
+    "description": "Placed in Rune, at the Teleporter or inside the castle, this ticket allows teleportation to the outer castle, the western section of the outer castle, the East Gate of the outer castle or to the Plaza.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_teleporter_fix_i00",
+    "stackable": true
+  },
+  "7988": {
+    "name": "Greater Mercenary Posting Ticket (Sword/Stationary)",
+    "description": "Rune/Sword/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 120000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7989": {
+    "name": "Greater Mercenary Posting Ticket (Spear/Stationary)",
+    "description": "Rune/Spear/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  },
+  "7990": {
+    "name": "Greater Mercenary Posting Ticket (Bow/Stationary)",
+    "description": "Rune/Bow/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_bow_fix_i00",
+    "stackable": true
+  },
+  "7991": {
+    "name": "Greater Mercenary Posting Ticket (Cleric/Stationary)",
+    "description": "Rune/Cleric/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 80000,
+    "icon": "icon.mticket_cleric_fix_i00",
+    "stackable": true
+  },
+  "7992": {
+    "name": "Greater Mercenary Posting Ticket (Wizard/Stationary)",
+    "description": "Rune/Wizard/Stationary. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 100000,
+    "icon": "icon.mticket_wizard_fix_i00",
+    "stackable": true
+  },
+  "7993": {
+    "name": "Greater Mercenary Posting Ticket (Sword/Mobile)",
+    "description": "Rune/Sword/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 120000,
+    "icon": "icon.mticket_sword_move_i00",
+    "stackable": true
+  },
+  "7994": {
+    "name": "Greater Mercenary Posting Ticket (Spear/Mobile)",
+    "description": "Rune/Spear/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_pole_move_i00",
+    "stackable": true
+  },
+  "7995": {
+    "name": "Greater Mercenary Posting Ticket (Bow/Mobile)",
+    "description": "Rune/Bow/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 250000,
+    "icon": "icon.mticket_bow_move_i00",
+    "stackable": true
+  },
+  "7996": {
+    "name": "Greater Mercenary Posting Ticket (Cleric/Mobile)",
+    "description": "Rune/Cleric/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 140000,
+    "icon": "icon.mticket_cleric_move_i00",
+    "stackable": true
+  },
+  "7997": {
+    "name": "Greater Mercenary Posting Ticket (Wizard/Mobile)",
+    "description": "Rune/Wizard/Mobile. The Seal of Strife cannot be used to place a mercenary when in the possession of the Revolutionaries of Dusk.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 170000,
+    "icon": "icon.mticket_wizard_move_i00",
+    "stackable": true
+  },
+  "7998": {
+    "name": "Dawn Mercenary Posting Ticket (Sword/Stationary)",
+    "description": "Rune/Sword/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 200000,
+    "icon": "icon.mticket_sword_fix_i00",
+    "stackable": true
+  },
+  "7999": {
+    "name": "Dawn Mercenary Posting Ticket (Spear/Stationary)",
+    "description": "Rune/Spear/Stationary. The Seal of Strife can only be used to place a mercenary when in the possession of the Lords of Dawn.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Paper",
+    "price": 350000,
+    "icon": "icon.mticket_pole_fix_i00",
+    "stackable": true
+  }
+}

@@ -1,0 +1,2926 @@
+{
+  "7800": {
+    "name": "Small Black Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1083,
+    "weight": 100,
+    "icon": "icon.etc_bream_i05",
+    "stackable": true
+  },
+  "7801": {
+    "name": "Black Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1155,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i05",
+    "stackable": true
+  },
+  "7802": {
+    "name": "Black Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1179,
+    "weight": 100,
+    "icon": "icon.etc_angler_i05",
+    "stackable": true
+  },
+  "7803": {
+    "name": "Black Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1202,
+    "weight": 100,
+    "icon": "icon.etc_bream_i05",
+    "stackable": true
+  },
+  "7804": {
+    "name": "Large Black Nimble Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1226,
+    "weight": 100,
+    "icon": "icon.etc_tuna_i05",
+    "stackable": true
+  },
+  "7805": {
+    "name": "Large Black Ugly Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1251,
+    "weight": 100,
+    "icon": "icon.etc_angler_i05",
+    "stackable": true
+  },
+  "7806": {
+    "name": "Large Black Fat Fish - For Beginners",
+    "description": "Double-click to randomly change into another item. The changed item can be used as a regular ingredient to make other items. Item - Easy Black Fish",
+    "kind": {
+      "Package": []
+    },
+    "material": "Fish",
+    "price": 1276,
+    "weight": 100,
+    "icon": "icon.etc_bream_i05",
+    "stackable": true
+  },
+  "7807": {
+    "name": "Green Colored Lure - For Beginners",
+    "description": "A lure used by beginners. Since only the fish intended for beginners take the bait, a player can easily learn how to fish. This bait is preferred by fast fish.",
+    "kind": {
+      "Etc": "Lure"
+    },
+    "material": "Liquid",
+    "price": 50,
+    "weight": 5,
+    "icon": "icon.etc_bait_i00",
+    "stackable": true
+  },
+  "7808": {
+    "name": "Purple Colored Lure - For Beginners",
+    "description": "A lure used by beginners. Since only the fish intended for beginners take the bait, a player can easily learn how to fish. This bait is preferred by fat fish.",
+    "kind": {
+      "Etc": "Lure"
+    },
+    "material": "Liquid",
+    "price": 70,
+    "weight": 5,
+    "icon": "icon.etc_bait_i01",
+    "stackable": true
+  },
+  "7809": {
+    "name": "Yellow Colored Lure - For Beginners",
+    "description": "A lure used by beginners. Since only the fish intended for beginners take the bait, a player can easily learn how to fish. This bait is preferred by ugly fish.",
+    "kind": {
+      "Etc": "Lure"
+    },
+    "material": "Liquid",
+    "price": 60,
+    "weight": 5,
+    "icon": "icon.etc_bait_i02",
+    "stackable": true
+  },
+  "7810": {
+    "name": "Soulfire Dirk - Mana Up",
+    "description": "<Soul Crystal Enhancement>. Increases Max MP by 30%. Special Ability: Mana Up",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 86
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 2209700,
+    "weight": 750,
+    "icon": "icon.weapon_dagger_of_magicflame_i01",
+    "crystal_count": 884,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3014,
+        "level": 1
+      }
+    ]
+  },
+  "7811": {
+    "name": "Soulfire Dirk - Magic Hold",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Dryad Root when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1201,
+            "level": 18
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 86
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 2209700,
+    "weight": 750,
+    "icon": "icon.weapon_dagger_of_magicflame_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "7812": {
+    "name": "Soulfire Dirk - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Has a 10% chance of casting Silence when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3074,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 86
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 2209700,
+    "weight": 750,
+    "icon": "icon.weapon_dagger_of_magicflame_i01",
+    "crystal_count": 884,
+    "enchantable": true
+  },
+  "7813": {
+    "name": "Hell Knife - Magic Regeneration",
+    "description": "<Soul Crystal Enhancement>. Casts Regeneration on a target with a 30% chance when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1044,
+            "level": 3
+          }
+        ],
+        "onmagic_chance": 30
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 6680500,
+    "weight": 740,
+    "icon": "icon.weapon_hell_knife_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "7814": {
+    "name": "Hell Knife - Mental Shield",
+    "description": "<Soul Crystal Enhancement>. Has a 50% chance of casting Mental Shield when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1035,
+            "level": 4
+          }
+        ],
+        "onmagic_chance": 50
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 6680500,
+    "weight": 740,
+    "icon": "icon.weapon_hell_knife_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "7815": {
+    "name": "Hell Knife - Magic Weakness",
+    "description": "<Soul Crystal Enhancement>. Has a 7% chance of casting Curse: Weakness when using a magic skill on the target.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 1164,
+            "level": 11
+          }
+        ],
+        "onmagic_chance": 7
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 6680500,
+    "weight": 740,
+    "icon": "icon.weapon_hell_knife_i01",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "7816": {
+    "name": "Apprentice Adventurer's Staff",
+    "description": "Apprentice Adventurer's Staff. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 23
+      },
+      "MAtk": {
+        "set": 24
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1070,
+    "icon": "icon.weapon_apprentices_staff_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7817": {
+    "name": "Apprentice Adventurer's Bone Club",
+    "description": "Apprentice Adventurer's Bone Club. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1850,
+    "icon": "icon.weapon_club_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7818": {
+    "name": "Apprentice Adventurer's Knife",
+    "description": "Apprentice Adventurer's Knife. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 21
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1120,
+    "icon": "icon.weapon_shining_knife_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7819": {
+    "name": "Apprentice Adventurer's Cestus",
+    "description": "Apprentice Adventurer's Cestus. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 29
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_vipers_canine_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7820": {
+    "name": "Apprentice Adventurer's Bow",
+    "description": "Apprentice Adventurer's Bow. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 7,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 1,
+        "reuse_delay": 1500
+      }
+    },
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 49
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1900,
+    "icon": "icon.weapon_short_bow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7821": {
+    "name": "Apprentice Adventurer's Long Sword",
+    "description": "Apprentice Adventurer's Long Sword. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 24
+      },
+      "MAtk": {
+        "set": 17
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.weapon_long_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7822": {
+    "name": "Traveler's Mace",
+    "description": "Traveler's Mace. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 43
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_mace_of_prayer_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7823": {
+    "name": "Traveler's Dark Elven Bow",
+    "description": "Traveler's Dark Elven Bow. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 6,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 2,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 105
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1830,
+    "icon": "icon.weapon_dark_elven_bow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7824": {
+    "name": "Traveler's Long Bow",
+    "description": "Traveler's Long Bow. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 6,
+        "spiritshots": 2,
+        "width": 0,
+        "mp_consume": 2,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 105
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1830,
+    "icon": "icon.weapon_strengthening_bow_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7825": {
+    "name": "Traveler's Staff",
+    "description": "Traveler's Staff. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 50
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1040,
+    "icon": "icon.weapon_staff_of_mana_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7826": {
+    "name": "Traveler's Bastard Sword",
+    "description": "Traveler's Bastard Sword. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1510,
+    "icon": "icon.weapon_bastard_sword_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7827": {
+    "name": "Traveler's Wand",
+    "description": "Traveler's Wand. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Etc": {},
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 41
+      },
+      "MAtk": {
+        "set": 43
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 570,
+    "icon": "icon.weapon_divine_tome_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7828": {
+    "name": "Traveler's Jamadhr",
+    "description": "Traveler's Jamadhr. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 62
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1550,
+    "icon": "icon.weapon_baghnakh_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7829": {
+    "name": "Traveler's Tomahawk",
+    "description": "Traveler's Tomahawk. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1780,
+    "icon": "icon.weapon_tomahawk_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7830": {
+    "name": "Traveler's Poniard Dagger",
+    "description": "Traveler's Poniard Dagger. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 45
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1090,
+    "icon": "icon.weapon_dirk_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7831": {
+    "name": "Traveler's Pike",
+    "description": "Traveler's Pike. This item cannot be exchanged, dropped, crystallized, or enchanted. If one's PK count is 1 or more, it cannot be used. Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 51
+      },
+      "MAtk": {
+        "set": 32
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2090,
+    "icon": "icon.weapon_pike_i00",
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7832": {
+    "name": "Apprentice Adventurer's Weapon Exchange Coupon",
+    "description": "An exchange coupon that is needed to borrow weapons for apprentice adventurers from the Adventurers' Guide.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7833": {
+    "name": "Adventurer's Magic Accessory Exchange Coupon",
+    "description": "Use this exchange coupon to borrow magic accessories from the Adventurers' Guild.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Paper",
+    "weight": 1,
+    "icon": "icon.etc_lottery_card_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7834": {
+    "name": "Art of Battle Axe",
+    "kind": {
+      "Pet": "Weapon"
+    },
+    "grade": "B",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 13100000,
+    "weight": 1570,
+    "icon": "icon.weapon_monster_i00",
+    "crystal_count": 1746,
+    "pet_useable": true
+  },
+  "7835": {
+    "name": "Amulet: Seal of Disease",
+    "description": "Amulet required for the Seal of Disease spell. Used by Dominators.",
+    "kind": {
+      "Etc": "Spellbook"
+    },
+    "material": "Wood",
+    "price": 11600,
+    "weight": 120,
+    "icon": "icon.etc_orcish_talisman_i00",
+    "stackable": true
+  },
+  "7836": {
+    "name": "Santa's Hat",
+    "description": "Santa's Hat, which is made to celebrate the holy day. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_santas_cap_i00",
+    "dropable": false
+  },
+  "7837": {
+    "name": "Sayha's White Mask",
+    "description": "2006 Lineage II Epic Collection Souvenir.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessory_full_mask_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7838": {
+    "name": "Santa's Hat",
+    "description": "A Santa Claus hat that was created to celebrate the holiday. This hat can be worn only during the end of year holiday season.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "icon.accessory_santas_cap_i00",
+    "dropable": false
+  },
+  "7839": {
+    "name": "Gran Kain's Black Mask",
+    "description": "2007 Lineage II Limited Edition Souvenir.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.accessory_full_mask_i01",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7840": {
+    "name": "Rabbit Ears - Event",
+    "description": "Hair accessory. In rememberance of the day you took on the hordes of angry bunnies.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_rabbit_ear_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7841": {
+    "name": "Racoon Ears",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_racoon_ear_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7842": {
+    "name": "Cat Ears",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_cat_ear_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7843": {
+    "name": "Pirate's Eyepatch",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_eye_bandage_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7844": {
+    "name": "Monocle",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_glasses_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7845": {
+    "name": "Outlaw's Eyepatch",
+    "description": "Purple eyepatch accessory. It cannot be exchanged for an event item and can't be dropped.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Left"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_outlaw_eyepatch_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7846": {
+    "name": "Maiden's Hairpin",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_maidens_hairpin_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7847": {
+    "name": "Lady's Hairpin",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_hairpin_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7848": {
+    "name": "Forget-me-not Hairpin",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_forget_me_not_hairpin_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7849": {
+    "name": "Daisy Hairpin",
+    "description": "for Japan",
+    "kind": {
+      "Armor": {
+        "Accessory": "Right"
+      }
+    },
+    "material": "Wood",
+    "conditions": {
+      "player": {
+        "gender": "Female"
+      }
+    },
+    "weight": 10,
+    "icon": "icon.accessory_daisy_hairpin_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "7850": {
+    "name": "Clan Oath Helm",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 37
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 58600,
+    "weight": 640,
+    "icon": "icon.armor_helmet_i00",
+    "crystal_count": 108,
+    "enchantable": true
+  },
+  "7851": {
+    "name": "Clan Oath Armor",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 158
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 253900,
+    "weight": 9870,
+    "icon": "icon.armor_t1001_ul_i00",
+    "crystal_count": 469,
+    "enchantable": true
+  },
+  "7852": {
+    "name": "Clan Oath Gauntlets - Heavy Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 39100,
+    "weight": 640,
+    "icon": "icon.armor_t1001_g_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "7853": {
+    "name": "Clan Oath Sabaton - Heavy Armor",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 39100,
+    "weight": 1280,
+    "icon": "icon.armor_t1001_b_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "7854": {
+    "name": "Clan Oath Brigandine",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 119
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 190400,
+    "weight": 5400,
+    "icon": "icon.armor_t1002_ul_i00",
+    "crystal_count": 352,
+    "enchantable": true
+  },
+  "7855": {
+    "name": "Clan Oath Leather Gloves - Light Armor",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 39100,
+    "weight": 640,
+    "icon": "icon.armor_t1002_g_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "7856": {
+    "name": "Clan Oath Boots - Light Armor",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 39100,
+    "weight": 1280,
+    "icon": "icon.armor_t1002_b_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "7857": {
+    "name": "Clan Oath Aketon",
+    "description": "Full body armor.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "D",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 79
+      },
+      "MaxMp": {
+        "add": 239
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 190400,
+    "weight": 2450,
+    "icon": "icon.armor_t1003_ul_i00",
+    "crystal_count": 352,
+    "enchantable": true
+  },
+  "7858": {
+    "name": "Clan Oath Padded Gloves - Robe",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 39100,
+    "weight": 640,
+    "icon": "icon.armor_t1003_g_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "7859": {
+    "name": "Clan Oath Sandals - Robe",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 24
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Vassal"
+      }
+    },
+    "price": 39100,
+    "weight": 1280,
+    "icon": "icon.armor_t1003_b_i00",
+    "crystal_count": 72,
+    "enchantable": true
+  },
+  "7860": {
+    "name": "Apella Helm",
+    "description": "May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 1336000,
+    "weight": 570,
+    "icon": "icon.armor_helmet_i00",
+    "enchantable": true
+  },
+  "7861": {
+    "name": "Apella Plate Armor",
+    "description": "One-piece upper and lower body armor for clans. May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 278
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 5788000,
+    "weight": 9780,
+    "icon": "icon.armor_t1004_ul_i00",
+    "enchantable": true
+  },
+  "7862": {
+    "name": "Apella Gauntlet - Heavy Armor",
+    "description": "May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t1004_g_i00",
+    "enchantable": true
+  },
+  "7863": {
+    "name": "Apella Solleret - Heavy Armor",
+    "description": "May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t1004_b_i00",
+    "enchantable": true
+  },
+  "7864": {
+    "name": "Apella Brigandine",
+    "description": "One-piece upper and lower body armor for clans. May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 209
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 4341000,
+    "weight": 5400,
+    "icon": "icon.armor_t1005_ul_i00",
+    "enchantable": true
+  },
+  "7865": {
+    "name": "Apella Leather Gloves - Light Armor",
+    "description": "May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t1005_g_i00",
+    "enchantable": true
+  },
+  "7866": {
+    "name": "Apella Boots - Light Armor",
+    "description": "May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t1005_b_i00",
+    "enchantable": true
+  },
+  "7867": {
+    "name": "Apella Doublet",
+    "description": "One-piece upper and lower body armor for clans. May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 139
+      },
+      "MaxMp": {
+        "add": 665
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 4341000,
+    "weight": 2450,
+    "icon": "icon.armor_t1006_ul_i00",
+    "enchantable": true
+  },
+  "7868": {
+    "name": "Apella Silk Gloves - Robe",
+    "description": "May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t1006_g_i00",
+    "enchantable": true
+  },
+  "7869": {
+    "name": "Apella Sandals - Robe",
+    "description": "May be worn by Elder and above.",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t1006_b_i00",
+    "enchantable": true
+  },
+  "7870": {
+    "name": "Sealed Apella Helm",
+    "description": "May be worn by Elders and above. Sealed Apella Helmet. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Cloth",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 1336000,
+    "weight": 570,
+    "icon": "icon.armor_helmet_i02",
+    "enchantable": true
+  },
+  "7871": {
+    "name": "Sealed Apella Plate Armor",
+    "description": "May be worn by Elders and above. Sealed Apella Plate Armor. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 278
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 5788000,
+    "weight": 9780,
+    "icon": "icon.armor_t1004_ul_i02",
+    "enchantable": true
+  },
+  "7872": {
+    "name": "Sealed Apella Gauntlet",
+    "description": "May be worn by Elders and above. Sealed Apella Gauntlet. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t1004_g_i02",
+    "enchantable": true
+  },
+  "7873": {
+    "name": "Sealed Apella Solleret",
+    "description": "May be worn by Elders and above. Sealed Apella Solleret. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t1004_b_i02",
+    "enchantable": true
+  },
+  "7874": {
+    "name": "Sealed Apella Brigandine",
+    "description": "May be worn by Elders and above. Sealed Apella Clothing. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 209
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 4341000,
+    "weight": 5400,
+    "icon": "icon.armor_t1005_ul_i02",
+    "enchantable": true
+  },
+  "7875": {
+    "name": "Sealed Apella Leather Gloves",
+    "description": "May be worn by Elders and above. Sealed Apella Leather Gloves. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t1005_g_i02",
+    "enchantable": true
+  },
+  "7876": {
+    "name": "Sealed Apella Boots",
+    "description": "May be worn by Elders and above. Sealed Apella Shoes. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t1005_b_i02",
+    "enchantable": true
+  },
+  "7877": {
+    "name": "Sealed Apella Doublet",
+    "description": "May be worn by Elders and above. Sealed Apella Doublet. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 139
+      },
+      "MaxMp": {
+        "add": 665
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 4341000,
+    "weight": 2450,
+    "icon": "icon.armor_t1006_ul_i02",
+    "enchantable": true
+  },
+  "7878": {
+    "name": "Sealed Apella Silk Gloves",
+    "description": "May be worn by Elders and above. Sealed Apella Silk Gloves. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 580,
+    "icon": "icon.armor_t1006_g_i02",
+    "enchantable": true
+  },
+  "7879": {
+    "name": "Sealed Apella Sandals",
+    "description": "May be worn by Elders and above. Sealed Apella Sandals. The blacksmith in a village can release the seal on this item.",
+    "kind": {
+      "Armor": {
+        "Sealed": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ],
+        "clan_rank": "Elder"
+      }
+    },
+    "price": 890000,
+    "weight": 1130,
+    "icon": "icon.armor_t1006_b_i02",
+    "enchantable": true
+  },
+  "7880": {
+    "name": "Steel Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "change_weapon_id": 9211
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 49
+      },
+      "MAtk": {
+        "set": 26
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 315000,
+    "weight": 2100,
+    "icon": "icon.weapon_iron_sword_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "7881": {
+    "name": "Titan Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9223
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2020,
+    "icon": "icon.weapon_giants_sword_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "7882": {
+    "name": "Pa'agrian Sword",
+    "description": "Bestows one of the following functions: Focus, Health or Critical Drain.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "change_weapon_id": 9284
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 1980,
+    "icon": "icon.weapon_sword_of_paagrio_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7883": {
+    "name": "Guardian Sword",
+    "description": "Bestows one of the following functions: Critical Drain, Health or Critical Bleed.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9320
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 10091400,
+    "weight": 1930,
+    "icon": "icon.weapon_guardians_sword_i00",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "7884": {
+    "name": "Infernal Master",
+    "description": "Bestows one of the following functions: Haste, Critical Damage, or Focus.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "change_weapon_id": 9332
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1900,
+    "icon": "icon.weapon_inferno_master_i00",
+    "crystal_count": 1128,
+    "enchantable": true
+  },
+  "7885": {
+    "name": "Priest Sword",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 32
+      },
+      "MAtk": {
+        "set": 35
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 315000,
+    "weight": 1520,
+    "icon": "icon.weapon_sword_of_priest_i00",
+    "crystal_count": 582,
+    "enchantable": true
+  },
+  "7886": {
+    "name": "Sword of Magic Fog",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 63
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1074000,
+    "weight": 1450,
+    "icon": "icon.weapon_sword_of_magic_fog_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "7887": {
+    "name": "Mysterious Sword",
+    "description": "Bestows one of the following functions: Acumen, M. Atk., or Magic Weakness.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 2,
+        "spiritshots": 2,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 85
+      },
+      "MAtk": {
+        "set": 81
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1762900,
+    "weight": 1430,
+    "icon": "icon.weapon_mystery_sword_i00",
+    "crystal_count": 705,
+    "enchantable": true
+  },
+  "7888": {
+    "name": "Ecliptic Sword",
+    "description": "Bestows one of the following functions: Empower, M. Atk. or Magic Silence.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1380,
+    "icon": "icon.weapon_sword_of_eclipse_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "7889": {
+    "name": "Wizard's Tear",
+    "description": "Bestows one of the following functions: Acumen, M. Atk., or Conversion.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1350,
+    "icon": "icon.weapon_tears_of_wizard_i00",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "7890": {
+    "name": "Priest Mace",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 63
+      },
+      "MAtk": {
+        "set": 63
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 1074000,
+    "weight": 1720,
+    "icon": "icon.weapon_mace_of_priest_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "7891": {
+    "name": "Ecliptic Axe",
+    "description": "Bestows one of the following functions: Conversion, M. Atk. or Magic Hold.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 125
+      },
+      "MAtk": {
+        "set": 111
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 4713500,
+    "weight": 1640,
+    "icon": "icon.weapon_eclipse_axe_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "7892": {
+    "name": "Spell Breaker",
+    "description": "Bestows one of the following functions: Acumen, Mental Shield or Magic Hold.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 140
+      },
+      "MAtk": {
+        "set": 122
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 6680500,
+    "weight": 1620,
+    "icon": "icon.weapon_spell_breaker_i00",
+    "crystal_count": 891,
+    "enchantable": true
+  },
+  "7893": {
+    "name": "Kaim Vanul's Bones",
+    "description": "Bestows one of the following functions: Mana Up, Magic Silence, or Conversion.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 10091400,
+    "weight": 1570,
+    "icon": "icon.weapon_bone_of_kaim_vanul_i00",
+    "crystal_count": 1346,
+    "enchantable": true
+  },
+  "7894": {
+    "name": "Spiritual Eye",
+    "description": "Bestows one of the following functions: Mana Up, Magic Poison, or Acumen.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 170
+      },
+      "MAtk": {
+        "set": 143
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 14098000,
+    "weight": 1550,
+    "icon": "icon.weapon_eye_of_soul_i00",
+    "crystal_count": 1128,
+    "enchantable": true
+  },
+  "7895": {
+    "name": "Flaming Dragon Skull",
+    "description": "Bestows one of the following functions: Acumen, M. Atk. or Magic Silence.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 1530,
+    "icon": "icon.weapon_dragon_flame_head_i00",
+    "crystal_count": 1659,
+    "enchantable": true
+  },
+  "7896": {
+    "name": "Titan Hammer",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 96
+      },
+      "MAtk": {
+        "set": 47
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 1074000,
+    "weight": 2100,
+    "icon": "icon.weapon_giants_hammer_i00",
+    "crystal_count": 1983,
+    "enchantable": true
+  },
+  "7897": {
+    "name": "Dwarven Hammer",
+    "description": "Bestows one of the following functions: Health, Anger, or Critical Bleed.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 4713500,
+    "weight": 2010,
+    "icon": "icon.weapon_dwarven_hammer_i00",
+    "crystal_count": 1885,
+    "enchantable": true
+  },
+  "7898": {
+    "name": "Karik Horn",
+    "description": "Bestows one of the following functions: Focus, Haste, or Critical Drain.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 3304300,
+    "weight": 2020,
+    "icon": "icon.weapon_horn_of_karik_i00",
+    "crystal_count": 1322,
+    "enchantable": true
+  },
+  "7899": {
+    "name": "Destroyer Hammer",
+    "description": "Bestows one of the following functions: Health, Haste, or Critical Drain.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "TwoHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 259
+      },
+      "MAtk": {
+        "set": 107
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 14098000,
+    "weight": 1910,
+    "icon": "icon.weapon_hammer_of_destroyer_i00",
+    "crystal_count": 1128,
+    "enchantable": true
+  }
+}

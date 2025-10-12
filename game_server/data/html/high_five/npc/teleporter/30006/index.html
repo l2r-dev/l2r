@@ -1,0 +1,8 @@
+{% extends "_common/base.html" %}
+{% import "teleporter/_common/macros.html" as macros %}
+{% block body %}
+Welcome! I am Gatekeeper Roxxy, dispatched from the Ivory Tower. I'm very happy to return to my hometown. Perhaps you have been to the Einhovant's School of Magic? Grand Magister Gallint was my old teacher. Well then, what can I do for you?<br>
+<a action="bypass -h npc_{{ object_id }}_chat 2">Ask about the Airship Wharf.</a><br>
+<a action="bypass -h npc_{{ object_id }}_chat 1">Ask about the Ivory Tower.</a><br>
+{{ macros::gatekeeper(object_id=object_id, monster_track=false, fantasy_isle=false) }}
+{% endblock body %}

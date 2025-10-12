@@ -1,0 +1,8260 @@
+{
+  "18900": {
+    "level": 84,
+    "kind": "FeedableBeast",
+    "name": "Full Grown Grendel",
+    "race": "Animal",
+    "gender": "Male",
+    "reward": {
+      "exp": 83903,
+      "sp": 7596
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 40,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4028,
+        "level": 2
+      },
+      {
+        "id": 4071,
+        "level": 3,
+        "description": "NPC Might"
+      },
+      {
+        "id": 4116,
+        "level": 5,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4379,
+        "level": 5,
+        "description": "Resist M. Atk."
+      },
+      {
+        "id": 4408,
+        "level": 11,
+        "description": "Resist Spear Weapons"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (3x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 15,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 16,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Very Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4592,
+        "level": 10,
+        "description": "Animals"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Decrease P. Def."
+      },
+      {
+        "id": 5620,
+        "level": 7,
+        "description": "Water Attacks"
+      },
+      {
+        "id": 6556,
+        "level": 17,
+        "description": "Short-Range Physical Attack Weakness"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 42.0,
+          "items": [
+            {
+              "id": 8600,
+              "min": 1,
+              "max": 1,
+              "chance": 55.0,
+              "description": "Herb of Life"
+            },
+            {
+              "id": 8601,
+              "min": 1,
+              "max": 1,
+              "chance": 38.0,
+              "description": "Greater Herb of Life"
+            },
+            {
+              "id": 8602,
+              "min": 1,
+              "max": 1,
+              "chance": 7.0,
+              "description": "Superior Herb of Life"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8603,
+              "min": 1,
+              "max": 1,
+              "chance": 40.0,
+              "description": "Herb of Mana"
+            },
+            {
+              "id": 8604,
+              "min": 1,
+              "max": 1,
+              "chance": 52.0,
+              "description": "Greater Herb of Mana"
+            },
+            {
+              "id": 8605,
+              "min": 1,
+              "max": 1,
+              "chance": 8.0,
+              "description": "Superior Herb of Mana"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 25.0,
+          "items": [
+            {
+              "id": 8606,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Power"
+            },
+            {
+              "id": 8608,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Alacrity"
+            },
+            {
+              "id": 8610,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Probability"
+            },
+            {
+              "id": 10655,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Vampiric Rage"
+            },
+            {
+              "id": 10656,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Power"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 10.0,
+          "items": [
+            {
+              "id": 8607,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Magic"
+            },
+            {
+              "id": 8609,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Casting Spd."
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.0,
+          "items": [
+            {
+              "id": 8612,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Warrior"
+            },
+            {
+              "id": 8613,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Mystic"
+            },
+            {
+              "id": 8614,
+              "min": 1,
+              "max": 1,
+              "chance": 34.0,
+              "description": "Herb of Recovery"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8611,
+              "min": 1,
+              "max": 1,
+              "chance": 94.0,
+              "description": "Herb of Speed"
+            },
+            {
+              "id": 10657,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Herb of Doubt"
+            },
+            {
+              "id": 13028,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Vitality Replenishing Herb"
+            }
+          ]
+        }
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 34,
+        "height": 32
+      }
+    }
+  },
+  "18901": {
+    "level": 83,
+    "kind": "Friendly",
+    "name": "Kookaburra",
+    "title": "Golden",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3835.59060587002,
+        "MaxMp": 1777.4,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1099.42361669366,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 750.763809564873,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 353.86144,
+        "MDef": 258.94045
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 90,
+          "Water": 170,
+          "Wind": 130,
+          "Earth": 130,
+          "Holy": 130,
+          "Dark": 130
+        }
+      },
+      "speed": {
+        "Walk": 13,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4074,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Haste"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 14,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Beasts"
+      },
+      {
+        "id": 6234,
+        "level": 1,
+        "description": "Water Attacks"
+      },
+      {
+        "id": 6556,
+        "level": 16,
+        "description": "Presentation - Adena Firework"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 21
+      }
+    }
+  },
+  "18902": {
+    "level": 83,
+    "kind": "Friendly",
+    "name": "Cougar",
+    "title": "Golden",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3835.59060587002,
+        "MaxMp": 1777.4,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1099.42361669366,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 750.763809564873,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 353.86144,
+        "MDef": 258.94045
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 90,
+          "Water": 170,
+          "Wind": 130,
+          "Earth": 130,
+          "Holy": 130,
+          "Dark": 130
+        }
+      },
+      "speed": {
+        "Walk": 28,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4074,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Haste"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 14,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Beasts"
+      },
+      {
+        "id": 6234,
+        "level": 1,
+        "description": "Water Attacks"
+      },
+      {
+        "id": 6556,
+        "level": 16,
+        "description": "Presentation - Adena Firework"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 21
+      }
+    }
+  },
+  "18903": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Buffalo",
+    "title": "Golden",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 110
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4028,
+        "level": 2
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Might"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 15,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 15,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Beasts"
+      },
+      {
+        "id": 6234,
+        "level": 1,
+        "description": "Water Attacks"
+      },
+      {
+        "id": 6556,
+        "level": 17,
+        "description": "Presentation - Adena Firework"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 16,
+        "height": 22
+      }
+    }
+  },
+  "18904": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Grendel",
+    "title": "Golden",
+    "race": "Animal",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 40,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4028,
+        "level": 2
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "NPC Might"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 15,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 15,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Strong P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 4,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Animals"
+      },
+      {
+        "id": 6234,
+        "level": 1,
+        "description": "Water Attacks"
+      },
+      {
+        "id": 6556,
+        "level": 17,
+        "description": "Presentation - Adena Firework"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 17
+      }
+    }
+  },
+  "18905": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Farm Ravager",
+    "title": "Crazed",
+    "race": "Humanoid",
+    "gender": "Male",
+    "reward": {
+      "exp": 243976,
+      "sp": 2243
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 11
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (3x)"
+      },
+      {
+        "id": 4410,
+        "level": 16,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 15,
+        "description": "Very Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Humanoids"
+      },
+      {
+        "id": 6559,
+        "level": 17,
+        "description": "Water Attacks"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 29,
+        "height": 37
+      }
+    }
+  },
+  "18906": {
+    "level": 84,
+    "kind": "Monster",
+    "name": "Farm Bandit",
+    "race": "Humanoid",
+    "gender": "Male",
+    "reward": {
+      "exp": 17661,
+      "sp": 1884
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 180
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4028,
+        "level": 3
+      },
+      {
+        "id": 4071,
+        "level": 3,
+        "description": "NPC Might"
+      },
+      {
+        "id": 4116,
+        "level": 5,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist M. Atk."
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 13,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Slightly Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Humanoids"
+      },
+      {
+        "id": 5620,
+        "level": 2,
+        "description": "Water Attacks"
+      },
+      {
+        "id": 6559,
+        "level": 16,
+        "description": "Short-Range Physical Attack Weakness"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 686,
+              "max": 1402,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.6238999962806702,
+          "items": [
+            {
+              "id": 15703,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0442,
+              "description": "Sealed Moirai Gauntlet"
+            },
+            {
+              "id": 15704,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0442,
+              "description": "Sealed Moirai Leather Gloves"
+            },
+            {
+              "id": 15705,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0442,
+              "description": "Sealed Moirai Gloves"
+            },
+            {
+              "id": 15706,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0442,
+              "description": "Sealed Moirai Boots"
+            },
+            {
+              "id": 15707,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0442,
+              "description": "Sealed Moirai Leather Boots"
+            },
+            {
+              "id": 15708,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0442,
+              "description": "Sealed Moirai Shoes"
+            },
+            {
+              "id": 15654,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6224,
+              "description": "Sealed Moirai Gauntlet Piece"
+            },
+            {
+              "id": 15655,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6224,
+              "description": "Sealed Moirai Leather Gloves Piece"
+            },
+            {
+              "id": 15656,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6224,
+              "description": "Sealed Moirai Gloves Piece"
+            },
+            {
+              "id": 15657,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6224,
+              "description": "Sealed Moirai Boots Piece"
+            },
+            {
+              "id": 15658,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6224,
+              "description": "Sealed Moirai Leather Boots Piece"
+            },
+            {
+              "id": 15659,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6228,
+              "description": "Sealed Moirai Shoes Piece"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 4.810500144958496,
+          "items": [
+            {
+              "id": 1879,
+              "min": 1,
+              "max": 1,
+              "chance": 60.3191,
+              "description": "Cokes"
+            },
+            {
+              "id": 1885,
+              "min": 1,
+              "max": 1,
+              "chance": 30.1595,
+              "description": "High-Grade Suede"
+            },
+            {
+              "id": 9628,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8385,
+              "description": "Leonard"
+            },
+            {
+              "id": 9630,
+              "min": 1,
+              "max": 1,
+              "chance": 1.9048,
+              "description": "Orichalcum"
+            },
+            {
+              "id": 9629,
+              "min": 1,
+              "max": 1,
+              "chance": 1.5735,
+              "description": "Adamantine"
+            },
+            {
+              "id": 10483,
+              "min": 1,
+              "max": 1,
+              "chance": 2.5133,
+              "description": "Life Stone - Level 82"
+            },
+            {
+              "id": 10484,
+              "min": 1,
+              "max": 1,
+              "chance": 0.6283,
+              "description": "Mid-Grade Life Stone - Level 82"
+            },
+            {
+              "id": 10485,
+              "min": 1,
+              "max": 1,
+              "chance": 0.063,
+              "description": "High-Grade Life Stone - Level 82"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 42.0,
+          "items": [
+            {
+              "id": 8600,
+              "min": 1,
+              "max": 1,
+              "chance": 55.0,
+              "description": "Herb of Life"
+            },
+            {
+              "id": 8601,
+              "min": 1,
+              "max": 1,
+              "chance": 38.0,
+              "description": "Greater Herb of Life"
+            },
+            {
+              "id": 8602,
+              "min": 1,
+              "max": 1,
+              "chance": 7.0,
+              "description": "Superior Herb of Life"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8603,
+              "min": 1,
+              "max": 1,
+              "chance": 40.0,
+              "description": "Herb of Mana"
+            },
+            {
+              "id": 8604,
+              "min": 1,
+              "max": 1,
+              "chance": 52.0,
+              "description": "Greater Herb of Mana"
+            },
+            {
+              "id": 8605,
+              "min": 1,
+              "max": 1,
+              "chance": 8.0,
+              "description": "Superior Herb of Mana"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 25.0,
+          "items": [
+            {
+              "id": 8606,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Power"
+            },
+            {
+              "id": 8608,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Alacrity"
+            },
+            {
+              "id": 8610,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Probability"
+            },
+            {
+              "id": 10655,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Vampiric Rage"
+            },
+            {
+              "id": 10656,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Power"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 10.0,
+          "items": [
+            {
+              "id": 8607,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Magic"
+            },
+            {
+              "id": 8609,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Casting Spd."
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.0,
+          "items": [
+            {
+              "id": 8612,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Warrior"
+            },
+            {
+              "id": 8613,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Mystic"
+            },
+            {
+              "id": 8614,
+              "min": 1,
+              "max": 1,
+              "chance": 34.0,
+              "description": "Herb of Recovery"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8611,
+              "min": 1,
+              "max": 1,
+              "chance": 94.0,
+              "description": "Herb of Speed"
+            },
+            {
+              "id": 10657,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Herb of Doubt"
+            },
+            {
+              "id": 13028,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Vitality Replenishing Herb"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 15654,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5826,
+            "description": "Sealed Moirai Gauntlet Piece"
+          },
+          {
+            "id": 15655,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5826,
+            "description": "Sealed Moirai Leather Gloves Piece"
+          },
+          {
+            "id": 15656,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5826,
+            "description": "Sealed Moirai Gloves Piece"
+          },
+          {
+            "id": 15657,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5826,
+            "description": "Sealed Moirai Boots Piece"
+          },
+          {
+            "id": 15658,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5826,
+            "description": "Sealed Moirai Leather Boots Piece"
+          },
+          {
+            "id": 15659,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5826,
+            "description": "Sealed Moirai Shoes Piece"
+          },
+          {
+            "id": 9630,
+            "min": 1,
+            "max": 1,
+            "chance": 0.3434,
+            "description": "Orichalcum"
+          },
+          {
+            "id": 15784,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0775,
+            "description": "Recipe - Sealed Moirai Gauntlet (60%)"
+          },
+          {
+            "id": 15785,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0775,
+            "description": "Recipe - Sealed Moirai Leather Gloves (60%)"
+          },
+          {
+            "id": 15786,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0775,
+            "description": "Recipe - Sealed Moirai Gloves (60%)"
+          },
+          {
+            "id": 15787,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0775,
+            "description": "Recipe - Sealed Moirai Boots (60%)"
+          },
+          {
+            "id": 15788,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0775,
+            "description": "Recipe - Sealed Moirai Leather Boots (60%)"
+          },
+          {
+            "id": 15789,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0775,
+            "description": "Recipe - Sealed Moirai Shoes (60%)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 29,
+        "height": 37
+      }
+    }
+  },
+  "18907": {
+    "level": 84,
+    "kind": "Monster",
+    "name": "Beast Devourer",
+    "race": "Humanoid",
+    "gender": "Male",
+    "reward": {
+      "exp": 18651,
+      "sp": 1990
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 10,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Fist"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 150
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4071,
+        "level": 3
+      },
+      {
+        "id": 4074,
+        "level": 2,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4116,
+        "level": 5,
+        "description": "NPC Haste"
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist M. Atk."
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 13,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Slightly Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 1,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "Bare Hands"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Humanoids"
+      },
+      {
+        "id": 5620,
+        "level": 2,
+        "description": "Water Attacks"
+      },
+      {
+        "id": 6566,
+        "level": 17,
+        "description": "Short-Range Physical Attack Weakness"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 725,
+              "max": 1481,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.5767999887466431,
+          "items": [
+            {
+              "id": 15694,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0404,
+              "description": "Sealed Moirai Helmet"
+            },
+            {
+              "id": 15695,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0404,
+              "description": "Sealed Moirai Leather Helmet"
+            },
+            {
+              "id": 15696,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0404,
+              "description": "Sealed Moirai Circlet"
+            },
+            {
+              "id": 15710,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0578,
+              "description": "Sealed Moirai Shield"
+            },
+            {
+              "id": 15709,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0578,
+              "description": "Sealed Moirai Sigil"
+            },
+            {
+              "id": 15645,
+              "min": 1,
+              "max": 1,
+              "chance": 15.1498,
+              "description": "Sealed Moirai Helmet Piece"
+            },
+            {
+              "id": 15646,
+              "min": 1,
+              "max": 1,
+              "chance": 15.1498,
+              "description": "Sealed Moirai Leather Helmet Piece"
+            },
+            {
+              "id": 15647,
+              "min": 1,
+              "max": 1,
+              "chance": 15.1498,
+              "description": "Sealed Moirai Circlet Piece"
+            },
+            {
+              "id": 15693,
+              "min": 1,
+              "max": 1,
+              "chance": 27.1569,
+              "description": "Sealed Moirai Shield Piece"
+            },
+            {
+              "id": 15692,
+              "min": 1,
+              "max": 1,
+              "chance": 27.1569,
+              "description": "Sealed Moirai Sigil Piece"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 5.081299781799316,
+          "items": [
+            {
+              "id": 1879,
+              "min": 1,
+              "max": 1,
+              "chance": 60.3191,
+              "description": "Cokes"
+            },
+            {
+              "id": 1885,
+              "min": 1,
+              "max": 1,
+              "chance": 30.1595,
+              "description": "High-Grade Suede"
+            },
+            {
+              "id": 9628,
+              "min": 1,
+              "max": 1,
+              "chance": 2.8385,
+              "description": "Leonard"
+            },
+            {
+              "id": 9630,
+              "min": 1,
+              "max": 1,
+              "chance": 1.9048,
+              "description": "Orichalcum"
+            },
+            {
+              "id": 9629,
+              "min": 1,
+              "max": 1,
+              "chance": 1.5735,
+              "description": "Adamantine"
+            },
+            {
+              "id": 10483,
+              "min": 1,
+              "max": 1,
+              "chance": 2.5133,
+              "description": "Life Stone - Level 82"
+            },
+            {
+              "id": 10484,
+              "min": 1,
+              "max": 1,
+              "chance": 0.6283,
+              "description": "Mid-Grade Life Stone - Level 82"
+            },
+            {
+              "id": 10485,
+              "min": 1,
+              "max": 1,
+              "chance": 0.063,
+              "description": "High-Grade Life Stone - Level 82"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 42.0,
+          "items": [
+            {
+              "id": 8600,
+              "min": 1,
+              "max": 1,
+              "chance": 55.0,
+              "description": "Herb of Life"
+            },
+            {
+              "id": 8601,
+              "min": 1,
+              "max": 1,
+              "chance": 38.0,
+              "description": "Greater Herb of Life"
+            },
+            {
+              "id": 8602,
+              "min": 1,
+              "max": 1,
+              "chance": 7.0,
+              "description": "Superior Herb of Life"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8603,
+              "min": 1,
+              "max": 1,
+              "chance": 40.0,
+              "description": "Herb of Mana"
+            },
+            {
+              "id": 8604,
+              "min": 1,
+              "max": 1,
+              "chance": 52.0,
+              "description": "Greater Herb of Mana"
+            },
+            {
+              "id": 8605,
+              "min": 1,
+              "max": 1,
+              "chance": 8.0,
+              "description": "Superior Herb of Mana"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 25.0,
+          "items": [
+            {
+              "id": 8606,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Power"
+            },
+            {
+              "id": 8608,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Alacrity"
+            },
+            {
+              "id": 8610,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Probability"
+            },
+            {
+              "id": 10655,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Vampiric Rage"
+            },
+            {
+              "id": 10656,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Power"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 10.0,
+          "items": [
+            {
+              "id": 8607,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Magic"
+            },
+            {
+              "id": 8609,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Casting Spd."
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.0,
+          "items": [
+            {
+              "id": 8612,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Warrior"
+            },
+            {
+              "id": 8613,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Mystic"
+            },
+            {
+              "id": 8614,
+              "min": 1,
+              "max": 1,
+              "chance": 34.0,
+              "description": "Herb of Recovery"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8611,
+              "min": 1,
+              "max": 1,
+              "chance": 94.0,
+              "description": "Herb of Speed"
+            },
+            {
+              "id": 10657,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Herb of Doubt"
+            },
+            {
+              "id": 13028,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Vitality Replenishing Herb"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 15645,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5317,
+            "description": "Sealed Moirai Helmet Piece"
+          },
+          {
+            "id": 15646,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5317,
+            "description": "Sealed Moirai Leather Helmet Piece"
+          },
+          {
+            "id": 15647,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5317,
+            "description": "Sealed Moirai Circlet Piece"
+          },
+          {
+            "id": 15693,
+            "min": 1,
+            "max": 1,
+            "chance": 0.9532,
+            "description": "Sealed Moirai Shield Piece"
+          },
+          {
+            "id": 15692,
+            "min": 1,
+            "max": 1,
+            "chance": 0.9532,
+            "description": "Sealed Moirai Sigil Piece"
+          },
+          {
+            "id": 15775,
+            "min": 1,
+            "max": 1,
+            "chance": 0.071,
+            "description": "Recipe - Sealed Moirai Helmet (60%)"
+          },
+          {
+            "id": 15776,
+            "min": 1,
+            "max": 1,
+            "chance": 0.071,
+            "description": "Recipe - Sealed Moirai Leather Helmet(60%)"
+          },
+          {
+            "id": 15777,
+            "min": 1,
+            "max": 1,
+            "chance": 0.071,
+            "description": "Recipe - Sealed Moirai Circlet (60%)"
+          },
+          {
+            "id": 15791,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1014,
+            "description": "Recipe - Sealed Moirai Shield (60%)"
+          },
+          {
+            "id": 15790,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1014,
+            "description": "Recipe - Sealed Moirai Sigil (60%)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 27,
+        "height": 31
+      }
+    }
+  },
+  "18908": {
+    "level": 83,
+    "kind": "Monster",
+    "name": "Sel Mahum Chef",
+    "race": "Humanoid",
+    "gender": "Male",
+    "reward": {
+      "exp": 17547,
+      "sp": 1759
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3835.59060587002,
+        "MaxMp": 1777.4,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1099.42361669366,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 750.763809564873,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 353.86144,
+        "MDef": 258.94045
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 170,
+          "Water": 90,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 40,
+        "Run": 120
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4071,
+        "level": 5
+      },
+      {
+        "id": 4116,
+        "level": 9,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4408,
+        "level": 10,
+        "description": "Resist M. Atk."
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (2x)"
+      },
+      {
+        "id": 4410,
+        "level": 6,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Very Weak P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 6,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 15,
+        "description": "Very Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Strong M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 6,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 4458,
+        "level": 1,
+        "description": "Humanoids"
+      },
+      {
+        "id": 5462,
+        "level": 1,
+        "description": "Spear Weapon Weak Point"
+      },
+      {
+        "id": 5620,
+        "level": 9,
+        "description": "Fire Attacks"
+      },
+      {
+        "id": 5663,
+        "level": 5,
+        "description": "Short-Range Physical Attack Weakness"
+      },
+      {
+        "id": 6330,
+        "level": 1,
+        "description": "Resistance to Ancient Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 25.0,
+          "items": [
+            {
+              "id": 15492,
+              "min": 1,
+              "max": 2,
+              "chance": 100.0,
+              "description": "Sel Mahum Salmon Porridge"
+            }
+          ]
+        }
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 35,
+        "height": 32
+      }
+    }
+  },
+  "18909": {
+    "level": 83,
+    "kind": "Monster",
+    "name": "Solina Knights",
+    "race": "Divine",
+    "gender": "Male",
+    "reward": {
+      "exp": 29809,
+      "sp": 3060
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3835.59060587002,
+        "MaxMp": 1777.4,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1099.42361669366,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 750.763809564873,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 353.86144,
+        "MDef": 258.94045
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 200,
+          "Water": 200,
+          "Wind": 200,
+          "Earth": 150,
+          "Holy": 160,
+          "Dark": 40
+        }
+      },
+      "speed": {
+        "Walk": 53,
+        "Run": 150
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4276,
+        "level": 5
+      },
+      {
+        "id": 4408,
+        "level": 10,
+        "description": "Weak Point against Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (2x)"
+      },
+      {
+        "id": 4410,
+        "level": 14,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 13,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 10,
+        "description": "Slightly Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Slightly Weak P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 8,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5466,
+        "level": 1,
+        "description": "Angels"
+      },
+      {
+        "id": 5620,
+        "level": 4,
+        "description": "Holy Attacks"
+      },
+      {
+        "id": 6311,
+        "level": 1,
+        "description": "Short-Range Physical Attack Weakness"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 1170,
+              "max": 2361,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 0.9041000008583069,
+          "items": [
+            {
+              "id": 14109,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Gauntlet"
+            },
+            {
+              "id": 14113,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Leather Gloves"
+            },
+            {
+              "id": 14116,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Gloves"
+            },
+            {
+              "id": 14110,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Boots"
+            },
+            {
+              "id": 14114,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Leather Boots"
+            },
+            {
+              "id": 14117,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Shoes"
+            },
+            {
+              "id": 15667,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Gauntlet Piece"
+            },
+            {
+              "id": 15671,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Leather Gloves Piece"
+            },
+            {
+              "id": 15674,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Gloves Piece"
+            },
+            {
+              "id": 15668,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Boots Piece"
+            },
+            {
+              "id": 15672,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Leather Boots Piece"
+            },
+            {
+              "id": 15675,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6293,
+              "description": "Sealed Vesper Shoes Piece"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 4.732900142669678,
+          "items": [
+            {
+              "id": 1879,
+              "min": 1,
+              "max": 1,
+              "chance": 59.2169,
+              "description": "Cokes"
+            },
+            {
+              "id": 1885,
+              "min": 1,
+              "max": 1,
+              "chance": 29.6085,
+              "description": "High-Grade Suede"
+            },
+            {
+              "id": 9628,
+              "min": 1,
+              "max": 1,
+              "chance": 2.7867,
+              "description": "Leonard"
+            },
+            {
+              "id": 9630,
+              "min": 1,
+              "max": 1,
+              "chance": 1.87,
+              "description": "Orichalcum"
+            },
+            {
+              "id": 9629,
+              "min": 1,
+              "max": 1,
+              "chance": 1.5448,
+              "description": "Adamantine"
+            },
+            {
+              "id": 9573,
+              "min": 1,
+              "max": 1,
+              "chance": 2.4674,
+              "description": "Life Stone - Level 80"
+            },
+            {
+              "id": 9574,
+              "min": 1,
+              "max": 1,
+              "chance": 0.6168,
+              "description": "Mid-Grade Life Stone - Level 80"
+            },
+            {
+              "id": 9575,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0617,
+              "description": "High-Grade Life Stone - Level 80"
+            },
+            {
+              "id": 15801,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3045,
+              "description": "Recipe - Sealed Vesper Gauntlet (60%)"
+            },
+            {
+              "id": 15802,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3045,
+              "description": "Recipe - Sealed Vesper Leather Gloves (60%)"
+            },
+            {
+              "id": 15803,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3045,
+              "description": "Recipe - Sealed Vesper Gloves (60%)"
+            },
+            {
+              "id": 15804,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3045,
+              "description": "Recipe - Sealed Vesper Boots (60%)"
+            },
+            {
+              "id": 15805,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3045,
+              "description": "Recipe - Sealed Vesper Leather Boots (60%)"
+            },
+            {
+              "id": 15806,
+              "min": 1,
+              "max": 1,
+              "chance": 0.3047,
+              "description": "Recipe - Sealed Vesper Shoes (60%)"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 15667,
+            "min": 1,
+            "max": 1,
+            "chance": 0.8451,
+            "description": "Sealed Vesper Gauntlet Piece"
+          },
+          {
+            "id": 15671,
+            "min": 1,
+            "max": 1,
+            "chance": 0.8451,
+            "description": "Sealed Vesper Leather Gloves Piece"
+          },
+          {
+            "id": 15674,
+            "min": 1,
+            "max": 1,
+            "chance": 0.8451,
+            "description": "Sealed Vesper Gloves Piece"
+          },
+          {
+            "id": 15668,
+            "min": 1,
+            "max": 1,
+            "chance": 0.8451,
+            "description": "Sealed Vesper Boots Piece"
+          },
+          {
+            "id": 15672,
+            "min": 1,
+            "max": 1,
+            "chance": 0.8451,
+            "description": "Sealed Vesper Leather Boots Piece"
+          },
+          {
+            "id": 15675,
+            "min": 1,
+            "max": 1,
+            "chance": 0.8451,
+            "description": "Sealed Vesper Shoes Piece"
+          },
+          {
+            "id": 9630,
+            "min": 1,
+            "max": 1,
+            "chance": 0.5805,
+            "description": "Orichalcum"
+          },
+          {
+            "id": 15801,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0945,
+            "description": "Recipe - Sealed Vesper Gauntlet (60%)"
+          },
+          {
+            "id": 15802,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0945,
+            "description": "Recipe - Sealed Vesper Leather Gloves (60%)"
+          },
+          {
+            "id": 15803,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0945,
+            "description": "Recipe - Sealed Vesper Gloves (60%)"
+          },
+          {
+            "id": 15804,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0945,
+            "description": "Recipe - Sealed Vesper Boots (60%)"
+          },
+          {
+            "id": 15805,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0945,
+            "description": "Recipe - Sealed Vesper Leather Boots (60%)"
+          },
+          {
+            "id": 15806,
+            "min": 1,
+            "max": 1,
+            "chance": 0.0945,
+            "description": "Recipe - Sealed Vesper Shoes (60%)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 28
+      }
+    }
+  },
+  "18910": {
+    "level": 83,
+    "kind": "Monster",
+    "name": "Solina Knight Captain",
+    "race": "Divine",
+    "gender": "Male",
+    "reward": {
+      "exp": 44216,
+      "sp": 4545
+    },
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 3835.59060587002,
+        "MaxMp": 1777.4,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1099.42361669366,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 750.763809564873,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 353.86144,
+        "MDef": 258.94045
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 200,
+          "Water": 200,
+          "Wind": 200,
+          "Earth": 150,
+          "Holy": 160,
+          "Dark": 40
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 66
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4276,
+        "level": 5
+      },
+      {
+        "id": 4408,
+        "level": 11,
+        "description": "Weak Point against Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (3x)"
+      },
+      {
+        "id": 4410,
+        "level": 15,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 14,
+        "description": "Strong P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Strong M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 8,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5466,
+        "level": 1,
+        "description": "Angels"
+      },
+      {
+        "id": 5620,
+        "level": 4,
+        "description": "Holy Attacks"
+      },
+      {
+        "id": 6312,
+        "level": 1,
+        "description": "Short-Range Physical Attack Weakness"
+      },
+      {
+        "id": 6313,
+        "level": 1,
+        "description": "Launch Sacred Sword Energy"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 1730,
+              "max": 3492,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.3371000289916992,
+          "items": [
+            {
+              "id": 14109,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Gauntlet"
+            },
+            {
+              "id": 14113,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Leather Gloves"
+            },
+            {
+              "id": 14116,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Gloves"
+            },
+            {
+              "id": 14110,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Boots"
+            },
+            {
+              "id": 14114,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Leather Boots"
+            },
+            {
+              "id": 14117,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0372,
+              "description": "Sealed Vesper Shoes"
+            },
+            {
+              "id": 15667,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Gauntlet Piece"
+            },
+            {
+              "id": 15671,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Leather Gloves Piece"
+            },
+            {
+              "id": 15674,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Gloves Piece"
+            },
+            {
+              "id": 15668,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Boots Piece"
+            },
+            {
+              "id": 15672,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6295,
+              "description": "Sealed Vesper Leather Boots Piece"
+            },
+            {
+              "id": 15675,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6293,
+              "description": "Sealed Vesper Shoes Piece"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 18.134199142456055,
+          "items": [
+            {
+              "id": 1895,
+              "min": 1,
+              "max": 1,
+              "chance": 78.3705,
+              "description": "Metallic Fiber"
+            },
+            {
+              "id": 4040,
+              "min": 1,
+              "max": 1,
+              "chance": 5.4859,
+              "description": "Mold Lubricant"
+            },
+            {
+              "id": 4042,
+              "min": 1,
+              "max": 1,
+              "chance": 4.5716,
+              "description": "Enria"
+            },
+            {
+              "id": 4043,
+              "min": 1,
+              "max": 1,
+              "chance": 9.1432,
+              "description": "Asofe"
+            },
+            {
+              "id": 10483,
+              "min": 1,
+              "max": 1,
+              "chance": 1.9048,
+              "description": "Life Stone - Level 82"
+            },
+            {
+              "id": 10484,
+              "min": 1,
+              "max": 1,
+              "chance": 0.4762,
+              "description": "Mid-Grade Life Stone - Level 82"
+            },
+            {
+              "id": 10485,
+              "min": 1,
+              "max": 1,
+              "chance": 0.0478,
+              "description": "High-Grade Life Stone - Level 82"
+            }
+          ]
+        },
+        "spoil": [
+          {
+            "id": 15667,
+            "min": 1,
+            "max": 1,
+            "chance": 1.3541,
+            "description": "Sealed Vesper Gauntlet Piece"
+          },
+          {
+            "id": 15671,
+            "min": 1,
+            "max": 1,
+            "chance": 1.3541,
+            "description": "Sealed Vesper Leather Gloves Piece"
+          },
+          {
+            "id": 15674,
+            "min": 1,
+            "max": 1,
+            "chance": 1.3541,
+            "description": "Sealed Vesper Gloves Piece"
+          },
+          {
+            "id": 15668,
+            "min": 1,
+            "max": 1,
+            "chance": 1.3541,
+            "description": "Sealed Vesper Boots Piece"
+          },
+          {
+            "id": 15672,
+            "min": 1,
+            "max": 1,
+            "chance": 1.3541,
+            "description": "Sealed Vesper Leather Boots Piece"
+          },
+          {
+            "id": 15675,
+            "min": 1,
+            "max": 1,
+            "chance": 1.3541,
+            "description": "Sealed Vesper Shoes Piece"
+          },
+          {
+            "id": 15801,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1515,
+            "description": "Recipe - Sealed Vesper Gauntlet (60%)"
+          },
+          {
+            "id": 15802,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1515,
+            "description": "Recipe - Sealed Vesper Leather Gloves (60%)"
+          },
+          {
+            "id": 15803,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1515,
+            "description": "Recipe - Sealed Vesper Gloves (60%)"
+          },
+          {
+            "id": 15804,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1515,
+            "description": "Recipe - Sealed Vesper Boots (60%)"
+          },
+          {
+            "id": 15805,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1515,
+            "description": "Recipe - Sealed Vesper Leather Boots (60%)"
+          },
+          {
+            "id": 15806,
+            "min": 1,
+            "max": 1,
+            "chance": 0.1515,
+            "description": "Recipe - Sealed Vesper Shoes (60%)"
+          }
+        ]
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 14,
+        "height": 31
+      }
+    }
+  },
+  "18911": {
+    "level": 84,
+    "kind": "Monster",
+    "name": "Abbey Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 100.0,
+          "items": [
+            {
+              "id": 730,
+              "min": 1,
+              "max": 1,
+              "chance": 60.0,
+              "description": "Scroll: Enchant Armor (A-Grade)"
+            },
+            {
+              "id": 960,
+              "min": 1,
+              "max": 1,
+              "chance": 40.0,
+              "description": "Scroll: Enchant Armor (S-Grade)"
+            }
+          ]
+        }
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 17,
+        "height": 13
+      }
+    }
+  },
+  "18912": {
+    "level": 1,
+    "kind": "Monster",
+    "name": "Scarecrow",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 27,
+        "height": 37
+      }
+    }
+  },
+  "18913": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Furnace",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 18,
+        "height": 30
+      }
+    }
+  },
+  "18914": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Furnace",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 18,
+        "height": 30
+      }
+    }
+  },
+  "18915": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Divine Furnace",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 18,
+        "height": 30
+      }
+    }
+  },
+  "18916": {
+    "level": 1,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18917": {
+    "level": 72,
+    "kind": "Monster",
+    "name": "Pavel Safety Device",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 2540.15331,
+        "MaxMp": 1410.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 731.52506,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 499.53679,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 305.35947,
+        "MDef": 223.44881
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 250,
+        "Run": 250
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 8
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1/4x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 70.0,
+          "items": [
+            {
+              "id": 57,
+              "min": 361,
+              "max": 738,
+              "chance": 100.0,
+              "description": "Adena"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.0607000589370728,
+          "items": [
+            {
+              "id": 9546,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6667,
+              "description": "Fire Stone"
+            },
+            {
+              "id": 9547,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6667,
+              "description": "Water Stone"
+            },
+            {
+              "id": 9548,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6667,
+              "description": "Earth Stone"
+            },
+            {
+              "id": 9549,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6667,
+              "description": "Wind Stone"
+            },
+            {
+              "id": 9550,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6667,
+              "description": "Dark Stone"
+            },
+            {
+              "id": 9551,
+              "min": 1,
+              "max": 1,
+              "chance": 16.6665,
+              "description": "Holy Stone"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 42.0,
+          "items": [
+            {
+              "id": 8600,
+              "min": 1,
+              "max": 1,
+              "chance": 55.0,
+              "description": "Herb of Life"
+            },
+            {
+              "id": 8601,
+              "min": 1,
+              "max": 1,
+              "chance": 38.0,
+              "description": "Greater Herb of Life"
+            },
+            {
+              "id": 8602,
+              "min": 1,
+              "max": 1,
+              "chance": 7.0,
+              "description": "Superior Herb of Life"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8603,
+              "min": 1,
+              "max": 1,
+              "chance": 40.0,
+              "description": "Herb of Mana"
+            },
+            {
+              "id": 8604,
+              "min": 1,
+              "max": 1,
+              "chance": 52.0,
+              "description": "Greater Herb of Mana"
+            },
+            {
+              "id": 8605,
+              "min": 1,
+              "max": 1,
+              "chance": 8.0,
+              "description": "Superior Herb of Mana"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 25.0,
+          "items": [
+            {
+              "id": 8606,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Power"
+            },
+            {
+              "id": 8608,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Alacrity"
+            },
+            {
+              "id": 8610,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Probability"
+            },
+            {
+              "id": 10655,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Vampiric Rage"
+            },
+            {
+              "id": 10656,
+              "min": 1,
+              "max": 1,
+              "chance": 20.0,
+              "description": "Herb of Critical Attack - Power"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 10.0,
+          "items": [
+            {
+              "id": 8607,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Magic"
+            },
+            {
+              "id": 8609,
+              "min": 1,
+              "max": 1,
+              "chance": 50.0,
+              "description": "Herb of Casting Spd."
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 1.0,
+          "items": [
+            {
+              "id": 8612,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Warrior"
+            },
+            {
+              "id": 8613,
+              "min": 1,
+              "max": 1,
+              "chance": 33.0,
+              "description": "Herb of the Mystic"
+            },
+            {
+              "id": 8614,
+              "min": 1,
+              "max": 1,
+              "chance": 34.0,
+              "description": "Herb of Recovery"
+            }
+          ]
+        }
+      },
+      {
+        "group": {
+          "chance": 11.0,
+          "items": [
+            {
+              "id": 8611,
+              "min": 1,
+              "max": 1,
+              "chance": 94.0,
+              "description": "Herb of Speed"
+            },
+            {
+              "id": 10657,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Herb of Doubt"
+            },
+            {
+              "id": 13028,
+              "min": 1,
+              "max": 1,
+              "chance": 3.0,
+              "description": "Vitality Replenishing Herb"
+            }
+          ]
+        }
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 12,
+        "height": 22
+      }
+    }
+  },
+  "18918": {
+    "level": 85,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4234.06312688557,
+        "MaxMp": 1846.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1188.87259499001,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 811.84586495282,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 361.78814,
+        "MDef": 264.74086
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18919": {
+    "level": 85,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4234.06312688557,
+        "MaxMp": 1846.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1188.87259499001,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 811.84586495282,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 361.78814,
+        "MDef": 264.74086
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18920": {
+    "level": 84,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 90,
+          "Water": 170,
+          "Wind": 130,
+          "Earth": 130,
+          "Holy": 130,
+          "Dark": 130
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18921": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Square Base",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 90,
+          "Water": 170,
+          "Wind": 130,
+          "Earth": 130,
+          "Holy": 130,
+          "Dark": 130
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 23,
+        "height": 37
+      }
+    }
+  },
+  "18922": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Door Golem",
+    "title": "Final",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 90,
+          "Water": 170,
+          "Wind": 130,
+          "Earth": 130,
+          "Holy": 130,
+          "Dark": 130
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 80
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Beasts"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 15
+      }
+    }
+  },
+  "18923": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Door Golem",
+    "title": "Final",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 80
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Beasts"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 15
+      }
+    }
+  },
+  "18924": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Door Golem",
+    "race": "Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 80
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 3,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Beasts"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 8,
+        "height": 15
+      }
+    }
+  },
+  "18925": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Trap",
+    "race": "Construct",
+    "gender": "Etc",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 100,
+          "Water": 180,
+          "Wind": 140,
+          "Earth": 140,
+          "Holy": 140,
+          "Dark": 140
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      },
+      {
+        "id": 5463,
+        "level": 1,
+        "description": "Magic Creatures"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 30,
+        "height": 13
+      }
+    }
+  },
+  "18926": {
+    "level": 85,
+    "kind": "QuestGuard",
+    "name": "Mercenary Archer",
+    "title": "Jinia Guild",
+    "race": "Elf",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4234.06312688557,
+        "MaxMp": 1846.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1188.87259499001,
+        "PAtkSpd": 253,
+        "PAtkRange": 1100,
+        "PAtkRandom": 10,
+        "MAtk": 811.84586495282,
+        "EffectKind": "Bow"
+      },
+      "critical": {
+        "CriticalRate": 8
+      },
+      "defence": {
+        "PDef": 361.78814,
+        "MDef": 264.74086
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 30,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4032,
+        "level": 9
+      },
+      {
+        "id": 4408,
+        "level": 10,
+        "description": "NPC Strike"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (2x)"
+      },
+      {
+        "id": 4410,
+        "level": 8,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 7,
+        "description": "Weak P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Weak M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 9,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 15,
+        "description": "Bows"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 10,
+        "height": 23
+      }
+    }
+  },
+  "18927": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Fire",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 781.703083407155,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 29,
+        "height": 30
+      }
+    }
+  },
+  "18928": {
+    "level": 85,
+    "kind": "TerrainObject",
+    "name": "Annihilation Furnace",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4234.06312688557,
+        "MaxMp": 1846.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1188.87259499001,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 811.84586495282,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 361.78814,
+        "MDef": 264.74086
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 63,
+        "height": 33
+      }
+    }
+  },
+  "18929": {
+    "level": 84,
+    "kind": "Monster",
+    "name": "Ward of the Grail",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4039.04270539801,
+        "MaxMp": 1812.0,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1144.73130112535,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 50,
+        "MAtk": 781.703083407155,
+        "Accuracy": 9.0,
+        "EffectKind": "Blunt"
+      },
+      "critical": {
+        "CriticalRate": 1
+      },
+      "defence": {
+        "PDef": 357.86723,
+        "MDef": 261.87171
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 180,
+          "Water": 180,
+          "Wind": 180,
+          "Earth": 180,
+          "Holy": 220,
+          "Dark": 170
+        }
+      },
+      "speed": {
+        "Walk": 25,
+        "Run": 140
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 5,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Blunt Weapons"
+      },
+      {
+        "id": 5466,
+        "level": 1,
+        "description": "Magic Creatures"
+      },
+      {
+        "id": 6326,
+        "level": 1,
+        "description": "Holy Attacks"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 13,
+        "height": 22
+      }
+    }
+  },
+  "18930": {
+    "level": 1,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18931": {
+    "level": 1,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18932": {
+    "level": 1,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18933": {
+    "level": 1,
+    "kind": "Friendly",
+    "name": "Fire Feed",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 29,
+        "height": 30
+      }
+    }
+  },
+  "18934": {
+    "level": 84,
+    "kind": "Friendly",
+    "name": "Abbey Treasure Chest",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4408,
+        "level": 1
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "drop_table": [
+      {
+        "group": {
+          "chance": 100.0,
+          "items": [
+            {
+              "id": 960,
+              "min": 1,
+              "max": 1,
+              "chance": 100.0,
+              "description": "Scroll: Enchant Armor (S-Grade)"
+            }
+          ]
+        }
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 17,
+        "height": 13
+      }
+    }
+  },
+  "18935": {
+    "level": 85,
+    "kind": "Friendly",
+    "name": "Divine Sword Protection",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 4234.06312688557,
+        "MaxMp": 1846.8,
+        "HpRegen": 8.5,
+        "MpRegen": 3.0
+      },
+      "attack": {
+        "PAtk": 1188.87259499001,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 811.84586495282,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 361.78814,
+        "MDef": 264.74086
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18936": {
+    "level": 1,
+    "kind": "Friendly",
+    "race": "Construct",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 40,
+        "int": 21,
+        "dex": 30,
+        "wit": 20,
+        "con": 43,
+        "men": 20
+      },
+      "vitals": {
+        "MaxHp": 39.74519,
+        "MaxMp": 40.0,
+        "HpRegen": 2.0,
+        "MpRegen": 0.9
+      },
+      "attack": {
+        "PAtk": 8.47458,
+        "PAtkSpd": 253,
+        "PAtkRange": 40,
+        "PAtkRandom": 30,
+        "MAtk": 5.78704,
+        "Accuracy": 5.0,
+        "EffectKind": "Sword"
+      },
+      "critical": {
+        "CriticalRate": 4
+      },
+      "defence": {
+        "PDef": 44.44444,
+        "MDef": 32.52252
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 1,
+        "Run": 1
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4045,
+        "level": 1
+      },
+      {
+        "id": 4408,
+        "level": 1,
+        "description": "Resist Full Magic Attack"
+      },
+      {
+        "id": 4409,
+        "level": 1,
+        "description": "HP Increase (1x)"
+      },
+      {
+        "id": 4410,
+        "level": 11,
+        "description": "MP Increase (1x)"
+      },
+      {
+        "id": 4411,
+        "level": 11,
+        "description": "Average P. Atk."
+      },
+      {
+        "id": 4412,
+        "level": 11,
+        "description": "Average M. Atk."
+      },
+      {
+        "id": 4413,
+        "level": 11,
+        "description": "Average P. Def."
+      },
+      {
+        "id": 4414,
+        "level": 2,
+        "description": "Average M. Def."
+      },
+      {
+        "id": 4415,
+        "level": 3,
+        "description": "Standard Type"
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "One-handed Sword"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    }
+  },
+  "18937": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18938": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18939": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18940": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18941": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18942": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18943": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18944": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18945": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18946": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18947": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Target Dummy",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18948": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Etis van Etina",
+    "title": "Head of the Embryo",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18949": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Etis van Etina",
+    "title": "Head of the Embryo",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6599,
+        "level": 12
+      },
+      {
+        "id": 6705,
+        "level": 1,
+        "description": "NPC earth attack"
+      },
+      {
+        "id": 6262,
+        "level": 1,
+        "description": "Stun"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 28
+      }
+    }
+  },
+  "18950": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Etis van Etina's Phantom",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18951": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Etis van Etina's Phantom",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18952": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Solina's Guardian",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6494,
+        "level": 28
+      },
+      {
+        "id": 6705,
+        "level": 1,
+        "description": "NPC holy attack"
+      },
+      {
+        "id": 6710,
+        "level": 1,
+        "description": "Stun"
+      },
+      {
+        "id": 6711,
+        "level": 1,
+        "description": "Etis Haste"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 30
+      }
+    }
+  },
+  "18953": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Solina's Guardian",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6494,
+        "level": 28
+      },
+      {
+        "id": 6705,
+        "level": 1,
+        "description": "NPC holy attack"
+      },
+      {
+        "id": 6710,
+        "level": 1,
+        "description": "Stun"
+      },
+      {
+        "id": 6711,
+        "level": 1,
+        "description": "Etis Haste"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 30
+      }
+    }
+  },
+  "18954": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Solina's Guardian",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6494,
+        "level": 28
+      },
+      {
+        "id": 6705,
+        "level": 1,
+        "description": "NPC holy attack"
+      },
+      {
+        "id": 6710,
+        "level": 1,
+        "description": "Stun"
+      },
+      {
+        "id": 6711,
+        "level": 1,
+        "description": "Etis Haste"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 30
+      }
+    }
+  },
+  "18955": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Solina's Guardian",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6494,
+        "level": 28
+      },
+      {
+        "id": 6705,
+        "level": 1,
+        "description": "NPC holy attack"
+      },
+      {
+        "id": 6710,
+        "level": 1,
+        "description": "Stun"
+      },
+      {
+        "id": 6711,
+        "level": 1,
+        "description": "Etis Haste"
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 30
+      }
+    }
+  },
+  "18956": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Guardian of the Tomb",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6709,
+        "level": 1
+      },
+      {
+        "id": 5024,
+        "level": 1,
+        "description": "Multi Shot"
+      },
+      {
+        "id": 4153,
+        "level": 1,
+        "description": "Decrease Atk. Spd."
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 42
+      }
+    }
+  },
+  "18957": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Guardian of the Tomb",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6709,
+        "level": 1
+      },
+      {
+        "id": 5024,
+        "level": 1,
+        "description": "Multi Shot"
+      },
+      {
+        "id": 4153,
+        "level": 1,
+        "description": "Decrease Atk. Spd."
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 42
+      }
+    }
+  },
+  "18958": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Guardian of the Tomb",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6709,
+        "level": 1
+      },
+      {
+        "id": 5024,
+        "level": 1,
+        "description": "Multi Shot"
+      },
+      {
+        "id": 4153,
+        "level": 1,
+        "description": "Decrease Atk. Spd."
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 42
+      }
+    }
+  },
+  "18959": {
+    "level": 80,
+    "kind": "Monster",
+    "name": "Guardian of the Tomb",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 6709,
+        "level": 1
+      },
+      {
+        "id": 5024,
+        "level": 1,
+        "description": "Multi Shot"
+      },
+      {
+        "id": 4153,
+        "level": 1,
+        "description": "Decrease Atk. Spd."
+      }
+    ],
+    "ai": {
+      "aggro_range": 300,
+      "clan_help_range": 300
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 42
+      }
+    }
+  },
+  "18960": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Drake Lord",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18961": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Behemoth Leader",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18962": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Dragon Beast",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18963": {
+    "level": 80,
+    "kind": "Friendly",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18964": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Antharas's Symbol",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4071,
+        "level": 5
+      },
+      {
+        "id": 4412,
+        "level": 12,
+        "description": "Resist Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Slightly Strong P. Def."
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 5620,
+        "level": 10,
+        "description": "Magic Creatures"
+      },
+      {
+        "id": 6742,
+        "level": 1,
+        "description": "Short-Range Physical Attack Weakness"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18965": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Antharas's Symbol",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4276,
+        "level": 5
+      },
+      {
+        "id": 4412,
+        "level": 12,
+        "description": "Weak Point against Bow/Crossbow Weapons"
+      },
+      {
+        "id": 4413,
+        "level": 18,
+        "description": "Slightly Strong P. Def."
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Extremely Strong M. Def."
+      },
+      {
+        "id": 5601,
+        "level": 10,
+        "description": "Magic Creatures"
+      },
+      {
+        "id": 6742,
+        "level": 1,
+        "description": "Short-Range Physical Attack Resistance"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18966": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Antharas's Symbol",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "skill_list": [
+      {
+        "id": 4412,
+        "level": 18
+      },
+      {
+        "id": 4413,
+        "level": 3,
+        "description": "Extremely Strong P. Def."
+      },
+      {
+        "id": 4416,
+        "level": 2,
+        "description": "Extremely Weak M. Def."
+      },
+      {
+        "id": 4456,
+        "level": 5,
+        "description": "Magic Creatures"
+      },
+      {
+        "id": 6742,
+        "level": 1,
+        "description": "Mental Attack Weak Point"
+      }
+    ],
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18967": {
+    "level": 80,
+    "kind": "Friendly",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18968": {
+    "level": 80,
+    "kind": "Friendly",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18969": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Magma Drake Mother",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18970": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Magma Drake Hatchling",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  },
+  "18971": {
+    "level": 80,
+    "kind": "Friendly",
+    "name": "Gem Dragon Hatchling",
+    "gender": "Male",
+    "stats": {
+      "primal": {
+        "str": 10,
+        "int": 10,
+        "dex": 10,
+        "wit": 10,
+        "con": 10,
+        "men": 10
+      },
+      "vitals": {
+        "MaxHp": 2444.0,
+        "MaxMp": 2444.0
+      },
+      "attack": {
+        "PAtk": 500.0,
+        "PAtkSpd": 278,
+        "PAtkRange": 40,
+        "MAtk": 500.0
+      },
+      "defence": {
+        "PDef": 500.0,
+        "MDef": 500.0
+      },
+      "attribute": {
+        "defence": {
+          "Fire": 20,
+          "Water": 20,
+          "Wind": 20,
+          "Earth": 20,
+          "Holy": 20,
+          "Dark": 20
+        }
+      },
+      "speed": {
+        "Walk": 60,
+        "Run": 160
+      }
+    },
+    "collision": {
+      "normal": {
+        "radius": 25,
+        "height": 35
+      }
+    }
+  }
+}

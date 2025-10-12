@@ -1,0 +1,8 @@
+<html>
+    <head>
+        <title>{% block title %}{% if npc_title and name %}{{ npc_title }} {{ name }}{% elif name %}{{ name }}{% else %}Chat{% endif %}{% endblock title %}</title>
+    </head>
+    <body>
+        {% block body %}{% endblock body %}
+    </body>
+</html>

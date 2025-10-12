@@ -1,0 +1,2215 @@
+{
+  "21800": {
+    "name": "Dynasty Leather Armor of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 170
+      }
+    },
+    "weight": 4180,
+    "icon": "icon.armor_t92_u_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21801": {
+    "name": "Dynasty Leather Leggings of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 106
+      }
+    },
+    "weight": 1370,
+    "icon": "icon.armor_t92_l_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21802": {
+    "name": "Dynasty Leather Helmet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 92
+      }
+    },
+    "weight": 530,
+    "icon": "icon.armor_leather_helmet_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21803": {
+    "name": "Dynasty Leather Gloves of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "weight": 520,
+    "icon": "icon.armor_t92_g_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21804": {
+    "name": "Dynasty Leather Boots of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "weight": 1090,
+    "icon": "icon.armor_t92_b_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21805": {
+    "name": "Dynasty Leather Mail of Fortune Set Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire a Dynasty Leather Mail of Fortune Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_equip_item_box_i02",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21806": {
+    "name": "Dynasty Tunic of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Magic": "Chest"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 113
+      },
+      "MaxMp": {
+        "add": 592
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1780,
+    "icon": "icon.armor_t93_u_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21807": {
+    "name": "Dynasty Stockings of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Magic": "Legs"
+      }
+    },
+    "grade": "S",
+    "material": "ScaleOfDragon",
+    "stats": {
+      "PDef": {
+        "add": 71
+      },
+      "MaxMp": {
+        "add": 370
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 860,
+    "icon": "icon.armor_t93_l_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21808": {
+    "name": "Dynasty Circlet of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "S",
+    "material": "Bone",
+    "stats": {
+      "PDef": {
+        "add": 92
+      }
+    },
+    "weight": 530,
+    "icon": "icon.armor_circlet_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21809": {
+    "name": "Dynasty Gloves of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "weight": 520,
+    "icon": "icon.armor_t93_g_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21810": {
+    "name": "Dynasty Shoes of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "S",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 61
+      }
+    },
+    "weight": 1090,
+    "icon": "icon.armor_t93_b_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21811": {
+    "name": "Dynasty Sickle of Fortune - 90-day limited period",
+    "description": "Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PDef": {
+        "add": 15
+      }
+    },
+    "weight": 930,
+    "icon": "icon.dynasty_sigil_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21812": {
+    "name": "Dynasty Tunic of Fortune Set Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire a Dynasty Robe of Fortune Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_equip_item_box_i02",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21813": {
+    "name": "Tateossian Earring of Fortune - 90-day limited period",
+    "description": "The effect is MP +31. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 71
+      },
+      "MaxMp": {
+        "add": 31
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_tateossian_earring_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21814": {
+    "name": "Tateossian Ring of Fortune - 90-day limited period",
+    "description": "The effect is MP +21. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 48
+      },
+      "MaxMp": {
+        "add": 21
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_tateossian_ring_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21815": {
+    "name": "Tateossian Necklace of Fortune - 90-day limited period",
+    "description": "The effect is MP +42. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 95
+      },
+      "MaxMp": {
+        "add": 42
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessory_tateossian_necklace_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21816": {
+    "name": "Tateossian Accessory of Fortune Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire a Tateossian Accessory Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_box_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21817": {
+    "name": "Dynasty Earrings of Fortune - 90-day limited period",
+    "description": "The effect is MP +35. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 79
+      },
+      "MaxMp": {
+        "add": 35
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_earing_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21818": {
+    "name": "Dynasty Necklace of Fortune - 90-day limited period",
+    "description": "The effect is MP +46. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "S",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 106
+      },
+      "MaxMp": {
+        "add": 46
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_necklace_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21819": {
+    "name": "Dynasty Ring of Fortune - 90-day limited period",
+    "description": "The effect is MP +23. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "S",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 60
+      },
+      "MaxMp": {
+        "add": 23
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_dynasty_ring_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21820": {
+    "name": "Dynasty Accessory of Fortune Pack (S-Grade) - 90-day limited period",
+    "description": "When used, you acquire a Dynasty Accessory Set. Expires after 90 days if not used. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_jewel_box_i00",
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21821": {
+    "name": "Arcana Mace of Fortune - 90-day limited period",
+    "description": "Increases Magic Casting Spd. by 15%, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 225
+      },
+      "MAtk": {
+        "set": 175
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_arcana_mace_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21822": {
+    "name": "Angel Slayer of Fortune - 90-day limited period",
+    "description": "During Critical, increases P. Atk. by 265, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 246
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 950,
+    "icon": "icon.weapon_angel_slayer_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21823": {
+    "name": "Draconic Bow of Fortune - 90-day limited period",
+    "description": "Increases Critical by 88, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 581
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1650,
+    "icon": "icon.weapon_draconic_bow_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21824": {
+    "name": "Basalt Battlehammer of Fortune - 90-day limited period",
+    "description": "Increases Maximum HP by 25%, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_basalt_battlehammer_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21825": {
+    "name": "Forgotten Blade of Fortune - 90-day limited period",
+    "description": "Increases Critical by 84, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_forgotten_blade_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21826": {
+    "name": "Heaven's Divider of Fortune - 90-day limited period",
+    "description": "Increases Critical by 84, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1380,
+    "icon": "icon.weapon_heavens_divider_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21827": {
+    "name": "Demon Splinter of Fortune - 90-day limited period",
+    "description": "Increases Critical by 80, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_demon_splinter_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21828": {
+    "name": "Tallum Blade*Dark Legion's Edge of Fortune - 90-day limited period",
+    "description": "Increases Max HP +15%, Max MP +20%, and Max CP +30%. Increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 342
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2080,
+    "icon": "icon.weapon_dual_sword_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21829": {
+    "name": "Saint Spear of Fortune - 90-day limited period",
+    "description": "Increases Atk. Spd. by about 7%, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 281
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_saint_spear_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21830": {
+    "name": "Gram of Fortune - 90-day limited period",
+    "description": "Kamael exclusive weapon. Increases Critical by 84, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 304
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_gram_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21831": {
+    "name": "Laevateinn of Fortune - 90-day limited period",
+    "description": "Kamael exclusive weapon. Increases Critical by 84. Increases damage inflicted during PvP. During Critical, party members including yourself will receive increased attack power, magic power, and healing capacity by a fixed rate. But decreased MP consumption per skill during a critical attack. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 255
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_leavatein_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21832": {
+    "name": "Sarunga of Fortune - 90-day limited period",
+    "description": "Kamael exclusive weapon. Increases Critical by 88, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 356
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "weight": 1600,
+    "icon": "icon.weapon_sarnga_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21833": {
+    "name": "Dynasty Phantom of Fortune - 90-day limited period",
+    "description": "Increases Magic Casting Spd. by 15%, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 267
+      },
+      "MAtk": {
+        "set": 202
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_magic_sword_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21834": {
+    "name": "Dynasty Knife of Fortune - 90-day limited period",
+    "description": "Increases Critical by 116, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 291
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_dagger_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21835": {
+    "name": "Dynasty Bow of Fortune - 90-day limited period",
+    "description": "Increases Critical by 116, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 654
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_bow_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21836": {
+    "name": "Dynasty Cudgel of Fortune - 90-day limited period",
+    "description": "Increases Maximum HP by 25%, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_hammer_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21837": {
+    "name": "Dynasty Sword of Fortune - 90-day limited period",
+    "description": "Increases Critical by 111, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_dynasty_blade_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21838": {
+    "name": "Dynasty Blade of Fortune - 90-day limited period",
+    "description": "Increases Critical by 111, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1740,
+    "icon": "icon.weapon_dynasty_twohand_sword_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21839": {
+    "name": "Dynasty Bagh-Nakh of Fortune - 90-day limited period",
+    "description": "Increases Critical by 106, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1550,
+    "icon": "icon.weapon_dynasty_jamadhr_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21840": {
+    "name": "Dynasty Dualsword of Fortune - 90-day limited period",
+    "description": "Increases Critical by 109, Maximum HP by 10%, and damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_dual_sword_i00",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21841": {
+    "name": "Dynasty Halberd of Fortune - 90-day limited period",
+    "description": "During Critical, increases stun effect with 48% rate and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Bronze",
+    "stats": {
+      "PAtk": {
+        "set": 333
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2010,
+    "icon": "icon.weapon_dynasty_spear_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21842": {
+    "name": "Dynasty Ancient Sword of Fortune - 90-day limited period",
+    "description": "Kamael exclusive weapon. Increases Critical by 111, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 361
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1800,
+    "icon": "icon.weapon_dynasty_ancient_sword_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21843": {
+    "name": "Dynasty Rapier of Fortune - 90-day limited period",
+    "description": "Kamael exclusive weapon. Increases Critical by 111. Increases damage inflicted during PvP. During Critical, party members including yourself will receive increased attack power, magic power, and healing capacity by a fixed rate. But decreased MP consumption per skill during a critical attack. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 302
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "weight": 1280,
+    "icon": "icon.weapon_dynasty_rapier_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21844": {
+    "name": "Dynasty Crossbow of Fortune - 90-day limited period",
+    "description": "Kamael exclusive weapon. Increases Critical by 116, and increases damage inflicted during PvP. Cannot be exchanged or dropped. Can be stored in a private warehouse. Can be assigned an attribute.",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 401
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "weight": 1580,
+    "icon": "icon.weapon_dynasty_crossbow_i01",
+    "elementable": true,
+    "time": 129600,
+    "tradable": false,
+    "dropable": false
+  },
+  "21845": {
+    "name": "Mysterious Soulshot (No-Grade)",
+    "description": "Soulshot containing the light of Sprites Soulshot: No Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Soulshot"
+      }
+    },
+    "material": "Crystal",
+    "price": 7,
+    "icon": "icon.etc_spirit_bullet_white_i00",
+    "item_skills": [
+      {
+        "id": 2039,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21846": {
+    "name": "Mysterious Soulshot (D-Grade)",
+    "description": "Soulshot containing the light of Sprites Soulshot - D grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Soulshot"
+      }
+    },
+    "grade": "D",
+    "material": "Crystal",
+    "price": 22,
+    "icon": "icon.etc_spirit_bullet_blue_i00",
+    "item_skills": [
+      {
+        "id": 26060,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21847": {
+    "name": "Mysterious Soulshot (C-Grade)",
+    "description": "Soulshot containing the light of Sprites Soulshot - C grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Soulshot"
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "price": 22,
+    "icon": "icon.etc_spirit_bullet_green_i00",
+    "item_skills": [
+      {
+        "id": 26061,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21848": {
+    "name": "Mysterious Soulshot (B-Grade)",
+    "description": "Soulshot containing the light of Sprites Soulshot - B grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Soulshot"
+      }
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "price": 14,
+    "icon": "icon.etc_spirit_bullet_red_i00",
+    "item_skills": [
+      {
+        "id": 26062,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21849": {
+    "name": "Mysterious Soulshot (A-Grade)",
+    "description": "Soulshot containing the light of Sprites Soulshot - A grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Soulshot"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "price": 80,
+    "icon": "icon.etc_spirit_bullet_silver_i00",
+    "item_skills": [
+      {
+        "id": 26063,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21850": {
+    "name": "Mysterious Soulshot (S-Grade)",
+    "description": "Soulshot containing the light of Sprites Soulshot - S grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "Soulshot"
+      }
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "icon": "icon.etc_spirit_bullet_gold_i00",
+    "item_skills": [
+      {
+        "id": 26064,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21851": {
+    "name": "Mysterious Blessed Spiritshot (No-Grade)",
+    "description": "Spiritshot containing the light of Sprites Blessed Spiritshot: No Grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "BlessedSpiritshot"
+      }
+    },
+    "material": "Crystal",
+    "price": 35,
+    "icon": "icon.etc_spell_shot_white_i01",
+    "item_skills": [
+      {
+        "id": 2061,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21852": {
+    "name": "Mysterious Blessed Spiritshot (D-Grade)",
+    "description": "Spiritshot containing the light of Sprites Blessed Spiritshot - D grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "BlessedSpiritshot"
+      }
+    },
+    "grade": "D",
+    "material": "Crystal",
+    "price": 28,
+    "icon": "icon.etc_spell_shot_blue_i01",
+    "item_skills": [
+      {
+        "id": 26050,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21853": {
+    "name": "Mysterious Blessed Spiritshot (C-Grade)",
+    "description": "Spiritshot containing the light of Sprites Blessed Spiritshot - C grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "BlessedSpiritshot"
+      }
+    },
+    "grade": "C",
+    "material": "Crystal",
+    "price": 245,
+    "icon": "icon.etc_spell_shot_green_i01",
+    "item_skills": [
+      {
+        "id": 26051,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21854": {
+    "name": "Mysterious Blessed Spiritshot (B-Grade)",
+    "description": "Spiritshot containing the light of Sprites Blessed Spiritshot - B grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "BlessedSpiritshot"
+      }
+    },
+    "grade": "B",
+    "material": "Crystal",
+    "price": 290,
+    "icon": "icon.etc_spell_shot_red_i01",
+    "item_skills": [
+      {
+        "id": 26052,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21855": {
+    "name": "Mysterious Blessed Spiritshot (A-Grade)",
+    "description": "Spiritshot containing the light of Sprites Blessed Spiritshot - A grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "BlessedSpiritshot"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "price": 350,
+    "icon": "icon.etc_spell_shot_silver_i01",
+    "item_skills": [
+      {
+        "id": 26053,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21856": {
+    "name": "Mysterious Blessed Spiritshot (S-Grade)",
+    "description": "Spiritshot containing the light of Sprites Blessed Spiritshot - S grade",
+    "kind": {
+      "Consumable": {
+        "Shot": "BlessedSpiritshot"
+      }
+    },
+    "grade": "S",
+    "material": "Crystal",
+    "price": 35,
+    "icon": "icon.etc_spell_shot_gold_i01",
+    "item_skills": [
+      {
+        "id": 26054,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "stackable": true,
+    "premium": true
+  },
+  "21857": {
+    "name": "Hero's Gold Chest - 90-day limited period",
+    "description": "Hero's Gold Chest. Gift box containing 1 each of a Hero's Treasure Box, Dimensional Support Pack, Potion Support Pack, and Supplies Support Pack. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_treasure_box_i08",
+    "tradable": false,
+    "dropable": false
+  },
+  "21858": {
+    "name": "Dimensional Support Pack - 90-day limited period",
+    "description": "Dimensional support pack. Gift box containing 2 high quality hunting helper exchange coupon, 3 feathers of blessing, 5 Kamaloka (Near Kamaloka, Hall of the Abyss, Labyrinth of the Abyss) entrance passes, and 3 Vitality Replenishing Beverages. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false
+  },
+  "21859": {
+    "name": "Potion Support Pack - 90-day limited period",
+    "description": "Potion support pack. Gift box containing 20 highest power temporary healing potion, 50 greater healing potions, 5 fresh milks, and 5 energy of sprouts. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false
+  },
+  "21860": {
+    "name": "Supplies Support Pack - 90-day limited period",
+    "description": "Supplies support pack. Gift box containing 200,000 mysterious soulshots and spirits according to grade. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false
+  },
+  "21861": {
+    "name": "PC Vitality - 1 hour",
+    "description": "When used, for 1 hour(s), energy is replenished when Exp. is acquired through hunting. Re-use time is 60 minutes. Can only be used at levels 1~75. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pccafe_point_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21862": {
+    "name": "PC Vitality Pack",
+    "description": "PC cafe energy pack. Gift box containing 3 PC cafe energies. When used, duration can receive a 1~4 hour PC Cafe Energy with a certain rate of chance. Can only be used at levels 1~75. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21863": {
+    "name": "PC Blessing",
+    "description": "When used, for 20 minute(s), energy is replenished for party members, including the user, when Exp. is acquired through hunting. Re-use time is 60 minutes. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_flag_of_bookmark_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21864": {
+    "name": "PC Blessing Pack",
+    "description": "PC cafe blessing pack. Gift box containing 1 PC cafe blessing. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21865": {
+    "name": "PC Vitality - 2 hour",
+    "description": "When used, for 2 hour(s), energy is replenished when Exp. is acquired through hunting. Re-use time is 60 minutes. Can only be used at levels 1~75. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pccafe_point_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21866": {
+    "name": "PC Vitality - 3 hour",
+    "description": "When used, for 3 hour(s), energy is replenished when Exp. is acquired through hunting. Re-use time is 60 minutes. Can only be used at levels 1~75. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pccafe_point_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21867": {
+    "name": "PC Vitality - 4 hour",
+    "description": "When used, for 4 hour(s), energy is replenished when Exp. is acquired through hunting. Re-use time is 60 minutes. Can only be used at levels 1~75. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pccafe_point_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21868": {
+    "name": "Joy of Halloween",
+    "description": "Gift provided for Halloween. When used, can obtain 20 Belldandy Summon Scrolls. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i01",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21869": {
+    "name": "Hero's Gold Chest Pack",
+    "description": "Hero's Gold Chest Pack. A gift box that contains a Hero's Gold Chest. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21870": {
+    "name": "Agathion Seal Bracelet - Neolithica - 14-day limited period",
+    "description": "A bracelet that can summon a Neolithic Agathion. Requires room in inventory and weight limit to receive a New Year gift from a Neolithic Agathion. Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse. Release Seal on Agathion - Neolithica",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.pi_high_agathion_bracelet_i00",
+    "item_skills": [
+      {
+        "id": 8314,
+        "level": 1
+      },
+      {
+        "id": 6124,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false
+  },
+  "21871": {
+    "name": "Hero Assistance Package",
+    "description": "A coupon for an item set that helps a hero to grow stronger. Bestows an Equipment Set 7-Day Pak, a Button-Eyed Bear Doll Agathion 7-Day Pack, a Quick Healing Potion, and a Steam Beatle Mount Bracelet 7-Day Pack. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21872": {
+    "name": "Fresh Herb",
+    "description": "Herb that Rudolph likes. When the seal on Rudolph is removed, Rudolph automatically eats for 10 minutes.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "icon.etc_herb_green_i00",
+    "stackable": true
+  },
+  "21873": {
+    "name": "Santa Claus's Treasure Box - Event",
+    "description": "Santa Claus's treasure box. When used, you can receive Santa Claus's gift.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i04",
+    "stackable": true
+  },
+  "21874": {
+    "name": "Medal of Glory",
+    "description": "Item for obtaining Fame. If you bring it to the Olympiad Manager, you can exchange it for 100 Fame points.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Paper",
+    "icon": "icon.etc_badge_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21875": {
+    "name": "Campfire Flint",
+    "description": "You can use this item if you have gathered 30 tree branches to start a campfire. A campfire near a battlefield can help to raise HP, MP, and CP recovery rate. You can only make campfires when you are away from towns. You can only receive the recovery bonus while near the campfire. . Cannot be exchanged, dropped, or destroyed. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "BranchSys2.icon.g_campfire_flint",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21876": {
+    "name": "Pa'agrio's Christmas Package",
+    "description": "Dimensional item. Gift box containing 1 each of Pa'agrio's Warm Breeze - 4 hour pack, Nevit's Hourglass - 4 hour pack, party cake, and shiny party hat. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21877": {
+    "name": "Pa'agrio's Christmas Package - Event",
+    "description": "Dimensional item. Gift box containing 1 each of Pa'agrio's Warm Breeze - 4 hour pack, Nevit's Hourglass - 4 hour pack, party cake, and shiny party hat. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21878": {
+    "name": "Pa'agrio's Warm Breeze - 4 hour pack",
+    "description": "Dimensional item pack. Gift box containing 15 Pa'agrio's warm breezes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 21880,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_lucky_bag_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21879": {
+    "name": "Nevit's Hourglass - 4 hour pack",
+    "description": "Dimensional pack. Gift box containing 15 Nevit's Hourglasses - 4 hours. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Package": [
+        {
+          "item_id": 17283,
+          "min": 15,
+          "max": 15,
+          "chance": 100.0
+        }
+      ]
+    },
+    "material": "Steel",
+    "icon": "BranchSys.icon.br_four_leaf_clover_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21880": {
+    "name": "Pa'agrio's Warm Breeze - 4 hour",
+    "description": "Dimensional item. When used, you can feel the vitality recovery herb's effect for 4 hour(s). But there will be no effect when the \"Birthday Joy\" effect is applied. Re-use time is 60 minutes. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "BranchSys2.Icon.pi_wind_of_paagrio",
+    "item_skills": [
+      {
+        "id": 22313,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21881": {
+    "name": "Party Cake",
+    "description": "Dimensional item. Summons a party cake that maintains vitality for 20 minutes. It'll be effective only when summoned away at a certain distance from the town. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Paper",
+    "price": 1,
+    "icon": "BranchSys.icon.br_birthday_cake_i00",
+    "item_skills": [
+      {
+        "id": 22303,
+        "level": 1
+      },
+      {
+        "id": 22301,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21882": {
+    "name": "Shiny Party Hat - Blessed Body - 90-day limited period",
+    "description": "Dimensional item. Shiny party hat. When equipped, can use the Blessed Body skill. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys.icon.br_party_hat_gold_i00",
+    "tradable": false,
+    "dropable": false
+  },
+  "21883": {
+    "name": "(Not In Use)",
+    "description": "(Not In Use)",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "stackable": true
+  },
+  "21884": {
+    "name": "(Not In Use)",
+    "description": "(Not In Use)",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "stackable": true
+  },
+  "21885": {
+    "name": "Valentine's Day Rose Spirit Exchange Coupon Pack",
+    "description": "Dimensional item pack. Gift box containing 2 improved rose spirit exchange tickets. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21886": {
+    "name": "Valentine's Day Rose Spirit Set Pack",
+    "description": "Dimensional item. Gift box containing 1 Valentine's Day Rose Spirit Exchange Coupon and 1 Sweet Chocolate Box. Cannot be exchanged or dropped. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21887": {
+    "name": "Valentine's Day Rose Spirit Exchange Ticket",
+    "description": "Coupon that can be exchanged for a necklace (5 hour) that summons an Improved Rose Spirit. Can be exchanged through the Dimensional Merchant. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Ticket"
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_ticket_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21888": {
+    "name": "Sweet Chocolate Box",
+    "description": "Gift box containing 3 sweet chocolates and 50 rose essences. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "icon": "BranchSys.icon.br_lucky_bag_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21889": {
+    "name": "Sweet Chocolate - 4 hour",
+    "description": "When used, you can feel the vitality recovery herb's effect for 4 hour(s). But there will be no effect when the \"Birthday Joy\" effect is applied. Re-use time is 60 minutes. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "weight": 1,
+    "icon": "BranchSys.icon.br_valentine_darkchoco_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21890": {
+    "name": "Valentine's Day Rose Spirit Exchange Coupon Pack - Event",
+    "description": "Dimensional item pack. Gift box containing 2 improved rose spirit exchange tickets. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "Coupon"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21891": {
+    "name": "Valentine's Day Rose Spirit Set Pack - Event",
+    "description": "Dimensional item. Gift box containing 1 Valentine's Day Rose Spirit Exchange Coupon and 1 Sweet Chocolate Box. Cannot be exchanged, dropped, or destroyed. Can be shared between characters within an account through the Dimensional Merchant. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_pi_gift_box_i04",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21892": {
+    "name": "Pirate King Hat",
+    "description": "Pirate King Zaken's Hat. Would probably match well with Zaken's Cloak. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 6000000,
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_2_i00"
+  },
+  "21893": {
+    "name": "Halisha's Helmet",
+    "description": "Scarlet van Halisha's Hat. Would probably match well with Frintessa's Cloak. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 6000000,
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_2_i00"
+  },
+  "21894": {
+    "name": "Ice Queen's Tiara",
+    "description": "Ice Qeen Freya's Tiara. Would probably match well with Freya's Cloak. Uses 2 hair accessory slots.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "price": 6000000,
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_2_i00"
+  },
+  "21895": {
+    "name": "Scroll: Valakas Call",
+    "description": "One-time use scroll that teleports you to Watcher of Valakas Klein in the Hall of Flames. Scroll: Valakas Call",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys2.icon.call_of_fire_dragon",
+    "item_skills": [
+      {
+        "id": 22290,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21896": {
+    "name": "Jewel of Valakas",
+    "description": "Mysterious jewel that teleports you to Watcher of Valakas Klein in the Hall of Flames. Re-use time is 60 minutes. Jewel of Valakas",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys2.icon.orb_of_fire_dragon",
+    "item_skills": [
+      {
+        "id": 22291,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21897": {
+    "name": "Scroll: Antharas Call",
+    "description": "One-time use scroll that teleports you to the entrance to Antharas's Lair. Scroll: Antharas Call",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys2.icon.call_of_earth_dragon",
+    "item_skills": [
+      {
+        "id": 22292,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21898": {
+    "name": "Jewel of Antharas",
+    "description": "Mysterious jewel that teleports you to the entrance to Antharas's Lair. Re-use time is 60 minutes. Jewel of Antharas",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Paper",
+    "weight": 10,
+    "icon": "BranchSys2.icon.orb_of_earth_dragon",
+    "item_skills": [
+      {
+        "id": 22293,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21899": {
+    "name": "Totem of Body",
+    "description": "Summons a totem that increases HP recovery speed by 30% and decreases damage from the topography by 80%. Totem duration is 30 minutes. Can only be used inside the lairs of Valakas and Antharas. Re-use time is 10 minutes. Totem of Body",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Paper",
+    "price": 1,
+    "weight": 10,
+    "icon": "BranchSys2.icon.totem_of_body",
+    "item_skills": [
+      {
+        "id": 22294,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  }
+}

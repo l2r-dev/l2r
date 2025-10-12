@@ -1,0 +1,3627 @@
+{
+  "15000": {
+    "name": "Leather Armor of Doom of Fortune - 30-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 202
+      }
+    },
+    "weight": 5500,
+    "icon": "icon.armor_t72_ul_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15001": {
+    "name": "Doom Helmet of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 66
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_leather_helmet_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15002": {
+    "name": "Doom Gloves of Fortune - Heavy Armor - 30-day limited period",
+    "description": "Gloves that make a set with the Doom Plate Armor of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_t71_g_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15003": {
+    "name": "Doom Gloves of Fortune - Light Armor - 30-day limited period",
+    "description": "Gloves that make a set with the Doom Leather Mail of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_t72_g_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15004": {
+    "name": "Doom Boots of Fortune - Heavy Armor - 30-day limited period",
+    "description": "Boots that make a set with the Doom Plate Armor of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1130,
+    "icon": "icon.armor_t71_b_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15005": {
+    "name": "Doom Boots of Fortune - Light Armor - 30-day limited period",
+    "description": "Boots that make a set with the Doom Leather Mail of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Feet"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 44
+      }
+    },
+    "weight": 1130,
+    "icon": "icon.armor_t72_b_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15006": {
+    "name": "Doom Plate Armor of Fortune - 30-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 270
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 9980,
+    "icon": "icon.armor_t71_ul_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15007": {
+    "name": "Doom Shield of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 230
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1200,
+    "icon": "icon.shield_doom_shield_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15008": {
+    "name": "Plate Leather Armor of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 94
+      }
+    },
+    "weight": 4450,
+    "icon": "icon.armor_t47_u_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15009": {
+    "name": "Plate Leather Gaiters of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 59
+      }
+    },
+    "weight": 1560,
+    "icon": "icon.armor_t47_l_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15010": {
+    "name": "Plate Leather Boots of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 32
+      }
+    },
+    "weight": 1220,
+    "icon": "icon.armor_t47_b_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15011": {
+    "name": "Plate Leather Gloves of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 33
+      }
+    },
+    "weight": 610,
+    "icon": "icon.armor_t47_g_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15012": {
+    "name": "Full Plate Helmet of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 58
+      }
+    },
+    "weight": 600,
+    "icon": "icon.armor_leather_helmet_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15013": {
+    "name": "Full Plate Armor of Fortune - 30-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 239
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 10480,
+    "icon": "icon.armor_t62_ul_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15014": {
+    "name": "Full Plate Boots of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 39
+      }
+    },
+    "weight": 1200,
+    "icon": "icon.armor_t62_b_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15015": {
+    "name": "Full Plate Gauntlet of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 39
+      }
+    },
+    "weight": 600,
+    "icon": "icon.armor_t62_g_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15016": {
+    "name": "Full Plate Shield of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "C",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 203
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1220,
+    "icon": "icon.shield_full_plate_shield_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15017": {
+    "name": "Manticore Skin Shirt of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 77
+      }
+    },
+    "weight": 4520,
+    "icon": "icon.armor_t42_u_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15018": {
+    "name": "Manticore Skin Gaiters of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Light": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 48
+      }
+    },
+    "weight": 1550,
+    "icon": "icon.armor_t42_l_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15019": {
+    "name": "Manticore Skin Boots of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 27
+      }
+    },
+    "weight": 1260,
+    "icon": "icon.armor_t42_b_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15020": {
+    "name": "Manticore Skin Gloves of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 27
+      }
+    },
+    "weight": 630,
+    "icon": "icon.armor_t42_g_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15021": {
+    "name": "Brigandine of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "Chest"
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PDef": {
+        "add": 103
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 8320,
+    "icon": "icon.armor_t43_u_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15022": {
+    "name": "Brigandine Gaiters of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "Legs"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 64
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 3820,
+    "icon": "icon.armor_t43_l_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15023": {
+    "name": "Brigandine Helmet of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "weight": 630,
+    "icon": "icon.armor_leather_helmet_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15024": {
+    "name": "Brigandine Boots of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Feet"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 27
+      }
+    },
+    "weight": 1250,
+    "icon": "icon.armor_t43_b_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15025": {
+    "name": "Brigandine Gauntlet of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Gloves"
+      }
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 27
+      }
+    },
+    "weight": 630,
+    "icon": "icon.armor_t43_g_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15026": {
+    "name": "Brigandine Shield of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "D",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 142
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1320,
+    "icon": "icon.shield_brigandine_shield_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15027": {
+    "name": "Fortune Armor of Nightmare - 30-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "BloodSteel",
+    "stats": {
+      "PDef": {
+        "add": 293
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 9580,
+    "icon": "icon.armor_t80_ul_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15028": {
+    "name": "Fortune Helm of Nightmare - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 73
+      }
+    },
+    "weight": 560,
+    "icon": "icon.armor_leather_helmet_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15029": {
+    "name": "Fortune Gauntlet of Nightmare - Heavy Armor - 30-day limited period",
+    "description": "Gauntlet that makes a set with Fortune Armor of Nightmare. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 550,
+    "icon": "icon.armor_t80_g_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15030": {
+    "name": "Fortune Boots of Nightmare - Heavy Armor - 30-day limited period",
+    "description": "Boots that make a set with Fortune Armor of Nightmare. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Heavy": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 49
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.armor_t80_b_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15031": {
+    "name": "Fortune Shield of Nightmare - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Leather",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 256
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1180,
+    "icon": "icon.shield_shield_of_nightmare_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15032": {
+    "name": "Sword of Miracles of Fortune - 30-day limited period",
+    "description": "Increases Casting Spd. by 15%, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 840,
+    "icon": "icon.weapon_sword_of_miracle_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15033": {
+    "name": "Wizard's Tear of Fortune - 30-day limited period",
+    "description": "Casting Spd. increases by 15%. No exchange/drop available Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "B",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 155
+      },
+      "MAtk": {
+        "set": 132
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_tears_of_wizard_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15034": {
+    "name": "Homunkulus's Sword of Fortune - 30-day limited period",
+    "description": "Casting Spd. increases by 15%. No exchange/drop available Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 111
+      },
+      "MAtk": {
+        "set": 101
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 950,
+    "icon": "icon.weapon_homunkuluss_sword_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15035": {
+    "name": "Fortune Staff of Life - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "D",
+    "material": "Wood",
+    "stats": {
+      "PAtk": {
+        "set": 74
+      },
+      "MAtk": {
+        "set": 72
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1180,
+    "icon": "icon.weapon_life_stick_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15036": {
+    "name": "Naga Storm of Fortune - 30-day limited period",
+    "description": "Increases Critical by 67, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 220
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 930,
+    "icon": "icon.weapon_naga_storm_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3051,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15037": {
+    "name": "Kris of Fortune - 30-day limited period",
+    "description": "Increases Critical by 71. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 153
+      },
+      "MAtk": {
+        "set": 91
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 980,
+    "icon": "icon.weapon_kris_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3011,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15038": {
+    "name": "Dark Screamer of Fortune - 30-day limited period",
+    "description": "Increases Critical by 81. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 122
+      },
+      "MAtk": {
+        "set": 76
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1010,
+    "icon": "icon.weapon_dark_screamer_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3011,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15039": {
+    "name": "Mithril Dagger of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Dagger": "OneHanded",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 80
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "weight": 1060,
+    "icon": "icon.weapon_mithril_dagger_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15040": {
+    "name": "Shyeed's Bow of Fortune - 30-day limited period",
+    "description": "Increases Critical by 61, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 5,
+        "reuse_delay": 820
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 570
+      },
+      "MAtk": {
+        "set": 133
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 227
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_shyid_bow_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15041": {
+    "name": "Fortune Bow of Peril - 30-day limited period",
+    "description": "During a general attack, MP consumption decreases to 2 with a 42% chance. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 3,
+        "spiritshots": 1,
+        "width": 0,
+        "mp_consume": 4,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 400
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1700,
+    "icon": "icon.weapon_hazard_bow_i01",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15042": {
+    "name": "Eminence Bow of Fortune - 30-day limited period",
+    "description": "During a general attack, MP consumption decreases to 1 with a 42% chance. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 3,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 323
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1720,
+    "icon": "icon.weapon_eminence_bow_i01",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15043": {
+    "name": "Light Crossbow of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Bow": {},
+        "random_damage": 5,
+        "range": 500,
+        "soulshots": 10,
+        "spiritshots": 3,
+        "width": 0,
+        "mp_consume": 2,
+        "reuse_delay": 1500
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 191
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 293
+      }
+    },
+    "weight": 1810,
+    "icon": "icon.weapon_cyclone_bow_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15044": {
+    "name": "Barakiel's Axe of Fortune - 30-day limited period",
+    "description": "Increases Critical by 61, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1550,
+    "icon": "icon.weapon_barakiel_axe_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15045": {
+    "name": "Art of Battle Axe of Fortune - 30-day limited period",
+    "description": "Max HP increases by 25%. No exchange/drop available Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1570,
+    "icon": "icon.weapon_art_of_battle_axe_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15046": {
+    "name": "Yaksa Mace of Fortune - 30-day limited period",
+    "description": "Max HP increases by 25%. No exchange/drop available Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_yaksa_mace_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15047": {
+    "name": "Bonebreaker of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 92
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1720,
+    "icon": "icon.weapon_bonebreaker_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15048": {
+    "name": "Sirra's Blade of Fortune - 30-day limited period",
+    "description": "Increases Max HP by 25%, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_sirr_blade_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 5
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15049": {
+    "name": "Fortune Sword of Damascus - 30-day limited period",
+    "description": "Increases Critical by 64. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Damascus",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_sword_of_damascus_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15050": {
+    "name": "Samurai Longsword of Fortune - 30-day limited period",
+    "description": "Increases Critical by 73. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1380,
+    "icon": "icon.weapon_samurai_longsword_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15051": {
+    "name": "Elven Long Sword of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 92
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "weight": 1440,
+    "icon": "icon.weapon_elven_long_sword_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15052": {
+    "name": "Fortune Sword of Ipos - 30-day limited period",
+    "description": "Increases Critical by 61, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Bone",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_sword_of_ipos_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15053": {
+    "name": "Guardian Sword of Fortune - 30-day limited period",
+    "description": "Max HP increases by 25%. No exchange/drop available Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1930,
+    "icon": "icon.weapon_guardians_sword_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15054": {
+    "name": "Berserker Blade of Fortune - 30-day limited period",
+    "description": "Increases Critical by 73. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Oriharukon",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1380,
+    "icon": "icon.weapon_berserker_blade_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15055": {
+    "name": "Claymore of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 112
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2090,
+    "icon": "icon.weapon_claymore_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15056": {
+    "name": "Sobekk's Hurricane of Fortune - 30-day limited period",
+    "description": "Atk. Spd. increases by about 6%, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1330,
+    "icon": "icon.weapon_sobekk_hurricane_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15057": {
+    "name": "Bellion Cestus of Fortune - 30-day limited period",
+    "description": "Atk. Spd. increases by 9% when HP is below 60%. No exchange/drop available Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1390,
+    "icon": "icon.weapon_bellion_cestus_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3034,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15058": {
+    "name": "Great Pata of Fortune - 30-day limited period",
+    "description": "Atk. Spd. increases by 11% when HP is below 60%. No exchange/drop available Special Ability: Rsk. Haste",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 90
+      }
+    },
+    "grade": "C",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1460,
+    "icon": "icon.weapon_great_pata_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3034,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15059": {
+    "name": "Scallop Jamadhr of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 112
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1520,
+    "icon": "icon.weapon_scallop_jamadhr_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15060": {
+    "name": "Tallum Blade*Damascus of Fortune - 30-day limited period",
+    "description": "Increases Atk. Spd. by 8%, and increases damage inflicted during PvP. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 17
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 305
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1890,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15061": {
+    "name": "Samurai Long Sword*Samurai Long Sword of Fortune - 30-day limited period",
+    "description": "Atk. Spd. increases by 4%. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3045,
+            "level": 14
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 236
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2080,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15062": {
+    "name": "Spirit Sword*Raid Sword of Fortune - 30-day limited period",
+    "description": "Increases Critical by 40. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3044,
+            "level": 8
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 190
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2260,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15063": {
+    "name": "Bastard Sword*Elven Sword of Fortune - 30-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 107
+      },
+      "MAtk": {
+        "set": 51
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2460,
+    "icon": "icon.weapon_dual_sword_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15064": {
+    "name": "Tiphon's Spear of Fortune - 30-day limited period",
+    "description": "Attack angle widens, and increases damage inflicted during PvP. No exchange/drop available Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 180
+      }
+    },
+    "grade": "A",
+    "material": "Chrysolite",
+    "stats": {
+      "PAtk": {
+        "set": 251
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_tiphon_spear_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15065": {
+    "name": "Lance of Fortune - 30-day limited period",
+    "description": "Range increases. No exchange/drop available Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 194
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1920,
+    "icon": "icon.weapon_lancia_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15066": {
+    "name": "Orcish Poleaxe of Fortune - 30-day limited period",
+    "description": "Attack angle widens. No exchange/drop available Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 180
+      }
+    },
+    "grade": "C",
+    "material": "BloodSteel",
+    "stats": {
+      "PAtk": {
+        "set": 156
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 1950,
+    "icon": "icon.weapon_orcish_poleaxe_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15067": {
+    "name": "Glaive of Fortune - 30-day limited period",
+    "description": "No exchange/drop available Polearm Multi-attack",
+    "kind": {
+      "Weapon": {
+        "Pole": {},
+        "random_damage": 10,
+        "range": 80,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 92
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 2050,
+    "icon": "icon.weapon_glaive_i00",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3599,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15068": {
+    "name": "Durendal of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Increases Critical by 61, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 272
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1820,
+    "icon": "icon.weapon_death_bringer_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15069": {
+    "name": "Dismantler of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Max HP increases by 25%. No exchange/drop available Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 210
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1930,
+    "icon": "icon.weapon_dismantler_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15070": {
+    "name": "Saber Tooth of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Increases Critical by 73. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 169
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1950,
+    "icon": "icon.weapon_invincible_blade_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3010,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15071": {
+    "name": "General's Katzbalger of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "Ancient",
+        "random_damage": 15,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 100
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "Accuracy": {
+        "add": 2
+      },
+      "PAtkSpd": {
+        "set": 350
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 2010,
+    "icon": "icon.weapon_tulwar_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15072": {
+    "name": "Éclair Bijou of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Atk. Spd. increases by about 6%, and increases damage inflicted during PvP. Improves the chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. No exchange/drop available Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 228
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1300,
+    "icon": "icon.weapon_greed_stinger_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3068,
+        "level": 3
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15073": {
+    "name": "Colichemarde of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Increases Atk. Spd. by about 6%, and improves the chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. No exchange/drop available Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 176
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1350,
+    "icon": "icon.weapon_colichemarde_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 6
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15074": {
+    "name": "Admiral's Estoc of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Increases Atk. Spd. by about 7%, and improves the chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. No exchange/drop available Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 141
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1380,
+    "icon": "icon.weapon_blink_slasher_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3036,
+        "level": 4
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15075": {
+    "name": "Grand Epee of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Improves the chance that party members including yourself will get increased P. Atk., M. Atk. and the amount of recieved heal, and decreased MP consumption per skill during a critical attack. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Sword": "Rapier",
+        "random_damage": 40,
+        "range": 40,
+        "soulshots": 3,
+        "spiritshots": 3,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3426,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 83
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 406
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1440,
+    "icon": "icon.weapon_rapier_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15076": {
+    "name": "Screaming Vengeance of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. Increases Critical by 61, and increases damage inflicted during PvP. No exchange/drop available Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "A",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 318
+      },
+      "MAtk": {
+        "set": 121
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1640,
+    "icon": "icon.weapon_soul_shooter_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3050,
+        "level": 2
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15077": {
+    "name": "Hell Hound of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. MP consumption decreases by about 12% during skill use. No exchange/drop available Special Ability: Cheap Shot",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 2,
+        "spiritshots": 1,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "B",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 245
+      },
+      "MAtk": {
+        "set": 99
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1700,
+    "icon": "icon.weapon_hell_hound_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15078": {
+    "name": "Sharpshooter of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. MP consumption decreases by about 12% during skill use. No exchange/drop available Special Ability: Cheap Shot",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 6,
+        "spiritshots": 3,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "C",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 198
+      },
+      "MAtk": {
+        "set": 83
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1740,
+    "icon": "icon.weapon_taslam_i01",
+    "time": 43200,
+    "item_skills": [
+      {
+        "id": 3360,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15079": {
+    "name": "Cranequin of Fortune - 30-day limited period",
+    "description": "Kamael Exclusive Weapon. No exchange/drop available",
+    "kind": {
+      "Weapon": {
+        "Crossbow": {},
+        "random_damage": 10,
+        "range": 400,
+        "soulshots": 6,
+        "spiritshots": 3,
+        "width": 120,
+        "reuse_delay": 400
+      }
+    },
+    "grade": "D",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 117
+      },
+      "MAtk": {
+        "set": 54
+      },
+      "CriticalRate": {
+        "set": 10
+      },
+      "Accuracy": {
+        "add": -1.5
+      },
+      "PAtkSpd": {
+        "set": 303
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Kamael"
+        ]
+      }
+    },
+    "weight": 1810,
+    "icon": "icon.weapon_hunting_gun_i00",
+    "time": 43200,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15080": {
+    "name": "Majestic Earring of Fortune - 10-day limited period",
+    "description": "The effect is MP +25. No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 63
+      },
+      "MaxMp": {
+        "add": 25
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_earing_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15081": {
+    "name": "Majestic Necklace of Fortune - 10-day limited period",
+    "description": "The effect is MP +33. No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "A",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 85
+      },
+      "MaxMp": {
+        "add": 33
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_necklace_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15082": {
+    "name": "Majestic Ring of Fortune - 10-day limited period",
+    "description": "The effect is MP +17. No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "A",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 42
+      },
+      "MaxMp": {
+        "add": 17
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_inferno_ring_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15083": {
+    "name": "Fortune Earring of Black Ore - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "B",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 54
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_earing_of_black_ore_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15084": {
+    "name": "Fortune Necklace of Black Ore - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "B",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 72
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_necklace_of_black_ore_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15085": {
+    "name": "Fortune Ring of Black Ore - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "B",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 36
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_black_ore_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15086": {
+    "name": "Fortune Earring of Seal - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "C",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 45
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_earing_of_binding_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15087": {
+    "name": "Fortune Necklace of Seal - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "C",
+    "material": "Adamantaite",
+    "stats": {
+      "MDef": {
+        "add": 64
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_necklace_of_binding_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15088": {
+    "name": "Fortune Ring of Seal - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "C",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 32
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_ring_of_binding_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15089": {
+    "name": "Elven Earring of Fortune - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Earring"
+    },
+    "grade": "D",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 34
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_elven_earing_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15090": {
+    "name": "Elven Earring of Fortune - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Necklace"
+    },
+    "grade": "D",
+    "material": "Silver",
+    "stats": {
+      "MDef": {
+        "add": 45
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_elven_necklace_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15091": {
+    "name": "Elven Ring of Fortune - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Jewelry": "Ring"
+    },
+    "grade": "D",
+    "material": "Gold",
+    "stats": {
+      "MDef": {
+        "add": 22
+      }
+    },
+    "weight": 150,
+    "icon": "icon.accessary_elven_ring_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15092": {
+    "name": "Dark Crystal Robe of Fortune - 10-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 139
+      },
+      "MaxMp": {
+        "add": 665
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2450,
+    "icon": "icon.armor_t76_ul_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15093": {
+    "name": "Dark Crystal Helmet of Fortune - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 69
+      }
+    },
+    "weight": 570,
+    "icon": "icon.armor_helmet_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15094": {
+    "name": "Dark Crystal Gloves of Fortune - Robe - 10-day limited period",
+    "description": "Gloves that make a set with the Dark Crystal Robe of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 580,
+    "icon": "icon.armor_t76_g_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15095": {
+    "name": "Dark Crystal Boots of Fortune - Robe - 10-day limited period",
+    "description": "Boots that make a set with the Dark Crystal Robe of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Feet"
+      }
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "PDef": {
+        "add": 46
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1110,
+    "icon": "icon.armor_t76_b_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15096": {
+    "name": "Dark Crystal Shield of Fortune - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": "Shield"
+    },
+    "grade": "A",
+    "material": "Crystal",
+    "stats": {
+      "Evasion": {
+        "sub": 8
+      },
+      "ShieldRate": {
+        "set": 20
+      },
+      "ShieldDefence": {
+        "set": 243
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 1190,
+    "icon": "icon.shield_dark_crystal_shield_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15097": {
+    "name": "Avadon Robe of Fortune - 10-day limited period",
+    "description": "One-piece Body Armor. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "FullBody"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 127
+      },
+      "MaxMp": {
+        "add": 561
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 2540,
+    "icon": "icon.armor_t59_ul_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15098": {
+    "name": "Avadon Circlet of Fortune - 10-day limited period",
+    "description": "No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Common": "Head"
+      }
+    },
+    "grade": "B",
+    "material": "Leather",
+    "stats": {
+      "PDef": {
+        "add": 62
+      }
+    },
+    "weight": 590,
+    "icon": "icon.armor_leather_helmet_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  },
+  "15099": {
+    "name": "Avadon Gloves of Fortune - Robe - 10-day limited period",
+    "description": "Gloves that make a set with the Avadon Robe of Fortune. No exchange/drop available",
+    "kind": {
+      "Armor": {
+        "Magic": "Gloves"
+      }
+    },
+    "grade": "B",
+    "material": "Mithril",
+    "stats": {
+      "PDef": {
+        "add": 41
+      }
+    },
+    "conditions": {
+      "player": {
+        "races": [
+          "Human",
+          "Elf",
+          "DarkElf",
+          "Orc",
+          "Dwarf"
+        ]
+      }
+    },
+    "weight": 590,
+    "icon": "icon.armor_t59_g_i00",
+    "time": 14400,
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false
+  }
+}

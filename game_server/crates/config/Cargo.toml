@@ -1,0 +1,14 @@
+[package]
+name = "config"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+l2r_core = { path = "../../../core", features = ["high_five"] }
+
+bevy = { workspace = true }
+bevy_common_assets = { workspace = true }
+
+serde = { workspace = true }
+derive_more = { workspace = true }
+toml = { workspace = true }

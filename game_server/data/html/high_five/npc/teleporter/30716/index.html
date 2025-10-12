@@ -1,0 +1,6 @@
+{% extends "_common/base.html" %}
+{% block body %}
+How are your studies going? You must be happy to have good results from your learning. Would you like to go to another floor?<br>
+<a action="bypass -h npc_{{ object_id }}_chat tp_floor">Go to another floor.</a><br>
+<a action="bypass -h npc_{{ object_id }}_quest">Quest</a>
+{% endblock body %}

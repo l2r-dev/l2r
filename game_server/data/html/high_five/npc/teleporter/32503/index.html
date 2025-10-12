@@ -1,0 +1,10 @@
+{% extends "_common/base.html" %}
+
+{% block body %}
+Welcome to Kratei's Cube! Only the strongest win here.<br>
+Do you feel lucky?<br>
+<a action="bypass -h npc_{{ object_id }}_chat 1">Learn more about Kratei's Cube.</a><br>
+<a action="bypass -h npc_{{ object_id }}_chat 2">Enter Kratei's Cube.</a><br>
+<a action="bypass -h npc_{{ object_id }}_chat 3">Cancel registration for Kratei's Cube competition.<br>
+<a action="bypass -h npc_{{ object_id }}_tp 12109">Teleport to Fantasy Isle.</a>
+{% endblock body %}

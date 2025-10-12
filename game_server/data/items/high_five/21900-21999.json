@@ -1,0 +1,3998 @@
+{
+  "21900": {
+    "name": "Totem of Spirit",
+    "description": "Summons a totem that increases MP recovery speed by 15%. Totem duration is 30 minutes. Can only be used inside the lairs of Valakas and Antharas. Re-use time is 10 minutes. Totem of Spirit",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Paper",
+    "price": 1,
+    "weight": 10,
+    "icon": "BranchSys2.icon.totem_of_mind",
+    "item_skills": [
+      {
+        "id": 22295,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21901": {
+    "name": "Totem of Courage",
+    "description": "Summons a totem that increases P. Def. by 30%. Totem duration is 30 minutes. Can only be used inside the lairs of Valakas and Antharas. Re-use time is 10 minutes. Totem of Courage",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Paper",
+    "price": 1,
+    "weight": 10,
+    "icon": "BranchSys2.icon.totem_of_bravery",
+    "item_skills": [
+      {
+        "id": 22296,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21902": {
+    "name": "Totem of Fortitude",
+    "description": "Summons a totem that increases M. Def. by 25% and cancels petrification at a certain cycle. Totem duration is 30 minutes. Can only be used inside the lairs of Valakas and Antharas. Re-use time is 10 minutes. Totem of Fortitude",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Paper",
+    "price": 1,
+    "weight": 10,
+    "icon": "BranchSys2.icon.totem_of_fortitude",
+    "item_skills": [
+      {
+        "id": 22297,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21903": {
+    "name": "Refined Red Dragon Blood",
+    "description": "When used, instantly recovers some HP to yourself and to party members. Can only be used inside the lairs of Valakas and Antharas. Re-use time is 5 minutes. TODO: Custom. Refined Red Dragon Blood",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "BranchSys2.icon.refined_red_blood_of_dragon",
+    "item_skills": [
+      {
+        "id": 22298,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21904": {
+    "name": "Refined Blue Dragon Blood",
+    "description": "When used, instantly recovers some MP to yourself and to party members. Can only be used inside the lairs of Valakas and Antharas. Re-use time is 5 minutes. TODO: Custom. Refined Blue Dragon Blood",
+    "kind": {
+      "Consumable": "Potion"
+    },
+    "material": "Liquid",
+    "weight": 10,
+    "icon": "BranchSys2.icon.refined_blue_blood_of_dragon",
+    "item_skills": [
+      {
+        "id": 22299,
+        "level": 1
+      }
+    ],
+    "olympiad_restricted": true,
+    "stackable": true
+  },
+  "21905": {
+    "name": "Clear Crystal",
+    "description": "There is nothing inside the clear crystal. Rumors say that this crystal can store the Antharas's energy.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21906": {
+    "name": "Empty Crystal",
+    "description": "There is nothing inside the empty crystal. Rumors say that this crystal can store the Valakas's energy.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_white_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21907": {
+    "name": "Filled Crystal (Antharas Energy)",
+    "description": "Crystal containing the land dragon's energy. You must bring it to Theodric.",
+    "kind": {
+      "Material": "Crystal"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_gold_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21908": {
+    "name": "Filled Crystal (Valakas Energy)",
+    "description": "Crystal containing the fire dragon's energy. You must bring it to Klein.",
+    "kind": {
+      "Material": "Crystal"
+    },
+    "material": "Crystal",
+    "icon": "icon.etc_bead_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21909": {
+    "name": "Lavasaurus Stone Fragment",
+    "description": "Stone fragment from a Lavasaurus. Researchers say this is what controls how a Lavasaurus moves.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_broken_crystal_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21910": {
+    "name": "Lavasaurus Head Fragment",
+    "description": "Framgent from the head of a Lavasaurus. Its shape resembles that of a Dragon.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_broken_crystal_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21911": {
+    "name": "Lavasaurus Body Fragment",
+    "description": "Fragment taken from the body of a Lavasaurus.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_broken_crystal_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21912": {
+    "name": "Lavasaurus Horn Fragment",
+    "description": "Fragment from a Lavasaurus horn.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_broken_crystal_silver_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21913": {
+    "name": "Unrefined Red Dragon Blood",
+    "description": "Unrefined Red Dragon Blood collected from the dragons inside the Lair of Antharas.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_potion_red_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21914": {
+    "name": "Unrefined Blue Dragon Blood",
+    "description": "Unrefined Blue Dragon Blood collected from the dragons inside the Lair of Antharas.",
+    "kind": {
+      "Etc": "Quest"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_potion_blue_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "depositable": false,
+    "stackable": true
+  },
+  "21915": {
+    "name": "Ice Candy Piece",
+    "description": "Sweet ice candy piece. Collect 50 and bring them back to Santa Claus to receive a reward.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Liquid",
+    "icon": "BranchSys.icon.br_valentine_cream_i00",
+    "stackable": true
+  },
+  "21916": {
+    "name": "Super Kat the Cat Z Summon Necklace",
+    "description": "Dimensional item. Item that allows you to summon a hunting helper who temporarily casts magician-type battle support magic. Cannot be exchanged or dropped. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.g_supercat_cat_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "21917": {
+    "name": "Super Feline Queen Z Summon Necklace",
+    "description": "Dimensional item. Item that allows you to summon a hunting helper who temporarily casts magician-type battle support magic. Cannot be exchanged or dropped. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.g_supercat_queen_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "21918": {
+    "name": "Super Mew the Cat Z Summon Necklace",
+    "description": "Dimensional item. Item that allows you to summon a hunting helper who temporarily casts magician-type battle support magic. Cannot be exchanged or dropped. Can be stored in a private warehouse. Wolf's Necklace",
+    "kind": {
+      "Pet": "Collar"
+    },
+    "material": "Leather",
+    "weight": 10,
+    "icon": "BranchSys2.icon.g_supercat_mew_i00",
+    "item_skills": [
+      {
+        "id": 2046,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true
+  },
+  "21919": {
+    "name": "Hellblade",
+    "description": "Sword used by Darion. Bestows a special power upon the wielder. Bestows one of the following functions: Haste, Focus, or Health. Hellblade",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21920": {
+    "name": "Hellblade - Haste",
+    "description": "<Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Special Ability: Haste",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3564,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21921": {
+    "name": "Hellblade - Health",
+    "description": "<Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21922": {
+    "name": "Hellblade - Focus",
+    "description": "<Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Critical by 131. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21923": {
+    "name": "Hellblade {PvP}",
+    "description": "Sword used by Darion. Bestows a special power upon the wielder. Bestows one of the following functions: Haste, Focus, or Health. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21924": {
+    "name": "Hellblade {PvP} - Haste",
+    "description": "<Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21925": {
+    "name": "Hellblade {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21926": {
+    "name": "Hellblade {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Critical by 131. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21927": {
+    "name": "Hellblade - Lightning",
+    "description": "Masterwork Item than increases the critical rate. Sword used by Darion. Bestows a special power upon the wielder. Bestows one of the following functions: Haste, Focus, or Health. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21928": {
+    "name": "Hellblade - Lightning - Haste",
+    "description": "Masterwork Item that increases the critical attack rate. <Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21929": {
+    "name": "Hellblade - Lightning - Health",
+    "description": "Masterwork Item that increases the critical attack rate. <Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21930": {
+    "name": "Hellblade - Lightning - Focus",
+    "description": "Masterwork Item that increases the critical attack rate. <Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Critical by 131. Increases damage inflicted during PvP. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ]
+  },
+  "21931": {
+    "name": "Hellblade - Lightning {PvP}",
+    "description": "Masterwork Item than increases the critical rate. Sword used by Darion. Bestows a special power upon the wielder. Bestows one of the following functions: Haste, Focus, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21932": {
+    "name": "Hellblade - Lightning {PvP} - Haste",
+    "description": "Masterwork Item that increases the critical attack rate. <Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3564,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21933": {
+    "name": "Hellblade - Lightning {PvP} - Health",
+    "description": "Masterwork Item that increases the critical attack rate. <Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21934": {
+    "name": "Hellblade - Lightning {PvP} - Focus",
+    "description": "Masterwork Item that increases the critical attack rate. <Soul Crystal Enhancement>. Sword used by Darion. Bestows a special power upon the wielder. Increases Critical by 131. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. Sword of Critical Chance",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_Caladbulg_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3828,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 3
+      },
+      {
+        "id": 21252,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21935": {
+    "name": "Butcher Blades",
+    "description": "Dagger dualsword used by Doll Blader. Bestows a special power upon the wielder. Increases P. Atk. more than that for regular one-handed swords when enchanted. When enchanted to 4 or more, increases Critical by 109. Increases the damage inflicted during PvP. Can be equipped by Dagger Masters above level 81. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8296,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 169
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 121780000,
+    "weight": 2100,
+    "icon": "BranchSys2.icon.br_wp_habus_knife_i00",
+    "crystal_count": 5845,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 21253,
+        "level": 1
+      }
+    ]
+  },
+  "21936": {
+    "name": "Butcher Blades {PvP}",
+    "description": "Dagger dualsword used by Doll Blader. Bestows a special power upon the wielder. Increases P. Atk. more than that for regular one-handed swords when enchanted. During an attack, cancels a target's enhanced status by more than 1 at a fixed rate, or decreases a target's shield P. Def. Can be equipped by Dagger masters above level 81. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8296,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 169
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 121780000,
+    "weight": 2100,
+    "icon": "BranchSys2.icon.br_wp_habus_knife_i00",
+    "crystal_count": 5845,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 21253,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21937": {
+    "name": "Butcher Blades - Confusion",
+    "description": "Masterwork Item that raises evasion. Dagger dualsword used by Doll Blader. Bestows a special power upon the wielder. Increases P. Atk. more than that for regular one-handed swords when enchanted. Can be equipped by Dagger Masters above level 81. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8296,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 169
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 121780000,
+    "weight": 2100,
+    "icon": "BranchSys2.icon.br_wp_habus_knife_i00",
+    "crystal_count": 5845,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 21253,
+        "level": 1
+      }
+    ]
+  },
+  "21938": {
+    "name": "Butcher Blades - Confusion {PvP}",
+    "description": "Masterwork Item that raises evasion. Dagger dualsword used by Doll Blader. Bestows a special power upon the wielder. Increases P. Atk. more than that for regular one-handed swords when enchanted. Increases damage inflicted during PvP, during an attack, cancels a target's enhanced status by more than 1 at a fixed rate, or decreases a target's shield P. Def. Can be equipped by Dagger Masters above level 81. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Dagger": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 8296,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S80",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 332
+      },
+      "MAtk": {
+        "set": 169
+      },
+      "CriticalRate": {
+        "set": 12
+      },
+      "Accuracy": {
+        "add": -3.75
+      },
+      "PAtkSpd": {
+        "set": 433
+      }
+    },
+    "price": 121780000,
+    "weight": 2100,
+    "icon": "BranchSys2.icon.br_wp_habus_knife_i00",
+    "crystal_count": 5845,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3858,
+        "level": 3
+      },
+      {
+        "id": 3651,
+        "level": 1
+      },
+      {
+        "id": 3652,
+        "level": 1
+      },
+      {
+        "id": 21253,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21939": {
+    "name": "Claw of Destruction",
+    "description": "Blunt weapon used by Tiat. Bestows a special power upon the wielder. Bestows one of the following functions: HP Regeneration, HP Drain, or Health. Claw of Destruction",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21940": {
+    "name": "Claw of Destruction - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Blunt used by Tiat. Bestows a special power upon the wielder. Recovers 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21941": {
+    "name": "Claw of Destruction - Health",
+    "description": "<Soul Crystal Enhancement>. Blunt used by Tiat. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21942": {
+    "name": "Claw of Destruction - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Blunt used by Tiat. Bestows a special power upon the wielder. Increases HP recovery rate. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21943": {
+    "name": "Claw of Destruction {PvP}",
+    "description": "Blunt weapon used by Tiat. Bestows a special power upon the wielder. Bestows one of the following functions: HP Regeneration, HP Drain, or Health. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21944": {
+    "name": "Claw of Destruction {PvP} - HP Drain",
+    "description": "<Soul Crystal Enhancement>. Blunt used by Tiat. Bestows a special power upon the wielder. Recovers 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21945": {
+    "name": "Claw of Destruction {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Blunt used by Tiat. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21946": {
+    "name": "Claw of Destruction {PvP} - HP Regeneration",
+    "description": "<Soul Crystal Enhancement>. Blunt used by Tiat. Bestows a special power upon the wielder. HP recovery speed is increased. Increases damage inflicted during PvP, and recovers CP at a fixed rate during an attack. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3569,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21947": {
+    "name": "Claw of Destruction - Landslide",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Bestows one of the following functions: HP Regeneration, HP Drain, or Health. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21948": {
+    "name": "Claw of Destruction - Landslide - HP Drain",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. <Soul Crystal Enhancement>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Recovers 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 3568,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21949": {
+    "name": "Claw of Destruction - Landslide - Health",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. <Soul Crystal Enhancement>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21950": {
+    "name": "Claw of Destruction - Landslide - HP Regeneration",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. <Soul Crystal Enhancement>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Increases HP recovery rate. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 3569,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ]
+  },
+  "21951": {
+    "name": "Claw of Destruction - Landslide {PvP}",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Bestows one of the following functions: HP Regeneration, HP Drain, or Health. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i00",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21952": {
+    "name": "Claw of Destruction - Landslide {PvP} - HP Drain",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. <Soul Crystal Enhancement>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Recovers 4% of melee damage inflicted upon the enemy to your own HP. Increases damage inflicted during PvP. Improves the chance of CP recovery during an attack. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3568,
+        "level": 2
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21953": {
+    "name": "Claw of Destruction - Landslide {PvP} - Health",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. <Soul Crystal Enhancement>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21954": {
+    "name": "Claw of Destruction - Landslide {PvP} - HP Regeneration",
+    "description": "Masterwork Item that has the stun effect at a fixed rate when striking. <Soul Crystal Enhancement>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Increases HP recovery rate. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Blunt": "OneHanded",
+        "random_damage": 20,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S84",
+    "material": "FineSteel",
+    "stats": {
+      "PAtk": {
+        "set": 396
+      },
+      "MAtk": {
+        "set": 176
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4.75
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 143356000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tiatenon_i01",
+    "crystal_count": 7050,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3885,
+        "level": 2
+      },
+      {
+        "id": 3650,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21254,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21955": {
+    "name": "Blades of Delusion",
+    "description": "Dualsword used by Aenkinel. Bestows a special power upon the wielder. When enchanted, P. Atk. of dual-swords, two-handed swords, two-handed blunt weapons and fist weapons will increase more than that of one-handed swords. When enchanted to 4 or more, increases Critical Damage by 109, and Increases Max HP by 10%. Increases the damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_astarot_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 21255,
+        "level": 1
+      }
+    ]
+  },
+  "21956": {
+    "name": "Blades of Delusion {PvP}",
+    "description": "Dualsword used by Aenkinel. Bestows a special power upon the wielder. When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Damage by 109 and Increases Max HP by 10%. Increases damage inflicted during PvP, and has a chance of increasing Atk. Spd. of bows/crossbows during an attack. PvP Weapon - Decrease Range",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_astarot_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 21255,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21957": {
+    "name": "Blades of Delusion - Earth",
+    "description": "Masterwork Item than increases Max HP. Dualsword used by Aenkinel. Bestows a special power upon the wielder. When enchanted, P. Atk. of dual-swords, two-handed swords, two-handed blunt weapons and fist weapons will increase more than that of one-handed swords. When enchanted to 4 or more, increases Critical Damage by 109, and Increases Max HP by 10%. Increases the damage inflicted during PvP. Dual-Blade Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_astarot_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3836,
+        "level": 2
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 21255,
+        "level": 1
+      }
+    ]
+  },
+  "21958": {
+    "name": "Blades of Delusion - Earth {PvP}",
+    "description": "Masterwork Item than increases Max HP. Dualsword used by Aenkinel. Bestows a special power upon the wielder. When enchanted, increases P. Atk. of a dualsword, two-handed sword, two-handed blunt weapon and fist weapon more significantly than that of a one-handed sword. When enchanted to 4 or more, increases Critical Damage by 109 and Increases Max HP by 10%. Increases damage inflicted during PvP, and has a chance of increasing Atk. Spd. of bows/crossbows during an attack. Dual-Blade Weapon of Boost HP",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "Dual",
+        "random_damage": 10,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "enchanted_skill": [
+          {
+            "id": 3411,
+            "level": 1
+          }
+        ]
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1520,
+    "icon": "BranchSys2.icon.br_wp_astarot_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3836,
+        "level": 2
+      },
+      {
+        "id": 3656,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 21255,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21959": {
+    "name": "Blood Brother",
+    "description": "Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Bestows one of the following functions: Focus, Health or Light. Blood Brother",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21960": {
+    "name": "Blood Brother - Focus",
+    "description": "<Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Critical by 111. Increases damage inflicted during PvP. Special Ability: Focus",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3566,
+        "level": 2
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21961": {
+    "name": "Blood Brother - Health",
+    "description": "<Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Special Ability: Health",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21962": {
+    "name": "Blood Brother - Light",
+    "description": "<Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21963": {
+    "name": "Blood Brother {PvP} - Focus",
+    "description": "<Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Critical by 111. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21964": {
+    "name": "Blood Brother {PvP} - Health",
+    "description": "<Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21965": {
+    "name": "Blood Brother {PvP} - Light",
+    "description": "<Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases weight gauge by 20%. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. PvP Weapon - Attack Chance",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21966": {
+    "name": "Blood Brother - Great Gale",
+    "description": "Masterwork Item than increases Atk. Spd. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Bestows one of the following functions: Focus, Health or Light. Two-handed Sword of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i00",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3840,
+        "level": 2
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21967": {
+    "name": "Blood Brother - Great Gale - Focus",
+    "description": "Masterwork Item than increases Atk. Spd. <Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Critical by 111. Increases damage inflicted during PvP. Two-handed Sword of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3840,
+        "level": 2
+      },
+      {
+        "id": 3566,
+        "level": 2
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21968": {
+    "name": "Blood Brother - Great Gale - Health",
+    "description": "Masterwork Item than increases Atk. Spd. <Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Two-handed Sword of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3840,
+        "level": 2
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21969": {
+    "name": "Blood Brother - Great Gale - Light",
+    "description": "Masterwork Item than increases Atk. Spd. <Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases weight gauge by 20%. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 3840,
+        "level": 2
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ]
+  },
+  "21970": {
+    "name": "Blood Brother - Great Gale {PvP} - Focus",
+    "description": "Masterwork Item than increases Atk. Spd. <Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Critical by 111. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. Two-handed Sword of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3840,
+        "level": 2
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3566,
+        "level": 2
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21971": {
+    "name": "Blood Brother - Great Gale {PvP} - Health",
+    "description": "Masterwork Item than increases Atk. Spd. <Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. Two-handed Sword of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3840,
+        "level": 2
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 3013,
+        "level": 3
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21972": {
+    "name": "Blood Brother - Great Gale {PvP} - Light",
+    "description": "Masterwork Item than increases Atk. Spd. <Soul Crystal Enhancement>. Two-handed sword used by Yehan Klodekus. Bestows a special power upon the wielder. Increases weight gauge by 20%. Increases damage inflicted during PvP. Has a chance of inflicting additional damage during an attack. Two-handed Sword of Haste",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "TwoHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "S",
+    "material": "Steel",
+    "stats": {
+      "PAtk": {
+        "set": 405
+      },
+      "MAtk": {
+        "set": 151
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "price": 74946000,
+    "weight": 1740,
+    "icon": "BranchSys2.icon.br_wp_tirbing_i01",
+    "crystal_count": 3597,
+    "enchantable": true,
+    "elementable": true,
+    "item_skills": [
+      {
+        "id": 3840,
+        "level": 2
+      },
+      {
+        "id": 3653,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 3
+      },
+      {
+        "id": 3498,
+        "level": 1
+      },
+      {
+        "id": 21256,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21973": {
+    "name": "Mardil's Fan",
+    "description": "Magic fan used by Mardil. Bestows a special power upon the wielder. Bestows one of the following functions: M. Atk., Magic Silence or Acumen. Mardil",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21974": {
+    "name": "Mardil's Fan - M. Atk.",
+    "description": "<Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. When using magic, increases MP Consumption by 15% and increases M. Atk. by 167. Increases damage inflicted during PvP. Special Ability: M. Atk.",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3073,
+        "level": 2
+      },
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21975": {
+    "name": "Mardil's Fan - Magic Silence",
+    "description": "<Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Inflicts silence on a target with a 10% chance when using a magic skill. Increases damage inflicted during PvP. Special Ability: PvP Damage",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3074,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21976": {
+    "name": "Mardil's Fan - Acumen",
+    "description": "<Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Special Ability: Acumen",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3047,
+        "level": 2
+      },
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21977": {
+    "name": "Mardil's Fan - Holy Spirit",
+    "description": "Masterwork Item that increases heal amount. Magic fan used by Mardil. Bestows a special power upon the wielder. Bestows one of the following functions: M. Atk., Magic Silence or Acumen. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i00",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      },
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21978": {
+    "name": "Mardil's Fan - Holy Spirit - M. Atk.",
+    "description": "Masterwork Item that increases heal amount. <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. When using magic, increases MP Consumption by 15% and increases M. Atk. by 167. Increases damage inflicted during PvP. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      },
+      {
+        "id": 3073,
+        "level": 2
+      },
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21979": {
+    "name": "Mardil's Fan - Holy Spirit - Magic Silence",
+    "description": "Masterwork Item that increases heal amount. <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Inflicts silence on a target with a 10% chance when using a magic skill. Increases damage inflicted during PvP. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true,
+        "onmagic_skill": [
+          {
+            "id": 3074,
+            "level": 2
+          }
+        ],
+        "onmagic_chance": 10
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      },
+      {
+        "id": 3552,
+        "level": 1
+      },
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21980": {
+    "name": "Mardil's Fan - Holy Spirit - Acumen",
+    "description": "Masterwork Item that increases heal amount. <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. Sword of Divine Power",
+    "quality": "Masterwork",
+    "kind": {
+      "Weapon": {
+        "Sword": "OneHanded",
+        "random_damage": 10,
+        "range": 40,
+        "soulshots": 1,
+        "spiritshots": 1,
+        "width": 120,
+        "magical": true
+      }
+    },
+    "grade": "A",
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 186
+      },
+      "MAtk": {
+        "set": 152
+      },
+      "CriticalRate": {
+        "set": 8
+      },
+      "PAtkSpd": {
+        "set": 379
+      }
+    },
+    "price": 20741000,
+    "weight": 840,
+    "icon": "BranchSys2.icon.br_wp_wind_of_mardil_i01",
+    "crystal_count": 1659,
+    "enchantable": true,
+    "item_skills": [
+      {
+        "id": 3856,
+        "level": 1
+      },
+      {
+        "id": 3047,
+        "level": 2
+      },
+      {
+        "id": 21257,
+        "level": 1
+      }
+    ]
+  },
+  "21981": {
+    "name": "Clownfish Hat",
+    "description": "Clownfish Hat. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_fish_cap2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21982": {
+    "name": "Refined Angel Ring",
+    "description": "Refined Angel Ring. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_angel_ring_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21983": {
+    "name": "Refined Wizard Hat",
+    "description": "Refined Wizard Hat. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_magician_cap2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21984": {
+    "name": "Refined Jester Hat",
+    "description": "Refined Jester Hat. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_jester_cap_2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21985": {
+    "name": "Refined Romantic Chapeau",
+    "description": "Refined Romantic Chapeau. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "icon.accessory_archer_hat2_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21986": {
+    "name": "Agathion Seal Bracelet - Antharas",
+    "description": "Bracelet that summons a cute Antharas Agathion. Cannot be exchanged, dropped, or sold. Release Seal on Agathion - Antharas",
+    "kind": {
+      "Armor": {
+        "Bracelet": "Left"
+      }
+    },
+    "material": "Silver",
+    "weight": 150,
+    "icon": "icon.pi_high_agathion_bracelet_i00",
+    "item_skills": [
+      {
+        "id": 8521,
+        "level": 1
+      },
+      {
+        "id": 6916,
+        "level": 1
+      },
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 3267,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21987": {
+    "name": "Pirate Hat",
+    "description": "Hat worn by pirates. Uses 2 hair accessory slots. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Steel",
+    "weight": 10,
+    "icon": "icon.Accessary_sea_robber_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21988": {
+    "name": "Shiny Lit Platform Summon Bracelet",
+    "description": "Can stand upon the shiny platform with brilliant lighting when equipped. Cannot be exchanged, dropped, or sold. Shiny Lit Platform",
+    "kind": {
+      "Armor": "Underwear"
+    },
+    "material": "Silver",
+    "weight": 30,
+    "icon": "BranchSys2.Icon.br_shiny_platform_i00",
+    "item_skills": [
+      {
+        "id": 21232,
+        "level": 1
+      }
+    ],
+    "unequip_skill": [
+      {
+        "id": 619,
+        "level": 1
+      }
+    ],
+    "tradable": false,
+    "dropable": false,
+    "sellable": false,
+    "olympiad_restricted": true,
+    "premium": true
+  },
+  "21989": {
+    "name": "Warm Bear Hat",
+    "description": "Polar bear hat that makes you feel cozy just by looking at it. Uses 2 hair accessory slot(s). Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Armor": {
+        "Accessory": "Both"
+      }
+    },
+    "material": "Wood",
+    "weight": 10,
+    "icon": "BranchSys2.icon.br_polar_bear_cap_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21990": {
+    "name": "Warm Bear Paws",
+    "description": "Hand-to-hand combat weapon that looks like cozy bear paws. Very low P. Atk. Cannot be exchanged, dropped, or sold.",
+    "kind": {
+      "Weapon": {
+        "Fist": "Dual",
+        "random_damage": 5,
+        "soulshots": 1,
+        "spiritshots": 1
+      }
+    },
+    "material": "Adamantaite",
+    "stats": {
+      "PAtk": {
+        "set": 5
+      },
+      "MAtk": {
+        "set": 5
+      },
+      "CriticalRate": {
+        "set": 4
+      },
+      "Accuracy": {
+        "add": 4
+      },
+      "PAtkSpd": {
+        "set": 325
+      }
+    },
+    "weight": 450,
+    "icon": "BranchSys2.icon.br_polar_bear_wp_i00",
+    "tradable": false,
+    "dropable": false,
+    "sellable": false
+  },
+  "21991": {
+    "name": "Tarask Dragon's Leather Fragment",
+    "description": "Leathery hide from a Tarask Dragon.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_leather_yellow_i00",
+    "stackable": true
+  },
+  "21992": {
+    "name": "Behemoth Dragon Leather",
+    "description": "Leathery hide from a Behemoth Dragon.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_leather_yellow_i00",
+    "stackable": true
+  },
+  "21993": {
+    "name": "Lavasaurus Alpha Fragment",
+    "description": "Lavasaurus Alpha fragment piece. Bring it to Watcher of Valakas Klein.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_broken_crystal_gold_i00",
+    "stackable": true
+  },
+  "21994": {
+    "name": "Vitality Replenishing Beverage - Pack of 9",
+    "description": "Dimensional Item Pack. A pack containing 9 units of Energy Replenishing Beverage. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21995": {
+    "name": "Vitality Replenishing Beverage - Pack of 12",
+    "description": "Dimensional Item Pack. A pack containing 12 units of Energy Replenishing Beverage. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21996": {
+    "name": "Vitality Replenishing Beverage - Pack of 15",
+    "description": "Dimensional Item Pack. A pack containing 15 units of Energy Replenishing Beverage. Cannot be exchanged or dropped. Can be stored in a private warehouse.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "weight": 100,
+    "icon": "icon.etc_pi_gift_box_i00",
+    "tradable": false,
+    "dropable": false,
+    "stackable": true
+  },
+  "21997": {
+    "name": "Shattered Bones",
+    "description": "Shattered bones that can be obtained from the Ketra Orcs and the Varka Silenos. Bring this to Rune Captain Mathias.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_broken_crystal_gold_i00",
+    "stackable": true
+  },
+  "21998": {
+    "name": "Cannibalistic Stakato Leader Claw",
+    "description": "Cannibalistic Stakato Leader Claw. Bring this to Rune Captain Mathias.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "icon.etc_parasite_i00",
+    "stackable": true
+  },
+  "21999": {
+    "name": "Anais Scroll",
+    "description": "Magic scroll that belongs to Anais. Bring this to Rune Captain Mathias.",
+    "kind": {
+      "Etc": "None"
+    },
+    "material": "Steel",
+    "icon": "BranchSys2.icon.g_ancient_book_piece_high",
+    "stackable": true
+  }
+}
