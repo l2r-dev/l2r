@@ -2,29 +2,28 @@
 //! while providing efficient lookups and operations.
 
 use crate::object_id::ObjectId;
-use bevy::prelude::*;
+use bevy::{platform::hash::FixedHasher, prelude::*};
 use indexmap::IndexSet;
-use l2r_core::model::generic_number::SimpleNumberHasher;
 
-/// An [`IndexSet`] pre-configured to use [`SimpleNumberHasher`] hashing.
+/// An [`IndexSet`] pre-configured to use [`FixedHasher`] hashing.
 ///
 /// This type preserves insertion order while providing efficient O(1) lookups,
-/// making it ideal for inventories where item order matters but we also need
+/// making it ideal for inventories where item order matters, but we also need
 /// fast containment checks and removals.
 #[derive(Clone, Debug, Default, Deref, DerefMut, Reflect)]
-pub struct ObjectIdIndexSet(#[reflect(ignore)] IndexSet<ObjectId, SimpleNumberHasher>);
+pub struct ObjectIdIndexSet(#[reflect(ignore)] IndexSet<ObjectId, FixedHasher>);
 
 impl ObjectIdIndexSet {
     /// Creates an empty `ObjectIdIndexSet`.
     pub fn new() -> Self {
-        Self(IndexSet::with_hasher(SimpleNumberHasher::default()))
+        Self(IndexSet::with_hasher(FixedHasher::default()))
     }
 
     /// Creates an empty `ObjectIdIndexSet` with the specified capacity.
     pub fn with_capacity(n: usize) -> Self {
         Self(IndexSet::with_capacity_and_hasher(
             n,
-            SimpleNumberHasher::default(),
+            FixedHasher::default(),
         ))
     }
 }
