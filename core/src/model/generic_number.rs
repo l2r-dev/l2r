@@ -1,37 +1,37 @@
 use num_traits::{Bounded, NumCast, One, Unsigned, Zero};
 use std::{
     fmt,
-    hash::{BuildHasher, Hash, Hasher},
+    hash::Hash,
     ops::{Add, AddAssign, Deref, Div, Mul, Sub, SubAssign},
     str::FromStr,
 };
 
 pub trait GenericNumber<V>:
-    Clone
-    + Copy
-    + fmt::Debug
-    + Default
-    + Eq
-    + Hash
-    + PartialEq
-    + PartialOrd
-    + Ord
-    + FromStr
-    + From<usize>
-    + From<i32>
-    + From<V>
-    + Into<V>
-    + fmt::Display
-    + Deref
-    + Into<sea_orm::Value>
-    + sea_orm::TryGetable
-    + sea_orm::sea_query::ValueType
-    + Add
-    + Sub
-    + Mul
-    + Div
-    + AddAssign
-    + SubAssign
+Clone
++ Copy
++ fmt::Debug
++ Default
++ Eq
++ Hash
++ PartialEq
++ PartialOrd
++ Ord
++ FromStr
++ From<usize>
++ From<i32>
++ From<V>
++ Into<V>
++ fmt::Display
++ Deref
++ Into<sea_orm::Value>
++ sea_orm::TryGetable
++ sea_orm::sea_query::ValueType
++ Add
++ Sub
++ Mul
++ Div
++ AddAssign
++ SubAssign
 where
     V: Unsigned + One + Zero + Copy + fmt::Debug + NumCast + FromStr + Bounded,
 {
@@ -292,31 +292,4 @@ macro_rules! impl_primitive_conversions {
             }
         }
     };
-}
-
-#[derive(Clone, Default)]
-pub struct SimpleNumberHasher(u64);
-
-impl Hasher for SimpleNumberHasher {
-    fn finish(&self) -> u64 {
-        self.0
-    }
-
-    fn write(&mut self, bytes: &[u8]) {
-        for &byte in bytes {
-            self.0 = self.0.wrapping_mul(31).wrapping_add(byte as u64);
-        }
-    }
-
-    fn write_u32(&mut self, i: u32) {
-        self.0 = i as u64;
-    }
-}
-
-impl BuildHasher for SimpleNumberHasher {
-    type Hasher = Self;
-
-    fn build_hasher(&self) -> Self::Hasher {
-        Self::default()
-    }
 }
