@@ -1,0 +1,42 @@
+{
+    "diagnostics.globals": [
+        "world",
+        "on_script_loaded",
+        "build_skill",
+        "Skill",
+        "SkillInfo",
+        "build_skill_info",
+        "use_skill",
+        "construct",
+        "use_pended_skill",
+        "Duration",
+        "Timer",
+        "on_fixed_update",
+        "GameServerPacket",
+        "launch_skill",
+        "system_builder",
+        "script_id",
+        "types",
+        "on_packet_received",
+        "ShieldResult",
+        "apply_passive",
+        "send_event",
+        "apply_abnormal",
+        "on_script_reloaded",
+        "AbnormalEffect",
+        "on_pending_skill",
+        "on_script_unloaded",
+        "on_runtime_init",
+        "rand",
+        "runtime_script_loaded",
+        "script_asset",
+        "ScriptAttachment",
+        "DatabaseOps",
+        "bevy_log",
+        "RegionGeoData"
+    ],
+    "runtime.special": {
+        "req": "require",
+        "reload_require": "require"
+    }
+}
