@@ -1,4 +1,4 @@
-use super::{ItemsDataTable, UsableItem, kind::SortingKind};
+use super::{ItemsDataTable, UsableItem, WeaponKind, kind::SortingKind};
 use crate::stats::*;
 use bevy::{log, platform::collections::HashMap, prelude::*};
 use bevy_defer::{AsyncAccess, AsyncWorld};
@@ -160,6 +160,18 @@ impl ItemInfo {
                         priority: 0,
                     },
                 );
+
+                if let WeaponKind::Pole = weapon.kind {
+                    modifiers.add_modifier(
+                        format!("item:{name}:p_atk_max_targets_count"),
+                        StatModifier {
+                            stat: StatKind::Attack(AttackStat::PAtkMaxTargetsCount),
+                            //TODO: вынести в конфиг
+                            operation: StatsOperation::Set(3.0),
+                            priority: 0,
+                        },
+                    )
+                }
             }
 
             Some(modifiers)

@@ -8,8 +8,7 @@ use scripting::{
     bindings::{FunctionCallContext, InteropError},
     prelude::{NamespaceBuilder, ScriptValue},
 };
-use spatial::{Degrees, DirectionDegrees};
-use system_messages::Id;
+use spatial::TransformRelativeDirection;
 
 pub struct ShieldResultPlugin;
 impl Plugin for ShieldResultPlugin {
@@ -60,7 +59,8 @@ fn calculate_shield_result_inner(
 
     let attacker_transform = attacker_entity.get::<Transform>()?;
 
-    let is_within_angle = check_shield_angle(attacker_transform, target_transform, shield_angle);
+    let is_within_angle =
+        attacker_transform.is_within_angle_relative_to(target_transform, shield_angle);
 
     if !is_within_angle {
         return None;
@@ -72,24 +72,6 @@ fn calculate_shield_result_inner(
     let result = calculate_block_result(adjusted_shield_rate, 10);
 
     Some(result)
-}
-
-fn check_shield_angle(
-    attacker_transform: &Transform,
-    target_transform: &Transform,
-    shield_angle: f32,
-) -> bool {
-    let target_degrees = *Degrees::from(target_transform.rotation);
-    let direction_to_target = attacker_transform
-        .translation
-        .direction_degrees(&target_transform.translation);
-
-    let mut angle_diff = (direction_to_target - target_degrees).abs() % 360.0;
-    if angle_diff > 180.0 {
-        angle_diff = 360.0 - angle_diff;
-    }
-
-    angle_diff <= (shield_angle / 2.0)
 }
 
 #[inline]
@@ -121,17 +103,42 @@ fn calculate_block_result(shield_rate: f32, perfect_block_chance: u8) -> ShieldR
 
 pub fn send_shield_result_system_message(
     result: ShieldResult,
-    entity: Entity,
+    attacker_entity: Entity,
+    target_entity: Entity,
     mut commands: Commands,
 ) {
-    let message = match result {
-        ShieldResult::Succeed => SystemMessage::new_empty(Id::YourShieldDefenceHasSucceeded),
+    match result {
+        ShieldResult::Succeed => {
+            commands.trigger_targets(
+                GameServerPacket::from(SystemMessage::new_empty(
+                    system_messages::Id::YourShieldDefenceHasSucceeded,
+                )),
+                target_entity,
+            );
+            commands.trigger_targets(
+                GameServerPacket::from(SystemMessage::new_empty(
+                    system_messages::Id::TheAttackHasBeenBlocked,
+                )),
+                attacker_entity,
+            );
+        }
+
         ShieldResult::PerfectBlock => {
-            SystemMessage::new_empty(Id::YourExcellentShieldDefenceWasASuccess)
+            commands.trigger_targets(
+                GameServerPacket::from(SystemMessage::new_empty(
+                    system_messages::Id::YourExcellentShieldDefenceWasASuccess,
+                )),
+                target_entity,
+            );
+            commands.trigger_targets(
+                GameServerPacket::from(SystemMessage::new_empty(
+                    system_messages::Id::TheAttackHasBeenBlocked,
+                )),
+                attacker_entity,
+            );
         }
         _ => return,
     };
-    commands.trigger_targets(GameServerPacket::from(message), entity);
 }
 
 fn script_calculate(
@@ -173,8 +180,14 @@ fn script_calculate(
         if let (Ok(attacker_entity), Ok(target_entity)) = (attacker_entity, target_entity) {
             let shield_result = calculate_shield_result(attacker_entity, target_entity, world);
             let target_id = target_entity.id();
+            let attacker_id = target_entity.id();
             let mut commands = world.commands();
-            send_shield_result_system_message(shield_result, target_id, commands.reborrow());
+            send_shield_result_system_message(
+                shield_result,
+                attacker_id,
+                target_id,
+                commands.reborrow(),
+            );
 
             ScriptValue::Integer(shield_result.into())
         } else {

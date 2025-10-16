@@ -21,7 +21,10 @@ impl Plugin for AttackComponentsPlugin {
         app.register_type::<Attackable>()
             .register_type::<Attacking>()
             .register_type::<AttackAllowed>()
+            .register_type::<HitInfo>()
             .register_type::<AttackHit>()
+            .register_type::<AttackCommonHit>()
+            .register_type::<AttackMultiHit>()
             .register_type::<AttackingList>()
             .register_type::<AttackTimer>()
             .register_type::<InCombat>();
@@ -43,28 +46,185 @@ struct EnemyQuery<'a> {
     transform: Ref<'a, Transform>,
 }
 
+#[derive(Component, Reflect, Copy, Clone)]
+pub struct HitInfo {
+    pub miss: bool,
+    pub crit: bool,
+    pub shield: ShieldResult,
+    pub dmg: f32,
+}
+
 #[derive(Component, Reflect)]
-pub struct AttackHit {
+pub enum AttackHit {
+    AttackCommonHit(AttackCommonHit),
+    AttackDualHit(AttackDualHit),
+    AttackMultiHit(AttackMultiHit),
+}
+
+impl AttackHit {
+    pub fn timer(&self) -> &Timer {
+        match self {
+            AttackHit::AttackCommonHit(v) => v.timer(),
+            AttackHit::AttackDualHit(v) => v.timer(),
+            AttackHit::AttackMultiHit(v) => v.timer(),
+        }
+    }
+
+    pub fn timer_mut(&mut self) -> &mut Timer {
+        match self {
+            AttackHit::AttackCommonHit(v) => v.timer_mut(),
+            AttackHit::AttackDualHit(v) => v.timer_mut(),
+            AttackHit::AttackMultiHit(v) => v.timer_mut(),
+        }
+    }
+
+    pub fn new_common(
+        target: Entity,
+        duration: Duration,
+        hit_info: HitInfo,
+        weapon_entity: Option<Entity>,
+    ) -> Self {
+        Self::AttackCommonHit(AttackCommonHit::new(
+            target,
+            duration,
+            hit_info,
+            weapon_entity,
+        ))
+    }
+
+    pub fn new_dual(
+        target: Entity,
+        weapon_entity: Option<Entity>,
+
+        first_duration: Duration,
+        first_info: HitInfo,
+
+        second_duration: Duration,
+        second_info: HitInfo,
+    ) -> Self {
+        Self::AttackDualHit(AttackDualHit::new(
+            target,
+            weapon_entity,
+            first_duration,
+            first_info,
+            second_duration,
+            second_info,
+        ))
+    }
+
+    pub fn new_multi(
+        duration: Duration,
+        weapon_entity: Option<Entity>,
+        hits: Vec<(Entity, HitInfo)>,
+    ) -> Self {
+        Self::AttackMultiHit(AttackMultiHit::new(duration, weapon_entity, hits))
+    }
+}
+
+#[derive(Component, Reflect)]
+pub struct AttackDualHit {
     target: Entity,
-    damage: f32,
-    critical: bool,
+    weapon_entity: Option<Entity>,
+
+    primary_timer: Timer,
+    primary_info: HitInfo,
+
+    secondary_timer: Timer,
+    secondary_info: HitInfo,
+
+    is_primary: bool,
+}
+
+impl AttackDualHit {
+    fn new(
+        target: Entity,
+        weapon_entity: Option<Entity>,
+
+        first_duration: Duration,
+        first_info: HitInfo,
+
+        second_duration: Duration,
+        second_info: HitInfo,
+    ) -> Self {
+        let first_timer = Timer::new(first_duration, TimerMode::Once);
+        let second_timer = Timer::new(second_duration, TimerMode::Once);
+
+        Self {
+            target,
+            weapon_entity,
+            primary_timer: first_timer,
+            primary_info: first_info,
+            secondary_timer: second_timer,
+            secondary_info: second_info,
+            is_primary: true,
+        }
+    }
+
+    fn timer(&self) -> &Timer {
+        if self.is_primary {
+            &self.primary_timer
+        } else {
+            &self.secondary_timer
+        }
+    }
+
+    fn timer_mut(&mut self) -> &mut Timer {
+        if self.is_primary {
+            &mut self.primary_timer
+        } else {
+            &mut self.secondary_timer
+        }
+    }
+
+    pub fn weapon_entity(&self) -> Option<Entity> {
+        self.weapon_entity
+    }
+
+    pub fn hit(&self) -> HitInfo {
+        if self.is_primary {
+            self.primary_info
+        } else {
+            self.secondary_info
+        }
+    }
+
+    pub fn target(&self) -> Entity {
+        self.target
+    }
+
+    pub fn is_primary(&self) -> bool {
+        self.is_primary
+    }
+
+    pub fn set_to_secondary(&mut self) -> bool {
+        if self.is_primary {
+            self.is_primary = false;
+
+            return true;
+        }
+
+        false
+    }
+}
+
+#[derive(Component, Reflect)]
+pub struct AttackMultiHit {
+    hits: Vec<(Entity, HitInfo)>,
     timer: Timer,
     weapon_entity: Option<Entity>,
 }
-impl AttackHit {
-    pub fn new(
-        target: Entity,
-        damage: f32,
-        critical: bool,
+
+impl AttackMultiHit {
+    fn new(
         duration: Duration,
         weapon_entity: Option<Entity>,
+        hits: Vec<(Entity, HitInfo)>,
     ) -> Self {
         let timer = Timer::new(duration, TimerMode::Once);
+
         Self {
-            target,
-            damage,
-            critical,
             timer,
+            hits,
             weapon_entity,
         }
     }
@@ -77,12 +237,50 @@ impl AttackHit {
         &mut self.timer
     }
 
-    pub fn damage(&self) -> f32 {
-        self.damage
+    pub fn weapon_entity(&self) -> Option<Entity> {
+        self.weapon_entity
     }
 
-    pub fn critical(&self) -> bool {
-        self.critical
+    pub fn hits(&self) -> &[(Entity, HitInfo)] {
+        self.hits.as_slice()
+    }
+}
+
+#[derive(Component, Reflect)]
+pub struct AttackCommonHit {
+    target: Entity,
+    timer: Timer,
+    hit_info: HitInfo,
+    weapon_entity: Option<Entity>,
+}
+
+impl AttackCommonHit {
+    fn new(
+        target: Entity,
+        duration: Duration,
+        hit_info: HitInfo,
+        weapon_entity: Option<Entity>,
+    ) -> Self {
+        let timer = Timer::new(duration, TimerMode::Once);
+
+        Self {
+            target,
+            timer,
+            hit_info,
+            weapon_entity,
+        }
+    }
+
+    pub fn timer(&self) -> &Timer {
+        &self.timer
+    }
+
+    pub fn timer_mut(&mut self) -> &mut Timer {
+        &mut self.timer
+    }
+
+    pub fn hit(&self) -> HitInfo {
+        self.hit_info
     }
 
     pub fn target(&self) -> Entity {

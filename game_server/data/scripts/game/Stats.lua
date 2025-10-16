@@ -139,7 +139,7 @@ local stat_categories = {
         "PAtk", "PvpPAtkBonus", "PSkillPower", "PvpPSkillBonus", "PAtkSpd", "PvePAtkBonus", "PveSkillBonus",
         "PveBowPAtkBonus", "PveBowSkillBonus", "AttackReuse", "PhysicalSkillReuse", "RythmSkillReuse",
         "MAtk", "PvpMAtkBonus", "PveMAtkBonus", "CastSpd", "MagicSkillReuse", "Accuracy", "PAtkRange",
-        "PAtkWidth", "PAtkRandom", "MAtkRange", "AttackCountMax", "EffectKind"
+        "PAtkWidth", "PAtkRandom", "MAtkRange", "PAtkMaxTargetsCount", "EffectKind"
     },
     Defence = {
         "PDef", "PvpPDefBonus", "MDef", "PvpMDefBonus", "ShieldDefence", "ShieldRate", "ShieldAngle",

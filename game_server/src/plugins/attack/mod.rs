@@ -16,9 +16,13 @@ use game_core::{
     animation::{Animation, AnimationTimer},
     attack::{
         AttackAllowed, AttackComponentsPlugin, AttackHit, AttackTimer, Attacking, AttackingList,
-        Dead, InCombat,
+        Dead, HitInfo, InCombat,
     },
-    items::{DollSlot, Grade, Item, ItemsDataQuery, PaperDoll, Soulshot},
+    items,
+    items::{
+        BluntType, DaggerType, DollSlot, Grade, Item, ItemsDataQuery, Kind, PaperDoll, Soulshot,
+        SwordType, WeaponKind,
+    },
     movement::{LookAt, MoveToEntity},
     network::{
         broadcast::ServerPacketBroadcast,
@@ -30,7 +34,7 @@ use game_core::{
     stats::*,
 };
 use map::{WorldMap, WorldMapQuery};
-use spatial::FlatDistance;
+use spatial::{FlatDistance, TransformRelativeDirection};
 use state::GameMechanicsSystems;
 use system_messages;
 
@@ -95,8 +99,7 @@ struct EnemyQuery<'a> {
 
 fn attack_entity(
     attacking_objects: Query<AttackingQuery, AttackingFilter>,
-    enemy_objects: Query<EnemyQuery, Without<Dead>>,
-    names: Query<Ref<Name>>,
+    target_objects: Query<EnemyQuery, Without<Dead>>,
     world: &World,
     shot_used: Query<Ref<Soulshot>>,
     par_commands: ParallelCommands,
@@ -106,17 +109,17 @@ fn attack_entity(
     world_map_query: WorldMapQuery,
 ) -> Result<()> {
     attacking_objects.par_iter().for_each(|attacker| {
-        match enemy_objects.get(**attacker.target) {
-            Ok(enemy) => {
+        match target_objects.get(**attacker.target) {
+            Ok(aiming_target) => {
                 let distance = attacker
                     .transform
                     .translation
-                    .flat_distance(&enemy.transform.translation);
+                    .flat_distance(&aiming_target.transform.translation);
 
                 let range = attacker.attack_stats.get(&AttackStat::PAtkRange);
                 if distance <= range {
                     par_commands.command_scope(|mut commands| {
-                        commands.trigger_targets(LookAt(enemy.entity), attacker.entity);
+                        commands.trigger_targets(LookAt(aiming_target.entity), attacker.entity);
                         // Remove the AttackAllowed component to ensure the entity waits for
                         // the next allowed attack time
                         commands
@@ -124,13 +127,91 @@ fn attack_entity(
                             .remove::<AttackAllowed>()
                             .try_insert(InCombat::default());
                         commands
-                            .entity(enemy.entity)
+                            .entity(attacker.entity)
+                            .remove::<MoveToEntity>()
+                            .try_insert(InCombat::default());
+                        commands
+                            .entity(aiming_target.entity)
                             .try_insert(InCombat::default());
                     });
 
+                    let Ok(attacker_ref) = world.get_entity(attacker.entity) else {
+                        return;
+                    };
+
+                    let Ok(aiming_target_ref) = world.get_entity(aiming_target.entity) else {
+                        return;
+                    };
+
+                    let attack_interval = attacker
+                        .attack_stats
+                        .typed::<PAtkSpd>(&AttackStat::PAtkSpd)
+                        .attack_interval();
+
                     let weapon = attacker
                         .paper_doll
+                        .as_ref()
                         .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
+
+                    let mut second_attack_interval_multiplier = None;
+
+                    let interval_multiplier = if let Some(weapon) = weapon
+                        && let Some(items_data_assets) =
+                            world.get_resource::<Assets<items::ItemsInfo>>()
+                        && let Some(items_data_table) =
+                            world.get_resource::<items::ItemsDataTable>()
+                        && let Ok(item_info) =
+                            items_data_table.get_item_info(weapon.item().id(), items_data_assets)
+                        && let Kind::Weapon(weapon) = item_info.kind()
+                    {
+                        match weapon.kind {
+                            WeaponKind::Sword(sword) => {
+                                if matches!(sword, SwordType::Dual) {
+                                    second_attack_interval_multiplier = Some(0.2);
+
+                                    0.4
+                                } else {
+                                    0.5
+                                }
+                            }
+
+                            WeaponKind::Blunt(blunt) => {
+                                if matches!(blunt, BluntType::Dual) {
+                                    second_attack_interval_multiplier = Some(0.2);
+
+                                    0.4
+                                } else {
+                                    0.5
+                                }
+                            }
+
+                            WeaponKind::Dagger(dagger) => {
+                                if matches!(dagger, DaggerType::Dual) {
+                                    second_attack_interval_multiplier = Some(0.2);
+
+                                    0.4
+                                } else {
+                                    0.5
+                                }
+                            }
+
+                            WeaponKind::Fist(_) => {
+                                second_attack_interval_multiplier = Some(0.2);
+
+                                0.4
+                            }
+
+                            WeaponKind::Pole => 0.6,
+
+                            WeaponKind::Bow
+                            | WeaponKind::Crossbow
+                            | WeaponKind::Etc
+                            | WeaponKind::FortFlag
+                            | WeaponKind::FishingRod => 0.5,
+                        }
+                    } else {
+                        0.5
+                    };
 
                     let weapon_entity = weapon.and_then(|weapon| {
                         items
@@ -138,146 +219,187 @@ fn attack_entity(
                             .ok()
                     });
 
-                    let (shot_kind, shot_grade) = if let Some(weapon) = weapon {
-                        if let Ok(weapon_item_info) =
-                            items_data_query.get_item_info(weapon.item().id())
-                        {
-                            if let Some(weapon_entity) = weapon_entity {
-                                if let Ok(shot) = shot_used.get(weapon_entity) {
-                                    (Some(*shot), weapon_item_info.grade())
-                                } else {
-                                    (None, Grade::None)
-                                }
-                            } else {
-                                (None, Grade::None)
-                            }
-                        } else {
-                            (None, Grade::None)
-                        }
+                    let soulshot_used = weapon_entity.and_then(|v| shot_used.get(v).ok()).is_some();
+
+                    let soulshot_grade = if let Some(w) = weapon
+                        && let Ok(it) = items_data_query.get_item_info(w.item().id())
+                    {
+                        it.grade()
                     } else {
-                        (None, Grade::None)
+                        Grade::None
                     };
 
-                    let Ok(attacker_ref) = world.get_entity(attacker.entity) else {
-                        return;
-                    };
-                    let Ok(enemy_ref) = world.get_entity(enemy.entity) else {
-                        return;
-                    };
-
-                    let miss = calc_hit_miss(attacker_ref, enemy_ref, world);
-                    let crit = calc_crit(attacker_ref, enemy_ref, world);
-
-                    let mut attack = Attack::new(
+                    let mut attack_info = Attack::new(
                         *attacker.object_id,
                         attacker.transform.translation,
-                        enemy.transform.translation,
+                        aiming_target.transform.translation,
                     );
 
-                    if !miss {
-                        let shield_result = calculate_shield_result(attacker_ref, enemy_ref, world);
+                    let mut max_targets_count = attacker_ref
+                        .get::<AttackStats>()
+                        .map(|s| s.get(&AttackStat::PAtkMaxTargetsCount))
+                        .unwrap_or_default()
+                        .round() as u32;
 
-                        let damage = calc_p_atk_damage(
-                            attacker_ref,
-                            enemy_ref,
-                            world,
-                            crit,
-                            shot_kind.is_some(),
-                            shield_result,
-                        );
+                    let attack_hit = if max_targets_count > 1 {
+                        let mut hits = vec![];
 
-                        attack.add_hit(
-                            damage as u32,
-                            *enemy.object_id,
-                            miss,
-                            crit,
+                        let hit_info =
+                            calc_hit_info(soulshot_used, attacker_ref, aiming_target_ref, world);
+
+                        attack_info.add_hit(
+                            hit_info.dmg as u32,
+                            *aiming_target.object_id,
+                            hit_info.miss,
+                            hit_info.crit,
                             0,
-                            shot_kind.is_some(),
-                            shot_grade,
+                            soulshot_used,
+                            soulshot_grade,
                         );
 
-                        par_commands.command_scope(|mut commands| {
-                            commands.trigger_targets(
-                                ServerPacketBroadcast::new(attack.into()),
-                                attacker.entity,
+                        hits.push((aiming_target.entity, hit_info));
+
+                        max_targets_count -= 1;
+
+                        let angle = attacker_ref
+                            .get::<AttackStats>()
+                            .map(|s| s.get(&AttackStat::PAtkWidth))
+                            .unwrap_or_default()
+                            .round();
+
+                        for next_target in &target_objects {
+                            if next_target.entity == aiming_target.entity {
+                                continue;
+                            }
+
+                            if next_target.entity == attacker.entity {
+                                continue;
+                            }
+
+                            let Ok(next_target_ref) = world.get_entity(aiming_target.entity) else {
+                                continue;
+                            };
+
+                            let distance = attacker
+                                .transform
+                                .translation
+                                .flat_distance(&next_target.transform.translation);
+
+                            if distance > range {
+                                continue;
+                            }
+
+                            if !next_target
+                                .transform
+                                .is_within_angle_relative_to(&attacker.transform, angle)
+                            {
+                                continue;
+                            }
+
+                            //TODO: нужна проверка на враждебность
+
+                            let hit_info =
+                                calc_hit_info(soulshot_used, attacker_ref, next_target_ref, world);
+                            attack_info.add_hit(
+                                hit_info.dmg as u32,
+                                *aiming_target.object_id,
+                                hit_info.miss,
+                                hit_info.crit,
+                                0,
+                                soulshot_used,
+                                soulshot_grade,
                             );
+                            hits.push((next_target.entity, hit_info));
 
-                            let attack_interval = attacker
-                                .attack_stats
-                                .typed::<PAtkSpd>(&AttackStat::PAtkSpd)
-                                .attack_interval();
+                            if max_targets_count == 1 {
+                                break;
+                            } else {
+                                max_targets_count -= 1;
+                            }
+                        }
 
-                            // TODO: Must depend on weapon type
-                            let hit_delay = attack_interval / 2;
-
-                            send_shield_result_system_message(
-                                shield_result,
-                                enemy.entity,
-                                commands.reborrow(),
-                            );
-
-                            commands
-                                .entity(attacker.entity)
-                                .try_insert(AnimationTimer::new(attack_interval));
-
-                            commands.entity(attacker.entity).try_insert(AttackHit::new(
-                                enemy.entity,
-                                damage,
-                                crit,
-                                hit_delay,
-                                weapon_entity,
-                            ));
-                        });
+                        AttackHit::new_multi(
+                            attack_interval.mul_f32(interval_multiplier),
+                            weapon_entity,
+                            hits,
+                        )
                     } else {
-                        attack.add_hit(
-                            0, // No damage on miss
-                            *enemy.object_id,
-                            miss,
-                            crit,
+                        let hit_info =
+                            calc_hit_info(soulshot_used, attacker_ref, aiming_target_ref, world);
+
+                        attack_info.add_hit(
+                            hit_info.dmg as u32,
+                            *aiming_target.object_id,
+                            hit_info.miss,
+                            hit_info.crit,
                             0,
-                            shot_kind.is_some(),
-                            shot_grade,
+                            soulshot_used,
+                            soulshot_grade,
                         );
 
-                        par_commands.command_scope(|mut commands| {
-                            commands.trigger_targets(
-                                ServerPacketBroadcast::new(attack.into()),
-                                attacker.entity,
+                        if let Some(second_attack_interval_multiplier) =
+                            second_attack_interval_multiplier
+                        {
+                            let second_hit_info = calc_hit_info(
+                                soulshot_used,
+                                attacker_ref,
+                                aiming_target_ref,
+                                world,
                             );
 
-                            let miss_message =
-                                SystemMessage::new_empty(system_messages::Id::YouHaveMissed);
-                            commands.trigger_targets(
-                                GameServerPacket::from(miss_message),
-                                attacker.entity,
+                            attack_info.add_hit(
+                                second_hit_info.dmg as u32,
+                                *aiming_target.object_id,
+                                second_hit_info.miss,
+                                second_hit_info.crit,
+                                0,
+                                soulshot_used,
+                                soulshot_grade,
                             );
 
-                            let attacker_name = names.get(attacker.entity).unwrap().to_string();
-                            let avoid_message = SystemMessage::new(
-                                system_messages::Id::YouHaveAvoidedC1SAttack,
-                                vec![attacker_name.to_string().into()],
-                            );
-                            commands.trigger_targets(
-                                GameServerPacket::from(avoid_message),
-                                enemy.entity,
-                            );
-                        });
-                    }
+                            AttackHit::new_dual(
+                                aiming_target.entity,
+                                weapon_entity,
+                                attack_interval.mul_f32(interval_multiplier),
+                                hit_info,
+                                attack_interval.mul_f32(second_attack_interval_multiplier),
+                                second_hit_info,
+                            )
+                        } else {
+                            AttackHit::new_common(
+                                aiming_target.entity,
+                                attack_interval.mul_f32(interval_multiplier),
+                                hit_info,
+                                weapon_entity,
+                            )
+                        }
+                    };
 
                     par_commands.command_scope(|mut commands| {
-                        commands.entity(attacker.entity).remove::<MoveToEntity>();
+                        commands.entity(attacker.entity).try_insert(attack_hit);
+                    });
+
+                    par_commands.command_scope(|mut commands| {
+                        commands.trigger_targets(
+                            ServerPacketBroadcast::new(attack_info.into()),
+                            attacker.entity,
+                        );
+
+                        commands
+                            .entity(attacker.entity)
+                            .try_insert(AnimationTimer::new(attack_interval));
                     });
                 } else {
                     // Target is out of range, need to chase
                     // Check if already moving to the correct target
                     if let Some(move_to) = attacker.move_to
-                        && move_to.target == enemy.entity
+                        && move_to.target == aiming_target.entity
                     {
                         return;
                     }
 
                     let attacker_pos = attacker.transform.translation;
-                    let target_pos = enemy.transform.translation;
+                    let target_pos = aiming_target.transform.translation;
 
                     let geodata = world_map_query
                         .region_geodata_from_pos(attacker_pos)
@@ -293,7 +415,7 @@ fn attack_entity(
                         // Direct line of sight, use simple movement
                         par_commands.command_scope(|mut commands| {
                             commands.entity(attacker.entity).try_insert(MoveToEntity {
-                                target: enemy.entity,
+                                target: aiming_target.entity,
                                 range,
                             });
                         });
@@ -325,73 +447,247 @@ fn attack_entity(
     });
     Ok(())
 }
+#[derive(QueryData)]
+#[query_data(mutable)]
+struct ProcessAttackHitsQuery<'a> {
+    entity: Entity,
+    name: Ref<'a, Name>,
+    object_id: Ref<'a, ObjectId>,
+    hit: Mut<'a, AttackHit>,
+}
+
+#[derive(QueryData)]
+#[query_data(mutable)]
+struct ProcessAttackHitsTargetQuery<'a> {
+    entity: Entity,
+    object_id: Ref<'a, ObjectId>,
+    vital_stats: Mut<'a, VitalsStats>,
+}
 
 fn process_attack_hits(
-    mut commands: Commands,
-    mut pending_attacks: Query<(Entity, Ref<Name>, Mut<AttackHit>)>,
     time: Res<Time>,
-    mut vitals: Query<Mut<VitalsStats>>,
-    not_attacking_npcs: Query<Entity, (With<npc::Kind>, Without<Attacking>)>,
-    npcs: Query<Entity, With<npc::Kind>>,
+    mut commands: Commands,
+
+    mut pending_attackers: Query<ProcessAttackHitsQuery>,
+    mut targets: Query<ProcessAttackHitsTargetQuery, Without<Dead>>,
+    not_attacking_npc: Query<Entity, (With<npc::Kind>, Without<Attacking>)>,
+    npc: Query<Entity, With<npc::Kind>>,
+
     mut attackers_lists: Query<Mut<AttackingList>>,
 ) {
-    for (attacker_entity, name, mut pending) in pending_attacks.iter_mut() {
-        pending.timer_mut().tick(time.delta());
-        if pending.timer().finished() {
-            if let Ok(mut vitals_stats) = vitals.get_mut(pending.target()) {
-                // If attacker is NPC, do not damage CP
-                let damage_cp = npcs.get(attacker_entity).is_err();
+    for attacker in pending_attackers.iter_mut() {
+        let mut pending_hit = attacker.hit;
 
-                vitals_stats.damage(pending.damage(), damage_cp);
+        pending_hit.timer_mut().tick(time.delta());
 
-                // Add damage tracking - this might fail if we just inserted the component
-                // but it will be handled in the next frame
-                if let Ok(mut attackers_list) = attackers_lists.get_mut(pending.target()) {
-                    attackers_list.damage(attacker_entity, pending.damage() as f64);
+        if pending_hit.timer().finished() {
+            let attacker_entity = attacker.entity;
+
+            match &mut *pending_hit {
+                AttackHit::AttackCommonHit(pending_hit) => {
+                    if let Ok(mut target) = targets.get_mut(pending_hit.target()) {
+                        let info = pending_hit.hit();
+
+                        process_hit(
+                            commands.reborrow(),
+                            npc,
+                            &mut attackers_lists,
+                            info,
+                            attacker.entity,
+                            attacker.name.to_string(),
+                            target.entity,
+                            &mut target.vital_stats,
+                            not_attacking_npc,
+                        );
+                    }
+
+                    remove_soulshot(commands.reborrow(), pending_hit.weapon_entity());
+
+                    commands.entity(attacker_entity).remove::<AttackHit>();
                 }
 
-                if pending.critical() {
-                    let critical_system_message =
-                        SystemMessage::new_empty(system_messages::Id::CriticalHit);
-                    commands.trigger_targets(
-                        GameServerPacket::from(critical_system_message),
-                        attacker_entity,
-                    );
+                AttackHit::AttackMultiHit(pending_hits) => {
+                    for (target, info) in pending_hits.hits() {
+                        if let Ok(mut target) = targets.get_mut(*target) {
+                            process_hit(
+                                commands.reborrow(),
+                                npc,
+                                &mut attackers_lists,
+                                *info,
+                                attacker.entity,
+                                attacker.name.to_string(),
+                                target.entity,
+                                &mut target.vital_stats,
+                                not_attacking_npc,
+                            );
+                        }
+                    }
+
+                    remove_soulshot(commands.reborrow(), pending_hits.weapon_entity());
+
+                    commands.entity(attacker_entity).remove::<AttackHit>();
                 }
 
-                let you_hit_system_message = SystemMessage::new(
-                    system_messages::Id::YouHitForS1Damage,
-                    vec![(pending.damage() as u32).into()],
-                );
-                commands.trigger_targets(
-                    GameServerPacket::from(you_hit_system_message),
-                    attacker_entity,
-                );
+                AttackHit::AttackDualHit(pending_dual_hit) => {
+                    if let Ok(mut target) = targets.get_mut(pending_dual_hit.target()) {
+                        let info = pending_dual_hit.hit();
 
-                let you_hitted_system_message = SystemMessage::new(
-                    system_messages::Id::C1HitYouForS2Damage,
-                    vec![name.to_string().into(), (pending.damage() as u32).into()],
-                );
-                commands.trigger_targets(
-                    GameServerPacket::from(you_hitted_system_message),
-                    pending.target(),
-                );
-            }
+                        process_hit(
+                            commands.reborrow(),
+                            npc,
+                            &mut attackers_lists,
+                            info,
+                            attacker.entity,
+                            attacker.name.to_string(),
+                            target.entity,
+                            &mut target.vital_stats,
+                            not_attacking_npc,
+                        );
+                    }
 
-            commands.entity(attacker_entity).remove::<AttackHit>();
-
-            // Remove soulshot from weapon after successful hit
-            if let Some(weapon_entity) = pending.weapon_entity() {
-                commands.entity(weapon_entity).remove::<Soulshot>();
-            }
-
-            // If the target is an NPC that is not already attacking, make it attack back
-            if not_attacking_npcs.get(pending.target()).is_ok() {
-                commands
-                    .entity(pending.target())
-                    .insert(Attacking(attacker_entity));
+                    if pending_dual_hit.set_to_secondary() {
+                        remove_soulshot(commands.reborrow(), pending_dual_hit.weapon_entity());
+                    } else {
+                        commands.entity(attacker_entity).remove::<AttackHit>();
+                    }
+                }
             }
         }
+    }
+}
+
+fn process_hit(
+    mut commands: Commands,
+    npc: Query<Entity, With<npc::Kind>>,
+    attackers_lists: &mut Query<Mut<AttackingList>>,
+
+    mut info: HitInfo,
+    attacker_entity: Entity,
+    attacker_name: String,
+
+    target_entity: Entity,
+    target_vital_stats: &mut Mut<VitalsStats>,
+
+    not_attacking_npc: Query<Entity, (With<npc::Kind>, Without<Attacking>)>,
+) {
+    if info.miss {
+        let miss_message = SystemMessage::new_empty(system_messages::Id::YouHaveMissed);
+        commands.trigger_targets(GameServerPacket::from(miss_message), attacker_entity);
+
+        let avoid_message = SystemMessage::new(
+            system_messages::Id::YouHaveAvoidedC1SAttack,
+            vec![attacker_name.into()],
+        );
+        commands.trigger_targets(GameServerPacket::from(avoid_message), target_entity);
+    } else {
+        if info.dmg == 0. {
+            //TODO: должен слаться пакет Immune.
+
+            return;
+        }
+
+        //TODO: Добавить проверки, на случай цель успела получить целку\камень итд
+
+        // If attacker is NPC, do not damage CP
+        let damage_cp = npc.get(attacker_entity).is_err();
+
+        if npc.get(target_entity).is_err() {
+            let cur_hp = target_vital_stats.get(&VitalsStat::Hp);
+
+            if info.dmg > cur_hp {
+                info.dmg = cur_hp - 10.;
+            }
+        }
+
+        target_vital_stats.damage(info.dmg, damage_cp);
+
+        // Add damage tracking - this might fail if we just inserted the component
+        // but it will be handled in the next frame
+        if let Ok(mut attackers_list) = attackers_lists.get_mut(target_entity) {
+            attackers_list.damage(attacker_entity, info.dmg as f64);
+        }
+
+        if info.crit {
+            let critical_system_message =
+                SystemMessage::new_empty(system_messages::Id::CriticalHit);
+            commands.trigger_targets(
+                GameServerPacket::from(critical_system_message),
+                attacker_entity,
+            );
+        }
+
+        send_shield_result_system_message(
+            info.shield,
+            attacker_entity,
+            target_entity,
+            commands.reborrow(),
+        );
+
+        let you_hit_system_message = SystemMessage::new(
+            system_messages::Id::YouHitForS1Damage,
+            vec![(info.dmg as u32).into()],
+        );
+        commands.trigger_targets(
+            GameServerPacket::from(you_hit_system_message),
+            attacker_entity,
+        );
+
+        let you_hitted_system_message = SystemMessage::new(
+            system_messages::Id::C1HitYouForS2Damage,
+            vec![attacker_name.into(), (info.dmg as u32).into()],
+        );
+        commands.trigger_targets(
+            GameServerPacket::from(you_hitted_system_message),
+            target_entity,
+        );
+
+        // TODO: Ивент для аи
+        // If the target is an NPC that is not already attacking, make it attack back
+        if not_attacking_npc.get(target_entity).is_ok() {
+            commands
+                .entity(target_entity)
+                .insert(Attacking(attacker_entity));
+        }
+    }
+}
+
+fn remove_soulshot(mut commands: Commands, weapon_entity: Option<Entity>) {
+    if let Some(weapon_entity) = weapon_entity {
+        commands.entity(weapon_entity).remove::<Soulshot>();
+    }
+}
+
+fn calc_hit_info(
+    soulshot_used: bool,
+    attacker_ref: EntityRef,
+    target_ref: EntityRef,
+    world: &World,
+) -> HitInfo {
+    let miss = calc_hit_miss(attacker_ref, target_ref, world);
+    let mut crit = false;
+    let mut shield = ShieldResult::Failed;
+    let mut dmg = 0.;
+
+    if !miss {
+        shield = calculate_shield_result(attacker_ref, target_ref, world);
+
+        match shield {
+            ShieldResult::Failed | ShieldResult::Succeed => {
+                crit = calc_crit(attacker_ref, target_ref, world);
+                dmg =
+                    calc_p_atk_damage(attacker_ref, target_ref, world, crit, soulshot_used, shield);
+            }
+            ShieldResult::PerfectBlock => {
+                dmg = 1.;
+            }
+        }
+    }
+
+    HitInfo {
+        miss,
+        crit,
+        shield,
+        dmg,
     }
 }
 
