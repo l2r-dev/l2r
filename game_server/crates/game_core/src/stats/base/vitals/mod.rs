@@ -28,20 +28,20 @@ impl From<Vec<VitalsStat>> for VitalsChangeFlags {
 }
 
 impl StatsChangeFlags<VitalsStat> for VitalsChangeFlags {
-    fn set_changed(&mut self, stat: VitalsStat) {
-        self.0.insert(stat);
+    fn clear(&mut self) {
+        self.0.clear();
     }
 
     fn has_changes(&self) -> bool {
         !self.0.is_empty()
     }
 
-    fn iter(&self) -> impl Iterator<Item = &VitalsStat> + '_ {
-        self.0.iter()
+    fn set_changed(&mut self, stat: VitalsStat) {
+        self.0.insert(stat);
     }
 
-    fn clear(&mut self) {
-        self.0.clear();
+    fn iter(&self) -> impl Iterator<Item = &VitalsStat> + '_ {
+        self.0.iter()
     }
 
     fn consume(&mut self) -> Vec<VitalsStat> {
@@ -404,6 +404,24 @@ impl VitalsStat {
 }
 
 impl StatTrait for VitalsStat {
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        match self {
+            VitalsStat::Hp
+            | VitalsStat::Mp
+            | VitalsStat::Cp
+            | VitalsStat::MaxHp
+            | VitalsStat::MaxMp
+            | VitalsStat::MaxCp => V::from(1_000_000).unwrap_or_default(),
+            VitalsStat::HpRegen | VitalsStat::MpRegen | VitalsStat::CpRegen => {
+                V::from(1000).unwrap_or_default()
+            }
+            VitalsStat::MaxRecoverableHp
+            | VitalsStat::MaxRecoverableMp
+            | VitalsStat::MaxRecoverableCp => V::from(1_000_000).unwrap_or_default(),
+            _ => V::from(1000).unwrap_or_default(),
+        }
+    }
+
     fn calculate_iter() -> impl Iterator<Item = Self> {
         Self::iter().filter(|&stat| {
             matches!(

@@ -20,6 +20,7 @@ use serde::{Deserialize, Serialize};
 pub struct PAtkRange(u32);
 impl PAtkRange {
     pub const BASE: u32 = 40;
+    pub const MAX: u32 = 3000;
 }
 
 impl From<f32> for PAtkRange {

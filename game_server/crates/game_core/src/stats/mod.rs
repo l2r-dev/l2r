@@ -25,6 +25,7 @@ mod element;
 mod gender;
 mod inventory;
 mod kind;
+mod other;
 mod progress;
 mod pvp;
 mod race;
@@ -44,6 +45,7 @@ pub use element::*;
 pub use gender::*;
 pub use inventory::*;
 pub use kind::*;
+pub use other::*;
 pub use progress::*;
 pub use pvp::*;
 pub use race::*;
@@ -78,6 +80,7 @@ pub trait StatTrait: Into<StatKind> + IntoEnumIterator + Eq + Hash + Copy {
     fn default_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
         V::default()
     }
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V;
     fn with_doll<V: StatValue>(&self, base_class: BaseClass, _paper_doll: &PaperDoll) -> V {
         self.default_value(base_class)
     }
@@ -393,6 +396,12 @@ where
                 if final_value > max_value {
                     final_value = max_value;
                 }
+            }
+
+            // Ensure stat does not exceed its defined maximum value
+            let stat_max_value = stat.max_value(params.base_class());
+            if final_value > stat_max_value {
+                final_value = stat_max_value;
             }
 
             // Update stat if value changed and track changes for notification purposes

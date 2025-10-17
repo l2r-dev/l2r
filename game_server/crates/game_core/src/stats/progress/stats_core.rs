@@ -1,6 +1,7 @@
 use super::{level::Level, level_exp_data::LEVEL_EXP_DATA};
-use crate::stats::{DoubleStats, StatTrait, Stats};
+use crate::stats::{DoubleStats, StatTrait, StatValue, Stats};
 use bevy::prelude::*;
+use l2r_core::model::base_class::BaseClass;
 use serde::{Deserialize, Serialize};
 use strum::EnumIter;
 
@@ -104,12 +105,12 @@ impl ProgressStats {
         let idx = LEVEL_EXP_DATA.binary_search_by(|&(_, required_exp)| required_exp.cmp(&exp));
 
         match idx {
-            Ok(i) => (LEVEL_EXP_DATA[i].0).into(),
+            Ok(i) => LEVEL_EXP_DATA[i].0.into(),
             Err(i) => {
                 if i == 0 {
                     1u32.into()
                 } else {
-                    (LEVEL_EXP_DATA[i - 1].0).into()
+                    LEVEL_EXP_DATA[i - 1].0.into()
                 }
             }
         }
@@ -149,4 +150,8 @@ pub enum ProgressStat {
     VitalityPoints,
 }
 
-impl StatTrait for ProgressStat {}
+impl StatTrait for ProgressStat {
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        V::from(f64::MAX).unwrap_or_default()
+    }
+}

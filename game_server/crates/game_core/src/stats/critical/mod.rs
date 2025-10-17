@@ -86,4 +86,13 @@ impl StatTrait for CriticalStat {
         };
         V::from(value).unwrap_or_default()
     }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        let value = match self {
+            CriticalStat::CriticalRate => CriticalRate::MAX,
+            CriticalStat::MagicCriticalRate => MagicCriticalRate::MAX,
+            _ => f32::MAX,
+        };
+        V::from(value).unwrap_or_default()
+    }
 }
