@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 pub struct PAtkWidth(u32);
 impl PAtkWidth {
     pub const BASE: u32 = 120;
+    pub const MAX: u32 = 360;
 }
 
 impl From<f32> for PAtkWidth {

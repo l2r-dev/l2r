@@ -5,13 +5,11 @@ use strum::EnumIter;
 
 mod class;
 mod movement;
-mod other;
 mod primal;
 mod vitals;
 
 pub use class::*;
 pub use movement::*;
-pub use other::*;
 pub use primal::*;
 pub use vitals::*;
 

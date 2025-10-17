@@ -61,4 +61,8 @@ impl StatTrait for ProgressRatesStat {
         };
         V::from(value).unwrap_or_default()
     }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        V::from(1000.0).unwrap_or_default()
+    }
 }

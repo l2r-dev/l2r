@@ -9,6 +9,7 @@ use std::time::Duration;
 pub struct PAtkSpd(u32);
 impl PAtkSpd {
     pub const BASE: u32 = 300;
+    pub const MAX: u32 = 1400;
     pub fn get_attack_speed_multiplier(&self) -> f64 {
         (1.1 * self.0 as f64) / Self::BASE as f64
     }

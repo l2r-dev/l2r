@@ -7,6 +7,7 @@ use serde::{Deserialize, Serialize};
 )]
 pub struct Evasion(u32);
 impl Evasion {
+    pub const MAX: f32 = 500.0;
     pub fn formula(args: FormulaArguments) -> f32 {
         let dex = args.primal.get(&PrimalStat::DEX) as f32;
         let level: f32 = args.level.into();

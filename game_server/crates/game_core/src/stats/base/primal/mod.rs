@@ -58,6 +58,10 @@ impl StatTrait for PrimalStat {
     fn default_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
         V::from(10).unwrap_or_default()
     }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        V::from(100).unwrap_or_default()
+    }
 }
 
 #[derive(

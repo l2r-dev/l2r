@@ -31,6 +31,7 @@ use strum::{EnumIter, IntoEnumIterator};
 )]
 pub struct Level(u32);
 impl Level {
+    pub const MAX: u32 = 85;
     pub fn diff(&self, other: &Self) -> u32 {
         self.0.abs_diff(other.0)
     }
@@ -82,12 +83,12 @@ impl ValueType for Level {
         stringify!(Level).to_owned()
     }
 
-    fn column_type() -> ColumnType {
-        ColumnType::Integer
-    }
-
     fn array_type() -> ArrayType {
         ArrayType::Int
+    }
+
+    fn column_type() -> ColumnType {
+        ColumnType::Integer
     }
 }
 
@@ -145,6 +146,14 @@ impl StatTrait for ProgressLevelStat {
         let value = match self {
             Level => 1.0,
             PrevLevel => 1.0,
+        };
+        V::from(value).unwrap_or_default()
+    }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        let value = match self {
+            ProgressLevelStat::Level => Level::MAX as f64,
+            ProgressLevelStat::PrevLevel => Level::MAX as f64,
         };
         V::from(value).unwrap_or_default()
     }

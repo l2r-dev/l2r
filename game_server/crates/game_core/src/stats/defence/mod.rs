@@ -132,6 +132,16 @@ impl StatTrait for DefenceStat {
         V::from(value).unwrap_or_default()
     }
 
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        let value = match self {
+            DefenceStat::ShieldAngle => ShieldAngle::MAX as f32,
+            DefenceStat::ShieldRate => ShieldRate::MAX,
+            DefenceStat::Evasion => Evasion::MAX,
+            _ => f32::MAX,
+        };
+        V::from(value).unwrap_or_default()
+    }
+
     /// When equipment is present in a slot, its defence contribution is handled by the StatModifiers
     /// system, which applies the item's actual defence values.
     /// If not - we use the base defence value from the character's base class.

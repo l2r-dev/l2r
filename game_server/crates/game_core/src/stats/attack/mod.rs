@@ -153,4 +153,14 @@ impl StatTrait for AttackStat {
         };
         V::from(value).unwrap_or_default()
     }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        let value = match self {
+            AttackStat::PAtkSpd => PAtkSpd::MAX as f32,
+            AttackStat::CastSpd => CastSpd::MAX as f32,
+            AttackStat::EffectKind => EffectKind::MAX as f32,
+            _ => f32::MAX,
+        };
+        V::from(value).unwrap_or_default()
+    }
 }

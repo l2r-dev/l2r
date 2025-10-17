@@ -53,6 +53,10 @@ impl StatTrait for MovementStat {
     fn default_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
         V::from(45).unwrap_or_default()
     }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        V::from(600).unwrap_or_default()
+    }
 }
 
 #[derive(Clone, Copy, Debug, Default, Display, Eq, Hash, IntoPrimitive, PartialEq, Reflect)]
@@ -85,8 +89,8 @@ impl AsRef<GenericStats<MovementStat, u32>> for MovementStats {
 
 impl MovementStats {
     fn formula(args: FormulaArguments) -> f32 {
-        let dex_bouns = args.primal.typed::<DEX>(&PrimalStat::DEX).bonus();
-        args.base_value * dex_bouns
+        let dex_bonus = args.primal.typed::<DEX>(&PrimalStat::DEX).bonus();
+        args.base_value * dex_bonus
     }
 }
 
@@ -99,7 +103,7 @@ impl<'de> Deserialize<'de> for MovementStats {
 
         let mut stats = MovementStats::default();
 
-        // take Walk and Run cause they are filled in files, and set others from them
+        // take Walk and Run because they are filled in files, and set others from them
         let walk = partial
             .get(&MovementStat::Walk)
             .copied()

@@ -7,31 +7,31 @@ use std::{
 };
 
 pub trait GenericNumber<V>:
-Clone
-+ Copy
-+ fmt::Debug
-+ Default
-+ Eq
-+ Hash
-+ PartialEq
-+ PartialOrd
-+ Ord
-+ FromStr
-+ From<usize>
-+ From<i32>
-+ From<V>
-+ Into<V>
-+ fmt::Display
-+ Deref
-+ Into<sea_orm::Value>
-+ sea_orm::TryGetable
-+ sea_orm::sea_query::ValueType
-+ Add
-+ Sub
-+ Mul
-+ Div
-+ AddAssign
-+ SubAssign
+    Clone
+    + Copy
+    + fmt::Debug
+    + Default
+    + Eq
+    + Hash
+    + PartialEq
+    + PartialOrd
+    + Ord
+    + FromStr
+    + From<usize>
+    + From<i32>
+    + From<V>
+    + Into<V>
+    + fmt::Display
+    + Deref
+    + Into<sea_orm::Value>
+    + sea_orm::TryGetable
+    + sea_orm::sea_query::ValueType
+    + Add
+    + Sub
+    + Mul
+    + Div
+    + AddAssign
+    + SubAssign
 where
     V: Unsigned + One + Zero + Copy + fmt::Debug + NumCast + FromStr + Bounded,
 {

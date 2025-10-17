@@ -1,4 +1,4 @@
-use crate::stats::{StatTrait, UIntStats};
+use crate::stats::{StatTrait, StatValue, UIntStats};
 use bevy::{platform::collections::HashMap, prelude::*};
 use derive_more::{From, Into};
 use l2r_core::model::base_class::BaseClass;
@@ -67,6 +67,10 @@ pub enum InventoryStat {
 impl StatTrait for InventoryStat {
     fn default_value<V: super::StatValue>(&self, _base_class: BaseClass) -> V {
         V::default()
+    }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        V::from(u32::MAX).unwrap_or_default()
     }
 }
 

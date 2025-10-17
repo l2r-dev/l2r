@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 )]
 pub struct PAtk(u32);
 impl PAtk {
+    pub const MAX: u32 = 100000;
     pub fn new(base: BaseClass) -> Self {
         match base {
             BaseClass::Mystic => Self(3),
