@@ -2,7 +2,7 @@ use bevy::prelude::*;
 use num_enum::{IntoPrimitive, TryFromPrimitive};
 use sea_orm::FromJsonQueryResult;
 use serde::{Deserialize, Serialize};
-use strum::EnumIter;
+use strum::{EnumCount, EnumIter};
 
 #[derive(
     Clone,
@@ -10,6 +10,7 @@ use strum::EnumIter;
     Debug,
     Deserialize,
     EnumIter,
+    EnumCount,
     Eq,
     Hash,
     PartialEq,
@@ -18,7 +19,7 @@ use strum::EnumIter;
     IntoPrimitive,
     TryFromPrimitive,
 )]
-#[repr(u16)]
+#[repr(usize)]
 pub enum Element {
     Fire,
     Water,
@@ -40,7 +41,10 @@ impl ItemElementsInfo {
     pub fn to_le_bytes(&self) -> [u8; 16] {
         let (attack_elem, attack_val) = self
             .attack_element
-            .map(|(elem, val)| (u16::from(elem), val))
+            .map(|(elem, val)| {
+                let elem_usize: usize = elem.into();
+                (elem_usize as u16, val)
+            })
             .unwrap_or_default();
 
         let mut buffer = [0u8; 16];

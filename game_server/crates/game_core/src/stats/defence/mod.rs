@@ -1,7 +1,8 @@
 use bevy::prelude::*;
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::EnumIter;
+use strum::{EnumIter, FromRepr};
 
 mod evasion;
 mod m_def;
@@ -35,7 +36,7 @@ impl Plugin for DefenceComponentsPlugin {
     }
 }
 
-#[derive(Clone, Component, Debug, Deref, DerefMut, PartialEq, Reflect, Serialize)]
+#[derive(Clone, Component, Debug, Deref, DerefMut, Deserialize, PartialEq, Reflect, Serialize)]
 #[serde(default)]
 pub struct DefenceStats(FloatStats<DefenceStat>);
 
@@ -58,23 +59,23 @@ impl AsRef<GenericStats<DefenceStat, f32>> for DefenceStats {
     }
 }
 
-impl<'de> Deserialize<'de> for DefenceStats {
-    fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
-    where
-        D: serde::Deserializer<'de>,
-    {
-        let partial: HashMap<DefenceStat, f32> = HashMap::deserialize(deserializer)?;
-        let mut stats = DefenceStats::default();
-        // Merge with deserialized values
-        for (stat, value) in partial {
-            stats.insert(stat, value);
-        }
-        Ok(stats)
-    }
-}
-
-#[repr(u8)]
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[repr(usize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+    FromRepr,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    TryFromPrimitive,
+    IntoPrimitive,
+)]
 pub enum DefenceStat {
     PDef,
     PvpPDefBonus,
@@ -128,6 +129,16 @@ impl StatTrait for DefenceStat {
             DefenceStat::ShieldAngle => ShieldAngle::BASE as f32,
             DefenceStat::ShieldRate => ShieldRate::BASE,
             _ => 0.0,
+        };
+        V::from(value).unwrap_or_default()
+    }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        let value = match self {
+            DefenceStat::ShieldAngle => ShieldAngle::MAX as f32,
+            DefenceStat::ShieldRate => ShieldRate::MAX,
+            DefenceStat::Evasion => Evasion::MAX,
+            _ => f32::MAX,
         };
         V::from(value).unwrap_or_default()
     }

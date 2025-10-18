@@ -1,23 +1,105 @@
 ---@class Stats
 local Stats = {}
 
+-- Stat categories define the order of stats in each category
+-- The order MUST match the Rust enum definitions exactly
+local stat_categories = {
+    Vitals = {
+        "Hp", "Mp", "Cp", "MaxHp", "MaxMp", "MaxCp", "HpRegen", "MpRegen", "CpRegen",
+        "MaxRecoverableHp", "MaxRecoverableMp", "MaxRecoverableCp", "ManaCharge", "HealEffect"
+    },
+    Attack = {
+        "PAtk", "PvpPAtkBonus", "PSkillPower", "PvpPSkillBonus", "PAtkSpd", "PvePAtkBonus", "PveSkillBonus",
+        "PveBowPAtkBonus", "PveBowSkillBonus", "AttackReuse", "PhysicalSkillReuse", "RythmSkillReuse",
+        "MAtk", "PvpMAtkBonus", "PveMAtkBonus", "CastSpd", "MagicSkillReuse", "Accuracy", "PAtkRange",
+        "PAtkWidth", "PAtkRandom", "MAtkRange", "AttackCountMax", "EffectKind", "SkillMastery", "SkillMasteryRate"
+    },
+    Defence = {
+        "PDef", "PvpPDefBonus", "MDef", "PvpMDefBonus", "ShieldDefence", "ShieldRate", "ShieldAngle",
+        "Evasion", "PSkillEvasion", "PvpPSkillBonus", "DefenceCriticalRate", "DefenceCriticalRateAdditional",
+        "DefenceCriticalDamage", "DefenceCriticalDamageAdditional", "DamageZoneVulnerability",
+        "MovementVulnerability", "CancelVulnerability", "DebuffVulnerability", "BuffVulnerability",
+        "FireResistance", "WindResistance", "WaterResistance", "EarthResistance", "HolyResistance",
+        "DarkResistance", "MagicSuccessResistance", "DebuffImmunity", "CancelProficiency", "ReflectDamagePercent",
+        "ReflectSkillMagic", "ReflectSkillPhysical", "VengeanceSkillMagicDamage", "VengeanceSkillPhysicalDamage",
+        "AbsorbDamagePercent", "TransferDamagePercent", "ManaShieldPercent", "TransferDamageToPlayer",
+        "AbsorbManaDamagePercent"
+    },
+    Movement = {
+        "Walk", "Run", "Swim", "FastSwim", "Fly", "FastFly", "Fall"
+    },
+    Critical = {
+        "CriticalDamage", "CriticalDamageFront", "CriticalDamageBack", "CriticalDamageSide", "CriticalDamageAdditional",
+        "MagicCriticalDamage", "CriticalRate", "CriticalRateFront", "CriticalRateBack", "CriticalRateSide",
+        "BlowRate", "MagicCriticalRate", "AttackCancel"
+    },
+    Primal = {
+        "STR", "CON", "DEX", "INT", "WIT", "MEN"
+    },
+    ElementPower = {
+        "Fire", "Water", "Wind", "Earth", "Holy", "Dark"
+    },
+    MpConsumption = {
+        "PhysicalMpConsumeRate", "MagicalMpConsumeRate", "DanceMpConsumeRate", "BowMpConsumeRate", "MpConsume"
+    },
+    Inventory = {
+        "InventoryLimit", "WarehouseLimit", "FreightLimit", "PrivateSellLimit", "PrivateBuyLimit",
+        "DwarfRecipeLimit", "CommonRecipeLimit", "WeightCurrent", "WeightLimit", "WeightPenalty"
+    },
+    Progress = {
+        "Exp", "Sp", "VitalityPoints"
+    },
+    ProgressLevel = {
+        "Level", "PrevLevel"
+    },
+    ProgressRates = {
+        "ExpModifier", "SpModifier", "BonusExp", "BonusSp", "VitalityConsumeRate", "MaxSouls",
+        "ExpLostByPvp", "ExpLostByMob", "ExpLostByRaid", "DeathPenaltyByPvp", "DeathPenaltyByMob",
+        "DeathPenaltyByRaid"
+    },
+    Other = {
+        "FishingExpertise", "Breath", "BreathMax", "MaxBuffSlots", "MaxDebuffSlots", "MaxRhythmSlots"
+    }
+}
+
+-- Generate index tables from stat_categories (stat name -> index for vec access)
+local StatIndexTables = {}
+for category, variants in pairs(stat_categories) do
+    local indexTable = {}
+    for i, variant in ipairs(variants) do
+        indexTable[variant] = i
+    end
+    StatIndexTables[category .. "Stats"] = indexTable
+end
+
 -- Gets a stat value from an entity's stats component
 ---@param stats_entity Entity The entity to get the stat from
 ---@param stats_type string The type of stats component (e.g., "AttackStats", "VitalsStats")
 ---@param stat_variant string The specific stat to retrieve (e.g., "PAtk", "Hp")
 ---@return number The current value of the stat
 function Stats.get(stats_entity, stats_type, stat_variant)
-    -- variantType like stats_type, but without last letter, AttackStats -> AttackStat
-    local variantType = string.sub(stats_type, 1, -2)
-    local statVariant = construct(types[variantType], { variant = stat_variant })
     local statsComponent = world.get_component(stats_entity, types[stats_type])
     if not statsComponent then
         error("Entity missing " .. stats_type .. " component")
     end
+
+    -- Get the index table for this stat type
+    local indexTable = StatIndexTables[stats_type]
+    if not indexTable then
+        error("Unknown stat type: " .. stats_type)
+    end
+
+    local index = indexTable[stat_variant]
+    if index == nil then
+        error("Unknown stat variant: " .. stat_variant .. " for type: " .. stats_type)
+    end
+
+    -- VitalsStats is a regular struct with `current` field (FloatStats = GenericStats directly)
+    -- Other stats are tuple structs wrapping GenericStats, so access via ._1
     if stats_type == "VitalsStats" then
-        return statsComponent.current._1[statVariant]
+        return statsComponent.current.values[index]
     else
-        return statsComponent._1._1[statVariant]
+        return statsComponent._1.values[index]
     end
 end
 
@@ -27,19 +109,28 @@ end
 ---@param stat_variant string The specific stat to set (e.g., "PAtk", "Hp")
 ---@param value number The new value for the stat
 function Stats.set(stats_entity, stats_type, stat_variant, value)
-    -- variantType like stats_type, but without last letter, AttackStats -> AttackStat
-    local variantType = string.sub(stats_type, 1, -2)
-    local statVariant = construct(types[variantType], { variant = stat_variant })
     local statsComponent = world.get_component(stats_entity, types[stats_type])
     if not statsComponent then
         error("Entity missing " .. stats_type .. " component")
     end
 
+    local indexTable = StatIndexTables[stats_type]
+    if not indexTable then
+        error("Unknown stat type: " .. stats_type)
+    end
+
+    local index = indexTable[stat_variant]
+    if index == nil then
+        error("Unknown stat variant: " .. stat_variant .. " for type: " .. stats_type)
+    end
+
     if stats_type == "VitalsStats" then
-        statsComponent.current._1[statVariant] = value
+        statsComponent.current.values[index] = value
+        local variantType = string.sub(stats_type, 1, -2)
+        local statVariant = construct(types[variantType], { variant = stat_variant })
         statsComponent.change_flags._1:push(statVariant)
     else
-        statsComponent._1._1[statVariant] = value
+        statsComponent._1.values[index] = value
     end
 end
 

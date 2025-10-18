@@ -11,7 +11,6 @@ pub struct Movable {
 impl Movable {
     // 2.4 get from https://habr.com/ru/articles/814529/
     const STEPS_TO_RUN: usize = (FIXED_UPDATE_TICK_RATE / 2.4) as usize;
-    const MAX_SPEED: u32 = 600;
 
     pub fn new(move_speed: MovementStats) -> Self {
         Movable {
@@ -73,34 +72,34 @@ impl Movable {
         self.move_type = move_type;
     }
 
-    pub fn speed_stat(&self, move_type: &MovementStat) -> u32 {
-        self.speed.get(move_type).min(Self::MAX_SPEED)
+    pub fn speed_stat(&self, move_type: MovementStat) -> u32 {
+        self.speed.get(move_type)
     }
 
     pub fn set_speed_stat(&mut self, move_type: MovementStat, speed: u32) {
-        self.speed.insert(move_type, speed.min(Self::MAX_SPEED));
+        self.speed.insert(move_type, speed);
     }
 
     pub fn speed(&self) -> u32 {
         let speed = match self.move_type {
             MovementStat::Run => {
                 if self.steps < Movable::STEPS_TO_RUN {
-                    self.speed.get(&MovementStat::Walk)
+                    self.speed.get(MovementStat::Walk)
                 } else {
-                    self.speed.get(&self.move_type)
+                    self.speed.get(self.move_type)
                 }
             }
-            _ => self.speed.get(&self.move_type),
+            _ => self.speed.get(self.move_type),
         };
-        speed.min(Self::MAX_SPEED)
+        speed
     }
 
     pub fn multiplier(&self, base: &MovementStats) -> f64 {
         let base_speed = match self.move_type {
-            MovementStat::Run => base.get(&MovementStat::Run),
-            _ => base.get(&MovementStat::Walk),
+            MovementStat::Run => base.get(MovementStat::Run),
+            _ => base.get(MovementStat::Walk),
         };
-        self.speed.get(&self.move_type) as f64 * (1.0 / base_speed as f64)
+        self.speed.get(self.move_type) as f64 * (1.0 / base_speed as f64)
     }
 }
 

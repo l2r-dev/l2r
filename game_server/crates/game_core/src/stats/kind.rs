@@ -188,3 +188,44 @@ impl From<StatKindVariants> for state::StatKindSystems {
         }
     }
 }
+
+impl StatKind {
+    const VITALS_OFFSET: usize = 0;
+    const ATTACK_OFFSET: usize = Self::VITALS_OFFSET + VitalsStat::COUNT;
+    const DEFENCE_OFFSET: usize = Self::ATTACK_OFFSET + AttackStat::COUNT;
+    const MOVEMENT_OFFSET: usize = Self::DEFENCE_OFFSET + DefenceStat::COUNT;
+    const CRITICAL_OFFSET: usize = Self::MOVEMENT_OFFSET + MovementStat::COUNT;
+    const PRIMAL_OFFSET: usize = Self::CRITICAL_OFFSET + CriticalStat::COUNT;
+    const ELEMENT_OFFSET: usize = Self::PRIMAL_OFFSET + PrimalStat::COUNT;
+    const INVENTORY_OFFSET: usize = Self::ELEMENT_OFFSET + Element::COUNT;
+    const MP_CONSUMPTION_OFFSET: usize = Self::INVENTORY_OFFSET + InventoryStat::COUNT;
+    const PROGRESS_OFFSET: usize = Self::MP_CONSUMPTION_OFFSET + MpConsumptionStat::COUNT;
+    const PROGRESS_LEVEL_OFFSET: usize = Self::PROGRESS_OFFSET + ProgressStat::COUNT;
+    const PROGRESS_RATES_OFFSET: usize = Self::PROGRESS_LEVEL_OFFSET + ProgressLevelStat::COUNT;
+    const OTHER_OFFSET: usize = Self::PROGRESS_RATES_OFFSET + ProgressRatesStat::COUNT;
+
+    /// Calculate total number of all possible stat kinds across all stat categories
+    pub const fn total_count() -> usize {
+        Self::OTHER_OFFSET + OtherStat::COUNT
+    }
+
+    /// Convert StatKind to a unique index for Vec-based storage
+    #[inline]
+    pub const fn to_index(self) -> usize {
+        match self {
+            StatKind::Vitals(s) => Self::VITALS_OFFSET + s as usize,
+            StatKind::Attack(s) => Self::ATTACK_OFFSET + s as usize,
+            StatKind::Defence(s) => Self::DEFENCE_OFFSET + s as usize,
+            StatKind::Movement(s) => Self::MOVEMENT_OFFSET + s as usize,
+            StatKind::Critical(s) => Self::CRITICAL_OFFSET + s as usize,
+            StatKind::Primal(s) => Self::PRIMAL_OFFSET + s as usize,
+            StatKind::ElementPower(s) => Self::ELEMENT_OFFSET + s as usize,
+            StatKind::Inventory(s) => Self::INVENTORY_OFFSET + s as usize,
+            StatKind::MpConsumption(s) => Self::MP_CONSUMPTION_OFFSET + s as usize,
+            StatKind::Progress(s) => Self::PROGRESS_OFFSET + s as usize,
+            StatKind::ProgressLevel(s) => Self::PROGRESS_LEVEL_OFFSET + s as usize,
+            StatKind::ProgressRates(s) => Self::PROGRESS_RATES_OFFSET + s as usize,
+            StatKind::Other(s) => Self::OTHER_OFFSET + s as usize,
+        }
+    }
+}

@@ -1,8 +1,8 @@
 use crate::stats::*;
-use bevy::platform::collections::HashMap;
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::EnumIter;
+use strum::{EnumIter, FromRepr};
 
 mod accuracy;
 mod cast_spd;
@@ -46,53 +46,66 @@ impl Plugin for AttackStatsComponentsPlugin {
     }
 }
 
-#[derive(Clone, Component, Debug, Deref, DerefMut, PartialEq, Reflect, Serialize)]
+#[derive(Clone, Component, Debug, Default, Deref, DerefMut, PartialEq, Reflect, Serialize)]
 #[serde(default)]
 pub struct AttackStats(FloatStats<AttackStat>);
-
-impl Default for AttackStats {
-    fn default() -> Self {
-        let base_class = BaseClass::default();
-        let mut float_stats = FloatStats::default();
-        for stat in AttackStat::iter() {
-            float_stats.insert(stat, stat.default_value(base_class));
-        }
-        Self(float_stats)
-    }
-}
 
 impl<'de> Deserialize<'de> for AttackStats {
     fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
     where
         D: serde::Deserializer<'de>,
     {
-        // Use a raw Value to handle different types
-        let partial: HashMap<AttackStat, serde_json::Value> = HashMap::deserialize(deserializer)?;
-        let mut stats = AttackStats::default();
+        use serde::de::{MapAccess, Visitor};
+        use std::fmt;
 
-        for (stat, value) in partial {
-            let float_value = if stat == AttackStat::EffectKind && value.is_string() {
-                // If it's EffectKind and a string, deserialize it using the EffectKind deserializer
-                let effect_kind: EffectKind =
-                    serde_json::from_value(value.clone()).map_err(|e| {
-                        serde::de::Error::custom(format!("Failed to parse EffectKind: {e}"))
-                    })?;
+        struct AttackStatsVisitor;
 
-                // Convert to f32
-                <f32 as From<EffectKind>>::from(effect_kind)
-            } else {
-                // For all other stats, convert to f32
-                value.as_f64().ok_or_else(|| {
-                    serde::de::Error::custom(format!(
-                        "Expected number for {stat:?}, got: {value:?}"
-                    ))
-                })? as f32
-            };
+        impl<'de> Visitor<'de> for AttackStatsVisitor {
+            type Value = AttackStats;
 
-            stats.insert(stat, float_value);
+            fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
+                formatter.write_str("a map of attack stat variants to values")
+            }
+
+            fn visit_map<A>(self, mut map: A) -> Result<Self::Value, A::Error>
+            where
+                A: MapAccess<'de>,
+            {
+                let mut stats = AttackStats::default();
+
+                while let Some(key) = map.next_key::<AttackStat>()? {
+                    let float_value = if key == AttackStat::EffectKind {
+                        // Try to deserialize as string (EffectKind variant name) first
+                        let value: serde_json::Value = map.next_value()?;
+                        if value.is_string() {
+                            let effect_kind: EffectKind = serde_json::from_value(value.clone())
+                                .map_err(|e| {
+                                    serde::de::Error::custom(format!(
+                                        "Failed to parse EffectKind: {e}"
+                                    ))
+                                })?;
+                            <f32 as From<EffectKind>>::from(effect_kind)
+                        } else {
+                            // If it's already a number, just use it
+                            value.as_f64().ok_or_else(|| {
+                                serde::de::Error::custom(format!(
+                                    "Expected number or string for EffectKind, got: {value:?}"
+                                ))
+                            })? as f32
+                        }
+                    } else {
+                        // For all other stats, deserialize as f32
+                        map.next_value::<f32>()?
+                    };
+
+                    stats.insert(key, float_value);
+                }
+
+                Ok(stats)
+            }
         }
 
-        Ok(stats)
+        deserializer.deserialize_map(AttackStatsVisitor)
     }
 }
 
@@ -102,8 +115,23 @@ impl AsRef<GenericStats<AttackStat, f32>> for AttackStats {
     }
 }
 
-#[repr(u8)]
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[repr(usize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+    FromRepr,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    TryFromPrimitive,
+    IntoPrimitive,
+)]
 pub enum AttackStat {
     PAtk,
     PvpPAtkBonus,
@@ -155,6 +183,16 @@ impl StatTrait for AttackStat {
             AttackStat::PAtkMaxTargetsCount => 1.0,
 
             _ => 0.0,
+        };
+        V::from(value).unwrap_or_default()
+    }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        let value = match self {
+            AttackStat::PAtkSpd => PAtkSpd::MAX as f32,
+            AttackStat::CastSpd => CastSpd::MAX as f32,
+            AttackStat::EffectKind => EffectKind::MAX as f32,
+            _ => f32::MAX,
         };
         V::from(value).unwrap_or_default()
     }

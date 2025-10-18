@@ -48,8 +48,8 @@ fn calculate_shield_result_inner(
 
     let target_defence_stats = target_entity.get::<DefenceStats>()?;
 
-    let shield_angle = target_defence_stats.get(&DefenceStat::ShieldAngle);
-    let shield_rate = target_defence_stats.get(&DefenceStat::ShieldRate);
+    let shield_angle = target_defence_stats.get(DefenceStat::ShieldAngle);
+    let shield_rate = target_defence_stats.get(DefenceStat::ShieldRate);
 
     if shield_angle <= 0.0 || shield_rate <= 0.0 {
         return None;

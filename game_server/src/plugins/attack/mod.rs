@@ -124,7 +124,7 @@ fn attack_entity(
                     .translation
                     .flat_distance(&aiming_target.transform.translation);
 
-                let range = attacker.attack_stats.get(&AttackStat::PAtkRange);
+                let range = attacker.attack_stats.get(AttackStat::PAtkRange);
                 if distance <= range {
                     par_commands.command_scope(|mut commands| {
                         commands.trigger_targets(LookAt(aiming_target.entity), attacker.entity);
@@ -268,6 +268,11 @@ fn attack_entity(
 
                     let attack_hit = if max_targets_count > 1 {
                         let mut hits = vec![];
+                      
+                        let attack_interval = attacker
+                            .attack_stats
+                            .typed::<PAtkSpd>(AttackStat::PAtkSpd)
+                            .attack_interval();
 
                         let hit_info =
                             calc_hit_info(soulshot_used, attacker_ref, aiming_target_ref, world);
@@ -788,7 +793,7 @@ fn setup_attack_timers(
 ) {
     for (entity, stats) in query.iter() {
         let attack_interval = stats
-            .typed::<PAtkSpd>(&AttackStat::PAtkSpd)
+            .typed::<PAtkSpd>(AttackStat::PAtkSpd)
             .attack_interval();
 
         commands

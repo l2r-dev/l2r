@@ -58,8 +58,8 @@ impl L2rServerPacket for CharInfo {
 
         let converted_pos = GameVec3::from(self.transform.translation);
 
-        let p_atk_spd = self.attack_stats.typed::<PAtkSpd>(&AttackStat::PAtkSpd);
-        let cast_spd = self.attack_stats.typed::<CastSpd>(&AttackStat::CastSpd);
+        let p_atk_spd = self.attack_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);
+        let cast_spd = self.attack_stats.typed::<CastSpd>(AttackStat::CastSpd);
 
         buffer.extend(GameServerPacketCodes::CHAR_INFO.to_le_bytes());
         buffer.extend(converted_pos.to_le_bytes());
@@ -90,14 +90,14 @@ impl L2rServerPacket for CharInfo {
         buffer.u32(cast_spd.into());
         buffer.u32(p_atk_spd.into());
         buffer.u32(0); // padding?
-        buffer.u32(self.base_speed.get(&MovementStat::Run));
-        buffer.u32(self.base_speed.get(&MovementStat::Walk));
-        buffer.u32(self.base_speed.get(&MovementStat::FastSwim));
-        buffer.u32(self.base_speed.get(&MovementStat::Swim));
-        buffer.u32(self.base_speed.get(&MovementStat::FastFly)); // fly run speed
-        buffer.u32(self.base_speed.get(&MovementStat::Fly)); // fly walk speed
-        buffer.u32(self.base_speed.get(&MovementStat::FastFly)); // fly2? run speed
-        buffer.u32(self.base_speed.get(&MovementStat::Fly)); // fly2? walk speed
+        buffer.u32(self.base_speed.get(MovementStat::Run));
+        buffer.u32(self.base_speed.get(MovementStat::Walk));
+        buffer.u32(self.base_speed.get(MovementStat::FastSwim));
+        buffer.u32(self.base_speed.get(MovementStat::Swim));
+        buffer.u32(self.base_speed.get(MovementStat::FastFly)); // fly run speed
+        buffer.u32(self.base_speed.get(MovementStat::Fly)); // fly walk speed
+        buffer.u32(self.base_speed.get(MovementStat::FastFly)); // fly2? run speed
+        buffer.u32(self.base_speed.get(MovementStat::Fly)); // fly2? walk speed
         buffer.f64(self.movable.multiplier(&self.base_speed));
         buffer.f64(p_atk_spd.get_attack_speed_multiplier());
         buffer.f64(self.collision_radius);
@@ -125,7 +125,7 @@ impl L2rServerPacket for CharInfo {
         // TODO: extend with cubic-ids u16 later
         buffer.bool(self.in_party_match_room);
         buffer.u32(0); // annormal visual effect
-        buffer.u8(self.movable.move_state().into());
+        buffer.u8_from_usize(self.movable.move_state().into());
         buffer.u16(0); // reccomendations left
         buffer.u32(1000000); // mount npcid
         buffer.u32(self.class_id.into());

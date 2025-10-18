@@ -20,8 +20,9 @@ pub struct CastSpd(u32);
 
 impl CastSpd {
     pub const BASE: u32 = 333;
+    pub const MAX: u32 = 2000;
     pub fn formula(args: FormulaArguments) -> f32 {
-        let wit_bonus = args.primal.typed::<WIT>(&PrimalStat::WIT).bonus();
+        let wit_bonus = args.primal.typed::<WIT>(PrimalStat::WIT).bonus();
         args.base_value * wit_bonus
     }
 }

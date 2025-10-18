@@ -182,6 +182,7 @@ impl Default for EffectKind {
 }
 
 impl EffectKind {
+    pub const MAX: u32 = 2999;
     pub fn kind(&self) -> u32 {
         match self {
             EffectKind::Weapon(_) => 1,

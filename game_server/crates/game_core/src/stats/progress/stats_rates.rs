@@ -1,10 +1,13 @@
 use crate::stats::{FloatStats, StatTrait, StatValue, Stats};
-use bevy::{platform::collections::HashMap, prelude::*};
+use bevy::prelude::*;
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::{EnumIter, IntoEnumIterator};
+use strum::{EnumCount, EnumIter};
 
-#[derive(Clone, Component, Debug, Deref, DerefMut, Deserialize, PartialEq, Reflect, Serialize)]
+#[derive(
+    Clone, Component, Debug, Default, Deref, DerefMut, Deserialize, PartialEq, Reflect, Serialize,
+)]
 #[serde(default)]
 pub struct ProgressRatesStats(FloatStats<ProgressRatesStat>);
 
@@ -14,25 +17,30 @@ impl ProgressRatesStats {
     }
 
     pub fn exp_modifier(&self) -> f32 {
-        self.get(&ProgressRatesStat::ExpModifier)
+        self.get(ProgressRatesStat::ExpModifier)
     }
 
     pub fn sp_modifier(&self) -> f32 {
-        self.get(&ProgressRatesStat::SpModifier)
+        self.get(ProgressRatesStat::SpModifier)
     }
 }
 
-impl Default for ProgressRatesStats {
-    fn default() -> Self {
-        let mut stats = HashMap::default();
-        for stat in ProgressRatesStat::iter() {
-            stats.insert(stat, stat.default_value::<f32>(BaseClass::default()));
-        }
-        Self(stats.into())
-    }
-}
-
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    TryFromPrimitive,
+    IntoPrimitive,
+    EnumCount,
+)]
+#[repr(usize)]
 pub enum ProgressRatesStat {
     ExpModifier,
     SpModifier,
@@ -46,6 +54,9 @@ pub enum ProgressRatesStat {
     DeathPenaltyByPvp,
     DeathPenaltyByMob,
     DeathPenaltyByRaid,
+    TryFromPrimitive,
+    IntoPrimitive,
+    EnumCount,
 }
 
 impl StatTrait for ProgressRatesStat {
@@ -60,5 +71,9 @@ impl StatTrait for ProgressRatesStat {
             _ => 0.0,
         };
         V::from(value).unwrap_or_default()
+    }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        V::from(1000.0).unwrap_or_default()
     }
 }

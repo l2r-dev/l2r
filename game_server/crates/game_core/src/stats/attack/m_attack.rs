@@ -19,8 +19,9 @@ use serde::{Deserialize, Serialize};
 )]
 pub struct MAtk(u32);
 impl MAtk {
+    pub const MAX: u32 = 100000;
     pub fn formula(args: FormulaArguments) -> f32 {
-        let int_bonus = args.primal.typed::<INT>(&PrimalStat::INT).bonus();
+        let int_bonus = args.primal.typed::<INT>(PrimalStat::INT).bonus();
         let lvl_bonus = StatFormulaRegistry::level_modifier(args.level);
         args.base_value * int_bonus.powi(2) * lvl_bonus.powi(2)
     }

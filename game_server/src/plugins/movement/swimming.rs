@@ -56,8 +56,8 @@ fn handle_water_zone_collisions(
                 commands.trigger_targets(SendUserInfo, movable_entity);
                 commands.trigger_targets(SendCharInfo, movable_entity);
 
-                let current_breath = other_stats.get(&OtherStat::Breath);
-                let max_breath = other_stats.get(&OtherStat::BreathMax);
+                let current_breath = other_stats.get(OtherStat::Breath);
+                let max_breath = other_stats.get(OtherStat::BreathMax);
                 send_breath_gauge(
                     commands.reborrow(),
                     movable_entity,
@@ -214,8 +214,8 @@ fn handle_breath(
             swimming_entities.iter_mut()
         {
             if movable.in_water() {
-                let current_breath = other_stats.get(&OtherStat::Breath);
-                let max_breath = other_stats.get(&OtherStat::BreathMax);
+                let current_breath = other_stats.get(OtherStat::Breath);
+                let max_breath = other_stats.get(OtherStat::BreathMax);
 
                 if current_breath > 0.0 {
                     let new_breath = (current_breath - 1.0).max(0.0);
@@ -228,7 +228,7 @@ fn handle_breath(
                         max_breath,
                     );
                 } else {
-                    vitals_stats.percent_stat_damage(&VitalsStat::Hp, OUT_OF_BREATH_DAMAGE_PERCENT);
+                    vitals_stats.percent_stat_damage(VitalsStat::Hp, OUT_OF_BREATH_DAMAGE_PERCENT);
                 }
             }
         }
@@ -270,8 +270,8 @@ fn restore_breath_out_of_water(
 
         for (movable, mut other_stats) in characters.iter_mut() {
             if !movable.in_water() {
-                let current_breath = other_stats.get(&OtherStat::Breath);
-                let max_breath = other_stats.get(&OtherStat::BreathMax);
+                let current_breath = other_stats.get(OtherStat::Breath);
+                let max_breath = other_stats.get(OtherStat::BreathMax);
 
                 // Restore % per second
                 if current_breath < max_breath {

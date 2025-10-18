@@ -3,20 +3,26 @@
     "rust-analyzer.cargo.extraEnv": {
         "RUSTFLAGS": "-Clinker=rust-lld.exe"
     },
-    "rust-analyzer.cargo.features": [
-        "gui",
-    ],
+    // "rust-analyzer.cargo.features": [
+    //     "gui"
+    // ],
+    "rust-analyzer.cargo.buildScripts.enable": true,
+
+    "rust-analyzer.checkOnSave": true,
+    "rust-analyzer.check.workspace": false,
+    "rust-analyzer.check.allTargets": false,
+
+    // "rust-analyzer.check.overrideCommand": [
+    //   "cargo",
+    //   "check",
+    //   "-p",
+    //   "имя_текущего_крэйта",
+    //   "--message-format=json"
+    // ],
+
     "rust-analyzer.runnables.extraEnv": {
         "RUST_LOG": "l2r_gameserver=debug,l2r_core=debug,bevy_asset=debug,wgpu_core=off,sqlx=off,bevy_mod_scripting=debug",
         "BEVY_ASSET_ROOT": "${workspaceFolder}/game_server",
         "LUA_PATH": "${workspaceFolder}/game_server/?.lua;"
-    },
-    "rust-analyzer.checkOnSave": true,
-    "rust-analyzer.check.command": "check",
-    // "rust-analyzer.check.overrideCommand": [
-    //     "bevy_lint",
-    //     "--workspace",
-    //     "--all-targets",
-    //     "--message-format=json-diagnostic-rendered-ansi",
-    // ]
+    }
 }

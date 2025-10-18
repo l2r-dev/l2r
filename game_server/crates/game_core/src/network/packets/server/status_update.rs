@@ -88,17 +88,17 @@ impl From<(ObjectId, &VitalsStats)> for StatusUpdate {
     fn from((object_id, stats): (ObjectId, &VitalsStats)) -> Self {
         let mut status_update = StatusUpdate::new(object_id);
 
-        let current_hp = stats.get(&VitalsStat::Hp) as u32;
-        let current_mp = stats.get(&VitalsStat::Mp) as u32;
-        let current_cp = stats.get(&VitalsStat::Cp) as u32;
+        let current_hp = stats.get(VitalsStat::Hp) as u32;
+        let current_mp = stats.get(VitalsStat::Mp) as u32;
+        let current_cp = stats.get(VitalsStat::Cp) as u32;
 
         status_update.add(StatusUpdateKind::CurHp, current_hp);
         status_update.add(StatusUpdateKind::CurMp, current_mp);
         status_update.add(StatusUpdateKind::CurCp, current_cp);
 
-        let max_hp = stats.get(&VitalsStat::MaxHp) as u32;
-        let max_mp = stats.get(&VitalsStat::MaxMp) as u32;
-        let max_cp = stats.get(&VitalsStat::MaxCp) as u32;
+        let max_hp = stats.get(VitalsStat::MaxHp) as u32;
+        let max_mp = stats.get(VitalsStat::MaxMp) as u32;
+        let max_cp = stats.get(VitalsStat::MaxCp) as u32;
 
         status_update.add(StatusUpdateKind::MaxHp, max_hp);
         status_update.add(StatusUpdateKind::MaxMp, max_mp);

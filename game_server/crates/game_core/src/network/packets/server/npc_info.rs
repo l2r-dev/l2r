@@ -120,7 +120,7 @@ impl L2rServerPacket for NpcInfo {
         buffer.u32(self.crest_id);
         buffer.u32(self.ally_id);
         buffer.u32(self.ally_crest_id);
-        buffer.u8(self.move_state.into());
+        buffer.u8_from_usize(self.move_state.into());
         buffer.u8(self.team_id);
         buffer.f64(self.collision_radius);
         buffer.f64(self.collision_height);
@@ -155,8 +155,8 @@ impl NpcInfo {
             .map(|shape| shape.segment.length())
             .unwrap_or(0.0) as f64;
 
-        let m_atk_spd = npc.attack_stats.typed::<CastSpd>(&AttackStat::CastSpd);
-        let p_atk_spd = npc.attack_stats.typed::<PAtkSpd>(&AttackStat::PAtkSpd);
+        let m_atk_spd = npc.attack_stats.typed::<CastSpd>(AttackStat::CastSpd);
+        let p_atk_spd = npc.attack_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);
         let attack_speed_multiplier = p_atk_spd.get_attack_speed_multiplier();
 
         NpcInfo {
@@ -168,12 +168,12 @@ impl NpcInfo {
             heading,
             m_atk_spd: *m_atk_spd,
             p_atk_spd: *p_atk_spd,
-            run_spd: base_speed.get(&MovementStat::Run),
-            walk_spd: base_speed.get(&MovementStat::Walk),
-            swim_run_spd: base_speed.get(&MovementStat::FastSwim),
-            swim_walk_spd: base_speed.get(&MovementStat::Swim),
-            fly_run_spd: base_speed.get(&MovementStat::FastFly),
-            fly_walk_spd: base_speed.get(&MovementStat::Fly),
+            run_spd: base_speed.get(MovementStat::Run),
+            walk_spd: base_speed.get(MovementStat::Walk),
+            swim_run_spd: base_speed.get(MovementStat::FastSwim),
+            swim_walk_spd: base_speed.get(MovementStat::Swim),
+            fly_run_spd: base_speed.get(MovementStat::FastFly),
+            fly_walk_spd: base_speed.get(MovementStat::Fly),
             move_multiplier: npc.movable.multiplier(&base_speed),
             attack_speed_multiplier,
             collision_radius,

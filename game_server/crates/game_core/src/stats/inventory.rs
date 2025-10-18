@@ -1,9 +1,10 @@
-use crate::stats::{StatTrait, UIntStats};
-use bevy::{platform::collections::HashMap, prelude::*};
+use crate::stats::{StatTrait, StatValue, UIntStats};
+use bevy::prelude::*;
 use derive_more::{From, Into};
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::{EnumIter, IntoEnumIterator};
+use strum::{EnumCount, EnumIter, FromRepr};
 
 pub struct InventoryStatsComponentsPlugin;
 impl Plugin for InventoryStatsComponentsPlugin {
@@ -23,34 +24,29 @@ impl Plugin for InventoryStatsComponentsPlugin {
     }
 }
 
-#[derive(Clone, Component, Debug, Deref, DerefMut, Deserialize, PartialEq, Reflect, Serialize)]
+#[derive(
+    Clone, Component, Debug, Default, Deref, DerefMut, Deserialize, PartialEq, Reflect, Serialize,
+)]
 #[serde(default)]
 pub struct InventoryStats(UIntStats<InventoryStat>);
-impl Default for InventoryStats {
-    fn default() -> Self {
-        let mut stats = HashMap::default();
 
-        for stat in InventoryStat::iter() {
-            let value = match stat {
-                InventoryStat::InventoryLimit => InventoryLimit::default().into(),
-                InventoryStat::WarehouseLimit => WarehouseLimit::default().into(),
-                InventoryStat::FreightLimit => FreightLimit::default().into(),
-                InventoryStat::PrivateSellLimit => PrivateSellLimit::default().into(),
-                InventoryStat::PrivateBuyLimit => PrivateBuyLimit::default().into(),
-                InventoryStat::DwarfRecipeLimit => DwarfRecipeLimit::default().into(),
-                InventoryStat::CommonRecipeLimit => CommonRecipeLimit::default().into(),
-                InventoryStat::WeightCurrent => WeightCurrent::default().into(),
-                InventoryStat::WeightLimit => WeightLimit::default().into(),
-                InventoryStat::WeightPenalty => WeightPenalty::default().into(),
-            };
-            stats.insert(stat, value);
-        }
-        Self(stats.into())
-    }
-}
-
-#[repr(u8)]
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[repr(usize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+    FromRepr,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    IntoPrimitive,
+    TryFromPrimitive,
+)]
 pub enum InventoryStat {
     InventoryLimit,
     WarehouseLimit,
@@ -67,6 +63,10 @@ pub enum InventoryStat {
 impl StatTrait for InventoryStat {
     fn default_value<V: super::StatValue>(&self, _base_class: BaseClass) -> V {
         V::default()
+    }
+
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
+        V::from(u32::MAX).unwrap_or_default()
     }
 }
 

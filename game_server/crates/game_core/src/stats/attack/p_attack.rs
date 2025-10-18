@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 )]
 pub struct PAtk(u32);
 impl PAtk {
+    pub const MAX: u32 = 100000;
     pub fn new(base: BaseClass) -> Self {
         match base {
             BaseClass::Mystic => Self(3),
@@ -15,7 +16,7 @@ impl PAtk {
         }
     }
     pub fn formula(args: FormulaArguments) -> f32 {
-        let str_bonus = args.primal.typed::<STR>(&PrimalStat::STR).bonus();
+        let str_bonus = args.primal.typed::<STR>(PrimalStat::STR).bonus();
         args.base_value * str_bonus * StatFormulaRegistry::level_modifier(args.level)
     }
 }

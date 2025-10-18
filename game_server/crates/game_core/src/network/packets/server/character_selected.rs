@@ -33,8 +33,8 @@ impl L2rServerPacket for CharacterSelected {
     fn buffer(self) -> ServerPacketBuffer {
         let mut buffer = ServerPacketBuffer::new();
         let position = GameVec3::from(self.position);
-        let current_hp = self.vitals.get(&VitalsStat::Hp) as f64;
-        let current_mp = self.vitals.get(&VitalsStat::Mp) as f64;
+        let current_hp = self.vitals.get(VitalsStat::Hp) as f64;
+        let current_mp = self.vitals.get(VitalsStat::Mp) as f64;
         buffer.extend(GameServerPacketCodes::CHARACTER_SELECTED.to_le_bytes());
         buffer.str(self.name.as_str());
         buffer.u32(self.object_id.into());
@@ -54,12 +54,12 @@ impl L2rServerPacket for CharacterSelected {
         buffer.u32(self.progress_level.level().into());
         buffer.u32(self.pvp.karma);
         buffer.u32(self.pvp.pk_kills);
-        buffer.u32(self.primal_stats.get(&PrimalStat::INT));
-        buffer.u32(self.primal_stats.get(&PrimalStat::STR));
-        buffer.u32(self.primal_stats.get(&PrimalStat::CON));
-        buffer.u32(self.primal_stats.get(&PrimalStat::MEN));
-        buffer.u32(self.primal_stats.get(&PrimalStat::DEX));
-        buffer.u32(self.primal_stats.get(&PrimalStat::WIT));
+        buffer.u32(self.primal_stats.get(PrimalStat::INT));
+        buffer.u32(self.primal_stats.get(PrimalStat::STR));
+        buffer.u32(self.primal_stats.get(PrimalStat::CON));
+        buffer.u32(self.primal_stats.get(PrimalStat::MEN));
+        buffer.u32(self.primal_stats.get(PrimalStat::DEX));
+        buffer.u32(self.primal_stats.get(PrimalStat::WIT));
         buffer.u32(0);
         buffer.u32(0);
         buffer.u32(self.class_id.into());

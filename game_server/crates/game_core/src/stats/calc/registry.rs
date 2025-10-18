@@ -1,10 +1,18 @@
 use super::StatModifiers;
 use crate::stats::*;
 
-#[derive(Default, Resource)]
-pub struct StatFormulaRegistry(
-    HashMap<StatKind, Box<dyn Fn(FormulaArguments) -> f32 + Send + Sync + 'static>>,
-);
+#[derive(Resource)]
+pub struct StatFormulaRegistry {
+    formulas: Vec<Option<Box<dyn Fn(FormulaArguments) -> f32 + Send + Sync + 'static>>>,
+}
+
+impl Default for StatFormulaRegistry {
+    fn default() -> Self {
+        Self {
+            formulas: (0..StatKind::total_count()).map(|_| None).collect(),
+        }
+    }
+}
 
 #[derive(Clone)]
 pub struct FormulaArguments<'a> {
@@ -57,15 +65,19 @@ impl StatFormulaRegistry {
     where
         F: Fn(FormulaArguments) -> f32 + Send + Sync + 'static,
     {
-        self.0.insert(stat, Box::new(formula));
+        let index = stat.to_index();
+        self.formulas[index] = Some(Box::new(formula));
         self
     }
 
-    fn calculate_base<S: StatTrait>(&self, stat: S, forumla_arguments: FormulaArguments) -> f32 {
-        if let Some(formula) = self.0.get(&stat.into()) {
-            formula(forumla_arguments)
+    fn calculate_base<S: StatTrait>(&self, stat: S, formula_arguments: FormulaArguments) -> f32 {
+        let stat_kind: StatKind = stat.into();
+        let index = stat_kind.to_index();
+
+        if let Some(Some(formula)) = self.formulas.get(index) {
+            formula(formula_arguments)
         } else {
-            forumla_arguments.base_value
+            formula_arguments.base_value
         }
     }
 

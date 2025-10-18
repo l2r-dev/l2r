@@ -5,14 +5,17 @@ use crate::{
     network::packets::server::UserInfoUpdated,
     npc::{self, kind::Pet},
 };
-use bevy::{platform::collections::HashMap, prelude::*};
+use bevy::prelude::*;
 use bevy_ecs::{query::QueryData, system::SystemParam};
-use derive_more::{From, Into};
 use l2r_core::model::{base_class::BaseClass, race::Race};
+use num_enum::TryFromPrimitive;
 use num_traits::{Num, NumCast};
-use serde::{Deserialize, Serialize};
-use std::hash::Hash;
-use strum::IntoEnumIterator;
+use serde::{Deserialize, Serialize, de::DeserializeOwned};
+use std::{
+    hash::Hash,
+    ops::{Index, IndexMut},
+};
+use strum::{EnumCount, IntoEnumIterator};
 
 mod attack;
 mod attribute;
@@ -25,6 +28,7 @@ mod element;
 mod gender;
 mod inventory;
 mod kind;
+mod other;
 mod progress;
 mod pvp;
 mod race;
@@ -44,6 +48,7 @@ pub use element::*;
 pub use gender::*;
 pub use inventory::*;
 pub use kind::*;
+pub use other::*;
 pub use progress::*;
 pub use pvp::*;
 pub use race::*;
@@ -74,10 +79,23 @@ impl StatValue for f32 {}
 impl StatValue for u32 {}
 impl StatValue for f64 {}
 
-pub trait StatTrait: Into<StatKind> + IntoEnumIterator + Eq + Hash + Copy {
+pub trait StatTrait:
+    Into<StatKind>
+    + IntoEnumIterator
+    + Eq
+    + Hash
+    + Copy
+    + Serialize
+    + DeserializeOwned
+    + EnumCount
+    + Into<usize>
+    + TryFromPrimitive
+    + 'static
+{
     fn default_value<V: StatValue>(&self, _base_class: BaseClass) -> V {
         V::default()
     }
+    fn max_value<V: StatValue>(&self, _base_class: BaseClass) -> V;
     fn with_doll<V: StatValue>(&self, base_class: BaseClass, _paper_doll: &PaperDoll) -> V {
         self.default_value(base_class)
     }
@@ -94,16 +112,13 @@ where
     S: StatTrait,
     V: StatValue,
 {
-    fn empty() -> Self;
-    fn get(&self, stat: &S) -> V;
+    fn get(&self, stat: S) -> V;
 
-    fn typed<T>(&self, stat: &S) -> T
+    fn typed<T>(&self, stat: S) -> T
     where
         T: Default + From<V>;
 
     fn merge(&mut self, other: &Self);
-
-    fn has(&self, stat: S) -> bool;
 
     fn insert(&mut self, stat: S, value: V);
 
@@ -111,17 +126,19 @@ where
 
     fn changed_variants(&self, other: &Self) -> Vec<S>;
 
-    fn apply_operation(&mut self, stat: &S, operation: &StatsOperation<V>) {
+    fn iter(&self) -> impl Iterator<Item = (S, V)>;
+
+    fn apply_operation(&mut self, stat: S, operation: &StatsOperation<V>) {
         let current = self.get(stat);
         let new_value = operation.apply(current);
         if new_value != current {
-            self.insert(*stat, new_value);
+            self.insert(stat, new_value);
         }
     }
 
     fn apply_operations(&mut self, operations: &[(S, StatsOperation<V>)]) {
         for (stat, operation) in operations {
-            self.apply_operation(stat, operation);
+            self.apply_operation(*stat, operation);
         }
     }
 
@@ -131,7 +148,7 @@ where
         base_stats: Option<&Self>,
     ) -> Option<Vec<S>>;
 
-    fn calculate_fallback_stat_value(&self, stat: &S, params: &StatsCalculateParams) -> V;
+    fn calculate_fallback_stat_value(&self, stat: S, params: &StatsCalculateParams) -> V;
 }
 
 pub type CalcChangedCoponents = Or<(
@@ -284,23 +301,67 @@ impl<'a> StatsCalculateParams<'a> {
     }
 }
 
-#[derive(Clone, Debug, Deref, DerefMut, Deserialize, From, Into, PartialEq, Reflect, Serialize)]
-pub struct GenericStats<S, V>(HashMap<S, V>)
+#[derive(Clone, Debug, PartialEq, Reflect)]
+pub struct GenericStats<S, V>
 where
     S: StatTrait,
-    V: Num + Copy + Default;
+    V: StatValue,
+{
+    values: Vec<V>,
+    #[reflect(ignore)]
+    _phantom: std::marker::PhantomData<S>,
+}
 
 impl<S, V> Default for GenericStats<S, V>
 where
     S: StatTrait,
-    V: Num + Copy + Default,
+    V: StatValue,
 {
     fn default() -> Self {
-        let mut stats = HashMap::new();
-        for stat in S::iter() {
-            stats.insert(stat, V::default());
+        let base_class = BaseClass::default();
+        let values = S::iter()
+            .map(|stat| stat.default_value(base_class))
+            .collect();
+        Self {
+            values,
+            _phantom: std::marker::PhantomData,
         }
-        Self(stats)
+    }
+}
+
+impl<S, V> Index<S> for GenericStats<S, V>
+where
+    S: StatTrait,
+    V: StatValue,
+{
+    type Output = V;
+
+    fn index(&self, stat: S) -> &Self::Output {
+        let index: usize = stat.into();
+        debug_assert!(
+            index < self.values.len(),
+            "Stat index {} out of bounds (len: {})",
+            index,
+            self.values.len()
+        );
+        &self.values[index]
+    }
+}
+
+impl<S, V> IndexMut<S> for GenericStats<S, V>
+where
+    S: StatTrait,
+    V: StatValue,
+{
+    fn index_mut(&mut self, stat: S) -> &mut Self::Output {
+        let index: usize = stat.into();
+        debug_assert!(
+            index < self.values.len(),
+            "Stat index {} out of bounds (len: {})",
+            index,
+            self.values.len()
+        );
+        &mut self.values[index]
     }
 }
 
@@ -309,14 +370,12 @@ where
     S: StatTrait,
     V: StatValue,
 {
-    fn empty() -> Self {
-        Self(HashMap::new())
-    }
-    fn get(&self, stat: &S) -> V {
-        self.0.get(stat).copied().unwrap_or_default()
+    fn get(&self, stat: S) -> V {
+        let index: usize = stat.into();
+        self.values.get(index).copied().unwrap_or_default()
     }
 
-    fn typed<T>(&self, stat: &S) -> T
+    fn typed<T>(&self, stat: S) -> T
     where
         T: Default + From<V>,
     {
@@ -324,37 +383,40 @@ where
     }
 
     fn merge(&mut self, other: &Self) {
-        for (stat, value) in other.0.iter() {
-            self.0.insert(*stat, *value);
+        for (self_val, &other_val) in self.values.iter_mut().zip(other.values.iter()) {
+            if other_val != V::zero() {
+                *self_val = other_val;
+            }
         }
     }
 
-    fn has(&self, stat: S) -> bool {
-        self.0.contains_key(&stat)
-    }
-
     fn insert(&mut self, stat: S, value: V) {
-        self.0.insert(stat, value);
+        let index: usize = stat.into();
+        self.values[index] = value;
     }
 
     fn changed(&self, other: &Self) -> bool {
-        self.0 != other.0
+        self.values != other.values
     }
 
     fn changed_variants(&self, other: &Self) -> Vec<S> {
-        let mut changed = Vec::with_capacity(self.0.len() / 2 + 1);
-        for (stat, value) in self.0.iter() {
-            if other.get(stat) != *value {
-                changed.push(*stat);
+        let mut changed = Vec::with_capacity(S::COUNT);
+        for stat in S::iter() {
+            if self[stat] != other[stat] {
+                changed.push(stat);
             }
         }
         changed
     }
 
-    fn calculate_fallback_stat_value(&self, stat: &S, params: &StatsCalculateParams) -> V {
+    fn iter(&self) -> impl Iterator<Item = (S, V)> {
+        S::iter().map(move |stat| (stat, self.get(stat)))
+    }
+
+    fn calculate_fallback_stat_value(&self, stat: S, params: &StatsCalculateParams) -> V {
         // First, check if there's a top-level set modifier for this stat
         // For example, equipped weapon sets attack power directly
-        if let Some(modifier_value) = params.stat_modifiers().get_top_set_modifier((*stat).into()) {
+        if let Some(modifier_value) = params.stat_modifiers().get_top_set_modifier(stat.into()) {
             return V::from(modifier_value).unwrap_or_default();
         }
 
@@ -373,13 +435,13 @@ where
         params: StatsCalculateParams,
         base_stats: Option<&Self>,
     ) -> Option<Vec<S>> {
-        let mut changed_stats = Vec::with_capacity(self.0.len() / 2 + 1);
+        let mut changed_stats = Vec::with_capacity(S::COUNT / 2 + 1);
         for stat in S::calculate_iter() {
             // Determine initial value from base stats or calculate fallback value
             let init_value = if let Some(base_stats) = base_stats {
-                base_stats.get(&stat)
+                base_stats.get(stat)
             } else {
-                self.calculate_fallback_stat_value(&stat, &params)
+                self.calculate_fallback_stat_value(stat, &params)
             };
             let init_value = NumCast::from(init_value).unwrap_or(0.0f32);
             let computed_value = params
@@ -389,14 +451,20 @@ where
 
             // Apply stat capping for current/max stat pairs (e.g., current HP vs max HP)
             if let Some(max_stat) = stat.has_max_pair() {
-                let max_value = self.get(&max_stat);
+                let max_value = self.get(max_stat);
                 if final_value > max_value {
                     final_value = max_value;
                 }
             }
 
+            // Ensure stat does not exceed its defined maximum value
+            let stat_max_value = stat.max_value(params.base_class());
+            if final_value > stat_max_value {
+                final_value = stat_max_value;
+            }
+
             // Update stat if value changed and track changes for notification purposes
-            if self.get(&stat) != final_value {
+            if self.get(stat) != final_value {
                 changed_stats.push(stat);
                 self.insert(stat, final_value);
             }
@@ -409,6 +477,72 @@ where
     }
 }
 
+impl<S, V> Serialize for GenericStats<S, V>
+where
+    S: StatTrait,
+    V: StatValue + Serialize,
+{
+    fn serialize<Ser>(&self, serializer: Ser) -> Result<Ser::Ok, Ser::Error>
+    where
+        Ser: serde::Serializer,
+    {
+        use serde::ser::SerializeMap;
+        let mut map = serializer.serialize_map(Some(S::COUNT))?;
+        for stat in S::iter() {
+            let value = self[stat];
+            if value != V::default() {
+                map.serialize_entry(&stat, &value)?;
+            }
+        }
+        map.end()
+    }
+}
+
+impl<'de, S, V> Deserialize<'de> for GenericStats<S, V>
+where
+    S: StatTrait,
+    V: StatValue + Deserialize<'de>,
+{
+    fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
+    where
+        D: serde::Deserializer<'de>,
+    {
+        use serde::de::{MapAccess, Visitor};
+        use std::fmt;
+
+        struct GenericStatsVisitor<S, V> {
+            _phantom: std::marker::PhantomData<(S, V)>,
+        }
+
+        impl<'de, S, V> Visitor<'de> for GenericStatsVisitor<S, V>
+        where
+            S: StatTrait,
+            V: StatValue + Deserialize<'de>,
+        {
+            type Value = GenericStats<S, V>;
+
+            fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
+                formatter.write_str("a map of stat variants to values")
+            }
+
+            fn visit_map<A>(self, mut map: A) -> Result<Self::Value, A::Error>
+            where
+                A: MapAccess<'de>,
+            {
+                let mut stats = GenericStats::default();
+                while let Some((key, value)) = map.next_entry::<S, V>()? {
+                    stats[key] = value;
+                }
+                Ok(stats)
+            }
+        }
+
+        deserializer.deserialize_map(GenericStatsVisitor {
+            _phantom: std::marker::PhantomData,
+        })
+    }
+}
+
 pub type FloatStats<S> = GenericStats<S, f32>;
 pub type DoubleStats<S> = GenericStats<S, f64>;
 pub type IntStats<S> = GenericStats<S, i32>;
@@ -417,7 +551,7 @@ pub type UIntStats<S> = GenericStats<S, u32>;
 impl<S, V> AsRef<GenericStats<S, V>> for GenericStats<S, V>
 where
     S: StatTrait,
-    V: Num + Copy + Default,
+    V: StatValue,
 {
     fn as_ref(&self) -> &GenericStats<S, V> {
         self
