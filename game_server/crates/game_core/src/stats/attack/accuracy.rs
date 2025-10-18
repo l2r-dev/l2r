@@ -9,7 +9,7 @@ pub struct Accuracy(u32);
 impl Accuracy {
     pub const MAX: u32 = 500;
     pub fn formula(args: FormulaArguments) -> f32 {
-        let dex = args.primal.get(&PrimalStat::DEX) as f32;
+        let dex = args.primal.get(PrimalStat::DEX) as f32;
         let level: f32 = args.level.into();
 
         if level > 77.0 {

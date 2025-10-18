@@ -27,22 +27,22 @@ impl L2rServerPacket for ResponseCharCreateMenu {
             buffer.u32(race.into());
             buffer.u32(base_class.into());
             buffer.u32(0x46);
-            buffer.u32(primal_stats.get(&PrimalStat::STR));
+            buffer.u32(primal_stats.get(PrimalStat::STR));
             buffer.u32(0x0A);
             buffer.u32(0x46);
-            buffer.u32(primal_stats.get(&PrimalStat::DEX));
+            buffer.u32(primal_stats.get(PrimalStat::DEX));
             buffer.u32(0x0A);
             buffer.u32(0x46);
-            buffer.u32(primal_stats.get(&PrimalStat::CON));
+            buffer.u32(primal_stats.get(PrimalStat::CON));
             buffer.u32(0x0A);
             buffer.u32(0x46);
-            buffer.u32(primal_stats.get(&PrimalStat::INT));
+            buffer.u32(primal_stats.get(PrimalStat::INT));
             buffer.u32(0x0A);
             buffer.u32(0x46);
-            buffer.u32(primal_stats.get(&PrimalStat::WIT));
+            buffer.u32(primal_stats.get(PrimalStat::WIT));
             buffer.u32(0x0A);
             buffer.u32(0x46);
-            buffer.u32(primal_stats.get(&PrimalStat::MEN));
+            buffer.u32(primal_stats.get(PrimalStat::MEN));
             buffer.u32(0x0A);
         }
         buffer

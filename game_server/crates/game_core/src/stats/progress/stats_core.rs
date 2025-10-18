@@ -2,8 +2,9 @@ use super::{level::Level, level_exp_data::LEVEL_EXP_DATA};
 use crate::stats::{DoubleStats, StatTrait, StatValue, Stats};
 use bevy::prelude::*;
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::EnumIter;
+use strum::{EnumCount, EnumIter};
 
 pub type LevelExp = (u32, u64);
 pub type Exp = u64;
@@ -23,7 +24,7 @@ impl ProgressStats {
     }
 
     pub fn exp(&self) -> Exp {
-        self.get(&ProgressStat::Exp) as Exp
+        self.get(ProgressStat::Exp) as Exp
     }
 
     pub fn exp_percent(&self, level: Level) -> f64 {
@@ -38,11 +39,11 @@ impl ProgressStats {
     }
 
     pub fn sp(&self) -> Sp {
-        self.get(&ProgressStat::Sp) as Sp
+        self.get(ProgressStat::Sp) as Sp
     }
 
     pub fn vitality_points(&self) -> u32 {
-        self.get(&ProgressStat::VitalityPoints) as u32
+        self.get(ProgressStat::VitalityPoints) as u32
     }
 
     pub fn set_exp(&mut self, exp: Exp) {
@@ -143,7 +144,22 @@ impl ProgressStats {
     }
 }
 
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    TryFromPrimitive,
+    IntoPrimitive,
+    EnumCount,
+)]
+#[repr(usize)]
 pub enum ProgressStat {
     Exp,
     Sp,

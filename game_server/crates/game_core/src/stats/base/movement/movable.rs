@@ -72,7 +72,7 @@ impl Movable {
         self.move_type = move_type;
     }
 
-    pub fn speed_stat(&self, move_type: &MovementStat) -> u32 {
+    pub fn speed_stat(&self, move_type: MovementStat) -> u32 {
         self.speed.get(move_type)
     }
 
@@ -84,22 +84,22 @@ impl Movable {
         let speed = match self.move_type {
             MovementStat::Run => {
                 if self.steps < Movable::STEPS_TO_RUN {
-                    self.speed.get(&MovementStat::Walk)
+                    self.speed.get(MovementStat::Walk)
                 } else {
-                    self.speed.get(&self.move_type)
+                    self.speed.get(self.move_type)
                 }
             }
-            _ => self.speed.get(&self.move_type),
+            _ => self.speed.get(self.move_type),
         };
         speed
     }
 
     pub fn multiplier(&self, base: &MovementStats) -> f64 {
         let base_speed = match self.move_type {
-            MovementStat::Run => base.get(&MovementStat::Run),
-            _ => base.get(&MovementStat::Walk),
+            MovementStat::Run => base.get(MovementStat::Run),
+            _ => base.get(MovementStat::Walk),
         };
-        self.speed.get(&self.move_type) as f64 * (1.0 / base_speed as f64)
+        self.speed.get(self.move_type) as f64 * (1.0 / base_speed as f64)
     }
 }
 

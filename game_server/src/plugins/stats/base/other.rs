@@ -50,9 +50,9 @@ fn update_abnormal_slots(
     let entity = trigger.target();
     let (mut abnormal_effects, self_stats) = query.get_mut(entity)?;
 
-    abnormal_effects.set_max_buffs(self_stats.get(&OtherStat::MaxBuffSlots) as usize);
-    abnormal_effects.set_max_debuffs(self_stats.get(&OtherStat::MaxDebuffSlots) as usize);
-    abnormal_effects.set_max_rhythm(self_stats.get(&OtherStat::MaxRhythmSlots) as usize);
+    abnormal_effects.set_max_buffs(self_stats.get(OtherStat::MaxBuffSlots) as usize);
+    abnormal_effects.set_max_debuffs(self_stats.get(OtherStat::MaxDebuffSlots) as usize);
+    abnormal_effects.set_max_rhythm(self_stats.get(OtherStat::MaxRhythmSlots) as usize);
 
     Ok(())
 }

@@ -1,8 +1,9 @@
 use bevy::{log, prelude::*};
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
 use std::sync::LazyLock;
-use strum::EnumIter;
+use strum::{EnumCount, EnumIter, FromRepr};
 
 mod constitution;
 mod dexterity;
@@ -37,8 +38,23 @@ pub trait PrimalStatTrait {
     fn bonus(&self) -> f32;
 }
 
-#[repr(u8)]
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[repr(usize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+    FromRepr,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    TryFromPrimitive,
+    IntoPrimitive,
+)]
 pub enum PrimalStat {
     #[serde(alias = "str")]
     STR,

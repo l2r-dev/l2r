@@ -1,6 +1,7 @@
 use crate::stats::{StatTrait, StatValue, Stats, UIntStats};
-use bevy::{platform::collections::HashMap, prelude::*};
+use bevy::prelude::*;
 use l2r_core::model::{base_class::BaseClass, generic_number::GenericNumber};
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use sea_orm::{
     TryGetError, TryGetable, Value,
     sea_query::{ArrayType, ColumnType, ValueType, ValueTypeErr},
@@ -11,7 +12,7 @@ use std::{
     ops::{Add, AddAssign, Div, Mul, Sub, SubAssign},
     str::FromStr,
 };
-use strum::{EnumIter, IntoEnumIterator};
+use strum::{EnumCount, EnumIter};
 
 #[derive(
     Clone,
@@ -95,20 +96,22 @@ impl ValueType for Level {
 l2r_core::impl_std_math_operations!(Level, u32);
 l2r_core::impl_primitive_conversions!(Level, u32);
 
-#[derive(Clone, Component, Debug, Deref, DerefMut, Deserialize, PartialEq, Reflect, Serialize)]
+#[derive(
+    Clone, Component, Debug, Deref, DerefMut, Default, Deserialize, PartialEq, Reflect, Serialize,
+)]
 #[serde(default)]
 pub struct ProgressLevelStats(UIntStats<ProgressLevelStat>);
 
 impl ProgressLevelStats {
     pub fn new(level: Level) -> Self {
-        let mut stats = HashMap::default();
-        stats.insert(ProgressLevelStat::Level, level.into());
-        stats.insert(ProgressLevelStat::PrevLevel, level.into());
-        Self(stats.into())
+        let mut stats = ProgressLevelStats::default();
+        stats[ProgressLevelStat::Level] = level.into();
+        stats[ProgressLevelStat::PrevLevel] = level.into();
+        stats
     }
 
     pub fn level(&self) -> Level {
-        self.get(&ProgressLevelStat::Level).into()
+        self.get(ProgressLevelStat::Level).into()
     }
 
     pub fn set_level(&mut self, level: Level) {
@@ -120,21 +123,26 @@ impl ProgressLevelStats {
     }
 
     pub fn prev_level(&self) -> Level {
-        self.get(&ProgressLevelStat::PrevLevel).into()
+        self.get(ProgressLevelStat::PrevLevel).into()
     }
 }
 
-impl Default for ProgressLevelStats {
-    fn default() -> Self {
-        let mut stats = HashMap::default();
-        for stat in ProgressLevelStat::iter() {
-            stats.insert(stat, stat.default_value::<u32>(BaseClass::default()));
-        }
-        Self(stats.into())
-    }
-}
-
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    TryFromPrimitive,
+    IntoPrimitive,
+)]
+#[repr(usize)]
 pub enum ProgressLevelStat {
     Level,
     PrevLevel,

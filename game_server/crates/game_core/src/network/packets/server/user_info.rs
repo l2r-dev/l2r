@@ -121,23 +121,23 @@ impl L2rServerPacket for UserInfo {
     fn buffer(self) -> ServerPacketBuffer {
         let mut buffer = ServerPacketBuffer::new();
 
-        let p_atk = self.attack_stats.typed::<PAtk>(&AttackStat::PAtk);
-        let p_atk_spd = self.attack_stats.typed::<PAtkSpd>(&AttackStat::PAtkSpd);
+        let p_atk = self.attack_stats.typed::<PAtk>(AttackStat::PAtk);
+        let p_atk_spd = self.attack_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);
         let p_atk_spd_multiplier = p_atk_spd.get_attack_speed_multiplier();
-        let accuracy = self.attack_stats.get(&AttackStat::Accuracy) as u32;
-        let m_atk = self.attack_stats.typed::<MAtk>(&AttackStat::MAtk);
-        let cast_spd = self.attack_stats.get(&AttackStat::CastSpd) as u32;
-        let physical_critical_rate = self.critical_stats.get(&CriticalStat::CriticalRate) as u32;
-        let p_def = self.defence_stats.get(&DefenceStat::PDef) as u32;
-        let m_def = self.defence_stats.get(&DefenceStat::MDef) as u32;
-        let evasion = self.defence_stats.get(&DefenceStat::Evasion) as u32;
+        let accuracy = self.attack_stats.get(AttackStat::Accuracy) as u32;
+        let m_atk = self.attack_stats.typed::<MAtk>(AttackStat::MAtk);
+        let cast_spd = self.attack_stats.get(AttackStat::CastSpd) as u32;
+        let physical_critical_rate = self.critical_stats.get(CriticalStat::CriticalRate) as u32;
+        let p_def = self.defence_stats.get(DefenceStat::PDef) as u32;
+        let m_def = self.defence_stats.get(DefenceStat::MDef) as u32;
+        let evasion = self.defence_stats.get(DefenceStat::Evasion) as u32;
 
-        let max_hp = self.vitals_stats.get(&VitalsStat::MaxHp) as u32;
-        let current_hp = self.vitals_stats.get(&VitalsStat::Hp) as u32;
-        let max_mp = self.vitals_stats.get(&VitalsStat::MaxMp) as u32;
-        let current_mp = self.vitals_stats.get(&VitalsStat::Mp) as u32;
-        let max_cp = self.vitals_stats.get(&VitalsStat::MaxCp) as u32;
-        let current_cp = self.vitals_stats.get(&VitalsStat::Cp) as u32;
+        let max_hp = self.vitals_stats.get(VitalsStat::MaxHp) as u32;
+        let current_hp = self.vitals_stats.get(VitalsStat::Hp) as u32;
+        let max_mp = self.vitals_stats.get(VitalsStat::MaxMp) as u32;
+        let current_mp = self.vitals_stats.get(VitalsStat::Mp) as u32;
+        let max_cp = self.vitals_stats.get(VitalsStat::MaxCp) as u32;
+        let current_cp = self.vitals_stats.get(VitalsStat::Cp) as u32;
         let char_level = self.progress_level.level();
 
         buffer.extend(GameServerPacketCodes::USER_INFO.to_le_bytes());
@@ -151,12 +151,12 @@ impl L2rServerPacket for UserInfo {
         buffer.u32(char_level.into());
         buffer.u64(self.progress_stats.exp());
         buffer.f64(self.progress_stats.exp_percent(char_level));
-        buffer.u32(self.primal_stats.get(&PrimalStat::STR));
-        buffer.u32(self.primal_stats.get(&PrimalStat::DEX));
-        buffer.u32(self.primal_stats.get(&PrimalStat::CON));
-        buffer.u32(self.primal_stats.get(&PrimalStat::INT));
-        buffer.u32(self.primal_stats.get(&PrimalStat::WIT));
-        buffer.u32(self.primal_stats.get(&PrimalStat::MEN));
+        buffer.u32(self.primal_stats.get(PrimalStat::STR));
+        buffer.u32(self.primal_stats.get(PrimalStat::DEX));
+        buffer.u32(self.primal_stats.get(PrimalStat::CON));
+        buffer.u32(self.primal_stats.get(PrimalStat::INT));
+        buffer.u32(self.primal_stats.get(PrimalStat::WIT));
+        buffer.u32(self.primal_stats.get(PrimalStat::MEN));
         buffer.u32(max_hp);
         buffer.u32(current_hp);
         buffer.u32(max_mp);
@@ -210,14 +210,14 @@ impl L2rServerPacket for UserInfo {
         buffer.u32(m_def);
         buffer.u32(0); // pvp flag
         buffer.u32(self.pvp_stats.karma);
-        buffer.u32(self.base_speed.get(&MovementStat::Run));
-        buffer.u32(self.base_speed.get(&MovementStat::Walk));
-        buffer.u32(self.base_speed.get(&MovementStat::Swim)); // swim run speed
-        buffer.u32(self.base_speed.get(&MovementStat::Swim)); // swim walk speed
-        buffer.u32(self.base_speed.get(&MovementStat::FastFly)); // fly run speed
-        buffer.u32(self.base_speed.get(&MovementStat::Fly)); // fly walk speed
-        buffer.u32(self.base_speed.get(&MovementStat::FastFly)); // fly2 run speed
-        buffer.u32(self.base_speed.get(&MovementStat::Fly)); // fly2 walk speed
+        buffer.u32(self.base_speed.get(MovementStat::Run));
+        buffer.u32(self.base_speed.get(MovementStat::Walk));
+        buffer.u32(self.base_speed.get(MovementStat::Swim)); // swim run speed
+        buffer.u32(self.base_speed.get(MovementStat::Swim)); // swim walk speed
+        buffer.u32(self.base_speed.get(MovementStat::FastFly)); // fly run speed
+        buffer.u32(self.base_speed.get(MovementStat::Fly)); // fly walk speed
+        buffer.u32(self.base_speed.get(MovementStat::FastFly)); // fly2 run speed
+        buffer.u32(self.base_speed.get(MovementStat::Fly)); // fly2 walk speed
         buffer.f64(self.movable.multiplier(&self.base_speed));
         buffer.f64(p_atk_spd_multiplier);
         buffer.f64(self.collision_radius);
@@ -240,7 +240,7 @@ impl L2rServerPacket for UserInfo {
         buffer.u16(0); // cubics size
         buffer.bool(false); // is in party match room
         buffer.u32_from_bool(false); // is invisible
-        buffer.u8(self.movable.move_state().into());
+        buffer.u8_from_usize(self.movable.move_state().into());
         buffer.u32(0); // clan priveleges
         buffer.u16(25); // recommendations left
         buffer.u16(5); // recommendations received

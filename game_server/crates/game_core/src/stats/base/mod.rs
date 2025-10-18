@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::EnumIter;
+use strum::{EnumCount, EnumIter};
 
 mod class;
 mod movement;
@@ -13,13 +13,14 @@ pub use movement::*;
 pub use primal::*;
 pub use vitals::*;
 
-#[repr(u8)]
+#[repr(usize)]
 #[derive(
     Clone,
     Copy,
     Debug,
     Deserialize,
     EnumIter,
+    EnumCount,
     Eq,
     Hash,
     PartialEq,

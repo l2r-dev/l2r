@@ -43,13 +43,13 @@ pub fn handle_abnormal_effect_effects_over_time(
             let mut remove_candidates = vec![];
             for (skill_id, eot) in timers.effects_over_time_mut() {
                 eot.timer_mut().tick(Duration::from_secs_f32(time_spent));
-                if let Vitals(vitals_stat) = eot.as_ref()
+                if let Vitals(vitals_stat) = eot.stat_kind()
                     && queries.vitals_stats.get_mut(entity)?.get(vitals_stat) <= 0.0
                 {
                     remove_candidates.push(skill_id);
                 }
                 if eot.timer().finished() {
-                    match eot.as_ref() {
+                    match eot.stat_kind() {
                         Vitals(vitals_stat) => {
                             queries
                                 .vitals_stats

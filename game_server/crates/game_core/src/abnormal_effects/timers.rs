@@ -104,6 +104,10 @@ impl EffectOverTime {
     pub fn operation(&self) -> &StatsOperation<f32> {
         &self.operation
     }
+
+    pub fn stat_kind(&self) -> StatKind {
+        self.stat
+    }
 }
 
 impl AsRef<StatKind> for EffectOverTime {

@@ -28,20 +28,20 @@ pub fn calc_p_atk_damage(
         return 0.0;
     };
 
-    let mut p_atk = attack_stats.get(&AttackStat::PAtk);
-    let mut p_def = defence_stats.get(&DefenceStat::PDef);
+    let mut p_atk = attack_stats.get(AttackStat::PAtk);
+    let mut p_def = defence_stats.get(DefenceStat::PDef);
 
     // Check if it's PvP or PvE
     let is_pvp = attacker.get::<Character>().is_some() && target.get::<Character>().is_some();
     let is_pve = attacker.get::<Character>().is_some() && target.get::<NpcKind>().is_some();
 
     if is_pvp {
-        p_def *= defence_stats.get(&DefenceStat::PvpPDefBonus);
+        p_def *= defence_stats.get(DefenceStat::PvpPDefBonus);
     }
 
     match shield_result {
         ShieldResult::Succeed => {
-            p_def += defence_stats.get(&DefenceStat::ShieldDefence);
+            p_def += defence_stats.get(DefenceStat::ShieldDefence);
         }
         ShieldResult::PerfectBlock => {
             return 1.0; // Perfect block always deals 1 damage
@@ -63,8 +63,8 @@ pub fn calc_p_atk_damage(
     let base_damage = (76.0 * p_atk * relative_dir.attack_bonus()) / p_def;
 
     let mut damage = if critical {
-        let crit_damage_base = attacker_critical_stats.get(&CriticalStat::CriticalDamage);
-        let defence_crit_damage = defence_stats.get(&DefenceStat::DefenceCriticalDamage);
+        let crit_damage_base = attacker_critical_stats.get(CriticalStat::CriticalDamage);
+        let defence_crit_damage = defence_stats.get(DefenceStat::DefenceCriticalDamage);
 
         let mut critical_damage = 2.0
             * crit_damage_base
@@ -72,10 +72,10 @@ pub fn calc_p_atk_damage(
             * defence_crit_damage
             * base_damage;
 
-        let crit_damage_add = attacker_critical_stats.get(&CriticalStat::CriticalDamageAdditional);
+        let crit_damage_add = attacker_critical_stats.get(CriticalStat::CriticalDamageAdditional);
         critical_damage += (crit_damage_add * 77.0) / p_def;
 
-        critical_damage += defence_stats.get(&DefenceStat::DefenceCriticalDamageAdditional);
+        critical_damage += defence_stats.get(DefenceStat::DefenceCriticalDamageAdditional);
 
         critical_damage
     } else {
@@ -93,7 +93,7 @@ pub fn calc_p_atk_damage(
     }
 
     if is_pvp {
-        damage *= attack_stats.get(&AttackStat::PvpPAtkBonus);
+        damage *= attack_stats.get(AttackStat::PvpPAtkBonus);
     }
 
     // TODO: Apply attribute bonus
@@ -152,18 +152,18 @@ fn apply_pve_bonuses(
                 && let Ok(item_info) = table.get_item_info(weapon.item().id(), assets)
             {
                 if item_info.kind().bow_or_crossbow() {
-                    damage *= attack_stats.get(&AttackStat::PveBowPAtkBonus);
+                    damage *= attack_stats.get(AttackStat::PveBowPAtkBonus);
                 } else {
-                    damage *= attack_stats.get(&AttackStat::PvePAtkBonus);
+                    damage *= attack_stats.get(AttackStat::PvePAtkBonus);
                 }
             }
         } else {
             // No weapon equipped
-            damage *= attack_stats.get(&AttackStat::PvePAtkBonus);
+            damage *= attack_stats.get(AttackStat::PvePAtkBonus);
         }
     } else {
         // No paper doll
-        damage *= attack_stats.get(&AttackStat::PvePAtkBonus);
+        damage *= attack_stats.get(AttackStat::PvePAtkBonus);
     }
 
     damage = apply_level_diff_penalty(attacker, target, world, damage, critical);

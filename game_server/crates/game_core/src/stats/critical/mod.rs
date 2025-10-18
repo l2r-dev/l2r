@@ -1,7 +1,8 @@
 use bevy::prelude::*;
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::EnumIter;
+use strum::{EnumIter, FromRepr};
 
 mod critical_rate;
 mod magic_critical_rate;
@@ -36,9 +37,9 @@ pub struct CriticalStats(FloatStats<CriticalStat>);
 impl CriticalStats {
     pub fn positional_damage(&self, direction: RelativeDirection) -> f32 {
         match direction {
-            RelativeDirection::Back => self.get(&CriticalStat::CriticalDamageBack),
-            RelativeDirection::Side => self.get(&CriticalStat::CriticalDamageSide),
-            RelativeDirection::Face => self.get(&CriticalStat::CriticalDamageFront),
+            RelativeDirection::Back => self.get(CriticalStat::CriticalDamageBack),
+            RelativeDirection::Side => self.get(CriticalStat::CriticalDamageSide),
+            RelativeDirection::Face => self.get(CriticalStat::CriticalDamageFront),
         }
     }
 }
@@ -49,8 +50,23 @@ impl AsRef<GenericStats<CriticalStat, f32>> for CriticalStats {
     }
 }
 
-#[repr(u8)]
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[repr(usize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+    FromRepr,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    TryFromPrimitive,
+    IntoPrimitive,
+)]
 pub enum CriticalStat {
     CriticalDamage,
     CriticalDamageFront,

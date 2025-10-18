@@ -24,7 +24,7 @@ impl PAtkSpd {
     }
 
     pub fn formula(args: FormulaArguments) -> f32 {
-        let dex_bonus = args.primal.typed::<DEX>(&super::PrimalStat::DEX).bonus();
+        let dex_bonus = args.primal.typed::<DEX>(super::PrimalStat::DEX).bonus();
         args.base_value * dex_bonus
     }
 }

@@ -14,7 +14,7 @@ impl L2rServerPacket for ChangeMoveType {
         let mut buffer = ServerPacketBuffer::new();
         buffer.extend(GameServerPacketCodes::CHANGE_MOVE_TYPE.to_le_bytes());
         buffer.u32(self.object_id.into());
-        buffer.u32(self.move_type.into());
+        buffer.u32_from_usize(self.move_type.into());
         buffer.u8(0x00);
         buffer
     }

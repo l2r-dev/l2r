@@ -49,7 +49,7 @@ fn check_alive(
     vitals: Query<(Entity, Ref<VitalsStats>), (With<Dead>, Changed<VitalsStats>)>,
 ) {
     vitals.par_iter().for_each(|(entity, vitals_stats)| {
-        if vitals_stats.get(&VitalsStat::Hp) > 0.0 {
+        if vitals_stats.get(VitalsStat::Hp) > 0.0 {
             par_commands.command_scope(|mut commands| {
                 commands.entity(entity).remove::<Dead>();
             });

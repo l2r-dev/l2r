@@ -213,22 +213,22 @@ fn handle_known_added(
 
         status_update.add(
             StatusUpdateKind::CurHp,
-            character.vitals_stats.get(&VitalsStat::Hp) as u32,
+            character.vitals_stats.get(VitalsStat::Hp) as u32,
         );
 
         status_update.add(
             StatusUpdateKind::MaxHp,
-            character.vitals_stats.get(&VitalsStat::MaxHp) as u32,
+            character.vitals_stats.get(VitalsStat::MaxHp) as u32,
         );
 
         status_update.add(
             StatusUpdateKind::CurCp,
-            character.vitals_stats.get(&VitalsStat::Cp) as u32,
+            character.vitals_stats.get(VitalsStat::Cp) as u32,
         );
 
         status_update.add(
             StatusUpdateKind::MaxCp,
-            character.vitals_stats.get(&VitalsStat::MaxCp) as u32,
+            character.vitals_stats.get(VitalsStat::MaxCp) as u32,
         );
 
         commands.trigger_targets(GameServerPacket::from(status_update), knower);
@@ -244,11 +244,11 @@ fn handle_known_added(
         let mut status_update = StatusUpdate::new(*npc.object_id);
         status_update.add(
             StatusUpdateKind::CurHp,
-            npc.condition.get(&VitalsStat::Hp) as u32,
+            npc.condition.get(VitalsStat::Hp) as u32,
         );
         status_update.add(
             StatusUpdateKind::MaxHp,
-            npc.condition.get(&VitalsStat::MaxHp) as u32,
+            npc.condition.get(VitalsStat::MaxHp) as u32,
         );
         commands.trigger_targets(GameServerPacket::from(status_update), knower);
     }

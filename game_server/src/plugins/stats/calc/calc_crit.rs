@@ -20,7 +20,7 @@ pub fn calc_crit(attacker: EntityRef, target: EntityRef, world: &World) -> bool 
 fn calculate_crit_rate(attacker_entity: EntityRef, target_entity: EntityRef) -> f32 {
     let base_crit_rate = attacker_entity
         .get::<CriticalStats>()
-        .map(|s| s.get(&CriticalStat::CriticalRate))
+        .map(|s| s.get(CriticalStat::CriticalRate))
         .unwrap_or_default();
 
     let attacker_transform = attacker_entity.get::<Transform>();
@@ -34,9 +34,9 @@ fn calculate_crit_rate(attacker_entity: EntityRef, target_entity: EntityRef) -> 
         let positional_crit_rate = attacker_entity
             .get::<CriticalStats>()
             .map(|s| match relative_dir {
-                RelativeDirection::Face => s.get(&CriticalStat::CriticalRateFront),
-                RelativeDirection::Back => s.get(&CriticalStat::CriticalRateBack),
-                RelativeDirection::Side => s.get(&CriticalStat::CriticalRateSide),
+                RelativeDirection::Face => s.get(CriticalStat::CriticalRateFront),
+                RelativeDirection::Back => s.get(CriticalStat::CriticalRateBack),
+                RelativeDirection::Side => s.get(CriticalStat::CriticalRateSide),
             })
             .unwrap_or(1.0);
 
@@ -50,11 +50,11 @@ fn calculate_defence_crit_rate(target_entity: EntityRef) -> f32 {
     let defence_stats = target_entity.get::<DefenceStats>();
 
     let defence_crit_rate = defence_stats
-        .map(|s| s.get(&DefenceStat::DefenceCriticalRate))
+        .map(|s| s.get(DefenceStat::DefenceCriticalRate))
         .unwrap_or_default();
 
     let defence_crit_rate_add = defence_stats
-        .map(|s| s.get(&DefenceStat::DefenceCriticalRateAdditional))
+        .map(|s| s.get(DefenceStat::DefenceCriticalRateAdditional))
         .unwrap_or_default();
 
     defence_crit_rate + defence_crit_rate_add
