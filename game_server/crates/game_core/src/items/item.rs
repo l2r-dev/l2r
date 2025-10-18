@@ -288,6 +288,10 @@ impl Item {
         self.count = count;
     }
 
+    pub fn dec_count(&mut self) {
+        self.count -= 1;
+    }
+
     pub fn set_prev_count(&mut self, count: u64) {
         self.prev_count = count;
     }

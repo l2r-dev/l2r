@@ -31,6 +31,6 @@ pub enum BodyPart {
     AccessoryBoth = 0x080000,
     RightBracelet = 0x100000,
     LeftBracelet = 0x200000,
-    Deco = 0x400000,
+    Talisman = 0x400000,
     Belt = 0x10000000,
 }

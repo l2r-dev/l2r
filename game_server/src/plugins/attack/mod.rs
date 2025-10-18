@@ -12,30 +12,35 @@ use bevy::{
     },
     prelude::*,
 };
+use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     animation::{Animation, AnimationTimer},
     attack::{
         AttackAllowed, AttackComponentsPlugin, AttackHit, AttackTimer, Attacking, AttackingList,
-        Dead, HitInfo, InCombat,
+        ConsumeArrow, Dead, HitInfo, InCombat,
     },
     items,
     items::{
         BluntType, DaggerType, DollSlot, Grade, Item, ItemsDataQuery, Kind, PaperDoll, Soulshot,
-        SwordType, WeaponKind,
+        SwordType, UniqueItem, UpdateType, WeaponKind,
     },
     movement::{LookAt, MoveToEntity},
     network::{
         broadcast::ServerPacketBroadcast,
-        packets::server::{Attack, GameServerPacket, SystemMessage},
+        packets::server::{
+            Attack, GameServerPacket, InventoryUpdate, SetupGauge, SetupGaugeColor, SystemMessage,
+        },
     },
     npc,
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
+    object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
     stats::*,
 };
 use map::{WorldMap, WorldMapQuery};
-use spatial::{FlatDistance, TransformRelativeDirection};
+use smallvec::smallvec;
+use spatial::FlatDistance;
 use state::GameMechanicsSystems;
+use std::{f32::consts::PI, time::Duration};
 use system_messages;
 
 pub struct AttackPlugin;
@@ -53,6 +58,10 @@ impl Plugin for AttackPlugin {
         .add_systems(
             FixedUpdate,
             process_attack_hits.in_set(GameMechanicsSystems::Attacking),
+        )
+        .add_systems(
+            FixedUpdate,
+            consume_arrow.in_set(GameMechanicsSystems::Attacking),
         )
         .add_systems(
             FixedUpdate,
@@ -91,7 +100,7 @@ struct AttackingFilter {
 
 #[derive(QueryData)]
 #[query_data(mutable)]
-struct EnemyQuery<'a> {
+struct TargetQuery<'a> {
     entity: Entity,
     object_id: Ref<'a, ObjectId>,
     transform: Ref<'a, Transform>,
@@ -99,7 +108,7 @@ struct EnemyQuery<'a> {
 
 fn attack_entity(
     attacking_objects: Query<AttackingQuery, AttackingFilter>,
-    target_objects: Query<EnemyQuery, Without<Dead>>,
+    target_objects: Query<TargetQuery, (Without<Dead>, With<VitalsStats>)>,
     world: &World,
     shot_used: Query<Ref<Soulshot>>,
     par_commands: ParallelCommands,
@@ -125,11 +134,8 @@ fn attack_entity(
                         commands
                             .entity(attacker.entity)
                             .remove::<AttackAllowed>()
-                            .try_insert(InCombat::default());
-                        commands
-                            .entity(attacker.entity)
-                            .remove::<MoveToEntity>()
-                            .try_insert(InCombat::default());
+                            .remove::<MoveToEntity>();
+
                         commands
                             .entity(aiming_target.entity)
                             .try_insert(InCombat::default());
@@ -143,10 +149,10 @@ fn attack_entity(
                         return;
                     };
 
-                    let attack_interval = attacker
-                        .attack_stats
-                        .typed::<PAtkSpd>(&AttackStat::PAtkSpd)
-                        .attack_interval();
+                    let attacker_attack_speed =
+                        attacker.attack_stats.typed::<PAtkSpd>(&AttackStat::PAtkSpd);
+
+                    let attack_interval = attacker_attack_speed.attack_interval();
 
                     let weapon = attacker
                         .paper_doll
@@ -154,6 +160,8 @@ fn attack_entity(
                         .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
 
                     let mut second_attack_interval_multiplier = None;
+                    let mut weapon_reuse_delay = None;
+                    let mut is_bow = false;
 
                     let interval_multiplier = if let Some(weapon) = weapon
                         && let Some(items_data_assets) =
@@ -203,15 +211,58 @@ fn attack_entity(
 
                             WeaponKind::Pole => 0.6,
 
-                            WeaponKind::Bow
-                            | WeaponKind::Crossbow
-                            | WeaponKind::Etc
-                            | WeaponKind::FortFlag
-                            | WeaponKind::FishingRod => 0.5,
+                            WeaponKind::Bow | WeaponKind::Crossbow => {
+                                is_bow = true;
+                                weapon_reuse_delay = weapon.reuse_delay;
+
+                                1.0
+                            }
+
+                            WeaponKind::Etc | WeaponKind::FortFlag | WeaponKind::FishingRod => 0.5,
                         }
                     } else {
                         0.5
                     };
+
+                    if is_bow && let Some(paperdoll) = attacker.paper_doll {
+                        let arrow_count = paperdoll[DollSlot::LeftHand]
+                            .map(|v| v.item().count())
+                            .unwrap_or(0);
+
+                        if arrow_count == 0 {
+                            par_commands.command_scope(|mut commands| {
+                                commands.trigger_targets(
+                                    GameServerPacket::from(SystemMessage::new(
+                                        system_messages::Id::YouHaveRunOutOfArrows,
+                                        vec![],
+                                    )),
+                                    attacker.entity,
+                                );
+
+                                commands.entity(attacker.entity).remove::<Attacking>();
+                            });
+
+                            return;
+                        }
+
+                        par_commands.command_scope(|mut commands| {
+                            commands.entity(attacker.entity).try_insert(ConsumeArrow);
+
+                            commands.trigger_targets(
+                                GameServerPacket::from(SystemMessage::new(
+                                    system_messages::Id::YouCarefullyNockAnArrow,
+                                    vec![],
+                                )),
+                                attacker.entity,
+                            );
+                        });
+                    }
+
+                    par_commands.command_scope(|mut commands| {
+                        commands
+                            .entity(attacker.entity)
+                            .try_insert(InCombat::default());
+                    });
 
                     let weapon_entity = weapon.and_then(|weapon| {
                         items
@@ -241,6 +292,23 @@ fn attack_entity(
                         .unwrap_or_default()
                         .round() as u32;
 
+                    if let Some(weapon_reuse_delay) = weapon_reuse_delay {
+                        let atck_speed: u32 = attacker_attack_speed.into();
+
+                        let delay = weapon_reuse_delay as f32 / atck_speed as f32 * 0.5;
+
+                        par_commands.command_scope(|mut commands| {
+                            commands.trigger_targets(
+                                GameServerPacket::from(SetupGauge::new(
+                                    *attacker.object_id,
+                                    SetupGaugeColor::Red,
+                                    Duration::from_secs_f32(delay),
+                                )),
+                                attacker.entity,
+                            );
+                        });
+                    }
+
                     let attack_hit = if max_targets_count > 1 {
                         let mut hits = vec![];
 
@@ -261,12 +329,18 @@ fn attack_entity(
 
                         max_targets_count -= 1;
 
-                        let angle = attacker_ref
+                        let attack_angle = attacker_ref
                             .get::<AttackStats>()
                             .map(|s| s.get(&AttackStat::PAtkWidth))
                             .unwrap_or_default()
                             .round();
 
+                        //TODO: Хак! Сейчас если персонаж убегает от цели и нажать атаку, он все еще будет смотреть от нее
+                        // видимо нужно поменять порядок систем
+                        let attack_vector =
+                            attacker.transform.translation - aiming_target.transform.translation;
+
+                        //TODO: Хак! aoe_targets_query это перебор по всем сущностям вообще. Нужна структура, чтобы быстро находить кто вокруг
                         for next_target in &target_objects {
                             if next_target.entity == aiming_target.entity {
                                 continue;
@@ -289,10 +363,14 @@ fn attack_entity(
                                 continue;
                             }
 
-                            if !next_target
-                                .transform
-                                .is_within_angle_relative_to(&attacker.transform, angle)
-                            {
+                            let next_target_vector =
+                                attacker.transform.translation - next_target.transform.translation;
+
+                            //TODO: в калькуляторе переводить в PI все градусы
+                            let angle_in_degrees =
+                                attack_vector.angle_between(next_target_vector) * 180. / PI;
+
+                            if angle_in_degrees > attack_angle {
                                 continue;
                             }
 
@@ -300,15 +378,17 @@ fn attack_entity(
 
                             let hit_info =
                                 calc_hit_info(soulshot_used, attacker_ref, next_target_ref, world);
+
                             attack_info.add_hit(
                                 hit_info.dmg as u32,
-                                *aiming_target.object_id,
+                                *next_target.object_id,
                                 hit_info.miss,
                                 hit_info.crit,
                                 0,
                                 soulshot_used,
                                 soulshot_grade,
                             );
+
                             hits.push((next_target.entity, hit_info));
 
                             if max_targets_count == 1 {
@@ -447,6 +527,49 @@ fn attack_entity(
     });
     Ok(())
 }
+
+fn consume_arrow(
+    mut commands: Commands,
+    mut characters: Query<(Entity, Mut<PaperDoll>), With<ConsumeArrow>>,
+    mut items: Query<(Ref<ObjectId>, Mut<Item>)>,
+    object_id_manager: Res<ObjectIdManager>,
+) {
+    for (char_entity, mut paperdoll) in characters.iter_mut() {
+        commands.entity(char_entity).remove::<ConsumeArrow>();
+
+        let Some(left_hand_item_uniq) = &mut paperdoll[DollSlot::LeftHand] else {
+            continue;
+        };
+
+        let left_hand_item_object_id = left_hand_item_uniq.object_id();
+
+        let Ok((_, mut left_hand_item)) =
+            items.by_object_id_mut(left_hand_item_object_id, object_id_manager.as_ref())
+        else {
+            continue;
+        };
+
+        left_hand_item_uniq.item_mut().dec_count();
+        left_hand_item.dec_count();
+
+        let item = *left_hand_item;
+        commands.spawn_task(move || async move {
+            item.update_count_in_database(left_hand_item_object_id)
+                .await
+        });
+
+        let unique_item = UniqueItem::new(left_hand_item_object_id, item);
+
+        commands.trigger_targets(
+            GameServerPacket::from(InventoryUpdate::new(
+                smallvec![unique_item],
+                UpdateType::Modify,
+            )),
+            char_entity,
+        );
+    }
+}
+
 #[derive(QueryData)]
 #[query_data(mutable)]
 struct ProcessAttackHitsQuery<'a> {
@@ -594,6 +717,7 @@ fn process_hit(
         if npc.get(target_entity).is_err() {
             let cur_hp = target_vital_stats.get(&VitalsStat::Hp);
 
+            //TODO: переделать на immortal компонент
             if info.dmg > cur_hp {
                 info.dmg = cur_hp - 10.;
             }

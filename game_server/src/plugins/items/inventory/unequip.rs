@@ -2,8 +2,8 @@ use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     items::{
-        self, ITEMS_OPERATION_STACK, Item, ItemLocationVariant, ItemsDataQuery, ItemsUnEquipped,
-        Kind, PaperDoll, UnequipItems, UniqueItem, UpdateType,
+        self, DollSlot, ITEMS_OPERATION_STACK, Item, ItemLocationVariant, ItemsDataQuery,
+        ItemsUnEquipped, Kind, PaperDoll, UnequipItems, UniqueItem, UpdateType,
     },
     network::packets::server::{
         GameServerPacket, InventoryUpdate, SendCharInfo, SendUserInfo, SystemMessage,
@@ -39,6 +39,7 @@ fn handle_unequip_items(
     mut items: Query<Mut<Item>>,
     mut paperdolls: Query<Mut<PaperDoll>>,
     mut items_unequipped: EventWriter<ItemsUnEquipped>,
+    items_data_query: ItemsDataQuery,
     object_id_manager: Res<ObjectIdManager>,
 ) {
     for (event, _event_id) in unequip_events.par_read() {
@@ -60,6 +61,18 @@ fn handle_unequip_items(
             item.unequip();
             paperdoll.unequip(item_object_id);
             unequipped_items.push(item_object_id);
+
+            if let Ok(template) = items_data_query.get_item_info(item.id()) {
+                if template.kind().bow_or_crossbow()
+                    && let Some(left_item) = paperdoll[DollSlot::LeftHand]
+                    && let Ok(mut left_uniq_item) =
+                        items.by_object_id_mut(left_item.object_id(), object_id_manager.as_ref())
+                {
+                    left_uniq_item.unequip();
+                    paperdoll.unequip(left_item.object_id());
+                    unequipped_items.push(left_item.object_id());
+                }
+            }
         }
 
         if !unequipped_items.is_empty() {

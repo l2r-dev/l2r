@@ -1,4 +1,4 @@
-use super::{Id, ItemInfo};
+use super::{Id, ItemInfo, UniqueItem};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
 use l2r_core::{assets::ASSET_DIR, chronicles::CHRONICLE, model::generic_number::GenericNumber};
 use serde::{Deserialize, Serialize};
@@ -71,5 +71,29 @@ impl<'w> ItemsDataQuery<'w> {
     pub fn get_item_info(&self, id: Id) -> Result<&ItemInfo> {
         self.items_data_table
             .get_item_info(id, &self.items_data_assets)
+    }
+
+    pub fn item_info_from_uniq(&self, unique_item: &Option<UniqueItem>) -> Option<&ItemInfo> {
+        let Some(unique_item) = unique_item else {
+            return None;
+        };
+
+        self.items_data_table
+            .get_item_info(unique_item.item().id(), &self.items_data_assets)
+            .ok()
+    }
+}
+
+pub trait GetItemInfoFromUniqItem {
+    fn item_info_from_uniq(&self, unique_item: &Option<UniqueItem>) -> Option<&ItemInfo>;
+}
+
+impl GetItemInfoFromUniqItem for (&Assets<ItemsInfo>, &ItemsDataTable) {
+    fn item_info_from_uniq(&self, unique_item: &Option<UniqueItem>) -> Option<&ItemInfo> {
+        let Some(unique_item) = unique_item else {
+            return None;
+        };
+
+        self.1.get_item_info(unique_item.item().id(), self.0).ok()
     }
 }

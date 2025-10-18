@@ -21,12 +21,13 @@ impl Plugin for AttackComponentsPlugin {
         app.register_type::<Attackable>()
             .register_type::<Attacking>()
             .register_type::<AttackAllowed>()
-            .register_type::<HitInfo>()
             .register_type::<AttackHit>()
             .register_type::<AttackCommonHit>()
             .register_type::<AttackMultiHit>()
             .register_type::<AttackingList>()
             .register_type::<AttackTimer>()
+            .register_type::<ConsumeArrow>()
+            .register_type::<HitInfo>()
             .register_type::<InCombat>();
     }
 }
@@ -53,6 +54,9 @@ pub struct HitInfo {
     pub shield: ShieldResult,
     pub dmg: f32,
 }
+
+#[derive(Component, Default, Reflect)]
+pub struct ConsumeArrow;
 
 #[derive(Component, Reflect)]
 pub enum AttackHit {

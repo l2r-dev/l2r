@@ -55,6 +55,8 @@ pub struct NpcInfo {
     pub is_flying: u32,
     pub color_effect: u32,
     pub abnormal_visual_effect_special: u32,
+    //TODO: для дебага
+    pub entity: Entity,
 }
 
 impl fmt::Debug for NpcInfo {
@@ -105,7 +107,11 @@ impl L2rServerPacket for NpcInfo {
         buffer.i32(-1);
         buffer.str(&self.name);
         buffer.i32(-1);
-        buffer.str(&self.title);
+        //TODO: для дебага
+        buffer.str(&format!(
+            "{} {} {}",
+            self.title, self.object_id, self.entity
+        ));
         buffer.u32(self.title_color);
         buffer.u32_from_bool(self.pvp_flag);
         buffer.u32(self.karma);
@@ -202,6 +208,7 @@ impl NpcInfo {
             enchant_effect: 0,
             color_effect: 0,
             abnormal_visual_effect_special: 0,
+            entity: npc.entity,
         }
     }
 }

@@ -1,5 +1,5 @@
-use super::{ItemsDataTable, UsableItem, WeaponKind, kind::SortingKind};
-use crate::stats::*;
+use super::{AmmoKind, ConsumableKind, ItemsDataTable, UsableItem, WeaponKind, kind::SortingKind};
+use crate::{items, stats::*};
 use bevy::{log, platform::collections::HashMap, prelude::*};
 use bevy_defer::{AsyncAccess, AsyncWorld};
 use serde::{Deserialize, Serialize};
@@ -219,6 +219,34 @@ impl ItemInfo {
                     .unwrap_or(false)
             })
             .unwrap_or(false)
+    }
+
+    pub fn ammo_matches(&self, other: &Self) -> bool {
+        if self.grade != other.grade {
+            return false;
+        }
+
+        let items::Kind::Weapon(v) = self.kind else {
+            return false;
+        };
+
+        match v.kind {
+            WeaponKind::Bow => {
+                matches!(
+                    other.kind,
+                    items::Kind::Consumable(ConsumableKind::Ammo(AmmoKind::Arrow))
+                )
+            }
+
+            WeaponKind::Crossbow => {
+                matches!(
+                    other.kind,
+                    items::Kind::Consumable(ConsumableKind::Ammo(AmmoKind::Bolt))
+                )
+            }
+
+            _ => false,
+        }
     }
 
     pub fn premium(&self) -> bool {

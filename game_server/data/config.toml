@@ -1,6 +1,6 @@
 [general]
-database_url = "postgresql://l2r:l2r@localhost/l2r"
-redis_url = "redis://localhost:6379/0"
+database_url = "postgresql://l2r:l2r@localhost:14034/l2r"
+redis_url = "redis://localhost:14033/0"
 max_players = 300
 
 [gameplay]

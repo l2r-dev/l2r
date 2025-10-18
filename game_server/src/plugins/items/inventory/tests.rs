@@ -428,9 +428,9 @@ mod paperdoll_tests {
         );
 
         // Setting and getting items in different slots
-        paperdoll.equip(BodyPart::Head, Some(item1));
-        paperdoll.equip(BodyPart::Chest, Some(item2));
-        paperdoll.equip(BodyPart::Legs, Some(item3));
+        paperdoll.equip(BodyPart::Head, Some(item1), false);
+        paperdoll.equip(BodyPart::Chest, Some(item2), false);
+        paperdoll.equip(BodyPart::Legs, Some(item3), false);
 
         assert_eq!(paperdoll.get(DollSlot::Head), Some(item1));
         assert_eq!(paperdoll.get(DollSlot::Chest), Some(item2));

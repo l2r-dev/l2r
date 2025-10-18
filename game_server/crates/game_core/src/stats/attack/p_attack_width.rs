@@ -7,7 +7,7 @@ use serde::{Deserialize, Serialize};
 )]
 pub struct PAtkWidth(u32);
 impl PAtkWidth {
-    pub const BASE: u32 = 120;
+    pub const BASE: u32 = 90;
 }
 
 impl From<f32> for PAtkWidth {

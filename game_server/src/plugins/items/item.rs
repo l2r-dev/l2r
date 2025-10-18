@@ -1,7 +1,7 @@
 use bevy::{log, prelude::*};
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
-    items::{Inventory, Item, ItemLocation, UniqueItem, UpdateType},
+    items::{Inventory, Item, ItemLocation, PaperDoll, UniqueItem, UpdateType},
     network::packets::server::{GameServerPacket, InventoryUpdate},
     object_id::{ObjectId, ObjectIdManager, QueryByObjectIdMut},
 };
@@ -9,7 +9,7 @@ use smallvec::smallvec;
 
 pub fn count_changed(
     mut query: Query<(Entity, Ref<ObjectId>, Mut<Item>), Changed<Item>>,
-    mut inventories: Query<(Entity, Mut<Inventory>)>,
+    mut inventories: Query<(Entity, Mut<Inventory>, Mut<PaperDoll>)>,
     mut commands: Commands,
     object_id_manager: Res<ObjectIdManager>,
 ) -> Result<()> {
@@ -32,10 +32,14 @@ pub fn count_changed(
                     continue;
                 };
 
-                if let Ok((inventory_entity, mut inventory)) =
+                if let Ok((inventory_entity, mut inventory, mut paperdoll)) =
                     inventories.by_object_id_mut(character_object_id, object_id_manager.as_ref())
                 {
                     if item.count() == 0 {
+                        if let ItemLocation::PaperDoll(slot) = item.location() {
+                            paperdoll[slot] = None;
+                        }
+
                         inventory.remove_item(*item_object_id)?;
 
                         Some((
