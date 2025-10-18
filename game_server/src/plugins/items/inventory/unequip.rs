@@ -64,14 +64,14 @@ fn handle_unequip_items(
 
             if let Ok(template) = items_data_query.get_item_info(item.id())
                 && template.kind().bow_or_crossbow()
-                    && let Some(left_item) = paperdoll[DollSlot::LeftHand]
-                    && let Ok(mut left_uniq_item) =
-                        items.by_object_id_mut(left_item.object_id(), object_id_manager.as_ref())
-                {
-                    left_uniq_item.unequip();
-                    paperdoll.unequip(left_item.object_id());
-                    unequipped_items.push(left_item.object_id());
-                }
+                && let Some(left_item) = paperdoll[DollSlot::LeftHand]
+                && let Ok(mut left_uniq_item) =
+                    items.by_object_id_mut(left_item.object_id(), object_id_manager.as_ref())
+            {
+                left_uniq_item.unequip();
+                paperdoll.unequip(left_item.object_id());
+                unequipped_items.push(left_item.object_id());
+            }
         }
 
         if !unequipped_items.is_empty() {

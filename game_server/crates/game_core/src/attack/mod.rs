@@ -28,7 +28,8 @@ impl Plugin for AttackComponentsPlugin {
             .register_type::<AttackTimer>()
             .register_type::<ConsumeArrow>()
             .register_type::<HitInfo>()
-            .register_type::<InCombat>();
+            .register_type::<InCombat>()
+            .register_type::<WeaponReuse>();
     }
 }
 
@@ -57,6 +58,26 @@ pub struct HitInfo {
 
 #[derive(Component, Default, Reflect)]
 pub struct ConsumeArrow;
+
+#[derive(Component, Default, Reflect)]
+pub struct WeaponReuse {
+    timer: Timer,
+}
+
+impl WeaponReuse {
+    pub fn new(duration: Duration) -> Self {
+        Self {
+            timer: Timer::new(duration, TimerMode::Once),
+        }
+    }
+
+    ///Returns true if finished
+    pub fn proceed_timer(&mut self, dt: Duration) -> bool {
+        self.timer.tick(dt);
+
+        self.timer.finished()
+    }
+}
 
 #[derive(Component, Reflect)]
 pub enum AttackHit {

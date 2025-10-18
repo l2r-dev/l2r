@@ -17,7 +17,7 @@ use game_core::{
     animation::{Animation, AnimationTimer},
     attack::{
         AttackAllowed, AttackComponentsPlugin, AttackHit, AttackTimer, Attacking, AttackingList,
-        ConsumeArrow, Dead, HitInfo, InCombat,
+        ConsumeArrow, Dead, HitInfo, InCombat, WeaponReuse,
     },
     items::{
         DollSlot, Grade, Item, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem, UpdateType,
@@ -39,7 +39,7 @@ use map::{WorldMap, WorldMapQuery};
 use smallvec::smallvec;
 use spatial::FlatDistance;
 use state::GameMechanicsSystems;
-use std::{f32::consts::PI, time::Duration};
+use std::{f32::consts::PI, ops::Sub, time::Duration};
 use system_messages;
 
 pub struct AttackPlugin;
@@ -61,6 +61,10 @@ impl Plugin for AttackPlugin {
         .add_systems(
             FixedUpdate,
             consume_arrow.in_set(GameMechanicsSystems::Attacking),
+        )
+        .add_systems(
+            FixedUpdate,
+            proceed_weapon_reuse.in_set(GameMechanicsSystems::Attacking),
         )
         .add_systems(
             FixedUpdate,
@@ -86,6 +90,7 @@ struct AttackingQuery<'a> {
     target: Ref<'a, Attacking>,
     paper_doll: Option<Ref<'a, PaperDoll>>,
     move_to: Option<Ref<'a, MoveToEntity>>,
+    weapon_reuse: Option<Ref<'a, WeaponReuse>>,
 }
 
 #[derive(QueryFilter)]
@@ -183,6 +188,11 @@ fn attack_entity(
                         (0.5, None, None, false)
                     };
 
+                    if is_bow && attacker.weapon_reuse.is_some() {
+                        //TODO: возможно стоит обрабатывать лук в отдельной системе. Проверить
+                        return;
+                    }
+
                     if is_bow && let Some(paperdoll) = attacker.paper_doll {
                         let arrow_count = paperdoll[DollSlot::LeftHand]
                             .map(|v| v.item().count())
@@ -249,26 +259,35 @@ fn attack_entity(
                         .unwrap_or_default()
                         .round() as u32;
 
+                    //TODO: найти точную формулу, проверить должна ли пропадать красная полоска при смене оружия
                     if let Some(weapon_reuse_delay) = weapon_reuse_delay {
                         let atck_speed: u32 = attacker_attack_speed.into();
 
-                        let delay = weapon_reuse_delay as f32 / atck_speed as f32 * 0.5;
+                        let duration = Duration::from_millis(
+                            weapon_reuse_delay as u64 * 345 / atck_speed as u64,
+                        ) + attack_interval;
 
                         par_commands.command_scope(|mut commands| {
+                            const SERVER_DURATION_REDUCE: Duration = Duration::from_millis(70);
+
                             commands.trigger_targets(
                                 GameServerPacket::from(SetupGauge::new(
                                     *attacker.object_id,
                                     SetupGaugeColor::Red,
-                                    Duration::from_secs_f32(delay),
+                                    duration,
                                 )),
                                 attacker.entity,
                             );
+
+                            commands
+                                .entity(attacker.entity)
+                                .try_insert(WeaponReuse::new(duration.sub(SERVER_DURATION_REDUCE)));
                         });
                     }
 
                     let attack_hit = if max_targets_count > 1 {
                         let mut hits = vec![];
-                      
+
                         let attack_interval = attacker
                             .attack_stats
                             .typed::<PAtkSpd>(AttackStat::PAtkSpd)
@@ -488,6 +507,20 @@ fn attack_entity(
         }
     });
     Ok(())
+}
+
+fn proceed_weapon_reuse(
+    time: Res<Time>,
+    mut commands: Commands,
+    mut characters: Query<(Entity, Mut<WeaponReuse>)>,
+) {
+    for (character, mut reuse) in characters.iter_mut() {
+        if !reuse.proceed_timer(time.delta()) {
+            continue;
+        }
+
+        commands.entity(character).remove::<WeaponReuse>();
+    }
 }
 
 fn consume_arrow(

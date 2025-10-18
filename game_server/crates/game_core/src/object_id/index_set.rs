@@ -21,10 +21,7 @@ impl ObjectIdIndexSet {
 
     /// Creates an empty `ObjectIdIndexSet` with the specified capacity.
     pub fn with_capacity(n: usize) -> Self {
-        Self(IndexSet::with_capacity_and_hasher(
-            n,
-            FixedHasher,
-        ))
+        Self(IndexSet::with_capacity_and_hasher(n, FixedHasher))
     }
 }
 

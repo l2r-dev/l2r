@@ -81,7 +81,6 @@ impl Movable {
     }
 
     pub fn speed(&self) -> u32 {
-        
         match self.move_type {
             MovementStat::Run => {
                 if self.steps < Movable::STEPS_TO_RUN {
