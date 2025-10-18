@@ -13,7 +13,7 @@ pub use movement::*;
 pub use primal::*;
 pub use vitals::*;
 
-#[repr(u8)]
+#[repr(usize)]
 #[derive(
     Clone,
     Copy,

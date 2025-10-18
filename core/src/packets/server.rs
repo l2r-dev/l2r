@@ -35,6 +35,10 @@ impl ServerPacketBuffer {
         self.push(value)
     }
 
+    pub fn u8_from_usize(&mut self, value: usize) {
+        self.u8(value as u8)
+    }
+
     pub fn bool(&mut self, value: bool) {
         self.u8(u8::from(value))
     }

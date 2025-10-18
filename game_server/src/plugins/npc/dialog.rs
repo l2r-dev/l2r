@@ -223,31 +223,31 @@ fn send_npc_info_dialog(
     context.insert("is_dead", &npc.dead.is_some());
 
     // Vitals information
-    context.insert("hp", &npc.condition.get(&VitalsStat::Hp));
-    context.insert("max_hp", &npc.condition.get(&VitalsStat::MaxHp));
-    context.insert("mp", &npc.condition.get(&VitalsStat::Mp));
-    context.insert("max_mp", &npc.condition.get(&VitalsStat::MaxMp));
-    context.insert("cp", &npc.condition.get(&VitalsStat::Cp));
-    context.insert("max_cp", &npc.condition.get(&VitalsStat::MaxCp));
+    context.insert("hp", &npc.condition.get(VitalsStat::Hp));
+    context.insert("max_hp", &npc.condition.get(VitalsStat::MaxHp));
+    context.insert("mp", &npc.condition.get(VitalsStat::Mp));
+    context.insert("max_mp", &npc.condition.get(VitalsStat::MaxMp));
+    context.insert("cp", &npc.condition.get(VitalsStat::Cp));
+    context.insert("max_cp", &npc.condition.get(VitalsStat::MaxCp));
 
     // Attack stats
-    context.insert("p_atk", &npc.attack_stats.get(&AttackStat::PAtk));
-    context.insert("m_atk", &npc.attack_stats.get(&AttackStat::MAtk));
-    context.insert("atk_spd", &npc.attack_stats.get(&AttackStat::PAtkSpd));
-    context.insert("cast_spd", &npc.attack_stats.get(&AttackStat::CastSpd));
+    context.insert("p_atk", &npc.attack_stats.get(AttackStat::PAtk));
+    context.insert("m_atk", &npc.attack_stats.get(AttackStat::MAtk));
+    context.insert("atk_spd", &npc.attack_stats.get(AttackStat::PAtkSpd));
+    context.insert("cast_spd", &npc.attack_stats.get(AttackStat::CastSpd));
 
     // Defence stats
-    context.insert("p_def", &npc.defence_stats.get(&DefenceStat::PDef));
-    context.insert("m_def", &npc.defence_stats.get(&DefenceStat::MDef));
+    context.insert("p_def", &npc.defence_stats.get(DefenceStat::PDef));
+    context.insert("m_def", &npc.defence_stats.get(DefenceStat::MDef));
 
     // Critical stats
     context.insert(
         "crit_rate",
-        &npc.critical_stats.get(&CriticalStat::CriticalRate),
+        &npc.critical_stats.get(CriticalStat::CriticalRate),
     );
     context.insert(
         "crit_damage",
-        &npc.critical_stats.get(&CriticalStat::CriticalDamage),
+        &npc.critical_stats.get(CriticalStat::CriticalDamage),
     );
 
     // Progress rewards

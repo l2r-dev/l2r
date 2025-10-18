@@ -2,6 +2,7 @@ use crate::{network::packets::server::StatusUpdate, object_id::ObjectId, stats::
 use bevy::platform::collections::HashMap;
 use bevy_common_assets::json::JsonAssetPlugin;
 use derive_more::From;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use sea_orm::{
     TryGetError, TryGetable, Value,
     sea_query::{self, ValueType, ValueTypeErr},
@@ -175,13 +176,13 @@ impl VitalsStats {
         self.change_flags.consume()
     }
 
-    pub fn get(&self, stat: &VitalsStat) -> f32 {
+    pub fn get(&self, stat: VitalsStat) -> f32 {
         self.current.get(stat)
     }
 
     pub fn insert(&mut self, stat: VitalsStat, value: f32) {
         // Only mark as changed if the value actually changed
-        let current_value = self.current.get(&stat);
+        let current_value = self.current.get(stat);
         if current_value != value {
             self.current.insert(stat, value);
             self.change_flags.set_changed(stat);
@@ -194,12 +195,10 @@ impl VitalsStats {
     }
 
     pub fn merge(&mut self, other: &VitalsStats) {
-        for (stat, value) in other.current.iter() {
-            self.insert(*stat, *value);
-        }
+        self.current.merge(&other.current)
     }
 
-    pub fn percent_stat_damage(&mut self, stat: &VitalsStat, percent: f32) {
+    pub fn percent_stat_damage(&mut self, stat: VitalsStat, percent: f32) {
         let max = self.get(stat);
         let damage_amount = max * percent / 100.0;
         if damage_amount > 0.0 {
@@ -209,38 +208,38 @@ impl VitalsStats {
 
     pub fn damage(&mut self, damage: f32, damage_cp: bool) {
         let rest = if damage_cp {
-            self.stat_damage(&VitalsStat::Cp, damage)
+            self.stat_damage(VitalsStat::Cp, damage)
         } else {
             damage
         };
 
-        self.stat_damage(&VitalsStat::Hp, rest);
+        self.stat_damage(VitalsStat::Hp, rest);
     }
 
-    fn stat_damage(&mut self, stat: &VitalsStat, damage: f32) -> f32 {
+    fn stat_damage(&mut self, stat: VitalsStat, damage: f32) -> f32 {
         let current_value = self.get(stat);
         let rest = current_value - damage;
         if rest <= 0.0 {
             if current_value != 0.0 {
-                self.insert(*stat, 0.0);
+                self.insert(stat, 0.0);
             }
             -rest
         } else {
             if current_value != rest {
-                self.insert(*stat, rest);
+                self.insert(stat, rest);
             }
             0.0
         }
     }
 
     pub fn fill_current_from_max(&mut self) {
-        let max_hp = self.get(&VitalsStat::MaxHp);
-        let max_mp = self.get(&VitalsStat::MaxMp);
-        let max_cp = self.get(&VitalsStat::MaxCp);
+        let max_hp = self.get(VitalsStat::MaxHp);
+        let max_mp = self.get(VitalsStat::MaxMp);
+        let max_cp = self.get(VitalsStat::MaxCp);
 
-        let current_hp = self.get(&VitalsStat::Hp);
-        let current_mp = self.get(&VitalsStat::Mp);
-        let current_cp = self.get(&VitalsStat::Cp);
+        let current_hp = self.get(VitalsStat::Hp);
+        let current_mp = self.get(VitalsStat::Mp);
+        let current_cp = self.get(VitalsStat::Cp);
 
         if current_hp != max_hp {
             self.insert(VitalsStat::Hp, max_hp);
@@ -254,14 +253,14 @@ impl VitalsStats {
     }
 
     pub fn kill(&mut self) {
-        let current_hp = self.get(&VitalsStat::Hp);
+        let current_hp = self.get(VitalsStat::Hp);
         if current_hp != 0.0 {
             self.insert(VitalsStat::Hp, 0.0);
         }
     }
 
     pub fn dead(&self) -> bool {
-        self.get(&VitalsStat::Hp) <= 0.0
+        self.get(VitalsStat::Hp) <= 0.0
     }
 
     pub fn diff_status_update(&mut self, object_id: ObjectId) -> Option<StatusUpdate> {
@@ -277,7 +276,7 @@ impl VitalsStats {
                 | VitalsStat::MaxHp
                 | VitalsStat::MaxMp
                 | VitalsStat::MaxCp => {
-                    status_update.add(variant.into(), self.get(variant) as u32);
+                    status_update.add(variant.into(), self.get(*variant) as u32);
                 }
                 _ => {}
             }
@@ -286,22 +285,22 @@ impl VitalsStats {
         Some(status_update)
     }
 
-    pub fn current_max(&self, stat: &VitalsStat) -> Option<(f32, f32)> {
+    pub fn current_max(&self, stat: VitalsStat) -> Option<(f32, f32)> {
         let current_stat = stat.has_current()?;
-        Some((self.get(&current_stat), self.get(stat)))
+        Some((self.get(current_stat), self.get(stat)))
     }
 
     pub fn cp_hp_mp_current_max(&self) -> Option<((f32, f32), (f32, f32), (f32, f32))> {
         Some((
-            self.current_max(&VitalsStat::MaxCp)?,
-            self.current_max(&VitalsStat::MaxHp)?,
-            self.current_max(&VitalsStat::MaxMp)?,
+            self.current_max(VitalsStat::MaxCp)?,
+            self.current_max(VitalsStat::MaxHp)?,
+            self.current_max(VitalsStat::MaxMp)?,
         ))
     }
 
-    pub fn apply_operation(&mut self, stat: &VitalsStat, operation: &StatsOperation<f32>) {
+    pub fn apply_operation(&mut self, stat: VitalsStat, operation: &StatsOperation<f32>) {
         self.current.apply_operation(stat, operation);
-        self.change_flags.set_changed(*stat);
+        self.change_flags.set_changed(stat);
     }
 
     pub fn test_data() -> VitalsStats {
@@ -321,9 +320,9 @@ impl From<VitalsStats> for Value {
     fn from(stats: VitalsStats) -> Self {
         let mut db_stats = HashMap::new();
 
-        db_stats.insert(VitalsStat::Cp, stats.get(&VitalsStat::Cp));
-        db_stats.insert(VitalsStat::Hp, stats.get(&VitalsStat::Hp));
-        db_stats.insert(VitalsStat::Mp, stats.get(&VitalsStat::Mp));
+        db_stats.insert(VitalsStat::Cp, stats.get(VitalsStat::Cp));
+        db_stats.insert(VitalsStat::Hp, stats.get(VitalsStat::Hp));
+        db_stats.insert(VitalsStat::Mp, stats.get(VitalsStat::Mp));
 
         Value::Json(Some(Box::new(serde_json::to_value(db_stats).unwrap())))
     }
@@ -371,9 +370,22 @@ pub struct LeveledVitalsStats(HashMap<Level, VitalsStats>);
 #[derive(Default, Deref, DerefMut, From, Resource)]
 pub struct VitalsStatsHandlers(HashMap<ClassId, Handle<LeveledVitalsStats>>);
 
-#[repr(u8)]
+#[repr(usize)]
 #[derive(
-    Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize, Display,
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+    Display,
+    TryFromPrimitive,
+    IntoPrimitive,
+    EnumCount,
 )]
 pub enum VitalsStat {
     Hp,

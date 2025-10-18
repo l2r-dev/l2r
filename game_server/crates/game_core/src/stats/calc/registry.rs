@@ -1,5 +1,6 @@
 use super::StatModifiers;
 use crate::stats::*;
+use bevy::platform::collections::HashMap;
 
 #[derive(Default, Resource)]
 pub struct StatFormulaRegistry(
@@ -61,11 +62,12 @@ impl StatFormulaRegistry {
         self
     }
 
-    fn calculate_base<S: StatTrait>(&self, stat: S, forumla_arguments: FormulaArguments) -> f32 {
-        if let Some(formula) = self.0.get(&stat.into()) {
-            formula(forumla_arguments)
+    fn calculate_base<S: StatTrait>(&self, stat: S, formula_arguments: FormulaArguments) -> f32 {
+        let stat_kind: StatKind = stat.into();
+        if let Some(formula) = self.0.get(&stat_kind) {
+            formula(formula_arguments)
         } else {
-            forumla_arguments.base_value
+            formula_arguments.base_value
         }
     }
 

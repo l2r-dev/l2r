@@ -16,7 +16,7 @@ impl PAtk {
         }
     }
     pub fn formula(args: FormulaArguments) -> f32 {
-        let str_bonus = args.primal.typed::<STR>(&PrimalStat::STR).bonus();
+        let str_bonus = args.primal.typed::<STR>(PrimalStat::STR).bonus();
         args.base_value * str_bonus * StatFormulaRegistry::level_modifier(args.level)
     }
 }

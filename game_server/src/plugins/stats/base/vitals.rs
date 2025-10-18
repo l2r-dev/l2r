@@ -77,17 +77,17 @@ fn vitals_regeneration(
 
                 let vitals_multiplier = vitals_multiplier * config.gameplay().regen_rate;
 
-                let hp_regen = stats.get(&VitalsStat::HpRegen) * vitals_multiplier;
-                let mp_regen = stats.get(&VitalsStat::MpRegen) * vitals_multiplier;
-                let cp_regen = stats.get(&VitalsStat::CpRegen) * vitals_multiplier;
+                let hp_regen = stats.get(VitalsStat::HpRegen) * vitals_multiplier;
+                let mp_regen = stats.get(VitalsStat::MpRegen) * vitals_multiplier;
+                let cp_regen = stats.get(VitalsStat::CpRegen) * vitals_multiplier;
 
-                let current_hp = stats.get(&VitalsStat::Hp);
-                let current_mp = stats.get(&VitalsStat::Mp);
-                let current_cp = stats.get(&VitalsStat::Cp);
+                let current_hp = stats.get(VitalsStat::Hp);
+                let current_mp = stats.get(VitalsStat::Mp);
+                let current_cp = stats.get(VitalsStat::Cp);
 
-                let max_hp = stats.get(&VitalsStat::MaxHp);
-                let max_mp = stats.get(&VitalsStat::MaxMp);
-                let max_cp = stats.get(&VitalsStat::MaxCp);
+                let max_hp = stats.get(VitalsStat::MaxHp);
+                let max_mp = stats.get(VitalsStat::MaxMp);
+                let max_cp = stats.get(VitalsStat::MaxCp);
 
                 if current_hp < max_hp {
                     let new_hp = (current_hp + hp_regen).min(max_hp);
@@ -241,4 +241,128 @@ fn resurrect_handle(
         entity,
     );
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use l2r_core::{assets::ASSET_DIR, utils::get_base_path};
+    use serde_json::from_reader;
+    use std::{fs::File, io::BufReader};
+
+    #[test]
+    fn test_parse_single_vitals_stats() {
+        let mut path = get_base_path();
+        path.push(ASSET_DIR);
+        path.push("vitals_stats");
+        path.push(CHRONICLE);
+        path.push("Bladedancer.json");
+
+        let file = File::open(&path).unwrap_or_else(|_| panic!("Failed to open file: {:?}", path));
+        let reader = BufReader::new(file);
+
+        let vitals_stats: LeveledVitalsStats = from_reader(reader)
+            .unwrap_or_else(|e| panic!("Failed to parse vitals stats from {:?}: {}", path, e));
+
+        assert!(!vitals_stats.is_empty());
+
+        // Check that level 1 stats exist and have valid values
+        if let Some(level_1_stats) = vitals_stats.get(&Level::from(1)) {
+            println!("Level 1 stats found: {:?}", level_1_stats);
+            let max_hp = level_1_stats.get(VitalsStat::MaxHp);
+            let max_mp = level_1_stats.get(VitalsStat::MaxMp);
+            let max_cp = level_1_stats.get(VitalsStat::MaxCp);
+
+            log::info!(
+                "Level 1 Bladedancer stats: MaxHp={}, MaxMp={}, MaxCp={}",
+                max_hp,
+                max_mp,
+                max_cp
+            );
+
+            assert!(
+                max_hp > 0.0,
+                "MaxHp should be greater than 0, got {}",
+                max_hp
+            );
+            assert!(
+                max_mp > 0.0,
+                "MaxMp should be greater than 0, got {}",
+                max_mp
+            );
+            assert!(
+                max_cp > 0.0,
+                "MaxCp should be greater than 0, got {}",
+                max_cp
+            );
+        } else {
+            panic!("Level 1 stats not found");
+        }
+    }
+
+    #[test]
+    fn test_parse_all_vitals_stats() {
+        let mut vitals_dir = get_base_path();
+        vitals_dir.push(ASSET_DIR);
+        vitals_dir.push("vitals_stats");
+        vitals_dir.push(CHRONICLE);
+
+        let mut files_processed = 0;
+        for entry in std::fs::read_dir(&vitals_dir)
+            .unwrap_or_else(|_| panic!("Failed to read vitals_stats directory: {:?}", vitals_dir))
+        {
+            let entry = entry.expect("Failed to get entry");
+            let path = entry.path();
+
+            if path.extension().and_then(|s| s.to_str()) == Some("json") {
+                let file =
+                    File::open(&path).unwrap_or_else(|_| panic!("Failed to open file: {:?}", path));
+                let reader = BufReader::new(file);
+
+                let vitals_stats: LeveledVitalsStats = from_reader(reader).unwrap_or_else(|e| {
+                    panic!("Failed to parse vitals stats from {:?}: {}", path, e)
+                });
+
+                assert!(
+                    !vitals_stats.is_empty(),
+                    "Vitals stats should not be empty for {:?}",
+                    path
+                );
+
+                // Check level 1 stats for each class
+                if let Some(level_1_stats) = vitals_stats.get(&Level::from(1)) {
+                    let max_hp = level_1_stats.get(VitalsStat::MaxHp);
+                    let max_mp = level_1_stats.get(VitalsStat::MaxMp);
+                    let max_cp = level_1_stats.get(VitalsStat::MaxCp);
+
+                    assert!(
+                        max_hp > 0.0,
+                        "{:?}: MaxHp should be > 0, got {}",
+                        path.file_name(),
+                        max_hp
+                    );
+                    assert!(
+                        max_mp > 0.0,
+                        "{:?}: MaxMp should be > 0, got {}",
+                        path.file_name(),
+                        max_mp
+                    );
+                    assert!(
+                        max_cp > 0.0,
+                        "{:?}: MaxCp should be > 0, got {}",
+                        path.file_name(),
+                        max_cp
+                    );
+                }
+
+                files_processed += 1;
+            }
+        }
+
+        assert!(files_processed > 0, "No vitals stats files were processed");
+        log::info!(
+            "Successfully processed {} vitals stats files",
+            files_processed
+        );
+    }
 }

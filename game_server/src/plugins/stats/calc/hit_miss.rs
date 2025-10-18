@@ -6,12 +6,12 @@ use spatial::{HeightDifference, RelativeDirection, TransformRelativeDirection};
 pub fn calc_hit_miss(attacker: EntityRef, target: EntityRef, world: &World) -> bool {
     let accuracy = attacker
         .get::<AttackStats>()
-        .map(|s| s.get(&AttackStat::Accuracy))
+        .map(|s| s.get(AttackStat::Accuracy))
         .unwrap_or_default();
 
     let evasion = target
         .get::<DefenceStats>()
-        .map(|s| s.get(&DefenceStat::Evasion))
+        .map(|s| s.get(DefenceStat::Evasion))
         .unwrap_or_default();
 
     let condition_bonus = get_condition_bonus(attacker, target, world);

@@ -113,7 +113,7 @@ fn attack_entity(
                     .translation
                     .flat_distance(&enemy.transform.translation);
 
-                let range = attacker.attack_stats.get(&AttackStat::PAtkRange);
+                let range = attacker.attack_stats.get(AttackStat::PAtkRange);
                 if distance <= range {
                     par_commands.command_scope(|mut commands| {
                         commands.trigger_targets(LookAt(enemy.entity), attacker.entity);
@@ -204,7 +204,7 @@ fn attack_entity(
 
                             let attack_interval = attacker
                                 .attack_stats
-                                .typed::<PAtkSpd>(&AttackStat::PAtkSpd)
+                                .typed::<PAtkSpd>(AttackStat::PAtkSpd)
                                 .attack_interval();
 
                             // TODO: Must depend on weapon type
@@ -418,7 +418,7 @@ fn setup_attack_timers(
 ) {
     for (entity, stats) in query.iter() {
         let attack_interval = stats
-            .typed::<PAtkSpd>(&AttackStat::PAtkSpd)
+            .typed::<PAtkSpd>(AttackStat::PAtkSpd)
             .attack_interval();
 
         commands

@@ -1,9 +1,9 @@
 use crate::stats::*;
 use bevy::platform::collections::HashMap;
 use l2r_core::model::base_class::BaseClass;
-use num_enum::IntoPrimitive;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::{Display, EnumIter};
+use strum::{Display, EnumCount, EnumIter};
 
 mod movable;
 
@@ -36,9 +36,11 @@ impl Plugin for MovementStatsComponentsPlugin {
     PartialEq,
     Serialize,
     Reflect,
+    EnumCount,
     IntoPrimitive,
+    TryFromPrimitive,
 )]
-#[repr(u32)]
+#[repr(usize)]
 pub enum MovementStat {
     Walk,
     #[default]
@@ -60,7 +62,7 @@ impl StatTrait for MovementStat {
 }
 
 #[derive(Clone, Copy, Debug, Default, Display, Eq, Hash, IntoPrimitive, PartialEq, Reflect)]
-#[repr(u8)]
+#[repr(usize)]
 pub enum MoveState {
     #[default]
     Ground,
@@ -89,7 +91,7 @@ impl AsRef<GenericStats<MovementStat, u32>> for MovementStats {
 
 impl MovementStats {
     fn formula(args: FormulaArguments) -> f32 {
-        let dex_bonus = args.primal.typed::<DEX>(&PrimalStat::DEX).bonus();
+        let dex_bonus = args.primal.typed::<DEX>(PrimalStat::DEX).bonus();
         args.base_value * dex_bonus
     }
 }

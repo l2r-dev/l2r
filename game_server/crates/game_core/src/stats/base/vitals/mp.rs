@@ -20,7 +20,7 @@ impl Mp {
             return args.base_value;
         }
 
-        let con_bonus = args.primal.typed::<CON>(&PrimalStat::CON).bonus();
+        let con_bonus = args.primal.typed::<CON>(PrimalStat::CON).bonus();
         args.base_value * con_bonus
     }
 }

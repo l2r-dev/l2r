@@ -1,5 +1,6 @@
 use crate::stats::*;
 use l2r_core::model::base_class::BaseClass;
+use num_enum::{IntoPrimitive, TryFromPrimitive};
 use strum::EnumIter;
 
 mod max_buff_slots;
@@ -22,25 +23,28 @@ impl Plugin for OtherStatsComponentsPlugin {
     }
 }
 
-#[derive(Clone, Component, Debug, Deref, DerefMut, PartialEq, Reflect)]
+#[derive(Clone, Component, Debug, Default, Deref, DerefMut, PartialEq, Reflect)]
 pub struct OtherStats(FloatStats<OtherStat>);
 
 #[derive(Clone, Copy, Debug, Event, Reflect)]
 pub struct UpdateAbnormalSlots;
 
-impl Default for OtherStats {
-    fn default() -> Self {
-        let base_class = BaseClass::default();
-        let mut float_stats = FloatStats::default();
-        for stat in OtherStat::iter() {
-            float_stats.insert(stat, stat.default_value(base_class));
-        }
-        Self(float_stats)
-    }
-}
-
-#[repr(u8)]
-#[derive(Clone, Copy, Debug, Deserialize, EnumIter, Eq, Hash, PartialEq, Reflect, Serialize)]
+#[repr(usize)]
+#[derive(
+    Clone,
+    Copy,
+    Debug,
+    Deserialize,
+    EnumIter,
+    EnumCount,
+    TryFromPrimitive,
+    IntoPrimitive,
+    Eq,
+    Hash,
+    PartialEq,
+    Reflect,
+    Serialize,
+)]
 pub enum OtherStat {
     FishingExpertise,
     Breath,

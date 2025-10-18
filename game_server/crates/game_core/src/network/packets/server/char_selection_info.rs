@@ -78,10 +78,10 @@ pub struct CharInfoData {
 
 impl CharInfoData {
     pub fn buffer(&self) -> ServerPacketBuffer {
-        let max_hp = self.vitals.get(&VitalsStat::MaxHp) as f64;
-        let current_hp = self.vitals.get(&VitalsStat::Hp) as f64;
-        let max_mp = self.vitals.get(&VitalsStat::MaxMp) as f64;
-        let current_mp = self.vitals.get(&VitalsStat::Mp) as f64;
+        let max_hp = self.vitals.get(VitalsStat::MaxHp) as f64;
+        let current_hp = self.vitals.get(VitalsStat::Hp) as f64;
+        let max_mp = self.vitals.get(VitalsStat::MaxMp) as f64;
+        let current_mp = self.vitals.get(VitalsStat::Mp) as f64;
         let char_level = self.progress_level.level();
 
         let mut buffer = ServerPacketBuffer::new();
@@ -129,7 +129,7 @@ impl CharInfoData {
         buffer.u32(self.pet_food_level);
         buffer.f64(self.pet_hp);
         buffer.f64(self.pet_mp);
-        buffer.u32(self.progress_stats.get(&ProgressStat::VitalityPoints) as u32);
+        buffer.u32(self.progress_stats.get(ProgressStat::VitalityPoints) as u32);
         buffer
     }
 }

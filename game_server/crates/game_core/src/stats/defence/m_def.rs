@@ -7,7 +7,7 @@ pub struct MDef(u32);
 
 impl MDef {
     pub fn formula(args: FormulaArguments) -> f32 {
-        let men_bonus = args.primal.typed::<MEN>(&PrimalStat::MEN).bonus();
+        let men_bonus = args.primal.typed::<MEN>(PrimalStat::MEN).bonus();
         let base_value = if args.is_pet {
             args.base_value - 13.0
         } else {
