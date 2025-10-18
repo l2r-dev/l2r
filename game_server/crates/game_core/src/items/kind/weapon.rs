@@ -90,38 +90,38 @@ impl WeaponKind {
     fn attack_params(&self) -> (f32, Option<f32>, bool) {
         let (primary_attack_delay_multiplier, secondary_attack_delay_multiplier, is_bow) =
             match self {
-                WeaponKind::Sword(sword) => {
-                    if matches!(sword, SwordType::Dual) {
-                        (0.4, Some(0.2), false)
-                    } else {
-                        (0.5, None, false)
-                    }
-                }
+                WeaponKind::Sword(sword) => match sword {
+                    SwordType::Ancient => (0.6, None, false),
+                    SwordType::Rapier => (0.4, None, false),
+                    SwordType::OneHanded => (0.55, None, false),
+                    SwordType::TwoHanded => (0.6, None, false),
+                    SwordType::Dual => (0.3, Some(0.35), false),
+                },
 
-                WeaponKind::Blunt(blunt) => {
-                    if matches!(blunt, BluntType::Dual) {
-                        (0.4, Some(0.2), false)
-                    } else {
-                        (0.5, None, false)
-                    }
-                }
+                WeaponKind::Blunt(blunt) => match blunt {
+                    BluntType::OneHanded => (0.55, None, false),
+                    BluntType::TwoHanded => (0.6, None, false),
+                    BluntType::Dual => (0.3, Some(0.35), false),
+                },
 
                 WeaponKind::Dagger(dagger) => {
                     if matches!(dagger, DaggerType::Dual) {
-                        (0.4, Some(0.2), false)
+                        (0.3, Some(0.35), false)
                     } else {
-                        (0.5, None, false)
+                        (0.55, None, false)
                     }
                 }
 
-                WeaponKind::Fist(_) => (0.4, Some(0.2), false),
+                WeaponKind::Fist(_) => (0.3, Some(0.35), false),
 
                 WeaponKind::Pole => (0.6, None, false),
 
-                WeaponKind::Bow | WeaponKind::Crossbow => (1.0, None, true),
+                WeaponKind::Bow => (1.0, None, true),
+
+                WeaponKind::Crossbow => (0.8, None, true),
 
                 WeaponKind::Etc | WeaponKind::FortFlag | WeaponKind::FishingRod => {
-                    (0.5, None, false)
+                    (0.6, None, false)
                 }
             };
 

@@ -39,7 +39,7 @@ use map::{WorldMap, WorldMapQuery};
 use smallvec::smallvec;
 use spatial::FlatDistance;
 use state::GameMechanicsSystems;
-use std::{f32::consts::PI, ops::Sub, time::Duration};
+use std::{f32::consts::PI, time::Duration};
 use system_messages;
 
 pub struct AttackPlugin;
@@ -137,11 +137,7 @@ fn attack_entity(
                         // the next allowed attack time
                         commands
                             .entity(attacker.entity)
-                            .remove::<AttackAllowed>()
-                            .remove::<MoveToEntity>();
-
-                        commands
-                            .entity(aiming_target.entity)
+                            .remove::<MoveToEntity>()
                             .try_insert(InCombat::default());
                     });
 
@@ -192,6 +188,10 @@ fn attack_entity(
                         //TODO: возможно стоит обрабатывать лук в отдельной системе. Проверить
                         return;
                     }
+
+                    par_commands.command_scope(|mut commands| {
+                        commands.entity(attacker.entity).remove::<AttackAllowed>();
+                    });
 
                     if is_bow && let Some(paperdoll) = attacker.paper_doll {
                         let arrow_count = paperdoll[DollSlot::LeftHand]
@@ -264,12 +264,11 @@ fn attack_entity(
                         let atck_speed: u32 = attacker_attack_speed.into();
 
                         let duration = Duration::from_millis(
-                            weapon_reuse_delay as u64 * 345 / atck_speed as u64,
+                            //TODO: должна быть базовая скорость атаки. 300 для игроков, 333 для мобов
+                            weapon_reuse_delay as u64 * 300 / atck_speed as u64,
                         ) + attack_interval;
 
                         par_commands.command_scope(|mut commands| {
-                            const SERVER_DURATION_REDUCE: Duration = Duration::from_millis(70);
-
                             commands.trigger_targets(
                                 GameServerPacket::from(SetupGauge::new(
                                     *attacker.object_id,
@@ -281,7 +280,7 @@ fn attack_entity(
 
                             commands
                                 .entity(attacker.entity)
-                                .try_insert(WeaponReuse::new(duration.sub(SERVER_DURATION_REDUCE)));
+                                .try_insert(WeaponReuse::new(duration));
                         });
                     }
 
@@ -318,6 +317,7 @@ fn attack_entity(
 
                         //TODO: Хак! Сейчас если персонаж убегает от цели и нажать атаку, он все еще будет смотреть от нее
                         // видимо нужно поменять порядок систем
+                        // А может и не хак, возможно стоит так и оставить. И для других проверок всегда брать вектор на цель
                         let attack_vector =
                             attacker.transform.translation - aiming_target.transform.translation;
 

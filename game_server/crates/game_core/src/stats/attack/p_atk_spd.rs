@@ -8,10 +8,11 @@ use std::time::Duration;
 )]
 pub struct PAtkSpd(u32);
 impl PAtkSpd {
+    //TODO: 300 для игроков, 333 для мобав
     pub const BASE: u32 = 300;
-    pub const MAX: u32 = 1400;
+    pub const MAX: u32 = 1500;
     pub fn get_attack_speed_multiplier(&self) -> f64 {
-        (1.1 * self.0 as f64) / Self::BASE as f64
+        self.0 as f64 / Self::BASE as f64
     }
 
     pub fn set(&mut self, speed: u32) {

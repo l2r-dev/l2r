@@ -77,6 +77,10 @@ impl WeaponReuse {
 
         self.timer.finished()
     }
+
+    pub fn secs_left(&self) -> f32 {
+        self.timer.remaining().as_secs_f32()
+    }
 }
 
 #[derive(Component, Reflect)]
