@@ -16,7 +16,7 @@ pedantic = "warn"
 
 [workspace.dependencies]
 # Bevy ecosystem
-bevy = { version = "0.16.0", default-features = false, features = [
+bevy = { version = "0.16.1", default-features = false, features = [
   "multi_threaded",
   "serialize",
   "file_watcher",
