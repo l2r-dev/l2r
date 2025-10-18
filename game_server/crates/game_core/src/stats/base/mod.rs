@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use num_enum::{IntoPrimitive, TryFromPrimitive};
 use serde::{Deserialize, Serialize};
-use strum::EnumIter;
+use strum::{EnumCount, EnumIter};
 
 mod class;
 mod movement;
@@ -20,6 +20,7 @@ pub use vitals::*;
     Debug,
     Deserialize,
     EnumIter,
+    EnumCount,
     Eq,
     Hash,
     PartialEq,

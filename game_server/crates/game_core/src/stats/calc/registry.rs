@@ -1,11 +1,18 @@
 use super::StatModifiers;
 use crate::stats::*;
-use bevy::platform::collections::HashMap;
 
-#[derive(Default, Resource)]
-pub struct StatFormulaRegistry(
-    HashMap<StatKind, Box<dyn Fn(FormulaArguments) -> f32 + Send + Sync + 'static>>,
-);
+#[derive(Resource)]
+pub struct StatFormulaRegistry {
+    formulas: Vec<Option<Box<dyn Fn(FormulaArguments) -> f32 + Send + Sync + 'static>>>,
+}
+
+impl Default for StatFormulaRegistry {
+    fn default() -> Self {
+        Self {
+            formulas: (0..StatKind::total_count()).map(|_| None).collect(),
+        }
+    }
+}
 
 #[derive(Clone)]
 pub struct FormulaArguments<'a> {
@@ -58,13 +65,16 @@ impl StatFormulaRegistry {
     where
         F: Fn(FormulaArguments) -> f32 + Send + Sync + 'static,
     {
-        self.0.insert(stat, Box::new(formula));
+        let index = stat.to_index();
+        self.formulas[index] = Some(Box::new(formula));
         self
     }
 
     fn calculate_base<S: StatTrait>(&self, stat: S, formula_arguments: FormulaArguments) -> f32 {
         let stat_kind: StatKind = stat.into();
-        if let Some(formula) = self.0.get(&stat_kind) {
+        let index = stat_kind.to_index();
+
+        if let Some(Some(formula)) = self.formulas.get(index) {
             formula(formula_arguments)
         } else {
             formula_arguments.base_value
