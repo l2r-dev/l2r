@@ -19,10 +19,9 @@ use game_core::{
         AttackAllowed, AttackComponentsPlugin, AttackHit, AttackTimer, Attacking, AttackingList,
         ConsumeArrow, Dead, HitInfo, InCombat,
     },
-    items,
     items::{
-        BluntType, DaggerType, DollSlot, Grade, Item, ItemsDataQuery, Kind, PaperDoll, Soulshot,
-        SwordType, UniqueItem, UpdateType, WeaponKind,
+        DollSlot, Grade, Item, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem, UpdateType,
+        WeaponAttackParams,
     },
     movement::{LookAt, MoveToEntity},
     network::{
@@ -154,74 +153,34 @@ fn attack_entity(
 
                     let attack_interval = attacker_attack_speed.attack_interval();
 
-                    let weapon = attacker
+                    let weapon_uniq = attacker
                         .paper_doll
                         .as_ref()
                         .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
 
-                    let mut second_attack_interval_multiplier = None;
-                    let mut weapon_reuse_delay = None;
-                    let mut is_bow = false;
+                    let weapon_info = items_data_query.item_info_from_uniq(&weapon_uniq);
 
-                    let interval_multiplier = if let Some(weapon) = weapon
-                        && let Some(items_data_assets) =
-                            world.get_resource::<Assets<items::ItemsInfo>>()
-                        && let Some(items_data_table) =
-                            world.get_resource::<items::ItemsDataTable>()
-                        && let Ok(item_info) =
-                            items_data_table.get_item_info(weapon.item().id(), items_data_assets)
-                        && let Kind::Weapon(weapon) = item_info.kind()
-                    {
-                        match weapon.kind {
-                            WeaponKind::Sword(sword) => {
-                                if matches!(sword, SwordType::Dual) {
-                                    second_attack_interval_multiplier = Some(0.2);
+                    let (
+                        interval_multiplier,
+                        second_attack_interval_multiplier,
+                        weapon_reuse_delay,
+                        is_bow,
+                    ) = if let Some(Kind::Weapon(weapon)) = weapon_info.map(|v| v.kind()) {
+                        let WeaponAttackParams {
+                            is_bow,
+                            reuse_delay,
+                            primary_attack_delay_multiplier,
+                            secondary_attack_delay_multiplier,
+                        } = weapon.attack_params();
 
-                                    0.4
-                                } else {
-                                    0.5
-                                }
-                            }
-
-                            WeaponKind::Blunt(blunt) => {
-                                if matches!(blunt, BluntType::Dual) {
-                                    second_attack_interval_multiplier = Some(0.2);
-
-                                    0.4
-                                } else {
-                                    0.5
-                                }
-                            }
-
-                            WeaponKind::Dagger(dagger) => {
-                                if matches!(dagger, DaggerType::Dual) {
-                                    second_attack_interval_multiplier = Some(0.2);
-
-                                    0.4
-                                } else {
-                                    0.5
-                                }
-                            }
-
-                            WeaponKind::Fist(_) => {
-                                second_attack_interval_multiplier = Some(0.2);
-
-                                0.4
-                            }
-
-                            WeaponKind::Pole => 0.6,
-
-                            WeaponKind::Bow | WeaponKind::Crossbow => {
-                                is_bow = true;
-                                weapon_reuse_delay = weapon.reuse_delay;
-
-                                1.0
-                            }
-
-                            WeaponKind::Etc | WeaponKind::FortFlag | WeaponKind::FishingRod => 0.5,
-                        }
+                        (
+                            primary_attack_delay_multiplier,
+                            secondary_attack_delay_multiplier,
+                            reuse_delay,
+                            is_bow,
+                        )
                     } else {
-                        0.5
+                        (0.5, None, None, false)
                     };
 
                     if is_bow && let Some(paperdoll) = attacker.paper_doll {
@@ -264,7 +223,7 @@ fn attack_entity(
                             .try_insert(InCombat::default());
                     });
 
-                    let weapon_entity = weapon.and_then(|weapon| {
+                    let weapon_entity = weapon_uniq.and_then(|weapon| {
                         items
                             .by_object_id(weapon.object_id(), object_id_manager.as_ref())
                             .ok()
@@ -272,10 +231,8 @@ fn attack_entity(
 
                     let soulshot_used = weapon_entity.and_then(|v| shot_used.get(v).ok()).is_some();
 
-                    let soulshot_grade = if let Some(w) = weapon
-                        && let Ok(it) = items_data_query.get_item_info(w.item().id())
-                    {
-                        it.grade()
+                    let soulshot_grade = if let Some(w) = weapon_info {
+                        w.grade()
                     } else {
                         Grade::None
                     };
@@ -604,8 +561,6 @@ fn process_attack_hits(
         pending_hit.timer_mut().tick(time.delta());
 
         if pending_hit.timer().finished() {
-            let attacker_entity = attacker.entity;
-
             match &mut *pending_hit {
                 AttackHit::AttackCommonHit(pending_hit) => {
                     if let Ok(mut target) = targets.get_mut(pending_hit.target()) {
@@ -614,19 +569,18 @@ fn process_attack_hits(
                         process_hit(
                             commands.reborrow(),
                             npc,
-                            &mut attackers_lists,
+                            attackers_lists.reborrow(),
                             info,
                             attacker.entity,
                             attacker.name.to_string(),
-                            target.entity,
-                            &mut target.vital_stats,
+                            &mut target,
                             not_attacking_npc,
                         );
                     }
 
                     remove_soulshot(commands.reborrow(), pending_hit.weapon_entity());
 
-                    commands.entity(attacker_entity).remove::<AttackHit>();
+                    commands.entity(attacker.entity).remove::<AttackHit>();
                 }
 
                 AttackHit::AttackMultiHit(pending_hits) => {
@@ -635,12 +589,11 @@ fn process_attack_hits(
                             process_hit(
                                 commands.reborrow(),
                                 npc,
-                                &mut attackers_lists,
+                                attackers_lists.reborrow(),
                                 *info,
                                 attacker.entity,
                                 attacker.name.to_string(),
-                                target.entity,
-                                &mut target.vital_stats,
+                                &mut target,
                                 not_attacking_npc,
                             );
                         }
@@ -648,7 +601,7 @@ fn process_attack_hits(
 
                     remove_soulshot(commands.reborrow(), pending_hits.weapon_entity());
 
-                    commands.entity(attacker_entity).remove::<AttackHit>();
+                    commands.entity(attacker.entity).remove::<AttackHit>();
                 }
 
                 AttackHit::AttackDualHit(pending_dual_hit) => {
@@ -658,12 +611,11 @@ fn process_attack_hits(
                         process_hit(
                             commands.reborrow(),
                             npc,
-                            &mut attackers_lists,
+                            attackers_lists.reborrow(),
                             info,
                             attacker.entity,
                             attacker.name.to_string(),
-                            target.entity,
-                            &mut target.vital_stats,
+                            &mut target,
                             not_attacking_npc,
                         );
                     }
@@ -671,7 +623,7 @@ fn process_attack_hits(
                     if pending_dual_hit.set_to_secondary() {
                         remove_soulshot(commands.reborrow(), pending_dual_hit.weapon_entity());
                     } else {
-                        commands.entity(attacker_entity).remove::<AttackHit>();
+                        commands.entity(attacker.entity).remove::<AttackHit>();
                     }
                 }
             }
@@ -682,14 +634,12 @@ fn process_attack_hits(
 fn process_hit(
     mut commands: Commands,
     npc: Query<Entity, With<npc::Kind>>,
-    attackers_lists: &mut Query<Mut<AttackingList>>,
+    mut attackers_lists: Query<Mut<AttackingList>>,
 
     mut info: HitInfo,
     attacker_entity: Entity,
     attacker_name: String,
-
-    target_entity: Entity,
-    target_vital_stats: &mut Mut<VitalsStats>,
+    target: &mut ProcessAttackHitsTargetQueryItem,
 
     not_attacking_npc: Query<Entity, (With<npc::Kind>, Without<Attacking>)>,
 ) {
@@ -701,7 +651,7 @@ fn process_hit(
             system_messages::Id::YouHaveAvoidedC1SAttack,
             vec![attacker_name.into()],
         );
-        commands.trigger_targets(GameServerPacket::from(avoid_message), target_entity);
+        commands.trigger_targets(GameServerPacket::from(avoid_message), target.entity);
     } else {
         if info.dmg == 0. {
             //TODO: должен слаться пакет Immune.
@@ -714,20 +664,20 @@ fn process_hit(
         // If attacker is NPC, do not damage CP
         let damage_cp = npc.get(attacker_entity).is_err();
 
-        if npc.get(target_entity).is_err() {
-            let cur_hp = target_vital_stats.get(&VitalsStat::Hp);
+        if npc.get(target.entity).is_err() {
+            let cur_hp = target.vital_stats.get(&VitalsStat::Hp);
 
-            //TODO: переделать на immortal компонент
+            //TODO: Хак чтобы постоянно не умирать, переделать на Undying компонент
             if info.dmg > cur_hp {
                 info.dmg = cur_hp - 10.;
             }
         }
 
-        target_vital_stats.damage(info.dmg, damage_cp);
+        target.vital_stats.damage(info.dmg, damage_cp);
 
         // Add damage tracking - this might fail if we just inserted the component
         // but it will be handled in the next frame
-        if let Ok(mut attackers_list) = attackers_lists.get_mut(target_entity) {
+        if let Ok(mut attackers_list) = attackers_lists.get_mut(target.entity) {
             attackers_list.damage(attacker_entity, info.dmg as f64);
         }
 
@@ -743,7 +693,7 @@ fn process_hit(
         send_shield_result_system_message(
             info.shield,
             attacker_entity,
-            target_entity,
+            target.entity,
             commands.reborrow(),
         );
 
@@ -762,14 +712,14 @@ fn process_hit(
         );
         commands.trigger_targets(
             GameServerPacket::from(you_hitted_system_message),
-            target_entity,
+            target.entity,
         );
 
         // TODO: Ивент для аи
         // If the target is an NPC that is not already attacking, make it attack back
-        if not_attacking_npc.get(target_entity).is_ok() {
+        if not_attacking_npc.get(target.entity).is_ok() {
             commands
-                .entity(target_entity)
+                .entity(target.entity)
                 .insert(Attacking(attacker_entity));
         }
     }

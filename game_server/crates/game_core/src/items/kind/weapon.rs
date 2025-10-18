@@ -65,7 +65,73 @@ pub enum WeaponKind {
     Pole,
 }
 
+pub struct WeaponAttackParams {
+    pub is_bow: bool,
+    pub reuse_delay: Option<u32>,
+    pub primary_attack_delay_multiplier: f32,
+    pub secondary_attack_delay_multiplier: Option<f32>,
+}
+
+impl Weapon {
+    pub fn attack_params(&self) -> WeaponAttackParams {
+        let (primary_attack_delay_multiplier, secondary_attack_delay_multiplier, is_bow) =
+            self.kind.attack_params();
+
+        WeaponAttackParams {
+            is_bow,
+            primary_attack_delay_multiplier,
+            secondary_attack_delay_multiplier,
+            reuse_delay: self.reuse_delay,
+        }
+    }
+}
+
 impl WeaponKind {
+    fn attack_params(&self) -> (f32, Option<f32>, bool) {
+        let (primary_attack_delay_multiplier, secondary_attack_delay_multiplier, is_bow) =
+            match self {
+                WeaponKind::Sword(sword) => {
+                    if matches!(sword, SwordType::Dual) {
+                        (0.4, Some(0.2), false)
+                    } else {
+                        (0.5, None, false)
+                    }
+                }
+
+                WeaponKind::Blunt(blunt) => {
+                    if matches!(blunt, BluntType::Dual) {
+                        (0.4, Some(0.2), false)
+                    } else {
+                        (0.5, None, false)
+                    }
+                }
+
+                WeaponKind::Dagger(dagger) => {
+                    if matches!(dagger, DaggerType::Dual) {
+                        (0.4, Some(0.2), false)
+                    } else {
+                        (0.5, None, false)
+                    }
+                }
+
+                WeaponKind::Fist(_) => (0.4, Some(0.2), false),
+
+                WeaponKind::Pole => (0.6, None, false),
+
+                WeaponKind::Bow | WeaponKind::Crossbow => (1.0, None, true),
+
+                WeaponKind::Etc | WeaponKind::FortFlag | WeaponKind::FishingRod => {
+                    (0.5, None, false)
+                }
+            };
+
+        (
+            primary_attack_delay_multiplier,
+            secondary_attack_delay_multiplier,
+            is_bow,
+        )
+    }
+
     pub fn all_kinds() -> [super::Kind; 9] {
         [
             (super::Kind::Weapon(Weapon {
