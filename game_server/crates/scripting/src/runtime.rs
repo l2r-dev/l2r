@@ -88,20 +88,18 @@ impl RuntimeScriptsManager {
                         runtime_scripts.scripts.reserve(loaded_folder.handles.len());
 
                         for handle in loaded_folder.handles.iter() {
-                            if let Some(path) = handle.path() {
-                                if path
+                            if let Some(path) = handle.path()
+                                && path
                                     .path()
                                     .to_string_lossy()
                                     .ends_with(RuntimeScriptsManager::ENTRY_SCRIPT)
-                                {
-                                    let script_handle =
-                                        handle.clone().typed_unchecked::<ScriptAsset>();
-                                    runtime_scripts.scripts.push(script_handle.clone());
-                                    log::info!("Adding runtime script: {}", path);
-                                    commands.queue(AttachScript::<LuaScriptingPlugin>::new(
-                                        ScriptAttachment::StaticScript(script_handle),
-                                    ));
-                                }
+                            {
+                                let script_handle = handle.clone().typed_unchecked::<ScriptAsset>();
+                                runtime_scripts.scripts.push(script_handle.clone());
+                                log::info!("Adding runtime script: {}", path);
+                                commands.queue(AttachScript::<LuaScriptingPlugin>::new(
+                                    ScriptAttachment::StaticScript(script_handle),
+                                ));
                             }
                         }
 

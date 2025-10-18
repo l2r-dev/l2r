@@ -43,7 +43,7 @@ ARG L2R_HOME=/opt/l2r/
 ENV L2R_HOME=${L2R_HOME}
 ENV BEVY_ASSET_ROOT="${L2R_HOME}"
 ENV RUST_BACKTRACE=1
-ENV RUST_LOG="l2r_loginserver=debug,l2r_core=debug,sqlx=off,sea_orm_migration=debug"
+ENV RUST_LOG="l2r_loginserver=debug,l2r_core=debug,sqlx=off,sea_orm_migration=debug,bevy_ecs=debug"
 
 
 WORKDIR ${L2R_HOME}

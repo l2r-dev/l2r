@@ -8,6 +8,7 @@ mod accuracy;
 mod cast_spd;
 mod effect_kind;
 mod m_attack;
+mod p_atk_max_targets_count;
 mod p_atk_range;
 mod p_atk_spd;
 mod p_attack;
@@ -17,6 +18,7 @@ pub use accuracy::*;
 pub use cast_spd::*;
 pub use effect_kind::*;
 pub use m_attack::*;
+pub use p_atk_max_targets_count::*;
 pub use p_atk_range::*;
 pub use p_atk_spd::*;
 pub use p_attack::*;
@@ -31,7 +33,8 @@ impl Plugin for AttackStatsComponentsPlugin {
             .register_type::<PAtkSpd>()
             .register_type::<CastSpd>()
             .register_type::<Accuracy>()
-            .register_type::<PAtkRange>();
+            .register_type::<PAtkRange>()
+            .register_type::<PAtkMaxTargetsCount>();
 
         app.world_mut()
             .resource_mut::<StatFormulaRegistry>()
@@ -152,7 +155,7 @@ pub enum AttackStat {
     PAtkWidth,
     PAtkRandom,
     MAtkRange,
-    AttackCountMax,
+    PAtkMaxTargetsCount,
     EffectKind,
     SkillMastery,
     SkillMasteryRate,
@@ -177,6 +180,8 @@ impl StatTrait for AttackStat {
             AttackStat::MagicSkillReuse => 1.0,
             AttackStat::PhysicalSkillReuse => 1.0,
             AttackStat::RythmSkillReuse => 1.0,
+            AttackStat::PAtkMaxTargetsCount => 1.0,
+
             _ => 0.0,
         };
         V::from(value).unwrap_or_default()

@@ -10,6 +10,7 @@ pub(super) fn handle(
     transforms: Query<Ref<Transform>>,
 ) {
     let DoubleSlashCommandExecuted(cmd) = build_command.event();
+
     let entity = build_command.target();
 
     if let DoubleSlashCommand::Spawn(npc_id) = cmd {

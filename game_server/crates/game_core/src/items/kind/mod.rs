@@ -15,6 +15,7 @@ mod pet;
 mod recipe;
 mod weapon;
 
+use crate::items::BodyPart;
 pub use armor::*;
 pub use consumable::*;
 pub use enchanting::*;
@@ -67,6 +68,10 @@ impl std::fmt::Display for Kind {
 impl Kind {
     pub fn shield(&self) -> bool {
         matches!(self, Kind::Armor(ArmorKind::Shield))
+    }
+
+    pub fn ammo(&self) -> bool {
+        matches!(self, Kind::Consumable(ConsumableKind::Ammo(_)))
     }
 
     pub fn category_name(&self) -> String {
@@ -157,6 +162,8 @@ impl TryFrom<&Kind> for super::BodyPart {
             Weapon(weapon) => Ok(weapon.kind.into()),
             Armor(armor_type) => Ok((*armor_type).into()),
             Jewelry(jewelry_type) => Ok((*jewelry_type).into()),
+            Consumable(ConsumableKind::Ammo(_)) => Ok(BodyPart::LeftHand),
+
             _ => Err("This item don't have body part"),
         }
     }

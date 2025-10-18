@@ -99,7 +99,15 @@ impl Table {
                     );
                     continue;
                 };
-                paperdoll.equip(bodypart, Some(unique_item));
+
+                paperdoll.equip(
+                    bodypart,
+                    Some(unique_item),
+                    items_data_table
+                        .get_item_info(unique_item.item().id(), items_data_assets)
+                        .expect("should exist"),
+                    (items_data_assets, items_data_table),
+                );
             }
 
             let bundle = character::Bundle::new(char, paperdoll, session_id, world);

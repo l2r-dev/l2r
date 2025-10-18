@@ -16,15 +16,12 @@ pub struct ObjectIdIndexSet(#[reflect(ignore)] IndexSet<ObjectId, FixedHasher>);
 impl ObjectIdIndexSet {
     /// Creates an empty `ObjectIdIndexSet`.
     pub fn new() -> Self {
-        Self(IndexSet::with_hasher(FixedHasher::default()))
+        Self(IndexSet::with_hasher(FixedHasher))
     }
 
     /// Creates an empty `ObjectIdIndexSet` with the specified capacity.
     pub fn with_capacity(n: usize) -> Self {
-        Self(IndexSet::with_capacity_and_hasher(
-            n,
-            FixedHasher::default(),
-        ))
+        Self(IndexSet::with_capacity_and_hasher(n, FixedHasher))
     }
 }
 

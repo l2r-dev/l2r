@@ -1,9 +1,10 @@
 use crate::items::*;
-use bevy::platform::collections::HashMap;
 use num_enum::{IntoPrimitive, TryFromPrimitive};
-use rand::seq::SliceRandom;
 use serde::Deserialize;
-use std::fmt;
+use std::{
+    fmt,
+    ops::{Index, IndexMut},
+};
 use strum::{EnumIter, IntoEnumIterator};
 
 #[repr(u32)]
@@ -40,12 +41,12 @@ pub enum DollSlot {
     LeftFinger,
     LeftBracelet,
     RightBracelet,
-    Deco1,
-    Deco2,
-    Deco3,
-    Deco4,
-    Deco5,
-    Deco6,
+    Talisman1,
+    Talisman2,
+    Talisman3,
+    Talisman4,
+    Talisman5,
+    Talisman6,
     Cloak,
     Belt,
 }
@@ -110,51 +111,42 @@ impl DollSlot {
             .sum()
     }
 
-    fn deco_slots() -> [DollSlot; 6] {
-        [
-            DollSlot::Deco1,
-            DollSlot::Deco2,
-            DollSlot::Deco3,
-            DollSlot::Deco4,
-            DollSlot::Deco5,
-            DollSlot::Deco6,
-        ]
-    }
-    pub fn bodypart_slots(bodypart: BodyPart) -> Vec<Option<DollSlot>> {
+    pub fn bodypart_slots(bodypart: BodyPart) -> &'static [DollSlot] {
         match bodypart {
-            BodyPart::None => vec![None],
-            BodyPart::Underwear => vec![Some(DollSlot::Underwear)],
-            BodyPart::RightEar => vec![Some(DollSlot::RightEar)],
-            BodyPart::LeftEar => vec![Some(DollSlot::LeftEar)],
-            BodyPart::BothEar => vec![Some(DollSlot::RightEar), Some(DollSlot::LeftEar)],
-            BodyPart::Neck => vec![Some(DollSlot::Neck)],
-            BodyPart::RightFinger => vec![Some(DollSlot::RightFinger)],
-            BodyPart::LeftFinger => vec![Some(DollSlot::LeftFinger)],
-            BodyPart::BothFinger => vec![Some(DollSlot::RightFinger), Some(DollSlot::LeftFinger)],
-            BodyPart::Head => vec![Some(DollSlot::Head)],
-            BodyPart::RightHand => vec![Some(DollSlot::RightHand)],
-            BodyPart::LeftHand => vec![Some(DollSlot::LeftHand)],
-            BodyPart::Gloves => vec![Some(DollSlot::Gloves)],
-            BodyPart::Chest => vec![Some(DollSlot::Chest)],
-            BodyPart::Legs => vec![Some(DollSlot::Legs)],
-            BodyPart::Feet => vec![Some(DollSlot::Feet)],
-            BodyPart::Back => vec![Some(DollSlot::Cloak)],
-            BodyPart::BothHand => vec![Some(DollSlot::RightHand), Some(DollSlot::LeftHand)],
-            BodyPart::FullBody => vec![Some(DollSlot::Chest), Some(DollSlot::Legs)],
-            BodyPart::AccessoryLeft => vec![Some(DollSlot::AccessoryLeft)],
-            BodyPart::AccessoryRight => vec![Some(DollSlot::AccessoryRight)],
-            BodyPart::AccessoryBoth => vec![
-                Some(DollSlot::AccessoryRight),
-                Some(DollSlot::AccessoryLeft),
+            BodyPart::None => &[],
+            BodyPart::Underwear => &[DollSlot::Underwear],
+            BodyPart::RightEar => &[DollSlot::RightEar],
+            BodyPart::LeftEar => &[DollSlot::LeftEar],
+            BodyPart::BothEar => &[DollSlot::RightEar, DollSlot::LeftEar],
+            BodyPart::Neck => &[DollSlot::Neck],
+            BodyPart::RightFinger => &[DollSlot::RightFinger],
+            BodyPart::LeftFinger => &[DollSlot::LeftFinger],
+            BodyPart::BothFinger => &[DollSlot::RightFinger, DollSlot::LeftFinger],
+            BodyPart::Head => &[DollSlot::Head],
+            BodyPart::RightHand => &[DollSlot::RightHand],
+            BodyPart::LeftHand => &[DollSlot::LeftHand],
+            BodyPart::Gloves => &[DollSlot::Gloves],
+            BodyPart::Chest => &[DollSlot::Chest],
+            BodyPart::Legs => &[DollSlot::Legs],
+            BodyPart::Feet => &[DollSlot::Feet],
+            BodyPart::Back => &[DollSlot::Cloak],
+            BodyPart::BothHand => &[DollSlot::RightHand],
+            BodyPart::FullBody => &[DollSlot::Chest],
+            BodyPart::AccessoryLeft => &[DollSlot::AccessoryLeft],
+            BodyPart::AccessoryRight => &[DollSlot::AccessoryRight],
+            BodyPart::AccessoryBoth => &[DollSlot::AccessoryRight, DollSlot::AccessoryLeft],
+            BodyPart::RightBracelet => &[DollSlot::RightBracelet],
+            BodyPart::LeftBracelet => &[DollSlot::LeftBracelet],
+            BodyPart::Belt => &[DollSlot::Belt],
+            BodyPart::Talisman => &[
+                DollSlot::Talisman1,
+                DollSlot::Talisman2,
+                DollSlot::Talisman3,
+                DollSlot::Talisman4,
+                DollSlot::Talisman5,
+                DollSlot::Talisman6,
             ],
-            BodyPart::RightBracelet => vec![Some(DollSlot::RightBracelet)],
-            BodyPart::LeftBracelet => vec![Some(DollSlot::LeftBracelet)],
-            BodyPart::Belt => vec![Some(DollSlot::Belt)],
-            BodyPart::Deco => DollSlot::deco_slots()
-                .iter()
-                .map(|slot| Some(*slot))
-                .collect(),
-            BodyPart::AllDress => vec![Some(DollSlot::Chest), Some(DollSlot::Legs)],
+            BodyPart::AllDress => &[DollSlot::Chest, DollSlot::Legs],
         }
     }
     pub fn user_info_iter() -> impl Iterator<Item = DollSlot> {
@@ -179,12 +171,12 @@ impl DollSlot {
             AccessoryRight,
             RightBracelet,
             LeftBracelet,
-            Deco1,
-            Deco2,
-            Deco3,
-            Deco4,
-            Deco5,
-            Deco6,
+            Talisman1,
+            Talisman2,
+            Talisman3,
+            Talisman4,
+            Talisman5,
+            Talisman6,
             Belt,
         ]
         .iter()
@@ -207,12 +199,12 @@ impl DollSlot {
             AccessoryRight,
             RightBracelet,
             LeftBracelet,
-            Deco1,
-            Deco2,
-            Deco3,
-            Deco4,
-            Deco5,
-            Deco6,
+            Talisman1,
+            Talisman2,
+            Talisman3,
+            Talisman4,
+            Talisman5,
+            Talisman6,
             Belt,
         ]
         .iter()
@@ -225,8 +217,9 @@ impl DollSlot {
 
 #[derive(Clone, Component, Debug, Default, Reflect)]
 #[reflect(Component)]
-pub struct PaperDoll(HashMap<DollSlot, Option<UniqueItem>>);
+pub struct PaperDoll([Option<UniqueItem>; 25]);
 
+#[derive(Debug)]
 pub struct SlotItem(pub DollSlot, pub Option<UniqueItem>);
 impl SlotItem {
     pub fn slot(&self) -> DollSlot {
@@ -240,7 +233,7 @@ impl SlotItem {
 
 impl PaperDoll {
     pub fn get(&self, slot: DollSlot) -> Option<UniqueItem> {
-        self.0.get(&slot).cloned().unwrap_or(None)
+        self[slot]
     }
 
     pub fn first_free_slot(&self, slots: &[DollSlot]) -> Option<DollSlot> {
@@ -250,23 +243,25 @@ impl PaperDoll {
             .copied()
     }
 
-    fn free_or_random_slot(&self, slots: &[DollSlot]) -> DollSlot {
-        let mut rng = rand::thread_rng();
-        self.first_free_slot(slots)
-            .unwrap_or_else(|| *slots.choose(&mut rng).unwrap())
+    fn free_or_first_slot(&self, slots: &[DollSlot]) -> DollSlot {
+        self.first_free_slot(slots).unwrap_or_else(|| {
+            *slots
+                .first()
+                .expect("at least one slot should be presented")
+        })
     }
 
     pub fn unequip(&mut self, object_id: ObjectId) {
         let slots_to_clear: Vec<_> = self
             .0
             .iter()
+            .enumerate()
+            .map(|(slot, item)| (DollSlot::try_from(slot as u32).unwrap(), item))
             .filter_map(|(slot, item)| {
-                if let Some(item) = item {
-                    if item.object_id() == object_id {
-                        Some(*slot)
-                    } else {
-                        None
-                    }
+                if let Some(item) = item
+                    && item.object_id() == object_id
+                {
+                    Some(slot)
                 } else {
                     None
                 }
@@ -274,25 +269,38 @@ impl PaperDoll {
             .collect();
 
         for slot in slots_to_clear {
-            self.0.insert(slot, None);
+            self[slot] = None;
         }
+    }
+
+    pub fn equip_without_validations(
+        &mut self,
+        slot: DollSlot,
+        item: UniqueItem,
+    ) -> Option<UniqueItem> {
+        let previous_item = self[slot];
+
+        self[slot] = Some(item);
+
+        previous_item
     }
 
     pub fn equip(
         &mut self,
         body_part: BodyPart,
         item: Option<UniqueItem>,
+        item_info: &ItemInfo,
+        items_infos: (&Assets<ItemsInfo>, &ItemsDataTable),
     ) -> (DollSlot, Vec<Option<UniqueItem>>) {
         let mut previous = Vec::with_capacity(2);
-        let slots = DollSlot::bodypart_slots(body_part)
-            .into_iter()
-            .flatten()
-            .collect::<Vec<_>>();
+
+        let slots = DollSlot::bodypart_slots(body_part);
+
         match body_part {
-            BodyPart::BothEar | BodyPart::BothFinger => {
-                let selected_slot = self.free_or_random_slot(slots.as_slice());
-                previous.push(self.0.get(&selected_slot).cloned().unwrap_or(None));
-                self.0.insert(selected_slot, item);
+            BodyPart::BothEar | BodyPart::BothFinger | BodyPart::Talisman => {
+                let selected_slot = self.free_or_first_slot(slots);
+                previous.push(self[selected_slot]);
+                self[selected_slot] = item;
                 (selected_slot, previous)
             }
             _ => {
@@ -301,10 +309,38 @@ impl PaperDoll {
                     .first()
                     .copied()
                     .expect("At least one slot must exist");
-                for slot in slots {
-                    previous.push(self.0.get(&slot).cloned().unwrap_or(None));
-                    self.0.insert(slot, item);
+
+                previous.push(self[selected_slot]);
+                self[selected_slot] = item;
+
+                if body_part == BodyPart::BothHand {
+                    if let Some(left_info) =
+                        items_infos.item_info_from_uniq(&self[DollSlot::LeftHand])
+                        && !item_info.ammo_matches(left_info)
+                    {
+                        previous.push(self[DollSlot::LeftHand]);
+                        self[DollSlot::LeftHand] = None;
+                    }
+                } else if body_part == BodyPart::LeftHand {
+                    if let Some(right_info) =
+                        items_infos.item_info_from_uniq(&self[DollSlot::RightHand])
+                        && !right_info.ammo_matches(item_info)
+                    {
+                        previous.push(self[DollSlot::RightHand]);
+                        self[DollSlot::RightHand] = None;
+                    }
+                } else if body_part == BodyPart::FullBody {
+                    previous.push(self[DollSlot::Legs]);
+                    self[DollSlot::Legs] = None;
+                } else if body_part == BodyPart::Legs
+                    && let Some(v) = self[DollSlot::Chest]
+                    && let Some(v) = v.item().bodypart()
+                    && v == BodyPart::FullBody
+                {
+                    previous.push(self[DollSlot::Chest]);
+                    self[DollSlot::Chest] = None;
                 }
+
                 (selected_slot, previous)
             }
         }
@@ -313,21 +349,37 @@ impl PaperDoll {
     pub fn is_equipped(&self, object_id: ObjectId) -> bool {
         self.0
             .iter()
-            .any(|(_, item)| item.is_some_and(|i| i.object_id() == object_id))
+            .any(|item| item.is_some_and(|i| i.object_id() == object_id))
     }
 
     pub fn iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
         self.0
             .iter()
-            .filter_map(|(slot, item)| item.as_ref().map(|item| SlotItem(*slot, Some(*item))))
+            .enumerate()
+            .map(|(slot, item)| (DollSlot::try_from(slot as u32).unwrap(), item))
+            .filter_map(|(slot, item)| item.as_ref().map(|item| SlotItem(slot, Some(*item))))
     }
 
     pub fn user_info_iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
-        DollSlot::user_info_iter().map(move |slot| SlotItem(slot, self.get(slot)))
+        DollSlot::user_info_iter().map(|slot| SlotItem(slot, self[slot]))
     }
 
     pub fn char_info_iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
-        DollSlot::char_info_iter().map(move |slot| SlotItem(slot, self.get(slot)))
+        DollSlot::char_info_iter().map(move |slot| SlotItem(slot, self[slot]))
+    }
+}
+
+impl Index<DollSlot> for PaperDoll {
+    type Output = Option<UniqueItem>;
+
+    fn index(&self, index: DollSlot) -> &Self::Output {
+        &self.0[index as usize]
+    }
+}
+
+impl IndexMut<DollSlot> for PaperDoll {
+    fn index_mut(&mut self, index: DollSlot) -> &mut Self::Output {
+        &mut self.0[index as usize]
     }
 }
 

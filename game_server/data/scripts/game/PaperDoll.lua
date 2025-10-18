@@ -48,6 +48,35 @@ function PaperDoll.update_change_tick(entity)
     last_change_ticks[entity_key] = component_ticks.changed
 end
 
+
+local SlotOrder = {
+    Underwear = 0,
+    Head = 1,
+    AccessoryLeft = 2,
+    AccessoryRight = 3,
+    Neck = 4,
+    RightHand = 5,
+    Chest = 6,
+    LeftHand = 7,
+    RightEar = 8,
+    LeftEar = 9,
+    Gloves = 10,
+    Legs = 11,
+    Feet = 12,
+    RightFinger = 13,
+    LeftFinger = 14,
+    LeftBracelet = 15,
+    RightBracelet = 16,
+    Talisman1 = 17,
+    Talisman2 = 18,
+    Talisman3 = 19,
+    Talisman4 = 20,
+    Talisman5 = 21,
+    Talisman6 = 22,
+    Cloak = 23,
+    Belt = 24
+}
+
 --[[
     Gets the equipped item in a specific slot
 
@@ -60,7 +89,12 @@ function PaperDoll.get_equipped_item(entity, slot_variant)
     if not paperdoll then
         return nil
     end
-    local slot = construct(types.DollSlot, { variant = slot_variant })
+    local slot = SlotOrder[slot_variant]
+
+    if slot == nil then
+        return nil
+    end
+
     local unique_item = paperdoll._1[slot]
     if not unique_item then
         return nil

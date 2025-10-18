@@ -37,6 +37,8 @@ pub struct UserInfo {
     pub collision_height: f64,
     pub position: GameVec3,
     pub paper_doll: PaperDoll,
+    //TODO: для дебага
+    pub entity: Entity,
 }
 impl fmt::Debug for UserInfo {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -51,35 +53,6 @@ impl fmt::Debug for UserInfo {
     }
 }
 impl UserInfo {
-    pub fn from_bundle(bundle: character::Bundle, base_speed: MovementStats) -> Self {
-        let collision_radius = bundle.collider.radius();
-        let collision_height = bundle.collider.height();
-
-        Self {
-            name: bundle.name.to_string(),
-            title: bundle.title.to_string(),
-            race: bundle.race,
-            base_class: bundle.base_class,
-            class_id: bundle.sub_class.class_id(),
-            object_id: bundle.id,
-            progress_stats: bundle.progress_stats,
-            progress_level: bundle.progress_level,
-            primal_stats: bundle.primal_stats,
-            attack_stats: bundle.attack_stats,
-            defence_stats: bundle.defence_stats,
-            critical_stats: bundle.critical_stats,
-            vitals_stats: bundle.vitals_stats,
-            pvp_stats: bundle.pvp,
-            movable: bundle.movable,
-            base_speed,
-            appearance: bundle.appearance,
-            collision_radius,
-            collision_height,
-            position: GameVec3::from(bundle.transform.translation),
-            paper_doll: bundle.paper_doll,
-        }
-    }
-
     pub fn from_query<'a, 'b>(
         character: &'a character::QueryItem<'a, 'b>,
         base_speed: MovementStats,
@@ -109,6 +82,7 @@ impl UserInfo {
             collision_height,
             position: GameVec3::from(character.transform.translation),
             paper_doll: character.paperdoll.clone(),
+            entity: character.entity,
         }
     }
 
@@ -176,6 +150,7 @@ impl L2rServerPacket for UserInfo {
                     .to_le_bytes(),
             );
         }
+
         // item ids
         for slot_item in self.paper_doll.user_info_iter() {
             buffer.extend(
@@ -186,6 +161,7 @@ impl L2rServerPacket for UserInfo {
                     .to_le_bytes(),
             );
         }
+
         // augumented ids
         for slot_item in self.paper_doll.user_info_iter() {
             buffer.extend(
@@ -196,6 +172,7 @@ impl L2rServerPacket for UserInfo {
                     .to_le_bytes(),
             );
         }
+
         buffer.u32(8); // talisman slots
         buffer.u32_from_bool(false); // can equip cloak
         buffer.u32(p_atk.into());
@@ -226,7 +203,11 @@ impl L2rServerPacket for UserInfo {
         buffer.u32(self.appearance.hair_color);
         buffer.u32(self.appearance.face);
         buffer.u32(1); // GM level
-        buffer.str(&self.title);
+        //TODO: для дебага
+        buffer.str(&format!(
+            "{} {} {}",
+            self.title, self.object_id, self.entity
+        ));
         buffer.u32(0); // clan id
         buffer.u32(0); // clan crest id
         buffer.u32(0); // ally id

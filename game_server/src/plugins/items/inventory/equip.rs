@@ -1,9 +1,10 @@
-use bevy::{log, prelude::*};
+use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     items::{
-        self, EquipItems, ITEMS_OPERATION_STACK, Item, ItemLocationVariant, ItemsDataQuery,
-        ItemsEquipped, ItemsUnEquipped, Kind, PaperDoll, UniqueItem, UpdateType, model,
+        self, BodyPart, DollSlot, EquipItems, ITEMS_OPERATION_STACK, Item, ItemLocationVariant,
+        ItemsDataQuery, ItemsEquipped, ItemsUnEquipped, Kind, PaperDoll, UniqueItem, UpdateType,
+        model,
     },
     network::packets::server::{
         GameServerPacket, InventoryUpdate, SendCharInfo, SendUserInfo, SystemMessage,
@@ -38,16 +39,17 @@ fn handle_equip_items(
     mut items_equipped: EventWriter<ItemsEquipped>,
     mut items_unequipped: EventWriter<ItemsUnEquipped>,
     mut items: Query<(Ref<ObjectId>, Mut<Item>)>,
+    mut characters: Query<(Mut<PaperDoll>, Mut<StatModifiers>, Ref<ObjectId>)>,
     items_data_query: ItemsDataQuery,
-    mut characters: Query<(Mut<PaperDoll>, Mut<StatModifiers>)>,
-
     object_id_manager: Res<ObjectIdManager>,
 ) {
     for (event, _event_id) in equip.par_read() {
         let character_entity = event.entity();
         let item_object_ids = event.object_ids().to_vec();
 
-        let Ok((mut paperdoll, mut stat_modifiers)) = characters.get_mut(character_entity) else {
+        let Ok((mut paperdoll, mut stat_modifiers, char_object_id)) =
+            characters.get_mut(character_entity)
+        else {
             continue;
         };
 
@@ -58,7 +60,7 @@ fn handle_equip_items(
             let Ok((_, mut item)) =
                 items.by_object_id_mut(item_object_id, object_id_manager.as_ref())
             else {
-                log::warn!(
+                warn!(
                     "EquipItems: No item found for object id {:?}",
                     item_object_id
                 );
@@ -66,29 +68,89 @@ fn handle_equip_items(
             };
 
             let Ok(item_info) = items_data_query.get_item_info(item.id()) else {
-                log::warn!("EquipItems: No item info found for item id {:?}", item.id());
+                warn!("EquipItems: No item info found for item id {:?}", item.id());
                 continue;
             };
 
             let Some(bodypart) = item_info.bodypart() else {
-                log::warn!("EquipItems: No bodypart found for item id {:?}", item.id());
+                warn!("EquipItems: No bodypart found for item id {:?}", item.id());
                 continue;
             };
 
-            let (doll_slot, previous_items) =
-                paperdoll.equip(bodypart, Some(UniqueItem::new(item_object_id, *item)));
+            if bodypart == BodyPart::LeftHand && item_info.kind().ammo() {
+                let Some(right_hand_item) = paperdoll[DollSlot::RightHand] else {
+                    continue;
+                };
+
+                let Ok(right_hand_item_info) =
+                    items_data_query.get_item_info(right_hand_item.item().id())
+                else {
+                    warn!(
+                        "EquipItems: No item info found for item in right hand id {:?}",
+                        item.id()
+                    );
+
+                    continue;
+                };
+
+                if !right_hand_item_info.ammo_matches(item_info) {
+                    continue;
+                }
+            }
+
+            let (doll_slot, mut previous_items) = paperdoll.equip(
+                bodypart,
+                Some(UniqueItem::new(item_object_id, *item)),
+                item_info,
+                (
+                    &*items_data_query.items_data_assets,
+                    &*items_data_query.items_data_table,
+                ),
+            );
 
             item.equip(doll_slot);
-
             equipped_items.push(item_object_id);
+
+            if bodypart == BodyPart::BothHand
+                && paperdoll[DollSlot::LeftHand].is_none()
+                && item_info.kind().bow_or_crossbow()
+            {
+                for (ammo_obj_id, mut ammo) in items.iter_mut() {
+                    let Some(owner_id) = ammo.owner() else {
+                        continue;
+                    };
+
+                    if owner_id != *char_object_id {
+                        continue;
+                    }
+
+                    let Ok(ammo_info) = items_data_query.get_item_info(ammo.id()) else {
+                        continue;
+                    };
+
+                    if !item_info.ammo_matches(ammo_info) {
+                        continue;
+                    }
+
+                    previous_items.push(paperdoll.equip_without_validations(
+                        DollSlot::LeftHand,
+                        UniqueItem::new(*ammo_obj_id, *ammo),
+                    ));
+
+                    ammo.equip(DollSlot::LeftHand);
+                    equipped_items.push(*ammo_obj_id);
+                }
+            }
 
             for previous in previous_items.into_iter().flatten() {
                 let prev_oid = previous.object_id();
-                let (_, mut prev_item) =
-                    match items.by_object_id_mut(prev_oid, object_id_manager.as_ref()) {
-                        Ok(item) => item,
-                        Err(_) => continue,
-                    };
+
+                let Ok((_, mut prev_item)) =
+                    items.by_object_id_mut(prev_oid, object_id_manager.as_ref())
+                else {
+                    continue;
+                };
+
                 paperdoll.unequip(prev_oid);
                 prev_item.unequip();
                 unequipped_items.push(prev_oid);
