@@ -81,7 +81,8 @@ impl Movable {
     }
 
     pub fn speed(&self) -> u32 {
-        let speed = match self.move_type {
+        
+        match self.move_type {
             MovementStat::Run => {
                 if self.steps < Movable::STEPS_TO_RUN {
                     self.speed.get(MovementStat::Walk)
@@ -90,8 +91,7 @@ impl Movable {
                 }
             }
             _ => self.speed.get(self.move_type),
-        };
-        speed
+        }
     }
 
     pub fn multiplier(&self, base: &MovementStats) -> f64 {

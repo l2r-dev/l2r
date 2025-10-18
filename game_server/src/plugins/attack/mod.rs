@@ -149,7 +149,7 @@ fn attack_entity(
                     };
 
                     let attacker_attack_speed =
-                        attacker.attack_stats.typed::<PAtkSpd>(&AttackStat::PAtkSpd);
+                        attacker.attack_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);
 
                     let attack_interval = attacker_attack_speed.attack_interval();
 
@@ -245,7 +245,7 @@ fn attack_entity(
 
                     let mut max_targets_count = attacker_ref
                         .get::<AttackStats>()
-                        .map(|s| s.get(&AttackStat::PAtkMaxTargetsCount))
+                        .map(|s| s.get(AttackStat::PAtkMaxTargetsCount))
                         .unwrap_or_default()
                         .round() as u32;
 
@@ -293,7 +293,7 @@ fn attack_entity(
 
                         let attack_angle = attacker_ref
                             .get::<AttackStats>()
-                            .map(|s| s.get(&AttackStat::PAtkWidth))
+                            .map(|s| s.get(AttackStat::PAtkWidth))
                             .unwrap_or_default()
                             .round();
 
@@ -670,7 +670,7 @@ fn process_hit(
         let damage_cp = npc.get(attacker_entity).is_err();
 
         if npc.get(target.entity).is_err() {
-            let cur_hp = target.vital_stats.get(&VitalsStat::Hp);
+            let cur_hp = target.vital_stats.get(VitalsStat::Hp);
 
             //TODO: Хак чтобы постоянно не умирать, переделать на Undying компонент
             if info.dmg > cur_hp {

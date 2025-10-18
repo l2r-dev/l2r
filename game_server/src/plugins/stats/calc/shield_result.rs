@@ -137,8 +137,8 @@ pub fn send_shield_result_system_message(
                 attacker_entity,
             );
         }
-        _ => return,
-    };
+        _ => (),
+    }
 }
 
 fn script_calculate(

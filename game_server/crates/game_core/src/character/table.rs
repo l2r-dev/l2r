@@ -103,10 +103,10 @@ impl Table {
                 paperdoll.equip(
                     bodypart,
                     Some(unique_item),
-                    &items_data_table
+                    items_data_table
                         .get_item_info(unique_item.item().id(), items_data_assets)
                         .expect("should exist"),
-                    (&items_data_assets, &items_data_table),
+                    (items_data_assets, items_data_table),
                 );
             }
 

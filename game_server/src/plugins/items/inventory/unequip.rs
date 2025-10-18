@@ -62,8 +62,8 @@ fn handle_unequip_items(
             paperdoll.unequip(item_object_id);
             unequipped_items.push(item_object_id);
 
-            if let Ok(template) = items_data_query.get_item_info(item.id()) {
-                if template.kind().bow_or_crossbow()
+            if let Ok(template) = items_data_query.get_item_info(item.id())
+                && template.kind().bow_or_crossbow()
                     && let Some(left_item) = paperdoll[DollSlot::LeftHand]
                     && let Ok(mut left_uniq_item) =
                         items.by_object_id_mut(left_item.object_id(), object_id_manager.as_ref())
@@ -72,7 +72,6 @@ fn handle_unequip_items(
                     paperdoll.unequip(left_item.object_id());
                     unequipped_items.push(left_item.object_id());
                 }
-            }
         }
 
         if !unequipped_items.is_empty() {
