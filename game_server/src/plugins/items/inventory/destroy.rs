@@ -2,12 +2,9 @@ use bevy::prelude::*;
 use game_core::{
     items::{
         DestroyItemRequest, Inventory, Item, ItemLocation, ItemsDataQuery, UnequipItems,
-        UniqueItem, UpdateType,
     },
-    network::packets::server::{GameServerPacket, InventoryUpdate},
     object_id::{ObjectIdManager, QueryByObjectIdMut},
 };
-use smallvec::smallvec;
 
 pub fn destroy_item(
     destroy_request: Trigger<DestroyItemRequest>,
@@ -37,16 +34,6 @@ pub fn destroy_item(
     if destroy_full_stack {
         inventory.remove_item(request.item_oid)?;
 
-        let unique_item = UniqueItem::new(request.item_oid, *item);
-
-        commands.trigger_targets(
-            GameServerPacket::from(InventoryUpdate::new(
-                smallvec![unique_item],
-                UpdateType::Remove,
-            )),
-            inventory_entity,
-        );
-
         if matches!(item.location(), ItemLocation::PaperDoll(_)) {
             unequip_items.write(UnequipItems::new(inventory_entity, vec![request.item_oid]));
         }
@@ -57,19 +44,6 @@ pub fn destroy_item(
     } else {
         // Partial destroy - split the stack
         item.set_count(item_count - request.count);
-
-        let item = *item;
-        let item_object_id = request.item_oid;
-
-        let unique_item = UniqueItem::new(item_object_id, item);
-
-        commands.trigger_targets(
-            GameServerPacket::from(InventoryUpdate::new(
-                smallvec![unique_item],
-                UpdateType::Remove,
-            )),
-            inventory_entity,
-        );
     }
 
     Ok(())

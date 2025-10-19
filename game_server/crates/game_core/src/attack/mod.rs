@@ -149,7 +149,12 @@ impl AttackHit {
         hits: Vec<(Entity, HitInfo)>,
         all_missed: bool,
     ) -> Self {
-        Self::AttackMultiHit(AttackMultiHit::new(duration, weapon_entity, hits, all_missed))
+        Self::AttackMultiHit(AttackMultiHit::new(
+            duration,
+            weapon_entity,
+            hits,
+            all_missed,
+        ))
     }
 
     pub fn remove_soulshot(&self) -> bool {

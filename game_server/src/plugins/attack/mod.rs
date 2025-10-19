@@ -12,7 +12,6 @@ use bevy::{
     },
     prelude::*,
 };
-use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     animation::{Animation, AnimationTimer},
     attack::{
@@ -358,7 +357,7 @@ fn attack_entity(
                             let hit_info =
                                 calc_hit_info(soulshot_used, attacker_ref, next_target_ref, world);
 
-                            all_missed = all_missed & hit_info.miss;
+                            all_missed &= hit_info.miss;
 
                             attack_info.add_hit(
                                 hit_info.dmg as u32,

@@ -314,8 +314,7 @@ impl PaperDoll {
 
         match body_part {
             BodyPart::BothHand => {
-                if let Some(left_info) =
-                    items_infos.item_info_from_uniq(&self[DollSlot::LeftHand])
+                if let Some(left_info) = items_infos.item_info_from_uniq(&self[DollSlot::LeftHand])
                     && !item_info.ammo_matches(left_info)
                 {
                     previous.push(self[DollSlot::LeftHand]);
@@ -346,7 +345,6 @@ impl PaperDoll {
             }
             _ => {}
         }
-
 
         (selected_slot, previous)
     }
