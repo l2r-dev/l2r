@@ -1,14 +1,12 @@
 use bevy::prelude::*;
-use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     items::{
-        self, DestroyItemRequest, Inventory, Item, ItemLocation, ItemsDataQuery, UnequipItems,
+        DestroyItemRequest, Inventory, Item, ItemLocation, ItemsDataQuery, UnequipItems,
         UniqueItem, UpdateType,
     },
     network::packets::server::{GameServerPacket, InventoryUpdate},
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectIdMut},
+    object_id::{ObjectIdManager, QueryByObjectIdMut},
 };
-use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
 use smallvec::smallvec;
 
 pub fn destroy_item(
@@ -17,7 +15,6 @@ pub fn destroy_item(
     mut items: Query<(Entity, Mut<Item>)>,
     mut inventories: Query<Mut<Inventory>>,
     items_data_query: ItemsDataQuery,
-    repo_manager: Res<RepositoryManager>,
     mut unequip_items: EventWriter<UnequipItems>,
     mut object_id_manager: ResMut<ObjectIdManager>,
 ) -> Result<()> {
@@ -57,28 +54,12 @@ pub fn destroy_item(
         // Remove the item entity from the world
         commands.entity(item_entity).despawn();
         object_id_manager.release_id(request.item_oid);
-
-        if !repo_manager.is_mock() {
-            let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
-            let item_oid = request.item_oid;
-
-            commands.spawn_task(move || async move {
-                items_repository.delete_by_id(item_oid).await?;
-                Ok(())
-            });
-        }
     } else {
         // Partial destroy - split the stack
         item.set_count(item_count - request.count);
 
         let item = *item;
         let item_object_id = request.item_oid;
-
-        if !repo_manager.is_mock() {
-            commands.spawn_task(move || async move {
-                item.update_count_in_database(item_object_id).await
-            });
-        }
 
         let unique_item = UniqueItem::new(item_object_id, item);
 

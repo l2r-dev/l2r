@@ -130,6 +130,7 @@ impl AttackHit {
 
         second_duration: Duration,
         second_info: HitInfo,
+        both_missed: bool,
     ) -> Self {
         Self::AttackDualHit(AttackDualHit::new(
             target,
@@ -138,6 +139,7 @@ impl AttackHit {
             first_info,
             second_duration,
             second_info,
+            both_missed,
         ))
     }
 
@@ -145,8 +147,25 @@ impl AttackHit {
         duration: Duration,
         weapon_entity: Option<Entity>,
         hits: Vec<(Entity, HitInfo)>,
+        all_missed: bool,
     ) -> Self {
-        Self::AttackMultiHit(AttackMultiHit::new(duration, weapon_entity, hits))
+        Self::AttackMultiHit(AttackMultiHit::new(duration, weapon_entity, hits, all_missed))
+    }
+
+    pub fn remove_soulshot(&self) -> bool {
+        match self {
+            AttackHit::AttackCommonHit(v) => v.remove_soulshot(),
+            AttackHit::AttackDualHit(v) => v.remove_soulshot(),
+            AttackHit::AttackMultiHit(v) => v.remove_soulshot(),
+        }
+    }
+
+    pub fn weapon_entity(&self) -> Option<Entity> {
+        match self {
+            AttackHit::AttackCommonHit(v) => v.weapon_entity,
+            AttackHit::AttackDualHit(v) => v.weapon_entity,
+            AttackHit::AttackMultiHit(v) => v.weapon_entity,
+        }
     }
 }
 
@@ -162,6 +181,7 @@ pub struct AttackDualHit {
     secondary_info: HitInfo,
 
     is_primary: bool,
+    both_missed: bool,
 }
 
 impl AttackDualHit {
@@ -174,6 +194,8 @@ impl AttackDualHit {
 
         second_duration: Duration,
         second_info: HitInfo,
+
+        both_missed: bool,
     ) -> Self {
         let first_timer = Timer::new(first_duration, TimerMode::Once);
         let second_timer = Timer::new(second_duration, TimerMode::Once);
@@ -186,7 +208,12 @@ impl AttackDualHit {
             secondary_timer: second_timer,
             secondary_info: second_info,
             is_primary: true,
+            both_missed,
         }
+    }
+
+    fn remove_soulshot(&self) -> bool {
+        !self.both_missed && self.is_primary
     }
 
     fn timer(&self) -> &Timer {
@@ -203,10 +230,6 @@ impl AttackDualHit {
         } else {
             &mut self.secondary_timer
         }
-    }
-
-    pub fn weapon_entity(&self) -> Option<Entity> {
-        self.weapon_entity
     }
 
     pub fn hit(&self) -> HitInfo {
@@ -226,13 +249,7 @@ impl AttackDualHit {
     }
 
     pub fn set_to_secondary(&mut self) -> bool {
-        if self.is_primary {
-            self.is_primary = false;
-
-            return true;
-        }
-
-        false
+        std::mem::take(&mut self.is_primary)
     }
 }
 
@@ -241,6 +258,7 @@ pub struct AttackMultiHit {
     hits: Vec<(Entity, HitInfo)>,
     timer: Timer,
     weapon_entity: Option<Entity>,
+    all_missed: bool,
 }
 
 impl AttackMultiHit {
@@ -248,6 +266,7 @@ impl AttackMultiHit {
         duration: Duration,
         weapon_entity: Option<Entity>,
         hits: Vec<(Entity, HitInfo)>,
+        all_missed: bool,
     ) -> Self {
         let timer = Timer::new(duration, TimerMode::Once);
 
@@ -255,7 +274,12 @@ impl AttackMultiHit {
             timer,
             hits,
             weapon_entity,
+            all_missed,
         }
+    }
+
+    fn remove_soulshot(&self) -> bool {
+        !self.all_missed
     }
 
     pub fn timer(&self) -> &Timer {
@@ -264,10 +288,6 @@ impl AttackMultiHit {
 
     pub fn timer_mut(&mut self) -> &mut Timer {
         &mut self.timer
-    }
-
-    pub fn weapon_entity(&self) -> Option<Entity> {
-        self.weapon_entity
     }
 
     pub fn hits(&self) -> &[(Entity, HitInfo)] {
@@ -300,6 +320,10 @@ impl AttackCommonHit {
         }
     }
 
+    fn remove_soulshot(&self) -> bool {
+        !self.hit_info.miss
+    }
+
     pub fn timer(&self) -> &Timer {
         &self.timer
     }
@@ -314,10 +338,6 @@ impl AttackCommonHit {
 
     pub fn target(&self) -> Entity {
         self.target
-    }
-
-    pub fn weapon_entity(&self) -> Option<Entity> {
-        self.weapon_entity
     }
 }
 

@@ -90,7 +90,7 @@ struct AttackingQuery<'a> {
     target: Ref<'a, Attacking>,
     paper_doll: Option<Ref<'a, PaperDoll>>,
     move_to: Option<Ref<'a, MoveToEntity>>,
-    weapon_reuse: Option<Ref<'a, WeaponReuse>>,
+    weapon_reuse_active: Has<WeaponReuse>,
 }
 
 #[derive(QueryFilter)]
@@ -184,8 +184,7 @@ fn attack_entity(
                         (0.5, None, None, false)
                     };
 
-                    if is_bow && attacker.weapon_reuse.is_some() {
-                        //TODO: возможно стоит обрабатывать лук в отдельной системе. Проверить
+                    if weapon_reuse_delay.is_some() && attacker.weapon_reuse_active {
                         return;
                     }
 
@@ -295,6 +294,8 @@ fn attack_entity(
                         let hit_info =
                             calc_hit_info(soulshot_used, attacker_ref, aiming_target_ref, world);
 
+                        let mut all_missed = hit_info.miss;
+
                         attack_info.add_hit(
                             hit_info.dmg as u32,
                             *aiming_target.object_id,
@@ -315,9 +316,6 @@ fn attack_entity(
                             .unwrap_or_default()
                             .round();
 
-                        //TODO: Хак! Сейчас если персонаж убегает от цели и нажать атаку, он все еще будет смотреть от нее
-                        // видимо нужно поменять порядок систем
-                        // А может и не хак, возможно стоит так и оставить. И для других проверок всегда брать вектор на цель
                         let attack_vector =
                             attacker.transform.translation - aiming_target.transform.translation;
 
@@ -360,6 +358,8 @@ fn attack_entity(
                             let hit_info =
                                 calc_hit_info(soulshot_used, attacker_ref, next_target_ref, world);
 
+                            all_missed = all_missed & hit_info.miss;
+
                             attack_info.add_hit(
                                 hit_info.dmg as u32,
                                 *next_target.object_id,
@@ -383,6 +383,7 @@ fn attack_entity(
                             attack_interval.mul_f32(interval_multiplier),
                             weapon_entity,
                             hits,
+                            all_missed,
                         )
                     } else {
                         let hit_info =
@@ -425,6 +426,7 @@ fn attack_entity(
                                 hit_info,
                                 attack_interval.mul_f32(second_attack_interval_multiplier),
                                 second_hit_info,
+                                hit_info.miss & second_hit_info.miss,
                             )
                         } else {
                             AttackHit::new_common(
@@ -532,28 +534,23 @@ fn consume_arrow(
     for (char_entity, mut paperdoll) in characters.iter_mut() {
         commands.entity(char_entity).remove::<ConsumeArrow>();
 
-        let Some(left_hand_item_uniq) = &mut paperdoll[DollSlot::LeftHand] else {
+        let Some(paperdoll_left_hand_item) = &mut paperdoll[DollSlot::LeftHand] else {
             continue;
         };
 
-        let left_hand_item_object_id = left_hand_item_uniq.object_id();
+        let left_hand_item_object_id = paperdoll_left_hand_item.object_id();
 
         let Ok((_, mut left_hand_item)) =
             items.by_object_id_mut(left_hand_item_object_id, object_id_manager.as_ref())
         else {
+            warn!("no item with id: {left_hand_item_object_id}");
             continue;
         };
 
-        left_hand_item_uniq.item_mut().dec_count();
+        paperdoll_left_hand_item.item_mut().dec_count();
         left_hand_item.dec_count();
 
-        let item = *left_hand_item;
-        commands.spawn_task(move || async move {
-            item.update_count_in_database(left_hand_item_object_id)
-                .await
-        });
-
-        let unique_item = UniqueItem::new(left_hand_item_object_id, item);
+        let unique_item = UniqueItem::new(left_hand_item_object_id, *left_hand_item);
 
         commands.trigger_targets(
             GameServerPacket::from(InventoryUpdate::new(
@@ -616,8 +613,6 @@ fn process_attack_hits(
                         );
                     }
 
-                    remove_soulshot(commands.reborrow(), pending_hit.weapon_entity());
-
                     commands.entity(attacker.entity).remove::<AttackHit>();
                 }
 
@@ -636,8 +631,6 @@ fn process_attack_hits(
                             );
                         }
                     }
-
-                    remove_soulshot(commands.reborrow(), pending_hits.weapon_entity());
 
                     commands.entity(attacker.entity).remove::<AttackHit>();
                 }
@@ -658,12 +651,14 @@ fn process_attack_hits(
                         );
                     }
 
-                    if pending_dual_hit.set_to_secondary() {
-                        remove_soulshot(commands.reborrow(), pending_dual_hit.weapon_entity());
-                    } else {
+                    if !pending_dual_hit.set_to_secondary() {
                         commands.entity(attacker.entity).remove::<AttackHit>();
                     }
                 }
+            }
+
+            if pending_hit.remove_soulshot() {
+                remove_soulshot(commands.reborrow(), pending_hit.weapon_entity());
             }
         }
     }

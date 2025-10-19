@@ -296,54 +296,59 @@ impl PaperDoll {
 
         let slots = DollSlot::bodypart_slots(body_part);
 
-        match body_part {
+        let selected_slot = match body_part {
             BodyPart::BothEar | BodyPart::BothFinger | BodyPart::Talisman => {
-                let selected_slot = self.free_or_first_slot(slots);
-                previous.push(self[selected_slot]);
-                self[selected_slot] = item;
-                (selected_slot, previous)
+                self.free_or_first_slot(slots)
             }
             _ => {
                 // Select first slot as the primary slot
-                let selected_slot = slots
+                slots
                     .first()
                     .copied()
-                    .expect("At least one slot must exist");
+                    .expect("At least one slot must exist")
+            }
+        };
 
-                previous.push(self[selected_slot]);
-                self[selected_slot] = item;
+        previous.push(self[selected_slot]);
+        self[selected_slot] = item;
 
-                if body_part == BodyPart::BothHand {
-                    if let Some(left_info) =
-                        items_infos.item_info_from_uniq(&self[DollSlot::LeftHand])
-                        && !item_info.ammo_matches(left_info)
-                    {
-                        previous.push(self[DollSlot::LeftHand]);
-                        self[DollSlot::LeftHand] = None;
-                    }
-                } else if body_part == BodyPart::LeftHand {
-                    if let Some(right_info) =
-                        items_infos.item_info_from_uniq(&self[DollSlot::RightHand])
-                        && !right_info.ammo_matches(item_info)
-                    {
-                        previous.push(self[DollSlot::RightHand]);
-                        self[DollSlot::RightHand] = None;
-                    }
-                } else if body_part == BodyPart::FullBody {
-                    previous.push(self[DollSlot::Legs]);
-                    self[DollSlot::Legs] = None;
-                } else if body_part == BodyPart::Legs
-                    && let Some(v) = self[DollSlot::Chest]
+        match body_part {
+            BodyPart::BothHand => {
+                if let Some(left_info) =
+                    items_infos.item_info_from_uniq(&self[DollSlot::LeftHand])
+                    && !item_info.ammo_matches(left_info)
+                {
+                    previous.push(self[DollSlot::LeftHand]);
+                    self[DollSlot::LeftHand] = None;
+                }
+            }
+            BodyPart::LeftHand => {
+                if let Some(right_info) =
+                    items_infos.item_info_from_uniq(&self[DollSlot::RightHand])
+                    && !right_info.ammo_matches(item_info)
+                {
+                    previous.push(self[DollSlot::RightHand]);
+                    self[DollSlot::RightHand] = None;
+                }
+            }
+            BodyPart::FullBody => {
+                previous.push(self[DollSlot::Legs]);
+                self[DollSlot::Legs] = None;
+            }
+            BodyPart::Legs => {
+                if let Some(v) = self[DollSlot::Chest]
                     && let Some(v) = v.item().bodypart()
                     && v == BodyPart::FullBody
                 {
                     previous.push(self[DollSlot::Chest]);
                     self[DollSlot::Chest] = None;
                 }
-
-                (selected_slot, previous)
             }
+            _ => {}
         }
+
+
+        (selected_slot, previous)
     }
 
     pub fn is_equipped(&self, object_id: ObjectId) -> bool {

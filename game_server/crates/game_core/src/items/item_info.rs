@@ -221,8 +221,8 @@ impl ItemInfo {
             .unwrap_or(false)
     }
 
-    pub fn ammo_matches(&self, other: &Self) -> bool {
-        if self.grade != other.grade {
+    pub fn ammo_matches(&self, ammo: &Self) -> bool {
+        if self.grade.arrow_grade() != ammo.grade {
             return false;
         }
 
@@ -233,14 +233,14 @@ impl ItemInfo {
         match v.kind {
             WeaponKind::Bow => {
                 matches!(
-                    other.kind,
+                    ammo.kind,
                     items::Kind::Consumable(ConsumableKind::Ammo(AmmoKind::Arrow))
                 )
             }
 
             WeaponKind::Crossbow => {
                 matches!(
-                    other.kind,
+                    ammo.kind,
                     items::Kind::Consumable(ConsumableKind::Ammo(AmmoKind::Bolt))
                 )
             }

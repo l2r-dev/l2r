@@ -74,63 +74,47 @@ pub struct WeaponAttackParams {
 
 impl Weapon {
     pub fn attack_params(&self) -> WeaponAttackParams {
-        let (primary_attack_delay_multiplier, secondary_attack_delay_multiplier, is_bow) =
-            self.kind.attack_params();
-
         WeaponAttackParams {
-            is_bow,
-            primary_attack_delay_multiplier,
-            secondary_attack_delay_multiplier,
             reuse_delay: self.reuse_delay,
+            ..self.kind.attack_params()
         }
     }
 }
 
-impl WeaponKind {
-    fn attack_params(&self) -> (f32, Option<f32>, bool) {
-        let (primary_attack_delay_multiplier, secondary_attack_delay_multiplier, is_bow) =
-            match self {
-                WeaponKind::Sword(sword) => match sword {
-                    SwordType::Ancient => (0.6, None, false),
-                    SwordType::Rapier => (0.4, None, false),
-                    SwordType::OneHanded => (0.55, None, false),
-                    SwordType::TwoHanded => (0.6, None, false),
-                    SwordType::Dual => (0.3, Some(0.35), false),
-                },
-
-                WeaponKind::Blunt(blunt) => match blunt {
-                    BluntType::OneHanded => (0.55, None, false),
-                    BluntType::TwoHanded => (0.6, None, false),
-                    BluntType::Dual => (0.3, Some(0.35), false),
-                },
-
-                WeaponKind::Dagger(dagger) => {
-                    if matches!(dagger, DaggerType::Dual) {
-                        (0.3, Some(0.35), false)
-                    } else {
-                        (0.55, None, false)
-                    }
-                }
-
-                WeaponKind::Fist(_) => (0.3, Some(0.35), false),
-
-                WeaponKind::Pole => (0.6, None, false),
-
-                WeaponKind::Bow => (1.0, None, true),
-
-                WeaponKind::Crossbow => (0.8, None, true),
-
-                WeaponKind::Etc | WeaponKind::FortFlag | WeaponKind::FishingRod => {
-                    (0.6, None, false)
-                }
-            };
-
-        (
-            primary_attack_delay_multiplier,
-            secondary_attack_delay_multiplier,
-            is_bow,
-        )
+impl WeaponKind {    fn attack_params(&self) -> WeaponAttackParams {
+    let (primary_attack_delay_multiplier, secondary_attack_delay_multiplier) = match self {
+        WeaponKind::Sword(sword) => match sword {
+            SwordType::Ancient => (0.6, None),
+            SwordType::Rapier => (0.4, None),
+            SwordType::OneHanded => (0.55, None),
+            SwordType::TwoHanded => (0.6, None),
+            SwordType::Dual => (0.3, Some(0.35)),
+        },
+        WeaponKind::Blunt(blunt) => match blunt {
+            BluntType::OneHanded => (0.55, None),
+            BluntType::TwoHanded => (0.6, None),
+            BluntType::Dual => (0.3, Some(0.35)),
+        },
+        WeaponKind::Dagger(dagger) => {
+            if matches!(dagger, DaggerType::Dual) {
+                (0.3, Some(0.35))
+            } else {
+                (0.55, None)
+            }
+        }
+        WeaponKind::Fist(_) => (0.3, Some(0.35)),
+        WeaponKind::Pole => (0.6, None),
+        WeaponKind::Bow => (1.0, None),
+        WeaponKind::Crossbow => (0.8, None),
+        WeaponKind::Etc | WeaponKind::FortFlag | WeaponKind::FishingRod => (0.6, None),
+    };
+    WeaponAttackParams {
+        primary_attack_delay_multiplier,
+        secondary_attack_delay_multiplier,
+        is_bow: matches!(self, WeaponKind::Bow | WeaponKind::Crossbow),
+        reuse_delay: None,
     }
+}
 
     pub fn all_kinds() -> [super::Kind; 9] {
         [
