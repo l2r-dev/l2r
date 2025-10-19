@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+util_macros = {path = "../../../util_macros" }
 l2r_core = { path = "../../../core", features = ["high_five"] }
 
 state = { path = "../state" }

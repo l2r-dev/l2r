@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["core", "login_server", "game_server", "game_server/crates/*"]
+members = ["core", "login_server", "game_server", "game_server/crates/*", "util_macros"]
 
 default-members = [
   "core",
