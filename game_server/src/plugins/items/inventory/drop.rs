@@ -136,7 +136,7 @@ pub fn drop_item(
 
             event.item_oid
         } else {
-            // Partial drop - split the stack
+            // Partial drop - split the stack, inventory update will be handled in ItemsPlugin::count_changed
             item.set_count(item_count - event.count);
 
             let new_object_id = object_id_manager.next_id();
@@ -186,7 +186,7 @@ pub fn drop_item(
         metrics.counter(ItemMetric::ItemsDropped)?.inc();
 
         let drop_item_packet = DropItem::new(
-            u32::from(*owner_id),
+            *owner_id,
             object_id_to_drop,
             item_id,
             event.location,

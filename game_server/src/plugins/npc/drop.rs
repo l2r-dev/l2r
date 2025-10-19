@@ -17,7 +17,7 @@ use smallvec::SmallVec;
 #[derive(SystemParam)]
 pub struct DropSystemParams<'w, 's> {
     pub world_map_query: WorldMapQuery<'w, 's>,
-    pub transforms: Query<'w, 's, Ref<'static, Transform>>,
+    pub dropper_info: Query<'w, 's, (Ref<'static, Transform>, Ref<'static, ObjectId>)>,
     pub npc_info: RegionalNpcInfoQuery<'w, 's>,
     pub items_data_query: ItemsDataQuery<'w>,
     pub repo_manager: Res<'w, RepositoryManager>,
@@ -42,7 +42,7 @@ pub fn generate_drop_request_handler(
         return Ok(());
     }
     let dropper_entity = drop_request.target();
-    let dropper_transform = params.transforms.get(dropper_entity)?;
+    let (dropper_transform, dropper_oid) = params.dropper_info.get(dropper_entity)?;
     let region_id = RegionId::from(dropper_transform.translation);
 
     let Some(region_entity) = params.world_map_query.world_map.get(&region_id) else {
@@ -94,7 +94,7 @@ pub fn generate_drop_request_handler(
         ));
 
         let drop_item = DropItem::new(
-            dropper_entity.index(),
+            *dropper_oid,
             new_object_id,
             drop_item_id,
             location,

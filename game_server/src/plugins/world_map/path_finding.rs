@@ -2,6 +2,7 @@ use bevy::{ecs::system::ParallelCommands, log, prelude::*};
 use game_core::{
     movement::MoveTarget,
     network::packets::server::{DropItem, GameServerPacket},
+    object_id::ObjectId,
     path_finding::{
         DropDebugItem, InActionPathfindingTimer, PathFindingComponentsPlugin, PathFindingRequest,
         PathFindingResult, VisibilityCheckRequest, VisibilityCheckResult, WAYPOINTS_CAPACITY,
@@ -53,11 +54,16 @@ fn pathfinding_cooldown_timer_handler(
     });
 }
 
-fn drop_debug_item(trigger: Trigger<DropDebugItem>, mut commands: Commands) -> Result<()> {
+fn drop_debug_item(
+    trigger: Trigger<DropDebugItem>,
+    mut commands: Commands,
+    object_ids: Query<Ref<ObjectId>>,
+) -> Result<()> {
     let entity = trigger.target();
     let loc = trigger.event().0;
+    let oid = object_ids.get(entity)?;
 
-    let drop_item_packet = DropItem::new(entity.index(), 1.into(), 57.into(), loc, true, 1);
+    let drop_item_packet = DropItem::new(*oid, 1.into(), 57.into(), loc, true, 1);
 
     commands.trigger_targets(GameServerPacket::from(drop_item_packet), entity);
 

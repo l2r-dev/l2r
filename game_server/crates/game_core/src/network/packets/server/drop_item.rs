@@ -7,7 +7,7 @@ use std::fmt;
 
 #[derive(Clone, Reflect)]
 pub struct DropItem {
-    dropper: u32,
+    dropper: ObjectId,
     item_oid: ObjectId,
     item_id: Id,
     loc: Vec3,
@@ -36,8 +36,8 @@ impl L2rServerPacket for DropItem {
         let mut buffer = ServerPacketBuffer::new();
         let loc = GameVec3::from(self.loc);
         buffer.extend(GameServerPacketCodes::DROP_ITEM.to_le_bytes());
-        buffer.u32(self.dropper);
-        buffer.u32(u32::from(self.item_oid));
+        buffer.u32(self.dropper.into());
+        buffer.u32(self.item_oid.into());
         buffer.u32(self.item_id.into());
         buffer.extend(loc.to_le_bytes());
         buffer.u32_from_bool(self.is_stackable);
@@ -49,7 +49,7 @@ impl L2rServerPacket for DropItem {
 
 impl DropItem {
     pub fn new(
-        dropper: u32,
+        dropper: ObjectId,
         item_oid: ObjectId,
         item_id: Id,
         loc: Vec3,
