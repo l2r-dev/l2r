@@ -23,6 +23,9 @@ fn update_admin_shop_items_list(
     } else {
         events.clear();
     }
+    // Clear previous items to avoid duplicates, cause assets may be loaded incrementally
+    admin_shop_items.clear();
+    
     for (item_id, item_handle) in items_data_query.items_data_table.iter() {
         if let Some(items_info) = items_data_query.items_data_assets.get(item_handle.id())
             && let Some(item_info) = items_info.get(item_id)
