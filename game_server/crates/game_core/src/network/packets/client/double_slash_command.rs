@@ -1,4 +1,4 @@
-use crate::npc;
+use crate::{npc, object_id::ObjectId};
 use bevy::prelude::*;
 use derive_more::{From, Into};
 use l2r_core::packets::{ClientPacketBuffer, L2rSerializeError};
@@ -13,6 +13,8 @@ pub enum DoubleSlashCommand {
     Admin,
     #[strum(serialize = "spawn")]
     Spawn(npc::Id),
+    #[strum(serialize = "goto")]
+    GoTo { target_obj_id: ObjectId },
 }
 
 impl FromStr for DoubleSlashCommand {
@@ -34,6 +36,19 @@ impl FromStr for DoubleSlashCommand {
                     _ => return Err(()),
                 };
                 Ok(DoubleSlashCommand::Spawn(npc::Id::from(id)))
+            }
+            "goto" => {
+                let Some(object_id) = parts.next() else {
+                    return Err(());
+                };
+
+                let Ok(object_id) = object_id.parse::<usize>() else {
+                    return Err(());
+                };
+
+                Ok(DoubleSlashCommand::GoTo {
+                    target_obj_id: ObjectId::from(object_id),
+                })
             }
             _ => Err(()),
         }

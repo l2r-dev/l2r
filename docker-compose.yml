@@ -5,7 +5,7 @@ services:
     volumes:
       - ./docker/data/valkey:/data
     ports:
-      - 6379:6379
+      - "14033:6379"
   postgresql:
     restart: always
     image: postgres:17.6
@@ -16,7 +16,7 @@ services:
     volumes:
       - ./docker/data/postgresql:/var/lib/postgresql/data
     ports:
-      - 5432:5432
+      - "14034:5432"
   pgadmin:
     image: elestio/pgadmin:REL-9_8
     container_name: pgadmin

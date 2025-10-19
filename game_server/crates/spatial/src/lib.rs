@@ -117,6 +117,8 @@ impl RelativeDirection {
 
 pub trait TransformRelativeDirection {
     fn relative_direction(&self, other: &Self) -> RelativeDirection;
+
+    fn is_within_angle_relative_to(&self, other: &Self, angle: f32) -> bool;
 }
 
 impl TransformRelativeDirection for Transform {
@@ -136,5 +138,17 @@ impl TransformRelativeDirection for Transform {
             angle if angle > 60.0 && angle < 120.0 => RelativeDirection::Side,
             _ => RelativeDirection::Back,
         }
+    }
+
+    fn is_within_angle_relative_to(&self, other: &Self, angle: f32) -> bool {
+        let target_degrees = *Degrees::from(other.rotation);
+        let direction_to_target = self.translation.direction_degrees(&other.translation);
+
+        let mut angle_diff = (direction_to_target - target_degrees).abs() % 360.0;
+        if angle_diff > 180.0 {
+            angle_diff = 360.0 - angle_diff;
+        }
+
+        angle_diff <= (angle / 2.0)
     }
 }

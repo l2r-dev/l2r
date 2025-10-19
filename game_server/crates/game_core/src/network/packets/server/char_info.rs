@@ -35,6 +35,8 @@ pub struct CharInfo {
     pub dead: bool,
     pub standing: bool,
     pub in_party_match_room: bool,
+    //TODO: для дебага
+    pub entity: Entity,
 }
 impl fmt::Debug for CharInfo {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
@@ -67,6 +69,7 @@ impl L2rServerPacket for CharInfo {
         buffer.u32(self.race.into());
         buffer.u32(self.appearance.gender.into());
         buffer.u32(self.class_id.into());
+
         for slot_item in self.paperdoll_items.char_info_iter() {
             buffer.u32(
                 slot_item
@@ -75,6 +78,7 @@ impl L2rServerPacket for CharInfo {
                     .unwrap_or(0),
             );
         }
+
         for _slot_item in self.paperdoll_items.char_info_iter() {
             // augumentation id
             buffer.u32(0);
@@ -101,7 +105,11 @@ impl L2rServerPacket for CharInfo {
         buffer.u32(self.appearance.hair_style);
         buffer.u32(self.appearance.hair_color);
         buffer.u32(self.appearance.face);
-        buffer.str(&self.title);
+        //TODO: для дебага
+        buffer.str(&format!(
+            "{} {} {}",
+            self.title, self.object_id, self.entity
+        ));
         buffer.u32(0); // clan id
         buffer.u32(0); // clan crest id
         buffer.u32(0); // ally id
@@ -176,6 +184,7 @@ impl CharInfo {
             in_party_match_room: false,
             invisible,
             standing: query.sitting.is_none(),
+            entity: query.entity,
         }
     }
 }

@@ -40,6 +40,13 @@ impl Grade {
             _ => *self,
         }
     }
+
+    pub fn arrow_grade(&self) -> Self {
+        match self {
+            Self::S80 | Self::S84 => Self::S,
+            _ => *self,
+        }
+    }
 }
 
 impl From<Grade> for u32 {

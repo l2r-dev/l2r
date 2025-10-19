@@ -1,5 +1,5 @@
-use super::{ItemsDataTable, UsableItem, kind::SortingKind};
-use crate::stats::*;
+use super::{AmmoKind, ConsumableKind, ItemsDataTable, UsableItem, WeaponKind, kind::SortingKind};
+use crate::{items, stats::*};
 use bevy::{log, platform::collections::HashMap, prelude::*};
 use bevy_defer::{AsyncAccess, AsyncWorld};
 use serde::{Deserialize, Serialize};
@@ -160,6 +160,18 @@ impl ItemInfo {
                         priority: 0,
                     },
                 );
+
+                if let WeaponKind::Pole = weapon.kind {
+                    modifiers.add_modifier(
+                        format!("item:{name}:p_atk_max_targets_count"),
+                        StatModifier {
+                            stat: StatKind::Attack(AttackStat::PAtkMaxTargetsCount),
+                            //TODO: вынести в конфиг
+                            operation: StatsOperation::Set(3.0),
+                            priority: 0,
+                        },
+                    )
+                }
             }
 
             Some(modifiers)
@@ -207,6 +219,34 @@ impl ItemInfo {
                     .unwrap_or(false)
             })
             .unwrap_or(false)
+    }
+
+    pub fn ammo_matches(&self, ammo: &Self) -> bool {
+        if self.grade.arrow_grade() != ammo.grade {
+            return false;
+        }
+
+        let items::Kind::Weapon(v) = self.kind else {
+            return false;
+        };
+
+        match v.kind {
+            WeaponKind::Bow => {
+                matches!(
+                    ammo.kind,
+                    items::Kind::Consumable(ConsumableKind::Ammo(AmmoKind::Arrow))
+                )
+            }
+
+            WeaponKind::Crossbow => {
+                matches!(
+                    ammo.kind,
+                    items::Kind::Consumable(ConsumableKind::Ammo(AmmoKind::Bolt))
+                )
+            }
+
+            _ => false,
+        }
     }
 
     pub fn premium(&self) -> bool {

@@ -63,7 +63,7 @@ fn handle(
             return Ok(());
         }
 
-        if let Some(_bodypart) = item_info.bodypart() {
+        if item_info.bodypart().is_some() {
             if item.equipped() {
                 params
                     .unequip_items

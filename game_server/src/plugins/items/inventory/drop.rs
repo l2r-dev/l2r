@@ -4,12 +4,12 @@ use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
         self, DropIfPossible, DropItemEvent, Inventory, Item, ItemLocation, ItemMetric,
-        ItemsDataQuery, UnequipItems, UniqueItem, UpdateType,
+        ItemsDataQuery, UnequipItems, UniqueItem,
         model::{ActiveModelSetCoordinates, Model},
     },
     network::{
         broadcast::ServerPacketBroadcast,
-        packets::server::{DropItem, GameServerPacket, InventoryUpdate, SystemMessage},
+        packets::server::{DropItem, GameServerPacket, SystemMessage},
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
 };
@@ -19,7 +19,6 @@ use l2r_core::{
 };
 use map::{WorldMap, id::RegionId};
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
-use smallvec::smallvec;
 use spatial::FlatDistance;
 use system_messages::{self, Id, SmParam};
 
@@ -135,34 +134,10 @@ pub fn drop_item(
                 });
             }
 
-            commands.trigger_targets(
-                GameServerPacket::from(InventoryUpdate::new(
-                    smallvec![unique_item],
-                    UpdateType::Remove,
-                )),
-                inventory_entity,
-            );
-
             event.item_oid
         } else {
             // Partial drop - split the stack
             item.set_count(item_count - event.count);
-            let item = *item;
-            let item_object_id = event.item_oid;
-
-            commands.spawn_task(move || async move {
-                item.update_count_in_database(item_object_id).await
-            });
-
-            let old_unique_item = UniqueItem::new(item_object_id, item);
-
-            commands.trigger_targets(
-                GameServerPacket::from(InventoryUpdate::new(
-                    smallvec![old_unique_item],
-                    UpdateType::Modify,
-                )),
-                inventory_entity,
-            );
 
             let new_object_id = object_id_manager.next_id();
 

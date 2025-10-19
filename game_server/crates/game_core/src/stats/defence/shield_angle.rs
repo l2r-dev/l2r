@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 pub struct ShieldAngle(u32);
 
 impl ShieldAngle {
-    pub const BASE: u32 = 120;
+    pub const BASE: u32 = 60;
     pub const MAX: u32 = 360;
     pub fn formula(args: FormulaArguments) -> f32 {
         args.base_value

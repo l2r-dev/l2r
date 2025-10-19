@@ -132,7 +132,7 @@
 ---@field _1 SkillTreesHashMap HashMap mapping ClassId to Handle<SkillTree>
 
 ---@class DollSlot Equipment slot identifier for character paperdoll
----@field variant string The equipment slot type: "Underwear", "Head", "AccessoryLeft", "AccessoryRight", "Neck", "RightHand", "Chest", "LeftHand", "RightEar", "LeftEar", "Gloves", "Legs", "Feet", "RightFinger", "LeftFinger", "LeftBracelet", "RightBracelet", "Deco1"-"Deco6", "Cloak", "Belt"
+---@field variant string The equipment slot type: "Underwear", "Head", "AccessoryLeft", "AccessoryRight", "Neck", "RightHand", "Chest", "LeftHand", "RightEar", "LeftEar", "Gloves", "Legs", "Feet", "RightFinger", "LeftFinger", "LeftBracelet", "RightBracelet", "Talisman1"-"Talisman6", "Cloak", "Belt"
 
 ---@class PaperDoll Bevy Component for character equipment management
 ---@field slots table<DollSlot, any> HashMap mapping equipment slots to optional unique items
