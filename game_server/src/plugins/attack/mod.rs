@@ -240,7 +240,7 @@ fn attack_entity(
                     let soulshot_used = weapon_entity.and_then(|v| shot_used.get(v).ok()).is_some();
 
                     let soulshot_grade = if let Some(w) = weapon_info {
-                        w.grade()
+                        w.grade().shot_grade()
                     } else {
                         Grade::None
                     };
