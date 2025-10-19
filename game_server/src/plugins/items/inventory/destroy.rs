@@ -2,9 +2,12 @@ use bevy::prelude::*;
 use game_core::{
     items::{
         DestroyItemRequest, Inventory, Item, ItemLocation, ItemsDataQuery, UnequipItems,
+        UniqueItem, UpdateType,
     },
+    network::packets::server::{GameServerPacket, InventoryUpdate},
     object_id::{ObjectIdManager, QueryByObjectIdMut},
 };
+use smallvec::smallvec;
 
 pub fn destroy_item(
     destroy_request: Trigger<DestroyItemRequest>,
@@ -41,8 +44,17 @@ pub fn destroy_item(
         // Remove the item entity from the world
         commands.entity(item_entity).despawn();
         object_id_manager.release_id(request.item_oid);
+
+        let unique_item = UniqueItem::new(request.item_oid, *item);
+        commands.trigger_targets(
+            GameServerPacket::from(InventoryUpdate::new(
+                smallvec![unique_item],
+                UpdateType::Remove,
+            )),
+            inventory_entity,
+        );
     } else {
-        // Partial destroy - split the stack
+        // Partial destroy - split the stack, inventory update will be handled in ItemsPlugin::count_changed
         item.set_count(item_count - request.count);
     }
 

@@ -48,7 +48,7 @@ struct EnemyQuery<'a> {
     transform: Ref<'a, Transform>,
 }
 
-#[derive(Component, Reflect, Copy, Clone)]
+#[derive(Clone, Component, Copy, Reflect)]
 pub struct HitInfo {
     pub miss: bool,
     pub crit: bool,
