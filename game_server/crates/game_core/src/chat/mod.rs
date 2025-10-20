@@ -1,4 +1,3 @@
-use crate::network::packets::client::DoubleSlashCommandExecuted;
 use bevy::{log, prelude::*};
 pub use kind::Kind;
 use num_enum::{IntoPrimitive, TryFromPrimitive};
@@ -9,8 +8,7 @@ mod kind;
 pub struct ChatComponentsPlugin;
 impl Plugin for ChatComponentsPlugin {
     fn build(&self, app: &mut App) {
-        app.add_event::<DoubleSlashCommandExecuted>()
-            .add_event::<CustomCommandExecuted>()
+        app.add_event::<CustomCommandExecuted>()
             .add_event::<UserCommand>();
     }
 }
