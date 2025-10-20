@@ -23,7 +23,7 @@ pub enum DoubleSlashCommand {
     Item {
         id: items::Id,
         count: u64,
-    }
+    },
 }
 
 impl TryFrom<ClientPacketBuffer> for DoubleSlashCommand {

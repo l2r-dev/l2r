@@ -1,4 +1,4 @@
-use bevy::{log, prelude::*};
+use bevy::prelude::*;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     network::{
@@ -10,7 +10,7 @@ use game_core::{
         session::PacketReceiveParams,
     },
     object_id::ObjectId,
-    stats::Movable,
+    stats::{LastKnownPosition, Movable},
     teleport::TeleportInProgress,
 };
 use map::{WorldMap, WorldMapQuery, id::RegionId};
@@ -24,20 +24,35 @@ impl Plugin for ValidatePositionPlugin {
 
 const HORIZONTAL_THRESHOLD: f32 = 128.0;
 const VERTICAL_THRESHOLD: f32 = 128.0;
-const MAX_DISTANCE_THRESHOLD: f32 = 512.0;
+const MAX_DISTANCE_THRESHOLD: f32 = HORIZONTAL_THRESHOLD + VERTICAL_THRESHOLD;
 const MAX_DISTANCE_IN_WATER: f32 = MAX_DISTANCE_THRESHOLD * 2.0;
+const MAX_DISTANCE_FLYING: f32 = MAX_DISTANCE_THRESHOLD * 2.0;
+const GEODATA_HEIGHT_TOLERANCE: f32 = 16.0;
 
+const SPEED_CHECK_MIN_TIME: f32 = 0.1;
+const SPEED_TOLERANCE_MULTIPLIER: f32 = 1.5;
+const SPEED_VIOLATION_THRESHOLD: f32 = 2.0;
+
+// Using squared distances for performance
+const HORIZONTAL_THRESHOLD_SQ: f32 = HORIZONTAL_THRESHOLD * HORIZONTAL_THRESHOLD;
+const VERTICAL_THRESHOLD_SQ: f32 = VERTICAL_THRESHOLD * VERTICAL_THRESHOLD;
+const MAX_DISTANCE_IN_WATER_SQ: f32 = MAX_DISTANCE_IN_WATER * MAX_DISTANCE_IN_WATER;
+const MAX_DISTANCE_FLYING_SQ: f32 = MAX_DISTANCE_FLYING * MAX_DISTANCE_FLYING;
+
+/// Validates player position reported by client against server-side position.
 fn validate_position_handle(
     receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
     receive_params: PacketReceiveParams,
     mut commands: Commands,
+    time: Res<Time>,
 
     mut movable_objects: Query<
         (
             Ref<ObjectId>,
             Mut<Transform>,
             Ref<Movable>,
-            Option<Ref<TeleportInProgress>>,
+            Mut<LastKnownPosition>,
+            Has<TeleportInProgress>,
         ),
         With<Movable>,
     >,
@@ -46,85 +61,116 @@ fn validate_position_handle(
     let event = receive.event();
     if let GameClientPacket::ValidatePosition(ref packet) = event.packet {
         let character_entity = receive_params.character(&event.connection.id())?;
-        let (object_id, mut transform, movable, teleport_request) =
+        let (object_id, mut transform, movable, mut known_pos, teleport_request) =
             movable_objects.get_mut(character_entity)?;
-        if teleport_request.is_some() {
+
+        // Skip validation if teleport is in progress
+        if teleport_request {
             return Ok(());
         }
 
-        let mut server_pos = transform.translation;
+        let current_time = time.elapsed_secs_f64();
         let client_pos = packet.location;
-        let region_id = RegionId::from(server_pos);
+        let region_id = RegionId::from(transform.translation);
 
-        let geodata = world_map_query.region_geodata(region_id).ok();
+        let is_flying = movable.is_flying();
+        let is_in_water = movable.in_water();
 
-        if let Some(geodata) = geodata
-            && let Some(geodata_height) = geodata.nearest_height(&WorldMap::vec3_to_geo(server_pos))
+        let geodata = world_map_query.region_geodata(region_id)?;
+
+        if let Some(geodata_height) =
+            geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
         {
             let geodata_height = geodata_height as f32;
-            if server_pos.y > geodata_height && (geodata_height - server_pos.y).abs() > 150.0 {
-                log::trace!(
-                    "Entity {:?} is too far from the ground. Skipping position validation.",
-                    character_entity
-                );
-                transform.translation = client_pos;
-            } else if (server_pos.y - geodata_height).abs() > 16.0 {
-                log::trace!(
-                    "Adjusting height from {} to {}",
-                    server_pos.y,
-                    geodata_height
-                );
-                transform.translation.y = geodata_height;
-                server_pos.y = geodata_height;
+
+            if is_flying {
+                // Flying entities can't go underground - enforce minimum height
+                if transform.translation.y < geodata_height {
+                    transform.translation.y = geodata_height;
+                }
+            } else {
+                // Ground entities snap to geodata height
+                let height_diff = (transform.translation.y - geodata_height).abs();
+                if height_diff > GEODATA_HEIGHT_TOLERANCE {
+                    transform.translation.y = geodata_height;
+                }
             }
         }
 
-        // Calculate the distance in each axis
-        let delta_x = (server_pos.x - client_pos.x).abs();
-        let delta_y = (server_pos.y - client_pos.y).abs();
-        let delta_z = (server_pos.z - client_pos.z).abs();
+        // Validate client movement speed by comparing actual distance traveled
+        // with maximum allowed distance based on movement speed and elapsed time
+        let time_elapsed = (current_time - known_pos.timestamp) as f32;
+        if time_elapsed > SPEED_CHECK_MIN_TIME {
+            let move_speed = movable.speed() as f32;
+            let client_movement_distance = client_pos.distance(known_pos.position);
 
-        if delta_x > HORIZONTAL_THRESHOLD
-            || delta_y > VERTICAL_THRESHOLD
-            || delta_z > HORIZONTAL_THRESHOLD
-        {
-            let distance = delta_x + delta_y + delta_z;
+            let max_allowed_distance = move_speed * time_elapsed;
+            let max_allowed_with_tolerance = max_allowed_distance * SPEED_TOLERANCE_MULTIPLIER;
 
-            if !movable.is_flying() && !movable.in_water() {
-                log::trace!(
-                    "<{:?}> unsync ({:?}): server: {:?}, client: {:?}",
-                    object_id,
-                    distance,
-                    server_pos,
-                    client_pos,
-                );
-            }
-
-            let is_falling = delta_z > VERTICAL_THRESHOLD && server_pos.y < client_pos.y;
-            match (movable.in_water(), is_falling, distance) {
-                // In water
-                (true, _, dist) if dist < MAX_DISTANCE_IN_WATER => {
-                    transform.translation = client_pos;
+            let speed_ratio = client_movement_distance / max_allowed_distance;
+            if client_movement_distance > max_allowed_with_tolerance {
+                if speed_ratio > SPEED_VIOLATION_THRESHOLD {
+                    commands.trigger_targets(
+                        GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
+                        character_entity,
+                    );
+                    known_pos.position = transform.translation;
+                    known_pos.timestamp = current_time;
                     return Ok(());
                 }
-                // Entity is not in water and falling
-                (false, true, _) => {
-                    log::debug!(
-                        "Entity {:?} is falling. Skipping position validation.",
-                        character_entity
-                    );
-                    transform.translation = client_pos;
-                }
-                // Distance within threshold
-                (_, _, dist) if dist < MAX_DISTANCE_THRESHOLD => {
-                    transform.translation = client_pos;
-                }
-                _ => commands.trigger_targets(
-                    GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
-                    character_entity,
-                ),
             }
         }
+
+        let delta = transform.translation - client_pos;
+        let horizontal_dist_sq = delta.x * delta.x + delta.z * delta.z;
+        let vertical_dist_sq = delta.y * delta.y;
+        let total_dist_sq = transform.translation.distance_squared(client_pos);
+
+        if horizontal_dist_sq > HORIZONTAL_THRESHOLD_SQ || vertical_dist_sq > VERTICAL_THRESHOLD_SQ
+        {
+            let distance = total_dist_sq.sqrt();
+
+            if !is_flying && !is_in_water {
+                debug!(
+                    "<{:?}> Position desync - server: {:?}, client: {:?}, distance: {:.1}",
+                    object_id, transform.translation, client_pos, distance
+                );
+            }
+
+            // Check if entity is falling (client position is higher than server)
+            let is_falling =
+                vertical_dist_sq > VERTICAL_THRESHOLD_SQ && client_pos.y > transform.translation.y;
+
+            // When flying or in water, allow larger position corrections
+            // TODO: We already checked for maximum speed over time above
+            // TODO: So it's pretty safe to trust client position here, but maybe we can improve it further?
+            match (is_flying, is_in_water, is_falling, total_dist_sq) {
+                // Flying
+                (true, _, _, dist_sq) if dist_sq < MAX_DISTANCE_FLYING_SQ => {
+                    transform.translation = client_pos;
+                }
+                // In water
+                (false, true, _, dist_sq) if dist_sq < MAX_DISTANCE_IN_WATER_SQ => {
+                    transform.translation = client_pos;
+                }
+                // Entity is falling - accept only client height, because server don't have gravity
+                // And we don't want to stick player to the ground instantly
+                (false, false, true, _) => {
+                    transform.translation.y = client_pos.y;
+                }
+                // All other cases - server position takes priority
+                _ => {
+                    commands.trigger_targets(
+                        GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
+                        character_entity,
+                    );
+                }
+            }
+        }
+
+        // Update last known position after all validation
+        known_pos.position = transform.translation;
+        known_pos.timestamp = current_time;
     }
     Ok(())
 }

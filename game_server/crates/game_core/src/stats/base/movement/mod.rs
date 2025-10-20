@@ -14,7 +14,8 @@ impl Plugin for MovementStatsComponentsPlugin {
     fn build(&self, app: &mut App) {
         app.register_type::<MovementStats>()
             .register_type::<MovementStat>()
-            .register_type::<Movable>();
+            .register_type::<Movable>()
+            .register_type::<LastKnownPosition>();
 
         let mut formula_registry = app.world_mut().resource_mut::<StatFormulaRegistry>();
         for stat in MovementStat::iter() {
@@ -121,5 +122,20 @@ impl<'de> Deserialize<'de> for MovementStats {
         }
 
         Ok(stats)
+    }
+}
+
+#[derive(Clone, Component, Copy, Debug, Reflect)]
+pub struct LastKnownPosition {
+    pub position: Vec3,
+    pub timestamp: f64,
+}
+
+impl Default for LastKnownPosition {
+    fn default() -> Self {
+        Self {
+            position: Vec3::ZERO,
+            timestamp: 0.0,
+        }
     }
 }

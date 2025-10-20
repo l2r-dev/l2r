@@ -1,13 +1,20 @@
 use bevy::{log, prelude::*};
 use bevy_slinet::server::PacketReceiveEvent;
-use game_core::{admin_menu::AdminMenuCommand, character, items, network::{
-    config::GameServerNetworkConfig,
-    packets::{
-        client::{BypassCommand, BypassCommandExecuted, DoubleSlashCommand, GameClientPacket},
-        server::TeleportToLocation,
+use game_core::{
+    admin_menu::AdminMenuCommand,
+    character, items,
+    network::{
+        config::GameServerNetworkConfig,
+        packets::{
+            client::{BypassCommand, BypassCommandExecuted, DoubleSlashCommand, GameClientPacket},
+            server::TeleportToLocation,
+        },
+        session::GetCharEntity,
     },
-    session::GetCharEntity,
-}, npc, object_id::ObjectId, teleport::TeleportType};
+    npc,
+    object_id::ObjectId,
+    teleport::TeleportType,
+};
 use l2r_core::model::session::ServerSessions;
 
 pub struct BuildCommandsPlugin;

@@ -19,16 +19,27 @@ impl Plugin for OtherStatsPlugin {
 
 fn on_required_components_changed(
     mut commands: Commands,
+    stats_table: StatsTableQuery,
     mut args: StatsCalcParams<OtherStats>,
 ) -> Result<()> {
+    let race_stats = stats_table.race_stats();
     for entity in args.calc_components_changed.iter() {
         let (stats_query, mut self_stats, in_world) = args.query.get_mut(entity)?;
         if stats_query.character && in_world.is_none() {
             continue;
         }
+
+        let mut base_stats = None;
+
+        if stats_query.character {
+            let mut other_stats = OtherStats::default();
+            let base_class_stats = race_stats.get(*stats_query.race, *stats_query.base_class);
+            other_stats.insert(OtherStat::BreathMax, base_class_stats.breath as f32);
+            base_stats = Some(other_stats);
+        }
         let changed = self_stats.calculate(
             StatsCalculateParams::from_query(&stats_query, args.formula_registry.as_ref()),
-            None,
+            base_stats.as_deref(),
         );
         if let Some(changed_stats) = changed {
             if stats_query.character {
