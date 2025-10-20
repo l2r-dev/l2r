@@ -10,6 +10,7 @@ use bevy::{
     },
     prelude::*,
 };
+use bevy_ecs::component::Mutable;
 use smallvec::SmallVec;
 use spatial::WayPoint;
 use std::collections::VecDeque;
@@ -37,11 +38,26 @@ impl Component for MoveToEntity {
     }
 }
 
-#[derive(Clone, Component, Debug, Default, PartialEq, Reflect)]
-#[component(storage = "SparseSet")]
+#[derive(Clone, Debug, Default, PartialEq, Reflect)]
 #[reflect(Component)]
 pub struct MoveTarget {
     waypoints: VecDeque<WayPoint>,
+}
+
+impl Component for MoveTarget {
+    const STORAGE_TYPE: StorageType = StorageType::SparseSet;
+    type Mutability = Mutable;
+
+    fn on_remove() -> Option<ComponentHook> {
+        Some(|mut world: DeferredWorld, context: HookContext| {
+            world
+                .commands()
+                .trigger_targets(SendStopMove, context.entity);
+            world
+                .commands()
+                .trigger_targets(GameServerPacket::from(ActionFail), context.entity);
+        })
+    }
 }
 
 impl MoveTarget {

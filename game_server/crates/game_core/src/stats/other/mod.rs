@@ -94,4 +94,15 @@ impl StatTrait for OtherStat {
             _ => None,
         }
     }
+
+    fn calculate_iter() -> impl Iterator<Item = Self> {
+        [
+            OtherStat::BreathMax,
+            OtherStat::FishingExpertise,
+            OtherStat::MaxBuffSlots,
+            OtherStat::MaxDebuffSlots,
+            OtherStat::MaxRhythmSlots,
+        ]
+        .into_iter()
+    }
 }

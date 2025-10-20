@@ -188,7 +188,7 @@ pub struct RegionalSpawnZoneQuery<'w, 's> {
     pub regional_zones: Query<'w, 's, Entity, With<RegionalZones>>,
     pub zone_kind_containers:
         Query<'w, 's, (Entity, Ref<'static, ZoneKindVariant>), With<ZoneKindFolder>>,
-    pub zones: Query<'w, 's, Entity, With<Zone>>,
+    pub zones: Query<'w, 's, Entity, Or<(With<Zone>, With<ZoneKindFolder>)>>,
     pub named_zones: Res<'w, NamedZones>,
 }
 

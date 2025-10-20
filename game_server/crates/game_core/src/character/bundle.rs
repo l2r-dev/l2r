@@ -39,6 +39,7 @@ pub struct Bundle {
     pub race: Race,
     pub sub_class: SubClass,
     pub transform: Transform,
+    pub last_client_pos: LastKnownPosition,
     pub paper_doll: PaperDoll,
     pub delete_timer: super::DeleteTimer,
     pub visibility: Visible,
@@ -150,6 +151,10 @@ impl Bundle {
             race: db_model.race,
             appearance: db_model.appearance,
             transform: Transform::from_translation(position.into()),
+            last_client_pos: LastKnownPosition {
+                position: position.into(),
+                timestamp: 0.0,
+            },
             paper_doll,
             delete_timer: super::DeleteTimer::default(),
             visibility: Visible::Visible,
