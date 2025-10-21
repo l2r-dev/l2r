@@ -107,7 +107,9 @@ fn handle_packet(
         }
 
         DoubleSlashCommand::Summon { id, count } => {
-            if *id < 1_000_000 {
+            const NPC_ID_OFFSET: u32 = 1_000_000;
+
+            if *id < NPC_ID_OFFSET {
                 commands.send_event(items::SpawnNew {
                     item_ids: vec![(*id).into()],
                     count: *count,
@@ -119,7 +121,7 @@ fn handle_packet(
             } else {
                 commands.trigger_targets(
                     npc::Spawn {
-                        id: (*id).into(),
+                        id: (*id-NPC_ID_OFFSET).into(),
                         transform: *entities.get(initiator_entity)?.1,
                     },
                     initiator_entity,
