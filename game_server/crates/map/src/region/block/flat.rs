@@ -8,6 +8,10 @@ pub struct FlatBlock(Cell);
 impl FlatBlock {
     pub const TYPE: u8 = 0;
     const SIZE: usize = 3;
+
+    pub fn cell(&self) -> &Cell {
+        &self.0
+    }
 }
 
 impl super::GeoBlock for FlatBlock {

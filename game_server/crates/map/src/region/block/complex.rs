@@ -16,6 +16,10 @@ impl ComplexBlock {
         assert!(index < Block::CELLS, "Index out of bounds");
         self.cells.get(index as usize).unwrap()
     }
+
+    pub fn cells(&self) -> &[Cell] {
+        &self.cells
+    }
 }
 
 impl Default for ComplexBlock {
