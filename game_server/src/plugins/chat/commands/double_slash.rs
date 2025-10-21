@@ -1,4 +1,4 @@
-use bevy::{log, prelude::*};
+use bevy::{prelude::*};
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     admin_menu::AdminMenuCommand,
@@ -29,80 +29,121 @@ fn handle_packet(
     sessions: Res<ServerSessions>,
     character_tables: Query<Ref<character::Table>>,
     entities: Query<(&ObjectId, &Transform)>,
+    named_entities: Query<(&ObjectId, &Transform, &Name)>,
     world: &World,
-    transforms: Query<Ref<Transform>>,
     mut commands: Commands,
-) {
+) -> Result {
     let event = receive.event();
 
-    if let GameClientPacket::DoubleSlashCommand(ref packet) = event.packet
-        && let Ok(initiator_entity) =
-            sessions.get_character_entity(&event.connection.id(), &character_tables)
-    {
-        match packet {
-            DoubleSlashCommand::Unknown => {}
+    let initiator_entity =
+        sessions.get_character_entity(&event.connection.id(), &character_tables)?;
+    let initiator_entity_ref = world.get_entity(initiator_entity)?;
+    let initiator_object_id = initiator_entity_ref.get::<ObjectId>().ok_or("no object_id on entity")?;
 
-            DoubleSlashCommand::Admin => {
+    let GameClientPacket::DoubleSlashCommand(ref packet) = event.packet else {
+        return Ok(());
+    };
+
+    match packet {
+        DoubleSlashCommand::Unknown => {}
+
+        DoubleSlashCommand::Admin => {
+            commands.trigger_targets(
+                BypassCommandExecuted(BypassCommand::Admin(AdminMenuCommand::Main)),
+                initiator_entity,
+            );
+        }
+        DoubleSlashCommand::Spawn { npc_id } => {
+            commands.trigger_targets(
+                npc::Spawn {
+                    id: *npc_id,
+                    transform: *entities.get(initiator_entity)?.1,
+                },
+                initiator_entity,
+            );
+        }
+
+        DoubleSlashCommand::GoTo { target_obj_id } => {
+            if let Some((_, transform)) = entities
+                .iter()
+                .find(|(candidate_object_id, _)| *candidate_object_id == target_obj_id)
+            {
                 commands.trigger_targets(
-                    BypassCommandExecuted(BypassCommand::Admin(AdminMenuCommand::Main)),
+                    TeleportToLocation::new(
+                        *initiator_object_id,
+                        *transform,
+                        TeleportType::default(),
+                    ),
                     initiator_entity,
                 );
             }
-            DoubleSlashCommand::Spawn { npc_id } => {
-                let npc_id = *npc_id;
+        }
 
-                let current_transform = match transforms.get(initiator_entity) {
-                    Ok(transform) => transform,
-                    Err(_) => {
-                        log::error!("Failed to get transform for entity: {:?}", initiator_entity);
-                        return;
-                    }
-                };
+        DoubleSlashCommand::Item { id, count } => {
+            commands.send_event(items::SpawnNew {
+                item_ids: vec![*id],
+                count: *count,
+                item_location: items::ItemLocation::Inventory,
+                dropped_entity: None,
+                owner: Some(initiator_entity),
+                silent: false, // Show system messages for admin-spawned items
+            });
+        }
 
+        DoubleSlashCommand::TeleportTo { target_name } => {
+            if let Some((_, transform, _)) = named_entities
+                .iter()
+                .find(|(_, _, candidate_name)| candidate_name.as_str() == target_name)
+            {
                 commands.trigger_targets(
-                    npc::Spawn {
-                        id: npc_id,
-                        transform: *current_transform,
-                    },
+                    TeleportToLocation::new(
+                        *initiator_object_id,
+                        *transform,
+                        TeleportType::default(),
+                    ),
                     initiator_entity,
                 );
             }
+        }
 
-            DoubleSlashCommand::GoTo { target_obj_id } => {
-                let Ok(entity_ref) = world.get_entity(initiator_entity) else {
-                    return;
-                };
+        DoubleSlashCommand::Summon { id, count } => {
+            const NPC_ID_OFFSET: u32 = 1_000_000;
 
-                let Some(object_id) = entity_ref.get::<ObjectId>() else {
-                    return;
-                };
-
-                for (entity_object_id, transform) in entities.iter() {
-                    if entity_object_id == target_obj_id {
-                        commands.trigger_targets(
-                            TeleportToLocation::new(
-                                *object_id,
-                                *transform,
-                                TeleportType::default(),
-                            ),
-                            initiator_entity,
-                        );
-
-                        break;
-                    }
-                }
-            }
-
-            DoubleSlashCommand::Item { id, count } => {
+            if *id < NPC_ID_OFFSET {
                 commands.send_event(items::SpawnNew {
-                    item_ids: vec![*id],
+                    item_ids: vec![(*id).into()],
                     count: *count,
                     item_location: items::ItemLocation::Inventory,
                     dropped_entity: None,
                     owner: Some(initiator_entity),
                     silent: false, // Show system messages for admin-spawned items
                 });
+            } else {
+                commands.trigger_targets(
+                    npc::Spawn {
+                        id: (*id-NPC_ID_OFFSET).into(),
+                        transform: *entities.get(initiator_entity)?.1,
+                    },
+                    initiator_entity,
+                );
             }
         }
+
+        DoubleSlashCommand::InstantMove => {
+            //TODO: нужно выставлять на чара флаг, чтобы при следующем его запросе на передвижение он мгновенно телепортировался
+        }
+
+        DoubleSlashCommand::Teleport {x, z } => {
+            commands.trigger_targets(
+                TeleportToLocation::new(
+                    *initiator_object_id,
+                    Transform::from_xyz(*x, 0.0, *z),
+                    TeleportType::default(),
+                ),
+                initiator_entity,
+            );
+        }
     }
+
+    Ok(())
 }

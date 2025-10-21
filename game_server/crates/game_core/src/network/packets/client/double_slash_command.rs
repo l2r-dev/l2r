@@ -8,7 +8,7 @@ use util_macros::EnumFromArgsDeserialize;
 /// In-game usage: `//commandname arg1 arg2 ...`
 /// For example, for `GoTo` input will be `//goto 1234`
 #[derive(
-    Clone, Copy, Debug, Default, EnumIter, Eq, Hash, PartialEq, Reflect, EnumFromArgsDeserialize,
+    Clone, Debug, Default, EnumIter, PartialEq, Reflect, EnumFromArgsDeserialize,
 )]
 pub enum DoubleSlashCommand {
     #[default]
@@ -24,6 +24,22 @@ pub enum DoubleSlashCommand {
         id: items::Id,
         count: u64,
     },
+
+    //Ingame GmPanel Commands teleportto char_name / instant_move / summon item_id count / summon 1_000_000 + npc_id count
+    TeleportTo {
+        target_name: String,
+    },
+    InstantMove,
+    Summon {
+        id: u32,
+        count: u64,
+    },
+
+    ///Ctrl+Shift Left Click on game map
+    Teleport {
+        x: f32,
+        z: f32,
+    }
 }
 
 impl TryFrom<ClientPacketBuffer> for DoubleSlashCommand {
