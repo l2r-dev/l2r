@@ -91,6 +91,22 @@ impl Default for GameplayConfig {
     }
 }
 
+#[derive(Clone, Debug, Deserialize, Reflect, Serialize)]
+#[serde(default)]
+pub struct GuiConfig {
+    pub geodata_cells: bool,
+    pub geodata_blocks: bool,
+}
+
+impl Default for GuiConfig {
+    fn default() -> Self {
+        Self {
+            geodata_cells: false,
+            geodata_blocks: false,
+        }
+    }
+}
+
 #[derive(Asset, Clone, Debug, Default, Deserialize, Reflect, Resource, Serialize)]
 #[reflect(Resource)]
 #[serde(default)]
@@ -98,6 +114,7 @@ pub struct Config {
     general: GeneralConfig,
     skills: SkillsConfig,
     gameplay: GameplayConfig,
+    gui: GuiConfig,
     #[serde(skip)]
     #[reflect(ignore)]
     handle: Handle<Config>,
@@ -140,6 +157,10 @@ impl Config {
         &self.gameplay
     }
 
+    pub fn gui(&self) -> &GuiConfig {
+        &self.gui
+    }
+
     /// Merge another config into self, overriding fields if present in other.
     fn merge(&mut self, other: &Config) {
         // General
@@ -156,6 +177,9 @@ impl Config {
         self.gameplay.npc_dmg_penalty = other.gameplay.npc_dmg_penalty.clone();
         self.gameplay.npc_crit_dmg_penalty = other.gameplay.npc_crit_dmg_penalty.clone();
         self.gameplay.npc_skill_dmg_penalty = other.gameplay.npc_skill_dmg_penalty.clone();
+        // GUI
+        self.gui.geodata_cells = other.gui.geodata_cells;
+        self.gui.geodata_blocks = other.gui.geodata_blocks;
     }
 
     /// Override fields present in env vars.
@@ -219,6 +243,13 @@ impl Config {
                     if let Ok(vec) = parsed_vec {
                         self.gameplay.npc_skill_dmg_penalty = vec;
                     }
+                }
+                "GUI_GEODATA_CELLS" => {
+                    self.gui.geodata_cells = value.parse::<bool>().unwrap_or(self.gui.geodata_cells)
+                }
+                "GUI_GEODATA_BLOCKS" => {
+                    self.gui.geodata_blocks =
+                        value.parse::<bool>().unwrap_or(self.gui.geodata_blocks)
                 }
                 _ => {}
             }

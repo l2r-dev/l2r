@@ -6,6 +6,7 @@ pub struct Cell(i16);
 
 impl Cell {
     pub const SIZE: i32 = 16;
+    pub const HALF_SIZE: i32 = Self::SIZE / 2;
     pub const HEIGHT_MASK: i16 = !0x000F; // All bits except the last 4
 
     pub fn new(data: i16) -> Self {

@@ -36,7 +36,7 @@ impl LayeredCell {
 /// A block with multiple [Cell] in one [LayeredCell].
 #[derive(Clone, Reflect)]
 pub struct MultilayerBlock {
-    pub cells: Vec<LayeredCell>,
+    cells: Vec<LayeredCell>,
 }
 
 impl fmt::Debug for MultilayerBlock {
@@ -57,6 +57,10 @@ impl MultilayerBlock {
         let index = Block::cell_offset(&GeoPoint::from(*loc));
         assert!(index < Block::CELLS, "Index out of bounds");
         self.cells.get(index as usize).unwrap()
+    }
+
+    pub fn layered_cells(&self) -> &[LayeredCell] {
+        &self.cells
     }
 }
 

@@ -88,6 +88,36 @@ impl Block {
         let y = offset % Block::CELLS_Y;
         GeoPoint::new(x, y)
     }
+
+    /// Get all cells in a block with their local offsets.
+    /// Returns a vector of (cell, offset) pairs.
+    pub fn cells_with_offsets(&self) -> Vec<(&Cell, i32)> {
+        match self {
+            Block::Flat(block) => {
+                // Flat block has only one cell for all positions
+                vec![(block.cell(), 0)]
+            }
+            Block::Complex(block) => {
+                // Complex block has a cell for each position
+                block
+                    .cells()
+                    .iter()
+                    .enumerate()
+                    .map(|(i, cell)| (cell, i as i32))
+                    .collect()
+            }
+            Block::Multilayer(block) => {
+                // Multilayer block can have multiple cells per position
+                let mut result = Vec::new();
+                for (offset, layered_cell) in block.layered_cells().iter().enumerate() {
+                    for cell in layered_cell.cells() {
+                        result.push((cell, offset as i32));
+                    }
+                }
+                result
+            }
+        }
+    }
 }
 
 impl GeoBlock for Block {

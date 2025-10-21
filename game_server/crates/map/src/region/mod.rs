@@ -180,14 +180,16 @@ impl Region {
         centers
     }
 
-    fn block_position_by_grid(&self, block_x: i32, block_y: i32) -> GameVec3 {
-        // Calculate the top-left position of a block based on its index in the grid
+    pub fn block_position_by_grid(&self, block_x: i32, block_y: i32) -> GameVec3 {
         let region_origin = self.origin_coordinates();
-
         let x = region_origin.x + (block_x * Block::SIZE_X);
         let y = region_origin.y + (block_y * Block::SIZE_Y);
-
         GameVec3::new(x, y, region_origin.z)
+    }
+
+    pub fn block_position_geo_by_grid(&self, block_x: i32, block_y: i32) -> GeoVec3 {
+        let game_pos = self.block_position_by_grid(block_x, block_y);
+        WorldMap::game_to_geo(game_pos)
     }
 }
 
@@ -369,7 +371,7 @@ impl RegionGeoData {
         self.block(block_id)
     }
 
-    fn block_by_grid(&self, block_x: i32, block_y: i32) -> Option<&Block> {
+    pub fn block_by_grid(&self, block_x: i32, block_y: i32) -> Option<&Block> {
         let block_id = Block::id_grid(block_x, block_y).unwrap();
         self.block(block_id)
     }
