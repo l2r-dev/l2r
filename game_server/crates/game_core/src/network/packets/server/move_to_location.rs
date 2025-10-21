@@ -24,7 +24,7 @@ impl fmt::Debug for MoveToLocation {
 
 impl L2rServerPacket for MoveToLocation {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::new_32();
         let origin_location = GameVec3::from(self.origin_location);
         let target_location = GameVec3::from(self.target_location);
         buffer.extend(GameServerPacketCodes::MOVE_TO_LOCATION.to_le_bytes());

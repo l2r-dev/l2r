@@ -11,7 +11,7 @@ pub struct ExBrExtraUserInfo {
 }
 impl L2rServerPacket for ExBrExtraUserInfo {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::new_16();
         buffer.extend(GameServerPacketCodes::EX_BR_EXTRA_USER_INFO.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32(self.effect);

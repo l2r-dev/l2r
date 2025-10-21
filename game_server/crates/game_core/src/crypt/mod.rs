@@ -82,7 +82,8 @@ impl CryptEngine<GameClientPacket, GameServerPacket> for GameCryptEngine {
         log_trace_byte_table(&buffer, "Encrypted");
 
         self.shift_out_key(buffer.len());
-        // buffer.log_utilization();
+        #[cfg(debug_assertions)]
+        buffer.log_utilization();
         Ok(buffer.into())
     }
 

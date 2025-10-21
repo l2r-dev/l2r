@@ -12,7 +12,7 @@ impl fmt::Debug for CharacterCreationSuccess {
 }
 impl L2rServerPacket for CharacterCreationSuccess {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::new_6();
         buffer.extend(GameServerPacketCodes::CHARACTER_CREATE_SUCCESS.to_le_bytes());
         buffer.u32(1);
         buffer

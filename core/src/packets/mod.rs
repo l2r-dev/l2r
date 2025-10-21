@@ -5,6 +5,7 @@ mod server;
 pub use client::*;
 pub use serialize::*;
 pub use server::*;
+use smallvec::{SmallVec, smallvec};
 
 #[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub struct PacketId {
@@ -21,9 +22,8 @@ impl PacketId {
             ex_id: Some(ex_id),
         }
     }
-    pub fn to_le_bytes(self) -> Vec<u8> {
-        let mut bytes = Vec::new();
-        bytes.push(self.id);
+    pub fn to_le_bytes(self) -> SmallVec<[u8; 3]> {
+        let mut bytes = smallvec![self.id];
         if let Some(value) = self.ex_id {
             bytes.extend(value.to_le_bytes());
         }

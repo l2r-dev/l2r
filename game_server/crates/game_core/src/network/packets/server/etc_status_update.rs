@@ -12,7 +12,7 @@ impl fmt::Debug for EtcStatusUpdate {
 }
 impl L2rServerPacket for EtcStatusUpdate {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::new_64();
         buffer.extend(GameServerPacketCodes::ETC_STATUS_UPDATE.to_le_bytes());
         buffer.u32(0); // 1-7 increase force (force charges), level
         buffer.u32(0); // 1-4 weight penalty, level (1=50%, 2=66.6%, 3=80%, 4=100%)

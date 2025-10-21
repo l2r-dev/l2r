@@ -8,7 +8,7 @@ pub struct ShortcutInit(Vec<crate::shortcut::Shortcut>);
 
 impl L2rServerPacket for ShortcutInit {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::new_32();
         buffer.extend(GameServerPacketCodes::SHORT_CUT_INIT.to_le_bytes());
         buffer.u32_from_usize(self.0.len());
         for shortcut in self.0 {

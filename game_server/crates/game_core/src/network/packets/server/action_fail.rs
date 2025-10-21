@@ -6,6 +6,9 @@ use l2r_core::packets::{L2rServerPacket, ServerPacketBuffer};
 pub struct ActionFail;
 impl L2rServerPacket for ActionFail {
     fn buffer(self) -> ServerPacketBuffer {
-        GameServerPacketCodes::ACTION_FAIL.to_le_bytes().into()
+        GameServerPacketCodes::ACTION_FAIL
+            .to_le_bytes()
+            .as_slice()
+            .into()
     }
 }

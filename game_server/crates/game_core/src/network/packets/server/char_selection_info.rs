@@ -23,7 +23,7 @@ impl fmt::Debug for CharSelectionInfo {
 
 impl L2rServerPacket for CharSelectionInfo {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::new_4096();
         buffer.extend(GameServerPacketCodes::CHARACTER_SELECTION_INFO.to_le_bytes());
         buffer.u32_from_usize(self.len());
         buffer.u32(character::Table::MAX_CHARACTERS_ON_ACCOUNT as u32);
