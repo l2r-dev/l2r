@@ -7,9 +7,7 @@ use util_macros::EnumFromArgsDeserialize;
 
 /// In-game usage: `//commandname arg1 arg2 ...`
 /// For example, for `GoTo` input will be `//goto 1234`
-#[derive(
-    Clone, Debug, Default, EnumIter, PartialEq, Reflect, EnumFromArgsDeserialize,
-)]
+#[derive(Clone, Debug, Default, EnumFromArgsDeserialize, EnumIter, PartialEq, Reflect)]
 pub enum DoubleSlashCommand {
     #[default]
     Unknown,
@@ -39,7 +37,7 @@ pub enum DoubleSlashCommand {
     Teleport {
         x: f32,
         z: f32,
-    }
+    },
 }
 
 impl TryFrom<ClientPacketBuffer> for DoubleSlashCommand {
