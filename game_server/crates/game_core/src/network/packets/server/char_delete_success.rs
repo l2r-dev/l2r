@@ -15,6 +15,7 @@ impl L2rServerPacket for CharacterDeletionSuccess {
     fn buffer(self) -> ServerPacketBuffer {
         GameServerPacketCodes::CHARACTER_DELETE_SUCCESS
             .to_le_bytes()
+            .as_slice()
             .into()
     }
 }

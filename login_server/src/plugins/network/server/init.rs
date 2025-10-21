@@ -43,9 +43,9 @@ impl L2rServerPacket for InitPacket {
         if self.protocol_version == LoginServerProtocol::NewProtocolVersion {
             buffer.u32_from_usize(*self.session_id);
             buffer.u32(self.protocol_version.into());
-            buffer.extend_from_slice(&crypt_parts.rsa_key.scramble());
-            buffer.extend_from_slice(&UNKNOWN_BYTES);
-            buffer.extend_from_slice(&crypt_parts.blowfish_key.to_le_bytes());
+            buffer.extend(crypt_parts.rsa_key.scramble());
+            buffer.extend(UNKNOWN_BYTES);
+            buffer.extend(crypt_parts.blowfish_key.to_le_bytes());
             buffer.u8(0x00);
         }
         buffer

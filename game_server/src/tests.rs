@@ -283,5 +283,6 @@ pub fn test_character_bundle_data(id: ObjectId) -> character::Bundle {
         attack_effects: AttackEffects::default(),
         defence_effects: DefenceEffects::default(),
         abnormal_effects: AbnormalEffects::default(),
+        last_known_pos: LastKnownPosition::default(),
     }
 }

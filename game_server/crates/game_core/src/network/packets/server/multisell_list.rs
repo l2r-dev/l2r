@@ -100,6 +100,6 @@ impl MultisellList {
         buffer.u16(good.item.enchant_level());
         buffer.u32(good.item.augumentation_id().into());
         buffer.i32(good.item.mana().unwrap_or_default());
-        buffer.extend_from_slice(good.item.elements().to_le_bytes().as_slice());
+        buffer.extend(good.item.elements().to_le_bytes());
     }
 }

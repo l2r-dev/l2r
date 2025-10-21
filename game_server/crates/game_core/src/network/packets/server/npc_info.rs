@@ -71,7 +71,7 @@ impl fmt::Debug for NpcInfo {
 
 impl L2rServerPacket for NpcInfo {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::new_512();
 
         let npc_id = self.display_id.as_deref().unwrap_or(&self.npc_id);
 

@@ -50,8 +50,11 @@ impl Debug for AuthLoginRequest {
 
 impl AuthLoginRequest {
     pub fn decode(mut self, crypt_parts: &LoginCryptParts) -> Result<Self, L2rSerializeError> {
+        #[cfg(debug_assertions)]
         log_trace_byte_table(&self.bytes, "AuthLoginRequest from_bytes");
         let encrypted = BigUint::from_bytes_be(&self.bytes[1..129]);
+
+        #[cfg(debug_assertions)]
         log_trace_byte_table(&self.bytes[1..129], "before RSA decrypt");
         let rsa_key = &crypt_parts.rsa_key.private_key;
         let decrypted = rsa_decrypt::<StdRng>(None, rsa_key, &encrypted)
@@ -63,6 +66,8 @@ impl AuthLoginRequest {
                 )
             })?
             .to_bytes_be();
+
+        #[cfg(debug_assertions)]
         log_trace_byte_table(&decrypted, "after RSA decrypt");
 
         let login = LoginCryptEngine::read_string_from_bytes(&decrypted[3..])?;

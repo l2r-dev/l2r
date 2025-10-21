@@ -171,17 +171,26 @@ impl CryptEngine<LoginClientPacket, LoginServerPacket> for LoginCryptEngine {
         let mut buffer = match packet {
             LoginServerPacket::InitPacket(p) => {
                 let mut buffer = p.build(crypt_parts.clone()).buffer();
+
+                #[cfg(debug_assertions)]
                 log_trace_byte_table(&buffer, "InitPacket");
+
                 Self::append_padding(&mut buffer);
                 let key = crypt_parts.xor_crypt.encode(&mut buffer);
                 buffer.extend(key);
+
+                #[cfg(debug_assertions)]
                 log_trace_byte_table(&buffer, "After xor crypt:");
                 buffer
             }
             _ => {
                 let mut buffer = packet.buffer();
+
+                #[cfg(debug_assertions)]
                 log_trace_byte_table(&buffer, "Original");
                 Self::append_checksum(&mut buffer);
+
+                #[cfg(debug_assertions)]
                 log_trace_byte_table(&buffer, "After checksum:");
                 buffer
             }
@@ -193,6 +202,7 @@ impl CryptEngine<LoginClientPacket, LoginServerPacket> for LoginCryptEngine {
             blowfish_crypt.encrypt_block(GenericArray::from_mut_slice(chunk));
         }
 
+        #[cfg(debug_assertions)]
         log_trace_byte_table(&buffer, "Encrypted");
         Ok(buffer.into())
     }
@@ -205,9 +215,12 @@ impl CryptEngine<LoginClientPacket, LoginServerPacket> for LoginCryptEngine {
                 .blowfish_crypt
                 .decrypt_block(GenericArray::from_mut_slice(chunk));
         }
+
+        #[cfg(debug_assertions)]
         log_trace_byte_table(&buffer, "Decrypted");
 
         if buffer[0] == 0x00 {
+            #[cfg(debug_assertions)]
             log_trace_byte_table(&buffer, "After XOR");
             let crypt_parts = &self.0;
             return Ok(LoginClientPacket::AuthLogin(

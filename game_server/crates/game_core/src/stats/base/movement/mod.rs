@@ -125,17 +125,8 @@ impl<'de> Deserialize<'de> for MovementStats {
     }
 }
 
-#[derive(Clone, Component, Copy, Debug, Reflect)]
+#[derive(Clone, Default, Component, Copy, Debug, Reflect)]
 pub struct LastKnownPosition {
     pub position: Vec3,
     pub timestamp: f64,
-}
-
-impl Default for LastKnownPosition {
-    fn default() -> Self {
-        Self {
-            position: Vec3::ZERO,
-            timestamp: 0.0,
-        }
-    }
 }

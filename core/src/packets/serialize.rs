@@ -122,14 +122,17 @@ where
 
     /// Serializes a packet into a byte vector.
     fn serialize(&mut self, packet: SendingPacket) -> Result<Vec<u8>, Self::Error> {
+        #[cfg(debug_assertions)]
         log::trace!("[S->C]: {packet:?}");
         self.crypt_engine.encrypt(packet)
     }
 
     /// Deserializes a packet from a byte slice
     fn deserialize(&mut self, buffer: &[u8]) -> Result<ReceivingPacket, Self::Error> {
+        #[cfg(debug_assertions)]
         log_trace_byte_table(buffer, "Deserializing packet");
         let packet = self.crypt_engine.decrypt(buffer);
+        #[cfg(debug_assertions)]
         log::trace!("[C->S]: {packet:?}");
         packet
     }
@@ -140,7 +143,6 @@ pub struct L2rLenSerializer;
 
 impl PacketLengthSerializer for L2rLenSerializer {
     type Error = PacketTooLargeError;
-
     const SIZE: usize = 2;
 
     fn serialize_packet_length(&self, length: usize) -> Result<Vec<u8>, Self::Error> {

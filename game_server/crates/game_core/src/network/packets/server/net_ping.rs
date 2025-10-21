@@ -24,6 +24,9 @@ impl NetPing {
 }
 impl L2rServerPacket for NetPing {
     fn buffer(self) -> ServerPacketBuffer {
-        GameServerPacketCodes::NET_PING.to_le_bytes().into()
+        GameServerPacketCodes::NET_PING
+            .to_le_bytes()
+            .as_slice()
+            .into()
     }
 }

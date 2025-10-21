@@ -54,7 +54,7 @@ impl Table {
         session_id: SessionId,
         world: &World,
     ) -> Result<Self, TableError> {
-        if char_with_items.len() >= Self::MAX_CHARACTERS_ON_ACCOUNT {
+        if char_with_items.len() > Self::MAX_CHARACTERS_ON_ACCOUNT {
             return Err(TableError::MaxCharsReached)?;
         }
 

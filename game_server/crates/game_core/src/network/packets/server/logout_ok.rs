@@ -7,6 +7,9 @@ pub struct LogoutOk;
 
 impl L2rServerPacket for LogoutOk {
     fn buffer(self) -> ServerPacketBuffer {
-        GameServerPacketCodes::LOG_OUT_OK.to_le_bytes().into()
+        GameServerPacketCodes::LOG_OUT_OK
+            .to_le_bytes()
+            .as_slice()
+            .into()
     }
 }
