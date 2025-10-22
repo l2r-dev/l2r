@@ -1,12 +1,14 @@
 use bevy::{ecs::system::ParallelCommands, prelude::*};
 use game_core::{
-    action::pickup::{PickupAnimation, PickupComponentsPlugin, PickupMetric, PickupRequest},
-    animation::Animation,
+    action::{
+        pickup::{PickupAnimation, PickupComponentsPlugin, PickupMetric, PickupRequest},
+        wait_kind::Sit,
+    },
     items::{AddInInventory, Item},
     movement::{ArrivedAtWaypoint, MoveTarget, MoveToEntity},
     network::{
         broadcast::{ServerPacketBroadcast, ServerPacketsBroadcast},
-        packets::server::{DeleteObject, GetItem, StopMove},
+        packets::server::{ActionFail, DeleteObject, GameServerPacket, GetItem, StopMove},
     },
     object_id::ObjectId,
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
@@ -46,14 +48,22 @@ fn pickup_request_handler(
             Ref<Transform>,
             Ref<PickupRequest>,
             Option<Ref<MoveToEntity>>,
+            Has<Sit>,
         ),
         Without<InActionPathfindingTimer>,
     >,
     items: Query<(Ref<ObjectId>, Ref<Item>, Ref<Transform>)>,
     world_map_query: WorldMapQuery,
 ) -> Result<()> {
-    for (entity, char_oid, transform, request, move_to) in &mut characters.iter() {
+    for (entity, char_oid, transform, request, move_to, is_sitting) in &mut characters.iter() {
         let item_entity = request.0;
+
+        if is_sitting {
+            commands
+                .entity(entity)
+                .remove::<(PickupRequest, MoveToEntity)>();
+            continue;
+        }
 
         let Ok((item_oid, item, item_transform)) = items.get(item_entity) else {
             // Item no longer exists in world (picked up, destroyed, etc.)
@@ -93,8 +103,12 @@ fn pickup_request_handler(
                     InActionPathfindingTimer,
                 )>()
                 .insert(PickupAnimation::new(item_entity));
+
+            commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
+
             let get_item = GetItem::new(*char_oid, *item_oid, item.id(), item_pos).into();
             let stop_move = StopMove::new(*char_oid, *transform).into();
+
             commands.trigger_targets(
                 ServerPacketsBroadcast::new(vec![stop_move, get_item].into()),
                 entity,
@@ -156,9 +170,7 @@ fn pickup_animation_handler(
             pickup_animation.timer_mut().tick(time.delta());
             if pickup_animation.timer().finished() {
                 par_commands.command_scope(|mut commands| {
-                    commands
-                        .entity(entity)
-                        .remove::<(PickupAnimation, Animation)>();
+                    commands.entity(entity).remove::<PickupAnimation>();
 
                     if let Ok(counter) = metrics.counter(PickupMetric::ItemsPickedUp) {
                         counter.inc();

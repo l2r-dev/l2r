@@ -22,6 +22,7 @@ pub enum DoubleSlashCommand {
         id: items::Id,
         count: u64,
     },
+    Immortal,
 
     //Ingame GmPanel Commands teleportto char_name / instant_move / summon item_id count / summon 1_000_000 + npc_id count
     TeleportTo {
