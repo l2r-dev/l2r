@@ -1,4 +1,3 @@
-use crate::animation::Animation;
 use bevy::prelude::*;
 use strum::Display;
 
@@ -20,7 +19,6 @@ pub struct PickupRequest(pub Entity);
 #[derive(Clone, Component, Reflect)]
 #[reflect(Component)]
 #[component(storage = "SparseSet")]
-#[require(Animation)]
 pub struct PickupAnimation(Timer, Entity);
 
 impl PickupAnimation {

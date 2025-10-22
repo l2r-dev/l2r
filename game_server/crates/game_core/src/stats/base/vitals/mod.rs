@@ -198,28 +198,35 @@ impl VitalsStats {
         self.current.merge(&other.current)
     }
 
-    pub fn percent_stat_damage(&mut self, stat: VitalsStat, percent: f32) {
+    pub fn percent_stat_damage(&mut self, stat: VitalsStat, percent: f32, keep_at_one: bool) {
         let max = self.get(stat);
         let damage_amount = max * percent / 100.0;
         if damage_amount > 0.0 {
-            self.stat_damage(stat, damage_amount);
+            self.stat_damage(stat, damage_amount, keep_at_one);
         }
     }
 
-    pub fn damage(&mut self, damage: f32, damage_cp: bool) {
+    pub fn damage(&mut self, damage: f32, damage_cp: bool, keep_at_one: bool) {
         let rest = if damage_cp {
-            self.stat_damage(VitalsStat::Cp, damage)
+            self.stat_damage(VitalsStat::Cp, damage, keep_at_one)
         } else {
             damage
         };
 
-        self.stat_damage(VitalsStat::Hp, rest);
+        self.stat_damage(VitalsStat::Hp, rest, keep_at_one);
     }
 
-    fn stat_damage(&mut self, stat: VitalsStat, damage: f32) -> f32 {
+    fn stat_damage(&mut self, stat: VitalsStat, damage: f32, keep_at_one: bool) -> f32 {
         let current_value = self.get(stat);
         let rest = current_value - damage;
+
         if rest <= 0.0 {
+            if keep_at_one {
+                self.insert(stat, 1.0);
+
+                return 0.0;
+            }
+
             if current_value != 0.0 {
                 self.insert(stat, 0.0);
             }

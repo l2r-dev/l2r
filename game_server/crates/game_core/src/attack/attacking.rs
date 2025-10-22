@@ -1,3 +1,4 @@
+use crate::movement::{Following, MoveTarget};
 use bevy::{
     ecs::{
         component::{ComponentHook, Immutable, StorageType},
@@ -14,6 +15,22 @@ const ATTACKERS_CAPACITY: usize = 2;
 #[derive(Clone, Copy, Debug, Deref, Reflect)]
 #[reflect(Component)]
 pub struct Attacking(pub Entity);
+
+pub struct InsertAttackingParams {
+    pub attacker: Entity,
+    pub target: Entity,
+}
+
+impl Attacking {
+    #[inline]
+    pub fn insert(commands: &mut Commands, params: InsertAttackingParams) {
+        commands
+            .entity(params.attacker)
+            .remove::<MoveTarget>()
+            .remove::<Following>()
+            .insert(Self(params.target));
+    }
+}
 
 impl Component for Attacking {
     const STORAGE_TYPE: StorageType = StorageType::Table;

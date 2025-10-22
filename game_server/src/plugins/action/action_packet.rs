@@ -5,7 +5,8 @@ use game_core::{
         pickup::{PickupAnimation, PickupRequest},
         target::SelectedTarget,
     },
-    attack::Attackable,
+    animation::Animation,
+    attack::{Attackable, Attacking, InsertAttackingParams},
     character::Character,
     encounters::KnownEntities,
     items::Item,
@@ -13,13 +14,14 @@ use game_core::{
     network::{
         config::GameServerNetworkConfig,
         packets::{
-            client::{AttackRequest, GameClientPacket, TargetNotFound},
+            client::{GameClientPacket, TargetNotFound},
             server::{ActionFail, GameServerPacket},
         },
         session::PacketReceiveParams,
     },
     npc::{DialogRequest, SendNpcInfoDialog},
     object_id::ObjectIdManager,
+    player_specific::next_intention::NextIntention,
 };
 
 pub(crate) struct ActionPacketPlugin;
@@ -41,6 +43,7 @@ fn handle_action_packet(
             Ref<KnownEntities>,
             Has<PickupRequest>,
             Has<PickupAnimation>,
+            Has<Animation>,
         ),
         With<Character>,
     >,
@@ -59,7 +62,8 @@ fn handle_action_packet(
     };
 
     let entity = receive_params.character(&event.connection.id())?;
-    let (selected_target, known_entities, has_pickup_request, has_pickup_animation) =
+
+    let (selected_target, known_entities, has_pickup_request, has_pickup_animation, has_animation) =
         character_query.get_mut(entity)?;
 
     // Check if target is an item first
@@ -67,20 +71,29 @@ fn handle_action_packet(
         let (_, _, is_item, _) = target_query.get(packet_target_entity)?;
         if is_item {
             // Ignore pickup request if already picking up
+            //TODO: мб пришел запрос на пикап другого предмета
             if has_pickup_request || has_pickup_animation {
                 return Ok(());
             }
 
-            // Insert PickupRequest - the pickup_request_handler will handle pathfinding
-            commands
-                .entity(entity)
-                .insert(PickupRequest(packet_target_entity));
+            if has_animation {
+                commands.entity(entity).insert(NextIntention::PickUp {
+                    item: packet_target_entity,
+                });
+            } else {
+                // Insert PickupRequest - the pickup_request_handler will handle pathfinding
+                commands
+                    .entity(entity)
+                    .insert(PickupRequest(packet_target_entity));
+            }
+
             return Ok(());
         }
     }
 
     let Some(packet_target_entity) = object_id_manager.entity(packet.object_id) else {
         commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
+
         return Ok(());
     };
 
@@ -95,8 +108,21 @@ fn handle_action_packet(
             }
 
             let (attackable, _, _, is_character) = target_query.get(packet_target_entity)?;
+
             if attackable.is_some() {
-                commands.trigger_targets(AttackRequest::from(curr_selected), entity);
+                if has_animation {
+                    commands.entity(entity).insert(NextIntention::Attack {
+                        target: curr_selected,
+                    });
+                } else {
+                    Attacking::insert(
+                        &mut commands,
+                        InsertAttackingParams {
+                            attacker: entity,
+                            target: curr_selected,
+                        },
+                    );
+                }
             } else if is_character {
                 commands.trigger_targets(FollowRequest::from(packet_target_entity), entity);
             } else {
@@ -104,6 +130,7 @@ fn handle_action_packet(
                     .entity(entity)
                     .insert(DialogRequest::from(packet_target_entity));
             }
+
             return Ok(());
         }
     }

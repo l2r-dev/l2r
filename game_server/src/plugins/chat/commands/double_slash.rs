@@ -1,7 +1,8 @@
-use bevy::{prelude::*};
+use bevy::prelude::*;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     admin_menu::AdminMenuCommand,
+    attack::Immortal,
     character, items,
     network::{
         config::GameServerNetworkConfig,
@@ -38,7 +39,9 @@ fn handle_packet(
     let initiator_entity =
         sessions.get_character_entity(&event.connection.id(), &character_tables)?;
     let initiator_entity_ref = world.get_entity(initiator_entity)?;
-    let initiator_object_id = initiator_entity_ref.get::<ObjectId>().ok_or("no object_id on entity")?;
+    let initiator_object_id = initiator_entity_ref
+        .get::<ObjectId>()
+        .ok_or("no object_id on entity")?;
 
     let GameClientPacket::DoubleSlashCommand(ref packet) = event.packet else {
         return Ok(());
@@ -121,7 +124,7 @@ fn handle_packet(
             } else {
                 commands.trigger_targets(
                     npc::Spawn {
-                        id: (*id-NPC_ID_OFFSET).into(),
+                        id: (*id - NPC_ID_OFFSET).into(),
                         transform: *entities.get(initiator_entity)?.1,
                     },
                     initiator_entity,
@@ -133,7 +136,7 @@ fn handle_packet(
             //TODO: нужно выставлять на чара флаг, чтобы при следующем его запросе на передвижение он мгновенно телепортировался
         }
 
-        DoubleSlashCommand::Teleport {x, z } => {
+        DoubleSlashCommand::Teleport { x, z } => {
             commands.trigger_targets(
                 TeleportToLocation::new(
                     *initiator_object_id,
@@ -142,6 +145,10 @@ fn handle_packet(
                 ),
                 initiator_entity,
             );
+        }
+
+        DoubleSlashCommand::Immortal => {
+            commands.entity(initiator_entity).insert(Immortal);
         }
     }
 

@@ -13,10 +13,10 @@ use bevy::{
     prelude::*,
 };
 use game_core::{
-    animation::{Animation, AnimationTimer},
+    animation::Animation,
     attack::{
-        AttackAllowed, AttackComponentsPlugin, AttackHit, AttackTimer, Attacking, AttackingList,
-        ConsumeArrow, Dead, HitInfo, InCombat, WeaponReuse,
+        AttackComponentsPlugin, AttackHit, AttackTimer, Attacking, AttackingList, ConsumeArrow,
+        Dead, HitInfo, Immortal, InCombat, WeaponReuse,
     },
     items::{
         DollSlot, Grade, Item, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem, UpdateType,
@@ -70,10 +70,6 @@ impl Plugin for AttackPlugin {
             setup_attack_timers.in_set(GameMechanicsSystems::Attacking),
         )
         .add_systems(
-            FixedUpdate,
-            calculate_attack_allowed.in_set(GameMechanicsSystems::Attacking),
-        )
-        .add_systems(
             Update,
             in_combat_handler.in_set(GameMechanicsSystems::Attacking),
         );
@@ -94,9 +90,7 @@ struct AttackingQuery<'a> {
 
 #[derive(QueryFilter)]
 struct AttackingFilter {
-    attack_allowed: With<AttackAllowed>,
     not_dead: Without<Dead>,
-    // without_pending_skill: Without<PendingSkill>,
     not_animating: Without<Animation>,
     not_pathfinding: Without<InActionPathfindingTimer>,
 }
@@ -132,8 +126,6 @@ fn attack_entity(
                 if distance <= range {
                     par_commands.command_scope(|mut commands| {
                         commands.trigger_targets(LookAt(aiming_target.entity), attacker.entity);
-                        // Remove the AttackAllowed component to ensure the entity waits for
-                        // the next allowed attack time
                         commands
                             .entity(attacker.entity)
                             .remove::<MoveToEntity>()
@@ -186,10 +178,6 @@ fn attack_entity(
                     if weapon_reuse_delay.is_some() && attacker.weapon_reuse_active {
                         return;
                     }
-
-                    par_commands.command_scope(|mut commands| {
-                        commands.entity(attacker.entity).remove::<AttackAllowed>();
-                    });
 
                     if is_bow && let Some(paperdoll) = attacker.paper_doll {
                         let arrow_count = paperdoll[DollSlot::LeftHand]
@@ -449,7 +437,7 @@ fn attack_entity(
 
                         commands
                             .entity(attacker.entity)
-                            .try_insert(AnimationTimer::new(attack_interval));
+                            .try_insert(Animation::new(attack_interval));
                     });
                 } else {
                     // Target is out of range, need to chase
@@ -576,6 +564,7 @@ struct ProcessAttackHitsTargetQuery<'a> {
     entity: Entity,
     object_id: Ref<'a, ObjectId>,
     vital_stats: Mut<'a, VitalsStats>,
+    is_immortal: Has<Immortal>,
 }
 
 fn process_attack_hits(
@@ -668,7 +657,7 @@ fn process_hit(
     npc: Query<Entity, With<npc::Kind>>,
     mut attackers_lists: Query<Mut<AttackingList>>,
 
-    mut info: HitInfo,
+    info: HitInfo,
     attacker_entity: Entity,
     attacker_name: String,
     target: &mut ProcessAttackHitsTargetQueryItem,
@@ -696,16 +685,9 @@ fn process_hit(
         // If attacker is NPC, do not damage CP
         let damage_cp = npc.get(attacker_entity).is_err();
 
-        if npc.get(target.entity).is_err() {
-            let cur_hp = target.vital_stats.get(VitalsStat::Hp);
-
-            //TODO: Хак чтобы постоянно не умирать, переделать на Undying компонент
-            if info.dmg > cur_hp {
-                info.dmg = cur_hp - 10.;
-            }
-        }
-
-        target.vital_stats.damage(info.dmg, damage_cp);
+        target
+            .vital_stats
+            .damage(info.dmg, damage_cp, target.is_immortal);
 
         // Add damage tracking - this might fail if we just inserted the component
         // but it will be handled in the next frame
@@ -795,23 +777,6 @@ fn calc_hit_info(
         shield,
         dmg,
     }
-}
-
-fn calculate_attack_allowed(
-    time: Res<Time>,
-    mut query: Query<(Entity, Mut<AttackTimer>), Without<AttackAllowed>>,
-    par_commands: ParallelCommands,
-) {
-    query.par_iter_mut().for_each(|(entity, mut timer)| {
-        timer.tick(time.delta());
-
-        if timer.finished() {
-            par_commands.command_scope(|mut commands| {
-                commands.entity(entity).try_insert(AttackAllowed);
-            });
-            timer.reset();
-        }
-    });
 }
 
 fn setup_attack_timers(
