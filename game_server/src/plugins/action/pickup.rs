@@ -1,4 +1,5 @@
 use bevy::{ecs::system::ParallelCommands, prelude::*};
+use bevy_ecs::query::QueryData;
 use game_core::{
     action::{
         pickup::{PickupAnimation, PickupComponentsPlugin, PickupMetric, PickupRequest},
@@ -39,28 +40,28 @@ impl Plugin for PickupPlugin {
     }
 }
 
+#[derive(QueryData)]
+struct CharacterQuery<'a> {
+    entity: Entity,
+    object_id: Ref<'a, ObjectId>,
+    transform: Ref<'a, Transform>,
+    request: Ref<'a, PickupRequest>,
+    move_to: Option<Ref<'a, MoveToEntity>>,
+    is_sitting: Has<Sit>,
+}
+
 fn pickup_request_handler(
     mut commands: Commands,
-    characters: Query<
-        (
-            Entity,
-            Ref<ObjectId>,
-            Ref<Transform>,
-            Ref<PickupRequest>,
-            Option<Ref<MoveToEntity>>,
-            Has<Sit>,
-        ),
-        Without<InActionPathfindingTimer>,
-    >,
+    characters: Query<CharacterQuery, Without<InActionPathfindingTimer>>,
     items: Query<(Ref<ObjectId>, Ref<Item>, Ref<Transform>)>,
     world_map_query: WorldMapQuery,
 ) -> Result<()> {
-    for (entity, char_oid, transform, request, move_to, is_sitting) in &mut characters.iter() {
-        let item_entity = request.0;
+    for character in &mut characters.iter() {
+        let item_entity = character.request.0;
 
-        if is_sitting {
+        if character.is_sitting {
             commands
-                .entity(entity)
+                .entity(character.entity)
                 .remove::<(PickupRequest, MoveToEntity)>();
             continue;
         }
@@ -68,12 +69,12 @@ fn pickup_request_handler(
         let Ok((item_oid, item, item_transform)) = items.get(item_entity) else {
             // Item no longer exists in world (picked up, destroyed, etc.)
             commands
-                .entity(entity)
+                .entity(character.entity)
                 .remove::<(PickupRequest, MoveToEntity)>();
             continue;
         };
 
-        let char_pos = transform.translation;
+        let char_pos = character.transform.translation;
         let item_pos = item_transform.translation;
         let distance = char_pos.flat_distance(&item_pos);
 
@@ -88,14 +89,14 @@ fn pickup_request_handler(
             ) {
                 // Can't see item - remove pickup request and continue
                 commands
-                    .entity(entity)
+                    .entity(character.entity)
                     .remove::<(MoveToEntity, PickupRequest)>();
                 continue;
             }
 
             // Within range and line of sight is clear - start pickup animation
             commands
-                .entity(entity)
+                .entity(character.entity)
                 .remove::<(
                     PickupRequest,
                     MoveTarget,
@@ -104,19 +105,20 @@ fn pickup_request_handler(
                 )>()
                 .insert(PickupAnimation::new(item_entity));
 
-            commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
+            commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
 
-            let get_item = GetItem::new(*char_oid, *item_oid, item.id(), item_pos).into();
-            let stop_move = StopMove::new(*char_oid, *transform).into();
+            let get_item =
+                GetItem::new(*character.object_id, *item_oid, item.id(), item_pos).into();
+            let stop_move = StopMove::new(*character.object_id, *character.transform).into();
 
             commands.trigger_targets(
                 ServerPacketsBroadcast::new(vec![stop_move, get_item].into()),
-                entity,
+                character.entity,
             );
         } else {
             // Item is out of range, need to move closer
             // Check if already moving to the correct target
-            if let Some(move_to) = move_to
+            if let Some(move_to) = character.move_to
                 && move_to.target == item_entity
             {
                 continue;
@@ -132,24 +134,22 @@ fn pickup_request_handler(
 
             if can_move_to {
                 // Direct line of sight, use simple movement to item location
-                commands
-                    .entity(entity)
-                    .insert(MoveTarget::single(spatial::WayPoint::new(
-                        char_pos, item_pos,
-                    )));
+                commands.entity(character.entity).insert(MoveTarget::single(
+                    spatial::WayPoint::new(char_pos, item_pos),
+                ));
             } else {
                 // No line of sight, use pathfinding via visibility check
                 commands
-                    .entity(entity)
+                    .entity(character.entity)
                     .try_insert(InActionPathfindingTimer::default());
 
                 commands.trigger_targets(
                     VisibilityCheckRequest {
-                        entity,
+                        entity: character.entity,
                         start: char_pos,
                         target: item_pos,
                     },
-                    entity,
+                    character.entity,
                 );
             }
         }
