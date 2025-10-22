@@ -20,6 +20,7 @@ pub mod network;
 pub mod npc;
 pub mod object_id;
 pub mod path_finding;
+pub mod player_specific;
 pub mod shortcut;
 pub mod skills;
 pub mod spawner;

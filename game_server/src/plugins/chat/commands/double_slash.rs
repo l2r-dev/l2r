@@ -2,6 +2,7 @@ use bevy::prelude::*;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     admin_menu::AdminMenuCommand,
+    attack::Immortal,
     character, items,
     network::{
         config::GameServerNetworkConfig,
@@ -144,6 +145,10 @@ fn handle_packet(
                 ),
                 initiator_entity,
             );
+        }
+
+        DoubleSlashCommand::Immortal => {
+            commands.entity(initiator_entity).insert(Immortal);
         }
     }
 

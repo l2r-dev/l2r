@@ -1,14 +1,5 @@
-use crate::{
-    animation::Animation,
-    items::{Grade, PaperDoll},
-    movement::MoveToEntity,
-    object_id::ObjectId,
-    stats::*,
-};
-use bevy::{
-    ecs::query::{QueryData, QueryFilter},
-    prelude::*,
-};
+use crate::{items::PaperDoll, movement::MoveToEntity, object_id::ObjectId, stats::*};
+use bevy::{ecs::query::QueryData, prelude::*};
 use std::time::Duration;
 
 mod attacking;
@@ -24,7 +15,6 @@ impl Plugin for AttackComponentsPlugin {
     fn build(&self, app: &mut App) {
         app.register_type::<Attackable>()
             .register_type::<Attacking>()
-            .register_type::<AttackAllowed>()
             .register_type::<AttackHit>()
             .register_type::<AttackCommonHit>()
             .register_type::<AttackMultiHit>()
@@ -33,16 +23,13 @@ impl Plugin for AttackComponentsPlugin {
             .register_type::<ConsumeArrow>()
             .register_type::<HitInfo>()
             .register_type::<InCombat>()
+            .register_type::<Immortal>()
             .register_type::<WeaponReuse>();
     }
 }
 
 #[derive(Component, Debug, Default, Reflect)]
 pub struct Attackable;
-
-#[derive(Component, Reflect)]
-#[component(storage = "SparseSet")]
-pub struct AttackAllowed;
 
 #[derive(QueryData)]
 #[query_data(mutable)]
@@ -52,19 +39,16 @@ struct EnemyQuery<'a> {
     transform: Ref<'a, Transform>,
 }
 
-#[derive(Clone, Component, Copy, Reflect)]
-pub struct HitInfo {
-    pub ss_grade: Option<Grade>,
-    pub miss: bool,
-    pub crit: bool,
-    pub shield: ShieldResult,
-    pub damage: f32,
-}
+#[derive(Component, Default, Reflect)]
+#[component(storage = "SparseSet")]
+pub struct Immortal;
 
 #[derive(Component, Default, Reflect)]
+#[component(storage = "SparseSet")]
 pub struct ConsumeArrow;
 
 #[derive(Component, Default, Reflect)]
+#[component(storage = "SparseSet")]
 pub struct WeaponReuse {
     timer: Timer,
 }
@@ -88,7 +72,16 @@ impl WeaponReuse {
     }
 }
 
+#[derive(Clone, Component, Copy, Reflect)]
+pub struct HitInfo {
+    pub miss: bool,
+    pub crit: bool,
+    pub shield: ShieldResult,
+    pub dmg: f32,
+}
+
 #[derive(Component, Reflect)]
+#[component(storage = "SparseSet")]
 pub enum AttackHit {
     AttackCommonHit(AttackCommonHit),
     AttackDualHit(AttackDualHit),
@@ -360,14 +353,6 @@ struct AttackingQuery<'a> {
     target: Ref<'a, Attacking>,
     paper_doll: Option<Ref<'a, PaperDoll>>,
     move_to: Option<Ref<'a, MoveToEntity>>,
-}
-
-#[derive(QueryFilter)]
-struct AttackingFilter {
-    attack_allowed: With<AttackAllowed>,
-    not_dead: Without<Dead>,
-    // without_pending_skill: Without<PendingSkill>,
-    not_animating: Without<Animation>,
 }
 
 #[derive(Component, Deref, DerefMut, Reflect)]

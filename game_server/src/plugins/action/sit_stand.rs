@@ -4,11 +4,13 @@ use game_core::{
         model::CoreAction,
         wait_kind::{Sit, WaitKind},
     },
-    animation::AnimationTimer,
+    animation::Animation,
+    attack::Attacking,
     encounters::EnteredWorld,
     movement::MoveTarget,
     network::{broadcast::ServerPacketBroadcast, packets::server::ChangeWaitType},
     object_id::ObjectId,
+    player_specific::next_intention::NextIntention,
 };
 use std::time::Duration;
 
@@ -31,7 +33,7 @@ fn handle_action(
     {
         commands
             .entity(entity)
-            .insert(AnimationTimer::new(Duration::from_secs(2)));
+            .insert(Animation::new(Duration::from_secs(2)));
 
         if has_sit {
             commands
@@ -43,6 +45,8 @@ fn handle_action(
                 .entity(entity)
                 .try_insert(WaitKind::Sit)
                 .try_insert(Sit)
+                .remove::<Attacking>()
+                .remove::<NextIntention>()
                 .remove::<MoveTarget>();
         }
     }
