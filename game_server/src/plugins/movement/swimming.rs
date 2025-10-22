@@ -1,6 +1,7 @@
 use avian3d::prelude::*;
 use bevy::prelude::*;
 use game_core::{
+    attack::Immortal,
     character::Character,
     network::{
         broadcast::ServerPacketBroadcast,
@@ -202,6 +203,7 @@ fn handle_breath(
             Ref<Movable>,
             Mut<OtherStats>,
             Mut<VitalsStats>,
+            Has<Immortal>,
         ),
         With<Character>,
     >,
@@ -210,7 +212,7 @@ fn handle_breath(
     if time_spent >= BREATH_DRAIN_PERIOD {
         *last_time = time.elapsed_secs();
 
-        for (entity, object_id, movable, mut other_stats, mut vitals_stats) in
+        for (entity, object_id, movable, mut other_stats, mut vitals_stats, is_immortal) in
             swimming_entities.iter_mut()
         {
             if movable.in_water() {
@@ -228,7 +230,11 @@ fn handle_breath(
                         max_breath,
                     );
                 } else {
-                    vitals_stats.percent_stat_damage(VitalsStat::Hp, OUT_OF_BREATH_DAMAGE_PERCENT);
+                    vitals_stats.percent_stat_damage(
+                        VitalsStat::Hp,
+                        OUT_OF_BREATH_DAMAGE_PERCENT,
+                        is_immortal,
+                    );
                 }
             }
         }

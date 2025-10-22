@@ -26,6 +26,7 @@ mod abnormal_effects;
 #[cfg(feature = "gui")]
 mod gui;
 mod multisell;
+mod player_specific;
 
 use crate::plugins::state::GameStateProcessPlugin;
 use avian3d::PhysicsPlugins;
@@ -104,6 +105,7 @@ impl PluginGroup for Core {
             .add(items::ItemsPlugin)
             .add(multisell::MultisellPlugin)
             .add(shortcuts::ShortcutPlugin)
+            .add(player_specific::PlayerSpecificPlugin)
             .add(manor::ManorPlugin);
         {
             builder = builder.add(scripting::CustomScriptingPlugin);

@@ -1,12 +1,8 @@
 use crate::object_id::ObjectId;
 use bevy::prelude::*;
-use derive_more::From;
 use l2r_core::packets::{ClientPacketBuffer, L2rSerializeError};
 use spatial::GameVec3;
 use std::{convert::TryFrom, fmt::Debug};
-
-#[derive(Deref, Event, From)]
-pub struct AttackRequest(Entity);
 
 #[derive(Clone, Debug, PartialEq, Reflect)]
 pub struct Attack {
