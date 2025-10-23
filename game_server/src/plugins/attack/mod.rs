@@ -2,8 +2,8 @@ mod death;
 mod packet;
 
 use crate::plugins::stats::{
-    calc_crit, calc_hit_miss, calc_p_atk_damage, calculate_shield_result,
-    send_shield_result_system_message,
+    CalcCritQuery, CalcShieldQuery, HitMissQuery, PAtkCalcDamageQuery, calc_crit, calc_hit_miss,
+    calc_p_atk_damage, calculate_shield_result, send_shield_result_system_message,
 };
 use avian3d::{prelude::*, spatial_query::SpatialQuery};
 use bevy::{
@@ -13,6 +13,7 @@ use bevy::{
     },
     prelude::*,
 };
+
 use game_core::{
     animation::{Animation, AnimationTimer},
     attack::{
@@ -20,8 +21,8 @@ use game_core::{
         ConsumeArrow, Dead, HitInfo, InCombat, WeaponReuse,
     },
     items::{
-        DollSlot, Grade, Item, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem, UpdateType,
-        WeaponAttackParams,
+        DollSlot, Grade, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
+        UpdateType, WeaponAttackParams,
     },
     movement::{LookAt, MoveToEntity},
     network::{
@@ -117,13 +118,18 @@ struct AttackSystemParams<'w, 's> {
     shot_used: Query<'w, 's, Ref<'static, Soulshot>>,
     items: Query<'w, 's, Entity, With<Item>>,
     items_data_query: ItemsDataQuery<'w>,
+    object_ids: Query<'w, 's, Ref<'static, ObjectId>>,
     object_id_manager: Res<'w, ObjectIdManager>,
     world_map_query: WorldMapQuery<'w, 's>,
     spatial_query: SpatialQuery<'w, 's>,
     commands: ParallelCommands<'w, 's>,
+    hit_calc_query: HitMissQuery<'w, 's>,
+    calc_shield_query: CalcShieldQuery<'w, 's>,
+    calc_crit_query: CalcCritQuery<'w, 's>,
+    p_atk_dmg_query: PAtkCalcDamageQuery<'w, 's>,
 }
 
-fn attack_entity(params: AttackSystemParams, world: &World) -> Result<()> {
+fn attack_entity(params: AttackSystemParams) -> Result<()> {
     params.attacking_objects.par_iter().for_each(|attacker| {
         match params.target_objects.get(**attacker.target) {
             Ok(aiming_target) => {
@@ -136,26 +142,12 @@ fn attack_entity(params: AttackSystemParams, world: &World) -> Result<()> {
                 if distance <= range {
                     params.commands.command_scope(|mut commands| {
                         commands.trigger_targets(LookAt(aiming_target.entity), attacker.entity);
-                        // Remove the AttackAllowed component to ensure the entity waits for
-                        // the next allowed attack time
+
                         commands
                             .entity(attacker.entity)
                             .remove::<MoveToEntity>()
                             .try_insert(InCombat::default());
                     });
-
-                    let Ok(attacker_ref) = world.get_entity(attacker.entity) else {
-                        return;
-                    };
-
-                    let Ok(aiming_target_ref) = world.get_entity(aiming_target.entity) else {
-                        return;
-                    };
-
-                    let attacker_attack_speed =
-                        attacker.attack_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);
-
-                    let attack_interval = attacker_attack_speed.attack_interval();
 
                     let weapon_uniq = attacker
                         .paper_doll
@@ -164,30 +156,14 @@ fn attack_entity(params: AttackSystemParams, world: &World) -> Result<()> {
 
                     let weapon_info = params.items_data_query.item_info_from_uniq(&weapon_uniq);
 
-                    let (
-                        interval_multiplier,
-                        second_attack_interval_multiplier,
-                        weapon_reuse_delay,
-                        is_bow,
-                    ) = if let Some(Kind::Weapon(weapon)) = weapon_info.map(|v| v.kind()) {
-                        let WeaponAttackParams {
-                            is_bow,
-                            reuse_delay,
-                            primary_attack_delay_multiplier,
-                            secondary_attack_delay_multiplier,
-                        } = weapon.attack_params();
+                    let attack_params =
+                        if let Some(Kind::Weapon(weapon)) = weapon_info.map(|v| v.kind()) {
+                            weapon.attack_params()
+                        } else {
+                            WeaponAttackParams::default()
+                        };
 
-                        (
-                            primary_attack_delay_multiplier,
-                            secondary_attack_delay_multiplier,
-                            reuse_delay,
-                            is_bow,
-                        )
-                    } else {
-                        (0.5, None, None, false)
-                    };
-
-                    if weapon_reuse_delay.is_some() && attacker.weapon_reuse_active {
+                    if attack_params.reuse_delay.is_some() && attacker.weapon_reuse_active {
                         return;
                     }
 
@@ -195,7 +171,9 @@ fn attack_entity(params: AttackSystemParams, world: &World) -> Result<()> {
                         commands.entity(attacker.entity).remove::<AttackAllowed>();
                     });
 
-                    if is_bow && let Some(paperdoll) = attacker.paper_doll {
+                    if attack_params.is_bow
+                        && let Some(paperdoll) = attacker.paper_doll
+                    {
                         let arrow_count = paperdoll[DollSlot::LeftHand]
                             .map(|v| v.item().count())
                             .unwrap_or(0);
@@ -235,44 +213,19 @@ fn attack_entity(params: AttackSystemParams, world: &World) -> Result<()> {
                             .try_insert(InCombat::default());
                     });
 
-                    let weapon_entity = weapon_uniq.and_then(|weapon| {
-                        params
-                            .items
-                            .by_object_id(weapon.object_id(), params.object_id_manager.as_ref())
-                            .ok()
-                    });
+                    let (attack_packet, attack_hit, attack_interval, weapon_reuse_duration) =
+                        calculate_attack_hit(
+                            attacker.entity,
+                            aiming_target.entity,
+                            range,
+                            weapon_uniq,
+                            weapon_info,
+                            attack_params,
+                            &params,
+                        )
+                        .unwrap();
 
-                    let soulshot_used = weapon_entity
-                        .and_then(|v| params.shot_used.get(v).ok())
-                        .is_some();
-
-                    let soulshot_grade = if let Some(w) = weapon_info {
-                        w.grade().shot_grade()
-                    } else {
-                        Grade::None
-                    };
-
-                    let mut attack_info = Attack::new(
-                        *attacker.object_id,
-                        attacker.transform.translation,
-                        aiming_target.transform.translation,
-                    );
-
-                    let mut max_targets_count = attacker_ref
-                        .get::<AttackStats>()
-                        .map(|s| s.get(AttackStat::PAtkMaxTargetsCount))
-                        .unwrap_or_default()
-                        .round() as u32;
-
-                    //TODO: найти точную формулу, проверить должна ли пропадать красная полоска при смене оружия
-                    if let Some(weapon_reuse_delay) = weapon_reuse_delay {
-                        let atck_speed: u32 = attacker_attack_speed.into();
-
-                        let duration = Duration::from_millis(
-                            //TODO: должна быть базовая скорость атаки. 300 для игроков, 333 для мобов
-                            weapon_reuse_delay as u64 * 300 / atck_speed as u64,
-                        ) + attack_interval;
-
+                    if let Some(duration) = weapon_reuse_duration {
                         params.commands.command_scope(|mut commands| {
                             commands.trigger_targets(
                                 GameServerPacket::from(SetupGauge::new(
@@ -289,167 +242,13 @@ fn attack_entity(params: AttackSystemParams, world: &World) -> Result<()> {
                         });
                     }
 
-                    let attack_hit = if max_targets_count > 1 {
-                        let mut hits = vec![];
-
-                        let attack_interval = attacker
-                            .attack_stats
-                            .typed::<PAtkSpd>(AttackStat::PAtkSpd)
-                            .attack_interval();
-
-                        let hit_info =
-                            calc_hit_info(soulshot_used, attacker_ref, aiming_target_ref, world);
-
-                        let mut all_missed = hit_info.miss;
-
-                        attack_info.add_hit(
-                            hit_info.dmg as u32,
-                            *aiming_target.object_id,
-                            hit_info.miss,
-                            hit_info.crit,
-                            0,
-                            soulshot_used,
-                            soulshot_grade,
-                        );
-
-                        hits.push((aiming_target.entity, hit_info));
-
-                        max_targets_count -= 1;
-
-                        let attack_angle = attacker_ref
-                            .get::<AttackStats>()
-                            .map(|s| s.get(AttackStat::PAtkWidth))
-                            .unwrap_or_default()
-                            .round();
-
-                        let attack_vector =
-                            attacker.transform.translation - aiming_target.transform.translation;
-
-                        // Use SpatialQuery to find nearby entities within weapon range
-                        let query_sphere = Collider::sphere(range);
-                        let filter = SpatialQueryFilter::default()
-                            .with_excluded_entities([attacker.entity, aiming_target.entity]);
-
-                        let nearby_entities = params.spatial_query.shape_intersections(
-                            &query_sphere,
-                            attacker.transform.translation,
-                            Quat::IDENTITY,
-                            &filter,
-                        );
-
-                        for next_target_entity in nearby_entities {
-                            let Ok(next_target) = params.target_objects.get(next_target_entity)
-                            else {
-                                continue;
-                            };
-
-                            let Ok(next_target_ref) = world.get_entity(next_target.entity) else {
-                                continue;
-                            };
-
-                            let next_target_vector =
-                                attacker.transform.translation - next_target.transform.translation;
-
-                            //TODO: в калькуляторе переводить в PI все градусы
-                            let angle_in_degrees =
-                                attack_vector.angle_between(next_target_vector) * 180. / PI;
-
-                            if angle_in_degrees > attack_angle {
-                                continue;
-                            }
-
-                            //TODO: нужна проверка на враждебность
-
-                            let hit_info =
-                                calc_hit_info(soulshot_used, attacker_ref, next_target_ref, world);
-
-                            all_missed &= hit_info.miss;
-
-                            attack_info.add_hit(
-                                hit_info.dmg as u32,
-                                *next_target.object_id,
-                                hit_info.miss,
-                                hit_info.crit,
-                                0,
-                                soulshot_used,
-                                soulshot_grade,
-                            );
-
-                            hits.push((next_target.entity, hit_info));
-
-                            if max_targets_count == 1 {
-                                break;
-                            } else {
-                                max_targets_count -= 1;
-                            }
-                        }
-
-                        AttackHit::new_multi(
-                            attack_interval.mul_f32(interval_multiplier),
-                            weapon_entity,
-                            hits,
-                            all_missed,
-                        )
-                    } else {
-                        let hit_info =
-                            calc_hit_info(soulshot_used, attacker_ref, aiming_target_ref, world);
-
-                        attack_info.add_hit(
-                            hit_info.dmg as u32,
-                            *aiming_target.object_id,
-                            hit_info.miss,
-                            hit_info.crit,
-                            0,
-                            soulshot_used,
-                            soulshot_grade,
-                        );
-
-                        if let Some(second_attack_interval_multiplier) =
-                            second_attack_interval_multiplier
-                        {
-                            let second_hit_info = calc_hit_info(
-                                soulshot_used,
-                                attacker_ref,
-                                aiming_target_ref,
-                                world,
-                            );
-
-                            attack_info.add_hit(
-                                second_hit_info.dmg as u32,
-                                *aiming_target.object_id,
-                                second_hit_info.miss,
-                                second_hit_info.crit,
-                                0,
-                                soulshot_used,
-                                soulshot_grade,
-                            );
-
-                            AttackHit::new_dual(
-                                aiming_target.entity,
-                                weapon_entity,
-                                attack_interval.mul_f32(interval_multiplier),
-                                hit_info,
-                                attack_interval.mul_f32(second_attack_interval_multiplier),
-                                second_hit_info,
-                                hit_info.miss & second_hit_info.miss,
-                            )
-                        } else {
-                            AttackHit::new_common(
-                                aiming_target.entity,
-                                attack_interval.mul_f32(interval_multiplier),
-                                hit_info,
-                                weapon_entity,
-                            )
-                        }
-                    };
-
                     params.commands.command_scope(|mut commands| {
                         commands.entity(attacker.entity).try_insert(attack_hit);
                     });
 
                     params.commands.command_scope(|mut commands| {
                         commands.trigger_targets(
-                            ServerPacketBroadcast::new(attack_info.into()),
+                            ServerPacketBroadcast::new(attack_packet.into()),
                             attacker.entity,
                         );
 
@@ -771,24 +570,30 @@ fn remove_soulshot(mut commands: Commands, weapon_entity: Option<Entity>) {
 }
 
 fn calc_hit_info(
+    attacker: Entity,
+    target: Entity,
+    params: &AttackSystemParams,
     soulshot_used: bool,
-    attacker_ref: EntityRef,
-    target_ref: EntityRef,
-    world: &World,
-) -> HitInfo {
-    let miss = calc_hit_miss(attacker_ref, target_ref, world);
+) -> Result<HitInfo> {
+    let miss = calc_hit_miss(attacker, target, &params.hit_calc_query)?;
     let mut crit = false;
     let mut shield = ShieldResult::Failed;
     let mut dmg = 0.;
 
     if !miss {
-        shield = calculate_shield_result(attacker_ref, target_ref, world);
+        shield = calculate_shield_result(attacker, target, &params.calc_shield_query);
 
         match shield {
             ShieldResult::Failed | ShieldResult::Succeed => {
-                crit = calc_crit(attacker_ref, target_ref, world);
-                dmg =
-                    calc_p_atk_damage(attacker_ref, target_ref, world, crit, soulshot_used, shield);
+                crit = calc_crit(attacker, target, &params.calc_crit_query);
+                dmg = calc_p_atk_damage(
+                    attacker,
+                    target,
+                    crit,
+                    soulshot_used,
+                    shield,
+                    &params.p_atk_dmg_query,
+                );
             }
             ShieldResult::PerfectBlock => {
                 dmg = 1.;
@@ -796,11 +601,206 @@ fn calc_hit_info(
         }
     }
 
-    HitInfo {
+    Ok(HitInfo {
         miss,
         crit,
         shield,
         dmg,
+    })
+}
+
+fn calculate_attack_hit(
+    attacker: Entity,
+    aiming_target: Entity,
+    range: f32,
+    weapon_uniq: Option<UniqueItem>,
+    weapon_info: Option<&ItemInfo>,
+    attack_params: WeaponAttackParams,
+    params: &AttackSystemParams,
+) -> Result<(Attack, AttackHit, Duration, Option<Duration>)> {
+    let attacker_stats = params.p_atk_dmg_query.attack_stats.get(attacker)?;
+    let attacker_transform = params.p_atk_dmg_query.transforms.get(attacker)?;
+    let attacker_position = attacker_transform.translation;
+    let attacker_oid = params.object_ids.get(attacker)?;
+
+    let aiming_target_transform = params.p_atk_dmg_query.transforms.get(aiming_target)?;
+    let aiming_target_position = aiming_target_transform.translation;
+    let aiming_target_oid = params.object_ids.get(aiming_target)?;
+
+    let mut attack_packet = Attack::new(*attacker_oid, attacker_position, aiming_target_position);
+
+    let attacker_attack_speed = attacker_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);
+    let attack_interval = attacker_attack_speed.attack_interval();
+
+    //TODO: найти точную формулу, проверить должна ли пропадать красная полоска при смене оружия
+    let weapon_reuse_duration = attack_params.reuse_delay.map(|weapon_reuse_delay| {
+        let atck_speed: u32 = attacker_attack_speed.into();
+        Duration::from_millis(
+            //TODO: должна быть базовая скорость атаки. 300 для игроков, 333 для мобов
+            weapon_reuse_delay as u64 * 300 / atck_speed as u64,
+        ) + attack_interval
+    });
+
+    let mut max_targets_count = attacker_stats.get(AttackStat::PAtkMaxTargetsCount).round() as u32;
+
+    // Calculate weapon-related values
+    let weapon_entity = weapon_uniq.and_then(|weapon| {
+        params
+            .items
+            .by_object_id(weapon.object_id(), params.object_id_manager.as_ref())
+            .ok()
+    });
+
+    let soulshot_used = weapon_entity
+        .and_then(|v| params.shot_used.get(v).ok())
+        .is_some();
+
+    let soulshot_grade = if let Some(w) = weapon_info {
+        w.grade().shot_grade()
+    } else {
+        Grade::None
+    };
+
+    if max_targets_count > 1 {
+        let mut hits = vec![];
+
+        let hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+
+        let mut all_missed = hit_info.miss;
+
+        attack_packet.add_hit(
+            hit_info.dmg as u32,
+            *aiming_target_oid,
+            hit_info.miss,
+            hit_info.crit,
+            0,
+            soulshot_used,
+            soulshot_grade,
+        );
+
+        hits.push((attacker, hit_info));
+
+        max_targets_count -= 1;
+
+        let attack_angle = attacker_stats.get(AttackStat::PAtkWidth).round();
+
+        let attack_vector = attacker_position - aiming_target_position;
+
+        // Use SpatialQuery to find nearby entities within weapon range
+        let query_sphere = Collider::sphere(range);
+        let filter =
+            SpatialQueryFilter::default().with_excluded_entities([attacker, aiming_target]);
+
+        let nearby_entities = params.spatial_query.shape_intersections(
+            &query_sphere,
+            attacker_position,
+            Quat::IDENTITY,
+            &filter,
+        );
+
+        for next_target_entity in nearby_entities {
+            let Ok(next_target) = params.target_objects.get(next_target_entity) else {
+                continue;
+            };
+
+            let next_target_vector = attacker_position - next_target.transform.translation;
+
+            //TODO: в калькуляторе переводить в PI все градусы
+            let angle_in_degrees = attack_vector.angle_between(next_target_vector) * 180. / PI;
+
+            if angle_in_degrees > attack_angle {
+                continue;
+            }
+
+            //TODO: нужна проверка на враждебность
+            let hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+
+            all_missed &= hit_info.miss;
+
+            attack_packet.add_hit(
+                hit_info.dmg as u32,
+                *next_target.object_id,
+                hit_info.miss,
+                hit_info.crit,
+                0,
+                soulshot_used,
+                soulshot_grade,
+            );
+
+            hits.push((next_target.entity, hit_info));
+
+            if max_targets_count == 1 {
+                break;
+            } else {
+                max_targets_count -= 1;
+            }
+        }
+
+        let attack_hit = AttackHit::new_multi(
+            attack_interval.mul_f32(attack_params.primary_attack_delay_multiplier),
+            weapon_entity,
+            hits,
+            all_missed,
+        );
+
+        Ok((
+            attack_packet,
+            attack_hit,
+            attack_interval,
+            weapon_reuse_duration,
+        ))
+    } else {
+        let hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+
+        attack_packet.add_hit(
+            hit_info.dmg as u32,
+            *aiming_target_oid,
+            hit_info.miss,
+            hit_info.crit,
+            0,
+            soulshot_used,
+            soulshot_grade,
+        );
+
+        let attack_hit = if let Some(second_attack_interval_multiplier) =
+            attack_params.secondary_attack_delay_multiplier
+        {
+            let second_hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+
+            attack_packet.add_hit(
+                second_hit_info.dmg as u32,
+                *aiming_target_oid,
+                second_hit_info.miss,
+                second_hit_info.crit,
+                0,
+                soulshot_used,
+                soulshot_grade,
+            );
+
+            AttackHit::new_dual(
+                aiming_target,
+                weapon_entity,
+                attack_interval.mul_f32(attack_params.primary_attack_delay_multiplier),
+                hit_info,
+                attack_interval.mul_f32(second_attack_interval_multiplier),
+                second_hit_info,
+                hit_info.miss & second_hit_info.miss,
+            )
+        } else {
+            AttackHit::new_common(
+                aiming_target,
+                attack_interval.mul_f32(attack_params.primary_attack_delay_multiplier),
+                hit_info,
+                weapon_entity,
+            )
+        };
+
+        Ok((
+            attack_packet,
+            attack_hit,
+            attack_interval,
+            weapon_reuse_duration,
+        ))
     }
 }
 
