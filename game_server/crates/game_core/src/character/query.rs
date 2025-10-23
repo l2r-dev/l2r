@@ -35,7 +35,7 @@ pub struct Query<'a> {
     pub vitals_stats: &'a VitalsStats,
     pub paperdoll: &'a PaperDoll,
     pub collider: &'a Collider,
-    pub visibility: &'a Visible,
+    pub visibility: &'a EncountersVisibility,
     pub dead: Option<&'a Dead>,
     pub in_combat: Option<&'a InCombat>,
     pub sitting: Option<&'a Sit>,

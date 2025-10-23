@@ -156,7 +156,7 @@ impl L2rServerPacket for CharInfo {
 
 impl CharInfo {
     pub fn new(query: &character::QueryItem, base_speed: MovementStats) -> Self {
-        let invisible = !matches!(query.visibility, Visible::Visible);
+        let invisible = !matches!(query.visibility, EncountersVisibility::Visible);
 
         let collision_radius = query.collider.radius();
         let collision_height = query.collider.height();

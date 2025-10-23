@@ -1,3 +1,4 @@
+use avian3d::prelude::{Collider, Sensor};
 use bevy::{log, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
 use bevy_defer::{AccessError, AppReactorExtension, AsyncAccess, AsyncExtension, AsyncWorld};
@@ -9,6 +10,7 @@ use game_core::{
         model,
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
+    stats::EncountersVisibility,
 };
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
@@ -140,7 +142,12 @@ pub fn spawn_existing_item_handle(
             .item_mut()
             .set_dropped_entity(event.dropped_entity);
 
-        let mut entity_commands = commands.spawn(unique_item);
+        let mut entity_commands = commands.spawn((
+            unique_item,
+            EncountersVisibility::default(),
+            Sensor,
+            Collider::cuboid(1., 1., 1.),
+        ));
         if event.silent {
             entity_commands.insert(SilentSpawn);
         }

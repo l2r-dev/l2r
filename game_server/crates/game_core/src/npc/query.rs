@@ -33,5 +33,5 @@ pub struct NpcQuery<'a> {
     pub progress_reward: &'a ProgressReward,
     pub pvp_stats: &'a PvpStats,
     pub paperdoll_items: Option<&'a PaperDoll>,
-    pub visibility: &'a Visibility,
+    pub visibility: &'a EncountersVisibility,
 }
