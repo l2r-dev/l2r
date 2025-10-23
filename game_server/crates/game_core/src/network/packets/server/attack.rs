@@ -1,5 +1,5 @@
 use super::GameServerPacketCodes;
-use crate::{items::Grade, object_id::ObjectId};
+use crate::{attack::HitInfo, object_id::ObjectId, stats::ShieldResult};
 use bevy::prelude::*;
 use l2r_core::packets::{L2rServerPacket, ServerPacketBuffer};
 use spatial::GameVec3;
@@ -22,35 +22,30 @@ pub struct Hit {
 }
 
 impl Hit {
-    pub fn new(
-        damage: u32,
-        target: ObjectId,
-        miss: bool,
-        crit: bool,
-        shld: u8,
-        soulshot: bool,
-        ss_grade: Grade,
-    ) -> Self {
+    pub fn new(target: ObjectId, hit_info: HitInfo) -> Self {
         let mut flags: u8 = 0;
 
-        if soulshot {
+        if let Some(ss_grade) = hit_info.ss_grade {
             flags |= HitFlag::UseSs as u8 | ss_grade as u8;
         }
 
-        if crit {
+        if hit_info.crit {
             flags |= HitFlag::Crit as u8;
         }
 
-        if shld > 0 {
+        if matches!(
+            hit_info.shield,
+            ShieldResult::Succeed | ShieldResult::PerfectBlock
+        ) {
             flags |= HitFlag::Shield as u8;
         }
 
-        if miss {
+        if hit_info.miss {
             flags |= HitFlag::Miss as u8;
         }
 
         Self {
-            damage,
+            damage: hit_info.damage as u32,
             flags,
             target,
         }
@@ -85,19 +80,8 @@ impl Attack {
 }
 impl Attack {
     #[allow(clippy::too_many_arguments)]
-    pub fn add_hit(
-        &mut self,
-        damage: u32,
-        target: ObjectId,
-        miss: bool,
-        crit: bool,
-        shld: u8,
-        soulshot: bool,
-        ss_grade: Grade,
-    ) {
-        self.hits.push(Hit::new(
-            damage, target, miss, crit, shld, soulshot, ss_grade,
-        ));
+    pub fn add_hit(&mut self, target: ObjectId, hit_info: HitInfo) {
+        self.hits.push(Hit::new(target, hit_info));
     }
 }
 

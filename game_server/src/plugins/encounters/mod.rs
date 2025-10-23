@@ -1,5 +1,6 @@
 mod appearing;
 
+use avian3d::{prelude::*, spatial_query::SpatialQuery};
 use bevy::{
     ecs::{
         query::{QueryData, QueryFilter},
@@ -8,7 +9,7 @@ use bevy::{
     prelude::*,
 };
 use game_core::{
-    character::{self, Character},
+    character::{self},
     encounters::*,
     items::{Item, ItemsDataQuery},
     movement::{MoveTarget, MoveToEntity},
@@ -35,30 +36,14 @@ impl Plugin for EncountersPlugin {
 
         app.add_systems(
             Update,
-            (set_relations, unset_relations).in_set(GameServerStateSystems::Run),
+            (set_relations, unset_relations)
+                .chain()
+                .in_set(GameServerStateSystems::Run),
         );
     }
 }
 
 const RANGE_THRESHOLD: f32 = 3000.0;
-
-/// Entities with knowledge tracking data
-#[derive(QueryData)]
-#[query_data(mutable)]
-struct KnownEntitiesQuery<'a> {
-    entity: Entity,
-    transform: Ref<'a, Transform>,
-    known_entities: Mut<'a, KnownEntities>,
-    visible: Ref<'a, Visible>,
-}
-
-/// Movable characters that have had visibility or position changes
-#[derive(QueryFilter)]
-struct KnownEntitiesFilter {
-    movable: With<Movable>,
-    character: With<Character>,
-    changed: Or<(Changed<Transform>, Changed<Visible>)>,
-}
 
 /// Entities that want to know about other entities
 #[derive(QueryData)]
@@ -69,28 +54,54 @@ struct WantToKnowQuery<'a> {
     known_entities: Mut<'a, KnownEntities>,
 }
 
+#[derive(QueryFilter)]
+struct KnowersFilter {
+    not_teleporting: Without<TeleportInProgress>,
+    entered_world: With<EnteredWorld>,
+}
+
+/// Entities that can be known by others
+#[derive(QueryData)]
+struct CanBeKnownQuery<'a> {
+    entity: Entity,
+    visible: Ref<'a, EncountersVisibility>,
+}
+
 // System to add entities to KnownEntities when they come into range
 fn set_relations(
     time: Res<Time>,
     mut last_time: Local<f32>,
-    mut want_to_knowers: Query<WantToKnowQuery, (Without<TeleportInProgress>, With<EnteredWorld>)>,
-    possible_encounters: Query<(Entity, Ref<Transform>), Or<(With<Movable>, With<Item>)>>,
+    mut want_to_knowers: Query<WantToKnowQuery, KnowersFilter>,
+    can_be_known: Query<CanBeKnownQuery>,
+    spatial_query: SpatialQuery,
     par_commands: ParallelCommands,
 ) {
     if time.elapsed_secs() - *last_time >= 0.1 {
         *last_time = time.elapsed_secs();
+        let query_sphere = Collider::sphere(RANGE_THRESHOLD);
+
         want_to_knowers.par_iter_mut().for_each(|query_item| {
             let entity_a = query_item.entity;
             let pos_a = query_item.transform;
             let mut known_entities = query_item.known_entities;
-            for (entity_b, pos_b) in possible_encounters.iter() {
-                if entity_a != entity_b {
-                    let distance = pos_a.translation.distance(pos_b.translation);
-                    if distance <= RANGE_THRESHOLD && known_entities.insert(entity_b) {
-                        par_commands.command_scope(|mut commands| {
-                            commands.trigger_targets(KnownAdded::new(entity_b), entity_a);
-                        });
-                    }
+
+            let filter = SpatialQueryFilter::default().with_excluded_entities([entity_a]);
+            let nearby_entities = spatial_query.shape_intersections(
+                &query_sphere,
+                pos_a.translation,
+                Quat::IDENTITY,
+                &filter,
+            );
+
+            // Add visible entities that are not already known
+            for entity_b in nearby_entities {
+                if let Ok(known_query) = can_be_known.get(entity_b)
+                    && *known_query.visible == EncountersVisibility::Visible
+                    && known_entities.insert(entity_b)
+                {
+                    par_commands.command_scope(|mut commands| {
+                        commands.trigger_targets(KnownAdded::new(entity_b), entity_a);
+                    });
                 }
             }
         });
@@ -101,39 +112,49 @@ fn set_relations(
 fn unset_relations(
     time: Res<Time>,
     mut last_time: Local<f32>,
-    mut known: Query<KnownEntitiesQuery, KnownEntitiesFilter>,
-    possible_encounters: Query<(Entity, Ref<Transform>), Or<(With<Movable>, With<Item>)>>,
+    mut known: Query<WantToKnowQuery, KnowersFilter>,
+    can_be_known: Query<CanBeKnownQuery>,
+    spatial_query: SpatialQuery,
     object_ids: Query<Ref<ObjectId>>,
     par_commands: ParallelCommands,
 ) {
     if time.elapsed_secs() - *last_time >= 0.1 {
         *last_time = time.elapsed_secs();
+
+        let query_sphere = Collider::sphere(RANGE_THRESHOLD);
         known.par_iter_mut().for_each(|query_item| {
             let entity_a = query_item.entity;
             let pos_a = query_item.transform;
             let mut known_entities = query_item.known_entities;
-            let visible = query_item.visible;
+
+            let filter = SpatialQueryFilter::default().with_excluded_entities([entity_a]);
+            let nearby_entities: std::collections::HashSet<Entity> = spatial_query
+                .shape_intersections(&query_sphere, pos_a.translation, Quat::IDENTITY, &filter)
+                .into_iter()
+                .collect();
+
             let mut to_remove = Vec::with_capacity(known_entities.len() / 2);
             for &entity_b in known_entities.iter() {
                 let entity_b_oid = match object_ids.get(entity_b) {
                     Ok(object_id) => *object_id,
                     Err(_) => {
-                        // Entity no longer exists or lacks required components
+                        to_remove.push((entity_b, ObjectId::default()));
                         continue;
                     }
                 };
-                if *visible == Visible::Hidden {
-                    to_remove.push((entity_b, entity_b_oid));
-                } else if let Ok((_, pos_b)) = possible_encounters.get(entity_b) {
-                    let distance = pos_a.translation.distance(pos_b.translation);
-                    if distance > RANGE_THRESHOLD {
-                        to_remove.push((entity_b, entity_b_oid));
-                    }
-                } else {
-                    // Target entity no longer exists or lacks required components
+
+                // Check if entity became Hidden
+                let is_hidden = can_be_known
+                    .get(entity_b)
+                    .map(|q| *q.visible == EncountersVisibility::Hidden)
+                    .unwrap_or(false);
+
+                // Remove if entity is no longer in range or became Hidden
+                if !nearby_entities.contains(&entity_b) || is_hidden {
                     to_remove.push((entity_b, entity_b_oid));
                 }
             }
+
             for (entity_b, entity_b_oid) in to_remove {
                 known_entities.remove(&entity_b);
                 par_commands.command_scope(|mut commands| {

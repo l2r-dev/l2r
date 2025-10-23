@@ -65,11 +65,23 @@ pub enum WeaponKind {
     Pole,
 }
 
+#[derive(Clone, Copy, Debug, Reflect)]
 pub struct WeaponAttackParams {
     pub is_bow: bool,
     pub reuse_delay: Option<u32>,
     pub primary_attack_delay_multiplier: f32,
     pub secondary_attack_delay_multiplier: Option<f32>,
+}
+
+impl Default for WeaponAttackParams {
+    fn default() -> Self {
+        WeaponAttackParams {
+            primary_attack_delay_multiplier: 0.5,
+            secondary_attack_delay_multiplier: None,
+            reuse_delay: None,
+            is_bow: false,
+        }
+    }
 }
 
 impl Weapon {

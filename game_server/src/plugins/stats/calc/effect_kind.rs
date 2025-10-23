@@ -1,4 +1,5 @@
 use bevy::prelude::*;
+use bevy_ecs::system::SystemParam;
 use game_core::stats::{
     AttackEffects, DefenceEffects, EffectKind, EffectKindComponentsPlugin, Weakness,
 };
@@ -11,16 +12,25 @@ impl Plugin for EffectKindPlugin {
     }
 }
 
-pub fn get_attack_trait_bonus(attacker_entity: EntityRef, target_entity: EntityRef) -> f32 {
-    let Some(attacker_attack_effects) = attacker_entity.get::<AttackEffects>() else {
+#[derive(SystemParam)]
+pub struct EffectQuery<'w, 's> {
+    pub attack_effects: Query<'w, 's, Ref<'static, AttackEffects>>,
+    pub defence_effects: Query<'w, 's, Ref<'static, DefenceEffects>>,
+}
+
+pub fn get_attack_trait_bonus(attacker: Entity, target: Entity, query: &EffectQuery) -> f32 {
+    let Some(attacker_attack_effects) = query.attack_effects.get(attacker).ok() else {
         return 0.0;
     };
 
-    let Some(target_defence_effects) = target_entity.get::<DefenceEffects>() else {
+    let Some(target_defence_effects) = query.defence_effects.get(target).ok() else {
         return 0.0;
     };
 
-    calc_attack_trait_bonus(attacker_attack_effects, target_defence_effects)
+    calc_attack_trait_bonus(
+        attacker_attack_effects.as_ref(),
+        target_defence_effects.as_ref(),
+    )
 }
 
 fn calc_attack_trait_bonus(

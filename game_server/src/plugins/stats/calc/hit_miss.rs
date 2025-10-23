@@ -1,22 +1,25 @@
 use bevy::prelude::*;
+use bevy_ecs::system::SystemParam;
 use game_core::stats::*;
 use rand::Rng;
 use spatial::{HeightDifference, RelativeDirection, TransformRelativeDirection};
 
-pub fn calc_hit_miss(attacker: EntityRef, target: EntityRef, world: &World) -> bool {
-    let accuracy = attacker
-        .get::<AttackStats>()
-        .map(|s| s.get(AttackStat::Accuracy))
-        .unwrap_or_default();
+#[derive(SystemParam)]
+pub struct HitMissQuery<'w, 's> {
+    pub transforms: Query<'w, 's, Ref<'static, Transform>>,
+    pub attack_stats: Query<'w, 's, Ref<'static, AttackStats>>,
+    pub defence_stats: Query<'w, 's, Ref<'static, DefenceStats>>,
+}
 
-    let evasion = target
-        .get::<DefenceStats>()
-        .map(|s| s.get(DefenceStat::Evasion))
-        .unwrap_or_default();
+pub fn calc_hit_miss(attacker: Entity, target: Entity, query: &HitMissQuery) -> Result<bool> {
+    let attacker_stats = query.attack_stats.get(attacker)?;
+    let target_stats = query.defence_stats.get(target)?;
+    let accuracy = attacker_stats.get(AttackStat::Accuracy);
+    let evasion = target_stats.get(DefenceStat::Evasion);
 
-    let condition_bonus = get_condition_bonus(attacker, target, world);
+    let condition_bonus = get_condition_bonus(attacker, target, query);
 
-    calculate_hit_miss(accuracy, evasion, condition_bonus)
+    Ok(calculate_hit_miss(accuracy, evasion, condition_bonus))
 }
 
 #[inline]
@@ -44,24 +47,32 @@ const SIDE_BONUS: f32 = 5.0;
 const DARK_BONUS: f32 = -10.0;
 const RAIN_BONUS: f32 = -3.0;
 
-fn get_condition_bonus(attacker: EntityRef, target: EntityRef, _world: &World) -> f32 {
-    get_condition_bonus_inner(attacker, target, _world).unwrap_or(1.0)
+fn get_condition_bonus(attacker: Entity, target: Entity, query: &HitMissQuery) -> f32 {
+    get_condition_bonus_inner(attacker, target, query).unwrap_or(1.0)
 }
 
 #[inline]
 fn get_condition_bonus_inner(
-    attacker: EntityRef,
-    target: EntityRef,
-    _world: &World,
+    attacker: Entity,
+    target: Entity,
+    query: &HitMissQuery,
 ) -> Option<f32> {
-    let attacker_transform = attacker.get::<Transform>()?;
-    let target_transform = target.get::<Transform>()?;
+    let attacker_transform = query.transforms.get(attacker).ok()?;
+    let target_transform = query.transforms.get(target).ok()?;
 
     // TODO: implement getting night/rain from world
     let night = false;
     let rain = false;
 
-    Some(calculate_condition_bonus(attacker_transform, target_transform, night, rain).max(0.0))
+    Some(
+        calculate_condition_bonus(
+            attacker_transform.as_ref(),
+            target_transform.as_ref(),
+            night,
+            rain,
+        )
+        .max(0.0),
+    )
 }
 
 fn calculate_condition_bonus(

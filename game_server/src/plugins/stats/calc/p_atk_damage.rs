@@ -1,30 +1,46 @@
-use crate::plugins::stats::get_attack_trait_bonus;
+use crate::plugins::stats::{EffectQuery, calc::effect_kind::get_attack_trait_bonus};
 use bevy::prelude::*;
+use bevy_ecs::system::SystemParam;
 use config::Config;
 use game_core::{
     character::Character,
-    items::{DollSlot, ItemsDataTable, ItemsInfo, Kind, PaperDoll},
+    items::{DollSlot, ItemsDataQuery, Kind, PaperDoll},
     npc::Kind as NpcKind,
     stats::*,
 };
 use rand::Rng;
 use spatial::TransformRelativeDirection;
 
+#[derive(SystemParam)]
+pub struct PAtkCalcDamageQuery<'w, 's> {
+    pub transforms: Query<'w, 's, Ref<'static, Transform>>,
+    pub attack_stats: Query<'w, 's, Ref<'static, AttackStats>>,
+    pub defence_stats: Query<'w, 's, Ref<'static, DefenceStats>>,
+    pub crit_stats: Query<'w, 's, Ref<'static, CriticalStats>>,
+    pub characters: Query<'w, 's, Ref<'static, Character>>,
+    pub npc_kinds: Query<'w, 's, Ref<'static, NpcKind>>,
+    pub paper_dolls: Query<'w, 's, Ref<'static, PaperDoll>>,
+    pub level_stats: Query<'w, 's, Ref<'static, ProgressLevelStats>>,
+    pub atk_def_effects: EffectQuery<'w, 's>,
+    pub config: Res<'w, Config>,
+    pub items_data_query: ItemsDataQuery<'w>,
+}
+
 pub fn calc_p_atk_damage(
-    attacker: EntityRef,
-    target: EntityRef,
-    world: &World,
+    attacker: Entity,
+    target: Entity,
     critical: bool,
     soulshot_used: bool,
     shield_result: ShieldResult,
+    query: &PAtkCalcDamageQuery,
 ) -> f32 {
-    let Some(attack_stats) = attacker.get::<AttackStats>() else {
+    let Some(attack_stats) = query.attack_stats.get(attacker).ok() else {
         return 0.0;
     };
-    let Some(defence_stats) = target.get::<DefenceStats>() else {
+    let Some(defence_stats) = query.defence_stats.get(target).ok() else {
         return 0.0;
     };
-    let Some(attacker_critical_stats) = attacker.get::<CriticalStats>() else {
+    let Some(attacker_critical_stats) = query.crit_stats.get(attacker).ok() else {
         return 0.0;
     };
 
@@ -32,8 +48,8 @@ pub fn calc_p_atk_damage(
     let mut p_def = defence_stats.get(DefenceStat::PDef);
 
     // Check if it's PvP or PvE
-    let is_pvp = attacker.get::<Character>().is_some() && target.get::<Character>().is_some();
-    let is_pve = attacker.get::<Character>().is_some() && target.get::<NpcKind>().is_some();
+    let is_pvp = query.characters.get(attacker).is_ok() && query.characters.get(target).is_ok();
+    let is_pve = query.characters.get(attacker).is_ok() && query.npc_kinds.get(target).is_ok();
 
     if is_pvp {
         p_def *= defence_stats.get(DefenceStat::PvpPDefBonus);
@@ -51,12 +67,14 @@ pub fn calc_p_atk_damage(
 
     p_atk *= if soulshot_used { 2.0 } else { 1.0 };
 
-    let relative_dir = attacker
-        .get::<Transform>()
+    let relative_dir = query
+        .transforms
+        .get(attacker)
+        .ok()
         .and_then(|attacker_transform| {
-            target
-                .get::<Transform>()
-                .map(|target_transform| attacker_transform.relative_direction(target_transform))
+            query.transforms.get(target).ok().map(|target_transform| {
+                attacker_transform.relative_direction(target_transform.as_ref())
+            })
         })
         .unwrap_or_default();
 
@@ -82,9 +100,9 @@ pub fn calc_p_atk_damage(
         base_damage
     };
 
-    damage *= get_attack_trait_bonus(attacker, target);
+    damage *= get_attack_trait_bonus(attacker, target, &query.atk_def_effects);
 
-    damage *= get_random_damage_multiplier(attacker, world);
+    damage *= get_random_damage_multiplier(attacker, query);
 
     if damage > 0.0 && damage < 1.0 {
         damage = 1.0;
@@ -101,21 +119,17 @@ pub fn calc_p_atk_damage(
 
     // Apply PvE bonuses
     if is_pve {
-        damage = apply_pve_bonuses(attacker, target, world, damage, critical);
+        damage = apply_pve_bonuses(attacker, target, query, damage, critical);
     }
 
     damage
 }
 
-fn get_random_damage_multiplier(attacker: EntityRef, world: &World) -> f32 {
+fn get_random_damage_multiplier(attacker: Entity, query: &PAtkCalcDamageQuery) -> f32 {
     // Get random damage multiplier from weapon
-    if let Some(paper_doll) = attacker.get::<PaperDoll>()
+    if let Ok(paper_doll) = query.paper_dolls.get(attacker)
         && let Some(weapon) = paper_doll.get(DollSlot::RightHand)
-        && let (Some(table), Some(assets)) = (
-            world.get_resource::<ItemsDataTable>(),
-            world.get_resource::<Assets<ItemsInfo>>(),
-        )
-        && let Ok(item_info) = table.get_item_info(weapon.item().id(), assets)
+        && let Ok(item_info) = query.items_data_query.get_item_info(weapon.item().id())
         && let Kind::Weapon(weapon_data) = item_info.kind()
     {
         let random = weapon_data.random_damage as i32;
@@ -123,8 +137,9 @@ fn get_random_damage_multiplier(attacker: EntityRef, world: &World) -> f32 {
     }
 
     // Fallback if can't get from weapon: use level-based calculation
-    let level: f32 = attacker
-        .get::<ProgressLevelStats>()
+    let level: f32 = query
+        .level_stats
+        .get(attacker)
         .map(|stats| stats.level().into())
         .unwrap_or(1.0);
 
@@ -133,29 +148,24 @@ fn get_random_damage_multiplier(attacker: EntityRef, world: &World) -> f32 {
 }
 
 fn apply_pve_bonuses(
-    attacker: EntityRef,
-    target: EntityRef,
-    world: &World,
+    attacker: Entity,
+    target: Entity,
+    query: &PAtkCalcDamageQuery,
     mut damage: f32,
     critical: bool,
 ) -> f32 {
-    let Some(attack_stats) = attacker.get::<AttackStats>() else {
+    let Some(attack_stats) = query.attack_stats.get(attacker).ok() else {
         return damage;
     };
 
-    if let Some(paper_doll) = attacker.get::<PaperDoll>() {
-        if let Some(weapon) = paper_doll.get(DollSlot::RightHand) {
-            let items_data_table = world.get_resource::<ItemsDataTable>();
-            let items_data_assets = world.get_resource::<Assets<ItemsInfo>>();
-
-            if let (Some(table), Some(assets)) = (items_data_table, items_data_assets)
-                && let Ok(item_info) = table.get_item_info(weapon.item().id(), assets)
-            {
-                if item_info.kind().bow_or_crossbow() {
-                    damage *= attack_stats.get(AttackStat::PveBowPAtkBonus);
-                } else {
-                    damage *= attack_stats.get(AttackStat::PvePAtkBonus);
-                }
+    if let Ok(paper_doll) = query.paper_dolls.get(attacker) {
+        if let Some(weapon) = paper_doll.get(DollSlot::RightHand)
+            && let Ok(item_info) = query.items_data_query.get_item_info(weapon.item().id())
+        {
+            if item_info.kind().bow_or_crossbow() {
+                damage *= attack_stats.get(AttackStat::PveBowPAtkBonus);
+            } else {
+                damage *= attack_stats.get(AttackStat::PvePAtkBonus);
             }
         } else {
             // No weapon equipped
@@ -166,37 +176,35 @@ fn apply_pve_bonuses(
         damage *= attack_stats.get(AttackStat::PvePAtkBonus);
     }
 
-    damage = apply_level_diff_penalty(attacker, target, world, damage, critical);
+    damage = apply_level_diff_penalty(attacker, target, query, damage, critical);
 
     damage
 }
 
 fn apply_level_diff_penalty(
-    attacker: EntityRef,
-    target: EntityRef,
-    world: &World,
+    attacker: Entity,
+    target: Entity,
+    query: &PAtkCalcDamageQuery,
     mut damage: f32,
     critical: bool,
 ) -> f32 {
-    let Some(config) = world.get_resource::<Config>() else {
-        return damage;
-    };
-
-    let attacker_level = attacker
-        .get::<ProgressLevelStats>()
+    let attacker_level = query
+        .level_stats
+        .get(attacker)
         .map(|stats| stats.level())
         .unwrap_or_default();
 
-    let target_level = target
-        .get::<ProgressLevelStats>()
+    let target_level = query
+        .level_stats
+        .get(target)
         .map(|stats| stats.level())
         .unwrap_or_default();
 
-    if let Some(npc_kind) = target.get::<NpcKind>() {
-        let is_raid = matches!(npc_kind, NpcKind::RaidBoss | NpcKind::RaidMinion);
-        let is_raid_minion = matches!(npc_kind, NpcKind::RaidMinion);
+    if let Ok(npc_kind) = query.npc_kinds.get(target) {
+        let is_raid = matches!(*npc_kind, NpcKind::RaidBoss | NpcKind::RaidMinion);
+        let is_raid_minion = matches!(*npc_kind, NpcKind::RaidMinion);
 
-        let min_npc_level_dmg_penalty = config.gameplay().min_npc_level_dmg_penalty;
+        let min_npc_level_dmg_penalty = query.config.gameplay().min_npc_level_dmg_penalty;
         let level_diff = target_level.diff(&attacker_level);
 
         if !is_raid
@@ -207,14 +215,14 @@ fn apply_level_diff_penalty(
             let level_diff_index = (level_diff as usize).saturating_sub(2);
 
             let penalty = if critical {
-                let penalties = config.gameplay().npc_crit_dmg_penalty.as_slice();
+                let penalties = query.config.gameplay().npc_crit_dmg_penalty.as_slice();
                 if level_diff_index < penalties.len() {
                     penalties[level_diff_index]
                 } else {
                     penalties.last().copied().unwrap_or_default()
                 }
             } else {
-                let penalties = config.gameplay().npc_dmg_penalty.as_slice();
+                let penalties = query.config.gameplay().npc_dmg_penalty.as_slice();
                 if level_diff_index < penalties.len() {
                     penalties[level_diff_index]
                 } else {

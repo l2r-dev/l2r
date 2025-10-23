@@ -1,6 +1,7 @@
 use bevy::prelude::*;
+use bevy_ecs::system::{SystemParam, SystemState};
 use game_core::{
-    items::{self, PaperDoll, WeaponKind},
+    items::{self, ItemsDataQuery, PaperDoll, WeaponKind},
     network::packets::server::{GameServerPacket, SystemMessage},
     stats::*,
 };
@@ -19,34 +20,40 @@ impl Plugin for ShieldResultPlugin {
     }
 }
 
+#[derive(SystemParam)]
+pub struct CalcShieldQuery<'w, 's> {
+    pub transforms: Query<'w, 's, Ref<'static, Transform>>,
+    pub paper_dolls: Query<'w, 's, Ref<'static, PaperDoll>>,
+    pub defence_stats: Query<'w, 's, Ref<'static, DefenceStats>>,
+    pub items_data_query: ItemsDataQuery<'w>,
+}
+
 pub fn calculate_shield_result(
-    attacker_entity: EntityRef,
-    target_entity: EntityRef,
-    world: &World,
+    attacker: Entity,
+    target: Entity,
+    query: &CalcShieldQuery,
 ) -> ShieldResult {
-    calculate_shield_result_inner(attacker_entity, target_entity, world)
-        .unwrap_or(ShieldResult::Failed)
+    calculate_shield_result_inner(attacker, target, query).unwrap_or(ShieldResult::Failed)
 }
 
 #[inline]
 fn calculate_shield_result_inner(
-    attacker_entity: EntityRef,
-    target_entity: EntityRef,
-    world: &World,
+    attacker: Entity,
+    target: Entity,
+    query: &CalcShieldQuery,
 ) -> Option<ShieldResult> {
-    let target_paper_doll = target_entity.get::<PaperDoll>()?;
-    let items_data_table = world.get_resource::<items::ItemsDataTable>()?;
-    let items_data_assets = world.get_resource::<Assets<items::ItemsInfo>>()?;
+    let target_paper_doll = query.paper_dolls.get(target).ok()?;
     let unique_item = target_paper_doll.get(items::DollSlot::LeftHand)?;
-    let item_info = items_data_table
-        .get_item_info(unique_item.item().id(), items_data_assets)
+    let item_info = query
+        .items_data_query
+        .get_item_info(unique_item.item().id())
         .ok()?;
 
     if !item_info.kind().shield() {
         return None;
     }
 
-    let target_defence_stats = target_entity.get::<DefenceStats>()?;
+    let target_defence_stats = query.defence_stats.get(target).ok()?;
 
     let shield_angle = target_defence_stats.get(DefenceStat::ShieldAngle);
     let shield_rate = target_defence_stats.get(DefenceStat::ShieldRate);
@@ -55,12 +62,12 @@ fn calculate_shield_result_inner(
         return None;
     }
 
-    let target_transform = target_entity.get::<Transform>()?;
+    let target_transform = query.transforms.get(target).ok()?;
 
-    let attacker_transform = attacker_entity.get::<Transform>()?;
+    let attacker_transform = query.transforms.get(attacker).ok()?;
 
     let is_within_angle =
-        attacker_transform.is_within_angle_relative_to(target_transform, shield_angle);
+        attacker_transform.is_within_angle_relative_to(target_transform.as_ref(), shield_angle);
 
     if !is_within_angle {
         return None;
@@ -175,23 +182,18 @@ fn script_calculate(
     };
 
     world_guard.with_global_access(|world| {
-        let attacker_entity = world.get_entity(attacker_entity);
-        let target_entity = world.get_entity(target_entity);
-        if let (Ok(attacker_entity), Ok(target_entity)) = (attacker_entity, target_entity) {
-            let shield_result = calculate_shield_result(attacker_entity, target_entity, world);
-            let target_id = target_entity.id();
-            let attacker_id = target_entity.id();
-            let mut commands = world.commands();
-            send_shield_result_system_message(
-                shield_result,
-                attacker_id,
-                target_id,
-                commands.reborrow(),
-            );
+        let mut shield_state: SystemState<CalcShieldQuery> = SystemState::new(world);
+        let shield_query = shield_state.get(world);
 
-            ScriptValue::Integer(shield_result.into())
-        } else {
-            ScriptValue::Integer(0)
-        }
+        let shield_result = calculate_shield_result(attacker_entity, target_entity, &shield_query);
+        let mut commands = world.commands();
+        send_shield_result_system_message(
+            shield_result,
+            attacker_entity,
+            target_entity,
+            commands.reborrow(),
+        );
+
+        ScriptValue::Integer(shield_result.into())
     })
 }

@@ -1,38 +1,44 @@
 use bevy::prelude::*;
+use bevy_ecs::system::SystemParam;
 use config::Config;
 use game_core::stats::*;
 use rand::Rng;
 use spatial::{RelativeDirection, TransformRelativeDirection};
 
-pub fn calc_crit(attacker: EntityRef, target: EntityRef, world: &World) -> bool {
-    let config = world.resource::<Config>();
+#[derive(SystemParam)]
+pub struct CalcCritQuery<'w, 's> {
+    pub transforms: Query<'w, 's, Ref<'static, Transform>>,
+    pub crit_stats: Query<'w, 's, Ref<'static, CriticalStats>>,
+    pub defence_stats: Query<'w, 's, Ref<'static, DefenceStats>>,
+    pub config: Res<'w, Config>,
+}
 
-    let rate = calculate_crit_rate(attacker, target);
-
-    let max_crit_rate = config.gameplay().max_crit_rate;
+pub fn calc_crit(attacker: Entity, target: Entity, query: &CalcCritQuery) -> bool {
+    let rate = calculate_crit_rate(attacker, target, query);
+    let max_crit_rate = query.config.gameplay().max_crit_rate;
     let rate = rate.clamp(1.0, max_crit_rate as f32);
-
-    let defence_rate = calculate_defence_crit_rate(target);
-
+    let defence_rate = calculate_defence_crit_rate(target, query);
     calculate_crit_result(rate, defence_rate)
 }
 
-fn calculate_crit_rate(attacker_entity: EntityRef, target_entity: EntityRef) -> f32 {
-    let base_crit_rate = attacker_entity
-        .get::<CriticalStats>()
+fn calculate_crit_rate(attacker: Entity, target: Entity, query: &CalcCritQuery) -> f32 {
+    let base_crit_rate = query
+        .crit_stats
+        .get(attacker)
         .map(|s| s.get(CriticalStat::CriticalRate))
         .unwrap_or_default();
 
-    let attacker_transform = attacker_entity.get::<Transform>();
-    let target_transform = target_entity.get::<Transform>();
+    let attacker_transform = query.transforms.get(attacker).ok();
+    let target_transform = query.transforms.get(target).ok();
 
     if let (Some(attacker_transform), Some(target_transform)) =
         (attacker_transform, target_transform)
     {
-        let relative_dir = attacker_transform.relative_direction(target_transform);
+        let relative_dir = attacker_transform.relative_direction(target_transform.as_ref());
 
-        let positional_crit_rate = attacker_entity
-            .get::<CriticalStats>()
+        let positional_crit_rate = query
+            .crit_stats
+            .get(attacker)
             .map(|s| match relative_dir {
                 RelativeDirection::Face => s.get(CriticalStat::CriticalRateFront),
                 RelativeDirection::Back => s.get(CriticalStat::CriticalRateBack),
@@ -46,17 +52,10 @@ fn calculate_crit_rate(attacker_entity: EntityRef, target_entity: EntityRef) -> 
     }
 }
 
-fn calculate_defence_crit_rate(target_entity: EntityRef) -> f32 {
-    let defence_stats = target_entity.get::<DefenceStats>();
-
-    let defence_crit_rate = defence_stats
-        .map(|s| s.get(DefenceStat::DefenceCriticalRate))
-        .unwrap_or_default();
-
-    let defence_crit_rate_add = defence_stats
-        .map(|s| s.get(DefenceStat::DefenceCriticalRateAdditional))
-        .unwrap_or_default();
-
+fn calculate_defence_crit_rate(target: Entity, query: &CalcCritQuery) -> f32 {
+    let defence_stats = query.defence_stats.get(target).unwrap();
+    let defence_crit_rate = defence_stats.get(DefenceStat::DefenceCriticalRate);
+    let defence_crit_rate_add = defence_stats.get(DefenceStat::DefenceCriticalRateAdditional);
     defence_crit_rate + defence_crit_rate_add
 }
 
