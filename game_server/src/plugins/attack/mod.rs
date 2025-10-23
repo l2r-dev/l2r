@@ -401,6 +401,9 @@ fn process_attack_hits(
         pending_hit.timer_mut().tick(time.delta());
 
         if pending_hit.timer().finished() {
+            let should_remove_soulshot = pending_hit.remove_soulshot();
+            let weapon_entity = pending_hit.weapon_entity();
+
             match &mut *pending_hit {
                 AttackHit::AttackCommonHit(pending_hit) => {
                     if let Ok(mut target) = targets.get_mut(pending_hit.target()) {
@@ -456,8 +459,9 @@ fn process_attack_hits(
                     }
                 }
             }
-            if pending_hit.remove_soulshot() {
-                remove_soulshot(commands.reborrow(), pending_hit.weapon_entity());
+
+            if should_remove_soulshot {
+                remove_soulshot(commands.reborrow(), weapon_entity);
             }
         }
     }
