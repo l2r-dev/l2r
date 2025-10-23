@@ -211,7 +211,7 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                             .try_insert(InCombat::default());
                     });
 
-                    let (attack_packet, attack_hit, attack_interval, weapon_reuse_duration) =
+                    let Ok((attack_packet, attack_hit, attack_interval, weapon_reuse_duration)) =
                         calculate_attack_hit(
                             attacker.entity,
                             aiming_target.entity,
@@ -221,7 +221,9 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                             attack_params,
                             &params,
                         )
-                        .unwrap();
+                    else {
+                        return;
+                    };
 
                     if let Some(duration) = weapon_reuse_duration {
                         params.commands.command_scope(|mut commands| {
@@ -266,10 +268,10 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                     let attacker_pos = attacker.transform.translation;
                     let target_pos = aiming_target.transform.translation;
 
-                    let geodata = params
-                        .world_map_query
-                        .region_geodata_from_pos(attacker_pos)
-                        .unwrap();
+                    let Ok(geodata) = params.world_map_query.region_geodata_from_pos(attacker_pos)
+                    else {
+                        return;
+                    };
 
                     // Use the same logic as follow plugin - check line of sight
                     let can_move_to = geodata.can_move_to(
