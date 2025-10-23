@@ -5,10 +5,11 @@ use crate::plugins::stats::{
     calc_crit, calc_hit_miss, calc_p_atk_damage, calculate_shield_result,
     send_shield_result_system_message,
 };
+use avian3d::{prelude::*, spatial_query::SpatialQuery};
 use bevy::{
     ecs::{
         query::{QueryData, QueryFilter},
-        system::ParallelCommands,
+        system::{ParallelCommands, SystemParam},
     },
     prelude::*,
 };
@@ -109,19 +110,22 @@ struct TargetQuery<'a> {
     transform: Ref<'a, Transform>,
 }
 
-fn attack_entity(
-    attacking_objects: Query<AttackingQuery, AttackingFilter>,
-    target_objects: Query<TargetQuery, (Without<Dead>, With<VitalsStats>)>,
-    world: &World,
-    shot_used: Query<Ref<Soulshot>>,
-    par_commands: ParallelCommands,
-    items: Query<Entity, With<Item>>,
-    items_data_query: ItemsDataQuery,
-    object_id_manager: Res<ObjectIdManager>,
-    world_map_query: WorldMapQuery,
-) -> Result<()> {
-    attacking_objects.par_iter().for_each(|attacker| {
-        match target_objects.get(**attacker.target) {
+#[derive(SystemParam)]
+struct AttackSystemParams<'w, 's> {
+    attacking_objects: Query<'w, 's, AttackingQuery<'static>, AttackingFilter>,
+    target_objects: Query<'w, 's, TargetQuery<'static>, (Without<Dead>, With<VitalsStats>)>,
+    shot_used: Query<'w, 's, Ref<'static, Soulshot>>,
+    items: Query<'w, 's, Entity, With<Item>>,
+    items_data_query: ItemsDataQuery<'w>,
+    object_id_manager: Res<'w, ObjectIdManager>,
+    world_map_query: WorldMapQuery<'w, 's>,
+    spatial_query: SpatialQuery<'w, 's>,
+    commands: ParallelCommands<'w, 's>,
+}
+
+fn attack_entity(params: AttackSystemParams, world: &World) -> Result<()> {
+    params.attacking_objects.par_iter().for_each(|attacker| {
+        match params.target_objects.get(**attacker.target) {
             Ok(aiming_target) => {
                 let distance = attacker
                     .transform
@@ -130,7 +134,7 @@ fn attack_entity(
 
                 let range = attacker.attack_stats.get(AttackStat::PAtkRange);
                 if distance <= range {
-                    par_commands.command_scope(|mut commands| {
+                    params.commands.command_scope(|mut commands| {
                         commands.trigger_targets(LookAt(aiming_target.entity), attacker.entity);
                         // Remove the AttackAllowed component to ensure the entity waits for
                         // the next allowed attack time
@@ -158,7 +162,7 @@ fn attack_entity(
                         .as_ref()
                         .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
 
-                    let weapon_info = items_data_query.item_info_from_uniq(&weapon_uniq);
+                    let weapon_info = params.items_data_query.item_info_from_uniq(&weapon_uniq);
 
                     let (
                         interval_multiplier,
@@ -187,7 +191,7 @@ fn attack_entity(
                         return;
                     }
 
-                    par_commands.command_scope(|mut commands| {
+                    params.commands.command_scope(|mut commands| {
                         commands.entity(attacker.entity).remove::<AttackAllowed>();
                     });
 
@@ -197,7 +201,7 @@ fn attack_entity(
                             .unwrap_or(0);
 
                         if arrow_count == 0 {
-                            par_commands.command_scope(|mut commands| {
+                            params.commands.command_scope(|mut commands| {
                                 commands.trigger_targets(
                                     GameServerPacket::from(SystemMessage::new(
                                         system_messages::Id::YouHaveRunOutOfArrows,
@@ -212,7 +216,7 @@ fn attack_entity(
                             return;
                         }
 
-                        par_commands.command_scope(|mut commands| {
+                        params.commands.command_scope(|mut commands| {
                             commands.entity(attacker.entity).try_insert(ConsumeArrow);
 
                             commands.trigger_targets(
@@ -225,19 +229,22 @@ fn attack_entity(
                         });
                     }
 
-                    par_commands.command_scope(|mut commands| {
+                    params.commands.command_scope(|mut commands| {
                         commands
                             .entity(attacker.entity)
                             .try_insert(InCombat::default());
                     });
 
                     let weapon_entity = weapon_uniq.and_then(|weapon| {
-                        items
-                            .by_object_id(weapon.object_id(), object_id_manager.as_ref())
+                        params
+                            .items
+                            .by_object_id(weapon.object_id(), params.object_id_manager.as_ref())
                             .ok()
                     });
 
-                    let soulshot_used = weapon_entity.and_then(|v| shot_used.get(v).ok()).is_some();
+                    let soulshot_used = weapon_entity
+                        .and_then(|v| params.shot_used.get(v).ok())
+                        .is_some();
 
                     let soulshot_grade = if let Some(w) = weapon_info {
                         w.grade().shot_grade()
@@ -266,7 +273,7 @@ fn attack_entity(
                             weapon_reuse_delay as u64 * 300 / atck_speed as u64,
                         ) + attack_interval;
 
-                        par_commands.command_scope(|mut commands| {
+                        params.commands.command_scope(|mut commands| {
                             commands.trigger_targets(
                                 GameServerPacket::from(SetupGauge::new(
                                     *attacker.object_id,
@@ -318,28 +325,27 @@ fn attack_entity(
                         let attack_vector =
                             attacker.transform.translation - aiming_target.transform.translation;
 
-                        //TODO: Хак! aoe_targets_query это перебор по всем сущностям вообще. Нужна структура, чтобы быстро находить кто вокруг
-                        for next_target in &target_objects {
-                            if next_target.entity == aiming_target.entity {
-                                continue;
-                            }
+                        // Use SpatialQuery to find nearby entities within weapon range
+                        let query_sphere = Collider::sphere(range);
+                        let filter = SpatialQueryFilter::default()
+                            .with_excluded_entities([attacker.entity, aiming_target.entity]);
 
-                            if next_target.entity == attacker.entity {
-                                continue;
-                            }
+                        let nearby_entities = params.spatial_query.shape_intersections(
+                            &query_sphere,
+                            attacker.transform.translation,
+                            Quat::IDENTITY,
+                            &filter,
+                        );
 
-                            let Ok(next_target_ref) = world.get_entity(aiming_target.entity) else {
+                        for next_target_entity in nearby_entities {
+                            let Ok(next_target) = params.target_objects.get(next_target_entity)
+                            else {
                                 continue;
                             };
 
-                            let distance = attacker
-                                .transform
-                                .translation
-                                .flat_distance(&next_target.transform.translation);
-
-                            if distance > range {
+                            let Ok(next_target_ref) = world.get_entity(next_target.entity) else {
                                 continue;
-                            }
+                            };
 
                             let next_target_vector =
                                 attacker.transform.translation - next_target.transform.translation;
@@ -437,11 +443,11 @@ fn attack_entity(
                         }
                     };
 
-                    par_commands.command_scope(|mut commands| {
+                    params.commands.command_scope(|mut commands| {
                         commands.entity(attacker.entity).try_insert(attack_hit);
                     });
 
-                    par_commands.command_scope(|mut commands| {
+                    params.commands.command_scope(|mut commands| {
                         commands.trigger_targets(
                             ServerPacketBroadcast::new(attack_info.into()),
                             attacker.entity,
@@ -463,7 +469,8 @@ fn attack_entity(
                     let attacker_pos = attacker.transform.translation;
                     let target_pos = aiming_target.transform.translation;
 
-                    let geodata = world_map_query
+                    let geodata = params
+                        .world_map_query
                         .region_geodata_from_pos(attacker_pos)
                         .unwrap();
 
@@ -475,7 +482,7 @@ fn attack_entity(
 
                     if can_move_to {
                         // Direct line of sight, use simple movement
-                        par_commands.command_scope(|mut commands| {
+                        params.commands.command_scope(|mut commands| {
                             commands.entity(attacker.entity).try_insert(MoveToEntity {
                                 target: aiming_target.entity,
                                 range,
@@ -483,7 +490,7 @@ fn attack_entity(
                         });
                     } else {
                         // No line of sight, use pathfinding
-                        par_commands.command_scope(|mut commands| {
+                        params.commands.command_scope(|mut commands| {
                             commands
                                 .entity(attacker.entity)
                                 .try_insert(InActionPathfindingTimer::default());
@@ -501,7 +508,7 @@ fn attack_entity(
                 }
             }
             _ => {
-                par_commands.command_scope(|mut commands| {
+                params.commands.command_scope(|mut commands| {
                     commands.entity(attacker.entity).remove::<Attacking>();
                 });
             }
