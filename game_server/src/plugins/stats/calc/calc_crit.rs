@@ -53,7 +53,9 @@ fn calculate_crit_rate(attacker: Entity, target: Entity, query: &CalcCritQuery) 
 }
 
 fn calculate_defence_crit_rate(target: Entity, query: &CalcCritQuery) -> f32 {
-    let defence_stats = query.defence_stats.get(target).unwrap();
+    let Ok(defence_stats) = query.defence_stats.get(target) else {
+        return 0.;
+    };
     let defence_crit_rate = defence_stats.get(DefenceStat::DefenceCriticalRate);
     let defence_crit_rate_add = defence_stats.get(DefenceStat::DefenceCriticalRateAdditional);
     defence_crit_rate + defence_crit_rate_add
