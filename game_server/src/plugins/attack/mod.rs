@@ -13,7 +13,6 @@ use bevy::{
     },
     prelude::*,
 };
-
 use game_core::{
     animation::{Animation, AnimationTimer},
     attack::{
@@ -21,7 +20,7 @@ use game_core::{
         ConsumeArrow, Dead, HitInfo, InCombat, WeaponReuse,
     },
     items::{
-        DollSlot, Grade, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
+        DollSlot, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
         UpdateType, WeaponAttackParams,
     },
     movement::{LookAt, MoveToEntity},
@@ -118,7 +117,6 @@ struct AttackSystemParams<'w, 's> {
     shot_used: Query<'w, 's, Ref<'static, Soulshot>>,
     items: Query<'w, 's, Entity, With<Item>>,
     items_data_query: ItemsDataQuery<'w>,
-    object_ids: Query<'w, 's, Ref<'static, ObjectId>>,
     object_id_manager: Res<'w, ObjectIdManager>,
     world_map_query: WorldMapQuery<'w, 's>,
     spatial_query: SpatialQuery<'w, 's>,
@@ -405,7 +403,6 @@ fn process_attack_hits(
                 AttackHit::AttackCommonHit(pending_hit) => {
                     if let Ok(mut target) = targets.get_mut(pending_hit.target()) {
                         let info = pending_hit.hit();
-
                         process_hit(
                             commands.reborrow(),
                             npc,
@@ -420,7 +417,6 @@ fn process_attack_hits(
 
                     commands.entity(attacker.entity).remove::<AttackHit>();
                 }
-
                 AttackHit::AttackMultiHit(pending_hits) => {
                     for (target, info) in pending_hits.hits() {
                         if let Ok(mut target) = targets.get_mut(*target) {
@@ -436,10 +432,8 @@ fn process_attack_hits(
                             );
                         }
                     }
-
                     commands.entity(attacker.entity).remove::<AttackHit>();
                 }
-
                 AttackHit::AttackDualHit(pending_dual_hit) => {
                     if let Ok(mut target) = targets.get_mut(pending_dual_hit.target()) {
                         let info = pending_dual_hit.hit();
@@ -455,13 +449,11 @@ fn process_attack_hits(
                             not_attacking_npc,
                         );
                     }
-
                     if !pending_dual_hit.set_to_secondary() {
                         commands.entity(attacker.entity).remove::<AttackHit>();
                     }
                 }
             }
-
             if pending_hit.remove_soulshot() {
                 remove_soulshot(commands.reborrow(), pending_hit.weapon_entity());
             }
@@ -491,9 +483,8 @@ fn process_hit(
         );
         commands.trigger_targets(GameServerPacket::from(avoid_message), target.entity);
     } else {
-        if info.dmg == 0. {
+        if info.damage == 0. {
             //TODO: должен слаться пакет Immune.
-
             return;
         }
 
@@ -506,17 +497,17 @@ fn process_hit(
             let cur_hp = target.vital_stats.get(VitalsStat::Hp);
 
             //TODO: Хак чтобы постоянно не умирать, переделать на Undying компонент
-            if info.dmg > cur_hp {
-                info.dmg = cur_hp - 10.;
+            if info.damage > cur_hp {
+                info.damage = cur_hp - 10.;
             }
         }
 
-        target.vital_stats.damage(info.dmg, damage_cp);
+        target.vital_stats.damage(info.damage, damage_cp);
 
         // Add damage tracking - this might fail if we just inserted the component
         // but it will be handled in the next frame
         if let Ok(mut attackers_list) = attackers_lists.get_mut(target.entity) {
-            attackers_list.damage(attacker_entity, info.dmg as f64);
+            attackers_list.damage(attacker_entity, info.damage as f64);
         }
 
         if info.crit {
@@ -537,7 +528,7 @@ fn process_hit(
 
         let you_hit_system_message = SystemMessage::new(
             system_messages::Id::YouHitForS1Damage,
-            vec![(info.dmg as u32).into()],
+            vec![(info.damage as u32).into()],
         );
         commands.trigger_targets(
             GameServerPacket::from(you_hit_system_message),
@@ -546,7 +537,7 @@ fn process_hit(
 
         let you_hitted_system_message = SystemMessage::new(
             system_messages::Id::C1HitYouForS2Damage,
-            vec![attacker_name.into(), (info.dmg as u32).into()],
+            vec![attacker_name.into(), (info.damage as u32).into()],
         );
         commands.trigger_targets(
             GameServerPacket::from(you_hitted_system_message),
@@ -572,13 +563,32 @@ fn remove_soulshot(mut commands: Commands, weapon_entity: Option<Entity>) {
 fn calc_hit_info(
     attacker: Entity,
     target: Entity,
+    weapon_uniq: Option<UniqueItem>,
+    weapon_info: Option<&ItemInfo>,
     params: &AttackSystemParams,
-    soulshot_used: bool,
 ) -> Result<HitInfo> {
+    // Calculate weapon entity and soulshot usage
+    let weapon_entity = weapon_uniq.and_then(|weapon| {
+        params
+            .items
+            .by_object_id(weapon.object_id(), params.object_id_manager.as_ref())
+            .ok()
+    });
+
+    let soulshot_used = weapon_entity
+        .and_then(|v| params.shot_used.get(v).ok())
+        .is_some();
+
+    let soulshot_grade = if soulshot_used {
+        weapon_info.map(|w| w.grade().shot_grade())
+    } else {
+        None
+    };
+
     let miss = calc_hit_miss(attacker, target, &params.hit_calc_query)?;
     let mut crit = false;
     let mut shield = ShieldResult::Failed;
-    let mut dmg = 0.;
+    let mut damage = 0.;
 
     if !miss {
         shield = calculate_shield_result(attacker, target, &params.calc_shield_query);
@@ -586,7 +596,7 @@ fn calc_hit_info(
         match shield {
             ShieldResult::Failed | ShieldResult::Succeed => {
                 crit = calc_crit(attacker, target, &params.calc_crit_query);
-                dmg = calc_p_atk_damage(
+                damage = calc_p_atk_damage(
                     attacker,
                     target,
                     crit,
@@ -596,16 +606,17 @@ fn calc_hit_info(
                 );
             }
             ShieldResult::PerfectBlock => {
-                dmg = 1.;
+                damage = 1.;
             }
         }
     }
 
     Ok(HitInfo {
+        ss_grade: soulshot_grade,
         miss,
         crit,
         shield,
-        dmg,
+        damage,
     })
 }
 
@@ -618,14 +629,17 @@ fn calculate_attack_hit(
     attack_params: WeaponAttackParams,
     params: &AttackSystemParams,
 ) -> Result<(Attack, AttackHit, Duration, Option<Duration>)> {
-    let attacker_stats = params.p_atk_dmg_query.attack_stats.get(attacker)?;
-    let attacker_transform = params.p_atk_dmg_query.transforms.get(attacker)?;
-    let attacker_position = attacker_transform.translation;
-    let attacker_oid = params.object_ids.get(attacker)?;
+    let (attacker_stats, attacker_position, attacker_oid) = {
+        let attacker_params = params.attacking_objects.get(attacker)?;
+        (
+            attacker_params.attack_stats,
+            attacker_params.transform.translation,
+            attacker_params.object_id,
+        )
+    };
 
-    let aiming_target_transform = params.p_atk_dmg_query.transforms.get(aiming_target)?;
-    let aiming_target_position = aiming_target_transform.translation;
-    let aiming_target_oid = params.object_ids.get(aiming_target)?;
+    let target = params.target_objects.get(aiming_target)?;
+    let aiming_target_position = target.transform.translation;
 
     let mut attack_packet = Attack::new(*attacker_oid, attacker_position, aiming_target_position);
 
@@ -643,7 +657,7 @@ fn calculate_attack_hit(
 
     let mut max_targets_count = attacker_stats.get(AttackStat::PAtkMaxTargetsCount).round() as u32;
 
-    // Calculate weapon-related values
+    // Calculate weapon entity for later use
     let weapon_entity = weapon_uniq.and_then(|weapon| {
         params
             .items
@@ -651,34 +665,16 @@ fn calculate_attack_hit(
             .ok()
     });
 
-    let soulshot_used = weapon_entity
-        .and_then(|v| params.shot_used.get(v).ok())
-        .is_some();
-
-    let soulshot_grade = if let Some(w) = weapon_info {
-        w.grade().shot_grade()
-    } else {
-        Grade::None
-    };
-
     if max_targets_count > 1 {
         let mut hits = vec![];
 
-        let hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, &params)?;
 
         let mut all_missed = hit_info.miss;
 
-        attack_packet.add_hit(
-            hit_info.dmg as u32,
-            *aiming_target_oid,
-            hit_info.miss,
-            hit_info.crit,
-            0,
-            soulshot_used,
-            soulshot_grade,
-        );
+        attack_packet.add_hit(*target.object_id, hit_info);
 
-        hits.push((attacker, hit_info));
+        hits.push((aiming_target, hit_info));
 
         max_targets_count -= 1;
 
@@ -713,19 +709,17 @@ fn calculate_attack_hit(
             }
 
             //TODO: нужна проверка на враждебность
-            let hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+            let hit_info = calc_hit_info(
+                attacker,
+                next_target.entity,
+                weapon_uniq,
+                weapon_info,
+                &params,
+            )?;
 
             all_missed &= hit_info.miss;
 
-            attack_packet.add_hit(
-                hit_info.dmg as u32,
-                *next_target.object_id,
-                hit_info.miss,
-                hit_info.crit,
-                0,
-                soulshot_used,
-                soulshot_grade,
-            );
+            attack_packet.add_hit(*next_target.object_id, hit_info);
 
             hits.push((next_target.entity, hit_info));
 
@@ -750,32 +744,17 @@ fn calculate_attack_hit(
             weapon_reuse_duration,
         ))
     } else {
-        let hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, &params)?;
 
-        attack_packet.add_hit(
-            hit_info.dmg as u32,
-            *aiming_target_oid,
-            hit_info.miss,
-            hit_info.crit,
-            0,
-            soulshot_used,
-            soulshot_grade,
-        );
+        attack_packet.add_hit(*target.object_id, hit_info);
 
         let attack_hit = if let Some(second_attack_interval_multiplier) =
             attack_params.secondary_attack_delay_multiplier
         {
-            let second_hit_info = calc_hit_info(attacker, aiming_target, &params, soulshot_used)?;
+            let second_hit_info =
+                calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, &params)?;
 
-            attack_packet.add_hit(
-                second_hit_info.dmg as u32,
-                *aiming_target_oid,
-                second_hit_info.miss,
-                second_hit_info.crit,
-                0,
-                soulshot_used,
-                soulshot_grade,
-            );
+            attack_packet.add_hit(*target.object_id, second_hit_info);
 
             AttackHit::new_dual(
                 aiming_target,

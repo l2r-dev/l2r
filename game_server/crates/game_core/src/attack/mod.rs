@@ -1,5 +1,9 @@
 use crate::{
-    animation::Animation, items::PaperDoll, movement::MoveToEntity, object_id::ObjectId, stats::*,
+    animation::Animation,
+    items::{Grade, PaperDoll},
+    movement::MoveToEntity,
+    object_id::ObjectId,
+    stats::*,
 };
 use bevy::{
     ecs::query::{QueryData, QueryFilter},
@@ -50,10 +54,11 @@ struct EnemyQuery<'a> {
 
 #[derive(Clone, Component, Copy, Reflect)]
 pub struct HitInfo {
+    pub ss_grade: Option<Grade>,
     pub miss: bool,
     pub crit: bool,
     pub shield: ShieldResult,
-    pub dmg: f32,
+    pub damage: f32,
 }
 
 #[derive(Component, Default, Reflect)]
