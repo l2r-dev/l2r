@@ -1,7 +1,10 @@
 mod death;
 mod packet;
 
-use crate::plugins::stats::{calc_crit, calc_hit_miss, calc_p_atk_damage, calculate_shield_result, send_shield_result_system_message, CalcCritQuery, CalcShieldQuery, HitMissQuery, PAtkCalcDamageQuery};
+use crate::plugins::stats::{
+    CalcCritQuery, CalcShieldQuery, HitMissQuery, PAtkCalcDamageQuery, calc_crit, calc_hit_miss,
+    calc_p_atk_damage, calculate_shield_result, send_shield_result_system_message,
+};
 use avian3d::prelude::*;
 use bevy::{
     ecs::{
@@ -116,9 +119,7 @@ struct AttackSystemParams<'w, 's> {
     p_atk_dmg_query: PAtkCalcDamageQuery<'w, 's>,
 }
 
-fn attack_entity(
-    params: AttackSystemParams
-) -> Result<()> {
+fn attack_entity(params: AttackSystemParams) -> Result<()> {
     params.attacking_objects.par_iter().for_each(|attacker| {
         if attacker.is_sitting {
             params.commands.command_scope(|mut commands| {
@@ -661,7 +662,7 @@ fn calculate_attack_hit(
     if max_targets_count > 1 {
         let mut hits = vec![];
 
-        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, &params)?;
+        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, params)?;
 
         let mut all_missed = hit_info.miss;
 
@@ -707,7 +708,7 @@ fn calculate_attack_hit(
                 next_target.entity,
                 weapon_uniq,
                 weapon_info,
-                &params,
+                params,
             )?;
 
             all_missed &= hit_info.miss;
@@ -737,7 +738,7 @@ fn calculate_attack_hit(
             weapon_reuse_duration,
         ))
     } else {
-        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, &params)?;
+        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, params)?;
 
         attack_packet.add_hit(*target.object_id, hit_info);
 
@@ -745,7 +746,7 @@ fn calculate_attack_hit(
             attack_params.secondary_attack_delay_multiplier
         {
             let second_hit_info =
-                calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, &params)?;
+                calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, params)?;
 
             attack_packet.add_hit(*target.object_id, second_hit_info);
 

@@ -99,7 +99,6 @@ pub struct GuiConfig {
     pub geodata_blocks: bool,
 }
 
-
 #[derive(Asset, Clone, Debug, Default, Deserialize, Reflect, Resource, Serialize)]
 #[reflect(Resource)]
 #[serde(default)]
