@@ -8,10 +8,10 @@ use bevy::{
 use bevy_ecs::component::Mutable;
 use std::time::Duration;
 
-pub struct AnimationComponentPlugin;
-impl Plugin for AnimationComponentPlugin {
+pub struct ActiveActionComponentPlugin;
+impl Plugin for ActiveActionComponentPlugin {
     fn build(&self, app: &mut App) {
-        app.register_type::<Animation>();
+        app.register_type::<ActiveAction>();
     }
 }
 
@@ -22,14 +22,14 @@ impl Plugin for AnimationComponentPlugin {
 /// a previous action. It acts as a synchronization mechanism to ensure entities
 /// complete their current animation or action before beginning another.
 /// - [`AnimationTimer`]: Automatically removes this component when the timer expires
-/// - [`AnimationFinished`]: Event triggered when this component is removed
+/// - [`ActionFinished`]: Event triggered when this component is removed
 #[derive(Clone, Debug, Reflect)]
 #[reflect(Component)]
-pub struct Animation {
+pub struct ActiveAction {
     timer: Timer,
 }
 
-impl Animation {
+impl ActiveAction {
     pub fn new(duration: Duration) -> Self {
         Self {
             timer: Timer::new(duration, TimerMode::Once),
@@ -44,7 +44,7 @@ impl Animation {
     }
 }
 
-impl Component for Animation {
+impl Component for ActiveAction {
     const STORAGE_TYPE: StorageType = StorageType::SparseSet;
     type Mutability = Mutable;
 
@@ -52,10 +52,10 @@ impl Component for Animation {
         Some(|mut world: DeferredWorld, context: HookContext| {
             world
                 .commands()
-                .trigger_targets(AnimationFinished, context.entity);
+                .trigger_targets(ActionFinished, context.entity);
         })
     }
 }
 
 #[derive(Clone, Debug, Default, Event, Reflect)]
-pub struct AnimationFinished;
+pub struct ActionFinished;

@@ -33,6 +33,7 @@ struct UseItemParams<'w, 's> {
     object_id_manager: Res<'w, ObjectIdManager>,
 }
 
+//TODO: Нужен UseKind (можно ли использовать, когда есть ActiveAction)
 fn handle(
     receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
     mut params: UseItemParams,

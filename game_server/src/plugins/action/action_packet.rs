@@ -1,12 +1,9 @@
 use bevy::{log, prelude::*};
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
-    action::{
-        pickup::{PickupAnimation, PickupRequest},
-        target::SelectedTarget,
-    },
-    animation::Animation,
-    attack::{Attackable, Attacking, InsertAttackingParams},
+    action::{pickup::PickupRequest, target::SelectedTarget},
+    active_action::ActiveAction,
+    attack::{Attackable, Attacking},
     character::Character,
     encounters::KnownEntities,
     items::Item,
@@ -41,9 +38,7 @@ fn handle_action_packet(
         (
             Option<Ref<SelectedTarget>>,
             Ref<KnownEntities>,
-            Has<PickupRequest>,
-            Has<PickupAnimation>,
-            Has<Animation>,
+            Has<ActiveAction>,
         ),
         With<Character>,
     >,
@@ -63,20 +58,13 @@ fn handle_action_packet(
 
     let entity = receive_params.character(&event.connection.id())?;
 
-    let (selected_target, known_entities, has_pickup_request, has_pickup_animation, has_animation) =
-        character_query.get_mut(entity)?;
+    let (selected_target, known_entities, in_active_action) = character_query.get_mut(entity)?;
 
     // Check if target is an item first
     if let Some(packet_target_entity) = object_id_manager.entity(packet.object_id) {
         let (_, _, is_item, _) = target_query.get(packet_target_entity)?;
         if is_item {
-            // Ignore pickup request if already picking up
-            //TODO: мб пришел запрос на пикап другого предмета
-            if has_pickup_request || has_pickup_animation {
-                return Ok(());
-            }
-
-            if has_animation {
+            if in_active_action {
                 commands.entity(entity).insert(NextIntention::PickUp {
                     item: packet_target_entity,
                 });
@@ -110,21 +98,27 @@ fn handle_action_packet(
             let (attackable, _, _, is_character) = target_query.get(packet_target_entity)?;
 
             if attackable.is_some() {
-                if has_animation {
+                if in_active_action {
                     commands.entity(entity).insert(NextIntention::Attack {
                         target: curr_selected,
                     });
                 } else {
-                    Attacking::insert(
-                        &mut commands,
-                        InsertAttackingParams {
-                            attacker: entity,
-                            target: curr_selected,
-                        },
-                    );
+                    commands.entity(entity).insert(Attacking(curr_selected));
                 }
             } else if is_character {
-                commands.trigger_targets(FollowRequest::from(packet_target_entity), entity);
+                if in_active_action {
+                    commands.entity(entity).insert(NextIntention::Follow {
+                        target: curr_selected,
+                    });
+                } else {
+                    commands.trigger_targets(FollowRequest::from(packet_target_entity), entity);
+                }
+            } else if in_active_action {
+                commands
+                    .entity(entity)
+                    .insert(NextIntention::DialogRequest {
+                        target: curr_selected,
+                    });
             } else {
                 commands
                     .entity(entity)

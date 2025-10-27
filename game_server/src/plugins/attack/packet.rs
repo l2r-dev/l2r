@@ -2,8 +2,8 @@ use bevy::prelude::*;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     action::target::SelectedTarget,
-    animation::Animation,
-    attack::{Attacking, InsertAttackingParams},
+    active_action::ActiveAction,
+    attack::Attacking,
     network::{
         config::GameServerNetworkConfig, packets::client::GameClientPacket,
         session::PacketReceiveParams,
@@ -22,7 +22,7 @@ impl Plugin for AttackPacketPlugin {
 
 fn handle_attack_packet(
     receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
-    query: Query<(Ref<SelectedTarget>, Has<Animation>)>,
+    query: Query<(Ref<SelectedTarget>, Has<ActiveAction>)>,
     receive_params: PacketReceiveParams,
     mut commands: Commands,
     object_id_manager: Res<ObjectIdManager>,
@@ -35,7 +35,7 @@ fn handle_attack_packet(
 
     let attacker_entity = receive_params.character(&event.connection.id())?;
 
-    let Ok((selected_target, has_animation)) = query.get(attacker_entity) else {
+    let Ok((selected_target, has_active_action)) = query.get(attacker_entity) else {
         return Ok(());
     };
 
@@ -46,20 +46,16 @@ fn handle_attack_packet(
     let target_entity = **selected_target;
 
     if target_entity == packet_entity {
-        if has_animation {
+        if has_active_action {
             commands
                 .entity(attacker_entity)
                 .insert(NextIntention::Attack {
                     target: target_entity,
                 });
         } else {
-            Attacking::insert(
-                &mut commands,
-                InsertAttackingParams {
-                    attacker: attacker_entity,
-                    target: target_entity,
-                },
-            )
+            commands
+                .entity(attacker_entity)
+                .insert(Attacking(target_entity));
         }
     }
 

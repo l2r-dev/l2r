@@ -1,6 +1,6 @@
 mod action;
+mod active_action;
 mod admin_menu;
-mod animation;
 mod attack;
 mod auth;
 mod character;
@@ -91,7 +91,7 @@ impl PluginGroup for Core {
             .add(admin_menu::AdminMenuPlugin)
             .add(SystemMessagesPlugin)
             .add(stats::StatsPlugin)
-            .add(animation::AnimationPlugin)
+            .add(active_action::ActiveActionPlugin)
             .add(character::CharacterPlugin)
             .add(npc::NpcPlugin)
             .add(movement::MovementPlugin)

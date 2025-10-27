@@ -1,23 +1,21 @@
 mod death;
 mod packet;
 
-use crate::plugins::stats::{
-    CalcCritQuery, CalcShieldQuery, HitMissQuery, PAtkCalcDamageQuery, calc_crit, calc_hit_miss,
-    calc_p_atk_damage, calculate_shield_result, send_shield_result_system_message,
-};
-use avian3d::{prelude::*, spatial_query::SpatialQuery};
+use crate::plugins::stats::{calc_crit, calc_hit_miss, calc_p_atk_damage, calculate_shield_result, send_shield_result_system_message, CalcCritQuery, CalcShieldQuery, HitMissQuery, PAtkCalcDamageQuery};
+use avian3d::prelude::*;
 use bevy::{
     ecs::{
         query::{QueryData, QueryFilter},
-        system::{ParallelCommands, SystemParam},
+        system::SystemParam,
     },
     prelude::*,
 };
 use game_core::{
-    animation::{Animation, AnimationTimer},
+    action::wait_kind::Sit,
+    active_action::ActiveAction,
     attack::{
-        AttackAllowed, AttackComponentsPlugin, AttackHit, AttackTimer, Attacking, AttackingList,
-        ConsumeArrow, Dead, HitInfo, InCombat, WeaponReuse,
+        AttackComponentsPlugin, AttackHit, Attacking, AttackingList, ConsumeArrow, Dead, HitInfo,
+        Immortal, InCombat, WeaponReuse,
     },
     items::{
         DollSlot, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
@@ -67,14 +65,6 @@ impl Plugin for AttackPlugin {
             proceed_weapon_reuse.in_set(GameMechanicsSystems::Attacking),
         )
         .add_systems(
-            FixedUpdate,
-            setup_attack_timers.in_set(GameMechanicsSystems::Attacking),
-        )
-        .add_systems(
-            FixedUpdate,
-            calculate_attack_allowed.in_set(GameMechanicsSystems::Attacking),
-        )
-        .add_systems(
             Update,
             in_combat_handler.in_set(GameMechanicsSystems::Attacking),
         );
@@ -91,14 +81,13 @@ struct AttackingQuery<'a> {
     paper_doll: Option<Ref<'a, PaperDoll>>,
     move_to: Option<Ref<'a, MoveToEntity>>,
     weapon_reuse_active: Has<WeaponReuse>,
+    is_sitting: Has<Sit>,
 }
 
 #[derive(QueryFilter)]
 struct AttackingFilter {
-    attack_allowed: With<AttackAllowed>,
     not_dead: Without<Dead>,
-    // without_pending_skill: Without<PendingSkill>,
-    not_animating: Without<Animation>,
+    not_animating: Without<ActiveAction>,
     not_pathfinding: Without<InActionPathfindingTimer>,
 }
 
@@ -127,8 +116,16 @@ struct AttackSystemParams<'w, 's> {
     p_atk_dmg_query: PAtkCalcDamageQuery<'w, 's>,
 }
 
-fn attack_entity(params: AttackSystemParams) -> Result<()> {
+fn attack_entity(
+    params: AttackSystemParams
+) -> Result<()> {
     params.attacking_objects.par_iter().for_each(|attacker| {
+        if attacker.is_sitting {
+            params.commands.command_scope(|mut commands| {
+                commands.entity(attacker.entity).remove::<Attacking>();
+            });
+        }
+
         match params.target_objects.get(**attacker.target) {
             Ok(aiming_target) => {
                 let distance = attacker
@@ -164,10 +161,6 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                     if attack_params.reuse_delay.is_some() && attacker.weapon_reuse_active {
                         return;
                     }
-
-                    params.commands.command_scope(|mut commands| {
-                        commands.entity(attacker.entity).remove::<AttackAllowed>();
-                    });
 
                     if attack_params.is_bow
                         && let Some(paperdoll) = attacker.paper_doll
@@ -254,7 +247,7 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
 
                         commands
                             .entity(attacker.entity)
-                            .try_insert(AnimationTimer::new(attack_interval));
+                            .try_insert(ActiveAction::new(attack_interval));
                     });
                 } else {
                     // Target is out of range, need to chase
@@ -382,6 +375,7 @@ struct ProcessAttackHitsTargetQuery<'a> {
     entity: Entity,
     object_id: Ref<'a, ObjectId>,
     vital_stats: Mut<'a, VitalsStats>,
+    is_immortal: Has<Immortal>,
 }
 
 fn process_attack_hits(
@@ -472,7 +466,7 @@ fn process_hit(
     npc: Query<Entity, With<npc::Kind>>,
     mut attackers_lists: Query<Mut<AttackingList>>,
 
-    mut info: HitInfo,
+    info: HitInfo,
     attacker_entity: Entity,
     attacker_name: String,
     target: &mut ProcessAttackHitsTargetQueryItem,
@@ -499,16 +493,9 @@ fn process_hit(
         // If attacker is NPC, do not damage CP
         let damage_cp = npc.get(attacker_entity).is_err();
 
-        if npc.get(target.entity).is_err() {
-            let cur_hp = target.vital_stats.get(VitalsStat::Hp);
-
-            //TODO: Хак чтобы постоянно не умирать, переделать на Undying компонент
-            if info.damage > cur_hp {
-                info.damage = cur_hp - 10.;
-            }
-        }
-
-        target.vital_stats.damage(info.damage, damage_cp);
+        target
+            .vital_stats
+            .damage(info.damage, damage_cp, target.is_immortal);
 
         // Add damage tracking - this might fail if we just inserted the component
         // but it will be handled in the next frame
@@ -786,38 +773,6 @@ fn calculate_attack_hit(
             attack_interval,
             weapon_reuse_duration,
         ))
-    }
-}
-
-fn calculate_attack_allowed(
-    time: Res<Time>,
-    mut query: Query<(Entity, Mut<AttackTimer>), Without<AttackAllowed>>,
-    par_commands: ParallelCommands,
-) {
-    query.par_iter_mut().for_each(|(entity, mut timer)| {
-        timer.tick(time.delta());
-
-        if timer.finished() {
-            par_commands.command_scope(|mut commands| {
-                commands.entity(entity).try_insert(AttackAllowed);
-            });
-            timer.reset();
-        }
-    });
-}
-
-fn setup_attack_timers(
-    mut commands: Commands,
-    query: Query<(Entity, &AttackStats), Changed<AttackStats>>,
-) {
-    for (entity, stats) in query.iter() {
-        let attack_interval = stats
-            .typed::<PAtkSpd>(AttackStat::PAtkSpd)
-            .attack_interval();
-
-        commands
-            .entity(entity)
-            .try_insert(AttackTimer::new(attack_interval));
     }
 }
 

@@ -6,6 +6,7 @@ mod attacking;
 mod death;
 mod in_combat;
 
+use crate::items::Grade;
 pub use attacking::*;
 pub use death::*;
 pub use in_combat::*;
@@ -19,7 +20,6 @@ impl Plugin for AttackComponentsPlugin {
             .register_type::<AttackCommonHit>()
             .register_type::<AttackMultiHit>()
             .register_type::<AttackingList>()
-            .register_type::<AttackTimer>()
             .register_type::<ConsumeArrow>()
             .register_type::<HitInfo>()
             .register_type::<InCombat>()
@@ -74,10 +74,11 @@ impl WeaponReuse {
 
 #[derive(Clone, Component, Copy, Reflect)]
 pub struct HitInfo {
+    pub ss_grade: Option<Grade>,
     pub miss: bool,
     pub crit: bool,
     pub shield: ShieldResult,
-    pub dmg: f32,
+    pub damage: f32,
 }
 
 #[derive(Component, Reflect)]
@@ -91,17 +92,17 @@ pub enum AttackHit {
 impl AttackHit {
     pub fn timer(&self) -> &Timer {
         match self {
-            AttackHit::AttackCommonHit(v) => v.timer(),
-            AttackHit::AttackDualHit(v) => v.timer(),
-            AttackHit::AttackMultiHit(v) => v.timer(),
+            AttackHit::AttackCommonHit(hit) => hit.timer(),
+            AttackHit::AttackDualHit(hit) => hit.timer(),
+            AttackHit::AttackMultiHit(hit) => hit.timer(),
         }
     }
 
     pub fn timer_mut(&mut self) -> &mut Timer {
         match self {
-            AttackHit::AttackCommonHit(v) => v.timer_mut(),
-            AttackHit::AttackDualHit(v) => v.timer_mut(),
-            AttackHit::AttackMultiHit(v) => v.timer_mut(),
+            AttackHit::AttackCommonHit(hit) => hit.timer_mut(),
+            AttackHit::AttackDualHit(hit) => hit.timer_mut(),
+            AttackHit::AttackMultiHit(hit) => hit.timer_mut(),
         }
     }
 
@@ -157,17 +158,17 @@ impl AttackHit {
 
     pub fn remove_soulshot(&self) -> bool {
         match self {
-            AttackHit::AttackCommonHit(v) => v.remove_soulshot(),
-            AttackHit::AttackDualHit(v) => v.remove_soulshot(),
-            AttackHit::AttackMultiHit(v) => v.remove_soulshot(),
+            AttackHit::AttackCommonHit(hit) => hit.remove_soulshot(),
+            AttackHit::AttackDualHit(hit) => hit.remove_soulshot(),
+            AttackHit::AttackMultiHit(hit) => hit.remove_soulshot(),
         }
     }
 
     pub fn weapon_entity(&self) -> Option<Entity> {
         match self {
-            AttackHit::AttackCommonHit(v) => v.weapon_entity,
-            AttackHit::AttackDualHit(v) => v.weapon_entity,
-            AttackHit::AttackMultiHit(v) => v.weapon_entity,
+            AttackHit::AttackCommonHit(hit) => hit.weapon_entity,
+            AttackHit::AttackDualHit(hit) => hit.weapon_entity,
+            AttackHit::AttackMultiHit(hit) => hit.weapon_entity,
         }
     }
 }
@@ -353,20 +354,4 @@ struct AttackingQuery<'a> {
     target: Ref<'a, Attacking>,
     paper_doll: Option<Ref<'a, PaperDoll>>,
     move_to: Option<Ref<'a, MoveToEntity>>,
-}
-
-#[derive(Component, Deref, DerefMut, Reflect)]
-pub struct AttackTimer(Timer);
-impl AttackTimer {
-    pub fn new(duration: Duration) -> Self {
-        Self(Timer::new(duration, TimerMode::Once))
-    }
-
-    pub fn timer(&self) -> &Timer {
-        &self.0
-    }
-
-    pub fn timer_mut(&mut self) -> &mut Timer {
-        &mut self.0
-    }
 }

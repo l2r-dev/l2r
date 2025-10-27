@@ -2,15 +2,12 @@ use bevy::prelude::*;
 use game_core::{
     action::{
         model::CoreAction,
-        wait_kind::{Sit, WaitKind},
+        wait_kind::{Sit, WaitKind, sit_added},
     },
-    animation::Animation,
-    attack::Attacking,
+    active_action::ActiveAction,
     encounters::EnteredWorld,
-    movement::MoveTarget,
     network::{broadcast::ServerPacketBroadcast, packets::server::ChangeWaitType},
     object_id::ObjectId,
-    player_specific::next_intention::NextIntention,
 };
 use std::time::Duration;
 
@@ -18,6 +15,7 @@ pub struct SitStandPlugin;
 impl Plugin for SitStandPlugin {
     fn build(&self, app: &mut App) {
         app.add_observer(handle_action);
+        app.add_observer(sit_added);
         app.add_systems(Update, broadcast_sit_stand);
     }
 }
@@ -33,7 +31,7 @@ fn handle_action(
     {
         commands
             .entity(entity)
-            .insert(Animation::new(Duration::from_secs(2)));
+            .insert(ActiveAction::new(Duration::from_secs(2)));
 
         if has_sit {
             commands
@@ -44,10 +42,7 @@ fn handle_action(
             commands
                 .entity(entity)
                 .try_insert(WaitKind::Sit)
-                .try_insert(Sit)
-                .remove::<Attacking>()
-                .remove::<NextIntention>()
-                .remove::<MoveTarget>();
+                .try_insert(Sit);
         }
     }
 }

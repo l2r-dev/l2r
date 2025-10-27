@@ -3,19 +3,22 @@ use bevy_ecs::{
     change_detection::Ref,
     entity::Entity,
     prelude::{Has, IntoScheduleConfigs, ParallelCommands, Query, Without},
-    query::{QueryData, QueryFilter},
+    query::QueryData,
 };
 use game_core::{
     action::{model::CoreAction, pickup::PickupRequest, wait_kind::Sit},
-    animation::Animation,
-    attack::{Attacking, Dead, InsertAttackingParams},
+    active_action::ActiveAction,
+    attack::{Attacking, Dead},
+    movement::{FollowRequest, Following},
+    npc::DialogRequest,
     object_id::ObjectId,
-    path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
+    path_finding::VisibilityCheckRequest,
     player_specific::next_intention::{NextIntention, NextIntentionComponentsPlugin},
 };
 use state::GameMechanicsSystems;
 
 pub struct NextIntentionPlugin;
+
 impl Plugin for NextIntentionPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(NextIntentionComponentsPlugin);
@@ -33,21 +36,21 @@ struct CharacterQuery<'a> {
     object_id: Ref<'a, ObjectId>,
     next_intention: Ref<'a, NextIntention>,
     is_sitting: Has<Sit>,
-}
-
-#[derive(QueryFilter)]
-struct CharacterFilter {
-    not_dead: Without<Dead>,
-    not_animating: Without<Animation>,
-    not_pathfinding: Without<InActionPathfindingTimer>,
+    is_dead: Has<Dead>,
 }
 
 fn next_intention_system(
-    mut characters: Query<CharacterQuery, CharacterFilter>,
+    mut characters: Query<CharacterQuery, Without<ActiveAction>>,
     par_commands: ParallelCommands,
 ) {
     characters.par_iter_mut().for_each(|character| {
         par_commands.command_scope(|mut commands| {
+            if character.is_dead {
+                commands.entity(character.entity).remove::<NextIntention>();
+
+                return;
+            }
+
             commands.entity(character.entity).remove::<NextIntention>();
 
             match *character.next_intention {
@@ -55,6 +58,13 @@ fn next_intention_system(
                     if character.is_sitting {
                         return;
                     }
+
+                    commands.entity(character.entity).remove::<(
+                        PickupRequest,
+                        Following,
+                        Attacking,
+                        DialogRequest,
+                    )>();
 
                     commands.trigger_targets(
                         VisibilityCheckRequest {
@@ -72,13 +82,9 @@ fn next_intention_system(
                         return;
                     }
 
-                    Attacking::insert(
-                        &mut commands,
-                        InsertAttackingParams {
-                            attacker: character.entity,
-                            target: target_entity,
-                        },
-                    );
+                    commands
+                        .entity(character.entity)
+                        .insert(Attacking(target_entity));
                 }
                 NextIntention::PickUp { item } => {
                     if character.is_sitting {
@@ -89,19 +95,31 @@ fn next_intention_system(
                         .entity(character.entity)
                         .insert(PickupRequest(item));
                 }
-                NextIntention::CoreAction(v) => {
-                    if character.is_sitting && v != CoreAction::SitStand {
+                NextIntention::CoreAction(core_action) => {
+                    if character.is_sitting && core_action != CoreAction::SitStand {
                         return;
                     }
 
-                    commands.trigger_targets(v, character.entity);
+                    commands.trigger_targets(core_action, character.entity);
                 }
-                NextIntention::SpecialAction(v) => {
+                NextIntention::SpecialAction(special_action) => {
                     if character.is_sitting {
                         return;
                     }
 
-                    commands.trigger_targets(v, character.entity);
+                    commands.trigger_targets(special_action, character.entity);
+                }
+                NextIntention::Follow { target } => {
+                    if character.is_sitting {
+                        return;
+                    }
+
+                    commands.trigger_targets(FollowRequest::from(target), character.entity);
+                }
+                NextIntention::DialogRequest { target } => {
+                    commands
+                        .entity(character.entity)
+                        .insert(DialogRequest::from(target));
                 }
             }
         });

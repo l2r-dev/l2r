@@ -25,4 +25,6 @@ pub enum NextIntention {
     CoreAction(CoreAction),
     SpecialAction(SpecialAction),
     PickUp { item: Entity },
+    Follow { target: Entity },
+    DialogRequest { target: Entity },
 }

@@ -2,7 +2,7 @@ use bevy::prelude::*;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     action::pickup::PickupRequest,
-    animation::Animation,
+    active_action::ActiveAction,
     attack::Attacking,
     movement::Following,
     network::{
@@ -27,18 +27,15 @@ fn handle(
     receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
     receive_params: PacketReceiveParams,
     mut commands: Commands,
-    movable_objects: Query<(&Transform, Has<Animation>), With<Movable>>,
+    movable_objects: Query<(&Transform, Has<ActiveAction>), With<Movable>>,
 ) -> Result<()> {
     let event = receive.event();
     if let GameClientPacket::MoveBackwardToLocation(ref packet) = event.packet {
         let character_entity = receive_params.character(&event.connection.id())?;
 
-        if let Ok((transform, has_animation)) = movable_objects.get(character_entity) {
+        if let Ok((transform, has_active_active_action)) = movable_objects.get(character_entity) {
             // Cancel any active actions when player manually moves to a different location
-            commands
-                .entity(character_entity)
-                .remove::<(PickupRequest, Following, Attacking, DialogRequest)>();
-            if has_animation {
+            if has_active_active_action {
                 commands
                     .entity(character_entity)
                     .insert(NextIntention::MoveTo {
@@ -46,6 +43,12 @@ fn handle(
                         target: packet.target_location,
                     });
             } else {
+                commands.entity(character_entity).remove::<(
+                    PickupRequest,
+                    Following,
+                    Attacking,
+                    DialogRequest,
+                )>();
                 commands.trigger_targets(
                     VisibilityCheckRequest {
                         entity: character_entity,

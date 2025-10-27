@@ -1,5 +1,7 @@
 use super::SendStopMove;
 use crate::{
+    action::wait_kind::Sit,
+    attack::Dead,
     network::packets::server::{ActionFail, GameServerPacket},
     path_finding::WAYPOINTS_CAPACITY,
 };
@@ -10,7 +12,7 @@ use bevy::{
     },
     prelude::*,
 };
-use bevy_ecs::component::Mutable;
+use bevy_ecs::{component::Mutable, relationship::RelationshipHookMode};
 use smallvec::SmallVec;
 use spatial::WayPoint;
 use std::collections::VecDeque;
@@ -25,6 +27,21 @@ pub struct MoveToEntity {
 impl Component for MoveToEntity {
     const STORAGE_TYPE: StorageType = StorageType::SparseSet;
     type Mutability = Immutable;
+
+    fn on_add() -> Option<ComponentHook> {
+        Some(|mut world: DeferredWorld, ctx| {
+            match ctx.relationship_hook_mode {
+                RelationshipHookMode::Run => {}
+                _ => return,
+            }
+
+            let entity_ref = world.entity(ctx.entity);
+
+            if entity_ref.get::<Sit>().is_some() || entity_ref.get::<Dead>().is_some() {
+                world.commands().entity(ctx.entity).remove::<Self>();
+            }
+        })
+    }
 
     fn on_remove() -> Option<ComponentHook> {
         Some(|mut world: DeferredWorld, context: HookContext| {
@@ -47,6 +64,21 @@ pub struct MoveTarget {
 impl Component for MoveTarget {
     const STORAGE_TYPE: StorageType = StorageType::SparseSet;
     type Mutability = Mutable;
+
+    fn on_add() -> Option<ComponentHook> {
+        Some(|mut world: DeferredWorld, ctx| {
+            match ctx.relationship_hook_mode {
+                RelationshipHookMode::Run => {}
+                _ => return,
+            }
+
+            let entity_ref = world.entity(ctx.entity);
+
+            if entity_ref.get::<Sit>().is_some() || entity_ref.get::<Dead>().is_some() {
+                world.commands().entity(ctx.entity).remove::<Self>();
+            }
+        })
+    }
 
     fn on_remove() -> Option<ComponentHook> {
         Some(|mut world: DeferredWorld, context: HookContext| {

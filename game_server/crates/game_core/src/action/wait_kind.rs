@@ -1,3 +1,7 @@
+use crate::{
+    attack::Attacking,
+    movement::{Following, MoveTarget, MoveToEntity},
+};
 use bevy::prelude::*;
 use bevy_enum_tag::EnumComponentTag;
 use num_enum::IntoPrimitive;
@@ -27,3 +31,14 @@ pub enum WaitKind {
 
 // Expose EnumComponentTag generated methods
 pub use wait_kind::*;
+
+pub fn sit_added(trigger: Trigger<OnAdd, Sit>, mut commands: Commands) {
+    let entity = trigger.target();
+
+    commands
+        .entity(entity)
+        .remove::<MoveTarget>()
+        .remove::<MoveToEntity>()
+        .remove::<Following>()
+        .remove::<Attacking>();
+}

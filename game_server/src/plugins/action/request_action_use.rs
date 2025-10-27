@@ -2,7 +2,7 @@ use bevy::prelude::*;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     action::model::*,
-    animation::Animation,
+    active_action::ActiveAction,
     attack::Dead,
     network::{
         config::GameServerNetworkConfig, packets::client::GameClientPacket,
@@ -22,20 +22,20 @@ fn handle(
     receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
     receive_params: PacketReceiveParams,
     mut commands: Commands,
-    characters: Query<Has<Animation>, Without<Dead>>,
+    characters: Query<Has<ActiveAction>, Without<Dead>>,
 ) -> Result<()> {
     let event = receive.event();
 
     if let GameClientPacket::RequestActionUse(ref packet) = event.packet {
         let character_entity = receive_params.character(&event.connection.id())?;
 
-        let Ok(has_animation) = characters.get(character_entity) else {
+        let Ok(has_active_action) = characters.get(character_entity) else {
             return Ok(());
         };
 
         match packet.action_id {
             ActionId::Core(action) => {
-                if has_animation {
+                if has_active_action {
                     commands
                         .entity(character_entity)
                         .try_insert(NextIntention::CoreAction(action));
@@ -47,7 +47,7 @@ fn handle(
                 commands.trigger_targets(action, character_entity);
             }
             ActionId::Special(action) => {
-                if has_animation {
+                if has_active_action {
                     commands
                         .entity(character_entity)
                         .try_insert(NextIntention::SpecialAction(action));

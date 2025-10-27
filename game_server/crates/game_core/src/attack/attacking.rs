@@ -1,4 +1,8 @@
-use crate::movement::{Following, MoveTarget};
+use crate::{
+    action::pickup::PickupRequest,
+    movement::{Following, MoveTarget, MoveToEntity},
+    npc::DialogRequest,
+};
 use bevy::{
     ecs::{
         component::{ComponentHook, Immutable, StorageType},
@@ -15,22 +19,6 @@ const ATTACKERS_CAPACITY: usize = 2;
 #[derive(Clone, Copy, Debug, Deref, Reflect)]
 #[reflect(Component)]
 pub struct Attacking(pub Entity);
-
-pub struct InsertAttackingParams {
-    pub attacker: Entity,
-    pub target: Entity,
-}
-
-impl Attacking {
-    #[inline]
-    pub fn insert(commands: &mut Commands, params: InsertAttackingParams) {
-        commands
-            .entity(params.attacker)
-            .remove::<MoveTarget>()
-            .remove::<Following>()
-            .insert(Self(params.target));
-    }
-}
 
 impl Component for Attacking {
     const STORAGE_TYPE: StorageType = StorageType::Table;
@@ -58,6 +46,15 @@ impl Component for Attacking {
                     target.add(ctx.entity);
                     world.commands().entity(target_entity).insert(target);
                 }
+
+                world
+                    .commands()
+                    .entity(ctx.entity)
+                    .remove::<MoveTarget>()
+                    .remove::<MoveToEntity>()
+                    .remove::<Following>()
+                    .remove::<PickupRequest>()
+                    .remove::<DialogRequest>();
             } else {
                 world.commands().entity(ctx.entity).remove::<Self>();
             }

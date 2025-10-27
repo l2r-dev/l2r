@@ -226,11 +226,11 @@ impl ItemInfo {
             return false;
         }
 
-        let items::Kind::Weapon(v) = self.kind else {
+        let items::Kind::Weapon(weapon) = self.kind else {
             return false;
         };
 
-        match v.kind {
+        match weapon.kind {
             WeaponKind::Bow => {
                 matches!(
                     ammo.kind,

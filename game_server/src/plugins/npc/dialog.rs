@@ -1,6 +1,9 @@
 use bevy::{log, prelude::*};
 use bevy_asset::LoadedFolder;
+use bevy_ecs::query::QueryData;
 use game_core::{
+    action::wait_kind::Sit,
+    attack::Dead,
     movement::MoveToEntity,
     network::packets::{
         client::{BypassCommand, BypassCommandExecuted},
@@ -34,18 +37,34 @@ impl Plugin for DialogPlugin {
     }
 }
 
+#[derive(QueryData)]
+struct RequestQuery<'a> {
+    entity: Entity,
+    transform: Ref<'a, Transform>,
+    request: Ref<'a, DialogRequest>,
+    is_sitting: Has<Sit>,
+    is_dead: Has<Dead>,
+}
+
 fn dialog_request_handler(
     mut commands: Commands,
     world_map_query: WorldMapQuery,
-    requests: Query<(Entity, Ref<DialogRequest>), Without<InActionPathfindingTimer>>,
+    requests: Query<RequestQuery, Without<InActionPathfindingTimer>>,
     move_to: Query<Ref<MoveToEntity>>,
     transforms: Query<Ref<Transform>>,
     npcs: Query<Ref<ObjectId>, With<Kind>>,
 ) -> Result<()> {
-    for (requester, request) in &mut requests.iter() {
-        let dialog_target = **request;
+    for requester in &mut requests.iter() {
+        if requester.is_dead {
+            commands
+                .entity(requester.entity)
+                .remove::<(MoveToEntity, DialogRequest)>();
+            commands.trigger_targets(GameServerPacket::from(ActionFail), requester.entity);
+        }
 
-        let Ok(requester_transform) = transforms.get(requester) else {
+        let dialog_target = **requester.request;
+
+        let Ok(requester_transform) = transforms.get(requester.entity) else {
             continue;
         };
 
@@ -59,8 +78,15 @@ fn dialog_request_handler(
 
         // Target is out of range, need to move closer
         if distance > DIALOG_RANGE {
+            if requester.is_sitting {
+                commands
+                    .entity(requester.entity)
+                    .remove::<(MoveToEntity, DialogRequest)>();
+                commands.trigger_targets(GameServerPacket::from(ActionFail), requester.entity);
+            }
+
             // Check if already moving to the correct target
-            if let Ok(move_to) = move_to.get(requester)
+            if let Ok(move_to) = move_to.get(requester.entity)
                 && move_to.target == dialog_target
             {
                 continue;
@@ -76,23 +102,23 @@ fn dialog_request_handler(
 
             if can_move_to {
                 // Direct line of sight, use simple movement
-                commands.entity(requester).try_insert(MoveToEntity {
+                commands.entity(requester.entity).try_insert(MoveToEntity {
                     target: dialog_target,
                     range: DIALOG_RANGE,
                 });
             } else {
                 // No line of sight, use pathfinding via visibility check
                 commands
-                    .entity(requester)
+                    .entity(requester.entity)
                     .try_insert(InActionPathfindingTimer::default());
 
                 commands.trigger_targets(
                     VisibilityCheckRequest {
-                        entity: requester,
+                        entity: requester.entity,
                         start: requester_pos,
                         target: target_pos,
                     },
-                    requester,
+                    requester.entity,
                 );
             }
         } else {
@@ -104,14 +130,14 @@ fn dialog_request_handler(
                 WorldMap::vec3_to_geo(target_pos),
             ) {
                 commands
-                    .entity(requester)
+                    .entity(requester.entity)
                     .remove::<(MoveToEntity, DialogRequest)>();
-                commands.trigger_targets(GameServerPacket::from(ActionFail), requester);
+                commands.trigger_targets(GameServerPacket::from(ActionFail), requester.entity);
                 continue;
             }
 
             commands
-                .entity(requester)
+                .entity(requester.entity)
                 .remove::<(MoveToEntity, DialogRequest)>();
 
             if let Ok(object_id) = npcs.get(dialog_target) {
@@ -121,7 +147,7 @@ fn dialog_request_handler(
                         // Show index page
                         command: NpcCommand::Chat(ChatCommand::Number(0)),
                     })),
-                    requester,
+                    requester.entity,
                 );
             }
         }
