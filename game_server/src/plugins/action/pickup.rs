@@ -60,24 +60,26 @@ fn pickup_request_handler(
     metrics: Res<Metrics>,
 ) -> Result<()> {
     for character in &mut characters.iter() {
-        let item_entity = character.request.0;
-
         if character.is_sitting {
             commands
                 .entity(character.entity)
                 .remove::<(PickupRequest, MoveToEntity)>();
+
+            commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
+
             continue;
         }
 
-        if let Ok(counter) = metrics.counter(PickupMetric::ItemsPickedUp) {
-            counter.inc();
-        }
+        let item_entity = character.request.0;
 
         let Ok((item_oid, item, item_transform)) = items.get(item_entity) else {
             // Item no longer exists in world (picked up, destroyed, etc.)
             commands
                 .entity(character.entity)
                 .remove::<(PickupRequest, MoveToEntity)>();
+
+            commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
+
             continue;
         };
 
@@ -99,7 +101,13 @@ fn pickup_request_handler(
                     .entity(character.entity)
                     .remove::<(MoveToEntity, PickupRequest)>();
 
+                commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
+
                 continue;
+            }
+
+            if let Ok(counter) = metrics.counter(PickupMetric::ItemsPickedUp) {
+                counter.inc();
             }
 
             // Within range and line of sight is clear - start pickup animation

@@ -58,6 +58,7 @@ pub(super) fn add_in_inventory(
         } else {
             AddNonStackable::new(non_stackable_items)
         };
+
         commands.trigger_targets(event, inventory_target);
     }
     Ok(())
@@ -127,6 +128,7 @@ pub(super) fn add_non_stackable(
 
         if matches!(current_location, ItemLocation::World(_)) {
             new_item.set_location(ItemLocation::Inventory);
+
             commands
                 .entity(new_item_entity)
                 .remove::<Transform>()
