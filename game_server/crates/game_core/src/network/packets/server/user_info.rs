@@ -93,7 +93,7 @@ impl UserInfo {
 }
 impl L2rServerPacket for UserInfo {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_1024();
+        let mut buffer = ServerPacketBuffer::with_capacity(1024);
 
         let p_atk = self.attack_stats.typed::<PAtk>(AttackStat::PAtk);
         let p_atk_spd = self.attack_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);

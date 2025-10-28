@@ -12,7 +12,7 @@ pub struct SocialAction {
 
 impl L2rServerPacket for SocialAction {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::SOCIAL_ACTION.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32(self.action.into());

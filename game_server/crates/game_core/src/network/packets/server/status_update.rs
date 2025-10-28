@@ -72,7 +72,7 @@ impl StatusUpdate {
 
 impl L2rServerPacket for StatusUpdate {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_64();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::STATUS_UPDATE.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32_from_usize(self.fields.len());

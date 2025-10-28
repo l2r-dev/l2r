@@ -16,7 +16,7 @@ impl fmt::Debug for LoginOk {
 }
 impl L2rServerPacket for LoginOk {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(LoginServerPacketCode::LOGIN_OK.to_le_bytes());
         buffer.extend(self.session_key.get_login().to_le_bytes());
         buffer.u32(0);

@@ -26,7 +26,7 @@ impl fmt::Debug for CreatureSay {
 }
 impl L2rServerPacket for CreatureSay {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::CREATURE_SAY.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32(self.chat_type.into());

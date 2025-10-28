@@ -14,7 +14,7 @@ impl fmt::Debug for AttackStanceStart {
 
 impl L2rServerPacket for AttackStanceStart {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::ATTACK_STANCE_START.to_le_bytes());
         buffer.u32(self.0.into());
         buffer

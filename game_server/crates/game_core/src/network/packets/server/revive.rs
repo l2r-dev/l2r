@@ -8,7 +8,7 @@ pub struct Revive(ObjectId);
 
 impl L2rServerPacket for Revive {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::REVIVE.to_le_bytes());
         buffer.u32(self.0.into());
         buffer

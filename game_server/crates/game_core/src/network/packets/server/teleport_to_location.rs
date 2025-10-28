@@ -27,7 +27,7 @@ impl TeleportToLocation {
 
 impl L2rServerPacket for TeleportToLocation {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
 
         let location = GameVec3::from(self.transform.translation);
         let heading = Heading::from(self.transform.rotation);

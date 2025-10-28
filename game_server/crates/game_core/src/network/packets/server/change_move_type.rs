@@ -11,7 +11,7 @@ pub struct ChangeMoveType {
 
 impl L2rServerPacket for ChangeMoveType {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::CHANGE_MOVE_TYPE.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32_from_usize(self.move_type.into());

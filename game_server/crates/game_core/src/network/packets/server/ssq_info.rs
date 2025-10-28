@@ -21,7 +21,7 @@ impl fmt::Debug for SSQInfo {
 }
 impl L2rServerPacket for SSQInfo {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::SSQ_INFO.to_le_bytes());
         buffer.u16(self.0.into());
         buffer

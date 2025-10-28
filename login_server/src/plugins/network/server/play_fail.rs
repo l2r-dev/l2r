@@ -54,7 +54,7 @@ impl From<PlayFail> for u8 {
 
 impl L2rServerPacket for PlayFail {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(LoginServerPacketCode::PLAY_FAIL.to_le_bytes());
         buffer.u8(self.into());
         buffer

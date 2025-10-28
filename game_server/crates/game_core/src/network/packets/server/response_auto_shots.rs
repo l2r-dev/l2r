@@ -24,7 +24,7 @@ pub enum ShotState {
 
 impl L2rServerPacket for ResponseAutoShots {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::EX_AUTO_SHOTS.to_le_bytes());
         buffer.u32(self.item_id.into());
         buffer.u32(self.state.into());

@@ -1,304 +1,16 @@
 use super::{ClientPacketBuffer, PacketId};
 use bevy::prelude::*;
 use smallvec::SmallVec;
-use std::{
-    fmt::Debug,
-    ops::{Deref, DerefMut},
-};
-use strum::{Display, EnumDiscriminants};
+use std::fmt::Debug;
 
-#[derive(Clone, Debug, EnumDiscriminants, Eq, PartialEq)]
-#[repr(u8)]
-#[strum_discriminants(name(ServerPacketBufferVariant))]
-#[strum_discriminants(derive(Display))]
-pub enum ServerPacketBuffer {
-    Size1(SmallVec<[u8; Self::CAPACITY_1]>),
-    Size3(SmallVec<[u8; Self::CAPACITY_3]>),
-    Size6(SmallVec<[u8; Self::CAPACITY_6]>),
-    Size16(SmallVec<[u8; Self::CAPACITY_16]>),
-    Size32(SmallVec<[u8; Self::CAPACITY_32]>),
-    Size64(SmallVec<[u8; Self::CAPACITY_64]>),
-    Size128(SmallVec<[u8; Self::CAPACITY_128]>),
-    Size256(SmallVec<[u8; Self::CAPACITY_256]>),
-    Size512(SmallVec<[u8; Self::CAPACITY_512]>),
-    Size1024(SmallVec<[u8; Self::CAPACITY_1024]>),
-    Size2048(SmallVec<[u8; Self::CAPACITY_2048]>),
-    Size4096(SmallVec<[u8; Self::CAPACITY_4096]>),
-}
+#[derive(Clone, Debug, Default, Deref, DerefMut, Eq, PartialEq)]
+pub struct ServerPacketBuffer(SmallVec<[u8; Self::CAPACITY]>);
 
 impl ServerPacketBuffer {
-    pub const CAPACITY_1: usize = 1;
-    pub const CAPACITY_3: usize = 3;
-    pub const CAPACITY_6: usize = 6;
-    pub const CAPACITY_16: usize = 16;
-    pub const CAPACITY_32: usize = 32;
-    pub const CAPACITY_64: usize = 64;
-    pub const CAPACITY_128: usize = 128;
-    pub const CAPACITY_256: usize = 256;
-    pub const CAPACITY_512: usize = 512;
-    pub const CAPACITY_1024: usize = 1024;
-    pub const CAPACITY_2048: usize = 2048;
-    pub const CAPACITY_4096: usize = 4096;
-
-    const fn fixed_capacity(&self) -> usize {
-        match self {
-            Self::Size1(_) => Self::CAPACITY_1,
-            Self::Size3(_) => Self::CAPACITY_3,
-            Self::Size6(_) => Self::CAPACITY_6,
-            Self::Size16(_) => Self::CAPACITY_16,
-            Self::Size32(_) => Self::CAPACITY_32,
-            Self::Size64(_) => Self::CAPACITY_64,
-            Self::Size128(_) => Self::CAPACITY_128,
-            Self::Size256(_) => Self::CAPACITY_256,
-            Self::Size512(_) => Self::CAPACITY_512,
-            Self::Size1024(_) => Self::CAPACITY_1024,
-            Self::Size2048(_) => Self::CAPACITY_2048,
-            Self::Size4096(_) => Self::CAPACITY_4096,
-        }
-    }
-}
-
-impl Default for ServerPacketBuffer {
-    fn default() -> Self {
-        Self::new()
-    }
-}
-
-impl ServerPacketBuffer {
-    pub fn new() -> Self {
-        Self::Size128(SmallVec::new())
-    }
-
-    pub fn new_1() -> Self {
-        Self::Size1(SmallVec::new())
-    }
-
-    pub fn new_3() -> Self {
-        Self::Size3(SmallVec::new())
-    }
-
-    pub fn new_6() -> Self {
-        Self::Size6(SmallVec::new())
-    }
-
-    pub fn new_16() -> Self {
-        Self::Size16(SmallVec::new())
-    }
-
-    pub fn new_32() -> Self {
-        Self::Size32(SmallVec::new())
-    }
-
-    pub fn new_64() -> Self {
-        Self::Size64(SmallVec::new())
-    }
-
-    pub fn new_128() -> Self {
-        Self::Size128(SmallVec::new())
-    }
-
-    pub fn new_256() -> Self {
-        Self::Size256(SmallVec::new())
-    }
-
-    pub fn new_512() -> Self {
-        Self::Size512(SmallVec::new())
-    }
-
-    pub fn new_1024() -> Self {
-        Self::Size1024(SmallVec::new())
-    }
-
-    pub fn new_2048() -> Self {
-        Self::Size2048(SmallVec::new())
-    }
-
-    pub fn new_4096() -> Self {
-        Self::Size4096(SmallVec::new())
-    }
+    pub const CAPACITY: usize = 128;
 
     pub fn with_capacity(capacity: usize) -> Self {
-        if capacity <= Self::CAPACITY_1 {
-            Self::Size1(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_3 {
-            Self::Size3(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_6 {
-            Self::Size6(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_16 {
-            Self::Size16(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_32 {
-            Self::Size32(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_64 {
-            Self::Size64(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_128 {
-            Self::Size128(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_256 {
-            Self::Size256(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_512 {
-            Self::Size512(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_1024 {
-            Self::Size1024(SmallVec::new())
-        } else if capacity <= Self::CAPACITY_2048 {
-            Self::Size2048(SmallVec::new())
-        } else {
-            Self::Size4096(SmallVec::new())
-        }
-    }
-
-    fn push(&mut self, byte: u8) {
-        match self {
-            Self::Size1(buf) => buf.push(byte),
-            Self::Size3(buf) => buf.push(byte),
-            Self::Size6(buf) => buf.push(byte),
-            Self::Size16(buf) => buf.push(byte),
-            Self::Size32(buf) => buf.push(byte),
-            Self::Size64(buf) => buf.push(byte),
-            Self::Size128(buf) => buf.push(byte),
-            Self::Size256(buf) => buf.push(byte),
-            Self::Size512(buf) => buf.push(byte),
-            Self::Size1024(buf) => buf.push(byte),
-            Self::Size2048(buf) => buf.push(byte),
-            Self::Size4096(buf) => buf.push(byte),
-        }
-    }
-
-    fn len(&self) -> usize {
-        match self {
-            Self::Size1(buf) => buf.len(),
-            Self::Size3(buf) => buf.len(),
-            Self::Size6(buf) => buf.len(),
-            Self::Size16(buf) => buf.len(),
-            Self::Size32(buf) => buf.len(),
-            Self::Size64(buf) => buf.len(),
-            Self::Size128(buf) => buf.len(),
-            Self::Size256(buf) => buf.len(),
-            Self::Size512(buf) => buf.len(),
-            Self::Size1024(buf) => buf.len(),
-            Self::Size2048(buf) => buf.len(),
-            Self::Size4096(buf) => buf.len(),
-        }
-    }
-
-    fn capacity(&self) -> usize {
-        match self {
-            Self::Size1(buf) => buf.capacity(),
-            Self::Size3(buf) => buf.capacity(),
-            Self::Size6(buf) => buf.capacity(),
-            Self::Size16(buf) => buf.capacity(),
-            Self::Size32(buf) => buf.capacity(),
-            Self::Size64(buf) => buf.capacity(),
-            Self::Size128(buf) => buf.capacity(),
-            Self::Size256(buf) => buf.capacity(),
-            Self::Size512(buf) => buf.capacity(),
-            Self::Size1024(buf) => buf.capacity(),
-            Self::Size2048(buf) => buf.capacity(),
-            Self::Size4096(buf) => buf.capacity(),
-        }
-    }
-
-    fn as_mut_slice(&mut self) -> &mut [u8] {
-        match self {
-            Self::Size1(buf) => buf.as_mut_slice(),
-            Self::Size3(buf) => buf.as_mut_slice(),
-            Self::Size6(buf) => buf.as_mut_slice(),
-            Self::Size16(buf) => buf.as_mut_slice(),
-            Self::Size32(buf) => buf.as_mut_slice(),
-            Self::Size64(buf) => buf.as_mut_slice(),
-            Self::Size128(buf) => buf.as_mut_slice(),
-            Self::Size256(buf) => buf.as_mut_slice(),
-            Self::Size512(buf) => buf.as_mut_slice(),
-            Self::Size1024(buf) => buf.as_mut_slice(),
-            Self::Size2048(buf) => buf.as_mut_slice(),
-            Self::Size4096(buf) => buf.as_mut_slice(),
-        }
-    }
-
-    pub fn is_empty(&self) -> bool {
-        match self {
-            Self::Size1(buf) => buf.is_empty(),
-            Self::Size3(buf) => buf.is_empty(),
-            Self::Size6(buf) => buf.is_empty(),
-            Self::Size16(buf) => buf.is_empty(),
-            Self::Size32(buf) => buf.is_empty(),
-            Self::Size64(buf) => buf.is_empty(),
-            Self::Size128(buf) => buf.is_empty(),
-            Self::Size256(buf) => buf.is_empty(),
-            Self::Size512(buf) => buf.is_empty(),
-            Self::Size1024(buf) => buf.is_empty(),
-            Self::Size2048(buf) => buf.is_empty(),
-            Self::Size4096(buf) => buf.is_empty(),
-        }
-    }
-
-    pub fn as_slice(&self) -> &[u8] {
-        match self {
-            Self::Size1(buf) => buf.as_slice(),
-            Self::Size3(buf) => buf.as_slice(),
-            Self::Size6(buf) => buf.as_slice(),
-            Self::Size16(buf) => buf.as_slice(),
-            Self::Size32(buf) => buf.as_slice(),
-            Self::Size64(buf) => buf.as_slice(),
-            Self::Size128(buf) => buf.as_slice(),
-            Self::Size256(buf) => buf.as_slice(),
-            Self::Size512(buf) => buf.as_slice(),
-            Self::Size1024(buf) => buf.as_slice(),
-            Self::Size2048(buf) => buf.as_slice(),
-            Self::Size4096(buf) => buf.as_slice(),
-        }
-    }
-
-    pub fn extend<I: IntoIterator<Item = u8>>(&mut self, iterable: I) {
-        match self {
-            Self::Size1(buf) => buf.extend(iterable),
-            Self::Size3(buf) => buf.extend(iterable),
-            Self::Size6(buf) => buf.extend(iterable),
-            Self::Size16(buf) => buf.extend(iterable),
-            Self::Size32(buf) => buf.extend(iterable),
-            Self::Size64(buf) => buf.extend(iterable),
-            Self::Size128(buf) => buf.extend(iterable),
-            Self::Size256(buf) => buf.extend(iterable),
-            Self::Size512(buf) => buf.extend(iterable),
-            Self::Size1024(buf) => buf.extend(iterable),
-            Self::Size2048(buf) => buf.extend(iterable),
-            Self::Size4096(buf) => buf.extend(iterable),
-        }
-    }
-
-    pub fn resize_with<F>(&mut self, new_len: usize, f: F)
-    where
-        F: FnMut() -> u8,
-    {
-        match self {
-            Self::Size1(buf) => buf.resize_with(new_len, f),
-            Self::Size3(buf) => buf.resize_with(new_len, f),
-            Self::Size6(buf) => buf.resize_with(new_len, f),
-            Self::Size16(buf) => buf.resize_with(new_len, f),
-            Self::Size32(buf) => buf.resize_with(new_len, f),
-            Self::Size64(buf) => buf.resize_with(new_len, f),
-            Self::Size128(buf) => buf.resize_with(new_len, f),
-            Self::Size256(buf) => buf.resize_with(new_len, f),
-            Self::Size512(buf) => buf.resize_with(new_len, f),
-            Self::Size1024(buf) => buf.resize_with(new_len, f),
-            Self::Size2048(buf) => buf.resize_with(new_len, f),
-            Self::Size4096(buf) => buf.resize_with(new_len, f),
-        }
-    }
-
-    pub fn truncate(&mut self, len: usize) {
-        match self {
-            Self::Size1(buf) => buf.truncate(len),
-            Self::Size3(buf) => buf.truncate(len),
-            Self::Size6(buf) => buf.truncate(len),
-            Self::Size16(buf) => buf.truncate(len),
-            Self::Size32(buf) => buf.truncate(len),
-            Self::Size64(buf) => buf.truncate(len),
-            Self::Size128(buf) => buf.truncate(len),
-            Self::Size256(buf) => buf.truncate(len),
-            Self::Size512(buf) => buf.truncate(len),
-            Self::Size1024(buf) => buf.truncate(len),
-            Self::Size2048(buf) => buf.truncate(len),
-            Self::Size4096(buf) => buf.truncate(len),
-        }
+        Self(SmallVec::with_capacity(capacity))
     }
 
     pub fn str(&mut self, string: &str) {
@@ -373,136 +85,29 @@ impl ServerPacketBuffer {
     pub fn f64(&mut self, value: f64) {
         self.extend(value.to_le_bytes());
     }
-
-    /// Log buffer utilization statistics for optimization purposes
-    pub fn log_utilization(&self) {
-        let variant = ServerPacketBufferVariant::from(self);
-        if variant == ServerPacketBufferVariant::Size1 {
-            return;
-        }
-
-        let len = self.len();
-        let capacity = self.capacity();
-        let fixed_capacity = self.fixed_capacity();
-
-        let utilization_pct = if capacity > 0 {
-            (len * 100) / capacity
-        } else {
-            0
-        };
-
-        if capacity > fixed_capacity {
-            trace!(
-                "ServerPacketBuffer::{} heap allocation: {} bytes used of {} capacity ({}% utilization)",
-                variant, len, capacity, utilization_pct
-            );
-        } else if utilization_pct < 51 {
-            trace!(
-                "ServerPacketBuffer::{} underutilized: {} bytes used of {} capacity ({}% utilization)",
-                variant, len, fixed_capacity, utilization_pct
-            );
-        }
-    }
-}
-
-impl Deref for ServerPacketBuffer {
-    type Target = [u8];
-
-    fn deref(&self) -> &Self::Target {
-        self.as_slice()
-    }
-}
-
-impl DerefMut for ServerPacketBuffer {
-    fn deref_mut(&mut self) -> &mut Self::Target {
-        self.as_mut_slice()
-    }
 }
 
 impl From<&[u8]> for ServerPacketBuffer {
     fn from(slice: &[u8]) -> Self {
-        let len = slice.len();
-        if len <= Self::CAPACITY_1 {
-            Self::Size1(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_3 {
-            Self::Size3(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_6 {
-            Self::Size6(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_16 {
-            Self::Size16(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_32 {
-            Self::Size32(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_64 {
-            Self::Size64(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_128 {
-            Self::Size128(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_256 {
-            Self::Size256(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_512 {
-            Self::Size512(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_1024 {
-            Self::Size1024(SmallVec::from_slice(slice))
-        } else if len <= Self::CAPACITY_2048 {
-            Self::Size2048(SmallVec::from_slice(slice))
-        } else {
-            Self::Size4096(SmallVec::from_slice(slice))
-        }
+        Self(SmallVec::from_slice(slice))
     }
 }
 
 impl From<Vec<u8>> for ServerPacketBuffer {
     fn from(vec: Vec<u8>) -> Self {
-        let len = vec.len();
-        if len <= Self::CAPACITY_1 {
-            Self::Size1(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_3 {
-            Self::Size3(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_6 {
-            Self::Size6(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_16 {
-            Self::Size16(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_32 {
-            Self::Size32(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_64 {
-            Self::Size64(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_128 {
-            Self::Size128(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_256 {
-            Self::Size256(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_512 {
-            Self::Size512(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_1024 {
-            Self::Size1024(SmallVec::from_vec(vec))
-        } else if len <= Self::CAPACITY_2048 {
-            Self::Size2048(SmallVec::from_vec(vec))
-        } else {
-            Self::Size4096(SmallVec::from_vec(vec))
-        }
+        Self(SmallVec::from_vec(vec))
     }
 }
 
 impl From<ServerPacketBuffer> for Vec<u8> {
     fn from(buffer: ServerPacketBuffer) -> Self {
-        match buffer {
-            ServerPacketBuffer::Size1(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size3(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size6(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size16(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size32(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size64(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size128(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size256(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size512(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size1024(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size2048(buf) => buf.into_vec(),
-            ServerPacketBuffer::Size4096(buf) => buf.into_vec(),
-        }
+        buffer.0.into_vec()
     }
 }
 
-impl From<SmallVec<[u8; ServerPacketBuffer::CAPACITY_64]>> for ServerPacketBuffer {
-    fn from(smallvec: SmallVec<[u8; ServerPacketBuffer::CAPACITY_64]>) -> Self {
-        Self::Size64(smallvec)
+impl From<SmallVec<[u8; ServerPacketBuffer::CAPACITY]>> for ServerPacketBuffer {
+    fn from(smallvec: SmallVec<[u8; ServerPacketBuffer::CAPACITY]>) -> Self {
+        Self(smallvec)
     }
 }
 
@@ -510,35 +115,21 @@ impl Iterator for ServerPacketBuffer {
     type Item = u8;
 
     fn next(&mut self) -> Option<Self::Item> {
-        if ServerPacketBuffer::is_empty(self) {
+        if self.0.is_empty() {
             None
         } else {
-            match self {
-                Self::Size1(buf) => Some(buf.remove(0)),
-                Self::Size3(buf) => Some(buf.remove(0)),
-                Self::Size6(buf) => Some(buf.remove(0)),
-                Self::Size16(buf) => Some(buf.remove(0)),
-                Self::Size32(buf) => Some(buf.remove(0)),
-                Self::Size64(buf) => Some(buf.remove(0)),
-                Self::Size128(buf) => Some(buf.remove(0)),
-                Self::Size256(buf) => Some(buf.remove(0)),
-                Self::Size512(buf) => Some(buf.remove(0)),
-                Self::Size1024(buf) => Some(buf.remove(0)),
-                Self::Size2048(buf) => Some(buf.remove(0)),
-                Self::Size4096(buf) => Some(buf.remove(0)),
-            }
+            Some(self.0.remove(0))
         }
     }
 
     fn size_hint(&self) -> (usize, Option<usize>) {
-        let len = self.len();
-        (len, Some(len))
+        (self.0.len(), Some(self.0.len()))
     }
 }
 
 impl ExactSizeIterator for ServerPacketBuffer {
     fn len(&self) -> usize {
-        self.len()
+        self.0.len()
     }
 }
 
@@ -547,7 +138,7 @@ impl<'a> IntoIterator for &'a ServerPacketBuffer {
     type IntoIter = std::slice::Iter<'a, u8>;
 
     fn into_iter(self) -> Self::IntoIter {
-        self.as_slice().iter()
+        self.0.iter()
     }
 }
 
@@ -619,15 +210,14 @@ impl ServerPacketId {
 
 impl From<&ServerPacketBuffer> for ServerPacketId {
     fn from(buffer: &ServerPacketBuffer) -> Self {
-        let slice = buffer.as_slice();
-        if slice.len() > 1 {
-            if slice[0] >= ServerPacketId::EX_ID {
-                ServerPacketId::new_ex(u16::from_le_bytes([slice[1], slice[2]]))
+        if buffer.len() > 1 {
+            if buffer[0] >= ServerPacketId::EX_ID {
+                ServerPacketId::new_ex(u16::from_le_bytes([buffer[1], buffer[2]]))
             } else {
-                ServerPacketId::new(slice[0])
+                ServerPacketId::new(buffer[0])
             }
         } else {
-            ServerPacketId::new(slice[0])
+            ServerPacketId::new(buffer[0])
         }
     }
 }
@@ -646,59 +236,38 @@ impl From<&Vec<u8>> for ServerPacketId {
     }
 }
 
+impl From<ServerPacketId> for ServerPacketBuffer {
+    fn from(packet_id: ServerPacketId) -> Self {
+        let mut buffer = ServerPacketBuffer::default();
+        buffer.extend(packet_id.to_le_bytes());
+        buffer
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
     fn test_new() {
-        let buffer = ServerPacketBuffer::new();
+        let buffer = ServerPacketBuffer::default();
         assert!(buffer.is_empty());
-        assert!(matches!(buffer, ServerPacketBuffer::Size128(_)));
     }
 
     #[test]
     fn test_with_capacity() {
-        let size1 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_1);
-        assert!(matches!(size1, ServerPacketBuffer::Size1(_)));
+        let small = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY);
+        assert!(small.is_empty());
+        assert!(small.capacity() >= ServerPacketBuffer::CAPACITY);
 
-        let size3 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_3);
-        assert!(matches!(size3, ServerPacketBuffer::Size3(_)));
-
-        let size6 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_6);
-        assert!(matches!(size6, ServerPacketBuffer::Size6(_)));
-
-        let size16 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_16);
-        assert!(matches!(size16, ServerPacketBuffer::Size16(_)));
-
-        let size32 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_32);
-        assert!(matches!(size32, ServerPacketBuffer::Size32(_)));
-
-        let size64 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_64);
-        assert!(matches!(size64, ServerPacketBuffer::Size64(_)));
-
-        let size128 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_128);
-        assert!(matches!(size128, ServerPacketBuffer::Size128(_)));
-
-        let size256 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_256);
-        assert!(matches!(size256, ServerPacketBuffer::Size256(_)));
-
-        let size512 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_512);
-        assert!(matches!(size512, ServerPacketBuffer::Size512(_)));
-
-        let size1024 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_1024);
-        assert!(matches!(size1024, ServerPacketBuffer::Size1024(_)));
-
-        let size2048 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_2048);
-        assert!(matches!(size2048, ServerPacketBuffer::Size2048(_)));
-
-        let size4096 = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY_4096);
-        assert!(matches!(size4096, ServerPacketBuffer::Size4096(_)));
+        let large = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY * 2);
+        assert!(large.is_empty());
+        assert!(large.capacity() >= ServerPacketBuffer::CAPACITY * 2);
     }
 
     #[test]
     fn test_str() {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
 
         let test_str = "Hello";
 
@@ -722,7 +291,7 @@ mod tests {
 
     #[test]
     fn test_primitive_types() {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
 
         buffer.i8(42);
         buffer.u8(255);
@@ -774,7 +343,7 @@ mod tests {
 
     #[test]
     fn test_to_vec() {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.u32(0x12345678);
 
         let vec: Vec<u8> = buffer.into();

@@ -33,7 +33,7 @@ pub struct LoginFail {
 }
 impl L2rServerPacket for LoginFail {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(LoginServerPacketCode::LOGIN_FAIL.to_le_bytes());
         buffer.u32(self.reason.into());
         buffer.u32_from_usize(*self.session_id);

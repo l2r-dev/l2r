@@ -17,7 +17,7 @@ impl fmt::Debug for SelectTarget {
 
 impl L2rServerPacket for SelectTarget {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::SELECT_TARGET.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u16(self.color);

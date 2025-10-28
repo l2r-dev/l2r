@@ -14,7 +14,7 @@ impl fmt::Debug for AttackStanceStop {
 
 impl L2rServerPacket for AttackStanceStop {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::ATTACK_STANCE_STOP.to_le_bytes());
         buffer.u32(self.0.into());
         buffer

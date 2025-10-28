@@ -36,7 +36,7 @@ impl fmt::Debug for SetupGauge {
 
 impl L2rServerPacket for SetupGauge {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::SETUP_GAUGE.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32(self.color.into());

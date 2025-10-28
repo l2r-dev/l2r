@@ -32,7 +32,7 @@ impl SmParam {
     pub fn to_le_bytes(&self) -> ServerPacketBuffer {
         use self::SmParam::*;
 
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
 
         buffer.u32(self.discriminant());
 

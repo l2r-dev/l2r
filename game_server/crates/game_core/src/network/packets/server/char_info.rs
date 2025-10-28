@@ -54,7 +54,7 @@ impl L2rServerPacket for CharInfo {
     fn buffer(self) -> ServerPacketBuffer {
         let rotation_heading = Heading::from(self.transform.rotation);
 
-        let mut buffer = ServerPacketBuffer::new_512();
+        let mut buffer = ServerPacketBuffer::default();
 
         let converted_pos = GameVec3::from(self.transform.translation);
 

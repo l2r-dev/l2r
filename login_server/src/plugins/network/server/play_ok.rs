@@ -17,7 +17,7 @@ impl std::fmt::Debug for PlayOk {
 
 impl L2rServerPacket for PlayOk {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(LoginServerPacketCode::PLAY_OK.to_le_bytes());
         buffer.i64(self.session_key.get_game());
         buffer

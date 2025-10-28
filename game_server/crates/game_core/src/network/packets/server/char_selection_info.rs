@@ -23,7 +23,7 @@ impl fmt::Debug for CharSelectionInfo {
 
 impl L2rServerPacket for CharSelectionInfo {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_4096();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::CHARACTER_SELECTION_INFO.to_le_bytes());
         buffer.u32_from_usize(self.len());
         buffer.u32(character::Table::MAX_CHARACTERS_ON_ACCOUNT as u32);
@@ -84,7 +84,7 @@ impl CharInfoData {
         let current_mp = self.vitals.get(VitalsStat::Mp) as f64;
         let char_level = self.progress_level.level();
 
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.str(&self.name);
         buffer.u32(0);
         buffer.str(&self.title);

@@ -16,7 +16,7 @@ pub struct PlaySound {
 
 impl L2rServerPacket for PlaySound {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::PLAY_SOUND.to_le_bytes());
         buffer.u32(self._unknown1);
         buffer.str(self.sound_file.as_str());

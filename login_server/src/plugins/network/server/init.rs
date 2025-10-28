@@ -32,9 +32,9 @@ impl L2rServerPacket for InitPacket {
     fn buffer(self) -> ServerPacketBuffer {
         let Some(crypt_parts) = self.crypt_parts else {
             bevy::log::error!("Crypt parts not found for InitPacket");
-            return ServerPacketBuffer::new();
+            return ServerPacketBuffer::default();
         };
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(LoginServerPacketCode::INIT_PACKET.to_le_bytes());
         if self.protocol_version == LoginServerProtocol::OldProtocolVersion {
             buffer.u32_from_usize(*self.session_id);

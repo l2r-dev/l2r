@@ -8,7 +8,7 @@ pub struct ExBasicActionList;
 
 impl L2rServerPacket for ExBasicActionList {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_256();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::EX_BASIC_ACTION_LIST.to_le_bytes());
         buffer.u32_from_usize(DEFAULT_ACTIONS.len());
         for action_id in DEFAULT_ACTIONS.into_iter() {

@@ -40,7 +40,7 @@ impl NpcHtmlMessage {
 
 impl L2rServerPacket for NpcHtmlMessage {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::NPC_HTML_MESSAGE.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.str(&self.html);

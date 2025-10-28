@@ -11,7 +11,7 @@ pub struct ExRotation {
 }
 impl L2rServerPacket for ExRotation {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_16();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::EX_ROTATION.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.i32(self.heading.into());
