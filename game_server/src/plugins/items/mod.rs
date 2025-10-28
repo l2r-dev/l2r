@@ -1,13 +1,12 @@
-use avian3d::prelude::{Collider, Sensor};
 use bevy::{log, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
 use bevy_defer::{AccessError, AppReactorExtension, AsyncAccess, AsyncExtension, AsyncWorld};
 use game_core::{
     custom_hierarchy::{DespawnChildOf, DespawnChildren},
     items::{
-        self, AddInInventory, Inventory, Item, ItemLocation, ItemMetric, ItemsComponentsPlugin,
-        ItemsDataTable, ItemsInfo, RegionalItems, SilentSpawn, SpawnExisting, SpawnNew, UniqueItem,
-        model,
+        self, AddInInventory, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
+        ItemsComponentsPlugin, ItemsDataTable, ItemsInfo, RegionalItems, SilentSpawn,
+        SpawnExisting, SpawnNew, UniqueItem, model,
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
 };
@@ -179,11 +178,7 @@ fn handle_newly_spawned_items(
                 }
                 commands
                     .entity(item_entity)
-                    .insert((
-                        Transform::from_translation(translation),
-                        Collider::cuboid(1., 1., 1.),
-                        Sensor,
-                    ));
+                    .insert(ItemInWorld::new(translation));
             }
             ItemLocation::Inventory | ItemLocation::PaperDoll(_) => {
                 let Some(inventory_object_id) = item.owner() else {

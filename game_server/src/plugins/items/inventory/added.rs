@@ -1,8 +1,7 @@
-use avian3d::prelude::Collider;
 use bevy::{log, prelude::*};
 use bevy_defer::{AccessError, AsyncCommandsExtension};
 use game_core::{
-    custom_hierarchy::{DespawnChildOf, DespawnChildren},
+    custom_hierarchy::DespawnChildOf,
     items::{
         self,
         model::{ActiveModelSetCoordinates, Model},
@@ -128,13 +127,7 @@ pub(super) fn add_non_stackable(
 
         if matches!(current_location, ItemLocation::World(_)) {
             new_item.set_location(ItemLocation::Inventory);
-
-            commands
-                .entity(new_item_entity)
-                .remove::<Transform>()
-                .remove::<GlobalTransform>()
-                .remove::<Collider>()
-                .remove::<DespawnChildren>();
+            ItemInWorld::move_from_world(commands.entity(new_item_entity).reborrow());
         }
 
         new_item.set_owner(Some(*owner_id));
@@ -259,11 +252,7 @@ pub(super) fn add_stackable(
             {
                 item.set_location(ItemLocation::Inventory);
                 added_counts.push((item.id(), item.count()));
-                commands
-                    .entity(new_item_entity)
-                    .remove::<Transform>()
-                    .remove::<GlobalTransform>()
-                    .remove::<DespawnChildren>();
+                ItemInWorld::move_from_world(commands.entity(new_item_entity).reborrow());
             }
 
             new_in_inventory.push(new_item_entity);

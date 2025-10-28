@@ -1,11 +1,10 @@
-use avian3d::prelude::{Collider, Sensor};
 use bevy::{log, prelude::*};
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
-        self, DropIfPossible, DropItemEvent, Inventory, Item, ItemLocation, ItemMetric,
-        ItemsDataQuery, UnequipItems, UniqueItem, UpdateType,
+        self, DropIfPossible, DropItemEvent, Inventory, Item, ItemInWorld, ItemLocation,
+        ItemMetric, ItemsDataQuery, UnequipItems, UniqueItem, UpdateType,
         model::{ActiveModelSetCoordinates, Model},
     },
     network::{
@@ -109,11 +108,9 @@ pub fn drop_item(
             item.set_owner(None);
             item.set_location(ItemLocation::World(event.location));
 
-            commands.entity(item_entity).insert((
-                Transform::from_translation(event.location),
-                Collider::cuboid(1., 1., 1.),
-                Sensor,
-            ));
+            commands
+                .entity(item_entity)
+                .insert(ItemInWorld::new(event.location));
 
             if let Some(region_entity) = world_map.get(&RegionId::from(event.location)) {
                 commands
