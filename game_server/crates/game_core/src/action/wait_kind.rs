@@ -1,6 +1,6 @@
 use crate::{
     attack::Attacking,
-    movement::{Following, MoveTarget, MoveToEntity},
+    movement::{Following, Movement},
 };
 use bevy::prelude::*;
 use bevy_enum_tag::EnumComponentTag;
@@ -37,8 +37,5 @@ pub fn sit_added(trigger: Trigger<OnAdd, Sit>, mut commands: Commands) {
 
     commands
         .entity(entity)
-        .remove::<MoveTarget>()
-        .remove::<MoveToEntity>()
-        .remove::<Following>()
-        .remove::<Attacking>();
+        .remove::<(Movement, Following, Attacking)>();
 }

@@ -217,7 +217,7 @@ fn update_floating_text_positions(
     entities_query: Query<ParentEntityData, ParentEntityFilter>,
     camera_query: Single<Ref<Transform>, (With<Camera3d>, Without<FloatingText>)>,
 ) {
-    let camera_transform = &*camera_query;
+    let camera_transform = camera_query.as_ref();
     for mut floating_text in floating_text_query.iter_mut() {
         // Get the parent entity's transform and collider
         if let Ok(parent_entity) = entities_query.get(floating_text.despawn_child_of.get()) {

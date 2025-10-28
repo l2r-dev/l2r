@@ -1,6 +1,6 @@
 use crate::{
     action::pickup::PickupRequest,
-    movement::{Following, MoveTarget, MoveToEntity},
+    movement::{Following, Movement},
     npc::DialogRequest,
 };
 use bevy::{
@@ -47,14 +47,12 @@ impl Component for Attacking {
                     world.commands().entity(target_entity).insert(target);
                 }
 
-                world
-                    .commands()
-                    .entity(ctx.entity)
-                    .remove::<MoveTarget>()
-                    .remove::<MoveToEntity>()
-                    .remove::<Following>()
-                    .remove::<PickupRequest>()
-                    .remove::<DialogRequest>();
+                world.commands().entity(ctx.entity).remove::<(
+                    Movement,
+                    Following,
+                    PickupRequest,
+                    DialogRequest,
+                )>();
             } else {
                 world.commands().entity(ctx.entity).remove::<Self>();
             }

@@ -274,7 +274,7 @@ where
     async fn create(&self, data: &T::Model) -> Result<T::Model, DbError> {
         let model = data.clone().into_active_model();
         Ok(T::insert(model)
-            .exec_with_returning(&*self.conn)
+            .exec_with_returning(self.conn.as_ref())
             .await
             .map_err(|e: sea_orm::DbErr| DbError::CreateError(e))?)
     }
@@ -282,7 +282,7 @@ where
     async fn update(&self, data: &T::ActiveModel) -> Result<(), DbError> {
         let model = data.clone();
         T::update(model)
-            .exec(&*self.conn)
+            .exec(self.conn.as_ref())
             .await
             .map_err(|e: sea_orm::DbErr| DbError::UpdateError(e))?;
         Ok(())
@@ -312,7 +312,7 @@ where
 
         T::insert(model)
             .on_conflict(on_conflict)
-            .exec(&*self.conn)
+            .exec(self.conn.as_ref())
             .await
             .map_err(DbError::CreateError)
     }
@@ -325,7 +325,7 @@ where
         let configured_update = builder_fn(update_builder);
 
         configured_update
-            .exec(&*self.conn)
+            .exec(self.conn.as_ref())
             .await
             .map_err(DbError::UpdateError)
     }
@@ -333,7 +333,7 @@ where
     async fn delete(&self, data: &T::Model) -> Result<(), DbError> {
         let model = data.clone().into_active_model();
         T::delete(model)
-            .exec(&*self.conn)
+            .exec(self.conn.as_ref())
             .await
             .map_err(|e: sea_orm::DbErr| DbError::DeleteError(e))?;
         Ok(())
@@ -341,7 +341,7 @@ where
 
     async fn delete_by_id(&self, id: PK) -> Result<(), DbError> {
         T::delete_by_id(id)
-            .exec(&*self.conn)
+            .exec(self.conn.as_ref())
             .await
             .map_err(DbError::DeleteError)?;
         Ok(())
@@ -374,14 +374,14 @@ where
         let configured_delete = builder_fn(delete_builder);
 
         configured_delete
-            .exec(&*self.conn)
+            .exec(self.conn.as_ref())
             .await
             .map_err(DbError::DeleteError)
     }
 
     async fn find_by_id(&self, id: PK) -> Result<Option<T::Model>, DbError> {
         let result = T::find_by_id(id)
-            .one(&*self.conn)
+            .one(self.conn.as_ref())
             .await
             .map_err(DbError::ReadError)?;
         Ok(result)
@@ -392,7 +392,7 @@ where
 
         for id in ids {
             if let Some(model) = T::find_by_id(id)
-                .one(&*self.conn)
+                .one(self.conn.as_ref())
                 .await
                 .map_err(DbError::ReadError)?
             {
@@ -414,7 +414,10 @@ where
             query = query.filter(condition);
         }
 
-        query.all(&*self.conn).await.map_err(DbError::ReadError)
+        query
+            .all(self.conn.as_ref())
+            .await
+            .map_err(DbError::ReadError)
     }
 
     async fn find_with_pagination(
@@ -422,7 +425,7 @@ where
         page: u64,
         page_size: u64,
     ) -> Result<(Vec<T::Model>, u64), DbError> {
-        let paginator = T::find().paginate(&*self.conn, page_size);
+        let paginator = T::find().paginate(self.conn.as_ref(), page_size);
         let num_pages = paginator
             .num_pages()
             .await
@@ -445,7 +448,7 @@ where
             .select_only()
             .column(column)
             .into_tuple()
-            .all(&*self.conn)
+            .all(self.conn.as_ref())
             .await
             .map_err(DbError::ReadError)?)
     }

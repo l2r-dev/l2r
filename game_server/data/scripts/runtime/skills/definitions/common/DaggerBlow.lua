@@ -11,7 +11,7 @@ local Attacking = req("data.scripts.game.Attacking")
 local PlaySound = req("data.scripts.packets.PlaySound")
 local Target = req("data.scripts.runtime.skills.definitions.common.Target")
 local PathFinding = req("data.scripts.game.PathFinding")
-local MoveToEntityHelper = req("data.scripts.game.MoveToEntity")
+local Movement = req("data.scripts.game.Movement")
 local PathfindingTimer = req("data.scripts.game.InActionPathfindingTimer")
 local Logger = req("data.scripts.Logger")
 Logger.set_script_name("skills.DaggerBlow")
@@ -99,8 +99,7 @@ function DaggerBlow.handle_pending_blow(entity, pending_skill, skill_definition)
 
         if distance > skill_definition.other.castRange then
             -- Check if already moving to the correct target
-            local moving_to_entity = world.get_component(entity, types.MoveToEntity)
-            if moving_to_entity ~= nil and moving_to_entity.target == target_entity then
+            if Movement.is_moving_to_entity(entity, target_entity) then
                 -- Already moving to target, continue waiting
                 return false
             end
@@ -113,7 +112,7 @@ function DaggerBlow.handle_pending_blow(entity, pending_skill, skill_definition)
 
             if can_move then
                 -- Direct line of sight, use simple movement
-                MoveToEntityHelper.insert_component(entity, target_entity, skill_definition.other.castRange)
+                Movement.to_entity(entity, target_entity, skill_definition.other.castRange)
             else
                 -- No direct line of sight, use pathfinding system with cooldown timer
                 PathfindingTimer.insert_component(entity)
@@ -172,13 +171,13 @@ function DaggerBlow.handle_pending_blow(entity, pending_skill, skill_definition)
                 Casting.insert_component(entity, target_entity, hit_time,
                     skill_ref)
                 -- Stop moving
-                world.remove_component(entity, types.MoveToEntity)
+                MovementHelper.remove(entity)
                 -- Attack after casting
                 Attacking.insert_component(entity, target_entity)
                 world.remove_component(entity, types.LuaPendingSkill)
             else
                 SystemMessage.send(entity, 24, {}) -- Not enough MP
-                world.remove_component(entity, types.MoveToEntity)
+                MovementHelper.remove(entity)
                 Attacking.insert_component(entity, target_entity)
                 world.remove_component(entity, types.LuaPendingSkill)
             end

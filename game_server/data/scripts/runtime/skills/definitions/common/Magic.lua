@@ -9,7 +9,7 @@ local Spatial = req("data.scripts.game.Spatial")
 local Attacking = req("data.scripts.game.Attacking")
 local AbnormalEffects = req("data.scripts.game.AbnormalEffects")
 local PathFinding = req("data.scripts.game.PathFinding")
-local MoveToEntityHelper = req("data.scripts.game.MoveToEntity")
+local Movement = req("data.scripts.game.Movement")
 local PathfindingTimer = req("data.scripts.game.InActionPathfindingTimer")
 
 
@@ -154,8 +154,7 @@ local function handle_pending_magic(entity, pending_skill, skill_definition)
 
     if distance > skill_definition.other.castRange then
         -- Check if already moving to the correct target
-        local moving_to_entity = world.get_component(entity, types.MoveToEntity)
-        if moving_to_entity ~= nil and moving_to_entity.target == target_entity then
+        if Movement.is_moving_to_entity(entity, target_entity) then
             -- Already moving to target, continue waiting
             return false
         end
@@ -168,7 +167,7 @@ local function handle_pending_magic(entity, pending_skill, skill_definition)
 
         if can_see then
             -- Can see target, use simple movement (magic can cast over low obstacles)
-            MoveToEntityHelper.insert_component(entity, target_entity, skill_definition.other.castRange)
+            Movement.to_entity(entity, target_entity, skill_definition.other.castRange)
         else
             -- Can't see target, use pathfinding system with cooldown timer
             PathfindingTimer.insert_component(entity)
@@ -233,7 +232,7 @@ local function handle_pending_magic(entity, pending_skill, skill_definition)
             Casting.insert_component(entity, target_entity, cast_time, pending_skill.skill_ref)
 
             -- Stop moving
-            world.remove_component(entity, types.MoveToEntity)
+            Movement.remove(entity)
 
             -- Remove pending skill
             world.remove_component(entity, types.LuaPendingSkill)
@@ -242,7 +241,7 @@ local function handle_pending_magic(entity, pending_skill, skill_definition)
             -- Not enough MP
             SystemMessage.send(entity, 24, {})
             world.remove_component(entity, types.LuaPendingSkill)
-            world.remove_component(entity, types.MoveToEntity)
+            Movement.remove(entity)
             return false
         end
     end

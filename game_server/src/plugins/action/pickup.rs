@@ -7,7 +7,7 @@ use game_core::{
     },
     active_action::ActiveAction,
     items::{AddInInventory, Item},
-    movement::{ArrivedAtWaypoint, MoveTarget, MoveToEntity},
+    movement::{ArrivedAtWaypoint, Movement},
     network::{
         broadcast::ServerPacketsBroadcast,
         packets::server::{ActionFail, GameServerPacket, GetItem},
@@ -48,7 +48,7 @@ struct CharacterQuery<'a> {
     object_id: Ref<'a, ObjectId>,
     transform: Ref<'a, Transform>,
     request: Ref<'a, PickupRequest>,
-    move_to: Option<Ref<'a, MoveToEntity>>,
+    movement: Option<Ref<'a, Movement>>,
     is_sitting: Has<Sit>,
 }
 
@@ -63,7 +63,7 @@ fn pickup_request_handler(
         if character.is_sitting {
             commands
                 .entity(character.entity)
-                .remove::<(PickupRequest, MoveToEntity)>();
+                .remove::<(PickupRequest, Movement)>();
 
             commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
 
@@ -76,7 +76,7 @@ fn pickup_request_handler(
             // Item no longer exists in world (picked up, destroyed, etc.)
             commands
                 .entity(character.entity)
-                .remove::<(PickupRequest, MoveToEntity)>();
+                .remove::<(PickupRequest, Movement)>();
 
             commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
 
@@ -99,7 +99,7 @@ fn pickup_request_handler(
                 // Can't see item - remove pickup request and continue
                 commands
                     .entity(character.entity)
-                    .remove::<(MoveToEntity, PickupRequest)>();
+                    .remove::<(Movement, PickupRequest)>();
 
                 commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
 
@@ -113,12 +113,7 @@ fn pickup_request_handler(
             // Within range and line of sight is clear - start pickup animation
             commands
                 .entity(character.entity)
-                .remove::<(
-                    PickupRequest,
-                    MoveTarget,
-                    MoveToEntity,
-                    InActionPathfindingTimer,
-                )>()
+                .remove::<(PickupRequest, Movement, InActionPathfindingTimer)>()
                 .insert(ActiveAction::new(PICKUP_ACTION_DURATION));
 
             commands.trigger_targets(
@@ -138,9 +133,10 @@ fn pickup_request_handler(
         } else {
             // Item is out of range, need to move closer
             // Check if already moving to the correct target
-            if let Some(move_to) = character.move_to
-                && move_to.target == item_entity
+            if let Some(mov) = character.movement
+                && mov.is_to_location()
             {
+                // Already moving to a location (likely the item)
                 continue;
             }
 
@@ -154,9 +150,11 @@ fn pickup_request_handler(
 
             if can_move_to {
                 // Direct line of sight, use simple movement to item location
-                commands.entity(character.entity).insert(MoveTarget::single(
-                    spatial::WayPoint::new(char_pos, item_pos),
-                ));
+                commands
+                    .entity(character.entity)
+                    .insert(Movement::to_waypoint(spatial::WayPoint::new(
+                        char_pos, item_pos,
+                    )));
             } else {
                 // No line of sight, use pathfinding via visibility check
                 commands

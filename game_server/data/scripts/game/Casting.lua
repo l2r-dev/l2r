@@ -24,7 +24,7 @@ function Casting.insert_component(caster_entity, target_entity, casting_time, sk
         data = casting_data
     }))
     -- Stop any movement the caster is doing before casting
-    world.remove_component(caster_entity, types.MoveTarget)
+    world.remove_component(caster_entity, types.Movement)
 
     local timer_mode_variant = construct(types.TimerMode, { variant = "Repeating" })
     local duration = Duration.from_millis(casting_time)

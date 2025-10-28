@@ -1,6 +1,6 @@
 use bevy::{ecs::system::ParallelCommands, log, prelude::*};
 use game_core::{
-    movement::MoveTarget,
+    movement::Movement,
     network::packets::server::{DropItem, GameServerPacket},
     object_id::ObjectId,
     path_finding::{
@@ -74,19 +74,19 @@ fn handle_pathfinding_results(path_result: Trigger<PathFindingResult>, mut comma
     let result = path_result.event();
     let requester_entity = path_result.target();
 
-    let move_target = if result.path.is_empty() {
+    let movement = if result.path.is_empty() {
         log::debug!(
             "Path is empty, using goal as move target for <{:?}>: {:?}",
             requester_entity,
             result.goal
         );
 
-        MoveTarget::single(WayPoint::new(result.start, result.goal))
+        Movement::to_waypoint(WayPoint::new(result.start, result.goal))
     } else {
-        MoveTarget::from(result.path.clone())
+        Movement::from(result.path.clone())
     };
 
-    commands.entity(requester_entity).insert(move_target);
+    commands.entity(requester_entity).insert(movement);
 }
 
 fn handle_visibility_result(
@@ -127,7 +127,7 @@ fn handle_visibility_result(
         }
         commands
             .entity(requester_entity)
-            .try_insert(MoveTarget::single(WayPoint::new(
+            .try_insert(Movement::to_waypoint(WayPoint::new(
                 result.start,
                 result.target,
             )));

@@ -12,12 +12,11 @@ use bevy::ecs::{
     system::{ParallelCommands, SystemParam},
 };
 use game_core::{
-    action::{pickup::PickupRequest, wait_kind::Sit},
+    action::wait_kind::Sit,
     active_action::{ActionFinished, ActiveAction},
     attack::{AttackHit, Dead},
     movement::{
-        ArrivedAtWaypoint, LookAt, MoveStep, MoveTarget, MoveToEntity, MovementComponentsPlugin,
-        SendStopMove,
+        ArrivedAtWaypoint, LookAt, MoveStep, Movement, MovementComponentsPlugin, SendStopMove,
     },
     network::{
         broadcast::ServerPacketBroadcast,
@@ -48,27 +47,18 @@ impl Plugin for MovementPlugin {
 
         app.add_systems(
             FixedUpdate,
-            handle_move_to_entity.in_set(GameServerStateSystems::Run),
-        );
-        app.add_systems(
-            FixedUpdate,
-            handle_move_target.in_set(GameServerStateSystems::Run),
+            handle_movement.in_set(GameServerStateSystems::Run),
         );
         app.add_systems(
             Update,
-            send_move_to_location.in_set(GameServerStateSystems::Run),
-        );
-        app.add_systems(
-            Update,
-            send_move_to_pawn_packet.in_set(GameServerStateSystems::Run),
+            send_movement_packets.in_set(GameServerStateSystems::Run),
         );
 
         app.add_observer(handle_waypoint_arrival)
             .add_observer(handle_movement_step)
             .add_observer(send_stop_move_packet)
             .add_observer(look_at_target)
-            .add_observer(move_to_target_after_action_finished)
-            .add_observer(move_to_entity_after_action_finished);
+            .add_observer(movement_after_action_finished);
     }
 }
 
@@ -80,14 +70,7 @@ struct MoveFilter {
 /// Entities changed in movement state
 #[derive(QueryFilter)]
 struct MovementChangeFilter {
-    move_target_changed: Changed<MoveTarget>,
-    not_in_action: Without<ActiveAction>,
-}
-
-// Entities changed in move-to-entity state
-#[derive(QueryFilter)]
-struct MoveToEntityChangeFilter {
-    move_to_entity_changed: Changed<MoveToEntity>,
+    movement_changed: Changed<Movement>,
     not_in_action: Without<ActiveAction>,
 }
 
@@ -101,98 +84,78 @@ struct MovementQueries<'w, 's> {
 const MOVE_TO_ENTITY_ADJUSTMENT: f32 = 3.0;
 
 #[derive(QueryData)]
-struct MoveToEntityQuery<'a> {
+struct MovementQuery<'a> {
     entity: Entity,
     object_id: Ref<'a, ObjectId>,
-    move_to_entity: Ref<'a, MoveToEntity>,
+    movement: Ref<'a, Movement>,
     transform: Ref<'a, Transform>,
     is_sitting: Has<Sit>,
     is_dead: Has<Dead>,
 }
 
-fn handle_move_to_entity(
+fn handle_movement(
     queries: MovementQueries,
-    query: Query<MoveToEntityQuery, MoveFilter>,
+    query: Query<MovementQuery, MoveFilter>,
     par_commands: ParallelCommands,
 ) {
-    query.par_iter().for_each(|moving| {
-        assert!(!moving.is_sitting);
-        assert!(!moving.is_dead);
+    query
+        .par_iter()
+        .for_each(|moving| match moving.movement.as_ref() {
+            Movement::ToEntity { target, range } => {
+                if let Ok(target_transform) = queries.transforms.get(*target) {
+                    let distance = moving
+                        .transform
+                        .translation
+                        .flat_distance(&target_transform.translation)
+                        + MOVE_TO_ENTITY_ADJUSTMENT;
 
-        if let Ok(target_transform) = queries.transforms.get(moving.move_to_entity.target) {
-            let distance = moving
-                .transform
-                .translation
-                .flat_distance(&target_transform.translation)
-                + MOVE_TO_ENTITY_ADJUSTMENT;
-
-            if distance > moving.move_to_entity.range {
-                par_commands.command_scope(|mut commands| {
-                    commands.trigger_targets(MoveStep, moving.entity);
-                });
+                    if distance > *range {
+                        par_commands.command_scope(|mut commands| {
+                            commands.trigger_targets(MoveStep, moving.entity);
+                        });
+                    }
+                } else {
+                    par_commands.command_scope(|mut commands| {
+                        commands.entity(moving.entity).remove::<Movement>();
+                    });
+                }
             }
-        } else {
-            par_commands.command_scope(|mut commands| {
-                commands.entity(moving.entity).remove::<MoveToEntity>();
-            });
-        }
-    });
-}
+            Movement::ToLocation { waypoints } => {
+                if waypoints.is_empty() {
+                    return;
+                }
 
-#[derive(QueryData)]
-struct MovementTargetQuery<'a> {
-    entity: Entity,
-    object_id: Ref<'a, ObjectId>,
-    move_target: Ref<'a, MoveTarget>,
-    transform: Ref<'a, Transform>,
-    pickup_request: Option<Ref<'a, PickupRequest>>,
-    is_sitting: Has<Sit>,
-    is_dead: Has<Dead>,
-}
+                if let Some(current_wp) = waypoints.front() {
+                    let distance = if let Ok(movable) = queries.movable_query.get(moving.entity)
+                        && (movable.in_water() || movable.is_flying())
+                    {
+                        moving.transform.translation.distance(*current_wp.target())
+                    } else {
+                        moving
+                            .transform
+                            .translation
+                            .flat_distance(current_wp.target())
+                    };
 
-fn handle_move_target(
-    queries: MovementQueries,
-    query: Query<MovementTargetQuery, MoveFilter>,
-    par_commands: ParallelCommands,
-) {
-    query.par_iter().for_each(|moving| {
-        assert!(!moving.is_sitting);
-        assert!(!moving.is_dead);
-
-        if moving.move_target.is_empty() {
-            return;
-        }
-
-        if let Some(current_wp) = moving.move_target.front() {
-            let distance = if let Ok(movable) = queries.movable_query.get(moving.entity)
-                && (movable.in_water() || movable.is_flying())
-            {
-                moving.transform.translation.distance(*current_wp.target())
-            } else {
-                moving
-                    .transform
-                    .translation
-                    .flat_distance(current_wp.target())
-            };
-
-            if distance <= ARRIVAL_DISTANCE {
-                par_commands.command_scope(|mut commands| {
-                    commands.trigger_targets(ArrivedAtWaypoint, moving.entity);
-                });
-            } else {
-                par_commands.command_scope(|mut commands| {
-                    commands.trigger_targets(MoveStep, moving.entity);
-                });
+                    if distance <= ARRIVAL_DISTANCE {
+                        par_commands.command_scope(|mut commands| {
+                            commands.trigger_targets(ArrivedAtWaypoint, moving.entity);
+                        });
+                    } else {
+                        par_commands.command_scope(|mut commands| {
+                            commands.trigger_targets(MoveStep, moving.entity);
+                        });
+                    }
+                }
             }
-        }
-    });
+        });
 }
 
 #[derive(QueryData)]
 #[query_data(mutable)]
 struct WaypointArrivalQuery<'a> {
     movable: Mut<'a, Movable>,
-    move_target: Mut<'a, MoveTarget>,
+    movement: Mut<'a, Movement>,
     transform: Ref<'a, Transform>,
     is_sitting: Has<Sit>,
     is_dead: Has<Dead>,
@@ -204,19 +167,18 @@ fn handle_waypoint_arrival(
     mut query: Query<WaypointArrivalQuery>,
 ) {
     let entity = arrived.target();
-    if let Ok(mut arriving) = query.get_mut(entity) {
-        assert!(!arriving.is_sitting);
-        assert!(!arriving.is_dead);
-
-        arriving.move_target.pop_front();
+    if let Ok(mut arriving) = query.get_mut(entity)
+        && let Some(waypoints) = arriving.movement.waypoints_mut()
+    {
+        waypoints.pop_front();
         arriving.movable.reset_steps();
 
-        if let Some(next_wp) = arriving.move_target.front_mut() {
+        if let Some(next_wp) = waypoints.front_mut() {
             if *next_wp.origin() != arriving.transform.translation {
                 next_wp.set_origin(arriving.transform.translation);
             }
         } else {
-            commands.entity(entity).remove::<MoveTarget>();
+            commands.entity(entity).remove::<Movement>();
         }
     }
 }
@@ -238,8 +200,7 @@ struct MovablesFilter {
 #[query_data(mutable)]
 struct MovablesQuery<'a> {
     movable: Mut<'a, Movable>,
-    move_target: Option<Mut<'a, MoveTarget>>,
-    move_to_entity: Option<Ref<'a, MoveToEntity>>,
+    movement: Option<Mut<'a, Movement>>,
     is_sitting: Has<Sit>,
     is_dead: Has<Dead>,
 }
@@ -252,25 +213,26 @@ fn handle_movement_step(
 ) {
     let entity = step.target();
     if let Ok(mut movables) = queries.movables.get_mut(entity) {
-        assert!(!movables.is_sitting);
-        assert!(!movables.is_dead);
+        let Some(ref mut movement) = movables.movement else {
+            return; // No movement component
+        };
 
-        let moving_to_entity = movables.move_to_entity.is_some();
-        let mut target_pos = if let Some(move_to) = movables.move_to_entity {
-            if let Ok((_, target_transform)) = queries.transforms.get(move_to.target) {
-                target_transform.translation
-            } else {
-                commands.entity(entity).remove::<MoveToEntity>();
-                return;
+        let mut target_pos = match movement.as_ref() {
+            Movement::ToEntity { target, .. } => {
+                if let Ok((_, target_transform)) = queries.transforms.get(*target) {
+                    target_transform.translation
+                } else {
+                    commands.entity(entity).remove::<Movement>();
+                    return;
+                }
             }
-        } else if let Some(move_target) = movables.move_target.as_ref() {
-            if let Some(next_wp) = move_target.front() {
-                *next_wp.target()
-            } else {
-                return; // No waypoints; should not happen due to move_entity logic
+            Movement::ToLocation { waypoints } => {
+                if let Some(next_wp) = waypoints.front() {
+                    *next_wp.target()
+                } else {
+                    return; // No waypoints
+                }
             }
-        } else {
-            return; // Neither component present; should not happen
         };
 
         let Ok((object_id, mut transform)) = queries.transforms.get_mut(entity) else {
@@ -319,14 +281,7 @@ fn handle_movement_step(
         });
 
         if !can_move {
-            if movables.move_target.is_some() {
-                if let Some(mut move_target) = movables.move_target {
-                    move_target.clear();
-                }
-            } else if moving_to_entity {
-                commands.entity(entity).remove::<MoveToEntity>();
-            }
-
+            commands.entity(entity).remove::<Movement>();
             commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
             let stop_move = StopMove::new(*object_id, *transform);
             commands.trigger_targets(ServerPacketBroadcast::new(stop_move.into()), entity);
@@ -335,8 +290,8 @@ fn handle_movement_step(
 
         transform.translation = new_position;
 
-        if let Some(move_target) = movables.move_target.as_ref()
-            && let Some(wp) = move_target.front()
+        if let Some(Movement::ToLocation { waypoints }) = movables.movement.as_deref()
+            && let Some(wp) = waypoints.front()
         {
             let wp_pos = wp.target();
 
@@ -353,81 +308,64 @@ fn handle_movement_step(
     }
 }
 
-fn send_move_to_location(
-    movable_objects: Query<MovementTargetQuery, MovementChangeFilter>,
+fn send_movement_packets(
+    movable_objects: Query<MovementQuery, MovementChangeFilter>,
+    targets: Query<TransformObjectQuery>,
     mut commands: Commands,
 ) {
     for movement_data in &movable_objects {
         log::trace!(
-            "Move target changed by {:?}",
-            movement_data.move_target.changed_by()
+            "Movement changed by {:?}",
+            movement_data.movement.changed_by()
         );
 
-        assert!(!movement_data.is_sitting);
-        assert!(!movement_data.is_dead);
+        commands.entity(movement_data.entity).remove::<AttackHit>();
 
-        type ConflictingComponents = (MoveToEntity, AttackHit);
-
-        if let Some(wp) = movement_data.move_target.front() {
-            commands
-                .entity(movement_data.entity)
-                .remove::<ConflictingComponents>();
-
-            let packet = MoveToLocation::new(*movement_data.object_id, *wp.origin(), *wp.target());
-            commands.trigger_targets(
-                ServerPacketBroadcast::new(packet.into()),
-                movement_data.entity,
-            );
+        match movement_data.movement.as_ref() {
+            Movement::ToLocation { waypoints } => {
+                if let Some(wp) = waypoints.front() {
+                    let packet =
+                        MoveToLocation::new(*movement_data.object_id, *wp.origin(), *wp.target());
+                    commands.trigger_targets(
+                        ServerPacketBroadcast::new(packet.into()),
+                        movement_data.entity,
+                    );
+                }
+            }
+            Movement::ToEntity { target, range } => {
+                if let Ok(target_data) = targets.get(*target) {
+                    let packet = MoveToPawn::new(
+                        *movement_data.object_id,
+                        *target_data.object_id,
+                        movement_data.transform.translation,
+                        target_data.transform.translation,
+                        *range as u32,
+                    );
+                    commands.trigger_targets(
+                        ServerPacketBroadcast::new(packet.into()),
+                        movement_data.entity,
+                    );
+                } else {
+                    commands.entity(movement_data.entity).remove::<Movement>();
+                }
+            }
         }
     }
 }
 
-fn move_to_target_after_action_finished(
+fn movement_after_action_finished(
     _action_finished: Trigger<ActionFinished>,
-    movable_objects: Query<MovementTargetQuery, MovementChangeFilter>,
+    movable_objects: Query<MovementQuery, MovementChangeFilter>,
+    targets: Query<TransformObjectQuery>,
     commands: Commands,
 ) {
-    send_move_to_location(movable_objects, commands);
+    send_movement_packets(movable_objects, targets, commands);
 }
 
 #[derive(QueryData)]
 pub struct TransformObjectQuery<'a> {
     pub object_id: Ref<'a, ObjectId>,
     pub transform: Ref<'a, Transform>,
-}
-
-fn move_to_entity_after_action_finished(
-    _action_finished: Trigger<ActionFinished>,
-    move_to_entity: Query<MoveToEntityQuery, MoveToEntityChangeFilter>,
-    targets: Query<TransformObjectQuery>,
-    commands: Commands,
-) {
-    send_move_to_pawn_packet(commands, move_to_entity, targets);
-}
-
-fn send_move_to_pawn_packet(
-    mut commands: Commands,
-    move_to_entity: Query<MoveToEntityQuery, MoveToEntityChangeFilter>,
-    targets: Query<TransformObjectQuery>,
-) {
-    for move_data in &move_to_entity {
-        assert!(!move_data.is_sitting);
-        assert!(!move_data.is_dead);
-
-        if let Ok(target_data) = targets.get(move_data.move_to_entity.target) {
-            commands.entity(move_data.entity).remove::<MoveTarget>();
-            let packet = MoveToPawn::new(
-                *move_data.object_id,
-                *target_data.object_id,
-                move_data.transform.translation,
-                target_data.transform.translation,
-                move_data.move_to_entity.range as u32,
-            );
-            commands.trigger_targets(ServerPacketBroadcast::new(packet.into()), move_data.entity);
-        } else {
-            commands.entity(move_data.entity).remove::<MoveToEntity>();
-        }
-    }
 }
 
 pub fn send_stop_move_packet(

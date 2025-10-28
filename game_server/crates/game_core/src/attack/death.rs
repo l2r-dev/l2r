@@ -2,7 +2,7 @@ use crate::{
     action::pickup::PickupRequest,
     active_action::ActiveAction,
     attack::Attacking,
-    movement::{Following, MoveTarget, MoveToEntity},
+    movement::{Following, Movement},
     npc::DialogRequest,
     player_specific::next_intention::NextIntention,
 };
@@ -42,17 +42,15 @@ impl Component for Dead {
                 _ => return,
             }
 
-            world
-                .commands()
-                .entity(ctx.entity)
-                .remove::<MoveTarget>()
-                .remove::<MoveToEntity>()
-                .remove::<Following>()
-                .remove::<Attacking>()
-                .remove::<ActiveAction>()
-                .remove::<NextIntention>()
-                .remove::<PickupRequest>()
-                .remove::<DialogRequest>();
+            world.commands().entity(ctx.entity).remove::<(
+                Movement,
+                Following,
+                Attacking,
+                ActiveAction,
+                NextIntention,
+                PickupRequest,
+                DialogRequest,
+            )>();
         })
     }
 }

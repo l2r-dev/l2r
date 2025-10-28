@@ -103,8 +103,8 @@ fn handle_equip_items(
                 Some(UniqueItem::new(item_object_id, *item)),
                 item_info,
                 (
-                    &*items_data_query.items_data_assets,
-                    &*items_data_query.items_data_table,
+                    items_data_query.items_data_assets.as_ref(),
+                    items_data_query.items_data_table.as_ref(),
                 ),
             );
 

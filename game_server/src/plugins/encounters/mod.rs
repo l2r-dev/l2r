@@ -12,7 +12,7 @@ use game_core::{
     character::{self},
     encounters::*,
     items::{Item, ItemsDataQuery},
-    movement::{MoveTarget, MoveToEntity},
+    movement::Movement,
     network::packets::server::{
         CharInfo, DeleteObject, GameServerPacket, MoveToLocation, MoveToPawn, NpcInfo, SpawnItem,
         StatusUpdate, StatusUpdateKind,
@@ -173,16 +173,10 @@ struct ItemQuery<'a> {
 }
 
 #[derive(QueryData)]
-struct MoveTargetQuery<'a> {
-    object_id: Ref<'a, ObjectId>,
-    move_target: Ref<'a, MoveTarget>,
-}
-
-#[derive(QueryData)]
-struct MoveToEntityQuery<'a> {
+struct MovementQuery<'a> {
     object_id: Ref<'a, ObjectId>,
     transform: Ref<'a, Transform>,
-    move_to_entity: Ref<'a, MoveToEntity>,
+    movement: Ref<'a, Movement>,
 }
 
 #[derive(QueryData)]
@@ -197,8 +191,7 @@ struct KnownAddedParams<'w, 's> {
     npcs: Query<'w, 's, npc::NpcQuery<'static>>,
     npc_info: RegionalNpcInfoQuery<'w, 's>,
     items: Query<'w, 's, ItemQuery<'static>, With<Collider>>,
-    move_targets: Query<'w, 's, MoveTargetQuery<'static>>,
-    move_to_entity: Query<'w, 's, MoveToEntityQuery<'static>>,
+    movement: Query<'w, 's, MovementQuery<'static>>,
     object_transforms: Query<'w, 's, ObjectTransformQuery<'static>>,
     items_data_query: ItemsDataQuery<'w>,
     stats_table: StatsTableQuery<'w>,
@@ -292,35 +285,35 @@ fn handle_known_added(
     }
 
     // New known may moving right now
-    if let Ok(move_target_query) = params.move_targets.get(known)
-        && let Some(wp) = move_target_query.move_target.front()
-    {
-        commands.trigger_targets(
-            GameServerPacket::from(MoveToLocation::new(
-                *move_target_query.object_id,
-                *wp.origin(),
-                *wp.target(),
-            )),
-            knower,
-        );
-    }
-
-    // New known may moving to another entity right now
-    if let Ok(move_to_query) = params.move_to_entity.get(known)
-        && let Ok(target_query) = params
-            .object_transforms
-            .get(move_to_query.move_to_entity.target)
-    {
-        commands.trigger_targets(
-            GameServerPacket::from(MoveToPawn::new(
-                *move_to_query.object_id,
-                *target_query.object_id,
-                move_to_query.transform.translation,
-                target_query.transform.translation,
-                move_to_query.move_to_entity.range as u32,
-            )),
-            knower,
-        );
+    if let Ok(movement_query) = params.movement.get(known) {
+        match movement_query.movement.as_ref() {
+            Movement::ToLocation { waypoints } => {
+                if let Some(wp) = waypoints.front() {
+                    commands.trigger_targets(
+                        GameServerPacket::from(MoveToLocation::new(
+                            *movement_query.object_id,
+                            *wp.origin(),
+                            *wp.target(),
+                        )),
+                        knower,
+                    );
+                }
+            }
+            Movement::ToEntity { target, range } => {
+                if let Ok(target_data) = params.object_transforms.get(*target) {
+                    commands.trigger_targets(
+                        GameServerPacket::from(MoveToPawn::new(
+                            *movement_query.object_id,
+                            *target_data.object_id,
+                            movement_query.transform.translation,
+                            target_data.transform.translation,
+                            *range as u32,
+                        )),
+                        knower,
+                    );
+                }
+            }
+        }
     }
 
     Ok(())
