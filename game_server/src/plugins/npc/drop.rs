@@ -1,3 +1,4 @@
+use avian3d::prelude::{Collider, Sensor};
 use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use bevy_ecs::system::SystemParam;
@@ -91,6 +92,8 @@ pub fn generate_drop_request_handler(
         commands.spawn((
             UniqueItem::from_model(new_item, item_info),
             Transform::from_translation(location),
+            Collider::cuboid(1., 1., 1.),
+            Sensor,
         ));
 
         let drop_item = DropItem::new(

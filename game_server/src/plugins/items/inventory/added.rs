@@ -1,8 +1,8 @@
+use avian3d::prelude::Collider;
 use bevy::{log, prelude::*};
 use bevy_defer::{AccessError, AsyncCommandsExtension};
 use game_core::{
     custom_hierarchy::{DespawnChildOf, DespawnChildren},
-    encounters::KnownEntities,
     items::{
         self,
         model::{ActiveModelSetCoordinates, Model},
@@ -133,15 +133,13 @@ pub(super) fn add_non_stackable(
                 .entity(new_item_entity)
                 .remove::<Transform>()
                 .remove::<GlobalTransform>()
+                .remove::<Collider>()
                 .remove::<DespawnChildren>();
         }
 
         new_item.set_owner(Some(*owner_id));
 
         inventory.insert(*new_item_oid);
-
-        // remove KnownEntities component from the item entity to hide from the client
-        commands.entity(new_item_entity).remove::<KnownEntities>();
 
         let unique_item = UniqueItem::new(*new_item_oid, *new_item);
         items_to_add.push(unique_item);

@@ -10,7 +10,6 @@ use game_core::{
         model,
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
-    stats::EncountersVisibility,
 };
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
@@ -142,12 +141,7 @@ pub fn spawn_existing_item_handle(
             .item_mut()
             .set_dropped_entity(event.dropped_entity);
 
-        let mut entity_commands = commands.spawn((
-            unique_item,
-            EncountersVisibility::default(),
-            Sensor,
-            Collider::cuboid(1., 1., 1.),
-        ));
+        let mut entity_commands = commands.spawn(unique_item);
         if event.silent {
             entity_commands.insert(SilentSpawn);
         }
@@ -185,7 +179,11 @@ fn handle_newly_spawned_items(
                 }
                 commands
                     .entity(item_entity)
-                    .insert(Transform::from_translation(translation));
+                    .insert((
+                        Transform::from_translation(translation),
+                        Collider::cuboid(1., 1., 1.),
+                        Sensor,
+                    ));
             }
             ItemLocation::Inventory | ItemLocation::PaperDoll(_) => {
                 let Some(inventory_object_id) = item.owner() else {

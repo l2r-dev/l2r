@@ -7,7 +7,7 @@ use super::{
 use crate::{
     items::{self, DollSlot},
     object_id::ObjectId,
-    stats::ItemElementsInfo,
+    stats::{EncountersVisibility, ItemElementsInfo},
 };
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
@@ -77,7 +77,7 @@ impl PartialEq for UniqueItem {
 }
 
 #[derive(Clone, Component, Copy, Debug, Deserialize, Reflect)]
-#[require(Name::new("Item".to_string()))]
+#[require(Name::new("Item"), EncountersVisibility::default())]
 pub struct Item {
     id: Id,
     display_id: Id,

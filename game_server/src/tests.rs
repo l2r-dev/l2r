@@ -275,7 +275,7 @@ pub fn test_character_bundle_data(id: ObjectId) -> character::Bundle {
         transform: Transform::from_translation(start_location.into()),
         paper_doll: PaperDoll::default(),
         delete_timer: character::DeleteTimer::default(),
-        visibility: EncountersVisibility::EncountersVisibility,
+        visibility: EncountersVisibility::default(),
         skill_list: SkillList::default(),
         known_entities: KnownEntities::default(),
         inventory: Inventory::default(),
