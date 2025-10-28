@@ -1,7 +1,9 @@
 use bevy::prelude::*;
+use bevy_ecs::query::QueryData;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     admin_menu::AdminMenuCommand,
+    attack::Immortal,
     character, items,
     network::{
         config::GameServerNetworkConfig,
@@ -24,12 +26,20 @@ impl Plugin for BuildCommandsPlugin {
     }
 }
 
+#[derive(QueryData)]
+struct EntityQuery<'a> {
+    entity: Entity,
+    object_id: Ref<'a, ObjectId>,
+    transform: Ref<'a, Transform>,
+    name: Option<Ref<'a, Name>>,
+    is_immortal: Has<Immortal>,
+}
+
 fn handle_packet(
     receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
     sessions: Res<ServerSessions>,
     character_tables: Query<Ref<character::Table>>,
-    entities: Query<(&ObjectId, &Transform)>,
-    named_entities: Query<(&ObjectId, &Transform, &Name)>,
+    entities: Query<EntityQuery>,
     world: &World,
     mut commands: Commands,
 ) -> Result {
@@ -59,21 +69,21 @@ fn handle_packet(
             commands.trigger_targets(
                 npc::Spawn {
                     id: *npc_id,
-                    transform: *entities.get(initiator_entity)?.1,
+                    transform: *entities.get(initiator_entity)?.transform,
                 },
                 initiator_entity,
             );
         }
 
         DoubleSlashCommand::GoTo { target_obj_id } => {
-            if let Some((_, transform)) = entities
+            if let Some(entity) = entities
                 .iter()
-                .find(|(candidate_object_id, _)| *candidate_object_id == target_obj_id)
+                .find(|candidate| *candidate.object_id == *target_obj_id)
             {
                 commands.trigger_targets(
                     TeleportToLocation::new(
                         *initiator_object_id,
-                        *transform,
+                        *entity.transform,
                         TeleportType::default(),
                     ),
                     initiator_entity,
@@ -93,14 +103,17 @@ fn handle_packet(
         }
 
         DoubleSlashCommand::TeleportTo { target_name } => {
-            if let Some((_, transform, _)) = named_entities
-                .iter()
-                .find(|(_, _, candidate_name)| candidate_name.as_str() == target_name)
-            {
+            if let Some(entity) = entities.iter().find(|candidate| {
+                if let Some(name) = &candidate.name {
+                    name.as_str() == target_name
+                } else {
+                    false
+                }
+            }) {
                 commands.trigger_targets(
                     TeleportToLocation::new(
                         *initiator_object_id,
-                        *transform,
+                        *entity.transform,
                         TeleportType::default(),
                     ),
                     initiator_entity,
@@ -124,7 +137,7 @@ fn handle_packet(
                 commands.trigger_targets(
                     npc::Spawn {
                         id: (*id - NPC_ID_OFFSET).into(),
-                        transform: *entities.get(initiator_entity)?.1,
+                        transform: *entities.get(initiator_entity)?.transform,
                     },
                     initiator_entity,
                 );
@@ -144,6 +157,14 @@ fn handle_packet(
                 ),
                 initiator_entity,
             );
+        }
+
+        DoubleSlashCommand::Immortal => {
+            if entities.get(initiator_entity)?.is_immortal {
+                commands.entity(initiator_entity).remove::<Immortal>();
+            } else {
+                commands.entity(initiator_entity).insert(Immortal);
+            }
         }
     }
 

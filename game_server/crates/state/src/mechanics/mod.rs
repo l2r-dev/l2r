@@ -34,6 +34,11 @@ fn configure_game_mechanics_sets(app: &mut App, schedule: impl ScheduleLabel) {
             GameMechanicsSystems::Items
                 .after(GameMechanicsSystems::Attacking)
                 .in_set(GameServerSystems::Mechanics),
+            GameMechanicsSystems::NextIntention
+                .after(GameMechanicsSystems::Attacking)
+                .after(GameMechanicsSystems::Skills)
+                .after(GameMechanicsSystems::Items)
+                .in_set(GameServerSystems::Mechanics),
         ),
     );
 }
@@ -45,4 +50,5 @@ pub enum GameMechanicsSystems {
     AbnormalUpdates,
     StatsCalculation,
     Attacking,
+    NextIntention,
 }

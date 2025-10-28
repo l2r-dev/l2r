@@ -13,7 +13,7 @@ use bevy::ecs::{
 };
 use game_core::{
     action::{pickup::PickupRequest, wait_kind::Sit},
-    animation::{Animation, AnimationFinished},
+    active_action::{ActionFinished, ActiveAction},
     attack::{AttackHit, Dead},
     movement::{
         ArrivedAtWaypoint, LookAt, MoveStep, MoveTarget, MoveToEntity, MovementComponentsPlugin,
@@ -46,7 +46,14 @@ impl Plugin for MovementPlugin {
             .add_plugins(walk_run::WalkRunPlugin)
             .add_plugins(swimming::SwimmingPlugin);
 
-        app.add_systems(FixedUpdate, move_entity.in_set(GameServerStateSystems::Run));
+        app.add_systems(
+            FixedUpdate,
+            handle_move_to_entity.in_set(GameServerStateSystems::Run),
+        );
+        app.add_systems(
+            FixedUpdate,
+            handle_move_target.in_set(GameServerStateSystems::Run),
+        );
         app.add_systems(
             Update,
             send_move_to_location.in_set(GameServerStateSystems::Run),
@@ -60,41 +67,28 @@ impl Plugin for MovementPlugin {
             .add_observer(handle_movement_step)
             .add_observer(send_stop_move_packet)
             .add_observer(look_at_target)
-            .add_observer(move_to_target_after_animation)
-            .add_observer(move_to_entity_after_animation);
+            .add_observer(move_to_target_after_action_finished)
+            .add_observer(move_to_entity_after_action_finished);
     }
 }
 
 #[derive(QueryFilter)]
 struct MoveFilter {
-    not_animating: Without<Animation>,
-    not_dead: Without<Dead>,
-    not_sitting: Without<Sit>,
+    not_in_action: Without<ActiveAction>,
 }
 
 /// Entities changed in movement state
 #[derive(QueryFilter)]
 struct MovementChangeFilter {
     move_target_changed: Changed<MoveTarget>,
-    not_animating: Without<Animation>,
-    not_dead: Without<Dead>,
+    not_in_action: Without<ActiveAction>,
 }
 
 // Entities changed in move-to-entity state
 #[derive(QueryFilter)]
 struct MoveToEntityChangeFilter {
     move_to_entity_changed: Changed<MoveToEntity>,
-    not_animating: Without<Animation>,
-    not_dead: Without<Dead>,
-    not_sitting: Without<Sit>,
-}
-
-#[derive(QueryData)]
-struct MoveQuery<'a> {
-    entity: Entity,
-    transform: Ref<'a, Transform>,
-    move_target: Option<Ref<'a, MoveTarget>>,
-    move_to_entity: Option<Ref<'a, MoveToEntity>>,
+    not_in_action: Without<ActiveAction>,
 }
 
 #[derive(SystemParam)]
@@ -106,56 +100,89 @@ struct MovementQueries<'w, 's> {
 // Move a bit closer to avoid arrival distance issues
 const MOVE_TO_ENTITY_ADJUSTMENT: f32 = 3.0;
 
-fn move_entity(
+#[derive(QueryData)]
+struct MoveToEntityQuery<'a> {
+    entity: Entity,
+    object_id: Ref<'a, ObjectId>,
+    move_to_entity: Ref<'a, MoveToEntity>,
+    transform: Ref<'a, Transform>,
+    is_sitting: Has<Sit>,
+    is_dead: Has<Dead>,
+}
+
+fn handle_move_to_entity(
     queries: MovementQueries,
-    query: Query<MoveQuery, MoveFilter>,
+    query: Query<MoveToEntityQuery, MoveFilter>,
     par_commands: ParallelCommands,
 ) {
     query.par_iter().for_each(|moving| {
-        if let Some(move_to) = moving.move_to_entity {
-            if let Ok(target_transform) = queries.transforms.get(move_to.target) {
-                let distance = moving
-                    .transform
-                    .translation
-                    .flat_distance(&target_transform.translation)
-                    + MOVE_TO_ENTITY_ADJUSTMENT;
+        assert!(!moving.is_sitting);
+        assert!(!moving.is_dead);
 
-                if distance > move_to.range {
-                    par_commands.command_scope(|mut commands| {
-                        commands.trigger_targets(MoveStep, moving.entity);
-                    });
-                }
-            } else {
+        if let Ok(target_transform) = queries.transforms.get(moving.move_to_entity.target) {
+            let distance = moving
+                .transform
+                .translation
+                .flat_distance(&target_transform.translation)
+                + MOVE_TO_ENTITY_ADJUSTMENT;
+
+            if distance > moving.move_to_entity.range {
                 par_commands.command_scope(|mut commands| {
-                    commands.entity(moving.entity).remove::<MoveToEntity>();
+                    commands.trigger_targets(MoveStep, moving.entity);
                 });
             }
-        } else if let Some(move_target) = moving.move_target {
-            if move_target.is_empty() {
-                return;
-            }
+        } else {
+            par_commands.command_scope(|mut commands| {
+                commands.entity(moving.entity).remove::<MoveToEntity>();
+            });
+        }
+    });
+}
 
-            if let Some(current_wp) = move_target.front() {
-                let distance = if let Ok(movable) = queries.movable_query.get(moving.entity)
-                    && (movable.in_water() || movable.is_flying())
-                {
-                    moving.transform.translation.distance(*current_wp.target())
-                } else {
-                    moving
-                        .transform
-                        .translation
-                        .flat_distance(current_wp.target())
-                };
+#[derive(QueryData)]
+struct MovementTargetQuery<'a> {
+    entity: Entity,
+    object_id: Ref<'a, ObjectId>,
+    move_target: Ref<'a, MoveTarget>,
+    transform: Ref<'a, Transform>,
+    pickup_request: Option<Ref<'a, PickupRequest>>,
+    is_sitting: Has<Sit>,
+    is_dead: Has<Dead>,
+}
 
-                if distance <= ARRIVAL_DISTANCE {
-                    par_commands.command_scope(|mut commands| {
-                        commands.trigger_targets(ArrivedAtWaypoint, moving.entity);
-                    });
-                } else {
-                    par_commands.command_scope(|mut commands| {
-                        commands.trigger_targets(MoveStep, moving.entity);
-                    });
-                }
+fn handle_move_target(
+    queries: MovementQueries,
+    query: Query<MovementTargetQuery, MoveFilter>,
+    par_commands: ParallelCommands,
+) {
+    query.par_iter().for_each(|moving| {
+        assert!(!moving.is_sitting);
+        assert!(!moving.is_dead);
+
+        if moving.move_target.is_empty() {
+            return;
+        }
+
+        if let Some(current_wp) = moving.move_target.front() {
+            let distance = if let Ok(movable) = queries.movable_query.get(moving.entity)
+                && (movable.in_water() || movable.is_flying())
+            {
+                moving.transform.translation.distance(*current_wp.target())
+            } else {
+                moving
+                    .transform
+                    .translation
+                    .flat_distance(current_wp.target())
+            };
+
+            if distance <= ARRIVAL_DISTANCE {
+                par_commands.command_scope(|mut commands| {
+                    commands.trigger_targets(ArrivedAtWaypoint, moving.entity);
+                });
+            } else {
+                par_commands.command_scope(|mut commands| {
+                    commands.trigger_targets(MoveStep, moving.entity);
+                });
             }
         }
     });
@@ -167,6 +194,8 @@ struct WaypointArrivalQuery<'a> {
     movable: Mut<'a, Movable>,
     move_target: Mut<'a, MoveTarget>,
     transform: Ref<'a, Transform>,
+    is_sitting: Has<Sit>,
+    is_dead: Has<Dead>,
 }
 
 fn handle_waypoint_arrival(
@@ -176,6 +205,9 @@ fn handle_waypoint_arrival(
 ) {
     let entity = arrived.target();
     if let Ok(mut arriving) = query.get_mut(entity) {
+        assert!(!arriving.is_sitting);
+        assert!(!arriving.is_dead);
+
         arriving.move_target.pop_front();
         arriving.movable.reset_steps();
 
@@ -199,9 +231,7 @@ struct MovementStepQueries<'w, 's> {
 
 #[derive(QueryFilter)]
 struct MovablesFilter {
-    not_dead: Without<Dead>,
-    not_sitting: Without<Sit>,
-    not_animating: Without<Animation>,
+    not_animating: Without<ActiveAction>,
 }
 
 #[derive(QueryData)]
@@ -210,6 +240,8 @@ struct MovablesQuery<'a> {
     movable: Mut<'a, Movable>,
     move_target: Option<Mut<'a, MoveTarget>>,
     move_to_entity: Option<Ref<'a, MoveToEntity>>,
+    is_sitting: Has<Sit>,
+    is_dead: Has<Dead>,
 }
 
 /// Moves entity one step toward its target, handling collisions and height.
@@ -220,6 +252,9 @@ fn handle_movement_step(
 ) {
     let entity = step.target();
     if let Ok(mut movables) = queries.movables.get_mut(entity) {
+        assert!(!movables.is_sitting);
+        assert!(!movables.is_dead);
+
         let moving_to_entity = movables.move_to_entity.is_some();
         let mut target_pos = if let Some(move_to) = movables.move_to_entity {
             if let Ok((_, target_transform)) = queries.transforms.get(move_to.target) {
@@ -318,14 +353,6 @@ fn handle_movement_step(
     }
 }
 
-#[derive(QueryData)]
-struct MovementTargetQuery<'a> {
-    entity: Entity,
-    object_id: Ref<'a, ObjectId>,
-    move_target: Ref<'a, MoveTarget>,
-    pickup_request: Option<Ref<'a, PickupRequest>>,
-}
-
 fn send_move_to_location(
     movable_objects: Query<MovementTargetQuery, MovementChangeFilter>,
     mut commands: Commands,
@@ -335,6 +362,10 @@ fn send_move_to_location(
             "Move target changed by {:?}",
             movement_data.move_target.changed_by()
         );
+
+        assert!(!movement_data.is_sitting);
+        assert!(!movement_data.is_dead);
+
         type ConflictingComponents = (MoveToEntity, AttackHit);
 
         if let Some(wp) = movement_data.move_target.front() {
@@ -351,20 +382,12 @@ fn send_move_to_location(
     }
 }
 
-fn move_to_target_after_animation(
-    _animation_finished: Trigger<AnimationFinished>,
+fn move_to_target_after_action_finished(
+    _action_finished: Trigger<ActionFinished>,
     movable_objects: Query<MovementTargetQuery, MovementChangeFilter>,
     commands: Commands,
 ) {
     send_move_to_location(movable_objects, commands);
-}
-
-#[derive(QueryData)]
-struct MoveToEntityQuery<'a> {
-    entity: Entity,
-    object_id: Ref<'a, ObjectId>,
-    move_to_entity: Ref<'a, MoveToEntity>,
-    transform: Ref<'a, Transform>,
 }
 
 #[derive(QueryData)]
@@ -373,8 +396,8 @@ pub struct TransformObjectQuery<'a> {
     pub transform: Ref<'a, Transform>,
 }
 
-fn move_to_entity_after_animation(
-    _animation_finished: Trigger<AnimationFinished>,
+fn move_to_entity_after_action_finished(
+    _action_finished: Trigger<ActionFinished>,
     move_to_entity: Query<MoveToEntityQuery, MoveToEntityChangeFilter>,
     targets: Query<TransformObjectQuery>,
     commands: Commands,
@@ -388,6 +411,9 @@ fn send_move_to_pawn_packet(
     targets: Query<TransformObjectQuery>,
 ) {
     for move_data in &move_to_entity {
+        assert!(!move_data.is_sitting);
+        assert!(!move_data.is_dead);
+
         if let Ok(target_data) = targets.get(move_data.move_to_entity.target) {
             commands.entity(move_data.entity).remove::<MoveTarget>();
             let packet = MoveToPawn::new(

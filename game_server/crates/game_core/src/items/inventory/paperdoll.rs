@@ -335,9 +335,9 @@ impl PaperDoll {
                 self[DollSlot::Legs] = None;
             }
             BodyPart::Legs => {
-                if let Some(v) = self[DollSlot::Chest]
-                    && let Some(v) = v.item().bodypart()
-                    && v == BodyPart::FullBody
+                if let Some(item) = self[DollSlot::Chest]
+                    && let Some(item) = item.item().bodypart()
+                    && item == BodyPart::FullBody
                 {
                     previous.push(self[DollSlot::Chest]);
                     self[DollSlot::Chest] = None;

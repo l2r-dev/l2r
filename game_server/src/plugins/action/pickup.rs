@@ -1,12 +1,16 @@
-use bevy::{ecs::system::ParallelCommands, prelude::*};
+use bevy::prelude::*;
+use bevy_ecs::query::QueryData;
 use game_core::{
-    action::pickup::{PickupAnimation, PickupComponentsPlugin, PickupMetric, PickupRequest},
-    animation::Animation,
+    action::{
+        pickup::{PickupComponentsPlugin, PickupMetric, PickupRequest},
+        wait_kind::Sit,
+    },
+    active_action::ActiveAction,
     items::{AddInInventory, Item},
     movement::{ArrivedAtWaypoint, MoveTarget, MoveToEntity},
     network::{
-        broadcast::{ServerPacketBroadcast, ServerPacketsBroadcast},
-        packets::server::{DeleteObject, GetItem, StopMove},
+        broadcast::ServerPacketsBroadcast,
+        packets::server::{ActionFail, GameServerPacket, GetItem},
     },
     object_id::ObjectId,
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
@@ -16,8 +20,10 @@ use map::{WorldMap, WorldMapQuery};
 use smallvec::smallvec;
 use spatial::FlatDistance;
 use state::GameServerStateSystems;
+use std::time::Duration;
 
-const PICKUP_DISTANCE: f32 = 5.0;
+const PICKUP_DISTANCE: f32 = 20.0;
+const PICKUP_ACTION_DURATION: Duration = Duration::from_millis(500);
 
 pub struct PickupPlugin;
 impl Plugin for PickupPlugin {
@@ -32,38 +38,52 @@ impl Plugin for PickupPlugin {
             Update,
             pickup_request_handler.in_set(GameServerStateSystems::Run),
         );
-        app.add_systems(Update, pickup_animation_handler);
         app.add_observer(on_pickup_waypoint_arrival);
     }
 }
 
+#[derive(QueryData)]
+struct CharacterQuery<'a> {
+    entity: Entity,
+    object_id: Ref<'a, ObjectId>,
+    transform: Ref<'a, Transform>,
+    request: Ref<'a, PickupRequest>,
+    move_to: Option<Ref<'a, MoveToEntity>>,
+    is_sitting: Has<Sit>,
+}
+
 fn pickup_request_handler(
     mut commands: Commands,
-    characters: Query<
-        (
-            Entity,
-            Ref<ObjectId>,
-            Ref<Transform>,
-            Ref<PickupRequest>,
-            Option<Ref<MoveToEntity>>,
-        ),
-        Without<InActionPathfindingTimer>,
-    >,
+    characters: Query<CharacterQuery, Without<InActionPathfindingTimer>>,
     items: Query<(Ref<ObjectId>, Ref<Item>, Ref<Transform>)>,
     world_map_query: WorldMapQuery,
+    metrics: Res<Metrics>,
 ) -> Result<()> {
-    for (entity, char_oid, transform, request, move_to) in &mut characters.iter() {
-        let item_entity = request.0;
+    for character in &mut characters.iter() {
+        if character.is_sitting {
+            commands
+                .entity(character.entity)
+                .remove::<(PickupRequest, MoveToEntity)>();
+
+            commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
+
+            continue;
+        }
+
+        let item_entity = character.request.0;
 
         let Ok((item_oid, item, item_transform)) = items.get(item_entity) else {
             // Item no longer exists in world (picked up, destroyed, etc.)
             commands
-                .entity(entity)
+                .entity(character.entity)
                 .remove::<(PickupRequest, MoveToEntity)>();
+
+            commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
+
             continue;
         };
 
-        let char_pos = transform.translation;
+        let char_pos = character.transform.translation;
         let item_pos = item_transform.translation;
         let distance = char_pos.flat_distance(&item_pos);
 
@@ -78,31 +98,47 @@ fn pickup_request_handler(
             ) {
                 // Can't see item - remove pickup request and continue
                 commands
-                    .entity(entity)
+                    .entity(character.entity)
                     .remove::<(MoveToEntity, PickupRequest)>();
+
+                commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
+
                 continue;
+            }
+
+            if let Ok(counter) = metrics.counter(PickupMetric::ItemsPickedUp) {
+                counter.inc();
             }
 
             // Within range and line of sight is clear - start pickup animation
             commands
-                .entity(entity)
+                .entity(character.entity)
                 .remove::<(
                     PickupRequest,
                     MoveTarget,
                     MoveToEntity,
                     InActionPathfindingTimer,
                 )>()
-                .insert(PickupAnimation::new(item_entity));
-            let get_item = GetItem::new(*char_oid, *item_oid, item.id(), item_pos).into();
-            let stop_move = StopMove::new(*char_oid, *transform).into();
+                .insert(ActiveAction::new(PICKUP_ACTION_DURATION));
+
             commands.trigger_targets(
-                ServerPacketsBroadcast::new(vec![stop_move, get_item].into()),
-                entity,
+                AddInInventory::new(smallvec![item_entity]),
+                character.entity,
+            );
+
+            commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
+
+            let get_item =
+                GetItem::new(*character.object_id, *item_oid, item.id(), item_pos).into();
+
+            commands.trigger_targets(
+                ServerPacketsBroadcast::new(vec![get_item].into()),
+                character.entity,
             );
         } else {
             // Item is out of range, need to move closer
             // Check if already moving to the correct target
-            if let Some(move_to) = move_to
+            if let Some(move_to) = character.move_to
                 && move_to.target == item_entity
             {
                 continue;
@@ -118,65 +154,26 @@ fn pickup_request_handler(
 
             if can_move_to {
                 // Direct line of sight, use simple movement to item location
-                commands
-                    .entity(entity)
-                    .insert(MoveTarget::single(spatial::WayPoint::new(
-                        char_pos, item_pos,
-                    )));
+                commands.entity(character.entity).insert(MoveTarget::single(
+                    spatial::WayPoint::new(char_pos, item_pos),
+                ));
             } else {
                 // No line of sight, use pathfinding via visibility check
                 commands
-                    .entity(entity)
+                    .entity(character.entity)
                     .try_insert(InActionPathfindingTimer::default());
 
                 commands.trigger_targets(
                     VisibilityCheckRequest {
-                        entity,
+                        entity: character.entity,
                         start: char_pos,
                         target: item_pos,
                     },
-                    entity,
+                    character.entity,
                 );
             }
         }
     }
-    Ok(())
-}
-
-fn pickup_animation_handler(
-    time: Res<Time>,
-    mut query: Query<(Entity, Mut<PickupAnimation>)>,
-    object_ids: Query<Ref<ObjectId>, With<Item>>,
-    metrics: Res<Metrics>,
-    par_commands: ParallelCommands,
-) -> Result<()> {
-    query
-        .par_iter_mut()
-        .for_each(|(entity, mut pickup_animation)| {
-            pickup_animation.timer_mut().tick(time.delta());
-            if pickup_animation.timer().finished() {
-                par_commands.command_scope(|mut commands| {
-                    commands
-                        .entity(entity)
-                        .remove::<(PickupAnimation, Animation)>();
-
-                    if let Ok(counter) = metrics.counter(PickupMetric::ItemsPickedUp) {
-                        counter.inc();
-                    }
-
-                    if let Ok(item_object_id) = object_ids.get(pickup_animation.entity()) {
-                        commands.trigger_targets(
-                            ServerPacketBroadcast::new(DeleteObject::new(*item_object_id).into()),
-                            entity,
-                        );
-                        commands.trigger_targets(
-                            AddInInventory::new(smallvec![pickup_animation.entity()]),
-                            entity,
-                        );
-                    }
-                });
-            }
-        });
     Ok(())
 }
 

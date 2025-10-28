@@ -1,3 +1,8 @@
+use crate::{
+    action::pickup::PickupRequest,
+    movement::{Following, MoveTarget, MoveToEntity},
+    npc::DialogRequest,
+};
 use bevy::{
     ecs::{
         component::{ComponentHook, Immutable, StorageType},
@@ -41,6 +46,15 @@ impl Component for Attacking {
                     target.add(ctx.entity);
                     world.commands().entity(target_entity).insert(target);
                 }
+
+                world
+                    .commands()
+                    .entity(ctx.entity)
+                    .remove::<MoveTarget>()
+                    .remove::<MoveToEntity>()
+                    .remove::<Following>()
+                    .remove::<PickupRequest>()
+                    .remove::<DialogRequest>();
             } else {
                 world.commands().entity(ctx.entity).remove::<Self>();
             }

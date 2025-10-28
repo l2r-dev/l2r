@@ -1,17 +1,17 @@
 use bevy::{
     ecs::{
-        component::{ComponentHook, HookContext, Immutable, StorageType},
+        component::{ComponentHook, HookContext, StorageType},
         world::DeferredWorld,
     },
     prelude::*,
 };
+use bevy_ecs::component::Mutable;
 use std::time::Duration;
 
-pub struct AnimationComponentPlugin;
-impl Plugin for AnimationComponentPlugin {
+pub struct ActiveActionComponentPlugin;
+impl Plugin for ActiveActionComponentPlugin {
     fn build(&self, app: &mut App) {
-        app.register_type::<Animation>()
-            .register_type::<AnimationTimer>();
+        app.register_type::<ActiveAction>();
     }
 }
 
@@ -22,33 +22,40 @@ impl Plugin for AnimationComponentPlugin {
 /// a previous action. It acts as a synchronization mechanism to ensure entities
 /// complete their current animation or action before beginning another.
 /// - [`AnimationTimer`]: Automatically removes this component when the timer expires
-/// - [`AnimationFinished`]: Event triggered when this component is removed
-#[derive(Clone, Debug, Default, Reflect)]
+/// - [`ActionFinished`]: Event triggered when this component is removed
+#[derive(Clone, Debug, Reflect)]
 #[reflect(Component)]
-pub struct Animation;
-impl Component for Animation {
+pub struct ActiveAction {
+    timer: Timer,
+}
+
+impl ActiveAction {
+    pub fn new(duration: Duration) -> Self {
+        Self {
+            timer: Timer::new(duration, TimerMode::Once),
+        }
+    }
+
+    ///Returns true if finished
+    pub fn proceed_timer(&mut self, dt: Duration) -> bool {
+        self.timer.tick(dt);
+
+        self.timer.finished()
+    }
+}
+
+impl Component for ActiveAction {
     const STORAGE_TYPE: StorageType = StorageType::SparseSet;
-    type Mutability = Immutable;
+    type Mutability = Mutable;
 
     fn on_remove() -> Option<ComponentHook> {
         Some(|mut world: DeferredWorld, context: HookContext| {
             world
                 .commands()
-                .trigger_targets(AnimationFinished, context.entity);
+                .trigger_targets(ActionFinished, context.entity);
         })
     }
 }
 
 #[derive(Clone, Debug, Default, Event, Reflect)]
-pub struct AnimationFinished;
-
-#[derive(Clone, Component, Debug, Default, Deref, DerefMut, Reflect)]
-#[reflect(Component)]
-#[component(storage = "SparseSet")]
-#[require(Animation)]
-pub struct AnimationTimer(Timer);
-impl AnimationTimer {
-    pub fn new(duration: Duration) -> Self {
-        Self(Timer::new(duration, TimerMode::Once))
-    }
-}
+pub struct ActionFinished;

@@ -1,4 +1,17 @@
+use crate::{
+    action::pickup::PickupRequest,
+    active_action::ActiveAction,
+    attack::Attacking,
+    movement::{Following, MoveTarget, MoveToEntity},
+    npc::DialogRequest,
+    player_specific::next_intention::NextIntention,
+};
 use bevy::prelude::*;
+use bevy_ecs::{
+    component::{ComponentHook, Immutable, StorageType},
+    relationship::RelationshipHookMode,
+    world::DeferredWorld,
+};
 use std::time::Duration;
 
 pub struct DeathComponentsPlugin;
@@ -13,10 +26,37 @@ impl Plugin for DeathComponentsPlugin {
 #[derive(Component, Debug, Reflect)]
 pub struct FakeDead;
 
-#[derive(Clone, Component, Copy, Debug, Event, Reflect)]
+#[derive(Clone, Copy, Debug, Event, Reflect)]
 pub struct Dead {
     killer: Entity,
 }
+
+impl Component for Dead {
+    const STORAGE_TYPE: StorageType = StorageType::Table;
+    type Mutability = Immutable;
+
+    fn on_insert() -> Option<ComponentHook> {
+        Some(|mut world: DeferredWorld, ctx| {
+            match ctx.relationship_hook_mode {
+                RelationshipHookMode::Run => {}
+                _ => return,
+            }
+
+            world
+                .commands()
+                .entity(ctx.entity)
+                .remove::<MoveTarget>()
+                .remove::<MoveToEntity>()
+                .remove::<Following>()
+                .remove::<Attacking>()
+                .remove::<ActiveAction>()
+                .remove::<NextIntention>()
+                .remove::<PickupRequest>()
+                .remove::<DialogRequest>();
+        })
+    }
+}
+
 impl Dead {
     pub fn new(killer: Entity) -> Self {
         Self { killer }

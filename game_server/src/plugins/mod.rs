@@ -1,6 +1,6 @@
 mod action;
+mod active_action;
 mod admin_menu;
-mod animation;
 mod attack;
 mod auth;
 mod character;
@@ -26,6 +26,7 @@ mod abnormal_effects;
 #[cfg(feature = "gui")]
 mod gui;
 mod multisell;
+mod player_specific;
 
 use crate::plugins::state::GameStateProcessPlugin;
 use avian3d::PhysicsPlugins;
@@ -90,7 +91,7 @@ impl PluginGroup for Core {
             .add(admin_menu::AdminMenuPlugin)
             .add(SystemMessagesPlugin)
             .add(stats::StatsPlugin)
-            .add(animation::AnimationPlugin)
+            .add(active_action::ActiveActionPlugin)
             .add(character::CharacterPlugin)
             .add(npc::NpcPlugin)
             .add(movement::MovementPlugin)
@@ -104,6 +105,7 @@ impl PluginGroup for Core {
             .add(items::ItemsPlugin)
             .add(multisell::MultisellPlugin)
             .add(shortcuts::ShortcutPlugin)
+            .add(player_specific::PlayerSpecificPlugin)
             .add(manor::ManorPlugin);
         {
             builder = builder.add(scripting::CustomScriptingPlugin);

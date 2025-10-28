@@ -93,18 +93,10 @@ impl Default for GameplayConfig {
 
 #[derive(Clone, Debug, Deserialize, Reflect, Serialize)]
 #[serde(default)]
+#[derive(Default)]
 pub struct GuiConfig {
     pub geodata_cells: bool,
     pub geodata_blocks: bool,
-}
-
-impl Default for GuiConfig {
-    fn default() -> Self {
-        Self {
-            geodata_cells: false,
-            geodata_blocks: false,
-        }
-    }
 }
 
 #[derive(Asset, Clone, Debug, Default, Deserialize, Reflect, Resource, Serialize)]

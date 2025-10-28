@@ -1,11 +1,9 @@
 use bevy::{log, prelude::*};
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
-    action::{
-        pickup::{PickupAnimation, PickupRequest},
-        target::SelectedTarget,
-    },
-    attack::Attackable,
+    action::{pickup::PickupRequest, target::SelectedTarget},
+    active_action::ActiveAction,
+    attack::{Attackable, Attacking},
     character::Character,
     encounters::KnownEntities,
     items::Item,
@@ -13,13 +11,14 @@ use game_core::{
     network::{
         config::GameServerNetworkConfig,
         packets::{
-            client::{AttackRequest, GameClientPacket, TargetNotFound},
+            client::{GameClientPacket, TargetNotFound},
             server::{ActionFail, GameServerPacket},
         },
         session::PacketReceiveParams,
     },
     npc::{DialogRequest, SendNpcInfoDialog},
     object_id::ObjectIdManager,
+    player_specific::next_intention::NextIntention,
 };
 
 pub(crate) struct ActionPacketPlugin;
@@ -39,8 +38,7 @@ fn handle_action_packet(
         (
             Option<Ref<SelectedTarget>>,
             Ref<KnownEntities>,
-            Has<PickupRequest>,
-            Has<PickupAnimation>,
+            Has<ActiveAction>,
         ),
         With<Character>,
     >,
@@ -59,28 +57,31 @@ fn handle_action_packet(
     };
 
     let entity = receive_params.character(&event.connection.id())?;
-    let (selected_target, known_entities, has_pickup_request, has_pickup_animation) =
-        character_query.get_mut(entity)?;
+
+    let (selected_target, known_entities, in_active_action) = character_query.get_mut(entity)?;
 
     // Check if target is an item first
     if let Some(packet_target_entity) = object_id_manager.entity(packet.object_id) {
         let (_, _, is_item, _) = target_query.get(packet_target_entity)?;
         if is_item {
-            // Ignore pickup request if already picking up
-            if has_pickup_request || has_pickup_animation {
-                return Ok(());
+            if in_active_action {
+                commands.entity(entity).insert(NextIntention::PickUp {
+                    item: packet_target_entity,
+                });
+            } else {
+                // Insert PickupRequest - the pickup_request_handler will handle pathfinding
+                commands
+                    .entity(entity)
+                    .insert(PickupRequest(packet_target_entity));
             }
 
-            // Insert PickupRequest - the pickup_request_handler will handle pathfinding
-            commands
-                .entity(entity)
-                .insert(PickupRequest(packet_target_entity));
             return Ok(());
         }
     }
 
     let Some(packet_target_entity) = object_id_manager.entity(packet.object_id) else {
         commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
+
         return Ok(());
     };
 
@@ -95,15 +96,35 @@ fn handle_action_packet(
             }
 
             let (attackable, _, _, is_character) = target_query.get(packet_target_entity)?;
+
             if attackable.is_some() {
-                commands.trigger_targets(AttackRequest::from(curr_selected), entity);
+                if in_active_action {
+                    commands.entity(entity).insert(NextIntention::Attack {
+                        target: curr_selected,
+                    });
+                } else {
+                    commands.entity(entity).insert(Attacking(curr_selected));
+                }
             } else if is_character {
-                commands.trigger_targets(FollowRequest::from(packet_target_entity), entity);
+                if in_active_action {
+                    commands.entity(entity).insert(NextIntention::Follow {
+                        target: curr_selected,
+                    });
+                } else {
+                    commands.trigger_targets(FollowRequest::from(packet_target_entity), entity);
+                }
+            } else if in_active_action {
+                commands
+                    .entity(entity)
+                    .insert(NextIntention::DialogRequest {
+                        target: curr_selected,
+                    });
             } else {
                 commands
                     .entity(entity)
                     .insert(DialogRequest::from(packet_target_entity));
             }
+
             return Ok(());
         }
     }

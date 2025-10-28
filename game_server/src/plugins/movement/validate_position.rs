@@ -108,16 +108,16 @@ fn validate_position_handle(
             let max_allowed_with_tolerance = max_allowed_distance * SPEED_TOLERANCE_MULTIPLIER;
 
             let speed_ratio = client_movement_distance / max_allowed_distance;
-            if client_movement_distance > max_allowed_with_tolerance {
-                if speed_ratio > SPEED_VIOLATION_THRESHOLD {
-                    commands.trigger_targets(
-                        GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
-                        character_entity,
-                    );
-                    known_pos.position = transform.translation;
-                    known_pos.timestamp = current_time;
-                    return Ok(());
-                }
+            if client_movement_distance > max_allowed_with_tolerance
+                && speed_ratio > SPEED_VIOLATION_THRESHOLD
+            {
+                commands.trigger_targets(
+                    GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
+                    character_entity,
+                );
+                known_pos.position = transform.translation;
+                known_pos.timestamp = current_time;
+                return Ok(());
             }
         }
 

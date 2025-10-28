@@ -70,17 +70,13 @@ local function handle_cancel_target(entity, packet)
     local casting = world.get_component(entity, types.LuaCasting)
     if casting then
         world.remove_component(entity, types.LuaCasting)
-        world.remove_component(entity, types.AnimationTimer)
-        world.remove_component(entity, types.Animation)
+        MagicSkillCanceled.send(entity)
     end
 
     local pending_skill = world.get_component(entity, types.LuaPendingSkill)
     if pending_skill then
         world.remove_component(entity, types.LuaPendingSkill)
     end
-
-    -- send MagicSkillCanceled
-    MagicSkillCanceled.send(entity)
 end
 
 ---@param entity table The entity object
