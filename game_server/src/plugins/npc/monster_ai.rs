@@ -8,7 +8,7 @@ use bevy::{
 use game_core::{
     attack::InCombat,
     custom_hierarchy::DespawnChildOf,
-    movement::MoveTarget,
+    movement::Movement,
     npc::{NpcAiComponentsPlugin, RandomWalkingTimer, kind::Monster},
     spawner::Spawner,
 };
@@ -54,7 +54,7 @@ struct RandomWalkingQuery<'a> {
 
 #[derive(QueryFilter)]
 struct RandomWalkingFilter {
-    move_target: Without<MoveTarget>,
+    move_target: Without<Movement>,
     not_in_combat: Without<InCombat>,
 }
 
@@ -111,7 +111,10 @@ fn random_walking_around(
                 };
                 commands
                     .entity(walker.entity)
-                    .try_insert(MoveTarget::single(WayPoint::new(current_pos, final_point)));
+                    .try_insert(Movement::to_waypoint(WayPoint::new(
+                        current_pos,
+                        final_point,
+                    )));
             }
             walker
                 .timer

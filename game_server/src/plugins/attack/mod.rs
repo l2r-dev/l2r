@@ -24,7 +24,7 @@ use game_core::{
         DollSlot, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
         UpdateType, WeaponAttackParams,
     },
-    movement::{LookAt, MoveToEntity},
+    movement::{LookAt, Movement},
     network::{
         broadcast::ServerPacketBroadcast,
         packets::server::{
@@ -82,7 +82,7 @@ struct AttackingQuery<'a> {
     transform: Ref<'a, Transform>,
     target: Ref<'a, Attacking>,
     paper_doll: Option<Ref<'a, PaperDoll>>,
-    move_to: Option<Ref<'a, MoveToEntity>>,
+    movement: Option<Ref<'a, Movement>>,
     weapon_reuse_active: Has<WeaponReuse>,
     is_sitting: Has<Sit>,
 }
@@ -141,7 +141,7 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
 
                         commands
                             .entity(attacker.entity)
-                            .remove::<MoveToEntity>()
+                            .remove::<Movement>()
                             .try_insert(InCombat::default());
                     });
 
@@ -253,8 +253,9 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                 } else {
                     // Target is out of range, need to chase
                     // Check if already moving to the correct target
-                    if let Some(move_to) = attacker.move_to
-                        && move_to.target == aiming_target.entity
+                    if let Some(mov) = attacker.movement
+                        && mov.is_to_entity()
+                        && mov.target() == Some(aiming_target.entity)
                     {
                         return;
                     }
@@ -276,10 +277,9 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                     if can_move_to {
                         // Direct line of sight, use simple movement
                         params.commands.command_scope(|mut commands| {
-                            commands.entity(attacker.entity).try_insert(MoveToEntity {
-                                target: aiming_target.entity,
-                                range,
-                            });
+                            commands
+                                .entity(attacker.entity)
+                                .try_insert(Movement::to_entity(aiming_target.entity, range));
                         });
                     } else {
                         // No line of sight, use pathfinding

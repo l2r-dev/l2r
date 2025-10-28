@@ -1,9 +1,9 @@
-use super::MoveToEntity;
+use super::Movement;
 use bevy::prelude::*;
 use game_core::{
     action::pickup::PickupRequest,
     attack::Attacking,
-    movement::{FollowComponentsPlugin, FollowRequest, Following, MoveTarget},
+    movement::{FollowComponentsPlugin, FollowRequest, Following},
     network::packets::server::{ActionFail, GameServerPacket},
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
 };
@@ -32,7 +32,7 @@ fn following_changed(
             Entity,
             Ref<Following>,
             Ref<Transform>,
-            Option<Ref<MoveToEntity>>,
+            Option<Ref<Movement>>,
         ),
         Without<InActionPathfindingTimer>,
     >, // Only process entities that are not on cooldown
@@ -40,13 +40,14 @@ fn following_changed(
     world_map_query: WorldMapQuery,
     mut commands: Commands,
 ) -> Result<()> {
-    for (follower, following, follower_transform, move_to_entity) in followers.iter() {
+    for (follower, following, follower_transform, movement) in followers.iter() {
         let target_entity = **following;
         let target_transform = targets.get(target_entity)?;
 
         // Check if already moving to the correct target
-        if let Some(move_to) = move_to_entity
-            && move_to.target == target_entity
+        if let Some(mov) = movement
+            && mov.is_to_entity()
+            && mov.target() == Some(target_entity)
         {
             continue;
         }
@@ -67,10 +68,9 @@ fn following_changed(
         );
 
         if can_move_to {
-            commands.entity(follower).try_insert(MoveToEntity {
-                target: target_entity,
-                range: FOLLOW_RANGE,
-            });
+            commands
+                .entity(follower)
+                .try_insert(Movement::to_entity(target_entity, FOLLOW_RANGE));
         } else {
             commands
                 .entity(follower)
@@ -105,6 +105,6 @@ fn follow_request_handler(
     }
     commands
         .entity(follower)
-        .remove::<(MoveTarget, Attacking, PickupRequest)>();
+        .remove::<(Movement, Attacking, PickupRequest)>();
     commands.entity(follower).insert(Following(target_entity));
 }

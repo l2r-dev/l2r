@@ -1,4 +1,4 @@
-use crate::{items::PaperDoll, movement::MoveToEntity, object_id::ObjectId, stats::*};
+use crate::{object_id::ObjectId, stats::*};
 use bevy::{ecs::query::QueryData, prelude::*};
 use std::time::Duration;
 
@@ -343,15 +343,4 @@ impl AttackCommonHit {
     pub fn target(&self) -> Entity {
         self.target
     }
-}
-
-#[derive(QueryData)]
-struct AttackingQuery<'a> {
-    entity: Entity,
-    object_id: Ref<'a, ObjectId>,
-    attack_stats: Ref<'a, AttackStats>,
-    transform: Ref<'a, Transform>,
-    target: Ref<'a, Attacking>,
-    paper_doll: Option<Ref<'a, PaperDoll>>,
-    move_to: Option<Ref<'a, MoveToEntity>>,
 }

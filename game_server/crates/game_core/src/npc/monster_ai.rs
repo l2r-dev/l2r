@@ -1,4 +1,4 @@
-use crate::{attack::InCombat, movement::MoveTarget};
+use crate::{attack::InCombat, movement::Movement};
 use bevy::{
     ecs::query::{QueryData, QueryFilter},
     prelude::*,
@@ -52,6 +52,6 @@ struct RandomWalkingQuery<'a> {
 
 #[derive(QueryFilter)]
 struct RandomWalkingFilter {
-    move_target: Without<MoveTarget>,
+    move_target: Without<Movement>,
     not_in_combat: Without<InCombat>,
 }

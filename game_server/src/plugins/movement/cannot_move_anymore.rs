@@ -3,7 +3,7 @@ use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     action::pickup::PickupRequest,
     attack::Attacking,
-    movement::{Following, MoveTarget},
+    movement::{Following, Movement},
     network::{
         broadcast::ServerPacketBroadcast,
         config::GameServerNetworkConfig,
@@ -28,7 +28,7 @@ impl Plugin for CannotMoveAnymorePlugin {
 struct MovableObjectQuery<'a> {
     object_id: Ref<'a, ObjectId>,
     transform: Mut<'a, Transform>,
-    move_target: Mut<'a, MoveTarget>,
+    movement: Option<Mut<'a, Movement>>,
     movable: Ref<'a, Movable>,
     following: Option<Ref<'a, Following>>,
     attacking: Option<Ref<'a, Attacking>>,
@@ -48,7 +48,11 @@ fn handle(
 
         if let Ok(mut movable) = movable_objects.get_mut(character_entity) {
             movable.transform.translation = packet.location;
-            movable.move_target.clear();
+            if let Some(movement) = movable.movement.as_mut()
+                && let Some(waypoints) = movement.waypoints_mut()
+            {
+                waypoints.clear();
+            }
 
             log::debug!(
                 "CannotMoveAnymore for entity {:?} at {:?}, heading: {}",

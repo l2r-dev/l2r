@@ -4,7 +4,7 @@ use bevy_ecs::query::QueryData;
 use game_core::{
     action::wait_kind::Sit,
     attack::Dead,
-    movement::MoveToEntity,
+    movement::Movement,
     network::packets::{
         client::{BypassCommand, BypassCommandExecuted},
         server::{ActionFail, GameServerPacket, NpcHtmlMessage},
@@ -50,7 +50,7 @@ fn dialog_request_handler(
     mut commands: Commands,
     world_map_query: WorldMapQuery,
     requests: Query<RequestQuery, Without<InActionPathfindingTimer>>,
-    move_to: Query<Ref<MoveToEntity>>,
+    movement: Query<Ref<Movement>>,
     transforms: Query<Ref<Transform>>,
     npcs: Query<Ref<ObjectId>, With<Kind>>,
 ) -> Result<()> {
@@ -58,7 +58,7 @@ fn dialog_request_handler(
         if requester.is_dead {
             commands
                 .entity(requester.entity)
-                .remove::<(MoveToEntity, DialogRequest)>();
+                .remove::<(Movement, DialogRequest)>();
             commands.trigger_targets(GameServerPacket::from(ActionFail), requester.entity);
         }
 
@@ -81,13 +81,14 @@ fn dialog_request_handler(
             if requester.is_sitting {
                 commands
                     .entity(requester.entity)
-                    .remove::<(MoveToEntity, DialogRequest)>();
+                    .remove::<(Movement, DialogRequest)>();
                 commands.trigger_targets(GameServerPacket::from(ActionFail), requester.entity);
             }
 
             // Check if already moving to the correct target
-            if let Ok(move_to) = move_to.get(requester.entity)
-                && move_to.target == dialog_target
+            if let Ok(mov) = movement.get(requester.entity)
+                && mov.is_to_entity()
+                && mov.target() == Some(dialog_target)
             {
                 continue;
             }
@@ -102,10 +103,9 @@ fn dialog_request_handler(
 
             if can_move_to {
                 // Direct line of sight, use simple movement
-                commands.entity(requester.entity).try_insert(MoveToEntity {
-                    target: dialog_target,
-                    range: DIALOG_RANGE,
-                });
+                commands
+                    .entity(requester.entity)
+                    .try_insert(Movement::to_entity(dialog_target, DIALOG_RANGE));
             } else {
                 // No line of sight, use pathfinding via visibility check
                 commands
@@ -131,14 +131,14 @@ fn dialog_request_handler(
             ) {
                 commands
                     .entity(requester.entity)
-                    .remove::<(MoveToEntity, DialogRequest)>();
+                    .remove::<(Movement, DialogRequest)>();
                 commands.trigger_targets(GameServerPacket::from(ActionFail), requester.entity);
                 continue;
             }
 
             commands
                 .entity(requester.entity)
-                .remove::<(MoveToEntity, DialogRequest)>();
+                .remove::<(Movement, DialogRequest)>();
 
             if let Ok(object_id) = npcs.get(dialog_target) {
                 commands.trigger_targets(
