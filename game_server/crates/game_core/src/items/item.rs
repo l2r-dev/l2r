@@ -5,10 +5,12 @@ use super::{
     model::Model,
 };
 use crate::{
+    custom_hierarchy::DespawnChildren,
     items::{self, DollSlot},
     object_id::ObjectId,
-    stats::ItemElementsInfo,
+    stats::{EncountersVisibility, ItemElementsInfo},
 };
+use avian3d::prelude::{Collider, Sensor};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
 use derive_more::{From, Into};
@@ -76,8 +78,41 @@ impl PartialEq for UniqueItem {
     }
 }
 
+#[derive(Bundle)]
+pub struct ItemInWorld {
+    pub transform: Transform,
+    pub collider: Collider,
+    pub sensor: Sensor,
+}
+
+impl ItemInWorld {
+    const COLLIDER_SIZE: f32 = 1.0;
+
+    pub fn new(location: Vec3) -> Self {
+        Self {
+            transform: Transform::from_translation(location),
+            collider: Collider::cuboid(
+                Self::COLLIDER_SIZE,
+                Self::COLLIDER_SIZE,
+                Self::COLLIDER_SIZE,
+            ),
+            sensor: Sensor,
+        }
+    }
+
+    pub fn move_from_world(mut entity: EntityCommands) {
+        entity.remove::<(
+            Transform,
+            GlobalTransform,
+            Collider,
+            Sensor,
+            DespawnChildren,
+        )>();
+    }
+}
+
 #[derive(Clone, Component, Copy, Debug, Deserialize, Reflect)]
-#[require(Name::new("Item".to_string()))]
+#[require(Name::new("Item"), EncountersVisibility::default())]
 pub struct Item {
     id: Id,
     display_id: Id,

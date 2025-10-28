@@ -3,13 +3,13 @@ use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
-        self, DropIfPossible, DropItemEvent, Inventory, Item, ItemLocation, ItemMetric,
-        ItemsDataQuery, UnequipItems, UniqueItem,
+        self, DropIfPossible, DropItemEvent, Inventory, Item, ItemInWorld, ItemLocation,
+        ItemMetric, ItemsDataQuery, UnequipItems, UniqueItem, UpdateType,
         model::{ActiveModelSetCoordinates, Model},
     },
     network::{
         broadcast::ServerPacketBroadcast,
-        packets::server::{DropItem, GameServerPacket, SystemMessage},
+        packets::server::{DropItem, GameServerPacket, InventoryUpdate, SystemMessage},
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
 };
@@ -19,6 +19,7 @@ use l2r_core::{
 };
 use map::{WorldMap, id::RegionId};
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
+use smallvec::smallvec;
 use spatial::FlatDistance;
 use system_messages::{self, Id, SmParam};
 
@@ -109,7 +110,7 @@ pub fn drop_item(
 
             commands
                 .entity(item_entity)
-                .insert(Transform::from_translation(event.location));
+                .insert(ItemInWorld::new(event.location));
 
             if let Some(region_entity) = world_map.get(&RegionId::from(event.location)) {
                 commands
@@ -118,6 +119,14 @@ pub fn drop_item(
             }
 
             let unique_item = UniqueItem::new(event.item_oid, *item);
+
+            commands.trigger_targets(
+                GameServerPacket::from(InventoryUpdate::new(
+                    smallvec![unique_item],
+                    UpdateType::Remove,
+                )),
+                inventory_entity,
+            );
 
             if !repo_manager.is_mock() {
                 let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;

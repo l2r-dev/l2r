@@ -196,7 +196,7 @@ struct KnownAddedParams<'w, 's> {
     chars: Query<'w, 's, character::Query<'static>>,
     npcs: Query<'w, 's, npc::NpcQuery<'static>>,
     npc_info: RegionalNpcInfoQuery<'w, 's>,
-    items: Query<'w, 's, ItemQuery<'static>>,
+    items: Query<'w, 's, ItemQuery<'static>, With<Collider>>,
     move_targets: Query<'w, 's, MoveTargetQuery<'static>>,
     move_to_entity: Query<'w, 's, MoveToEntityQuery<'static>>,
     object_transforms: Query<'w, 's, ObjectTransformQuery<'static>>,

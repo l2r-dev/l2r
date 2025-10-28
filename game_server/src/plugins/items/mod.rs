@@ -1,16 +1,14 @@
-use avian3d::prelude::{Collider, Sensor};
 use bevy::{log, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
 use bevy_defer::{AccessError, AppReactorExtension, AsyncAccess, AsyncExtension, AsyncWorld};
 use game_core::{
     custom_hierarchy::{DespawnChildOf, DespawnChildren},
     items::{
-        self, AddInInventory, Inventory, Item, ItemLocation, ItemMetric, ItemsComponentsPlugin,
-        ItemsDataTable, ItemsInfo, RegionalItems, SilentSpawn, SpawnExisting, SpawnNew, UniqueItem,
-        model,
+        self, AddInInventory, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
+        ItemsComponentsPlugin, ItemsDataTable, ItemsInfo, RegionalItems, SilentSpawn,
+        SpawnExisting, SpawnNew, UniqueItem, model,
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
-    stats::EncountersVisibility,
 };
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
@@ -142,12 +140,7 @@ pub fn spawn_existing_item_handle(
             .item_mut()
             .set_dropped_entity(event.dropped_entity);
 
-        let mut entity_commands = commands.spawn((
-            unique_item,
-            EncountersVisibility::default(),
-            Sensor,
-            Collider::cuboid(1., 1., 1.),
-        ));
+        let mut entity_commands = commands.spawn(unique_item);
         if event.silent {
             entity_commands.insert(SilentSpawn);
         }
@@ -185,7 +178,7 @@ fn handle_newly_spawned_items(
                 }
                 commands
                     .entity(item_entity)
-                    .insert(Transform::from_translation(translation));
+                    .insert(ItemInWorld::new(translation));
             }
             ItemLocation::Inventory | ItemLocation::PaperDoll(_) => {
                 let Some(inventory_object_id) = item.owner() else {
