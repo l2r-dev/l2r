@@ -28,7 +28,7 @@ impl fmt::Debug for MagicSkillUse {
 
 impl L2rServerPacket for MagicSkillUse {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         let origin_location = GameVec3::from(self.origin_location);
         let target_location = GameVec3::from(self.target_location);
 

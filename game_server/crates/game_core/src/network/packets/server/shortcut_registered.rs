@@ -9,7 +9,7 @@ pub struct ShortcutRegistered(Shortcut);
 
 impl L2rServerPacket for ShortcutRegistered {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::SHORT_CUT_REGISTER.to_le_bytes());
         buffer.extend(self.0.into_buffer().to_vec());
         buffer

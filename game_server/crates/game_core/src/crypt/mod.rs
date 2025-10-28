@@ -59,6 +59,7 @@ impl CryptEngine<GameClientPacket, GameServerPacket> for GameCryptEngine {
         packet = match packet {
             GameServerPacket::KeyPacket(p) => {
                 let bytes = p.build(self.get_out_key()).buffer();
+                #[cfg(debug_assertions)]
                 log_trace_byte_table(&bytes, "KeyPacket");
                 return Ok(bytes.to_vec());
             }
@@ -66,6 +67,8 @@ impl CryptEngine<GameClientPacket, GameServerPacket> for GameCryptEngine {
         };
 
         let mut buffer = packet.buffer();
+
+        #[cfg(debug_assertions)]
         log_trace_byte_table(&buffer, "Raw Server Packet");
 
         let mut acc = 0;
@@ -79,11 +82,10 @@ impl CryptEngine<GameClientPacket, GameServerPacket> for GameCryptEngine {
             buffer[i] = encrypted_byte as u8;
         }
 
+        #[cfg(debug_assertions)]
         log_trace_byte_table(&buffer, "Encrypted");
 
         self.shift_out_key(buffer.len());
-        #[cfg(debug_assertions)]
-        buffer.log_utilization();
         Ok(buffer.into())
     }
 

@@ -113,7 +113,7 @@ impl fmt::Debug for Attack {
 
 impl L2rServerPacket for Attack {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         let attacker_loc = GameVec3::from(self.attacker_loc);
         let target_loc = GameVec3::from(self.target_loc);
 

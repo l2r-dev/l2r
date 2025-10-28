@@ -16,7 +16,7 @@ impl L2rServerPacket for GetItem {
     fn buffer(self) -> ServerPacketBuffer {
         let location = GameVec3::from(self.location);
 
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::GET_ITEM.to_le_bytes());
         buffer.u32(self.pickuper.into());
         buffer.u32(self.item.into());

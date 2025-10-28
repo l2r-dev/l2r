@@ -18,7 +18,7 @@ impl fmt::Debug for TargetUnselected {
 
 impl L2rServerPacket for TargetUnselected {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         let location = GameVec3::from(self.location);
 
         buffer.extend(GameServerPacketCodes::TARGET_UNSELECTED.to_le_bytes());

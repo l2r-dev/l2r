@@ -13,7 +13,7 @@ pub struct ChangeWaitType {
 
 impl L2rServerPacket for ChangeWaitType {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         let location = GameVec3::from(self.location);
 
         buffer.extend(GameServerPacketCodes::CHANGE_WAIT_TYPE.to_le_bytes());

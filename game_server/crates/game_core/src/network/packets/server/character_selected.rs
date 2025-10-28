@@ -31,7 +31,7 @@ impl fmt::Debug for CharacterSelected {
 }
 impl L2rServerPacket for CharacterSelected {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         let position = GameVec3::from(self.position);
         let current_hp = self.vitals.get(VitalsStat::Hp) as f64;
         let current_mp = self.vitals.get(VitalsStat::Mp) as f64;

@@ -22,7 +22,7 @@ impl fmt::Debug for MagicSkillLaunched {
 
 impl L2rServerPacket for MagicSkillLaunched {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::MAGIC_SKILL_LAUNCHED.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32(self.skill.display_id().into());

@@ -17,7 +17,7 @@ impl fmt::Debug for KeyPacket {
 }
 impl L2rServerPacket for KeyPacket {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::KEY_PACKET.to_le_bytes());
         buffer.u8(1); // 0 - wrong, 1 - protocol ok
         buffer.extend(self.blowfish_key.to_le_bytes()[0..8].to_vec());

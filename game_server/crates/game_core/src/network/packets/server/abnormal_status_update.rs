@@ -26,7 +26,7 @@ impl fmt::Debug for AbnormalStatusUpdate {
 
 impl L2rServerPacket for AbnormalStatusUpdate {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::ABNORMAL_STATUS_UPDATE.to_le_bytes());
 
         buffer.u16(self.effects.len() as u16);

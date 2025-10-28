@@ -13,7 +13,7 @@ impl Restart {
 
 impl L2rServerPacket for Restart {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::RESTART_RESPONSE.to_le_bytes());
         buffer.u32_from_bool(self.0);
         buffer

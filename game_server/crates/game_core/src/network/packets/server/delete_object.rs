@@ -14,7 +14,7 @@ impl fmt::Debug for DeleteObject {
 
 impl L2rServerPacket for DeleteObject {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_16();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::DELETE_OBJECT.to_le_bytes());
         buffer.u32(self.0.into());
         buffer.u32(0);

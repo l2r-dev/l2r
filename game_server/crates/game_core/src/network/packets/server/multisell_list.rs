@@ -56,7 +56,7 @@ impl MultisellList {
 
 impl L2rServerPacket for MultisellList {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::MULTI_SELL_LIST.to_le_bytes());
         buffer.u32(self.id.into());
         buffer.u32(self.page + 1);

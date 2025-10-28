@@ -16,7 +16,7 @@ impl AuthGGResponse {
 }
 impl L2rServerPacket for AuthGGResponse {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(LoginServerPacketCode::AUTH_GG_RESPONSE.to_le_bytes());
         buffer.u32_from_usize(*self.session_id);
         buffer.extend([0u8; 20]);

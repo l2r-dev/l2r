@@ -125,7 +125,7 @@ impl<'de> Deserialize<'de> for MovementStats {
     }
 }
 
-#[derive(Clone, Default, Component, Copy, Debug, Reflect)]
+#[derive(Clone, Component, Copy, Debug, Default, Reflect)]
 pub struct LastKnownPosition {
     pub position: Vec3,
     pub timestamp: f64,

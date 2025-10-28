@@ -12,7 +12,7 @@ pub struct StopMove {
 
 impl L2rServerPacket for StopMove {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_32();
+        let mut buffer = ServerPacketBuffer::default();
 
         let location = GameVec3::from(self.transform.translation);
         let heading = Heading::from(self.transform.rotation);

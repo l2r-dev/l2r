@@ -33,7 +33,7 @@ impl fmt::Debug for DropItem {
 
 impl L2rServerPacket for DropItem {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         let loc = GameVec3::from(self.loc);
         buffer.extend(GameServerPacketCodes::DROP_ITEM.to_le_bytes());
         buffer.u32(self.dropper.into());

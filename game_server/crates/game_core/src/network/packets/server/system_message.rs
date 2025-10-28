@@ -17,7 +17,7 @@ impl fmt::Debug for SystemMessage {
 }
 impl L2rServerPacket for SystemMessage {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         let param_count = self.message_params.len() as u32;
         buffer.extend(GameServerPacketCodes::SYSTEM_MESSAGE.to_le_bytes());
         buffer.u32(self.id);

@@ -78,7 +78,7 @@ impl Shortcut {
     }
 
     pub fn into_buffer(&self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.u32(self.kind.variant() as u32);
         buffer.u32(self.slot_id.into());
         match self.kind {

@@ -11,7 +11,7 @@ pub struct ItemList {
 
 impl L2rServerPacket for ItemList {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::ITEM_LIST.to_le_bytes());
         buffer.u16_from_bool(self.show_window);
         buffer.u16_from_usize(self.items.len());

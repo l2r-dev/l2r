@@ -17,7 +17,7 @@ pub struct Die {
 
 impl L2rServerPacket for Die {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::DIE.to_le_bytes());
         buffer.u32(self.object_id.into());
         buffer.u32(self.to_village);

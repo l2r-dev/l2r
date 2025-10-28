@@ -36,7 +36,7 @@ impl fmt::Debug for CharacterCreationFailed {
 }
 impl L2rServerPacket for CharacterCreationFailed {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::CHARACTER_CREATE_FAIL.to_le_bytes());
         buffer.u32(self.0.into());
         buffer

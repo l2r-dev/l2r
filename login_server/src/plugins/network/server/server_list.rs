@@ -24,7 +24,7 @@ impl std::fmt::Debug for ServerListResponse {
 
 impl L2rServerPacket for ServerListResponse {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(LoginServerPacketCode::SERVER_LIST_RESPONSE.to_le_bytes());
         buffer.u8(self.server_table.load_registered_game_servers().len() as u8);
         buffer.u8(self.last_server);

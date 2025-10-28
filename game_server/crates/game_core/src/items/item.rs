@@ -43,7 +43,7 @@ impl UniqueItem {
     }
 
     pub fn to_le_bytes(&self) -> Vec<u8> {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
 
         buffer.u32(self.0.into());
         buffer.u32(self.1.id.into());

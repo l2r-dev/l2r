@@ -12,7 +12,7 @@ pub struct InventoryUpdate {
 
 impl L2rServerPacket for InventoryUpdate {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::INVENTORY_UPDATE.to_le_bytes());
         buffer.u16_from_usize(self.items.len());
         for unique in self.items {

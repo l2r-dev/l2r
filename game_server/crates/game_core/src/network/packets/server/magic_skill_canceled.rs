@@ -14,7 +14,7 @@ impl MagicSkillCanceled {
 
 impl L2rServerPacket for MagicSkillCanceled {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::MAGIC_SKILL_CANCELED.to_le_bytes());
         buffer.u32(self.0.into());
         buffer

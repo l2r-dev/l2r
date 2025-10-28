@@ -20,7 +20,7 @@ impl fmt::Debug for ResponseCharCreateMenu {
 
 impl L2rServerPacket for ResponseCharCreateMenu {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new_2048();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::NEW_CHARACTER_SUCCESS.to_le_bytes());
         buffer.u32_from_usize(self.new_character_races.len());
         for ((race, base_class), primal_stats) in self.new_character_races {

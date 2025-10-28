@@ -30,7 +30,7 @@ impl CharacterDeletionFailed {
 
 impl L2rServerPacket for CharacterDeletionFailed {
     fn buffer(self) -> ServerPacketBuffer {
-        let mut buffer = ServerPacketBuffer::new();
+        let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::CHARACTER_DELETE_FAIL.to_le_bytes());
         buffer.u32(self.0.into());
         buffer
