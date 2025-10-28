@@ -149,8 +149,8 @@
 ---@class TimerMode Bevy Timer mode enum controlling timer behavior
 ---@field variant string Timer mode: \"Once\" (ticks down once, resets manually) or \"Repeat\" (auto-resets when reaching 0)
 
----@class AnimationTimer Bevy Component wrapping a Timer for animation duration tracking
----@field _1 table Timer data with duration and mode (typically TimerMode::Once)
+---@class ActiveAction Bevy Component wrapping a Timer for animation duration tracking
+---@field timer table Timer data with duration and mode (typically TimerMode::Once)
 --- Uses SparseSet storage, requires Animation component, implements Deref/DerefMut for Timer access
 
 ---@class SkillListHashMap: table<number, Skill>
