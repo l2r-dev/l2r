@@ -171,13 +171,13 @@ function DaggerBlow.handle_pending_blow(entity, pending_skill, skill_definition)
                 Casting.insert_component(entity, target_entity, hit_time,
                     skill_ref)
                 -- Stop moving
-                MovementHelper.remove(entity)
+                Movement.remove(entity)
                 -- Attack after casting
                 Attacking.insert_component(entity, target_entity)
                 world.remove_component(entity, types.LuaPendingSkill)
             else
                 SystemMessage.send(entity, 24, {}) -- Not enough MP
-                MovementHelper.remove(entity)
+                Movement.remove(entity)
                 Attacking.insert_component(entity, target_entity)
                 world.remove_component(entity, types.LuaPendingSkill)
             end
