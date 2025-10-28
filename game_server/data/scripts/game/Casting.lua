@@ -26,15 +26,12 @@ function Casting.insert_component(caster_entity, target_entity, casting_time, sk
     -- Stop any movement the caster is doing before casting
     world.remove_component(caster_entity, types.MoveTarget)
 
-    -- Add AnimationTimer component to manage animation timing (automatically adds Animation component due to #[require])
     local timer_mode_variant = construct(types.TimerMode, { variant = "Repeating" })
     local duration = Duration.from_millis(casting_time)
     local timer = Timer.new(duration, timer_mode_variant)
 
-    local animation_timer = construct(types.AnimationTimer, { _1 = timer })
-    world.insert_component(caster_entity, types.AnimationTimer, animation_timer)
-    Logger.trace("Added AnimationTimer component with duration " ..
-        tostring(casting_time) .. "s to entity " .. tostring(caster_entity))
+    local active_action = construct(types.ActiveAction, { timer = timer })
+    world.insert_component(caster_entity, types.ActiveAction, active_action)
 
     -- Remove LuaPendingSkill component when casting starts to ensure clean state transition
     world.remove_component(caster_entity, types.LuaPendingSkill)

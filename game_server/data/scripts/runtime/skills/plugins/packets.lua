@@ -106,10 +106,10 @@ local function handle_magic_skill_use(entity, packet, skills_storage)
         return
     end
 
-    -- Check for other animations that should block skill use (not casting-related)
-    local animation = world.get_component(entity, types.Animation)
-    if animation and not is_casting then
-        -- Has animation but not casting - this is some other action, block it
+    -- Check for other active actions that should block skill use (not casting-related)
+    local active_action = world.get_component(entity, types.ActiveAction)
+    if active_action and not is_casting then
+        -- Has active actions but not casting - this is some other action, block it
         return
     end
 
