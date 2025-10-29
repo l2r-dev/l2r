@@ -104,19 +104,19 @@ mod tests {
         let center = RegionId(20, 18);
 
         assert_eq!(
-            center.get_adjacent(NavigationDirection::North),
+            center.get_adjacent(NavigationDirection::NORTH),
             RegionId(20, 17)
         );
         assert_eq!(
-            center.get_adjacent(NavigationDirection::South),
+            center.get_adjacent(NavigationDirection::SOUTH),
             RegionId(20, 19)
         );
         assert_eq!(
-            center.get_adjacent(NavigationDirection::East),
+            center.get_adjacent(NavigationDirection::EAST),
             RegionId(21, 18)
         );
         assert_eq!(
-            center.get_adjacent(NavigationDirection::West),
+            center.get_adjacent(NavigationDirection::WEST),
             RegionId(19, 18)
         );
     }
@@ -126,19 +126,19 @@ mod tests {
         let center = RegionId(20, 18);
 
         assert_eq!(
-            center.get_adjacent(NavigationDirection::NorthEast),
+            center.get_adjacent(NavigationDirection::NORTH_EAST),
             RegionId(21, 17)
         );
         assert_eq!(
-            center.get_adjacent(NavigationDirection::NorthWest),
+            center.get_adjacent(NavigationDirection::NORTH_WEST),
             RegionId(19, 17)
         );
         assert_eq!(
-            center.get_adjacent(NavigationDirection::SouthEast),
+            center.get_adjacent(NavigationDirection::SOUTH_EAST),
             RegionId(21, 19)
         );
         assert_eq!(
-            center.get_adjacent(NavigationDirection::SouthWest),
+            center.get_adjacent(NavigationDirection::SOUTH_WEST),
             RegionId(19, 19)
         );
     }
@@ -149,11 +149,11 @@ mod tests {
         let west_edge = RegionId(WorldMap::REGION_X_MIN, 18);
 
         assert_eq!(
-            east_edge.get_adjacent(NavigationDirection::East),
+            east_edge.get_adjacent(NavigationDirection::EAST),
             RegionId(WorldMap::REGION_X_MIN, 18)
         );
         assert_eq!(
-            west_edge.get_adjacent(NavigationDirection::West),
+            west_edge.get_adjacent(NavigationDirection::WEST),
             RegionId(WorldMap::REGION_X_MAX, 18)
         );
     }
@@ -164,11 +164,11 @@ mod tests {
         let south_edge = RegionId(20, WorldMap::REGION_Y_MAX);
 
         assert_eq!(
-            north_edge.get_adjacent(NavigationDirection::North),
+            north_edge.get_adjacent(NavigationDirection::NORTH),
             RegionId(20, WorldMap::REGION_Y_MAX)
         );
         assert_eq!(
-            south_edge.get_adjacent(NavigationDirection::South),
+            south_edge.get_adjacent(NavigationDirection::SOUTH),
             RegionId(20, WorldMap::REGION_Y_MIN)
         );
     }
@@ -179,11 +179,11 @@ mod tests {
         let southwest_corner = RegionId(WorldMap::REGION_X_MIN, WorldMap::REGION_Y_MAX);
 
         assert_eq!(
-            northeast_corner.get_adjacent(NavigationDirection::NorthEast),
+            northeast_corner.get_adjacent(NavigationDirection::NORTH_EAST),
             RegionId(WorldMap::REGION_X_MIN, WorldMap::REGION_Y_MAX)
         );
         assert_eq!(
-            southwest_corner.get_adjacent(NavigationDirection::SouthWest),
+            southwest_corner.get_adjacent(NavigationDirection::SOUTH_WEST),
             RegionId(WorldMap::REGION_X_MAX, WorldMap::REGION_Y_MIN)
         );
     }

@@ -1,7 +1,7 @@
 use crate::block::{Block, Cell};
 use bevy::prelude::*;
 use l2r_core::assets::binary::BinaryLoaderError;
-use spatial::{GeoPoint, GeoVec3, NavigationDirection, NavigationFlags};
+use spatial::{GeoPoint, GeoVec3, NavigationDirection};
 use std::fmt;
 
 /// A cell for [MultilayerBlock].
@@ -21,7 +21,7 @@ impl LayeredCell {
         self.nearest_cell(loc).height()
     }
 
-    pub fn nearest_nswe(&self, loc: &GeoVec3) -> NavigationFlags {
+    pub fn nearest_nswe(&self, loc: &GeoVec3) -> NavigationDirection {
         self.nearest_cell(loc).nswe()
     }
 
@@ -154,12 +154,8 @@ impl super::GeoBlock for MultilayerBlock {
         }
     }
 
-    fn nearest_nswe(&self, loc: &GeoVec3) -> NavigationFlags {
+    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
         self.cell_by_loc(loc).nswe()
-    }
-
-    fn passable_directions(&self, loc: &GeoVec3) -> Vec<NavigationDirection> {
-        self.cell_by_loc(loc).passable_directions()
     }
 }
 
@@ -240,8 +236,8 @@ mod tests {
         let loc = GeoVec3::new(point, 150);
         let cell_index = Block::cell_offset(&point) as usize;
         block.cells[cell_index] = LayeredCell::new(vec![Cell::new(0b1010)]);
-        let nswe = block.nearest_nswe(&loc);
-        assert_eq!(nswe, NavigationFlags::from_bits_truncate(0b1010));
+        let nswe = block.passable_directions(&loc);
+        assert_eq!(nswe, NavigationDirection::from_bits_truncate(0b1010));
     }
 
     #[test]
@@ -295,23 +291,23 @@ mod tests {
     #[test]
     fn test_layered_cell_nearest_nswe() {
         let cells = vec![
-            Cell::from_height(-3000).set_nswe(NavigationFlags::NORTH),
-            Cell::from_height(0).set_nswe(NavigationFlags::SOUTH),
-            Cell::from_height(3000).set_nswe(NavigationFlags::ALL),
+            Cell::from_height(-3000).set_nswe(NavigationDirection::NORTH),
+            Cell::from_height(0).set_nswe(NavigationDirection::SOUTH),
+            Cell::from_height(3000).set_nswe(NavigationDirection::all()),
         ];
         let layered_cell = LayeredCell::new(cells);
 
         assert_eq!(
             layered_cell.nearest_nswe(&GeoVec3::new(GeoPoint::new(0, 0), -3000)),
-            NavigationFlags::NORTH
+            NavigationDirection::NORTH
         );
         assert_eq!(
             layered_cell.nearest_nswe(&GeoVec3::new(GeoPoint::new(0, 0), 0)),
-            NavigationFlags::SOUTH
+            NavigationDirection::SOUTH
         );
         assert_eq!(
             layered_cell.nearest_nswe(&GeoVec3::new(GeoPoint::new(0, 0), 3000)),
-            NavigationFlags::ALL
+            NavigationDirection::all()
         );
     }
 }

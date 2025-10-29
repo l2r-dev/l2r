@@ -11,7 +11,7 @@ use game_core::{
 };
 use map::{RegionGeoData, WorldMap, WorldMapQuery, id::RegionId};
 use smallvec::SmallVec;
-use spatial::{GeoVec3, WayPoint};
+use spatial::{GeoVec3, NavigationDirection, WayPoint};
 
 const STRAIGHT_WEIGHT: i32 = 10;
 const DIAGONAL_WEIGHT: i32 = 14;
@@ -309,11 +309,14 @@ fn find_path(
 fn get_successors(geodata: &RegionGeoData, loc: &GeoVec3) -> SmallVec<[(GeoVec3, i32); 8]> {
     let mut successors = SmallVec::new();
 
-    for direction in geodata.passable_directions(loc) {
+    for direction in geodata.passable_directions(loc).iter_composite() {
         let neighbor_loc = loc.adjacent_position_in(direction, None);
 
-        // Only consider fully open neighbors (all 8 directions passable)
-        if geodata.passable_directions(&neighbor_loc).len() < 8 {
+        // Only consider fully open neighbors (all passable)
+        if !geodata
+            .passable_directions(&neighbor_loc)
+            .contains(NavigationDirection::all())
+        {
             continue;
         }
 

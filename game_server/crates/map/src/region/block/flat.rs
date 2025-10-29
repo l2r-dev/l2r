@@ -1,6 +1,6 @@
 use crate::block::Cell;
 use l2r_core::assets::binary::BinaryLoaderError;
-use spatial::{GeoVec3, NavigationDirection, NavigationFlags};
+use spatial::{GeoVec3, NavigationDirection};
 
 #[derive(Clone, Debug, Default)]
 pub struct FlatBlock(Cell);
@@ -50,13 +50,9 @@ impl super::GeoBlock for FlatBlock {
         }
     }
 
-    fn nearest_nswe(&self, _: &GeoVec3) -> NavigationFlags {
+    fn passable_directions(&self, _: &GeoVec3) -> NavigationDirection {
         // FlatBlock allows to go in all directions
-        NavigationFlags::ALL
-    }
-
-    fn passable_directions(&self, _: &GeoVec3) -> Vec<NavigationDirection> {
-        NavigationDirection::BASIC.into()
+        NavigationDirection::all()
     }
 }
 
@@ -79,9 +75,9 @@ mod tests {
         let cell = Cell::from_le_bytes([0x01, 0x0F]);
         let flat_block = FlatBlock(cell);
         assert_eq!(
-            flat_block.nearest_nswe(&GeoVec3::default()),
-            NavigationFlags::ALL,
-            "The get_nearest_nswe() method should return all NSWE flags"
+            flat_block.passable_directions(&GeoVec3::default()),
+            NavigationDirection::all(),
+            "The passable_directions() method should return all NSWE flags"
         );
     }
 

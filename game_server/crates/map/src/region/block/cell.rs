@@ -1,7 +1,7 @@
 use bevy::prelude::*;
-use spatial::{NavigationDirection, NavigationFlags};
+use spatial::NavigationDirection;
 
-#[derive(Clone, Copy, Debug, Default, Eq, Hash, Ord, PartialEq, PartialOrd, Reflect)]
+#[derive(Clone, Copy, Debug, Default, Eq, Hash, Ord, PartialEq, PartialOrd, Reflect, Deref)]
 pub struct Cell(i16);
 
 impl Cell {
@@ -9,55 +9,50 @@ impl Cell {
     pub const HALF_SIZE: i32 = Self::SIZE / 2;
     pub const HEIGHT_MASK: i16 = !0x000F; // All bits except the last 4
 
+    #[inline]
     pub fn new(data: i16) -> Self {
         Self(data)
     }
 
+    #[inline]
     pub fn value(&self) -> i16 {
         self.0
     }
 
     pub fn from_height(height: i32) -> Self {
         let height = height.clamp(i16::MIN as i32, i16::MAX as i32);
-        let cell_value = ((height << 1) as i16) | NavigationFlags::ALL.bits() as i16;
+        let cell_value = ((height << 1) as i16) | NavigationDirection::all().bits() as i16;
         Cell::new(cell_value)
     }
 
+    #[inline]
     pub fn height(&self) -> i32 {
         ((self.0 & Self::HEIGHT_MASK) >> 1) as i32
     }
 
-    pub fn nswe(&self) -> NavigationFlags {
-        NavigationFlags::from_bits_truncate((self.0 & !Self::HEIGHT_MASK) as u8)
+    #[inline]
+    pub fn nswe(&self) -> NavigationDirection {
+        NavigationDirection::from_bits_truncate((self.0 & !Self::HEIGHT_MASK) as u8)
     }
 
-    pub fn set_nswe(&mut self, nswe: NavigationFlags) -> Self {
+    pub fn set_nswe(&mut self, nswe: NavigationDirection) -> Self {
         self.0 = (self.0 & Self::HEIGHT_MASK) | nswe.bits() as i16;
         *self
     }
 
+    #[inline]
     pub fn is_passable(&self, direction: NavigationDirection) -> bool {
-        let nav_flags = NavigationFlags::from(direction);
-        self.nswe().contains(nav_flags)
+        self.nswe().contains(direction)
     }
 
-    pub fn passable_directions(&self) -> Vec<NavigationDirection> {
-        NavigationDirection::BASIC
-            .into_iter()
-            .filter(|dir| self.is_passable(*dir))
-            .collect()
-    }
-
+    #[inline]
     pub fn is_fully_blocked(&self) -> bool {
         self.nswe().is_empty()
     }
 
+    #[inline]
     pub fn from_le_bytes(bytes: [u8; 2]) -> Self {
         Self(i16::from_le_bytes(bytes))
-    }
-
-    pub fn to_le_bytes(&self) -> [u8; 2] {
-        self.0.to_le_bytes()
     }
 }
 
@@ -80,24 +75,24 @@ mod tests {
     #[test]
     fn test_nswe() {
         let cell = Cell::new(0x1234);
-        assert_eq!(cell.nswe(), NavigationFlags::from_bits_truncate(4));
+        assert_eq!(cell.nswe(), NavigationDirection::from_bits_truncate(4));
     }
 
     #[test]
     fn test_set_nswe() {
         let mut cell = Cell::new(0x1230);
-        cell.set_nswe(NavigationFlags::NORTH | NavigationFlags::SOUTH);
+        cell.set_nswe(NavigationDirection::NORTH | NavigationDirection::SOUTH);
         assert_eq!(cell.value() & !Cell::HEIGHT_MASK, 0x0C);
     }
 
     #[test]
     fn test_is_passable() {
         let mut cell = Cell::new(0x1235);
-        cell.set_nswe(NavigationFlags::NORTH | NavigationFlags::SOUTH);
-        assert!(cell.is_passable(NavigationDirection::North));
-        assert!(!cell.is_passable(NavigationDirection::East));
-        assert!(cell.is_passable(NavigationDirection::South));
-        assert!(!cell.is_passable(NavigationDirection::West));
+        cell.set_nswe(NavigationDirection::NORTH | NavigationDirection::SOUTH);
+        assert!(cell.is_passable(NavigationDirection::NORTH));
+        assert!(!cell.is_passable(NavigationDirection::EAST));
+        assert!(cell.is_passable(NavigationDirection::SOUTH));
+        assert!(!cell.is_passable(NavigationDirection::WEST));
     }
 
     #[test]
@@ -114,7 +109,7 @@ mod tests {
             );
             assert_eq!(
                 cell.nswe(),
-                NavigationFlags::ALL,
+                NavigationDirection::all(),
                 "NSWE flags should be ALL for input {}",
                 input_height
             );
@@ -137,11 +132,10 @@ mod tests {
     #[test]
     fn test_passable_directions() {
         let mut cell = Cell::new(0);
-        cell.set_nswe(NavigationFlags::NORTH | NavigationFlags::EAST);
-        let directions = cell.passable_directions();
-        assert_eq!(directions.len(), 3);
-        assert!(directions.contains(&NavigationDirection::North));
-        assert!(directions.contains(&NavigationDirection::East));
-        assert!(directions.contains(&NavigationDirection::NorthEast));
+        cell.set_nswe(NavigationDirection::NORTH | NavigationDirection::EAST);
+        let directions = cell.nswe();
+        assert!(directions.contains(NavigationDirection::NORTH));
+        assert!(directions.contains(NavigationDirection::EAST));
+        assert!(directions.contains(NavigationDirection::NORTH_EAST));
     }
 }

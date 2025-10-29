@@ -7,7 +7,7 @@ use crate::{
 use bevy::prelude::*;
 use bevy_common_assets::json::JsonAssetPlugin;
 use l2r_core::assets::binary::{BinaryAsset, BinaryAssetPlugin, BinaryLoaderError};
-use spatial::{GameVec3, GeoPoint, GeoVec3, NavigationDirection, NavigationFlags};
+use spatial::{GameVec3, GeoPoint, GeoVec3, NavigationDirection};
 use std::fmt;
 
 pub mod block;
@@ -227,11 +227,6 @@ impl RegionGeoData {
         Some(self.block_by_loc(from)?.next_higher_height(from, to))
     }
 
-    pub fn passable_directions(&self, loc: &GeoVec3) -> Vec<NavigationDirection> {
-        self.block_by_loc(loc)
-            .map_or_else(Vec::new, |block| block.passable_directions(loc))
-    }
-
     pub fn can_move_to(&self, start: &GeoVec3, goal: &GeoVec3) -> bool {
         if start.point == goal.point {
             return true;
@@ -376,19 +371,15 @@ impl RegionGeoData {
         self.block(block_id)
     }
 
-    fn nearest_nswe(&self, loc: &GeoVec3) -> Option<NavigationFlags> {
-        Some(self.block_by_loc(loc)?.nearest_nswe(loc))
+    pub fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
+        self.block_by_loc(loc)
+            .map_or_else(NavigationDirection::empty, |block| {
+                block.passable_directions(loc)
+            })
     }
 
     fn is_passable_in(&self, loc: &GeoVec3, direction: NavigationDirection) -> bool {
-        if let Some(loc_nswe) = self.nearest_nswe(loc) {
-            if !loc_nswe.contains(NavigationFlags::from(direction)) {
-                return false;
-            }
-        } else {
-            return false;
-        }
-        true
+        self.passable_directions(loc).contains(direction)
     }
 
     fn is_passable_to(&self, from: &GeoVec3, to: &GeoVec3) -> bool {
@@ -403,9 +394,7 @@ impl RegionGeoData {
         }
 
         // For diagonal directions, check corner cutting
-        if direction_from_to.is_diagonal()
-            && let Some([dir1, dir2]) = direction_from_to.to_straight_directions()
-        {
+        if let Some([dir1, dir2]) = direction_from_to.to_straight_directions() {
             let neighbor1 = from.adjacent_position_in(dir1, None);
             let neighbor2 = from.adjacent_position_in(dir2, None);
 

@@ -251,17 +251,17 @@ mod tests {
     #[test]
     fn test_new() {
         let buffer = ServerPacketBuffer::default();
-        assert!(buffer.is_empty());
+        assert!(SmallVec::is_empty(&buffer.0));
     }
 
     #[test]
     fn test_with_capacity() {
         let small = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY);
-        assert!(small.is_empty());
+        assert!(SmallVec::is_empty(&small.0));
         assert!(small.capacity() >= ServerPacketBuffer::CAPACITY);
 
         let large = ServerPacketBuffer::with_capacity(ServerPacketBuffer::CAPACITY * 2);
-        assert!(large.is_empty());
+        assert!(SmallVec::is_empty(&large.0));
         assert!(large.capacity() >= ServerPacketBuffer::CAPACITY * 2);
     }
 
