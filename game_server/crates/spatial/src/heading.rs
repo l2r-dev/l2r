@@ -57,8 +57,8 @@ impl From<Heading> for Quat {
 }
 
 impl From<NavigationDirection> for Heading {
-    fn from(direction: NavigationDirection) -> Self {
-        let quat = Quat::from(direction);
+    fn from(flags: NavigationDirection) -> Self {
+        let quat = Quat::from(flags);
         Heading::from(quat)
     }
 }
@@ -68,17 +68,21 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_heading_south() {
-        let direction = NavigationDirection::East;
-        let heading = Heading::from(direction);
+    fn test_heading_flags() {
+        let flags = NavigationDirection::EAST;
+        let heading = Heading::from(flags);
         assert_eq!(0, *heading);
-        let direction = NavigationDirection::North;
-        let heading = Heading::from(direction);
+
+        let flags = NavigationDirection::NORTH;
+        let heading = Heading::from(flags);
         assert_eq!(49152, *heading);
+
         let new_heading = Heading::new(49152);
         assert_eq!(heading, new_heading);
+
         let new_heading2 = Heading::new(-49152);
-        let new_direction = NavigationDirection::from(Quat::from(new_heading2));
-        assert_eq!(NavigationDirection::South, new_direction);
+        let quat = Quat::from(new_heading2);
+        let new_flags = NavigationDirection::from(quat);
+        assert_eq!(NavigationDirection::SOUTH, new_flags);
     }
 }

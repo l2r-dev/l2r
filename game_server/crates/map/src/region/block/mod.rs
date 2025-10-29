@@ -11,7 +11,7 @@ use derive_more::From;
 pub use flat::*;
 use l2r_core::assets::binary::BinaryLoaderError;
 pub use multilayer::*;
-use spatial::{GeoPoint, GeoVec3, NavigationDirection, NavigationFlags};
+use spatial::{GeoPoint, GeoVec3, NavigationDirection};
 use std::error::Error;
 use strum::{Display, EnumDiscriminants, EnumIter, EnumString};
 
@@ -23,8 +23,7 @@ pub trait GeoBlock {
     fn cell_by_loc(&self, loc: &GeoVec3) -> &Cell;
     fn nearest_height(&self, loc: &GeoVec3) -> i32;
     fn next_higher_height(&self, from: &GeoVec3, to: &GeoVec3) -> i32;
-    fn nearest_nswe(&self, loc: &GeoVec3) -> NavigationFlags;
-    fn passable_directions(&self, loc: &GeoVec3) -> Vec<NavigationDirection>;
+    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection;
 }
 
 #[derive(Clone, EnumDiscriminants, From)]
@@ -167,15 +166,7 @@ impl GeoBlock for Block {
         }
     }
 
-    fn nearest_nswe(&self, loc: &GeoVec3) -> NavigationFlags {
-        match self {
-            Block::Flat(block) => block.nearest_nswe(loc),
-            Block::Complex(block) => block.nearest_nswe(loc),
-            Block::Multilayer(block) => block.nearest_nswe(loc),
-        }
-    }
-
-    fn passable_directions(&self, loc: &GeoVec3) -> Vec<NavigationDirection> {
+    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
         match self {
             Block::Flat(block) => block.passable_directions(loc),
             Block::Complex(block) => block.passable_directions(loc),

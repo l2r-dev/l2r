@@ -1,4 +1,5 @@
-use super::{GeoPoint, NavigationDirection};
+use super::GeoPoint;
+use crate::NavigationDirection;
 use bevy::prelude::*;
 use std::ops::{Add, Mul, Sub};
 
@@ -132,8 +133,6 @@ impl GeoVec3 {
     }
 
     /// Determines the direction from this point to another.
-    ///
-    /// Returns a [`NavigationDirection`] enum value representing the cardinal or intercardinal direction.
     pub fn direction(self, other: &GeoVec3) -> NavigationDirection {
         NavigationDirection::from_offset(other.point.x - self.point.x, other.point.y - self.point.y)
     }
@@ -367,7 +366,7 @@ mod tests {
     #[test]
     fn test_get_adjacent_position_in_default_step() {
         let position = GeoVec3::new(GeoPoint::new(20000, 17000), -4232);
-        let direction = NavigationDirection::North;
+        let direction = NavigationDirection::NORTH;
         let new_position = position.adjacent_position_in(direction, None);
         assert_eq!(
             new_position,
@@ -378,7 +377,7 @@ mod tests {
     #[test]
     fn test_get_adjacent_position_in_diagonal_default_step() {
         let position = GeoVec3::new(GeoPoint::new(20000, 17000), -4232);
-        let direction = NavigationDirection::NorthEast;
+        let direction = NavigationDirection::NORTH_EAST;
         let new_position = position.adjacent_position_in(direction, None);
         assert_eq!(
             new_position,
@@ -389,7 +388,7 @@ mod tests {
     #[test]
     fn test_get_adjacent_position_in_east_default_step() {
         let position = GeoVec3::new(GeoPoint::new(20000, 17000), -4232);
-        let direction = NavigationDirection::East;
+        let direction = NavigationDirection::EAST;
         let new_position = position.adjacent_position_in(direction, None);
         assert_eq!(
             new_position,

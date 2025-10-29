@@ -1,7 +1,7 @@
 use crate::block::{Block, Cell};
 use bevy::prelude::*;
 use l2r_core::assets::binary::BinaryLoaderError;
-use spatial::{GeoPoint, GeoVec3, NavigationDirection, NavigationFlags};
+use spatial::{GeoPoint, GeoVec3, NavigationDirection};
 
 #[derive(Clone, Debug, Reflect)]
 pub struct ComplexBlock {
@@ -69,12 +69,8 @@ impl super::GeoBlock for ComplexBlock {
         }
     }
 
-    fn nearest_nswe(&self, loc: &GeoVec3) -> NavigationFlags {
+    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
         self.cell_by_loc(loc).nswe()
-    }
-
-    fn passable_directions(&self, loc: &GeoVec3) -> Vec<NavigationDirection> {
-        self.cell_by_loc(loc).passable_directions()
     }
 }
 
@@ -85,7 +81,7 @@ mod tests {
         block::Block,
         region::block::{Cell, GeoBlock},
     };
-    use spatial::NavigationFlags;
+    use spatial::NavigationDirection;
 
     fn create_test_complex_block() -> ComplexBlock {
         let mut complex_block = ComplexBlock::default();
@@ -170,8 +166,8 @@ mod tests {
         let cell_index = Block::cell_offset(&point) as usize;
         complex_block.cells[cell_index] = Cell::new(0b1010); // NSWE flags
         assert_eq!(
-            complex_block.nearest_nswe(&loc),
-            NavigationFlags::from_bits_truncate(0b1010)
+            complex_block.passable_directions(&loc),
+            NavigationDirection::from_bits_truncate(0b1010)
         );
     }
 }

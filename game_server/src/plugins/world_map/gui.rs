@@ -247,7 +247,7 @@ fn add_blocked_directions_to_gizmo(gizmo: &mut GizmoAsset, cell: &Cell, cell_pos
         cell_position.y as f32,
     );
 
-    for direction in NavigationDirection::BASIC {
+    for direction in NavigationDirection::all().iter_composite() {
         if !cell.is_passable(direction) {
             let (dx, dy) = direction.offset(1);
             let end = Vec3::new(

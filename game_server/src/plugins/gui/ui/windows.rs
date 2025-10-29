@@ -60,7 +60,7 @@ impl egui_dock::TabViewer for L2rTabViewer<'_> {
                     let direction = NavigationDirection::from(rotation);
                     // log::debug!("Direction: {:?}", direction);
 
-                    let compass_text = direction.build_compass_line();
+                    let compass_text = direction.compass_line();
 
                     ui.vertical_centered(|ui| {
                         ui.label(compass_text);

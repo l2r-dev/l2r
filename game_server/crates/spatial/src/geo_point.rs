@@ -59,8 +59,6 @@ impl GeoPoint {
     }
 
     /// Determines the direction from this point to another.
-    ///
-    /// Returns a value representing the cardinal or intercardinal direction.
     pub fn direction(self, other: &GeoPoint) -> NavigationDirection {
         NavigationDirection::from_offset(other.x - self.x, other.y - self.y)
     }
