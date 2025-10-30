@@ -28,6 +28,7 @@ const MAX_DISTANCE_THRESHOLD: f32 = HORIZONTAL_THRESHOLD + VERTICAL_THRESHOLD;
 const MAX_DISTANCE_IN_WATER: f32 = MAX_DISTANCE_THRESHOLD * 2.0;
 const MAX_DISTANCE_FLYING: f32 = MAX_DISTANCE_THRESHOLD * 2.0;
 const GEODATA_HEIGHT_TOLERANCE: f32 = 16.0;
+const MAX_GROUND_SNAP_DISTANCE: f32 = 50.0;
 
 const SPEED_CHECK_MIN_TIME: f32 = 0.1;
 const SPEED_TOLERANCE_MULTIPLIER: f32 = 1.5;
@@ -75,6 +76,7 @@ fn validate_position_handle(
 
         let is_flying = movable.is_flying();
         let is_in_water = movable.in_water();
+        let is_exiting_water = movable.exiting_water();
 
         let geodata = world_map_query.region_geodata(region_id)?;
 
@@ -83,14 +85,22 @@ fn validate_position_handle(
                 geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
             {
                 let geodata_height = geodata_height as f32;
+                let distance_to_ground = (transform.translation.y - geodata_height).abs();
 
-                if is_flying {
+                if is_exiting_water && distance_to_ground > MAX_GROUND_SNAP_DISTANCE {
+                    transform.translation = known_pos.position;
+                    commands.trigger_targets(
+                        GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
+                        character_entity,
+                    );
+                    return Ok(());
+                } else if is_flying {
                     // Flying entities can't go underground - enforce minimum height
                     if transform.translation.y < geodata_height {
                         transform.translation.y = geodata_height;
                     }
-                } else {
-                    // Ground entities snap to geodata height
+                } else if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
+                    // Ground entities snap to geodata height only if close enough
                     let height_diff = (transform.translation.y - geodata_height).abs();
                     if height_diff > GEODATA_HEIGHT_TOLERANCE {
                         transform.translation.y = geodata_height;

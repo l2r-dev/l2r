@@ -32,6 +32,7 @@ use state::GameServerStateSystems;
 // 3.0 is okay for normal char speed up to 600, if speed is more, it may not arrive at waypoints
 // Don't want to calculate it, cause game speed limit is 300.
 const ARRIVAL_DISTANCE: f32 = 3.0;
+const MAX_GROUND_SNAP_DISTANCE: f32 = 32.0;
 
 pub struct MovementPlugin;
 impl Plugin for MovementPlugin {
@@ -245,17 +246,18 @@ fn handle_movement_step(
             .region_geodata_from_pos(current_pos)
             .ok();
 
-        if !movables.movable.in_water() || movables.movable.is_flying() {
-            current_pos.y = match geodata
-                .and_then(|geodata| geodata.nearest_height(&WorldMap::vec3_to_geo(current_pos)))
+        if !movables.movable.in_water() && !movables.movable.is_flying() {
+            if let Some(geodata_height) =
+                geodata.and_then(|gd| gd.nearest_height(&WorldMap::vec3_to_geo(current_pos)))
             {
-                Some(height) => height as f32,
-                None => target_pos.y,
-            };
+                let height = geodata_height as f32;
+                let distance_to_ground = (current_pos.y - height).abs();
 
-            target_pos.y = current_pos.y;
-        } else {
-            current_pos.y = transform.translation.y;
+                if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
+                    current_pos.y = height;
+                    target_pos.y = height;
+                }
+            }
         }
 
         transform.look_at(target_pos, Vec3::Y);
@@ -272,6 +274,21 @@ fn handle_movement_step(
         let can_move = geodata.is_none_or(|geodata| {
             if movables.movable.in_water() || movables.movable.is_flying() {
                 true
+            } else if movables.movable.exiting_water() {
+                // Prevent movement through terrain when transitioning from water to land
+                if let Some(geodata_height) =
+                    geodata.nearest_height(&WorldMap::vec3_to_geo(current_pos))
+                {
+                    let distance_to_ground = (current_pos.y - geodata_height as f32).abs();
+                    distance_to_ground < MAX_GROUND_SNAP_DISTANCE
+                        && geodata.can_move_to(
+                            &WorldMap::vec3_to_geo(current_pos),
+                            &WorldMap::vec3_to_geo(new_position),
+                        )
+                } else {
+                    // No geodata - allow movement
+                    true
+                }
             } else {
                 geodata.can_move_to(
                     &WorldMap::vec3_to_geo(current_pos),
