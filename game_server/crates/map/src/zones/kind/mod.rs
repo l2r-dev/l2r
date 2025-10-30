@@ -2,9 +2,11 @@ use bevy::{platform::collections::HashMap, prelude::*};
 use bevy_enum_tag::EnumComponentTag;
 use l2r_core::model::race::Race;
 use serde::{Deserialize, Serialize};
+use strum::{Display, EnumDiscriminants, EnumIter, EnumString};
 
 mod castle;
 mod clan_hall;
+mod door;
 mod fort;
 mod olympiad_stadium;
 mod residence_hall_teleport;
@@ -17,6 +19,7 @@ mod town;
 
 pub use castle::*;
 pub use clan_hall::*;
+pub use door::*;
 pub use fort::*;
 pub use olympiad_stadium::*;
 pub use residence_hall_teleport::*;
@@ -25,7 +28,6 @@ pub use respawn::*;
 pub use respawn_points::*;
 pub use siegable_hall::*;
 pub use spawn::*;
-use strum::{Display, EnumDiscriminants, EnumIter, EnumString};
 pub use town::*;
 pub use zone_kind_variant::*;
 
@@ -48,6 +50,7 @@ pub enum ZoneKind {
     Condition,
     Damage,
     DerbyTrack,
+    Door(DoorKind),
     Effect,
     Fishing,
     Fort(FortKind),
@@ -79,7 +82,4 @@ pub enum ZoneKind {
 
 pub trait AlwaysLoadedZones {
     fn name() -> &'static str;
-    fn need_collider() -> bool {
-        true
-    }
 }

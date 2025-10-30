@@ -141,24 +141,11 @@ where
                                 });
 
                             let zone_name = zone.name();
-                            let built_zone_components = zone.build();
                             let zone = zone.clone();
-                            let entity = if ZoneListResource::need_collider() {
-                                zone_spawn
-                                    .commands
-                                    .spawn((zone.name_component(), zone, built_zone_components))
-                                    .id()
-                            } else {
-                                zone_spawn
-                                    .commands
-                                    .spawn((
-                                        zone.name_component(),
-                                        zone,
-                                        built_zone_components.0,
-                                        built_zone_components.1,
-                                    ))
-                                    .id()
-                            };
+                            let entity = zone_spawn
+                                .commands
+                                .spawn((zone.name_component(), zone))
+                                .id();
 
                             zone_spawn
                                 .commands
@@ -241,10 +228,9 @@ fn spawn_regional_zones(mut regional_spawn: RegionalSpawnZoneQuery) -> Result<()
                             {
                                 respawn_zone.set_target_entity(*entity);
                             }
-                            let built_zone_components = zone.build();
                             let zone_entity = regional_spawn
                                 .commands
-                                .spawn((zone.name_component(), zone, built_zone_components))
+                                .spawn((zone.name_component(), zone))
                                 .id();
                             regional_spawn
                                 .commands
@@ -259,7 +245,6 @@ fn spawn_regional_zones(mut regional_spawn: RegionalSpawnZoneQuery) -> Result<()
     }
     Ok(())
 }
-
 #[cfg(test)]
 mod tests {
     use super::*;

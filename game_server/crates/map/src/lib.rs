@@ -2,13 +2,11 @@ use crate::id::RegionId;
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
 
 mod constants;
-mod doors;
 mod region;
 mod spawn_point;
 mod zones;
 
 pub use constants::*;
-pub use doors::*;
 pub use region::*;
 use spatial::{GameVec3, GeoPoint, GeoVec3};
 pub use spawn_point::*;

@@ -78,21 +78,23 @@ fn validate_position_handle(
 
         let geodata = world_map_query.region_geodata(region_id)?;
 
-        if let Some(geodata_height) =
-            geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
-        {
-            let geodata_height = geodata_height as f32;
+        if !is_in_water {
+            if let Some(geodata_height) =
+                geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
+            {
+                let geodata_height = geodata_height as f32;
 
-            if is_flying {
-                // Flying entities can't go underground - enforce minimum height
-                if transform.translation.y < geodata_height {
-                    transform.translation.y = geodata_height;
-                }
-            } else {
-                // Ground entities snap to geodata height
-                let height_diff = (transform.translation.y - geodata_height).abs();
-                if height_diff > GEODATA_HEIGHT_TOLERANCE {
-                    transform.translation.y = geodata_height;
+                if is_flying {
+                    // Flying entities can't go underground - enforce minimum height
+                    if transform.translation.y < geodata_height {
+                        transform.translation.y = geodata_height;
+                    }
+                } else {
+                    // Ground entities snap to geodata height
+                    let height_diff = (transform.translation.y - geodata_height).abs();
+                    if height_diff > GEODATA_HEIGHT_TOLERANCE {
+                        transform.translation.y = geodata_height;
+                    }
                 }
             }
         }
@@ -144,18 +146,17 @@ fn validate_position_handle(
             // When flying or in water, allow larger position corrections
             // TODO: We already checked for maximum speed over time above
             // TODO: So it's pretty safe to trust client position here, but maybe we can improve it further?
-            match (is_flying, is_in_water, is_falling, total_dist_sq) {
+            match (is_flying, is_in_water, total_dist_sq) {
                 // Flying
-                (true, _, _, dist_sq) if dist_sq < MAX_DISTANCE_FLYING_SQ => {
+                (true, _, dist_sq) if dist_sq < MAX_DISTANCE_FLYING_SQ => {
                     transform.translation = client_pos;
                 }
-                // In water
-                (false, true, _, dist_sq) if dist_sq < MAX_DISTANCE_IN_WATER_SQ => {
+                // Swimming
+                (_, true, dist_sq) if dist_sq < MAX_DISTANCE_IN_WATER_SQ => {
                     transform.translation = client_pos;
                 }
-                // Entity is falling - accept only client height, because server don't have gravity
-                // And we don't want to stick player to the ground instantly
-                (false, false, true, _) => {
+                // Entity is falling
+                (false, false, _) if is_falling => {
                     transform.translation.y = client_pos.y;
                 }
                 // All other cases - server position takes priority

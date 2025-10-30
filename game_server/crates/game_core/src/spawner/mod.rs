@@ -82,8 +82,7 @@ impl Spawner {
             }
         ));
         if let Some(zone) = &self.zone {
-            let (zone_transform, _, _, _, _) = zone.build();
-            transform = zone_transform;
+            transform = Transform::from_translation(zone.center());
         } else {
             let locs = self
                 .npcs

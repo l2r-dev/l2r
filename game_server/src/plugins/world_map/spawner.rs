@@ -213,7 +213,7 @@ fn spawn_banned_zone(
     };
 
     let banned_zone_entity = commands
-        .spawn((BannedSpawnZone, banned_zone_name, banned_zone.build()))
+        .spawn((BannedSpawnZone, banned_zone_name, banned_zone.clone()))
         .id();
     commands
         .entity(banned_zone_entity)
@@ -236,7 +236,7 @@ fn spawn_main_zone(
         )),
     };
 
-    let zone_entity = commands.spawn((SpawnZone, zone_name, zone.build())).id();
+    let zone_entity = commands.spawn((SpawnZone, zone_name, zone.clone())).id();
     commands
         .entity(zone_entity)
         .insert(DespawnChildOf(spawner_entity));
