@@ -20,6 +20,7 @@ use l2r_core::{
 };
 use map::{WorldMap, WorldMapQuery};
 use spatial::{FlatDistance, GameVec3};
+use state::{GameServerStateSystems, LoadingSystems};
 use std::path::PathBuf;
 
 const DIALOG_RANGE: f32 = 100.0;
@@ -29,9 +30,20 @@ impl Plugin for DialogPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(DialogComponentsPlugin);
 
-        app.add_systems(Startup, load_npc_dialog_assets)
-            .add_systems(Update, (html_assets_changed, templates_folder_changed))
-            .add_systems(Update, dialog_request_handler);
+        app.add_systems(
+            Update,
+            (
+                load_npc_dialog_assets.in_set(LoadingSystems::AssetInit),
+                html_assets_changed.in_set(LoadingSystems::AssetInit),
+                (templates_folder_changed, html_assets_changed).in_set(LoadingSystems::AssetInit),
+            ),
+        )
+        .add_systems(Update, dialog_request_handler);
+
+        app.add_systems(
+            Update,
+            (templates_folder_changed, html_assets_changed).in_set(GameServerStateSystems::Run),
+        );
 
         app.add_observer(send_npc_info_dialog);
     }
@@ -158,7 +170,11 @@ fn dialog_request_handler(
 fn load_npc_dialog_assets(
     asset_server: Res<AssetServer>,
     mut npc_dialog_handles: ResMut<NpcDialogHandles>,
+    mut loaded: Local<bool>,
 ) {
+    if *loaded {
+        return;
+    }
     let mut asset_dir = PathBuf::new();
     asset_dir.push("html");
     asset_dir.push(CHRONICLE);
@@ -166,6 +182,7 @@ fn load_npc_dialog_assets(
 
     let loaded_folder = asset_server.load_folder(asset_dir);
     npc_dialog_handles.folder = loaded_folder.clone();
+    *loaded = true;
 }
 
 fn templates_folder_changed(
@@ -175,22 +192,18 @@ fn templates_folder_changed(
     mut npc_dialog: ResMut<DialogTemplater>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } | AssetEvent::LoadedWithDependencies { id } => {
-                if npc_dialog_handles.folder.id() == *id
-                    && let Some(loaded_folder) = asset_folders.get(npc_dialog_handles.folder.id())
-                {
-                    npc_dialog_handles.htmls = Vec::with_capacity(loaded_folder.handles.len());
+        let folder_id = npc_dialog_handles.folder.id();
+        if event.is_loaded_with_dependencies(folder_id)
+            && let Some(loaded_folder) = asset_folders.get(folder_id)
+        {
+            npc_dialog_handles.htmls = Vec::with_capacity(loaded_folder.handles.len());
 
-                    for handle in loaded_folder.handles.iter() {
-                        let typed_handle = handle.clone().typed_unchecked::<HtmlAsset>();
+            for handle in loaded_folder.handles.iter() {
+                let typed_handle = handle.clone().typed_unchecked::<HtmlAsset>();
 
-                        npc_dialog_handles.htmls.push(typed_handle);
-                    }
-                    npc_dialog.reload()
-                }
+                npc_dialog_handles.htmls.push(typed_handle);
             }
-            _ => {}
+            npc_dialog.reload()
         }
     }
 }
@@ -201,7 +214,7 @@ fn html_assets_changed(
     mut npc_dialog: ResMut<DialogTemplater>,
 ) {
     for event in events.read() {
-        if let AssetEvent::Modified { id } = event
+        if let AssetEvent::LoadedWithDependencies { id } = event
             && npc_dialog_handles.htmls.iter().any(|h| h.id() == *id)
         {
             npc_dialog.reload()

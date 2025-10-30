@@ -1,6 +1,7 @@
 use bevy::{log, prelude::*};
 use game_core::teleport::*;
 use l2r_core::chronicles::CHRONICLE;
+use state::{GameServerStateSystems, LoadingSystems};
 use std::path::PathBuf;
 
 pub struct TeleportDestinationsPlugin;
@@ -10,15 +11,26 @@ impl Plugin for TeleportDestinationsPlugin {
 
         app.init_resource::<TeleportDestinationsHandle>();
 
-        app.add_systems(Startup, load_assets)
-            .add_systems(Update, update_assets);
+        app.add_systems(
+            Update,
+            (
+                load_assets.in_set(LoadingSystems::AssetInit),
+                update_assets.in_set(LoadingSystems::AssetInit),
+            ),
+        );
+
+        app.add_systems(Update, update_assets.in_set(GameServerStateSystems::Run));
     }
 }
 
 fn load_assets(
     asset_server: Res<AssetServer>,
     mut teleport_destinations_handle: ResMut<TeleportDestinationsHandle>,
+    mut loaded: Local<bool>,
 ) {
+    if *loaded {
+        return;
+    }
     let mut path = PathBuf::from("teleport");
     path.push(CHRONICLE);
     path.push("destinations");
@@ -26,6 +38,7 @@ fn load_assets(
 
     let handle: Handle<TeleportDestinations> = asset_server.load(path.clone());
     **teleport_destinations_handle = handle;
+    *loaded = true;
 }
 
 fn update_assets(
@@ -33,9 +46,7 @@ fn update_assets(
     mut events: EventReader<AssetEvent<TeleportDestinations>>,
 ) {
     for event in events.read() {
-        if let AssetEvent::Modified { id } = event
-            && handle.id() == *id
-        {
+        if event.is_loaded_with_dependencies(handle.id()) {
             log::info!("Teleport destinations updated");
         }
     }

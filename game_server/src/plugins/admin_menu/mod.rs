@@ -11,6 +11,7 @@ use l2r_core::{
     assets::html::{HtmlAsset, TeraHtmlTemplater},
     chronicles::CHRONICLE,
 };
+use state::{GameServerStateSystems, LoadingSystems};
 use std::path::PathBuf;
 
 mod commands;
@@ -20,8 +21,18 @@ impl Plugin for AdminMenuPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(AdminMenuComponentsPlugin);
 
-        app.add_systems(Startup, load_assets);
-        app.add_systems(Update, (html_assets_changed, templates_folder_changed));
+        app.add_systems(
+            Update,
+            (
+                load_assets.in_set(LoadingSystems::AssetInit),
+                (templates_folder_changed, html_assets_changed).in_set(LoadingSystems::AssetInit),
+            ),
+        );
+
+        app.add_systems(
+            Update,
+            (templates_folder_changed, html_assets_changed).in_set(GameServerStateSystems::Run),
+        );
 
         app.add_observer(handle_last_admin_menu_page);
         app.add_plugins(commands::AdminMenuCommandsPlugin);
@@ -31,7 +42,11 @@ impl Plugin for AdminMenuPlugin {
 fn load_assets(
     asset_server: Res<AssetServer>,
     mut admin_menu_handles: ResMut<AdminMenuPagesHandles>,
+    mut loaded: Local<bool>,
 ) {
+    if *loaded {
+        return;
+    }
     let mut asset_dir = PathBuf::new();
     asset_dir.push("html");
     asset_dir.push(CHRONICLE);
@@ -39,6 +54,7 @@ fn load_assets(
 
     let loaded_folder = asset_server.load_folder(asset_dir);
     admin_menu_handles.folder = loaded_folder.clone();
+    *loaded = true;
 }
 
 fn templates_folder_changed(
@@ -48,21 +64,16 @@ fn templates_folder_changed(
     mut admin_menu: ResMut<AdminMenu>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } | AssetEvent::LoadedWithDependencies { id } => {
-                if admin_menu_handles.folder.id() == *id {
-                    let loaded_folder = asset_folders.get(admin_menu_handles.folder.id()).unwrap();
+        if event.is_loaded_with_dependencies(admin_menu_handles.folder.id()) {
+            let loaded_folder = asset_folders.get(admin_menu_handles.folder.id()).unwrap();
 
-                    admin_menu_handles.htmls = Vec::with_capacity(loaded_folder.handles.len());
+            admin_menu_handles.htmls = Vec::with_capacity(loaded_folder.handles.len());
 
-                    for handle in loaded_folder.handles.iter() {
-                        let typed_handle = handle.clone().typed_unchecked::<HtmlAsset>();
-                        admin_menu_handles.htmls.push(typed_handle);
-                    }
-                    admin_menu.reload();
-                }
+            for handle in loaded_folder.handles.iter() {
+                let typed_handle = handle.clone().typed_unchecked::<HtmlAsset>();
+                admin_menu_handles.htmls.push(typed_handle);
             }
-            _ => {}
+            admin_menu.reload();
         }
     }
 }
@@ -73,7 +84,7 @@ fn html_assets_changed(
     mut admin_menu: ResMut<AdminMenu>,
 ) {
     for event in events.read() {
-        if let AssetEvent::Modified { id } = event
+        if let AssetEvent::LoadedWithDependencies { id } = event
             && admin_menu_handles.htmls.iter().any(|h| h.id() == *id)
         {
             admin_menu.reload();

@@ -1,4 +1,4 @@
-use bevy::{log, platform::collections::HashMap, prelude::*};
+use bevy::{platform::collections::HashMap, prelude::*};
 use config::Config;
 use game_core::{
     action::wait_kind::WaitKind,
@@ -13,7 +13,7 @@ use game_core::{
     stats::*,
 };
 use l2r_core::chronicles::CHRONICLE;
-use state::StatKindSystems;
+use state::{LoadingSystems, StatKindSystems};
 use std::path::PathBuf;
 use strum::IntoEnumIterator;
 
@@ -22,8 +22,13 @@ impl Plugin for VitalsStatsPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(VitalsStatsComponentsPlugin);
 
-        app.add_systems(Startup, load_assets)
-            .add_systems(Update, update_stats_table);
+        app.add_systems(
+            Update,
+            (
+                load_assets.in_set(LoadingSystems::AssetInit),
+                update_stats_table.in_set(LoadingSystems::AssetInit),
+            ),
+        );
 
         app.add_observer(resurrect_handle)
             .add_observer(full_restore_trigger_handle);
@@ -171,7 +176,14 @@ fn on_required_components_changed(mut args: StatsCalcParams<VitalsStats>) -> Res
     Ok(())
 }
 
-fn load_assets(asset_server: Res<AssetServer>, mut stats_table: ResMut<StatsTable>) {
+fn load_assets(
+    asset_server: Res<AssetServer>,
+    mut stats_table: ResMut<StatsTable>,
+    mut loaded: Local<bool>,
+) {
+    if *loaded {
+        return;
+    }
     let mut vitals_table = VitalsStatsHandlers::from(HashMap::new());
 
     for class_id in ClassId::iter() {
@@ -183,6 +195,7 @@ fn load_assets(asset_server: Res<AssetServer>, mut stats_table: ResMut<StatsTabl
         vitals_table.insert(class_id, handle);
     }
     stats_table.vitals_stats = vitals_table;
+    *loaded = true;
 }
 
 fn update_stats_table(
@@ -190,18 +203,8 @@ fn update_stats_table(
     mut events: EventReader<AssetEvent<LeveledVitalsStats>>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } => {
-                for (class_id, handler) in stats_table.vitals_stats.iter() {
-                    if handler.id() == *id {
-                        log::debug!("Vitals stats updated for {}", class_id);
-                    }
-                }
-            }
-            AssetEvent::LoadedWithDependencies { id: _ } => {
-                stats_table.init_vitals_stats();
-            }
-            _ => {}
+        if let AssetEvent::LoadedWithDependencies { id: _ } = event {
+            stats_table.init_vitals_stats();
         }
     }
 }
@@ -220,7 +223,7 @@ fn full_restore_event_handle(
     mut full_restorers: Query<Mut<VitalsStats>>,
 ) -> Result<()> {
     for event in full_restore.read() {
-        bevy::log::debug!("Entity {:?} triggered full restore", event.entity());
+        debug!("Entity {:?} triggered full restore", event.entity());
         let entity = event.entity();
         full_restorers.get_mut(entity)?.fill_current_from_max();
     }

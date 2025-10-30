@@ -116,21 +116,18 @@ fn loaded_region_geodata(
     mut commands: Commands,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } | AssetEvent::LoadedWithDependencies { id } => {
-                for (entity, mut region) in regions.iter_mut() {
-                    let id = *id;
-                    if region.handle().id() == id {
-                        let region_id = region.id();
-                        log::info!("Geodata for region {} updated", region_id);
-                        if let Some(geodata) = regions_geodata.get(id) {
-                            region.activate(geodata);
-                            commands.trigger_targets(LoadRegionItems, entity);
-                        }
+        if let AssetEvent::LoadedWithDependencies { id } = event {
+            for (entity, mut region) in regions.iter_mut() {
+                let id = *id;
+                if region.handle().id() == id {
+                    let region_id = region.id();
+                    log::info!("Geodata for region {} updated", region_id);
+                    if let Some(geodata) = regions_geodata.get(id) {
+                        region.activate(geodata);
+                        commands.trigger_targets(LoadRegionItems, entity);
                     }
                 }
             }
-            _ => {}
         }
     }
 }
@@ -190,23 +187,20 @@ fn loaded_region_info(
     named_zones: Res<NamedZones>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } | AssetEvent::LoadedWithDependencies { id } => {
-                for (region_entity, handle) in regions.iter_mut() {
-                    let id = *id;
-                    if handle.id() == id
-                        && let Some(info) = regions_info.get(id)
-                    {
-                        let respawn_zone = info.respawn_zone();
-                        if let Some(entity) = named_zones.get(respawn_zone).copied() {
-                            commands
-                                .entity(region_entity)
-                                .insert(RegionRespawnZone(entity));
-                        }
+        if let AssetEvent::LoadedWithDependencies { id } = event {
+            for (region_entity, handle) in regions.iter_mut() {
+                let id = *id;
+                if handle.id() == id
+                    && let Some(info) = regions_info.get(id)
+                {
+                    let respawn_zone = info.respawn_zone();
+                    if let Some(entity) = named_zones.get(respawn_zone).copied() {
+                        commands
+                            .entity(region_entity)
+                            .insert(RegionRespawnZone(entity));
                     }
                 }
             }
-            _ => {}
         }
     }
 }

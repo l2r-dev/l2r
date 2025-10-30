@@ -16,7 +16,7 @@ use l2r_core::{
 };
 use map::{WorldMap, id::RegionId};
 use smallvec::smallvec;
-use state::GameMechanicsSystems;
+use state::{GameMechanicsSystems, LoadingSystems};
 use use_shot::UseShotPlugin;
 
 mod admin_shop;
@@ -50,13 +50,22 @@ impl Plugin for ItemsPlugin {
         app.spawn_task(async { spawn_new_items().await })
             .react_to_event::<SpawnNew>();
 
-        app.add_systems(Startup, assets::load_items_data_assets)
-            .add_systems(Update, assets::update_items_data_assets)
-            .add_systems(Update, count_changed.in_set(GameMechanicsSystems::Items))
-            .add_systems(
-                Update,
-                handle_newly_spawned_items.in_set(GameMechanicsSystems::Items),
-            );
+        app.add_systems(
+            Update,
+            (
+                assets::load_items_data_assets.in_set(LoadingSystems::AssetInit),
+                assets::update_items_data_assets.in_set(LoadingSystems::AssetInit),
+            ),
+        );
+        app.add_systems(
+            Update,
+            assets::update_items_data_assets.in_set(GameMechanicsSystems::Items),
+        )
+        .add_systems(Update, count_changed.in_set(GameMechanicsSystems::Items))
+        .add_systems(
+            Update,
+            handle_newly_spawned_items.in_set(GameMechanicsSystems::Items),
+        );
 
         app.add_observer(spawn_existing_item_handle);
     }

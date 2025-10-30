@@ -42,15 +42,11 @@ fn handle_server_names_loaded(
     server_names_handle: Res<ServerNamesHandle>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } | AssetEvent::LoadedWithDependencies { id } => {
-                if server_names_handle.id() == *id
-                    && let Some(server_names) = server_names_assets.get(*id)
-                {
-                    log::info!("Loaded {} server names.", server_names.len());
-                }
-            }
-            _ => {}
+        let id = server_names_handle.id();
+        if event.is_loaded_with_dependencies(id)
+            && let Some(server_names) = server_names_assets.get(id)
+        {
+            log::info!("Loaded {} server names.", server_names.len());
         }
     }
 }

@@ -47,20 +47,17 @@ fn spawn_npc_spawners(
     mut npcs: Query<Entity, With<npc::Kind>>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::LoadedWithDependencies { id } | AssetEvent::Modified { id } => {
-                handle_spawn_list_loaded(
-                    commands.reborrow(),
-                    &asset_server,
-                    &spawn_lists,
-                    *id,
-                    regions.reborrow(),
-                    regional_spawners.reborrow(),
-                    spawners.reborrow(),
-                    npcs.reborrow(),
-                );
-            }
-            _ => {}
+        if let AssetEvent::LoadedWithDependencies { id } = event {
+            handle_spawn_list_loaded(
+                commands.reborrow(),
+                &asset_server,
+                &spawn_lists,
+                *id,
+                regions.reborrow(),
+                regional_spawners.reborrow(),
+                spawners.reborrow(),
+                npcs.reborrow(),
+            );
         }
     }
 }

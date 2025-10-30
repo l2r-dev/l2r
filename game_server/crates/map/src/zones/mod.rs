@@ -23,7 +23,8 @@ impl Plugin for ZonesComponentsPlugin {
         app.register_type::<Zone>()
             .register_type::<GlobalZones>()
             .register_type::<RegionalZones>()
-            .register_type::<ZoneKindVariant>();
+            .register_type::<ZoneKindVariant>()
+            .register_type::<NamedZones>();
 
         app.init_resource::<NamedZones>();
     }
@@ -223,5 +224,6 @@ impl From<Handle<ZoneList>> for ZoneListHandle {
     }
 }
 
-#[derive(Clone, Default, Deref, DerefMut, Resource)]
+#[derive(Clone, Default, Deref, DerefMut, Reflect, Resource)]
+#[reflect(Resource)]
 pub struct NamedZones(HashMap<String, Entity>);

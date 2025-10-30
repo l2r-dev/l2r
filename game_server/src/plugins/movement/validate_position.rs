@@ -80,31 +80,30 @@ fn validate_position_handle(
 
         let geodata = world_map_query.region_geodata(region_id)?;
 
-        if !is_in_water {
-            if let Some(geodata_height) =
+        if !is_in_water
+            && let Some(geodata_height) =
                 geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
-            {
-                let geodata_height = geodata_height as f32;
-                let distance_to_ground = (transform.translation.y - geodata_height).abs();
+        {
+            let geodata_height = geodata_height as f32;
+            let distance_to_ground = (transform.translation.y - geodata_height).abs();
 
-                if is_exiting_water && distance_to_ground > MAX_GROUND_SNAP_DISTANCE {
-                    transform.translation = known_pos.position;
-                    commands.trigger_targets(
-                        GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
-                        character_entity,
-                    );
-                    return Ok(());
-                } else if is_flying {
-                    // Flying entities can't go underground - enforce minimum height
-                    if transform.translation.y < geodata_height {
-                        transform.translation.y = geodata_height;
-                    }
-                } else if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
-                    // Ground entities snap to geodata height only if close enough
-                    let height_diff = (transform.translation.y - geodata_height).abs();
-                    if height_diff > GEODATA_HEIGHT_TOLERANCE {
-                        transform.translation.y = geodata_height;
-                    }
+            if is_exiting_water && distance_to_ground > MAX_GROUND_SNAP_DISTANCE {
+                transform.translation = known_pos.position;
+                commands.trigger_targets(
+                    GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
+                    character_entity,
+                );
+                return Ok(());
+            } else if is_flying {
+                // Flying entities can't go underground - enforce minimum height
+                if transform.translation.y < geodata_height {
+                    transform.translation.y = geodata_height;
+                }
+            } else if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
+                // Ground entities snap to geodata height only if close enough
+                let height_diff = (transform.translation.y - geodata_height).abs();
+                if height_diff > GEODATA_HEIGHT_TOLERANCE {
+                    transform.translation.y = geodata_height;
                 }
             }
         }

@@ -1,4 +1,4 @@
-use bevy::{log, prelude::*};
+use bevy::prelude::*;
 use bevy_common_assets::toml::TomlAssetPlugin;
 use derive_more::derive::{From, Into};
 use l2r_core::{assets::ASSET_DIR, utils::get_base_path};
@@ -121,10 +121,10 @@ impl Config {
             if let Ok(file_config) = toml::from_str::<Config>(&config_content) {
                 config.merge(&file_config);
             } else {
-                log::warn!("Failed to parse config file, using defaults");
+                warn!("Failed to parse config file, using defaults");
             }
         } else {
-            log::warn!("Config file not found at {:?}, using defaults", config_path);
+            warn!("Config file not found at {:?}, using defaults", config_path);
         }
 
         config.apply_env_overrides();
@@ -254,32 +254,19 @@ impl Config {
         mut config: ResMut<Config>,
     ) {
         for event in events.read() {
-            match event {
-                AssetEvent::LoadedWithDependencies { id } | AssetEvent::Modified { id } => {
-                    let handle = config.handle.clone();
-                    if handle.id() != *id {
-                        log::error!(
-                            "Config asset loaded with id: {:?} 
-                            does not match the current config handle id: {:?},
-                            we expected single config asset",
-                            id,
-                            handle.id()
-                        );
-                        continue;
-                    }
-
-                    if let Some(asset_config) = config_assets.get(*id) {
-                        // Start with defaults
-                        let mut merged = Config::default();
-                        // Merge config file over defaults
-                        merged.merge(asset_config);
-                        // Merge env vars over that
-                        merged.apply_env_overrides();
-                        merged.handle = handle;
-                        *config = merged;
-                    }
+            let handle_id = config.handle.id();
+            if event.is_loaded_with_dependencies(handle_id) {
+                if let Some(asset_config) = config_assets.get(handle_id) {
+                    // Start with defaults
+                    let mut merged = Config::default();
+                    // Merge config file over defaults
+                    merged.merge(asset_config);
+                    // Merge env vars over that
+                    merged.apply_env_overrides();
+                    merged.handle = config.handle.clone();
+                    *config = merged;
                 }
-                _ => {}
+                debug!("Config updated from asset");
             }
         }
     }

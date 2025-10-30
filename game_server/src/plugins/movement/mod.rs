@@ -246,17 +246,17 @@ fn handle_movement_step(
             .region_geodata_from_pos(current_pos)
             .ok();
 
-        if !movables.movable.in_water() && !movables.movable.is_flying() {
-            if let Some(geodata_height) =
+        if !movables.movable.in_water()
+            && !movables.movable.is_flying()
+            && let Some(geodata_height) =
                 geodata.and_then(|gd| gd.nearest_height(&WorldMap::vec3_to_geo(current_pos)))
-            {
-                let height = geodata_height as f32;
-                let distance_to_ground = (current_pos.y - height).abs();
+        {
+            let height = geodata_height as f32;
+            let distance_to_ground = (current_pos.y - height).abs();
 
-                if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
-                    current_pos.y = height;
-                    target_pos.y = height;
-                }
+            if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
+                current_pos.y = height;
+                target_pos.y = height;
             }
         }
 
