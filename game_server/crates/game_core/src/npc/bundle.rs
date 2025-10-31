@@ -1,6 +1,7 @@
 use super::{model::CollisionSize, monster_ai::MonsterAiParams};
 use crate::{
     abnormal_effects::AbnormalEffects,
+    action::target::Targetable,
     attack::AttackingList,
     items::PaperDoll,
     object_id::{ObjectId, ObjectIdManager},
@@ -43,6 +44,7 @@ pub struct Bundle {
     pub abnormal_effects: AbnormalEffects,
     pub other_stats: OtherStats,
     pub paper_doll: PaperDoll,
+    pub targetable: Targetable,
 }
 
 impl Bundle {
@@ -120,6 +122,7 @@ impl Bundle {
             abnormal_effects: AbnormalEffects::default(),
             other_stats: OtherStats::default(),
             paper_doll: PaperDoll::default(),
+            targetable: Targetable,
         }
     }
 }

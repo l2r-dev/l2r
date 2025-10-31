@@ -2,7 +2,10 @@ use bevy::{log, prelude::*};
 use bevy_ecs::system::SystemParam;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
-    action::{pickup::PickupRequest, target::SelectedTarget},
+    action::{
+        pickup::PickupRequest,
+        target::{SelectedTarget, Targetable},
+    },
     active_action::ActiveAction,
     attack::{Attackable, Attacking},
     character::Character,
@@ -53,6 +56,7 @@ struct ActionHandleParams<'w, 's> {
             Option<Ref<'static, Transform>>,
             Has<Item>,
             Has<Character>,
+            Has<Targetable>,
         ),
     >,
     object_id_manager: Res<'w, ObjectIdManager>,
@@ -73,29 +77,6 @@ fn handle_action_packet(
     let (selected_target, known_entities, in_active_action) =
         params.character_query.get_mut(entity)?;
 
-    // Check if target is an item first
-    if let Some(packet_target_entity) = params.object_id_manager.entity(packet.object_id) {
-        let (_, _, is_item, _) = params.target_query.get(packet_target_entity)?;
-        if is_item {
-            if in_active_action {
-                params
-                    .commands
-                    .entity(entity)
-                    .insert(NextIntention::PickUp {
-                        item: packet_target_entity,
-                    });
-            } else {
-                // Insert PickupRequest - the pickup_request_handler will handle pathfinding
-                params
-                    .commands
-                    .entity(entity)
-                    .insert(PickupRequest(packet_target_entity));
-            }
-
-            return Ok(());
-        }
-    }
-
     let Some(packet_target_entity) = params.object_id_manager.entity(packet.object_id) else {
         params
             .commands
@@ -104,9 +85,36 @@ fn handle_action_packet(
         return Ok(());
     };
 
+    let (_, _, is_item, _, is_targetable) = params.target_query.get(packet_target_entity)?;
+
+    if is_item {
+        if in_active_action {
+            params
+                .commands
+                .entity(entity)
+                .insert(NextIntention::PickUp {
+                    item: packet_target_entity,
+                });
+        } else {
+            // Insert PickupRequest - the pickup_request_handler will handle pathfinding
+            params
+                .commands
+                .entity(entity)
+                .insert(PickupRequest(packet_target_entity));
+        }
+        return Ok(());
+    }
+
+    if !is_targetable {
+        params
+            .commands
+            .trigger_targets(GameServerPacket::from(ActionFail), entity);
+        return Ok(());
+    }
+
     // Handle existing selected target
     if let Some(curr_selected) = selected_target
-        && **curr_selected == packet_target_entity 
+        && **curr_selected == packet_target_entity
     {
         return handle_selected_target_action(
             packet.shift_pressed,
@@ -155,6 +163,7 @@ fn handle_selected_target_action(
         Option<Ref<Transform>>,
         Has<Item>,
         Has<Character>,
+        Has<Targetable>,
     )>,
     mut commands: Commands,
 ) -> Result<()> {
@@ -164,7 +173,7 @@ fn handle_selected_target_action(
         return Ok(());
     }
 
-    let (attackable, _, _, is_character) = target_query.get(curr_selected)?;
+    let (attackable, _, _, is_character, _) = target_query.get(curr_selected)?;
 
     match (attackable.is_some(), is_character, in_active_action) {
         // Attackable target
@@ -199,6 +208,5 @@ fn handle_selected_target_action(
                 .insert(DialogRequest::from(curr_selected));
         }
     }
-
     Ok(())
 }

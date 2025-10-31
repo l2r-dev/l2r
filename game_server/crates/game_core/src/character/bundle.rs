@@ -1,6 +1,6 @@
 use crate::{
     abnormal_effects::AbnormalEffects,
-    action::wait_kind::WaitKind,
+    action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
     encounters::KnownEntities,
     items::{self, Inventory, PaperDoll},
@@ -50,6 +50,7 @@ pub struct Bundle {
     pub attack_effects: AttackEffects,
     pub defence_effects: DefenceEffects,
     pub abnormal_effects: AbnormalEffects,
+    pub targetable: Targetable,
 }
 
 #[allow(clippy::too_many_arguments)]
@@ -165,6 +166,7 @@ impl Bundle {
             attack_effects: AttackEffects::default(),
             defence_effects: DefenceEffects::default(),
             abnormal_effects: AbnormalEffects::default(),
+            targetable: Targetable,
         }
     }
 

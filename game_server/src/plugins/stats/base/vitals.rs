@@ -278,9 +278,7 @@ mod tests {
 
             info!(
                 "Level 1 Bladedancer stats: MaxHp={}, MaxMp={}, MaxCp={}",
-                max_hp,
-                max_mp,
-                max_cp
+                max_hp, max_mp, max_cp
             );
 
             assert!(
