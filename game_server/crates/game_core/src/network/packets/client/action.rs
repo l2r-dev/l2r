@@ -7,7 +7,7 @@ use std::{convert::TryFrom, fmt::Debug};
 #[derive(Deref, Event)]
 pub struct TargetNotFound(pub u32);
 
-#[derive(Clone, Debug, PartialEq, Reflect)]
+#[derive(Clone, Copy, Debug, PartialEq, Reflect)]
 pub struct Action {
     pub object_id: ObjectId,
     pub origin_location: Vec3,

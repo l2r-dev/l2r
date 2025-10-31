@@ -53,10 +53,11 @@ impl KnownEntities {
         target_entity: Entity,
         character_entity: Entity,
     ) -> Option<Entity> {
-        self.iter()
-            .copied()
-            .chain(std::iter::once(character_entity))
-            .find(|&candidate| candidate == target_entity)
+        if target_entity == character_entity || self.contains(&target_entity) {
+            Some(target_entity)
+        } else {
+            None
+        }
     }
 }
 

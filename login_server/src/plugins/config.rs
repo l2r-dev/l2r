@@ -110,17 +110,17 @@ impl Config {
     ) {
         for event in events.read() {
             let id = config.handle.id();
-            if event.is_loaded_with_dependencies(id) {
-                if let Some(asset_config) = config_assets.get(id) {
-                    // Start with defaults
-                    let mut merged = Config::default();
-                    // Merge config file over defaults
-                    merged.merge(asset_config);
-                    // Merge env vars over that
-                    merged.apply_env_overrides();
-                    merged.handle = config.handle.clone();
-                    *config = merged;
-                }
+            if event.is_loaded_with_dependencies(id)
+                && let Some(asset_config) = config_assets.get(id)
+            {
+                // Start with defaults
+                let mut merged = Config::default();
+                // Merge config file over defaults
+                merged.merge(asset_config);
+                // Merge env vars over that
+                merged.apply_env_overrides();
+                merged.handle = config.handle.clone();
+                *config = merged;
             }
         }
     }

@@ -1,4 +1,5 @@
 use bevy::{log, prelude::*};
+use bevy_ecs::system::SystemParam;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     action::{pickup::PickupRequest, target::SelectedTarget},
@@ -31,46 +32,62 @@ impl Plugin for ActionPacketPlugin {
     }
 }
 
-fn handle_action_packet(
-    receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
-    receive_params: PacketReceiveParams,
-    mut character_query: Query<
+#[derive(SystemParam)]
+struct ActionHandleParams<'w, 's> {
+    receive_params: PacketReceiveParams<'w, 's>,
+    character_query: Query<
+        'w,
+        's,
         (
-            Option<Ref<SelectedTarget>>,
-            Ref<KnownEntities>,
+            Option<Ref<'static, SelectedTarget>>,
+            Ref<'static, KnownEntities>,
             Has<ActiveAction>,
         ),
         With<Character>,
     >,
-    target_query: Query<(
-        Option<Ref<Attackable>>,
-        Option<Ref<Transform>>,
-        Has<Item>,
-        Has<Character>,
-    )>,
-    object_id_manager: Res<ObjectIdManager>,
-    mut commands: Commands,
+    target_query: Query<
+        'w,
+        's,
+        (
+            Option<Ref<'static, Attackable>>,
+            Option<Ref<'static, Transform>>,
+            Has<Item>,
+            Has<Character>,
+        ),
+    >,
+    object_id_manager: Res<'w, ObjectIdManager>,
+    commands: Commands<'w, 's>,
+}
+
+fn handle_action_packet(
+    receive: Trigger<PacketReceiveEvent<GameServerNetworkConfig>>,
+    mut params: ActionHandleParams,
 ) -> Result<()> {
     let event = receive.event();
     let GameClientPacket::Action(ref packet) = event.packet else {
         return Ok(());
     };
 
-    let entity = receive_params.character(&event.connection.id())?;
+    let entity = params.receive_params.character(&event.connection.id())?;
 
-    let (selected_target, known_entities, in_active_action) = character_query.get_mut(entity)?;
+    let (selected_target, known_entities, in_active_action) =
+        params.character_query.get_mut(entity)?;
 
     // Check if target is an item first
-    if let Some(packet_target_entity) = object_id_manager.entity(packet.object_id) {
-        let (_, _, is_item, _) = target_query.get(packet_target_entity)?;
+    if let Some(packet_target_entity) = params.object_id_manager.entity(packet.object_id) {
+        let (_, _, is_item, _) = params.target_query.get(packet_target_entity)?;
         if is_item {
             if in_active_action {
-                commands.entity(entity).insert(NextIntention::PickUp {
-                    item: packet_target_entity,
-                });
+                params
+                    .commands
+                    .entity(entity)
+                    .insert(NextIntention::PickUp {
+                        item: packet_target_entity,
+                    });
             } else {
                 // Insert PickupRequest - the pickup_request_handler will handle pathfinding
-                commands
+                params
+                    .commands
                     .entity(entity)
                     .insert(PickupRequest(packet_target_entity));
             }
@@ -79,62 +96,39 @@ fn handle_action_packet(
         }
     }
 
-    let Some(packet_target_entity) = object_id_manager.entity(packet.object_id) else {
-        commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
+    let Some(packet_target_entity) = params.object_id_manager.entity(packet.object_id) else {
+        params
+            .commands
+            .trigger_targets(GameServerPacket::from(ActionFail), entity);
 
         return Ok(());
     };
 
     // Handle existing selected target
-    if let Some(curr_selected) = selected_target {
-        let curr_selected = **curr_selected;
-
-        if curr_selected == packet_target_entity {
-            if packet.shift_pressed {
-                commands.trigger_targets(SendNpcInfoDialog(curr_selected), entity);
-                return Ok(());
-            }
-
-            let (attackable, _, _, is_character) = target_query.get(packet_target_entity)?;
-
-            if attackable.is_some() {
-                if in_active_action {
-                    commands.entity(entity).insert(NextIntention::Attack {
-                        target: curr_selected,
-                    });
-                } else {
-                    commands.entity(entity).insert(Attacking(curr_selected));
-                }
-            } else if is_character {
-                if in_active_action {
-                    commands.entity(entity).insert(NextIntention::Follow {
-                        target: curr_selected,
-                    });
-                } else {
-                    commands.trigger_targets(FollowRequest::from(packet_target_entity), entity);
-                }
-            } else if in_active_action {
-                commands
-                    .entity(entity)
-                    .insert(NextIntention::DialogRequest {
-                        target: curr_selected,
-                    });
-            } else {
-                commands
-                    .entity(entity)
-                    .insert(DialogRequest::from(packet_target_entity));
-            }
-
-            return Ok(());
-        }
+    if let Some(curr_selected) = selected_target
+        && **curr_selected == packet_target_entity 
+    {
+        return handle_selected_target_action(
+            packet.shift_pressed,
+            entity,
+            **curr_selected,
+            in_active_action,
+            params.target_query.reborrow(),
+            params.commands.reborrow(),
+        );
     }
 
     match known_entities.find_known_or_self(packet_target_entity, entity) {
         Some(found_entity) => {
-            commands.entity(entity).insert(SelectedTarget(found_entity));
+            params
+                .commands
+                .entity(entity)
+                .insert(SelectedTarget(found_entity));
         }
         None => {
-            commands.trigger_targets(TargetNotFound(packet.object_id.into()), entity);
+            params
+                .commands
+                .trigger_targets(TargetNotFound(packet.object_id.into()), entity);
         }
     }
     Ok(())
@@ -149,4 +143,62 @@ fn target_not_found(not_found: Trigger<TargetNotFound>) {
         session_entity,
         target_index
     );
+}
+
+fn handle_selected_target_action(
+    shift_pressed: bool,
+    entity: Entity,
+    curr_selected: Entity,
+    in_active_action: bool,
+    target_query: Query<(
+        Option<Ref<Attackable>>,
+        Option<Ref<Transform>>,
+        Has<Item>,
+        Has<Character>,
+    )>,
+    mut commands: Commands,
+) -> Result<()> {
+    // Handle shift-click for NPC info dialog
+    if shift_pressed {
+        commands.trigger_targets(SendNpcInfoDialog(curr_selected), entity);
+        return Ok(());
+    }
+
+    let (attackable, _, _, is_character) = target_query.get(curr_selected)?;
+
+    match (attackable.is_some(), is_character, in_active_action) {
+        // Attackable target
+        (true, _, true) => {
+            commands.entity(entity).insert(NextIntention::Attack {
+                target: curr_selected,
+            });
+        }
+        (true, _, false) => {
+            commands.entity(entity).insert(Attacking(curr_selected));
+        }
+        // Character target (non-attackable)
+        (false, true, true) => {
+            commands.entity(entity).insert(NextIntention::Follow {
+                target: curr_selected,
+            });
+        }
+        (false, true, false) => {
+            commands.trigger_targets(FollowRequest::from(curr_selected), entity);
+        }
+        // NPC target (dialog)
+        (false, false, true) => {
+            commands
+                .entity(entity)
+                .insert(NextIntention::DialogRequest {
+                    target: curr_selected,
+                });
+        }
+        (false, false, false) => {
+            commands
+                .entity(entity)
+                .insert(DialogRequest::from(curr_selected));
+        }
+    }
+
+    Ok(())
 }

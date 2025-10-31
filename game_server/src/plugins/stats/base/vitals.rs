@@ -276,7 +276,7 @@ mod tests {
             let max_mp = level_1_stats.get(VitalsStat::MaxMp);
             let max_cp = level_1_stats.get(VitalsStat::MaxCp);
 
-            log::info!(
+            info!(
                 "Level 1 Bladedancer stats: MaxHp={}, MaxMp={}, MaxCp={}",
                 max_hp,
                 max_mp,
@@ -363,7 +363,7 @@ mod tests {
         }
 
         assert!(files_processed > 0, "No vitals stats files were processed");
-        log::info!(
+        info!(
             "Successfully processed {} vitals stats files",
             files_processed
         );
