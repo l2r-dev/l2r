@@ -2,9 +2,13 @@ use avian3d::prelude::{CollisionEventsEnabled, Sensor};
 use bevy::prelude::*;
 use game_core::{
     action::target::Targetable,
+    attack::AttackingList,
     collision_layers::Layer,
     object_id::ObjectIdManager,
-    stats::{DefenceStat, DefenceStats, EncountersVisibility, Stats, VitalsStat, VitalsStats},
+    stats::{
+        DefenceEffects, DefenceStat, DefenceStats, EncountersVisibility, Stats, VitalsStat,
+        VitalsStats,
+    },
 };
 use map::{DoorsComponentsPlugin, MeshInfo, Zone, ZoneKind};
 
@@ -74,12 +78,16 @@ fn door_added(
             visibility,
             vitals,
             defence_stats,
+            DefenceEffects::default(),
             door.status,
             MeshInfo::default(),
+            AttackingList::default(),
         ));
 
         // Doors do not need collision events
-        commands.entity(entity).try_remove::<CollisionEventsEnabled>();
+        commands
+            .entity(entity)
+            .try_remove::<CollisionEventsEnabled>();
     }
 
     Ok(())

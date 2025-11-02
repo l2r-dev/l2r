@@ -1,3 +1,4 @@
+use crate::plugins::doors::DoorQuery;
 use bevy::{platform::collections::HashMap, prelude::*};
 use config::Config;
 use game_core::{
@@ -7,7 +8,7 @@ use game_core::{
     encounters::EnteredWorld,
     network::{
         broadcast::ServerPacketBroadcast,
-        packets::server::{GameServerPacket, Revive, UserInfoUpdated},
+        packets::server::{DoorStatusUpdate, GameServerPacket, Revive, UserInfoUpdated},
     },
     object_id::ObjectId,
     stats::*,
@@ -39,7 +40,12 @@ impl Plugin for VitalsStatsPlugin {
                 .in_set(StatKindSystems::Vitals)
                 .before(stats_changed),
         )
-        .add_systems(Update, stats_changed.in_set(StatKindSystems::Vitals))
+        .add_systems(
+            Update,
+            (doors_stats_changed, stats_changed)
+                .chain()
+                .in_set(StatKindSystems::Vitals),
+        )
         .add_systems(
             Update,
             full_restore_event_handle
@@ -144,6 +150,28 @@ fn stats_changed(
         if let Some(status_update) = status_update {
             commands.trigger_targets(
                 ServerPacketBroadcast::new(GameServerPacket::from(status_update)),
+                entity,
+            );
+        }
+    }
+}
+
+fn doors_stats_changed(
+    query: Query<(Entity, DoorQuery), Changed<VitalsStats>>,
+    mut commands: Commands,
+) {
+    for (entity, door) in query.iter() {
+        if let map::ZoneKind::Door(door_kind) = door.zone.kind() {
+            let is_enemy = true; // TODO: Check if door is_enemy, now just consider all doors as enemy
+
+            commands.trigger_targets(
+                GameServerPacket::from(DoorStatusUpdate::new(
+                    door_kind,
+                    *door.object_id,
+                    door.vitals.as_ref(),
+                    *door.status,
+                    is_enemy,
+                )),
                 entity,
             );
         }

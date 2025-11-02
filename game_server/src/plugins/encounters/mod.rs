@@ -1,5 +1,6 @@
 mod appearing;
 
+use crate::plugins::doors::DoorQuery;
 use avian3d::{prelude::*, spatial_query::SpatialQuery};
 use bevy::{
     ecs::{
@@ -24,7 +25,6 @@ use game_core::{
     teleport::TeleportInProgress,
 };
 use state::GameServerStateSystems;
-use crate::plugins::doors::DoorQuery;
 
 pub struct EncountersPlugin;
 impl Plugin for EncountersPlugin {
@@ -45,7 +45,7 @@ impl Plugin for EncountersPlugin {
     }
 }
 
-const RANGE_THRESHOLD: f32 = 500.0;
+const RANGE_THRESHOLD: f32 = 3000.0;
 
 /// Entities that want to know about other entities
 #[derive(QueryData)]
@@ -182,7 +182,6 @@ struct ItemQuery<'a> {
     transform: Ref<'a, Transform>,
 }
 
-
 #[derive(QueryData)]
 struct MovementQuery<'a> {
     object_id: Ref<'a, ObjectId>,
@@ -296,33 +295,33 @@ fn handle_known_added(
         );
     }
 
-    if let Ok(door_query) = params.doors.get(known) {
-        if let map::ZoneKind::Door(door_kind) = door_query.zone.kind() {
-            let is_enemy = true; // TODO: Check if door is_enemy, now just consider all doors as enemy
+    if let Ok(door_query) = params.doors.get(known)
+        && let map::ZoneKind::Door(door_kind) = door_query.zone.kind()
+    {
+        let is_enemy = true; // TODO: Check if door is_enemy, now just consider all doors as enemy
 
-            commands.trigger_targets(
-                GameServerPacket::from(StaticObjectInfo::door(
-                    *door_query.object_id,
-                    door_kind,
-                    door_query.vitals.as_ref(),
-                    *door_query.status,
-                    *door_query.mesh_info,
-                    is_enemy,
-                )),
-                knower,
-            );
+        commands.trigger_targets(
+            GameServerPacket::from(StaticObjectInfo::door(
+                *door_query.object_id,
+                door_kind,
+                door_query.vitals.as_ref(),
+                *door_query.status,
+                *door_query.mesh_info,
+                is_enemy,
+            )),
+            knower,
+        );
 
-            commands.trigger_targets(
-                GameServerPacket::from(DoorStatusUpdate::new(
-                    door_kind,
-                    *door_query.object_id,
-                    door_query.vitals.as_ref(),
-                    *door_query.status,
-                    is_enemy,
-                )),
-                knower,
-            );
-        }
+        commands.trigger_targets(
+            GameServerPacket::from(DoorStatusUpdate::new(
+                door_kind,
+                *door_query.object_id,
+                door_query.vitals.as_ref(),
+                *door_query.status,
+                is_enemy,
+            )),
+            knower,
+        );
     }
 
     // New known may moving right now

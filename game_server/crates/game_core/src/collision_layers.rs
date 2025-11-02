@@ -17,10 +17,7 @@ pub enum Layer {
 impl Layer {
     /// Сollision layers for a character
     pub fn character() -> CollisionLayers {
-        CollisionLayers::new(
-            [Self::Character],
-            [Self::Character, Self::Environment],
-        )
+        CollisionLayers::new([Self::Character], [Self::Character, Self::Environment])
     }
 
     /// Сollision layers for static environment (walls, closed doors, solid objects)

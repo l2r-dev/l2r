@@ -36,7 +36,7 @@ use game_core::{
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
     stats::*,
 };
-use map::{WorldMap, WorldMapQuery};
+use map::{Door, WorldMap, WorldMapQuery};
 use smallvec::smallvec;
 use spatial::FlatDistance;
 use state::GameMechanicsSystems;
@@ -387,6 +387,7 @@ fn process_attack_hits(
     mut targets: Query<ProcessAttackHitsTargetQuery, Without<Dead>>,
     not_attacking_npc: Query<Entity, (With<npc::Kind>, Without<Attacking>)>,
     npc: Query<Entity, With<npc::Kind>>,
+    doors: Query<Has<Door>>,
 
     mut attackers_lists: Query<Mut<AttackingList>>,
 ) {
@@ -406,6 +407,7 @@ fn process_attack_hits(
                         process_hit(
                             commands.reborrow(),
                             npc,
+                            doors,
                             attackers_lists.reborrow(),
                             info,
                             attacker.entity,
@@ -423,6 +425,7 @@ fn process_attack_hits(
                             process_hit(
                                 commands.reborrow(),
                                 npc,
+                                doors,
                                 attackers_lists.reborrow(),
                                 *info,
                                 attacker.entity,
@@ -441,6 +444,7 @@ fn process_attack_hits(
                         process_hit(
                             commands.reborrow(),
                             npc,
+                            doors,
                             attackers_lists.reborrow(),
                             info,
                             attacker.entity,
@@ -465,6 +469,7 @@ fn process_attack_hits(
 fn process_hit(
     mut commands: Commands,
     npc: Query<Entity, With<npc::Kind>>,
+    doors: Query<Has<Door>>,
     mut attackers_lists: Query<Mut<AttackingList>>,
 
     info: HitInfo,
@@ -540,7 +545,9 @@ fn process_hit(
 
         // TODO: Ивент для аи
         // If the target is an NPC that is not already attacking, make it attack back
-        if not_attacking_npc.get(target.entity).is_ok() {
+        if not_attacking_npc.get(target.entity).is_ok()
+            && !doors.get(target.entity).unwrap_or(false)
+        {
             commands
                 .entity(target.entity)
                 .insert(Attacking(attacker_entity));

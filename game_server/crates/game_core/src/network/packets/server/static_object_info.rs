@@ -7,8 +7,6 @@ use bevy::prelude::*;
 use l2r_core::packets::{L2rServerPacket, ServerPacketBuffer};
 use map::{DoorKind, DoorStatus, MeshInfo};
 
-/// StaticObjectInfo packet
-/// Sends information about static objects (doors, static meshes)
 #[derive(Clone, Debug, Reflect)]
 pub struct StaticObjectInfo {
     static_object_id: u32,
@@ -32,7 +30,6 @@ pub enum StaticObjectType {
 }
 
 impl StaticObjectInfo {
-    /// Create StaticObjectInfo for a door
     pub fn door(
         object_id: ObjectId,
         door_info: &DoorKind,
@@ -49,7 +46,7 @@ impl StaticObjectInfo {
             object_id,
             object_type: StaticObjectType::Door,
             is_targetable: door_info.targetable,
-            mesh_info: mesh_info,
+            mesh_info,
             is_closed: status.into(),
             is_enemy,
             current_hp,
@@ -59,7 +56,6 @@ impl StaticObjectInfo {
         }
     }
 
-    /// Create StaticObjectInfo for a static object
     pub fn static_object(static_object_id: u32, object_id: ObjectId, mesh_info: MeshInfo) -> Self {
         Self {
             static_object_id,
@@ -93,17 +89,17 @@ impl L2rServerPacket for StaticObjectInfo {
     fn buffer(self) -> ServerPacketBuffer {
         let mut buffer = ServerPacketBuffer::default();
         buffer.extend(GameServerPacketCodes::STATIC_OBJECT.to_le_bytes());
-        buffer.i32(self.static_object_id as i32);
-        buffer.i32(self.object_id.into());
-        buffer.i32(self.object_type as i32);
+        buffer.u32(self.static_object_id);
+        buffer.u32(self.object_id.into());
+        buffer.u32(self.object_type as u32);
         buffer.u32(self.is_targetable as u32);
-        buffer.i32(self.mesh_info as i32);
+        buffer.u32(self.mesh_info as u32);
         buffer.u32(self.is_closed as u32);
         buffer.u32(self.is_enemy as u32);
-        buffer.i32(self.current_hp as i32);
-        buffer.i32(self.max_hp as i32);
+        buffer.u32(self.current_hp);
+        buffer.u32(self.max_hp);
         buffer.u32(self.show_hp as u32);
-        buffer.i32(self.damage_grade as i32);
+        buffer.u32(self.damage_grade);
         buffer
     }
 }

@@ -74,6 +74,7 @@ pub struct DoorKind {
     pub open_methods: OpenMethods,
     pub level: Option<u32>,
     pub max_hp: u32,
+    #[serde(default = "default_true")]
     pub show_hp: bool,
     pub p_def: u32,
     pub m_def: Option<u32>,
