@@ -284,5 +284,615 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "temple_gate",
+    "kind": {
+      "Door": {
+        "id": 19160001,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10790,
+    "max_height": -10534,
+    "points": [
+      {
+        "x": -16647,
+        "y": -36862
+      },
+      {
+        "x": -16088,
+        "y": -36860
+      },
+      {
+        "x": -16081,
+        "y": -36733
+      },
+      {
+        "x": -16649,
+        "y": -36733
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_right01",
+    "kind": {
+      "Door": {
+        "id": 19160002,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -14981,
+        "y": -38990
+      },
+      {
+        "x": -14769,
+        "y": -38989
+      },
+      {
+        "x": -14765,
+        "y": -38937
+      },
+      {
+        "x": -14981,
+        "y": -38937
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_right02",
+    "kind": {
+      "Door": {
+        "id": 19160003,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -14566,
+        "y": -39924
+      },
+      {
+        "x": -14563,
+        "y": -39710
+      },
+      {
+        "x": -14618,
+        "y": -39715
+      },
+      {
+        "x": -14615,
+        "y": -39924
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_right03",
+    "kind": {
+      "Door": {
+        "id": 19160004,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -14566,
+        "y": -41788
+      },
+      {
+        "x": -14563,
+        "y": -41574
+      },
+      {
+        "x": -14618,
+        "y": -41579
+      },
+      {
+        "x": -14615,
+        "y": -41788
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_right04",
+    "kind": {
+      "Door": {
+        "id": 19160005,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -14981,
+        "y": -42574
+      },
+      {
+        "x": -14769,
+        "y": -42573
+      },
+      {
+        "x": -14765,
+        "y": -42521
+      },
+      {
+        "x": -14981,
+        "y": -42521
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_left04",
+    "kind": {
+      "Door": {
+        "id": 19160006,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -17973,
+        "y": -42574
+      },
+      {
+        "x": -17761,
+        "y": -42573
+      },
+      {
+        "x": -17757,
+        "y": -42521
+      },
+      {
+        "x": -17973,
+        "y": -42521
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_left03",
+    "kind": {
+      "Door": {
+        "id": 19160007,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -18118,
+        "y": -41796
+      },
+      {
+        "x": -18115,
+        "y": -41582
+      },
+      {
+        "x": -18170,
+        "y": -41587
+      },
+      {
+        "x": -18167,
+        "y": -41796
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_left02",
+    "kind": {
+      "Door": {
+        "id": 19160008,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -18118,
+        "y": -39932
+      },
+      {
+        "x": -18115,
+        "y": -39718
+      },
+      {
+        "x": -18170,
+        "y": -39723
+      },
+      {
+        "x": -18167,
+        "y": -39932
+      }
+    ]
+  },
+  {
+    "name": "corridors_door_left01",
+    "kind": {
+      "Door": {
+        "id": 19160009,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10770,
+    "max_height": -10514,
+    "points": [
+      {
+        "x": -17969,
+        "y": -38990
+      },
+      {
+        "x": -17757,
+        "y": -38989
+      },
+      {
+        "x": -17753,
+        "y": -38937
+      },
+      {
+        "x": -17969,
+        "y": -38937
+      }
+    ]
+  },
+  {
+    "name": "sanctuary_gate01",
+    "kind": {
+      "Door": {
+        "id": 19160010,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10877,
+    "max_height": -10365,
+    "points": [
+      {
+        "x": -16652,
+        "y": -44231
+      },
+      {
+        "x": -16080,
+        "y": -44235
+      },
+      {
+        "x": -16080,
+        "y": -44081
+      },
+      {
+        "x": -16654,
+        "y": -44082
+      }
+    ]
+  },
+  {
+    "name": "sanctuary_gate02",
+    "kind": {
+      "Door": {
+        "id": 19160011,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10877,
+    "max_height": -10365,
+    "points": [
+      {
+        "x": -16652,
+        "y": -44232
+      },
+      {
+        "x": -16079,
+        "y": -44235
+      },
+      {
+        "x": -16080,
+        "y": -44082
+      },
+      {
+        "x": -16653,
+        "y": -44083
+      }
+    ]
+  },
+  {
+    "name": "altar_s_secret_door_02",
+    "kind": {
+      "Door": {
+        "id": 19160012,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -11070,
+    "max_height": -10814,
+    "points": [
+      {
+        "x": -14547,
+        "y": -52658
+      },
+      {
+        "x": -14516,
+        "y": -52658
+      },
+      {
+        "x": -14516,
+        "y": -52306
+      },
+      {
+        "x": -14547,
+        "y": -52306
+      }
+    ]
+  },
+  {
+    "name": "altar_s_secret_door_01",
+    "kind": {
+      "Door": {
+        "id": 19160013,
+        "open_methods": [
+          "Item",
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -11070,
+    "max_height": -10814,
+    "points": [
+      {
+        "x": -18276,
+        "y": -52659
+      },
+      {
+        "x": -18245,
+        "y": -52659
+      },
+      {
+        "x": -18245,
+        "y": -52307
+      },
+      {
+        "x": -18276,
+        "y": -52307
+      }
+    ]
+  },
+  {
+    "name": "altar_inner_gate02",
+    "kind": {
+      "Door": {
+        "id": 19160014,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "status": "Open",
+        "targetable": true
+      }
+    },
+    "min_height": -10645,
+    "max_height": -10389,
+    "points": [
+      {
+        "x": -14965,
+        "y": -54986
+      },
+      {
+        "x": -14699,
+        "y": -54986
+      },
+      {
+        "x": -14697,
+        "y": -54963
+      },
+      {
+        "x": -14962,
+        "y": -54963
+      }
+    ]
+  },
+  {
+    "name": "altar_inner_gate01",
+    "kind": {
+      "Door": {
+        "id": 19160015,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "status": "Open",
+        "targetable": true
+      }
+    },
+    "min_height": -10645,
+    "max_height": -10389,
+    "points": [
+      {
+        "x": -18093,
+        "y": -54986
+      },
+      {
+        "x": -17827,
+        "y": -54986
+      },
+      {
+        "x": -17825,
+        "y": -54963
+      },
+      {
+        "x": -18090,
+        "y": -54963
+      }
+    ]
+  },
+  {
+    "name": "altar_flame_gate02",
+    "kind": {
+      "Door": {
+        "id": 19160016,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10498,
+    "max_height": -10242,
+    "points": [
+      {
+        "x": -15388,
+        "y": -55019
+      },
+      {
+        "x": -15339,
+        "y": -55018
+      },
+      {
+        "x": -15341,
+        "y": -54696
+      },
+      {
+        "x": -15384,
+        "y": -54695
+      }
+    ]
+  },
+  {
+    "name": "altar_flame_gate01",
+    "kind": {
+      "Door": {
+        "id": 19160017,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -10499,
+    "max_height": -10243,
+    "points": [
+      {
+        "x": -17448,
+        "y": -55019
+      },
+      {
+        "x": -17399,
+        "y": -55018
+      },
+      {
+        "x": -17401,
+        "y": -54696
+      },
+      {
+        "x": -17444,
+        "y": -54695
+      }
+    ]
   }
 ]

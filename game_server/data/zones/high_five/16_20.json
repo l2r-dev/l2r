@@ -379,5 +379,810 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "nornildg_a",
+    "kind": {
+      "Door": {
+        "id": 16200001,
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200101,
+        "targetable": true
+      }
+    },
+    "min_height": -12650,
+    "max_height": -12500,
+    "points": [
+      {
+        "x": -109818,
+        "y": 76417
+      },
+      {
+        "x": -109589,
+        "y": 76416
+      },
+      {
+        "x": -109589,
+        "y": 76434
+      },
+      {
+        "x": -109818,
+        "y": 76435
+      }
+    ]
+  },
+  {
+    "name": "nornildg_b",
+    "kind": {
+      "Door": {
+        "id": 16200002,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200102,
+        "targetable": true
+      }
+    },
+    "min_height": -12842,
+    "max_height": -12692,
+    "points": [
+      {
+        "x": -110839,
+        "y": 78060
+      },
+      {
+        "x": -110838,
+        "y": 77861
+      },
+      {
+        "x": -110873,
+        "y": 77862
+      },
+      {
+        "x": -110874,
+        "y": 78060
+      }
+    ]
+  },
+  {
+    "name": "nornildg_e",
+    "kind": {
+      "Door": {
+        "id": 16200003,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200103,
+        "targetable": true
+      }
+    },
+    "min_height": -12842,
+    "max_height": -12692,
+    "points": [
+      {
+        "x": -111607,
+        "y": 78060
+      },
+      {
+        "x": -111606,
+        "y": 77861
+      },
+      {
+        "x": -111641,
+        "y": 77862
+      },
+      {
+        "x": -111642,
+        "y": 78060
+      }
+    ]
+  },
+  {
+    "name": "nornildg_mid",
+    "kind": {
+      "Door": {
+        "id": 16200004,
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200104,
+        "hidden": true
+      }
+    },
+    "min_height": -12946,
+    "max_height": -12796,
+    "points": [
+      {
+        "x": -107604,
+        "y": 80701
+      },
+      {
+        "x": -107606,
+        "y": 80506
+      },
+      {
+        "x": -107573,
+        "y": 80506
+      },
+      {
+        "x": -107575,
+        "y": 80701
+      }
+    ]
+  },
+  {
+    "name": "nornildg_c",
+    "kind": {
+      "Door": {
+        "id": 16200005,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200105,
+        "targetable": true
+      }
+    },
+    "min_height": -12944,
+    "max_height": -12794,
+    "points": [
+      {
+        "x": -109140,
+        "y": 80843
+      },
+      {
+        "x": -109140,
+        "y": 80452
+      },
+      {
+        "x": -109101,
+        "y": 80452
+      },
+      {
+        "x": -109100,
+        "y": 80843
+      }
+    ]
+  },
+  {
+    "name": "nornildg_j",
+    "kind": {
+      "Door": {
+        "id": 16200006,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200106,
+        "targetable": true
+      }
+    },
+    "min_height": -12912,
+    "max_height": -12762,
+    "points": [
+      {
+        "x": -108522,
+        "y": 82317
+      },
+      {
+        "x": -108801,
+        "y": 82599
+      },
+      {
+        "x": -108830,
+        "y": 82573
+      },
+      {
+        "x": -108550,
+        "y": 82290
+      }
+    ]
+  },
+  {
+    "name": "nornildg_f",
+    "kind": {
+      "Door": {
+        "id": 16200007,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200107,
+        "targetable": true
+      }
+    },
+    "min_height": -12912,
+    "max_height": -12762,
+    "points": [
+      {
+        "x": -110288,
+        "y": 83149
+      },
+      {
+        "x": -110657,
+        "y": 83150
+      },
+      {
+        "x": -110658,
+        "y": 83138
+      },
+      {
+        "x": -110288,
+        "y": 83140
+      }
+    ]
+  },
+  {
+    "name": "nornildg_g",
+    "kind": {
+      "Door": {
+        "id": 16200008,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200108,
+        "targetable": true
+      }
+    },
+    "min_height": -12912,
+    "max_height": -12762,
+    "points": [
+      {
+        "x": -112135,
+        "y": 82594
+      },
+      {
+        "x": -112416,
+        "y": 82314
+      },
+      {
+        "x": -112391,
+        "y": 82286
+      },
+      {
+        "x": -112110,
+        "y": 82570
+      }
+    ]
+  },
+  {
+    "name": "nornildg_d",
+    "kind": {
+      "Door": {
+        "id": 16200009,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200109,
+        "targetable": true
+      }
+    },
+    "min_height": -12944,
+    "max_height": -12794,
+    "points": [
+      {
+        "x": -111844,
+        "y": 80843
+      },
+      {
+        "x": -111844,
+        "y": 80452
+      },
+      {
+        "x": -111805,
+        "y": 80452
+      },
+      {
+        "x": -111804,
+        "y": 80843
+      }
+    ]
+  },
+  {
+    "name": "nornildg_i",
+    "kind": {
+      "Door": {
+        "id": 16200010,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200022,
+        "hidden": true
+      }
+    },
+    "min_height": -12913,
+    "max_height": -12763,
+    "points": [
+      {
+        "x": -107606,
+        "y": 83775
+      },
+      {
+        "x": -107608,
+        "y": 83580
+      },
+      {
+        "x": -107575,
+        "y": 83580
+      },
+      {
+        "x": -107577,
+        "y": 83775
+      }
+    ]
+  },
+  {
+    "name": "nornildg_k",
+    "kind": {
+      "Door": {
+        "id": 16200011,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200111,
+        "targetable": true
+      }
+    },
+    "min_height": -13002,
+    "max_height": -12852,
+    "points": [
+      {
+        "x": -110586,
+        "y": 84481
+      },
+      {
+        "x": -110357,
+        "y": 84480
+      },
+      {
+        "x": -110357,
+        "y": 84498
+      },
+      {
+        "x": -110586,
+        "y": 84499
+      }
+    ]
+  },
+  {
+    "name": "nornildg_l",
+    "kind": {
+      "Door": {
+        "id": 16200012,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200112,
+        "targetable": true
+      }
+    },
+    "min_height": -13008,
+    "max_height": -12858,
+    "points": [
+      {
+        "x": -111444,
+        "y": 87371
+      },
+      {
+        "x": -111444,
+        "y": 86980
+      },
+      {
+        "x": -111405,
+        "y": 86980
+      },
+      {
+        "x": -111404,
+        "y": 87371
+      }
+    ]
+  },
+  {
+    "name": "nornildg_h",
+    "kind": {
+      "Door": {
+        "id": 16200013,
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200021,
+        "hidden": true
+      }
+    },
+    "min_height": -13011,
+    "max_height": -12861,
+    "points": [
+      {
+        "x": -110681,
+        "y": 84150
+      },
+      {
+        "x": -110683,
+        "y": 83955
+      },
+      {
+        "x": -110650,
+        "y": 83955
+      },
+      {
+        "x": -110652,
+        "y": 84150
+      }
+    ]
+  },
+  {
+    "name": "past_door",
+    "kind": {
+      "Door": {
+        "id": 16200014,
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200114,
+        "targetable": true
+      }
+    },
+    "min_height": -12904,
+    "max_height": -12754,
+    "points": [
+      {
+        "x": -113194,
+        "y": 87322
+      },
+      {
+        "x": -113193,
+        "y": 87037
+      },
+      {
+        "x": -113175,
+        "y": 87037
+      },
+      {
+        "x": -113173,
+        "y": 87322
+      }
+    ]
+  },
+  {
+    "name": "present_door",
+    "kind": {
+      "Door": {
+        "id": 16200015,
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200115,
+        "targetable": true
+      }
+    },
+    "min_height": -12816,
+    "max_height": -12666,
+    "points": [
+      {
+        "x": -115085,
+        "y": 87321
+      },
+      {
+        "x": -115084,
+        "y": 87036
+      },
+      {
+        "x": -115066,
+        "y": 87036
+      },
+      {
+        "x": -115064,
+        "y": 87321
+      }
+    ]
+  },
+  {
+    "name": "future_door",
+    "kind": {
+      "Door": {
+        "id": 16200016,
+        "level": 1,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200116,
+        "targetable": true
+      }
+    },
+    "min_height": -12711,
+    "max_height": -12561,
+    "points": [
+      {
+        "x": -116982,
+        "y": 87319
+      },
+      {
+        "x": -116981,
+        "y": 87034
+      },
+      {
+        "x": -116963,
+        "y": 87034
+      },
+      {
+        "x": -116961,
+        "y": 87319
+      }
+    ]
+  },
+  {
+    "name": "nornildg_bridge01",
+    "kind": {
+      "Door": {
+        "id": 16200017,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200117,
+        "check_collision": false,
+        "hidden": true
+      }
+    },
+    "min_height": -12907,
+    "max_height": -12757,
+    "points": [
+      {
+        "x": -109145,
+        "y": 81792
+      },
+      {
+        "x": -108802,
+        "y": 82135
+      },
+      {
+        "x": -108985,
+        "y": 82319
+      },
+      {
+        "x": -109327,
+        "y": 81975
+      }
+    ]
+  },
+  {
+    "name": "nornildg_bridge02",
+    "kind": {
+      "Door": {
+        "id": 16200018,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200118,
+        "check_collision": false,
+        "hidden": true
+      }
+    },
+    "min_height": -12906,
+    "max_height": -12756,
+    "points": [
+      {
+        "x": -110602,
+        "y": 82367
+      },
+      {
+        "x": -110342,
+        "y": 82367
+      },
+      {
+        "x": -110343,
+        "y": 82854
+      },
+      {
+        "x": -110601,
+        "y": 82854
+      }
+    ]
+  },
+  {
+    "name": "nornildg_bridge03",
+    "kind": {
+      "Door": {
+        "id": 16200019,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "emitter_id": 16200119,
+        "check_collision": false,
+        "hidden": true
+      }
+    },
+    "min_height": -12908,
+    "max_height": -12758,
+    "points": [
+      {
+        "x": -111795,
+        "y": 81786
+      },
+      {
+        "x": -111612,
+        "y": 81969
+      },
+      {
+        "x": -111956,
+        "y": 82315
+      },
+      {
+        "x": -112141,
+        "y": 82130
+      }
+    ]
+  },
+  {
+    "name": "hidedoor_detect",
+    "kind": {
+      "Door": {
+        "id": 16200022,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "check_collision": false,
+        "hidden": true
+      }
+    },
+    "min_height": 0,
+    "max_height": 150,
+    "points": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
+  },
+  {
+    "name": "nornildg_bdg01",
+    "kind": {
+      "Door": {
+        "id": 16200023,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "hidden": true
+      }
+    },
+    "min_height": -12907,
+    "max_height": -12757,
+    "points": [
+      {
+        "x": -109145,
+        "y": 81792
+      },
+      {
+        "x": -108802,
+        "y": 82135
+      },
+      {
+        "x": -108985,
+        "y": 82319
+      },
+      {
+        "x": -109327,
+        "y": 81975
+      }
+    ]
+  },
+  {
+    "name": "nornildg_bdg02",
+    "kind": {
+      "Door": {
+        "id": 16200024,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "hidden": true
+      }
+    },
+    "min_height": -12906,
+    "max_height": -12756,
+    "points": [
+      {
+        "x": -110602,
+        "y": 82367
+      },
+      {
+        "x": -110342,
+        "y": 82367
+      },
+      {
+        "x": -110343,
+        "y": 82854
+      },
+      {
+        "x": -110601,
+        "y": 82854
+      }
+    ]
+  },
+  {
+    "name": "nornildg_bdg03",
+    "kind": {
+      "Door": {
+        "id": 16200025,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "hidden": true
+      }
+    },
+    "min_height": -12908,
+    "max_height": -12758,
+    "points": [
+      {
+        "x": -111795,
+        "y": 81786
+      },
+      {
+        "x": -111612,
+        "y": 81969
+      },
+      {
+        "x": -111956,
+        "y": 82315
+      },
+      {
+        "x": -112141,
+        "y": 82130
+      }
+    ]
   }
 ]

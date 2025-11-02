@@ -553,5 +553,113 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "kuruma002",
+    "kind": {
+      "Door": {
+        "id": 20210001,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 150000,
+        "p_def": 476,
+        "m_def": 383,
+        "targetable": true
+      }
+    },
+    "min_height": -6625,
+    "max_height": -6287,
+    "points": [
+      {
+        "x": 17506,
+        "y": 112406
+      },
+      {
+        "x": 17741,
+        "y": 112402
+      },
+      {
+        "x": 17741,
+        "y": 112452
+      },
+      {
+        "x": 17506,
+        "y": 112449
+      }
+    ]
+  },
+  {
+    "name": "kuruma001",
+    "kind": {
+      "Door": {
+        "id": 20210002,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 150000,
+        "p_def": 476,
+        "m_def": 383,
+        "targetable": true
+      }
+    },
+    "min_height": -6627,
+    "max_height": -6289,
+    "points": [
+      {
+        "x": 17705,
+        "y": 112402
+      },
+      {
+        "x": 17938,
+        "y": 112406
+      },
+      {
+        "x": 17938,
+        "y": 112448
+      },
+      {
+        "x": 17705,
+        "y": 112452
+      }
+    ]
+  },
+  {
+    "name": "kuruma003",
+    "kind": {
+      "Door": {
+        "id": 20210003,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 150000,
+        "p_def": 476,
+        "m_def": 383,
+        "targetable": true
+      }
+    },
+    "min_height": -6627,
+    "max_height": -6529,
+    "points": [
+      {
+        "x": 17624,
+        "y": 112397
+      },
+      {
+        "x": 17818,
+        "y": 112396
+      },
+      {
+        "x": 17819,
+        "y": 112458
+      },
+      {
+        "x": 17623,
+        "y": 112459
+      }
+    ]
   }
 ]

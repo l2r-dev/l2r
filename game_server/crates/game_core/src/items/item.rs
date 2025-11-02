@@ -5,12 +5,13 @@ use super::{
     model::Model,
 };
 use crate::{
+    collision_layers::Layer,
     custom_hierarchy::DespawnChildren,
     items::{self, DollSlot},
     object_id::ObjectId,
     stats::{EncountersVisibility, ItemElementsInfo},
 };
-use avian3d::prelude::{Collider, Sensor};
+use avian3d::prelude::{Collider, CollisionLayers, Sensor};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
 use derive_more::{From, Into};
@@ -83,6 +84,7 @@ pub struct ItemInWorld {
     pub transform: Transform,
     pub collider: Collider,
     pub sensor: Sensor,
+    pub layers: CollisionLayers,
 }
 
 impl ItemInWorld {
@@ -96,6 +98,7 @@ impl ItemInWorld {
                 Self::COLLIDER_SIZE,
                 Self::COLLIDER_SIZE,
             ),
+            layers: Layer::item(),
             sensor: Sensor,
         }
     }
@@ -105,6 +108,7 @@ impl ItemInWorld {
             Transform,
             GlobalTransform,
             Collider,
+            CollisionLayers,
             Sensor,
             DespawnChildren,
         )>();

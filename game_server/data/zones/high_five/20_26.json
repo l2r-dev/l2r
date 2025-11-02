@@ -221,5 +221,203 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "base_tower_darkness",
+    "kind": {
+      "Door": {
+        "id": 20260001,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 3,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "targetable": true
+      }
+    },
+    "min_height": -9734,
+    "max_height": -9584,
+    "points": [
+      {
+        "x": 15595,
+        "y": 282579
+      },
+      {
+        "x": 15609,
+        "y": 282579
+      },
+      {
+        "x": 15609,
+        "y": 282775
+      },
+      {
+        "x": 15595,
+        "y": 282775
+      }
+    ]
+  },
+  {
+    "name": "base_tower_blood",
+    "kind": {
+      "Door": {
+        "id": 20260002,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 3,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "targetable": true
+      }
+    },
+    "min_height": -9732,
+    "max_height": -9582,
+    "points": [
+      {
+        "x": 12659,
+        "y": 280144
+      },
+      {
+        "x": 12865,
+        "y": 280144
+      },
+      {
+        "x": 12866,
+        "y": 280158
+      },
+      {
+        "x": 12659,
+        "y": 280157
+      }
+    ]
+  },
+  {
+    "name": "base_tower_room01",
+    "kind": {
+      "Door": {
+        "id": 20260003,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "status": "Open"
+      }
+    },
+    "min_height": -9727,
+    "max_height": -9577,
+    "points": [
+      {
+        "x": 14547,
+        "y": 277570
+      },
+      {
+        "x": 14561,
+        "y": 277570
+      },
+      {
+        "x": 14561,
+        "y": 277766
+      },
+      {
+        "x": 14547,
+        "y": 277766
+      }
+    ]
+  },
+  {
+    "name": "base_tower_room02",
+    "kind": {
+      "Door": {
+        "id": 20260004,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "status": "Open"
+      }
+    },
+    "min_height": -9727,
+    "max_height": -9577,
+    "points": [
+      {
+        "x": 18049,
+        "y": 277381
+      },
+      {
+        "x": 18063,
+        "y": 277381
+      },
+      {
+        "x": 18063,
+        "y": 277577
+      },
+      {
+        "x": 18049,
+        "y": 277577
+      }
+    ]
+  },
+  {
+    "name": "base_tower_blood01",
+    "kind": {
+      "Door": {
+        "id": 20260005,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "status": "Open"
+      }
+    },
+    "min_height": -9732,
+    "max_height": -9582,
+    "points": [
+      {
+        "x": 19744,
+        "y": 280132
+      },
+      {
+        "x": 19950,
+        "y": 280132
+      },
+      {
+        "x": 19951,
+        "y": 280146
+      },
+      {
+        "x": 19744,
+        "y": 280145
+      }
+    ]
+  },
+  {
+    "name": "base_tower_destruction",
+    "kind": {
+      "Door": {
+        "id": 20260006,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 3,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "targetable": true
+      }
+    },
+    "min_height": -9734,
+    "max_height": -9584,
+    "points": [
+      {
+        "x": 16972,
+        "y": 280444
+      },
+      {
+        "x": 16986,
+        "y": 280444
+      },
+      {
+        "x": 16986,
+        "y": 280640
+      },
+      {
+        "x": 16972,
+        "y": 280640
+      }
+    ]
   }
 ]

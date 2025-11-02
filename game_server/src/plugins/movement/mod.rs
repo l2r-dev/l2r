@@ -7,6 +7,7 @@ mod swimming;
 mod validate_position;
 mod walk_run;
 
+use avian3d::prelude::*;
 use bevy::ecs::{
     query::{QueryData, QueryFilter},
     system::{ParallelCommands, SystemParam},
@@ -15,6 +16,8 @@ use game_core::{
     action::wait_kind::Sit,
     active_action::{ActionFinished, ActiveAction},
     attack::{AttackHit, Dead},
+    character::Character,
+    collision_layers::Layer,
     movement::{
         ArrivedAtWaypoint, LookAt, MoveStep, Movement, MovementComponentsPlugin, SendStopMove,
     },
@@ -190,6 +193,8 @@ struct MovementStepQueries<'w, 's> {
     world_map_query: WorldMapQuery<'w, 's>,
     transforms: Query<'w, 's, (Ref<'static, ObjectId>, Mut<'static, Transform>)>,
     movables: Query<'w, 's, MovablesQuery<'static>, MovablesFilter>,
+    spatial_query: SpatialQuery<'w, 's>,
+    colliders: Query<'w, 's, &'static Collider>,
 }
 
 #[derive(QueryFilter)]
@@ -211,6 +216,7 @@ fn handle_movement_step(
     step: Trigger<MoveStep>,
     mut commands: Commands,
     mut queries: MovementStepQueries,
+    characters: Query<(), With<Character>>,
 ) {
     let entity = step.target();
     if let Ok(mut movables) = queries.movables.get_mut(entity) {
@@ -303,6 +309,32 @@ fn handle_movement_step(
             let stop_move = StopMove::new(*object_id, *transform);
             commands.trigger_targets(ServerPacketBroadcast::new(stop_move.into()), entity);
             return;
+        }
+
+        if characters.contains(entity) {
+            let filter = SpatialQueryFilter::from_mask(LayerMask::from(Layer::Environment))
+                .with_excluded_entities([entity]);
+            if let Ok(collider) = queries.colliders.get(entity) {
+                let config = ShapeCastConfig::from_max_distance(move_distance);
+                if let Some(hit) = queries.spatial_query.cast_shape(
+                    collider,
+                    current_pos,
+                    Quat::IDENTITY,
+                    Dir3::new_unchecked(direction),
+                    &config,
+                    &filter,
+                ) {
+                    debug!(
+                        "Movement blocked for entity {:?} due to collision with {:?} at distance {}",
+                        entity, hit.entity, hit.distance
+                    );
+                    commands.entity(entity).remove::<Movement>();
+                    commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
+                    let stop_move = StopMove::new(*object_id, *transform);
+                    commands.trigger_targets(ServerPacketBroadcast::new(stop_move.into()), entity);
+                    return;
+                }
+            }
         }
 
         transform.translation = new_position;

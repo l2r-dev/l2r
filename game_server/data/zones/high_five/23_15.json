@@ -299,5 +299,149 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "solina_secret_door_01",
+    "kind": {
+      "Door": {
+        "id": 23150001,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -1618,
+    "max_height": -1362,
+    "points": [
+      {
+        "x": 110610,
+        "y": -81590
+      },
+      {
+        "x": 110824,
+        "y": -81591
+      },
+      {
+        "x": 110825,
+        "y": -81546
+      },
+      {
+        "x": 110611,
+        "y": -81546
+      }
+    ]
+  },
+  {
+    "name": "solina_secret_door_02",
+    "kind": {
+      "Door": {
+        "id": 23150002,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": -578,
+    "max_height": -322,
+    "points": [
+      {
+        "x": 114782,
+        "y": -71472
+      },
+      {
+        "x": 114979,
+        "y": -71473
+      },
+      {
+        "x": 114979,
+        "y": -71426
+      },
+      {
+        "x": 114782,
+        "y": -71425
+      }
+    ]
+  },
+  {
+    "name": "brilliance_door_02",
+    "kind": {
+      "Door": {
+        "id": 23150003,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": 23,
+    "max_height": 633,
+    "points": [
+      {
+        "x": 112641,
+        "y": -78096
+      },
+      {
+        "x": 112816,
+        "y": -78096
+      },
+      {
+        "x": 112816,
+        "y": -78065
+      },
+      {
+        "x": 112641,
+        "y": -78064
+      }
+    ]
+  },
+  {
+    "name": "brilliance_door_01",
+    "kind": {
+      "Door": {
+        "id": 23150004,
+        "open_methods": [
+          "Item"
+        ],
+        "level": 3,
+        "max_hp": 126600,
+        "p_def": 644,
+        "m_def": 518,
+        "targetable": true
+      }
+    },
+    "min_height": 22,
+    "max_height": 632,
+    "points": [
+      {
+        "x": 112783,
+        "y": -78095
+      },
+      {
+        "x": 112957,
+        "y": -78095
+      },
+      {
+        "x": 112957,
+        "y": -78065
+      },
+      {
+        "x": 112782,
+        "y": -78065
+      }
+    ]
   }
 ]

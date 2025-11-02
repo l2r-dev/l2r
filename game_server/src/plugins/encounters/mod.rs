@@ -10,12 +10,13 @@ use bevy::{
 };
 use game_core::{
     character::{self},
+    collision_layers::Layer,
     encounters::*,
     items::{Item, ItemsDataQuery},
     movement::Movement,
     network::packets::server::{
-        CharInfo, DeleteObject, GameServerPacket, MoveToLocation, MoveToPawn, NpcInfo, SpawnItem,
-        StatusUpdate, StatusUpdateKind,
+        CharInfo, DeleteObject, DoorStatusUpdate, GameServerPacket, MoveToLocation, MoveToPawn,
+        NpcInfo, SpawnItem, StaticObjectInfo, StatusUpdate, StatusUpdateKind,
     },
     npc::{self, RegionalNpcInfoQuery},
     object_id::ObjectId,
@@ -23,6 +24,7 @@ use game_core::{
     teleport::TeleportInProgress,
 };
 use state::GameServerStateSystems;
+use crate::plugins::doors::DoorQuery;
 
 pub struct EncountersPlugin;
 impl Plugin for EncountersPlugin {
@@ -43,7 +45,7 @@ impl Plugin for EncountersPlugin {
     }
 }
 
-const RANGE_THRESHOLD: f32 = 3000.0;
+const RANGE_THRESHOLD: f32 = 500.0;
 
 /// Entities that want to know about other entities
 #[derive(QueryData)]
@@ -85,7 +87,11 @@ fn set_relations(
             let pos_a = query_item.transform;
             let mut known_entities = query_item.known_entities;
 
-            let filter = SpatialQueryFilter::default().with_excluded_entities([entity_a]);
+            // Filter to find only entities on Character, Item, and Door layers
+            let filter = SpatialQueryFilter::default()
+                .with_excluded_entities([entity_a])
+                .with_mask([Layer::encounters_mask()]);
+
             let nearby_entities = spatial_query.shape_intersections(
                 &query_sphere,
                 pos_a.translation,
@@ -127,7 +133,11 @@ fn unset_relations(
             let pos_a = query_item.transform;
             let mut known_entities = query_item.known_entities;
 
-            let filter = SpatialQueryFilter::default().with_excluded_entities([entity_a]);
+            // Filter to find only entities on Character, Item, and Door layers
+            let filter = SpatialQueryFilter::default()
+                .with_excluded_entities([entity_a])
+                .with_mask([Layer::encounters_mask()]);
+
             let nearby_entities: std::collections::HashSet<Entity> = spatial_query
                 .shape_intersections(&query_sphere, pos_a.translation, Quat::IDENTITY, &filter)
                 .into_iter()
@@ -172,6 +182,7 @@ struct ItemQuery<'a> {
     transform: Ref<'a, Transform>,
 }
 
+
 #[derive(QueryData)]
 struct MovementQuery<'a> {
     object_id: Ref<'a, ObjectId>,
@@ -191,6 +202,7 @@ struct KnownAddedParams<'w, 's> {
     npcs: Query<'w, 's, npc::NpcQuery<'static>>,
     npc_info: RegionalNpcInfoQuery<'w, 's>,
     items: Query<'w, 's, ItemQuery<'static>, With<Collider>>,
+    doors: Query<'w, 's, DoorQuery<'static>>,
     movement: Query<'w, 's, MovementQuery<'static>>,
     object_transforms: Query<'w, 's, ObjectTransformQuery<'static>>,
     items_data_query: ItemsDataQuery<'w>,
@@ -282,6 +294,35 @@ fn handle_known_added(
             )),
             knower,
         );
+    }
+
+    if let Ok(door_query) = params.doors.get(known) {
+        if let map::ZoneKind::Door(door_kind) = door_query.zone.kind() {
+            let is_enemy = true; // TODO: Check if door is_enemy, now just consider all doors as enemy
+
+            commands.trigger_targets(
+                GameServerPacket::from(StaticObjectInfo::door(
+                    *door_query.object_id,
+                    door_kind,
+                    door_query.vitals.as_ref(),
+                    *door_query.status,
+                    *door_query.mesh_info,
+                    is_enemy,
+                )),
+                knower,
+            );
+
+            commands.trigger_targets(
+                GameServerPacket::from(DoorStatusUpdate::new(
+                    door_kind,
+                    *door_query.object_id,
+                    door_query.vitals.as_ref(),
+                    *door_query.status,
+                    is_enemy,
+                )),
+                knower,
+            );
+        }
     }
 
     // New known may moving right now

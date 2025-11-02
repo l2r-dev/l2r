@@ -316,5 +316,38 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "hidedoor_detect",
+    "kind": {
+      "Door": {
+        "id": 16200022,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "m_def": 10000,
+        "check_collision": false,
+        "hidden": true
+      }
+    },
+    "min_height": 0,
+    "max_height": 150,
+    "points": [
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      },
+      {
+        "x": 0,
+        "y": 0
+      }
+    ]
   }
 ]

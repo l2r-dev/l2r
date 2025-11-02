@@ -7,6 +7,7 @@ pub mod attack;
 pub mod character;
 pub mod chat;
 pub mod clan;
+pub mod collision_layers;
 pub mod consts;
 pub mod crypt;
 pub mod custom_hierarchy;

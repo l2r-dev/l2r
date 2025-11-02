@@ -1,3 +1,4 @@
+use crate::MeshInfo;
 use bevy::{platform::collections::HashSet, prelude::*};
 use bevy_enum_tag::EnumComponentTag;
 use derive_more::{From, Into};
@@ -12,6 +13,10 @@ impl Plugin for DoorsComponentsPlugin {
             .register_type::<OpenMethods>()
             .register_type::<DoorKind>();
     }
+}
+
+fn default_true() -> bool {
+    true
 }
 
 #[derive(
@@ -40,6 +45,15 @@ pub enum DoorStatus {
     Open,
 }
 
+impl From<DoorStatus> for bool {
+    fn from(status: DoorStatus) -> Self {
+        match status {
+            DoorStatus::Close => true,
+            DoorStatus::Open => false,
+        }
+    }
+}
+
 #[repr(u8)]
 #[derive(Clone, Copy, Debug, Deserialize, Eq, Hash, PartialEq, Reflect, Serialize)]
 pub enum OpenMethod {
@@ -59,13 +73,15 @@ pub struct DoorKind {
     pub id: DoorId,
     pub open_methods: OpenMethods,
     pub level: Option<u32>,
-    pub hp_max: u32,
-    pub hp_showable: bool,
+    pub max_hp: u32,
+    pub show_hp: bool,
     pub p_def: u32,
     pub m_def: Option<u32>,
     pub emitter_id: Option<u32>,
     pub status: DoorStatus,
     pub targetable: bool,
+    #[serde(default = "default_true")]
     pub check_collision: bool,
     pub hidden: bool,
+    pub mesh_info: MeshInfo,
 }

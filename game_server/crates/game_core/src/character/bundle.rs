@@ -2,6 +2,7 @@ use crate::{
     abnormal_effects::AbnormalEffects,
     action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
+    collision_layers::Layer,
     encounters::KnownEntities,
     items::{self, Inventory, PaperDoll},
     object_id::ObjectId,
@@ -23,6 +24,7 @@ pub struct Bundle {
     pub movable: Movable,
     #[reflect(ignore)]
     pub collider: Collider,
+    pub collision_layers: CollisionLayers,
     pub primal_stats: PrimalStats,
     pub base_class: BaseClass,
     pub attack_stats: AttackStats,
@@ -136,6 +138,7 @@ impl Bundle {
             session_id,
             movable,
             collider: base_class_stats.collider(db_model.appearance.gender),
+            collision_layers: Layer::character(),
             base_class,
             vitals_stats,
             primal_stats,

@@ -4,12 +4,14 @@ use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*}
 mod constants;
 mod region;
 mod spawn_point;
+mod static_mesh;
 mod zones;
 
 pub use constants::*;
 pub use region::*;
 use spatial::{GameVec3, GeoPoint, GeoVec3};
 pub use spawn_point::*;
+pub use static_mesh::*;
 pub use zones::*;
 
 pub struct WorldMapComponentsPlugin;
