@@ -136,7 +136,7 @@ fn unset_relations(
             // Filter to find only entities on Character, Item, and Door layers
             let filter = SpatialQueryFilter::default()
                 .with_excluded_entities([entity_a])
-                .with_mask([Layer::encounters_mask()]);
+                .with_mask(Layer::encounters_mask());
 
             let nearby_entities: std::collections::HashSet<Entity> = spatial_query
                 .shape_intersections(&query_sphere, pos_a.translation, Quat::IDENTITY, &filter)

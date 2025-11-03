@@ -25,6 +25,7 @@ use game_core::{
         broadcast::ServerPacketBroadcast,
         packets::server::{ActionFail, GameServerPacket, MoveToLocation, MoveToPawn, StopMove},
     },
+    npc::kind::Guard,
     object_id::ObjectId,
     stats::Movable,
 };
@@ -187,6 +188,13 @@ fn handle_waypoint_arrival(
     }
 }
 
+/// Don't check door collision for all entities for better performance
+#[derive(QueryFilter)]
+struct DoorCollisionFilter {
+    characters: With<Character>,
+    guards: With<Guard>,
+}
+
 #[derive(SystemParam)]
 struct MovementStepQueries<'w, 's> {
     time: Res<'w, Time<Fixed>>,
@@ -195,6 +203,7 @@ struct MovementStepQueries<'w, 's> {
     movables: Query<'w, 's, MovablesQuery<'static>, MovablesFilter>,
     spatial_query: SpatialQuery<'w, 's>,
     colliders: Query<'w, 's, &'static Collider>,
+    check_door_collision: Query<'w, 's, (), DoorCollisionFilter>,
 }
 
 #[derive(QueryFilter)]
@@ -216,7 +225,6 @@ fn handle_movement_step(
     step: Trigger<MoveStep>,
     mut commands: Commands,
     mut queries: MovementStepQueries,
-    characters: Query<(), With<Character>>,
 ) {
     let entity = step.target();
     if let Ok(mut movables) = queries.movables.get_mut(entity) {
@@ -311,12 +319,13 @@ fn handle_movement_step(
             return;
         }
 
-        if characters.contains(entity) {
-            let filter = SpatialQueryFilter::from_mask(LayerMask::from(Layer::Environment))
+        if queries.check_door_collision.contains(entity) {
+            let filter = SpatialQueryFilter::from_mask(Layer::solid_environment_mask())
                 .with_excluded_entities([entity]);
+
             if let Ok(collider) = queries.colliders.get(entity) {
                 let config = ShapeCastConfig::from_max_distance(move_distance);
-                if let Some(hit) = queries.spatial_query.cast_shape(
+                if let Some(_hit) = queries.spatial_query.cast_shape(
                     collider,
                     current_pos,
                     Quat::IDENTITY,
@@ -324,10 +333,6 @@ fn handle_movement_step(
                     &config,
                     &filter,
                 ) {
-                    debug!(
-                        "Movement blocked for entity {:?} due to collision with {:?} at distance {}",
-                        entity, hit.entity, hit.distance
-                    );
                     commands.entity(entity).remove::<Movement>();
                     commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
                     let stop_move = StopMove::new(*object_id, *transform);

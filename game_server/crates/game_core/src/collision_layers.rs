@@ -1,56 +1,74 @@
 use avian3d::prelude::*;
 
-/// Collision layers for the game
-#[derive(Clone, Copy, Debug, Eq, PartialEq)]
-#[repr(u32)]
+#[derive(Clone, Copy, Debug, Default, Eq, PartialEq, PhysicsLayer)]
 pub enum Layer {
-    /// Characters (players, NPCs)
-    Character = 0,
-    /// Static environment (walls, doors, destructible objects)
-    Environment = 1,
-    /// Sensors/Triggers (trigger zones)
-    Sensor = 2,
-    /// Items on the ground
-    Item = 3,
+    #[default]
+    Default,
+    Player,
+    Npc,
+    /// Solid environment (walls, closed doors) - blocks movement
+    Environment,
+    /// Passable environment (open doors, destroyed walls) - doesn't block movement
+    EnvironmentPassable,
+    Sensor,
+    Item,
 }
 
 impl Layer {
-    /// Сollision layers for a character
-    pub fn character() -> CollisionLayers {
-        CollisionLayers::new([Self::Character], [Self::Character, Self::Environment])
+    pub fn player() -> CollisionLayers {
+        CollisionLayers::new([Self::Player], [Self::Player, Self::Npc, Self::Environment])
     }
 
-    /// Сollision layers for static environment (walls, closed doors, solid objects)
-    /// Blocks characters
+    pub fn npc() -> CollisionLayers {
+        CollisionLayers::new([Self::Npc], [Self::Player, Self::Npc, Self::Environment])
+    }
+
+    /// Collision layers for static environment (walls, closed doors, solid objects)
     pub fn environment_solid() -> CollisionLayers {
-        CollisionLayers::new([Self::Environment], [Self::Character])
+        CollisionLayers::new([Self::Environment], [Self::Player, Self::Npc])
     }
 
-    /// Сollision layers for passable environment (open doors, destroyed walls)
-    /// Doesn't block movement but can still be detected
+    /// Collision layers for passable environment (open doors, destroyed walls)
     pub fn environment_passable() -> CollisionLayers {
-        CollisionLayers::new([Self::Environment], LayerMask::NONE)
+        CollisionLayers::new([Self::EnvironmentPassable], [Self::Player, Self::Npc])
     }
 
-    /// Сollision layers for sensors (triggers)
-    pub fn sensor() -> CollisionLayers {
-        CollisionLayers::new([Self::Sensor], LayerMask::ALL)
+    pub fn player_sensor() -> CollisionLayers {
+        CollisionLayers::new([Self::Sensor], [Self::Player])
     }
 
     /// Сollision layers for items
+    /// Items don't physically interact with anything, but are visible to spatial queries
     pub fn item() -> CollisionLayers {
-        CollisionLayers::new([Self::Item], [Self::Character])
+        CollisionLayers::new([Self::Item], LayerMask::NONE)
     }
 
-    /// Mask for encounters detection (characters, items, environment objects)
-    /// Used by spatial queries to find entities that should be visible to players
+    pub fn solid_environment_mask() -> LayerMask {
+        LayerMask::from([Self::Environment])
+    }
+
+    pub fn passable_environment_mask() -> LayerMask {
+        LayerMask::from([Self::EnvironmentPassable])
+    }
+
+    /// Mask for spatial queries to find entities that should be visible to players
     pub fn encounters_mask() -> LayerMask {
-        LayerMask::from([Self::Character, Self::Item, Self::Environment])
+        LayerMask::from([
+            Self::Player,
+            Self::Npc,
+            Self::Item,
+            Self::Environment,
+            Self::EnvironmentPassable,
+        ])
     }
-}
 
-impl From<Layer> for LayerMask {
-    fn from(layer: Layer) -> Self {
-        LayerMask::from(1u32 << layer as u32)
+    /// Mask for broadcasting packets to nearby characters
+    pub fn broadcast_mask() -> LayerMask {
+        LayerMask::from([Self::Player])
+    }
+
+    /// Mask for multi-target attacks to find players and NPCs
+    pub fn attack_targets_mask() -> LayerMask {
+        LayerMask::from([Self::Player, Self::Npc])
     }
 }

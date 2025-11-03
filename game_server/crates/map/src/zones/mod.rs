@@ -1,12 +1,5 @@
 use avian3d::prelude::*;
-use bevy::{
-    ecs::{
-        component::{ComponentHook, Mutable, StorageType},
-        world::DeferredWorld,
-    },
-    platform::collections::HashMap,
-    prelude::*,
-};
+use bevy::{platform::collections::HashMap, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
 use serde::{Deserialize, Serialize};
 
@@ -52,7 +45,7 @@ pub enum ZoneShape {
     Cylinder(f32),
 }
 
-#[derive(Clone, Debug, Deserialize, Reflect, Serialize)]
+#[derive(Clone, Component, Debug, Deserialize, Reflect, Serialize)]
 pub struct Zone {
     name: Option<String>,
     #[serde(default)]
@@ -63,34 +56,6 @@ pub struct Zone {
     shape: Option<ZoneShape>,
 }
 
-impl Component for Zone {
-    const STORAGE_TYPE: StorageType = StorageType::Table;
-    type Mutability = Mutable;
-
-    fn on_add() -> Option<ComponentHook> {
-        Some(|mut world: DeferredWorld, ctx| {
-            let zone = world
-                .entity(ctx.entity)
-                .get::<Zone>()
-                .expect("Zone component should exist")
-                .clone();
-
-            let center = zone.center();
-            let transform = Transform::from_translation(center);
-            let collider = zone.collider();
-
-            let zone_bundle = (
-                transform,
-                ZoneKindVariant::from(&zone.kind),
-                collider,
-                Sensor,
-                CollisionEventsEnabled,
-            );
-
-            world.commands().entity(ctx.entity).insert(zone_bundle);
-        })
-    }
-}
 impl Zone {
     pub fn new(
         name: Option<String>,
@@ -176,7 +141,7 @@ impl Zone {
         }
     }
 
-    fn collider(&self) -> Collider {
+    pub fn collider(&self) -> Collider {
         if let Some(shape) = &self.shape {
             match shape {
                 ZoneShape::Cuboid => {

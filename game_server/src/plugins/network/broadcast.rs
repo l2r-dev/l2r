@@ -1,15 +1,16 @@
+use avian3d::{prelude::*, spatial_query::SpatialQuery};
 use bevy::prelude::*;
 use bevy_ecs::entity::EntityHashSet;
 use game_core::{
     character::Character,
-    encounters::KnownEntities,
+    collision_layers::Layer,
+    encounters::{EnteredWorld, KnownEntities},
     network::{
         broadcast::{BroadcastScope, ServerPacketBroadcast, ServerPacketsBroadcast},
         session::GameServerSession,
     },
 };
 use map::id::RegionId;
-use spatial::FlatDistance;
 
 pub struct NetworkBroadcastPlugin;
 impl Plugin for NetworkBroadcastPlugin {
@@ -40,9 +41,10 @@ fn multiple_server_packets_broadcast(
 fn server_packet_broadcast(
     broadcast: Trigger<ServerPacketBroadcast>,
     sessions: Query<Entity, With<GameServerSession>>,
-    characters: Query<(Entity, &Transform), With<Character>>,
+    characters: Query<(Entity, &Transform), (With<Character>, With<EnteredWorld>)>,
     broadcasters: Query<&Transform>,
     known_entities: Query<(Entity, Ref<KnownEntities>)>,
+    spatial_query: SpatialQuery,
     mut commands: Commands,
 ) {
     let event = broadcast.event();
@@ -102,12 +104,20 @@ fn server_packet_broadcast(
         }
         BroadcastScope::Radius(radius) => {
             if let Ok(broadcaster_transform) = broadcasters.get(broadcaster) {
-                for (character_entity, session_transform) in characters.iter() {
-                    let distance = session_transform
-                        .translation
-                        .flat_distance(&broadcaster_transform.translation);
-                    if distance <= *radius {
-                        commands.trigger_targets(event.packet.clone(), character_entity);
+                let query_sphere = Collider::sphere(*radius);
+
+                let filter = SpatialQueryFilter::default().with_mask(Layer::broadcast_mask());
+
+                let nearby_entities = spatial_query.shape_intersections(
+                    &query_sphere,
+                    broadcaster_transform.translation,
+                    Quat::IDENTITY,
+                    &filter,
+                );
+
+                for entity in nearby_entities {
+                    if characters.contains(entity) {
+                        commands.trigger_targets(event.packet.clone(), entity);
                     }
                 }
             }

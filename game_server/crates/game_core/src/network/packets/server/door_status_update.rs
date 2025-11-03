@@ -65,3 +65,6 @@ impl L2rServerPacket for DoorStatusUpdate {
         buffer
     }
 }
+
+#[derive(Clone, Copy, Debug, Event, Reflect)]
+pub struct BroadcastDoorStatusUpdate;

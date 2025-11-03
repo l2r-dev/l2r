@@ -11,7 +11,8 @@ impl Plugin for DoorsComponentsPlugin {
             .register_type::<DoorStatus>()
             .register_type::<OpenMethod>()
             .register_type::<OpenMethods>()
-            .register_type::<DoorKind>();
+            .register_type::<DoorKind>()
+            .register_type::<DoorCommand>();
     }
 }
 
@@ -38,7 +39,9 @@ fn default_true() -> bool {
 pub struct DoorId(u32);
 
 #[repr(u8)]
-#[derive(Clone, Copy, Debug, Default, Deserialize, EnumComponentTag, Reflect, Serialize)]
+#[derive(
+    Clone, Copy, Debug, Default, Deserialize, EnumComponentTag, Reflect, Serialize, PartialEq, Eq,
+)]
 pub enum DoorStatus {
     #[default]
     Close,
@@ -54,6 +57,15 @@ impl From<DoorStatus> for bool {
     }
 }
 
+impl From<DoorCommand> for DoorStatus {
+    fn from(command: DoorCommand) -> Self {
+        match command {
+            DoorCommand::Open => DoorStatus::Open,
+            DoorCommand::Close => DoorStatus::Close,
+        }
+    }
+}
+
 #[repr(u8)]
 #[derive(Clone, Copy, Debug, Deserialize, Eq, Hash, PartialEq, Reflect, Serialize)]
 pub enum OpenMethod {
@@ -62,6 +74,12 @@ pub enum OpenMethod {
     Item,
     Skill,
     Cycle,
+}
+
+#[derive(Clone, Copy, Debug, Event, Reflect)]
+pub enum DoorCommand {
+    Open,
+    Close,
 }
 
 #[derive(Clone, Debug, Default, Deref, Deserialize, Eq, PartialEq, Reflect, Serialize)]

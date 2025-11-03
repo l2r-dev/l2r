@@ -20,6 +20,7 @@ use game_core::{
         AttackComponentsPlugin, AttackHit, Attacking, AttackingList, ConsumeArrow, Dead, HitInfo,
         Immortal, InCombat, WeaponReuse,
     },
+    collision_layers::Layer,
     items::{
         DollSlot, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
         UpdateType, WeaponAttackParams,
@@ -685,8 +686,8 @@ fn calculate_attack_hit(
 
         // Use SpatialQuery to find nearby entities within weapon range
         let query_sphere = Collider::sphere(range);
-        let filter =
-            SpatialQueryFilter::default().with_excluded_entities([attacker, aiming_target]);
+        let filter = SpatialQueryFilter::from_mask(Layer::attack_targets_mask())
+            .with_excluded_entities([attacker, aiming_target]);
 
         let nearby_entities = params.spatial_query.shape_intersections(
             &query_sphere,

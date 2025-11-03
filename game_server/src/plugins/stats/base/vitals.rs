@@ -1,4 +1,3 @@
-use crate::plugins::doors::DoorQuery;
 use bevy::{platform::collections::HashMap, prelude::*};
 use config::Config;
 use game_core::{
@@ -8,12 +7,13 @@ use game_core::{
     encounters::EnteredWorld,
     network::{
         broadcast::ServerPacketBroadcast,
-        packets::server::{DoorStatusUpdate, GameServerPacket, Revive, UserInfoUpdated},
+        packets::server::{BroadcastDoorStatusUpdate, GameServerPacket, Revive, UserInfoUpdated},
     },
     object_id::ObjectId,
     stats::*,
 };
 use l2r_core::chronicles::CHRONICLE;
+use map::Door;
 use state::{LoadingSystems, StatKindSystems};
 use std::path::PathBuf;
 use strum::IntoEnumIterator;
@@ -157,24 +157,11 @@ fn stats_changed(
 }
 
 fn doors_stats_changed(
-    query: Query<(Entity, DoorQuery), Changed<VitalsStats>>,
+    query: Query<Entity, (With<Door>, Changed<VitalsStats>)>,
     mut commands: Commands,
 ) {
-    for (entity, door) in query.iter() {
-        if let map::ZoneKind::Door(door_kind) = door.zone.kind() {
-            let is_enemy = true; // TODO: Check if door is_enemy, now just consider all doors as enemy
-
-            commands.trigger_targets(
-                GameServerPacket::from(DoorStatusUpdate::new(
-                    door_kind,
-                    *door.object_id,
-                    door.vitals.as_ref(),
-                    *door.status,
-                    is_enemy,
-                )),
-                entity,
-            );
-        }
+    for entity in query.iter() {
+        commands.trigger_targets(BroadcastDoorStatusUpdate, entity);
     }
 }
 

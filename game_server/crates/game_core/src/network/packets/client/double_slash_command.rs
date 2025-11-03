@@ -39,6 +39,8 @@ pub enum DoubleSlashCommand {
         x: f32,
         z: f32,
     },
+    Open,
+    Close,
 }
 
 impl TryFrom<ClientPacketBuffer> for DoubleSlashCommand {

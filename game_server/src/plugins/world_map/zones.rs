@@ -1,5 +1,9 @@
+use avian3d::prelude::{CollisionEventsEnabled, Sensor};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
-use game_core::custom_hierarchy::{DespawnChildOf, DespawnChildren};
+use game_core::{
+    collision_layers::Layer,
+    custom_hierarchy::{DespawnChildOf, DespawnChildren},
+};
 use l2r_core::chronicles::CHRONICLE;
 use map::*;
 use std::path::PathBuf;
@@ -8,6 +12,8 @@ pub struct ZonesPlugin;
 impl Plugin for ZonesPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(ZonesComponentsPlugin);
+
+        app.add_observer(zone_added);
 
         app.add_systems(Startup, |mut commands: Commands| {
             commands.spawn(GlobalZones);
@@ -68,6 +74,31 @@ impl Plugin for ZonesPlugin {
             spawn_zones::<ResidenceTeleportZonesList, ResidenceTeleport>,
         );
     }
+}
+
+fn zone_added(
+    added: Trigger<OnAdd, Zone>,
+    mut commands: Commands,
+    zones: Query<Ref<Zone>>,
+) -> Result<()> {
+    let entity = added.target();
+    let zone = zones.get(entity)?;
+
+    let center = zone.center();
+    let transform = Transform::from_translation(center);
+    let collider = zone.collider();
+
+    let zone_bundle = (
+        transform,
+        ZoneKindVariant::from(zone.kind()),
+        collider,
+        Sensor,
+        Layer::player_sensor(),
+        CollisionEventsEnabled,
+    );
+
+    commands.entity(entity).insert(zone_bundle);
+    Ok(())
 }
 
 fn load_zones<ZoneListResource>(

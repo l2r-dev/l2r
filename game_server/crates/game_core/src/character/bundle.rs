@@ -138,7 +138,7 @@ impl Bundle {
             session_id,
             movable,
             collider: base_class_stats.collider(db_model.appearance.gender),
-            collision_layers: Layer::character(),
+            collision_layers: Layer::player(),
             base_class,
             vitals_stats,
             primal_stats,

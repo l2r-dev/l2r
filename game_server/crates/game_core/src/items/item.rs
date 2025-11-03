@@ -11,7 +11,7 @@ use crate::{
     object_id::ObjectId,
     stats::{EncountersVisibility, ItemElementsInfo},
 };
-use avian3d::prelude::{Collider, CollisionLayers, Sensor};
+use avian3d::prelude::{Collider, CollisionLayers};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
 use derive_more::{From, Into};
@@ -83,7 +83,6 @@ impl PartialEq for UniqueItem {
 pub struct ItemInWorld {
     pub transform: Transform,
     pub collider: Collider,
-    pub sensor: Sensor,
     pub layers: CollisionLayers,
 }
 
@@ -99,7 +98,6 @@ impl ItemInWorld {
                 Self::COLLIDER_SIZE,
             ),
             layers: Layer::item(),
-            sensor: Sensor,
         }
     }
 
@@ -109,7 +107,6 @@ impl ItemInWorld {
             GlobalTransform,
             Collider,
             CollisionLayers,
-            Sensor,
             DespawnChildren,
         )>();
     }

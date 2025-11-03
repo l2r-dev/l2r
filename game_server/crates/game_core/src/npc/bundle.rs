@@ -110,7 +110,7 @@ impl Bundle {
             gender: npc.gender,
             collision: npc.collision,
             collider,
-            collision_layers: Layer::character(),
+            collision_layers: Layer::npc(),
             reward: npc.reward.unwrap_or_default(),
             movable,
             ai: npc.ai.unwrap_or_default(),
