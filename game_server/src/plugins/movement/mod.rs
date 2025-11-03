@@ -14,7 +14,7 @@ use bevy::ecs::{
 };
 use game_core::{
     action::wait_kind::Sit,
-    active_action::{ActionFinished, ActiveAction},
+    active_action::ActiveAction,
     attack::{AttackHit, Dead},
     character::Character,
     collision_layers::Layer,
@@ -25,7 +25,7 @@ use game_core::{
         broadcast::ServerPacketBroadcast,
         packets::server::{ActionFail, GameServerPacket, MoveToLocation, MoveToPawn, StopMove},
     },
-    npc::kind::Guard,
+    npc::kind::{Guard, Pet},
     object_id::ObjectId,
     stats::Movable,
 };
@@ -62,8 +62,7 @@ impl Plugin for MovementPlugin {
         app.add_observer(handle_waypoint_arrival)
             .add_observer(handle_movement_step)
             .add_observer(send_stop_move_packet)
-            .add_observer(look_at_target)
-            .add_observer(movement_after_action_finished);
+            .add_observer(look_at_target);
     }
 }
 
@@ -189,17 +188,17 @@ fn handle_waypoint_arrival(
 }
 
 /// Don't check door collision for all entities for better performance
+/// TODO: refine this filter if needed
 #[derive(QueryFilter)]
 struct DoorCollisionFilter {
-    characters: With<Character>,
-    guards: With<Guard>,
+    filter: Or<(With<Character>, With<Guard>, With<Pet>)>,
 }
 
 #[derive(SystemParam)]
 struct MovementStepQueries<'w, 's> {
     time: Res<'w, Time<Fixed>>,
     world_map_query: WorldMapQuery<'w, 's>,
-    transforms: Query<'w, 's, (Ref<'static, ObjectId>, Mut<'static, Transform>)>,
+    transforms: Query<'w, 's, Mut<'static, Transform>>,
     movables: Query<'w, 's, MovablesQuery<'static>, MovablesFilter>,
     spatial_query: SpatialQuery<'w, 's>,
     colliders: Query<'w, 's, &'static Collider>,
@@ -215,7 +214,7 @@ struct MovablesFilter {
 #[query_data(mutable)]
 struct MovablesQuery<'a> {
     movable: Mut<'a, Movable>,
-    movement: Option<Mut<'a, Movement>>,
+    movement: Mut<'a, Movement>,
     is_sitting: Has<Sit>,
     is_dead: Has<Dead>,
 }
@@ -225,141 +224,122 @@ fn handle_movement_step(
     step: Trigger<MoveStep>,
     mut commands: Commands,
     mut queries: MovementStepQueries,
-) {
+) -> Result<()> {
     let entity = step.target();
-    if let Ok(mut movables) = queries.movables.get_mut(entity) {
-        let Some(ref mut movement) = movables.movement else {
-            return; // No movement component
-        };
+    let mut moving_entity = queries.movables.get_mut(entity)?;
 
-        let mut target_pos = match movement.as_ref() {
-            Movement::ToEntity { target, .. } => {
-                if let Ok((_, target_transform)) = queries.transforms.get(*target) {
-                    target_transform.translation
-                } else {
-                    commands.entity(entity).remove::<Movement>();
-                    return;
-                }
-            }
-            Movement::ToLocation { waypoints } => {
-                if let Some(next_wp) = waypoints.front() {
-                    *next_wp.target()
-                } else {
-                    return; // No waypoints
-                }
-            }
-        };
-
-        let Ok((object_id, mut transform)) = queries.transforms.get_mut(entity) else {
-            return;
-        };
-        let mut current_pos = transform.translation;
-
-        let geodata = queries
-            .world_map_query
-            .region_geodata_from_pos(current_pos)
-            .ok();
-
-        if !movables.movable.in_water()
-            && !movables.movable.is_flying()
-            && let Some(geodata_height) =
-                geodata.and_then(|gd| gd.nearest_height(&WorldMap::vec3_to_geo(current_pos)))
-        {
-            let height = geodata_height as f32;
-            let distance_to_ground = (current_pos.y - height).abs();
-
-            if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
-                current_pos.y = height;
-                target_pos.y = height;
+    let mut target_pos = match moving_entity.movement.as_ref() {
+        Movement::ToEntity { target, .. } => {
+            if let Ok(target_transform) = queries.transforms.get(*target) {
+                target_transform.translation
+            } else {
+                commands.entity(entity).remove::<Movement>();
+                return Ok(());
             }
         }
+        Movement::ToLocation { waypoints } => *waypoints
+            .front()
+            .ok_or_else(|| BevyError::from("No waypoint found"))?
+            .target(),
+    };
 
-        transform.look_at(target_pos, Vec3::Y);
+    let mut transform = queries.transforms.get_mut(entity)?;
 
-        let delta_time = queries.time.delta_secs();
-        let speed = movables.movable.speed() as f32;
-        let move_distance = speed * delta_time;
-        let direction = (target_pos - current_pos).normalize();
-        let move_step = direction * move_distance;
-        let new_position = current_pos + move_step;
+    let geodata = queries
+        .world_map_query
+        .region_geodata_from_pos(transform.translation)?;
 
-        movables.movable.step();
+    if !moving_entity.movable.in_water()
+        && !moving_entity.movable.is_flying()
+        && let Some(geodata_height) =
+            geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
+    {
+        let height = geodata_height as f32;
+        let distance_to_ground = (transform.translation.y - height).abs();
 
-        let can_move = geodata.is_none_or(|geodata| {
-            if movables.movable.in_water() || movables.movable.is_flying() {
-                true
-            } else if movables.movable.exiting_water() {
-                // Prevent movement through terrain when transitioning from water to land
-                if let Some(geodata_height) =
-                    geodata.nearest_height(&WorldMap::vec3_to_geo(current_pos))
-                {
-                    let distance_to_ground = (current_pos.y - geodata_height as f32).abs();
+        if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
+            transform.translation.y = height;
+            target_pos.y = height;
+        }
+    }
+
+    transform.look_at(target_pos, Vec3::Y);
+
+    let delta_time = queries.time.delta_secs();
+    let speed = moving_entity.movable.speed() as f32;
+    let move_distance = speed * delta_time;
+    let direction = (target_pos - transform.translation).normalize();
+    let move_step = direction * move_distance;
+    let new_position = transform.translation + move_step;
+
+    moving_entity.movable.step();
+
+    let can_move = moving_entity.movable.in_water()
+        || moving_entity.movable.is_flying()
+        || if moving_entity.movable.exiting_water() {
+            // Prevent movement through terrain when transitioning from water to land
+            geodata
+                .nearest_height(&WorldMap::vec3_to_geo(transform.translation))
+                .is_some_and(|geodata_height| {
+                    let distance_to_ground =
+                        (transform.translation.y - geodata_height as f32).abs();
                     distance_to_ground < MAX_GROUND_SNAP_DISTANCE
                         && geodata.can_move_to(
-                            &WorldMap::vec3_to_geo(current_pos),
+                            &WorldMap::vec3_to_geo(transform.translation),
                             &WorldMap::vec3_to_geo(new_position),
                         )
-                } else {
-                    // No geodata - allow movement
-                    true
-                }
-            } else {
-                geodata.can_move_to(
-                    &WorldMap::vec3_to_geo(current_pos),
-                    &WorldMap::vec3_to_geo(new_position),
-                )
-            }
-        });
+                })
+        } else {
+            geodata.can_move_to(
+                &WorldMap::vec3_to_geo(transform.translation),
+                &WorldMap::vec3_to_geo(new_position),
+            )
+        };
 
-        if !can_move {
-            commands.entity(entity).remove::<Movement>();
-            commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
-            let stop_move = StopMove::new(*object_id, *transform);
-            commands.trigger_targets(ServerPacketBroadcast::new(stop_move.into()), entity);
-            return;
-        }
+    if !can_move {
+        commands.entity(entity).remove::<Movement>();
+        return Ok(());
+    }
 
-        if queries.check_door_collision.contains(entity) {
-            let filter = SpatialQueryFilter::from_mask(Layer::solid_environment_mask())
-                .with_excluded_entities([entity]);
+    if queries.check_door_collision.contains(entity) {
+        let filter = SpatialQueryFilter::from_mask(Layer::solid_environment_mask())
+            .with_excluded_entities([entity]);
 
-            if let Ok(collider) = queries.colliders.get(entity) {
-                let config = ShapeCastConfig::from_max_distance(move_distance);
-                if let Some(_hit) = queries.spatial_query.cast_shape(
-                    collider,
-                    current_pos,
-                    Quat::IDENTITY,
-                    Dir3::new_unchecked(direction),
-                    &config,
-                    &filter,
-                ) {
-                    commands.entity(entity).remove::<Movement>();
-                    commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
-                    let stop_move = StopMove::new(*object_id, *transform);
-                    commands.trigger_targets(ServerPacketBroadcast::new(stop_move.into()), entity);
-                    return;
-                }
-            }
-        }
-
-        transform.translation = new_position;
-
-        if let Some(Movement::ToLocation { waypoints }) = movables.movement.as_deref()
-            && let Some(wp) = waypoints.front()
-        {
-            let wp_pos = wp.target();
-
-            let distance = if movables.movable.in_water() || movables.movable.is_flying() {
-                current_pos.distance(*wp_pos)
-            } else {
-                current_pos.flat_distance(wp_pos)
-            };
-
-            if distance < ARRIVAL_DISTANCE {
-                commands.trigger_targets(ArrivedAtWaypoint, entity);
+        if let Ok(collider) = queries.colliders.get(entity) {
+            let config = ShapeCastConfig::from_max_distance(move_distance);
+            if let Some(_hit) = queries.spatial_query.cast_shape(
+                collider,
+                transform.translation,
+                Quat::IDENTITY,
+                Dir3::new_unchecked(direction),
+                &config,
+                &filter,
+            ) {
+                commands.entity(entity).remove::<Movement>();
+                return Ok(());
             }
         }
     }
+
+    transform.translation = new_position;
+
+    if let Movement::ToLocation { waypoints } = moving_entity.movement.as_ref()
+        && let Some(wp) = waypoints.front()
+    {
+        let wp_pos = wp.target();
+
+        let distance = if moving_entity.movable.in_water() || moving_entity.movable.is_flying() {
+            transform.translation.distance(*wp_pos)
+        } else {
+            transform.translation.flat_distance(wp_pos)
+        };
+
+        if distance < ARRIVAL_DISTANCE {
+            commands.trigger_targets(ArrivedAtWaypoint, entity);
+        }
+    }
+
+    Ok(())
 }
 
 fn send_movement_packets(
@@ -407,15 +387,6 @@ fn send_movement_packets(
     }
 }
 
-fn movement_after_action_finished(
-    _action_finished: Trigger<ActionFinished>,
-    movable_objects: Query<MovementQuery, MovementChangeFilter>,
-    targets: Query<TransformObjectQuery>,
-    commands: Commands,
-) {
-    send_movement_packets(movable_objects, targets, commands);
-}
-
 #[derive(QueryData)]
 pub struct TransformObjectQuery<'a> {
     pub object_id: Ref<'a, ObjectId>,
@@ -426,12 +397,13 @@ pub fn send_stop_move_packet(
     stop: Trigger<SendStopMove>,
     transforms: Query<TransformObjectQuery>,
     mut commands: Commands,
-) {
+) -> Result<()> {
     let entity = stop.target();
-    if let Ok(transform_data) = transforms.get(entity) {
-        let packet = StopMove::new(*transform_data.object_id, *transform_data.transform);
-        commands.trigger_targets(ServerPacketBroadcast::new(packet.into()), entity);
-    }
+    let transform_data = transforms.get(entity)?;
+    let stop_move = StopMove::new(*transform_data.object_id, *transform_data.transform);
+    commands.trigger_targets(ServerPacketBroadcast::new(stop_move.into()), entity);
+    commands.trigger_targets(GameServerPacket::from(ActionFail), entity);
+    Ok(())
 }
 
 fn look_at_target(look_at: Trigger<LookAt>, mut transforms: Query<Mut<Transform>>) -> Result<()> {

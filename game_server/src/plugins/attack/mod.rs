@@ -39,9 +39,9 @@ use game_core::{
 };
 use map::{Door, WorldMap, WorldMapQuery};
 use smallvec::smallvec;
-use spatial::FlatDistance;
+use spatial::{Degrees, FlatDistance};
 use state::GameMechanicsSystems;
-use std::{f32::consts::PI, time::Duration};
+use std::time::Duration;
 use system_messages;
 
 pub struct AttackPlugin;
@@ -703,10 +703,8 @@ fn calculate_attack_hit(
 
             let next_target_vector = attacker_position - next_target.transform.translation;
 
-            //TODO: в калькуляторе переводить в PI все градусы
-            let angle_in_degrees = attack_vector.angle_between(next_target_vector) * 180. / PI;
-
-            if angle_in_degrees > attack_angle {
+            let angle = Degrees::from_angle_between(attack_vector, next_target_vector);
+            if angle > attack_angle {
                 continue;
             }
 
