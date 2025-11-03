@@ -20,6 +20,7 @@ use game_core::{
         AttackComponentsPlugin, AttackHit, Attacking, AttackingList, ConsumeArrow, Dead, HitInfo,
         Immortal, InCombat, WeaponReuse,
     },
+    character::Character,
     collision_layers::Layer,
     items::{
         DollSlot, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
@@ -37,7 +38,7 @@ use game_core::{
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
     stats::*,
 };
-use map::{Door, WorldMap, WorldMapQuery};
+use map::{Door, RegionGeoData, WorldMap, WorldMapQuery};
 use smallvec::smallvec;
 use spatial::{Degrees, FlatDistance};
 use state::GameMechanicsSystems;
@@ -62,16 +63,14 @@ impl Plugin for AttackPlugin {
         )
         .add_systems(
             FixedUpdate,
-            consume_arrow.in_set(GameMechanicsSystems::Attacking),
-        )
-        .add_systems(
-            FixedUpdate,
             proceed_weapon_reuse.in_set(GameMechanicsSystems::Attacking),
         )
         .add_systems(
             Update,
             in_combat_handler.in_set(GameMechanicsSystems::Attacking),
         );
+
+        app.add_observer(consume_arrow);
     }
 }
 
@@ -86,6 +85,7 @@ struct AttackingQuery<'a> {
     movement: Option<Ref<'a, Movement>>,
     weapon_reuse_active: Has<WeaponReuse>,
     is_sitting: Has<Sit>,
+    is_character: Has<Character>,
 }
 
 #[derive(QueryFilter)]
@@ -128,184 +128,133 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
             });
         }
 
-        match params.target_objects.get(**attacker.target) {
-            Ok(aiming_target) => {
-                let distance = attacker
-                    .transform
-                    .translation
-                    .flat_distance(&aiming_target.transform.translation);
+        let Ok(geodata) = params
+            .world_map_query
+            .region_geodata_from_pos(attacker.transform.translation)
+        else {
+            return;
+        };
 
-                let range = attacker.attack_stats.get(AttackStat::PAtkRange);
-                if distance <= range {
-                    params.commands.command_scope(|mut commands| {
-                        commands.trigger_targets(LookAt(aiming_target.entity), attacker.entity);
+        let Ok(aiming_target) = params.target_objects.get(**attacker.target) else {
+            params.commands.command_scope(|mut commands| {
+                commands.entity(attacker.entity).remove::<Attacking>();
+            });
+            return;
+        };
 
-                        commands
-                            .entity(attacker.entity)
-                            .remove::<Movement>()
-                            .try_insert(InCombat::default());
-                    });
+        let distance = attacker
+            .transform
+            .translation
+            .flat_distance(&aiming_target.transform.translation);
 
-                    let weapon_uniq = attacker
-                        .paper_doll
-                        .as_ref()
-                        .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
+        let range = attacker.attack_stats.get(AttackStat::PAtkRange);
+        if distance <= range {
+            let weapon_uniq = attacker
+                .paper_doll
+                .as_ref()
+                .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
 
-                    let weapon_info = params.items_data_query.item_info_from_uniq(&weapon_uniq);
+            let weapon_info = params.items_data_query.item_info_from_uniq(&weapon_uniq);
 
-                    let attack_params =
-                        if let Some(Kind::Weapon(weapon)) = weapon_info.map(|v| v.kind()) {
-                            weapon.attack_params()
-                        } else {
-                            WeaponAttackParams::default()
-                        };
+            let attack_params = if let Some(Kind::Weapon(weapon)) = weapon_info.map(|v| v.kind()) {
+                weapon.attack_params()
+            } else {
+                WeaponAttackParams::default()
+            };
 
-                    if attack_params.reuse_delay.is_some() && attacker.weapon_reuse_active {
-                        return;
-                    }
+            // Early return if weapon is on cooldown
+            if attack_params.reuse_delay.is_some() && attacker.weapon_reuse_active {
+                return;
+            }
 
-                    if attack_params.is_bow
-                        && let Some(paperdoll) = attacker.paper_doll
-                    {
-                        let arrow_count = paperdoll[DollSlot::LeftHand]
-                            .map(|v| v.item().count())
-                            .unwrap_or(0);
+            // Early return if bow and cannot see target or out of arrows
+            if attack_params.is_bow && !process_bow(&attacker, &aiming_target, &geodata, &params) {
+                return;
+            }
 
-                        if arrow_count == 0 {
-                            params.commands.command_scope(|mut commands| {
-                                commands.trigger_targets(
-                                    GameServerPacket::from(SystemMessage::new(
-                                        system_messages::Id::YouHaveRunOutOfArrows,
-                                        vec![],
-                                    )),
-                                    attacker.entity,
-                                );
+            let Ok((attack_packet, attack_hit, attack_interval, weapon_reuse_duration)) =
+                calculate_attack_hit(
+                    attacker.entity,
+                    aiming_target.entity,
+                    range,
+                    weapon_uniq,
+                    weapon_info,
+                    attack_params,
+                    &params,
+                )
+            else {
+                return;
+            };
 
-                                commands.entity(attacker.entity).remove::<Attacking>();
-                            });
-
-                            return;
-                        }
-
-                        params.commands.command_scope(|mut commands| {
-                            commands.entity(attacker.entity).try_insert(ConsumeArrow);
-
-                            commands.trigger_targets(
-                                GameServerPacket::from(SystemMessage::new(
-                                    system_messages::Id::YouCarefullyNockAnArrow,
-                                    vec![],
-                                )),
-                                attacker.entity,
-                            );
-                        });
-                    }
-
-                    params.commands.command_scope(|mut commands| {
-                        commands
-                            .entity(attacker.entity)
-                            .try_insert(InCombat::default());
-                    });
-
-                    let Ok((attack_packet, attack_hit, attack_interval, weapon_reuse_duration)) =
-                        calculate_attack_hit(
-                            attacker.entity,
-                            aiming_target.entity,
-                            range,
-                            weapon_uniq,
-                            weapon_info,
-                            attack_params,
-                            &params,
-                        )
-                    else {
-                        return;
-                    };
-
-                    if let Some(duration) = weapon_reuse_duration {
-                        params.commands.command_scope(|mut commands| {
-                            commands.trigger_targets(
-                                GameServerPacket::from(SetupGauge::new(
-                                    *attacker.object_id,
-                                    SetupGaugeColor::Red,
-                                    duration,
-                                )),
-                                attacker.entity,
-                            );
-
-                            commands
-                                .entity(attacker.entity)
-                                .try_insert(WeaponReuse::new(duration));
-                        });
-                    }
-
-                    params.commands.command_scope(|mut commands| {
-                        commands.entity(attacker.entity).try_insert(attack_hit);
-                    });
-
-                    params.commands.command_scope(|mut commands| {
-                        commands.trigger_targets(
-                            ServerPacketBroadcast::new(attack_packet.into()),
-                            attacker.entity,
-                        );
-
-                        commands
-                            .entity(attacker.entity)
-                            .try_insert(ActiveAction::new(attack_interval));
-                    });
-                } else {
-                    // Target is out of range, need to chase
-                    // Check if already moving to the correct target
-                    if let Some(mov) = attacker.movement
-                        && mov.is_to_entity()
-                        && mov.target() == Some(aiming_target.entity)
-                    {
-                        return;
-                    }
-
-                    let attacker_pos = attacker.transform.translation;
-                    let target_pos = aiming_target.transform.translation;
-
-                    let Ok(geodata) = params.world_map_query.region_geodata_from_pos(attacker_pos)
-                    else {
-                        return;
-                    };
-
-                    // Use the same logic as follow plugin - check line of sight
-                    let can_move_to = geodata.can_move_to(
-                        &WorldMap::vec3_to_geo(attacker_pos),
-                        &WorldMap::vec3_to_geo(target_pos),
+            params.commands.command_scope(|mut commands| {
+                if let Some(duration) = weapon_reuse_duration {
+                    commands.trigger_targets(
+                        GameServerPacket::from(SetupGauge::new(
+                            *attacker.object_id,
+                            SetupGaugeColor::Red,
+                            duration,
+                        )),
+                        attacker.entity,
                     );
-
-                    if can_move_to {
-                        // Direct line of sight, use simple movement
-                        params.commands.command_scope(|mut commands| {
-                            commands
-                                .entity(attacker.entity)
-                                .try_insert(Movement::to_entity(aiming_target.entity, range));
-                        });
-                    } else {
-                        // No line of sight, use pathfinding
-                        params.commands.command_scope(|mut commands| {
-                            commands
-                                .entity(attacker.entity)
-                                .try_insert(InActionPathfindingTimer::default());
-
-                            commands.trigger_targets(
-                                VisibilityCheckRequest {
-                                    entity: attacker.entity,
-                                    start: attacker_pos,
-                                    target: target_pos,
-                                },
-                                attacker.entity,
-                            );
-                        });
-                    }
+                    commands
+                        .entity(attacker.entity)
+                        .try_insert(WeaponReuse::new(duration));
                 }
+
+                commands.trigger_targets(LookAt(aiming_target.entity), attacker.entity);
+                commands
+                    .entity(attacker.entity)
+                    .try_insert((
+                        attack_hit,
+                        ActiveAction::new(attack_interval),
+                        InCombat::default(),
+                    ))
+                    .remove::<Movement>();
+
+                commands.trigger_targets(
+                    ServerPacketBroadcast::new(attack_packet.into()),
+                    attacker.entity,
+                );
+            });
+        } else {
+            // Target is out of range, need to chase
+            // Check if already moving to the correct target
+            if let Some(mov) = attacker.movement
+                && mov.is_to_entity()
+                && mov.target() == Some(aiming_target.entity)
+            {
+                return;
             }
-            _ => {
-                params.commands.command_scope(|mut commands| {
-                    commands.entity(attacker.entity).remove::<Attacking>();
-                });
-            }
+
+            let attacker_pos = attacker.transform.translation;
+            let target_pos = aiming_target.transform.translation;
+
+            let can_move_to = geodata.can_move_to(
+                &WorldMap::vec3_to_geo(attacker_pos),
+                &WorldMap::vec3_to_geo(target_pos),
+            );
+
+            params.commands.command_scope(|mut commands| {
+                if can_move_to {
+                    commands
+                        .entity(attacker.entity)
+                        .try_insert(Movement::to_entity(aiming_target.entity, range));
+                } else {
+                    // Cant move directly, use pathfinding
+                    commands
+                        .entity(attacker.entity)
+                        .try_insert(InActionPathfindingTimer::default());
+
+                    commands.trigger_targets(
+                        VisibilityCheckRequest {
+                            entity: attacker.entity,
+                            start: attacker_pos,
+                            target: target_pos,
+                        },
+                        attacker.entity,
+                    );
+                }
+            });
         }
     });
     Ok(())
@@ -320,46 +269,94 @@ fn proceed_weapon_reuse(
         if !reuse.proceed_timer(time.delta()) {
             continue;
         }
-
         commands.entity(character).remove::<WeaponReuse>();
     }
 }
 
+fn process_bow(
+    attacker: &AttackingQueryItem,
+    aiming_target: &TargetQueryReadOnlyItem,
+    geodata: &RegionGeoData,
+    params: &AttackSystemParams,
+) -> bool {
+    if let Some(paperdoll) = attacker.paper_doll.as_deref() {
+        let arrow_count = paperdoll[DollSlot::LeftHand]
+            .map(|v| v.item().count())
+            .unwrap_or(0);
+
+        if arrow_count == 0 {
+            params.commands.command_scope(|mut commands| {
+                commands.trigger_targets(
+                    GameServerPacket::from(SystemMessage::new_empty(
+                        system_messages::Id::YouHaveRunOutOfArrows,
+                    )),
+                    attacker.entity,
+                );
+                commands.entity(attacker.entity).remove::<Attacking>();
+            });
+            return false;
+        }
+    };
+
+    let can_see = geodata.can_see_target(
+        WorldMap::vec3_to_geo(attacker.transform.translation),
+        WorldMap::vec3_to_geo(aiming_target.transform.translation),
+    );
+
+    if attacker.is_character {
+        params.commands.command_scope(|mut commands| {
+            if can_see {
+                commands.trigger_targets(ConsumeArrow, attacker.entity);
+            } else {
+                commands.trigger_targets(
+                    GameServerPacket::from(SystemMessage::new_empty(
+                        system_messages::Id::CannotSeeTarget,
+                    )),
+                    attacker.entity,
+                );
+                commands.entity(attacker.entity).remove::<Attacking>();
+            }
+        });
+    }
+
+    can_see
+}
+
 fn consume_arrow(
+    trigger: Trigger<ConsumeArrow>,
     mut commands: Commands,
-    mut characters: Query<(Entity, Mut<PaperDoll>), With<ConsumeArrow>>,
+    mut paperdoll_query: Query<Mut<PaperDoll>>,
     mut items: Query<(Ref<ObjectId>, Mut<Item>)>,
     object_id_manager: Res<ObjectIdManager>,
-) {
-    for (char_entity, mut paperdoll) in characters.iter_mut() {
-        commands.entity(char_entity).remove::<ConsumeArrow>();
+) -> Result<()> {
+    let char_entity = trigger.target();
+    let mut paperdoll = paperdoll_query.get_mut(char_entity)?;
+    let Some(paperdoll_left_hand_item) = &mut paperdoll[DollSlot::LeftHand] else {
+        return Ok(());
+    };
 
-        let Some(paperdoll_left_hand_item) = &mut paperdoll[DollSlot::LeftHand] else {
-            continue;
-        };
+    let left_hand_item_object_id = paperdoll_left_hand_item.object_id();
+    let (_, mut left_hand_item) =
+        items.by_object_id_mut(left_hand_item_object_id, object_id_manager.as_ref())?;
 
-        let left_hand_item_object_id = paperdoll_left_hand_item.object_id();
+    paperdoll_left_hand_item.item_mut().dec_count();
+    left_hand_item.dec_count();
 
-        let Ok((_, mut left_hand_item)) =
-            items.by_object_id_mut(left_hand_item_object_id, object_id_manager.as_ref())
-        else {
-            warn!("no item with id: {left_hand_item_object_id}");
-            continue;
-        };
+    commands.trigger_targets(
+        GameServerPacket::from(SystemMessage::new_empty(
+            system_messages::Id::YouCarefullyNockAnArrow,
+        )),
+        char_entity,
+    );
 
-        paperdoll_left_hand_item.item_mut().dec_count();
-        left_hand_item.dec_count();
-
-        let unique_item = UniqueItem::new(left_hand_item_object_id, *left_hand_item);
-
-        commands.trigger_targets(
-            GameServerPacket::from(InventoryUpdate::new(
-                smallvec![unique_item],
-                UpdateType::Modify,
-            )),
-            char_entity,
-        );
-    }
+    commands.trigger_targets(
+        GameServerPacket::from(InventoryUpdate::new(
+            smallvec![*paperdoll_left_hand_item],
+            UpdateType::Modify,
+        )),
+        char_entity,
+    );
+    Ok(())
 }
 
 #[derive(QueryData)]

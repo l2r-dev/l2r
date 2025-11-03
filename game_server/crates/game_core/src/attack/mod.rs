@@ -43,8 +43,7 @@ struct EnemyQuery<'a> {
 #[component(storage = "SparseSet")]
 pub struct Immortal;
 
-#[derive(Component, Default, Reflect)]
-#[component(storage = "SparseSet")]
+#[derive(Default, Event, Reflect)]
 pub struct ConsumeArrow;
 
 #[derive(Component, Default, Reflect)]
