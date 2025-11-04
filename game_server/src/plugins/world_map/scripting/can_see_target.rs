@@ -23,6 +23,6 @@ pub(crate) fn script_can_see_target(
         let mut map_state: SystemState<WorldMapQuery> = SystemState::new(world);
         let map_query = map_state.get_mut(world);
 
-        return ScriptValue::Bool(map_query.can_see_target(start, target));
+        ScriptValue::Bool(map_query.can_see_target(start, target))
     })
 }
