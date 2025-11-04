@@ -62,7 +62,7 @@ fn random_walking_around(
     mut commands: Commands,
     time: Res<Time>,
     mut random_walkers: Query<RandomWalkingQuery, RandomWalkingFilter>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     parents: Query<&Transform, With<Spawner>>,
 ) {
     for mut walker in random_walkers.iter_mut() {
@@ -95,7 +95,7 @@ fn random_walking_around(
                 (current_pos, random_radius)
             };
 
-            let geodata = world_map_query.region_geodata(region_id).ok();
+            let geodata = map_query.inner.region_geodata(region_id).ok();
 
             if let Some(geodata) = geodata
                 && let Some(random_point) =

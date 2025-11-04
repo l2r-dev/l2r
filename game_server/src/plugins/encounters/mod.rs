@@ -11,7 +11,6 @@ use bevy::{
 };
 use game_core::{
     character::{self},
-    collision_layers::Layer,
     encounters::*,
     items::{Item, ItemsDataQuery},
     movement::Movement,
@@ -24,6 +23,7 @@ use game_core::{
     stats::*,
     teleport::TeleportInProgress,
 };
+use physics::GameLayer;
 use state::GameServerStateSystems;
 
 pub struct EncountersPlugin;
@@ -90,7 +90,7 @@ fn set_relations(
             // Filter to find only entities on Character, Item, and Door layers
             let filter = SpatialQueryFilter::default()
                 .with_excluded_entities([entity_a])
-                .with_mask([Layer::encounters_mask()]);
+                .with_mask([GameLayer::encounters_mask()]);
 
             let nearby_entities = spatial_query.shape_intersections(
                 &query_sphere,
@@ -136,7 +136,7 @@ fn unset_relations(
             // Filter to find only entities on Character, Item, and Door layers
             let filter = SpatialQueryFilter::default()
                 .with_excluded_entities([entity_a])
-                .with_mask(Layer::encounters_mask());
+                .with_mask(GameLayer::encounters_mask());
 
             let nearby_entities: std::collections::HashSet<Entity> = spatial_query
                 .shape_intersections(&query_sphere, pos_a.translation, Quat::IDENTITY, &filter)

@@ -28,7 +28,7 @@ fn update_block_gizmos(
     mut commands: Commands,
     mut gizmo_assets: ResMut<Assets<GizmoAsset>>,
     config: Res<Config>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     changed_regions: Query<Entity, Changed<Region>>,
     existing_block_gizmos: Query<Entity, With<BlockGizmos>>,
 ) {
@@ -47,9 +47,9 @@ fn update_block_gizmos(
         commands.entity(entity).despawn();
     }
 
-    let active_regions = world_map_query.world_map.active_regions();
+    let active_regions = map_query.inner.world_map.active_regions();
     for active_region in active_regions {
-        if let Ok(region) = world_map_query.regions.get(active_region) {
+        if let Ok(region) = map_query.inner.regions.get(active_region) {
             let block_centers = region.block_centers();
             let mut gizmo = GizmoAsset::new();
             if let Some(block_centers) = block_centers {
@@ -107,7 +107,7 @@ fn update_cell_gizmos(
     mut commands: Commands,
     mut gizmo_assets: ResMut<Assets<GizmoAsset>>,
     config: Res<Config>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     changed_regions: Query<Entity, Changed<Region>>,
     existing_cell_gizmos: Query<Entity, With<CellGizmos>>,
 ) {
@@ -126,10 +126,10 @@ fn update_cell_gizmos(
         commands.entity(entity).despawn();
     }
 
-    let active_regions = world_map_query.world_map.active_regions();
+    let active_regions = map_query.inner.world_map.active_regions();
     for active_region in active_regions {
-        if let Ok(region) = world_map_query.regions.get(active_region) {
-            if let Ok(geodata) = world_map_query.region_geodata(region.id()) {
+        if let Ok(region) = map_query.inner.regions.get(active_region) {
+            if let Ok(geodata) = map_query.inner.region_geodata(region.id()) {
                 let mut gizmo = GizmoAsset::new();
 
                 for block_x in 0..Region::BLOCKS_X {
@@ -149,7 +149,7 @@ fn update_cell_gizmos(
                                         0,
                                     );
 
-                                    let height = block.nearest_height(&cell_geo_pos);
+                                    let height = block.nearest_height(cell_geo_pos);
                                     let cell_position = map::WorldMap::geo_to_game(
                                         spatial::GeoVec3::new(cell_geo_pos.point, height),
                                     );

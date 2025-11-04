@@ -17,15 +17,15 @@ impl LayeredCell {
         &self.0
     }
 
-    pub fn nearest_height(&self, loc: &GeoVec3) -> i32 {
+    pub fn nearest_height(&self, loc: GeoVec3) -> i32 {
         self.nearest_cell(loc).height()
     }
 
-    pub fn nearest_nswe(&self, loc: &GeoVec3) -> NavigationDirection {
+    pub fn nearest_nswe(&self, loc: GeoVec3) -> NavigationDirection {
         self.nearest_cell(loc).nswe()
     }
 
-    fn nearest_cell(&self, loc: &GeoVec3) -> &Cell {
+    fn nearest_cell(&self, loc: GeoVec3) -> &Cell {
         self.0
             .iter()
             .min_by_key(|cell| (cell.height() - loc.height).abs())
@@ -53,8 +53,8 @@ impl fmt::Debug for MultilayerBlock {
 impl MultilayerBlock {
     pub const TYPE: u8 = 2;
 
-    pub fn layered_cell_by_loc(&self, loc: &GeoVec3) -> &LayeredCell {
-        let index = Block::cell_offset(&GeoPoint::from(*loc));
+    pub fn layered_cell_by_loc(&self, loc: GeoVec3) -> &LayeredCell {
+        let index = Block::cell_offset(GeoPoint::from(loc));
         assert!(index < Block::CELLS, "Index out of bounds");
         self.cells.get(index as usize).unwrap()
     }
@@ -123,15 +123,15 @@ impl super::GeoBlock for MultilayerBlock {
             + 1 // TYPE byte
     }
 
-    fn cell_by_loc(&self, loc: &GeoVec3) -> &Cell {
+    fn cell_by_loc(&self, loc: GeoVec3) -> &Cell {
         self.layered_cell_by_loc(loc).nearest_cell(loc)
     }
 
-    fn nearest_height(&self, loc: &GeoVec3) -> i32 {
+    fn nearest_height(&self, loc: GeoVec3) -> i32 {
         self.layered_cell_by_loc(loc).nearest_height(loc)
     }
 
-    fn next_higher_height(&self, from: &GeoVec3, to: &GeoVec3) -> i32 {
+    fn next_higher_height(&self, from: GeoVec3, to: GeoVec3) -> i32 {
         let cell = self.layered_cell_by_loc(from);
 
         let mut higher_height = i32::MAX;
@@ -154,7 +154,7 @@ impl super::GeoBlock for MultilayerBlock {
         }
     }
 
-    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
+    fn passable_directions(&self, loc: GeoVec3) -> NavigationDirection {
         self.cell_by_loc(loc).nswe()
     }
 }

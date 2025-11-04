@@ -2,7 +2,6 @@ use crate::{
     abnormal_effects::AbnormalEffects,
     action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
-    collision_layers::Layer,
     encounters::KnownEntities,
     items::{self, Inventory, PaperDoll},
     object_id::ObjectId,
@@ -12,6 +11,7 @@ use crate::{
 use avian3d::prelude::*;
 use bevy::prelude::*;
 use l2r_core::model::{base_class::BaseClass, race::Race, session::SessionId};
+use physics::GameLayer;
 use spatial::GameVec3;
 
 #[derive(Bundle, Clone, Debug, Reflect)]
@@ -138,7 +138,7 @@ impl Bundle {
             session_id,
             movable,
             collider: base_class_stats.collider(db_model.appearance.gender),
-            collision_layers: Layer::player(),
+            collision_layers: GameLayer::player(),
             base_class,
             vitals_stats,
             primal_stats,

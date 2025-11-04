@@ -3,7 +3,6 @@ use bevy::prelude::*;
 use game_core::{
     action::target::{SelectedTarget, Targetable},
     attack::AttackingList,
-    collision_layers::Layer,
     network::{
         broadcast::{BroadcastScope, ServerPacketBroadcast},
         packets::server::{
@@ -17,6 +16,7 @@ use game_core::{
     },
 };
 use map::{DoorCommand, DoorStatus, DoorsComponentsPlugin, MeshInfo, Zone, ZoneKind};
+use physics::GameLayer;
 
 mod query;
 
@@ -59,18 +59,20 @@ fn door_added(
         match (door.check_collision, door.status) {
             (true, map::DoorStatus::Close) => {
                 // Closed door - solid environment that blocks characters (Environment layer)
-                commands.entity(entity).insert(Layer::environment_solid());
+                commands
+                    .entity(entity)
+                    .insert(GameLayer::environment_solid());
             }
             (true, map::DoorStatus::Open) => {
                 // Open door - passable environment that doesn't block movement (EnvironmentPassable layer)
                 commands
                     .entity(entity)
-                    .insert(Layer::environment_passable());
+                    .insert(GameLayer::environment_passable());
             }
             (false, _) => {
                 commands
                     .entity(entity)
-                    .insert(Layer::environment_passable());
+                    .insert(GameLayer::environment_passable());
             }
         }
 
@@ -131,12 +133,12 @@ fn handle_door_command(
             DoorStatus::Close => {
                 commands
                     .entity(door_entity)
-                    .insert(Layer::environment_solid());
+                    .insert(GameLayer::environment_solid());
             }
             DoorStatus::Open => {
                 commands
                     .entity(door_entity)
-                    .insert(Layer::environment_passable());
+                    .insert(GameLayer::environment_passable());
             }
         }
     }

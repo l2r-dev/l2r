@@ -16,7 +16,7 @@ use smallvec::SmallVec;
 
 #[derive(SystemParam)]
 pub struct DropSystemParams<'w, 's> {
-    pub world_map_query: WorldMapQuery<'w, 's>,
+    pub map_query: WorldMapQuery<'w, 's>,
     pub dropper_info: Query<'w, 's, (Ref<'static, Transform>, Ref<'static, ObjectId>)>,
     pub npc_info: RegionalNpcInfoQuery<'w, 's>,
     pub items_data_query: ItemsDataQuery<'w>,
@@ -45,13 +45,14 @@ pub fn generate_drop_request_handler(
     let (dropper_transform, dropper_oid) = params.dropper_info.get(dropper_entity)?;
     let region_id = RegionId::from(dropper_transform.translation);
 
-    let Some(region_entity) = params.world_map_query.world_map.get(&region_id) else {
+    let Some(region_entity) = params.map_query.inner.world_map.get(&region_id) else {
         return Err(BevyError::from("Failed to find region entity"));
     };
-    let region = params.world_map_query.regions.get(*region_entity)?;
+    let region = params.map_query.inner.regions.get(*region_entity)?;
 
     let Some(geodata) = params
-        .world_map_query
+        .map_query
+        .inner
         .regions_geodata
         .get(region.handle().id())
     else {

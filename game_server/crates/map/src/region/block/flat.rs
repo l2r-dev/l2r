@@ -31,17 +31,17 @@ impl super::GeoBlock for FlatBlock {
         Self::SIZE
     }
 
-    fn cell_by_loc(&self, _: &GeoVec3) -> &Cell {
+    fn cell_by_loc(&self, _: GeoVec3) -> &Cell {
         &self.0
     }
 
-    fn nearest_height(&self, _: &GeoVec3) -> i32 {
+    fn nearest_height(&self, _: GeoVec3) -> i32 {
         // FlatBlock doesn't use the Cell::height() method,
         // because cells in such blocks store only the height without NSWE flags.
         self.0.value() as i32
     }
 
-    fn next_higher_height(&self, from: &GeoVec3, to: &GeoVec3) -> i32 {
+    fn next_higher_height(&self, from: GeoVec3, to: GeoVec3) -> i32 {
         let cell_height = self.nearest_height(from);
         if cell_height >= to.height {
             cell_height
@@ -50,7 +50,7 @@ impl super::GeoBlock for FlatBlock {
         }
     }
 
-    fn passable_directions(&self, _: &GeoVec3) -> NavigationDirection {
+    fn passable_directions(&self, _: GeoVec3) -> NavigationDirection {
         // FlatBlock allows to go in all directions
         NavigationDirection::all()
     }

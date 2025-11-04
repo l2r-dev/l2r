@@ -57,7 +57,7 @@ fn validate_position_handle(
         ),
         With<Movable>,
     >,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
 ) -> Result<()> {
     let event = receive.event();
     if let GameClientPacket::ValidatePosition(ref packet) = event.packet {
@@ -78,11 +78,11 @@ fn validate_position_handle(
         let is_in_water = movable.in_water();
         let is_exiting_water = movable.exiting_water();
 
-        let geodata = world_map_query.region_geodata(region_id)?;
+        let geodata = map_query.inner.region_geodata(region_id)?;
 
         if !is_in_water
             && let Some(geodata_height) =
-                geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
+                geodata.nearest_height(WorldMap::vec3_to_geo(transform.translation))
         {
             let geodata_height = geodata_height as f32;
             let distance_to_ground = (transform.translation.y - geodata_height).abs();

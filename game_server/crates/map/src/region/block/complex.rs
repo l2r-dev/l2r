@@ -52,15 +52,15 @@ impl super::GeoBlock for ComplexBlock {
         Self::SIZE
     }
 
-    fn cell_by_loc(&self, loc: &GeoVec3) -> &Cell {
-        self.get_cell(Block::cell_offset(&GeoPoint::from(*loc)))
+    fn cell_by_loc(&self, loc: GeoVec3) -> &Cell {
+        self.get_cell(Block::cell_offset(GeoPoint::from(loc)))
     }
 
-    fn nearest_height(&self, loc: &GeoVec3) -> i32 {
+    fn nearest_height(&self, loc: GeoVec3) -> i32 {
         self.cell_by_loc(loc).height()
     }
 
-    fn next_higher_height(&self, from: &GeoVec3, to: &GeoVec3) -> i32 {
+    fn next_higher_height(&self, from: GeoVec3, to: GeoVec3) -> i32 {
         let cell_height = self.nearest_height(from);
         if cell_height >= to.height {
             cell_height
@@ -69,7 +69,7 @@ impl super::GeoBlock for ComplexBlock {
         }
     }
 
-    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
+    fn passable_directions(&self, loc: GeoVec3) -> NavigationDirection {
         self.cell_by_loc(loc).nswe()
     }
 }

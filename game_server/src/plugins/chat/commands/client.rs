@@ -31,7 +31,7 @@ fn handle_location_command(
     client_command: Trigger<UserCommand>,
     mut commands: Commands,
     transforms: Query<&Transform>,
-    #[cfg(debug_assertions)] world_map_query: WorldMapQuery,
+    #[cfg(debug_assertions)] map_query: WorldMapQuery,
 ) -> Result<()> {
     let session_entity = client_command.target();
 
@@ -58,10 +58,12 @@ fn handle_location_command(
 
         #[cfg(debug_assertions)]
         {
-            let geodata = world_map_query.region_geodata_from_pos(current_transform.translation)?;
+            let geodata = map_query
+                .inner
+                .region_geodata_from_pos(current_transform.translation)?;
             let block_kind =
-                geodata.block_kind(&WorldMap::vec3_to_geo(current_transform.translation));
-            debug!("block in location: {:?}", block_kind);
+                geodata.block_kind(WorldMap::vec3_to_geo(current_transform.translation));
+            debug!("Block in location: {:?}", block_kind);
         }
     }
 

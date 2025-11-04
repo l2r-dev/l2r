@@ -3,7 +3,6 @@ use bevy::prelude::*;
 use bevy_ecs::entity::EntityHashSet;
 use game_core::{
     character::Character,
-    collision_layers::Layer,
     encounters::{EnteredWorld, KnownEntities},
     network::{
         broadcast::{BroadcastScope, ServerPacketBroadcast, ServerPacketsBroadcast},
@@ -11,6 +10,7 @@ use game_core::{
     },
 };
 use map::id::RegionId;
+use physics::GameLayer;
 
 pub struct NetworkBroadcastPlugin;
 impl Plugin for NetworkBroadcastPlugin {
@@ -106,7 +106,7 @@ fn server_packet_broadcast(
             if let Ok(broadcaster_transform) = broadcasters.get(broadcaster) {
                 let query_sphere = Collider::sphere(*radius);
 
-                let filter = SpatialQueryFilter::default().with_mask(Layer::broadcast_mask());
+                let filter = SpatialQueryFilter::default().with_mask(GameLayer::broadcast_mask());
 
                 let nearby_entities = spatial_query.shape_intersections(
                     &query_sphere,

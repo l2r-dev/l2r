@@ -92,7 +92,7 @@ fn handle_pathfinding_results(path_result: Trigger<PathFindingResult>, mut comma
 fn handle_visibility_result(
     visibility_result: Trigger<VisibilityCheckResult>,
     mut commands: Commands,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
 ) {
     let result = visibility_result.event();
     let requester_entity = visibility_result.target();
@@ -106,14 +106,7 @@ fn handle_visibility_result(
             requester_entity,
         );
     } else {
-        let mut can_move = result.is_visible;
-        let geodata = world_map_query.region_geodata_from_pos(result.start);
-        if let Ok(geodata) = geodata {
-            can_move = geodata.can_move_to(
-                &WorldMap::vec3_to_geo(result.start),
-                &WorldMap::vec3_to_geo(result.target),
-            );
-        }
+        let can_move = map_query.can_move_to(result.start, result.target);
         if !can_move {
             commands.trigger_targets(
                 PathFindingRequest {
@@ -136,7 +129,7 @@ fn handle_visibility_result(
 
 fn check_visibility(
     visibility_request: Trigger<VisibilityCheckRequest>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     mut commands: Commands,
 ) -> Result<()> {
     let request = visibility_request.event();
@@ -148,11 +141,7 @@ fn check_visibility(
         // TODO: fix it later, now check real visibility only inside region.
         true
     } else {
-        let geodata = world_map_query.region_geodata(start_region)?;
-        geodata.can_move_to(
-            &WorldMap::vec3_to_geo(request.start),
-            &WorldMap::vec3_to_geo(request.target),
-        )
+        map_query.can_move_to(request.start, request.target)
     };
 
     commands.trigger_targets(
@@ -168,7 +157,7 @@ fn check_visibility(
 
 fn check_visibility_event(
     mut visibility_request: EventReader<VisibilityCheckRequest>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     mut commands: Commands,
 ) -> Result<()> {
     for request in visibility_request.read() {
@@ -179,11 +168,7 @@ fn check_visibility_event(
             // TODO: fix it later, now check real visibility only inside region.
             true
         } else {
-            let geodata = world_map_query.region_geodata(start_region)?;
-            geodata.can_move_to(
-                &WorldMap::vec3_to_geo(request.start),
-                &WorldMap::vec3_to_geo(request.target),
-            )
+            map_query.can_move_to(request.start, request.target)
         };
 
         commands.trigger_targets(
@@ -200,7 +185,7 @@ fn check_visibility_event(
 
 pub fn pathfinding_request_handler(
     path_request: Trigger<PathFindingRequest>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     movables: Query<Ref<Movable>>,
     mut commands: Commands,
 ) {
@@ -227,7 +212,8 @@ pub fn pathfinding_request_handler(
         waypoints.push(WayPoint::new(request.start, request.goal));
         waypoints
     } else {
-        world_map_query
+        map_query
+            .inner
             .region_geodata(start_region)
             .map(|geodata| {
                 find_path(
@@ -260,12 +246,12 @@ fn find_path(
     goal: GeoVec3,
     max_iterations: usize,
 ) -> SmallVec<[WayPoint; WAYPOINTS_CAPACITY]> {
-    if geodata.passable_directions(&start).is_empty() {
+    if geodata.passable_directions(start).is_empty() {
         log::trace!("Start position is not passable: {:?}", start);
         return SmallVec::new();
     }
 
-    if geodata.passable_directions(&goal).is_empty() {
+    if geodata.passable_directions(goal).is_empty() {
         log::trace!("Goal position is not passable: {:?}", goal);
         return SmallVec::new();
     }
@@ -283,7 +269,7 @@ fn find_path(
             if iterations > max_iterations {
                 SmallVec::new()
             } else {
-                get_successors(geodata, position)
+                get_successors(geodata, *position)
             }
         },
         |position| position.point().manhattan_distance(&goal_point),
@@ -306,7 +292,7 @@ fn find_path(
         })
 }
 
-fn get_successors(geodata: &RegionGeoData, loc: &GeoVec3) -> SmallVec<[(GeoVec3, i32); 8]> {
+fn get_successors(geodata: &RegionGeoData, loc: GeoVec3) -> SmallVec<[(GeoVec3, i32); 8]> {
     let mut successors = SmallVec::new();
 
     for direction in geodata.passable_directions(loc).iter_composite() {
@@ -314,7 +300,7 @@ fn get_successors(geodata: &RegionGeoData, loc: &GeoVec3) -> SmallVec<[(GeoVec3,
 
         // Only consider fully open neighbors (all passable)
         if !geodata
-            .passable_directions(&neighbor_loc)
+            .passable_directions(neighbor_loc)
             .contains(NavigationDirection::all())
         {
             continue;
@@ -322,7 +308,7 @@ fn get_successors(geodata: &RegionGeoData, loc: &GeoVec3) -> SmallVec<[(GeoVec3,
 
         // Check if we can actually step to this neighbor position
         // This validates height differences
-        if !geodata.can_step_to(loc, &neighbor_loc) {
+        if !geodata.can_step_to(loc, neighbor_loc) {
             continue;
         }
 
@@ -349,7 +335,7 @@ fn create_waypoints(
         let mut farthest_reachable = current_index + 1;
 
         for check_index in (current_index + 1..path.len()).rev() {
-            if geodata.can_move_to(&path[current_index], &path[check_index]) {
+            if geodata.can_move_to(path[current_index], path[check_index]) {
                 farthest_reachable = check_index;
                 break;
             }

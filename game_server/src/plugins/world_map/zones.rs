@@ -1,11 +1,9 @@
 use avian3d::prelude::{CollisionEventsEnabled, Sensor};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
-use game_core::{
-    collision_layers::Layer,
-    custom_hierarchy::{DespawnChildOf, DespawnChildren},
-};
+use game_core::custom_hierarchy::{DespawnChildOf, DespawnChildren};
 use l2r_core::chronicles::CHRONICLE;
 use map::*;
+use physics::GameLayer;
 use std::path::PathBuf;
 
 pub struct ZonesPlugin;
@@ -93,7 +91,7 @@ fn zone_added(
         ZoneKindVariant::from(zone.kind()),
         collider,
         Sensor,
-        Layer::player_sensor(),
+        GameLayer::player_sensor(),
         CollisionEventsEnabled,
     );
 

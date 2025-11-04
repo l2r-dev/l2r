@@ -241,7 +241,7 @@ fn spawn_main_zone(
 
 fn spawn_npc_on_spawner(
     par_commands: ParallelCommands,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     mut spawners: Query<(
         Entity,
         Mut<Spawner>,
@@ -257,7 +257,8 @@ fn spawn_npc_on_spawner(
         .for_each(|(entity, mut spawner, transform, child_zones)| {
             par_commands.command_scope(|commands| {
                 // Don't spawn before region loaded
-                if world_map_query
+                if map_query
+                    .inner
                     .region_geodata_from_pos(transform.translation)
                     .is_err()
                 {
@@ -265,7 +266,7 @@ fn spawn_npc_on_spawner(
                 }
                 process_spawner_npcs(
                     commands,
-                    &world_map_query,
+                    &map_query,
                     entity,
                     &mut spawner,
                     &child_zones,
@@ -279,7 +280,7 @@ fn spawn_npc_on_spawner(
 
 fn process_spawner_npcs(
     mut commands: Commands,
-    world_map_query: &WorldMapQuery,
+    map_query: &WorldMapQuery,
     spawner_entity: Entity,
     spawner: &mut Spawner,
     child_zones: &Option<Ref<DespawnChildren>>,
@@ -308,7 +309,7 @@ fn process_spawner_npcs(
         if let Some(child_zones) = child_zones {
             spawn_npcs_in_zones(
                 commands.reborrow(),
-                world_map_query,
+                map_query,
                 npc_id,
                 npc_spawn,
                 spawner_entity,
@@ -339,7 +340,7 @@ fn spawn_npc_at_location(
 
 fn spawn_npcs_in_zones(
     mut commands: Commands,
-    world_map_query: &WorldMapQuery,
+    map_query: &WorldMapQuery,
     npc_id: npc::Id,
     npc_spawn: &NpcSpawnInfo,
     spawner_entity: Entity,
@@ -349,7 +350,9 @@ fn spawn_npcs_in_zones(
 ) {
     for zone_entity in child_zones.iter() {
         if let Ok((zone_collider, zone_transform)) = spawn_zones.get(zone_entity) {
-            let Ok(geodata) = world_map_query.region_geodata_from_pos(zone_transform.translation)
+            let Ok(geodata) = map_query
+                .inner
+                .region_geodata_from_pos(zone_transform.translation)
             else {
                 continue;
             };

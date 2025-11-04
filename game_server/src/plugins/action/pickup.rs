@@ -16,7 +16,7 @@ use game_core::{
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
 };
 use l2r_core::metrics::Metrics;
-use map::{WorldMap, WorldMapQuery};
+use map::WorldMapQuery;
 use smallvec::smallvec;
 use spatial::FlatDistance;
 use state::GameServerStateSystems;
@@ -56,7 +56,7 @@ fn pickup_request_handler(
     mut commands: Commands,
     characters: Query<CharacterQuery, Without<InActionPathfindingTimer>>,
     items: Query<(Ref<ObjectId>, Ref<Item>, Ref<Transform>)>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     metrics: Res<Metrics>,
 ) -> Result<()> {
     for character in &mut characters.iter() {
@@ -89,13 +89,8 @@ fn pickup_request_handler(
 
         // Item is within pickup range
         if distance <= PICKUP_DISTANCE {
-            let geodata = world_map_query.region_geodata_from_pos(char_pos)?;
-
             // Check line of sight - can we see the item?
-            if !geodata.can_see_target(
-                WorldMap::vec3_to_geo(char_pos),
-                WorldMap::vec3_to_geo(item_pos),
-            ) {
+            if !map_query.can_see_target(char_pos, item_pos) {
                 // Can't see item - remove pickup request and continue
                 commands
                     .entity(character.entity)
@@ -140,15 +135,7 @@ fn pickup_request_handler(
                 continue;
             }
 
-            let geodata = world_map_query.region_geodata_from_pos(char_pos)?;
-
-            // Use the same logic as follow/attack plugins - check line of sight
-            let can_move_to = geodata.can_move_to(
-                &WorldMap::vec3_to_geo(char_pos),
-                &WorldMap::vec3_to_geo(item_pos),
-            );
-
-            if can_move_to {
+            if map_query.can_move_to(char_pos, item_pos) {
                 // Direct line of sight, use simple movement to item location
                 commands
                     .entity(character.entity)

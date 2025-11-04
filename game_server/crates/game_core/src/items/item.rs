@@ -5,7 +5,6 @@ use super::{
     model::Model,
 };
 use crate::{
-    collision_layers::Layer,
     custom_hierarchy::DespawnChildren,
     items::{self, DollSlot},
     object_id::ObjectId,
@@ -19,6 +18,7 @@ use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
     packets::ServerPacketBuffer,
 };
+use physics::GameLayer;
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
 use serde::Deserialize;
 
@@ -97,7 +97,7 @@ impl ItemInWorld {
                 Self::COLLIDER_SIZE,
                 Self::COLLIDER_SIZE,
             ),
-            layers: Layer::item(),
+            layers: GameLayer::item(),
         }
     }
 

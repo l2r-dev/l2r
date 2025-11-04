@@ -18,7 +18,7 @@ use l2r_core::{
     assets::html::{HtmlAsset, TeraHtmlTemplater},
     chronicles::CHRONICLE,
 };
-use map::{WorldMap, WorldMapQuery};
+use map::WorldMapQuery;
 use spatial::{FlatDistance, GameVec3};
 use state::{GameServerStateSystems, LoadingSystems};
 use std::path::PathBuf;
@@ -60,7 +60,7 @@ struct RequestQuery<'a> {
 
 fn dialog_request_handler(
     mut commands: Commands,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     requests: Query<RequestQuery, Without<InActionPathfindingTimer>>,
     movement: Query<Ref<Movement>>,
     transforms: Query<Ref<Transform>>,
@@ -105,13 +105,8 @@ fn dialog_request_handler(
                 continue;
             }
 
-            let geodata = world_map_query.region_geodata_from_pos(requester_pos)?;
-
             // Use the same logic as follow/attack plugins - check line of sight
-            let can_move_to = geodata.can_move_to(
-                &WorldMap::vec3_to_geo(requester_pos),
-                &WorldMap::vec3_to_geo(target_pos),
-            );
+            let can_move_to = map_query.can_move_to(requester_pos, target_pos);
 
             if can_move_to {
                 // Direct line of sight, use simple movement
@@ -135,12 +130,7 @@ fn dialog_request_handler(
             }
         } else {
             // Within range, check line of sight and open dialog
-            let geodata = world_map_query.region_geodata_from_pos(requester_pos)?;
-
-            if !geodata.can_see_target(
-                WorldMap::vec3_to_geo(requester_pos),
-                WorldMap::vec3_to_geo(target_pos),
-            ) {
+            if !map_query.can_see_target(requester_pos, target_pos) {
                 commands
                     .entity(requester.entity)
                     .remove::<(Movement, DialogRequest)>();

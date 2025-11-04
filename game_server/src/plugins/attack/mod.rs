@@ -21,7 +21,6 @@ use game_core::{
         Immortal, InCombat, WeaponReuse,
     },
     character::Character,
-    collision_layers::Layer,
     items::{
         DollSlot, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
         UpdateType, WeaponAttackParams,
@@ -38,7 +37,8 @@ use game_core::{
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
     stats::*,
 };
-use map::{Door, RegionGeoData, WorldMap, WorldMapQuery};
+use map::{Door, WorldMapQuery};
+use physics::GameLayer;
 use smallvec::smallvec;
 use spatial::{Degrees, FlatDistance};
 use state::GameMechanicsSystems;
@@ -111,13 +111,12 @@ struct AttackSystemParams<'w, 's> {
     items: Query<'w, 's, Entity, With<Item>>,
     items_data_query: ItemsDataQuery<'w>,
     object_id_manager: Res<'w, ObjectIdManager>,
-    world_map_query: WorldMapQuery<'w, 's>,
-    spatial_query: SpatialQuery<'w, 's>,
     commands: ParallelCommands<'w, 's>,
     hit_calc_query: HitMissQuery<'w, 's>,
     calc_shield_query: CalcShieldQuery<'w, 's>,
     calc_crit_query: CalcCritQuery<'w, 's>,
     p_atk_dmg_query: PAtkCalcDamageQuery<'w, 's>,
+    map_query: WorldMapQuery<'w, 's>,
 }
 
 fn attack_entity(params: AttackSystemParams) -> Result<()> {
@@ -127,13 +126,6 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                 commands.entity(attacker.entity).remove::<Attacking>();
             });
         }
-
-        let Ok(geodata) = params
-            .world_map_query
-            .region_geodata_from_pos(attacker.transform.translation)
-        else {
-            return;
-        };
 
         let Ok(aiming_target) = params.target_objects.get(**attacker.target) else {
             params.commands.command_scope(|mut commands| {
@@ -168,7 +160,9 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
             }
 
             // Early return if bow and cannot see target or out of arrows
-            if attack_params.is_bow && !process_bow(&attacker, &aiming_target, &geodata, &params) {
+            if attack_params.is_bow
+                && !process_bow(&attacker, &aiming_target, &params.map_query, &params)
+            {
                 return;
             }
 
@@ -229,10 +223,7 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
             let attacker_pos = attacker.transform.translation;
             let target_pos = aiming_target.transform.translation;
 
-            let can_move_to = geodata.can_move_to(
-                &WorldMap::vec3_to_geo(attacker_pos),
-                &WorldMap::vec3_to_geo(target_pos),
-            );
+            let can_move_to = params.map_query.can_move_to(attacker_pos, target_pos);
 
             params.commands.command_scope(|mut commands| {
                 if can_move_to {
@@ -276,7 +267,7 @@ fn proceed_weapon_reuse(
 fn process_bow(
     attacker: &AttackingQueryItem,
     aiming_target: &TargetQueryReadOnlyItem,
-    geodata: &RegionGeoData,
+    map_query: &WorldMapQuery,
     params: &AttackSystemParams,
 ) -> bool {
     if let Some(paperdoll) = attacker.paper_doll.as_deref() {
@@ -298,9 +289,9 @@ fn process_bow(
         }
     };
 
-    let can_see = geodata.can_see_target(
-        WorldMap::vec3_to_geo(attacker.transform.translation),
-        WorldMap::vec3_to_geo(aiming_target.transform.translation),
+    let can_see = map_query.can_see_target(
+        attacker.transform.translation,
+        aiming_target.transform.translation,
     );
 
     if attacker.is_character {
@@ -683,10 +674,10 @@ fn calculate_attack_hit(
 
         // Use SpatialQuery to find nearby entities within weapon range
         let query_sphere = Collider::sphere(range);
-        let filter = SpatialQueryFilter::from_mask(Layer::attack_targets_mask())
+        let filter = SpatialQueryFilter::from_mask(GameLayer::attack_targets_mask())
             .with_excluded_entities([attacker, aiming_target]);
 
-        let nearby_entities = params.spatial_query.shape_intersections(
+        let nearby_entities = params.map_query.spatial_query.shape_intersections(
             &query_sphere,
             attacker_position,
             Quat::IDENTITY,

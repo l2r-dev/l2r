@@ -1,7 +1,7 @@
 use avian3d::prelude::*;
 
 #[derive(Clone, Copy, Debug, Default, Eq, PartialEq, PhysicsLayer)]
-pub enum Layer {
+pub enum GameLayer {
     #[default]
     Default,
     Player,
@@ -14,7 +14,7 @@ pub enum Layer {
     Item,
 }
 
-impl Layer {
+impl GameLayer {
     pub fn player() -> CollisionLayers {
         CollisionLayers::new([Self::Player], [Self::Player, Self::Npc, Self::Environment])
     }

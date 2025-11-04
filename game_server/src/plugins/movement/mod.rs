@@ -17,7 +17,6 @@ use game_core::{
     active_action::ActiveAction,
     attack::{AttackHit, Dead},
     character::Character,
-    collision_layers::Layer,
     movement::{
         ArrivedAtWaypoint, LookAt, MoveStep, Movement, MovementComponentsPlugin, SendStopMove,
     },
@@ -30,6 +29,7 @@ use game_core::{
     stats::Movable,
 };
 use map::{WorldMap, WorldMapQuery};
+use physics::GameLayer;
 use spatial::FlatDistance;
 use state::GameServerStateSystems;
 
@@ -197,10 +197,9 @@ struct DoorCollisionFilter {
 #[derive(SystemParam)]
 struct MovementStepQueries<'w, 's> {
     time: Res<'w, Time<Fixed>>,
-    world_map_query: WorldMapQuery<'w, 's>,
+    map_query: WorldMapQuery<'w, 's>,
     transforms: Query<'w, 's, Mut<'static, Transform>>,
     movables: Query<'w, 's, MovablesQuery<'static>, MovablesFilter>,
-    spatial_query: SpatialQuery<'w, 's>,
     colliders: Query<'w, 's, &'static Collider>,
     check_door_collision: Query<'w, 's, (), DoorCollisionFilter>,
 }
@@ -246,13 +245,14 @@ fn handle_movement_step(
     let mut transform = queries.transforms.get_mut(entity)?;
 
     let geodata = queries
-        .world_map_query
+        .map_query
+        .inner
         .region_geodata_from_pos(transform.translation)?;
 
     if !moving_entity.movable.in_water()
         && !moving_entity.movable.is_flying()
         && let Some(geodata_height) =
-            geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
+            geodata.nearest_height(WorldMap::vec3_to_geo(transform.translation))
     {
         let height = geodata_height as f32;
         let distance_to_ground = (transform.translation.y - height).abs();
@@ -279,20 +279,20 @@ fn handle_movement_step(
         || if moving_entity.movable.exiting_water() {
             // Prevent movement through terrain when transitioning from water to land
             geodata
-                .nearest_height(&WorldMap::vec3_to_geo(transform.translation))
+                .nearest_height(WorldMap::vec3_to_geo(transform.translation))
                 .is_some_and(|geodata_height| {
                     let distance_to_ground =
                         (transform.translation.y - geodata_height as f32).abs();
                     distance_to_ground < MAX_GROUND_SNAP_DISTANCE
                         && geodata.can_move_to(
-                            &WorldMap::vec3_to_geo(transform.translation),
-                            &WorldMap::vec3_to_geo(new_position),
+                            WorldMap::vec3_to_geo(transform.translation),
+                            WorldMap::vec3_to_geo(new_position),
                         )
                 })
         } else {
             geodata.can_move_to(
-                &WorldMap::vec3_to_geo(transform.translation),
-                &WorldMap::vec3_to_geo(new_position),
+                WorldMap::vec3_to_geo(transform.translation),
+                WorldMap::vec3_to_geo(new_position),
             )
         };
 
@@ -302,12 +302,12 @@ fn handle_movement_step(
     }
 
     if queries.check_door_collision.contains(entity) {
-        let filter = SpatialQueryFilter::from_mask(Layer::solid_environment_mask())
+        let filter = SpatialQueryFilter::from_mask(GameLayer::solid_environment_mask())
             .with_excluded_entities([entity]);
 
         if let Ok(collider) = queries.colliders.get(entity) {
             let config = ShapeCastConfig::from_max_distance(move_distance);
-            if let Some(_hit) = queries.spatial_query.cast_shape(
+            if let Some(_hit) = queries.map_query.spatial_query.cast_shape(
                 collider,
                 transform.translation,
                 Quat::IDENTITY,

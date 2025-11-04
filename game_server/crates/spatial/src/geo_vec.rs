@@ -120,7 +120,7 @@ impl GeoVec3 {
 
     /// Calculates the next point towards a target, moving by a specified step size.
     fn next_towards(&self, other: GeoVec3, step_size: i32) -> GeoVec3 {
-        let (dx, dy) = self.direction(&other).offset(step_size);
+        let (dx, dy) = self.direction(other).offset(step_size);
         GeoVec3::new(
             GeoPoint::new(self.point.x + dx, self.point.y + dy),
             self.height,
@@ -133,7 +133,7 @@ impl GeoVec3 {
     }
 
     /// Determines the direction from this point to another.
-    pub fn direction(self, other: &GeoVec3) -> NavigationDirection {
+    pub fn direction(self, other: GeoVec3) -> NavigationDirection {
         NavigationDirection::from_offset(other.point.x - self.point.x, other.point.y - self.point.y)
     }
 
@@ -154,8 +154,8 @@ impl GeoVec3 {
     ///     GeoVec3::new(GeoPoint::new(2, 2), 0),
     /// ]);
     /// ```
-    pub fn line_to(&self, end: &GeoVec3) -> LineVecIterator {
-        LineVecIterator::new(*self, *end)
+    pub fn line_to(&self, end: GeoVec3) -> LineVecIterator {
+        LineVecIterator::new(*self, end)
     }
 }
 

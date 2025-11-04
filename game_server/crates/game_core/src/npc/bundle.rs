@@ -3,7 +3,6 @@ use crate::{
     abnormal_effects::AbnormalEffects,
     action::target::Targetable,
     attack::AttackingList,
-    collision_layers::Layer,
     items::PaperDoll,
     object_id::{ObjectId, ObjectIdManager},
     stats::*,
@@ -11,6 +10,7 @@ use crate::{
 use avian3d::prelude::*;
 use bevy::prelude::*;
 use l2r_core::model::{base_class::BaseClass, race::Race};
+use physics::GameLayer;
 
 #[derive(Bundle, Debug)]
 pub struct Bundle {
@@ -110,7 +110,7 @@ impl Bundle {
             gender: npc.gender,
             collision: npc.collision,
             collider,
-            collision_layers: Layer::npc(),
+            collision_layers: GameLayer::npc(),
             reward: npc.reward.unwrap_or_default(),
             movable,
             ai: npc.ai.unwrap_or_default(),

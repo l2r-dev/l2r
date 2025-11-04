@@ -7,7 +7,7 @@ use game_core::{
     network::packets::server::{ActionFail, GameServerPacket},
     path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
 };
-use map::{WorldMap, WorldMapQuery};
+use map::WorldMapQuery;
 use state::GameServerStateSystems;
 
 pub struct FollowPlugin;
@@ -37,7 +37,7 @@ fn following_changed(
         Without<InActionPathfindingTimer>,
     >, // Only process entities that are not on cooldown
     targets: Query<Ref<Transform>>,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
     mut commands: Commands,
 ) -> Result<()> {
     for (follower, following, follower_transform, movement) in followers.iter() {
@@ -61,12 +61,7 @@ fn following_changed(
             continue;
         }
 
-        let geodata = world_map_query.region_geodata_from_pos(follower_pos)?;
-        let can_move_to = geodata.can_move_to(
-            &WorldMap::vec3_to_geo(follower_pos),
-            &WorldMap::vec3_to_geo(target_pos),
-        );
-
+        let can_move_to = map_query.can_move_to(follower_pos, target_pos);
         if can_move_to {
             commands
                 .entity(follower)
