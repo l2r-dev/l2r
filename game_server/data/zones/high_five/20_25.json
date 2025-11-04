@@ -747,5 +747,324 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "iron_tower_out_door",
+    "kind": {
+      "Door": {
+        "id": 20250001,
+        "open_methods": [
+          "Cycle"
+        ],
+        "level": 3,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "targetable": true
+      }
+    },
+    "min_height": -1958,
+    "max_height": -1808,
+    "points": [
+      {
+        "x": 6045,
+        "y": 244477
+      },
+      {
+        "x": 6127,
+        "y": 244531
+      },
+      {
+        "x": 5997,
+        "y": 244775
+      },
+      {
+        "x": 5912,
+        "y": 244721
+      }
+    ]
+  },
+  {
+    "name": "injury_earth_door",
+    "kind": {
+      "Door": {
+        "id": 20250002,
+        "open_methods": [
+          "Cycle"
+        ],
+        "level": 3,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "emitter_id": 20250102,
+        "status": "Open"
+      }
+    },
+    "min_height": -3296,
+    "max_height": -3146,
+    "points": [
+      {
+        "x": 195,
+        "y": 234487
+      },
+      {
+        "x": 247,
+        "y": 234487
+      },
+      {
+        "x": 114,
+        "y": 235793
+      },
+      {
+        "x": 61,
+        "y": 235789
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_b_002",
+    "kind": {
+      "Door": {
+        "id": 20250004,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11050,
+    "max_height": 11200,
+    "points": [
+      {
+        "x": 20623,
+        "y": 244037
+      },
+      {
+        "x": 20636,
+        "y": 244037
+      },
+      {
+        "x": 20643,
+        "y": 244110
+      },
+      {
+        "x": 20630,
+        "y": 244111
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_b_001",
+    "kind": {
+      "Door": {
+        "id": 20250005,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11050,
+    "max_height": 11200,
+    "points": [
+      {
+        "x": 20617,
+        "y": 243964
+      },
+      {
+        "x": 20630,
+        "y": 243963
+      },
+      {
+        "x": 20637,
+        "y": 244037
+      },
+      {
+        "x": 20623,
+        "y": 244038
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_c_001",
+    "kind": {
+      "Door": {
+        "id": 20250006,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11587,
+    "max_height": 11737,
+    "points": [
+      {
+        "x": 18114,
+        "y": 244274
+      },
+      {
+        "x": 18130,
+        "y": 244274
+      },
+      {
+        "x": 18138,
+        "y": 244371
+      },
+      {
+        "x": 18123,
+        "y": 244373
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_c_002",
+    "kind": {
+      "Door": {
+        "id": 20250007,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11587,
+    "max_height": 11737,
+    "points": [
+      {
+        "x": 18106,
+        "y": 244178
+      },
+      {
+        "x": 18121,
+        "y": 244177
+      },
+      {
+        "x": 18130,
+        "y": 244274
+      },
+      {
+        "x": 18114,
+        "y": 244274
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_c_004",
+    "kind": {
+      "Door": {
+        "id": 20250008,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11449,
+    "max_height": 11599,
+    "points": [
+      {
+        "x": 18089,
+        "y": 244053
+      },
+      {
+        "x": 18097,
+        "y": 244052
+      },
+      {
+        "x": 18139,
+        "y": 244494
+      },
+      {
+        "x": 18131,
+        "y": 244495
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_b_004",
+    "kind": {
+      "Door": {
+        "id": 20250009,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11181,
+    "max_height": 11331,
+    "points": [
+      {
+        "x": 20615,
+        "y": 243815
+      },
+      {
+        "x": 20625,
+        "y": 243814
+      },
+      {
+        "x": 20668,
+        "y": 244260
+      },
+      {
+        "x": 20658,
+        "y": 244259
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_b_003",
+    "kind": {
+      "Door": {
+        "id": 20250777,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11056,
+    "max_height": 11206,
+    "points": [
+      {
+        "x": 20368,
+        "y": 243973
+      },
+      {
+        "x": 20528,
+        "y": 243973
+      },
+      {
+        "x": 20528,
+        "y": 244133
+      },
+      {
+        "x": 20368,
+        "y": 244133
+      }
+    ]
+  },
+  {
+    "name": "darion_raid_c_003",
+    "kind": {
+      "Door": {
+        "id": 20250778,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "check_collision": false
+      }
+    },
+    "min_height": 11586,
+    "max_height": 11736,
+    "points": [
+      {
+        "x": 18295,
+        "y": 244167
+      },
+      {
+        "x": 18455,
+        "y": 244167
+      },
+      {
+        "x": 18455,
+        "y": 244327
+      },
+      {
+        "x": 18295,
+        "y": 244327
+      }
+    ]
   }
 ]

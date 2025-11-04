@@ -25,6 +25,7 @@ mod character_selected;
 mod creature_say;
 mod delete_object;
 mod die;
+mod door_status_update;
 mod drop_item;
 mod etc_status_update;
 mod ex_basic_action_list;
@@ -58,6 +59,7 @@ mod skill_list;
 mod social_action;
 mod spawn_item;
 mod ssq_info;
+mod static_object_info;
 mod status_update;
 mod stop_move;
 mod system_message;
@@ -83,6 +85,7 @@ pub use character_selected::*;
 pub use creature_say::*;
 pub use delete_object::*;
 pub use die::*;
+pub use door_status_update::*;
 pub use drop_item::*;
 pub use etc_status_update::*;
 pub use ex_basic_action_list::*;
@@ -114,6 +117,7 @@ pub use show_map::*;
 pub use social_action::*;
 pub use spawn_item::*;
 pub use ssq_info::*;
+pub use static_object_info::*;
 pub use status_update::*;
 pub use stop_move::*;
 use strum::{Display, EnumDiscriminants};
@@ -200,7 +204,7 @@ impl GameServerPacketCodes {
     const CREATURE_SAY: ServerPacketId = ServerPacketId::new(0x4A);
     const _EQUIP_UPDATE: ServerPacketId = ServerPacketId::new(0x4B);
     const _DOOR_INFO: ServerPacketId = ServerPacketId::new(0x4C);
-    const _DOOR_STATUS_UPDATE: ServerPacketId = ServerPacketId::new(0x4D);
+    const DOOR_STATUS_UPDATE: ServerPacketId = ServerPacketId::new(0x4D);
     const _PARTY_SMALL_WINDOW_ALL: ServerPacketId = ServerPacketId::new(0x4E);
     const _PARTY_SMALL_WINDOW_ADD: ServerPacketId = ServerPacketId::new(0x4F);
     const _PARTY_SMALL_WINDOW_DELETE_ALL: ServerPacketId = ServerPacketId::new(0x50);
@@ -282,7 +286,7 @@ impl GameServerPacketCodes {
     const _LIST_PARTY_WAITING: ServerPacketId = ServerPacketId::new(0x9C);
     const _PARTY_ROOM_INFO: ServerPacketId = ServerPacketId::new(0x9D);
     const PLAY_SOUND: ServerPacketId = ServerPacketId::new(0x9E);
-    const _STATIC_OBJECT: ServerPacketId = ServerPacketId::new(0x9F);
+    const STATIC_OBJECT: ServerPacketId = ServerPacketId::new(0x9F);
     const _PRIVATE_STORE_SELL_MANAGE_LIST: ServerPacketId = ServerPacketId::new(0xA0);
     const _PRIVATE_STORE_SELL_LIST: ServerPacketId = ServerPacketId::new(0xA1);
     const _PRIVATE_STORE_SELL_MSG: ServerPacketId = ServerPacketId::new(0xA2);
@@ -636,6 +640,7 @@ pub enum GameServerPacket {
     CreatureSay(CreatureSay),
     DeleteObject(DeleteObject),
     Die(Die),
+    DoorStatusUpdate(DoorStatusUpdate),
     DropItem(DropItem),
     EtcStatusUpdate(EtcStatusUpdate),
     ExBasicActionList(ExBasicActionList),
@@ -664,6 +669,7 @@ pub enum GameServerPacket {
     SkillList(SkillList),
     SocialAction(SocialAction),
     SpawnItem(SpawnItem),
+    StaticObjectInfo(StaticObjectInfo),
     StatusUpdate(StatusUpdate),
     StopMove(StopMove),
     SystemMessage(SystemMessage),
@@ -702,6 +708,7 @@ l2r_core::impl_buffer!(
     CreatureSay,
     DeleteObject,
     Die,
+    DoorStatusUpdate,
     DropItem,
     EtcStatusUpdate,
     ExBasicActionList,
@@ -731,6 +738,7 @@ l2r_core::impl_buffer!(
     SocialAction,
     SkillList,
     SpawnItem,
+    StaticObjectInfo,
     StatusUpdate,
     StopMove,
     SystemMessage,

@@ -1,5 +1,5 @@
 use crate::plugins::npc::drop::GenerateDropPlugin;
-use bevy::{log, prelude::*};
+use bevy::prelude::*;
 use game_core::{
     custom_hierarchy::DespawnChildOf,
     npc::{Bundle as NpcBundle, NpcComponentsPlugin, NpcInfo, Spawn, Spawned},
@@ -28,8 +28,6 @@ impl Plugin for NpcPlugin {
             .add_plugins(dialog::DialogPlugin);
 
         app.add_observer(spawn_npc_bundle_handler);
-
-        app.add_systems(Update, update_assets);
     }
 }
 
@@ -58,11 +56,11 @@ pub fn spawn_npc_bundle_handler(
 
     let new_npc_handle = asset_server.load(asset_path);
     let Some(npc_info) = npc_assets.get(new_npc_handle.id()) else {
-        log::warn!("NPC info not found for id: {}", npc_id);
+        warn!("NPC info not found for id: {}", npc_id);
         return Ok(());
     };
     let Some(npc_model) = npc_info.get(&npc_id) else {
-        log::warn!("NPC model not found for id: {}", npc_id);
+        warn!("NPC model not found for id: {}", npc_id);
         return Ok(());
     };
 
@@ -99,19 +97,6 @@ pub fn spawn_npc_bundle_handler(
 
     commands.trigger_targets(Spawned, npc_entity);
     Ok(())
-}
-
-fn update_assets(
-    mut npc_info: ResMut<Assets<NpcInfo>>,
-    mut events: EventReader<AssetEvent<NpcInfo>>,
-) {
-    for event in events.read() {
-        if let AssetEvent::Modified { id } = event
-            && let Some(data) = npc_info.get_strong_handle(*id)
-        {
-            log::info!("Updated NPC info ({:?})", data.path());
-        }
-    }
 }
 
 #[cfg(test)]

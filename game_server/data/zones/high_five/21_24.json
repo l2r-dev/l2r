@@ -639,5 +639,219 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "Devil_001",
+    "kind": {
+      "Door": {
+        "id": 21240001,
+        "open_methods": [
+          "Time"
+        ],
+        "max_hp": 150000,
+        "p_def": 100000,
+        "m_def": 10000,
+        "targetable": true
+      }
+    },
+    "min_height": -3785,
+    "max_height": -3540,
+    "points": [
+      {
+        "x": 41864,
+        "y": 208294
+      },
+      {
+        "x": 41868,
+        "y": 208287
+      },
+      {
+        "x": 42006,
+        "y": 208377
+      },
+      {
+        "x": 42002,
+        "y": 208383
+      }
+    ]
+  },
+  {
+    "name": "Devil_002",
+    "kind": {
+      "Door": {
+        "id": 21240002,
+        "open_methods": [
+          "Time"
+        ],
+        "max_hp": 150000,
+        "p_def": 100000,
+        "m_def": 10000,
+        "targetable": true
+      }
+    },
+    "min_height": -3742,
+    "max_height": -3497,
+    "points": [
+      {
+        "x": 43741,
+        "y": 212433
+      },
+      {
+        "x": 43749,
+        "y": 212433
+      },
+      {
+        "x": 43749,
+        "y": 212600
+      },
+      {
+        "x": 43741,
+        "y": 212600
+      }
+    ]
+  },
+  {
+    "name": "Devil_003",
+    "kind": {
+      "Door": {
+        "id": 21240003,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 150000,
+        "p_def": 476,
+        "m_def": 383,
+        "targetable": true
+      }
+    },
+    "min_height": -3760,
+    "max_height": -3515,
+    "points": [
+      {
+        "x": 42246,
+        "y": 213285
+      },
+      {
+        "x": 42246,
+        "y": 213285
+      },
+      {
+        "x": 42085,
+        "y": 213285
+      },
+      {
+        "x": 42085,
+        "y": 213285
+      }
+    ]
+  },
+  {
+    "name": "Devil_004",
+    "kind": {
+      "Door": {
+        "id": 21240004,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 150000,
+        "p_def": 476,
+        "m_def": 383,
+        "targetable": true
+      }
+    },
+    "min_height": -4031,
+    "max_height": -3786,
+    "points": [
+      {
+        "x": 51270,
+        "y": 206103
+      },
+      {
+        "x": 51270,
+        "y": 206110
+      },
+      {
+        "x": 51105,
+        "y": 206110
+      },
+      {
+        "x": 51105,
+        "y": 206102
+      }
+    ]
+  },
+  {
+    "name": "Devil_005",
+    "kind": {
+      "Door": {
+        "id": 21240005,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 3,
+        "max_hp": 150000,
+        "p_def": 476,
+        "m_def": 383,
+        "targetable": true
+      }
+    },
+    "min_height": -3808,
+    "max_height": -3563,
+    "points": [
+      {
+        "x": 52910,
+        "y": 206638
+      },
+      {
+        "x": 52910,
+        "y": 206638
+      },
+      {
+        "x": 52910,
+        "y": 206801
+      },
+      {
+        "x": 52910,
+        "y": 206801
+      }
+    ]
+  },
+  {
+    "name": "Devil_006",
+    "kind": {
+      "Door": {
+        "id": 21240006,
+        "open_methods": [
+          "Skill"
+        ],
+        "level": 7,
+        "max_hp": 150000,
+        "p_def": 1000000,
+        "m_def": 383,
+        "targetable": true
+      }
+    },
+    "min_height": -3312,
+    "max_height": -3067,
+    "points": [
+      {
+        "x": 52423,
+        "y": 219032
+      },
+      {
+        "x": 52423,
+        "y": 219032
+      },
+      {
+        "x": 52423,
+        "y": 219174
+      },
+      {
+        "x": 52423,
+        "y": 219174
+      }
+    ]
   }
 ]

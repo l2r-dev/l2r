@@ -4,6 +4,7 @@ use game_core::{
     stats::ClassId,
 };
 use l2r_core::chronicles::CHRONICLE;
+use state::LoadingSystems;
 use std::path::PathBuf;
 use strum::IntoEnumIterator;
 
@@ -13,11 +14,14 @@ impl Plugin for SkillTreesPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(SkillTreesComponentsPlugin);
 
-        app.add_systems(Startup, load_assets);
+        app.add_systems(Update, load_assets.in_set(LoadingSystems::AssetInit));
     }
 }
 
-fn load_assets(asset_server: Res<AssetServer>, mut commands: Commands) {
+fn load_assets(asset_server: Res<AssetServer>, mut commands: Commands, mut loaded: Local<bool>) {
+    if *loaded {
+        return;
+    }
     let mut skill_trees = SkillTreesHandlers::from(HashMap::new());
     for class_id in ClassId::iter() {
         let mut path = PathBuf::from("skills_trees");
@@ -27,4 +31,5 @@ fn load_assets(asset_server: Res<AssetServer>, mut commands: Commands) {
         skill_trees.insert(class_id, asset_server.load(path.clone()));
     }
     commands.insert_resource(skill_trees);
+    *loaded = true;
 }

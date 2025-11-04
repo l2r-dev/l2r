@@ -10,7 +10,7 @@ use crate::{
     object_id::ObjectId,
     stats::{EncountersVisibility, ItemElementsInfo},
 };
-use avian3d::prelude::{Collider, Sensor};
+use avian3d::prelude::{Collider, CollisionLayers};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
 use derive_more::{From, Into};
@@ -18,6 +18,7 @@ use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
     packets::ServerPacketBuffer,
 };
+use physics::GameLayer;
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
 use serde::Deserialize;
 
@@ -82,7 +83,7 @@ impl PartialEq for UniqueItem {
 pub struct ItemInWorld {
     pub transform: Transform,
     pub collider: Collider,
-    pub sensor: Sensor,
+    pub layers: CollisionLayers,
 }
 
 impl ItemInWorld {
@@ -96,7 +97,7 @@ impl ItemInWorld {
                 Self::COLLIDER_SIZE,
                 Self::COLLIDER_SIZE,
             ),
-            sensor: Sensor,
+            layers: GameLayer::item(),
         }
     }
 
@@ -105,7 +106,7 @@ impl ItemInWorld {
             Transform,
             GlobalTransform,
             Collider,
-            Sensor,
+            CollisionLayers,
             DespawnChildren,
         )>();
     }

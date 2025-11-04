@@ -18,6 +18,7 @@ use game_core::{
     teleport::TeleportType,
 };
 use l2r_core::model::session::ServerSessions;
+use map::DoorCommand;
 
 pub struct BuildCommandsPlugin;
 impl Plugin for BuildCommandsPlugin {
@@ -58,7 +59,6 @@ fn handle_packet(
 
     match packet {
         DoubleSlashCommand::Unknown => {}
-
         DoubleSlashCommand::Admin => {
             commands.trigger_targets(
                 BypassCommandExecuted(BypassCommand::Admin(AdminMenuCommand::Main)),
@@ -74,7 +74,6 @@ fn handle_packet(
                 initiator_entity,
             );
         }
-
         DoubleSlashCommand::GoTo { target_obj_id } => {
             if let Some(entity) = entities
                 .iter()
@@ -90,7 +89,6 @@ fn handle_packet(
                 );
             }
         }
-
         DoubleSlashCommand::Item { id, count } => {
             commands.send_event(items::SpawnNew {
                 item_ids: vec![*id],
@@ -101,7 +99,6 @@ fn handle_packet(
                 silent: false, // Show system messages for admin-spawned items
             });
         }
-
         DoubleSlashCommand::TeleportTo { target_name } => {
             if let Some(entity) = entities.iter().find(|candidate| {
                 if let Some(name) = &candidate.name {
@@ -120,7 +117,6 @@ fn handle_packet(
                 );
             }
         }
-
         DoubleSlashCommand::Summon { id, count } => {
             const NPC_ID_OFFSET: u32 = 1_000_000;
 
@@ -143,11 +139,9 @@ fn handle_packet(
                 );
             }
         }
-
         DoubleSlashCommand::InstantMove => {
             //TODO: нужно выставлять на чара флаг, чтобы при следующем его запросе на передвижение он мгновенно телепортировался
         }
-
         DoubleSlashCommand::Teleport { x, z } => {
             commands.trigger_targets(
                 TeleportToLocation::new(
@@ -158,13 +152,18 @@ fn handle_packet(
                 initiator_entity,
             );
         }
-
         DoubleSlashCommand::Immortal => {
             if entities.get(initiator_entity)?.is_immortal {
                 commands.entity(initiator_entity).remove::<Immortal>();
             } else {
                 commands.entity(initiator_entity).insert(Immortal);
             }
+        }
+        DoubleSlashCommand::Open => {
+            commands.trigger_targets(DoorCommand::Open, initiator_entity);
+        }
+        DoubleSlashCommand::Close => {
+            commands.trigger_targets(DoorCommand::Close, initiator_entity);
         }
     }
 

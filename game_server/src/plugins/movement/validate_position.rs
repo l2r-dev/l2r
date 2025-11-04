@@ -28,6 +28,7 @@ const MAX_DISTANCE_THRESHOLD: f32 = HORIZONTAL_THRESHOLD + VERTICAL_THRESHOLD;
 const MAX_DISTANCE_IN_WATER: f32 = MAX_DISTANCE_THRESHOLD * 2.0;
 const MAX_DISTANCE_FLYING: f32 = MAX_DISTANCE_THRESHOLD * 2.0;
 const GEODATA_HEIGHT_TOLERANCE: f32 = 16.0;
+const MAX_GROUND_SNAP_DISTANCE: f32 = 50.0;
 
 const SPEED_CHECK_MIN_TIME: f32 = 0.1;
 const SPEED_TOLERANCE_MULTIPLIER: f32 = 1.5;
@@ -56,7 +57,7 @@ fn validate_position_handle(
         ),
         With<Movable>,
     >,
-    world_map_query: WorldMapQuery,
+    map_query: WorldMapQuery,
 ) -> Result<()> {
     let event = receive.event();
     if let GameClientPacket::ValidatePosition(ref packet) = event.packet {
@@ -75,21 +76,31 @@ fn validate_position_handle(
 
         let is_flying = movable.is_flying();
         let is_in_water = movable.in_water();
+        let is_exiting_water = movable.exiting_water();
 
-        let geodata = world_map_query.region_geodata(region_id)?;
+        let geodata = map_query.inner.region_geodata(region_id)?;
 
-        if let Some(geodata_height) =
-            geodata.nearest_height(&WorldMap::vec3_to_geo(transform.translation))
+        if !is_in_water
+            && let Some(geodata_height) =
+                geodata.nearest_height(WorldMap::vec3_to_geo(transform.translation))
         {
             let geodata_height = geodata_height as f32;
+            let distance_to_ground = (transform.translation.y - geodata_height).abs();
 
-            if is_flying {
+            if is_exiting_water && distance_to_ground > MAX_GROUND_SNAP_DISTANCE {
+                transform.translation = known_pos.position;
+                commands.trigger_targets(
+                    GameServerPacket::from(ValidateLocation::new(*object_id, *transform)),
+                    character_entity,
+                );
+                return Ok(());
+            } else if is_flying {
                 // Flying entities can't go underground - enforce minimum height
                 if transform.translation.y < geodata_height {
                     transform.translation.y = geodata_height;
                 }
-            } else {
-                // Ground entities snap to geodata height
+            } else if distance_to_ground < MAX_GROUND_SNAP_DISTANCE {
+                // Ground entities snap to geodata height only if close enough
                 let height_diff = (transform.translation.y - geodata_height).abs();
                 if height_diff > GEODATA_HEIGHT_TOLERANCE {
                     transform.translation.y = geodata_height;
@@ -144,18 +155,17 @@ fn validate_position_handle(
             // When flying or in water, allow larger position corrections
             // TODO: We already checked for maximum speed over time above
             // TODO: So it's pretty safe to trust client position here, but maybe we can improve it further?
-            match (is_flying, is_in_water, is_falling, total_dist_sq) {
+            match (is_flying, is_in_water, total_dist_sq) {
                 // Flying
-                (true, _, _, dist_sq) if dist_sq < MAX_DISTANCE_FLYING_SQ => {
+                (true, _, dist_sq) if dist_sq < MAX_DISTANCE_FLYING_SQ => {
                     transform.translation = client_pos;
                 }
-                // In water
-                (false, true, _, dist_sq) if dist_sq < MAX_DISTANCE_IN_WATER_SQ => {
+                // Swimming
+                (_, true, dist_sq) if dist_sq < MAX_DISTANCE_IN_WATER_SQ => {
                     transform.translation = client_pos;
                 }
-                // Entity is falling - accept only client height, because server don't have gravity
-                // And we don't want to stick player to the ground instantly
-                (false, false, true, _) => {
+                // Entity is falling
+                (false, false, _) if is_falling => {
                     transform.translation.y = client_pos.y;
                 }
                 // All other cases - server position takes priority

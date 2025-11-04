@@ -19,9 +19,13 @@ pub struct TargetComponentsPlugin;
 impl Plugin for TargetComponentsPlugin {
     fn build(&self, app: &mut App) {
         app.register_type::<SelectedTarget>()
-            .register_type::<TargetedBy>();
+            .register_type::<TargetedBy>()
+            .register_type::<Targetable>();
     }
 }
+
+#[derive(Clone, Component, Copy, Debug, Default, Reflect)]
+pub struct Targetable;
 
 const TARGETED_BY_CAPACITY: usize = 10;
 

@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use spatial::NavigationDirection;
 
-#[derive(Clone, Copy, Debug, Default, Eq, Hash, Ord, PartialEq, PartialOrd, Reflect, Deref)]
+#[derive(Clone, Copy, Debug, Default, Deref, Eq, Hash, Ord, PartialEq, PartialOrd, Reflect)]
 pub struct Cell(i16);
 
 impl Cell {

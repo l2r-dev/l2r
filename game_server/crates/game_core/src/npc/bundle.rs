@@ -1,6 +1,7 @@
 use super::{model::CollisionSize, monster_ai::MonsterAiParams};
 use crate::{
     abnormal_effects::AbnormalEffects,
+    action::target::Targetable,
     attack::AttackingList,
     items::PaperDoll,
     object_id::{ObjectId, ObjectIdManager},
@@ -9,6 +10,7 @@ use crate::{
 use avian3d::prelude::*;
 use bevy::prelude::*;
 use l2r_core::model::{base_class::BaseClass, race::Race};
+use physics::GameLayer;
 
 #[derive(Bundle, Debug)]
 pub struct Bundle {
@@ -33,6 +35,7 @@ pub struct Bundle {
     pub transform: Transform,
     pub collision: CollisionSize,
     pub collider: Collider,
+    pub collision_layers: CollisionLayers,
     pub pvp_stats: PvpStats,
     pub visibility: EncountersVisibility,
     pub attackers_list: AttackingList,
@@ -43,6 +46,7 @@ pub struct Bundle {
     pub abnormal_effects: AbnormalEffects,
     pub other_stats: OtherStats,
     pub paper_doll: PaperDoll,
+    pub targetable: Targetable,
 }
 
 impl Bundle {
@@ -106,6 +110,7 @@ impl Bundle {
             gender: npc.gender,
             collision: npc.collision,
             collider,
+            collision_layers: GameLayer::npc(),
             reward: npc.reward.unwrap_or_default(),
             movable,
             ai: npc.ai.unwrap_or_default(),
@@ -120,6 +125,7 @@ impl Bundle {
             abnormal_effects: AbnormalEffects::default(),
             other_stats: OtherStats::default(),
             paper_doll: PaperDoll::default(),
+            targetable: Targetable,
         }
     }
 }

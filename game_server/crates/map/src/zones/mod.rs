@@ -16,7 +16,8 @@ impl Plugin for ZonesComponentsPlugin {
         app.register_type::<Zone>()
             .register_type::<GlobalZones>()
             .register_type::<RegionalZones>()
-            .register_type::<ZoneKindVariant>();
+            .register_type::<ZoneKindVariant>()
+            .register_type::<NamedZones>();
 
         app.init_resource::<NamedZones>();
     }
@@ -54,6 +55,7 @@ pub struct Zone {
     points: Vec<ZonePoint>,
     shape: Option<ZoneShape>,
 }
+
 impl Zone {
     pub fn new(
         name: Option<String>,
@@ -88,15 +90,58 @@ impl Zone {
     pub fn kind_mut(&mut self) -> &mut ZoneKind {
         &mut self.kind
     }
-    pub fn build(
-        &self,
-    ) -> (
-        Transform,
-        ZoneKindVariant,
-        Collider,
-        Sensor,
-        CollisionEventsEnabled,
-    ) {
+
+    /// Generate vertices for the zone's points at min and max height
+    fn vertices(&self) -> impl Iterator<Item = Vec3> + '_ {
+        self.points.iter().flat_map(|node| {
+            [
+                Vec3::new(node.x as f32, self.min_height as f32, node.y as f32),
+                Vec3::new(node.x as f32, self.max_height as f32, node.y as f32),
+            ]
+        })
+    }
+
+    /// Calculate the center point of the zone for positioning
+    pub fn center(&self) -> Vec3 {
+        if let Some(shape) = &self.shape {
+            match shape {
+                ZoneShape::Cuboid => {
+                    if self.points.len() != 2 {
+                        panic!("Cuboid shape requires exactly 2 points");
+                    }
+                    let point1 = Vec3::new(
+                        self.points[0].x as f32,
+                        self.min_height as f32,
+                        self.points[0].y as f32,
+                    );
+                    let point2 = Vec3::new(
+                        self.points[1].x as f32,
+                        self.max_height as f32,
+                        self.points[1].y as f32,
+                    );
+                    (point2 - point1) / 2.0
+                }
+                ZoneShape::Cylinder(_) => {
+                    if self.points.len() != 1 {
+                        panic!("Cylinder shape requires exactly 1 node");
+                    }
+                    let height = (self.max_height - self.min_height).abs();
+                    Vec3::new(
+                        self.points[0].x as f32,
+                        (self.min_height + height / 2) as f32,
+                        self.points[0].y as f32,
+                    )
+                }
+            }
+        } else {
+            let (sum, count) = self
+                .vertices()
+                .fold((Vec3::ZERO, 0), |(sum, count), v| (sum + v, count + 1));
+            sum / count.max(1) as f32
+        }
+    }
+
+    pub fn collider(&self) -> Collider {
         if let Some(shape) = &self.shape {
             match shape {
                 ZoneShape::Cuboid => {
@@ -114,16 +159,7 @@ impl Zone {
                         self.points[1].y as f32,
                     );
                     let cuboid = Cuboid::from_corners(point1, point2);
-                    let collider = Collider::from(cuboid);
-                    let middle_point = (point2 - point1) / 2.0;
-                    let transform = Transform::from_translation(middle_point);
-                    (
-                        transform,
-                        ZoneKindVariant::from(&self.kind),
-                        collider,
-                        Sensor,
-                        CollisionEventsEnabled,
-                    )
+                    Collider::from(cuboid)
                 }
                 ZoneShape::Cylinder(radius) => {
                     if self.points.len() != 1 {
@@ -131,55 +167,13 @@ impl Zone {
                     }
                     let height = (self.max_height - self.min_height).abs();
                     let cylinder = Cylinder::new(*radius, height as f32);
-                    let collider = Collider::from(cylinder);
-                    let transform = Transform::from_translation(Vec3::new(
-                        self.points[0].x as f32,
-                        (self.min_height + height / 2) as f32,
-                        self.points[0].y as f32,
-                    ));
-                    (
-                        transform,
-                        ZoneKindVariant::from(&self.kind),
-                        collider,
-                        Sensor,
-                        CollisionEventsEnabled,
-                    )
+                    Collider::from(cylinder)
                 }
             }
         } else {
-            let mut vertices = Vec::with_capacity(self.points.len() * 2);
-
-            for node in &self.points {
-                vertices.push(Vec3::new(
-                    node.x as f32,
-                    self.min_height as f32,
-                    node.y as f32,
-                ));
-                vertices.push(Vec3::new(
-                    node.x as f32,
-                    self.max_height as f32,
-                    node.y as f32,
-                ));
-            }
-
-            // Calculate the center of the vertices
-            let center = if !vertices.is_empty() {
-                vertices.iter().sum::<Vec3>() / vertices.len() as f32
-            } else {
-                Vec3::ZERO
-            };
-
-            // Translate all vertices to be centered around the origin
-            let centered_vertices: Vec<Vec3> = vertices.iter().map(|v| *v - center).collect();
-            let collider = Collider::convex_hull(centered_vertices).unwrap();
-            let transform = Transform::from_translation(center);
-            (
-                transform,
-                ZoneKindVariant::from(&self.kind),
-                collider,
-                Sensor,
-                CollisionEventsEnabled,
-            )
+            let center = self.center();
+            let centered_vertices: Vec<Vec3> = self.vertices().map(|v| v - center).collect();
+            Collider::convex_hull(centered_vertices).unwrap()
         }
     }
 }
@@ -195,5 +189,6 @@ impl From<Handle<ZoneList>> for ZoneListHandle {
     }
 }
 
-#[derive(Clone, Default, Deref, DerefMut, Resource)]
+#[derive(Clone, Default, Deref, DerefMut, Reflect, Resource)]
+#[reflect(Resource)]
 pub struct NamedZones(HashMap<String, Entity>);

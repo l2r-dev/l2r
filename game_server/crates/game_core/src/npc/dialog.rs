@@ -8,6 +8,7 @@ use l2r_core::{
     },
     chronicles::CHRONICLE,
 };
+use state::LoadingSystems;
 
 pub struct DialogComponentsPlugin;
 impl Plugin for DialogComponentsPlugin {
@@ -15,8 +16,12 @@ impl Plugin for DialogComponentsPlugin {
         app.register_type::<DialogRequest>()
             .register_type::<SendNpcInfoDialog>();
 
-        app.init_resource::<NpcDialogHandles>()
-            .init_resource::<DialogTemplater>();
+        app.init_resource::<NpcDialogHandles>();
+
+        app.add_systems(
+            Update,
+            DialogTemplater::init.in_set(LoadingSystems::AssetInit),
+        );
     }
 }
 
@@ -45,6 +50,9 @@ impl TeraHtmlTemplater for DialogTemplater {
 }
 
 impl DialogTemplater {
+    fn init(world: &mut World) {
+        world.init_resource::<Self>();
+    }
     /// Renders an NPC dialog using an empty context.
     pub fn npc_dialog(
         &self,

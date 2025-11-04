@@ -20,10 +20,10 @@ pub trait GeoBlock {
 
     fn from_bytes(bytes: &[u8]) -> Result<Self::Block, BinaryLoaderError>;
     fn size(&self) -> usize;
-    fn cell_by_loc(&self, loc: &GeoVec3) -> &Cell;
-    fn nearest_height(&self, loc: &GeoVec3) -> i32;
-    fn next_higher_height(&self, from: &GeoVec3, to: &GeoVec3) -> i32;
-    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection;
+    fn cell_by_loc(&self, loc: GeoVec3) -> &Cell;
+    fn nearest_height(&self, loc: GeoVec3) -> i32;
+    fn next_higher_height(&self, from: GeoVec3, to: GeoVec3) -> i32;
+    fn passable_directions(&self, loc: GeoVec3) -> NavigationDirection;
 }
 
 #[derive(Clone, EnumDiscriminants, From)]
@@ -53,7 +53,7 @@ impl Block {
     pub const SIZE_X: i32 = Self::CELLS_X * Cell::SIZE;
     pub const SIZE_Y: i32 = Self::CELLS_Y * Cell::SIZE;
 
-    pub fn id(loc: &GeoVec3) -> usize {
+    pub fn id(loc: GeoVec3) -> usize {
         let block_id = ((loc.point.x / Block::CELLS_X) % Region::BLOCKS_X) * Region::BLOCKS_Y
             + (loc.point.y / Block::CELLS_Y) % Region::BLOCKS_Y;
         block_id as usize
@@ -73,13 +73,13 @@ impl Block {
         Ok((block_x * Region::BLOCKS_X + block_y) as usize)
     }
 
-    pub fn grid_coordinates(loc: &GeoVec3) -> (i32, i32) {
+    pub fn grid_coordinates(loc: GeoVec3) -> (i32, i32) {
         let block_x = (loc.point.x / Block::CELLS_X) % Region::BLOCKS_X;
         let block_y = (loc.point.y / Block::CELLS_Y) % Region::BLOCKS_Y;
         (block_x, block_y)
     }
 
-    pub fn cell_offset(loc: &GeoPoint) -> i32 {
+    pub fn cell_offset(loc: GeoPoint) -> i32 {
         (loc.x % Block::CELLS_X) * Block::CELLS_Y + (loc.y % Block::CELLS_Y)
     }
     pub fn cell_coordinates_by_offset(offset: i32) -> GeoPoint {
@@ -142,7 +142,7 @@ impl GeoBlock for Block {
         }
     }
 
-    fn cell_by_loc(&self, loc: &GeoVec3) -> &Cell {
+    fn cell_by_loc(&self, loc: GeoVec3) -> &Cell {
         match self {
             Block::Flat(block) => block.cell_by_loc(loc),
             Block::Complex(block) => block.cell_by_loc(loc),
@@ -150,7 +150,7 @@ impl GeoBlock for Block {
         }
     }
 
-    fn nearest_height(&self, loc: &GeoVec3) -> i32 {
+    fn nearest_height(&self, loc: GeoVec3) -> i32 {
         match self {
             Block::Flat(block) => block.nearest_height(loc),
             Block::Complex(block) => block.nearest_height(loc),
@@ -158,7 +158,7 @@ impl GeoBlock for Block {
         }
     }
 
-    fn next_higher_height(&self, from: &GeoVec3, to: &GeoVec3) -> i32 {
+    fn next_higher_height(&self, from: GeoVec3, to: GeoVec3) -> i32 {
         match self {
             Block::Flat(block) => block.next_higher_height(from, to),
             Block::Complex(block) => block.next_higher_height(from, to),
@@ -166,7 +166,7 @@ impl GeoBlock for Block {
         }
     }
 
-    fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
+    fn passable_directions(&self, loc: GeoVec3) -> NavigationDirection {
         match self {
             Block::Flat(block) => block.passable_directions(loc),
             Block::Complex(block) => block.passable_directions(loc),
@@ -209,7 +209,7 @@ mod tests {
     #[test]
     fn test_offset_and_coordinates_consistency() {
         let point = GeoPoint::new(56, 10); // something bigger than 8x8
-        let offset = Block::cell_offset(&point);
+        let offset = Block::cell_offset(point);
         let recovered_loc = Block::cell_coordinates_by_offset(offset);
         assert_eq!(point.x % Block::CELLS_X, recovered_loc.x);
         assert_eq!(point.y % Block::CELLS_Y, recovered_loc.y);

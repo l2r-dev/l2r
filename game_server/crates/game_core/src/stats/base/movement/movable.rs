@@ -4,6 +4,7 @@ use serde::Deserialize;
 #[derive(Clone, Component, Debug, Default, Deserialize, PartialEq, Reflect)]
 pub struct Movable {
     move_type: MovementStat,
+    prev_move_type: MovementStat,
     speed: MovementStats,
     steps: usize,
 }
@@ -15,6 +16,7 @@ impl Movable {
     pub fn new(move_speed: MovementStats) -> Self {
         Movable {
             move_type: MovementStat::default(),
+            prev_move_type: MovementStat::default(),
             speed: move_speed,
             steps: Default::default(),
         }
@@ -64,11 +66,18 @@ impl Movable {
         self.move_state() == MoveState::Water
     }
 
+    pub fn exiting_water(&self) -> bool {
+        let prev_move_mode = MoveState::from(self.prev_move_type);
+        let current_move_mode = MoveState::from(self.move_type);
+        prev_move_mode == MoveState::Water && current_move_mode == MoveState::Ground
+    }
+
     pub fn move_state(&self) -> MoveState {
         MoveState::from(self.move_type)
     }
 
     pub fn set_move_type(&mut self, move_type: MovementStat) {
+        self.prev_move_type = self.move_type;
         self.move_type = move_type;
     }
 
@@ -106,6 +115,7 @@ impl From<&BaseClassStats> for Movable {
     fn from(stats: &BaseClassStats) -> Self {
         Movable {
             move_type: MovementStat::default(),
+            prev_move_type: MovementStat::default(),
             speed: stats.base_speed.clone(),
             steps: Default::default(),
         }

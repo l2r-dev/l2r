@@ -2271,7 +2271,6 @@
     ]
   },
   {
-
     "name": "Floran Village",
     "kind": {
       "Town": {
@@ -2575,6 +2574,48 @@
     "kind": {
       "Town": {
         "spawn_points": []
+      }
+    },
+    "min_height": -30000,
+    "max_height": 30000,
+    "points": [
+      {
+        "x": -32768,
+        "y": 229376
+      },
+      {
+        "x": 32768,
+        "y": 229376
+      },
+      {
+        "x": 32768,
+        "y": 262143
+      },
+      {
+        "x": -32768,
+        "y": 262143
+      }
+    ]
+  },
+  {
+    "name": "door_test",
+    "kind": {
+      "Door": {
+        "id": 1001,
+        "open_methods": [
+          "Click",
+          "Item"
+        ],
+        "level": 10,
+        "max_hp": 1000,
+        "show_hp": true,
+        "p_def": 50,
+        "m_def": 30,
+        "emitter_id": 2001,
+        "status": "Close",
+        "targetable": true,
+        "check_collision": true,
+        "hidden": false
       }
     },
     "min_height": -30000,

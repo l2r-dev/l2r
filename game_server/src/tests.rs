@@ -7,7 +7,7 @@ use bevy::prelude::*;
 use bevy_slinet::connection::ConnectionId;
 use game_core::{
     abnormal_effects::AbnormalEffects,
-    action::wait_kind::WaitKind,
+    action::{target::Targetable, wait_kind::WaitKind},
     character,
     encounters::{EnteredWorld, KnownEntities},
     items::{Inventory, PaperDoll},
@@ -284,5 +284,6 @@ pub fn test_character_bundle_data(id: ObjectId) -> character::Bundle {
         defence_effects: DefenceEffects::default(),
         abnormal_effects: AbnormalEffects::default(),
         last_known_pos: LastKnownPosition::default(),
+        targetable: Targetable,
     }
 }

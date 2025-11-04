@@ -277,5 +277,135 @@
       }
     ],
     "shape": "Cuboid"
+  },
+  {
+    "name": "hell_town_secret_child_door2",
+    "kind": {
+      "Door": {
+        "id": 19250001,
+        "open_methods": [
+          "Cycle"
+        ],
+        "max_hp": 3258432,
+        "p_def": 100000
+      }
+    },
+    "min_height": -3505,
+    "max_height": -3355,
+    "points": [
+      {
+        "x": -28502,
+        "y": 249878
+      },
+      {
+        "x": -28567,
+        "y": 249880
+      },
+      {
+        "x": -28568,
+        "y": 249903
+      },
+      {
+        "x": -28500,
+        "y": 249903
+      }
+    ]
+  },
+  {
+    "name": "hell_town_secret_child_door1",
+    "kind": {
+      "Door": {
+        "id": 19250002,
+        "open_methods": [
+          "Cycle"
+        ],
+        "max_hp": 3258432,
+        "p_def": 100000
+      }
+    },
+    "min_height": -3505,
+    "max_height": -3355,
+    "points": [
+      {
+        "x": -28513,
+        "y": 249875
+      },
+      {
+        "x": -28417,
+        "y": 249873
+      },
+      {
+        "x": -28417,
+        "y": 249903
+      },
+      {
+        "x": -28514,
+        "y": 249902
+      }
+    ]
+  },
+  {
+    "name": "hell_town_child_door1",
+    "kind": {
+      "Door": {
+        "id": 19250003,
+        "level": 3,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "targetable": true
+      }
+    },
+    "min_height": -3550,
+    "max_height": -3400,
+    "points": [
+      {
+        "x": -27426,
+        "y": 252457
+      },
+      {
+        "x": -27428,
+        "y": 252383
+      },
+      {
+        "x": -27391,
+        "y": 252382
+      },
+      {
+        "x": -27390,
+        "y": 252459
+      }
+    ]
+  },
+  {
+    "name": "hell_town_child_door1",
+    "kind": {
+      "Door": {
+        "id": 19250004,
+        "level": 3,
+        "max_hp": 3258432,
+        "p_def": 100000,
+        "targetable": true
+      }
+    },
+    "min_height": -3550,
+    "max_height": -3400,
+    "points": [
+      {
+        "x": -27428,
+        "y": 252450
+      },
+      {
+        "x": -27422,
+        "y": 252522
+      },
+      {
+        "x": -27393,
+        "y": 252526
+      },
+      {
+        "x": -27390,
+        "y": 252450
+      }
+    ]
   }
 ]

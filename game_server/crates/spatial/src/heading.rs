@@ -23,9 +23,39 @@ impl Heading {
 }
 
 #[derive(
-    Clone, Copy, Debug, Default, Deref, Deserialize, PartialEq, Serialize, Reflect, From, Into,
+    Clone,
+    Copy,
+    Debug,
+    Default,
+    Deref,
+    Deserialize,
+    PartialEq,
+    Serialize,
+    Reflect,
+    From,
+    Into,
+    PartialOrd,
 )]
 pub struct Degrees(f32);
+
+impl Degrees {
+    pub fn from_angle_between(vec1: Vec3, vec2: Vec3) -> Self {
+        let angle_radians = vec1.angle_between(vec2);
+        Degrees(angle_radians.to_degrees())
+    }
+}
+
+impl PartialEq<f32> for Degrees {
+    fn eq(&self, other: &f32) -> bool {
+        self.0 == *other
+    }
+}
+
+impl PartialOrd<f32> for Degrees {
+    fn partial_cmp(&self, other: &f32) -> Option<std::cmp::Ordering> {
+        self.0.partial_cmp(other)
+    }
+}
 
 // Need substract from 270 because on server 0 is North, but in game heading 0 is East
 #[inline]

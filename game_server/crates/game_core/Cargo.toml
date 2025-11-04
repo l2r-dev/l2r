@@ -10,6 +10,7 @@ l2r_core = { path = "../../../core", features = ["high_five"] }
 state = { path = "../state" }
 scripting = { path = "../scripting" }
 spatial = { path = "../spatial" }
+physics = { path = "../physics" }
 map = { path = "../map" }
 system_messages = { path = "../system_messages" }
 

@@ -1,13 +1,17 @@
+use avian3d::prelude::{CollisionEventsEnabled, Sensor};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
 use game_core::custom_hierarchy::{DespawnChildOf, DespawnChildren};
 use l2r_core::chronicles::CHRONICLE;
 use map::*;
+use physics::GameLayer;
 use std::path::PathBuf;
 
 pub struct ZonesPlugin;
 impl Plugin for ZonesPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(ZonesComponentsPlugin);
+
+        app.add_observer(zone_added);
 
         app.add_systems(Startup, |mut commands: Commands| {
             commands.spawn(GlobalZones);
@@ -69,6 +73,32 @@ impl Plugin for ZonesPlugin {
         );
     }
 }
+
+fn zone_added(
+    added: Trigger<OnAdd, Zone>,
+    mut commands: Commands,
+    zones: Query<Ref<Zone>>,
+) -> Result<()> {
+    let entity = added.target();
+    let zone = zones.get(entity)?;
+
+    let center = zone.center();
+    let transform = Transform::from_translation(center);
+    let collider = zone.collider();
+
+    let zone_bundle = (
+        transform,
+        ZoneKindVariant::from(zone.kind()),
+        collider,
+        Sensor,
+        GameLayer::player_sensor(),
+        CollisionEventsEnabled,
+    );
+
+    commands.entity(entity).insert(zone_bundle);
+    Ok(())
+}
+
 fn load_zones<ZoneListResource>(
     mut commands: Commands,
     asset_server: Res<AssetServer>,
@@ -94,8 +124,7 @@ pub struct SpawnZoneQuery<'w, 's, ZoneKindComponent: Component> {
     pub existing_zones: Query<'w, 's, Entity, With<ZoneKindComponent>>,
     pub named_zones: ResMut<'w, NamedZones>,
     pub global_zones: Query<'w, 's, Entity, With<GlobalZones>>,
-    pub zone_kind_containers:
-        Query<'w, 's, (Entity, Ref<'static, ZoneKindVariant>), With<ZoneKindFolder>>,
+    pub zone_kind_folders: Query<'w, 's, (Entity, &'static DespawnChildren), With<ZoneKindFolder>>,
 }
 
 fn spawn_zones<ZoneListResource, ZoneKindComponent>(
@@ -110,68 +139,66 @@ where
         let global_zones_entity = zone_spawn.global_zones.single()?;
 
         for event in zone_spawn.events.read() {
-            match event {
-                AssetEvent::LoadedWithDependencies { id } | AssetEvent::Modified { id } => {
-                    if *id == zone_list_res.as_ref().as_ref().id()
-                        && let Some(zone_list) = zone_spawn.zone_lists.get(*id)
-                    {
-                        let mut kind_containers_cache: HashMap<ZoneKindVariant, Entity> =
-                            HashMap::new();
-                        for (entity, kind) in zone_spawn.zone_kind_containers.iter() {
-                            kind_containers_cache.insert(*kind, entity);
-                        }
+            let id = zone_list_res.as_ref().as_ref().id();
+            if event.is_loaded_with_dependencies(id)
+                && let Some(zone_list) = zone_spawn.zone_lists.get(id)
+            {
+                // Find and despawn folders containing zones of this specific type (ZoneKindComponent).
+                // This is needed for hot-reloading: when a zone list asset is modified,
+                // we need to remove only the folders that contain zones of the reloaded type,
+                // leaving other zone type folders intact.
+                for (folder_entity, folder_children) in zone_spawn.zone_kind_folders.iter() {
+                    let has_zone_of_kind = folder_children
+                        .iter()
+                        .any(|child_entity| zone_spawn.existing_zones.contains(child_entity));
 
-                        for existing_zone in zone_spawn.existing_zones.iter() {
-                            zone_spawn.commands.entity(existing_zone).despawn();
-                        }
-                        zone_list.iter().for_each(|zone| {
-                            let kind_variant = ZoneKindVariant::from(zone.kind());
-                            let zone_kind_entity = *kind_containers_cache
-                                .entry(kind_variant)
-                                .or_insert_with(|| {
-                                    zone_spawn
-                                        .commands
-                                        .spawn((
-                                            Name::new(kind_variant.to_string()),
-                                            kind_variant,
-                                            ZoneKindFolder,
-                                            DespawnChildOf(global_zones_entity),
-                                        ))
-                                        .id()
-                                });
-
-                            let zone_name = zone.name();
-                            let built_zone_components = zone.build();
-                            let zone = zone.clone();
-                            let entity = if ZoneListResource::need_collider() {
-                                zone_spawn
-                                    .commands
-                                    .spawn((zone.name_component(), zone, built_zone_components))
-                                    .id()
-                            } else {
-                                zone_spawn
-                                    .commands
-                                    .spawn((
-                                        zone.name_component(),
-                                        zone,
-                                        built_zone_components.0,
-                                        built_zone_components.1,
-                                    ))
-                                    .id()
-                            };
-
-                            zone_spawn
-                                .commands
-                                .entity(entity)
-                                .insert(DespawnChildOf(zone_kind_entity));
-
-                            if let Some(name) = zone_name {
-                                zone_spawn.named_zones.insert(name.clone(), entity);
-                            }
-                        });
+                    if has_zone_of_kind {
+                        zone_spawn.commands.entity(folder_entity).despawn();
                     }
                 }
-                _ => {}
+
+                // Cache folder entities by zone kind variant.
+                // We need this HashMap because entities are spawned via commands and don't exist
+                // immediately - they only become available after the command buffer is flushed.
+                // The HashMap allows us to reuse the same folder entity for multiple zones
+                // of the same kind variant within this iteration.
+                let mut kind_folders: HashMap<ZoneKindVariant, Entity> = HashMap::new();
+
+                zone_list.iter().for_each(|zone| {
+                    let kind_variant = ZoneKindVariant::from(zone.kind());
+
+                    // Get or create a folder entity for this zone kind variant.
+                    // If a folder for this variant was already created in this iteration,
+                    // reuse it; otherwise spawn a new folder entity.
+                    let zone_kind_entity = *kind_folders.entry(kind_variant).or_insert_with(|| {
+                        zone_spawn
+                            .commands
+                            .spawn((
+                                Name::new(kind_variant.to_string()),
+                                kind_variant,
+                                ZoneKindFolder,
+                                DespawnChildOf(global_zones_entity),
+                            ))
+                            .id()
+                    });
+
+                    let zone_name = zone.name();
+                    let zone = zone.clone();
+
+                    let entity = zone_spawn
+                        .commands
+                        .spawn((zone.name_component(), zone))
+                        .id();
+
+                    zone_spawn
+                        .commands
+                        .entity(entity)
+                        .insert(DespawnChildOf(zone_kind_entity));
+
+                    if let Some(name) = zone_name {
+                        zone_spawn.named_zones.insert(name.clone(), entity);
+                    }
+                });
             }
         }
     }
@@ -184,82 +211,83 @@ pub struct RegionalSpawnZoneQuery<'w, 's> {
     pub zone_lists: Res<'w, Assets<ZoneList>>,
     pub events: EventReader<'w, 's, AssetEvent<ZoneList>>,
     pub regions: Query<'w, 's, &'static Region>,
-    pub region_children: Query<'w, 's, &'static DespawnChildren>,
+    pub despawn_children: Query<'w, 's, &'static DespawnChildren>,
     pub regional_zones: Query<'w, 's, Entity, With<RegionalZones>>,
-    pub zone_kind_containers:
-        Query<'w, 's, (Entity, Ref<'static, ZoneKindVariant>), With<ZoneKindFolder>>,
-    pub zones: Query<'w, 's, Entity, Or<(With<Zone>, With<ZoneKindFolder>)>>,
     pub named_zones: Res<'w, NamedZones>,
 }
 
 fn spawn_regional_zones(mut regional_spawn: RegionalSpawnZoneQuery) -> Result<()> {
     for event in regional_spawn.events.read() {
-        match event {
-            AssetEvent::LoadedWithDependencies { id } | AssetEvent::Modified { id } => {
-                let mut kind_containers_cache: HashMap<ZoneKindVariant, Entity> = HashMap::new();
-                for (entity, kind) in regional_spawn.zone_kind_containers.iter() {
-                    kind_containers_cache.insert(*kind, entity);
-                }
+        if let AssetEvent::LoadedWithDependencies { id } = event {
+            for region in regional_spawn.regions.iter() {
+                let zone_handle = region.zone_list_handle();
+                if *id == zone_handle.id()
+                    && let Some(zone_list) = regional_spawn.zone_lists.get(*id)
+                {
+                    let regional_zones_entity = regional_spawn.regional_zones.single()?;
 
-                for region in regional_spawn.regions.iter() {
-                    let zone_handle = region.zone_list_handle();
-                    if *id == zone_handle.id()
-                        && let Some(zone_list) = regional_spawn.zone_lists.get(*id)
+                    // Despawn all existing regional zone folders and their children.
+                    // Regional zones are tied to specific regions, so when a region's zone list
+                    // is reloaded, we need to completely rebuild the entire hierarchy.
+                    if let Ok(zones_children) =
+                        regional_spawn.despawn_children.get(regional_zones_entity)
                     {
-                        let regional_zones_entity = regional_spawn.regional_zones.single()?;
+                        for child in zones_children.iter() {
+                            regional_spawn.commands.entity(child).despawn();
+                        }
+                    }
 
-                        if let Ok(zones_children) =
-                            regional_spawn.region_children.get(regional_zones_entity)
+                    // Cache folder entities by zone kind variant.
+                    // We need this HashMap because entities are spawned via commands and don't exist
+                    // immediately - they only become available after the command buffer is flushed.
+                    // The HashMap allows us to reuse the same folder entity for multiple zones
+                    // of the same kind variant within this iteration.
+                    let mut kind_folders: HashMap<ZoneKindVariant, Entity> = HashMap::new();
+
+                    zone_list.iter().for_each(|zone| {
+                        let kind_variant = ZoneKindVariant::from(zone.kind());
+
+                        // Get or create a folder entity for this zone kind variant.
+                        // If a folder for this variant was already created in this iteration,
+                        // reuse it; otherwise spawn a new folder entity.
+                        let zone_kind_entity =
+                            *kind_folders.entry(kind_variant).or_insert_with(|| {
+                                regional_spawn
+                                    .commands
+                                    .spawn((
+                                        Name::new(kind_variant.to_string()),
+                                        kind_variant,
+                                        ZoneKindFolder,
+                                        DespawnChildOf(regional_zones_entity),
+                                    ))
+                                    .id()
+                            });
+
+                        let mut zone = zone.clone();
+
+                        if let ZoneKind::Respawn(respawn_zone) = zone.kind_mut()
+                            && let Some(entity) =
+                                regional_spawn.named_zones.get(respawn_zone.name())
                         {
-                            for child in zones_children.iter() {
-                                if regional_spawn.zones.get(child).is_ok() {
-                                    regional_spawn.commands.entity(child).despawn();
-                                }
-                            }
+                            respawn_zone.set_target_entity(*entity);
                         }
 
-                        zone_list.iter().for_each(|zone| {
-                            let kind_variant = ZoneKindVariant::from(zone.kind());
-                            let zone_kind_entity = *kind_containers_cache
-                                .entry(kind_variant)
-                                .or_insert_with(|| {
-                                    regional_spawn
-                                        .commands
-                                        .spawn((
-                                            Name::new(kind_variant.to_string()),
-                                            kind_variant,
-                                            ZoneKindFolder,
-                                            DespawnChildOf(regional_zones_entity),
-                                        ))
-                                        .id()
-                                });
+                        let zone_entity = regional_spawn
+                            .commands
+                            .spawn((zone.name_component(), zone))
+                            .id();
 
-                            let mut zone = zone.clone();
-                            if let ZoneKind::Respawn(respawn_zone) = zone.kind_mut()
-                                && let Some(entity) =
-                                    regional_spawn.named_zones.get(respawn_zone.name())
-                            {
-                                respawn_zone.set_target_entity(*entity);
-                            }
-                            let built_zone_components = zone.build();
-                            let zone_entity = regional_spawn
-                                .commands
-                                .spawn((zone.name_component(), zone, built_zone_components))
-                                .id();
-                            regional_spawn
-                                .commands
-                                .entity(zone_entity)
-                                .insert(DespawnChildOf(zone_kind_entity));
-                        });
-                    }
+                        regional_spawn
+                            .commands
+                            .entity(zone_entity)
+                            .insert(DespawnChildOf(zone_kind_entity));
+                    });
                 }
             }
-            _ => {}
         }
     }
     Ok(())
 }
-
 #[cfg(test)]
 mod tests {
     use super::*;

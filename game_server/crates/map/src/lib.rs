@@ -1,17 +1,22 @@
 use crate::id::RegionId;
+use avian3d::{
+    prelude::{LayerMask, SpatialQueryFilter},
+    spatial_query::SpatialQuery,
+};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
+use physics::GameLayer;
+use spatial::{GameVec3, GeoPoint, GeoVec3};
 
 mod constants;
-mod doors;
 mod region;
 mod spawn_point;
+mod static_mesh;
 mod zones;
 
 pub use constants::*;
-pub use doors::*;
 pub use region::*;
-use spatial::{GameVec3, GeoPoint, GeoVec3};
 pub use spawn_point::*;
+pub use static_mesh::*;
 pub use zones::*;
 
 pub struct WorldMapComponentsPlugin;
@@ -113,13 +118,13 @@ impl WorldMap {
 /// A SystemParam that encapsulates the common pattern of accessing world map data.
 /// This combines the three frequently used together parameters: WorldMap, regions query, and region geodata assets.
 #[derive(SystemParam)]
-pub struct WorldMapQuery<'w, 's> {
+pub struct WorldMapInnerQuery<'w, 's> {
     pub world_map: Res<'w, WorldMap>,
     pub regions: Query<'w, 's, Ref<'static, Region>>,
     pub regions_geodata: Res<'w, Assets<RegionGeoData>>,
 }
 
-impl<'w, 's> WorldMapQuery<'w, 's> {
+impl<'w, 's> WorldMapInnerQuery<'w, 's> {
     pub fn region_geodata(&self, region_id: RegionId) -> Result<&RegionGeoData, BevyError> {
         self.world_map
             .region_geodata(&self.regions, &self.regions_geodata, region_id)
@@ -136,5 +141,62 @@ impl<'w, 's> WorldMapQuery<'w, 's> {
     ) -> Result<&RegionGeoData, BevyError> {
         let region_id = RegionId::from(position);
         self.region_geodata(region_id)
+    }
+}
+
+#[derive(SystemParam)]
+pub struct WorldMapQuery<'w, 's> {
+    pub inner: WorldMapInnerQuery<'w, 's>,
+    pub spatial_query: SpatialQuery<'w, 's>,
+}
+
+impl<'w, 's> WorldMapQuery<'w, 's> {
+    const MAX_VISIBILITY_DISTANCE: i32 = 1000;
+
+    pub fn can_see_target(&self, requester_pos: Vec3, target_pos: Vec3) -> bool {
+        let Ok(geodata) = self.inner.region_geodata_from_pos(requester_pos) else {
+            return false;
+        };
+
+        // Check geodata line of sight
+        if !geodata.can_see_target(
+            WorldMap::vec3_to_geo(requester_pos),
+            WorldMap::vec3_to_geo(target_pos),
+            Self::MAX_VISIBILITY_DISTANCE,
+        ) {
+            return false;
+        }
+
+        // Check if any solid environment colliders (closed doors, walls) blocks the line of sight
+        let direction = target_pos - requester_pos;
+        let distance = direction.length();
+
+        if distance > 0.0 && distance <= Self::MAX_VISIBILITY_DISTANCE as f32 {
+            let Ok(dir) = Dir3::new(direction.normalize()) else {
+                return false;
+            };
+
+            let filter = SpatialQueryFilter::from_mask(LayerMask::from([GameLayer::Environment]));
+
+            if let Some(_hit) =
+                self.spatial_query
+                    .cast_ray(requester_pos, dir, distance, true, &filter)
+            {
+                return false;
+            }
+        }
+
+        true
+    }
+
+    pub fn can_move_to(&self, from_pos: Vec3, to_pos: Vec3) -> bool {
+        let Ok(geodata) = self.inner.region_geodata_from_pos(from_pos) else {
+            return false;
+        };
+
+        geodata.can_move_to(
+            WorldMap::vec3_to_geo(from_pos),
+            WorldMap::vec3_to_geo(to_pos),
+        )
     }
 }

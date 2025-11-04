@@ -3730,6 +3730,7 @@ dependencies = [
  "map",
  "num-traits",
  "num_enum",
+ "physics",
  "rand",
  "redis",
  "scripting",
@@ -4626,6 +4627,7 @@ dependencies = [
  "num-traits",
  "num_enum",
  "pathfinding",
+ "physics",
  "rand",
  "redis",
  "regex",
@@ -4825,6 +4827,7 @@ dependencies = [
  "bevy_enum_tag",
  "derive_more 2.0.1",
  "l2r_core",
+ "physics",
  "rand",
  "serde",
  "spatial",
@@ -5862,6 +5865,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fc58e2d255979a31caa7cabfa7aac654af0354220719ab7a68520ae7a91e8c0b"
 dependencies = [
  "serde",
+]
+
+[[package]]
+name = "physics"
+version = "0.1.0"
+dependencies = [
+ "avian3d",
+ "bevy",
+ "bevy_common_assets",
 ]
 
 [[package]]

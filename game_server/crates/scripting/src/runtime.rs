@@ -1,6 +1,5 @@
 use bevy::{
     asset::{Assets, LoadedFolder},
-    log,
     prelude::*,
 };
 use bevy_mod_scripting::{
@@ -67,7 +66,7 @@ impl RuntimeScriptsManager {
         scripts_dir.push(Self::SCRIPT_DIR);
         scripts_dir.push(Self::RUNTIME_DIR);
 
-        log::info!("Loading runtime scripts from: {:?}", scripts_dir);
+        info!("Loading runtime scripts from: {:?}", scripts_dir);
         let loaded_folder = asset_server.load_folder(scripts_dir);
         runtime_scripts.folder = loaded_folder;
     }
@@ -80,37 +79,32 @@ impl RuntimeScriptsManager {
         mut task_flag: Query<&mut RuntimeScriptsTaskSpawned>,
     ) {
         for event in events.read() {
-            match event {
-                AssetEvent::Modified { id } | AssetEvent::LoadedWithDependencies { id } => {
-                    if runtime_scripts.folder.id() == *id {
-                        let loaded_folder = asset_folders.get(runtime_scripts.folder.id()).unwrap();
-                        runtime_scripts.scripts.clear();
-                        runtime_scripts.scripts.reserve(loaded_folder.handles.len());
+            if event.is_loaded_with_dependencies(runtime_scripts.folder.id()) {
+                let loaded_folder = asset_folders.get(runtime_scripts.folder.id()).unwrap();
+                runtime_scripts.scripts.clear();
+                runtime_scripts.scripts.reserve(loaded_folder.handles.len());
 
-                        for handle in loaded_folder.handles.iter() {
-                            if let Some(path) = handle.path()
-                                && path
-                                    .path()
-                                    .to_string_lossy()
-                                    .ends_with(RuntimeScriptsManager::ENTRY_SCRIPT)
-                            {
-                                let script_handle = handle.clone().typed_unchecked::<ScriptAsset>();
-                                runtime_scripts.scripts.push(script_handle.clone());
-                                log::info!("Adding runtime script: {}", path);
-                                commands.queue(AttachScript::<LuaScriptingPlugin>::new(
-                                    ScriptAttachment::StaticScript(script_handle),
-                                ));
-                            }
-                        }
-
-                        // Mark the task as loaded when all scripts are processed
-                        if let Ok(mut task) = task_flag.single_mut() {
-                            task.loaded = true;
-                            log::info!("Runtime scripts loading completed");
-                        }
+                for handle in loaded_folder.handles.iter() {
+                    if let Some(path) = handle.path()
+                        && path
+                            .path()
+                            .to_string_lossy()
+                            .ends_with(RuntimeScriptsManager::ENTRY_SCRIPT)
+                    {
+                        let script_handle = handle.clone().typed_unchecked::<ScriptAsset>();
+                        runtime_scripts.scripts.push(script_handle.clone());
+                        info!("Adding runtime script: {}", path);
+                        commands.queue(AttachScript::<LuaScriptingPlugin>::new(
+                            ScriptAttachment::StaticScript(script_handle),
+                        ));
                     }
                 }
-                _ => {}
+
+                // Mark the task as loaded when all scripts are processed
+                if let Ok(mut task) = task_flag.single_mut() {
+                    task.loaded = true;
+                    info!("Runtime scripts loading completed");
+                }
             }
         }
     }

@@ -106,7 +106,7 @@ impl Region {
             height: 0,
         };
 
-        geo_vec.height = geodata.nearest_height(&geo_vec).unwrap_or(0);
+        geo_vec.height = geodata.nearest_height(geo_vec).unwrap_or(0);
 
         WorldMap::geo_to_game(geo_vec)
     }
@@ -151,7 +151,7 @@ impl Region {
                     match block {
                         Block::Multilayer(multilayer_block) => {
                             let cells = multilayer_block
-                                .layered_cell_by_loc(&block_center_geo)
+                                .layered_cell_by_loc(block_center_geo)
                                 .cells();
 
                             for cell in cells {
@@ -166,11 +166,11 @@ impl Region {
                             }
                         }
                         Block::Complex(complex_block) => {
-                            block_center.z = complex_block.nearest_height(&block_center_geo);
+                            block_center.z = complex_block.nearest_height(block_center_geo);
                             centers.push(block_center);
                         }
                         Block::Flat(flat_block) => {
-                            block_center.z = flat_block.nearest_height(&block_center_geo);
+                            block_center.z = flat_block.nearest_height(block_center_geo);
                             centers.push(block_center);
                         }
                     }
@@ -219,32 +219,32 @@ impl fmt::Debug for RegionGeoData {
     }
 }
 impl RegionGeoData {
-    pub fn nearest_height(&self, loc: &GeoVec3) -> Option<i32> {
+    pub fn nearest_height(&self, loc: GeoVec3) -> Option<i32> {
         Some(self.block_by_loc(loc)?.nearest_height(loc))
     }
 
-    pub fn next_higher_height(&self, from: &GeoVec3, to: &GeoVec3) -> Option<i32> {
+    pub fn next_higher_height(&self, from: GeoVec3, to: GeoVec3) -> Option<i32> {
         Some(self.block_by_loc(from)?.next_higher_height(from, to))
     }
 
-    pub fn can_move_to(&self, start: &GeoVec3, goal: &GeoVec3) -> bool {
+    pub fn can_move_to(&self, start: GeoVec3, goal: GeoVec3) -> bool {
         if start.point == goal.point {
             return true;
         }
 
         // If start and goal are in different regions, allow movement
-        let start_region_id = RegionId::from(*start);
-        let goal_region_id = RegionId::from(*goal);
+        let start_region_id = RegionId::from(start);
+        let goal_region_id = RegionId::from(goal);
         if start_region_id != goal_region_id {
             return true;
         }
 
-        let mut prev_point = *start;
+        let mut prev_point = start;
         for current_point in start.line_to(goal).skip(1) {
-            if !self.can_step_to(&prev_point, &current_point) {
+            if !self.can_step_to(prev_point, current_point) {
                 return false;
             }
-            if current_point == *goal {
+            if current_point == goal {
                 return true;
             }
             prev_point = current_point;
@@ -252,28 +252,25 @@ impl RegionGeoData {
         true
     }
 
-    pub fn can_see_target(&self, start: GeoVec3, target: GeoVec3) -> bool {
+    pub fn can_see_target(&self, start: GeoVec3, target: GeoVec3, max_distance: i32) -> bool {
         const ELEVATED_SEE_OVER_DISTANCE: usize = 3;
         const MAX_SEE_OVER_HEIGHT: i32 = 50;
-        const MAX_VISIBILITY_DISTANCE: i32 = 1000;
-        const MAX_VISIBILITY_DISTANCE_SQUARED: i32 =
-            MAX_VISIBILITY_DISTANCE * MAX_VISIBILITY_DISTANCE;
 
         if start.point == target.point {
             return true;
         }
 
-        if start.distance_squared(&target) > MAX_VISIBILITY_DISTANCE_SQUARED {
+        if start.distance_squared(&target) > max_distance * max_distance {
             return false;
         }
 
         let start_with_height = GeoVec3 {
-            height: self.nearest_height(&start).unwrap_or(start.height),
+            height: self.nearest_height(start).unwrap_or(start.height),
             ..start
         };
 
         let target_with_height = GeoVec3 {
-            height: self.nearest_height(&target).unwrap_or(target.height),
+            height: self.nearest_height(target).unwrap_or(target.height),
             ..target
         };
 
@@ -286,14 +283,14 @@ impl RegionGeoData {
 
         let mut prev_point = from;
 
-        for (idx, current_point) in from.line_to(&to).skip(1).enumerate() {
+        for (idx, current_point) in from.line_to(to).skip(1).enumerate() {
             // Sometimes line_to returns the same point with different height, no need to check it
             if current_point.point == prev_point.point {
                 continue;
             }
 
             // get_sight_height will handle missing geo data gracefully
-            let current_sight_height = self.get_sight_height(&prev_point, &current_point);
+            let current_sight_height = self.get_sight_height(prev_point, current_point);
 
             let max_sight_height = if idx < ELEVATED_SEE_OVER_DISTANCE {
                 from.height + MAX_SEE_OVER_HEIGHT
@@ -328,9 +325,9 @@ impl RegionGeoData {
 
             let new_point = GeoPoint::new(center.point.x + dx, center.point.y + dy);
 
-            center.height = self.nearest_height(&center).unwrap_or(center.height);
+            center.height = self.nearest_height(center).unwrap_or(center.height);
 
-            let new_height = self.nearest_height(&GeoVec3::new(new_point, center.height));
+            let new_height = self.nearest_height(GeoVec3::new(new_point, center.height));
             let new_height = match new_height {
                 Some(height) => height,
                 None => continue,
@@ -340,7 +337,7 @@ impl RegionGeoData {
 
             let distance = new_point.distance(&center.point);
 
-            let can_move = self.can_move_to(&center, &new_loc);
+            let can_move = self.can_move_to(center, new_loc);
 
             if distance <= radius && can_move {
                 return Some(new_loc);
@@ -352,7 +349,7 @@ impl RegionGeoData {
         None
     }
 
-    pub fn block_kind(&self, loc: &GeoVec3) -> Option<BlockKind> {
+    pub fn block_kind(&self, loc: GeoVec3) -> Option<BlockKind> {
         let block = self.block_by_loc(loc)?;
         Some(BlockKind::from(block))
     }
@@ -361,7 +358,7 @@ impl RegionGeoData {
         self.0.get(id)
     }
 
-    fn block_by_loc(&self, loc: &GeoVec3) -> Option<&Block> {
+    fn block_by_loc(&self, loc: GeoVec3) -> Option<&Block> {
         let block_id = Block::id(loc);
         self.block(block_id)
     }
@@ -371,18 +368,18 @@ impl RegionGeoData {
         self.block(block_id)
     }
 
-    pub fn passable_directions(&self, loc: &GeoVec3) -> NavigationDirection {
+    pub fn passable_directions(&self, loc: GeoVec3) -> NavigationDirection {
         self.block_by_loc(loc)
             .map_or_else(NavigationDirection::empty, |block| {
                 block.passable_directions(loc)
             })
     }
 
-    fn is_passable_in(&self, loc: &GeoVec3, direction: NavigationDirection) -> bool {
+    fn is_passable_in(&self, loc: GeoVec3, direction: NavigationDirection) -> bool {
         self.passable_directions(loc).contains(direction)
     }
 
-    fn is_passable_to(&self, from: &GeoVec3, to: &GeoVec3) -> bool {
+    fn is_passable_to(&self, from: GeoVec3, to: GeoVec3) -> bool {
         if from.point == to.point {
             return true;
         }
@@ -402,8 +399,8 @@ impl RegionGeoData {
             let neigbor1_direction_to = neighbor1.direction(to);
             let neigbor2_direction_to = neighbor2.direction(to);
 
-            if !self.is_passable_in(&neighbor1, neigbor1_direction_to)
-                || !self.is_passable_in(&neighbor2, neigbor2_direction_to)
+            if !self.is_passable_in(neighbor1, neigbor1_direction_to)
+                || !self.is_passable_in(neighbor2, neigbor2_direction_to)
             {
                 return false;
             }
@@ -412,7 +409,7 @@ impl RegionGeoData {
         true
     }
 
-    pub fn can_step_to(&self, start: &GeoVec3, goal: &GeoVec3) -> bool {
+    pub fn can_step_to(&self, start: GeoVec3, goal: GeoVec3) -> bool {
         if start.point == goal.point {
             return true;
         }
@@ -428,7 +425,7 @@ impl RegionGeoData {
         self.is_passable_to(start, goal)
     }
 
-    fn get_sight_height(&self, from: &GeoVec3, to: &GeoVec3) -> i32 {
+    fn get_sight_height(&self, from: GeoVec3, to: GeoVec3) -> i32 {
         if self.is_passable_to(from, to) {
             self.nearest_height(from).unwrap_or(from.height)
         } else {

@@ -1,6 +1,6 @@
 use crate::{
     abnormal_effects::AbnormalEffects,
-    action::wait_kind::WaitKind,
+    action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
     encounters::KnownEntities,
     items::{self, Inventory, PaperDoll},
@@ -11,6 +11,7 @@ use crate::{
 use avian3d::prelude::*;
 use bevy::prelude::*;
 use l2r_core::model::{base_class::BaseClass, race::Race, session::SessionId};
+use physics::GameLayer;
 use spatial::GameVec3;
 
 #[derive(Bundle, Clone, Debug, Reflect)]
@@ -23,6 +24,7 @@ pub struct Bundle {
     pub movable: Movable,
     #[reflect(ignore)]
     pub collider: Collider,
+    pub collision_layers: CollisionLayers,
     pub primal_stats: PrimalStats,
     pub base_class: BaseClass,
     pub attack_stats: AttackStats,
@@ -50,6 +52,7 @@ pub struct Bundle {
     pub attack_effects: AttackEffects,
     pub defence_effects: DefenceEffects,
     pub abnormal_effects: AbnormalEffects,
+    pub targetable: Targetable,
 }
 
 #[allow(clippy::too_many_arguments)]
@@ -135,6 +138,7 @@ impl Bundle {
             session_id,
             movable,
             collider: base_class_stats.collider(db_model.appearance.gender),
+            collision_layers: GameLayer::player(),
             base_class,
             vitals_stats,
             primal_stats,
@@ -165,6 +169,7 @@ impl Bundle {
             attack_effects: AttackEffects::default(),
             defence_effects: DefenceEffects::default(),
             abnormal_effects: AbnormalEffects::default(),
+            targetable: Targetable,
         }
     }
 

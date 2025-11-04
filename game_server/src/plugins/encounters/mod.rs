@@ -1,5 +1,6 @@
 mod appearing;
 
+use crate::plugins::doors::DoorQuery;
 use avian3d::{prelude::*, spatial_query::SpatialQuery};
 use bevy::{
     ecs::{
@@ -14,14 +15,15 @@ use game_core::{
     items::{Item, ItemsDataQuery},
     movement::Movement,
     network::packets::server::{
-        CharInfo, DeleteObject, GameServerPacket, MoveToLocation, MoveToPawn, NpcInfo, SpawnItem,
-        StatusUpdate, StatusUpdateKind,
+        CharInfo, DeleteObject, DoorStatusUpdate, GameServerPacket, MoveToLocation, MoveToPawn,
+        NpcInfo, SpawnItem, StaticObjectInfo, StatusUpdate, StatusUpdateKind,
     },
     npc::{self, RegionalNpcInfoQuery},
     object_id::ObjectId,
     stats::*,
     teleport::TeleportInProgress,
 };
+use physics::GameLayer;
 use state::GameServerStateSystems;
 
 pub struct EncountersPlugin;
@@ -85,7 +87,11 @@ fn set_relations(
             let pos_a = query_item.transform;
             let mut known_entities = query_item.known_entities;
 
-            let filter = SpatialQueryFilter::default().with_excluded_entities([entity_a]);
+            // Filter to find only entities on Character, Item, and Door layers
+            let filter = SpatialQueryFilter::default()
+                .with_excluded_entities([entity_a])
+                .with_mask([GameLayer::encounters_mask()]);
+
             let nearby_entities = spatial_query.shape_intersections(
                 &query_sphere,
                 pos_a.translation,
@@ -127,7 +133,11 @@ fn unset_relations(
             let pos_a = query_item.transform;
             let mut known_entities = query_item.known_entities;
 
-            let filter = SpatialQueryFilter::default().with_excluded_entities([entity_a]);
+            // Filter to find only entities on Character, Item, and Door layers
+            let filter = SpatialQueryFilter::default()
+                .with_excluded_entities([entity_a])
+                .with_mask(GameLayer::encounters_mask());
+
             let nearby_entities: std::collections::HashSet<Entity> = spatial_query
                 .shape_intersections(&query_sphere, pos_a.translation, Quat::IDENTITY, &filter)
                 .into_iter()
@@ -191,6 +201,7 @@ struct KnownAddedParams<'w, 's> {
     npcs: Query<'w, 's, npc::NpcQuery<'static>>,
     npc_info: RegionalNpcInfoQuery<'w, 's>,
     items: Query<'w, 's, ItemQuery<'static>, With<Collider>>,
+    doors: Query<'w, 's, DoorQuery<'static>>,
     movement: Query<'w, 's, MovementQuery<'static>>,
     object_transforms: Query<'w, 's, ObjectTransformQuery<'static>>,
     items_data_query: ItemsDataQuery<'w>,
@@ -279,6 +290,35 @@ fn handle_known_added(
                 item_query.transform.translation,
                 item_info.stackable(),
                 item_query.item.count(),
+            )),
+            knower,
+        );
+    }
+
+    if let Ok(door_query) = params.doors.get(known)
+        && let map::ZoneKind::Door(door_kind) = door_query.zone.kind()
+    {
+        let is_enemy = true; // TODO: Check if door is_enemy, now just consider all doors as enemy
+
+        commands.trigger_targets(
+            GameServerPacket::from(StaticObjectInfo::door(
+                *door_query.object_id,
+                door_kind,
+                door_query.vitals.as_ref(),
+                *door_query.status,
+                *door_query.mesh_info,
+                is_enemy,
+            )),
+            knower,
+        );
+
+        commands.trigger_targets(
+            GameServerPacket::from(DoorStatusUpdate::new(
+                door_kind,
+                *door_query.object_id,
+                door_query.vitals.as_ref(),
+                *door_query.status,
+                is_enemy,
             )),
             knower,
         );

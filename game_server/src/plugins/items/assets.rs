@@ -13,7 +13,11 @@ const ITEMS_PATH: &str = "items";
 pub(super) fn load_items_data_assets(
     asset_server: Res<AssetServer>,
     mut items_data_table: ResMut<ItemsDataTable>,
+    mut loaded: Local<bool>,
 ) {
+    if *loaded {
+        return;
+    }
     let mut asset_dir = l2r_core::utils::get_base_path();
     asset_dir.push(ASSET_DIR);
     if let Ok(entries) = std::fs::read_dir(asset_dir.join(ITEMS_PATH).join(CHRONICLE)) {
@@ -34,6 +38,7 @@ pub(super) fn load_items_data_assets(
             }
         }
     }
+    *loaded = true;
 }
 
 pub(super) fn update_items_data_assets(
@@ -41,11 +46,8 @@ pub(super) fn update_items_data_assets(
     mut events_admin_shop: EventWriter<AdminShopUpdate>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::LoadedWithDependencies { id: _ } | AssetEvent::Modified { id: _ } => {
-                events_admin_shop.write(AdminShopUpdate);
-            }
-            _ => {}
+        if let AssetEvent::LoadedWithDependencies { id: _ } = event {
+            events_admin_shop.write(AdminShopUpdate);
         }
     }
 }

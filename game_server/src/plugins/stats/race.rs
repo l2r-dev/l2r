@@ -1,42 +1,45 @@
 use bevy::prelude::*;
 use bevy_common_assets::json::JsonAssetPlugin;
 use game_core::stats::{RaceStats, RaceStatsHandle, StatsTable};
+use state::LoadingSystems;
 use std::path::PathBuf;
 
 pub struct RaceStatsPlugin;
 impl Plugin for RaceStatsPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(JsonAssetPlugin::<RaceStats>::new(&["json"]))
-            .add_systems(Startup, setup)
-            .add_systems(Update, update);
+            .add_systems(
+                Update,
+                (
+                    setup.in_set(LoadingSystems::AssetInit),
+                    update.in_set(LoadingSystems::AssetInit),
+                ),
+            );
     }
 }
 
-fn setup(asset_server: Res<AssetServer>, mut stats_table: ResMut<StatsTable>) {
+fn setup(
+    asset_server: Res<AssetServer>,
+    mut stats_table: ResMut<StatsTable>,
+    mut loaded: Local<bool>,
+) {
+    if *loaded {
+        return;
+    }
     let mut path = PathBuf::new();
     path.push("race_stats");
     path.push(l2r_core::chronicles::CHRONICLE);
     path.push("race_stats");
     path.set_extension("json");
     stats_table.race_stats = RaceStatsHandle::from(asset_server.load(path));
+    *loaded = true;
 }
 
-fn update(
-    race_stats_assets: Res<Assets<RaceStats>>,
-    mut events: EventReader<AssetEvent<RaceStats>>,
-    mut stats_table: ResMut<StatsTable>,
-) {
+fn update(mut events: EventReader<AssetEvent<RaceStats>>, mut stats_table: ResMut<StatsTable>) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } => {
-                if race_stats_assets.get(*id).is_some() {
-                    bevy::log::debug!("RaceStats updated");
-                }
-            }
-            AssetEvent::LoadedWithDependencies { id: _ } => {
-                stats_table.init_race_stats();
-            }
-            _ => {}
+        if let AssetEvent::LoadedWithDependencies { id: _ } = event {
+            stats_table.init_race_stats();
+            debug!("Race stats updated from asset");
         }
     }
 }

@@ -1,3 +1,4 @@
+mod abnormal_effects;
 mod action;
 mod active_action;
 mod admin_menu;
@@ -7,13 +8,18 @@ mod character;
 mod chat;
 mod custom_hierarchy;
 pub mod db;
+mod doors;
 mod encounters;
+#[cfg(feature = "gui")]
+mod gui;
 mod items;
 mod manor;
 mod movement;
+mod multisell;
 mod network;
 mod npc;
 mod object_id;
+mod player_specific;
 mod shortcuts;
 mod shutdown;
 mod skills;
@@ -21,12 +27,6 @@ mod state;
 mod stats;
 mod teleport;
 mod world_map;
-
-mod abnormal_effects;
-#[cfg(feature = "gui")]
-mod gui;
-mod multisell;
-mod player_specific;
 
 use crate::plugins::state::GameStateProcessPlugin;
 use avian3d::PhysicsPlugins;
@@ -106,6 +106,7 @@ impl PluginGroup for Core {
             .add(multisell::MultisellPlugin)
             .add(shortcuts::ShortcutPlugin)
             .add(player_specific::PlayerSpecificPlugin)
+            .add(doors::DoorsPlugin)
             .add(manor::ManorPlugin);
         {
             builder = builder.add(scripting::CustomScriptingPlugin);

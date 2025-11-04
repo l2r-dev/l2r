@@ -1,4 +1,4 @@
-use bevy::{log, platform::collections::HashMap, prelude::*};
+use bevy::{platform::collections::HashMap, prelude::*};
 use config::Config;
 use game_core::{
     action::wait_kind::WaitKind,
@@ -7,13 +7,14 @@ use game_core::{
     encounters::EnteredWorld,
     network::{
         broadcast::ServerPacketBroadcast,
-        packets::server::{GameServerPacket, Revive, UserInfoUpdated},
+        packets::server::{BroadcastDoorStatusUpdate, GameServerPacket, Revive, UserInfoUpdated},
     },
     object_id::ObjectId,
     stats::*,
 };
 use l2r_core::chronicles::CHRONICLE;
-use state::StatKindSystems;
+use map::Door;
+use state::{LoadingSystems, StatKindSystems};
 use std::path::PathBuf;
 use strum::IntoEnumIterator;
 
@@ -22,8 +23,13 @@ impl Plugin for VitalsStatsPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(VitalsStatsComponentsPlugin);
 
-        app.add_systems(Startup, load_assets)
-            .add_systems(Update, update_stats_table);
+        app.add_systems(
+            Update,
+            (
+                load_assets.in_set(LoadingSystems::AssetInit),
+                update_stats_table.in_set(LoadingSystems::AssetInit),
+            ),
+        );
 
         app.add_observer(resurrect_handle)
             .add_observer(full_restore_trigger_handle);
@@ -34,7 +40,12 @@ impl Plugin for VitalsStatsPlugin {
                 .in_set(StatKindSystems::Vitals)
                 .before(stats_changed),
         )
-        .add_systems(Update, stats_changed.in_set(StatKindSystems::Vitals))
+        .add_systems(
+            Update,
+            (doors_stats_changed, stats_changed)
+                .chain()
+                .in_set(StatKindSystems::Vitals),
+        )
         .add_systems(
             Update,
             full_restore_event_handle
@@ -145,6 +156,15 @@ fn stats_changed(
     }
 }
 
+fn doors_stats_changed(
+    query: Query<Entity, (With<Door>, Changed<VitalsStats>)>,
+    mut commands: Commands,
+) {
+    for entity in query.iter() {
+        commands.trigger_targets(BroadcastDoorStatusUpdate, entity);
+    }
+}
+
 fn on_required_components_changed(mut args: StatsCalcParams<VitalsStats>) -> Result<()> {
     for entity in args.calc_components_changed.iter() {
         if let Ok((stats_query, mut self_stats, in_world)) = args.query.get_mut(entity) {
@@ -171,7 +191,14 @@ fn on_required_components_changed(mut args: StatsCalcParams<VitalsStats>) -> Res
     Ok(())
 }
 
-fn load_assets(asset_server: Res<AssetServer>, mut stats_table: ResMut<StatsTable>) {
+fn load_assets(
+    asset_server: Res<AssetServer>,
+    mut stats_table: ResMut<StatsTable>,
+    mut loaded: Local<bool>,
+) {
+    if *loaded {
+        return;
+    }
     let mut vitals_table = VitalsStatsHandlers::from(HashMap::new());
 
     for class_id in ClassId::iter() {
@@ -183,6 +210,7 @@ fn load_assets(asset_server: Res<AssetServer>, mut stats_table: ResMut<StatsTabl
         vitals_table.insert(class_id, handle);
     }
     stats_table.vitals_stats = vitals_table;
+    *loaded = true;
 }
 
 fn update_stats_table(
@@ -190,18 +218,8 @@ fn update_stats_table(
     mut events: EventReader<AssetEvent<LeveledVitalsStats>>,
 ) {
     for event in events.read() {
-        match event {
-            AssetEvent::Modified { id } => {
-                for (class_id, handler) in stats_table.vitals_stats.iter() {
-                    if handler.id() == *id {
-                        log::debug!("Vitals stats updated for {}", class_id);
-                    }
-                }
-            }
-            AssetEvent::LoadedWithDependencies { id: _ } => {
-                stats_table.init_vitals_stats();
-            }
-            _ => {}
+        if let AssetEvent::LoadedWithDependencies { id: _ } = event {
+            stats_table.init_vitals_stats();
         }
     }
 }
@@ -220,7 +238,7 @@ fn full_restore_event_handle(
     mut full_restorers: Query<Mut<VitalsStats>>,
 ) -> Result<()> {
     for event in full_restore.read() {
-        bevy::log::debug!("Entity {:?} triggered full restore", event.entity());
+        debug!("Entity {:?} triggered full restore", event.entity());
         let entity = event.entity();
         full_restorers.get_mut(entity)?.fill_current_from_max();
     }
@@ -273,11 +291,9 @@ mod tests {
             let max_mp = level_1_stats.get(VitalsStat::MaxMp);
             let max_cp = level_1_stats.get(VitalsStat::MaxCp);
 
-            log::info!(
+            info!(
                 "Level 1 Bladedancer stats: MaxHp={}, MaxMp={}, MaxCp={}",
-                max_hp,
-                max_mp,
-                max_cp
+                max_hp, max_mp, max_cp
             );
 
             assert!(
@@ -360,7 +376,7 @@ mod tests {
         }
 
         assert!(files_processed > 0, "No vitals stats files were processed");
-        log::info!(
+        info!(
             "Successfully processed {} vitals stats files",
             files_processed
         );
