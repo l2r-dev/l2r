@@ -21,7 +21,6 @@ impl Plugin for ActiveActionComponentPlugin {
 /// (such as movement, attacking, or picking up items) while they are still executing
 /// a previous action. It acts as a synchronization mechanism to ensure entities
 /// complete their current animation or action before beginning another.
-/// - [`AnimationTimer`]: Automatically removes this component when the timer expires
 /// - [`ActionFinished`]: Event triggered when this component is removed
 #[derive(Clone, Debug, Reflect)]
 #[reflect(Component)]
