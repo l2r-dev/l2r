@@ -26,7 +26,9 @@ pub struct MoveStep;
 pub struct MovementComponentsPlugin;
 impl Plugin for MovementComponentsPlugin {
     fn build(&self, app: &mut App) {
-        app.register_type::<Movable>().register_type::<Movement>();
+        app.register_type::<Movable>()
+            .register_type::<Movement>()
+            .register_type::<Falling>();
     }
 }
 
@@ -35,6 +37,9 @@ pub struct SendStopMove;
 
 #[derive(Clone, Copy, Debug, Event, Reflect)]
 pub struct LookAt(pub Entity);
+
+#[derive(Clone, Component, Copy, Debug, Default, Reflect)]
+pub struct Falling;
 
 #[derive(Clone, Debug, PartialEq, Reflect)]
 #[reflect(Component)]

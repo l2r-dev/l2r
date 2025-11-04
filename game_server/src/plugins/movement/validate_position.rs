@@ -1,6 +1,7 @@
 use bevy::prelude::*;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
+    movement::Falling,
     network::{
         config::GameServerNetworkConfig,
         packets::{
@@ -54,6 +55,7 @@ fn validate_position_handle(
             Ref<Movable>,
             Mut<LastKnownPosition>,
             Has<TeleportInProgress>,
+            Has<Falling>,
         ),
         With<Movable>,
     >,
@@ -62,11 +64,18 @@ fn validate_position_handle(
     let event = receive.event();
     if let GameClientPacket::ValidatePosition(ref packet) = event.packet {
         let character_entity = receive_params.character(&event.connection.id())?;
-        let (object_id, mut transform, movable, mut known_pos, teleport_request) =
+        let (object_id, mut transform, movable, mut known_pos, teleport_request, is_falling) =
             movable_objects.get_mut(character_entity)?;
 
         // Skip validation if teleport is in progress
         if teleport_request {
+            return Ok(());
+        }
+
+        // Skip validation if entity is falling - gravity system handles position
+        if is_falling {
+            known_pos.position = transform.translation;
+            known_pos.timestamp = time.elapsed_secs_f64();
             return Ok(());
         }
 
@@ -148,10 +157,6 @@ fn validate_position_handle(
                 );
             }
 
-            // Check if entity is falling (client position is higher than server)
-            let is_falling =
-                vertical_dist_sq > VERTICAL_THRESHOLD_SQ && client_pos.y > transform.translation.y;
-
             // When flying or in water, allow larger position corrections
             // TODO: We already checked for maximum speed over time above
             // TODO: So it's pretty safe to trust client position here, but maybe we can improve it further?
@@ -163,10 +168,6 @@ fn validate_position_handle(
                 // Swimming
                 (_, true, dist_sq) if dist_sq < MAX_DISTANCE_IN_WATER_SQ => {
                     transform.translation = client_pos;
-                }
-                // Entity is falling
-                (false, false, _) if is_falling => {
-                    transform.translation.y = client_pos.y;
                 }
                 // All other cases - server position takes priority
                 _ => {

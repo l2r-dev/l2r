@@ -2,6 +2,7 @@ use bevy::{log, prelude::*};
 
 mod cannot_move_anymore;
 mod follow;
+mod gravity;
 mod move_backward_to_location;
 mod swimming;
 mod validate_position;
@@ -18,7 +19,8 @@ use game_core::{
     attack::{AttackHit, Dead},
     character::Character,
     movement::{
-        ArrivedAtWaypoint, LookAt, MoveStep, Movement, MovementComponentsPlugin, SendStopMove,
+        ArrivedAtWaypoint, Falling, LookAt, MoveStep, Movement, MovementComponentsPlugin,
+        SendStopMove,
     },
     network::{
         broadcast::ServerPacketBroadcast,
@@ -48,7 +50,8 @@ impl Plugin for MovementPlugin {
             .add_plugins(cannot_move_anymore::CannotMoveAnymorePlugin)
             .add_plugins(follow::FollowPlugin)
             .add_plugins(walk_run::WalkRunPlugin)
-            .add_plugins(swimming::SwimmingPlugin);
+            .add_plugins(swimming::SwimmingPlugin)
+            .add_plugins(gravity::GravityPlugin);
 
         app.add_systems(
             FixedUpdate,
@@ -69,6 +72,7 @@ impl Plugin for MovementPlugin {
 #[derive(QueryFilter)]
 struct MoveFilter {
     not_in_action: Without<ActiveAction>,
+    not_falling: Without<Falling>,
 }
 
 /// Entities changed in movement state
@@ -76,6 +80,7 @@ struct MoveFilter {
 struct MovementChangeFilter {
     movement_changed: Changed<Movement>,
     not_in_action: Without<ActiveAction>,
+    not_falling: Without<Falling>,
 }
 
 #[derive(SystemParam)]
