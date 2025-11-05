@@ -10,7 +10,7 @@ use game_core::{
         session::PacketReceiveParams,
     },
     npc::DialogRequest,
-    path_finding::VisibilityCheckRequest,
+    path_finding::DirectMoveRequest,
     player_specific::next_intention::NextIntention,
     stats::Movable,
 };
@@ -50,7 +50,7 @@ fn handle(
                     DialogRequest,
                 )>();
                 commands.trigger_targets(
-                    VisibilityCheckRequest {
+                    DirectMoveRequest {
                         entity: character_entity,
                         start: transform.translation,
                         target: packet.target_location,

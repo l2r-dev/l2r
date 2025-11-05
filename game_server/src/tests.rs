@@ -13,6 +13,7 @@ use game_core::{
     items::{Inventory, PaperDoll},
     network::packets::client::RequestCharCreate,
     npc,
+    npc::DialogTemplater,
     object_id::{ObjectId, ObjectIdManager},
     skills::SkillList,
     stats::*,
@@ -23,6 +24,7 @@ use l2r_core::{
     model::{base_class::BaseClass, race::Race},
 };
 use map::{Region, RegionGeoData, WorldMap, id::RegionId};
+use physics::GameLayer;
 use scripting::RuntimeScriptsTaskSpawned;
 use sea_orm::{DatabaseBackend, MockDatabase, MockExecResult, prelude::Uuid};
 #[cfg(test)]
@@ -50,6 +52,8 @@ pub fn create_test_app() -> App {
     app.init_resource::<CollisionDiagnostics>();
     app.init_resource::<SolverDiagnostics>();
     app.init_resource::<SpatialQueryDiagnostics>();
+    app.init_resource::<DialogTemplater>();
+    app.insert_resource(ObjectIdManager::new());
 
     {
         // Spawn a mock RuntimeScriptsTaskSpawned that's already loaded
@@ -257,6 +261,7 @@ pub fn test_character_bundle_data(id: ObjectId) -> character::Bundle {
         session_id: ConnectionId::next().into(),
         movable: Movable::from(base_class_stats),
         collider: base_class_stats.collider(appearance.gender),
+        collision_layers: GameLayer::player(),
         base_class,
         vitals_stats,
         primal_stats: base_class_stats.primal_stats.clone(),

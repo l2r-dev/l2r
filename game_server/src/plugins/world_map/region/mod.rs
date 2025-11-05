@@ -287,7 +287,7 @@ mod tests {
         let vec = Vec3::new(28302.0, -4232.0, 11008.0);
         let geo_vec = WorldMap::vec3_to_geo(vec);
         let (_region, geodata) = create_default_test_region();
-        let nearest_height = geodata.nearest_height(&geo_vec);
+        let nearest_height = geodata.nearest_height(geo_vec);
         assert_eq!(nearest_height, Some(-4232));
     }
 
@@ -312,6 +312,7 @@ mod tests {
         let can_see = geodata.can_see_target(
             WorldMap::game_to_geo(from_location),
             WorldMap::game_to_geo(to_location),
+            1000,
         );
         assert!(can_see);
     }

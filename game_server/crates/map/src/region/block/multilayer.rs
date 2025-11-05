@@ -225,7 +225,7 @@ mod tests {
     fn test_multilayer_block_get_nearest_height() {
         let block = create_test_multilayer_block();
         let loc = GeoVec3::new(GeoPoint::new(1500, 3300), -1900);
-        let z = block.nearest_height(&loc);
+        let z = block.nearest_height(loc);
         assert_eq!(z, -1984);
     }
 
@@ -234,9 +234,9 @@ mod tests {
         let mut block = create_test_multilayer_block();
         let point = GeoPoint::new(5, 5);
         let loc = GeoVec3::new(point, 150);
-        let cell_index = Block::cell_offset(&point) as usize;
+        let cell_index = Block::cell_offset(point) as usize;
         block.cells[cell_index] = LayeredCell::new(vec![Cell::new(0b1010)]);
-        let nswe = block.passable_directions(&loc);
+        let nswe = block.passable_directions(loc);
         assert_eq!(nswe, NavigationDirection::from_bits_truncate(0b1010));
     }
 
@@ -247,19 +247,19 @@ mod tests {
 
         assert_eq!(
             layered_cell
-                .nearest_cell(&GeoVec3::new(GeoPoint::new(0, 0), 60))
+                .nearest_cell(GeoVec3::new(GeoPoint::new(0, 0), 60))
                 .value(),
             100
         );
         assert_eq!(
             layered_cell
-                .nearest_cell(&GeoVec3::new(GeoPoint::new(0, 0), 120))
+                .nearest_cell(GeoVec3::new(GeoPoint::new(0, 0), 120))
                 .value(),
             200
         );
         assert_eq!(
             layered_cell
-                .nearest_cell(&GeoVec3::new(GeoPoint::new(0, 0), 180))
+                .nearest_cell(GeoVec3::new(GeoPoint::new(0, 0), 180))
                 .value(),
             300
         );
@@ -275,15 +275,15 @@ mod tests {
         let layered_cell = LayeredCell::new(cells);
 
         assert_eq!(
-            layered_cell.nearest_height(&GeoVec3::new(GeoPoint::new(0, 0), -2950)),
+            layered_cell.nearest_height(GeoVec3::new(GeoPoint::new(0, 0), -2950)),
             -3000
         );
         assert_eq!(
-            layered_cell.nearest_height(&GeoVec3::new(GeoPoint::new(0, 0), -50)),
+            layered_cell.nearest_height(GeoVec3::new(GeoPoint::new(0, 0), -50)),
             0
         );
         assert_eq!(
-            layered_cell.nearest_height(&GeoVec3::new(GeoPoint::new(0, 0), 3200)),
+            layered_cell.nearest_height(GeoVec3::new(GeoPoint::new(0, 0), 3200)),
             3000
         );
     }
@@ -298,15 +298,15 @@ mod tests {
         let layered_cell = LayeredCell::new(cells);
 
         assert_eq!(
-            layered_cell.nearest_nswe(&GeoVec3::new(GeoPoint::new(0, 0), -3000)),
+            layered_cell.nearest_nswe(GeoVec3::new(GeoPoint::new(0, 0), -3000)),
             NavigationDirection::NORTH
         );
         assert_eq!(
-            layered_cell.nearest_nswe(&GeoVec3::new(GeoPoint::new(0, 0), 0)),
+            layered_cell.nearest_nswe(GeoVec3::new(GeoPoint::new(0, 0), 0)),
             NavigationDirection::SOUTH
         );
         assert_eq!(
-            layered_cell.nearest_nswe(&GeoVec3::new(GeoPoint::new(0, 0), 3000)),
+            layered_cell.nearest_nswe(GeoVec3::new(GeoPoint::new(0, 0), 3000)),
             NavigationDirection::all()
         );
     }

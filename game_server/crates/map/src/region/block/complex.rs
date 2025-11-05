@@ -144,8 +144,8 @@ mod tests {
         let complex_block = create_test_complex_block();
         let point = GeoPoint::new(5, 5);
         let loc = GeoVec3::new(point, 5);
-        let cell_index = Block::cell_offset(&point);
-        assert_eq!(complex_block.cell_by_loc(&loc).value(), cell_index as i16);
+        let cell_index = Block::cell_offset(point);
+        assert_eq!(complex_block.cell_by_loc(loc).value(), cell_index as i16);
     }
 
     #[test]
@@ -153,9 +153,9 @@ mod tests {
         let mut complex_block = ComplexBlock::default();
         let point = GeoPoint::new(5, 5);
         let loc = GeoVec3::new(point, 5);
-        let cell_index = Block::cell_offset(&point) as usize;
+        let cell_index = Block::cell_offset(point) as usize;
         complex_block.cells[cell_index] = Cell::new(1000);
-        assert_eq!(complex_block.nearest_height(&loc), 496);
+        assert_eq!(complex_block.nearest_height(loc), 496);
     }
 
     #[test]
@@ -163,10 +163,10 @@ mod tests {
         let mut complex_block = ComplexBlock::default();
         let point = GeoPoint::new(5, 5);
         let loc = GeoVec3::new(point, 5);
-        let cell_index = Block::cell_offset(&point) as usize;
+        let cell_index = Block::cell_offset(point) as usize;
         complex_block.cells[cell_index] = Cell::new(0b1010); // NSWE flags
         assert_eq!(
-            complex_block.passable_directions(&loc),
+            complex_block.passable_directions(loc),
             NavigationDirection::from_bits_truncate(0b1010)
         );
     }

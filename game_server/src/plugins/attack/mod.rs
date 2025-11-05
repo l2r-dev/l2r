@@ -34,7 +34,7 @@ use game_core::{
     },
     npc,
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
-    path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
+    path_finding::{DirectMoveRequest, InActionPathfindingTimer},
     stats::*,
 };
 use map::{Door, WorldMapQuery};
@@ -237,7 +237,7 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                         .try_insert(InActionPathfindingTimer::default());
 
                     commands.trigger_targets(
-                        VisibilityCheckRequest {
+                        DirectMoveRequest {
                             entity: attacker.entity,
                             start: attacker_pos,
                             target: target_pos,

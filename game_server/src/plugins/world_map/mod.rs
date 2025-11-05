@@ -31,7 +31,7 @@ impl Plugin for WorldMapPlugin {
 mod tests {
     use super::*;
     use crate::tests::serial;
-    use game_core::{character::Character, path_finding::VisibilityCheckRequest};
+    use game_core::{character::Character, path_finding::DirectMoveRequest};
     use spatial::GameVec3;
 
     #[test]
@@ -47,7 +47,7 @@ mod tests {
             let (character_entity, character_transform) = query.single(world).unwrap();
 
             world.trigger_targets(
-                VisibilityCheckRequest {
+                DirectMoveRequest {
                     entity: character_entity,
                     start: character_transform.translation,
                     target: final_pos,

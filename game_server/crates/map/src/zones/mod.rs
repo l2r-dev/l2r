@@ -173,7 +173,7 @@ impl Zone {
         } else {
             let center = self.center();
             let centered_vertices: Vec<Vec3> = self.vertices().map(|v| v - center).collect();
-            Collider::convex_hull(centered_vertices).unwrap()
+            Collider::convex_hull(centered_vertices).unwrap_or(Collider::cuboid(10.0, 10.0, 10.0))
         }
     }
 }

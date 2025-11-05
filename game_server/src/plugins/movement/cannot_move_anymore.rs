@@ -11,7 +11,7 @@ use game_core::{
         session::PacketReceiveParams,
     },
     object_id::ObjectId,
-    path_finding::VisibilityCheckRequest,
+    path_finding::DirectMoveRequest,
     stats::Movable,
 };
 
@@ -87,7 +87,7 @@ fn handle(
 
                 // Request visibility check which will trigger pathfinding if needed
                 commands.trigger_targets(
-                    VisibilityCheckRequest {
+                    DirectMoveRequest {
                         entity: character_entity,
                         start: start_pos,
                         target: target_pos,
