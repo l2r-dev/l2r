@@ -75,7 +75,7 @@ mod tests {
         let cell = Cell::from_le_bytes([0x01, 0x0F]);
         let flat_block = FlatBlock(cell);
         assert_eq!(
-            flat_block.passable_directions(&GeoVec3::default()),
+            flat_block.passable_directions(GeoVec3::default()),
             NavigationDirection::all(),
             "The passable_directions() method should return all NSWE flags"
         );
@@ -87,7 +87,7 @@ mod tests {
         let expected_height = 0x0201;
         let flat_block = FlatBlock(cell);
         assert_eq!(
-            flat_block.nearest_height(&GeoVec3::default()),
+            flat_block.nearest_height(GeoVec3::default()),
             expected_height,
             "The get_nearest_height() method returns an incorrect height"
         );

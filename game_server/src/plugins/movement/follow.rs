@@ -5,7 +5,7 @@ use game_core::{
     attack::Attacking,
     movement::{FollowComponentsPlugin, FollowRequest, Following},
     network::packets::server::{ActionFail, GameServerPacket},
-    path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
+    path_finding::{DirectMoveRequest, InActionPathfindingTimer},
 };
 use map::WorldMapQuery;
 use state::GameServerStateSystems;
@@ -72,7 +72,7 @@ fn following_changed(
                 .try_insert(InActionPathfindingTimer::default());
 
             commands.trigger_targets(
-                VisibilityCheckRequest {
+                DirectMoveRequest {
                     entity: follower,
                     start: follower_pos,
                     target: target_pos,

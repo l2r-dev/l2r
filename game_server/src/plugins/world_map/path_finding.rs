@@ -4,8 +4,8 @@ use game_core::{
     network::packets::server::{DropItem, GameServerPacket},
     object_id::ObjectId,
     path_finding::{
-        DropDebugItem, InActionPathfindingTimer, PathFindingComponentsPlugin, PathFindingRequest,
-        PathFindingResult, VisibilityCheckRequest, VisibilityCheckResult, WAYPOINTS_CAPACITY,
+        DirectMoveRequest, DirectMoveResult, DropDebugItem, InActionPathfindingTimer,
+        PathFindingComponentsPlugin, PathFindingRequest, PathFindingResult, WAYPOINTS_CAPACITY,
     },
     stats::Movable,
 };
@@ -90,13 +90,13 @@ fn handle_pathfinding_results(path_result: Trigger<PathFindingResult>, mut comma
 }
 
 fn handle_visibility_result(
-    visibility_result: Trigger<VisibilityCheckResult>,
+    visibility_result: Trigger<DirectMoveResult>,
     mut commands: Commands,
     map_query: WorldMapQuery,
 ) {
     let result = visibility_result.event();
     let requester_entity = visibility_result.target();
-    if !result.is_visible {
+    if !result.can_move {
         commands.trigger_targets(
             PathFindingRequest {
                 start: result.start,
@@ -128,7 +128,7 @@ fn handle_visibility_result(
 }
 
 fn check_visibility(
-    visibility_request: Trigger<VisibilityCheckRequest>,
+    visibility_request: Trigger<DirectMoveRequest>,
     map_query: WorldMapQuery,
     mut commands: Commands,
 ) -> Result<()> {
@@ -137,7 +137,7 @@ fn check_visibility(
     let start_region = RegionId::from(request.start);
     let goal_region = RegionId::from(request.target);
 
-    let is_visible = if start_region != goal_region {
+    let can_move = if start_region != goal_region {
         // TODO: fix it later, now check real visibility only inside region.
         true
     } else {
@@ -145,10 +145,10 @@ fn check_visibility(
     };
 
     commands.trigger_targets(
-        VisibilityCheckResult {
+        DirectMoveResult {
             start: request.start,
             target: request.target,
-            is_visible,
+            can_move,
         },
         visibility_request.target(),
     );
@@ -156,7 +156,7 @@ fn check_visibility(
 }
 
 fn check_visibility_event(
-    mut visibility_request: EventReader<VisibilityCheckRequest>,
+    mut visibility_request: EventReader<DirectMoveRequest>,
     map_query: WorldMapQuery,
     mut commands: Commands,
 ) -> Result<()> {
@@ -164,7 +164,7 @@ fn check_visibility_event(
         let start_region = RegionId::from(request.start);
         let goal_region = RegionId::from(request.target);
 
-        let is_visible = if start_region != goal_region {
+        let can_move = if start_region != goal_region {
             // TODO: fix it later, now check real visibility only inside region.
             true
         } else {
@@ -172,10 +172,10 @@ fn check_visibility_event(
         };
 
         commands.trigger_targets(
-            VisibilityCheckResult {
+            DirectMoveResult {
                 start: request.start,
                 target: request.target,
-                is_visible,
+                can_move,
             },
             request.entity,
         );

@@ -191,8 +191,8 @@ mod tests {
 
     #[test]
     fn test_cell_offset() {
-        assert_eq!(Block::cell_offset(&test_location_one()), TEST_OFFSET);
-        assert_eq!(Block::cell_offset(&test_location_two()), TEST_OFFSET_TWO);
+        assert_eq!(Block::cell_offset(test_location_one()), TEST_OFFSET);
+        assert_eq!(Block::cell_offset(test_location_two()), TEST_OFFSET_TWO);
     }
     #[test]
     fn test_cell_coordinates_by_offset() {

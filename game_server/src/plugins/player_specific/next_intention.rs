@@ -12,7 +12,7 @@ use game_core::{
     movement::{FollowRequest, Following},
     npc::DialogRequest,
     object_id::ObjectId,
-    path_finding::VisibilityCheckRequest,
+    path_finding::DirectMoveRequest,
     player_specific::next_intention::{NextIntention, NextIntentionComponentsPlugin},
 };
 use state::GameMechanicsSystems;
@@ -67,7 +67,7 @@ fn next_intention_system(
                     )>();
 
                     commands.trigger_targets(
-                        VisibilityCheckRequest {
+                        DirectMoveRequest {
                             entity: character.entity,
                             start,
                             target,

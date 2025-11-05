@@ -19,7 +19,7 @@ impl Plugin for ObjectIdPlugin {
     }
 }
 
-fn init_object_id_manager(
+pub fn init_object_id_manager(
     mut commands: Commands,
     repo_manager: Res<RepositoryManager>,
     object_id_manager: Option<Res<ObjectIdManager>>,

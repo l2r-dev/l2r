@@ -2,21 +2,32 @@ use bevy::prelude::*;
 use smallvec::SmallVec;
 use spatial::WayPoint;
 use std::time::Duration;
-use visibility::GeoVisibilityComponentsPlugin;
-
-mod visibility;
-pub use visibility::*;
 
 pub struct PathFindingComponentsPlugin;
 impl Plugin for PathFindingComponentsPlugin {
     fn build(&self, app: &mut App) {
         app.register_type::<InActionPathfindingTimer>();
 
-        app.add_plugins(GeoVisibilityComponentsPlugin)
+        app.add_event::<DirectMoveRequest>()
+            .add_event::<DirectMoveResult>()
             .add_event::<PathFindingRequest>()
             .add_event::<PathFindingResult>()
             .add_event::<DropDebugItem>();
     }
+}
+
+#[derive(Clone, Copy, Debug, Event, Reflect)]
+pub struct DirectMoveRequest {
+    pub entity: Entity,
+    pub start: Vec3,
+    pub target: Vec3,
+}
+
+#[derive(Clone, Copy, Debug, Event)]
+pub struct DirectMoveResult {
+    pub start: Vec3,
+    pub target: Vec3,
+    pub can_move: bool,
 }
 
 #[derive(Clone, Copy, Debug, Event, PartialEq)]

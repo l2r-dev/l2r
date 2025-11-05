@@ -11,7 +11,7 @@ use game_core::{
     },
     npc::*,
     object_id::ObjectId,
-    path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
+    path_finding::{DirectMoveRequest, InActionPathfindingTimer},
     stats::*,
 };
 use l2r_core::{
@@ -120,7 +120,7 @@ fn dialog_request_handler(
                     .try_insert(InActionPathfindingTimer::default());
 
                 commands.trigger_targets(
-                    VisibilityCheckRequest {
+                    DirectMoveRequest {
                         entity: requester.entity,
                         start: requester_pos,
                         target: target_pos,

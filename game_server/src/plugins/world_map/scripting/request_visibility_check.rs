@@ -1,12 +1,12 @@
 use bevy::prelude::*;
-use game_core::path_finding::VisibilityCheckRequest;
+use game_core::path_finding::DirectMoveRequest;
 use scripting::{
     bindings::{FunctionCallContext, InteropError},
     prelude::ScriptValue,
 };
 use std::any::TypeId;
 
-/// Sends a VisibilityCheckRequest event that will be processed by the pathfinding system
+/// Sends a DirectMoveRequest event that will be processed by the pathfinding system
 pub(crate) fn script_request_visibility_check(
     ctx: FunctionCallContext,
     data: ScriptValue,
@@ -77,7 +77,7 @@ pub(crate) fn script_request_visibility_check(
     };
 
     world_guard.with_global_access(|world| {
-        world.send_event(VisibilityCheckRequest {
+        world.send_event(DirectMoveRequest {
             entity,
             start,
             target,

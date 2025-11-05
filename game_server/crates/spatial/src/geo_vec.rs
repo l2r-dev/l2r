@@ -147,7 +147,7 @@ impl GeoVec3 {
     /// # use spatial::{GeoVec3, GeoPoint};
     /// let start = GeoVec3::new(GeoPoint::new(0, 0), 0);
     /// let end = GeoVec3::new(GeoPoint::new(2, 2), 0);
-    /// let line: Vec<GeoVec3> = start.line_to(&end).collect();
+    /// let line: Vec<GeoVec3> = start.line_to(end).collect();
     /// assert_eq!(line, vec![
     ///     GeoVec3::new(GeoPoint::new(0, 0), 0),
     ///     GeoVec3::new(GeoPoint::new(1, 1), 0),
@@ -321,7 +321,7 @@ mod tests {
     fn test_line_iterator() {
         let start = GeoVec3::new(GeoPoint::new(42722, 37551), -4233);
         let end = GeoVec3::new(GeoPoint::new(42724, 37553), -4233);
-        let line: Vec<GeoVec3> = start.line_to(&end).collect();
+        let line: Vec<GeoVec3> = start.line_to(end).collect();
         assert_eq!(
             line,
             vec![
@@ -336,7 +336,7 @@ mod tests {
     fn test_line_iterator_diagonal() {
         let start = GeoVec3::new(GeoPoint::new(42722, 37551), -4233);
         let end = GeoVec3::new(GeoPoint::new(42725, 37552), -4233);
-        let line: Vec<GeoVec3> = start.line_to(&end).collect();
+        let line: Vec<GeoVec3> = start.line_to(end).collect();
         assert_eq!(
             line,
             vec![
@@ -352,7 +352,7 @@ mod tests {
     fn test_line_iterator_3d() {
         let start = GeoVec3::new(GeoPoint::new(42722, 37551), -4233);
         let end = GeoVec3::new(GeoPoint::new(42724, 37553), -4231);
-        let line: Vec<GeoVec3> = start.line_to(&end).collect();
+        let line: Vec<GeoVec3> = start.line_to(end).collect();
         assert_eq!(
             line,
             vec![

@@ -13,7 +13,7 @@ use game_core::{
         packets::server::{ActionFail, GameServerPacket, GetItem},
     },
     object_id::ObjectId,
-    path_finding::{InActionPathfindingTimer, VisibilityCheckRequest},
+    path_finding::{DirectMoveRequest, InActionPathfindingTimer},
 };
 use l2r_core::metrics::Metrics;
 use map::WorldMapQuery;
@@ -149,7 +149,7 @@ fn pickup_request_handler(
                     .try_insert(InActionPathfindingTimer::default());
 
                 commands.trigger_targets(
-                    VisibilityCheckRequest {
+                    DirectMoveRequest {
                         entity: character.entity,
                         start: char_pos,
                         target: item_pos,
