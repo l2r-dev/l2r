@@ -13,6 +13,7 @@ use crate::{
 use avian3d::prelude::{Collider, CollisionLayers};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
+use bevy_ecs::query::QueryData;
 use derive_more::{From, Into};
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
@@ -110,6 +111,12 @@ impl ItemInWorld {
             DespawnChildren,
         )>();
     }
+}
+
+#[derive(QueryData)]
+pub struct ItemQuery<'a> {
+    object_id: Ref<'a, ObjectId>,
+    item: Ref<'a, Item>,
 }
 
 #[derive(Clone, Component, Copy, Debug, Deserialize, Reflect)]
@@ -213,7 +220,7 @@ impl Item {
             enchant_level: 0,
             mana: None,
             drop_time: None,
-            augumentation_id: AugumentId::default(),
+            augumentation_id: item_info.display_id().unwrap_or(id).into(),
             custom_type1: 0,
             custom_type2: 0,
             enchant_options: EnchantOptions::default(),
@@ -241,7 +248,7 @@ impl Item {
             enchant_level: 0,
             mana: None,
             drop_time: None,
-            augumentation_id: AugumentId::default(),
+            augumentation_id: item_info.display_id().unwrap_or(id).into(),
             custom_type1: 0,
             custom_type2: 0,
             enchant_options: EnchantOptions::default(),
@@ -264,7 +271,7 @@ impl Item {
             enchant_level: model.enchant_level(),
             mana: model.mana(),
             drop_time: None,
-            augumentation_id: AugumentId::default(),
+            augumentation_id: item_info.display_id().unwrap_or(model.item_id()).into(),
             custom_type1: 0,
             custom_type2: 0,
             enchant_options: EnchantOptions::default(),
@@ -274,6 +281,10 @@ impl Item {
 
     pub fn id(&self) -> Id {
         self.id
+    }
+
+    pub fn augmentation_id(&self) -> AugumentId {
+        self.augumentation_id
     }
 
     pub fn set_owner(&mut self, object_id: Option<ObjectId>) {

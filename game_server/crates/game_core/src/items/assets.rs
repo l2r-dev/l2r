@@ -63,8 +63,8 @@ impl ItemsDataTable {
 
 #[derive(SystemParam)]
 pub struct ItemsDataQuery<'w> {
-    pub items_data_table: Res<'w, ItemsDataTable>,
-    pub items_data_assets: Res<'w, Assets<ItemsInfo>>,
+    items_data_table: Res<'w, ItemsDataTable>,
+    items_data_assets: Res<'w, Assets<ItemsInfo>>,
 }
 
 impl<'w> ItemsDataQuery<'w> {
@@ -84,16 +84,52 @@ impl<'w> ItemsDataQuery<'w> {
     }
 }
 
-pub trait GetItemInfoFromUniqItem {
-    fn item_info_from_uniq(&self, unique_item: &Option<UniqueItem>) -> Option<&ItemInfo>;
+impl<'w> IntoIterator for &'w ItemsDataQuery<'w> {
+    type Item = (Id, &'w ItemInfo);
+    type IntoIter = ItemsDataIterator<'w>;
+
+    fn into_iter(self) -> Self::IntoIter {
+        ItemsDataIterator::new(&self.items_data_table, &self.items_data_assets)
+    }
 }
 
-impl GetItemInfoFromUniqItem for (&Assets<ItemsInfo>, &ItemsDataTable) {
-    fn item_info_from_uniq(&self, unique_item: &Option<UniqueItem>) -> Option<&ItemInfo> {
-        let Some(unique_item) = unique_item else {
-            return None;
-        };
+pub struct ItemsDataIterator<'a> {
+    table_iter: bevy::platform::collections::hash_map::Iter<'a, Id, Handle<ItemsInfo>>,
+    items_data_assets: &'a Assets<ItemsInfo>,
+    current_items_iter: Option<bevy::platform::collections::hash_map::Iter<'a, Id, ItemInfo>>,
+}
 
-        self.1.get_item_info(unique_item.item().id(), self.0).ok()
+impl<'a> ItemsDataIterator<'a> {
+    fn new(table: &'a ItemsDataTable, items_data_assets: &'a Assets<ItemsInfo>) -> Self {
+        Self {
+            table_iter: table.iter(),
+            items_data_assets,
+            current_items_iter: None,
+        }
+    }
+}
+
+impl<'a> Iterator for ItemsDataIterator<'a> {
+    type Item = (Id, &'a ItemInfo);
+
+    fn next(&mut self) -> Option<Self::Item> {
+        loop {
+            // Try to get the next item from the current ItemsInfo
+            if let Some(ref mut items_iter) = self.current_items_iter {
+                if let Some((id, item_info)) = items_iter.next() {
+                    return Some((*id, item_info));
+                }
+            }
+
+            // If we exhausted the current ItemsInfo, get the next one from the table
+            let (_, handle) = self.table_iter.next()?;
+
+            if let Some(items_info) = self.items_data_assets.get(handle.id()) {
+                self.current_items_iter = Some(items_info.iter());
+            } else {
+                // If we can't get the ItemsInfo for this handle, continue to the next one
+                self.current_items_iter = None;
+            }
+        }
     }
 }

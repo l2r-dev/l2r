@@ -3,13 +3,14 @@ use crate::{
     action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
     encounters::KnownEntities,
-    items::{self, Inventory, PaperDoll},
+    items::{Inventory, ItemsDataQuery, PaperDoll},
     object_id::ObjectId,
     skills::SkillList,
     stats::{NameTitle, *},
 };
 use avian3d::prelude::*;
 use bevy::prelude::*;
+use bevy_ecs::system::SystemState;
 use l2r_core::model::{base_class::BaseClass, race::Race, session::SessionId};
 use physics::GameLayer;
 use spatial::GameVec3;
@@ -61,11 +62,17 @@ impl Bundle {
         db_model: Model,
         paper_doll: PaperDoll,
         session_id: SessionId,
-        world: &World,
+        world: &mut World,
     ) -> Self {
-        let stats_table = world.resource::<StatsTable>();
-        let class_tree = stats_table.class_tree_world(world);
-        let race_stats = stats_table.race_stats_world(world);
+        let mut items_state: SystemState<ItemsDataQuery> = SystemState::new(world);
+        let mut stats_state: SystemState<StatsTableQuery> = SystemState::new(world);
+
+        let items_query = items_state.get(world);
+        let stats_query = stats_state.get(world);
+
+        let class_tree = stats_query.class_tree();
+        let race_stats = stats_query.race_stats();
+
         let stat_formula_registry = world.resource::<StatFormulaRegistry>();
 
         let base_class = class_tree.get_base_class(db_model.class_id);
@@ -84,20 +91,15 @@ impl Bundle {
 
         let mut stat_modifiers = StatModifiers::default();
 
-        let items_data_table = world.resource::<items::ItemsDataTable>();
-        let items_data_assets = world.resource::<Assets<items::ItemsInfo>>();
-
         // Get all paperdoll items and apply their stats
         for slot_item in paper_doll.iter() {
             let Some(unique_item) = slot_item.unique_item() else {
                 continue;
             };
             let item = unique_item.item();
-
-            let Ok(item_info) = items_data_table.get_item_info(item.id(), items_data_assets) else {
+            let Ok(item_info) = items_query.get_item_info(item.id()) else {
                 continue;
             };
-
             if let Some(stats) = item_info.stats_modifiers() {
                 stat_modifiers.merge(&stats);
             }

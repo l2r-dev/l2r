@@ -19,7 +19,7 @@ mod quality;
 mod use_shot;
 
 pub use assets::*;
-use augument_id::*;
+pub use augument_id::*;
 pub use bodypart::BodyPart;
 pub use condition::*;
 pub use drop::*;

@@ -1,10 +1,11 @@
 use super::model::Model;
 use crate::{
     character,
-    items::{self, PaperDoll, UniqueItem},
+    items::{self, ItemsDataQuery, PaperDoll, UniqueItem},
     network::packets::client::CharSlot,
 };
 use bevy::{log, prelude::*};
+use bevy_ecs::system::SystemState;
 use bevy_slinet::connection::ConnectionId;
 use l2r_core::model::session::SessionId;
 use std::fmt;
@@ -52,7 +53,7 @@ impl Table {
     pub fn from_char_list(
         mut char_with_items: Vec<(Model, Vec<items::model::Model>)>,
         session_id: SessionId,
-        world: &World,
+        world: &mut World,
     ) -> Result<Self, TableError> {
         if char_with_items.len() > Self::MAX_CHARACTERS_ON_ACCOUNT {
             return Err(TableError::MaxCharsReached)?;
@@ -68,15 +69,14 @@ impl Table {
                 last_used_slot = Some(CharSlot(index as u32));
             }
 
-            let items_data_table = world.resource::<items::ItemsDataTable>();
-            let items_data_assets = world.resource::<Assets<items::ItemsInfo>>();
+            let mut items_state: SystemState<ItemsDataQuery> = SystemState::new(world);
+            let items_query = items_state.get_mut(world);
 
             // Process items and create paperdoll
             let items = db_items
                 .iter()
                 .filter_map(|item| {
-                    let item_info =
-                        items_data_table.get_item_info(item.item_id(), items_data_assets);
+                    let item_info = items_query.get_item_info(item.item_id());
                     if let Ok(item_info) = item_info {
                         Some(UniqueItem::from_model(*item, item_info))
                     } else {
@@ -92,26 +92,16 @@ impl Table {
             let mut paperdoll = PaperDoll::default();
 
             for unique_item in items {
-                let Some(bodypart) = unique_item.item().bodypart() else {
+                if unique_item.item().bodypart().is_none() {
                     log::warn!(
                         "CharTable: No bodypart found for item id {:?}",
                         unique_item.item().id()
                     );
                     continue;
                 };
-
-                paperdoll.equip(
-                    bodypart,
-                    Some(unique_item),
-                    items_data_table
-                        .get_item_info(unique_item.item().id(), items_data_assets)
-                        .expect("should exist"),
-                    (items_data_assets, items_data_table),
-                );
+                paperdoll.equip(unique_item, &items_query);
             }
-
             let bundle = character::Bundle::new(char, paperdoll, session_id, world);
-
             bundles.push(bundle);
         }
 

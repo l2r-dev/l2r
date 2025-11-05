@@ -52,7 +52,7 @@ pub enum DollSlot {
 }
 
 impl DollSlot {
-    pub fn base_p_def_slots() -> [DollSlot; 7] {
+    pub const fn base_p_def_slots() -> [DollSlot; 7] {
         [
             DollSlot::Chest,
             DollSlot::Legs,
@@ -63,7 +63,7 @@ impl DollSlot {
             DollSlot::Cloak,
         ]
     }
-    pub fn base_m_def_slots() -> [DollSlot; 5] {
+    pub const fn base_m_def_slots() -> [DollSlot; 5] {
         [
             DollSlot::RightEar,
             DollSlot::LeftEar,
@@ -149,7 +149,8 @@ impl DollSlot {
             BodyPart::AllDress => &[DollSlot::Chest, DollSlot::Legs],
         }
     }
-    pub fn user_info_iter() -> impl Iterator<Item = DollSlot> {
+
+    pub const fn user_info_slots() -> [DollSlot; 26] {
         use DollSlot::*;
         [
             Underwear,
@@ -179,10 +180,9 @@ impl DollSlot {
             Talisman6,
             Belt,
         ]
-        .iter()
-        .copied()
     }
-    pub fn char_info_iter() -> impl Iterator<Item = DollSlot> {
+
+    pub fn char_info_slots() -> [DollSlot; 21] {
         use DollSlot::*;
         [
             Underwear,
@@ -207,9 +207,8 @@ impl DollSlot {
             Talisman6,
             Belt,
         ]
-        .iter()
-        .copied()
     }
+
     pub fn to_le_bytes(&self) -> [u8; 4] {
         (*self as u32).to_le_bytes()
     }
@@ -251,52 +250,10 @@ impl PaperDoll {
         })
     }
 
-    pub fn unequip(&mut self, object_id: ObjectId) {
-        let slots_to_clear: Vec<_> = self
-            .0
-            .iter()
-            .enumerate()
-            .map(|(slot, item)| (DollSlot::try_from(slot as u32).unwrap(), item))
-            .filter_map(|(slot, item)| {
-                if let Some(item) = item
-                    && item.object_id() == object_id
-                {
-                    Some(slot)
-                } else {
-                    None
-                }
-            })
-            .collect();
-
-        for slot in slots_to_clear {
-            self[slot] = None;
-        }
-    }
-
-    pub fn equip_without_validations(
-        &mut self,
-        slot: DollSlot,
-        item: UniqueItem,
-    ) -> Option<UniqueItem> {
-        let previous_item = self[slot];
-
-        self[slot] = Some(item);
-
-        previous_item
-    }
-
-    pub fn equip(
-        &mut self,
-        body_part: BodyPart,
-        item: Option<UniqueItem>,
-        item_info: &ItemInfo,
-        items_infos: (&Assets<ItemsInfo>, &ItemsDataTable),
-    ) -> (DollSlot, Vec<Option<UniqueItem>>) {
-        let mut previous = Vec::with_capacity(2);
-
+    fn slot_by_bodypart(&self, body_part: BodyPart) -> DollSlot {
         let slots = DollSlot::bodypart_slots(body_part);
 
-        let selected_slot = match body_part {
+        match body_part {
             BodyPart::BothEar | BodyPart::BothFinger | BodyPart::Talisman => {
                 self.free_or_first_slot(slots)
             }
@@ -307,46 +264,73 @@ impl PaperDoll {
                     .copied()
                     .expect("At least one slot must exist")
             }
-        };
+        }
+    }
 
-        previous.push(self[selected_slot]);
-        self[selected_slot] = item;
+    pub fn unequip(&mut self, object_id: ObjectId) {
+        for slot in DollSlot::iter() {
+            if let Some(item) = self[slot]
+                && item.object_id() == object_id
+            {
+                self[slot] = None;
+            }
+        }
+    }
+
+    pub fn equip_without_validations(
+        &mut self,
+        slot: DollSlot,
+        item: UniqueItem,
+    ) -> Option<UniqueItem> {
+        let previous_item = self[slot];
+        self[slot] = Some(item);
+        previous_item
+    }
+
+    pub fn equip(
+        &mut self,
+        item: UniqueItem,
+        items_data: &ItemsDataQuery,
+    ) -> Option<(DollSlot, Vec<UniqueItem>)> {
+        let mut previous = Vec::with_capacity(2);
+        let item_info = items_data.get_item_info(item.item().id()).ok()?;
+
+        let body_part = item_info.bodypart()?;
+        let selected_slot = self.slot_by_bodypart(body_part);
 
         match body_part {
             BodyPart::BothHand => {
-                if let Some(left_info) = items_infos.item_info_from_uniq(&self[DollSlot::LeftHand])
+                if let Some(left_info) = items_data.item_info_from_uniq(&self[DollSlot::LeftHand])
                     && !item_info.ammo_matches(left_info)
                 {
-                    previous.push(self[DollSlot::LeftHand]);
-                    self[DollSlot::LeftHand] = None;
+                    previous.extend(self[DollSlot::LeftHand].take());
                 }
             }
             BodyPart::LeftHand => {
-                if let Some(right_info) =
-                    items_infos.item_info_from_uniq(&self[DollSlot::RightHand])
+                if let Some(right_info) = items_data.item_info_from_uniq(&self[DollSlot::RightHand])
                     && !right_info.ammo_matches(item_info)
                 {
-                    previous.push(self[DollSlot::RightHand]);
-                    self[DollSlot::RightHand] = None;
+                    previous.extend(self[DollSlot::RightHand].take());
                 }
             }
             BodyPart::FullBody => {
-                previous.push(self[DollSlot::Legs]);
-                self[DollSlot::Legs] = None;
+                previous.extend(self[DollSlot::Legs].take());
             }
             BodyPart::Legs => {
-                if let Some(item) = self[DollSlot::Chest]
-                    && let Some(item) = item.item().bodypart()
-                    && item == BodyPart::FullBody
+                if let Some(chest_item) = self[DollSlot::Chest]
+                    && let Some(chest_info) = items_data.item_info_from_uniq(&Some(chest_item))
+                    && chest_info.bodypart() == Some(BodyPart::FullBody)
                 {
-                    previous.push(self[DollSlot::Chest]);
-                    self[DollSlot::Chest] = None;
+                    previous.extend(self[DollSlot::Chest].take());
                 }
             }
             _ => {}
         }
 
-        (selected_slot, previous)
+        previous.extend(self[selected_slot].take());
+        self[selected_slot] = Some(item);
+
+        Some((selected_slot, previous))
     }
 
     pub fn is_equipped(&self, object_id: ObjectId) -> bool {
@@ -364,11 +348,15 @@ impl PaperDoll {
     }
 
     pub fn user_info_iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
-        DollSlot::user_info_iter().map(|slot| SlotItem(slot, self[slot]))
+        DollSlot::user_info_slots()
+            .into_iter()
+            .map(|slot| SlotItem(slot, self[slot]))
     }
 
     pub fn char_info_iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
-        DollSlot::char_info_iter().map(move |slot| SlotItem(slot, self[slot]))
+        DollSlot::char_info_slots()
+            .into_iter()
+            .map(move |slot| SlotItem(slot, self[slot]))
     }
 }
 

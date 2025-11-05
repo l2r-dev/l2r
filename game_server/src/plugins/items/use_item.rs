@@ -3,8 +3,8 @@ use bevy_ecs::system::SystemParam;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     items::{
-        CharacterInventories, ConsumableKind, EquipItems, Item, ItemsDataTable, ItemsInfo, Kind,
-        UnequipItems, UseShot,
+        CharacterInventories, ConsumableKind, EquipItems, Item, ItemsDataQuery, Kind, UnequipItems,
+        UseShot,
     },
     network::{
         config::GameServerNetworkConfig, packets::client::GameClientPacket,
@@ -25,8 +25,7 @@ struct UseItemParams<'w, 's> {
     receive_params: PacketReceiveParams<'w, 's>,
     character_inventories: CharacterInventories<'w, 's>,
     items: Query<'w, 's, (Entity, Ref<'static, Item>)>,
-    items_data_table: Res<'w, ItemsDataTable>,
-    items_data_assets: Res<'w, Assets<ItemsInfo>>,
+    items_data_query: ItemsDataQuery<'w>,
     equip_items: EventWriter<'w, EquipItems>,
     unequip_items: EventWriter<'w, UnequipItems>,
     use_shot_events: EventWriter<'w, UseShot>,
@@ -46,9 +45,7 @@ fn handle(
         let (item_entity, item) = params
             .items
             .by_object_id(item_object_id, params.object_id_manager.as_ref())?;
-        let item_info = params
-            .items_data_table
-            .get_item_info(item.id(), &params.items_data_assets)?;
+        let item_info = params.items_data_query.get_item_info(item.id())?;
 
         log::debug!(
             "Use item: {} (entity: {}, object_id: {})",

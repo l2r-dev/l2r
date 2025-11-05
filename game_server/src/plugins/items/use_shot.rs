@@ -390,7 +390,7 @@ struct WeaponShotCompatibility {
 fn check_weapon_shot_compatibility(
     paper_doll: &PaperDoll,
     shot_item: &Item,
-    items_data_table: &ItemsDataQuery,
+    items_data_query: &ItemsDataQuery,
 ) -> Result<Option<WeaponShotCompatibility>> {
     // Check if weapon is equipped
     let weapon = paper_doll.get(DollSlot::RightHand);
@@ -399,8 +399,8 @@ fn check_weapon_shot_compatibility(
     };
 
     let item = weapon_unique.item();
-    let weapon_item_info = items_data_table.get_item_info(item.id())?;
-    let shot_item_info = items_data_table.get_item_info(shot_item.id())?;
+    let weapon_item_info = items_data_query.get_item_info(item.id())?;
+    let shot_item_info = items_data_query.get_item_info(shot_item.id())?;
 
     // Check grade compatibility
     let weapon_grade = weapon_item_info.grade().shot_grade();

@@ -98,15 +98,11 @@ fn handle_equip_items(
                 }
             }
 
-            let (doll_slot, mut previous_items) = paperdoll.equip(
-                bodypart,
-                Some(UniqueItem::new(item_object_id, *item)),
-                item_info,
-                (
-                    items_data_query.items_data_assets.as_ref(),
-                    items_data_query.items_data_table.as_ref(),
-                ),
-            );
+            let Some((doll_slot, mut previous_items)) =
+                paperdoll.equip(UniqueItem::new(item_object_id, *item), &items_data_query)
+            else {
+                continue;
+            };
 
             item.equip(doll_slot);
             equipped_items.push(item_object_id);
@@ -132,19 +128,22 @@ fn handle_equip_items(
                         continue;
                     }
 
-                    previous_items.push(paperdoll.equip_without_validations(
+                    let prev_no_valid = paperdoll.equip_without_validations(
                         DollSlot::LeftHand,
                         UniqueItem::new(*ammo_obj_id, *ammo),
-                    ));
+                    );
+
+                    if let Some(previous) = prev_no_valid {
+                        previous_items.push(previous);
+                    }
 
                     ammo.equip(DollSlot::LeftHand);
                     equipped_items.push(*ammo_obj_id);
                 }
             }
 
-            for previous in previous_items.into_iter().flatten() {
+            for previous in previous_items.into_iter() {
                 let prev_oid = previous.object_id();
-
                 let Ok((_, mut prev_item)) =
                     items.by_object_id_mut(prev_oid, object_id_manager.as_ref())
                 else {
