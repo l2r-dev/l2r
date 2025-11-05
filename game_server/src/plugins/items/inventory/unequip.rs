@@ -2,13 +2,14 @@ use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     items::{
-        self, DollSlot, ITEMS_OPERATION_STACK, Item, ItemLocationVariant, ItemsDataQuery,
-        ItemsUnEquipped, Kind, PaperDoll, UnequipItems, UniqueItem, UpdateType,
+        self, DollSlot, ITEMS_OPERATION_STACK, ItemLocationVariant, ItemsDataAccess,
+        ItemsDataQuery, ItemsDataQueryMut, ItemsUnEquipped, Kind, PaperDoll, UnequipItems,
+        UniqueItem, UpdateType,
     },
     network::packets::server::{
         GameServerPacket, InventoryUpdate, SendCharInfo, SendUserInfo, SystemMessage,
     },
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
+    object_id::ObjectId,
     stats::{AttackEffects, StatModifiers, Weapon},
 };
 use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
@@ -36,11 +37,9 @@ impl Plugin for UnequipItemPlugin {
 
 fn handle_unequip_items(
     mut unequip_events: EventReader<UnequipItems>,
-    mut items: Query<Mut<Item>>,
     mut paperdolls: Query<Mut<PaperDoll>>,
     mut items_unequipped: EventWriter<ItemsUnEquipped>,
-    items_data_query: ItemsDataQuery,
-    object_id_manager: Res<ObjectIdManager>,
+    mut items_data: ItemsDataQueryMut,
 ) {
     for (event, _event_id) in unequip_events.par_read() {
         let character_entity = event.entity();
@@ -50,27 +49,54 @@ fn handle_unequip_items(
             return;
         };
 
-        let mut unequipped_items = SmallVec::<[ObjectId; ITEMS_OPERATION_STACK]>::new();
+        // Phase 1: Plan unequip actions using immutable access
+        let mut unequip_plan = Vec::new();
 
         for item_object_id in item_object_ids {
-            let Ok(mut item) = items.by_object_id_mut(item_object_id, object_id_manager.as_ref())
-            else {
-                continue;
+            let item = match items_data.item_by_object_id(item_object_id) {
+                Ok(item) => item,
+                Err(_) => continue,
             };
 
-            item.unequip();
-            paperdoll.unequip(item_object_id);
-            unequipped_items.push(item_object_id);
+            let item_id = item.id();
 
-            if let Ok(template) = items_data_query.get_item_info(item.id())
-                && template.kind().bow_or_crossbow()
-                && let Some(left_item) = paperdoll[DollSlot::LeftHand]
-                && let Ok(mut left_uniq_item) =
-                    items.by_object_id_mut(left_item.object_id(), object_id_manager.as_ref())
-            {
-                left_uniq_item.unequip();
-                paperdoll.unequip(left_item.object_id());
-                unequipped_items.push(left_item.object_id());
+            // Check if we need to also unequip ammo from left hand
+            let should_unequip_ammo = items_data
+                .item_info(item_id)
+                .ok()
+                .map(|template| template.kind().bow_or_crossbow())
+                .unwrap_or(false);
+
+            let ammo_to_unequip = if should_unequip_ammo {
+                paperdoll[DollSlot::LeftHand]
+            } else {
+                None
+            };
+
+            unequip_plan.push(UnequipAction {
+                item_object_id,
+                ammo_to_unequip,
+            });
+        }
+
+        // Phase 2: Execute unequip actions with mutable access
+        let mut unequipped_items = SmallVec::<[ObjectId; ITEMS_OPERATION_STACK]>::new();
+
+        for action in unequip_plan {
+            // Unequip main item
+            if let Ok(mut item) = items_data.item_by_object_id_mut(action.item_object_id) {
+                item.unequip();
+                paperdoll.unequip(action.item_object_id);
+                unequipped_items.push(action.item_object_id);
+            }
+
+            // Unequip ammo if needed
+            if let Some(ammo_oid) = action.ammo_to_unequip {
+                if let Ok(mut ammo) = items_data.item_by_object_id_mut(ammo_oid) {
+                    ammo.unequip();
+                    paperdoll.unequip(ammo_oid);
+                    unequipped_items.push(ammo_oid);
+                }
             }
         }
 
@@ -84,33 +110,32 @@ fn handle_unequip_items(
     }
 }
 
+/// Represents a planned unequip action
+struct UnequipAction {
+    item_object_id: ObjectId,
+    ammo_to_unequip: Option<ObjectId>,
+}
+
 fn handle_items_unequipped(
     mut unequipped: EventReader<ItemsUnEquipped>,
     mut commands: Commands,
-    items: Query<Ref<Item>>,
-    items_data_query: ItemsDataQuery,
+    items_data: ItemsDataQuery,
     repo_manager: Res<RepositoryManager>,
     mut attack_effects: Query<Mut<AttackEffects>>,
     mut stats_modifiers: Query<Mut<StatModifiers>>,
-    object_id_manager: Res<ObjectIdManager>,
 ) -> Result<()> {
     for (event, _event_id) in unequipped.par_read() {
         let character_entity = event.entity();
-        let items_object_ids_from_event = event.object_ids().to_vec();
 
-        let items_list = items_object_ids_from_event
-            .iter()
-            .filter_map(|item_object_id| {
-                items
-                    .by_object_id(*item_object_id, object_id_manager.as_ref())
-                    .ok()
-                    .map(|item| UniqueItem::new(*item_object_id, *item))
-            })
-            .collect::<SmallVec<[UniqueItem; ITEMS_OPERATION_STACK]>>();
+        if event.object_ids().is_empty() {
+            continue;
+        }
+
+        let item_oids = event.object_ids().to_vec();
 
         if let Ok(mut stat_modifiers) = stats_modifiers.get_mut(character_entity) {
-            for unique_item in &items_list {
-                let Ok(item_info) = items_data_query.get_item_info(unique_item.item().id()) else {
+            for oid in item_oids.iter() {
+                let Ok(item_info) = items_data.info_by_object_id(*oid) else {
                     continue;
                 };
 
@@ -121,8 +146,8 @@ fn handle_items_unequipped(
         }
 
         if let Ok(mut attack_effects) = attack_effects.get_mut(character_entity) {
-            for unique_item in &items_list {
-                let Ok(item_info) = items_data_query.get_item_info(unique_item.item().id()) else {
+            for oid in item_oids.iter() {
+                let Ok(item_info) = items_data.info_by_object_id(*oid) else {
                     continue;
                 };
 
@@ -131,6 +156,8 @@ fn handle_items_unequipped(
                 }
             }
         }
+
+        let items_list = items_data.unique_items_from_object_ids(item_oids.as_slice());
 
         // Send message to the client
         send_unequipped_system_messages(commands.reborrow(), character_entity, &items_list);
@@ -143,21 +170,16 @@ fn handle_items_unequipped(
         if !event.skip_db_update() && !repo_manager.is_mock() {
             let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
             commands.spawn_task(move || async move {
-                if !items_object_ids_from_event.is_empty() {
-                    items_repository
-                        .update_many(|update| {
-                            update
-                                .col_expr(
-                                    items::model::Column::Location,
-                                    Expr::value(ItemLocationVariant::Inventory),
-                                )
-                                .filter(
-                                    items::model::Column::ObjectId
-                                        .is_in(items_object_ids_from_event),
-                                )
-                        })
-                        .await?;
-                }
+                items_repository
+                    .update_many(|update| {
+                        update
+                            .col_expr(
+                                items::model::Column::Location,
+                                Expr::value(ItemLocationVariant::Inventory),
+                            )
+                            .filter(items::model::Column::ObjectId.is_in(item_oids))
+                    })
+                    .await?;
 
                 Ok(())
             });

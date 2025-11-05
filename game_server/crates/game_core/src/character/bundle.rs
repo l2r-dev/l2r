@@ -3,7 +3,7 @@ use crate::{
     action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
     encounters::KnownEntities,
-    items::{Inventory, ItemsDataQuery, PaperDoll},
+    items::{Inventory, ItemsDataAccess, ItemsDataQuery, PaperDoll},
     object_id::ObjectId,
     skills::SkillList,
     stats::{NameTitle, *},
@@ -93,11 +93,13 @@ impl Bundle {
 
         // Get all paperdoll items and apply their stats
         for slot_item in paper_doll.iter() {
-            let Some(unique_item) = slot_item.unique_item() else {
+            let Some(object_id) = slot_item.object_id else {
                 continue;
             };
-            let item = unique_item.item();
-            let Ok(item_info) = items_query.get_item_info(item.id()) else {
+            let Ok(item) = items_query.item_by_object_id(object_id) else {
+                continue;
+            };
+            let Ok(item_info) = items_query.item_info(item.id()) else {
                 continue;
             };
             if let Some(stats) = item_info.stats_modifiers() {

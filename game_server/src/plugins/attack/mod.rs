@@ -22,7 +22,7 @@ use game_core::{
     },
     character::Character,
     items::{
-        DollSlot, Item, ItemInfo, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
+        DollSlot, Item, ItemsDataAccess, ItemsDataQuery, Kind, PaperDoll, Soulshot, UniqueItem,
         UpdateType, WeaponAttackParams,
     },
     movement::{LookAt, Movement},
@@ -33,7 +33,7 @@ use game_core::{
         },
     },
     npc,
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
+    object_id::{ObjectId, ObjectIdManager, QueryByObjectIdMut},
     path_finding::{DirectMoveRequest, InActionPathfindingTimer},
     stats::*,
 };
@@ -107,10 +107,8 @@ struct TargetQuery<'a> {
 struct AttackSystemParams<'w, 's> {
     attacking_objects: Query<'w, 's, AttackingQuery<'static>, AttackingFilter>,
     target_objects: Query<'w, 's, TargetQuery<'static>, (Without<Dead>, With<VitalsStats>)>,
-    shot_used: Query<'w, 's, Ref<'static, Soulshot>>,
-    items: Query<'w, 's, Entity, With<Item>>,
-    items_data_query: ItemsDataQuery<'w>,
-    object_id_manager: Res<'w, ObjectIdManager>,
+    shot_used: Query<'w, 's, Has<Soulshot>>,
+    items_data: ItemsDataQuery<'w, 's>,
     commands: ParallelCommands<'w, 's>,
     hit_calc_query: HitMissQuery<'w, 's>,
     calc_shield_query: CalcShieldQuery<'w, 's>,
@@ -141,18 +139,22 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
 
         let range = attacker.attack_stats.get(AttackStat::PAtkRange);
         if distance <= range {
-            let weapon_uniq = attacker
+            let weapon_oid = attacker
                 .paper_doll
                 .as_ref()
                 .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
 
-            let weapon_info = params.items_data_query.item_info_from_uniq(&weapon_uniq);
+            let attack_params = weapon_oid
+                .and_then(|object_id| {
+                    let weapon_info = params.items_data.info_by_object_id(object_id).ok()?;
 
-            let attack_params = if let Some(Kind::Weapon(weapon)) = weapon_info.map(|v| v.kind()) {
-                weapon.attack_params()
-            } else {
-                WeaponAttackParams::default()
-            };
+                    if let Kind::Weapon(weapon) = weapon_info.kind() {
+                        Some(weapon.attack_params())
+                    } else {
+                        None
+                    }
+                })
+                .unwrap_or_default();
 
             // Early return if weapon is on cooldown
             if attack_params.reuse_delay.is_some() && attacker.weapon_reuse_active {
@@ -160,9 +162,7 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
             }
 
             // Early return if bow and cannot see target or out of arrows
-            if attack_params.is_bow
-                && !process_bow(&attacker, &aiming_target, &params.map_query, &params)
-            {
+            if attack_params.is_bow && !process_bow(&attacker, &aiming_target, &params) {
                 return;
             }
 
@@ -171,8 +171,6 @@ fn attack_entity(params: AttackSystemParams) -> Result<()> {
                     attacker.entity,
                     aiming_target.entity,
                     range,
-                    weapon_uniq,
-                    weapon_info,
                     attack_params,
                     &params,
                 )
@@ -267,13 +265,13 @@ fn proceed_weapon_reuse(
 fn process_bow(
     attacker: &AttackingQueryItem,
     aiming_target: &TargetQueryReadOnlyItem,
-    map_query: &WorldMapQuery,
     params: &AttackSystemParams,
 ) -> bool {
     if let Some(paperdoll) = attacker.paper_doll.as_deref() {
-        let arrow_count = paperdoll[DollSlot::LeftHand]
-            .map(|v| v.item().count())
-            .unwrap_or(0);
+        let arrow_oid = paperdoll[DollSlot::LeftHand];
+        let item =
+            arrow_oid.and_then(|object_id| params.items_data.item_by_object_id(object_id).ok());
+        let arrow_count = item.map(|item| item.count()).unwrap_or(0);
 
         if arrow_count == 0 {
             params.commands.command_scope(|mut commands| {
@@ -289,7 +287,7 @@ fn process_bow(
         }
     };
 
-    let can_see = map_query.can_see_target(
+    let can_see = params.map_query.can_see_target(
         attacker.transform.translation,
         aiming_target.transform.translation,
     );
@@ -321,16 +319,13 @@ fn consume_arrow(
     object_id_manager: Res<ObjectIdManager>,
 ) -> Result<()> {
     let char_entity = trigger.target();
-    let mut paperdoll = paperdoll_query.get_mut(char_entity)?;
-    let Some(paperdoll_left_hand_item) = &mut paperdoll[DollSlot::LeftHand] else {
+    let paperdoll = paperdoll_query.get_mut(char_entity)?;
+    let Some(arrows_oid) = paperdoll[DollSlot::LeftHand] else {
         return Ok(());
     };
 
-    let left_hand_item_object_id = paperdoll_left_hand_item.object_id();
-    let (_, mut left_hand_item) =
-        items.by_object_id_mut(left_hand_item_object_id, object_id_manager.as_ref())?;
+    let (_, mut left_hand_item) = items.by_object_id_mut(arrows_oid, object_id_manager.as_ref())?;
 
-    paperdoll_left_hand_item.item_mut().dec_count();
     left_hand_item.dec_count();
 
     commands.trigger_targets(
@@ -342,7 +337,7 @@ fn consume_arrow(
 
     commands.trigger_targets(
         GameServerPacket::from(InventoryUpdate::new(
-            smallvec![*paperdoll_left_hand_item],
+            smallvec![UniqueItem::new(arrows_oid, *left_hand_item)],
             UpdateType::Modify,
         )),
         char_entity,
@@ -550,24 +545,22 @@ fn remove_soulshot(mut commands: Commands, weapon_entity: Option<Entity>) {
     }
 }
 
-fn calc_hit_info(
-    attacker: Entity,
-    target: Entity,
-    weapon_uniq: Option<UniqueItem>,
-    weapon_info: Option<&ItemInfo>,
-    params: &AttackSystemParams,
-) -> Result<HitInfo> {
+fn calc_hit_info(attacker: Entity, target: Entity, params: &AttackSystemParams) -> Result<HitInfo> {
     // Calculate weapon entity and soulshot usage
-    let weapon_entity = weapon_uniq.and_then(|weapon| {
-        params
-            .items
-            .by_object_id(weapon.object_id(), params.object_id_manager.as_ref())
-            .ok()
-    });
+    let weapon_oid = params
+        .attacking_objects
+        .get(attacker)?
+        .paper_doll
+        .as_ref()
+        .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
 
-    let soulshot_used = weapon_entity
-        .and_then(|v| params.shot_used.get(v).ok())
-        .is_some();
+    let weapon_entity = weapon_oid.and_then(|oid| params.items_data.entity(oid).ok());
+
+    let soulshot_used =
+        weapon_entity.is_some_and(|entity| matches!(params.shot_used.get(entity), Ok(true)));
+
+    let weapon_info =
+        weapon_oid.and_then(|object_id| params.items_data.info_by_object_id(object_id).ok());
 
     let soulshot_grade = if soulshot_used {
         weapon_info.map(|w| w.grade().shot_grade())
@@ -614,8 +607,6 @@ fn calculate_attack_hit(
     attacker: Entity,
     aiming_target: Entity,
     range: f32,
-    weapon_uniq: Option<UniqueItem>,
-    weapon_info: Option<&ItemInfo>,
     attack_params: WeaponAttackParams,
     params: &AttackSystemParams,
 ) -> Result<(Attack, AttackHit, Duration, Option<Duration>)> {
@@ -647,18 +638,20 @@ fn calculate_attack_hit(
 
     let mut max_targets_count = attacker_stats.get(AttackStat::PAtkMaxTargetsCount).round() as u32;
 
+    let weapon_oid = params
+        .attacking_objects
+        .get(attacker)?
+        .paper_doll
+        .as_ref()
+        .and_then(|paper_doll| paper_doll.get(DollSlot::RightHand));
+
     // Calculate weapon entity for later use
-    let weapon_entity = weapon_uniq.and_then(|weapon| {
-        params
-            .items
-            .by_object_id(weapon.object_id(), params.object_id_manager.as_ref())
-            .ok()
-    });
+    let weapon_entity = weapon_oid.and_then(|oid| params.items_data.entity(oid).ok());
 
     if max_targets_count > 1 {
         let mut hits = vec![];
 
-        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, params)?;
+        let hit_info = calc_hit_info(attacker, aiming_target, params)?;
 
         let mut all_missed = hit_info.miss;
 
@@ -697,13 +690,7 @@ fn calculate_attack_hit(
             }
 
             //TODO: нужна проверка на враждебность
-            let hit_info = calc_hit_info(
-                attacker,
-                next_target.entity,
-                weapon_uniq,
-                weapon_info,
-                params,
-            )?;
+            let hit_info = calc_hit_info(attacker, next_target.entity, params)?;
 
             all_missed &= hit_info.miss;
 
@@ -732,15 +719,14 @@ fn calculate_attack_hit(
             weapon_reuse_duration,
         ))
     } else {
-        let hit_info = calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, params)?;
+        let hit_info = calc_hit_info(attacker, aiming_target, params)?;
 
         attack_packet.add_hit(*target.object_id, hit_info);
 
         let attack_hit = if let Some(second_attack_interval_multiplier) =
             attack_params.secondary_attack_delay_multiplier
         {
-            let second_hit_info =
-                calc_hit_info(attacker, aiming_target, weapon_uniq, weapon_info, params)?;
+            let second_hit_info = calc_hit_info(attacker, aiming_target, params)?;
 
             attack_packet.add_hit(*target.object_id, second_hit_info);
 

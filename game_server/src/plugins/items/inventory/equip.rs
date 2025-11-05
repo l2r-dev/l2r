@@ -2,14 +2,14 @@ use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     items::{
-        self, BodyPart, DollSlot, EquipItems, ITEMS_OPERATION_STACK, Item, ItemLocationVariant,
-        ItemsDataQuery, ItemsEquipped, ItemsUnEquipped, Kind, PaperDoll, UniqueItem, UpdateType,
-        model,
+        self, BodyPart, DollSlot, EquipItems, ITEMS_OPERATION_STACK, Inventory,
+        ItemLocationVariant, ItemsDataAccess, ItemsDataQuery, ItemsDataQueryMut, ItemsEquipped,
+        ItemsUnEquipped, Kind, PaperDoll, UniqueItem, UpdateType, model,
     },
     network::packets::server::{
         GameServerPacket, InventoryUpdate, SendCharInfo, SendUserInfo, SystemMessage,
     },
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
+    object_id::ObjectId,
     stats::{AttackEffects, StatModifiers, Weapon},
 };
 use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
@@ -38,124 +38,127 @@ fn handle_equip_items(
     mut equip: EventReader<EquipItems>,
     mut items_equipped: EventWriter<ItemsEquipped>,
     mut items_unequipped: EventWriter<ItemsUnEquipped>,
-    mut items: Query<(Ref<ObjectId>, Mut<Item>)>,
-    mut characters: Query<(Mut<PaperDoll>, Mut<StatModifiers>, Ref<ObjectId>)>,
-    items_data_query: ItemsDataQuery,
-    object_id_manager: Res<ObjectIdManager>,
+    mut characters: Query<(Mut<PaperDoll>, Mut<StatModifiers>, Ref<Inventory>)>,
+    mut items_query: ItemsDataQueryMut,
 ) {
     for (event, _event_id) in equip.par_read() {
         let character_entity = event.entity();
         let item_object_ids = event.object_ids().to_vec();
 
-        let Ok((mut paperdoll, mut stat_modifiers, char_object_id)) =
+        let Ok((mut paperdoll, mut stat_modifiers, inventory)) =
             characters.get_mut(character_entity)
         else {
             continue;
         };
 
-        let mut equipped_items = SmallVec::<[ObjectId; ITEMS_OPERATION_STACK]>::new();
-        let mut unequipped_items = SmallVec::<[ObjectId; ITEMS_OPERATION_STACK]>::new();
+        // Phase 1: Validate and plan equipment changes using immutable access
+        let mut equip_plan = Vec::new();
 
         for item_object_id in item_object_ids {
-            let Ok((_, mut item)) =
-                items.by_object_id_mut(item_object_id, object_id_manager.as_ref())
-            else {
-                warn!(
-                    "EquipItems: No item found for object id {:?}",
-                    item_object_id
-                );
-                continue;
-            };
-
-            let Ok(item_info) = items_data_query.get_item_info(item.id()) else {
-                warn!("EquipItems: No item info found for item id {:?}", item.id());
-                continue;
-            };
-
-            let Some(bodypart) = item_info.bodypart() else {
-                warn!("EquipItems: No bodypart found for item id {:?}", item.id());
-                continue;
-            };
-
-            if bodypart == BodyPart::LeftHand && item_info.kind().ammo() {
-                let Some(right_hand_item) = paperdoll[DollSlot::RightHand] else {
-                    continue;
-                };
-
-                let Ok(right_hand_item_info) =
-                    items_data_query.get_item_info(right_hand_item.item().id())
-                else {
+            let item = match items_query.item_by_object_id(item_object_id) {
+                Ok(item) => item,
+                Err(_) => {
                     warn!(
-                        "EquipItems: No item info found for item in right hand id {:?}",
-                        item.id()
+                        "EquipItems: No item found for object id {:?}",
+                        item_object_id
                     );
-
                     continue;
-                };
+                }
+            };
 
-                if !right_hand_item_info.ammo_matches(item_info) {
+            let item_info = match items_query.item_info(item.id()) {
+                Ok(info) => info,
+                Err(_) => {
+                    warn!("EquipItems: No item info found for item id {:?}", item.id());
+                    continue;
+                }
+            };
+
+            let bodypart = match item_info.bodypart() {
+                Some(bp) => bp,
+                None => {
+                    warn!("EquipItems: No bodypart found for item id {:?}", item.id());
+                    continue;
+                }
+            };
+
+            // Validate ammo equipping to left hand
+            if bodypart == BodyPart::LeftHand && item_info.kind().ammo() {
+                let valid_ammo = paperdoll[DollSlot::RightHand]
+                    .and_then(|rh_oid| items_query.info_by_object_id(rh_oid).ok())
+                    .map(|rh_info| rh_info.ammo_matches(item_info))
+                    .unwrap_or(false);
+
+                if !valid_ammo {
                     continue;
                 }
             }
 
-            let Some((doll_slot, mut previous_items)) =
-                paperdoll.equip(UniqueItem::new(item_object_id, *item), &items_data_query)
-            else {
-                continue;
+            // Determine which slot and what gets unequipped
+            let (doll_slot, previous_items) = match paperdoll.equip(item_object_id, &items_query) {
+                Some(result) => result,
+                None => continue,
             };
 
-            item.equip(doll_slot);
-            equipped_items.push(item_object_id);
-
-            if bodypart == BodyPart::BothHand
+            // Check if we need to auto-equip ammo for bow/crossbow
+            let ammo_to_equip = if bodypart == BodyPart::BothHand
                 && paperdoll[DollSlot::LeftHand].is_none()
                 && item_info.kind().bow_or_crossbow()
             {
-                for (ammo_obj_id, mut ammo) in items.iter_mut() {
-                    let Some(owner_id) = ammo.owner() else {
-                        continue;
-                    };
+                find_matching_ammo(&items_query, &inventory, item_info)
+            } else {
+                None
+            };
 
-                    if owner_id != *char_object_id {
-                        continue;
-                    }
+            equip_plan.push(EquipAction {
+                item_object_id,
+                doll_slot,
+                previous_items,
+                ammo_to_equip,
+                stats: item_info.stats_modifiers(),
+            });
+        }
 
-                    let Ok(ammo_info) = items_data_query.get_item_info(ammo.id()) else {
-                        continue;
-                    };
+        // Phase 2: Execute equipment changes with mutable access
+        let mut equipped_items = SmallVec::<[ObjectId; ITEMS_OPERATION_STACK]>::new();
+        let mut unequipped_items = SmallVec::<[ObjectId; ITEMS_OPERATION_STACK]>::new();
 
-                    if !item_info.ammo_matches(ammo_info) {
-                        continue;
-                    }
+        for action in equip_plan {
+            // Equip main item
+            if let Ok(mut item) = items_query.item_by_object_id_mut(action.item_object_id) {
+                item.equip(action.doll_slot);
+                equipped_items.push(action.item_object_id);
+            }
 
-                    let prev_no_valid = paperdoll.equip_without_validations(
-                        DollSlot::LeftHand,
-                        UniqueItem::new(*ammo_obj_id, *ammo),
-                    );
+            // Equip ammo if needed
+            if let Some(ammo_oid) = action.ammo_to_equip {
+                let prev_item = paperdoll.equip_without_validations(DollSlot::LeftHand, ammo_oid);
 
-                    if let Some(previous) = prev_no_valid {
-                        previous_items.push(previous);
-                    }
-
+                if let Ok(mut ammo) = items_query.item_by_object_id_mut(ammo_oid) {
                     ammo.equip(DollSlot::LeftHand);
-                    equipped_items.push(*ammo_obj_id);
+                    equipped_items.push(ammo_oid);
+                }
+
+                // If there was a previous item in left hand, unequip it
+                if let Some(prev_oid) = prev_item {
+                    if let Ok(mut prev) = items_query.item_by_object_id_mut(prev_oid) {
+                        prev.unequip();
+                        unequipped_items.push(prev_oid);
+                    }
                 }
             }
 
-            for previous in previous_items.into_iter() {
-                let prev_oid = previous.object_id();
-                let Ok((_, mut prev_item)) =
-                    items.by_object_id_mut(prev_oid, object_id_manager.as_ref())
-                else {
-                    continue;
-                };
-
-                paperdoll.unequip(prev_oid);
-                prev_item.unequip();
-                unequipped_items.push(prev_oid);
+            // Unequip previous items
+            for previous_oid in action.previous_items {
+                if let Ok(mut prev_item) = items_query.item_by_object_id_mut(previous_oid) {
+                    paperdoll.unequip(previous_oid);
+                    prev_item.unequip();
+                    unequipped_items.push(previous_oid);
+                }
             }
 
-            if let Some(stats) = item_info.stats_modifiers() {
+            // Apply stat modifiers
+            if let Some(stats) = action.stats {
                 stat_modifiers.merge(&stats);
             }
         }
@@ -174,14 +177,37 @@ fn handle_equip_items(
     }
 }
 
+/// Represents a planned equipment action
+struct EquipAction {
+    item_object_id: ObjectId,
+    doll_slot: DollSlot,
+    previous_items: Vec<ObjectId>,
+    ammo_to_equip: Option<ObjectId>,
+    stats: Option<StatModifiers>,
+}
+
+/// Find matching ammo in inventory for the given weapon
+fn find_matching_ammo(
+    items_query: &impl ItemsDataAccess,
+    inventory: &Inventory,
+    weapon_info: &items::ItemInfo,
+) -> Option<ObjectId> {
+    for ammo_oid in inventory.iter() {
+        if let Ok(ammo_info) = items_query.info_by_object_id(*ammo_oid) {
+            if weapon_info.ammo_matches(ammo_info) {
+                return Some(*ammo_oid);
+            }
+        }
+    }
+    None
+}
+
 fn handle_items_equipped(
     mut equipped: EventReader<ItemsEquipped>,
     mut commands: Commands,
-    items: Query<Ref<Item>>,
     repo_manager: Res<RepositoryManager>,
-    items_data_query: ItemsDataQuery,
+    items_query: ItemsDataQuery,
     mut attack_effects: Query<Mut<AttackEffects>>,
-    object_id_manager: Res<ObjectIdManager>,
 ) -> Result<()> {
     for (event, _event_id) in equipped.par_read() {
         let character_entity = event.entity();
@@ -192,12 +218,7 @@ fn handle_items_equipped(
         };
 
         for item_object_id in items_object_ids.iter() {
-            let item_id = match items.by_object_id(*item_object_id, object_id_manager.as_ref()) {
-                Ok(item) => item.id(),
-                Err(_) => continue,
-            };
-
-            let Ok(item_info) = items_data_query.get_item_info(item_id) else {
+            let Ok(item_info) = items_query.info_by_object_id(*item_object_id) else {
                 continue;
             };
 
@@ -210,8 +231,8 @@ fn handle_items_equipped(
         let items_list = items_object_ids
             .iter()
             .filter_map(|item_object_id| {
-                items
-                    .by_object_id(*item_object_id, object_id_manager.as_ref())
+                items_query
+                    .item_by_object_id(*item_object_id)
                     .ok()
                     .map(|item| UniqueItem::new(*item_object_id, *item))
             })

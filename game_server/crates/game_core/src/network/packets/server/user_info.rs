@@ -1,5 +1,10 @@
 use super::{GameServerPacketCodes, GameServerPackets, ex_br_extra_user_info::ExBrExtraUserInfo};
-use crate::{character, items, object_id::ObjectId, stats::*};
+use crate::{
+    character,
+    items::{self, ItemsQuery},
+    object_id::ObjectId,
+    stats::*,
+};
 use bevy::prelude::*;
 use core::fmt;
 use l2r_core::{
@@ -55,6 +60,7 @@ impl fmt::Debug for UserInfo {
 impl UserInfo {
     pub fn from_query<'a, 'b>(
         character: &'a character::QueryItem<'a, 'b>,
+        items: &ItemsQuery,
         base_speed: MovementStats,
     ) -> Self {
         let collision_radius = character.collider.radius();
@@ -63,16 +69,21 @@ impl UserInfo {
             .paperdoll
             .user_info_iter()
             .map(|slot_item| {
-                slot_item
-                    .unique_item()
-                    .map(|unique_item| {
+                slot_item.object_id.map_or_else(
+                    || {
                         (
-                            unique_item.object_id(),
-                            unique_item.item().id(),
-                            unique_item.item().augmentation_id(),
+                            ObjectId::default(),
+                            items::Id::default(),
+                            items::AugumentId::default(),
                         )
-                    })
-                    .unwrap_or_default()
+                    },
+                    |oid| {
+                        let item = items.item_by_object_id(oid);
+                        let item_id = item.as_ref().map(|i| i.id()).unwrap_or_default();
+                        let aug_id = item.map(|i| i.augmentation_id()).unwrap_or_default();
+                        (oid, item_id, aug_id)
+                    },
+                )
             })
             .collect::<Vec<_>>();
 

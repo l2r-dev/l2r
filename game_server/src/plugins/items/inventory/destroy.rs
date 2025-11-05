@@ -1,22 +1,19 @@
 use bevy::prelude::*;
 use game_core::{
     items::{
-        DestroyItemRequest, Inventory, Item, ItemLocation, ItemsDataQuery, UnequipItems,
-        UniqueItem, UpdateType,
+        DestroyItemRequest, Inventory, ItemLocation, ItemsDataAccess, ItemsDataQueryMut,
+        UnequipItems, UniqueItem, UpdateType,
     },
     network::packets::server::{GameServerPacket, InventoryUpdate},
-    object_id::{ObjectIdManager, QueryByObjectIdMut},
 };
 use smallvec::smallvec;
 
 pub fn destroy_item(
     destroy_request: Trigger<DestroyItemRequest>,
     mut commands: Commands,
-    mut items: Query<(Entity, Mut<Item>)>,
     mut inventories: Query<Mut<Inventory>>,
-    items_data_query: ItemsDataQuery,
+    mut items_data: ItemsDataQueryMut,
     mut unequip_items: EventWriter<UnequipItems>,
-    mut object_id_manager: ResMut<ObjectIdManager>,
 ) -> Result<()> {
     let inventory_entity = destroy_request.target();
     let request = destroy_request.event();
@@ -25,12 +22,13 @@ pub fn destroy_item(
 
     inventory.get_item(request.item_oid)?;
 
-    let (item_entity, mut item) =
-        items.by_object_id_mut(request.item_oid, object_id_manager.as_ref())?;
+    let item_entity = items_data.entity(request.item_oid)?;
+
+    let item = *items_data.item_by_object_id(request.item_oid)?;
 
     let item_id = item.id();
     let item_count = item.count();
-    let item_info = items_data_query.get_item_info(item_id)?;
+    let item_info = items_data.item_info(item_id)?;
     // Check if item is stackable and if we're destroying the entire stack or just part
     let destroy_full_stack = !item_info.stackable() || request.count >= item_count;
 
@@ -43,9 +41,9 @@ pub fn destroy_item(
 
         // Remove the item entity from the world
         commands.entity(item_entity).despawn();
-        object_id_manager.release_id(request.item_oid);
+        items_data.object_id_manager.release_id(request.item_oid);
 
-        let unique_item = UniqueItem::new(request.item_oid, *item);
+        let unique_item = UniqueItem::new(request.item_oid, item);
         commands.trigger_targets(
             GameServerPacket::from(InventoryUpdate::new(
                 smallvec![unique_item],
@@ -55,6 +53,7 @@ pub fn destroy_item(
         );
     } else {
         // Partial destroy - split the stack, inventory update will be handled in ItemsPlugin::count_changed
+        let mut item = items_data.item_by_object_id_mut(request.item_oid)?;
         item.set_count(item_count - request.count);
     }
 

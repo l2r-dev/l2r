@@ -1,4 +1,4 @@
-use bevy::{log, prelude::*};
+use bevy::{log, platform::collections::HashMap, prelude::*};
 use bevy_defer::{AccessError, AsyncAccess, AsyncCommandsExtension, AsyncWorld};
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
@@ -141,8 +141,10 @@ async fn login_request_task(packet: AuthLoginRequest, entity: Entity) -> Result<
 
     let chars = match chars_result {
         Ok(chars) => {
-            let mut char_with_items =
-                Vec::with_capacity(character::Table::MAX_CHARACTERS_ON_ACCOUNT);
+            let mut char_with_items: Vec<(
+                character::model::Model,
+                HashMap<ObjectId, items::model::Model>,
+            )> = Vec::with_capacity(character::Table::MAX_CHARACTERS_ON_ACCOUNT);
 
             for character in chars {
                 // Find all paperdoll items for this character
@@ -155,7 +157,11 @@ async fn login_request_task(packet: AuthLoginRequest, entity: Entity) -> Result<
 
                 match items_result {
                     Ok(items) => {
-                        char_with_items.push((character, items));
+                        let items_map = items
+                            .into_iter()
+                            .map(|item| (item.object_id(), item))
+                            .collect();
+                        char_with_items.push((character, items_map));
                     }
                     Err(err) => {
                         log::error!(
@@ -164,7 +170,7 @@ async fn login_request_task(packet: AuthLoginRequest, entity: Entity) -> Result<
                             err
                         );
                         // Still include the character but with empty items
-                        char_with_items.push((character, vec![]));
+                        char_with_items.push((character, HashMap::new()));
                     }
                 }
             }
@@ -177,11 +183,11 @@ async fn login_request_task(packet: AuthLoginRequest, entity: Entity) -> Result<
     };
 
     AsyncWorld.apply_command(move |world: &mut World| {
-        let chars_table = character::Table::from_char_list(chars, session.id(), world);
+        let chars_table = character::Table::from_char_list(chars.clone(), session.id(), world);
 
         match chars_table {
             Ok(table) => {
-                let char_selection_info = CharSelectionInfo::new(&table);
+                let char_selection_info = CharSelectionInfo::new(&table, chars);
                 if let Ok(mut entity) = world.get_entity_mut(entity) {
                     entity.insert(table);
                 }

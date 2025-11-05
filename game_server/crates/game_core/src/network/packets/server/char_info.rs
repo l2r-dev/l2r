@@ -1,5 +1,10 @@
 use super::GameServerPacketCodes;
-use crate::{character, items, object_id::ObjectId, stats::*};
+use crate::{
+    character,
+    items::{self, ItemsQuery},
+    object_id::ObjectId,
+    stats::*,
+};
 use bevy::prelude::*;
 use core::fmt;
 use l2r_core::{
@@ -150,7 +155,11 @@ impl L2rServerPacket for CharInfo {
 }
 
 impl CharInfo {
-    pub fn new(query: &character::QueryItem, base_speed: MovementStats) -> Self {
+    pub fn new(
+        query: &character::QueryItem,
+        items: &ItemsQuery,
+        base_speed: MovementStats,
+    ) -> Self {
         let invisible = !matches!(query.visibility, EncountersVisibility::Visible);
 
         let collision_radius = query.collider.radius();
@@ -159,10 +168,15 @@ impl CharInfo {
             .paperdoll
             .char_info_iter()
             .map(|slot_item| {
-                slot_item
-                    .1
-                    .map(|item| (item.item().id(), item.item().augmentation_id()))
-                    .unwrap_or_default()
+                slot_item.object_id.map_or_else(
+                    || (items::Id::default(), items::AugumentId::default()),
+                    |oid| {
+                        let item = items.item_by_object_id(oid);
+                        let item_id = item.as_ref().map(|i| i.id()).unwrap_or_default();
+                        let aug_id = item.map(|i| i.augmentation_id()).unwrap_or_default();
+                        (item_id, aug_id)
+                    },
+                )
             })
             .collect::<Vec<_>>();
 

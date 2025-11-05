@@ -1,10 +1,11 @@
 use super::model::Model;
 use crate::{
     character,
-    items::{self, ItemsDataQuery, PaperDoll, UniqueItem},
+    items::{self, ItemsDataAccess, ItemsDataQuery, PaperDoll, UniqueItem},
     network::packets::client::CharSlot,
+    object_id::ObjectId,
 };
-use bevy::{log, prelude::*};
+use bevy::{log, platform::collections::HashMap, prelude::*};
 use bevy_ecs::system::SystemState;
 use bevy_slinet::connection::ConnectionId;
 use l2r_core::model::session::SessionId;
@@ -51,7 +52,7 @@ impl Table {
     }
 
     pub fn from_char_list(
-        mut char_with_items: Vec<(Model, Vec<items::model::Model>)>,
+        mut char_with_items: Vec<(Model, HashMap<ObjectId, items::model::Model>)>,
         session_id: SessionId,
         world: &mut World,
     ) -> Result<Self, TableError> {
@@ -75,8 +76,8 @@ impl Table {
             // Process items and create paperdoll
             let items = db_items
                 .iter()
-                .filter_map(|item| {
-                    let item_info = items_query.get_item_info(item.item_id());
+                .filter_map(|(_oid, item)| {
+                    let item_info = items_query.item_info(item.item_id());
                     if let Ok(item_info) = item_info {
                         Some(UniqueItem::from_model(*item, item_info))
                     } else {
@@ -99,7 +100,11 @@ impl Table {
                     );
                     continue;
                 };
-                paperdoll.equip(unique_item, &items_query);
+                paperdoll.equip_not_spawned(
+                    unique_item.object_id(),
+                    unique_item.item().id(),
+                    &items_query,
+                );
             }
             let bundle = character::Bundle::new(char, paperdoll, session_id, world);
             bundles.push(bundle);

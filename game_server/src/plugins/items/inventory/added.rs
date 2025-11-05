@@ -10,7 +10,7 @@ use game_core::{
     network::packets::server::{
         GameServerPacket, GameServerPackets, InventoryUpdate, SystemMessage,
     },
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectIdMut},
+    object_id::ObjectId,
 };
 use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
@@ -20,8 +20,7 @@ use system_messages;
 pub(super) fn add_in_inventory(
     trigger: Trigger<AddInInventory>,
     mut commands: Commands,
-    items_data_query: ItemsDataQuery,
-    items: Query<(Ref<ObjectId>, Mut<Item>)>,
+    items_data: ItemsDataQueryMut,
 ) -> Result<()> {
     let inventory_target = trigger.target();
     let event = trigger.event();
@@ -31,9 +30,9 @@ pub(super) fn add_in_inventory(
     let mut non_stackable_items = SmallVec::<[Entity; ITEMS_OPERATION_STACK]>::new();
 
     for &new_item_entity in event.items.iter() {
-        let (_, new_item) = items.get(new_item_entity)?;
+        let item = items_data.item(new_item_entity)?;
 
-        let new_item_info = items_data_query.get_item_info(new_item.id())?;
+        let new_item_info = items_data.item_info(item.id())?;
 
         if new_item_info.stackable() {
             stackable_items.push(new_item_entity);
@@ -93,9 +92,8 @@ pub(super) fn add_non_stackable(
     added_non_stackable: Trigger<AddNonStackable>,
     mut commands: Commands,
     repo_manager: Res<RepositoryManager>,
-    mut items: Query<(Ref<ObjectId>, Mut<Item>)>,
     mut inventories: Query<(Ref<ObjectId>, Mut<Inventory>)>,
-    items_data_query: ItemsDataQuery,
+    mut items_data: ItemsDataQueryMut,
 ) -> Result<()> {
     let inventory_target = added_non_stackable.target();
     let event = added_non_stackable.event();
@@ -117,10 +115,8 @@ pub(super) fn add_non_stackable(
     let mut items_to_update_in_db = SmallVec::<[UniqueItem; ITEMS_OPERATION_STACK]>::new();
 
     for &new_item_entity in new_items_to_add.iter() {
-        let (new_item_oid, mut new_item) = match items.get_mut(new_item_entity) {
-            Ok(item) => item,
-            Err(_) => return Ok(()),
-        };
+        let new_item_oid = *items_data.object_ids.get(new_item_entity)?;
+        let mut new_item = items_data.item_mut(new_item_entity)?;
 
         let current_owner = new_item.owner();
         let current_location = new_item.location();
@@ -132,9 +128,9 @@ pub(super) fn add_non_stackable(
 
         new_item.set_owner(Some(*owner_id));
 
-        inventory.insert(*new_item_oid);
+        inventory.insert(new_item_oid);
 
-        let unique_item = UniqueItem::new(*new_item_oid, *new_item);
+        let unique_item = UniqueItem::new(new_item_oid, *new_item);
         items_to_add.push(unique_item);
 
         // Only update in DB if owner changed or location is not Inventory or PaperDoll
@@ -159,7 +155,7 @@ pub(super) fn add_non_stackable(
             let mut system_messages = SmallVec::<[GameServerPacket; ITEMS_OPERATION_STACK]>::new();
 
             for item in items_to_add.iter() {
-                let item_info = items_data_query.get_item_info(item.item().id())?;
+                let item_info = items_data.item_info(item.item().id())?;
                 let system_message =
                     create_item_obtained_message(item.item().id(), item.item().count(), item_info);
                 system_messages.push(system_message);
@@ -194,10 +190,8 @@ pub(super) fn add_stackable(
     added_stackable: Trigger<AddStackable>,
     mut commands: Commands,
     inventories: CharacterInventories,
-    mut items: Query<(Ref<ObjectId>, Mut<Item>)>,
-    mut object_id_manager: ResMut<ObjectIdManager>,
     repo_manager: Res<RepositoryManager>,
-    items_data_query: ItemsDataQuery,
+    mut items_data: ItemsDataQueryMut,
 ) -> Result<()> {
     let inventory_target = added_stackable.target();
     let event = added_stackable.event();
@@ -213,17 +207,14 @@ pub(super) fn add_stackable(
     let mut new_in_inventory = SmallVec::<[Entity; ITEMS_OPERATION_STACK]>::new();
 
     for &new_item_entity in new_items_to_add.iter() {
-        let (new_item_oid, new_item) = match items.get(new_item_entity) {
-            Ok(item) => (*item.0, *item.1),
-            Err(_) => continue,
-        };
+        let new_item_oid = *items_data.object_ids.get(new_item_entity)?;
+        let new_item = *items_data.item(new_item_entity)?;
 
         let mut found_match = false;
 
         // Try to find a matching item to stack with
         for &existing_item_oid in inventory.iter() {
-            if let Ok((_, mut existing_item)) =
-                items.by_object_id_mut(existing_item_oid, object_id_manager.as_ref())
+            if let Ok(mut existing_item) = items_data.item_by_object_id_mut(existing_item_oid)
                 && existing_item.id() == new_item.id()
             {
                 // Found a match - update the existing item
@@ -247,7 +238,7 @@ pub(super) fn add_stackable(
         // If no matching item was found inventory, consider it like a new item
         // and add it to the inventory
         if !found_match {
-            if let Ok((_, mut item)) = items.get_mut(new_item_entity)
+            if let Ok(mut item) = items_data.item_mut(new_item_entity)
                 && matches!(item.location(), ItemLocation::World(_))
             {
                 item.set_location(ItemLocation::Inventory);
@@ -269,7 +260,7 @@ pub(super) fn add_stackable(
             let mut system_messages = SmallVec::<[GameServerPacket; ITEMS_OPERATION_STACK]>::new();
 
             for (item_id, added_count) in added_counts.iter() {
-                let item_info = items_data_query.get_item_info(*item_id)?;
+                let item_info = items_data.item_info(*item_id)?;
                 let system_message =
                     create_item_obtained_message(*item_id, *added_count, item_info);
                 system_messages.push(system_message);
@@ -313,7 +304,9 @@ pub(super) fn add_stackable(
     // Delete items from db that were merged
     if !db_deletes.is_empty() {
         let items_repo = items_repository.clone();
-        object_id_manager.release_ids(db_deletes.as_slice());
+        items_data
+            .object_id_manager
+            .release_ids(db_deletes.as_slice());
         commands.spawn_task(move || async move {
             items_repo.delete_by_ids(db_deletes).await?;
             Ok(())

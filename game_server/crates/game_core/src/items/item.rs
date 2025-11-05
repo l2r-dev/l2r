@@ -7,13 +7,13 @@ use super::{
 use crate::{
     custom_hierarchy::DespawnChildren,
     items::{self, DollSlot},
-    object_id::ObjectId,
+    object_id::{ObjectId, ObjectIdManager},
     stats::{EncountersVisibility, ItemElementsInfo},
 };
 use avian3d::prelude::{Collider, CollisionLayers};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
-use bevy_ecs::query::QueryData;
+use bevy_ecs::system::SystemParam;
 use derive_more::{From, Into};
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
@@ -113,10 +113,17 @@ impl ItemInWorld {
     }
 }
 
-#[derive(QueryData)]
-pub struct ItemQuery<'a> {
-    object_id: Ref<'a, ObjectId>,
-    item: Ref<'a, Item>,
+#[derive(SystemParam)]
+pub struct ItemsQuery<'w, 's> {
+    items: Query<'w, 's, &'static Item>,
+    object_id_manager: Res<'w, ObjectIdManager>,
+}
+
+impl<'w, 's> ItemsQuery<'w, 's> {
+    pub fn item_by_object_id(&self, object_id: ObjectId) -> Result<&Item> {
+        let entity = self.object_id_manager.entity_result(object_id)?;
+        Ok(self.items.get(entity)?)
+    }
 }
 
 #[derive(Clone, Component, Copy, Debug, Deserialize, Reflect)]

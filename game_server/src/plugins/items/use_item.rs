@@ -3,14 +3,13 @@ use bevy_ecs::system::SystemParam;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     items::{
-        CharacterInventories, ConsumableKind, EquipItems, Item, ItemsDataQuery, Kind, UnequipItems,
-        UseShot,
+        CharacterInventories, ConsumableKind, EquipItems, ItemsDataAccess, ItemsDataQuery, Kind,
+        UnequipItems, UseShot,
     },
     network::{
         config::GameServerNetworkConfig, packets::client::GameClientPacket,
         session::PacketReceiveParams,
     },
-    object_id::{ObjectIdManager, QueryByObjectId},
 };
 
 pub struct UseItemPlugin;
@@ -24,12 +23,10 @@ impl Plugin for UseItemPlugin {
 struct UseItemParams<'w, 's> {
     receive_params: PacketReceiveParams<'w, 's>,
     character_inventories: CharacterInventories<'w, 's>,
-    items: Query<'w, 's, (Entity, Ref<'static, Item>)>,
-    items_data_query: ItemsDataQuery<'w>,
+    items_data: ItemsDataQuery<'w, 's>,
     equip_items: EventWriter<'w, EquipItems>,
     unequip_items: EventWriter<'w, UnequipItems>,
     use_shot_events: EventWriter<'w, UseShot>,
-    object_id_manager: Res<'w, ObjectIdManager>,
 }
 
 //TODO: Нужен UseKind (можно ли использовать, когда есть ActiveAction)
@@ -42,10 +39,10 @@ fn handle(
         let character_entity = params.receive_params.character(&event.connection.id())?;
         let inventory = params.character_inventories.get(character_entity)?;
         let item_object_id = inventory.get_item(packet.object_id)?;
-        let (item_entity, item) = params
-            .items
-            .by_object_id(item_object_id, params.object_id_manager.as_ref())?;
-        let item_info = params.items_data_query.get_item_info(item.id())?;
+        let item_entity = params.items_data.entity(item_object_id)?;
+
+        let item = params.items_data.item_by_object_id(item_object_id)?;
+        let item_info = params.items_data.item_info(item.id())?;
 
         log::debug!(
             "Use item: {} (entity: {}, object_id: {})",

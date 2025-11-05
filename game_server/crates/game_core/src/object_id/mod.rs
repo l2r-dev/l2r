@@ -91,6 +91,13 @@ impl ObjectIdManager {
         self.entity_by_oid.get(&oid).copied()
     }
 
+    pub fn entity_result(&self, oid: ObjectId) -> Result<Entity> {
+        self.entity_by_oid
+            .get(&oid)
+            .copied()
+            .ok_or_else(|| BevyError::from(format!("No entity found for object ID: {}", oid)))
+    }
+
     pub fn release_id(&mut self, object_id: ObjectId) {
         let object_idx = usize::from(object_id);
         if object_idx >= Self::FIRST_OID {

@@ -12,7 +12,7 @@ use bevy::{
 use game_core::{
     character::{self},
     encounters::*,
-    items::{Item, ItemsDataQuery},
+    items::{Item, ItemsDataAccess, ItemsDataQuery, ItemsQuery},
     movement::Movement,
     network::packets::server::{
         CharInfo, DeleteObject, DoorStatusUpdate, GameServerPacket, MoveToLocation, MoveToPawn,
@@ -200,11 +200,13 @@ struct KnownAddedParams<'w, 's> {
     chars: Query<'w, 's, character::Query<'static>>,
     npcs: Query<'w, 's, npc::NpcQuery<'static>>,
     npc_info: RegionalNpcInfoQuery<'w, 's>,
-    items: Query<'w, 's, ItemQuery<'static>, With<Collider>>,
+    items_data: ItemsDataQuery<'w, 's>,
+    items_with_collider: Query<'w, 's, ItemQuery<'static>, With<Collider>>,
+    items_query: ItemsQuery<'w, 's>,
     doors: Query<'w, 's, DoorQuery<'static>>,
     movement: Query<'w, 's, MovementQuery<'static>>,
     object_transforms: Query<'w, 's, ObjectTransformQuery<'static>>,
-    items_data_query: ItemsDataQuery<'w>,
+
     stats_table: StatsTableQuery<'w>,
 }
 
@@ -229,6 +231,7 @@ fn handle_known_added(
         commands.trigger_targets(
             GameServerPacket::from(CharInfo::new(
                 &character,
+                &params.items_query,
                 base_class_stats.base_speed.clone(),
             )),
             knower,
@@ -262,7 +265,11 @@ fn handle_known_added(
     if let Ok(npc) = params.npcs.get(known) {
         let npc_model = params.npc_info.get(npc.entity)?;
         commands.trigger_targets(
-            GameServerPacket::from(NpcInfo::new(&npc, npc_model.stats.speed.clone())),
+            GameServerPacket::from(NpcInfo::new(
+                &npc,
+                &params.items_query,
+                npc_model.stats.speed.clone(),
+            )),
             knower,
         );
 
@@ -278,10 +285,8 @@ fn handle_known_added(
         commands.trigger_targets(GameServerPacket::from(status_update), knower);
     }
 
-    if let Ok(item_query) = params.items.get(known) {
-        let item_info = params
-            .items_data_query
-            .get_item_info(item_query.item.id())?;
+    if let Ok(item_query) = params.items_with_collider.get(known) {
+        let item_info = params.items_data.item_info(item_query.item.id())?;
 
         commands.trigger_targets(
             GameServerPacket::from(SpawnItem::new(

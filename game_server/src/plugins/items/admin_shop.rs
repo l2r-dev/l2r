@@ -15,7 +15,7 @@ impl Plugin for AdminShopPlugin {
 
 fn update_admin_shop_items_list(
     mut events: EventReader<AdminShopUpdate>,
-    items_data_query: ItemsDataQuery,
+    items_data: ItemsDataQuery,
     mut admin_shop_items: ResMut<AdminShopMultiSells>,
 ) {
     if events.read().next().is_none() {
@@ -26,7 +26,7 @@ fn update_admin_shop_items_list(
     // Clear previous items to avoid duplicates, cause assets may be loaded incrementally
     admin_shop_items.clear();
 
-    for (item_id, item_info) in items_data_query.into_iter() {
+    for (item_id, item_info) in items_data.into_iter() {
         let kind = *item_info.kind();
         let grade = item_info.grade();
         let multisell_id = Id::from((kind, grade));

@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use bevy_ecs::system::{SystemParam, SystemState};
 use game_core::{
-    items::{self, ItemsDataQuery, PaperDoll, WeaponKind},
+    items::{self, ItemsDataAccess, ItemsDataQuery, PaperDoll, WeaponKind},
     network::packets::server::{GameServerPacket, SystemMessage},
     stats::*,
 };
@@ -25,7 +25,7 @@ pub struct CalcShieldQuery<'w, 's> {
     pub transforms: Query<'w, 's, Ref<'static, Transform>>,
     pub paper_dolls: Query<'w, 's, Ref<'static, PaperDoll>>,
     pub defence_stats: Query<'w, 's, Ref<'static, DefenceStats>>,
-    pub items_data_query: ItemsDataQuery<'w>,
+    pub items_data: ItemsDataQuery<'w, 's>,
 }
 
 pub fn calculate_shield_result(
@@ -43,11 +43,8 @@ fn calculate_shield_result_inner(
     query: &CalcShieldQuery,
 ) -> Option<ShieldResult> {
     let target_paper_doll = query.paper_dolls.get(target).ok()?;
-    let unique_item = target_paper_doll.get(items::DollSlot::LeftHand)?;
-    let item_info = query
-        .items_data_query
-        .get_item_info(unique_item.item().id())
-        .ok()?;
+    let item_oid = target_paper_doll.get(items::DollSlot::LeftHand)?;
+    let item_info = query.items_data.info_by_object_id(item_oid).ok()?;
 
     if !item_info.kind().shield() {
         return None;

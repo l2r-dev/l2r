@@ -1,8 +1,13 @@
-use super::{Id, ItemInfo, UniqueItem};
+use super::{Id, Item, ItemInfo};
+use crate::{
+    items::{ITEMS_OPERATION_STACK, UniqueItem},
+    object_id::{ObjectId, ObjectIdManager},
+};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
 use l2r_core::{assets::ASSET_DIR, chronicles::CHRONICLE, model::generic_number::GenericNumber};
 use serde::{Deserialize, Serialize};
 use serde_json::from_reader;
+use smallvec::SmallVec;
 use std::{fs::File, io::BufReader};
 
 #[derive(Asset, Clone, Debug, Default, Deref, DerefMut, Deserialize, Reflect, Serialize)]
@@ -61,30 +66,107 @@ impl ItemsDataTable {
     }
 }
 
-#[derive(SystemParam)]
-pub struct ItemsDataQuery<'w> {
-    items_data_table: Res<'w, ItemsDataTable>,
-    items_data_assets: Res<'w, Assets<ItemsInfo>>,
+pub trait ItemsDataAccess {
+    fn item(&self, entity: Entity) -> Result<Ref<'_, Item>>;
+    fn item_by_object_id(&self, object_id: ObjectId) -> Result<Ref<'_, Item>>;
+    fn entity(&self, object_id: ObjectId) -> Result<Entity>;
+    fn item_info(&self, id: Id) -> Result<&ItemInfo>;
+    fn info_by_object_id(&self, object_id: ObjectId) -> Result<&ItemInfo>;
+    fn unique_items_from_object_ids(
+        &self,
+        object_ids: &[ObjectId],
+    ) -> SmallVec<[UniqueItem; ITEMS_OPERATION_STACK]> {
+        let mut unique_items = SmallVec::<[UniqueItem; ITEMS_OPERATION_STACK]>::new();
+        for &object_id in object_ids {
+            if let Ok(item) = self.item_by_object_id(object_id) {
+                let unique_item = UniqueItem::new(object_id, *item);
+                unique_items.push(unique_item);
+            }
+        }
+        unique_items
+    }
 }
 
-impl<'w> ItemsDataQuery<'w> {
-    pub fn get_item_info(&self, id: Id) -> Result<&ItemInfo> {
+#[derive(SystemParam)]
+pub struct ItemsDataQuery<'w, 's> {
+    items_data_table: Res<'w, ItemsDataTable>,
+    items_data_assets: Res<'w, Assets<ItemsInfo>>,
+    items: Query<'w, 's, Ref<'static, Item>>,
+    object_id_manager: Res<'w, ObjectIdManager>,
+}
+
+impl<'w, 's> ItemsDataAccess for ItemsDataQuery<'w, 's> {
+    fn entity(&self, object_id: ObjectId) -> Result<Entity> {
+        self.object_id_manager.entity_result(object_id)
+    }
+
+    fn item(&self, entity: Entity) -> Result<Ref<'_, Item>> {
+        Ok(self.items.get(entity)?)
+    }
+
+    fn item_by_object_id(&self, object_id: ObjectId) -> Result<Ref<'_, Item>> {
+        let entity = self.entity(object_id)?;
+        Ok(self.items.get(entity)?)
+    }
+
+    fn item_info(&self, id: Id) -> Result<&ItemInfo> {
         self.items_data_table
             .get_item_info(id, &self.items_data_assets)
     }
 
-    pub fn item_info_from_uniq(&self, unique_item: &Option<UniqueItem>) -> Option<&ItemInfo> {
-        let Some(unique_item) = unique_item else {
-            return None;
-        };
-
-        self.items_data_table
-            .get_item_info(unique_item.item().id(), &self.items_data_assets)
-            .ok()
+    fn info_by_object_id(&self, object_id: ObjectId) -> Result<&ItemInfo> {
+        let entity = self.entity(object_id)?;
+        let item = self.items.get(entity)?;
+        self.item_info(item.id())
     }
 }
 
-impl<'w> IntoIterator for &'w ItemsDataQuery<'w> {
+#[derive(SystemParam)]
+pub struct ItemsDataQueryMut<'w, 's> {
+    items_data_table: Res<'w, ItemsDataTable>,
+    items_data_assets: Res<'w, Assets<ItemsInfo>>,
+    items: Query<'w, 's, Mut<'static, Item>>,
+    pub object_ids: Query<'w, 's, Ref<'static, ObjectId>>,
+    pub object_id_manager: ResMut<'w, ObjectIdManager>,
+}
+
+impl<'w, 's> ItemsDataQueryMut<'w, 's> {
+    pub fn item_by_object_id_mut(&mut self, object_id: ObjectId) -> Result<Mut<'_, Item>> {
+        let entity = self.object_id_manager.entity_result(object_id)?;
+        Ok(self.items.get_mut(entity)?)
+    }
+
+    pub fn item_mut(&mut self, entity: Entity) -> Result<Mut<'_, Item>> {
+        Ok(self.items.get_mut(entity)?)
+    }
+}
+
+impl<'w, 's> ItemsDataAccess for ItemsDataQueryMut<'w, 's> {
+    fn entity(&self, object_id: ObjectId) -> Result<Entity> {
+        self.object_id_manager.entity_result(object_id)
+    }
+
+    fn item(&self, entity: Entity) -> Result<Ref<'_, Item>> {
+        Ok(self.items.get(entity)?)
+    }
+
+    fn item_by_object_id(&self, object_id: ObjectId) -> Result<Ref<'_, Item>> {
+        Ok(self.items.get(self.entity(object_id)?)?)
+    }
+
+    fn item_info(&self, id: Id) -> Result<&ItemInfo> {
+        self.items_data_table
+            .get_item_info(id, &self.items_data_assets)
+    }
+
+    fn info_by_object_id(&self, object_id: ObjectId) -> Result<&ItemInfo> {
+        let entity = self.entity(object_id)?;
+        let item = self.items.get(entity)?;
+        self.item_info(item.id())
+    }
+}
+
+impl<'w, 's> IntoIterator for &'w ItemsDataQuery<'w, 's> {
     type Item = (Id, &'w ItemInfo);
     type IntoIter = ItemsDataIterator<'w>;
 
@@ -96,7 +178,6 @@ impl<'w> IntoIterator for &'w ItemsDataQuery<'w> {
 pub struct ItemsDataIterator<'a> {
     table_iter: bevy::platform::collections::hash_map::Iter<'a, Id, Handle<ItemsInfo>>,
     items_data_assets: &'a Assets<ItemsInfo>,
-    current_items_iter: Option<bevy::platform::collections::hash_map::Iter<'a, Id, ItemInfo>>,
 }
 
 impl<'a> ItemsDataIterator<'a> {
@@ -104,7 +185,6 @@ impl<'a> ItemsDataIterator<'a> {
         Self {
             table_iter: table.iter(),
             items_data_assets,
-            current_items_iter: None,
         }
     }
 }
@@ -113,23 +193,13 @@ impl<'a> Iterator for ItemsDataIterator<'a> {
     type Item = (Id, &'a ItemInfo);
 
     fn next(&mut self) -> Option<Self::Item> {
-        loop {
-            // Try to get the next item from the current ItemsInfo
-            if let Some(ref mut items_iter) = self.current_items_iter {
-                if let Some((id, item_info)) = items_iter.next() {
-                    return Some((*id, item_info));
+        for (item_id, item_handle) in self.table_iter.by_ref() {
+            if let Some(items_info) = self.items_data_assets.get(item_handle.id()) {
+                if let Some(item_info) = items_info.get(item_id) {
+                    return Some((*item_id, item_info));
                 }
             }
-
-            // If we exhausted the current ItemsInfo, get the next one from the table
-            let (_, handle) = self.table_iter.next()?;
-
-            if let Some(items_info) = self.items_data_assets.get(handle.id()) {
-                self.current_items_iter = Some(items_info.iter());
-            } else {
-                // If we can't get the ItemsInfo for this handle, continue to the next one
-                self.current_items_iter = None;
-            }
         }
+        None
     }
 }

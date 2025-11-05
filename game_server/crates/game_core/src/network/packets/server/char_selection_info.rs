@@ -1,10 +1,12 @@
 use super::GameServerPacketCodes;
 use crate::{
     character::{self, DeleteTimer},
+    items,
     network::packets::client::CharSlot,
+    object_id::ObjectId,
     stats::*,
 };
-use bevy::prelude::*;
+use bevy::{platform::collections::HashMap, prelude::*};
 use core::fmt;
 use l2r_core::{
     model::{race::Race, session::SessionId},
@@ -36,11 +38,58 @@ impl L2rServerPacket for CharSelectionInfo {
 }
 
 impl CharSelectionInfo {
-    pub fn new(chars_table: &character::Table) -> Self {
+    pub fn new(
+        chars_table: &character::Table,
+        models: Vec<(
+            character::model::Model,
+            HashMap<ObjectId, items::model::Model>,
+        )>,
+    ) -> Self {
         let mut chars = Vec::with_capacity(chars_table.len());
         for (index, char) in chars_table.all().iter().enumerate() {
             let last_used = chars_table.last_used_slot() == Some(CharSlot(index as u32));
-            chars.push(CharInfoData::new(char, last_used));
+
+            // Find the matching character model by ObjectId
+            let char_model = models.iter().find(|(model, _)| model.id == char.id);
+
+            let equipped_items: Vec<items::Id> = char
+                .paper_doll
+                .user_info_iter()
+                .map(|slot_item| {
+                    slot_item
+                        .object_id
+                        .and_then(|id| {
+                            char_model
+                                .and_then(|(_, items_map)| items_map.get(&id))
+                                .map(|item| item.item_id())
+                        })
+                        .unwrap_or_default()
+                })
+                .collect();
+
+            chars.push(CharInfoData::new(char, equipped_items, last_used));
+        }
+
+        Self(chars)
+    }
+
+    pub fn from_query(chars_table: &character::Table, items_query: &items::ItemsQuery) -> Self {
+        let mut chars = Vec::with_capacity(chars_table.len());
+        for (index, char) in chars_table.all().iter().enumerate() {
+            let last_used = chars_table.last_used_slot() == Some(CharSlot(index as u32));
+
+            let equipped_items: Vec<items::Id> = char
+                .paper_doll
+                .user_info_iter()
+                .map(|slot_item| {
+                    slot_item
+                        .object_id
+                        .and_then(|id| items_query.item_by_object_id(id).ok().map(|item| item.id()))
+                        .unwrap_or_default()
+                })
+                .collect();
+
+            chars.push(CharInfoData::new(char, equipped_items, last_used));
         }
         Self(chars)
     }
@@ -61,7 +110,7 @@ pub struct CharInfoData {
     pub progress_stats: ProgressStats,
     pub progress_level: ProgressLevelStats,
     pub pvp: PvpStats,
-    pub paperdoll_item_ids: Vec<u32>,
+    pub paperdoll_item_ids: Vec<items::Id>,
     pub appearance: character::Appearance,
     pub delete_timer: DeleteTimer,
     pub is_last_used: bool,
@@ -109,8 +158,8 @@ impl CharInfoData {
         for _ in 0..7 {
             buffer.u32(0);
         }
-        for item_id in self.paperdoll_item_ids.iter() {
-            buffer.u32(*item_id);
+        for item_id in self.paperdoll_item_ids.iter().copied() {
+            buffer.u32(item_id.into());
         }
         buffer.u32(self.appearance.hair_style);
         buffer.u32(self.appearance.hair_color);
@@ -135,18 +184,11 @@ impl CharInfoData {
 }
 
 impl CharInfoData {
-    fn new(bundle: &character::Bundle, is_last_used: bool) -> Self {
-        let paperdoll_item_ids = bundle
-            .paper_doll
-            .user_info_iter()
-            .map(|doll_item_pair| {
-                *doll_item_pair
-                    .unique_item()
-                    .map(|u| u.item().id())
-                    .unwrap_or(0.into())
-            })
-            .collect();
-
+    fn new(
+        bundle: &character::Bundle,
+        paperdoll_item_ids: Vec<items::Id>,
+        is_last_used: bool,
+    ) -> Self {
         Self {
             name: bundle.name.to_string(),
             title: bundle.title.to_string(),
@@ -180,4 +222,3 @@ impl CharInfoData {
 
 #[derive(Event)]
 pub struct SendCharSelectionInfo;
-impl SendCharSelectionInfo {}

@@ -4,14 +4,14 @@ use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
         self, DropIfPossible, DropItemEvent, Inventory, Item, ItemInWorld, ItemLocation,
-        ItemMetric, ItemsDataQuery, UnequipItems, UniqueItem, UpdateType,
+        ItemMetric, ItemsDataAccess, ItemsDataQueryMut, UnequipItems, UniqueItem, UpdateType,
         model::{ActiveModelSetCoordinates, Model},
     },
     network::{
         broadcast::ServerPacketBroadcast,
         packets::server::{DropItem, GameServerPacket, InventoryUpdate, SystemMessage},
     },
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectId, QueryByObjectIdMut},
+    object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
 };
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
@@ -73,11 +73,9 @@ pub fn drop_item(
     mut drop_events: EventReader<DropItemEvent>,
     world_map: Res<WorldMap>,
     mut commands: Commands,
-    items_data_query: ItemsDataQuery,
-    mut items: Query<(Entity, Mut<Item>)>,
+    mut items_data: ItemsDataQueryMut,
     mut inventories: Query<(Ref<ObjectId>, Mut<Inventory>)>,
     repo_manager: Res<RepositoryManager>,
-    mut object_id_manager: ResMut<ObjectIdManager>,
     metrics: Res<Metrics>,
 ) -> Result<()> {
     for (event, _event_id) in drop_events.par_read() {
@@ -87,22 +85,15 @@ pub fn drop_item(
             log::warn!("{}", err.to_string());
             continue;
         }
-        let (item_entity, mut item) =
-            items.by_object_id_mut(event.item_oid, object_id_manager.as_ref())?;
+        let item_entity = items_data.entity(event.item_oid)?;
+        let item = items_data.item_by_object_id(event.item_oid)?;
         let item_id = item.id();
+        let is_stackable = items_data.item_info(item_id)?.stackable();
         let item_count = item.count();
-        let Ok(item_info) = items_data_query.get_item_info(item_id) else {
-            log::warn!(
-                "Item info not found for item {} in inventory of entity {}",
-                item_id,
-                inventory_entity
-            );
-            continue;
-        };
 
         // Check if item is stackable and if we're dropping the entire stack or just part
-        let drop_full_stack = !item_info.stackable() || event.count >= item_count;
-
+        let drop_full_stack = !is_stackable || event.count >= item_count;
+        let mut item = items_data.item_by_object_id_mut(event.item_oid)?;
         let object_id_to_drop = if drop_full_stack {
             inventory.remove_item(event.item_oid)?;
             item.set_owner(None);
@@ -147,9 +138,7 @@ pub fn drop_item(
         } else {
             // Partial drop - split the stack, inventory update will be handled in ItemsPlugin::count_changed
             item.set_count(item_count - event.count);
-
-            let new_object_id = object_id_manager.next_id();
-
+            let item_info = items_data.item_info(item_id)?;
             let new_item = Item::new_with_count(
                 item_id,
                 event.count,
@@ -157,6 +146,7 @@ pub fn drop_item(
                 item_info,
             );
 
+            let new_object_id = items_data.object_id_manager.next_id();
             let new_unique_item = UniqueItem::new(new_object_id, new_item);
 
             // Create new item entity for the dropped portion
@@ -184,6 +174,7 @@ pub fn drop_item(
         };
 
         // Send UI notifications
+        let item_info = items_data.item_info(item_id)?;
         commands.trigger_targets(
             GameServerPacket::from(SystemMessage::new(
                 system_messages::Id::YouHaveDroppedS1,

@@ -5,8 +5,8 @@ use game_core::{
     custom_hierarchy::{DespawnChildOf, DespawnChildren},
     items::{
         self, AddInInventory, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
-        ItemsComponentsPlugin, ItemsDataQuery, ItemsInfo, RegionalItems, SilentSpawn,
-        SpawnExisting, SpawnNew, UniqueItem, model,
+        ItemsComponentsPlugin, ItemsDataAccess, ItemsDataQuery, ItemsInfo, RegionalItems,
+        SilentSpawn, SpawnExisting, SpawnNew, UniqueItem, model,
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
 };
@@ -129,12 +129,12 @@ async fn spawn_new_items() -> Result<(), AccessError> {
 pub fn spawn_existing_item_handle(
     spawn: Trigger<SpawnExisting>,
     mut commands: Commands,
-    items_data_query: ItemsDataQuery,
+    items_data: ItemsDataQuery,
 ) {
     let event = spawn.event();
 
     for item in event.item_models.iter() {
-        let Ok(item_info) = items_data_query.get_item_info(item.item_id()) else {
+        let Ok(item_info) = items_data.item_info(item.item_id()) else {
             log::warn!(
                 "{}: Item info not found for item ID {}",
                 stringify!(SpawnExisting),

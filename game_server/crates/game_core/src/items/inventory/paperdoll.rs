@@ -216,22 +216,16 @@ impl DollSlot {
 
 #[derive(Clone, Component, Debug, Default, Reflect)]
 #[reflect(Component)]
-pub struct PaperDoll([Option<UniqueItem>; 25]);
+pub struct PaperDoll([Option<ObjectId>; 25]);
 
-#[derive(Debug)]
-pub struct SlotItem(pub DollSlot, pub Option<UniqueItem>);
-impl SlotItem {
-    pub fn slot(&self) -> DollSlot {
-        self.0
-    }
-
-    pub fn unique_item(&self) -> Option<&UniqueItem> {
-        self.1.as_ref()
-    }
+#[derive(Clone, Copy, Debug)]
+pub struct SlotItem {
+    pub slot: DollSlot,
+    pub object_id: Option<ObjectId>,
 }
 
 impl PaperDoll {
-    pub fn get(&self, slot: DollSlot) -> Option<UniqueItem> {
+    pub fn get(&self, slot: DollSlot) -> Option<ObjectId> {
         self[slot]
     }
 
@@ -269,9 +263,7 @@ impl PaperDoll {
 
     pub fn unequip(&mut self, object_id: ObjectId) {
         for slot in DollSlot::iter() {
-            if let Some(item) = self[slot]
-                && item.object_id() == object_id
-            {
+            if self[slot] == Some(object_id) {
                 self[slot] = None;
             }
         }
@@ -280,34 +272,46 @@ impl PaperDoll {
     pub fn equip_without_validations(
         &mut self,
         slot: DollSlot,
-        item: UniqueItem,
-    ) -> Option<UniqueItem> {
+        object_id: ObjectId,
+    ) -> Option<ObjectId> {
         let previous_item = self[slot];
-        self[slot] = Some(item);
+        self[slot] = Some(object_id);
         previous_item
     }
 
     pub fn equip(
         &mut self,
-        item: UniqueItem,
-        items_data: &ItemsDataQuery,
-    ) -> Option<(DollSlot, Vec<UniqueItem>)> {
+        object_id: ObjectId,
+        items_data: &impl ItemsDataAccess,
+    ) -> Option<(DollSlot, Vec<ObjectId>)> {
+        let item_id = items_data.item_by_object_id(object_id).ok()?.id();
+        self.equip_not_spawned(object_id, item_id, items_data)
+    }
+
+    pub fn equip_not_spawned(
+        &mut self,
+        object_id: ObjectId,
+        item_id: Id,
+        items_data: &impl ItemsDataAccess,
+    ) -> Option<(DollSlot, Vec<ObjectId>)> {
         let mut previous = Vec::with_capacity(2);
-        let item_info = items_data.get_item_info(item.item().id()).ok()?;
+        let item_info = items_data.item_info(item_id).ok()?;
 
         let body_part = item_info.bodypart()?;
         let selected_slot = self.slot_by_bodypart(body_part);
 
         match body_part {
             BodyPart::BothHand => {
-                if let Some(left_info) = items_data.item_info_from_uniq(&self[DollSlot::LeftHand])
+                if let Some(left_hand_oid) = self[DollSlot::LeftHand]
+                    && let Ok(left_info) = items_data.info_by_object_id(left_hand_oid)
                     && !item_info.ammo_matches(left_info)
                 {
                     previous.extend(self[DollSlot::LeftHand].take());
                 }
             }
             BodyPart::LeftHand => {
-                if let Some(right_info) = items_data.item_info_from_uniq(&self[DollSlot::RightHand])
+                if let Some(right_hand_oid) = self[DollSlot::RightHand]
+                    && let Ok(right_info) = items_data.info_by_object_id(right_hand_oid)
                     && !right_info.ammo_matches(item_info)
                 {
                     previous.extend(self[DollSlot::RightHand].take());
@@ -317,8 +321,8 @@ impl PaperDoll {
                 previous.extend(self[DollSlot::Legs].take());
             }
             BodyPart::Legs => {
-                if let Some(chest_item) = self[DollSlot::Chest]
-                    && let Some(chest_info) = items_data.item_info_from_uniq(&Some(chest_item))
+                if let Some(chest_oid) = self[DollSlot::Chest]
+                    && let Ok(chest_info) = items_data.info_by_object_id(chest_oid)
                     && chest_info.bodypart() == Some(BodyPart::FullBody)
                 {
                     previous.extend(self[DollSlot::Chest].take());
@@ -328,15 +332,13 @@ impl PaperDoll {
         }
 
         previous.extend(self[selected_slot].take());
-        self[selected_slot] = Some(item);
+        self[selected_slot] = Some(object_id);
 
         Some((selected_slot, previous))
     }
 
     pub fn is_equipped(&self, object_id: ObjectId) -> bool {
-        self.0
-            .iter()
-            .any(|item| item.is_some_and(|i| i.object_id() == object_id))
+        self.0.iter().any(|item| *item == Some(object_id))
     }
 
     pub fn iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
@@ -344,24 +346,35 @@ impl PaperDoll {
             .iter()
             .enumerate()
             .map(|(slot, item)| (DollSlot::try_from(slot as u32).unwrap(), item))
-            .filter_map(|(slot, item)| item.as_ref().map(|item| SlotItem(slot, Some(*item))))
+            .filter_map(|(slot, item)| {
+                item.map(|oid| SlotItem {
+                    slot,
+                    object_id: Some(oid),
+                })
+            })
     }
 
     pub fn user_info_iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
         DollSlot::user_info_slots()
             .into_iter()
-            .map(|slot| SlotItem(slot, self[slot]))
+            .map(|slot| SlotItem {
+                slot,
+                object_id: self[slot],
+            })
     }
 
     pub fn char_info_iter(&self) -> impl Iterator<Item = SlotItem> + '_ {
         DollSlot::char_info_slots()
             .into_iter()
-            .map(move |slot| SlotItem(slot, self[slot]))
+            .map(|slot| SlotItem {
+                slot,
+                object_id: self[slot],
+            })
     }
 }
 
 impl Index<DollSlot> for PaperDoll {
-    type Output = Option<UniqueItem>;
+    type Output = Option<ObjectId>;
 
     fn index(&self, index: DollSlot) -> &Self::Output {
         &self.0[index as usize]
@@ -377,8 +390,8 @@ impl IndexMut<DollSlot> for PaperDoll {
 impl fmt::Display for PaperDoll {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         for slot in DollSlot::iter() {
-            if let Some(item) = self.get(slot) {
-                writeln!(f, "{slot:?}: Item {item}")?;
+            if let Some(object_id) = self.get(slot) {
+                writeln!(f, "{slot:?}: ObjectId {object_id}")?;
             }
         }
         Ok(())
