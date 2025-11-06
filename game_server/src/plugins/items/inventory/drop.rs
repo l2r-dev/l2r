@@ -1,17 +1,19 @@
-use bevy::{log, prelude::*};
+use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
-        self, DropIfPossible, DropItemEvent, Inventory, Item, ItemInWorld, ItemLocation,
-        ItemMetric, ItemsDataAccess, ItemsDataQueryMut, UnequipItem, UniqueItem, UpdateType,
+        self, DropIfPossible, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
+        ItemsDataAccess, ItemsDataQueryMut, UnequipItem, UniqueItem, UpdateType,
         model::{ActiveModelSetCoordinates, Model},
     },
     network::{
         broadcast::ServerPacketBroadcast,
-        packets::server::{DropItem, GameServerPacket, InventoryUpdate, SystemMessage},
+        packets::server::{
+            DropItem as DropItemPacket, GameServerPacket, InventoryUpdate, SystemMessage,
+        },
     },
-    object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
+    object_id::ObjectId,
 };
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
@@ -23,177 +25,152 @@ use smallvec::smallvec;
 use spatial::FlatDistance;
 use system_messages::{self, Id, SmParam};
 
+pub struct DropItemPlugin;
+impl Plugin for DropItemPlugin {
+    fn build(&self, app: &mut App) {
+        app.add_observer(drop_if_possible);
+    }
+}
+
 pub fn drop_if_possible(
     drop_request: Trigger<DropIfPossible>,
+    world_map: Res<WorldMap>,
     mut commands: Commands,
+    mut items_data: ItemsDataQueryMut,
     mut inventories: Query<(Ref<ObjectId>, Mut<Inventory>, Ref<Transform>)>,
-    mut drop_item: EventWriter<DropItemEvent>,
-    items: Query<&Item>,
-    object_id_manager: Res<ObjectIdManager>,
+    repo_manager: Res<RepositoryManager>,
+    metrics: Res<Metrics>,
 ) -> Result<()> {
-    let inventory_entity = drop_request.target();
-    let request = drop_request.event();
+    let dropper_entity = drop_request.target();
+    let event = drop_request.event();
 
-    let (_owner_id, inventory, transform) = inventories.get_mut(inventory_entity)?;
-
-    inventory.get_item(request.item_oid)?;
-
-    let item = items.by_object_id(request.item_oid, object_id_manager.as_ref())?;
-
-    if transform.translation.flat_distance(&request.location) > 150.0 {
+    let (owner_id, mut inventory, transform) = inventories.get_mut(dropper_entity)?;
+    inventory.get_item(event.item_oid)?;
+    if transform.translation.flat_distance(&event.location) > 150.0 {
         commands.trigger_targets(
             GameServerPacket::from(SystemMessage::new_empty(
                 Id::YouCannotDiscardSomethingThatFarAwayFromYou,
             )),
-            inventory_entity,
+            dropper_entity,
         );
         return Ok(());
     }
 
-    // Check if item is equipped and needs to be unequipped first
+    let item_entity = items_data.entity(event.item_oid)?;
+    let item = items_data.item_by_object_id(event.item_oid)?;
+    let item_id = item.id();
+    let is_stackable = items_data.item_info(item_id)?.stackable();
+    let item_count = item.count();
     if item.equipped() {
-        commands.trigger_targets(UnequipItem::new_skip_db(request.item_oid), inventory_entity);
+        commands.trigger_targets(UnequipItem::new_skip_db(event.item_oid), dropper_entity);
     }
 
-    drop_item.write(DropItemEvent::new(
-        inventory_entity,
-        request.item_oid,
-        request.count,
-        request.location,
-    ));
+    // Check if item is stackable and if we're dropping the entire stack or just part
+    let drop_full_stack = !is_stackable || event.count >= item_count;
+    
+    let mut item = items_data.item_by_object_id_mut(event.item_oid)?;
+    let object_id_to_drop = if drop_full_stack {
+        inventory.remove_item(event.item_oid)?;
+        item.set_owner(None);
+        item.set_location(ItemLocation::World(event.location));
 
-    Ok(())
-}
+        commands
+            .entity(item_entity)
+            .insert(ItemInWorld::new(event.location));
 
-pub fn drop_item(
-    mut drop_events: EventReader<DropItemEvent>,
-    world_map: Res<WorldMap>,
-    mut commands: Commands,
-    mut items_data: ItemsDataQueryMut,
-    mut inventories: Query<(Ref<ObjectId>, Mut<Inventory>)>,
-    repo_manager: Res<RepositoryManager>,
-    metrics: Res<Metrics>,
-) -> Result<()> {
-    for (event, _event_id) in drop_events.par_read() {
-        let inventory_entity = event.entity();
-        let (owner_id, mut inventory) = inventories.get_mut(inventory_entity)?;
-        if let Err(err) = inventory.get_item(event.item_oid) {
-            log::warn!("{}", err.to_string());
-            continue;
-        }
-        let item_entity = items_data.entity(event.item_oid)?;
-        let item = items_data.item_by_object_id(event.item_oid)?;
-        let item_id = item.id();
-        let is_stackable = items_data.item_info(item_id)?.stackable();
-        let item_count = item.count();
-
-        // Check if item is stackable and if we're dropping the entire stack or just part
-        let drop_full_stack = !is_stackable || event.count >= item_count;
-        let mut item = items_data.item_by_object_id_mut(event.item_oid)?;
-        let object_id_to_drop = if drop_full_stack {
-            inventory.remove_item(event.item_oid)?;
-            item.set_owner(None);
-            item.set_location(ItemLocation::World(event.location));
-
+        if let Some(region_entity) = world_map.get(&RegionId::from(event.location)) {
             commands
                 .entity(item_entity)
-                .insert(ItemInWorld::new(event.location));
+                .insert(DespawnChildOf(*region_entity));
+        }
 
-            if let Some(region_entity) = world_map.get(&RegionId::from(event.location)) {
-                commands
-                    .entity(item_entity)
-                    .insert(DespawnChildOf(*region_entity));
-            }
+        let unique_item = UniqueItem::new(event.item_oid, *item);
 
-            let unique_item = UniqueItem::new(event.item_oid, *item);
-
-            commands.trigger_targets(
-                GameServerPacket::from(InventoryUpdate::new(
-                    smallvec![unique_item],
-                    UpdateType::Remove,
-                )),
-                inventory_entity,
-            );
-
-            if !repo_manager.is_mock() {
-                let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
-                commands.spawn_task(move || async move {
-                    let item_model = Model::from(unique_item);
-
-                    let mut active_model = item_model.into_active_model();
-
-                    active_model.set_location(unique_item.item().location());
-                    active_model.owner_id = Set(unique_item.item().owner());
-
-                    items_repository.update(&active_model).await?;
-                    Ok(())
-                });
-            }
-
-            event.item_oid
-        } else {
-            // Partial drop - split the stack, inventory update will be handled in ItemsPlugin::count_changed
-            item.set_count(item_count - event.count);
-            let item_info = items_data.item_info(item_id)?;
-            let new_item = Item::new_with_count(
-                item_id,
-                event.count,
-                ItemLocation::World(event.location),
-                item_info,
-            );
-
-            let new_object_id = items_data.object_id_manager.next_id();
-            let new_unique_item = UniqueItem::new(new_object_id, new_item);
-
-            // Create new item entity for the dropped portion
-            let dropped_entity = commands
-                .spawn((new_unique_item, Transform::from_translation(event.location)))
-                .id();
-
-            if !repo_manager.is_mock() {
-                let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
-
-                commands.spawn_task(move || async move {
-                    let new_model = Model::from(new_unique_item);
-                    items_repository.create(&new_model).await?;
-                    Ok(())
-                });
-            }
-
-            if let Some(region_entity) = world_map.get(&RegionId::from(event.location)) {
-                commands
-                    .entity(dropped_entity)
-                    .insert(DespawnChildOf(*region_entity));
-            }
-
-            new_object_id
-        };
-
-        // Send UI notifications
-        let item_info = items_data.item_info(item_id)?;
         commands.trigger_targets(
-            GameServerPacket::from(SystemMessage::new(
-                system_messages::Id::YouHaveDroppedS1,
-                vec![SmParam::Text(item_info.name().to_string())],
+            GameServerPacket::from(InventoryUpdate::new(
+                smallvec![unique_item],
+                UpdateType::Remove,
             )),
-            inventory_entity,
+            dropper_entity,
         );
 
-        metrics.counter(ItemMetric::ItemsDropped)?.inc();
+        if !repo_manager.is_mock() {
+            let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
+            commands.spawn_task(move || async move {
+                let item_model = Model::from(unique_item);
+                let mut active_model = item_model.into_active_model();
 
-        let drop_item_packet = DropItem::new(
-            *owner_id,
-            object_id_to_drop,
+                active_model.set_location(unique_item.item().location());
+                active_model.owner_id = Set(unique_item.item().owner());
+
+                items_repository.update(&active_model).await?;
+                Ok(())
+            });
+        }
+
+        event.item_oid
+    } else {
+        // Partial drop - split the stack, inventory update will be handled in ItemsPlugin::count_changed
+        item.set_count(item_count - event.count);
+        let item_info = items_data.item_info(item_id)?;
+        let new_item = Item::new_with_count(
             item_id,
-            event.location,
-            item_info.stackable(),
             event.count,
+            ItemLocation::World(event.location),
+            item_info,
         );
 
-        commands.trigger_targets(
-            ServerPacketBroadcast::new(drop_item_packet.into()),
-            inventory_entity,
-        );
-    }
+        let new_object_id = items_data.object_id_manager.next_id();
+        let new_unique_item = UniqueItem::new(new_object_id, new_item);
+
+        // Create new item entity for the dropped portion
+        let dropped_entity = commands
+            .spawn((new_unique_item, Transform::from_translation(event.location)))
+            .id();
+
+        if !repo_manager.is_mock() {
+            let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
+
+            commands.spawn_task(move || async move {
+                let new_model = Model::from(new_unique_item);
+                items_repository.create(&new_model).await?;
+                Ok(())
+            });
+        }
+
+        if let Some(region_entity) = world_map.get(&RegionId::from(event.location)) {
+            commands
+                .entity(dropped_entity)
+                .insert(DespawnChildOf(*region_entity));
+        }
+
+        new_object_id
+    };
+
+    let item_info = items_data.item_info(item_id)?;
+
+    commands.trigger_targets(
+        GameServerPacket::from(SystemMessage::new(
+            system_messages::Id::YouHaveDroppedS1,
+            vec![SmParam::Text(item_info.name().to_string())],
+        )),
+        dropper_entity,
+    );
+
+    metrics.counter(ItemMetric::ItemsDropped)?.inc();
+
+    let drop_item_packet = DropItemPacket::new(
+        *owner_id,
+        object_id_to_drop,
+        item_id,
+        event.location,
+        item_info.stackable(),
+        item_count,
+    );
+
+    commands.trigger_targets(
+        ServerPacketBroadcast::new(drop_item_packet.into()),
+        dropper_entity,
+    );
     Ok(())
 }

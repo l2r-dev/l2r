@@ -73,36 +73,11 @@ pub struct DestroyItemRequest {
     pub count: u64,
 }
 
-#[derive(Event)]
+#[derive(Event, Clone, Copy, Debug)]
 pub struct DropIfPossible {
     pub item_oid: ObjectId,
     pub count: u64,
     pub location: Vec3,
-}
-
-#[derive(Clone, Debug, Event)]
-pub struct DropItemEvent {
-    entity: Entity,
-    pub item_oid: ObjectId,
-    pub count: u64,
-    pub location: Vec3,
-}
-
-impl ContainsEntity for DropItemEvent {
-    fn entity(&self) -> Entity {
-        self.entity
-    }
-}
-
-impl DropItemEvent {
-    pub fn new(entity: Entity, item_oid: ObjectId, count: u64, location: Vec3) -> Self {
-        Self {
-            entity,
-            item_oid,
-            count,
-            location,
-        }
-    }
 }
 
 #[derive(Clone, Debug, Event)]

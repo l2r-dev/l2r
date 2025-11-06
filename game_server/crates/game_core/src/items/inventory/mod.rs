@@ -26,7 +26,6 @@ impl Plugin for InventoryComponentsPlugin {
             .add_event::<AddStackable>()
             .add_event::<InventoryLoad>()
             .add_event::<DropIfPossible>()
-            .add_event::<DropItemEvent>()
             .add_event::<DestroyItemRequest>();
     }
 }

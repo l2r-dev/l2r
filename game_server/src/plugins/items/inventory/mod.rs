@@ -9,7 +9,6 @@ use game_core::{
 };
 use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
 use sea_orm::ColumnTrait;
-use state::ItemMechanicsSystems;
 
 mod added;
 mod destroy;
@@ -31,12 +30,10 @@ impl Plugin for InventoryPlugin {
         app.add_observer(add_in_inventory)
             .add_observer(add_non_stackable)
             .add_observer(add_stackable)
-            .add_observer(destroy_item)
-            .add_observer(drop_if_possible);
+            .add_observer(destroy_item);
 
-        app.add_systems(Update, drop_item.in_set(ItemMechanicsSystems::Drop));
-
-        app.add_plugins(EquipItemPlugin)
+        app.add_plugins(DropItemPlugin)
+            .add_plugins(EquipItemPlugin)
             .add_plugins(UnequipItemPlugin);
 
         app.spawn_task(async { load_inventory_from_db().await })
