@@ -1,8 +1,8 @@
 use bevy::prelude::*;
 use game_core::{
     items::{
-        DestroyItemRequest, Inventory, ItemLocation, ItemsDataAccess, ItemsDataQueryMut,
-        UnequipItems, UniqueItem, UpdateType,
+        DestroyItemRequest, Inventory, ItemsDataAccess, ItemsDataQueryMut, UnequipItem, UniqueItem,
+        UpdateType,
     },
     network::packets::server::{GameServerPacket, InventoryUpdate},
 };
@@ -13,7 +13,6 @@ pub fn destroy_item(
     mut commands: Commands,
     mut inventories: Query<Mut<Inventory>>,
     mut items_data: ItemsDataQueryMut,
-    mut unequip_items: EventWriter<UnequipItems>,
 ) -> Result<()> {
     let inventory_entity = destroy_request.target();
     let request = destroy_request.event();
@@ -35,8 +34,8 @@ pub fn destroy_item(
     if destroy_full_stack {
         inventory.remove_item(request.item_oid)?;
 
-        if matches!(item.location(), ItemLocation::PaperDoll(_)) {
-            unequip_items.write(UnequipItems::new(inventory_entity, vec![request.item_oid]));
+        if item.equipped() {
+            commands.trigger_targets(UnequipItem::new_skip_db(request.item_oid), inventory_entity);
         }
 
         // Remove the item entity from the world

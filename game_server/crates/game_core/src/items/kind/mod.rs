@@ -70,6 +70,10 @@ impl Kind {
         matches!(self, Kind::Armor(ArmorKind::Shield))
     }
 
+    pub fn weapon(&self) -> bool {
+        matches!(self, Kind::Weapon(_))
+    }
+
     pub fn ammo(&self) -> bool {
         matches!(self, Kind::Consumable(ConsumableKind::Ammo(_)))
     }

@@ -106,113 +106,60 @@ impl DropItemEvent {
 }
 
 #[derive(Clone, Debug, Event)]
-pub struct EquipItems(Entity, pub Vec<ObjectId>);
-
-impl ContainsEntity for EquipItems {
-    fn entity(&self) -> Entity {
-        self.0
-    }
+pub struct EquipItem {
+    pub item_object_id: ObjectId,
 }
 
-impl EquipItems {
-    pub fn new(entity: Entity, items: Vec<ObjectId>) -> Self {
-        Self(entity, items)
-    }
-
-    pub fn object_ids(&self) -> &[ObjectId] {
-        self.1.as_slice()
-    }
-}
-
-#[derive(Debug, Event)]
-pub struct ItemsEquipped(Entity, SmallVec<[ObjectId; ITEMS_OPERATION_STACK]>);
-
-impl ContainsEntity for ItemsEquipped {
-    fn entity(&self) -> Entity {
-        self.0
-    }
-}
-
-impl ItemsEquipped {
-    pub fn new(entity: Entity, items: SmallVec<[ObjectId; ITEMS_OPERATION_STACK]>) -> Self {
-        Self(entity, items)
-    }
-
-    pub fn object_ids(&self) -> &[ObjectId] {
-        self.1.as_slice()
+impl EquipItem {
+    pub fn new(item_object_id: ObjectId) -> Self {
+        Self { item_object_id }
     }
 }
 
 #[derive(Clone, Debug, Event)]
-pub struct UnequipItems {
-    entity: Entity,
-    items: Vec<ObjectId>,
-    skip_db_update: bool,
+pub struct ItemEquipped {
+    pub item_object_id: ObjectId,
 }
 
-impl ContainsEntity for UnequipItems {
-    fn entity(&self) -> Entity {
-        self.entity
+impl ItemEquipped {
+    pub fn new(item_object_id: ObjectId) -> Self {
+        Self { item_object_id }
     }
 }
 
-impl UnequipItems {
-    pub fn new(entity: Entity, items: Vec<ObjectId>) -> Self {
+#[derive(Clone, Debug, Event)]
+pub struct UnequipItem {
+    pub item_object_id: ObjectId,
+    pub skip_db_update: bool,
+}
+
+impl UnequipItem {
+    pub fn new(item_object_id: ObjectId) -> Self {
         Self {
-            entity,
-            items,
+            item_object_id,
             skip_db_update: false,
         }
     }
 
-    pub fn new_skip_db(entity: Entity, items: Vec<ObjectId>) -> Self {
+    pub fn new_skip_db(item_object_id: ObjectId) -> Self {
         Self {
-            entity,
-            items,
+            item_object_id,
             skip_db_update: true,
         }
-    }
-
-    pub fn object_ids(&self) -> &[ObjectId] {
-        self.items.as_slice()
-    }
-
-    pub fn skip_db_update(&self) -> bool {
-        self.skip_db_update
     }
 }
 
 #[derive(Clone, Debug, Event)]
-pub struct ItemsUnEquipped {
-    entity: Entity,
-    items: SmallVec<[ObjectId; ITEMS_OPERATION_STACK]>,
-    skip_db_update: bool,
+pub struct ItemUnequipped {
+    pub item_object_id: ObjectId,
+    pub skip_db_update: bool,
 }
 
-impl ContainsEntity for ItemsUnEquipped {
-    fn entity(&self) -> Entity {
-        self.entity
-    }
-}
-
-impl ItemsUnEquipped {
-    pub fn new(
-        entity: Entity,
-        items: SmallVec<[ObjectId; ITEMS_OPERATION_STACK]>,
-        skip_db_update: bool,
-    ) -> Self {
+impl ItemUnequipped {
+    pub fn new(item_object_id: ObjectId, skip_db_update: bool) -> Self {
         Self {
-            entity,
-            items,
+            item_object_id,
             skip_db_update,
         }
-    }
-
-    pub fn object_ids(&self) -> &[ObjectId] {
-        self.items.as_slice()
-    }
-
-    pub fn skip_db_update(&self) -> bool {
-        self.skip_db_update
     }
 }

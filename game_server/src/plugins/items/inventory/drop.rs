@@ -4,7 +4,7 @@ use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
         self, DropIfPossible, DropItemEvent, Inventory, Item, ItemInWorld, ItemLocation,
-        ItemMetric, ItemsDataAccess, ItemsDataQueryMut, UnequipItems, UniqueItem, UpdateType,
+        ItemMetric, ItemsDataAccess, ItemsDataQueryMut, UnequipItem, UniqueItem, UpdateType,
         model::{ActiveModelSetCoordinates, Model},
     },
     network::{
@@ -27,7 +27,6 @@ pub fn drop_if_possible(
     drop_request: Trigger<DropIfPossible>,
     mut commands: Commands,
     mut inventories: Query<(Ref<ObjectId>, Mut<Inventory>, Ref<Transform>)>,
-    mut unequip_items: EventWriter<UnequipItems>,
     mut drop_item: EventWriter<DropItemEvent>,
     items: Query<&Item>,
     object_id_manager: Res<ObjectIdManager>,
@@ -52,11 +51,8 @@ pub fn drop_if_possible(
     }
 
     // Check if item is equipped and needs to be unequipped first
-    if matches!(item.location(), ItemLocation::PaperDoll(_)) {
-        unequip_items.write(UnequipItems::new_skip_db(
-            inventory_entity,
-            vec![request.item_oid],
-        ));
+    if item.equipped() {
+        commands.trigger_targets(UnequipItem::new_skip_db(request.item_oid), inventory_entity);
     }
 
     drop_item.write(DropItemEvent::new(

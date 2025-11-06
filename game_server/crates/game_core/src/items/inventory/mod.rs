@@ -24,11 +24,7 @@ impl Plugin for InventoryComponentsPlugin {
         app.add_event::<AddInInventory>()
             .add_event::<AddNonStackable>()
             .add_event::<AddStackable>()
-            .add_event::<UnequipItems>()
-            .add_event::<ItemsEquipped>()
             .add_event::<InventoryLoad>()
-            .add_event::<EquipItems>()
-            .add_event::<ItemsEquipped>()
             .add_event::<DropIfPossible>()
             .add_event::<DropItemEvent>()
             .add_event::<DestroyItemRequest>();

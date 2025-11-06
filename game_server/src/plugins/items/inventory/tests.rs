@@ -5,7 +5,7 @@ pub mod test_utils {
     use bevy::prelude::*;
     use game_core::{
         items::{
-            EquipItems, Id, Inventory, Item, ItemLocation, ItemsDataTable, ItemsInfo, PaperDoll,
+            EquipItem, Id, Inventory, Item, ItemLocation, ItemsDataTable, ItemsInfo, PaperDoll,
             SpawnExisting,
         },
         object_id::{ObjectId, ObjectIdManager, QueryStateByObjectId},
@@ -75,10 +75,10 @@ pub mod test_utils {
 
         let world = app.world_mut();
 
-        world.send_event(EquipItems::new(
-            character_entity,
-            non_stackable_oids.clone(),
-        ));
+        // Equip each item individually using triggers
+        for item_oid in non_stackable_oids.iter() {
+            world.trigger_targets(EquipItem::new(*item_oid), character_entity);
+        }
 
         app.update();
 
@@ -371,7 +371,7 @@ mod equip_tests {
 mod unequip_tests {
     use super::test_utils::*;
     use crate::tests::serial;
-    use game_core::items::UnequipItems;
+    use game_core::items::UnequipItem;
 
     #[test]
     #[serial]
@@ -380,7 +380,10 @@ mod unequip_tests {
 
         let world = app.world_mut();
 
-        world.send_event(UnequipItems::new(character_entity, equipped_oids.clone()));
+        // Unequip each item individually using triggers
+        for item_oid in equipped_oids.iter() {
+            world.trigger_targets(UnequipItem::new(*item_oid), character_entity);
+        }
 
         app.update();
 
