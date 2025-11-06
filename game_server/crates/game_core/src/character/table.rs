@@ -1,11 +1,10 @@
 use super::model::Model;
 use crate::{
     character,
-    items::{self, ItemsDataAccess, ItemsDataQuery, PaperDoll, UniqueItem},
+    items::{self, DollSlot, ItemsDataAccess, ItemsDataQuery},
     network::packets::client::CharSlot,
-    object_id::ObjectId,
 };
-use bevy::{log, platform::collections::HashMap, prelude::*};
+use bevy::{log, prelude::*};
 use bevy_ecs::system::SystemState;
 use bevy_slinet::connection::ConnectionId;
 use l2r_core::model::session::SessionId;
@@ -32,9 +31,15 @@ impl fmt::Display for TableError {
     }
 }
 
+#[derive(Clone, Debug, Reflect)]
+pub struct CharWithItems {
+    pub character: character::Bundle,
+    pub items: [items::Id; DollSlot::USER_INFO_COUNT],
+}
+
 #[derive(Clone, Component, Debug, Default, Reflect)]
 pub struct Table {
-    characters: Vec<character::Bundle>,
+    characters: Vec<CharWithItems>,
     last_used_slot: Option<CharSlot>,
     selected_slot: Option<CharSlot>,
     character: Option<Entity>,
@@ -42,7 +47,7 @@ pub struct Table {
 
 impl Table {
     pub const MAX_CHARACTERS_ON_ACCOUNT: usize = 7;
-    pub fn new(characters: Vec<character::Bundle>) -> Self {
+    pub fn new(characters: Vec<CharWithItems>) -> Self {
         Self {
             characters,
             last_used_slot: None,
@@ -52,7 +57,7 @@ impl Table {
     }
 
     pub fn from_char_list(
-        mut char_with_items: Vec<(Model, HashMap<ObjectId, items::model::Model>)>,
+        mut char_with_items: Vec<(Model, Vec<items::model::Model>)>,
         session_id: SessionId,
         world: &mut World,
     ) -> Result<Self, TableError> {
@@ -60,7 +65,7 @@ impl Table {
             return Err(TableError::MaxCharsReached)?;
         }
 
-        let mut bundles = Vec::with_capacity(Self::MAX_CHARACTERS_ON_ACCOUNT);
+        let mut chars_with_items = Vec::with_capacity(Self::MAX_CHARACTERS_ON_ACCOUNT);
         let mut last_used_slot = None;
 
         char_with_items.sort_by(|a, b| a.0.created_time.cmp(&b.0.created_time));
@@ -73,44 +78,35 @@ impl Table {
             let mut items_state: SystemState<ItemsDataQuery> = SystemState::new(world);
             let items_query = items_state.get_mut(world);
 
-            // Process items and create paperdoll
-            let items = db_items
-                .iter()
-                .filter_map(|(_oid, item)| {
-                    let item_info = items_query.item_info(item.item_id());
-                    if let Ok(item_info) = item_info {
-                        Some(UniqueItem::from_model(*item, item_info))
-                    } else {
-                        log::warn!(
-                            "CharTable: No item info found for item id {:?}",
-                            item.item_id()
-                        );
-                        None
-                    }
-                })
-                .collect::<Vec<_>>();
+            let items: [items::Id; DollSlot::USER_INFO_COUNT] =
+                DollSlot::user_info_slots().map(|slot| {
+                    db_items
+                        .iter()
+                        .find(|item| {
+                            if !item.equipped() {
+                                return false;
+                            }
+                            let Ok(item_info) = items_query.item_info(item.item_id()) else {
+                                return false;
+                            };
+                            let Some(bodypart) = item_info.bodypart() else {
+                                return false;
+                            };
+                            DollSlot::bodypart_slots(bodypart).contains(&slot)
+                        })
+                        .map(|item| item.item_id())
+                        .unwrap_or_default()
+                });
 
-            let mut paperdoll = PaperDoll::default();
+            let bundle = character::Bundle::new(char, items, session_id, world);
 
-            for unique_item in items {
-                if unique_item.item().bodypart().is_none() {
-                    log::warn!(
-                        "CharTable: No bodypart found for item id {:?}",
-                        unique_item.item().id()
-                    );
-                    continue;
-                };
-                paperdoll.equip_not_spawned(
-                    unique_item.object_id(),
-                    unique_item.item().id(),
-                    &items_query,
-                );
-            }
-            let bundle = character::Bundle::new(char, paperdoll, session_id, world);
-            bundles.push(bundle);
+            chars_with_items.push(CharWithItems {
+                character: bundle,
+                items,
+            });
         }
 
-        let mut table = Self::new(bundles);
+        let mut table = Self::new(chars_with_items);
 
         if !table.is_empty() {
             table.set_last_used_slot(last_used_slot.unwrap_or(CharSlot(0)))?;
@@ -119,12 +115,19 @@ impl Table {
         Ok(table)
     }
 
-    pub fn add_bundle(&mut self, bundle: character::Bundle) -> Result<(), TableError> {
+    pub fn add_bundle(
+        &mut self,
+        bundle: character::Bundle,
+        items: [items::Id; DollSlot::USER_INFO_COUNT],
+    ) -> Result<(), TableError> {
         if self.is_max_len() {
             return Err(TableError::MaxCharsReached)?;
         }
 
-        self.characters.push(bundle);
+        self.characters.push(CharWithItems {
+            character: bundle,
+            items,
+        });
         self.last_used_slot = Some(CharSlot((self.len() as u32) - 1));
         Ok(())
     }
@@ -156,13 +159,13 @@ impl Table {
 
     pub fn get_bundle(&self) -> Result<&character::Bundle, TableError> {
         if let Some(selected_slot) = self.selected_slot {
-            Ok(&self.characters[selected_slot.0 as usize])
+            Ok(&self.characters[selected_slot.0 as usize].character)
         } else {
             Err(TableError::InvalidCharSlot)?
         }
     }
 
-    fn get_mut(&mut self) -> Result<&mut character::Bundle, TableError> {
+    fn get_mut(&mut self) -> Result<&mut CharWithItems, TableError> {
         if let Some(selected_slot) = self.selected_slot {
             Ok(&mut self.characters[selected_slot.0 as usize])
         } else {
@@ -170,26 +173,52 @@ impl Table {
         }
     }
 
-    pub fn update_bundle(&mut self, query_item: &character::query::QueryItem) {
-        let bundle = match self.get_mut() {
-            Ok(bundle) => bundle,
+    pub fn update_bundle(
+        &mut self,
+        query_item: &character::query::QueryItem,
+        items_query: &items::ItemsQuery,
+    ) {
+        let char_with_items = match self.get_mut() {
+            Ok(char_with_items) => char_with_items,
             Err(_) => {
                 log::error!("No character selected to update");
                 return;
             }
         };
-        bundle.update(query_item);
+
+        char_with_items.character.update(query_item);
+        char_with_items.items = query_item
+            .paperdoll
+            .user_info_iter()
+            .map(|slot_item| {
+                slot_item
+                    .object_id
+                    .and_then(|object_id| {
+                        items_query
+                            .item_by_object_id(object_id)
+                            .ok()
+                            .map(|item| item.id())
+                    })
+                    .unwrap_or_default()
+            })
+            .collect::<Vec<_>>()
+            .try_into()
+            .expect(DollSlot::USER_INFO_COUNT_ERR);
     }
 
-    pub fn all(&self) -> &Vec<character::Bundle> {
-        &self.characters
+    pub fn all(&self) -> impl Iterator<Item = &CharWithItems> {
+        self.characters.iter()
+    }
+
+    pub fn all_bundles(&self) -> impl Iterator<Item = &character::Bundle> {
+        self.characters.iter().map(|c| &c.character)
     }
 
     pub fn is_valid_slot(&self, char_slot: CharSlot) -> bool {
         (char_slot.0 as usize) < self.len()
     }
 
-    pub fn remove_slot(&mut self, char_slot: CharSlot) -> Result<character::Bundle, TableError> {
+    pub fn remove_slot(&mut self, char_slot: CharSlot) -> Result<CharWithItems, TableError> {
         if char_slot.0 as usize >= self.len() {
             return Err(TableError::InvalidCharSlot)?;
         }

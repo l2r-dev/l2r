@@ -194,10 +194,10 @@ impl<'a> Iterator for ItemsDataIterator<'a> {
 
     fn next(&mut self) -> Option<Self::Item> {
         for (item_id, item_handle) in self.table_iter.by_ref() {
-            if let Some(items_info) = self.items_data_assets.get(item_handle.id()) {
-                if let Some(item_info) = items_info.get(item_id) {
-                    return Some((*item_id, item_info));
-                }
+            if let Some(items_info) = self.items_data_assets.get(item_handle.id())
+                && let Some(item_info) = items_info.get(item_id)
+            {
+                return Some((*item_id, item_info));
             }
         }
         None

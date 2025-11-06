@@ -1,12 +1,11 @@
 use super::GameServerPacketCodes;
 use crate::{
     character::{self, DeleteTimer},
-    items,
+    items::{self, DollSlot},
     network::packets::client::CharSlot,
-    object_id::ObjectId,
     stats::*,
 };
-use bevy::{platform::collections::HashMap, prelude::*};
+use bevy::prelude::*;
 use core::fmt;
 use l2r_core::{
     model::{race::Race, session::SessionId},
@@ -38,58 +37,16 @@ impl L2rServerPacket for CharSelectionInfo {
 }
 
 impl CharSelectionInfo {
-    pub fn new(
-        chars_table: &character::Table,
-        models: Vec<(
-            character::model::Model,
-            HashMap<ObjectId, items::model::Model>,
-        )>,
-    ) -> Self {
+    pub fn new(chars_table: &character::Table) -> Self {
         let mut chars = Vec::with_capacity(chars_table.len());
-        for (index, char) in chars_table.all().iter().enumerate() {
+        for (index, char_with_items) in chars_table.all().enumerate() {
             let last_used = chars_table.last_used_slot() == Some(CharSlot(index as u32));
 
-            // Find the matching character model by ObjectId
-            let char_model = models.iter().find(|(model, _)| model.id == char.id);
-
-            let equipped_items: Vec<items::Id> = char
-                .paper_doll
-                .user_info_iter()
-                .map(|slot_item| {
-                    slot_item
-                        .object_id
-                        .and_then(|id| {
-                            char_model
-                                .and_then(|(_, items_map)| items_map.get(&id))
-                                .map(|item| item.item_id())
-                        })
-                        .unwrap_or_default()
-                })
-                .collect();
-
-            chars.push(CharInfoData::new(char, equipped_items, last_used));
-        }
-
-        Self(chars)
-    }
-
-    pub fn from_query(chars_table: &character::Table, items_query: &items::ItemsQuery) -> Self {
-        let mut chars = Vec::with_capacity(chars_table.len());
-        for (index, char) in chars_table.all().iter().enumerate() {
-            let last_used = chars_table.last_used_slot() == Some(CharSlot(index as u32));
-
-            let equipped_items: Vec<items::Id> = char
-                .paper_doll
-                .user_info_iter()
-                .map(|slot_item| {
-                    slot_item
-                        .object_id
-                        .and_then(|id| items_query.item_by_object_id(id).ok().map(|item| item.id()))
-                        .unwrap_or_default()
-                })
-                .collect();
-
-            chars.push(CharInfoData::new(char, equipped_items, last_used));
+            chars.push(CharInfoData::new(
+                &char_with_items.character,
+                char_with_items.items,
+                last_used,
+            ));
         }
         Self(chars)
     }
@@ -110,7 +67,7 @@ pub struct CharInfoData {
     pub progress_stats: ProgressStats,
     pub progress_level: ProgressLevelStats,
     pub pvp: PvpStats,
-    pub paperdoll_item_ids: Vec<items::Id>,
+    pub paperdoll_item_ids: [items::Id; DollSlot::USER_INFO_COUNT],
     pub appearance: character::Appearance,
     pub delete_timer: DeleteTimer,
     pub is_last_used: bool,
@@ -186,7 +143,7 @@ impl CharInfoData {
 impl CharInfoData {
     fn new(
         bundle: &character::Bundle,
-        paperdoll_item_ids: Vec<items::Id>,
+        paperdoll_item_ids: [items::Id; DollSlot::USER_INFO_COUNT],
         is_last_used: bool,
     ) -> Self {
         Self {

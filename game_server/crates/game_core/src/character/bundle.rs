@@ -3,7 +3,7 @@ use crate::{
     action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
     encounters::KnownEntities,
-    items::{Inventory, ItemsDataAccess, ItemsDataQuery, PaperDoll},
+    items::{self, Inventory, ItemsDataAccess, ItemsDataQuery, PaperDoll},
     object_id::ObjectId,
     skills::SkillList,
     stats::{NameTitle, *},
@@ -60,7 +60,7 @@ pub struct Bundle {
 impl Bundle {
     pub fn new(
         db_model: Model,
-        paper_doll: PaperDoll,
+        items: [items::Id; items::DollSlot::USER_INFO_COUNT],
         session_id: SessionId,
         world: &mut World,
     ) -> Self {
@@ -91,15 +91,9 @@ impl Bundle {
 
         let mut stat_modifiers = StatModifiers::default();
 
-        // Get all paperdoll items and apply their stats
-        for slot_item in paper_doll.iter() {
-            let Some(object_id) = slot_item.object_id else {
-                continue;
-            };
-            let Ok(item) = items_query.item_by_object_id(object_id) else {
-                continue;
-            };
-            let Ok(item_info) = items_query.item_info(item.id()) else {
+        // Apply item stat modifiers to show proper stats on character selection screen
+        for item in items.into_iter() {
+            let Ok(item_info) = items_query.item_info(item) else {
                 continue;
             };
             if let Some(stats) = item_info.stats_modifiers() {
@@ -163,7 +157,7 @@ impl Bundle {
                 position: position.into(),
                 timestamp: 0.0,
             },
-            paper_doll,
+            paper_doll: PaperDoll::default(),
             delete_timer: super::DeleteTimer::default(),
             visibility: EncountersVisibility::default(),
             skill_list,

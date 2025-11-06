@@ -111,7 +111,7 @@ impl DollSlot {
             .sum()
     }
 
-    pub fn bodypart_slots(bodypart: BodyPart) -> &'static [DollSlot] {
+    pub const fn bodypart_slots(bodypart: BodyPart) -> &'static [DollSlot] {
         match bodypart {
             BodyPart::None => &[],
             BodyPart::Underwear => &[DollSlot::Underwear],
@@ -150,7 +150,10 @@ impl DollSlot {
         }
     }
 
-    pub const fn user_info_slots() -> [DollSlot; 26] {
+    pub const USER_INFO_COUNT: usize = 26;
+    pub const USER_INFO_COUNT_ERR: &'static str = "DollSlot::USER_INFO_COUNT should be updated in sync with the actual number of user info slots";
+
+    pub const fn user_info_slots() -> [DollSlot; Self::USER_INFO_COUNT] {
         use DollSlot::*;
         [
             Underwear,
@@ -244,7 +247,7 @@ impl PaperDoll {
         })
     }
 
-    fn slot_by_bodypart(&self, body_part: BodyPart) -> DollSlot {
+    pub fn slot_by_bodypart(&self, body_part: BodyPart) -> DollSlot {
         let slots = DollSlot::bodypart_slots(body_part);
 
         match body_part {
@@ -285,15 +288,6 @@ impl PaperDoll {
         items_data: &impl ItemsDataAccess,
     ) -> Option<(DollSlot, Vec<ObjectId>)> {
         let item_id = items_data.item_by_object_id(object_id).ok()?.id();
-        self.equip_not_spawned(object_id, item_id, items_data)
-    }
-
-    pub fn equip_not_spawned(
-        &mut self,
-        object_id: ObjectId,
-        item_id: Id,
-        items_data: &impl ItemsDataAccess,
-    ) -> Option<(DollSlot, Vec<ObjectId>)> {
         let mut previous = Vec::with_capacity(2);
         let item_info = items_data.item_info(item_id).ok()?;
 
@@ -338,7 +332,7 @@ impl PaperDoll {
     }
 
     pub fn is_equipped(&self, object_id: ObjectId) -> bool {
-        self.0.iter().any(|item| *item == Some(object_id))
+        self.0.contains(&Some(object_id))
     }
 
     pub fn iter(&self) -> impl Iterator<Item = SlotItem> + '_ {

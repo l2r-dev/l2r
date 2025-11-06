@@ -114,12 +114,11 @@ pub fn send_char_selection_info(
     send: Trigger<SendCharSelectionInfo>,
     mut commands: Commands,
     tables: Query<Ref<character::Table>>,
-    items_query: ItemsQuery,
 ) {
     let entity = send.target();
     if let Ok(chars_table) = tables.get(entity) {
         commands.trigger_targets(
-            GameServerPacket::from(CharSelectionInfo::from_query(&chars_table, &items_query)),
+            GameServerPacket::from(CharSelectionInfo::new(&chars_table)),
             entity,
         );
     }

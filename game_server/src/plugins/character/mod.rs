@@ -7,6 +7,7 @@ use game_core::{
         model::{self, ModelUpdate},
     },
     custom_hierarchy::DespawnChildOf,
+    items::ItemsQuery,
     object_id::ObjectId,
 };
 use l2r_core::db::{DbError, Repository, RepositoryManager, TypedRepositoryManager};
@@ -44,6 +45,7 @@ fn save_char_to_database(
     save: Trigger<CharacterSave>,
     mut commands: Commands,
     characters: Query<(character::Query, Ref<DespawnChildOf>)>,
+    items_query: ItemsQuery,
     mut chars_tables: Query<Mut<character::Table>>,
     repo_manager: Res<RepositoryManager>,
 ) -> Result<()> {
@@ -54,7 +56,7 @@ fn save_char_to_database(
     let character_repository = repo_manager.typed::<ObjectId, character::model::Entity>()?;
     let (character, session) = characters.get(character_entity)?;
     let mut chars_table = chars_tables.get_mut(**session)?;
-    chars_table.update_bundle(&character);
+    chars_table.update_bundle(&character, &items_query);
     let char_name = character.name.to_string().clone();
 
     let char_id = *character.object_id;

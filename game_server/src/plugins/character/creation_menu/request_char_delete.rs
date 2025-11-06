@@ -1,11 +1,9 @@
 use bevy::{log, prelude::*};
 use bevy_defer::{AccessError, AsyncAccess, AsyncCommandsExtension, AsyncWorld};
-use bevy_ecs::system::SystemState;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     account::Account,
     character,
-    items::ItemsQuery,
     network::{
         config::GameServerNetworkConfig,
         packets::{
@@ -148,13 +146,11 @@ async fn delete_from_char_table(
     }
 
     AsyncWorld.apply_command(move |world: &mut World| {
-        let mut items_state: SystemState<ItemsQuery> = SystemState::new(world);
-        let items_query = items_state.get(world);
         let table = world.entity(session_entity).get::<character::Table>();
 
         if let Some(table) = table {
             world.trigger_targets(
-                GameServerPacket::from(CharSelectionInfo::from_query(table, &items_query)),
+                GameServerPacket::from(CharSelectionInfo::new(table)),
                 session_entity,
             );
         } else {
