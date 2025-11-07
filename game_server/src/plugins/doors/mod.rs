@@ -1,4 +1,4 @@
-use avian3d::prelude::CollisionEventsEnabled;
+use avian3d::prelude::{CollisionEventsEnabled, Sensor};
 use bevy::prelude::*;
 use game_core::{
     action::target::{SelectedTarget, Targetable},
@@ -15,7 +15,7 @@ use game_core::{
         VitalsStats,
     },
 };
-use map::{DoorCommand, DoorStatus, DoorsComponentsPlugin, MeshInfo, Zone, ZoneKind};
+use map::{Door, DoorCommand, DoorStatus, DoorsComponentsPlugin, MeshInfo, Zone, ZoneKind};
 use physics::GameLayer;
 
 mod query;
@@ -37,7 +37,7 @@ impl Plugin for DoorsPlugin {
 }
 
 fn door_added(
-    added: Trigger<OnAdd, Zone>,
+    added: Trigger<OnAdd, Door>,
     mut commands: Commands,
     mut object_id_manager: ResMut<ObjectIdManager>,
     zones: Query<Ref<Zone>>,
@@ -99,7 +99,7 @@ fn door_added(
         // Doors do not need collision events
         commands
             .entity(entity)
-            .try_remove::<CollisionEventsEnabled>();
+            .try_remove::<(CollisionEventsEnabled, Sensor)>();
     }
 
     Ok(())

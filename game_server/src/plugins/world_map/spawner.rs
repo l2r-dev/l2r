@@ -1,13 +1,10 @@
 use avian3d::prelude::*;
-use bevy::{ecs::system::ParallelCommands, log, prelude::*};
+use bevy::{ecs::system::ParallelCommands, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
 use game_core::{
     custom_hierarchy::{DespawnChildOf, DespawnChildren},
     npc::{self, RegionalNpcHandles},
-    spawner::{
-        BannedSpawnZone, NpcSpawnInfo, RegionalSpawners, SpawnList, SpawnListHandle, SpawnZone,
-        Spawner,
-    },
+    spawner::{BannedSpawnZone, NpcSpawnInfo, SpawnList, SpawnListHandle, SpawnZone, Spawner},
 };
 use l2r_core::{
     assets::ASSET_DIR, chronicles::CHRONICLE, model::generic_number::GenericNumber,
@@ -37,125 +34,83 @@ fn spawn_npc_spawners(
     spawn_lists: Res<Assets<SpawnList>>,
     mut events: EventReader<AssetEvent<SpawnList>>,
     mut regions: Query<(
+        Entity,
         Ref<Region>,
         Ref<SpawnListHandle>,
         Mut<RegionalNpcHandles>,
         Ref<DespawnChildren>,
     )>,
-    mut regional_spawners: Query<Entity, With<RegionalSpawners>>,
-    mut spawners: Query<Entity, With<Spawner>>,
-    mut npcs: Query<Entity, With<npc::Kind>>,
-) {
-    for event in events.read() {
-        if let AssetEvent::LoadedWithDependencies { id } = event {
-            handle_spawn_list_loaded(
-                commands.reborrow(),
-                &asset_server,
-                &spawn_lists,
-                *id,
-                regions.reborrow(),
-                regional_spawners.reborrow(),
-                spawners.reborrow(),
-                npcs.reborrow(),
-            );
-        }
-    }
-}
-
-fn handle_spawn_list_loaded(
-    mut commands: Commands,
-    asset_server: &AssetServer,
-    spawn_lists: &Assets<SpawnList>,
-    asset_id: AssetId<SpawnList>,
-    mut regions: Query<(
-        Ref<Region>,
-        Ref<SpawnListHandle>,
-        Mut<RegionalNpcHandles>,
-        Ref<DespawnChildren>,
-    )>,
-    mut regional_spawners: Query<Entity, With<RegionalSpawners>>,
-    mut spawners: Query<Entity, With<Spawner>>,
-    mut npcs: Query<Entity, With<npc::Kind>>,
-) {
-    for (region, spawn_handle, mut regional_npc_handles, despawn_children) in regions.iter_mut() {
-        if asset_id == spawn_handle.id()
-            && let Some(spawn_list) = spawn_lists.get(asset_id)
-        {
-            let region_id = region.id();
-            log::debug!("Spawn list for region {} loaded", region_id);
-
-            let mut asset_dir = get_base_path();
-            asset_dir.push(ASSET_DIR);
-            asset_dir.push("npc");
-            asset_dir.push(CHRONICLE);
-
-            for spawner in spawn_list.iter() {
-                for npc in spawner.npcs.iter() {
-                    if !regional_npc_handles.contains_key(&npc.id()) {
-                        let filename = format!("{}.json", npc.id().range());
-
-                        let mut asset_path = asset_dir.clone();
-                        asset_path.push(&filename);
-
-                        let new_npc_handle = asset_server.load(asset_path);
-                        regional_npc_handles.insert(npc.id(), new_npc_handle);
-                    }
-                }
-            }
-
-            process_region_spawns(
-                commands.reborrow(),
-                spawn_list,
-                region_id,
-                &despawn_children,
-                regional_spawners.reborrow(),
-                spawners.reborrow(),
-                npcs.reborrow(),
-            );
-        }
-    }
-}
-
-fn process_region_spawns(
-    mut commands: Commands,
-    spawn_list: &SpawnList,
-    region_id: RegionId,
-    region_children: &DespawnChildren,
-    regional_spawners: Query<Entity, With<RegionalSpawners>>,
     spawners: Query<Entity, With<Spawner>>,
     npcs: Query<Entity, With<npc::Kind>>,
 ) {
-    let Some(regional_spawners_entity) = region_children
-        .iter()
-        .find(|child| regional_spawners.get(*child).is_ok())
-    else {
-        return;
-    };
+    for event in events.read() {
+        if let AssetEvent::LoadedWithDependencies { id } = event {
+            for (entity, region, spawn_handle, mut regional_npc_handles, region_children) in
+                regions.iter_mut()
+            {
+                if *id == spawn_handle.id()
+                    && let Some(spawn_list) = spawn_lists.get(*id)
+                {
+                    let mut asset_dir = get_base_path();
+                    asset_dir.push(ASSET_DIR);
+                    asset_dir.push("npc");
+                    asset_dir.push(CHRONICLE);
 
-    // Despawn existing for hot-reloading
-    for child in region_children.iter() {
-        if spawners.get(child).is_ok() || npcs.get(child).is_ok() {
-            commands.entity(child).despawn();
+                    for spawner in spawn_list.iter() {
+                        for npc in spawner.npcs.iter() {
+                            if !regional_npc_handles.contains_key(&npc.id()) {
+                                let filename = format!("{}.json", npc.id().range());
+
+                                let mut asset_path = asset_dir.clone();
+                                asset_path.push(&filename);
+
+                                let new_npc_handle = asset_server.load(asset_path);
+                                regional_npc_handles.insert(npc.id(), new_npc_handle);
+                            }
+                        }
+                    }
+
+                    for child in region_children.iter() {
+                        if spawners.get(child).is_ok() || npcs.get(child).is_ok() {
+                            commands.entity(child).despawn();
+                        }
+                    }
+
+                    spawn_new_spawners(commands.reborrow(), spawn_list, region.id(), entity);
+                }
+            }
         }
     }
-    spawn_new_spawners(commands, spawn_list, region_id, regional_spawners_entity);
 }
 
+#[inline]
 fn spawn_new_spawners(
     mut commands: Commands,
     spawn_list: &SpawnList,
     region_id: RegionId,
-    regional_spawners_entity: Entity,
+    region_entity: Entity,
 ) {
     for spawner in spawn_list.iter() {
         let built_spawner = spawner.build();
         let spawner_entity = commands.spawn(built_spawner.clone()).id();
         commands
             .entity(spawner_entity)
-            .insert(DespawnChildOf(regional_spawners_entity));
+            .insert(DespawnChildOf(region_entity));
 
-        if let Some(zone) = &built_spawner.0.zone {
-            spawn_zones_for_spawner(
+        if let Some(zone) = &built_spawner.0.zone
+            && let ZoneKind::Spawn(spawn_zone) = zone.kind()
+        {
+            if let Some(banned_zone) = spawn_zone.banned_zone() {
+                spawn_banned_zone(
+                    commands.reborrow(),
+                    banned_zone,
+                    region_id,
+                    &spawner.name,
+                    spawner_entity,
+                );
+            }
+
+            spawn_main_zone(
                 commands.reborrow(),
                 zone,
                 region_id,
@@ -164,33 +119,6 @@ fn spawn_new_spawners(
             );
         }
     }
-}
-
-fn spawn_zones_for_spawner(
-    mut commands: Commands,
-    zone: &map::Zone,
-    region_id: RegionId,
-    spawner_name: &Option<String>,
-    spawner_entity: Entity,
-) {
-    let ZoneKind::Spawn(spawn_zone) = zone.kind() else {
-        log::error!("Zone kind is not Spawn");
-        return;
-    };
-
-    // Spawn banned zone if it exists
-    if let Some(banned_zone) = spawn_zone.banned_zone() {
-        spawn_banned_zone(
-            commands.reborrow(),
-            banned_zone,
-            region_id,
-            spawner_name,
-            spawner_entity,
-        );
-    }
-
-    // Spawn main zone
-    spawn_main_zone(commands, zone, region_id, spawner_name, spawner_entity);
 }
 
 fn spawn_banned_zone(

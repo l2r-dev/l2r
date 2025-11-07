@@ -167,8 +167,7 @@ async fn create_task(
             }
         };
 
-        let bundle =
-            character::Bundle::new(character, [items::Id::default(); 26], connection_id, world);
+        let bundle = character::Bundle::new(character, Vec::new(), connection_id, world);
 
         let Ok(mut session_entity_mut) = world.get_entity_mut(session_entity) else {
             log::error!("Failed to get mutable session entity: {:?}", session_entity);

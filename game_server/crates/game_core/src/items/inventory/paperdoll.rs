@@ -367,6 +367,20 @@ impl PaperDoll {
     }
 }
 
+impl From<Vec<crate::items::model::Model>> for PaperDoll {
+    fn from(models: Vec<crate::items::model::Model>) -> Self {
+        let mut paper_doll = PaperDoll::default();
+        for model in models {
+            if model.location == crate::items::ItemLocationVariant::PaperDoll
+                && let Ok(slot) = DollSlot::try_from(model.location_data as u32)
+            {
+                paper_doll[slot] = Some(model.object_id);
+            }
+        }
+        paper_doll
+    }
+}
+
 impl Index<DollSlot> for PaperDoll {
     type Output = Option<ObjectId>;
 

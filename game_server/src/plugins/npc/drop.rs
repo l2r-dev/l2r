@@ -2,6 +2,7 @@ use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use bevy_ecs::system::SystemParam;
 use game_core::{
+    active_action::ActiveAction,
     items::{ItemLocation, ItemsDataAccess, ItemsDataQueryMut, UniqueItem, model},
     network::{
         broadcast::{BroadcastScope, ServerPacketBroadcast},
@@ -17,7 +18,8 @@ use smallvec::SmallVec;
 #[derive(SystemParam)]
 pub struct DropSystemParams<'w, 's> {
     pub map_query: WorldMapQuery<'w, 's>,
-    pub dropper_info: Query<'w, 's, (Ref<'static, Transform>, Ref<'static, ObjectId>)>,
+    pub dropper_info:
+        Query<'w, 's, (Ref<'static, Transform>, Ref<'static, ObjectId>), Without<ActiveAction>>,
     pub npc_info: RegionalNpcInfoQuery<'w, 's>,
     pub items_data: ItemsDataQueryMut<'w, 's>,
     pub repo_manager: Res<'w, RepositoryManager>,

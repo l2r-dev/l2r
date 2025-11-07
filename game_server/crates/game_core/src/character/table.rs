@@ -1,11 +1,10 @@
 use super::model::Model;
 use crate::{
     character,
-    items::{self, DollSlot, ItemsDataAccess, ItemsDataQuery},
+    items::{self, DollSlot},
     network::packets::client::CharSlot,
 };
 use bevy::{log, prelude::*};
-use bevy_ecs::system::SystemState;
 use bevy_slinet::connection::ConnectionId;
 use l2r_core::model::session::SessionId;
 use std::fmt;
@@ -75,30 +74,20 @@ impl Table {
                 last_used_slot = Some(CharSlot(index as u32));
             }
 
-            let mut items_state: SystemState<ItemsDataQuery> = SystemState::new(world);
-            let items_query = items_state.get_mut(world);
-
             let items: [items::Id; DollSlot::USER_INFO_COUNT] =
                 DollSlot::user_info_slots().map(|slot| {
                     db_items
                         .iter()
                         .find(|item| {
-                            if !item.equipped() {
-                                return false;
-                            }
-                            let Ok(item_info) = items_query.item_info(item.item_id()) else {
-                                return false;
-                            };
-                            let Some(bodypart) = item_info.bodypart() else {
-                                return false;
-                            };
-                            DollSlot::bodypart_slots(bodypart).contains(&slot)
+                            item.location() == items::ItemLocationVariant::PaperDoll
+                                && (DollSlot::try_from(item.location_data as u32).ok()
+                                    == Some(slot))
                         })
                         .map(|item| item.item_id())
                         .unwrap_or_default()
                 });
 
-            let bundle = character::Bundle::new(char, items, session_id, world);
+            let bundle = character::Bundle::new(char, db_items, session_id, world);
 
             chars_with_items.push(CharWithItems {
                 character: bundle,

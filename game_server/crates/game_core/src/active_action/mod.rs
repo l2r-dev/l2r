@@ -15,7 +15,7 @@ impl Plugin for ActiveActionComponentPlugin {
     }
 }
 
-/// A marker component indicating that an entity is currently performing an action.
+/// A component indicating that an entity is currently performing an action.
 ///
 /// This component is used as a flag to prevent entities from starting new actions
 /// (such as movement, attacking, or picking up items) while they are still executing

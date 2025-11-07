@@ -1,20 +1,20 @@
-use bevy::{log, prelude::*};
+use bevy::prelude::*;
 use bevy_defer::{AsyncCommandsExtension, AsyncWorld};
 use game_core::{
     character::Character,
-    custom_hierarchy::DespawnChildOf,
-    items::{self, RegionalItems, SpawnExisting},
+    custom_hierarchy::{DespawnChildOf, DespawnChildren, InsertIntoFolders},
+    items::{self, Item, RegionalItemsFolder, SpawnExisting},
     npc::RegionalNpcHandles,
     object_id::ObjectId,
-    spawner::{RegionalSpawners, SpawnListHandle},
+    spawner::{RegionalSpawnersFolder, SpawnListHandle, Spawner},
 };
 use l2r_core::{
     chronicles::CHRONICLE,
     db::{Repository, RepositoryManager, TypedRepositoryManager},
 };
 use map::{
-    LoadRegionItems, NamedZones, Region, RegionComponentsPlugin, RegionGeoData, RegionalZones,
-    WorldMap, ZoneListHandle,
+    LoadRegionItems, NamedZones, Region, RegionComponentsPlugin, RegionGeoData,
+    RegionalZonesFolder, WorldMap, ZoneKindVariant, ZoneListHandle,
     id::RegionId,
     info::{RegionInfo, RegionInfoHandle, RegionRespawnZone},
 };
@@ -36,6 +36,7 @@ impl Plugin for RegionPlugin {
                 deactivate_empty_region.in_set(GameServerStateSystems::Run),
                 loaded_region_geodata,
                 loaded_region_info,
+                sort_entities_into_folders,
             ),
         );
     }
@@ -55,7 +56,7 @@ fn load_region_with_players(
         // }
         region_ids_to_activate.into_iter().for_each(|region_id| {
             if !world_map.contains_key(&region_id) {
-                log::trace!("Character {:?} activated region {}", name, region_id);
+                trace!("Character {:?} activated region {}", name, region_id);
 
                 let mut spawn_list_path = PathBuf::from("spawns");
                 spawn_list_path.push(CHRONICLE);
@@ -91,22 +92,44 @@ fn load_region_with_players(
                     RegionInfoHandle::from(asset_server.load(region_info_path));
 
                 let region_entity = commands
-                    .spawn((
-                        region,
-                        region_name,
-                        spawner_handle,
-                        npc_handles,
-                        region_info_handle,
-                    ))
+                    .spawn((region_name, spawner_handle, npc_handles, region_info_handle))
                     .id();
 
-                commands.spawn((RegionalZones, DespawnChildOf(region_entity)));
-                commands.spawn((RegionalSpawners, DespawnChildOf(region_entity)));
-                commands.spawn((RegionalItems, DespawnChildOf(region_entity)));
+                region.set_folder::<ZoneKindVariant>(
+                    commands
+                        .spawn((RegionalZonesFolder, DespawnChildOf(region_entity)))
+                        .id(),
+                );
+                region.set_folder::<Spawner>(
+                    commands
+                        .spawn((RegionalSpawnersFolder, DespawnChildOf(region_entity)))
+                        .id(),
+                );
+                region.set_folder::<Item>(
+                    commands
+                        .spawn((RegionalItemsFolder, DespawnChildOf(region_entity)))
+                        .id(),
+                );
+                commands.entity(region_entity).insert(region);
+
                 world_map.insert(region_id, region_entity);
             }
         });
     }
+}
+
+fn sort_entities_into_folders(
+    changed_children: Query<(Ref<Region>, Ref<DespawnChildren>), Changed<DespawnChildren>>,
+    refs: Query<EntityRef>,
+    mut commands: Commands,
+) -> Result<()> {
+    for (region, despawn_children) in changed_children.iter() {
+        for child_entity in despawn_children.iter() {
+            let entity_ref = refs.get(child_entity)?;
+            commands.insert_into_folders(entity_ref, region.folders());
+        }
+    }
+    Ok(())
 }
 
 fn loaded_region_geodata(
@@ -121,7 +144,7 @@ fn loaded_region_geodata(
                 let id = *id;
                 if region.handle().id() == id {
                     let region_id = region.id();
-                    log::info!("Geodata for region {} updated", region_id);
+                    info!("Geodata for region {} updated", region_id);
                     if let Some(geodata) = regions_geodata.get(id) {
                         region.activate(geodata);
                         commands.trigger_targets(LoadRegionItems, entity);
@@ -240,7 +263,7 @@ fn deactivate_empty_region(
             .collect::<Vec<RegionId>>();
 
         regions_to_deactivate.iter().for_each(|&region_id| {
-            log::debug!("Deactivating region {}", region_id);
+            debug!("Deactivating region {}", region_id);
             if let Some(region_entity) = world_map.get(&region_id).copied() {
                 // With the custom hierarchy system, despawning the region will
                 // automatically despawn all its children through DespawnChildren hooks

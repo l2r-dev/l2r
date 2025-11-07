@@ -3,7 +3,7 @@ use crate::{
     action::{target::Targetable, wait_kind::WaitKind},
     character::{self, model::Model},
     encounters::KnownEntities,
-    items::{self, Inventory, ItemsDataAccess, ItemsDataQuery, PaperDoll},
+    items::{self, Inventory, PaperDoll},
     object_id::ObjectId,
     skills::SkillList,
     stats::{NameTitle, *},
@@ -60,14 +60,14 @@ pub struct Bundle {
 impl Bundle {
     pub fn new(
         db_model: Model,
-        items: [items::Id; items::DollSlot::USER_INFO_COUNT],
+        item_models: Vec<items::model::Model>,
         session_id: SessionId,
         world: &mut World,
     ) -> Self {
-        let mut items_state: SystemState<ItemsDataQuery> = SystemState::new(world);
+        // let mut items_state: SystemState<ItemsDataQuery> = SystemState::new(world);
         let mut stats_state: SystemState<StatsTableQuery> = SystemState::new(world);
 
-        let items_query = items_state.get(world);
+        // let items_query = items_state.get(world);
         let stats_query = stats_state.get(world);
 
         let class_tree = stats_query.class_tree();
@@ -89,17 +89,11 @@ impl Bundle {
         other_stats.insert(OtherStat::Breath, base_class_stats.breath as f32);
         other_stats.insert(OtherStat::BreathMax, base_class_stats.breath as f32);
 
-        let mut stat_modifiers = StatModifiers::default();
+        let stat_modifiers = StatModifiers::default();
 
-        // Apply item stat modifiers to show proper stats on character selection screen
-        for item in items.into_iter() {
-            let Ok(item_info) = items_query.item_info(item) else {
-                continue;
-            };
-            if let Some(stats) = item_info.stats_modifiers() {
-                stat_modifiers.merge(&stats);
-            }
-        }
+        // TODO: Apply item stat modifiers to show proper stats on character selection screen
+        // Don't do this now because stats system is being refactored
+        let paper_doll = PaperDoll::from(item_models);
 
         let params = StatsCalculateParams::new(
             stat_formula_registry,
@@ -157,7 +151,7 @@ impl Bundle {
                 position: position.into(),
                 timestamp: 0.0,
             },
-            paper_doll: PaperDoll::default(),
+            paper_doll,
             delete_timer: super::DeleteTimer::default(),
             visibility: EncountersVisibility::default(),
             skill_list,

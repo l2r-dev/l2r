@@ -3,7 +3,6 @@ use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     attack::Dead,
     character,
-    items::InventoryLoad,
     network::{
         config::GameServerNetworkConfig,
         packets::{client::GameClientPacket, server::*},
@@ -25,7 +24,6 @@ fn handle(
     receive_params: PacketReceiveParams,
     characters: Query<character::Query>,
     mut commands: Commands,
-    mut inventory_load: EventWriter<InventoryLoad>,
 ) -> Result<()> {
     let event = receive.event();
     let GameClientPacket::EnterWorld = event.packet else {
@@ -52,10 +50,13 @@ fn handle(
     log::debug!("Enter world packets sent to entity {:?}", char_entity);
     commands.trigger_targets(enter_world_packets, char_entity);
 
-    inventory_load.write(InventoryLoad::from(char_entity));
-
     if selected_char.vitals_stats.dead() {
         commands.trigger_targets(Dead::new(char_entity), char_entity);
     }
+
+    commands
+        .entity(char_entity)
+        .insert(game_core::encounters::EnteredWorld);
+
     Ok(())
 }

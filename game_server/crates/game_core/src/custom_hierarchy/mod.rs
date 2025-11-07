@@ -1,6 +1,7 @@
-use bevy::prelude::*;
+use bevy::{platform::collections::HashMap, prelude::*};
 use bevy_ecs::component::{ComponentCloneBehavior, ComponentHook, Mutable, StorageType};
 use smallvec::SmallVec;
+use std::any::TypeId;
 
 pub struct CustomHierarchyComponentsPlugin;
 impl Plugin for CustomHierarchyComponentsPlugin {
@@ -80,5 +81,22 @@ impl RelationshipTarget for DespawnChildren {
     #[inline]
     fn from_collection_risky(collection: Self::Collection) -> Self {
         Self(collection)
+    }
+}
+
+pub trait InsertIntoFolders {
+    fn insert_into_folders(&mut self, child_entity: EntityRef, folders: &HashMap<TypeId, Entity>);
+}
+
+impl InsertIntoFolders for Commands<'_, '_> {
+    fn insert_into_folders(&mut self, child_entity: EntityRef, folders: &HashMap<TypeId, Entity>) {
+        for (component_type_id, folder_entity) in folders.iter() {
+            let contains = child_entity.contains_type_id(*component_type_id);
+
+            if contains {
+                self.entity(child_entity.id())
+                    .insert(DespawnChildOf(*folder_entity));
+            }
+        }
     }
 }

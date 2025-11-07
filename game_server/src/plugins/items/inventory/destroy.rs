@@ -1,5 +1,6 @@
 use bevy::prelude::*;
 use game_core::{
+    active_action::ActiveAction,
     items::{
         DestroyItemRequest, Inventory, ItemsDataAccess, ItemsDataQueryMut, UnequipItem, UniqueItem,
         UpdateType,
@@ -11,7 +12,7 @@ use smallvec::smallvec;
 pub fn destroy_item(
     destroy_request: Trigger<DestroyItemRequest>,
     mut commands: Commands,
-    mut inventories: Query<Mut<Inventory>>,
+    mut inventories: Query<Mut<Inventory>, Without<ActiveAction>>,
     mut items_data: ItemsDataQueryMut,
 ) -> Result<()> {
     let inventory_entity = destroy_request.target();

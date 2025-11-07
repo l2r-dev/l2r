@@ -3,6 +3,7 @@ use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     character,
     custom_hierarchy::DespawnChildOf,
+    items::InventoryLoad,
     network::{
         config::GameServerNetworkConfig,
         packets::{
@@ -26,6 +27,7 @@ fn handle(
     sessions: Res<ServerSessions>,
     mut commands: Commands,
     mut query: Query<(Ref<GameServerSession>, Mut<character::Table>)>,
+    mut inventory_load: EventWriter<InventoryLoad>,
 ) -> Result<()> {
     let event = receive.event();
     let GameClientPacket::CharacterSelect(ref packet) = event.packet else {
@@ -55,5 +57,6 @@ fn handle(
         .insert(DespawnChildOf(session_entity));
     commands.trigger_targets(GameServerPacket::from(SSQInfo::default()), session_entity);
     commands.trigger_targets(GameServerPacket::from(char_selected), session_entity);
+    inventory_load.write(InventoryLoad::from(char_entity));
     Ok(())
 }

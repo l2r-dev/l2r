@@ -5,7 +5,6 @@ use bevy_defer::{
 };
 use game_core::{
     items::{self, InventoryComponentsPlugin, InventoryLoad, SpawnExisting, model},
-    network::packets::server::SendUserInfo,
     object_id::ObjectId,
 };
 use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
@@ -39,10 +38,10 @@ impl Plugin for InventoryPlugin {
             .react_to_event::<InventoryLoad>();
     }
 }
+
 async fn load_inventory_from_db() -> Result<(), AccessError> {
     while let Ok(load_event) = AsyncWorld.get_next_event::<InventoryLoad>().await {
         let entity = load_event.0;
-
         let char_id = AsyncWorld
             .entity(entity)
             .component::<ObjectId>()
@@ -71,11 +70,6 @@ async fn load_inventory_from_db() -> Result<(), AccessError> {
             world.commands().spawn_task(move || async move {
                 crate::plugins::shortcuts::shortcut_init_task(entity).await
             });
-            world.trigger_targets(SendUserInfo, entity);
-            world
-                .commands()
-                .entity(entity)
-                .insert(game_core::encounters::EnteredWorld);
         });
     }
 

@@ -2,11 +2,11 @@ use bevy::prelude::*;
 use bevy_common_assets::json::JsonAssetPlugin;
 use bevy_defer::{AccessError, AppReactorExtension, AsyncAccess, AsyncExtension, AsyncWorld};
 use game_core::{
-    custom_hierarchy::{DespawnChildOf, DespawnChildren},
+    custom_hierarchy::DespawnChildOf,
     items::{
         self, AddInInventory, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
-        ItemsComponentsPlugin, ItemsDataAccess, ItemsDataQuery, ItemsInfo, RegionalItems,
-        SilentSpawn, SpawnExisting, SpawnNew, UniqueItem, model,
+        ItemsComponentsPlugin, ItemsDataAccess, ItemsDataQuery, ItemsInfo, SilentSpawn,
+        SpawnExisting, SpawnNew, UniqueItem, model,
     },
     object_id::{ObjectId, ObjectIdManager, QueryByObjectId},
 };
@@ -14,7 +14,7 @@ use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
     metrics::MetricsAppExt,
 };
-use map::{WorldMap, id::RegionId};
+use map::WorldMap;
 use state::{GameMechanicsSystems, LoadingSystems};
 use use_shot::UseShotPlugin;
 
@@ -160,24 +160,14 @@ fn handle_newly_spawned_items(
     object_id_manager: Res<ObjectIdManager>,
     inventory_entities: Query<Entity, With<Inventory>>,
     newly_spawned_items: Query<(Entity, Ref<ObjectId>, Ref<Item>, Has<SilentSpawn>), Added<Item>>,
-    region_children: Query<&DespawnChildren>,
-    regional_items: Query<Entity, With<RegionalItems>>,
 ) -> Result<()> {
     for (item_entity, item_oid, item, silent) in &newly_spawned_items {
         match item.location() {
             ItemLocation::World(translation) => {
-                if let Some(region_entity) = world_map.get(&RegionId::from(translation))
-                    && let Ok(region_children_list) = region_children.get(*region_entity)
-                {
-                    let regional_items_entity = region_children_list
-                        .iter()
-                        .find(|child| regional_items.get(*child).is_ok());
-
-                    if let Some(regional_items_entity) = regional_items_entity {
-                        commands
-                            .entity(item_entity)
-                            .insert(DespawnChildOf(regional_items_entity));
-                    }
+                if let Some(region_entity) = world_map.get_by_loc(translation) {
+                    commands
+                        .entity(item_entity)
+                        .insert(DespawnChildOf(region_entity));
                 }
                 commands
                     .entity(item_entity)

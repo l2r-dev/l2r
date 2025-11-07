@@ -1,10 +1,11 @@
 use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
+    active_action::ActiveAction,
     items::{
-        self, DollSlot, EquipItem, Inventory, ItemEquipped, ItemEquippedMessage,
-        ItemLocationVariant, ItemsDataAccess, ItemsDataQuery, ItemsDataQueryMut, Kind, PaperDoll,
-        UnequipItem, UniqueItem, UpdateType,
+        self, DollSlot, EquipItem, Inventory, ItemEquipped, ItemEquippedMessage, ItemsDataAccess,
+        ItemsDataQuery, ItemsDataQueryMut, Kind, PaperDoll, UnequipItem, UniqueItem, UpdateType,
+        model::ActiveModelSetCoordinates,
     },
     network::packets::server::{
         BroadcastCharInfo, GameServerPacket, InventoryUpdate, SendUserInfo, SystemMessage,
@@ -13,7 +14,7 @@ use game_core::{
     stats::{AttackEffects, StatModifiers, Weapon},
 };
 use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
-use sea_orm::{ActiveValue, IntoActiveModel};
+use sea_orm::IntoActiveModel;
 use smallvec::smallvec;
 use system_messages::{Id as SmId, SmParam};
 
@@ -29,7 +30,10 @@ impl Plugin for EquipItemPlugin {
 fn handle_equip_item(
     trigger: Trigger<EquipItem>,
     mut commands: Commands,
-    mut characters: Query<(Mut<PaperDoll>, Mut<StatModifiers>, Ref<Inventory>)>,
+    mut characters: Query<
+        (Mut<PaperDoll>, Mut<StatModifiers>, Ref<Inventory>),
+        Without<ActiveAction>,
+    >,
     mut items_query: ItemsDataQueryMut,
 ) -> Result<()> {
     let character_entity = trigger.target();
@@ -125,7 +129,7 @@ fn handle_item_equipped(
             let item_model = items::model::Model::from(unique_item);
             commands.spawn_task(move || async move {
                 let mut item_active = item_model.into_active_model();
-                item_active.location = ActiveValue::Set(ItemLocationVariant::PaperDoll);
+                item_active.set_location(unique_item.item().location());
                 items_repository.update(&item_active).await?;
                 Ok(())
             });

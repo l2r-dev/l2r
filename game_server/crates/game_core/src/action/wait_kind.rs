@@ -1,4 +1,5 @@
 use crate::{
+    action::pickup::PickupRequest,
     attack::Attacking,
     movement::{Following, Movement},
 };
@@ -37,5 +38,5 @@ pub fn sit_added(trigger: Trigger<OnAdd, Sit>, mut commands: Commands) {
 
     commands
         .entity(entity)
-        .remove::<(Movement, Following, Attacking)>();
+        .remove::<(Movement, Following, Attacking, PickupRequest)>();
 }

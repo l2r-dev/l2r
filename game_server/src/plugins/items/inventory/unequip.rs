@@ -1,6 +1,7 @@
 use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
+    active_action::ActiveAction,
     items::{
         self, DollSlot, ItemLocationVariant, ItemUnequipped, ItemUnequippedMessage,
         ItemsDataAccess, ItemsDataQuery, ItemsDataQueryMut, PaperDoll, UnequipItem, UniqueItem,
@@ -49,8 +50,6 @@ pub fn process_unequip(
         return Ok(());
     };
 
-    debug!("Unequipped item {:?} from entity {:?}", item_id, entity);
-
     // Check if we need to also unequip ammo from left hand
     let ammo_to_unequip = items_data
         .item_info(item_id)
@@ -67,11 +66,6 @@ pub fn process_unequip(
                     .map(|_| oid)
             })
         });
-
-    debug!(
-        "Also unequipping ammo {:?} from entity {:?}",
-        ammo_to_unequip, entity
-    );
 
     if let Some(item_object_id) = ammo_to_unequip {
         commands.trigger_targets(
@@ -107,7 +101,7 @@ pub fn process_unequip(
 fn handle_unequip_item(
     trigger: Trigger<UnequipItem>,
     mut commands: Commands,
-    mut paperdolls: Query<Mut<PaperDoll>>,
+    mut paperdolls: Query<Mut<PaperDoll>, Without<ActiveAction>>,
     mut items_data: ItemsDataQueryMut,
     repo_manager: Res<RepositoryManager>,
 ) -> Result<()> {
@@ -115,12 +109,15 @@ fn handle_unequip_item(
     let item_object_id = trigger.event().item_object_id;
     let skip_db_update = trigger.event().skip_db_update;
 
+    let mut dolls_lens = paperdolls.transmute_lens::<Mut<PaperDoll>>();
+    let doll_query = dolls_lens.query();
+
     process_unequip(
         character_entity,
         item_object_id,
         commands.reborrow(),
         &mut items_data,
-        paperdolls.reborrow(),
+        doll_query,
         skip_db_update,
         repo_manager.as_ref(),
     )

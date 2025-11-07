@@ -33,7 +33,6 @@ fn add_in_inventory(
     let inventory_target = trigger.target();
     let event = trigger.event();
     let item_entity = event.item;
-
     let new_item_oid = *items_data.object_ids.get(item_entity)?;
     let new_item = *items_data.item(item_entity)?;
     let new_item_id = new_item.id();
@@ -170,7 +169,7 @@ fn send_item_obtained_message(
         // Multiple items of the same type
         (_, count) if count > 1 => SystemMessage::new(
             system_messages::Id::YouHaveObtainedS2S1,
-            vec![count.into(), item_info.name().to_string().into()],
+            vec![item_info.name().to_string().into(), count.into()],
         ),
         // Single item
         _ => SystemMessage::new(
