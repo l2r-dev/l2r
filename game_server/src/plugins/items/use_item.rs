@@ -3,7 +3,7 @@ use bevy_ecs::system::SystemParam;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     items::{
-        CharacterInventories, ConsumableKind, EquipItem, ItemsDataAccess, ItemsDataQuery, Kind,
+        ConsumableKind, EquipItem, InventoriesQuery, ItemsDataAccess, ItemsDataQuery, Kind,
         UnequipItem, UseShot,
     },
     network::{
@@ -22,7 +22,7 @@ impl Plugin for UseItemPlugin {
 #[derive(SystemParam)]
 struct UseItemParams<'w, 's> {
     receive_params: PacketReceiveParams<'w, 's>,
-    character_inventories: CharacterInventories<'w, 's>,
+    inventories: InventoriesQuery<'w, 's>,
     items_data: ItemsDataQuery<'w, 's>,
     use_shot_events: EventWriter<'w, UseShot>,
 }
@@ -36,7 +36,7 @@ fn handle(
     let event = receive.event();
     if let GameClientPacket::UseItem(ref packet) = event.packet {
         let character_entity = params.receive_params.character(&event.connection.id())?;
-        let inventory = params.character_inventories.get(character_entity)?;
+        let inventory = params.inventories.get(character_entity)?;
         let item_object_id = inventory.get_item(packet.object_id)?;
         let item_entity = params.items_data.entity(item_object_id)?;
 
@@ -59,9 +59,15 @@ fn handle(
 
         if item_info.bodypart().is_some() {
             if item.equipped() {
-                commands.trigger_targets(UnequipItem::new(item_object_id), character_entity);
+                commands.trigger_targets(
+                    UnequipItem {
+                        item_object_id,
+                        skip_db_update: false,
+                    },
+                    character_entity,
+                );
             } else {
-                commands.trigger_targets(EquipItem::new(item_object_id), character_entity);
+                commands.trigger_targets(EquipItem(item_object_id), character_entity);
             }
         } else {
             item_info.use_item();

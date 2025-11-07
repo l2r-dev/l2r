@@ -22,6 +22,7 @@ impl L2rServerPacket for InventoryUpdate {
         buffer
     }
 }
+
 impl InventoryUpdate {
     pub fn new(
         items: SmallVec<[UniqueItem; ITEMS_OPERATION_STACK]>,

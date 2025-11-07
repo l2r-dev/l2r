@@ -14,7 +14,7 @@ use l2r_core::{
 use spatial::{GameVec3, Heading};
 
 #[derive(Event, Reflect)]
-pub struct SendCharInfo;
+pub struct BroadcastCharInfo;
 
 #[derive(Clone, Reflect)]
 pub struct CharInfo {

@@ -2,7 +2,7 @@ use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use bevy_ecs::system::SystemParam;
 use game_core::{
-    items::{ItemInWorld, ItemLocation, ItemsDataAccess, ItemsDataQueryMut, UniqueItem, model},
+    items::{ItemLocation, ItemsDataAccess, ItemsDataQueryMut, UniqueItem, model},
     network::{
         broadcast::{BroadcastScope, ServerPacketBroadcast},
         packets::server::{DropItem, GameServerPacket},
@@ -88,10 +88,7 @@ pub fn generate_drop_request_handler(
             None,
         );
 
-        commands.spawn((
-            UniqueItem::from_model(new_item, item_info),
-            ItemInWorld::new(location),
-        ));
+        UniqueItem::from_model(new_item, item_info).spawn(&mut commands, item_info);
 
         let drop_item = DropItem::new(
             *dropper_oid,

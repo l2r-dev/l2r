@@ -1,140 +1,60 @@
 use crate::items::*;
-use smallvec::SmallVec;
 
-#[derive(Event)]
+#[derive(Clone, Copy, Debug, Event)]
 pub struct AddInInventory {
-    pub items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>,
+    pub item: Entity,
     pub silent: bool, // If true, no system messages will be sent
 }
 
 impl AddInInventory {
-    pub fn new(items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>) -> Self {
+    pub fn new(item: Entity) -> Self {
         Self {
-            items,
+            item,
             silent: false,
         }
     }
 
-    pub fn new_silent(items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>) -> Self {
-        Self {
-            items,
-            silent: true,
-        }
+    pub fn new_silent(item: Entity) -> Self {
+        Self { item, silent: true }
     }
 }
 
-#[derive(Clone, Debug, Event)]
-pub struct AddNonStackable {
-    pub items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>,
-    pub silent: bool, // If true, no system messages will be sent
+#[derive(Clone, Copy, Debug, Event)]
+pub struct ItemObtained {
+    pub item: Id,
+    pub count: u64,
 }
 
-impl AddNonStackable {
-    pub fn new(items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>) -> Self {
-        Self {
-            items,
-            silent: false,
-        }
-    }
-
-    pub fn new_silent(items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>) -> Self {
-        Self {
-            items,
-            silent: true,
-        }
-    }
-}
-
-#[derive(Clone, Debug, Event)]
-pub struct AddStackable {
-    pub items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>,
-    pub silent: bool, // If true, no system messages will be sent
-}
-
-impl AddStackable {
-    pub fn new(items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>) -> Self {
-        Self {
-            items,
-            silent: false,
-        }
-    }
-
-    pub fn new_silent(items: SmallVec<[Entity; ITEMS_OPERATION_STACK]>) -> Self {
-        Self {
-            items,
-            silent: true,
-        }
-    }
-}
-
-#[derive(Event)]
+#[derive(Clone, Copy, Debug, Event)]
 pub struct DestroyItemRequest {
     pub item_oid: ObjectId,
     pub count: u64,
 }
 
-#[derive(Event, Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, Event)]
 pub struct DropIfPossible {
     pub item_oid: ObjectId,
     pub count: u64,
     pub location: Vec3,
 }
 
-#[derive(Clone, Debug, Event)]
-pub struct EquipItem {
-    pub item_object_id: ObjectId,
-}
+#[derive(Clone, Copy, Debug, Event)]
+pub struct EquipItem(pub ObjectId);
 
-impl EquipItem {
-    pub fn new(item_object_id: ObjectId) -> Self {
-        Self { item_object_id }
-    }
-}
+#[derive(Clone, Copy, Debug, Event)]
+pub struct ItemEquipped(pub ObjectId);
 
-#[derive(Clone, Debug, Event)]
-pub struct ItemEquipped {
-    pub item_object_id: ObjectId,
-}
+#[derive(Clone, Copy, Debug, Event)]
+pub struct ItemEquippedMessage(pub Item);
 
-impl ItemEquipped {
-    pub fn new(item_object_id: ObjectId) -> Self {
-        Self { item_object_id }
-    }
-}
-
-#[derive(Clone, Debug, Event)]
+#[derive(Clone, Copy, Debug, Event)]
 pub struct UnequipItem {
     pub item_object_id: ObjectId,
     pub skip_db_update: bool,
 }
 
-impl UnequipItem {
-    pub fn new(item_object_id: ObjectId) -> Self {
-        Self {
-            item_object_id,
-            skip_db_update: false,
-        }
-    }
+#[derive(Clone, Copy, Debug, Event)]
+pub struct ItemUnequipped(pub ObjectId);
 
-    pub fn new_skip_db(item_object_id: ObjectId) -> Self {
-        Self {
-            item_object_id,
-            skip_db_update: true,
-        }
-    }
-}
-
-#[derive(Clone, Debug, Event)]
-pub struct ItemUnequipped {
-    pub item_object_id: ObjectId,
-    pub skip_db_update: bool,
-}
-
-impl ItemUnequipped {
-    pub fn new(item_object_id: ObjectId, skip_db_update: bool) -> Self {
-        Self {
-            item_object_id,
-            skip_db_update,
-        }
-    }
-}
+#[derive(Clone, Copy, Debug, Event)]
+pub struct ItemUnequippedMessage(pub Item);

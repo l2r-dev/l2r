@@ -1,5 +1,5 @@
-use bevy::{log, prelude::*};
-use bevy_defer::{AccessError, AsyncCommandsExtension};
+use bevy::prelude::*;
+use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
@@ -7,337 +7,178 @@ use game_core::{
         model::{ActiveModelSetCoordinates, Model},
         *,
     },
-    network::packets::server::{
-        GameServerPacket, GameServerPackets, InventoryUpdate, SystemMessage,
-    },
+    network::packets::server::{GameServerPacket, InventoryUpdate, SystemMessage},
     object_id::ObjectId,
 };
 use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
-use smallvec::SmallVec;
+use smallvec::smallvec;
 use system_messages;
 
-pub(super) fn add_in_inventory(
+pub struct AddInInventoryPlugin;
+impl Plugin for AddInInventoryPlugin {
+    fn build(&self, app: &mut App) {
+        app.add_observer(add_in_inventory);
+        app.add_observer(send_item_obtained_message);
+    }
+}
+
+fn add_in_inventory(
     trigger: Trigger<AddInInventory>,
     mut commands: Commands,
-    items_data: ItemsDataQueryMut,
+    repo_manager: Res<RepositoryManager>,
+    mut inventories: InventoriesQueryMut,
+    mut items_data: ItemsDataQueryMut,
 ) -> Result<()> {
     let inventory_target = trigger.target();
     let event = trigger.event();
-    let silent = event.silent;
+    let item_entity = event.item;
 
-    let mut stackable_items = SmallVec::<[Entity; ITEMS_OPERATION_STACK]>::new();
-    let mut non_stackable_items = SmallVec::<[Entity; ITEMS_OPERATION_STACK]>::new();
+    let new_item_oid = *items_data.object_ids.get(item_entity)?;
+    let new_item = *items_data.item(item_entity)?;
+    let new_item_id = new_item.id();
+    let new_item_count = new_item.count();
+    let is_stackable = items_data.item_info(new_item_id)?.stackable();
 
-    for &new_item_entity in event.items.iter() {
-        let item = items_data.item(new_item_entity)?;
-
-        let new_item_info = items_data.item_info(item.id())?;
-
-        if new_item_info.stackable() {
-            stackable_items.push(new_item_entity);
-        } else {
-            non_stackable_items.push(new_item_entity);
-        }
-    }
-
-    if !stackable_items.is_empty() {
-        let event = if silent {
-            AddStackable::new_silent(stackable_items)
-        } else {
-            AddStackable::new(stackable_items)
-        };
-        commands.trigger_targets(event, inventory_target);
-    }
-
-    if !non_stackable_items.is_empty() {
-        let event = if silent {
-            AddNonStackable::new_silent(non_stackable_items)
-        } else {
-            AddNonStackable::new(non_stackable_items)
-        };
-
-        commands.trigger_targets(event, inventory_target);
-    }
-    Ok(())
-}
-
-async fn update_items_in_database(
-    items_repository: ItemsRepository,
-    db_items_to_update: SmallVec<[UniqueItem; ITEMS_OPERATION_STACK]>,
-) -> Result<(), AccessError> {
-    let mut active_models =
-        SmallVec::<[_; ITEMS_OPERATION_STACK]>::with_capacity(db_items_to_update.len());
-
-    for unique_item in db_items_to_update {
-        let item_model = Model::from(unique_item);
-        let mut active_model = item_model.into_active_model();
-
-        active_model.count = Set(unique_item.item().count() as i64);
-        active_model.owner_id = Set(unique_item.item().owner());
-        active_model.set_location(unique_item.item().location());
-
-        log::trace!("Updating item in database: {:?}", active_model);
-
-        active_models.push(active_model);
-    }
-
-    items_repository
-        .update_in_transaction(&active_models)
-        .await?;
-    Ok(())
-}
-
-pub(super) fn add_non_stackable(
-    added_non_stackable: Trigger<AddNonStackable>,
-    mut commands: Commands,
-    repo_manager: Res<RepositoryManager>,
-    mut inventories: Query<(Ref<ObjectId>, Mut<Inventory>)>,
-    mut items_data: ItemsDataQueryMut,
-) -> Result<()> {
-    let inventory_target = added_non_stackable.target();
-    let event = added_non_stackable.event();
-    let new_items_to_add = &event.items;
-    let silent = event.silent;
-
-    let (owner_id, mut inventory) = match inventories.get_mut(inventory_target) {
-        Ok(inv) => inv,
-        Err(_) => {
-            log::warn!(
-                "No inventory component found for entity {}",
-                inventory_target
-            );
-            return Ok(());
-        }
-    };
-
-    let mut items_to_add = SmallVec::<[UniqueItem; ITEMS_OPERATION_STACK]>::new();
-    let mut items_to_update_in_db = SmallVec::<[UniqueItem; ITEMS_OPERATION_STACK]>::new();
-
-    for &new_item_entity in new_items_to_add.iter() {
-        let new_item_oid = *items_data.object_ids.get(new_item_entity)?;
-        let mut new_item = items_data.item_mut(new_item_entity)?;
-
-        let current_owner = new_item.owner();
-        let current_location = new_item.location();
-
-        if matches!(current_location, ItemLocation::World(_)) {
-            new_item.set_location(ItemLocation::Inventory);
-            ItemInWorld::move_from_world(commands.entity(new_item_entity).reborrow());
-        }
-
-        new_item.set_owner(Some(*owner_id));
-
-        inventory.insert(new_item_oid);
-
-        let unique_item = UniqueItem::new(new_item_oid, *new_item);
-        items_to_add.push(unique_item);
-
-        // Only update in DB if owner changed or location is not Inventory or PaperDoll
-        if current_owner != Some(*owner_id)
-            || !(matches!(current_location, ItemLocation::Inventory)
-                || matches!(current_location, ItemLocation::PaperDoll(_)))
-        {
-            items_to_update_in_db.push(unique_item);
-        }
-
-        commands
-            .entity(new_item_entity)
-            .insert(DespawnChildOf(inventory_target));
-    }
-
-    if !items_to_add.is_empty() {
-        let inventory_update = InventoryUpdate::new(items_to_add.clone(), UpdateType::Add);
-        commands.trigger_targets(GameServerPacket::from(inventory_update), inventory_target);
-
-        // Only send system messages if not in silent mode
-        if !silent {
-            let mut system_messages = SmallVec::<[GameServerPacket; ITEMS_OPERATION_STACK]>::new();
-
-            for item in items_to_add.iter() {
-                let item_info = items_data.item_info(item.item().id())?;
-                let system_message =
-                    create_item_obtained_message(item.item().id(), item.item().count(), item_info);
-                system_messages.push(system_message);
-            }
-
-            commands.trigger_targets(
-                GameServerPackets::from(system_messages.to_vec()),
-                inventory_target,
-            );
-        }
-    }
-
-    if repo_manager.is_mock() {
-        return Ok(());
-    }
-
-    let items_repository = repo_manager
-        .typed::<ObjectId, items::model::Entity>()
-        .map_err(|e| {
-            log::error!("Failed to get items repository: {:?}", e);
-            e
-        })?;
-
-    commands.spawn_task(move || async move {
-        update_items_in_database(items_repository, items_to_update_in_db).await
-    });
-
-    Ok(())
-}
-
-pub(super) fn add_stackable(
-    added_stackable: Trigger<AddStackable>,
-    mut commands: Commands,
-    inventories: CharacterInventories,
-    repo_manager: Res<RepositoryManager>,
-    mut items_data: ItemsDataQueryMut,
-) -> Result<()> {
-    let inventory_target = added_stackable.target();
-    let event = added_stackable.event();
-    let new_items_to_add = event.items.clone();
-    let silent = event.silent;
-
-    let inventory = inventories.get(inventory_target)?;
-
-    let mut db_deletes = SmallVec::<[ObjectId; ITEMS_OPERATION_STACK]>::new();
-    let mut db_updates = SmallVec::<[UniqueItem; ITEMS_OPERATION_STACK]>::new();
-    let mut inventory_updates = SmallVec::<[UniqueItem; ITEMS_OPERATION_STACK]>::new();
-    let mut added_counts = SmallVec::<[(items::Id, u64); ITEMS_OPERATION_STACK]>::new();
-    let mut new_in_inventory = SmallVec::<[Entity; ITEMS_OPERATION_STACK]>::new();
-
-    for &new_item_entity in new_items_to_add.iter() {
-        let new_item_oid = *items_data.object_ids.get(new_item_entity)?;
-        let new_item = *items_data.item(new_item_entity)?;
-
-        let mut found_match = false;
+    // First, try to stack if item is stackable
+    if is_stackable {
+        let (_, inventory) = inventories.get(inventory_target)?;
 
         // Try to find a matching item to stack with
-        for &existing_item_oid in inventory.iter() {
-            if let Ok(mut existing_item) = items_data.item_by_object_id_mut(existing_item_oid)
-                && existing_item.id() == new_item.id()
-            {
-                // Found a match - update the existing item
-                let existing_item_count = existing_item.count();
-                let added_count = new_item.count();
-                existing_item.set_count(existing_item_count + added_count);
+        let existing_item_oid = inventory
+            .iter()
+            .find(|&&oid| {
+                items_data
+                    .item_by_object_id(oid)
+                    .map(|item| item.id() == new_item_id)
+                    .unwrap_or(false)
+            })
+            .copied();
 
-                let existing_unique_item = UniqueItem::new(existing_item_oid, *existing_item);
-                db_updates.push(existing_unique_item);
-                inventory_updates.push(existing_unique_item);
-                added_counts.push((new_item.id(), added_count));
+        // Found existing item with same id - stack them together
+        if let Some(existing_item_oid) = existing_item_oid {
+            let mut existing_item = items_data.item_by_object_id_mut(existing_item_oid)?;
+            let existing_item_count = existing_item.count();
+            existing_item.set_count(existing_item_count + new_item_count);
 
-                db_deletes.push(new_item_oid);
-                commands.entity(new_item_entity).try_despawn();
+            let unique_item = UniqueItem::new(existing_item_oid, *existing_item);
 
-                found_match = true;
-                break;
+            let inventory_update = InventoryUpdate::new(smallvec![unique_item], UpdateType::Modify);
+            commands.trigger_targets(GameServerPacket::from(inventory_update), inventory_target);
+
+            if !repo_manager.is_mock() {
+                let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
+                // Update the existing item count
+                commands.spawn_task(move || async move {
+                    let item_count = unique_item.item().count() as i64;
+                    let item_model = Model::from(unique_item);
+                    let mut active_model = item_model.into_active_model();
+                    active_model.count = Set(item_count);
+
+                    items_repository.update(&active_model).await?;
+                    Ok(())
+                });
+                // Delete the merged item from database
+                let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
+                commands.spawn_task(move || async move {
+                    items_repository.delete_by_id(new_item_oid).await?;
+                    Ok(())
+                });
             }
-        }
+            items_data.object_id_manager.release_id(new_item_oid);
+            commands.entity(item_entity).try_despawn();
 
-        // If no matching item was found inventory, consider it like a new item
-        // and add it to the inventory
-        if !found_match {
-            if let Ok(mut item) = items_data.item_mut(new_item_entity)
-                && matches!(item.location(), ItemLocation::World(_))
-            {
-                item.set_location(ItemLocation::Inventory);
-                added_counts.push((item.id(), item.count()));
-                ItemInWorld::move_from_world(commands.entity(new_item_entity).reborrow());
+            if !event.silent {
+                commands.trigger_targets(
+                    ItemObtained {
+                        item: new_item_id,
+                        count: new_item_count,
+                    },
+                    inventory_target,
+                );
             }
-
-            new_in_inventory.push(new_item_entity);
-        }
-    }
-
-    // Send inventory updates for stacked items
-    if !inventory_updates.is_empty() {
-        let inventory_update = InventoryUpdate::new(inventory_updates.clone(), UpdateType::Modify);
-        commands.trigger_targets(GameServerPacket::from(inventory_update), inventory_target);
-
-        // Only send system messages if not in silent mode
-        if !silent {
-            let mut system_messages = SmallVec::<[GameServerPacket; ITEMS_OPERATION_STACK]>::new();
-
-            for (item_id, added_count) in added_counts.iter() {
-                let item_info = items_data.item_info(*item_id)?;
-                let system_message =
-                    create_item_obtained_message(*item_id, *added_count, item_info);
-                system_messages.push(system_message);
-            }
-
-            commands.trigger_targets(
-                GameServerPackets::from(system_messages.to_vec()),
-                inventory_target,
-            );
+            return Ok(());
         }
     }
 
-    // Trigger AddNonStackable for items that are new in inventory
-    if !new_in_inventory.is_empty() {
-        let event = if silent {
-            AddNonStackable::new_silent(new_in_inventory)
-        } else {
-            AddNonStackable::new(new_in_inventory)
-        };
-        commands.trigger_targets(event, inventory_target);
+    // If not stackable or no existing stack found, add as new item
+    let (owner_id, mut inventory) = inventories.get_mut(inventory_target)?;
+    let mut item = items_data.item_mut(item_entity)?;
+    let current_location = item.location();
+
+    // Update item location if it's in the world
+    // TODO: other checks when moving from store, trade, etc.
+    if matches!(current_location, ItemLocation::World(_)) {
+        item.set_location(ItemLocation::Inventory);
+        ItemInWorld::move_from_world(commands.entity(item_entity).reborrow());
     }
 
-    if repo_manager.is_mock() {
-        return Ok(());
-    }
+    item.set_owner(Some(*owner_id));
+    inventory.insert(new_item_oid);
 
-    let items_repository = repo_manager
-        .typed::<ObjectId, items::model::Entity>()
-        .map_err(|e| {
-            log::error!("Failed to get items repository: {:?}", e);
-            e
-        })?;
+    let unique_item = UniqueItem::new(new_item_oid, *item);
 
-    if !db_updates.is_empty() {
-        let items_repo = items_repository.clone();
+    let inventory_update = InventoryUpdate::new(smallvec![unique_item], UpdateType::Add);
+    commands.trigger_targets(GameServerPacket::from(inventory_update), inventory_target);
+
+    commands
+        .entity(item_entity)
+        .insert(DespawnChildOf(inventory_target));
+
+    if !repo_manager.is_mock() {
+        let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
         commands.spawn_task(move || async move {
-            update_items_in_database(items_repo, db_updates).await
-        });
-    }
+            let item_model = Model::from(unique_item);
+            let mut active_model = item_model.into_active_model();
 
-    // Delete items from db that were merged
-    if !db_deletes.is_empty() {
-        let items_repo = items_repository.clone();
-        items_data
-            .object_id_manager
-            .release_ids(db_deletes.as_slice());
-        commands.spawn_task(move || async move {
-            items_repo.delete_by_ids(db_deletes).await?;
+            active_model.count = Set(unique_item.item().count() as i64);
+            active_model.owner_id = Set(unique_item.item().owner());
+            active_model.set_location(unique_item.item().location());
+
+            items_repository.update(&active_model).await?;
             Ok(())
         });
     }
 
+    if !event.silent {
+        commands.trigger_targets(
+            ItemObtained {
+                item: item.id(),
+                count: item.count(),
+            },
+            inventory_target,
+        );
+    }
+
     Ok(())
 }
 
-fn create_item_obtained_message(
-    item_id: items::Id,
-    count: u64,
-    item_info: &ItemInfo,
-) -> GameServerPacket {
-    if item_id == 57.into() {
+fn send_item_obtained_message(
+    trigger: Trigger<ItemObtained>,
+    mut commands: Commands,
+    items_data: ItemsDataQuery,
+) -> Result<()> {
+    let ItemObtained { item, count } = trigger.event();
+    let item_info = items_data.item_info(*item)?;
+
+    let message = match (*item, *count) {
         // Adena (item ID 57) uses special message
-        GameServerPacket::from(SystemMessage::new(
+        (id, count) if id == 57.into() => SystemMessage::new(
             system_messages::Id::YouHaveObtainedS1Adena,
             vec![count.into()],
-        ))
-    } else if count > 1 {
+        ),
         // Multiple items of the same type
-        GameServerPacket::from(SystemMessage::new(
+        (_, count) if count > 1 => SystemMessage::new(
             system_messages::Id::YouHaveObtainedS2S1,
             vec![count.into(), item_info.name().to_string().into()],
-        ))
-    } else {
+        ),
         // Single item
-        GameServerPacket::from(SystemMessage::new(
+        _ => SystemMessage::new(
             system_messages::Id::YouHaveObtainedS1,
             vec![item_info.name().to_string().into()],
-        ))
-    }
+        ),
+    };
+
+    commands.trigger_targets(GameServerPacket::from(message), trigger.target());
+    Ok(())
 }

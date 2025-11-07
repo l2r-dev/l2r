@@ -35,7 +35,13 @@ pub fn destroy_item(
         inventory.remove_item(request.item_oid)?;
 
         if item.equipped() {
-            commands.trigger_targets(UnequipItem::new_skip_db(request.item_oid), inventory_entity);
+            commands.trigger_targets(
+                UnequipItem {
+                    item_object_id: request.item_oid,
+                    skip_db_update: true,
+                },
+                inventory_entity,
+            );
         }
 
         // Remove the item entity from the world

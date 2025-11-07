@@ -2,11 +2,12 @@ use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     items::{
-        self, DollSlot, EquipItem, Inventory, ItemEquipped, ItemLocationVariant, ItemsDataAccess,
-        ItemsDataQuery, ItemsDataQueryMut, Kind, PaperDoll, UnequipItem, UniqueItem, UpdateType,
+        self, DollSlot, EquipItem, Inventory, ItemEquipped, ItemEquippedMessage,
+        ItemLocationVariant, ItemsDataAccess, ItemsDataQuery, ItemsDataQueryMut, Kind, PaperDoll,
+        UnequipItem, UniqueItem, UpdateType,
     },
     network::packets::server::{
-        GameServerPacket, InventoryUpdate, SendCharInfo, SendUserInfo, SystemMessage,
+        BroadcastCharInfo, GameServerPacket, InventoryUpdate, SendUserInfo, SystemMessage,
     },
     object_id::ObjectId,
     stats::{AttackEffects, StatModifiers, Weapon},
@@ -21,6 +22,7 @@ impl Plugin for EquipItemPlugin {
     fn build(&self, app: &mut App) {
         app.add_observer(handle_equip_item);
         app.add_observer(handle_item_equipped);
+        app.add_observer(send_equipped_system_message);
     }
 }
 
@@ -31,7 +33,7 @@ fn handle_equip_item(
     mut items_query: ItemsDataQueryMut,
 ) -> Result<()> {
     let character_entity = trigger.target();
-    let item_object_id = trigger.event().item_object_id;
+    let item_object_id = trigger.event().0;
     let (mut paperdoll, mut stat_modifiers, inventory) = characters.get_mut(character_entity)?;
 
     let item = items_query.item_by_object_id(item_object_id)?;
@@ -60,7 +62,7 @@ fn handle_equip_item(
             })
             .copied()
     {
-        commands.trigger_targets(EquipItem::new(ammo_oid), character_entity);
+        commands.trigger_targets(EquipItem(ammo_oid), character_entity);
     }
 
     let (doll_slot, previous_items) = paperdoll
@@ -72,14 +74,20 @@ fn handle_equip_item(
     }
 
     for previous_oid in previous_items {
-        commands.trigger_targets(UnequipItem::new(previous_oid), character_entity);
+        commands.trigger_targets(
+            UnequipItem {
+                item_object_id: previous_oid,
+                skip_db_update: false,
+            },
+            character_entity,
+        );
     }
 
     if let Ok(mut item) = items_query.item_by_object_id_mut(item_object_id) {
         item.equip(doll_slot);
     }
 
-    commands.trigger_targets(ItemEquipped::new(item_object_id), character_entity);
+    commands.trigger_targets(ItemEquipped(item_object_id), character_entity);
     Ok(())
 }
 
@@ -91,7 +99,7 @@ fn handle_item_equipped(
     mut attack_effects: Query<Mut<AttackEffects>>,
 ) -> Result<()> {
     let character_entity = trigger.target();
-    let item_object_id = trigger.event().item_object_id;
+    let item_object_id = trigger.event().0;
     let item_info = items_query.info_by_object_id(item_object_id)?;
 
     // Update attack effects if this is a weapon
@@ -122,36 +130,34 @@ fn handle_item_equipped(
                 Ok(())
             });
         }
-        send_equipped_system_message(commands.reborrow(), character_entity, &unique_item);
+        commands.trigger_targets(ItemEquippedMessage(*unique_item.item()), character_entity);
     }
     commands.trigger_targets(SendUserInfo, character_entity);
-    commands.trigger_targets(SendCharInfo, character_entity);
+    commands.trigger_targets(BroadcastCharInfo, character_entity);
     Ok(())
 }
 
-fn send_equipped_system_message(
-    mut commands: Commands,
-    character_entity: Entity,
-    unique_item: &UniqueItem,
-) {
-    if unique_item.item().enchant_level() > 0 {
+pub fn send_equipped_system_message(trigger: Trigger<ItemEquippedMessage>, mut commands: Commands) {
+    let item = trigger.event().0;
+    let entity = trigger.target();
+    if item.enchant_level() > 0 {
         commands.trigger_targets(
             GameServerPacket::from(SystemMessage::new(
                 SmId::EquippedS1S2,
                 vec![
-                    SmParam::Number(unique_item.item().enchant_level().into()),
-                    SmParam::Item(unique_item.item().id().into()),
+                    SmParam::Number(item.enchant_level().into()),
+                    SmParam::Item(item.id().into()),
                 ],
             )),
-            character_entity,
+            entity,
         );
     } else {
         commands.trigger_targets(
             GameServerPacket::from(SystemMessage::new(
                 SmId::YouHaveEquippedYourS1,
-                vec![SmParam::Item(unique_item.item().id().into())],
+                vec![SmParam::Item(item.id().into())],
             )),
-            character_entity,
+            entity,
         );
     }
 }

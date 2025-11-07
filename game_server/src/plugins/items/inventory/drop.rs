@@ -4,7 +4,7 @@ use game_core::{
     custom_hierarchy::DespawnChildOf,
     items::{
         self, DropIfPossible, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
-        ItemsDataAccess, ItemsDataQueryMut, UnequipItem, UniqueItem, UpdateType,
+        ItemsDataAccess, ItemsDataQueryMut, PaperDoll, UniqueItem, UpdateType,
         model::{ActiveModelSetCoordinates, Model},
     },
     network::{
@@ -38,6 +38,7 @@ pub fn drop_if_possible(
     mut commands: Commands,
     mut items_data: ItemsDataQueryMut,
     mut inventories: Query<(Ref<ObjectId>, Mut<Inventory>, Ref<Transform>)>,
+    mut paperdolls: Query<Mut<PaperDoll>>,
     repo_manager: Res<RepositoryManager>,
     metrics: Res<Metrics>,
 ) -> Result<()> {
@@ -61,13 +62,22 @@ pub fn drop_if_possible(
     let item_id = item.id();
     let is_stackable = items_data.item_info(item_id)?.stackable();
     let item_count = item.count();
+
     if item.equipped() {
-        commands.trigger_targets(UnequipItem::new_skip_db(event.item_oid), dropper_entity);
+        crate::plugins::items::process_unequip(
+            dropper_entity,
+            event.item_oid,
+            commands.reborrow(),
+            &mut items_data,
+            paperdolls.reborrow(),
+            true,
+            repo_manager.as_ref(),
+        )?;
     }
 
     // Check if item is stackable and if we're dropping the entire stack or just part
     let drop_full_stack = !is_stackable || event.count >= item_count;
-    
+
     let mut item = items_data.item_by_object_id_mut(event.item_oid)?;
     let object_id_to_drop = if drop_full_stack {
         inventory.remove_item(event.item_oid)?;
@@ -147,17 +157,9 @@ pub fn drop_if_possible(
         new_object_id
     };
 
-    let item_info = items_data.item_info(item_id)?;
-
-    commands.trigger_targets(
-        GameServerPacket::from(SystemMessage::new(
-            system_messages::Id::YouHaveDroppedS1,
-            vec![SmParam::Text(item_info.name().to_string())],
-        )),
-        dropper_entity,
-    );
-
     metrics.counter(ItemMetric::ItemsDropped)?.inc();
+
+    let item_info = items_data.item_info(item_id)?;
 
     let drop_item_packet = DropItemPacket::new(
         *owner_id,
@@ -166,6 +168,14 @@ pub fn drop_if_possible(
         event.location,
         item_info.stackable(),
         item_count,
+    );
+
+    commands.trigger_targets(
+        GameServerPacket::from(SystemMessage::new(
+            system_messages::Id::YouHaveDroppedS1,
+            vec![SmParam::Text(item_info.name().to_string())],
+        )),
+        dropper_entity,
     );
 
     commands.trigger_targets(

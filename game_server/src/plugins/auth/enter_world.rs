@@ -57,12 +57,5 @@ fn handle(
     if selected_char.vitals_stats.dead() {
         commands.trigger_targets(Dead::new(char_entity), char_entity);
     }
-
-    commands
-        .entity(char_entity)
-        .insert(game_core::encounters::EnteredWorld);
-
-    commands.trigger_targets(character::CharacterSave, char_entity);
-
     Ok(())
 }

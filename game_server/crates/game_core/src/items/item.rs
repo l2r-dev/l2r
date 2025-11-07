@@ -10,7 +10,7 @@ use crate::{
     object_id::{ObjectId, ObjectIdManager},
     stats::{EncountersVisibility, ItemElementsInfo},
 };
-use avian3d::prelude::{Collider, CollisionLayers};
+use avian3d::{prelude::*, sync::PreviousGlobalTransform};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
 use bevy_ecs::system::SystemParam;
@@ -32,6 +32,20 @@ impl UniqueItem {
 
     pub fn from_model(model: Model, item_info: &ItemInfo) -> Self {
         UniqueItem::new(model.object_id(), Item::from_model(model, item_info))
+    }
+
+    pub fn spawn<'a>(
+        &self,
+        commands: &'a mut Commands,
+        item_info: &ItemInfo,
+    ) -> EntityCommands<'a> {
+        let name = Name::new(item_info.name().to_string());
+        let mut entity_commands = commands.spawn((*self, EncountersVisibility::default(), name));
+        if let ItemLocation::World(location) = self.item().location() {
+            entity_commands.insert(ItemInWorld::new(location));
+        }
+
+        entity_commands
     }
 
     pub fn object_id(&self) -> ObjectId {
@@ -103,10 +117,16 @@ impl ItemInWorld {
     }
 
     pub fn move_from_world(mut entity: EntityCommands) {
-        entity.remove::<(
+        entity.try_remove::<(
             Transform,
+            Position,
+            Rotation,
+            PreviousGlobalTransform,
             GlobalTransform,
             Collider,
+            ColliderAabb,
+            ColliderDensity,
+            ColliderMassProperties,
             CollisionLayers,
             DespawnChildren,
         )>();
@@ -127,7 +147,6 @@ impl<'w, 's> ItemsQuery<'w, 's> {
 }
 
 #[derive(Clone, Component, Copy, Debug, Deserialize, Reflect)]
-#[require(Name::new("Item"), EncountersVisibility::default())]
 pub struct Item {
     id: Id,
     display_id: Id,
@@ -148,30 +167,6 @@ pub struct Item {
     // dont know what this is yet
     custom_type1: u16,
     custom_type2: u16,
-}
-
-impl Item {
-    pub async fn update_count_in_database(&self, object_id: ObjectId) -> Result<(), AccessError> {
-        let Ok(items_repository) = AsyncWorld
-            .resource::<RepositoryManager>()
-            .get(|registry| registry.typed::<ObjectId, items::model::Entity>())?
-        else {
-            return Ok(());
-        };
-
-        let item_model = Model::from(UniqueItem::new(object_id, *self));
-        let count = self.count();
-        if count == 0 {
-            // Delete item from database when count is 0
-            items_repository.delete(&item_model).await?;
-        } else {
-            // Update count in database
-            let mut item_model = item_model.into_active_model();
-            item_model.count = Set(count as i64);
-            items_repository.update(&item_model).await?;
-        }
-        Ok(())
-    }
 }
 
 impl Default for Item {
@@ -392,6 +387,28 @@ impl Item {
 
     pub fn elements(&self) -> &ItemElementsInfo {
         &self.elements
+    }
+
+    pub async fn update_count_in_database(&self, object_id: ObjectId) -> Result<(), AccessError> {
+        let Ok(items_repository) = AsyncWorld
+            .resource::<RepositoryManager>()
+            .get(|registry| registry.typed::<ObjectId, items::model::Entity>())?
+        else {
+            return Ok(());
+        };
+
+        let item_model = Model::from(UniqueItem::new(object_id, *self));
+        let count = self.count();
+        if count == 0 {
+            // Delete item from database when count is 0
+            items_repository.delete(&item_model).await?;
+        } else {
+            // Update count in database
+            let mut item_model = item_model.into_active_model();
+            item_model.count = Set(count as i64);
+            items_repository.update(&item_model).await?;
+        }
+        Ok(())
     }
 }
 

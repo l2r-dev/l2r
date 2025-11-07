@@ -17,7 +17,6 @@ use game_core::{
 };
 use l2r_core::metrics::Metrics;
 use map::WorldMapQuery;
-use smallvec::smallvec;
 use spatial::FlatDistance;
 use state::GameServerStateSystems;
 use std::time::Duration;
@@ -111,10 +110,7 @@ fn pickup_request_handler(
                 .remove::<(PickupRequest, Movement, InActionPathfindingTimer)>()
                 .insert(ActiveAction::new(PICKUP_ACTION_DURATION));
 
-            commands.trigger_targets(
-                AddInInventory::new(smallvec![item_entity]),
-                character.entity,
-            );
+            commands.trigger_targets(AddInInventory::new(item_entity), character.entity);
 
             commands.trigger_targets(GameServerPacket::from(ActionFail), character.entity);
 
@@ -164,12 +160,9 @@ fn pickup_request_handler(
 
 /// When a character with PickupRequest arrives at a waypoint (after pathfinding),
 /// remove the InActionPathfindingTimer so the pickup_request_handler can process the pickup
-fn on_pickup_waypoint_arrival(
-    _arrived: Trigger<ArrivedAtWaypoint>,
-    mut commands: Commands,
-    query: Query<(Entity, &PickupRequest), With<InActionPathfindingTimer>>,
-) {
-    for (entity, _) in &query {
-        commands.entity(entity).remove::<InActionPathfindingTimer>();
-    }
+fn on_pickup_waypoint_arrival(arrived: Trigger<ArrivedAtWaypoint>, mut commands: Commands) {
+    let arrived_entity = arrived.target();
+    commands
+        .entity(arrived_entity)
+        .try_remove::<InActionPathfindingTimer>();
 }

@@ -1,5 +1,4 @@
 use crate::{
-    character::Character,
     items::{Id, Item},
     object_id::{ObjectId, ObjectIdIndexSet, ObjectIdManager},
 };
@@ -22,8 +21,6 @@ impl Plugin for InventoryComponentsPlugin {
             .register_type::<DollSlot>();
 
         app.add_event::<AddInInventory>()
-            .add_event::<AddNonStackable>()
-            .add_event::<AddStackable>()
             .add_event::<InventoryLoad>()
             .add_event::<DropIfPossible>()
             .add_event::<DestroyItemRequest>();
@@ -34,7 +31,12 @@ impl Plugin for InventoryComponentsPlugin {
 pub struct InventoryLoad(pub Entity);
 
 #[derive(Deref, SystemParam)]
-pub struct CharacterInventories<'w, 's>(Query<'w, 's, Ref<'static, Inventory>, With<Character>>);
+pub struct InventoriesQuery<'w, 's>(Query<'w, 's, Ref<'static, Inventory>>);
+
+#[derive(Deref, DerefMut, SystemParam)]
+pub struct InventoriesQueryMut<'w, 's>(
+    Query<'w, 's, (Ref<'static, ObjectId>, Mut<'static, Inventory>)>,
+);
 
 #[derive(Clone, Component, Debug, Default, Deref, DerefMut, Reflect)]
 pub struct Inventory(ObjectIdIndexSet);

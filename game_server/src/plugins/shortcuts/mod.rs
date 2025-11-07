@@ -66,6 +66,7 @@ pub async fn shortcut_init_task(char_entity: Entity) -> Result<(), AccessError> 
 
     AsyncWorld.apply_command(move |world: &mut World| {
         world.trigger_targets(GameServerPacket::from(shortcut_init), char_entity);
+
     });
 
     Ok(())

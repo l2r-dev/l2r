@@ -6,7 +6,7 @@ use game_core::{
     network::{
         broadcast::ServerPacketBroadcast,
         packets::server::{
-            ChangeMoveType, GameServerPacket, SendCharInfo, SendUserInfo, SetupGauge,
+            BroadcastCharInfo, ChangeMoveType, GameServerPacket, SendUserInfo, SetupGauge,
             SetupGaugeColor,
         },
     },
@@ -55,7 +55,7 @@ fn handle_water_zone_collisions(
                     movable_entity,
                 );
                 commands.trigger_targets(SendUserInfo, movable_entity);
-                commands.trigger_targets(SendCharInfo, movable_entity);
+                commands.trigger_targets(BroadcastCharInfo, movable_entity);
 
                 let current_breath = other_stats.get(OtherStat::Breath);
                 let max_breath = other_stats.get(OtherStat::BreathMax);
@@ -91,7 +91,7 @@ fn handle_water_zone_collisions(
                     movable_entity,
                 );
                 commands.trigger_targets(SendUserInfo, movable_entity);
-                commands.trigger_targets(SendCharInfo, movable_entity);
+                commands.trigger_targets(BroadcastCharInfo, movable_entity);
 
                 // Hide breath gauge when exiting water (set to 0 duration)
                 commands.trigger_targets(

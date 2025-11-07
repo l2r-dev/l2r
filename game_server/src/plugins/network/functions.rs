@@ -9,8 +9,8 @@ use game_core::{
         packets::{
             GameServerPacketMetric,
             server::{
-                CharInfo, CharSelectionInfo, GameServerPacket, GameServerPackets, SendCharInfo,
-                SendCharSelectionInfo, SendUserInfo, UserInfo, UserInfoUpdated,
+                BroadcastCharInfo, CharInfo, CharSelectionInfo, GameServerPacket,
+                GameServerPackets, SendCharSelectionInfo, SendUserInfo, UserInfo, UserInfoUpdated,
             },
         },
         session::GameServerSession,
@@ -20,7 +20,7 @@ use game_core::{
 use l2r_core::{metrics::Metrics, model::session::L2rSession};
 
 pub fn send_char_info_handler(
-    trigger: Trigger<SendCharInfo>,
+    trigger: Trigger<BroadcastCharInfo>,
     mut commands: Commands,
     characters: Query<character::Query>,
     stats_table_query: StatsTableQuery,
