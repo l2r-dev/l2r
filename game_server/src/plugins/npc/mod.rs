@@ -1,7 +1,6 @@
 use crate::plugins::npc::drop::GenerateDropPlugin;
 use bevy::prelude::*;
 use game_core::{
-    custom_hierarchy::DespawnChildOf,
     npc::{Bundle as NpcBundle, NpcComponentsPlugin, NpcInfo, Spawn, Spawned},
     object_id::ObjectIdManager,
     spawner::Spawner,
@@ -9,7 +8,7 @@ use game_core::{
 };
 use l2r_core::{
     assets::ASSET_DIR, chronicles::CHRONICLE, model::generic_number::GenericNumber,
-    utils::get_base_path,
+    plugins::custom_hierarchy::DespawnChildOf, utils::get_base_path,
 };
 use map::{WorldMap, id::RegionId};
 

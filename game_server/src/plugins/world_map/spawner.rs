@@ -2,12 +2,14 @@ use avian3d::prelude::*;
 use bevy::{ecs::system::ParallelCommands, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
 use game_core::{
-    custom_hierarchy::{DespawnChildOf, DespawnChildren},
     npc::{self, RegionalNpcHandles},
     spawner::{BannedSpawnZone, NpcSpawnInfo, SpawnList, SpawnListHandle, SpawnZone, Spawner},
 };
 use l2r_core::{
-    assets::ASSET_DIR, chronicles::CHRONICLE, model::generic_number::GenericNumber,
+    assets::ASSET_DIR,
+    chronicles::CHRONICLE,
+    model::generic_number::GenericNumber,
+    plugins::custom_hierarchy::{DespawnChildOf, DespawnChildren},
     utils::get_base_path,
 };
 use map::{

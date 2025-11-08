@@ -2,7 +2,6 @@ use bevy::prelude::*;
 use bevy_defer::{AsyncCommandsExtension, AsyncWorld};
 use game_core::{
     character::Character,
-    custom_hierarchy::{DespawnChildOf, DespawnChildren, InsertIntoFolders},
     items::{self, Item, RegionalItemsFolder, SpawnExisting},
     npc::RegionalNpcHandles,
     object_id::ObjectId,
@@ -11,6 +10,7 @@ use game_core::{
 use l2r_core::{
     chronicles::CHRONICLE,
     db::{Repository, RepositoryManager, TypedRepositoryManager},
+    plugins::custom_hierarchy::*,
 };
 use map::{
     LoadRegionItems, NamedZones, Region, RegionComponentsPlugin, RegionGeoData,
@@ -126,7 +126,7 @@ fn sort_entities_into_folders(
     for (region, despawn_children) in changed_children.iter() {
         for child_entity in despawn_children.iter() {
             let entity_ref = refs.get(child_entity)?;
-            commands.insert_into_folders(entity_ref, region.folders());
+            commands.insert_into_folders(entity_ref, region.as_ref());
         }
     }
     Ok(())

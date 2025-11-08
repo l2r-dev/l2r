@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 use config::Config;
-use game_core::custom_hierarchy::DespawnChildOf;
+use l2r_core::plugins::custom_hierarchy::DespawnChildOf;
 use map::{
     Region, WorldMapQuery,
     block::{Block, Cell, GeoBlock},

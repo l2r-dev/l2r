@@ -5,6 +5,7 @@ use bevy::{
     prelude::Entity,
     reflect::Reflect,
 };
+use l2r_core::plugins::custom_hierarchy::HierarchyFolderOperations;
 use std::any::TypeId;
 
 pub mod model;
@@ -39,18 +40,27 @@ impl Plugin for CharacterComponentsPlugin {
 
 #[derive(Clone, Component, Debug, Default, Reflect)]
 pub struct Character {
-    folders: HashMap<TypeId, Entity>,
+    hierarchy_folders: HashMap<TypeId, Entity>,
 }
 
-impl Character {
-    pub fn set_folder<T: Component>(&mut self, entity: Entity) {
-        self.folders.insert(TypeId::of::<T>(), entity);
+impl HierarchyFolderOperations for Character {
+    fn get_folder<T: Component>(&self) -> Option<Entity> {
+        self.hierarchy_folders.get(&TypeId::of::<T>()).copied()
     }
 
-    pub fn folders(&self) -> &HashMap<TypeId, Entity> {
-        &self.folders
+    fn set_folder<T: Component>(&mut self, folder_entity: Entity) {
+        self.hierarchy_folders
+            .insert(TypeId::of::<T>(), folder_entity);
+    }
+
+    fn remove_folder<T: Component>(&mut self) {
+        self.hierarchy_folders.remove(&TypeId::of::<T>());
+    }
+
+    fn folders_iter(&self) -> impl Iterator<Item = (TypeId, bevy::prelude::Entity)> {
+        self.hierarchy_folders.iter().map(|(k, v)| (*k, *v))
     }
 }
 
 #[derive(Clone, Component, Copy, Debug, Default, Reflect)]
-pub struct ItemsFolder;
+pub struct CharacterItemsFolder;

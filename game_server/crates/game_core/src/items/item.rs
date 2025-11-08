@@ -5,7 +5,6 @@ use super::{
     model::Model,
 };
 use crate::{
-    custom_hierarchy::DespawnChildren,
     items::{self, DollSlot},
     object_id::{ObjectId, ObjectIdManager},
     stats::{EncountersVisibility, ItemElementsInfo},
@@ -18,6 +17,7 @@ use derive_more::{From, Into};
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
     packets::ServerPacketBuffer,
+    plugins::custom_hierarchy::DespawnChildren,
 };
 use physics::GameLayer;
 use sea_orm::{ActiveValue::Set, IntoActiveModel};

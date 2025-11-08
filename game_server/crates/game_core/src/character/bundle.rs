@@ -1,8 +1,7 @@
 use crate::{
     abnormal_effects::AbnormalEffects,
     action::{target::Targetable, wait_kind::WaitKind},
-    character::{self, ItemsFolder, model::Model},
-    custom_hierarchy::DespawnChildOf,
+    character::{self, CharacterItemsFolder, model::Model},
     encounters::KnownEntities,
     items::{self, Inventory, Item, PaperDoll},
     object_id::ObjectId,
@@ -12,7 +11,10 @@ use crate::{
 use avian3d::prelude::*;
 use bevy::prelude::*;
 use bevy_ecs::system::SystemState;
-use l2r_core::model::{base_class::BaseClass, race::Race, session::SessionId};
+use l2r_core::{
+    model::{base_class::BaseClass, race::Race, session::SessionId},
+    plugins::custom_hierarchy::{DespawnChildOf, HierarchyFolderOperations},
+};
 use physics::GameLayer;
 use spatial::GameVec3;
 
@@ -167,7 +169,11 @@ impl Bundle {
     pub fn spawn(&self, mut commands: Commands) -> Entity {
         let char_entity = commands.spawn(self.clone()).id();
         let items_folder = commands
-            .spawn((Name::new("Items"), ItemsFolder, DespawnChildOf(char_entity)))
+            .spawn((
+                Name::new("Items"),
+                CharacterItemsFolder,
+                DespawnChildOf(char_entity),
+            ))
             .id();
         let mut character = super::Character::default();
 

@@ -3,7 +3,6 @@ use bevy::{ecs::relationship::Relationship, prelude::*};
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     character::Character,
-    custom_hierarchy::DespawnChildOf,
     network::{
         config::GameServerNetworkConfig,
         packets::{client::GameClientPacket, server::TeleportToLocation},
@@ -13,6 +12,7 @@ use game_core::{
     stats::Resurrect,
     teleport::TeleportType,
 };
+use l2r_core::plugins::custom_hierarchy::DespawnChildOf;
 use map::{
     Respawn as RespawnZone, RespawnPoints, SpawnPoint, SpawnPointsGetter, Town, WorldMap, Zone,
     ZoneKind, id::RegionId, info::RegionRespawnZone,

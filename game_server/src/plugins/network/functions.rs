@@ -2,7 +2,6 @@ use bevy::prelude::*;
 use bevy_ecs::entity::EntityHashSet;
 use game_core::{
     character::{self, Character},
-    custom_hierarchy::DespawnChildOf,
     items::ItemsQuery,
     network::{
         broadcast::{BroadcastScope, ServerPacketBroadcast},
@@ -17,7 +16,9 @@ use game_core::{
     },
     stats::StatsTableQuery,
 };
-use l2r_core::{metrics::Metrics, model::session::L2rSession};
+use l2r_core::{
+    metrics::Metrics, model::session::L2rSession, plugins::custom_hierarchy::DespawnChildOf,
+};
 
 pub fn send_char_info_handler(
     trigger: Trigger<BroadcastCharInfo>,

@@ -2,7 +2,6 @@ use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     active_action::ActiveAction,
-    custom_hierarchy::DespawnChildOf,
     items::{
         self, DropIfPossible, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
         ItemsDataAccess, ItemsDataQueryMut, PaperDoll, UniqueItem, UpdateType,
@@ -19,6 +18,7 @@ use game_core::{
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
     metrics::Metrics,
+    plugins::custom_hierarchy::DespawnChildOf,
 };
 use map::WorldMap;
 use sea_orm::{ActiveValue::Set, IntoActiveModel};

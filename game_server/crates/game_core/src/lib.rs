@@ -9,7 +9,6 @@ pub mod chat;
 pub mod clan;
 pub mod consts;
 pub mod crypt;
-pub mod custom_hierarchy;
 pub mod encounters;
 pub mod instance_zone;
 /// Module containing all item related plugins and systems.

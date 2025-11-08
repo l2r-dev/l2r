@@ -2,7 +2,6 @@ use bevy::prelude::*;
 use bevy_common_assets::json::JsonAssetPlugin;
 use bevy_defer::{AccessError, AppReactorExtension, AsyncAccess, AsyncExtension, AsyncWorld};
 use game_core::{
-    custom_hierarchy::DespawnChildOf,
     items::{
         self, AddInInventory, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
         ItemsComponentsPlugin, ItemsDataAccess, ItemsDataQuery, ItemsInfo, SilentSpawn,
@@ -13,6 +12,7 @@ use game_core::{
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
     metrics::MetricsAppExt,
+    plugins::custom_hierarchy::DespawnChildOf,
 };
 use map::WorldMap;
 use state::{GameMechanicsSystems, LoadingSystems};

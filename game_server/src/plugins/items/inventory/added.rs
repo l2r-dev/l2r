@@ -1,7 +1,6 @@
 use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
-    custom_hierarchy::DespawnChildOf,
     items::{
         self,
         model::{ActiveModelSetCoordinates, Model},
@@ -10,7 +9,10 @@ use game_core::{
     network::packets::server::{GameServerPacket, InventoryUpdate, SystemMessage},
     object_id::ObjectId,
 };
-use l2r_core::db::{Repository, RepositoryManager, TypedRepositoryManager};
+use l2r_core::{
+    db::{Repository, RepositoryManager, TypedRepositoryManager},
+    plugins::custom_hierarchy::DespawnChildOf,
+};
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
 use smallvec::smallvec;
 use system_messages;

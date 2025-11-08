@@ -6,7 +6,10 @@ use crate::{
 };
 use bevy::{platform::collections::HashMap, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
-use l2r_core::assets::binary::{BinaryAsset, BinaryAssetPlugin, BinaryLoaderError};
+use l2r_core::{
+    assets::binary::{BinaryAsset, BinaryAssetPlugin, BinaryLoaderError},
+    plugins::custom_hierarchy::HierarchyFolderOperations,
+};
 use spatial::{GameVec3, GeoPoint, GeoVec3, NavigationDirection};
 use std::{any::TypeId, fmt};
 
@@ -36,7 +39,7 @@ pub struct Region {
     center_coordinates: Option<GameVec3>,
     #[reflect(ignore)]
     blocks_centers_coordinates: Option<Vec<GameVec3>>,
-    folders: HashMap<TypeId, Entity>,
+    hierarchy_folders: HashMap<TypeId, Entity>,
 }
 
 impl Region {
@@ -53,7 +56,7 @@ impl Region {
             center_coordinates: None,
             blocks_centers_coordinates: None,
             zone_list_handle: ZoneListHandle::default(),
-            folders: HashMap::new(),
+            hierarchy_folders: HashMap::new(),
         }
     }
 
@@ -193,17 +196,24 @@ impl Region {
         let game_pos = self.block_position_by_grid(block_x, block_y);
         WorldMap::game_to_geo(game_pos)
     }
+}
 
-    pub fn get_folder<T: Component>(&self) -> Option<Entity> {
-        self.folders.get(&TypeId::of::<T>()).copied()
+impl HierarchyFolderOperations for Region {
+    fn get_folder<T: Component>(&self) -> Option<Entity> {
+        self.hierarchy_folders.get(&TypeId::of::<T>()).copied()
     }
 
-    pub fn set_folder<T: Component>(&mut self, entity: Entity) {
-        self.folders.insert(TypeId::of::<T>(), entity);
+    fn set_folder<T: Component>(&mut self, folder_entity: Entity) {
+        self.hierarchy_folders
+            .insert(TypeId::of::<T>(), folder_entity);
     }
 
-    pub fn folders(&self) -> &HashMap<TypeId, Entity> {
-        &self.folders
+    fn remove_folder<T: Component>(&mut self) {
+        self.hierarchy_folders.remove(&TypeId::of::<T>());
+    }
+
+    fn folders_iter(&self) -> impl Iterator<Item = (TypeId, bevy::prelude::Entity)> {
+        self.hierarchy_folders.iter().map(|(k, v)| (*k, *v))
     }
 }
 

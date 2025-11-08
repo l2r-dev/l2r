@@ -3,8 +3,8 @@ use bevy_ecs::component::{ComponentCloneBehavior, ComponentHook, Mutable, Storag
 use smallvec::SmallVec;
 use std::any::TypeId;
 
-pub struct CustomHierarchyComponentsPlugin;
-impl Plugin for CustomHierarchyComponentsPlugin {
+pub struct CustomHierarchyPlugin;
+impl Plugin for CustomHierarchyPlugin {
     fn build(&self, app: &mut App) {
         app.register_type::<DespawnChildOf>()
             .register_type::<DespawnChildren>();
@@ -84,24 +84,88 @@ impl RelationshipTarget for DespawnChildren {
     }
 }
 
+pub trait HierarchyFolderOperations {
+    fn get_folder<T: Component>(&self) -> Option<Entity>;
+    fn set_folder<T: Component>(&mut self, folder_entity: Entity);
+    fn remove_folder<T: Component>(&mut self);
+    fn folders_iter(&self) -> impl Iterator<Item = (TypeId, Entity)>;
+}
+
 pub trait InsertIntoFolders {
-    fn insert_into_folders<'a, I>(&mut self, child_entity: EntityRef, folders: I)
-    where
-        I: IntoIterator<Item = (&'a TypeId, &'a Entity)>;
+    fn insert_into_folders<T: HierarchyFolderOperations>(
+        &mut self,
+        child_entity: EntityRef,
+        folders: &T,
+    );
 }
 
 impl InsertIntoFolders for Commands<'_, '_> {
-    fn insert_into_folders<'a, I>(&mut self, child_entity: EntityRef, folders: I)
-    where
-        I: IntoIterator<Item = (&'a TypeId, &'a Entity)>,
-    {
-        for (component_type_id, folder_entity) in folders.into_iter() {
-            let contains = child_entity.contains_type_id(*component_type_id);
+    fn insert_into_folders<T: HierarchyFolderOperations>(
+        &mut self,
+        child_entity: EntityRef,
+        folders: &T,
+    ) {
+        for (component_type_id, folder_entity) in folders.folders_iter() {
+            let contains = child_entity.contains_type_id(component_type_id);
 
             if contains {
                 self.entity(child_entity.id())
-                    .insert(DespawnChildOf(*folder_entity));
+                    .insert(DespawnChildOf(folder_entity));
             }
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_custom_despawn_child_of_hierarchy_spawns_and_despawns() {
+        let mut app = App::new();
+        app.add_plugins(CustomHierarchyPlugin);
+
+        // Spawn parent entity
+        let parent = app.world_mut().spawn_empty().id();
+
+        // Spawn child entities with DespawnChildOf relationship
+        let child1 = app.world_mut().spawn(DespawnChildOf(parent)).id();
+        let child2 = app.world_mut().spawn(DespawnChildOf(parent)).id();
+
+        // Spawn grandchild
+        let grandchild = app.world_mut().spawn(DespawnChildOf(child1)).id();
+
+        // Verify the hierarchy is established correctly
+        {
+            let parent_entity = app.world().entity(parent);
+            let children = parent_entity.get::<DespawnChildren>().unwrap();
+            assert_eq!(children.len(), 2);
+            assert!(children.contains(&child1));
+            assert!(children.contains(&child2));
+        }
+
+        {
+            let child1_entity = app.world().entity(child1);
+            let children = child1_entity.get::<DespawnChildren>().unwrap();
+            assert_eq!(children.len(), 1);
+            assert!(children.contains(&grandchild));
+        }
+
+        // Remove child2 from hierarchy
+        if let Ok(mut child2_entity) = app.world_mut().get_entity_mut(child2) {
+            child2_entity.remove::<DespawnChildOf>();
+        }
+
+        if let Ok(mut parent_entity) = app.world_mut().get_entity_mut(parent) {
+            parent_entity.remove::<DespawnChildren>();
+        }
+
+        // Verify parent and remaining children are despawned
+        assert!(app.world().get_entity(parent).is_ok());
+        assert!(app.world().get_entity(child1).is_err());
+        assert!(app.world().get_entity(grandchild).is_err());
+
+        // child2 should still exist since it was removed from the hierarchy
+        assert!(app.world().get_entity(child2).is_ok());
     }
 }

@@ -1,7 +1,6 @@
 use avian3d::prelude::{CollisionEventsEnabled, Sensor};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
-use game_core::custom_hierarchy::{DespawnChildOf, DespawnChildren};
-use l2r_core::chronicles::CHRONICLE;
+use l2r_core::{chronicles::CHRONICLE, plugins::custom_hierarchy::*};
 use map::*;
 use physics::GameLayer;
 use std::path::PathBuf;
@@ -58,18 +57,6 @@ impl Plugin for ZonesPlugin {
                     spawn_zones::<TownZonesList, Town>,
                 ),
             ),
-        );
-
-        app.add_systems(Update, load_zones::<ResidenceHallTeleportZonesList>);
-        app.add_systems(
-            Update,
-            spawn_zones::<ResidenceHallTeleportZonesList, ResidenceHallTeleport>,
-        );
-
-        app.add_systems(Update, load_zones::<ResidenceTeleportZonesList>);
-        app.add_systems(
-            Update,
-            spawn_zones::<ResidenceTeleportZonesList, ResidenceTeleport>,
         );
     }
 }

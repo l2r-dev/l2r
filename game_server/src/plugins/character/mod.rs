@@ -6,11 +6,13 @@ use game_core::{
         self, Character, CharacterComponentsPlugin, CharacterRepository, CharacterSave,
         model::{self, ModelUpdate},
     },
-    custom_hierarchy::{DespawnChildOf, DespawnChildren, InsertIntoFolders},
     items::ItemsQuery,
     object_id::ObjectId,
 };
-use l2r_core::db::{DbError, Repository, RepositoryManager, TypedRepositoryManager};
+use l2r_core::{
+    db::{DbError, Repository, RepositoryManager, TypedRepositoryManager},
+    plugins::custom_hierarchy::*,
+};
 use sea_orm::{ColumnTrait, QueryFilter, UpdateResult, prelude::Expr};
 use std::sync::atomic::Ordering;
 use uuid::Uuid;
@@ -51,7 +53,7 @@ fn sort_entities_into_folders(
     for (character, despawn_children) in changed_children.iter() {
         for child_entity in despawn_children.iter() {
             let entity_ref = refs.get(child_entity)?;
-            commands.insert_into_folders(entity_ref, character.folders());
+            commands.insert_into_folders(entity_ref, character.as_ref());
         }
     }
     Ok(())

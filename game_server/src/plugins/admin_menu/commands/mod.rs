@@ -2,8 +2,9 @@ use bevy::prelude::*;
 use bevy_ecs::system::SystemParam;
 use game_core::{
     account::Account, action::target::SelectedTarget, admin_menu::CommandVariants,
-    custom_hierarchy::DespawnChildOf, object_id::ObjectId,
+    object_id::ObjectId,
 };
+use l2r_core::plugins::custom_hierarchy::DespawnChildOf;
 use sea_orm::Iterable;
 
 mod add_skill;

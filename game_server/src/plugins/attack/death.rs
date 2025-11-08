@@ -6,13 +6,13 @@ use game_core::{
     abnormal_effects::AbnormalEffects,
     attack::{AttackHit, Attacking, Dead, DeadTimer, DeathComponentsPlugin, InCombat},
     character::{Character, CharacterSave},
-    custom_hierarchy::DespawnChildOf,
     network::{broadcast::ServerPacketBroadcast, packets::server::Die},
     npc::{GenerateDropRequest, NpcQuery},
     object_id::ObjectId,
     spawner::Spawner,
     stats::{ProgressLevelStats, ProgressRatesStats, ProgressStats, VitalsStat, VitalsStats},
 };
+use l2r_core::plugins::custom_hierarchy::DespawnChildOf;
 use state::GameServerStateSystems;
 
 pub struct DeathPlugin;

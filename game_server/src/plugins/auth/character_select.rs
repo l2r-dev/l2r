@@ -2,7 +2,6 @@ use bevy::{log, prelude::*};
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     character,
-    custom_hierarchy::DespawnChildOf,
     items::InventoryLoad,
     network::{
         config::GameServerNetworkConfig,
@@ -13,7 +12,10 @@ use game_core::{
         session::GameServerSession,
     },
 };
-use l2r_core::model::session::{L2rSession, ServerSessions};
+use l2r_core::{
+    model::session::{L2rSession, ServerSessions},
+    plugins::custom_hierarchy::DespawnChildOf,
+};
 
 pub(crate) struct CharacterSelectPlugin;
 impl Plugin for CharacterSelectPlugin {

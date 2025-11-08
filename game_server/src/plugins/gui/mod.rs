@@ -15,10 +15,8 @@ use bevy::{
 use bevy_egui::EguiPrimaryContextPass;
 use bevy_inspector_egui::DefaultInspectorConfigPlugin;
 use bevy_rich_text3d::{Text3d, Text3dPlugin, Text3dStyling, TextAtlas};
-use game_core::{
-    character::Character, custom_hierarchy::DespawnChildOf, stats::ColliderCapsuleSize,
-};
-use l2r_core::assets::CustomAssetPlugin;
+use game_core::{character::Character, stats::ColliderCapsuleSize};
+use l2r_core::{assets::CustomAssetPlugin, plugins::custom_hierarchy::DespawnChildOf};
 use std::{num::NonZero, sync::atomic::Ordering};
 use ui::{
     camera_controller::{CameraControl, CameraControlPlugin},
