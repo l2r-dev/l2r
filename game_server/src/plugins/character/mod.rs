@@ -3,10 +3,10 @@ use bevy::{log, prelude::*};
 use bevy_defer::{AsyncAccess, AsyncCommandsExtension, AsyncWorld};
 use game_core::{
     character::{
-        self, CharacterComponentsPlugin, CharacterRepository, CharacterSave,
+        self, Character, CharacterComponentsPlugin, CharacterRepository, CharacterSave,
         model::{self, ModelUpdate},
     },
-    custom_hierarchy::DespawnChildOf,
+    custom_hierarchy::{DespawnChildOf, DespawnChildren, InsertIntoFolders},
     items::ItemsQuery,
     object_id::ObjectId,
 };
@@ -25,6 +25,8 @@ impl Plugin for CharacterPlugin {
         app.add_plugins(creation_menu::CharacterCreationPlugin);
 
         app.add_observer(save_char_to_database);
+
+        app.add_systems(Update, sort_entities_into_folders);
     }
 }
 
@@ -39,6 +41,20 @@ async fn reset_last_active_character(
                 .filter(model::Column::AccountId.eq(account_id))
         })
         .await
+}
+
+fn sort_entities_into_folders(
+    changed_children: Query<(Ref<Character>, Ref<DespawnChildren>), Changed<DespawnChildren>>,
+    refs: Query<EntityRef>,
+    mut commands: Commands,
+) -> Result<()> {
+    for (character, despawn_children) in changed_children.iter() {
+        for child_entity in despawn_children.iter() {
+            let entity_ref = refs.get(child_entity)?;
+            commands.insert_into_folders(entity_ref, character.folders());
+        }
+    }
+    Ok(())
 }
 
 fn save_char_to_database(

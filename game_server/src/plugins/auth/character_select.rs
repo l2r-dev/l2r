@@ -50,7 +50,7 @@ fn handle(
     char_table.select(packet.char_slot)?;
     let selected_char = char_table.get_bundle()?.clone();
     let char_selected = CharacterSelected::new(&selected_char, session.id());
-    let char_entity = commands.spawn(selected_char).id();
+    let char_entity = selected_char.spawn(commands.reborrow());
     char_table.set_character(char_entity);
     commands
         .entity(char_entity)

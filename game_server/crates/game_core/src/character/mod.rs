@@ -1,8 +1,11 @@
 use bevy::{
     app::{App, Plugin},
     ecs::component::Component,
+    platform::collections::HashMap,
+    prelude::Entity,
     reflect::Reflect,
 };
+use std::any::TypeId;
 
 pub mod model;
 pub mod skills;
@@ -35,4 +38,19 @@ impl Plugin for CharacterComponentsPlugin {
 }
 
 #[derive(Clone, Component, Debug, Default, Reflect)]
-pub struct Character;
+pub struct Character {
+    folders: HashMap<TypeId, Entity>,
+}
+
+impl Character {
+    pub fn set_folder<T: Component>(&mut self, entity: Entity) {
+        self.folders.insert(TypeId::of::<T>(), entity);
+    }
+
+    pub fn folders(&self) -> &HashMap<TypeId, Entity> {
+        &self.folders
+    }
+}
+
+#[derive(Clone, Component, Copy, Debug, Default, Reflect)]
+pub struct ItemsFolder;

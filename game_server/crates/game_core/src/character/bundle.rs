@@ -1,9 +1,10 @@
 use crate::{
     abnormal_effects::AbnormalEffects,
     action::{target::Targetable, wait_kind::WaitKind},
-    character::{self, model::Model},
+    character::{self, ItemsFolder, model::Model},
+    custom_hierarchy::DespawnChildOf,
     encounters::KnownEntities,
-    items::{self, Inventory, PaperDoll},
+    items::{self, Inventory, Item, PaperDoll},
     object_id::ObjectId,
     skills::SkillList,
     stats::{NameTitle, *},
@@ -18,7 +19,6 @@ use spatial::GameVec3;
 #[derive(Bundle, Clone, Debug, Reflect)]
 pub struct Bundle {
     pub id: ObjectId,
-    pub character: super::Character,
     pub name: Name,
     pub title: NameTitle,
     pub session_id: SessionId,
@@ -124,7 +124,6 @@ impl Bundle {
 
         Self {
             id: db_model.id,
-            character: super::Character,
             name: Name::new(db_model.name),
             title: NameTitle::new(db_model.title),
             session_id,
@@ -163,6 +162,18 @@ impl Bundle {
             abnormal_effects: AbnormalEffects::default(),
             targetable: Targetable,
         }
+    }
+
+    pub fn spawn(&self, mut commands: Commands) -> Entity {
+        let char_entity = commands.spawn(self.clone()).id();
+        let items_folder = commands
+            .spawn((Name::new("Items"), ItemsFolder, DespawnChildOf(char_entity)))
+            .id();
+        let mut character = super::Character::default();
+
+        character.set_folder::<Item>(items_folder);
+        commands.entity(char_entity).insert(character);
+        char_entity
     }
 
     pub fn update(&mut self, character: &character::query::QueryItem) {

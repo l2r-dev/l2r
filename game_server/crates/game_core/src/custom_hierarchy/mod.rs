@@ -1,4 +1,4 @@
-use bevy::{platform::collections::HashMap, prelude::*};
+use bevy::prelude::*;
 use bevy_ecs::component::{ComponentCloneBehavior, ComponentHook, Mutable, StorageType};
 use smallvec::SmallVec;
 use std::any::TypeId;
@@ -85,12 +85,17 @@ impl RelationshipTarget for DespawnChildren {
 }
 
 pub trait InsertIntoFolders {
-    fn insert_into_folders(&mut self, child_entity: EntityRef, folders: &HashMap<TypeId, Entity>);
+    fn insert_into_folders<'a, I>(&mut self, child_entity: EntityRef, folders: I)
+    where
+        I: IntoIterator<Item = (&'a TypeId, &'a Entity)>;
 }
 
 impl InsertIntoFolders for Commands<'_, '_> {
-    fn insert_into_folders(&mut self, child_entity: EntityRef, folders: &HashMap<TypeId, Entity>) {
-        for (component_type_id, folder_entity) in folders.iter() {
+    fn insert_into_folders<'a, I>(&mut self, child_entity: EntityRef, folders: I)
+    where
+        I: IntoIterator<Item = (&'a TypeId, &'a Entity)>,
+    {
+        for (component_type_id, folder_entity) in folders.into_iter() {
             let contains = child_entity.contains_type_id(*component_type_id);
 
             if contains {
