@@ -14,7 +14,7 @@ use bevy_inspector_egui::bevy_inspector::{
     ui_for_entities_shared_components, ui_for_entity_with_children,
 };
 use bevy_reflect::TypeRegistry;
-use game_core::custom_hierarchy::{DespawnChildOf, DespawnChildren};
+use l2r_core::plugins::custom_hierarchy::{DespawnChildOf, DespawnChildren};
 use spatial::NavigationDirection;
 use strum::EnumIter;
 

@@ -1,5 +1,10 @@
 use super::GameServerPacketCodes;
-use crate::{character, items::PaperDoll, object_id::ObjectId, stats::*};
+use crate::{
+    character,
+    items::{self, ItemsQuery},
+    object_id::ObjectId,
+    stats::*,
+};
 use bevy::prelude::*;
 use core::fmt;
 use l2r_core::{
@@ -9,7 +14,7 @@ use l2r_core::{
 use spatial::{GameVec3, Heading};
 
 #[derive(Event, Reflect)]
-pub struct SendCharInfo;
+pub struct BroadcastCharInfo;
 
 #[derive(Clone, Reflect)]
 pub struct CharInfo {
@@ -29,7 +34,7 @@ pub struct CharInfo {
     pub collision_radius: f64,
     pub collision_height: f64,
     pub transform: Transform,
-    pub paperdoll_items: PaperDoll,
+    pub equipped_items: Vec<(items::Id, items::AugumentId)>,
     pub in_combat: bool,
     pub invisible: bool,
     pub dead: bool,
@@ -70,19 +75,14 @@ impl L2rServerPacket for CharInfo {
         buffer.u32(self.appearance.gender.into());
         buffer.u32(self.class_id.into());
 
-        for slot_item in self.paperdoll_items.char_info_iter() {
-            buffer.u32(
-                slot_item
-                    .unique_item()
-                    .map(|u| u.item().id().into())
-                    .unwrap_or(0),
-            );
+        for equpped_item in self.equipped_items.iter() {
+            buffer.u32(equpped_item.0.into());
         }
 
-        for _slot_item in self.paperdoll_items.char_info_iter() {
-            // augumentation id
-            buffer.u32(0);
+        for equpped_item in self.equipped_items.iter() {
+            buffer.u32(equpped_item.1.into());
         }
+
         buffer.u32(7); // max talisman slots
         buffer.u32_from_bool(false); // max cloak slots (or can equip cloak)
         buffer.u32_from_bool(self.pvp_stats.pvp_flag);
@@ -155,11 +155,30 @@ impl L2rServerPacket for CharInfo {
 }
 
 impl CharInfo {
-    pub fn new(query: &character::QueryItem, base_speed: MovementStats) -> Self {
+    pub fn new(
+        query: &character::QueryItem,
+        items: &ItemsQuery,
+        base_speed: MovementStats,
+    ) -> Self {
         let invisible = !matches!(query.visibility, EncountersVisibility::Visible);
 
         let collision_radius = query.collider.radius();
         let collision_height = query.collider.height();
+        let equipped_items = query
+            .paperdoll
+            .char_info_iter()
+            .map(|slot_item| {
+                slot_item.object_id.map_or_else(
+                    || (items::Id::default(), items::AugumentId::default()),
+                    |oid| {
+                        let item = items.item_by_object_id(oid);
+                        let item_id = item.as_ref().map(|i| i.id()).unwrap_or_default();
+                        let aug_id = item.map(|i| i.augmentation_id()).unwrap_or_default();
+                        (item_id, aug_id)
+                    },
+                )
+            })
+            .collect::<Vec<_>>();
 
         CharInfo {
             name: query.name.to_string(),
@@ -178,7 +197,7 @@ impl CharInfo {
             collision_radius,
             collision_height,
             transform: *query.transform,
-            paperdoll_items: query.paperdoll.clone(),
+            equipped_items,
             dead: query.dead.is_some(),
             in_combat: query.in_combat.is_some(),
             in_party_match_room: false,

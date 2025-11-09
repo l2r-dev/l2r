@@ -1,10 +1,9 @@
 use crate::{
-    character::Character,
     items::{Id, Item},
     object_id::{ObjectId, ObjectIdIndexSet, ObjectIdManager},
 };
 use bevy::prelude::*;
-use bevy_ecs::system::SystemParam;
+use bevy_ecs::query::QueryData;
 use derive_more::{From, Into};
 use num_enum::IntoPrimitive;
 
@@ -22,15 +21,8 @@ impl Plugin for InventoryComponentsPlugin {
             .register_type::<DollSlot>();
 
         app.add_event::<AddInInventory>()
-            .add_event::<AddNonStackable>()
-            .add_event::<AddStackable>()
-            .add_event::<UnequipItems>()
-            .add_event::<ItemsEquipped>()
             .add_event::<InventoryLoad>()
-            .add_event::<EquipItems>()
-            .add_event::<ItemsEquipped>()
             .add_event::<DropIfPossible>()
-            .add_event::<DropItemEvent>()
             .add_event::<DestroyItemRequest>();
     }
 }
@@ -38,8 +30,20 @@ impl Plugin for InventoryComponentsPlugin {
 #[derive(Clone, Copy, Event, From, Into)]
 pub struct InventoryLoad(pub Entity);
 
-#[derive(Deref, SystemParam)]
-pub struct CharacterInventories<'w, 's>(Query<'w, 's, Ref<'static, Inventory>, With<Character>>);
+#[derive(QueryData)]
+pub struct InventoriesQuery<'a> {
+    pub object_id: Ref<'a, ObjectId>,
+    pub paper_doll: Ref<'a, PaperDoll>,
+    pub inventory: Ref<'a, Inventory>,
+}
+
+#[derive(QueryData)]
+#[query_data(mutable)]
+pub struct InventoriesQueryMut<'a> {
+    pub object_id: Ref<'a, ObjectId>,
+    pub paper_doll: Mut<'a, PaperDoll>,
+    pub inventory: Mut<'a, Inventory>,
+}
 
 #[derive(Clone, Component, Debug, Default, Deref, DerefMut, Reflect)]
 pub struct Inventory(ObjectIdIndexSet);

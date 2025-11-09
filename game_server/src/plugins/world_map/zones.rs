@@ -1,7 +1,6 @@
 use avian3d::prelude::{CollisionEventsEnabled, Sensor};
 use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*};
-use game_core::custom_hierarchy::{DespawnChildOf, DespawnChildren};
-use l2r_core::chronicles::CHRONICLE;
+use l2r_core::{chronicles::CHRONICLE, plugins::custom_hierarchy::*};
 use map::*;
 use physics::GameLayer;
 use std::path::PathBuf;
@@ -14,7 +13,7 @@ impl Plugin for ZonesPlugin {
         app.add_observer(zone_added);
 
         app.add_systems(Startup, |mut commands: Commands| {
-            commands.spawn(GlobalZones);
+            commands.spawn(GlobalZonesFolder);
         });
 
         app.add_systems(
@@ -58,18 +57,6 @@ impl Plugin for ZonesPlugin {
                     spawn_zones::<TownZonesList, Town>,
                 ),
             ),
-        );
-
-        app.add_systems(Update, load_zones::<ResidenceHallTeleportZonesList>);
-        app.add_systems(
-            Update,
-            spawn_zones::<ResidenceHallTeleportZonesList, ResidenceHallTeleport>,
-        );
-
-        app.add_systems(Update, load_zones::<ResidenceTeleportZonesList>);
-        app.add_systems(
-            Update,
-            spawn_zones::<ResidenceTeleportZonesList, ResidenceTeleport>,
         );
     }
 }
@@ -123,7 +110,7 @@ pub struct SpawnZoneQuery<'w, 's, ZoneKindComponent: Component> {
     pub events: EventReader<'w, 's, AssetEvent<ZoneList>>,
     pub existing_zones: Query<'w, 's, Entity, With<ZoneKindComponent>>,
     pub named_zones: ResMut<'w, NamedZones>,
-    pub global_zones: Query<'w, 's, Entity, With<GlobalZones>>,
+    pub global_zones: Query<'w, 's, Entity, With<GlobalZonesFolder>>,
     pub zone_kind_folders: Query<'w, 's, (Entity, &'static DespawnChildren), With<ZoneKindFolder>>,
 }
 
@@ -212,7 +199,6 @@ pub struct RegionalSpawnZoneQuery<'w, 's> {
     pub events: EventReader<'w, 's, AssetEvent<ZoneList>>,
     pub regions: Query<'w, 's, &'static Region>,
     pub despawn_children: Query<'w, 's, &'static DespawnChildren>,
-    pub regional_zones: Query<'w, 's, Entity, With<RegionalZones>>,
     pub named_zones: Res<'w, NamedZones>,
 }
 
@@ -223,9 +209,8 @@ fn spawn_regional_zones(mut regional_spawn: RegionalSpawnZoneQuery) -> Result<()
                 let zone_handle = region.zone_list_handle();
                 if *id == zone_handle.id()
                     && let Some(zone_list) = regional_spawn.zone_lists.get(*id)
+                    && let Some(regional_zones_entity) = region.get_folder::<ZoneKindVariant>()
                 {
-                    let regional_zones_entity = regional_spawn.regional_zones.single()?;
-
                     // Despawn all existing regional zone folders and their children.
                     // Regional zones are tied to specific regions, so when a region's zone list
                     // is reloaded, we need to completely rebuild the entire hierarchy.

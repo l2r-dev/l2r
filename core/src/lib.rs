@@ -7,6 +7,7 @@ pub mod utils;
 pub mod assets;
 pub mod chronicles;
 pub mod db;
+pub mod plugins;
 
 #[cfg(test)]
 mod metrics_test;

@@ -14,8 +14,8 @@ impl Plugin for ZonesComponentsPlugin {
         app.add_plugins(JsonAssetPlugin::<ZoneList>::new(&["json"]));
 
         app.register_type::<Zone>()
-            .register_type::<GlobalZones>()
-            .register_type::<RegionalZones>()
+            .register_type::<GlobalZonesFolder>()
+            .register_type::<RegionalZonesFolder>()
             .register_type::<ZoneKindVariant>()
             .register_type::<NamedZones>();
 
@@ -26,12 +26,12 @@ impl Plugin for ZonesComponentsPlugin {
 #[derive(Component, Debug, Reflect)]
 #[reflect(Component)]
 #[require(Name::new("Zones".to_string()))]
-pub struct GlobalZones;
+pub struct GlobalZonesFolder;
 
 #[derive(Component, Debug, Reflect)]
 #[reflect(Component)]
 #[require(Name::new("Zones".to_string()))]
-pub struct RegionalZones;
+pub struct RegionalZonesFolder;
 
 #[derive(Clone, Debug, Deserialize, Reflect, Serialize)]
 pub struct ZonePoint {

@@ -57,7 +57,7 @@ impl<'de> Deserialize<'de> for SpawnerTimer {
 #[derive(Component, Debug, Reflect)]
 #[reflect(Component)]
 #[require(Name::new("Spawners".to_string()))]
-pub struct RegionalSpawners;
+pub struct RegionalSpawnersFolder;
 
 #[derive(Clone, Component, Debug, Default, Deserialize, Reflect)]
 pub struct Spawner {

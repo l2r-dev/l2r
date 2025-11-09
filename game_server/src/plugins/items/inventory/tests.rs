@@ -5,7 +5,7 @@ pub mod test_utils {
     use bevy::prelude::*;
     use game_core::{
         items::{
-            EquipItems, Id, Inventory, Item, ItemLocation, ItemsDataTable, ItemsInfo, PaperDoll,
+            EquipItem, Id, Inventory, Item, ItemLocation, ItemsDataTable, ItemsInfo, PaperDoll,
             SpawnExisting,
         },
         object_id::{ObjectId, ObjectIdManager, QueryStateByObjectId},
@@ -75,10 +75,10 @@ pub mod test_utils {
 
         let world = app.world_mut();
 
-        world.send_event(EquipItems::new(
-            character_entity,
-            non_stackable_oids.clone(),
-        ));
+        // Equip each item individually using triggers
+        for item_oid in non_stackable_oids.iter() {
+            world.trigger_targets(EquipItem(*item_oid), character_entity);
+        }
 
         app.update();
 
@@ -371,7 +371,7 @@ mod equip_tests {
 mod unequip_tests {
     use super::test_utils::*;
     use crate::tests::serial;
-    use game_core::items::UnequipItems;
+    use game_core::items::UnequipItem;
 
     #[test]
     #[serial]
@@ -380,7 +380,16 @@ mod unequip_tests {
 
         let world = app.world_mut();
 
-        world.send_event(UnequipItems::new(character_entity, equipped_oids.clone()));
+        // Unequip each item individually using triggers
+        for item_oid in equipped_oids.iter() {
+            world.trigger_targets(
+                UnequipItem {
+                    item_object_id: *item_oid,
+                    skip_db_update: false,
+                },
+                character_entity,
+            );
+        }
 
         app.update();
 
@@ -389,58 +398,30 @@ mod unequip_tests {
     }
 }
 
-// #[cfg(test)]
-// mod paperdoll_tests {
-//     use game_core::{
-//         items::{BodyPart, DollSlot, Item, ItemInfo, ItemLocation, PaperDoll, UniqueItem},
-//         object_id::ObjectId,
-//     };
-//
-//     #[test]
-//     fn test_set_and_get() {
-//         let mut paperdoll = PaperDoll::default();
-//
-//         let default_item_info = ItemInfo::default();
-//
-//         let item1 = UniqueItem::new(
-//             ObjectId::from(5001),
-//             Item::new(
-//                 1001.into(),
-//                 ItemLocation::PaperDoll(DollSlot::Head),
-//                 &default_item_info,
-//             ),
-//         );
-//         let item2 = UniqueItem::new(
-//             ObjectId::from(5002),
-//             Item::new(
-//                 1002.into(),
-//                 ItemLocation::PaperDoll(DollSlot::Chest),
-//                 &default_item_info,
-//             ),
-//         );
-//         let item3 = UniqueItem::new(
-//             ObjectId::from(5003),
-//             Item::new(
-//                 1003.into(),
-//                 ItemLocation::PaperDoll(DollSlot::Legs),
-//                 &default_item_info,
-//             ),
-//         );
-//
-//         // Setting and getting items in different slots
-//         paperdoll.equip(BodyPart::Head, Some(item1), false);
-//         paperdoll.equip(BodyPart::Chest, Some(item2), false);
-//         paperdoll.equip(BodyPart::Legs, Some(item3), false);
-//
-//         assert_eq!(paperdoll.get(DollSlot::Head), Some(item1));
-//         assert_eq!(paperdoll.get(DollSlot::Chest), Some(item2));
-//         assert_eq!(paperdoll.get(DollSlot::Legs), Some(item3));
-//
-//         // Setting slot to None
-//         paperdoll.equip(BodyPart::Head, None);
-//         assert_eq!(paperdoll.get(DollSlot::Head), None);
-//     }
-// }
+#[cfg(test)]
+mod paperdoll_tests {
+    use game_core::{
+        items::{DollSlot, PaperDoll},
+        object_id::ObjectId,
+    };
+
+    #[test]
+    fn test_set_and_get() {
+        let mut paperdoll = PaperDoll::default();
+        let item1 = ObjectId::from(5001);
+        let item2 = ObjectId::from(5002);
+        let item3 = ObjectId::from(5003);
+
+        // Setting and getting items in different slots
+        paperdoll.equip_slot(DollSlot::Head, item1);
+        paperdoll.equip_slot(DollSlot::Chest, item2);
+        paperdoll.equip_slot(DollSlot::Legs, item3);
+
+        assert_eq!(paperdoll.get(DollSlot::Head), Some(item1));
+        assert_eq!(paperdoll.get(DollSlot::Chest), Some(item2));
+        assert_eq!(paperdoll.get(DollSlot::Legs), Some(item3));
+    }
+}
 
 #[cfg(test)]
 mod drop_tests {
@@ -448,11 +429,11 @@ mod drop_tests {
     use crate::tests::serial;
     use bevy::{ecs::relationship::Relationship, prelude::*};
     use game_core::{
-        custom_hierarchy::DespawnChildOf,
         items::{DropIfPossible, Item, ItemLocation},
         object_id::{ObjectId, ObjectIdManager},
     };
-    use map::{WorldMap, id::RegionId};
+    use l2r_core::plugins::custom_hierarchy::{DespawnChildOf, HierarchyFolderOperations};
+    use map::{Region, WorldMap, id::RegionId};
 
     const DROP_POSITION: Vec3 = Vec3::new(28300.0, -4224.0, 11070.0);
     const FAR_POSITION: Vec3 = Vec3::new(0.0, 0.0, 0.0);
@@ -501,8 +482,14 @@ mod drop_tests {
 
         let region_id = RegionId::from(DROP_POSITION);
         if let Some(region_entity) = world.resource::<WorldMap>().get(&region_id) {
+            let region = world.entity(*region_entity).get::<Region>().unwrap();
+            let items_folder_entity = region.get_folder::<Item>().unwrap();
             let child_of = world.entity(item_entity).get::<DespawnChildOf>().unwrap();
-            assert_eq!(child_of.get(), *region_entity);
+            assert_eq!(
+                child_of.get(),
+                items_folder_entity,
+                "Dropped item should be child of region's items folder"
+            );
         }
     }
 

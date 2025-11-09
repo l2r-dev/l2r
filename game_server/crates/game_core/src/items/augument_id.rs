@@ -1,3 +1,4 @@
+use crate::items::Id;
 use bevy::prelude::*;
 use l2r_core::model::generic_number::GenericNumber;
 use sea_orm::{
@@ -57,6 +58,18 @@ impl EnchantOptions {
     Default,
 )]
 pub struct AugumentId(u32);
+
+impl From<Id> for AugumentId {
+    fn from(id: Id) -> Self {
+        AugumentId(id.into())
+    }
+}
+
+impl From<AugumentId> for Id {
+    fn from(aug_id: AugumentId) -> Self {
+        Id::from(aug_id.0)
+    }
+}
 
 impl fmt::Display for AugumentId {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {

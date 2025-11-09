@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 use config::Config;
-use game_core::custom_hierarchy::DespawnChildOf;
+use l2r_core::plugins::custom_hierarchy::DespawnChildOf;
 use map::{
     Region, WorldMapQuery,
     block::{Block, Cell, GeoBlock},
@@ -58,6 +58,7 @@ fn update_block_gizmos(
                 }
             }
             commands.spawn((
+                Name::new("Block Gizmos"),
                 DespawnChildOf(active_region),
                 Gizmo {
                     handle: gizmo_assets.add(gizmo),
@@ -192,6 +193,7 @@ fn update_cell_gizmos(
                 }
 
                 commands.spawn((
+                    Name::new("Cell Gizmos"),
                     DespawnChildOf(active_region),
                     Gizmo {
                         handle: gizmo_assets.add(gizmo),

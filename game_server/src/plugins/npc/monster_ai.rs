@@ -7,11 +7,11 @@ use bevy::{
 };
 use game_core::{
     attack::InCombat,
-    custom_hierarchy::DespawnChildOf,
     movement::Movement,
     npc::{NpcAiComponentsPlugin, RandomWalkingTimer, kind::Monster},
     spawner::Spawner,
 };
+use l2r_core::plugins::custom_hierarchy::DespawnChildOf;
 use map::{WorldMapQuery, id::RegionId};
 use rand::Rng;
 use spatial::WayPoint;

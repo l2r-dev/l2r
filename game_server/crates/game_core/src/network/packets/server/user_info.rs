@@ -1,5 +1,10 @@
 use super::{GameServerPacketCodes, GameServerPackets, ex_br_extra_user_info::ExBrExtraUserInfo};
-use crate::{character, items::PaperDoll, object_id::ObjectId, stats::*};
+use crate::{
+    character,
+    items::{self, ItemsQuery},
+    object_id::ObjectId,
+    stats::*,
+};
 use bevy::prelude::*;
 use core::fmt;
 use l2r_core::{
@@ -36,7 +41,7 @@ pub struct UserInfo {
     pub collision_radius: f64,
     pub collision_height: f64,
     pub position: GameVec3,
-    pub paper_doll: PaperDoll,
+    pub equipped_items: Vec<(ObjectId, items::Id, items::AugumentId)>,
     //TODO: для дебага
     pub entity: Entity,
 }
@@ -55,10 +60,32 @@ impl fmt::Debug for UserInfo {
 impl UserInfo {
     pub fn from_query<'a, 'b>(
         character: &'a character::QueryItem<'a, 'b>,
+        items: &ItemsQuery,
         base_speed: MovementStats,
     ) -> Self {
         let collision_radius = character.collider.radius();
         let collision_height = character.collider.height();
+        let equipped_items = character
+            .paperdoll
+            .user_info_iter()
+            .map(|slot_item| {
+                slot_item.object_id.map_or_else(
+                    || {
+                        (
+                            ObjectId::default(),
+                            items::Id::default(),
+                            items::AugumentId::default(),
+                        )
+                    },
+                    |oid| {
+                        let item = items.item_by_object_id(oid);
+                        let item_id = item.as_ref().map(|i| i.id()).unwrap_or_default();
+                        let aug_id = item.map(|i| i.augmentation_id()).unwrap_or_default();
+                        (oid, item_id, aug_id)
+                    },
+                )
+            })
+            .collect::<Vec<_>>();
 
         Self {
             name: character.name.to_string(),
@@ -81,7 +108,7 @@ impl UserInfo {
             collision_radius,
             collision_height,
             position: GameVec3::from(character.transform.translation),
-            paper_doll: character.paperdoll.clone(),
+            equipped_items,
             entity: character.entity,
         }
     }
@@ -140,37 +167,17 @@ impl L2rServerPacket for UserInfo {
         buffer.u32(17); // max load
         buffer.u32(40); // active weapon item
 
-        // entity ids
-        for slot_item in self.paper_doll.user_info_iter() {
-            buffer.extend(
-                slot_item
-                    .unique_item()
-                    .map(|u| u.object_id())
-                    .unwrap_or(0.into())
-                    .to_le_bytes(),
-            );
+        // object ids
+        for equipped_item in self.equipped_items.iter() {
+            buffer.u32(equipped_item.0.into());
         }
-
         // item ids
-        for slot_item in self.paper_doll.user_info_iter() {
-            buffer.extend(
-                slot_item
-                    .unique_item()
-                    .map(|u| u.item().id())
-                    .unwrap_or(0.into())
-                    .to_le_bytes(),
-            );
+        for equipped_item in self.equipped_items.iter() {
+            buffer.u32(equipped_item.1.into());
         }
-
         // augumented ids
-        for slot_item in self.paper_doll.user_info_iter() {
-            buffer.extend(
-                slot_item
-                    .unique_item()
-                    .map(|u| u.item().id())
-                    .unwrap_or(0.into())
-                    .to_le_bytes(),
-            );
+        for equipped_item in self.equipped_items.iter() {
+            buffer.u32(equipped_item.2.into());
         }
 
         buffer.u32(8); // talisman slots

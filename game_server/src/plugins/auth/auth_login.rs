@@ -141,7 +141,7 @@ async fn login_request_task(packet: AuthLoginRequest, entity: Entity) -> Result<
 
     let chars = match chars_result {
         Ok(chars) => {
-            let mut char_with_items =
+            let mut char_with_items: Vec<(character::model::Model, Vec<items::model::Model>)> =
                 Vec::with_capacity(character::Table::MAX_CHARACTERS_ON_ACCOUNT);
 
             for character in chars {
@@ -164,7 +164,7 @@ async fn login_request_task(packet: AuthLoginRequest, entity: Entity) -> Result<
                             err
                         );
                         // Still include the character but with empty items
-                        char_with_items.push((character, vec![]));
+                        char_with_items.push((character, Vec::new()));
                     }
                 }
             }
@@ -177,7 +177,7 @@ async fn login_request_task(packet: AuthLoginRequest, entity: Entity) -> Result<
     };
 
     AsyncWorld.apply_command(move |world: &mut World| {
-        let chars_table = character::Table::from_char_list(chars, session.id(), world);
+        let chars_table = character::Table::from_char_list(chars.clone(), session.id(), world);
 
         match chars_table {
             Ok(table) => {

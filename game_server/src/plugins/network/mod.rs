@@ -14,7 +14,6 @@ use bevy_slinet::{
 use game_core::{
     account::Account,
     character::{self, CharacterSave},
-    custom_hierarchy::DespawnChildOf,
     network::{
         GameNetworkMetric,
         config::GameServerNetworkConfig,
@@ -28,6 +27,7 @@ use game_core::{
 use l2r_core::{
     metrics::{Metrics, MetricsAppExt},
     model::session::{GameServerSessions, L2rSession, ServerSessions, SessionId},
+    plugins::custom_hierarchy::DespawnChildOf,
 };
 use state::GameServerStateSystems;
 

@@ -19,7 +19,7 @@ mod quality;
 mod use_shot;
 
 pub use assets::*;
-use augument_id::*;
+pub use augument_id::*;
 pub use bodypart::BodyPart;
 pub use condition::*;
 pub use drop::*;
@@ -50,7 +50,7 @@ impl Plugin for ItemsComponentsPlugin {
             .register_type::<ItemLocationVariant>()
             .register_type::<UniqueItem>()
             .register_type::<ItemsDataTable>()
-            .register_type::<RegionalItems>();
+            .register_type::<RegionalItemsFolder>();
 
         app.add_event::<UseShot>().add_event::<SpawnNew>();
     }
@@ -61,7 +61,7 @@ pub const ITEMS_OPERATION_STACK: usize = 3;
 #[derive(Component, Debug, Reflect)]
 #[reflect(Component)]
 #[require(Name::new("Items".to_string()))]
-pub struct RegionalItems;
+pub struct RegionalItemsFolder;
 
 #[derive(Clone, Debug, Event)]
 pub struct SpawnNew {

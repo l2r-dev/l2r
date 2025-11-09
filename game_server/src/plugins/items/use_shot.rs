@@ -1,17 +1,14 @@
 use super::*;
 use bevy::{
-    ecs::{
-        query::Has,
-        system::{ParamSet, SystemParam},
-    },
+    ecs::{query::Has, system::SystemParam},
     log,
 };
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     attack::AttackHit,
     items::{
-        BlessedSpiritshot, ConsumableKind, DollSlot, FishingShot, ItemsDataQuery, Kind, PaperDoll,
-        ShotKind, Soulshot, Spiritshot, UseShot,
+        BlessedSpiritshot, ConsumableKind, DollSlot, FishingShot, ItemsDataQueryMut, Kind,
+        PaperDoll, ShotKind, Soulshot, Spiritshot, UseShot,
     },
     network::{
         broadcast::ServerPacketBroadcast,
@@ -48,7 +45,7 @@ impl Plugin for UseShotPlugin {
 #[derive(SystemParam)]
 struct ShotItemsParams<'w, 's> {
     items: Query<'w, 's, (Entity, Ref<'static, Item>)>,
-    items_data_query: ItemsDataQuery<'w>,
+    items_data: ItemsDataQuery<'w, 's>,
     object_id_manager: Res<'w, ObjectIdManager>,
 }
 
@@ -118,17 +115,14 @@ fn auto_shot_use(
         return Ok(());
     };
 
-    let Ok((_, shot_item)) = params.shot_items.items.get(shot_entity) else {
+    let Ok((shot_entity, shot_item)) = params.shot_items.items.get(shot_entity) else {
         log::warn!("No shot item found for entity {:?}", shot_entity);
         return Ok(());
     };
 
     // Check weapon compatibility with shot
-    let compatibility = check_weapon_shot_compatibility(
-        &paper_doll,
-        &shot_item,
-        &params.shot_items.items_data_query,
-    )?;
+    let compatibility =
+        check_weapon_shot_compatibility(shot_entity, &paper_doll, &params.shot_items.items_data)?;
     let Some(compatibility) = compatibility else {
         log::warn!("Weapon shot compatibility check failed");
         return Ok(());
@@ -185,16 +179,7 @@ struct UseShotHandleParams<'w, 's> {
         Without<AttackHit>,
     >,
     commands: Commands<'w, 's>,
-    items_data_query: ItemsDataQuery<'w>,
-    object_id_manager: Res<'w, ObjectIdManager>,
-    item_queries: ParamSet<
-        'w,
-        's,
-        (
-            Query<'w, 's, (Entity, Ref<'static, Item>)>,
-            Query<'w, 's, (Entity, Mut<'static, Item>)>,
-        ),
-    >,
+    items_data: ItemsDataQueryMut<'w, 's>,
     item_objects: Query<'w, 's, Ref<'static, ObjectId>, With<Item>>,
     shot_status: ShotStatusQueries<'w, 's>,
 }
@@ -216,15 +201,15 @@ fn auto_shot_system(mut params: AutoShotSystemParams) -> Result<()> {
             continue;
         };
 
-        let Ok((_, shot_item)) = params.shot_items.items.get(shot_entity) else {
+        let Ok((shot_entity, _)) = params.shot_items.items.get(shot_entity) else {
             log::warn!("No shot item found for entity {:?}", shot_entity);
             continue;
         };
 
         let compatibility = check_weapon_shot_compatibility(
+            shot_entity,
             &paper_doll,
-            &shot_item,
-            &params.shot_items.items_data_query,
+            &params.shot_items.items_data,
         )?;
 
         let Some(compatibility) = compatibility else {
@@ -265,15 +250,12 @@ fn use_shot_handle(mut params: UseShotHandleParams) -> Result<()> {
 
         // First, collect all the data we need from the immutable query
         let (shot_item_id, compatibility, weapon_entity) = {
-            let items_query = params.item_queries.p0();
-            let Ok((_shot_entity, shot_item)) = items_query.get(event.shot_entity()) else {
-                log::warn!("No shot item found for entity {:?}", event.shot_entity());
-                continue;
-            };
-            let shot_item_id = shot_item.id();
+            let shot_entity = event.shot_entity();
 
             let compatibility =
-                check_weapon_shot_compatibility(&paper_doll, &shot_item, &params.items_data_query)?;
+                check_weapon_shot_compatibility(shot_entity, &paper_doll, &params.items_data)?;
+
+            let shot_item_id = params.items_data.item(shot_entity)?.id();
 
             let Some(compatibility) = compatibility else {
                 params.commands.trigger_targets(
@@ -287,16 +269,12 @@ fn use_shot_handle(mut params: UseShotHandleParams) -> Result<()> {
                 continue;
             };
 
-            let weapon_entity = items_query
-                .by_object_id(compatibility.oid, &params.object_id_manager)?
-                .0;
+            let weapon_entity = params.items_data.entity(compatibility.oid)?;
 
             (shot_item_id, compatibility, weapon_entity)
         };
         let shot_kind = compatibility.shot_kind;
         let shot_count = compatibility.shot_count;
-
-        let shot_item_info = params.items_data_query.get_item_info(shot_item_id)?;
 
         if params.shot_status.already_applied(shot_kind, weapon_entity) {
             log::warn!(
@@ -316,10 +294,7 @@ fn use_shot_handle(mut params: UseShotHandleParams) -> Result<()> {
             continue;
         }
 
-        let mut items_query_mut = params.item_queries.p1();
-        let Ok((_item_entity, mut item)) = items_query_mut.get_mut(event.shot_entity()) else {
-            continue;
-        };
+        let mut item = params.items_data.item_by_object_id_mut(*shot_object_id)?;
 
         let current_count = item.count();
         if current_count < shot_count as u64 {
@@ -350,6 +325,7 @@ fn use_shot_handle(mut params: UseShotHandleParams) -> Result<()> {
             }
         }
 
+        let shot_item_info = params.items_data.item_info(shot_item_id)?;
         let Some(item_skills) = shot_item_info.item_skills() else {
             log::warn!("No skills found for item {:?}", event.shot_entity());
             continue;
@@ -388,19 +364,19 @@ struct WeaponShotCompatibility {
 }
 
 fn check_weapon_shot_compatibility(
+    shot_entity: Entity,
     paper_doll: &PaperDoll,
-    shot_item: &Item,
-    items_data_table: &ItemsDataQuery,
+    items_data: &impl ItemsDataAccess,
 ) -> Result<Option<WeaponShotCompatibility>> {
     // Check if weapon is equipped
     let weapon = paper_doll.get(DollSlot::RightHand);
-    let Some(weapon_unique) = weapon else {
+    let Some(weapon_oid) = weapon else {
         return Ok(None);
     };
 
-    let item = weapon_unique.item();
-    let weapon_item_info = items_data_table.get_item_info(item.id())?;
-    let shot_item_info = items_data_table.get_item_info(shot_item.id())?;
+    let weapon_item_info = items_data.info_by_object_id(weapon_oid)?;
+    let shot_item = items_data.item(shot_entity)?;
+    let shot_item_info = items_data.item_info(shot_item.id())?;
 
     // Check grade compatibility
     let weapon_grade = weapon_item_info.grade().shot_grade();
@@ -428,7 +404,7 @@ fn check_weapon_shot_compatibility(
     }
 
     Ok(Some(WeaponShotCompatibility {
-        oid: weapon_unique.object_id(),
+        oid: weapon_oid,
         shot_kind: *shot_kind,
         shot_count,
     }))

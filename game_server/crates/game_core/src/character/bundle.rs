@@ -1,23 +1,26 @@
 use crate::{
     abnormal_effects::AbnormalEffects,
     action::{target::Targetable, wait_kind::WaitKind},
-    character::{self, model::Model},
+    character::{self, CharacterItemsFolder, model::Model},
     encounters::KnownEntities,
-    items::{self, Inventory, PaperDoll},
+    items::{self, Inventory, Item, PaperDoll},
     object_id::ObjectId,
     skills::SkillList,
     stats::{NameTitle, *},
 };
 use avian3d::prelude::*;
 use bevy::prelude::*;
-use l2r_core::model::{base_class::BaseClass, race::Race, session::SessionId};
+use bevy_ecs::system::SystemState;
+use l2r_core::{
+    model::{base_class::BaseClass, race::Race, session::SessionId},
+    plugins::custom_hierarchy::{DespawnChildOf, HierarchyFolderOperations},
+};
 use physics::GameLayer;
 use spatial::GameVec3;
 
 #[derive(Bundle, Clone, Debug, Reflect)]
 pub struct Bundle {
     pub id: ObjectId,
-    pub character: super::Character,
     pub name: Name,
     pub title: NameTitle,
     pub session_id: SessionId,
@@ -59,13 +62,19 @@ pub struct Bundle {
 impl Bundle {
     pub fn new(
         db_model: Model,
-        paper_doll: PaperDoll,
+        item_models: Vec<items::model::Model>,
         session_id: SessionId,
-        world: &World,
+        world: &mut World,
     ) -> Self {
-        let stats_table = world.resource::<StatsTable>();
-        let class_tree = stats_table.class_tree_world(world);
-        let race_stats = stats_table.race_stats_world(world);
+        // let mut items_state: SystemState<ItemsDataQuery> = SystemState::new(world);
+        let mut stats_state: SystemState<StatsTableQuery> = SystemState::new(world);
+
+        // let items_query = items_state.get(world);
+        let stats_query = stats_state.get(world);
+
+        let class_tree = stats_query.class_tree();
+        let race_stats = stats_query.race_stats();
+
         let stat_formula_registry = world.resource::<StatFormulaRegistry>();
 
         let base_class = class_tree.get_base_class(db_model.class_id);
@@ -82,26 +91,11 @@ impl Bundle {
         other_stats.insert(OtherStat::Breath, base_class_stats.breath as f32);
         other_stats.insert(OtherStat::BreathMax, base_class_stats.breath as f32);
 
-        let mut stat_modifiers = StatModifiers::default();
+        let stat_modifiers = StatModifiers::default();
 
-        let items_data_table = world.resource::<items::ItemsDataTable>();
-        let items_data_assets = world.resource::<Assets<items::ItemsInfo>>();
-
-        // Get all paperdoll items and apply their stats
-        for slot_item in paper_doll.iter() {
-            let Some(unique_item) = slot_item.unique_item() else {
-                continue;
-            };
-            let item = unique_item.item();
-
-            let Ok(item_info) = items_data_table.get_item_info(item.id(), items_data_assets) else {
-                continue;
-            };
-
-            if let Some(stats) = item_info.stats_modifiers() {
-                stat_modifiers.merge(&stats);
-            }
-        }
+        // TODO: Apply item stat modifiers to show proper stats on character selection screen
+        // Don't do this now because stats system is being refactored
+        let paper_doll = PaperDoll::from(item_models);
 
         let params = StatsCalculateParams::new(
             stat_formula_registry,
@@ -132,7 +126,6 @@ impl Bundle {
 
         Self {
             id: db_model.id,
-            character: super::Character,
             name: Name::new(db_model.name),
             title: NameTitle::new(db_model.title),
             session_id,
@@ -171,6 +164,22 @@ impl Bundle {
             abnormal_effects: AbnormalEffects::default(),
             targetable: Targetable,
         }
+    }
+
+    pub fn spawn(&self, mut commands: Commands) -> Entity {
+        let char_entity = commands.spawn(self.clone()).id();
+        let items_folder = commands
+            .spawn((
+                Name::new("Items"),
+                CharacterItemsFolder,
+                DespawnChildOf(char_entity),
+            ))
+            .id();
+        let mut character = super::Character::default();
+
+        character.set_folder::<Item>(items_folder);
+        commands.entity(char_entity).insert(character);
+        char_entity
     }
 
     pub fn update(&mut self, character: &character::query::QueryItem) {

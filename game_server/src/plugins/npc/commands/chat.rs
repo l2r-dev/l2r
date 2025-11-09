@@ -1,7 +1,7 @@
 use bevy::{log, prelude::*};
 use config::Config;
 use game_core::{
-    items::{self, ItemsDataQuery},
+    items::{self, ItemsDataAccess, ItemsDataQuery},
     network::packets::{
         client::{BypassCommand, BypassCommandExecuted},
         server::{ActionFail, GameServerPacket, NpcHtmlMessage},
@@ -31,7 +31,7 @@ pub(super) fn handle(
 
     teleport_dest_handle: Res<TeleportDestinationsHandle>,
     teleport_dest_assets: Res<Assets<TeleportDestinations>>,
-    items_data_query: ItemsDataQuery,
+    items_data: ItemsDataQuery,
 ) {
     let BypassCommandExecuted(cmd) = trigger.event();
 
@@ -140,7 +140,7 @@ pub(super) fn handle(
                     let destinations = destinations
                         .into_iter()
                         .filter_map(|(id, dest)| {
-                            let Ok(item_info) = items_data_query.get_item_info(dest.item) else {
+                            let Ok(item_info) = items_data.item_info(dest.item) else {
                                 return None;
                             };
 

@@ -5,18 +5,19 @@ use super::{
     model::Model,
 };
 use crate::{
-    custom_hierarchy::DespawnChildren,
     items::{self, DollSlot},
-    object_id::ObjectId,
+    object_id::{ObjectId, ObjectIdManager},
     stats::{EncountersVisibility, ItemElementsInfo},
 };
-use avian3d::prelude::{Collider, CollisionLayers};
+use avian3d::{prelude::*, sync::PreviousGlobalTransform};
 use bevy::prelude::*;
 use bevy_defer::{AccessError, AsyncAccess, AsyncWorld};
+use bevy_ecs::system::SystemParam;
 use derive_more::{From, Into};
 use l2r_core::{
     db::{Repository, RepositoryManager, TypedRepositoryManager},
     packets::ServerPacketBuffer,
+    plugins::custom_hierarchy::DespawnChildren,
 };
 use physics::GameLayer;
 use sea_orm::{ActiveValue::Set, IntoActiveModel};
@@ -31,6 +32,20 @@ impl UniqueItem {
 
     pub fn from_model(model: Model, item_info: &ItemInfo) -> Self {
         UniqueItem::new(model.object_id(), Item::from_model(model, item_info))
+    }
+
+    pub fn spawn<'a>(
+        &self,
+        commands: &'a mut Commands,
+        item_info: &ItemInfo,
+    ) -> EntityCommands<'a> {
+        let name = Name::new(item_info.name().to_string());
+        let mut entity_commands = commands.spawn((*self, EncountersVisibility::default(), name));
+        if let ItemLocation::World(location) = self.item().location() {
+            entity_commands.insert(ItemInWorld::new(location));
+        }
+
+        entity_commands
     }
 
     pub fn object_id(&self) -> ObjectId {
@@ -102,18 +117,36 @@ impl ItemInWorld {
     }
 
     pub fn move_from_world(mut entity: EntityCommands) {
-        entity.remove::<(
+        entity.try_remove::<(
             Transform,
+            Position,
+            Rotation,
+            PreviousGlobalTransform,
             GlobalTransform,
             Collider,
+            ColliderAabb,
+            ColliderDensity,
+            ColliderMassProperties,
             CollisionLayers,
             DespawnChildren,
         )>();
     }
 }
 
+#[derive(SystemParam)]
+pub struct ItemsQuery<'w, 's> {
+    items: Query<'w, 's, &'static Item>,
+    object_id_manager: Res<'w, ObjectIdManager>,
+}
+
+impl<'w, 's> ItemsQuery<'w, 's> {
+    pub fn item_by_object_id(&self, object_id: ObjectId) -> Result<&Item> {
+        let entity = self.object_id_manager.entity_result(object_id)?;
+        Ok(self.items.get(entity)?)
+    }
+}
+
 #[derive(Clone, Component, Copy, Debug, Deserialize, Reflect)]
-#[require(Name::new("Item"), EncountersVisibility::default())]
 pub struct Item {
     id: Id,
     display_id: Id,
@@ -134,30 +167,6 @@ pub struct Item {
     // dont know what this is yet
     custom_type1: u16,
     custom_type2: u16,
-}
-
-impl Item {
-    pub async fn update_count_in_database(&self, object_id: ObjectId) -> Result<(), AccessError> {
-        let Ok(items_repository) = AsyncWorld
-            .resource::<RepositoryManager>()
-            .get(|registry| registry.typed::<ObjectId, items::model::Entity>())?
-        else {
-            return Ok(());
-        };
-
-        let item_model = Model::from(UniqueItem::new(object_id, *self));
-        let count = self.count();
-        if count == 0 {
-            // Delete item from database when count is 0
-            items_repository.delete(&item_model).await?;
-        } else {
-            // Update count in database
-            let mut item_model = item_model.into_active_model();
-            item_model.count = Set(count as i64);
-            items_repository.update(&item_model).await?;
-        }
-        Ok(())
-    }
 }
 
 impl Default for Item {
@@ -213,7 +222,7 @@ impl Item {
             enchant_level: 0,
             mana: None,
             drop_time: None,
-            augumentation_id: AugumentId::default(),
+            augumentation_id: item_info.display_id().unwrap_or(id).into(),
             custom_type1: 0,
             custom_type2: 0,
             enchant_options: EnchantOptions::default(),
@@ -241,7 +250,7 @@ impl Item {
             enchant_level: 0,
             mana: None,
             drop_time: None,
-            augumentation_id: AugumentId::default(),
+            augumentation_id: item_info.display_id().unwrap_or(id).into(),
             custom_type1: 0,
             custom_type2: 0,
             enchant_options: EnchantOptions::default(),
@@ -264,7 +273,7 @@ impl Item {
             enchant_level: model.enchant_level(),
             mana: model.mana(),
             drop_time: None,
-            augumentation_id: AugumentId::default(),
+            augumentation_id: item_info.display_id().unwrap_or(model.item_id()).into(),
             custom_type1: 0,
             custom_type2: 0,
             enchant_options: EnchantOptions::default(),
@@ -274,6 +283,10 @@ impl Item {
 
     pub fn id(&self) -> Id {
         self.id
+    }
+
+    pub fn augmentation_id(&self) -> AugumentId {
+        self.augumentation_id
     }
 
     pub fn set_owner(&mut self, object_id: Option<ObjectId>) {
@@ -374,6 +387,28 @@ impl Item {
 
     pub fn elements(&self) -> &ItemElementsInfo {
         &self.elements
+    }
+
+    pub async fn update_count_in_database(&self, object_id: ObjectId) -> Result<(), AccessError> {
+        let Ok(items_repository) = AsyncWorld
+            .resource::<RepositoryManager>()
+            .get(|registry| registry.typed::<ObjectId, items::model::Entity>())?
+        else {
+            return Ok(());
+        };
+
+        let item_model = Model::from(UniqueItem::new(object_id, *self));
+        let count = self.count();
+        if count == 0 {
+            // Delete item from database when count is 0
+            items_repository.delete(&item_model).await?;
+        } else {
+            // Update count in database
+            let mut item_model = item_model.into_active_model();
+            item_model.count = Set(count as i64);
+            items_repository.update(&item_model).await?;
+        }
+        Ok(())
     }
 }
 

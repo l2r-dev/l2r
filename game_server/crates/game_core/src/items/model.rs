@@ -169,6 +169,10 @@ impl Model {
     pub fn elements(&self) -> ItemElementsInfo {
         self.elements_info.unwrap_or_default()
     }
+
+    pub fn equipped(&self) -> bool {
+        matches!(self.location, super::ItemLocationVariant::PaperDoll)
+    }
 }
 
 impl From<UniqueItem> for Model {
@@ -187,6 +191,8 @@ impl From<UniqueItem> for Model {
             None => (None, None, None),
         };
 
+        let location_data = item_location.location_data() as i32;
+
         let item_elements = item.elements();
         let mut elements_info = None;
         if item_elements.attack_element.is_some() || item_elements.defence_elements.is_some() {
@@ -199,6 +205,7 @@ impl From<UniqueItem> for Model {
             count: item.count() as i64,
             enchant_level: item.enchant_level() as i16,
             location: item_location.into(),
+            location_data,
             x,
             y,
             z,

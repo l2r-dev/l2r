@@ -147,6 +147,7 @@ async fn delete_from_char_table(
 
     AsyncWorld.apply_command(move |world: &mut World| {
         let table = world.entity(session_entity).get::<character::Table>();
+
         if let Some(table) = table {
             world.trigger_targets(
                 GameServerPacket::from(CharSelectionInfo::new(table)),

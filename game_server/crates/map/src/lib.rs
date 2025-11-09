@@ -64,6 +64,11 @@ impl WorldMap {
             .collect::<Vec<Entity>>()
     }
 
+    pub fn get_by_loc(&self, location: Vec3) -> Option<Entity> {
+        let region_id = RegionId::from(location);
+        self.get(&region_id).copied()
+    }
+
     pub fn active_regions_ids(&self) -> Vec<RegionId> {
         self.iter().map(|(id, _)| *id).collect::<Vec<RegionId>>()
     }

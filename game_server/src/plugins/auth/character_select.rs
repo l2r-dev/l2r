@@ -2,7 +2,7 @@ use bevy::{log, prelude::*};
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     character,
-    custom_hierarchy::DespawnChildOf,
+    items::InventoryLoad,
     network::{
         config::GameServerNetworkConfig,
         packets::{
@@ -12,7 +12,10 @@ use game_core::{
         session::GameServerSession,
     },
 };
-use l2r_core::model::session::{L2rSession, ServerSessions};
+use l2r_core::{
+    model::session::{L2rSession, ServerSessions},
+    plugins::custom_hierarchy::DespawnChildOf,
+};
 
 pub(crate) struct CharacterSelectPlugin;
 impl Plugin for CharacterSelectPlugin {
@@ -26,6 +29,7 @@ fn handle(
     sessions: Res<ServerSessions>,
     mut commands: Commands,
     mut query: Query<(Ref<GameServerSession>, Mut<character::Table>)>,
+    mut inventory_load: EventWriter<InventoryLoad>,
 ) -> Result<()> {
     let event = receive.event();
     let GameClientPacket::CharacterSelect(ref packet) = event.packet else {
@@ -48,12 +52,13 @@ fn handle(
     char_table.select(packet.char_slot)?;
     let selected_char = char_table.get_bundle()?.clone();
     let char_selected = CharacterSelected::new(&selected_char, session.id());
-    let char_entity = commands.spawn(selected_char).id();
+    let char_entity = selected_char.spawn(commands.reborrow());
     char_table.set_character(char_entity);
     commands
         .entity(char_entity)
         .insert(DespawnChildOf(session_entity));
     commands.trigger_targets(GameServerPacket::from(SSQInfo::default()), session_entity);
     commands.trigger_targets(GameServerPacket::from(char_selected), session_entity);
+    inventory_load.write(InventoryLoad::from(char_entity));
     Ok(())
 }

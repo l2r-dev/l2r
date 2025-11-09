@@ -4,7 +4,7 @@ use bevy_ecs::system::SystemParam;
 use config::Config;
 use game_core::{
     character::Character,
-    items::{DollSlot, ItemsDataQuery, Kind, PaperDoll},
+    items::{DollSlot, ItemsDataAccess, ItemsDataQuery, Kind, PaperDoll},
     npc::Kind as NpcKind,
     stats::*,
 };
@@ -23,7 +23,7 @@ pub struct PAtkCalcDamageQuery<'w, 's> {
     pub level_stats: Query<'w, 's, Ref<'static, ProgressLevelStats>>,
     pub atk_def_effects: EffectQuery<'w, 's>,
     pub config: Res<'w, Config>,
-    pub items_data_query: ItemsDataQuery<'w>,
+    pub items_data: ItemsDataQuery<'w, 's>,
 }
 
 pub fn calc_p_atk_damage(
@@ -128,8 +128,8 @@ pub fn calc_p_atk_damage(
 fn get_random_damage_multiplier(attacker: Entity, query: &PAtkCalcDamageQuery) -> f32 {
     // Get random damage multiplier from weapon
     if let Ok(paper_doll) = query.paper_dolls.get(attacker)
-        && let Some(weapon) = paper_doll.get(DollSlot::RightHand)
-        && let Ok(item_info) = query.items_data_query.get_item_info(weapon.item().id())
+        && let Some(weapon_oid) = paper_doll.get(DollSlot::RightHand)
+        && let Ok(item_info) = query.items_data.info_by_object_id(weapon_oid)
         && let Kind::Weapon(weapon_data) = item_info.kind()
     {
         let random = weapon_data.random_damage as i32;
@@ -159,8 +159,8 @@ fn apply_pve_bonuses(
     };
 
     if let Ok(paper_doll) = query.paper_dolls.get(attacker) {
-        if let Some(weapon) = paper_doll.get(DollSlot::RightHand)
-            && let Ok(item_info) = query.items_data_query.get_item_info(weapon.item().id())
+        if let Some(weapon_oid) = paper_doll.get(DollSlot::RightHand)
+            && let Ok(item_info) = query.items_data.info_by_object_id(weapon_oid)
         {
             if item_info.kind().bow_or_crossbow() {
                 damage *= attack_stats.get(AttackStat::PveBowPAtkBonus);

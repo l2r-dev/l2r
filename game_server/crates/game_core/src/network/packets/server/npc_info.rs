@@ -1,6 +1,6 @@
 use super::GameServerPacketCodes;
 use crate::{
-    items::{self, DollSlot, PaperDoll},
+    items::{self, DollSlot, ItemsQuery, PaperDoll},
     npc,
     object_id::ObjectId,
     stats::{Stats, *},
@@ -31,9 +31,9 @@ pub struct NpcInfo {
     pub attack_speed_multiplier: f64,
     pub collision_radius: f64,
     pub collision_height: f64,
-    pub rhand: items::Id,
-    pub chest: items::Id,
-    pub lhand: items::Id,
+    pub rhand_item: items::Id,
+    pub chest_item: items::Id,
+    pub lhand_item: items::Id,
     pub name_above: bool,
     pub is_running: bool,
     pub in_combat: bool,
@@ -96,9 +96,9 @@ impl L2rServerPacket for NpcInfo {
         buffer.f64(self.attack_speed_multiplier);
         buffer.f64(self.collision_radius);
         buffer.f64(self.collision_height);
-        buffer.u32(self.rhand.into());
-        buffer.u32(self.chest.into());
-        buffer.u32(self.lhand.into());
+        buffer.u32(self.rhand_item.into());
+        buffer.u32(self.chest_item.into());
+        buffer.u32(self.lhand_item.into());
         buffer.bool(self.name_above);
         buffer.bool(self.is_running);
         buffer.bool(self.in_combat);
@@ -137,7 +137,7 @@ impl L2rServerPacket for NpcInfo {
 }
 
 impl NpcInfo {
-    pub fn new(npc: &npc::NpcQueryItem, base_speed: MovementStats) -> Self {
+    pub fn new(npc: &npc::NpcQueryItem, items: &ItemsQuery, base_speed: MovementStats) -> Self {
         let heading = Heading::from(npc.transform.rotation);
         let default_doll = PaperDoll::default();
         let paperdoll_items = npc.paperdoll_items.unwrap_or(&default_doll);
@@ -159,6 +159,19 @@ impl NpcInfo {
         let p_atk_spd = npc.attack_stats.typed::<PAtkSpd>(AttackStat::PAtkSpd);
         let attack_speed_multiplier = p_atk_spd.get_attack_speed_multiplier();
 
+        let rhand_oid = paperdoll_items.get(DollSlot::RightHand);
+        let rhand_item = rhand_oid
+            .and_then(|oid| Some(items.item_by_object_id(oid).ok()?.id()))
+            .unwrap_or_default();
+        let lhand_oid = paperdoll_items.get(DollSlot::LeftHand);
+        let lhand_item = lhand_oid
+            .and_then(|oid| Some(items.item_by_object_id(oid).ok()?.id()))
+            .unwrap_or_default();
+        let chest_oid = paperdoll_items.get(DollSlot::Chest);
+        let chest_item = chest_oid
+            .and_then(|oid| Some(items.item_by_object_id(oid).ok()?.id()))
+            .unwrap_or_default();
+
         NpcInfo {
             object_id: *npc.object_id,
             npc_id: *npc.id,
@@ -178,15 +191,9 @@ impl NpcInfo {
             attack_speed_multiplier,
             collision_radius,
             collision_height,
-            rhand: paperdoll_items
-                .get(DollSlot::RightHand)
-                .map_or(0.into(), |uitem| uitem.item().id()),
-            chest: paperdoll_items
-                .get(DollSlot::Chest)
-                .map_or(0.into(), |uitem| uitem.item().id()),
-            lhand: paperdoll_items
-                .get(DollSlot::LeftHand)
-                .map_or(0.into(), |uitem| uitem.item().id()),
+            rhand_item,
+            lhand_item,
+            chest_item,
             name_above: true,
             is_running: npc.movable.running(),
             in_combat: npc.in_combat.is_some(),

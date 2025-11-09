@@ -4,11 +4,14 @@ use crate::{
     id::RegionId,
     info::{RegionInfo, RegionRespawnZone},
 };
-use bevy::prelude::*;
+use bevy::{platform::collections::HashMap, prelude::*};
 use bevy_common_assets::json::JsonAssetPlugin;
-use l2r_core::assets::binary::{BinaryAsset, BinaryAssetPlugin, BinaryLoaderError};
+use l2r_core::{
+    assets::binary::{BinaryAsset, BinaryAssetPlugin, BinaryLoaderError},
+    plugins::custom_hierarchy::HierarchyFolderOperations,
+};
 use spatial::{GameVec3, GeoPoint, GeoVec3, NavigationDirection};
-use std::fmt;
+use std::{any::TypeId, fmt};
 
 pub mod block;
 pub mod id;
@@ -36,6 +39,7 @@ pub struct Region {
     center_coordinates: Option<GameVec3>,
     #[reflect(ignore)]
     blocks_centers_coordinates: Option<Vec<GameVec3>>,
+    hierarchy_folders: HashMap<TypeId, Entity>,
 }
 
 impl Region {
@@ -52,6 +56,7 @@ impl Region {
             center_coordinates: None,
             blocks_centers_coordinates: None,
             zone_list_handle: ZoneListHandle::default(),
+            hierarchy_folders: HashMap::new(),
         }
     }
 
@@ -190,6 +195,25 @@ impl Region {
     pub fn block_position_geo_by_grid(&self, block_x: i32, block_y: i32) -> GeoVec3 {
         let game_pos = self.block_position_by_grid(block_x, block_y);
         WorldMap::game_to_geo(game_pos)
+    }
+}
+
+impl HierarchyFolderOperations for Region {
+    fn get_folder<T: Component>(&self) -> Option<Entity> {
+        self.hierarchy_folders.get(&TypeId::of::<T>()).copied()
+    }
+
+    fn set_folder<T: Component>(&mut self, folder_entity: Entity) {
+        self.hierarchy_folders
+            .insert(TypeId::of::<T>(), folder_entity);
+    }
+
+    fn remove_folder<T: Component>(&mut self) {
+        self.hierarchy_folders.remove(&TypeId::of::<T>());
+    }
+
+    fn folders_iter(&self) -> impl Iterator<Item = (TypeId, bevy::prelude::Entity)> {
+        self.hierarchy_folders.iter().map(|(k, v)| (*k, *v))
     }
 }
 

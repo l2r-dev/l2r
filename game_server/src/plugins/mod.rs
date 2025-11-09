@@ -6,7 +6,6 @@ mod attack;
 mod auth;
 mod character;
 mod chat;
-mod custom_hierarchy;
 pub mod db;
 mod doors;
 mod encounters;
@@ -81,7 +80,7 @@ impl PluginGroup for Core {
             .add(CustomAssetWatcherPlugin)
             .add_group(PhysicsPlugins::default())
             .add(UiSwitchPlugin)
-            .add(custom_hierarchy::CustomHierarchyPlugin)
+            .add(l2r_core::plugins::custom_hierarchy::CustomHierarchyPlugin)
             .add(config::ConfigPlugin)
             .add(GameStateProcessPlugin)
             .add(auth::AuthPlugin)
