@@ -42,7 +42,10 @@ pub struct DropIfPossible {
 pub struct EquipItem(pub ObjectId);
 
 #[derive(Clone, Copy, Debug, Event)]
-pub struct ItemEquipped(pub ObjectId);
+pub struct ItemEquipped {
+    pub item_object_id: ObjectId,
+    pub slot: DollSlot,
+}
 
 #[derive(Clone, Copy, Debug, Event)]
 pub struct ItemEquippedMessage(pub Item);
@@ -54,7 +57,10 @@ pub struct UnequipItem {
 }
 
 #[derive(Clone, Copy, Debug, Event)]
-pub struct ItemUnequipped(pub ObjectId);
+pub struct ItemUnequipped {
+    pub item_object_id: ObjectId,
+    pub slot: DollSlot,
+}
 
 #[derive(Clone, Copy, Debug, Event)]
 pub struct ItemUnequippedMessage(pub Item);

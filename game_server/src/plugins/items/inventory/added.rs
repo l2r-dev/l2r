@@ -29,7 +29,7 @@ fn add_in_inventory(
     trigger: Trigger<AddInInventory>,
     mut commands: Commands,
     repo_manager: Res<RepositoryManager>,
-    mut inventories: InventoriesQueryMut,
+    mut inventories: Query<InventoriesQueryMut>,
     mut items_data: ItemsDataQueryMut,
 ) -> Result<()> {
     let inventory_target = trigger.target();
@@ -43,7 +43,8 @@ fn add_in_inventory(
 
     // First, try to stack if item is stackable
     if is_stackable {
-        let (_, inventory) = inventories.get(inventory_target)?;
+        let InventoriesQueryMutReadOnlyItem { inventory, .. } =
+            inventories.get(inventory_target)?;
 
         // Try to find a matching item to stack with
         let existing_item_oid = inventory
@@ -102,8 +103,12 @@ fn add_in_inventory(
         }
     }
 
-    // If not stackable or no existing stack found, add as new item
-    let (owner_id, mut inventory) = inventories.get_mut(inventory_target)?;
+    let InventoriesQueryMutItem {
+        object_id,
+        mut inventory,
+        ..
+    } = inventories.get_mut(inventory_target)?;
+
     let mut item = items_data.item_mut(item_entity)?;
     let current_location = item.location();
 
@@ -114,7 +119,7 @@ fn add_in_inventory(
         ItemInWorld::move_from_world(commands.entity(item_entity).reborrow());
     }
 
-    item.set_owner(Some(*owner_id));
+    item.set_owner(Some(*object_id));
     inventory.insert(new_item_oid);
 
     let unique_item = UniqueItem::new(new_item_oid, *item);
@@ -149,6 +154,15 @@ fn add_in_inventory(
             },
             inventory_target,
         );
+    }
+
+    // Equip ammo if we have a matching bow/crossbow
+    if items_data.item_info(new_item_id)?.kind().ammo() {
+        let InventoriesQueryMutReadOnlyItem { paper_doll, .. } =
+            inventories.get(inventory_target)?;
+        if paper_doll.is_ammo_valid_for_weapon(new_item_oid, &items_data) {
+            commands.trigger_targets(EquipItem(new_item_oid), inventory_target);
+        }
     }
 
     Ok(())

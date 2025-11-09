@@ -3,7 +3,8 @@ use bevy_defer::AsyncCommandsExtension;
 use game_core::{
     active_action::ActiveAction,
     items::{
-        self, DropIfPossible, Inventory, Item, ItemInWorld, ItemLocation, ItemMetric,
+        self, DropIfPossible, InventoriesQueryMut, InventoriesQueryMutItem,
+        InventoriesQueryMutReadOnlyItem, Item, ItemInWorld, ItemLocation, ItemMetric,
         ItemsDataAccess, ItemsDataQueryMut, PaperDoll, UniqueItem, UpdateType,
         model::{ActiveModelSetCoordinates, Model},
     },
@@ -38,22 +39,16 @@ pub fn drop_if_possible(
     world_map: Res<WorldMap>,
     mut commands: Commands,
     mut items_data: ItemsDataQueryMut,
-    mut inventories: Query<
-        (
-            Ref<ObjectId>,
-            Mut<Inventory>,
-            Mut<PaperDoll>,
-            Ref<Transform>,
-        ),
-        Without<ActiveAction>,
-    >,
+    mut inventories: Query<(InventoriesQueryMut, Ref<Transform>), Without<ActiveAction>>,
     repo_manager: Res<RepositoryManager>,
     metrics: Res<Metrics>,
 ) -> Result<()> {
     let dropper_entity = drop_request.target();
     let event = drop_request.event();
 
-    let (_, inventory, _, transform) = inventories.get(dropper_entity)?;
+    let (InventoriesQueryMutReadOnlyItem { inventory, .. }, transform) =
+        inventories.get(dropper_entity)?;
+
     inventory.get_item(event.item_oid)?;
     if transform.translation.flat_distance(&event.location) > 150.0 {
         commands.trigger_targets(
@@ -74,7 +69,9 @@ pub fn drop_if_possible(
     let mut dolls_lens = inventories.transmute_lens::<Mut<PaperDoll>>();
     let doll_query = dolls_lens.query();
 
-    if item.equipped() {
+    // Check if item is stackable and if we're dropping the entire stack or just part
+    let drop_full_stack = !is_stackable || event.count >= item_count;
+    if item.equipped() && drop_full_stack {
         crate::plugins::items::process_unequip(
             dropper_entity,
             event.item_oid,
@@ -86,10 +83,14 @@ pub fn drop_if_possible(
         )?;
     }
 
-    let (owner_id, mut inventory, _, _) = inventories.get_mut(dropper_entity)?;
-
-    // Check if item is stackable and if we're dropping the entire stack or just part
-    let drop_full_stack = !is_stackable || event.count >= item_count;
+    let (
+        InventoriesQueryMutItem {
+            object_id: owner_id,
+            mut inventory,
+            ..
+        },
+        _,
+    ) = inventories.get_mut(dropper_entity)?;
 
     let mut item = items_data.item_by_object_id_mut(event.item_oid)?;
     let object_id_to_drop = if drop_full_stack {

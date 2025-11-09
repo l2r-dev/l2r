@@ -31,6 +31,18 @@ use sea_orm::{DatabaseBackend, MockDatabase, MockExecResult, prelude::Uuid};
 pub use serial_test::serial;
 use spatial::GameVec3;
 use state::GameServerStateSystems;
+use std::sync::Once;
+
+/// Initialize global error handler once for all tests
+static INIT_ERROR_HANDLER: Once = Once::new();
+
+fn init_test_error_handler() {
+    INIT_ERROR_HANDLER.call_once(|| {
+        bevy_ecs::error::GLOBAL_ERROR_HANDLER
+            .set(bevy::ecs::error::warn)
+            .expect("The error handler can only be set once.");
+    });
+}
 
 /// Creates a test application with a full game server setup.
 ///
@@ -38,6 +50,9 @@ use state::GameServerStateSystems;
 /// - They share the same file system for loading assets (geodata, NPC data, etc.)
 /// - Bevy's asset system can have conflicts when multiple apps load from the same paths simultaneously
 pub fn create_test_app() -> App {
+    // Initialize error handler once for all tests
+    init_test_error_handler();
+
     let mut app = App::new();
 
     app.add_plugins(bevy_defer::AsyncPlugin::default_settings());
@@ -104,11 +119,12 @@ pub fn create_test_app() -> App {
         object_id_manager.next_id()
     };
 
-    let world = app.world_mut();
-
     let char_bundle = test_character_bundle_data(char_id);
+    let character_entity = char_bundle.spawn(app.world_mut().commands());
 
-    let character_entity = world.spawn(char_bundle).id();
+    app.update();
+
+    let world = app.world_mut();
 
     // Add EnteredWorld component separately since it's not part of the Bundle
     world.entity_mut(character_entity).insert(EnteredWorld);
@@ -255,7 +271,6 @@ pub fn test_character_bundle_data(id: ObjectId) -> character::Bundle {
     let appearance = character::Appearance::default();
     character::Bundle {
         id,
-        character: character::Character,
         name: Name::new("TestCharacter".to_string()),
         title: NameTitle::new("TestTitle".to_string()),
         session_id: ConnectionId::next().into(),

@@ -130,8 +130,8 @@ impl DollSlot {
             BodyPart::Legs => &[DollSlot::Legs],
             BodyPart::Feet => &[DollSlot::Feet],
             BodyPart::Back => &[DollSlot::Cloak],
-            BodyPart::BothHand => &[DollSlot::RightHand],
-            BodyPart::FullBody => &[DollSlot::Chest],
+            BodyPart::BothHand => &[DollSlot::RightHand, DollSlot::LeftHand],
+            BodyPart::FullBody => &[DollSlot::Chest, DollSlot::Legs],
             BodyPart::AccessoryLeft => &[DollSlot::AccessoryLeft],
             BodyPart::AccessoryRight => &[DollSlot::AccessoryRight],
             BodyPart::AccessoryBoth => &[DollSlot::AccessoryRight, DollSlot::AccessoryLeft],
@@ -264,71 +264,76 @@ impl PaperDoll {
         }
     }
 
-    pub fn unequip(&mut self, object_id: ObjectId) {
+    pub fn unequip(&mut self, object_id: ObjectId) -> Option<DollSlot> {
         for slot in DollSlot::iter() {
             if self[slot] == Some(object_id) {
-                self[slot] = None;
+                self.unequip_slot(slot);
+                return Some(slot);
             }
         }
+        None
     }
 
-    pub fn equip_without_validations(
-        &mut self,
-        slot: DollSlot,
-        object_id: ObjectId,
-    ) -> Option<ObjectId> {
+    pub fn unequip_slot(&mut self, slot: DollSlot) -> Option<ObjectId> {
         let previous_item = self[slot];
-        self[slot] = Some(object_id);
+        self[slot] = None;
         previous_item
     }
 
-    pub fn equip(
-        &mut self,
+    pub fn equip_slot(&mut self, slot: DollSlot, object_id: ObjectId) {
+        self[slot] = Some(object_id);
+    }
+
+    /// Returns the primary slot to equip and all slots that need to be unequipped
+    pub fn desired_slot(
+        &self,
         object_id: ObjectId,
         items_data: &impl ItemsDataAccess,
-    ) -> Option<(DollSlot, Vec<ObjectId>)> {
+    ) -> Option<(DollSlot, Vec<DollSlot>)> {
         let item_id = items_data.item_by_object_id(object_id).ok()?.id();
-        let mut previous = Vec::with_capacity(2);
         let item_info = items_data.item_info(item_id).ok()?;
-
         let body_part = item_info.bodypart()?;
-        let selected_slot = self.slot_by_bodypart(body_part);
+        let mut unequip_slots = Vec::with_capacity(2);
 
-        match body_part {
-            BodyPart::BothHand => {
-                if let Some(left_hand_oid) = self[DollSlot::LeftHand]
-                    && let Ok(left_info) = items_data.info_by_object_id(left_hand_oid)
-                    && !item_info.ammo_matches(left_info)
-                {
-                    previous.extend(self[DollSlot::LeftHand].take());
-                }
-            }
+        let desired_slot = match body_part {
             BodyPart::LeftHand => {
-                if let Some(right_hand_oid) = self[DollSlot::RightHand]
-                    && let Ok(right_info) = items_data.info_by_object_id(right_hand_oid)
-                    && !right_info.ammo_matches(item_info)
+                if !item_info.kind().ammo()
+                    && let Some(rh_oid) = self.get(DollSlot::RightHand)
                 {
-                    previous.extend(self[DollSlot::RightHand].take());
+                    let rh_info = items_data.info_by_object_id(rh_oid).ok()?;
+                    if rh_info.bodypart() == Some(BodyPart::BothHand) {
+                        unequip_slots.push(DollSlot::RightHand);
+                    }
                 }
-            }
-            BodyPart::FullBody => {
-                previous.extend(self[DollSlot::Legs].take());
+                self.slot_by_bodypart(body_part)
             }
             BodyPart::Legs => {
-                if let Some(chest_oid) = self[DollSlot::Chest]
-                    && let Ok(chest_info) = items_data.info_by_object_id(chest_oid)
-                    && chest_info.bodypart() == Some(BodyPart::FullBody)
-                {
-                    previous.extend(self[DollSlot::Chest].take());
+                if let Some(chest_oid) = self.get(DollSlot::Chest) {
+                    let chest_info = items_data.info_by_object_id(chest_oid).ok()?;
+                    if chest_info.bodypart() == Some(BodyPart::FullBody) {
+                        unequip_slots.push(DollSlot::Chest);
+                    }
                 }
+                self.slot_by_bodypart(body_part)
             }
-            _ => {}
-        }
+            BodyPart::BothEar | BodyPart::BothFinger | BodyPart::Talisman => {
+                let desired_slot = self.slot_by_bodypart(body_part);
+                self.get(desired_slot)
+                    .is_some()
+                    .then(|| unequip_slots.push(desired_slot));
+                desired_slot
+            }
+            _ => {
+                unequip_slots.extend(
+                    DollSlot::bodypart_slots(body_part)
+                        .iter()
+                        .filter(|&&slot| self.get(slot).is_some()),
+                );
+                self.slot_by_bodypart(body_part)
+            }
+        };
 
-        previous.extend(self[selected_slot].take());
-        self[selected_slot] = Some(object_id);
-
-        Some((selected_slot, previous))
+        Some((desired_slot, unequip_slots))
     }
 
     pub fn is_equipped(&self, object_id: ObjectId) -> bool {
@@ -364,6 +369,22 @@ impl PaperDoll {
                 slot,
                 object_id: self[slot],
             })
+    }
+
+    /// Checks if the given ammo item is compatible with the weapon in the right hand
+    pub fn is_ammo_valid_for_weapon(
+        &self,
+        item_object_id: ObjectId,
+        items_data: &impl ItemsDataAccess,
+    ) -> bool {
+        let Ok(ammo_info) = items_data.info_by_object_id(item_object_id) else {
+            return false;
+        };
+
+        self.get(DollSlot::RightHand)
+            .and_then(|rh_oid| items_data.info_by_object_id(rh_oid).ok())
+            .map(|rh_info| rh_info.ammo_matches(ammo_info))
+            .unwrap_or(false)
     }
 }
 

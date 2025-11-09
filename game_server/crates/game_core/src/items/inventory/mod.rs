@@ -3,7 +3,7 @@ use crate::{
     object_id::{ObjectId, ObjectIdIndexSet, ObjectIdManager},
 };
 use bevy::prelude::*;
-use bevy_ecs::system::SystemParam;
+use bevy_ecs::query::QueryData;
 use derive_more::{From, Into};
 use num_enum::IntoPrimitive;
 
@@ -30,13 +30,20 @@ impl Plugin for InventoryComponentsPlugin {
 #[derive(Clone, Copy, Event, From, Into)]
 pub struct InventoryLoad(pub Entity);
 
-#[derive(Deref, SystemParam)]
-pub struct InventoriesQuery<'w, 's>(Query<'w, 's, Ref<'static, Inventory>>);
+#[derive(QueryData)]
+pub struct InventoriesQuery<'a> {
+    pub object_id: Ref<'a, ObjectId>,
+    pub paper_doll: Ref<'a, PaperDoll>,
+    pub inventory: Ref<'a, Inventory>,
+}
 
-#[derive(Deref, DerefMut, SystemParam)]
-pub struct InventoriesQueryMut<'w, 's>(
-    Query<'w, 's, (Ref<'static, ObjectId>, Mut<'static, Inventory>)>,
-);
+#[derive(QueryData)]
+#[query_data(mutable)]
+pub struct InventoriesQueryMut<'a> {
+    pub object_id: Ref<'a, ObjectId>,
+    pub paper_doll: Mut<'a, PaperDoll>,
+    pub inventory: Mut<'a, Inventory>,
+}
 
 #[derive(Clone, Component, Debug, Default, Deref, DerefMut, Reflect)]
 pub struct Inventory(ObjectIdIndexSet);

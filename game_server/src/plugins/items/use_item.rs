@@ -1,10 +1,10 @@
-use bevy::{log, prelude::*};
+use bevy::prelude::*;
 use bevy_ecs::system::SystemParam;
 use bevy_slinet::server::PacketReceiveEvent;
 use game_core::{
     items::{
-        ConsumableKind, EquipItem, InventoriesQuery, ItemsDataAccess, ItemsDataQuery, Kind,
-        UnequipItem, UseShot,
+        ConsumableKind, EquipItem, InventoriesQuery, InventoriesQueryItem, ItemsDataAccess,
+        ItemsDataQuery, Kind, UnequipItem, UseShot,
     },
     network::{
         config::GameServerNetworkConfig, packets::client::GameClientPacket,
@@ -22,7 +22,7 @@ impl Plugin for UseItemPlugin {
 #[derive(SystemParam)]
 struct UseItemParams<'w, 's> {
     receive_params: PacketReceiveParams<'w, 's>,
-    inventories: InventoriesQuery<'w, 's>,
+    inventories: Query<'w, 's, InventoriesQuery<'static>>,
     items_data: ItemsDataQuery<'w, 's>,
     use_shot_events: EventWriter<'w, UseShot>,
 }
@@ -36,14 +36,14 @@ fn handle(
     let event = receive.event();
     if let GameClientPacket::UseItem(ref packet) = event.packet {
         let character_entity = params.receive_params.character(&event.connection.id())?;
-        let inventory = params.inventories.get(character_entity)?;
+        let InventoriesQueryItem { inventory, .. } = params.inventories.get(character_entity)?;
         let item_object_id = inventory.get_item(packet.object_id)?;
         let item_entity = params.items_data.entity(item_object_id)?;
 
         let item = params.items_data.item_by_object_id(item_object_id)?;
         let item_info = params.items_data.item_info(item.id())?;
 
-        log::debug!(
+        debug!(
             "Use item: {} (entity: {}, object_id: {})",
             item_info.name(),
             item_entity,

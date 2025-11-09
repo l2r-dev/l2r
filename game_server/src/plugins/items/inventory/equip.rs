@@ -1,15 +1,9 @@
 use bevy::prelude::*;
 use bevy_defer::AsyncCommandsExtension;
 use game_core::{
-    active_action::ActiveAction,
-    items::{
-        self, DollSlot, EquipItem, Inventory, ItemEquipped, ItemEquippedMessage, ItemsDataAccess,
-        ItemsDataQuery, ItemsDataQueryMut, Kind, PaperDoll, UnequipItem, UniqueItem, UpdateType,
-        model::ActiveModelSetCoordinates,
-    },
-    network::packets::server::{
-        BroadcastCharInfo, GameServerPacket, InventoryUpdate, SendUserInfo, SystemMessage,
-    },
+    attack::Attacking,
+    items::{model as items_model, *},
+    network::packets::server::*,
     object_id::ObjectId,
     stats::{AttackEffects, StatModifiers, Weapon},
 };
@@ -30,29 +24,56 @@ impl Plugin for EquipItemPlugin {
 fn handle_equip_item(
     trigger: Trigger<EquipItem>,
     mut commands: Commands,
-    mut characters: Query<
-        (Mut<PaperDoll>, Mut<StatModifiers>, Ref<Inventory>),
-        Without<ActiveAction>,
-    >,
+    mut characters: Query<(InventoriesQueryMut, Mut<StatModifiers>), Without<Attacking>>,
     mut items_query: ItemsDataQueryMut,
+    repo_manager: Res<RepositoryManager>,
 ) -> Result<()> {
     let character_entity = trigger.target();
     let item_object_id = trigger.event().0;
-    let (mut paperdoll, mut stat_modifiers, inventory) = characters.get_mut(character_entity)?;
+
+    let (InventoriesQueryMutReadOnlyItem { paper_doll, .. }, _) =
+        characters.get(character_entity)?;
+    let Some((equip_slot, unequip_slots)) = paper_doll.desired_slot(item_object_id, &items_query)
+    else {
+        return Ok(());
+    };
+
+    for unequip_slot in unequip_slots {
+        let equipped_oid = {
+            let (InventoriesQueryMutReadOnlyItem { paper_doll, .. }, _) =
+                characters.get(character_entity)?;
+            paper_doll.get(unequip_slot)
+        };
+        if let Some(equipped_oid) = equipped_oid {
+            let mut dolls_lens = characters.transmute_lens::<Mut<PaperDoll>>();
+            let doll_query = dolls_lens.query();
+            super::process_unequip(
+                character_entity,
+                equipped_oid,
+                commands.reborrow(),
+                &mut items_query,
+                doll_query,
+                false,
+                &repo_manager,
+            )?;
+        }
+    }
+
+    let (
+        InventoriesQueryMutReadOnlyItem {
+            paper_doll,
+            inventory,
+            ..
+        },
+        _,
+    ) = characters.get(character_entity)?;
 
     let item = items_query.item_by_object_id(item_object_id)?;
     let item_info = items_query.item_info(item.id())?;
 
-    // Validate ammo compatible with weapon in right hand
-    if item_info.kind().ammo() {
-        let valid_ammo = paperdoll[DollSlot::RightHand]
-            .and_then(|rh_oid| items_query.info_by_object_id(rh_oid).ok())
-            .map(|rh_info| rh_info.ammo_matches(item_info))
-            .unwrap_or(false);
-
-        if !valid_ammo {
-            return Ok(());
-        }
+    if item_info.kind().ammo() && !paper_doll.is_ammo_valid_for_weapon(item_object_id, &items_query)
+    {
+        return Ok(());
     }
 
     // Auto-equip matching ammo when equipping a bow/crossbow
@@ -69,52 +90,19 @@ fn handle_equip_item(
         commands.trigger_targets(EquipItem(ammo_oid), character_entity);
     }
 
-    let (doll_slot, previous_items) = paperdoll
-        .equip(item_object_id, &items_query)
-        .ok_or_else(|| BevyError::from("Unable to equip item"))?;
+    let (InventoriesQueryMutItem { mut paper_doll, .. }, mut stat_modifiers) =
+        characters.get_mut(character_entity)?;
+
+    paper_doll.equip_slot(equip_slot, item_object_id);
 
     if let Some(stats) = item_info.stats_modifiers() {
         stat_modifiers.merge(&stats);
     }
 
-    for previous_oid in previous_items {
-        commands.trigger_targets(
-            UnequipItem {
-                item_object_id: previous_oid,
-                skip_db_update: false,
-            },
-            character_entity,
-        );
-    }
-
     if let Ok(mut item) = items_query.item_by_object_id_mut(item_object_id) {
-        item.equip(doll_slot);
+        item.equip(equip_slot);
     }
 
-    commands.trigger_targets(ItemEquipped(item_object_id), character_entity);
-    Ok(())
-}
-
-fn handle_item_equipped(
-    trigger: Trigger<ItemEquipped>,
-    mut commands: Commands,
-    repo_manager: Res<RepositoryManager>,
-    items_query: ItemsDataQuery,
-    mut attack_effects: Query<Mut<AttackEffects>>,
-) -> Result<()> {
-    let character_entity = trigger.target();
-    let item_object_id = trigger.event().0;
-    let item_info = items_query.info_by_object_id(item_object_id)?;
-
-    // Update attack effects if this is a weapon
-    if let Ok(mut attack_effects) = attack_effects.get_mut(character_entity)
-        && let Kind::Weapon(weapon) = item_info.kind()
-    {
-        let weapon_effect = Weapon::from(weapon.kind);
-        attack_effects.set_weapon(weapon_effect);
-    }
-
-    // Get item data for client update
     let unique_item = items_query
         .item_by_object_id(item_object_id)
         .ok()
@@ -125,17 +113,51 @@ fn handle_item_equipped(
         commands.trigger_targets(GameServerPacket::from(inventory_update), character_entity);
 
         if !repo_manager.is_mock() {
-            let items_repository = repo_manager.typed::<ObjectId, items::model::Entity>()?;
-            let item_model = items::model::Model::from(unique_item);
+            let items_repository = repo_manager.typed::<ObjectId, items_model::Entity>()?;
+            let item_model = items_model::Model::from(unique_item);
             commands.spawn_task(move || async move {
                 let mut item_active = item_model.into_active_model();
-                item_active.set_location(unique_item.item().location());
+                items_model::ActiveModelSetCoordinates::set_location(
+                    &mut item_active,
+                    unique_item.item().location(),
+                );
                 items_repository.update(&item_active).await?;
                 Ok(())
             });
         }
-        commands.trigger_targets(ItemEquippedMessage(*unique_item.item()), character_entity);
     }
+
+    commands.trigger_targets(
+        ItemEquipped {
+            item_object_id,
+            slot: equip_slot,
+        },
+        character_entity,
+    );
+
+    Ok(())
+}
+
+fn handle_item_equipped(
+    trigger: Trigger<ItemEquipped>,
+    mut commands: Commands,
+    items_query: ItemsDataQuery,
+    mut attack_effects: Query<Mut<AttackEffects>>,
+) -> Result<()> {
+    let character_entity = trigger.target();
+    let item_object_id = trigger.event().item_object_id;
+    let item_info = items_query.info_by_object_id(item_object_id)?;
+
+    // TODO: Send Update stats events
+    if let Ok(mut attack_effects) = attack_effects.get_mut(character_entity)
+        && let Kind::Weapon(weapon) = item_info.kind()
+    {
+        let weapon_effect = Weapon::from(weapon.kind);
+        attack_effects.set_weapon(weapon_effect);
+    }
+
+    let item = items_query.item_by_object_id(item_object_id)?;
+    commands.trigger_targets(ItemEquippedMessage(*item), character_entity);
     commands.trigger_targets(SendUserInfo, character_entity);
     commands.trigger_targets(BroadcastCharInfo, character_entity);
     Ok(())

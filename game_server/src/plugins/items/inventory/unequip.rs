@@ -41,13 +41,22 @@ pub fn process_unequip(
     // Unequip main item
     let item_id = if let Ok(mut item) = items_data.item_by_object_id_mut(item_object_id) {
         item.unequip();
-        paperdoll.unequip(item_object_id);
-        commands.trigger_targets(ItemUnequipped(item_object_id), entity);
+        let Some(doll_slot) = paperdoll.unequip(item_object_id) else {
+            return Ok(());
+        };
+
+        commands.trigger_targets(
+            ItemUnequipped {
+                item_object_id,
+                slot: doll_slot,
+            },
+            entity,
+        );
         item.id()
     } else {
-        // Probably destroyed and despawned already
-        commands.trigger_targets(ItemUnequipped(item_object_id), entity);
-        return Ok(());
+        return Err(BevyError::from(format!(
+            "Failed to unequip item: item with object id {item_object_id} not found"
+        )));
     };
 
     // Check if we need to also unequip ammo from left hand
@@ -131,7 +140,7 @@ fn handle_item_unequipped(
     mut stats_modifiers: Query<Mut<StatModifiers>>,
 ) -> Result<()> {
     let character_entity = trigger.target();
-    let item_object_id = trigger.event().0;
+    let item_object_id = trigger.event().item_object_id;
     let item_info = items_data.info_by_object_id(item_object_id)?;
 
     // Stat calculations
