@@ -230,14 +230,17 @@ fn handle_movement_step(
     mut queries: MovementStepQueries,
 ) -> Result<()> {
     let entity = step.target();
-    let mut moving_entity = queries.movables.get_mut(entity)?;
+    let Ok(mut moving_entity) = queries.movables.get_mut(entity) else {
+        commands.entity(entity).try_remove::<Movement>();
+        return Ok(());
+    };
 
     let mut target_pos = match moving_entity.movement.as_ref() {
         Movement::ToEntity { target, .. } => {
             if let Ok(target_transform) = queries.transforms.get(*target) {
                 target_transform.translation
             } else {
-                commands.entity(entity).remove::<Movement>();
+                commands.entity(entity).try_remove::<Movement>();
                 return Ok(());
             }
         }
@@ -249,10 +252,14 @@ fn handle_movement_step(
 
     let mut transform = queries.transforms.get_mut(entity)?;
 
-    let geodata = queries
+    let Ok(geodata) = queries
         .map_query
         .inner
-        .region_geodata_from_pos(transform.translation)?;
+        .region_geodata_from_pos(transform.translation)
+    else {
+        commands.entity(entity).remove::<Movement>();
+        return Ok(());
+    };
 
     if !moving_entity.movable.in_water()
         && !moving_entity.movable.is_flying()

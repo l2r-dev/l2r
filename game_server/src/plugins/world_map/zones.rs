@@ -3,6 +3,7 @@ use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*}
 use l2r_core::{chronicles::CHRONICLE, plugins::custom_hierarchy::*};
 use map::*;
 use physics::GameLayer;
+use state::GameServerStateSystems;
 use std::path::PathBuf;
 
 pub struct ZonesPlugin;
@@ -56,7 +57,8 @@ impl Plugin for ZonesPlugin {
                     load_zones::<TownZonesList>,
                     spawn_zones::<TownZonesList, Town>,
                 ),
-            ),
+            )
+                .in_set(GameServerStateSystems::Run),
         );
     }
 }
@@ -162,7 +164,6 @@ where
                             .commands
                             .spawn((
                                 Name::new(kind_variant.to_string()),
-                                kind_variant,
                                 ZoneKindFolder,
                                 DespawnChildOf(global_zones_entity),
                             ))
@@ -241,7 +242,6 @@ fn spawn_regional_zones(mut regional_spawn: RegionalSpawnZoneQuery) -> Result<()
                                     .commands
                                     .spawn((
                                         Name::new(kind_variant.to_string()),
-                                        kind_variant,
                                         ZoneKindFolder,
                                         DespawnChildOf(regional_zones_entity),
                                     ))

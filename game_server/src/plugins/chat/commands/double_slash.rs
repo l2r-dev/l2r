@@ -41,21 +41,17 @@ fn handle_packet(
     sessions: Res<ServerSessions>,
     character_tables: Query<Ref<character::Table>>,
     entities: Query<EntityQuery>,
-    world: &World,
     mut commands: Commands,
 ) -> Result {
     let event = receive.event();
 
-    let initiator_entity =
-        sessions.get_character_entity(&event.connection.id(), &character_tables)?;
-    let initiator_entity_ref = world.get_entity(initiator_entity)?;
-    let initiator_object_id = initiator_entity_ref
-        .get::<ObjectId>()
-        .ok_or("no object_id on entity")?;
-
     let GameClientPacket::DoubleSlashCommand(ref packet) = event.packet else {
         return Ok(());
     };
+
+    let initiator_entity =
+        sessions.get_character_entity(&event.connection.id(), &character_tables)?;
+    let initiator_object_id = *entities.get(initiator_entity)?.object_id;
 
     match packet {
         DoubleSlashCommand::Unknown => {}
@@ -81,7 +77,7 @@ fn handle_packet(
             {
                 commands.trigger_targets(
                     TeleportToLocation::new(
-                        *initiator_object_id,
+                        initiator_object_id,
                         *entity.transform,
                         TeleportType::default(),
                     ),
@@ -109,7 +105,7 @@ fn handle_packet(
             }) {
                 commands.trigger_targets(
                     TeleportToLocation::new(
-                        *initiator_object_id,
+                        initiator_object_id,
                         *entity.transform,
                         TeleportType::default(),
                     ),
@@ -145,7 +141,7 @@ fn handle_packet(
         DoubleSlashCommand::Teleport { x, z } => {
             commands.trigger_targets(
                 TeleportToLocation::new(
-                    *initiator_object_id,
+                    initiator_object_id,
                     Transform::from_xyz(*x, 0.0, *z),
                     TeleportType::default(),
                 ),
