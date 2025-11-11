@@ -50,7 +50,7 @@ impl TeraHtmlTemplater for DialogTemplater {
 }
 
 impl DialogTemplater {
-    fn init(world: &mut World) {
+    pub fn init(world: &mut World) {
         world.init_resource::<Self>();
     }
     /// Renders an NPC dialog using an empty context.

@@ -36,7 +36,8 @@ impl Plugin for DialogPlugin {
                 load_npc_dialog_assets.in_set(LoadingSystems::AssetInit),
                 html_assets_changed.in_set(LoadingSystems::AssetInit),
                 (templates_folder_changed, html_assets_changed).in_set(LoadingSystems::AssetInit),
-            ),
+            )
+                .after(DialogTemplater::init),
         )
         .add_systems(Update, dialog_request_handler);
 

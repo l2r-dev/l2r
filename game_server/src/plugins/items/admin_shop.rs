@@ -3,13 +3,17 @@ use game_core::{
     items::{Item, ItemLocation, ItemsDataQuery},
     multisell::{Entry, Good, Id, admin_shop::*},
 };
+use state::GameServerStateSystems;
 
 pub struct AdminShopPlugin;
 impl Plugin for AdminShopPlugin {
     fn build(&self, app: &mut App) {
         app.add_plugins(AdminShopComponentsPlugin);
 
-        app.add_systems(Update, update_admin_shop_items_list);
+        app.add_systems(
+            Update,
+            update_admin_shop_items_list.in_set(GameServerStateSystems::Run),
+        );
     }
 }
 

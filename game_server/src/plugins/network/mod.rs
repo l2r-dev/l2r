@@ -59,7 +59,10 @@ impl Plugin for NetworkPlugin {
 
         app.add_plugins((GameServerPacketScriptingPlugin, ClientPacketScriptingPlugin));
 
-        app.add_systems(Update, send_user_info_when_updated);
+        app.add_systems(
+            Update,
+            send_user_info_when_updated.in_set(GameServerStateSystems::Run),
+        );
 
         // Register network metrics
         app.register_counter(GameNetworkMetric::PacketsReceived, "Total packets received")
