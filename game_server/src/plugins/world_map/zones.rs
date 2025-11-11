@@ -5,6 +5,7 @@ use map::*;
 use physics::GameLayer;
 use state::GameServerStateSystems;
 use std::path::PathBuf;
+use state::LoadingSystems;
 
 pub struct ZonesPlugin;
 impl Plugin for ZonesPlugin {
@@ -20,47 +21,45 @@ impl Plugin for ZonesPlugin {
         app.add_systems(
             Update,
             (
-                spawn_regional_zones,
-                (
-                    load_zones::<RespawnPointsZonesList>,
-                    spawn_zones::<RespawnPointsZonesList, RespawnPoints>,
-                ),
-                (
-                    load_zones::<CastleZonesList>,
-                    spawn_zones::<CastleZonesList, Castle>,
-                ),
-                (
-                    load_zones::<ClanHallZonesList>,
-                    spawn_zones::<ClanHallZonesList, ClanHall>,
-                ),
-                (
-                    load_zones::<FortZonesList>,
-                    spawn_zones::<FortZonesList, Fort>,
-                ),
-                (
-                    load_zones::<OlympiadStadiumZonesList>,
-                    spawn_zones::<OlympiadStadiumZonesList, OlympiadStadium>,
-                ),
-                (
-                    load_zones::<ResidenceHallTeleportZonesList>,
-                    spawn_zones::<ResidenceHallTeleportZonesList, ResidenceHallTeleport>,
-                ),
-                (
-                    load_zones::<ResidenceTeleportZonesList>,
-                    spawn_zones::<ResidenceTeleportZonesList, ResidenceTeleport>,
-                ),
-                (
-                    load_zones::<SiegableHallZonesList>,
-                    spawn_zones::<SiegableHallZonesList, SiegableHall>,
-                ),
-                (
-                    load_zones::<TownZonesList>,
-                    spawn_zones::<TownZonesList, Town>,
-                ),
+                load_zones::<RespawnPointsZonesList>,
+                load_zones::<CastleZonesList>,
+                load_zones::<ClanHallZonesList>,
+                load_zones::<FortZonesList>,
+                load_zones::<OlympiadStadiumZonesList>,
+                load_zones::<ResidenceHallTeleportZonesList>,
+                load_zones::<ResidenceTeleportZonesList>,
+                load_zones::<SiegableHallZonesList>,
+                load_zones::<TownZonesList>,
             )
-                .in_set(GameServerStateSystems::Run),
+                .in_set(LoadingSystems::AssetInit),
+        );
+
+        add_spawn_systems_in_set(app, LoadingSystems::AssetInit);
+        add_spawn_systems_in_set(app, GameServerStateSystems::Run);
+
+        app.add_systems(
+            Update,
+            spawn_regional_zones.in_set(GameServerStateSystems::Run),
         );
     }
+}
+
+fn add_spawn_systems_in_set(app: &mut App, set: impl SystemSet) {
+    app.add_systems(
+        Update,
+        (
+            spawn_zones::<RespawnPointsZonesList, RespawnPoints>,
+            spawn_zones::<CastleZonesList, Castle>,
+            spawn_zones::<ClanHallZonesList, ClanHall>,
+            spawn_zones::<FortZonesList, Fort>,
+            spawn_zones::<OlympiadStadiumZonesList, OlympiadStadium>,
+            spawn_zones::<ResidenceHallTeleportZonesList, ResidenceHallTeleport>,
+            spawn_zones::<ResidenceTeleportZonesList, ResidenceTeleport>,
+            spawn_zones::<SiegableHallZonesList, SiegableHall>,
+            spawn_zones::<TownZonesList, Town>,
+        )
+            .in_set(set),
+    );
 }
 
 fn zone_added(
@@ -102,6 +101,7 @@ fn load_zones<ZoneListResource>(
         zone_list_path.set_extension("json");
         let zone_list_handle = ZoneListHandle::from(asset_server.load(zone_list_path));
         commands.insert_resource(ZoneListResource::from(zone_list_handle));
+        debug!("Loaded zone list: {:?}", ZoneListResource::name());
     }
 }
 
