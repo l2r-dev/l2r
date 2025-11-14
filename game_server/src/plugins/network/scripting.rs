@@ -142,7 +142,9 @@ impl ClientPacketScriptingPlugin {
         mut script_events: EventWriter<ScriptCallbackEvent>,
     ) -> Result<()> {
         let event = receive.event();
-        let session_entity = receive_params.session(&event.connection.id())?;
+        let Ok(session_entity) = receive_params.session(&event.connection.id()) else {
+            return Ok(());
+        };
         let packet_entity = receive_params
             .character(&event.connection.id())
             .unwrap_or(session_entity);

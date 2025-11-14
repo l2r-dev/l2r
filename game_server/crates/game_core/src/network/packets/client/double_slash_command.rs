@@ -1,9 +1,9 @@
 use crate::{items, npc, object_id::ObjectId};
 use bevy::prelude::*;
+use enum_from_str::EnumFromArgsDeserialize;
 use l2r_core::packets::{ClientPacketBuffer, L2rSerializeError};
 use std::{convert::TryFrom, str::FromStr};
 use strum::EnumIter;
-use util_macros::EnumFromArgsDeserialize;
 
 /// In-game usage: `//commandname arg1 arg2 ...`
 /// For example, for `GoTo` input will be `//goto 1234`

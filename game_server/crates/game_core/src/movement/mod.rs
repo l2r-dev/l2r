@@ -1,5 +1,6 @@
 use crate::{
-    action::wait_kind::Sit, attack::Dead, path_finding::WAYPOINTS_CAPACITY, stats::Movable,
+    action::wait_kind::Sit, attack::Dead, character::Character, path_finding::WAYPOINTS_CAPACITY,
+    stats::Movable,
 };
 use bevy::prelude::*;
 use bevy_ecs::{
@@ -69,9 +70,11 @@ impl Component for Movement {
 
     fn on_remove() -> Option<ComponentHook> {
         Some(|mut world: DeferredWorld, context: HookContext| {
-            world
-                .commands()
-                .trigger_targets(SendStopMove, context.entity);
+            if world.entity(context.entity).get::<Character>().is_some() {
+                world
+                    .commands()
+                    .trigger_targets(SendStopMove, context.entity);
+            }
         })
     }
 }

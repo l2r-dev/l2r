@@ -8,7 +8,7 @@ bevy = { workspace = true }
 bevy_common_assets = { workspace = true }
 avian3d = { workspace = true }
 
-l2r_core = { path = "../../../core" }
+l2r_core = { workspace = true }
 
 spatial = { path = "../spatial" }
 physics = { path = "../physics" }

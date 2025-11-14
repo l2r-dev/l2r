@@ -147,7 +147,7 @@ fn handle_door_command(
 }
 
 fn changed_door_status(
-    changed: Trigger<OnReplace, DoorStatus>,
+    changed: Trigger<OnInsert, DoorStatus>,
     mut commands: Commands,
 ) -> Result<()> {
     let door_entity = changed.target();

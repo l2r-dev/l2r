@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-l2r_core = { path = "../../../core", features = ["high_five"] }
+l2r_core = { workspace = true }
 
 bevy = { workspace = true }
 bevy_common_assets = { workspace = true }
