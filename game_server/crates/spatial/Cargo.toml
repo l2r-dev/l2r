@@ -5,7 +5,7 @@ edition = "2024"
 
 [dependencies]
 bevy = { workspace = true }
-l2r_core = { path = "../../../core", features = ["high_five"] }
+l2r_core = { workspace = true }
 
 num_enum = {workspace = true }
 bitflags = {workspace = true }

@@ -27,10 +27,10 @@ fn handle(
 ) -> Result<()> {
     let event = receive.event();
 
-    let session_entity = receive_params.session(&event.connection.id())?;
-    let session = game_sessions.get_mut(session_entity)?;
-
     if let GameClientPacket::ProtocolVersion(ref packet) = event.packet {
+        let session_entity = receive_params.session(&event.connection.id())?;
+        let session = game_sessions.get_mut(session_entity)?;
+        
         match packet.protocol_version {
             protocol::Version::Unknown => {
                 session.disconnect();

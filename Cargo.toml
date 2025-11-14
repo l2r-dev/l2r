@@ -1,6 +1,13 @@
 [workspace]
 resolver = "2"
-members = ["core", "login_server", "game_server", "game_server/crates/*", "util_macros"]
+members = [
+  "core",
+  "login_server",
+  "game_server",
+  "game_server/crates/*",
+  "enum_from_str",
+  "bevy_enum_tag",
+]
 
 default-members = [
   "core",
@@ -62,7 +69,7 @@ bevy_slinet = { version = "0.14.0", features = [
 bevy_webgate = "0.1"
 bevy_defer = "0.14"
 
-bevy_enum_tag = { git = "https://github.com/aggyomfg/bevy_enum_tag.git", rev = "156b44a" }
+
 uuid = { version = "1", features = ["v7"] }
 cached = "0.55"
 
@@ -97,7 +104,7 @@ num_enum = "0.7.2"
 log = "0.4"
 lazy_static = "1.4"
 const-primes = "0.10"
-bitflags = "2.5"
+bitflags = "2.10"
 bit-set = "0.8.0"
 async-std = { version = "1", features = ["attributes", "tokio1"] }
 sea-orm = { version = "1", features = [
@@ -117,6 +124,12 @@ smallvec = "1.15"
 thiserror = "2"
 toml = "0.9"
 walkdir = "2.5"
+
+# Internal crates
+bevy_enum_tag = { path = "bevy_enum_tag" }
+enum_from_str = { path = "enum_from_str" }
+l2r_core = { path = "core", features = ["high_five"] }
+
 
 [profile.dev]
 # Enable some optimization for dependencies while keeping dev fast

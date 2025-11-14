@@ -3,9 +3,8 @@ use bevy::{ecs::system::SystemParam, platform::collections::HashMap, prelude::*}
 use l2r_core::{chronicles::CHRONICLE, plugins::custom_hierarchy::*};
 use map::*;
 use physics::GameLayer;
-use state::GameServerStateSystems;
+use state::{GameServerStateSystems, LoadingSystems};
 use std::path::PathBuf;
-use state::LoadingSystems;
 
 pub struct ZonesPlugin;
 impl Plugin for ZonesPlugin {

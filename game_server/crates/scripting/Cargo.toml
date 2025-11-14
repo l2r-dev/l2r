@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-l2r_core = { path = "../../../core" }
+l2r_core = { workspace = true }
 
 state ={ path = "../state" }
 

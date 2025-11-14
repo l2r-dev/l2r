@@ -24,8 +24,9 @@ fn handle(
 ) -> Result<()> {
     let event = receive.event();
     if let GameClientPacket::RequestLogout = event.packet {
-        let character_entity = receive_params.character(&event.connection.id())?;
-        commands.trigger_targets(GameServerPacket::from(LogoutOk), character_entity);
+        if let Ok(session) = receive_params.session(&event.connection.id()) {
+            commands.trigger_targets(GameServerPacket::from(LogoutOk), session);
+        }
     }
     Ok(())
 }
